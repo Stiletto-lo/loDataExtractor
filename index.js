@@ -2,6 +2,9 @@ const fs = require("fs");
 const path = require("path");
 
 let allItems = [];
+let allTranslations = [];
+
+const folderType = ["tech", "item", "translation"];
 
 const itemTemplate = {
   category: undefined,
@@ -12,21 +15,24 @@ const itemTemplate = {
   parent: undefined,
   trade_price: undefined,
 };
-const craftingTemplate = [
-  {
-    ingredients: [{ count: undefined, name: undefined }],
-    output: undefined,
-    station: undefined,
-  },
-];
-
-const costTemplate = {
-  count: undefined,
-  name: undefined,
+const recipeTemplate = {
+  ingredients: [],
+  output: undefined,
+  station: undefined,
 };
 
-loadDirData("./Data/TechTree", true);
-loadDirData("./Data/Items", false);
+const ingredienTemplate = { count: undefined, name: undefined };
+
+const costTemplate = {
+  name: undefined,
+  count: undefined,
+};
+
+loadDirData("./Data/StringTables", 2);
+loadDirData("./Data/TechTree", 0);
+loadDirData("./Data/Items", 1);
+loadDirData("./Data/Placeables", 1);
+loadDirData("./Data/Recipes", 1);
 
 allItems.forEach((item) => {
   Object.keys(item).forEach((key) => {
@@ -48,18 +54,20 @@ if (allItems.length > 0) {
   });
 }
 
-function loadDirData(techTreeDir, isTech = true) {
+function loadDirData(techTreeDir, folderType = 0) {
   let dir = path.join(__dirname, techTreeDir);
   let files = fs.readdirSync(dir);
   files.forEach((file) => {
     let fileData = fs.statSync(techTreeDir + "/" + file);
     if (fileData.isDirectory()) {
-      loadDirData(techTreeDir + "/" + file, isTech);
+      loadDirData(techTreeDir + "/" + file, folderType);
     } else {
-      if (isTech) {
+      if (folderType === 0) {
         parseTechData(techTreeDir + "/" + file);
-      } else {
+      } else if (folderType === 1) {
         parseItemData(techTreeDir + "/" + file);
+      } else if (folderType === 2) {
+        parseTranslations(techTreeDir + "/" + file);
       }
     }
   });
@@ -67,9 +75,9 @@ function loadDirData(techTreeDir, isTech = true) {
 
 function getItem(itemName) {
   let itemCopy = { ...itemTemplate };
-  allItems.filter((item) => {
+  allItems = allItems.filter((item) => {
     if (item.name == itemName) {
-      itemCopy = { ...item };
+      itemCopy = item;
       return false;
     }
     return true;
@@ -79,20 +87,12 @@ function getItem(itemName) {
   return itemCopy;
 }
 
-function parseCategory(category) {
-  category = category
-    .replace("Mist/Content/Mist/Data/Items/Categories/", "")
-    .trim();
-  category = category.replace(".0", "").trim();
-  return category;
-}
-
 function parseItemData(filePath) {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
 
   if (jsonData[1] && jsonData[1].Type) {
-    let item = getItem(jsonData[1].Type);
+    let item = getItem(parseName(jsonData[1].Type));
 
     if (jsonData[1].Properties) {
       if (
@@ -108,7 +108,52 @@ function parseItemData(filePath) {
       }
       if (jsonData[1].Properties.Recipes) {
         let recipesData = jsonData[1].Properties.Recipes;
-        recipesData.forEach((recipe) => {});
+        let crafting = [];
+        recipesData.forEach((recipeData) => {
+          let recipe = { ...recipeTemplate };
+          if (recipeData.Inputs) {
+            let ingredients = [];
+            for (const key in recipeData.Inputs) {
+              let ingredient = { ...ingredienTemplate };
+              ingredient.name = parseName(key);
+              ingredient.count = recipeData.Inputs[key];
+              ingredients.push(ingredient);
+            }
+            if (ingredients.length > 0) {
+              recipe.ingredients = ingredients;
+            }
+          }
+          if (recipeData.Quantity && recipeData.Quantity > 1) {
+            recipe.output = recipeData.Quantity;
+          }
+          if (
+            recipeData.Category &&
+            recipeData.Category.ObjectName &&
+            !recipeData.Category.ObjectName.includes("Base")
+          ) {
+            recipe.station = parseName(recipeData.Category.ObjectName);
+          }
+          crafting.push(recipe);
+        });
+        if (crafting.length > 0) {
+          item.crafting = crafting;
+        }
+      } else if (jsonData[1].Properties.Requirements) {
+        let recipeData = jsonData[1].Properties.Requirements;
+        if (recipeData.Inputs) {
+          let recipe = { ...recipeTemplate };
+          let ingredients = [];
+          for (const key in recipeData.Inputs) {
+            let ingredient = { ...ingredienTemplate };
+            ingredient.name = parseName(key);
+            ingredient.count = recipeData.Inputs[key];
+            ingredients.push(ingredient);
+          }
+          if (ingredients.length > 0) {
+            recipe.ingredients = ingredients;
+          }
+          item.crafting = [recipe];
+        }
       }
     }
 
@@ -120,22 +165,26 @@ function parseTechData(filePath) {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
 
-  let item = { ...itemTemplate };
-
   if (jsonData[1] && jsonData[1].Type) {
-    item.name = jsonData[1].Type;
+    let item = getItem(parseName(jsonData[1].Type));
     if (
       jsonData[1].Properties &&
       jsonData[1].Properties.Requirements &&
       jsonData[1].Properties.Requirements[0] &&
       jsonData[1].Properties.Requirements[0].ObjectName
     ) {
-      let parent = jsonData[1].Properties.Requirements[0].ObjectName;
-      item.parent = parent.replace("BlueprintGeneratedClass", "").trim();
+      item.parent = parseName(
+        jsonData[1].Properties.Requirements[0].ObjectName
+      );
     }
     if (jsonData[1].Properties && jsonData[1].Properties.Cost) {
       let itemCost = { ...costTemplate };
-      if (jsonData[1].Properties.Level && jsonData[1].Properties.Level > 30) {
+      if (
+        jsonData[1].Properties.TechTreeTier &&
+        (jsonData[1].Properties.TechTreeTier.includes("Tier4") ||
+          jsonData[1].Properties.TechTreeTier.includes("Tier5") ||
+          jsonData[1].Properties.TechTreeTier.includes("Tier6"))
+      ) {
         itemCost.name = "Tablet";
       } else {
         itemCost.name = "Fragment";
@@ -145,5 +194,47 @@ function parseTechData(filePath) {
       item.cost = itemCost;
     }
     allItems.push(item);
+  }
+}
+
+function parseTranslations(filePath) {
+  let rawdata = fs.readFileSync(filePath);
+  let jsonData = JSON.parse(rawdata);
+  if (
+    jsonData[0] &&
+    jsonData[0].StringTable &&
+    jsonData[0].StringTable.KeysToMetaData
+  ) {
+    for (const key in jsonData[0].StringTable.KeysToMetaData) {
+      if (key.includes(".Name")) {
+        allTranslations[key.replace(".Name", "").trim()] =
+          jsonData[0].StringTable.KeysToMetaData[key];
+      }
+    }
+  }
+}
+
+function parseCategory(category) {
+  category = category
+    .replace("Mist/Content/Mist/Data/Items/Categories/", "")
+    .trim();
+  category = category.replace(".0", "").trim();
+  return category;
+}
+
+function parseName(name) {
+  name = name.replace("BlueprintGeneratedClass", "").trim();
+  name = name.replace(".0", "").trim();
+  let dot = name.indexOf(".");
+  if (dot > 0) {
+    name = name.slice(dot + 1);
+  }
+  name = name.replace("_C", "").trim();
+  return translateName(name);
+}
+
+function translateName(name) {
+  if (allTranslations[name]) {
+    return allTranslations[name];
   }
 }
