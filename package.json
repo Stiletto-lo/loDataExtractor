@@ -1,11 +1,14 @@
 {
   "name": "lodataextractor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "author": "Dm94Dani",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
 }

@@ -1,10 +1,11 @@
 const fs = require("fs");
 const path = require("path");
+const comparator = require("./comparator");
 
 let allItems = [];
 let allTranslations = [];
 
-const folderType = ["tech", "item", "translation"];
+const folderType = ["tech", "item", "translation", "trade", "placeables"];
 
 const itemTemplate = {
   category: undefined,
@@ -14,6 +15,7 @@ const itemTemplate = {
   name: undefined,
   parent: undefined,
   trade_price: undefined,
+  translation: undefined,
 };
 const recipeTemplate = {
   ingredients: [],
@@ -31,13 +33,18 @@ const costTemplate = {
 loadDirData("./Data/StringTables", 2);
 loadDirData("./Data/TechTree", 0);
 loadDirData("./Data/Items", 1);
-loadDirData("./Data/Placeables", 1);
+loadDirData("./Data/Placeables", 4);
 loadDirData("./Data/Recipes", 1);
+loadDirData("./Data/Trade", 3);
+
+translateItems();
 
 allItems.forEach((item) => {
   Object.keys(item).forEach((key) => {
     if (item[key] === undefined) {
       delete item[key];
+    } else if (item["translation"] != undefined) {
+      delete item["translation"];
     }
   });
 });
@@ -54,6 +61,8 @@ if (allItems.length > 0) {
   });
 }
 
+comparator.compareItems(allItems);
+
 function loadDirData(techTreeDir, folderType = 0) {
   let dir = path.join(__dirname, techTreeDir);
   let files = fs.readdirSync(dir);
@@ -62,12 +71,22 @@ function loadDirData(techTreeDir, folderType = 0) {
     if (fileData.isDirectory()) {
       loadDirData(techTreeDir + "/" + file, folderType);
     } else {
-      if (folderType === 0) {
-        parseTechData(techTreeDir + "/" + file);
-      } else if (folderType === 1) {
-        parseItemData(techTreeDir + "/" + file);
-      } else if (folderType === 2) {
-        parseTranslations(techTreeDir + "/" + file);
+      switch (folderType) {
+        case 0:
+          parseTechData(techTreeDir + "/" + file);
+          break;
+        case 1:
+          parseItemData(techTreeDir + "/" + file);
+          break;
+        case 2:
+          parseTranslations(techTreeDir + "/" + file);
+          break;
+        case 3:
+          parsePrices(techTreeDir + "/" + file);
+          break;
+        case 4:
+          parsePlaceableData(techTreeDir + "/" + file);
+          break;
       }
     }
   });
@@ -138,7 +157,31 @@ function parseItemData(filePath) {
         if (crafting.length > 0) {
           item.crafting = crafting;
         }
-      } else if (jsonData[1].Properties.Requirements) {
+      }
+    }
+
+    allItems.push(item);
+  }
+}
+
+function parsePlaceableData(filePath) {
+  let rawdata = fs.readFileSync(filePath);
+  let jsonData = JSON.parse(rawdata);
+
+  if (jsonData[1] && jsonData[1].Type) {
+    let item = getItem(parseName(jsonData[1].Type));
+
+    if (jsonData[1].Properties) {
+      if (
+        jsonData[1].Properties.Category &&
+        jsonData[1].Properties.Category.ObjectPath
+      ) {
+        item.category = parseCategory(
+          jsonData[1].Properties.Category.ObjectPath
+        );
+      }
+
+      if (jsonData[1].Properties.Requirements) {
         let recipeData = jsonData[1].Properties.Requirements;
         if (recipeData.Inputs) {
           let recipe = { ...recipeTemplate };
@@ -154,6 +197,13 @@ function parseItemData(filePath) {
           }
           item.crafting = [recipe];
         }
+      }
+
+      if (jsonData[1].Properties.Name && jsonData[1].Properties.Name.Key) {
+        item.translation = jsonData[1].Properties.Name.Key.replace(
+          ".Name",
+          ""
+        ).trim();
       }
     }
 
@@ -214,6 +264,28 @@ function parseTranslations(filePath) {
   }
 }
 
+function parsePrices(filePath) {
+  let rawdata = fs.readFileSync(filePath);
+  let jsonData = JSON.parse(rawdata);
+  if (
+    jsonData[1] &&
+    jsonData[1].Properties &&
+    jsonData[1].Properties.OrdersArray
+  ) {
+    let allOrders = jsonData[1].Properties.OrdersArray;
+
+    allOrders.forEach((order) => {
+      if (order.ItemClass && order.ItemClass.ObjectName && order.Price) {
+        let item = getItem(parseName(order.ItemClass.ObjectName));
+
+        item.trade_price = order.Price;
+
+        allItems.push(item);
+      }
+    });
+  }
+}
+
 function parseCategory(category) {
   category = category
     .replace("Mist/Content/Mist/Data/Items/Categories/", "")
@@ -230,11 +302,32 @@ function parseName(name) {
     name = name.slice(dot + 1);
   }
   name = name.replace("_C", "").trim();
-  return translateName(name);
+  name = translateName(name);
+
+  return name;
+}
+
+function translateItems() {
+  allItems = allItems.map((item) => {
+    let name = item.name;
+    if (item.translation) {
+      name = item.translation;
+    }
+    name = translateName(name);
+
+    if (name.includes(" Legs") || name.includes(" Wings")) {
+      name = name + " (1 of 2)";
+    }
+
+    item.name = name;
+    return item;
+  });
 }
 
 function translateName(name) {
   if (allTranslations[name]) {
     return allTranslations[name];
   }
+
+  return name;
 }
