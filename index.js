@@ -1,9 +1,11 @@
 const fs = require("fs");
 const path = require("path");
-const comparator = require("./comparator");
+const comparator = require("./helpers/comparator");
+const translator = require("./helpers/translator");
 
 let allItems = [];
-let allTranslations = [];
+
+translator.initownTranslations();
 
 const folderType = ["tech", "item", "translation", "trade", "placeables"];
 
@@ -26,8 +28,8 @@ const recipeTemplate = {
 const ingredienTemplate = { count: undefined, name: undefined };
 
 const costTemplate = {
-  name: undefined,
   count: undefined,
+  name: undefined,
 };
 
 loadDirData("./Data/StringTables", 2);
@@ -37,7 +39,7 @@ loadDirData("./Data/Placeables", 4);
 loadDirData("./Data/Recipes", 1);
 loadDirData("./Data/Trade", 3);
 
-translateItems();
+allItems = translator.translateItems(allItems);
 
 allItems.forEach((item) => {
   Object.keys(item).forEach((key) => {
@@ -49,7 +51,23 @@ allItems.forEach((item) => {
   });
 });
 
-allItems = allItems.filter((item) => item.name && Object.keys(item).length > 1);
+allItems = allItems
+  .map((item) => {
+    let countItems = allItems.filter((item2) => item.name == item2.name);
+    if (countItems.length > 1) {
+      return { ...countItems[0], ...countItems[1] };
+    }
+    return item;
+  })
+  .filter((item) => item.name && Object.keys(item).length > 2)
+  .reduce((acc, current) => {
+    const x = acc.find((item) => item.name === current.name);
+    if (!x) {
+      return acc.concat([current]);
+    } else {
+      return acc;
+    }
+  }, []);
 
 if (allItems.length > 0) {
   fs.writeFile("./items.json", JSON.stringify(allItems), function (err) {
@@ -95,7 +113,10 @@ function loadDirData(techTreeDir, folderType = 0) {
 function getItem(itemName) {
   let itemCopy = { ...itemTemplate };
   allItems = allItems.filter((item) => {
-    if (item.name == itemName) {
+    if (
+      item.name == itemName ||
+      (item.translation && item.translation == itemName)
+    ) {
       itemCopy = item;
       return false;
     }
@@ -150,12 +171,25 @@ function parseItemData(filePath) {
             recipeData.Category.ObjectName &&
             !recipeData.Category.ObjectName.includes("Base")
           ) {
-            recipe.station = parseName(recipeData.Category.ObjectName);
+            recipe.station = parseName(recipeData.Category.ObjectName).trim();
           }
           crafting.push(recipe);
         });
         if (crafting.length > 0) {
           item.crafting = crafting;
+        }
+      }
+      if (jsonData[1].Properties.Name && jsonData[1].Properties.Name.Key) {
+        if (
+          jsonData[1].Properties.Name.SourceString &&
+          jsonData[1].Properties.Name.SourceString.trim() != ""
+        ) {
+          item.translation = jsonData[1].Properties.Name.SourceString.trim();
+        } else {
+          item.translation = jsonData[1].Properties.Name.Key.replace(
+            ".Name",
+            ""
+          ).trim();
         }
       }
     }
@@ -227,7 +261,11 @@ function parseTechData(filePath) {
         jsonData[1].Properties.Requirements[0].ObjectName
       );
     }
-    if (jsonData[1].Properties && jsonData[1].Properties.Cost) {
+    if (
+      jsonData[1].Properties &&
+      jsonData[1].Properties.Cost &&
+      jsonData[1].Properties.Cost != 1
+    ) {
       let itemCost = { ...costTemplate };
       if (
         jsonData[1].Properties.TechTreeTier &&
@@ -257,8 +295,10 @@ function parseTranslations(filePath) {
   ) {
     for (const key in jsonData[0].StringTable.KeysToMetaData) {
       if (key.includes(".Name")) {
-        allTranslations[key.replace(".Name", "").trim()] =
-          jsonData[0].StringTable.KeysToMetaData[key];
+        translator.addTranslation(
+          key.replace(".Name", "").trim(),
+          jsonData[0].StringTable.KeysToMetaData[key]
+        );
       }
     }
   }
@@ -278,7 +318,9 @@ function parsePrices(filePath) {
       if (order.ItemClass && order.ItemClass.ObjectName && order.Price) {
         let item = getItem(parseName(order.ItemClass.ObjectName));
 
-        item.trade_price = order.Price;
+        if (order.Price > item.trade_price) {
+          item.trade_price = order.Price;
+        }
 
         allItems.push(item);
       }
@@ -302,32 +344,89 @@ function parseName(name) {
     name = name.slice(dot + 1);
   }
   name = name.replace("_C", "").trim();
-  name = translateName(name);
+  name = translator.translateName(name);
 
-  return name;
-}
-
-function translateItems() {
-  allItems = allItems.map((item) => {
-    let name = item.name;
-    if (item.translation) {
-      name = item.translation;
+  if (name.includes("Walker")) {
+    if (/(.+) Walker/.test(name)) {
+      name = name + " Body";
+    } else if (/(.+)Walker(.+)Legs/.test(name)) {
+      let match = name.match(/(.+)Walker(.+)Legs/);
+      if (match[1] != null && match[2] != null) {
+        let walkerName = translator.translateName(match[1] + "Walker");
+        let legType = match[2] != "Base" ? match[2] + " (1 of 2)" : "";
+        name = walkerName + " Legs " + legType;
+      }
+    } else if (/(.+)WalkerWings(.+)/.test(name)) {
+      let match = name.match(/(.+)WalkerWings(.+)/);
+      if (match[1] != null && match[2] != null) {
+        let walkerName = translator.translateName(match[1] + "Walker");
+        let wingsType = "Wings (1 of 2)";
+        switch (match[2]) {
+          case "FastSmall":
+            wingsType = "Wings Small (1 of 2)";
+            break;
+          case "FastMedium":
+            wingsType = "Wings Medium (1 of 2)";
+            break;
+          case "FastLarge":
+            wingsType = "Wings Large (1 of 2)";
+            break;
+          case "Heavy1":
+            wingsType = "Wings Heavy (1 of 2)";
+            break;
+          case "Heavy2":
+            wingsType = "Wings Rugged (1 of 2)";
+            break;
+          case "Skirmish1":
+            wingsType = "Wings Skirmish (1 of 2)";
+            break;
+          case "Skirmish2":
+            wingsType = "Wings Raider (1 of 2)";
+            break;
+        }
+        name = walkerName + " " + wingsType;
+      }
     }
-    name = translateName(name);
-
-    if (name.includes(" Legs") || name.includes(" Wings")) {
-      name = name + " (1 of 2)";
+  }
+  if (name.includes("Upgrades")) {
+    if (/(.+)Walker(.+)Upgrades/.test(name)) {
+      let match = name.match(/(.+)Walker(.+)Upgrades/);
+      if (match[1] != null && match[2] != null) {
+        let walkerName = translator.translateName(match[1] + "Walker");
+        let tier = "1";
+        switch (match[2]) {
+          case "Bone":
+            tier = "2";
+            break;
+          case "Ceramic":
+            tier = "3";
+            break;
+          case "Iron":
+            tier = "4";
+            break;
+        }
+        name = walkerName + " Upgrade - Water - Tier " + tier;
+      }
+    } else if (/(.+)BoneUpgrades/.test(name)) {
+      let match = name.match(/(.+)BoneUpgrades/);
+      if (match[1] != null) {
+        let walkerName = translator.translateName(match[1] + "Walker");
+        name = walkerName + " Upgrade - Water - Tier 2";
+      }
+    } else if (/(.+)CeramicUpgrades/.test(name)) {
+      let match = name.match(/(.+)CeramicUpgrades/);
+      if (match[1] != null) {
+        let walkerName = translator.translateName(match[1] + "Walker");
+        name = walkerName + " Upgrade - Water - Tier 3";
+      }
+    } else if (/(.+)IronUpgrades/.test(name)) {
+      let match = name.match(/(.+)IronUpgrades/);
+      if (match[1] != null) {
+        let walkerName = translator.translateName(match[1] + "Walker");
+        name = walkerName + " Upgrade - Water - Tier 4";
+      }
     }
-
-    item.name = name;
-    return item;
-  });
-}
-
-function translateName(name) {
-  if (allTranslations[name]) {
-    return allTranslations[name];
   }
 
-  return name;
+  return name.trim();
 }

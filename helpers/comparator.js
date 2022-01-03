@@ -72,16 +72,6 @@ controller.compareItems = async (extractedItems) => {
 };
 
 controller.isTheSame = (extractedItem, githubItem) => {
-  if (githubItem.parent || extractedItem.parent) {
-    if (
-      githubItem.parent === undefined ||
-      extractedItem.parent === undefined ||
-      githubItem.parent != extractedItem.parent
-    ) {
-      return false;
-    }
-  }
-
   if (githubItem.cost || extractedItem.cost) {
     if (githubItem.cost === undefined || extractedItem.cost === undefined) {
       return false;
@@ -120,6 +110,16 @@ controller.isTheSame = (extractedItem, githubItem) => {
       ) {
         return false;
       }
+    }
+  }
+
+  if (githubItem.parent || extractedItem.parent) {
+    if (
+      githubItem.parent === undefined ||
+      extractedItem.parent === undefined ||
+      githubItem.parent != extractedItem.parent
+    ) {
+      return false;
     }
   }
 
