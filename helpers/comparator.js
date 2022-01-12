@@ -72,25 +72,26 @@ controller.compareItems = async (extractedItems) => {
 };
 
 controller.isTheSame = (extractedItem, githubItem) => {
-  if (githubItem.cost || extractedItem.cost) {
-    if (githubItem.cost === undefined || extractedItem.cost === undefined) {
-      return false;
-    }
-    if (
-      githubItem.cost.count === undefined ||
-      extractedItem.cost.count === undefined ||
-      githubItem.cost.count != extractedItem.cost.count
-    ) {
-      return false;
-    } else if (
-      githubItem.cost.name === undefined ||
-      extractedItem.cost.name === undefined ||
-      githubItem.cost.name != extractedItem.cost.name
-    ) {
-      return false;
-    }
+  if (!controller.compareCost(extractedItem, githubItem)) {
+    return false;
   }
 
+  if (!controller.compareCrafting(extractedItem, githubItem)) {
+    return false;
+  }
+
+  if (!Object.is(githubItem.category, extractedItem.category)) {
+    return false;
+  }
+
+  if (!Object.is(githubItem.parent, extractedItem.parent)) {
+    return false;
+  }
+
+  return true;
+};
+
+controller.compareCrafting = (extractedItem, githubItem) => {
   if (githubItem.crafting || extractedItem.crafting) {
     if (
       githubItem.crafting === undefined ||
@@ -112,17 +113,28 @@ controller.isTheSame = (extractedItem, githubItem) => {
       }
     }
   }
+  return true;
+};
 
-  if (githubItem.parent || extractedItem.parent) {
+controller.compareCost = (extractedItem, githubItem) => {
+  if (githubItem.cost || extractedItem.cost) {
+    if (githubItem.cost === undefined || extractedItem.cost === undefined) {
+      return false;
+    }
     if (
-      githubItem.parent === undefined ||
-      extractedItem.parent === undefined ||
-      githubItem.parent != extractedItem.parent
+      githubItem.cost.count === undefined ||
+      extractedItem.cost.count === undefined ||
+      githubItem.cost.count != extractedItem.cost.count
+    ) {
+      return false;
+    } else if (
+      githubItem.cost.name === undefined ||
+      extractedItem.cost.name === undefined ||
+      githubItem.cost.name != extractedItem.cost.name
     ) {
       return false;
     }
   }
-
   return true;
 };
 

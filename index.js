@@ -135,18 +135,15 @@ function parseItemData(filePath) {
     let item = getItem(parseName(jsonData[1].Type));
 
     if (jsonData[1].Properties) {
-      if (
-        jsonData[1].Properties.Category &&
-        jsonData[1].Properties.Category.ObjectPath
-      ) {
+      if (jsonData[1].Properties?.Category?.ObjectPath) {
         item.category = parseCategory(
           jsonData[1].Properties.Category.ObjectPath
         );
       }
-      if (jsonData[1].Properties.ExpectedPrice) {
+      if (jsonData[1].Properties?.ExpectedPrice) {
         item.trade_price = jsonData[1].Properties.ExpectedPrice;
       }
-      if (jsonData[1].Properties.Recipes) {
+      if (jsonData[1].Properties?.Recipes) {
         let recipesData = jsonData[1].Properties.Recipes;
         let crafting = [];
         recipesData.forEach((recipeData) => {
@@ -167,8 +164,7 @@ function parseItemData(filePath) {
             recipe.output = recipeData.Quantity;
           }
           if (
-            recipeData.Category &&
-            recipeData.Category.ObjectName &&
+            recipeData?.Category?.ObjectName &&
             !recipeData.Category.ObjectName.includes("Base")
           ) {
             recipe.station = parseName(recipeData.Category.ObjectName).trim();
@@ -206,16 +202,13 @@ function parsePlaceableData(filePath) {
     let item = getItem(parseName(jsonData[1].Type));
 
     if (jsonData[1].Properties) {
-      if (
-        jsonData[1].Properties.Category &&
-        jsonData[1].Properties.Category.ObjectPath
-      ) {
+      if (jsonData[1].Properties?.Category?.ObjectPath) {
         item.category = parseCategory(
           jsonData[1].Properties.Category.ObjectPath
         );
       }
 
-      if (jsonData[1].Properties.Requirements) {
+      if (jsonData[1].Properties?.Requirements) {
         let recipeData = jsonData[1].Properties.Requirements;
         if (recipeData.Inputs) {
           let recipe = { ...recipeTemplate };
@@ -233,7 +226,7 @@ function parsePlaceableData(filePath) {
         }
       }
 
-      if (jsonData[1].Properties.Name && jsonData[1].Properties.Name.Key) {
+      if (jsonData[1].Properties?.Name?.Key) {
         item.translation = jsonData[1].Properties.Name.Key.replace(
           ".Name",
           ""
@@ -261,11 +254,7 @@ function parseTechData(filePath) {
         jsonData[1].Properties.Requirements[0].ObjectName
       );
     }
-    if (
-      jsonData[1].Properties &&
-      jsonData[1].Properties.Cost &&
-      jsonData[1].Properties.Cost != 1
-    ) {
+    if (jsonData[1]?.Properties?.Cost != 1) {
       let itemCost = { ...costTemplate };
       if (
         jsonData[1].Properties.TechTreeTier &&
@@ -288,11 +277,7 @@ function parseTechData(filePath) {
 function parseTranslations(filePath) {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
-  if (
-    jsonData[0] &&
-    jsonData[0].StringTable &&
-    jsonData[0].StringTable.KeysToMetaData
-  ) {
+  if (jsonData[0]?.StringTable?.KeysToMetaData) {
     for (const key in jsonData[0].StringTable.KeysToMetaData) {
       if (key.includes(".Name")) {
         translator.addTranslation(
@@ -307,15 +292,11 @@ function parseTranslations(filePath) {
 function parsePrices(filePath) {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
-  if (
-    jsonData[1] &&
-    jsonData[1].Properties &&
-    jsonData[1].Properties.OrdersArray
-  ) {
+  if (jsonData[1]?.Properties?.OrdersArray) {
     let allOrders = jsonData[1].Properties.OrdersArray;
 
     allOrders.forEach((order) => {
-      if (order.ItemClass && order.ItemClass.ObjectName && order.Price) {
+      if (order?.ItemClass?.ObjectName && order?.Price) {
         let item = getItem(parseName(order.ItemClass.ObjectName));
 
         if (order.Price > item.trade_price) {
