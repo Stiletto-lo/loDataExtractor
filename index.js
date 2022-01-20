@@ -32,6 +32,15 @@ const costTemplate = {
   name: undefined,
 };
 
+const orderByCategory = (a, b) => {
+  if (a.category < b.category) {
+    return -1;
+  } else if (a.category > b.category) {
+    return 1;
+  }
+  return 0;
+};
+
 loadDirData("./Data/StringTables", 2);
 loadDirData("./Data/TechTree", 0);
 loadDirData("./Data/Items", 1);
@@ -68,6 +77,8 @@ allItems = allItems
       return acc;
     }
   }, []);
+
+allItems.sort(orderByCategory);
 
 if (allItems.length > 0) {
   fs.writeFile("./items.json", JSON.stringify(allItems), function (err) {
