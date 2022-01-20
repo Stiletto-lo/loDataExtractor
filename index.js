@@ -88,7 +88,7 @@ function loadDirData(techTreeDir, folderType = 0) {
     let fileData = fs.statSync(techTreeDir + "/" + file);
     if (fileData.isDirectory()) {
       loadDirData(techTreeDir + "/" + file, folderType);
-    } else {
+    } else if (file.includes(".json")) {
       switch (folderType) {
         case 0:
           parseTechData(techTreeDir + "/" + file);
