@@ -18,6 +18,7 @@ const itemTemplate = {
   parent: undefined,
   trade_price: undefined,
   translation: undefined,
+  type: undefined,
 };
 const recipeTemplate = {
   ingredients: [],
@@ -56,6 +57,8 @@ allItems.forEach((item) => {
       delete item[key];
     } else if (item["translation"] != undefined) {
       delete item["translation"];
+    } else if (item["type"] != undefined) {
+      delete item["type"];
     }
   });
 });
@@ -144,6 +147,7 @@ function parseItemData(filePath) {
 
   if (jsonData[1] && jsonData[1].Type) {
     let item = getItem(parseName(jsonData[1].Type));
+    item.type = jsonData[1].Type;
 
     if (jsonData[1].Properties) {
       if (jsonData[1].Properties?.Category?.ObjectPath) {
@@ -211,6 +215,7 @@ function parsePlaceableData(filePath) {
 
   if (jsonData[1] && jsonData[1].Type) {
     let item = getItem(parseName(jsonData[1].Type));
+    item.type = jsonData[1].Type;
 
     if (jsonData[1].Properties) {
       if (jsonData[1].Properties?.Category?.ObjectPath) {
@@ -255,6 +260,7 @@ function parseTechData(filePath) {
 
   if (jsonData[1] && jsonData[1].Type) {
     let item = getItem(parseName(jsonData[1].Type));
+    item.type = jsonData[1].Type;
     if (
       jsonData[1].Properties &&
       jsonData[1].Properties.Requirements &&
@@ -339,9 +345,7 @@ function parseName(name) {
   name = translator.translateName(name);
 
   if (name.includes("Walker")) {
-    if (/(.+) Walker/.test(name)) {
-      name = name + " Body";
-    } else if (/(.+)Walker(.+)Legs/.test(name)) {
+    if (/(.+)Walker(.+)Legs/.test(name)) {
       let match = name.match(/(.+)Walker(.+)Legs/);
       if (match[1] != null && match[2] != null) {
         let walkerName = translator.translateName(match[1] + "Walker");
@@ -378,6 +382,8 @@ function parseName(name) {
         }
         name = walkerName + " " + wingsType;
       }
+    } else if (/(.+) Walker/.test(name)) {
+      name = name + " Body";
     }
   }
   if (name.includes("Upgrades")) {

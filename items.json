@@ -2,7 +2,7 @@
   {
     "cost": { "name": "Fragment" },
     "name": "MTX_Placeables",
-    "parent": "ConstructionRoot"
+    "parent": "Construction"
   },
   {
     "cost": { "count": 25, "name": "Fragment" },
@@ -153,1298 +153,6 @@
     "cost": { "count": 25, "name": "Fragment" },
     "name": "ObsidianCatapultRock",
     "parent": "ReinforcedWallHarpoon"
-  },
-  {
-    "cost": { "count": 8, "name": "Tablet" },
-    "name": "Iron Studded Boots",
-    "parent": "Iron Studded Armor",
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 14, "name": "Rupu Pelt" },
-          { "count": 10, "name": "Insects" },
-          { "count": 2, "name": "Iron Ingot" },
-          { "count": 14, "name": "Nomad Cloth" }
-        ]
-      }
-    ],
-    "trade_price": 75.8
-  },
-  {
-    "cost": { "count": 50, "name": "Fragment" },
-    "name": "Flare - White",
-    "parent": "Equipment"
-  },
-  {
-    "cost": { "count": 8, "name": "Tablet" },
-    "name": "Iron Studded Gauntlets",
-    "parent": "Iron Studded Armor",
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 10, "name": "Rupu Pelt" },
-          { "count": 7, "name": "Insects" },
-          { "count": 2, "name": "Iron Ingot" },
-          { "count": 5, "name": "Nomad Cloth" }
-        ]
-      }
-    ],
-    "trade_price": 41.1
-  },
-  {
-    "cost": { "count": 2, "name": "Fragment" },
-    "name": "LightLeatherArmor",
-    "parent": "FiberclothArmor"
-  },
-  {
-    "cost": { "count": 25, "name": "Tablet" },
-    "name": "Iron Studded Armor",
-    "parent": "Baskwood Armor",
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 35, "name": "Rupu Pelt" },
-          { "count": 15, "name": "Insects" },
-          { "count": 5, "name": "Iron Ingot" },
-          { "count": 10, "name": "Nomad Cloth" }
-        ]
-      }
-    ],
-    "trade_price": 94
-  },
-  {
-    "cost": { "count": 25, "name": "Tablet" },
-    "name": "Split Durable Water Sack",
-    "parent": "Durable Water Sack",
-    "category": "Equipment",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 12, "name": "Iron Ingot" },
-          { "count": 35, "name": "Palm Leaves" },
-          { "count": 112, "name": "Fiber" },
-          { "count": 15, "name": "Beeswax" }
-        ]
-      }
-    ],
-    "trade_price": 143.4
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Water Circulator",
-    "parent": "Durable Water Sack",
-    "category": "Equipment",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 38, "name": "Worm Silk" },
-          { "count": 5, "name": "Iron Ingot" },
-          { "count": 25, "name": "Rope" }
-        ]
-      }
-    ],
-    "trade_price": 679.5
-  },
-  {
-    "cost": { "count": 8, "name": "Tablet" },
-    "name": "Master Pickaxe",
-    "parent": "Advanced Pickaxe",
-    "category": "Tools",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 3, "name": "Iron Ingot" },
-          { "count": 28, "name": "Wood Shaft" },
-          { "count": 1, "name": "Nomad Cloth" }
-        ]
-      }
-    ],
-    "trade_price": 38.7
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Bouldercut Hand Axe",
-    "parent": "Advanced Hatchet",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 12, "name": "Iron Ore" },
-          { "count": 6, "name": "Wood Shaft" },
-          { "count": 5, "name": "Worm Silk" },
-          { "count": 11, "name": "Rupu Vine" }
-        ]
-      }
-    ],
-    "trade_price": 234.4
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Wyndan Hammer",
-    "parent": "Short Ceramic Hoofmace",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 10, "name": "Worm Silk" },
-          { "count": 6, "name": "Wood Shaft" },
-          { "count": 12, "name": "Iron Ore" },
-          { "count": 10, "name": "Rupu Vine" }
-        ]
-      }
-    ],
-    "trade_price": 316.4
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Wyndan Sabre",
-    "parent": "Short Malletblade",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 14, "name": "Iron Ore" },
-          { "count": 8, "name": "Wood Shaft" },
-          { "count": 5, "name": "Worm Silk" },
-          { "count": 12, "name": "Rupu Vine" }
-        ]
-      }
-    ],
-    "trade_price": 259.7
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Nibiran Hand Axe",
-    "parent": "Bouldercut Hand Axe",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 30, "name": "Rupu Vine" },
-          { "count": 22, "name": "Wood Shaft" },
-          { "count": 16, "name": "Nibiran Ingot" },
-          { "count": 5, "name": "Nomad Cloth" }
-        ]
-      }
-    ],
-    "trade_price": 1681.3
-  },
-  {
-    "cost": { "count": 12, "name": "Tablet" },
-    "name": "Nibiran Curved Dagger",
-    "parent": "Wyndan Sabre",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 40, "name": "Rupu Vine" },
-          { "count": 18, "name": "Wood Shaft" },
-          { "count": 18, "name": "Nibiran Ingot" },
-          { "count": 8, "name": "Nomad Cloth" }
-        ]
-      }
-    ],
-    "trade_price": 1900.2
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Nibiran Hammer",
-    "parent": "Wyndan Hammer",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 7, "name": "Nomad Cloth" },
-          { "count": 20, "name": "Wood Shaft" },
-          { "count": 14, "name": "Nibiran Ingot" },
-          { "count": 10, "name": "Bone Glue" }
-        ]
-      }
-    ],
-    "trade_price": 1486.5
-  },
-  {
-    "cost": { "count": 8, "name": "Tablet" },
-    "name": "Wyndanblade Quarterstaff",
-    "parent": "Paddleblade Quarterstaff",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 17, "name": "Wood Shaft" },
-          { "count": 12, "name": "Iron Ore" },
-          { "count": 6, "name": "Rupu Pelt" }
-        ]
-      }
-    ],
-    "trade_price": 152
-  },
-  {
-    "cost": { "count": 22, "name": "Tablet" },
-    "name": "Ironblade Quarterstaff",
-    "parent": "Wyndanblade Quarterstaff",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 30, "name": "Wood Shaft" },
-          { "count": 14, "name": "Nibiran Ingot" },
-          { "count": 10, "name": "Nomad Cloth" },
-          { "count": 12, "name": "Bone Glue" }
-        ]
-      }
-    ],
-    "trade_price": 1504.8
-  },
-  {
-    "cost": { "count": 22, "name": "Tablet" },
-    "name": "Nibiran Quarterstaff",
-    "parent": "Wyndanblade Quarterstaff",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 30, "name": "Wood Shaft" },
-          { "count": 14, "name": "Nibiran Ingot" },
-          { "count": 10, "name": "Nomad Cloth" },
-          { "count": 12, "name": "Bone Glue" }
-        ]
-      }
-    ],
-    "trade_price": 1504.8
-  },
-  {
-    "cost": { "count": 7, "name": "Tablet" },
-    "name": "Bouldercut Battle Axe",
-    "parent": "Rawbone Battle Axe",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 12, "name": "Iron Ore" },
-          { "count": 6, "name": "Wood Shaft" },
-          { "count": 10, "name": "Worm Silk" },
-          { "count": 18, "name": "Rupu Vine" }
-        ]
-      }
-    ],
-    "trade_price": 320.4
-  },
-  {
-    "cost": { "count": 8, "name": "Tablet" },
-    "name": "Wyndan Warhammer",
-    "parent": "Long Ceramic Hoofmace",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 16, "name": "Iron Ore" },
-          { "count": 12, "name": "Wood Shaft" },
-          { "count": 10, "name": "Worm Silk" },
-          { "count": 12, "name": "Rupu Vine" }
-        ]
-      }
-    ],
-    "trade_price": 367.8
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Wyndan Flame Sword",
-    "parent": "Singblade",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 16, "name": "Iron Ore" },
-          { "count": 14, "name": "Wood Shaft" },
-          { "count": 8, "name": "Worm Silk" },
-          { "count": 14, "name": "Rupu Vine" }
-        ]
-      }
-    ],
-    "trade_price": 336.6
-  },
-  {
-    "cost": { "count": 12, "name": "Tablet" },
-    "name": "Nibiran Battle Axe",
-    "parent": "Bouldercut Battle Axe",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 24, "name": "Wood Shaft" },
-          { "count": 20, "name": "Nibiran Ingot" },
-          { "count": 12, "name": "Nomad Cloth" },
-          { "count": 30, "name": "Rupu Vine" }
-        ]
-      }
-    ],
-    "trade_price": 2116.6
-  },
-  {
-    "cost": { "count": 15, "name": "Tablet" },
-    "name": "Nibiran Warhammer",
-    "parent": "Wyndan Warhammer",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 22, "name": "Wood Shaft" },
-          { "count": 21, "name": "Nibiran Ingot" },
-          { "count": 12, "name": "Nomad Cloth" },
-          { "count": 28, "name": "Rupu Vine" }
-        ]
-      }
-    ],
-    "trade_price": 2217.3
-  },
-  {
-    "cost": { "count": 25, "name": "Tablet" },
-    "name": "Nibiran Decapitator",
-    "parent": "Wyndan Flame Sword",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 34, "name": "Wood Shaft" },
-          { "count": 26, "name": "Nibiran Ingot" },
-          { "count": 18, "name": "Nomad Cloth" },
-          { "count": 30, "name": "Rupu Vine" }
-        ]
-      }
-    ],
-    "trade_price": 2756.6
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "FlamingWaterNew",
-    "parent": "RaceDustNew"
-  },
-  {
-    "cost": { "count": 10, "name": "Fragment" },
-    "name": "Battleship Walker Legs Armored (1 of 2)",
-    "parent": "Battleship Walker Legs Heavy (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Fragment" },
-    "name": "Battleship Walker Legs (1 of 2)",
-    "parent": "Battleship Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Fragment" },
-    "name": "Battleship Walker Legs Heavy (1 of 2)",
-    "parent": "Battleship Walker Legs",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Fragment" },
-    "name": "Battleship Walker Wings Large (1 of 2)",
-    "parent": "Battleship Walker Wings Medium (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Fragment" },
-    "name": "Battleship Walker Wings Medium (1 of 2)",
-    "parent": "Battleship Walker Wings Small (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Fragment" },
-    "name": "Battleship Walker Wings Small (1 of 2)",
-    "parent": "Battleship Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 12, "name": "Tablet" },
-    "name": "Raptor Sky Walker Upgrade - Water - Tier 2",
-    "parent": "Raptor Sky Walker Body"
-  },
-  {
-    "cost": { "count": 18, "name": "Tablet" },
-    "name": "Raptor Sky Walker Upgrade - Water - Tier 3",
-    "parent": "Raptor Sky Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 30, "name": "Tablet" },
-    "name": "Raptor Sky Walker Upgrade - Water - Tier 4",
-    "parent": "Raptor Sky Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "Buffalo Walker Legs Armored (1 of 2)",
-    "parent": "Buffalo Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 50, "name": "Tablet" },
-    "name": "Buffalo Walker Legs (1 of 2)",
-    "parent": "Buffalo Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Buffalo Walker Upgrade - Water - Tier 2",
-    "parent": "Buffalo Walker Body"
-  },
-  {
-    "cost": { "count": 9, "name": "Tablet" },
-    "name": "Buffalo Walker Upgrade - Water - Tier 3",
-    "parent": "Buffalo Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 6, "name": "Tablet" },
-    "name": "Buffalo Walker Legs Heavy (1 of 2)",
-    "parent": "Buffalo Walker Legs Armored (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 16, "name": "Tablet" },
-    "name": "Buffalo Walker Upgrade - Water - Tier 4",
-    "parent": "Buffalo Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "name": "Buffalo Walker Wings Large (1 of 2)",
-    "parent": "Buffalo Walker Wings Large (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Buffalo Walker Wings Medium (1 of 2)",
-    "parent": "Buffalo Walker Wings Small (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "Buffalo Walker Wings Small (1 of 2)",
-    "parent": "Buffalo Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Buffalo Walker Wings Heavy (1 of 2)",
-    "parent": "Buffalo Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Buffalo Walker Wings Rugged (1 of 2)",
-    "parent": "Buffalo Walker Wings Heavy (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Buffalo Walker Wings Skirmish (1 of 2)",
-    "parent": "Buffalo Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Buffalo Walker Wings Raider (1 of 2)",
-    "parent": "Buffalo Walker Wings Skirmish (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "name": "Mollusk Walker Legs Armored (1 of 2)",
-    "parent": "Mollusk Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "name": "Mollusk Walker Legs (1 of 2)",
-    "parent": "Mollusk Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Fragment" },
-    "name": "Mollusk Walker Upgrade - Water - Tier 2",
-    "parent": "Mollusk Walker Body"
-  },
-  {
-    "cost": { "count": 2, "name": "Tablet" },
-    "name": "Mollusk Walker Upgrade - Water - Tier 3",
-    "parent": "Mollusk Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Mollusk Walker Upgrade - Water - Tier 4",
-    "parent": "Mollusk Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "Mollusk Walker Wings Medium (1 of 2)",
-    "parent": "Mollusk Walker Wings Small (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "name": "Mollusk Walker Wings Small (1 of 2)",
-    "parent": "Mollusk Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "Mollusk Walker Wings Heavy (1 of 2)",
-    "parent": "Mollusk Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "Mollusk Walker Wings Rugged (1 of 2)",
-    "parent": "Mollusk Walker Wings Heavy (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 7, "name": "Tablet" },
-    "name": "Mollusk Walker Wings Skirmish (1 of 2)",
-    "parent": "Mollusk Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 15, "name": "Tablet" },
-    "name": "Mollusk Walker Wings Raider (1 of 2)",
-    "parent": "Mollusk Walker Wings Skirmish (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 15, "name": "Tablet" },
-    "name": "Schmetterling Walker Upgrade - Water - Tier 2",
-    "parent": "Schmetterling Walker Body"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Schmetterling Walker Upgrade - Water - Tier 3",
-    "parent": "Schmetterling Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 25, "name": "Tablet" },
-    "name": "Schmetterling Walker Upgrade - Water - Tier 4",
-    "parent": "Schmetterling Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Schmetterling Walker Legs Armored (1 of 2)",
-    "parent": "Schmetterling Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 250, "name": "Tablet" },
-    "name": "Schmetterling Walker Legs (1 of 2)",
-    "parent": "Schmetterling Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 40, "name": "Tablet" },
-    "name": "Schmetterling Walker Legs Heavy (1 of 2)",
-    "parent": "Schmetterling Walker Legs Armored (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 40, "name": "Tablet" },
-    "name": "Schmetterling Walker Wings Large (1 of 2)",
-    "parent": "Schmetterling Walker Wings Medium (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 35, "name": "Tablet" },
-    "name": "Schmetterling Walker Wings Medium (1 of 2)",
-    "parent": "Schmetterling Walker Wings Small (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Schmetterling Walker Wings Small (1 of 2)",
-    "parent": "Schmetterling Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 35, "name": "Tablet" },
-    "name": "Schmetterling Walker Wings Heavy (1 of 2)",
-    "parent": "Schmetterling Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 35, "name": "Tablet" },
-    "name": "Schmetterling Walker Wings Rugged (1 of 2)",
-    "parent": "Schmetterling Walker Wings Heavy (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 40, "name": "Tablet" },
-    "name": "Schmetterling Walker Wings Skirmish (1 of 2)",
-    "parent": "Schmetterling Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 60, "name": "Tablet" },
-    "name": "Schmetterling Walker Wings Raider (1 of 2)",
-    "parent": "Schmetterling Walker Wings Skirmish (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Tusker Walker Legs Armored (1 of 2)",
-    "parent": "Tusker Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 15, "name": "Tablet" },
-    "name": "Tusker Walker Upgrade - Water - Tier 2",
-    "parent": "Tusker Walker Body"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Tusker Walker Upgrade - Water - Tier 3",
-    "parent": "Tusker Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 35, "name": "Tablet" },
-    "name": "Tusker Walker Legs Heavy (1 of 2)",
-    "parent": "Tusker Walker Legs Armored (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 25, "name": "Tablet" },
-    "name": "Tusker Walker Upgrade - Water - Tier 4",
-    "parent": "Tusker Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 25, "name": "Tablet" },
-    "name": "Tusker Walker Wings Large (1 of 2)",
-    "parent": "Tusker Walker Wings Medium (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Tusker Walker Wings Medium (1 of 2)",
-    "parent": "Tusker Walker Wings Small (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 15, "name": "Tablet" },
-    "name": "Tusker Walker Wings Small (1 of 2)",
-    "parent": "Tusker Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Tusker Walker Wings Heavy (1 of 2)",
-    "parent": "Tusker Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Tusker Walker Wings Rugged (1 of 2)",
-    "parent": "Tusker Walker Wings Heavy (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 25, "name": "Tablet" },
-    "name": "Tusker Walker Wings Skirmish (1 of 2)",
-    "parent": "Tusker Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 40, "name": "Tablet" },
-    "name": "Tusker Walker Wings Raider (1 of 2)",
-    "parent": "Tusker Walker Wings Skirmish (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "name": "Proxy Walker Legs Armored (1 of 2)",
-    "parent": "Proxy Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 100, "name": "Tablet" },
-    "name": "Proxy Walker Legs (1 of 2)",
-    "parent": "Proxy Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "Proxy Walker Legs Heavy (1 of 2)",
-    "parent": "Proxy Walker Legs Armored (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 16, "name": "Fragment" },
-    "name": "Dinghy Walker Upgrade - Water - Tier 2",
-    "parent": "Dinghy Walker Body"
-  },
-  {
-    "cost": { "count": 2, "name": "Tablet" },
-    "name": "Dinghy Walker Upgrade - Water - Tier 3",
-    "parent": "Dinghy Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 4, "name": "Tablet" },
-    "name": "Dinghy Walker Upgrade - Water - Tier 4",
-    "parent": "Dinghy Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 10, "name": "Fragment" },
-    "name": "Dinghy Walker Legs Armored (1 of 2)",
-    "parent": "Dinghy Walker Legs Heavy (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Fragment" },
-    "name": "Dinghy Walker Legs (1 of 2)",
-    "parent": "Dinghy Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "name": "Dinghy Walker Legs Heavy (1 of 2)",
-    "parent": "Dinghy Walker Legs",
-    "category": "WalkerParts"
-  },
-  {
-    "name": "Dinghy Walker Wings Large (1 of 2)",
-    "parent": "Dinghy Walker Wings Medium (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "name": "Dinghy Walker Wings Medium (1 of 2)",
-    "parent": "Dinghy Walker Wings Small (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 40, "name": "Fragment" },
-    "name": "Dinghy Walker Wings Small (1 of 2)",
-    "parent": "Dinghy Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 60, "name": "Fragment" },
-    "name": "Toboggan Walker Upgrade - Water - Tier 2",
-    "parent": "Toboggan Walker Body"
-  },
-  {
-    "cost": { "count": 2, "name": "Tablet" },
-    "name": "Toboggan Walker Upgrade - Water - Tier 3",
-    "parent": "Toboggan Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Toboggan Walker Upgrade - Water - Tier 4",
-    "parent": "Toboggan Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "name": "Toboggan Walker Legs Armored (1 of 2)",
-    "parent": "Toboggan Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "name": "Toboggan Walker Legs (1 of 2)",
-    "parent": "Toboggan Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Toboggan Walker Legs Heavy (1 of 2)",
-    "parent": "Toboggan Walker Legs Armored (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Toboggan Walker Wings Large (1 of 2)",
-    "parent": "Toboggan Walker Wings Medium (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 2, "name": "Tablet" },
-    "name": "Toboggan Walker Wings Medium (1 of 2)",
-    "parent": "Toboggan Walker Wings Small (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "name": "Toboggan Walker Wings Small (1 of 2)",
-    "parent": "Toboggan Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 2, "name": "Tablet" },
-    "name": "Toboggan Walker Wings Heavy (1 of 2)",
-    "parent": "Toboggan Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 2, "name": "Tablet" },
-    "name": "Toboggan Walker Wings Rugged (1 of 2)",
-    "parent": "Toboggan Walker Wings Heavy (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Toboggan Walker Wings Skirmish (1 of 2)",
-    "parent": "Toboggan Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 17, "name": "Tablet" },
-    "name": "Toboggan Walker Wings Raider (1 of 2)",
-    "parent": "Toboggan Walker Wings Skirmish (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "Falco Walker Legs Armored (1 of 2)",
-    "parent": "Falco Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 50, "name": "Tablet" },
-    "name": "Falco Walker Legs (1 of 2)",
-    "parent": "Falco Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 12, "name": "Tablet" },
-    "name": "Falco Walker Upgrade - Water - Tier 2",
-    "parent": "Falco Walker Body"
-  },
-  {
-    "cost": { "count": 18, "name": "Tablet" },
-    "name": "Falco Walker Upgrade - Water - Tier 3",
-    "parent": "Falco Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 6, "name": "Tablet" },
-    "name": "Falco Walker Legs Heavy (1 of 2)",
-    "parent": "Falco Walker Legs Armored (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 30, "name": "Tablet" },
-    "name": "Falco Walker Upgrade - Water - Tier 4",
-    "parent": "Falco Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 15, "name": "Tablet" },
-    "name": "Falco Walker Wings Large (1 of 2)",
-    "parent": "Falco Walker Wings Medium (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Falco Walker Wings Medium (1 of 2)",
-    "parent": "Falco Walker Wings Small (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Falco Walker Wings Small (1 of 2)",
-    "parent": "Falco Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Falco Walker Wings Heavy (1 of 2)",
-    "parent": "Falco Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Falco Walker Wings Rugged (1 of 2)",
-    "parent": "Falco Walker Wings Heavy (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 15, "name": "Tablet" },
-    "name": "Falco Walker Wings Skirmish (1 of 2)",
-    "parent": "Falco Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 25, "name": "Tablet" },
-    "name": "Falco Walker Wings Raider (1 of 2)",
-    "parent": "Falco Walker Wings Skirmish (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Fragment" },
-    "name": "Firefly Walker Upgrade - Water - Tier 2",
-    "parent": "Firefly Walker Body"
-  },
-  {
-    "cost": { "count": 2, "name": "Tablet" },
-    "name": "Firefly Walker Upgrade - Water - Tier 4",
-    "parent": "Firefly Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 6, "name": "Fragment" },
-    "name": "Firefly Walker Wings (1 of 2)",
-    "parent": "Firefly Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 16, "name": "Fragment" },
-    "name": "Balang Walker Upgrade - Water - Tier 2",
-    "parent": "Balang Walker Body"
-  },
-  {
-    "cost": { "count": 2, "name": "Tablet" },
-    "name": "Balang Walker Upgrade - Water - Tier 3",
-    "parent": "Balang Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 4, "name": "Tablet" },
-    "name": "Balang Walker Upgrade - Water - Tier 4",
-    "parent": "Balang Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 10, "name": "Fragment" },
-    "name": "Balang Walker Legs (1 of 2)",
-    "parent": "Balang Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 40, "name": "Fragment" },
-    "name": "Balang Walker Wings Small (1 of 2)",
-    "parent": "Balang Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Fragment" },
-    "name": "Balang Walker Body",
-    "parent": "Firefly Walker Body"
-  },
-  {
-    "cost": { "count": 2, "name": "Tablet" },
-    "name": "Silur Walker Legs Armored (1 of 2)",
-    "parent": "Silur Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "name": "Silur Walker Legs (1 of 2)",
-    "parent": "Silur Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 2, "name": "Tablet" },
-    "name": "Silur Walker Upgrade - Water - Tier 2",
-    "parent": "Silur Walker Body"
-  },
-  {
-    "cost": { "count": 4, "name": "Tablet" },
-    "name": "Silur Walker Upgrade - Water - Tier 3",
-    "parent": "Silur Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 4, "name": "Tablet" },
-    "name": "Silur Walker Legs Heavy (1 of 2)",
-    "parent": "Silur Walker Legs Armored (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 7, "name": "Tablet" },
-    "name": "Silur Walker Upgrade - Water - Tier 4",
-    "parent": "Silur Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 4, "name": "Tablet" },
-    "name": "Silur Walker Body",
-    "parent": "Balang Walker Body"
-  },
-  {
-    "cost": { "count": 15, "name": "Tablet" },
-    "name": "Domus Walker Upgrade - Water - Tier 2",
-    "parent": "Domus Walker Body"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Domus Walker Upgrade - Water - Tier 3",
-    "parent": "Domus Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 25, "name": "Tablet" },
-    "name": "Domus Walker Upgrade - Water - Tier 4",
-    "parent": "Domus Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Domus Walker Legs Armored (1 of 2)",
-    "parent": "Domus Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 250, "name": "Tablet" },
-    "name": "Domus Walker Legs (1 of 2)",
-    "parent": "Domus Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 40, "name": "Tablet" },
-    "name": "Domus Walker Legs Heavy (1 of 2)",
-    "parent": "Domus Walker Legs Armored (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 40, "name": "Tablet" },
-    "name": "Domus Walker Wings Large (1 of 2)",
-    "parent": "Domus Walker Wings Medium (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 35, "name": "Tablet" },
-    "name": "Domus Walker Wings Medium (1 of 2)",
-    "parent": "Domus Walker Wings Small (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Domus Walker Wings Small (1 of 2)",
-    "parent": "Domus Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 35, "name": "Tablet" },
-    "name": "Domus Walker Wings Heavy (1 of 2)",
-    "parent": "Domus Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 35, "name": "Tablet" },
-    "name": "Domus Walker Wings Rugged (1 of 2)",
-    "parent": "Domus Walker Wings Heavy (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 40, "name": "Tablet" },
-    "name": "Domus Walker Wings Skirmish (1 of 2)",
-    "parent": "Domus Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 70, "name": "Tablet" },
-    "name": "Domus Walker Wings Raider (1 of 2)",
-    "parent": "Domus Walker Wings Skirmish (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 12, "name": "Tablet" },
-    "name": "Panda Walker Upgrade - Water - Tier 2",
-    "parent": "Panda Walker Body"
-  },
-  {
-    "cost": { "count": 18, "name": "Tablet" },
-    "name": "Panda Walker Upgrade - Water - Tier 3",
-    "parent": "Panda Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 30, "name": "Tablet" },
-    "name": "Panda Walker Upgrade - Water - Tier 4",
-    "parent": "Panda Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "Panda Walker Legs Armored (1 of 2)",
-    "parent": "Panda Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 50, "name": "Tablet" },
-    "name": "Panda Walker Legs (1 of 2)",
-    "parent": "Panda Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 6, "name": "Tablet" },
-    "name": "Panda Walker Legs Heavy (1 of 2)",
-    "parent": "Panda Walker Legs Armored (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 15, "name": "Tablet" },
-    "name": "Panda Walker Wings Large (1 of 2)",
-    "parent": "Panda Walker Wings Medium (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Panda Walker Wings Medium (1 of 2)",
-    "parent": "Panda Walker Wings Small (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Panda Walker Wings Small (1 of 2)",
-    "parent": "Panda Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Panda Walker Wings Heavy (1 of 2)",
-    "parent": "Panda Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Panda Walker Wings Rugged (1 of 2)",
-    "parent": "Panda Walker Wings Heavy (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 15, "name": "Tablet" },
-    "name": "Panda Walker Wings Skirmish (1 of 2)",
-    "parent": "Panda Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 25, "name": "Tablet" },
-    "name": "Panda Walker Wings Raider (1 of 2)",
-    "parent": "Panda Walker Wings Skirmish (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 12, "name": "Tablet" },
-    "name": "Camelop  Walker Upgrade - Water - Tier 2",
-    "parent": "Camelop  Walker Body"
-  },
-  {
-    "cost": { "count": 18, "name": "Tablet" },
-    "name": "Camelop  Walker Upgrade - Water - Tier 3",
-    "parent": "Camelop  Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 30, "name": "Tablet" },
-    "name": "Camelop  Walker Upgrade - Water - Tier 4",
-    "parent": "Camelop  Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "SawbladeTool_Tier2",
-    "parent": "Sawblade Tool"
-  },
-  {
-    "cost": { "count": 30, "name": "Tablet" },
-    "name": "Titan Walker Upgrade - Water - Tier 2",
-    "parent": "Titan Walker Body"
-  },
-  {
-    "cost": { "count": 50, "name": "Tablet" },
-    "name": "Titan Walker Upgrade - Water - Tier 3",
-    "parent": "Titan Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 100, "name": "Tablet" },
-    "name": "Titan Walker Upgrade - Water - Tier 4",
-    "parent": "Titan Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Titan Walker Legs Armored (1 of 2)",
-    "parent": "Titan Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 250, "name": "Tablet" },
-    "name": "Titan Walker Legs (1 of 2)",
-    "parent": "Titan Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Titan Walker Legs Heavy (1 of 2)",
-    "parent": "Titan Walker Legs Armored (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 30, "name": "Tablet" },
-    "name": "Titan Walker Wings Large (1 of 2)",
-    "parent": "Titan Walker Wings Medium (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Titan Walker Wings Medium (1 of 2)",
-    "parent": "Titan Walker Wings Small (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Titan Walker Wings Small (1 of 2)",
-    "parent": "Titan Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Titan Walker Wings Heavy (1 of 2)",
-    "parent": "Titan Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Titan Walker Wings Rugged (1 of 2)",
-    "parent": "Titan Walker Wings Heavy (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 30, "name": "Tablet" },
-    "name": "Titan Walker Wings Skirmish (1 of 2)",
-    "parent": "Titan Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 50, "name": "Tablet" },
-    "name": "Titan Walker Wings Raider (1 of 2)",
-    "parent": "Titan Walker Wings Skirmish (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 25, "name": "Fragment" },
-    "name": "Spider Walker Legs Armored (1 of 2)",
-    "parent": "Nomad Spider Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Fragment" },
-    "name": "Spider Walker Legs (1 of 2)",
-    "parent": "Spider Walker With Ballista Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Fragment" },
-    "name": "Spider Walker Upgrade - Water - Tier 2",
-    "parent": "Nomad Spider Walker Body"
-  },
-  {
-    "cost": { "count": 2, "name": "Tablet" },
-    "name": "Spider Walker Upgrade - Water - Tier 4",
-    "parent": "Spider Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 10, "name": "Fragment" },
-    "name": "Spider Walker With Ballista Body",
-    "parent": "Nomad Spider Walker Body"
-  },
-  {
-    "name": "Stiletto Walker Legs Armored (1 of 2)",
-    "parent": "Stiletto Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "name": "Stiletto Walker Legs (1 of 2)",
-    "parent": "Stiletto Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Fragment" },
-    "name": "Stiletto Walker Upgrade - Water - Tier 2",
-    "parent": "Stiletto Walker Body"
-  },
-  {
-    "cost": { "count": 2, "name": "Tablet" },
-    "name": "Stiletto Walker Upgrade - Water - Tier 3",
-    "parent": "Stiletto Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Stiletto Walker Upgrade - Water - Tier 4",
-    "parent": "Stiletto Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "Ammo",
@@ -1907,6 +615,67 @@
     "trade_price": 1
   },
   {
+    "cost": { "count": 8, "name": "Tablet" },
+    "name": "Iron Studded Boots",
+    "parent": "Iron Studded Armor",
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 14, "name": "Rupu Pelt" },
+          { "count": 10, "name": "Insects" },
+          { "count": 2, "name": "Iron Ingot" },
+          { "count": 14, "name": "Nomad Cloth" }
+        ]
+      }
+    ],
+    "trade_price": 75.8
+  },
+  {
+    "cost": { "count": 50, "name": "Fragment" },
+    "name": "Flare - White",
+    "parent": "Equipment"
+  },
+  {
+    "cost": { "count": 8, "name": "Tablet" },
+    "name": "Iron Studded Gauntlets",
+    "parent": "Iron Studded Armor",
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 10, "name": "Rupu Pelt" },
+          { "count": 7, "name": "Insects" },
+          { "count": 2, "name": "Iron Ingot" },
+          { "count": 5, "name": "Nomad Cloth" }
+        ]
+      }
+    ],
+    "trade_price": 41.1
+  },
+  {
+    "cost": { "count": 2, "name": "Fragment" },
+    "name": "LightLeatherArmor",
+    "parent": "FiberclothArmor"
+  },
+  {
+    "cost": { "count": 25, "name": "Tablet" },
+    "name": "Iron Studded Armor",
+    "parent": "Baskwood Armor",
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 35, "name": "Rupu Pelt" },
+          { "count": 15, "name": "Insects" },
+          { "count": 5, "name": "Iron Ingot" },
+          { "count": 10, "name": "Nomad Cloth" }
+        ]
+      }
+    ],
+    "trade_price": 94
+  },
+  {
     "category": "Armors",
     "cost": { "count": 25, "name": "Tablet" },
     "crafting": [
@@ -2337,6 +1106,55 @@
     "trade_price": 13.2
   },
   {
+    "cost": { "count": 25, "name": "Tablet" },
+    "name": "Split Durable Water Sack",
+    "parent": "Durable Water Sack",
+    "category": "Equipment",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 12, "name": "Iron Ingot" },
+          { "count": 35, "name": "Palm Leaves" },
+          { "count": 112, "name": "Fiber" },
+          { "count": 15, "name": "Beeswax" }
+        ]
+      }
+    ],
+    "trade_price": 143.4
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Water Circulator",
+    "parent": "Durable Water Sack",
+    "category": "Equipment",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 38, "name": "Worm Silk" },
+          { "count": 5, "name": "Iron Ingot" },
+          { "count": 25, "name": "Rope" }
+        ]
+      }
+    ],
+    "trade_price": 679.5
+  },
+  {
+    "cost": { "count": 8, "name": "Tablet" },
+    "name": "Master Pickaxe",
+    "parent": "Advanced Pickaxe",
+    "category": "Tools",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 3, "name": "Iron Ingot" },
+          { "count": 28, "name": "Wood Shaft" },
+          { "count": 1, "name": "Nomad Cloth" }
+        ]
+      }
+    ],
+    "trade_price": 38.7
+  },
+  {
     "category": "Tools",
     "crafting": [
       {
@@ -2350,6 +1168,1333 @@
     "name": "Advanced Pickaxe",
     "parent": "Simple Pickaxe",
     "trade_price": 98.2
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Bouldercut Hand Axe",
+    "parent": "Advanced Hatchet",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 12, "name": "Iron Ore" },
+          { "count": 6, "name": "Wood Shaft" },
+          { "count": 5, "name": "Worm Silk" },
+          { "count": 11, "name": "Rupu Vine" }
+        ]
+      }
+    ],
+    "trade_price": 234.4
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Wyndan Hammer",
+    "parent": "Short Ceramic Hoofmace",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 10, "name": "Worm Silk" },
+          { "count": 6, "name": "Wood Shaft" },
+          { "count": 12, "name": "Iron Ore" },
+          { "count": 10, "name": "Rupu Vine" }
+        ]
+      }
+    ],
+    "trade_price": 316.4
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Wyndan Sabre",
+    "parent": "Short Malletblade",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 14, "name": "Iron Ore" },
+          { "count": 8, "name": "Wood Shaft" },
+          { "count": 5, "name": "Worm Silk" },
+          { "count": 12, "name": "Rupu Vine" }
+        ]
+      }
+    ],
+    "trade_price": 259.7
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Nibiran Hand Axe",
+    "parent": "Bouldercut Hand Axe",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 30, "name": "Rupu Vine" },
+          { "count": 22, "name": "Wood Shaft" },
+          { "count": 16, "name": "Nibiran Ingot" },
+          { "count": 5, "name": "Nomad Cloth" }
+        ]
+      }
+    ],
+    "trade_price": 1681.3
+  },
+  {
+    "cost": { "count": 12, "name": "Tablet" },
+    "name": "Nibiran Curved Dagger",
+    "parent": "Wyndan Sabre",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 40, "name": "Rupu Vine" },
+          { "count": 18, "name": "Wood Shaft" },
+          { "count": 18, "name": "Nibiran Ingot" },
+          { "count": 8, "name": "Nomad Cloth" }
+        ]
+      }
+    ],
+    "trade_price": 1900.2
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Nibiran Hammer",
+    "parent": "Wyndan Hammer",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 7, "name": "Nomad Cloth" },
+          { "count": 20, "name": "Wood Shaft" },
+          { "count": 14, "name": "Nibiran Ingot" },
+          { "count": 10, "name": "Bone Glue" }
+        ]
+      }
+    ],
+    "trade_price": 1486.5
+  },
+  {
+    "cost": { "count": 8, "name": "Tablet" },
+    "name": "Wyndanblade Quarterstaff",
+    "parent": "Paddleblade Quarterstaff",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 17, "name": "Wood Shaft" },
+          { "count": 12, "name": "Iron Ore" },
+          { "count": 6, "name": "Rupu Pelt" }
+        ]
+      }
+    ],
+    "trade_price": 152
+  },
+  {
+    "cost": { "count": 22, "name": "Tablet" },
+    "name": "Ironblade Quarterstaff",
+    "parent": "Wyndanblade Quarterstaff",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 30, "name": "Wood Shaft" },
+          { "count": 14, "name": "Nibiran Ingot" },
+          { "count": 10, "name": "Nomad Cloth" },
+          { "count": 12, "name": "Bone Glue" }
+        ]
+      }
+    ],
+    "trade_price": 1504.8
+  },
+  {
+    "cost": { "count": 22, "name": "Tablet" },
+    "name": "Nibiran Quarterstaff",
+    "parent": "Wyndanblade Quarterstaff",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 30, "name": "Wood Shaft" },
+          { "count": 14, "name": "Nibiran Ingot" },
+          { "count": 10, "name": "Nomad Cloth" },
+          { "count": 12, "name": "Bone Glue" }
+        ]
+      }
+    ],
+    "trade_price": 1504.8
+  },
+  {
+    "cost": { "count": 7, "name": "Tablet" },
+    "name": "Bouldercut Battle Axe",
+    "parent": "Rawbone Battle Axe",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 12, "name": "Iron Ore" },
+          { "count": 6, "name": "Wood Shaft" },
+          { "count": 10, "name": "Worm Silk" },
+          { "count": 18, "name": "Rupu Vine" }
+        ]
+      }
+    ],
+    "trade_price": 320.4
+  },
+  {
+    "cost": { "count": 8, "name": "Tablet" },
+    "name": "Wyndan Warhammer",
+    "parent": "Long Ceramic Hoofmace",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 16, "name": "Iron Ore" },
+          { "count": 12, "name": "Wood Shaft" },
+          { "count": 10, "name": "Worm Silk" },
+          { "count": 12, "name": "Rupu Vine" }
+        ]
+      }
+    ],
+    "trade_price": 367.8
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Wyndan Flame Sword",
+    "parent": "Singblade",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 16, "name": "Iron Ore" },
+          { "count": 14, "name": "Wood Shaft" },
+          { "count": 8, "name": "Worm Silk" },
+          { "count": 14, "name": "Rupu Vine" }
+        ]
+      }
+    ],
+    "trade_price": 336.6
+  },
+  {
+    "cost": { "count": 12, "name": "Tablet" },
+    "name": "Nibiran Battle Axe",
+    "parent": "Bouldercut Battle Axe",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 24, "name": "Wood Shaft" },
+          { "count": 20, "name": "Nibiran Ingot" },
+          { "count": 12, "name": "Nomad Cloth" },
+          { "count": 30, "name": "Rupu Vine" }
+        ]
+      }
+    ],
+    "trade_price": 2116.6
+  },
+  {
+    "cost": { "count": 15, "name": "Tablet" },
+    "name": "Nibiran Warhammer",
+    "parent": "Wyndan Warhammer",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 22, "name": "Wood Shaft" },
+          { "count": 21, "name": "Nibiran Ingot" },
+          { "count": 12, "name": "Nomad Cloth" },
+          { "count": 28, "name": "Rupu Vine" }
+        ]
+      }
+    ],
+    "trade_price": 2217.3
+  },
+  {
+    "cost": { "count": 25, "name": "Tablet" },
+    "name": "Nibiran Decapitator",
+    "parent": "Wyndan Flame Sword",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 34, "name": "Wood Shaft" },
+          { "count": 26, "name": "Nibiran Ingot" },
+          { "count": 18, "name": "Nomad Cloth" },
+          { "count": 30, "name": "Rupu Vine" }
+        ]
+      }
+    ],
+    "trade_price": 2756.6
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "FlamingWaterNew",
+    "parent": "RaceDustNew"
+  },
+  {
+    "cost": { "count": 10, "name": "Fragment" },
+    "name": "Battleship Walker Legs Armored (1 of 2)",
+    "parent": "Battleship Walker Legs Heavy (1 of 2)"
+  },
+  {
+    "cost": { "count": 10, "name": "Fragment" },
+    "name": "Battleship Walker Legs (1 of 2)",
+    "parent": "Battleship Walker Body"
+  },
+  {
+    "cost": { "count": 10, "name": "Fragment" },
+    "name": "Battleship Walker Legs Heavy (1 of 2)",
+    "parent": "Battleship Walker Legs",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Fragment" },
+    "name": "Battleship Walker Wings Large (1 of 2)",
+    "parent": "Battleship Walker Wings Medium (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Fragment" },
+    "name": "Battleship Walker Wings Medium (1 of 2)",
+    "parent": "Battleship Walker Wings Small (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Fragment" },
+    "name": "Battleship Walker Wings Small (1 of 2)",
+    "parent": "Battleship Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 12, "name": "Tablet" },
+    "name": "Raptor Sky Walker Upgrade - Water - Tier 2",
+    "parent": "Raptor Sky Walker Body"
+  },
+  {
+    "cost": { "count": 18, "name": "Tablet" },
+    "name": "Raptor Sky Walker Upgrade - Water - Tier 3",
+    "parent": "Raptor Sky Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 30, "name": "Tablet" },
+    "name": "Raptor Sky Walker Upgrade - Water - Tier 4",
+    "parent": "Raptor Sky Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "Buffalo Walker Legs Armored (1 of 2)",
+    "parent": "Buffalo Walker Body"
+  },
+  {
+    "cost": { "count": 50, "name": "Tablet" },
+    "name": "Buffalo Walker Legs (1 of 2)",
+    "parent": "Buffalo Walker Body"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Buffalo Walker Upgrade - Water - Tier 2",
+    "parent": "Buffalo Walker Body"
+  },
+  {
+    "cost": { "count": 9, "name": "Tablet" },
+    "name": "Buffalo Walker Upgrade - Water - Tier 3",
+    "parent": "Buffalo Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 6, "name": "Tablet" },
+    "name": "Buffalo Walker Legs Heavy (1 of 2)",
+    "parent": "Buffalo Walker Legs Armored (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 16, "name": "Tablet" },
+    "name": "Buffalo Walker Upgrade - Water - Tier 4",
+    "parent": "Buffalo Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Buffalo Walker Wings Large (1 of 2)",
+    "parent": "Buffalo Walker Wings Large (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Buffalo Walker Wings Medium (1 of 2)",
+    "parent": "Buffalo Walker Wings Small (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "Buffalo Walker Wings Small (1 of 2)",
+    "parent": "Buffalo Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Buffalo Walker Wings Heavy (1 of 2)",
+    "parent": "Buffalo Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Buffalo Walker Wings Rugged (1 of 2)",
+    "parent": "Buffalo Walker Wings Heavy (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Buffalo Walker Wings Skirmish (1 of 2)",
+    "parent": "Buffalo Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Buffalo Walker Wings Raider (1 of 2)",
+    "parent": "Buffalo Walker Wings Skirmish (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "name": "Mollusk Walker Legs Armored (1 of 2)",
+    "parent": "Mollusk Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 20, "name": "Fragment" },
+    "name": "Mollusk Walker Upgrade - Water - Tier 2",
+    "parent": "Mollusk Walker Body"
+  },
+  {
+    "cost": { "count": 2, "name": "Tablet" },
+    "name": "Mollusk Walker Upgrade - Water - Tier 3",
+    "parent": "Mollusk Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Mollusk Walker Upgrade - Water - Tier 4",
+    "parent": "Mollusk Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "Mollusk Walker Wings Medium (1 of 2)",
+    "parent": "Mollusk Walker Wings Small (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "name": "Mollusk Walker Wings Small (1 of 2)",
+    "parent": "Mollusk Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "Mollusk Walker Wings Heavy (1 of 2)",
+    "parent": "Mollusk Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "Mollusk Walker Wings Rugged (1 of 2)",
+    "parent": "Mollusk Walker Wings Heavy (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 7, "name": "Tablet" },
+    "name": "Mollusk Walker Wings Skirmish (1 of 2)",
+    "parent": "Mollusk Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 15, "name": "Tablet" },
+    "name": "Mollusk Walker Wings Raider (1 of 2)",
+    "parent": "Mollusk Walker Wings Skirmish (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 15, "name": "Tablet" },
+    "name": "Schmetterling Walker Upgrade - Water - Tier 2",
+    "parent": "Schmetterling Walker Body"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Schmetterling Walker Upgrade - Water - Tier 3",
+    "parent": "Schmetterling Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 25, "name": "Tablet" },
+    "name": "Schmetterling Walker Upgrade - Water - Tier 4",
+    "parent": "Schmetterling Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Schmetterling Walker Legs Armored (1 of 2)",
+    "parent": "Schmetterling Walker Body"
+  },
+  {
+    "cost": { "count": 250, "name": "Tablet" },
+    "name": "Schmetterling Walker Legs (1 of 2)",
+    "parent": "Schmetterling Walker Body"
+  },
+  {
+    "cost": { "count": 40, "name": "Tablet" },
+    "name": "Schmetterling Walker Legs Heavy (1 of 2)",
+    "parent": "Schmetterling Walker Legs Armored (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 40, "name": "Tablet" },
+    "name": "Schmetterling Walker Wings Large (1 of 2)",
+    "parent": "Schmetterling Walker Wings Medium (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 35, "name": "Tablet" },
+    "name": "Schmetterling Walker Wings Medium (1 of 2)",
+    "parent": "Schmetterling Walker Wings Small (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Schmetterling Walker Wings Small (1 of 2)",
+    "parent": "Schmetterling Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 35, "name": "Tablet" },
+    "name": "Schmetterling Walker Wings Heavy (1 of 2)",
+    "parent": "Schmetterling Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 35, "name": "Tablet" },
+    "name": "Schmetterling Walker Wings Rugged (1 of 2)",
+    "parent": "Schmetterling Walker Wings Heavy (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 40, "name": "Tablet" },
+    "name": "Schmetterling Walker Wings Skirmish (1 of 2)",
+    "parent": "Schmetterling Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 60, "name": "Tablet" },
+    "name": "Schmetterling Walker Wings Raider (1 of 2)",
+    "parent": "Schmetterling Walker Wings Skirmish (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Tusker Walker Legs Armored (1 of 2)",
+    "parent": "Tusker Walker Body"
+  },
+  {
+    "cost": { "count": 15, "name": "Tablet" },
+    "name": "Tusker Walker Upgrade - Water - Tier 2",
+    "parent": "Tusker Walker Body"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Tusker Walker Upgrade - Water - Tier 3",
+    "parent": "Tusker Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 35, "name": "Tablet" },
+    "name": "Tusker Walker Legs Heavy (1 of 2)",
+    "parent": "Tusker Walker Legs Armored (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 25, "name": "Tablet" },
+    "name": "Tusker Walker Upgrade - Water - Tier 4",
+    "parent": "Tusker Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 25, "name": "Tablet" },
+    "name": "Tusker Walker Wings Large (1 of 2)",
+    "parent": "Tusker Walker Wings Medium (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Tusker Walker Wings Medium (1 of 2)",
+    "parent": "Tusker Walker Wings Small (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 15, "name": "Tablet" },
+    "name": "Tusker Walker Wings Small (1 of 2)",
+    "parent": "Tusker Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Tusker Walker Wings Heavy (1 of 2)",
+    "parent": "Tusker Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Tusker Walker Wings Rugged (1 of 2)",
+    "parent": "Tusker Walker Wings Heavy (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 25, "name": "Tablet" },
+    "name": "Tusker Walker Wings Skirmish (1 of 2)",
+    "parent": "Tusker Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 40, "name": "Tablet" },
+    "name": "Tusker Walker Wings Raider (1 of 2)",
+    "parent": "Tusker Walker Wings Skirmish (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 100, "name": "Tablet" },
+    "name": "Proxy Walker Legs (1 of 2)",
+    "parent": "Proxy Walker Body"
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "Proxy Walker Legs Heavy (1 of 2)",
+    "parent": "Proxy Walker Legs Armored (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 16, "name": "Fragment" },
+    "name": "Dinghy Walker Upgrade - Water - Tier 2",
+    "parent": "Dinghy Walker Body"
+  },
+  {
+    "cost": { "count": 2, "name": "Tablet" },
+    "name": "Dinghy Walker Upgrade - Water - Tier 3",
+    "parent": "Dinghy Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 4, "name": "Tablet" },
+    "name": "Dinghy Walker Upgrade - Water - Tier 4",
+    "parent": "Dinghy Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 10, "name": "Fragment" },
+    "name": "Dinghy Walker Legs Armored (1 of 2)",
+    "parent": "Dinghy Walker Legs Heavy (1 of 2)"
+  },
+  {
+    "cost": { "count": 10, "name": "Fragment" },
+    "name": "Dinghy Walker Legs (1 of 2)",
+    "parent": "Dinghy Walker Body"
+  },
+  {
+    "name": "Dinghy Walker Legs Heavy (1 of 2)",
+    "parent": "Dinghy Walker Legs",
+    "category": "WalkerParts"
+  },
+  {
+    "name": "Dinghy Walker Wings Large (1 of 2)",
+    "parent": "Dinghy Walker Wings Medium (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "name": "Dinghy Walker Wings Medium (1 of 2)",
+    "parent": "Dinghy Walker Wings Small (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 40, "name": "Fragment" },
+    "name": "Dinghy Walker Wings Small (1 of 2)",
+    "parent": "Dinghy Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 60, "name": "Fragment" },
+    "name": "Toboggan Walker Upgrade - Water - Tier 2",
+    "parent": "Toboggan Walker Body"
+  },
+  {
+    "cost": { "count": 2, "name": "Tablet" },
+    "name": "Toboggan Walker Upgrade - Water - Tier 3",
+    "parent": "Toboggan Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Toboggan Walker Upgrade - Water - Tier 4",
+    "parent": "Toboggan Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Toboggan Walker Legs Heavy (1 of 2)",
+    "parent": "Toboggan Walker Legs Armored (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Toboggan Walker Wings Large (1 of 2)",
+    "parent": "Toboggan Walker Wings Medium (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 2, "name": "Tablet" },
+    "name": "Toboggan Walker Wings Medium (1 of 2)",
+    "parent": "Toboggan Walker Wings Small (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "name": "Toboggan Walker Wings Small (1 of 2)",
+    "parent": "Toboggan Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 2, "name": "Tablet" },
+    "name": "Toboggan Walker Wings Heavy (1 of 2)",
+    "parent": "Toboggan Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 2, "name": "Tablet" },
+    "name": "Toboggan Walker Wings Rugged (1 of 2)",
+    "parent": "Toboggan Walker Wings Heavy (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Toboggan Walker Wings Skirmish (1 of 2)",
+    "parent": "Toboggan Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 17, "name": "Tablet" },
+    "name": "Toboggan Walker Wings Raider (1 of 2)",
+    "parent": "Toboggan Walker Wings Skirmish (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "Falco Walker Legs Armored (1 of 2)",
+    "parent": "Falco Walker Body"
+  },
+  {
+    "cost": { "count": 50, "name": "Tablet" },
+    "name": "Falco Walker Legs (1 of 2)",
+    "parent": "Falco Walker Body"
+  },
+  {
+    "cost": { "count": 12, "name": "Tablet" },
+    "name": "Falco Walker Upgrade - Water - Tier 2",
+    "parent": "Falco Walker Body"
+  },
+  {
+    "cost": { "count": 18, "name": "Tablet" },
+    "name": "Falco Walker Upgrade - Water - Tier 3",
+    "parent": "Falco Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 6, "name": "Tablet" },
+    "name": "Falco Walker Legs Heavy (1 of 2)",
+    "parent": "Falco Walker Legs Armored (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 30, "name": "Tablet" },
+    "name": "Falco Walker Upgrade - Water - Tier 4",
+    "parent": "Falco Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 15, "name": "Tablet" },
+    "name": "Falco Walker Wings Large (1 of 2)",
+    "parent": "Falco Walker Wings Medium (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Falco Walker Wings Medium (1 of 2)",
+    "parent": "Falco Walker Wings Small (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Falco Walker Wings Small (1 of 2)",
+    "parent": "Falco Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Falco Walker Wings Heavy (1 of 2)",
+    "parent": "Falco Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Falco Walker Wings Rugged (1 of 2)",
+    "parent": "Falco Walker Wings Heavy (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 15, "name": "Tablet" },
+    "name": "Falco Walker Wings Skirmish (1 of 2)",
+    "parent": "Falco Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 25, "name": "Tablet" },
+    "name": "Falco Walker Wings Raider (1 of 2)",
+    "parent": "Falco Walker Wings Skirmish (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Fragment" },
+    "name": "Firefly Walker Upgrade - Water - Tier 2",
+    "parent": "Firefly Walker Body"
+  },
+  {
+    "cost": { "count": 2, "name": "Tablet" },
+    "name": "Firefly Walker Upgrade - Water - Tier 4",
+    "parent": "Firefly Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 6, "name": "Fragment" },
+    "name": "Firefly Walker Wings (1 of 2)",
+    "parent": "Firefly Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 16, "name": "Fragment" },
+    "name": "Balang Walker Upgrade - Water - Tier 2",
+    "parent": "Balang Walker Body"
+  },
+  {
+    "cost": { "count": 2, "name": "Tablet" },
+    "name": "Balang Walker Upgrade - Water - Tier 3",
+    "parent": "Balang Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 4, "name": "Tablet" },
+    "name": "Balang Walker Upgrade - Water - Tier 4",
+    "parent": "Balang Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 10, "name": "Fragment" },
+    "name": "Balang Walker Legs (1 of 2)",
+    "parent": "Balang Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 40, "name": "Fragment" },
+    "name": "Balang Walker Wings Small (1 of 2)",
+    "parent": "Balang Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Fragment" },
+    "name": "Balang Walker Body Body",
+    "parent": "Firefly Walker Body"
+  },
+  {
+    "cost": { "count": 2, "name": "Tablet" },
+    "name": "Silur Walker Legs Armored (1 of 2)",
+    "parent": "Silur Walker Body"
+  },
+  {
+    "cost": { "count": 2, "name": "Tablet" },
+    "name": "Silur Walker Upgrade - Water - Tier 2",
+    "parent": "Silur Walker Body"
+  },
+  {
+    "cost": { "count": 4, "name": "Tablet" },
+    "name": "Silur Walker Upgrade - Water - Tier 3",
+    "parent": "Silur Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 4, "name": "Tablet" },
+    "name": "Silur Walker Legs Heavy (1 of 2)",
+    "parent": "Silur Walker Legs Armored (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 7, "name": "Tablet" },
+    "name": "Silur Walker Upgrade - Water - Tier 4",
+    "parent": "Silur Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 4, "name": "Tablet" },
+    "name": "Silur Walker Body Body",
+    "parent": "Balang Walker Body"
+  },
+  {
+    "cost": { "count": 15, "name": "Tablet" },
+    "name": "Domus Walker Upgrade - Water - Tier 2",
+    "parent": "Domus Walker Body"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Domus Walker Upgrade - Water - Tier 3",
+    "parent": "Domus Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 25, "name": "Tablet" },
+    "name": "Domus Walker Upgrade - Water - Tier 4",
+    "parent": "Domus Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Domus Walker Legs Armored (1 of 2)",
+    "parent": "Domus Walker Body"
+  },
+  {
+    "cost": { "count": 250, "name": "Tablet" },
+    "name": "Domus Walker Legs (1 of 2)",
+    "parent": "Domus Walker Body"
+  },
+  {
+    "cost": { "count": 40, "name": "Tablet" },
+    "name": "Domus Walker Legs Heavy (1 of 2)",
+    "parent": "Domus Walker Legs Armored (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 40, "name": "Tablet" },
+    "name": "Domus Walker Wings Large (1 of 2)",
+    "parent": "Domus Walker Wings Medium (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 35, "name": "Tablet" },
+    "name": "Domus Walker Wings Medium (1 of 2)",
+    "parent": "Domus Walker Wings Small (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Domus Walker Wings Small (1 of 2)",
+    "parent": "Domus Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 35, "name": "Tablet" },
+    "name": "Domus Walker Wings Heavy (1 of 2)",
+    "parent": "Domus Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 35, "name": "Tablet" },
+    "name": "Domus Walker Wings Rugged (1 of 2)",
+    "parent": "Domus Walker Wings Heavy (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 40, "name": "Tablet" },
+    "name": "Domus Walker Wings Skirmish (1 of 2)",
+    "parent": "Domus Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 70, "name": "Tablet" },
+    "name": "Domus Walker Wings Raider (1 of 2)",
+    "parent": "Domus Walker Wings Skirmish (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 12, "name": "Tablet" },
+    "name": "Panda Walker Upgrade - Water - Tier 2",
+    "parent": "Panda Walker Body"
+  },
+  {
+    "cost": { "count": 18, "name": "Tablet" },
+    "name": "Panda Walker Upgrade - Water - Tier 3",
+    "parent": "Panda Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 30, "name": "Tablet" },
+    "name": "Panda Walker Upgrade - Water - Tier 4",
+    "parent": "Panda Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "Panda Walker Legs Armored (1 of 2)",
+    "parent": "Panda Walker Body"
+  },
+  {
+    "cost": { "count": 50, "name": "Tablet" },
+    "name": "Panda Walker Legs (1 of 2)",
+    "parent": "Panda Walker Body"
+  },
+  {
+    "cost": { "count": 6, "name": "Tablet" },
+    "name": "Panda Walker Legs Heavy (1 of 2)",
+    "parent": "Panda Walker Legs Armored (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 15, "name": "Tablet" },
+    "name": "Panda Walker Wings Large (1 of 2)",
+    "parent": "Panda Walker Wings Medium (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Panda Walker Wings Medium (1 of 2)",
+    "parent": "Panda Walker Wings Small (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Panda Walker Wings Small (1 of 2)",
+    "parent": "Panda Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Panda Walker Wings Heavy (1 of 2)",
+    "parent": "Panda Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Panda Walker Wings Rugged (1 of 2)",
+    "parent": "Panda Walker Wings Heavy (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 15, "name": "Tablet" },
+    "name": "Panda Walker Wings Skirmish (1 of 2)",
+    "parent": "Panda Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 25, "name": "Tablet" },
+    "name": "Panda Walker Wings Raider (1 of 2)",
+    "parent": "Panda Walker Wings Skirmish (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 12, "name": "Tablet" },
+    "name": "Camelop  Walker Upgrade - Water - Tier 2",
+    "parent": "Camelop  Walker Body"
+  },
+  {
+    "cost": { "count": 18, "name": "Tablet" },
+    "name": "Camelop  Walker Upgrade - Water - Tier 3",
+    "parent": "Camelop  Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 30, "name": "Tablet" },
+    "name": "Camelop  Walker Upgrade - Water - Tier 4",
+    "parent": "Camelop  Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "SawbladeTool_Tier2",
+    "parent": "Sawblade Tool"
+  },
+  {
+    "cost": { "count": 30, "name": "Tablet" },
+    "name": "Titan Walker Upgrade - Water - Tier 2",
+    "parent": "Titan Walker Body"
+  },
+  {
+    "cost": { "count": 50, "name": "Tablet" },
+    "name": "Titan Walker Upgrade - Water - Tier 3",
+    "parent": "Titan Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 100, "name": "Tablet" },
+    "name": "Titan Walker Upgrade - Water - Tier 4",
+    "parent": "Titan Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Titan Walker Legs Armored (1 of 2)",
+    "parent": "Titan Walker Body"
+  },
+  {
+    "cost": { "count": 250, "name": "Tablet" },
+    "name": "Titan Walker Legs (1 of 2)",
+    "parent": "Titan Walker Body"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Titan Walker Legs Heavy (1 of 2)",
+    "parent": "Titan Walker Legs Armored (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 30, "name": "Tablet" },
+    "name": "Titan Walker Wings Large (1 of 2)",
+    "parent": "Titan Walker Wings Medium (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Titan Walker Wings Medium (1 of 2)",
+    "parent": "Titan Walker Wings Small (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Titan Walker Wings Small (1 of 2)",
+    "parent": "Titan Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Titan Walker Wings Heavy (1 of 2)",
+    "parent": "Titan Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Titan Walker Wings Rugged (1 of 2)",
+    "parent": "Titan Walker Wings Heavy (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 30, "name": "Tablet" },
+    "name": "Titan Walker Wings Skirmish (1 of 2)",
+    "parent": "Titan Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 50, "name": "Tablet" },
+    "name": "Titan Walker Wings Raider (1 of 2)",
+    "parent": "Titan Walker Wings Skirmish (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 25, "name": "Fragment" },
+    "name": "Spider Walker Legs Armored (1 of 2)",
+    "parent": "Nomad Spider Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Fragment" },
+    "name": "Spider Walker Legs (1 of 2)",
+    "parent": "Spider Walker With Ballista Body"
+  },
+  {
+    "cost": { "count": 20, "name": "Fragment" },
+    "name": "Spider Walker Upgrade - Water - Tier 2",
+    "parent": "Nomad Spider Walker Body"
+  },
+  {
+    "cost": { "count": 2, "name": "Tablet" },
+    "name": "Spider Walker Upgrade - Water - Tier 4",
+    "parent": "Spider Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 10, "name": "Fragment" },
+    "name": "Spider Walker With Ballista Body Body",
+    "parent": "Nomad Spider Walker Body"
+  },
+  {
+    "name": "Stiletto Walker Legs Armored (1 of 2)",
+    "parent": "Stiletto Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 20, "name": "Fragment" },
+    "name": "Stiletto Walker Upgrade - Water - Tier 2",
+    "parent": "Stiletto Walker Body"
+  },
+  {
+    "cost": { "count": 2, "name": "Tablet" },
+    "name": "Stiletto Walker Upgrade - Water - Tier 3",
+    "parent": "Stiletto Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Stiletto Walker Upgrade - Water - Tier 4",
+    "parent": "Stiletto Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "Stiletto Walker Wings Medium (1 of 2)",
+    "parent": "Stiletto Walker Wings Small (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "name": "Stiletto Walker Wings Small (1 of 2)",
+    "parent": "Stiletto Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "Stiletto Walker Wings Heavy (1 of 2)",
+    "parent": "Stiletto Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "Stiletto Walker Wings Rugged (1 of 2)",
+    "parent": "Stiletto Walker Wings Heavy (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 7, "name": "Tablet" },
+    "name": "Stiletto Walker Wings Skirmish (1 of 2)",
+    "parent": "Stiletto Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 15, "name": "Tablet" },
+    "name": "Stiletto Walker Wings Raider (1 of 2)",
+    "parent": "Stiletto Walker Wings Skirmish (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "Hercul Walker Legs Armored (1 of 2)",
+    "parent": "Hercul Walker Body"
+  },
+  {
+    "cost": { "count": 50, "name": "Tablet" },
+    "name": "Hercul Walker Legs (1 of 2)",
+    "parent": "Hercul Walker Body"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Hercul Walker Upgrade - Water - Tier 2",
+    "parent": "Hercul Walker Body"
+  },
+  {
+    "cost": { "count": 9, "name": "Tablet" },
+    "name": "Hercul Walker Upgrade - Water - Tier 3",
+    "parent": "Hercul Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 6, "name": "Tablet" },
+    "name": "Hercul Walker Legs Heavy (1 of 2)",
+    "parent": "Hercul Walker Legs Armored (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 16, "name": "Tablet" },
+    "name": "Hercul Walker Upgrade - Water - Tier 4",
+    "parent": "Hercul Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Hercul Walker Wings Large (1 of 2)",
+    "parent": "Hercul Walker Wings Medium (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Hercul Walker Wings Medium (1 of 2)",
+    "parent": "Hercul Walker Wings Small (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 3, "name": "Tablet" },
+    "name": "Hercul Walker Wings Small (1 of 2)",
+    "parent": "Hercul Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Hercul Walker Wings Heavy (1 of 2)",
+    "parent": "Hercul Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Hercul Walker Wings Rugged (1 of 2)",
+    "parent": "Hercul Walker Wings Heavy (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Hercul Walker Wings Skirmish (1 of 2)",
+    "parent": "Hercul Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Hercul Walker Wings Raider (1 of 2)",
+    "parent": "Hercul Walker Wings Skirmish (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 12, "name": "Tablet" },
+    "name": "Cobra Walker Upgrade - Water - Tier 2",
+    "parent": "Cobra Walker Body"
+  },
+  {
+    "cost": { "count": 18, "name": "Tablet" },
+    "name": "Cobra Walker Upgrade - Water - Tier 3",
+    "parent": "Cobra Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 30, "name": "Tablet" },
+    "name": "Cobra Walker Upgrade - Water - Tier 4",
+    "parent": "Cobra Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 2, "name": "Tablet" },
+    "name": "Hornet Walker Legs Armored (1 of 2)",
+    "parent": "Hornet Walker Body"
+  },
+  {
+    "cost": { "count": 50, "name": "Tablet" },
+    "name": "Hornet Walker Legs (1 of 2)",
+    "parent": "Hornet Walker Body"
+  },
+  {
+    "cost": { "count": 4, "name": "Tablet" },
+    "name": "Hornet Walker Upgrade - Water - Tier 2",
+    "parent": "Hornet Walker Body"
+  },
+  {
+    "cost": { "count": 7, "name": "Tablet" },
+    "name": "Hornet Walker Upgrade - Water - Tier 3",
+    "parent": "Hornet Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Hornet Walker Legs Heavy (1 of 2)",
+    "parent": "Hornet Walker Legs Armored (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 12, "name": "Tablet" },
+    "name": "Hornet Walker Upgrade - Water - Tier 4",
+    "parent": "Hornet Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Hornet Walker Wings Large (1 of 2)",
+    "parent": "Hornet Walker Wings Medium (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Hornet Walker Wings Medium (1 of 2)",
+    "parent": "Hornet Walker Wings Small (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 2, "name": "Tablet" },
+    "name": "Hornet Walker Wings Small (1 of 2)",
+    "parent": "Hornet Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Hornet Walker Wings Heavy (1 of 2)",
+    "parent": "Hornet Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 5, "name": "Tablet" },
+    "name": "Hornet Walker Wings Rugged (1 of 2)",
+    "parent": "Hornet Walker Wings Heavy (1 of 2)",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 10, "name": "Tablet" },
+    "name": "Hornet Walker Wings Skirmish (1 of 2)",
+    "parent": "Hornet Walker Body",
+    "category": "WalkerParts"
+  },
+  {
+    "cost": { "count": 20, "name": "Tablet" },
+    "name": "Hornet Walker Wings Raider (1 of 2)",
+    "parent": "Hornet Walker Wings Skirmish (1 of 2)",
+    "category": "WalkerParts"
   },
   {
     "cost": { "count": 2, "name": "Tablet" },
@@ -2623,7 +2768,7 @@
         ]
       }
     ],
-    "name": "Large Base Walker Packer",
+    "name": "Large Base Walker Packer Body",
     "parent": "Small Base Walker Packer Body"
   },
   {
@@ -2639,7 +2784,7 @@
         ]
       }
     ],
-    "name": "Small Base Walker Packer",
+    "name": "Small Base Walker Packer Body",
     "parent": "Base Maintenance Chest"
   },
   {
@@ -3036,6 +3181,74 @@
       }
     ],
     "name": "Worm Vivarium"
+  },
+  {
+    "category": "Crafting",
+    "cost": { "count": 50, "name": "Tablet" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 500, "name": "Fiber" },
+          { "count": 50, "name": "Clay" }
+        ]
+      }
+    ],
+    "name": "Farmable Area",
+    "parent": "Crafting"
+  },
+  {
+    "category": "Crafting",
+    "cost": { "count": 50, "name": "Tablet" },
+    "crafting": [{ "ingredients": [{ "count": 1, "name": "Magma Seeds" }] }],
+    "name": "Pine Tree",
+    "parent": "Farmable Area"
+  },
+  {
+    "category": "Crafting",
+    "cost": { "count": 10, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 20, "name": "Wood" },
+          { "count": 1, "name": "Torque Battery" },
+          { "count": 2, "name": "Fiber Weave" },
+          { "count": 1, "name": "Terrain: Excavatable" }
+        ]
+      }
+    ],
+    "name": "Soil Excavator",
+    "parent": "Campfire"
+  },
+  {
+    "category": "Crafting",
+    "cost": { "count": 40, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 75, "name": "Wood" },
+          { "count": 8, "name": "Nomad Cloth" },
+          { "count": 4, "name": "Rope" },
+          { "count": 5, "name": "Earth Wax" }
+        ]
+      }
+    ],
+    "name": "Torque Windmill",
+    "parent": "Soil Excavator"
+  },
+  {
+    "category": "Crafting",
+    "cost": { "count": 32, "name": "Tablet" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 30, "name": "Bone Splinter" },
+          { "count": 6, "name": "Wood Shaft" },
+          { "count": 35, "name": "Rupu Pelt" }
+        ]
+      }
+    ],
+    "name": "Water Condenser",
+    "parent": "Purified Water"
   },
   {
     "category": "Drugs",
@@ -3490,1017 +3703,6 @@
     ],
     "name": "Exoskeleton",
     "parent": "Ballista"
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 5, "name": "Charcoal" },
-          { "count": 5, "name": "Cattail" }
-        ]
-      }
-    ],
-    "name": "Firework 1",
-    "trade_price": 3
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 5, "name": "Charcoal" },
-          { "count": 5, "name": "Cattail" }
-        ]
-      }
-    ],
-    "name": "Firework 2",
-    "trade_price": 3
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 5, "name": "Charcoal" },
-          { "count": 5, "name": "Cattail" }
-        ]
-      }
-    ],
-    "name": "Firework 3",
-    "trade_price": 3
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 5, "name": "Charcoal" },
-          { "count": 5, "name": "Cattail" }
-        ]
-      }
-    ],
-    "name": "Firework 4",
-    "trade_price": 3
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 5, "name": "Charcoal" },
-          { "count": 5, "name": "Cattail" }
-        ]
-      }
-    ],
-    "name": "Firework 5",
-    "trade_price": 3
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 5, "name": "Charcoal" },
-          { "count": 5, "name": "Cattail" }
-        ]
-      }
-    ],
-    "name": "Firework 6",
-    "trade_price": 3
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 5, "name": "Charcoal" },
-          { "count": 5, "name": "Cattail" }
-        ]
-      }
-    ],
-    "name": "Firework 7",
-    "trade_price": 3
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 5, "name": "Charcoal" },
-          { "count": 5, "name": "Cattail" }
-        ]
-      }
-    ],
-    "name": "Flare - white",
-    "trade_price": 3
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 10, "name": "Magma Seeds" },
-          { "count": 5, "name": "Cattail" }
-        ]
-      }
-    ],
-    "name": "Flare - red",
-    "trade_price": 3
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 10, "name": "Aloe Vera" },
-          { "count": 5, "name": "Cattail" }
-        ]
-      }
-    ],
-    "name": "Flare - green",
-    "trade_price": 3
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 10, "name": "Sand" },
-          { "count": 5, "name": "Cattail" }
-        ]
-      }
-    ],
-    "name": "Flare - blue",
-    "trade_price": 3
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 2, "name": "Sulfur" },
-          { "count": 5, "name": "Cattail" }
-        ]
-      }
-    ],
-    "name": "Flare - orange",
-    "trade_price": 15.6
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 5, "name": "Thornberry" },
-          { "count": 5, "name": "Cattail" }
-        ]
-      }
-    ],
-    "name": "Flare - purple",
-    "trade_price": 3
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 5, "name": "Animal Fat" },
-          { "count": 5, "name": "Cattail" }
-        ]
-      }
-    ],
-    "name": "Flare - teal",
-    "trade_price": 3
-  },
-  {
-    "category": "Interactables",
-    "cost": { "count": 15, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 1, "name": "Fiber Weave" },
-          { "count": 2, "name": "Aloe Vera" }
-        ]
-      }
-    ],
-    "name": "Sterile Bandage",
-    "parent": "Primitive Bandage",
-    "trade_price": 1.4
-  },
-  {
-    "category": "Interactables",
-    "cost": { "count": 2, "name": "Fragment" },
-    "crafting": [{ "ingredients": [{ "count": 6, "name": "Fiber" }] }],
-    "name": "Primitive Bandage",
-    "parent": "Equipment",
-    "trade_price": 1.2
-  },
-  {
-    "category": "Knowledge",
-    "crafting": [
-      {
-        "ingredients": [{ "count": 1, "name": "Fragment" }],
-        "station": "Ancient Fabricator"
-      },
-      {
-        "ingredients": [{ "count": 1, "name": "Fragment" }],
-        "station": "Temporary Fabricator"
-      }
-    ],
-    "name": "Tablet",
-    "trade_price": 500
-  },
-  {
-    "category": "Knowledge",
-    "crafting": [
-      {
-        "ingredients": [{ "count": 1, "name": "Worm Fang" }],
-        "station": "Trophy Exchange"
-      },
-      {
-        "ingredients": [
-          { "count": 10, "name": "Shattered Fragment" },
-          { "count": 4, "name": "Glass" },
-          { "count": 1, "name": "Meteor Core" }
-        ],
-        "station": "Advanced Woodworking Station"
-      },
-      {
-        "ingredients": [
-          { "count": 10, "name": "Shattered Fragment" },
-          { "count": 4, "name": "Glass" },
-          { "count": 1, "name": "Meteor Core" }
-        ],
-        "station": "Artificer Woodworking Station"
-      }
-    ],
-    "name": "Random Knowledge Tablet",
-    "trade_price": 500
-  },
-  { "category": "Lava", "name": "Lava", "trade_price": 3.5 },
-  { "category": "Liquids", "name": "Contaminated Water", "trade_price": 0.1 },
-  {
-    "category": "Liquids",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 17, "name": "Lava" },
-          { "count": 8, "name": "Corn" },
-          { "count": 5, "name": "Purified Water" }
-        ],
-        "station": "Obsidian Machine"
-      }
-    ],
-    "name": "Lava Fuel"
-  },
-  {
-    "category": "Liquids",
-    "crafting": [
-      {
-        "ingredients": [{ "count": 1, "name": "Earth Wax" }],
-        "station": "Furnace"
-      }
-    ],
-    "name": "Tar",
-    "trade_price": 3.2
-  },
-  {
-    "category": "Liquids",
-    "crafting": [
-      {
-        "ingredients": [{ "count": 1, "name": "Terrain: Sand" }],
-        "output": 100,
-        "station": "Soil Excavator"
-      },
-      {
-        "ingredients": [{ "count": 1, "name": "Stone" }],
-        "output": 10,
-        "station": "Stomping"
-      }
-    ],
-    "name": "Sand"
-  },
-  { "category": "Resources", "name": "Shattered Fragment", "trade_price": 3 },
-  {
-    "category": "Resources",
-    "cost": { "count": 8, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 50, "name": "Cattail" },
-          { "count": 1, "name": "Bone Glue" }
-        ],
-        "station": "FiberworkingTier_02"
-      },
-      {
-        "ingredients": [
-          { "count": 18, "name": "Cotton" },
-          { "count": 12, "name": "Earth Wax" }
-        ],
-        "station": "FiberworkingTier_02"
-      }
-    ],
-    "name": "Nomad Cloth",
-    "parent": "Advanced Fiberworking Station",
-    "trade_price": 28
-  },
-  { "category": "Resources", "name": "Beeswax", "trade_price": 1.2 },
-  { "category": "Resources", "name": "Blood Turnip", "trade_price": 0.9 },
-  { "category": "Resources", "name": "Cactus Flesh", "trade_price": 0.2 },
-  { "category": "Resources", "name": "Huge Cactus Fruit", "trade_price": 1.6 },
-  { "category": "Resources", "name": "Chitin Plate", "trade_price": 6.6 },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 1, "name": "Terrain: Clay Spots" },
-          { "count": 10, "name": "Ash" }
-        ],
-        "station": "Soil Excavator"
-      }
-    ],
-    "name": "Clay",
-    "parent": "Soil Excavator",
-    "trade_price": 0.1
-  },
-  { "category": "Resources", "name": "Terrain: Clay Spots", "trade_price": 1 },
-  { "category": "Resources", "name": "Feather", "trade_price": 1.6 },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [{ "count": 2, "name": "Rupu Pelt" }],
-        "output": 5,
-        "station": "Fiberworking"
-      },
-      {
-        "ingredients": [{ "count": 10, "name": "Cattail" }],
-        "output": 3,
-        "station": "FiberworkingTier_02"
-      }
-    ],
-    "name": "Fiber",
-    "trade_price": 0.2
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 15, "name": "Fiber" },
-          { "count": 2, "name": "Wood" }
-        ],
-        "station": "Fiberworking"
-      },
-      {
-        "ingredients": [
-          { "count": 15, "name": "Fiber" },
-          { "count": 2, "name": "Wood" }
-        ],
-        "station": "FiberworkingTier_02"
-      }
-    ],
-    "name": "Fiber Weave",
-    "parent": "Fiberworking Station",
-    "trade_price": 0.8
-  },
-  { "category": "Resources", "name": "Insects", "trade_price": 0.8 },
-  {
-    "category": "Resources",
-    "cost": { "count": 25, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 10, "name": "Purified Water" },
-          { "count": 3, "name": "Bone Splinter" }
-        ],
-        "station": "Campfire"
-      }
-    ],
-    "name": "Bone Glue",
-    "parent": "Purified Water",
-    "trade_price": 1.9
-  },
-  { "category": "Resources", "name": "Magma Seeds", "trade_price": 0.1 },
-  {
-    "category": "Resources",
-    "crafting": [
-      { "ingredients": [{ "count": 1, "name": "Clay" }], "station": "Furnace" }
-    ],
-    "name": "Ceramic Shard",
-    "trade_price": 7.2
-  },
-  {
-    "category": "Resources",
-    "cost": { "count": 5, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 1, "name": "Terrain: Black Soil" },
-          { "count": 2, "name": "Purified Water" }
-        ],
-        "station": "Soil Excavator"
-      },
-      {
-        "ingredients": [{ "count": 15, "name": "Palm Leaves" }],
-        "station": "Stomping"
-      },
-      {
-        "ingredients": [{ "count": 10, "name": "Rupu Vine" }],
-        "station": "Stomping"
-      },
-      {
-        "ingredients": [{ "count": 5, "name": "Beeswax" }],
-        "station": "Stomping"
-      },
-      {
-        "ingredients": [{ "count": 10, "name": "Mushroom Flesh" }],
-        "station": "Stomping"
-      }
-    ],
-    "name": "Earth Wax",
-    "parent": "Soil Excavator",
-    "trade_price": 1.4
-  },
-  { "category": "Resources", "name": "Terrain: Black Soil", "trade_price": 1 },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [{ "count": 2, "name": "Sand" }],
-        "station": "Advanced Furnace"
-      }
-    ],
-    "name": "Glass",
-    "trade_price": 1.4
-  },
-  { "category": "Resources", "name": "Meteor Core", "trade_price": 600 },
-  { "category": "Resources", "name": "Nibiran Mineral", "trade_price": 16.5 },
-  { "category": "Resources", "name": "Hide", "trade_price": 1.1 },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [{ "count": 1, "name": "Iron Ore" }],
-        "station": "Advanced Furnace"
-      }
-    ],
-    "name": "Iron Ingot",
-    "trade_price": 12
-  },
-  { "category": "Resources", "name": "Iron Ore", "trade_price": 8 },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 1, "name": "Iron Ingot" },
-          { "count": 8, "name": "Nibiran Mineral" }
-        ],
-        "station": "Advanced Furnace"
-      }
-    ],
-    "name": "Nibiran Ingot",
-    "trade_price": 102.5
-  },
-  { "category": "Resources", "name": "Obsidian", "trade_price": 0.8 },
-  { "category": "Resources", "name": "Peculiar Corundum", "trade_price": 220 },
-  { "category": "Resources", "name": "Salt Rock", "trade_price": 0.1 },
-  { "category": "Resources", "name": "Stone", "trade_price": 0.1 },
-  { "category": "Resources", "name": "Sulfur", "trade_price": 1.4 },
-  { "category": "Resources", "name": "Rupu Gel", "trade_price": 1 },
-  { "category": "Resources", "name": "Pearl", "trade_price": 1.1 },
-  { "category": "Resources", "name": "Aloe Vera", "trade_price": 0.3 },
-  { "category": "Resources", "name": "Apple", "trade_price": 0.2 },
-  { "category": "Resources", "name": "Cattail", "trade_price": 0.2 },
-  { "category": "Resources", "name": "Corn", "trade_price": 0.2 },
-  { "category": "Resources", "name": "Cotton", "trade_price": 2.1 },
-  { "category": "Resources", "name": "Mushroom Flesh", "trade_price": 0.4 },
-  { "category": "Resources", "name": "Lava Poppy", "trade_price": 0.1 },
-  { "category": "Resources", "name": "Red Banana", "trade_price": 0.1 },
-  {
-    "category": "Resources",
-    "cost": { "count": 30, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 1, "name": "Meteor Core" },
-          { "count": 100, "name": "Wood" },
-          { "count": 30, "name": "Earth Wax" }
-        ],
-        "station": "Woodworking"
-      },
-      {
-        "ingredients": [
-          { "count": 1, "name": "Meteor Core" },
-          { "count": 100, "name": "Wood" },
-          { "count": 30, "name": "Earth Wax" }
-        ],
-        "station": "Advanced Woodworking Station"
-      },
-      {
-        "ingredients": [
-          { "count": 1, "name": "Meteor Core" },
-          { "count": 100, "name": "Wood" },
-          { "count": 30, "name": "Earth Wax" }
-        ],
-        "station": "Artificer Woodworking Station"
-      }
-    ],
-    "name": "Walker Mechanism",
-    "parent": "Woodworking Station",
-    "trade_price": 700
-  },
-  {
-    "category": "Resources",
-    "cost": { "count": 25, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [{ "count": 8, "name": "Cattail" }],
-        "station": "Fiberworking"
-      },
-      {
-        "ingredients": [
-          { "count": 40, "name": "Fiber" },
-          { "count": 2, "name": "Rupu Vine" }
-        ],
-        "station": "Fiberworking"
-      },
-      {
-        "ingredients": [{ "count": 8, "name": "Cattail" }],
-        "station": "FiberworkingTier_02"
-      },
-      {
-        "ingredients": [
-          { "count": 40, "name": "Fiber" },
-          { "count": 2, "name": "Rupu Vine" }
-        ],
-        "station": "FiberworkingTier_02"
-      }
-    ],
-    "name": "Rope",
-    "parent": "Fiber Weave",
-    "trade_price": 0.5
-  },
-  { "category": "Resources", "name": "Rupu Pelt", "trade_price": 0.2 },
-  { "category": "Resources", "name": "Rupu Vine", "trade_price": 0.5 },
-  { "category": "Resources", "name": "Thornberry", "trade_price": 2.6 },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [{ "count": 30, "name": "Torque" }],
-        "station": "TorqueConsumption"
-      },
-      {
-        "ingredients": [{ "count": 100, "name": "Torque" }],
-        "station": "HighTorqueConsumption"
-      }
-    ],
-    "name": "Torque",
-    "trade_price": 0.1
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 5, "name": "Wood" },
-          { "count": 2, "name": "Fiber" }
-        ],
-        "station": "Woodworking"
-      },
-      {
-        "ingredients": [
-          { "count": 5, "name": "Wood" },
-          { "count": 2, "name": "Fiber" }
-        ],
-        "station": "Advanced Woodworking Station"
-      },
-      {
-        "ingredients": [
-          { "count": 5, "name": "Wood" },
-          { "count": 2, "name": "Fiber" }
-        ],
-        "station": "Artificer Woodworking Station"
-      }
-    ],
-    "name": "Wood Shaft",
-    "parent": "Woodworking Station",
-    "trade_price": 0.4
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [{ "count": 1, "name": "Wood" }],
-        "station": "FuelBurning"
-      },
-      {
-        "ingredients": [{ "count": 5, "name": "Fiber" }],
-        "station": "FuelBurning"
-      },
-      {
-        "ingredients": [{ "count": 1, "name": "Wood" }],
-        "station": "FuelLightSource"
-      },
-      {
-        "ingredients": [{ "count": 5, "name": "Fiber" }],
-        "station": "FuelLightSource"
-      }
-    ],
-    "name": "Ash",
-    "trade_price": 0.1
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [{ "count": 1, "name": "Wood Log" }],
-        "station": "Lumbermill"
-      }
-    ],
-    "name": "Bent Wooden Planks",
-    "trade_price": 0.1
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [{ "count": 1, "name": "Wood" }],
-        "station": "FuelBurning"
-      },
-      { "ingredients": [{ "count": 1, "name": "Wood" }], "station": "Furnace" },
-      {
-        "ingredients": [{ "count": 1, "name": "Wood" }],
-        "station": "FuelLightSource"
-      }
-    ],
-    "name": "Charcoal",
-    "trade_price": 0.1
-  },
-  {
-    "category": "Resources",
-    "cost": { "count": 6, "name": "Tablet" },
-    "crafting": [
-      { "ingredients": [{ "count": 1, "name": "Wood" }], "station": "Fuel" },
-      {
-        "ingredients": [{ "count": 1, "name": "Charcoal" }],
-        "station": "Fuel"
-      },
-      {
-        "ingredients": [{ "count": 1, "name": "Liquid Fuel" }],
-        "station": "FurnaceBurning_Tier2"
-      },
-      {
-        "ingredients": [{ "count": 1, "name": "Rupu Gel" }],
-        "station": "FurnaceBurning_Tier2"
-      },
-      {
-        "ingredients": [{ "count": 1, "name": "Lava Fuel" }],
-        "station": "FurnaceBurning_Tier2"
-      }
-    ],
-    "name": "Fuel",
-    "parent": "Purification Station",
-    "trade_price": 1
-  },
-  { "category": "Resources", "name": "Lightwood", "trade_price": 3.5 },
-  { "category": "Resources", "name": "Wood Log", "trade_price": 2 },
-  { "category": "Resources", "name": "Palm Leaves", "trade_price": 0.2 },
-  { "category": "Resources", "name": "Redwood Wood", "trade_price": 2.6 },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [{ "count": 1, "name": "Sulfur" }],
-        "station": "Campfire"
-      },
-      {
-        "ingredients": [{ "count": 1, "name": "Chitin Plate" }],
-        "station": "Campfire"
-      }
-    ],
-    "name": "Toxic Remains",
-    "trade_price": 0.5
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [{ "count": 1, "name": "Wood Log" }],
-        "output": 300,
-        "station": "Lumbermill"
-      }
-    ],
-    "name": "Wood",
-    "trade_price": 0.1
-  },
-  {
-    "category": "Tools",
-    "cost": { "count": 50, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 14, "name": "Wood Shaft" },
-          { "count": 10, "name": "Bone Splinter" },
-          { "count": 2, "name": "Nomad Cloth" },
-          { "count": 8, "name": "Stone" }
-        ]
-      }
-    ],
-    "name": "Scythe",
-    "parent": "Simple Sickle",
-    "trade_price": 17.4
-  },
-  {
-    "category": "Tools",
-    "cost": { "count": 10, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 2, "name": "Fiber Weave" },
-          { "count": 5, "name": "Wood Shaft" },
-          { "count": 12, "name": "Bone Splinter" }
-        ]
-      }
-    ],
-    "name": "Simple Pickaxe",
-    "parent": "Woodcutter’s Hatchet",
-    "trade_price": 8.4
-  },
-  {
-    "category": "Tools",
-    "cost": { "count": 10, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 10, "name": "Wood Shaft" },
-          { "count": 55, "name": "Stone" }
-        ]
-      }
-    ],
-    "name": "Simple Repair Hammer",
-    "parent": "Woodcutter’s Hatchet",
-    "trade_price": 9.5
-  },
-  {
-    "category": "Tools",
-    "cost": { "count": 10, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 2, "name": "Wood Shaft" },
-          { "count": 22, "name": "Fiber" },
-          { "count": 10, "name": "Stone" }
-        ]
-      }
-    ],
-    "name": "Simple Sickle",
-    "parent": "Woodcutter’s Hatchet",
-    "trade_price": 6.2
-  },
-  {
-    "category": "Traps",
-    "cost": { "count": 40, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 150, "name": "Wood" },
-          { "count": 8, "name": "Rope" },
-          { "count": 21, "name": "Wood Shaft" }
-        ]
-      }
-    ],
-    "name": "Defensive Tower",
-    "parent": "Light Wood Foundation"
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "Stiletto Walker Wings Medium (1 of 2)",
-    "parent": "Stiletto Walker Wings Small (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "name": "Stiletto Walker Wings Small (1 of 2)",
-    "parent": "Stiletto Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "Stiletto Walker Wings Heavy (1 of 2)",
-    "parent": "Stiletto Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "Stiletto Walker Wings Rugged (1 of 2)",
-    "parent": "Stiletto Walker Wings Heavy (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 7, "name": "Tablet" },
-    "name": "Stiletto Walker Wings Skirmish (1 of 2)",
-    "parent": "Stiletto Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 15, "name": "Tablet" },
-    "name": "Stiletto Walker Wings Raider (1 of 2)",
-    "parent": "Stiletto Walker Wings Skirmish (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "Hercul Walker Legs Armored (1 of 2)",
-    "parent": "Hercul Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 50, "name": "Tablet" },
-    "name": "Hercul Walker Legs (1 of 2)",
-    "parent": "Hercul Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Hercul Walker Upgrade - Water - Tier 2",
-    "parent": "Hercul Walker Body"
-  },
-  {
-    "cost": { "count": 9, "name": "Tablet" },
-    "name": "Hercul Walker Upgrade - Water - Tier 3",
-    "parent": "Hercul Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 6, "name": "Tablet" },
-    "name": "Hercul Walker Legs Heavy (1 of 2)",
-    "parent": "Hercul Walker Legs Armored (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 16, "name": "Tablet" },
-    "name": "Hercul Walker Upgrade - Water - Tier 4",
-    "parent": "Hercul Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "name": "Hercul Walker Wings Large (1 of 2)",
-    "parent": "Hercul Walker Wings Medium (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Hercul Walker Wings Medium (1 of 2)",
-    "parent": "Hercul Walker Wings Small (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 3, "name": "Tablet" },
-    "name": "Hercul Walker Wings Small (1 of 2)",
-    "parent": "Hercul Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Hercul Walker Wings Heavy (1 of 2)",
-    "parent": "Hercul Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Hercul Walker Wings Rugged (1 of 2)",
-    "parent": "Hercul Walker Wings Heavy (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Hercul Walker Wings Skirmish (1 of 2)",
-    "parent": "Hercul Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Hercul Walker Wings Raider (1 of 2)",
-    "parent": "Hercul Walker Wings Skirmish (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 12, "name": "Tablet" },
-    "name": "Cobra Walker Upgrade - Water - Tier 2",
-    "parent": "Cobra Walker Body"
-  },
-  {
-    "cost": { "count": 18, "name": "Tablet" },
-    "name": "Cobra Walker Upgrade - Water - Tier 3",
-    "parent": "Cobra Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 30, "name": "Tablet" },
-    "name": "Cobra Walker Upgrade - Water - Tier 4",
-    "parent": "Cobra Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": { "count": 2, "name": "Tablet" },
-    "name": "Hornet Walker Legs Armored (1 of 2)",
-    "parent": "Hornet Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 50, "name": "Tablet" },
-    "name": "Hornet Walker Legs (1 of 2)",
-    "parent": "Hornet Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 4, "name": "Tablet" },
-    "name": "Hornet Walker Upgrade - Water - Tier 2",
-    "parent": "Hornet Walker Body"
-  },
-  {
-    "cost": { "count": 7, "name": "Tablet" },
-    "name": "Hornet Walker Upgrade - Water - Tier 3",
-    "parent": "Hornet Walker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Hornet Walker Legs Heavy (1 of 2)",
-    "parent": "Hornet Walker Legs Armored (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 12, "name": "Tablet" },
-    "name": "Hornet Walker Upgrade - Water - Tier 4",
-    "parent": "Hornet Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "category": "Crafting",
-    "cost": { "count": 50, "name": "Tablet" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 500, "name": "Fiber" },
-          { "count": 50, "name": "Clay" }
-        ]
-      }
-    ],
-    "name": "Farmable Area",
-    "parent": "Crafting"
-  },
-  {
-    "category": "Crafting",
-    "cost": { "count": 50, "name": "Tablet" },
-    "crafting": [{ "ingredients": [{ "count": 1, "name": "Magma Seeds" }] }],
-    "name": "Pine Tree",
-    "parent": "Farmable Area"
-  },
-  {
-    "category": "Crafting",
-    "cost": { "count": 10, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 20, "name": "Wood" },
-          { "count": 1, "name": "Torque Battery" },
-          { "count": 2, "name": "Fiber Weave" },
-          { "count": 1, "name": "Terrain: Excavatable" }
-        ]
-      }
-    ],
-    "name": "Soil Excavator",
-    "parent": "Campfire"
-  },
-  {
-    "category": "Crafting",
-    "cost": { "count": 40, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 75, "name": "Wood" },
-          { "count": 8, "name": "Nomad Cloth" },
-          { "count": 4, "name": "Rope" },
-          { "count": 5, "name": "Earth Wax" }
-        ]
-      }
-    ],
-    "name": "Torque Windmill",
-    "parent": "Soil Excavator"
-  },
-  {
-    "category": "Crafting",
-    "cost": { "count": 32, "name": "Tablet" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 30, "name": "Bone Splinter" },
-          { "count": 6, "name": "Wood Shaft" },
-          { "count": 35, "name": "Rupu Pelt" }
-        ]
-      }
-    ],
-    "name": "Water Condenser",
-    "parent": "Purified Water"
   },
   {
     "category": "Furniture",
@@ -5399,6 +4601,211 @@
   },
   {
     "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 5, "name": "Charcoal" },
+          { "count": 5, "name": "Cattail" }
+        ]
+      }
+    ],
+    "name": "Firework 1",
+    "trade_price": 3
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 5, "name": "Charcoal" },
+          { "count": 5, "name": "Cattail" }
+        ]
+      }
+    ],
+    "name": "Firework 2",
+    "trade_price": 3
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 5, "name": "Charcoal" },
+          { "count": 5, "name": "Cattail" }
+        ]
+      }
+    ],
+    "name": "Firework 3",
+    "trade_price": 3
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 5, "name": "Charcoal" },
+          { "count": 5, "name": "Cattail" }
+        ]
+      }
+    ],
+    "name": "Firework 4",
+    "trade_price": 3
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 5, "name": "Charcoal" },
+          { "count": 5, "name": "Cattail" }
+        ]
+      }
+    ],
+    "name": "Firework 5",
+    "trade_price": 3
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 5, "name": "Charcoal" },
+          { "count": 5, "name": "Cattail" }
+        ]
+      }
+    ],
+    "name": "Firework 6",
+    "trade_price": 3
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 5, "name": "Charcoal" },
+          { "count": 5, "name": "Cattail" }
+        ]
+      }
+    ],
+    "name": "Firework 7",
+    "trade_price": 3
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 5, "name": "Charcoal" },
+          { "count": 5, "name": "Cattail" }
+        ]
+      }
+    ],
+    "name": "Flare - white",
+    "trade_price": 3
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 10, "name": "Magma Seeds" },
+          { "count": 5, "name": "Cattail" }
+        ]
+      }
+    ],
+    "name": "Flare - red",
+    "trade_price": 3
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 10, "name": "Aloe Vera" },
+          { "count": 5, "name": "Cattail" }
+        ]
+      }
+    ],
+    "name": "Flare - green",
+    "trade_price": 3
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 10, "name": "Sand" },
+          { "count": 5, "name": "Cattail" }
+        ]
+      }
+    ],
+    "name": "Flare - blue",
+    "trade_price": 3
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 2, "name": "Sulfur" },
+          { "count": 5, "name": "Cattail" }
+        ]
+      }
+    ],
+    "name": "Flare - orange",
+    "trade_price": 15.6
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 5, "name": "Thornberry" },
+          { "count": 5, "name": "Cattail" }
+        ]
+      }
+    ],
+    "name": "Flare - purple",
+    "trade_price": 3
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 5, "name": "Animal Fat" },
+          { "count": 5, "name": "Cattail" }
+        ]
+      }
+    ],
+    "name": "Flare - teal",
+    "trade_price": 3
+  },
+  {
+    "category": "Interactables",
+    "cost": { "count": 15, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 1, "name": "Fiber Weave" },
+          { "count": 2, "name": "Aloe Vera" }
+        ]
+      }
+    ],
+    "name": "Sterile Bandage",
+    "parent": "Primitive Bandage",
+    "trade_price": 1.4
+  },
+  {
+    "category": "Interactables",
+    "cost": { "count": 2, "name": "Fragment" },
+    "crafting": [{ "ingredients": [{ "count": 6, "name": "Fiber" }] }],
+    "name": "Primitive Bandage",
+    "parent": "Equipment",
+    "trade_price": 1.2
+  },
+  {
+    "category": "Interactables",
     "cost": { "count": 50, "name": "Fragment" },
     "crafting": [
       {
@@ -5439,7 +4846,7 @@
       }
     ],
     "name": "Sand Bed",
-    "parent": "ConstructionRoot"
+    "parent": "Construction"
   },
   {
     "category": "Interactables",
@@ -5593,6 +5000,48 @@
   },
   {
     "category": "Knowledge",
+    "crafting": [
+      {
+        "ingredients": [{ "count": 1, "name": "Fragment" }],
+        "station": "Ancient Fabricator"
+      },
+      {
+        "ingredients": [{ "count": 1, "name": "Fragment" }],
+        "station": "Temporary Fabricator"
+      }
+    ],
+    "name": "Tablet",
+    "trade_price": 500
+  },
+  {
+    "category": "Knowledge",
+    "crafting": [
+      {
+        "ingredients": [{ "count": 1, "name": "Worm Fang" }],
+        "station": "Trophy Exchange"
+      },
+      {
+        "ingredients": [
+          { "count": 10, "name": "Shattered Fragment" },
+          { "count": 4, "name": "Glass" },
+          { "count": 1, "name": "Meteor Core" }
+        ],
+        "station": "Advanced Woodworking Station"
+      },
+      {
+        "ingredients": [
+          { "count": 10, "name": "Shattered Fragment" },
+          { "count": 4, "name": "Glass" },
+          { "count": 1, "name": "Meteor Core" }
+        ],
+        "station": "Artificer Woodworking Station"
+      }
+    ],
+    "name": "Random Knowledge Tablet",
+    "trade_price": 500
+  },
+  {
+    "category": "Knowledge",
     "cost": { "count": 50, "name": "Fragment" },
     "crafting": [
       {
@@ -5620,6 +5069,49 @@
     "name": "Fragment",
     "parent": "Woodworking Station",
     "trade_price": 50
+  },
+  { "category": "Lava", "name": "Lava", "trade_price": 3.5 },
+  { "category": "Liquids", "name": "Contaminated Water", "trade_price": 0.1 },
+  {
+    "category": "Liquids",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 17, "name": "Lava" },
+          { "count": 8, "name": "Corn" },
+          { "count": 5, "name": "Purified Water" }
+        ],
+        "station": "Obsidian Machine"
+      }
+    ],
+    "name": "Lava Fuel"
+  },
+  {
+    "category": "Liquids",
+    "crafting": [
+      {
+        "ingredients": [{ "count": 1, "name": "Earth Wax" }],
+        "station": "Furnace"
+      }
+    ],
+    "name": "Tar",
+    "trade_price": 3.2
+  },
+  {
+    "category": "Liquids",
+    "crafting": [
+      {
+        "ingredients": [{ "count": 1, "name": "Terrain: Sand" }],
+        "output": 100,
+        "station": "Soil Excavator"
+      },
+      {
+        "ingredients": [{ "count": 1, "name": "Stone" }],
+        "output": 10,
+        "station": "Stomping"
+      }
+    ],
+    "name": "Sand"
   },
   {
     "category": "Liquids",
@@ -5694,6 +5186,423 @@
     "name": "Purified Water",
     "parent": "Campfire",
     "trade_price": 10
+  },
+  { "category": "Resources", "name": "Shattered Fragment", "trade_price": 3 },
+  {
+    "category": "Resources",
+    "cost": { "count": 8, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 50, "name": "Cattail" },
+          { "count": 1, "name": "Bone Glue" }
+        ],
+        "station": "FiberworkingTier_02"
+      },
+      {
+        "ingredients": [
+          { "count": 18, "name": "Cotton" },
+          { "count": 12, "name": "Earth Wax" }
+        ],
+        "station": "FiberworkingTier_02"
+      }
+    ],
+    "name": "Nomad Cloth",
+    "parent": "Advanced Fiberworking Station",
+    "trade_price": 28
+  },
+  { "category": "Resources", "name": "Beeswax", "trade_price": 1.2 },
+  { "category": "Resources", "name": "Blood Turnip", "trade_price": 0.9 },
+  { "category": "Resources", "name": "Cactus Flesh", "trade_price": 0.2 },
+  { "category": "Resources", "name": "Huge Cactus Fruit", "trade_price": 1.6 },
+  { "category": "Resources", "name": "Chitin Plate", "trade_price": 6.6 },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 1, "name": "Terrain: Clay Spots" },
+          { "count": 10, "name": "Ash" }
+        ],
+        "station": "Soil Excavator"
+      }
+    ],
+    "name": "Clay",
+    "parent": "Soil Excavator",
+    "trade_price": 0.1
+  },
+  { "category": "Resources", "name": "Terrain: Clay Spots", "trade_price": 1 },
+  { "category": "Resources", "name": "Feather", "trade_price": 1.6 },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [{ "count": 2, "name": "Rupu Pelt" }],
+        "output": 5,
+        "station": "Fiberworking"
+      },
+      {
+        "ingredients": [{ "count": 10, "name": "Cattail" }],
+        "output": 3,
+        "station": "FiberworkingTier_02"
+      }
+    ],
+    "name": "Fiber",
+    "trade_price": 0.2
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 15, "name": "Fiber" },
+          { "count": 2, "name": "Wood" }
+        ],
+        "station": "Fiberworking"
+      },
+      {
+        "ingredients": [
+          { "count": 15, "name": "Fiber" },
+          { "count": 2, "name": "Wood" }
+        ],
+        "station": "FiberworkingTier_02"
+      }
+    ],
+    "name": "Fiber Weave",
+    "parent": "Fiberworking Station",
+    "trade_price": 0.8
+  },
+  { "category": "Resources", "name": "Insects", "trade_price": 0.8 },
+  {
+    "category": "Resources",
+    "cost": { "count": 25, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 10, "name": "Purified Water" },
+          { "count": 3, "name": "Bone Splinter" }
+        ],
+        "station": "Campfire"
+      }
+    ],
+    "name": "Bone Glue",
+    "parent": "Purified Water",
+    "trade_price": 1.9
+  },
+  { "category": "Resources", "name": "Magma Seeds", "trade_price": 0.1 },
+  {
+    "category": "Resources",
+    "crafting": [
+      { "ingredients": [{ "count": 1, "name": "Clay" }], "station": "Furnace" }
+    ],
+    "name": "Ceramic Shard",
+    "trade_price": 7.2
+  },
+  {
+    "category": "Resources",
+    "cost": { "count": 5, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 1, "name": "Terrain: Black Soil" },
+          { "count": 2, "name": "Purified Water" }
+        ],
+        "station": "Soil Excavator"
+      },
+      {
+        "ingredients": [{ "count": 15, "name": "Palm Leaves" }],
+        "station": "Stomping"
+      },
+      {
+        "ingredients": [{ "count": 10, "name": "Rupu Vine" }],
+        "station": "Stomping"
+      },
+      {
+        "ingredients": [{ "count": 5, "name": "Beeswax" }],
+        "station": "Stomping"
+      },
+      {
+        "ingredients": [{ "count": 10, "name": "Mushroom Flesh" }],
+        "station": "Stomping"
+      }
+    ],
+    "name": "Earth Wax",
+    "parent": "Soil Excavator",
+    "trade_price": 1.4
+  },
+  { "category": "Resources", "name": "Terrain: Black Soil", "trade_price": 1 },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [{ "count": 2, "name": "Sand" }],
+        "station": "Advanced Furnace"
+      }
+    ],
+    "name": "Glass",
+    "trade_price": 1.4
+  },
+  { "category": "Resources", "name": "Meteor Core", "trade_price": 600 },
+  { "category": "Resources", "name": "Nibiran Mineral", "trade_price": 16.5 },
+  { "category": "Resources", "name": "Hide", "trade_price": 1.1 },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [{ "count": 1, "name": "Iron Ore" }],
+        "station": "Advanced Furnace"
+      }
+    ],
+    "name": "Iron Ingot",
+    "trade_price": 12
+  },
+  { "category": "Resources", "name": "Iron Ore", "trade_price": 8 },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 1, "name": "Iron Ingot" },
+          { "count": 8, "name": "Nibiran Mineral" }
+        ],
+        "station": "Advanced Furnace"
+      }
+    ],
+    "name": "Nibiran Ingot",
+    "trade_price": 102.5
+  },
+  { "category": "Resources", "name": "Obsidian", "trade_price": 0.8 },
+  { "category": "Resources", "name": "Peculiar Corundum", "trade_price": 220 },
+  { "category": "Resources", "name": "Salt Rock", "trade_price": 0.1 },
+  { "category": "Resources", "name": "Stone", "trade_price": 0.1 },
+  { "category": "Resources", "name": "Sulfur", "trade_price": 1.4 },
+  { "category": "Resources", "name": "Rupu Gel", "trade_price": 1 },
+  { "category": "Resources", "name": "Pearl", "trade_price": 1.1 },
+  { "category": "Resources", "name": "Aloe Vera", "trade_price": 0.3 },
+  { "category": "Resources", "name": "Apple", "trade_price": 0.2 },
+  { "category": "Resources", "name": "Cattail", "trade_price": 0.2 },
+  { "category": "Resources", "name": "Corn", "trade_price": 0.2 },
+  { "category": "Resources", "name": "Cotton", "trade_price": 2.1 },
+  { "category": "Resources", "name": "Mushroom Flesh", "trade_price": 0.4 },
+  { "category": "Resources", "name": "Lava Poppy", "trade_price": 0.1 },
+  { "category": "Resources", "name": "Red Banana", "trade_price": 0.1 },
+  {
+    "category": "Resources",
+    "cost": { "count": 30, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 1, "name": "Meteor Core" },
+          { "count": 100, "name": "Wood" },
+          { "count": 30, "name": "Earth Wax" }
+        ],
+        "station": "Woodworking"
+      },
+      {
+        "ingredients": [
+          { "count": 1, "name": "Meteor Core" },
+          { "count": 100, "name": "Wood" },
+          { "count": 30, "name": "Earth Wax" }
+        ],
+        "station": "Advanced Woodworking Station"
+      },
+      {
+        "ingredients": [
+          { "count": 1, "name": "Meteor Core" },
+          { "count": 100, "name": "Wood" },
+          { "count": 30, "name": "Earth Wax" }
+        ],
+        "station": "Artificer Woodworking Station"
+      }
+    ],
+    "name": "Walker Mechanism",
+    "parent": "Woodworking Station",
+    "trade_price": 700
+  },
+  {
+    "category": "Resources",
+    "cost": { "count": 25, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [{ "count": 8, "name": "Cattail" }],
+        "station": "Fiberworking"
+      },
+      {
+        "ingredients": [
+          { "count": 40, "name": "Fiber" },
+          { "count": 2, "name": "Rupu Vine" }
+        ],
+        "station": "Fiberworking"
+      },
+      {
+        "ingredients": [{ "count": 8, "name": "Cattail" }],
+        "station": "FiberworkingTier_02"
+      },
+      {
+        "ingredients": [
+          { "count": 40, "name": "Fiber" },
+          { "count": 2, "name": "Rupu Vine" }
+        ],
+        "station": "FiberworkingTier_02"
+      }
+    ],
+    "name": "Rope",
+    "parent": "Fiber Weave",
+    "trade_price": 0.5
+  },
+  { "category": "Resources", "name": "Rupu Pelt", "trade_price": 0.2 },
+  { "category": "Resources", "name": "Rupu Vine", "trade_price": 0.5 },
+  { "category": "Resources", "name": "Thornberry", "trade_price": 2.6 },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [{ "count": 30, "name": "Torque" }],
+        "station": "TorqueConsumption"
+      },
+      {
+        "ingredients": [{ "count": 100, "name": "Torque" }],
+        "station": "HighTorqueConsumption"
+      }
+    ],
+    "name": "Torque",
+    "trade_price": 0.1
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 5, "name": "Wood" },
+          { "count": 2, "name": "Fiber" }
+        ],
+        "station": "Woodworking"
+      },
+      {
+        "ingredients": [
+          { "count": 5, "name": "Wood" },
+          { "count": 2, "name": "Fiber" }
+        ],
+        "station": "Advanced Woodworking Station"
+      },
+      {
+        "ingredients": [
+          { "count": 5, "name": "Wood" },
+          { "count": 2, "name": "Fiber" }
+        ],
+        "station": "Artificer Woodworking Station"
+      }
+    ],
+    "name": "Wood Shaft",
+    "parent": "Woodworking Station",
+    "trade_price": 0.4
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [{ "count": 1, "name": "Wood" }],
+        "station": "FuelBurning"
+      },
+      {
+        "ingredients": [{ "count": 5, "name": "Fiber" }],
+        "station": "FuelBurning"
+      },
+      {
+        "ingredients": [{ "count": 1, "name": "Wood" }],
+        "station": "FuelLightSource"
+      },
+      {
+        "ingredients": [{ "count": 5, "name": "Fiber" }],
+        "station": "FuelLightSource"
+      }
+    ],
+    "name": "Ash",
+    "trade_price": 0.1
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [{ "count": 1, "name": "Wood Log" }],
+        "station": "Lumbermill"
+      }
+    ],
+    "name": "Bent Wooden Planks",
+    "trade_price": 0.1
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [{ "count": 1, "name": "Wood" }],
+        "station": "FuelBurning"
+      },
+      { "ingredients": [{ "count": 1, "name": "Wood" }], "station": "Furnace" },
+      {
+        "ingredients": [{ "count": 1, "name": "Wood" }],
+        "station": "FuelLightSource"
+      }
+    ],
+    "name": "Charcoal",
+    "trade_price": 0.1
+  },
+  {
+    "category": "Resources",
+    "cost": { "count": 6, "name": "Tablet" },
+    "crafting": [
+      { "ingredients": [{ "count": 1, "name": "Wood" }], "station": "Fuel" },
+      {
+        "ingredients": [{ "count": 1, "name": "Charcoal" }],
+        "station": "Fuel"
+      },
+      {
+        "ingredients": [{ "count": 1, "name": "Liquid Fuel" }],
+        "station": "FurnaceBurning_Tier2"
+      },
+      {
+        "ingredients": [{ "count": 1, "name": "Rupu Gel" }],
+        "station": "FurnaceBurning_Tier2"
+      },
+      {
+        "ingredients": [{ "count": 1, "name": "Lava Fuel" }],
+        "station": "FurnaceBurning_Tier2"
+      }
+    ],
+    "name": "Fuel",
+    "parent": "Purification Station",
+    "trade_price": 1
+  },
+  { "category": "Resources", "name": "Lightwood", "trade_price": 3.5 },
+  { "category": "Resources", "name": "Wood Log", "trade_price": 2 },
+  { "category": "Resources", "name": "Palm Leaves", "trade_price": 0.2 },
+  { "category": "Resources", "name": "Redwood Wood", "trade_price": 2.6 },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [{ "count": 1, "name": "Sulfur" }],
+        "station": "Campfire"
+      },
+      {
+        "ingredients": [{ "count": 1, "name": "Chitin Plate" }],
+        "station": "Campfire"
+      }
+    ],
+    "name": "Toxic Remains",
+    "trade_price": 0.5
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [{ "count": 1, "name": "Wood Log" }],
+        "output": 300,
+        "station": "Lumbermill"
+      }
+    ],
+    "name": "Wood",
+    "trade_price": 0.1
   },
   {
     "category": "Resources",
@@ -6056,6 +5965,85 @@
     "name": "Double Slit Wall"
   },
   {
+    "category": "Tools",
+    "cost": { "count": 50, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 14, "name": "Wood Shaft" },
+          { "count": 10, "name": "Bone Splinter" },
+          { "count": 2, "name": "Nomad Cloth" },
+          { "count": 8, "name": "Stone" }
+        ]
+      }
+    ],
+    "name": "Scythe",
+    "parent": "Simple Sickle",
+    "trade_price": 17.4
+  },
+  {
+    "category": "Tools",
+    "cost": { "count": 10, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 2, "name": "Fiber Weave" },
+          { "count": 5, "name": "Wood Shaft" },
+          { "count": 12, "name": "Bone Splinter" }
+        ]
+      }
+    ],
+    "name": "Simple Pickaxe",
+    "parent": "Woodcutter’s Hatchet",
+    "trade_price": 8.4
+  },
+  {
+    "category": "Tools",
+    "cost": { "count": 10, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 10, "name": "Wood Shaft" },
+          { "count": 55, "name": "Stone" }
+        ]
+      }
+    ],
+    "name": "Simple Repair Hammer",
+    "parent": "Woodcutter’s Hatchet",
+    "trade_price": 9.5
+  },
+  {
+    "category": "Tools",
+    "cost": { "count": 10, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 2, "name": "Wood Shaft" },
+          { "count": 22, "name": "Fiber" },
+          { "count": 10, "name": "Stone" }
+        ]
+      }
+    ],
+    "name": "Simple Sickle",
+    "parent": "Woodcutter’s Hatchet",
+    "trade_price": 6.2
+  },
+  {
+    "category": "Traps",
+    "cost": { "count": 40, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 150, "name": "Wood" },
+          { "count": 8, "name": "Rope" },
+          { "count": 21, "name": "Wood Shaft" }
+        ]
+      }
+    ],
+    "name": "Defensive Tower",
+    "parent": "Light Wood Foundation"
+  },
+  {
     "category": "Traps",
     "cost": { "count": 5, "name": "Tablet" },
     "crafting": [
@@ -6230,48 +6218,6 @@
     "name": "Barrier Plank"
   },
   {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Hornet Walker Wings Large (1 of 2)",
-    "parent": "Hornet Walker Wings Medium (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Hornet Walker Wings Medium (1 of 2)",
-    "parent": "Hornet Walker Wings Small (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 2, "name": "Tablet" },
-    "name": "Hornet Walker Wings Small (1 of 2)",
-    "parent": "Hornet Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Hornet Walker Wings Heavy (1 of 2)",
-    "parent": "Hornet Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 5, "name": "Tablet" },
-    "name": "Hornet Walker Wings Rugged (1 of 2)",
-    "parent": "Hornet Walker Wings Heavy (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 10, "name": "Tablet" },
-    "name": "Hornet Walker Wings Skirmish (1 of 2)",
-    "parent": "Hornet Walker Body",
-    "category": "WalkerParts"
-  },
-  {
-    "cost": { "count": 20, "name": "Tablet" },
-    "name": "Hornet Walker Wings Raider (1 of 2)",
-    "parent": "Hornet Walker Wings Skirmish (1 of 2)",
-    "category": "WalkerParts"
-  },
-  {
     "category": "WalkerTools",
     "cost": { "count": 25, "name": "Tablet" },
     "crafting": [
@@ -6401,7 +6347,7 @@
         ]
       }
     ],
-    "name": "Battleship Walker",
+    "name": "Battleship Walker Body",
     "parent": "Steering Levers"
   },
   {
@@ -6415,7 +6361,7 @@
         ]
       }
     ],
-    "name": "Raptor Sky Walker",
+    "name": "Raptor Sky Walker Body",
     "parent": "Dinghy Walker Body"
   },
   {
@@ -6429,7 +6375,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker",
+    "name": "Buffalo Walker Body",
     "parent": "Stiletto Walker Body"
   },
   {
@@ -6443,7 +6389,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker",
+    "name": "Mollusk Walker Body",
     "parent": "Steering Levers"
   },
   {
@@ -6457,7 +6403,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker",
+    "name": "Schmetterling Walker Body",
     "parent": "Buffalo Walker Body"
   },
   {
@@ -6471,14 +6417,14 @@
         ]
       }
     ],
-    "name": "Tusker Walker",
+    "name": "Tusker Walker Body",
     "parent": "Toboggan Walker Body"
   },
   {
     "category": "Walkers",
     "cost": { "count": 20, "name": "Tablet" },
     "crafting": [{ "ingredients": [{ "count": 1, "name": "Proxy License" }] }],
-    "name": "Proxy Walker",
+    "name": "Proxy Walker Body",
     "parent": "Steering Levers"
   },
   {
@@ -6492,7 +6438,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker",
+    "name": "Dinghy Walker Body",
     "parent": "Firefly Walker Body"
   },
   {
@@ -6506,7 +6452,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker",
+    "name": "Toboggan Walker Body",
     "parent": "Mollusk Walker Body"
   },
   {
@@ -6521,7 +6467,7 @@
         ]
       }
     ],
-    "name": "Falco Walker",
+    "name": "Falco Walker Body",
     "parent": "Hornet Walker Body"
   },
   {
@@ -6535,7 +6481,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker",
+    "name": "Firefly Walker Body",
     "parent": "Walkers"
   },
   {
@@ -6548,7 +6494,7 @@
         ]
       }
     ],
-    "name": "Silur Walker"
+    "name": "Silur Walker Body"
   },
   {
     "category": "Walkers",
@@ -6561,7 +6507,7 @@
         ]
       }
     ],
-    "name": "Balang Walker"
+    "name": "Balang Walker Body"
   },
   {
     "category": "Walkers",
@@ -6574,7 +6520,7 @@
         ]
       }
     ],
-    "name": "Domus Walker",
+    "name": "Domus Walker Body",
     "parent": "Mollusk Walker Body"
   },
   {
@@ -6588,7 +6534,7 @@
         ]
       }
     ],
-    "name": "Panda Walker",
+    "name": "Panda Walker Body",
     "parent": "Walker Packing Compartment"
   },
   {
@@ -6603,7 +6549,7 @@
         ]
       }
     ],
-    "name": "Camelop  Walker",
+    "name": "Camelop  Walker Body",
     "parent": "Tool Pod"
   },
   {
@@ -6617,7 +6563,7 @@
         ]
       }
     ],
-    "name": "Titan Walker",
+    "name": "Titan Walker Body",
     "parent": "Buffalo Walker Body"
   },
   {
@@ -6631,7 +6577,7 @@
         ]
       }
     ],
-    "name": "Nomad Spider Walker",
+    "name": "Nomad Spider Walker Body",
     "parent": "Dinghy Walker Body"
   },
   {
@@ -6645,7 +6591,7 @@
         ]
       }
     ],
-    "name": "Spider Walker with Ballista"
+    "name": "Spider Walker with Ballista Body"
   },
   {
     "category": "Walkers",
@@ -6658,7 +6604,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker",
+    "name": "Stiletto Walker Body",
     "parent": "Steering Levers"
   },
   {
@@ -6672,7 +6618,7 @@
         ]
       }
     ],
-    "name": "Hercul Walker",
+    "name": "Hercul Walker Body",
     "parent": "Tool Pod"
   },
   {
@@ -6687,7 +6633,7 @@
         ]
       }
     ],
-    "name": "Cobra Walker",
+    "name": "Cobra Walker Body",
     "parent": "Gun Pod"
   },
   {
@@ -6702,7 +6648,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker",
+    "name": "Hornet Walker Body",
     "parent": "Stiletto Walker Body"
   },
   {

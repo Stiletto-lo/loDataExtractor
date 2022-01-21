@@ -56,6 +56,7 @@ controller.initownTranslations = () => {
   allTranslations["SpiderWalkerBallista"] = "Spider Walker With Ballista";
   allTranslations["WalkerBarriers"] = "Barrier Base";
   allTranslations["WalkersRoot"] = "Walkers";
+  allTranslations["ConstructionRoot"] = "Construction";
 };
 
 controller.translateName = (name) => {
@@ -79,6 +80,12 @@ controller.translateItems = (allItems) => {
       !name.includes("(1 of 2)")
     ) {
       name = name + " (1 of 2)";
+    } else if (
+      /(.+) Walker/.test(name) &&
+      !name.includes("(1 of 2)") &&
+      !name.includes("Tier")
+    ) {
+      name = name + " Body";
     }
 
     item.name = name.trim();
