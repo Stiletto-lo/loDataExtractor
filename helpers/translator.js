@@ -57,6 +57,7 @@ controller.initownTranslations = () => {
   allTranslations["WalkerBarriers"] = "Barrier Base";
   allTranslations["WalkersRoot"] = "Walkers";
   allTranslations["ConstructionRoot"] = "Construction";
+  allTranslations["ReinforcedPlank2"] = "Reinforced Plank";
 };
 
 controller.translateName = (name) => {

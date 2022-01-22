@@ -117,7 +117,11 @@ function loadDirData(techTreeDir, folderType = 0) {
           parsePrices(techTreeDir + "/" + file);
           break;
         case 4:
-          parsePlaceableData(techTreeDir + "/" + file);
+          if (file.includes("CachedPlaceablesCosts.json")) {
+            parseCachedItems(techTreeDir + "/" + file);
+          } else {
+            parsePlaceableData(techTreeDir + "/" + file);
+          }
           break;
       }
     }
@@ -139,6 +143,32 @@ function getItem(itemName) {
   itemCopy.name = itemName;
 
   return itemCopy;
+}
+
+function parseCachedItems(filePath) {
+  let rawdata = fs.readFileSync(filePath);
+  let jsonData = JSON.parse(rawdata);
+  if (jsonData[0] && jsonData[0]?.Properties.CachedTotalCost) {
+    let cachedItems = jsonData[0].Properties.CachedTotalCost;
+    Object.keys(cachedItems).forEach((key) => {
+      if (cachedItems[key].Inputs) {
+        let recipe = { ...recipeTemplate };
+        let item = getItem(parseName(key));
+        let ingredients = [];
+        for (const ingredientKey in cachedItems[key].Inputs) {
+          let ingredient = { ...ingredienTemplate };
+          ingredient.name = parseName(ingredientKey);
+          ingredient.count = cachedItems[key].Inputs[ingredientKey];
+          ingredients.push(ingredient);
+        }
+        if (ingredients.length > 0) {
+          recipe.ingredients = ingredients;
+        }
+        item.crafting = [recipe];
+        allItems.push(item);
+      }
+    });
+  }
 }
 
 function parseItemData(filePath) {
