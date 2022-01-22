@@ -1092,6 +1092,25 @@
     "trade_price": 719.9
   },
   {
+    "category": "Containers",
+    "cost": { "count": 8, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 375, "name": "Wood" },
+          { "count": 80, "name": "Stone" },
+          { "count": 185, "name": "Fiber" },
+          { "count": 15, "name": "Nomad Cloth" },
+          { "count": 20, "name": "Rupu Vine" },
+          { "count": 20, "name": "Wood Shaft" },
+          { "count": 5, "name": "Beeswax" }
+        ]
+      }
+    ],
+    "name": "Base Container",
+    "parent": "Light Wood Foundation"
+  },
+  {
     "cost": { "count": 25, "name": "Tablet" },
     "name": "Split Durable Water Sack",
     "parent": "Durable Water Sack",
@@ -3708,23 +3727,6 @@
     ],
     "name": "Ammo Chest",
     "parent": "Small Chest"
-  },
-  {
-    "category": "Containers",
-    "cost": { "count": 8, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 20, "name": "Wood Shaft" },
-          { "count": 200, "name": "Wood" },
-          { "count": 60, "name": "Stone" },
-          { "count": 5, "name": "Beeswax" },
-          { "count": 12, "name": "Nomad Cloth" }
-        ]
-      }
-    ],
-    "name": "Base Container",
-    "parent": "Light Wood Foundation"
   },
   {
     "category": "Containers",
@@ -7047,21 +7049,6 @@
   },
   {
     "category": "Traps",
-    "cost": { "count": 40, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 150, "name": "Wood" },
-          { "count": 8, "name": "Rope" },
-          { "count": 21, "name": "Wood Shaft" }
-        ]
-      }
-    ],
-    "name": "Defensive Tower",
-    "parent": "Light Wood Foundation"
-  },
-  {
-    "category": "Traps",
     "cost": { "count": 5, "name": "Tablet" },
     "crafting": [
       {
@@ -7235,6 +7222,23 @@
     "name": "Barrier Plank"
   },
   {
+    "category": "Traps",
+    "cost": { "count": 40, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 480, "name": "Wood" },
+          { "count": 345, "name": "Fiber" },
+          { "count": 117, "name": "Wood Shaft" },
+          { "count": 22, "name": "Rope" },
+          { "count": 15, "name": "Fiber Weave" }
+        ]
+      }
+    ],
+    "name": "Defensive Tower",
+    "parent": "Light Wood Foundation"
+  },
+  {
     "category": "WalkerParts",
     "crafting": [
       {
@@ -7251,50 +7255,12 @@
     "crafting": [
       {
         "ingredients": [
-          { "count": 35, "name": "Lightwood" },
-          { "count": 70, "name": "Fiber" },
-          { "count": 10, "name": "Rope" }
-        ]
-      }
-    ],
-    "name": "Raptor Sky Walker Legs (1 of 2)"
-  },
-  {
-    "category": "WalkerParts",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 30, "name": "Lightwood" },
-          { "count": 40, "name": "Fiber Weave" },
-          { "count": 25, "name": "Earth Wax" }
-        ]
-      }
-    ],
-    "name": "Raptor Sky Walker Wings (1 of 2)"
-  },
-  {
-    "category": "WalkerParts",
-    "crafting": [
-      {
-        "ingredients": [
           { "count": 93, "name": "Wood" },
           { "count": 52, "name": "Fiber Weave" }
         ]
       }
     ],
     "name": "Buffalo Walker Wings (1 of 2)"
-  },
-  {
-    "category": "WalkerParts",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 47, "name": "Wood" },
-          { "count": 28, "name": "Fiber Weave" }
-        ]
-      }
-    ],
-    "name": "Mollusk Walker Wings (1 of 2)"
   },
   {
     "category": "WalkerParts",
@@ -7351,68 +7317,6 @@
     "crafting": [
       {
         "ingredients": [
-          { "count": 7, "name": "Wood" },
-          { "count": 1, "name": "Fiber" }
-        ]
-      }
-    ],
-    "name": "Firefly Walker Legs (1 of 2)"
-  },
-  {
-    "category": "WalkerParts",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 30, "name": "Wood" },
-          { "count": 16, "name": "Fiber Weave" }
-        ]
-      }
-    ],
-    "name": "Balang Walker Wings (1 of 2)"
-  },
-  {
-    "category": "WalkerParts",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 360, "name": "Wood" },
-          { "count": 30, "name": "Rope" },
-          { "count": 15, "name": "Nomad Cloth" }
-        ]
-      }
-    ],
-    "name": "Domus Walker Wings (1 of 2)"
-  },
-  {
-    "category": "WalkerParts",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 130, "name": "Wood" },
-          { "count": 63, "name": "Fiber Weave" }
-        ]
-      }
-    ],
-    "name": "Panda Walker Wings (1 of 2)"
-  },
-  {
-    "category": "WalkerParts",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 200, "name": "Wood" },
-          { "count": 28, "name": "Wood Shaft" },
-          { "count": 10, "name": "Earth Wax" }
-        ]
-      }
-    ],
-    "name": "Camelop Walker Legs (1 of 2)"
-  },
-  {
-    "category": "WalkerParts",
-    "crafting": [
-      {
-        "ingredients": [
           { "count": 300, "name": "Wood" },
           { "count": 26, "name": "Rope" },
           { "count": 13, "name": "Nomad Cloth" }
@@ -7438,12 +7342,61 @@
     "crafting": [
       {
         "ingredients": [
-          { "count": 93, "name": "Wood" },
-          { "count": 52, "name": "Fiber Weave" }
+          { "count": 80, "name": "Wood" },
+          { "count": 45, "name": "Fiber Weave" }
         ]
       }
     ],
-    "name": "Hercul Walker Wings (1 of 2)"
+    "name": "Toboggan Walker Wings (1 of 2)"
+  },
+  {
+    "category": "WalkerParts",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 87, "name": "Wood" },
+          { "count": 48, "name": "Fiber Weave" }
+        ]
+      }
+    ],
+    "name": "Hornet Walker Wings (1 of 2)"
+  },
+  {
+    "category": "WalkerParts",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 7, "name": "Wood" },
+          { "count": 1, "name": "Fiber" }
+        ]
+      }
+    ],
+    "name": "Firefly Walker Legs (1 of 2)"
+  },
+  {
+    "category": "WalkerParts",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 47, "name": "Wood" },
+          { "count": 28, "name": "Fiber Weave" }
+        ]
+      }
+    ],
+    "name": "Mollusk Walker Wings (1 of 2)"
+  },
+  {
+    "category": "WalkerParts",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 360, "name": "Wood" },
+          { "count": 30, "name": "Rope" },
+          { "count": 15, "name": "Nomad Cloth" }
+        ]
+      }
+    ],
+    "name": "Domus Walker Wings (1 of 2)"
   },
   {
     "category": "WalkerParts",
@@ -7463,24 +7416,75 @@
     "crafting": [
       {
         "ingredients": [
-          { "count": 80, "name": "Wood" },
-          { "count": 45, "name": "Fiber Weave" }
+          { "count": 200, "name": "Wood" },
+          { "count": 28, "name": "Wood Shaft" },
+          { "count": 10, "name": "Earth Wax" }
         ]
       }
     ],
-    "name": "Toboggan Walker Wings (1 of 2)"
+    "name": "Camelop Walker Legs (1 of 2)"
   },
   {
     "category": "WalkerParts",
     "crafting": [
       {
         "ingredients": [
-          { "count": 87, "name": "Wood" },
-          { "count": 48, "name": "Fiber Weave" }
+          { "count": 130, "name": "Wood" },
+          { "count": 63, "name": "Fiber Weave" }
         ]
       }
     ],
-    "name": "Hornet Walker Wings (1 of 2)"
+    "name": "Panda Walker Wings (1 of 2)"
+  },
+  {
+    "category": "WalkerParts",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 93, "name": "Wood" },
+          { "count": 52, "name": "Fiber Weave" }
+        ]
+      }
+    ],
+    "name": "Hercul Walker Wings (1 of 2)"
+  },
+  {
+    "category": "WalkerParts",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 30, "name": "Wood" },
+          { "count": 16, "name": "Fiber Weave" }
+        ]
+      }
+    ],
+    "name": "Balang Walker Wings (1 of 2)"
+  },
+  {
+    "category": "WalkerParts",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 30, "name": "Lightwood" },
+          { "count": 40, "name": "Fiber Weave" },
+          { "count": 25, "name": "Earth Wax" }
+        ]
+      }
+    ],
+    "name": "Raptor Sky Walker Wings (1 of 2)"
+  },
+  {
+    "category": "WalkerParts",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 35, "name": "Lightwood" },
+          { "count": 70, "name": "Fiber" },
+          { "count": 10, "name": "Rope" }
+        ]
+      }
+    ],
+    "name": "Raptor Sky Walker Legs (1 of 2)"
   },
   {
     "category": "WalkerTools",
@@ -7607,8 +7611,9 @@
     "crafting": [
       {
         "ingredients": [
-          { "count": 844, "name": "Wood" },
-          { "count": 1001, "name": "Fiber" }
+          { "count": 4114, "name": "Wood" },
+          { "count": 1891, "name": "Fiber" },
+          { "count": 16, "name": "Reinforced Plank" }
         ]
       }
     ],
@@ -7617,26 +7622,17 @@
   },
   {
     "category": "Walkers",
-    "cost": { "count": 22, "name": "Tablet" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 10, "name": "Lightwood" },
-          { "count": 12, "name": "Rope" }
-        ]
-      }
-    ],
-    "name": "Raptor Sky Walker Body",
-    "parent": "Dinghy Walker Body"
-  },
-  {
-    "category": "Walkers",
     "cost": { "count": 16, "name": "Tablet" },
     "crafting": [
       {
         "ingredients": [
-          { "count": 80, "name": "Wood" },
-          { "count": 110, "name": "Fiber" }
+          { "count": 1620, "name": "Wood" },
+          { "count": 37, "name": "Wood Shaft" },
+          { "count": 9, "name": "Rope" },
+          { "count": 1115, "name": "Fiber" },
+          { "count": 1, "name": "Walker Mechanism" },
+          { "count": 2, "name": "Earth Wax" },
+          { "count": 280, "name": "Stone" }
         ]
       }
     ],
@@ -7645,26 +7641,17 @@
   },
   {
     "category": "Walkers",
-    "cost": { "count": 27, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 40, "name": "Wood" },
-          { "count": 1, "name": "Rope" }
-        ]
-      }
-    ],
-    "name": "Mollusk Walker Body",
-    "parent": "Steering Levers"
-  },
-  {
-    "category": "Walkers",
     "cost": { "count": 50, "name": "Tablet" },
     "crafting": [
       {
         "ingredients": [
-          { "count": 20, "name": "Wood Shaft" },
-          { "count": 20, "name": "Rope" }
+          { "count": 5177, "name": "Wood" },
+          { "count": 225, "name": "Wood Shaft" },
+          { "count": 88, "name": "Rope" },
+          { "count": 1425, "name": "Fiber" },
+          { "count": 5, "name": "Walker Mechanism" },
+          { "count": 7, "name": "Bone Glue" },
+          { "count": 450, "name": "Stone" }
         ]
       }
     ],
@@ -7677,8 +7664,14 @@
     "crafting": [
       {
         "ingredients": [
-          { "count": 180, "name": "Wood" },
-          { "count": 6, "name": "Rope" }
+          { "count": 2462, "name": "Wood" },
+          { "count": 270, "name": "Rope" },
+          { "count": 52, "name": "Wood Shaft" },
+          { "count": 659, "name": "Fiber" },
+          { "count": 500, "name": "Stone" },
+          { "count": 8, "name": "Nomad Cloth" },
+          { "count": 5, "name": "Bone Glue" },
+          { "count": 5, "name": "Walker Mechanism" }
         ]
       }
     ],
@@ -7688,7 +7681,20 @@
   {
     "category": "Walkers",
     "cost": { "count": 20, "name": "Tablet" },
-    "crafting": [{ "ingredients": [{ "count": 1, "name": "Proxy License" }] }],
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 54, "name": "Rope" },
+          { "count": 127, "name": "Wood Shaft" },
+          { "count": 835, "name": "Wood" },
+          { "count": 12, "name": "Nomad Cloth" },
+          { "count": 418, "name": "Fiber" },
+          { "count": 20, "name": "Earth Wax" },
+          { "count": 150, "name": "Stone" },
+          { "count": 1, "name": "Proxy License" }
+        ]
+      }
+    ],
     "name": "Proxy Walker Body",
     "parent": "Steering Levers"
   },
@@ -7698,8 +7704,10 @@
     "crafting": [
       {
         "ingredients": [
-          { "count": 20, "name": "Wood" },
-          { "count": 2, "name": "Rupu Vine" }
+          { "count": 380, "name": "Wood" },
+          { "count": 245, "name": "Fiber" },
+          { "count": 100, "name": "Stone" },
+          { "count": 10, "name": "Rupu Vine" }
         ]
       }
     ],
@@ -7712,8 +7720,12 @@
     "crafting": [
       {
         "ingredients": [
-          { "count": 4, "name": "Rope" },
-          { "count": 100, "name": "Wood" }
+          { "count": 1155, "name": "Wood" },
+          { "count": 68, "name": "Rope" },
+          { "count": 3, "name": "Walker Mechanism" },
+          { "count": 165, "name": "Fiber" },
+          { "count": 4, "name": "Fiber Weave" },
+          { "count": 180, "name": "Stone" }
         ]
       }
     ],
@@ -7726,9 +7738,12 @@
     "crafting": [
       {
         "ingredients": [
-          { "count": 110, "name": "Wood" },
-          { "count": 135, "name": "Fiber" },
-          { "count": 4, "name": "Rope" }
+          { "count": 1130, "name": "Wood" },
+          { "count": 555, "name": "Fiber" },
+          { "count": 400, "name": "Stone" },
+          { "count": 38, "name": "Wood Shaft" },
+          { "count": 40, "name": "Rope" },
+          { "count": 3, "name": "Walker Mechanism" }
         ]
       }
     ],
@@ -7737,108 +7752,13 @@
   },
   {
     "category": "Walkers",
-    "cost": { "count": 3, "name": "Fragment" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 34, "name": "Wood" },
-          { "count": 41, "name": "Fiber" }
-        ]
-      }
-    ],
-    "name": "Firefly Walker Body",
-    "parent": "Walkers"
-  },
-  {
-    "category": "Walkers",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 65, "name": "Wood" },
-          { "count": 4, "name": "Rope" }
-        ]
-      }
-    ],
-    "name": "Silur Walker Body"
-  },
-  {
-    "category": "Walkers",
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 15, "name": "Wood" },
-          { "count": 2, "name": "Rupu Vine" },
-          { "count": 10, "name": "Fiber" }
-        ]
-      }
-    ],
-    "name": "Balang Walker Body"
-  },
-  {
-    "category": "Walkers",
-    "cost": { "count": 50, "name": "Tablet" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 35, "name": "Wood Shaft" },
-          { "count": 30, "name": "Rope" }
-        ]
-      }
-    ],
-    "name": "Domus Walker Body",
-    "parent": "Mollusk Walker Body"
-  },
-  {
-    "category": "Walkers",
-    "cost": { "count": 30, "name": "Tablet" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 30, "name": "Wood Shaft" },
-          { "count": 17, "name": "Rope" }
-        ]
-      }
-    ],
-    "name": "Panda Walker Body",
-    "parent": "Walker Packing Compartment"
-  },
-  {
-    "category": "Walkers",
-    "cost": { "count": 12, "name": "Tablet" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 100, "name": "Wood" },
-          { "count": 15, "name": "Wood Shaft" },
-          { "count": 10, "name": "Rope" }
-        ]
-      }
-    ],
-    "name": "Camelop  Walker Body",
-    "parent": "Tool Pod"
-  },
-  {
-    "category": "Walkers",
-    "cost": { "count": 100, "name": "Tablet" },
-    "crafting": [
-      {
-        "ingredients": [
-          { "count": 35, "name": "Wood Shaft" },
-          { "count": 20, "name": "Rope" }
-        ]
-      }
-    ],
-    "name": "Titan Walker Body",
-    "parent": "Buffalo Walker Body"
-  },
-  {
-    "category": "Walkers",
     "cost": { "count": 15, "name": "Fragment" },
     "crafting": [
       {
         "ingredients": [
-          { "count": 34, "name": "Wood" },
-          { "count": 41, "name": "Fiber" }
+          { "count": 110, "name": "Wood" },
+          { "count": 100, "name": "Fiber" },
+          { "count": 15, "name": "Stone" }
         ]
       }
     ],
@@ -7850,9 +7770,10 @@
     "crafting": [
       {
         "ingredients": [
-          { "count": 40, "name": "Wood" },
-          { "count": 50, "name": "Fiber" },
-          { "count": 2, "name": "Rupu Vine" }
+          { "count": 117, "name": "Wood" },
+          { "count": 114, "name": "Fiber" },
+          { "count": 18, "name": "Stone" },
+          { "count": 10, "name": "Rupu Vine" }
         ]
       }
     ],
@@ -7864,8 +7785,11 @@
     "crafting": [
       {
         "ingredients": [
-          { "count": 50, "name": "Wood" },
-          { "count": 2, "name": "Rope" }
+          { "count": 895, "name": "Wood" },
+          { "count": 25, "name": "Rope" },
+          { "count": 276, "name": "Fiber" },
+          { "count": 2, "name": "Fiber Weave" },
+          { "count": 90, "name": "Stone" }
         ]
       }
     ],
@@ -7874,17 +7798,94 @@
   },
   {
     "category": "Walkers",
-    "cost": { "count": 16, "name": "Tablet" },
+    "cost": { "count": 100, "name": "Tablet" },
     "crafting": [
       {
         "ingredients": [
-          { "count": 80, "name": "Wood" },
-          { "count": 110, "name": "Fiber" }
+          { "count": 3030, "name": "Wood" },
+          { "count": 625, "name": "Fiber" },
+          { "count": 600, "name": "Stone" },
+          { "count": 159, "name": "Rope" },
+          { "count": 385, "name": "Wood Shaft" },
+          { "count": 5, "name": "Walker Mechanism" }
         ]
       }
     ],
-    "name": "Hercul Walker Body",
-    "parent": "Tool Pod"
+    "name": "Titan Walker Body",
+    "parent": "Buffalo Walker Body"
+  },
+  {
+    "category": "Walkers",
+    "cost": { "count": 12, "name": "Tablet" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 1415, "name": "Wood" },
+          { "count": 400, "name": "Stone" },
+          { "count": 550, "name": "Fiber" },
+          { "count": 1, "name": "Walker Mechanism" },
+          { "count": 42, "name": "Rope" },
+          { "count": 82, "name": "Rupu Vine" },
+          { "count": 20, "name": "Fiber Weave" },
+          { "count": 55, "name": "Bone Splinter" }
+        ]
+      }
+    ],
+    "name": "Hornet Walker Body",
+    "parent": "Stiletto Walker Body"
+  },
+  {
+    "category": "Walkers",
+    "cost": { "count": 3, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 110, "name": "Wood" },
+          { "count": 100, "name": "Fiber" },
+          { "count": 15, "name": "Stone" }
+        ]
+      }
+    ],
+    "name": "Firefly Walker Body",
+    "parent": "Walkers"
+  },
+  {
+    "category": "Walkers",
+    "cost": { "count": 27, "name": "Fragment" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 570, "name": "Wood" },
+          { "count": 12, "name": "Rope" },
+          { "count": 80, "name": "Fiber" },
+          { "count": 90, "name": "Stone" },
+          { "count": 2, "name": "Walker Mechanism" },
+          { "count": 2, "name": "Fiber Weave" }
+        ]
+      }
+    ],
+    "name": "Mollusk Walker Body",
+    "parent": "Steering Levers"
+  },
+  {
+    "category": "Walkers",
+    "cost": { "count": 50, "name": "Tablet" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 4110, "name": "Wood" },
+          { "count": 235, "name": "Wood Shaft" },
+          { "count": 1350, "name": "Fiber" },
+          { "count": 140, "name": "Rope" },
+          { "count": 90, "name": "Obsidian" },
+          { "count": 3, "name": "Walker Mechanism" },
+          { "count": 9, "name": "Bone Glue" },
+          { "count": 510, "name": "Stone" }
+        ]
+      }
+    ],
+    "name": "Domus Walker Body",
+    "parent": "Mollusk Walker Body"
   },
   {
     "category": "Walkers",
@@ -7892,7 +7893,12 @@
     "crafting": [
       {
         "ingredients": [
-          { "count": 50, "name": "Wood" },
+          { "count": 900, "name": "Wood" },
+          { "count": 390, "name": "Fiber" },
+          { "count": 350, "name": "Stone" },
+          { "count": 40, "name": "Wood Shaft" },
+          { "count": 2, "name": "Walker Mechanism" },
+          { "count": 30, "name": "Rope" },
           { "count": 10, "name": "Bone Splinter" },
           { "count": 12, "name": "Rupu Vine" }
         ]
@@ -7907,14 +7913,112 @@
     "crafting": [
       {
         "ingredients": [
-          { "count": 50, "name": "Wood" },
-          { "count": 10, "name": "Bone Splinter" },
-          { "count": 12, "name": "Rupu Vine" }
+          { "count": 650, "name": "Wood" },
+          { "count": 90, "name": "Fiber" },
+          { "count": 120, "name": "Stone" },
+          { "count": 125, "name": "Wood Shaft" },
+          { "count": 70, "name": "Rope" },
+          { "count": 50, "name": "Obsidian" },
+          { "count": 20, "name": "Clay" },
+          { "count": 1, "name": "Walker Mechanism" }
         ]
       }
     ],
-    "name": "Hornet Walker Body",
-    "parent": "Stiletto Walker Body"
+    "name": "Camelop  Walker Body",
+    "parent": "Tool Pod"
+  },
+  {
+    "category": "Walkers",
+    "cost": { "count": 30, "name": "Tablet" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 1360, "name": "Wood" },
+          { "count": 600, "name": "Fiber" },
+          { "count": 350, "name": "Stone" },
+          { "count": 121, "name": "Wood Shaft" },
+          { "count": 86, "name": "Rope" },
+          { "count": 5, "name": "Nomad Cloth" },
+          { "count": 110, "name": "Rupu Vine" },
+          { "count": 2, "name": "Walker Mechanism" },
+          { "count": 35, "name": "Ceramic Shard" }
+        ]
+      }
+    ],
+    "name": "Panda Walker Body",
+    "parent": "Walker Packing Compartment"
+  },
+  {
+    "category": "Walkers",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 1615, "name": "Wood" },
+          { "count": 950, "name": "Fiber" },
+          { "count": 390, "name": "Stone" },
+          { "count": 2, "name": "Walker Mechanism" },
+          { "count": 39, "name": "Rope" },
+          { "count": 42, "name": "Wood Shaft" },
+          { "count": 12, "name": "Earth Wax" }
+        ]
+      }
+    ],
+    "name": "Silur Walker Body"
+  },
+  {
+    "category": "Walkers",
+    "cost": { "count": 16, "name": "Tablet" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 1580, "name": "Wood" },
+          { "count": 270, "name": "Stone" },
+          { "count": 1200, "name": "Fiber" },
+          { "count": 15, "name": "Rope" },
+          { "count": 38, "name": "Wood Shaft" },
+          { "count": 10, "name": "Earth Wax" },
+          { "count": 2, "name": "Walker Mechanism" }
+        ]
+      }
+    ],
+    "name": "Hercul Walker Body",
+    "parent": "Tool Pod"
+  },
+  {
+    "category": "Walkers",
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 400, "name": "Wood" },
+          { "count": 265, "name": "Fiber" },
+          { "count": 22, "name": "Rupu Vine" },
+          { "count": 10, "name": "Wood Shaft" },
+          { "count": 85, "name": "Stone" }
+        ]
+      }
+    ],
+    "name": "Balang Walker Body"
+  },
+  {
+    "category": "Walkers",
+    "cost": { "count": 22, "name": "Tablet" },
+    "crafting": [
+      {
+        "ingredients": [
+          { "count": 260, "name": "Lightwood" },
+          { "count": 100, "name": "Rupu Vine" },
+          { "count": 142, "name": "Rope" },
+          { "count": 2, "name": "Walker Mechanism" },
+          { "count": 710, "name": "Fiber" },
+          { "count": 80, "name": "Earth Wax" },
+          { "count": 100, "name": "Fiber Weave" },
+          { "count": 200, "name": "Wood" },
+          { "count": 240, "name": "Stone" }
+        ]
+      }
+    ],
+    "name": "Raptor Sky Walker Body",
+    "parent": "Dinghy Walker Body"
   },
   {
     "category": "Weapons",

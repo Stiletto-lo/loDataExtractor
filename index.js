@@ -7,7 +7,14 @@ let allItems = [];
 
 translator.initownTranslations();
 
-const folderType = ["tech", "item", "translation", "trade", "placeables"];
+const folderType = [
+  "tech",
+  "item",
+  "translation",
+  "trade",
+  "placeables",
+  "cached",
+];
 
 const itemTemplate = {
   category: undefined,
@@ -48,6 +55,7 @@ loadDirData("./Data/Items", 1);
 loadDirData("./Data/Placeables", 4);
 loadDirData("./Data/Recipes", 1);
 loadDirData("./Data/Trade", 3);
+loadDirData("./Data/Placeables", 5);
 
 allItems = translator.translateItems(allItems);
 
@@ -117,10 +125,11 @@ function loadDirData(techTreeDir, folderType = 0) {
           parsePrices(techTreeDir + "/" + file);
           break;
         case 4:
+          parsePlaceableData(techTreeDir + "/" + file);
+          break;
+        case 5:
           if (file.includes("CachedPlaceablesCosts.json")) {
             parseCachedItems(techTreeDir + "/" + file);
-          } else {
-            parsePlaceableData(techTreeDir + "/" + file);
           }
           break;
       }
@@ -163,6 +172,9 @@ function parseCachedItems(filePath) {
         }
         if (ingredients.length > 0) {
           recipe.ingredients = ingredients;
+        }
+        if (key.includes("DinghyWalker_C")) {
+          console.log("Key: " + key + " Name: " + item.name);
         }
         item.crafting = [recipe];
         allItems.push(item);
@@ -364,13 +376,18 @@ function parseCategory(category) {
   return category;
 }
 
-function parseName(name) {
+function parseType(name) {
   name = name.replace("BlueprintGeneratedClass", "").trim();
   name = name.replace(".0", "").trim();
   let dot = name.indexOf(".");
   if (dot > 0) {
     name = name.slice(dot + 1);
   }
+  return name;
+}
+
+function parseName(name) {
+  name = parseType(name);
   name = name.replace("_C", "").trim();
   name = translator.translateName(name);
 

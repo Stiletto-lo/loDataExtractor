@@ -61,11 +61,15 @@ controller.initownTranslations = () => {
 };
 
 controller.translateName = (name) => {
-  if (allTranslations[name]) {
-    return allTranslations[name];
-  }
+  if (name != null) {
+    if (allTranslations[name]) {
+      return allTranslations[name];
+    }
 
-  return name.trim();
+    return name.trim();
+  } else {
+    return name;
+  }
 };
 
 controller.translateItems = (allItems) => {
