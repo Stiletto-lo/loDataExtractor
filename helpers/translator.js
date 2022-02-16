@@ -58,6 +58,8 @@ controller.initownTranslations = () => {
   allTranslations["WalkersRoot"] = "Walkers";
   allTranslations["ConstructionRoot"] = "Construction";
   allTranslations["ReinforcedPlank2"] = "Reinforced Plank";
+  allTranslations["FiberworkingTier_02"] = "Advanced Fiberworking Station";
+  allTranslations["Fiberworking"] = "Fiberworking Station";
 };
 
 controller.translateName = (name) => {
