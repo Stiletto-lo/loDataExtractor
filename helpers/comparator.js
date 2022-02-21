@@ -2,6 +2,13 @@ const controller = {};
 const Axios = require("axios");
 const fs = require("fs");
 
+const DATA_TO_COMPARE = {
+  cost: true,
+  crafting: true,
+  category: true,
+  parent: true,
+};
+
 controller.compareItems = async (extractedItems) => {
   console.log("Start of item comparison");
   let githubItems = await controller.getAllItems();
@@ -72,19 +79,31 @@ controller.compareItems = async (extractedItems) => {
 };
 
 controller.isTheSame = (extractedItem, githubItem) => {
-  if (!controller.compareCost(extractedItem, githubItem)) {
+  if (
+    DATA_TO_COMPARE.cost &&
+    !controller.compareCost(extractedItem, githubItem)
+  ) {
     return false;
   }
 
-  if (!controller.compareCrafting(extractedItem, githubItem)) {
+  if (
+    DATA_TO_COMPARE.crafting &&
+    !controller.compareCrafting(extractedItem, githubItem)
+  ) {
     return false;
   }
 
-  if (!Object.is(githubItem.category, extractedItem.category)) {
+  if (
+    DATA_TO_COMPARE.category &&
+    !Object.is(githubItem.category, extractedItem.category)
+  ) {
     return false;
   }
 
-  if (!Object.is(githubItem.parent, extractedItem.parent)) {
+  if (
+    DATA_TO_COMPARE.parent &&
+    !Object.is(githubItem.parent, extractedItem.parent)
+  ) {
     return false;
   }
 
@@ -110,6 +129,33 @@ controller.compareCrafting = (extractedItem, githubItem) => {
           extractedItem.crafting[0].ingredients.length
       ) {
         return false;
+      } else {
+        let githubItemTotalIngredients = 0;
+        let extractedItemTotalIngredients = 0;
+
+        githubItem.crafting.forEach((recipe) => {
+          if (recipe.ingredients) {
+            recipe.ingredients.forEach((ingredient) => {
+              if (ingredient.count) {
+                githubItemTotalIngredients += ingredient.count;
+              }
+            });
+          }
+        });
+
+        extractedItem.crafting.forEach((recipe) => {
+          if (recipe.ingredients) {
+            recipe.ingredients.forEach((ingredient) => {
+              if (ingredient.count) {
+                extractedItemTotalIngredients += ingredient.count;
+              }
+            });
+          }
+        });
+
+        if (githubItemTotalIngredients != extractedItemTotalIngredients) {
+          return false;
+        }
       }
     }
   }
