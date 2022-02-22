@@ -3,10 +3,11 @@ const Axios = require("axios");
 const fs = require("fs");
 
 const DATA_TO_COMPARE = {
-  cost: true,
+  cost: false,
   crafting: true,
-  category: true,
-  parent: true,
+  crafting_time: true,
+  category: false,
+  parent: false,
 };
 
 controller.compareItems = async (extractedItems) => {
@@ -155,6 +156,27 @@ controller.compareCrafting = (extractedItem, githubItem) => {
 
         if (githubItemTotalIngredients != extractedItemTotalIngredients) {
           return false;
+        }
+
+        if (DATA_TO_COMPARE.crafting_time) {
+          let githubItemTotalTime = 0;
+          let extractedItemTotalTime = 0;
+
+          githubItem.crafting.forEach((recipe) => {
+            if (recipe.time) {
+              githubItemTotalTime += recipe.time;
+            }
+          });
+
+          extractedItem.crafting.forEach((recipe) => {
+            if (recipe.time) {
+              extractedItemTotalTime += recipe.time;
+            }
+          });
+
+          if (githubItemTotalTime != extractedItemTotalTime) {
+            return false;
+          }
         }
       }
     }

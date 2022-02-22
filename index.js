@@ -31,7 +31,7 @@ const recipeTemplate = {
   ingredients: [],
   output: undefined,
   station: undefined,
-  crafting_time: undefined,
+  time: undefined,
 };
 
 const ingredienTemplate = { count: undefined, name: undefined };
@@ -222,7 +222,7 @@ function parseItemData(filePath) {
             recipe.output = recipeData.Quantity;
           }
           if (recipeData.CraftingTime && recipeData.CraftingTime > 0) {
-            recipe.crafting_time = recipeData.CraftingTime;
+            recipe.time = recipeData.CraftingTime;
           }
           if (
             recipeData?.Category?.ObjectName &&

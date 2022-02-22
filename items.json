@@ -225,7 +225,7 @@
           { "count": 10, "name": "Tar" }
         ],
         "station": "Campfire",
-        "crafting_time": 75
+        "time": 75
       }
     ],
     "name": "Cluster Bomb",
@@ -285,7 +285,7 @@
           { "count": 1, "name": "Bone Splinter" }
         ],
         "station": "Campfire",
-        "crafting_time": 90
+        "time": 90
       }
     ],
     "name": "Chalk Bomb",
@@ -336,7 +336,7 @@
           { "count": 5, "name": "Feather" }
         ],
         "station": "Campfire",
-        "crafting_time": 60
+        "time": 60
       }
     ],
     "name": "Fire Bomb",
@@ -369,7 +369,7 @@
           { "count": 60, "name": "Mushroom Flesh" }
         ],
         "station": "Campfire",
-        "crafting_time": 75
+        "time": 75
       }
     ],
     "name": "Green Death Bomb",
@@ -388,7 +388,7 @@
           { "count": 1, "name": "Nomad Cloth" }
         ],
         "station": "Campfire",
-        "crafting_time": 75
+        "time": 75
       }
     ],
     "name": "Aloe Goo Bomb",
@@ -476,7 +476,7 @@
           { "count": 18, "name": "Insects" }
         ],
         "station": "Campfire",
-        "crafting_time": 75
+        "time": 75
       }
     ],
     "name": "Insect Bomb",
@@ -619,7 +619,7 @@
           { "count": 30, "name": "Sulfur" }
         ],
         "station": "Campfire",
-        "crafting_time": 120
+        "time": 120
       }
     ],
     "name": "Sulfur Bomb",
@@ -4256,7 +4256,7 @@
           { "count": 15, "name": "Ceramic Shard" }
         ],
         "station": "Campfire",
-        "crafting_time": 135
+        "time": 135
       }
     ],
     "name": "Bonebreaker",
@@ -4273,7 +4273,7 @@
           { "count": 10, "name": "Purified Water" }
         ],
         "station": "Campfire",
-        "crafting_time": 30
+        "time": 30
       }
     ],
     "name": "Vision Powder",
@@ -4290,7 +4290,7 @@
           { "count": 10, "name": "Purified Water" }
         ],
         "station": "Campfire",
-        "crafting_time": 135
+        "time": 135
       }
     ],
     "name": "Desert Mule",
@@ -4308,7 +4308,7 @@
           { "count": 1, "name": "Glass" }
         ],
         "station": "Campfire",
-        "crafting_time": 60
+        "time": 60
       }
     ],
     "name": "Sinus Destroyer",
@@ -4325,7 +4325,7 @@
           { "count": 1, "name": "Glass" }
         ],
         "station": "Campfire",
-        "crafting_time": 60
+        "time": 60
       }
     ],
     "name": "Jojo Mojo",
@@ -4343,7 +4343,7 @@
           { "count": 1, "name": "Glass" }
         ],
         "station": "Campfire",
-        "crafting_time": 60
+        "time": 60
       }
     ],
     "name": "Fury Fumes",
@@ -4361,7 +4361,7 @@
           { "count": 1, "name": "Glass" }
         ],
         "station": "Campfire",
-        "crafting_time": 60
+        "time": 60
       }
     ],
     "name": "Race Dust",
@@ -4378,7 +4378,7 @@
           { "count": 1, "name": "Glass" }
         ],
         "station": "Campfire",
-        "crafting_time": 60
+        "time": 60
       }
     ],
     "name": "Rupu Repellent",
@@ -4397,7 +4397,7 @@
           { "count": 1, "name": "Worm Fang" }
         ],
         "station": "Campfire",
-        "crafting_time": 100
+        "time": 100
       }
     ],
     "name": "Worm Tincture",
@@ -6008,12 +6008,12 @@
       {
         "ingredients": [{ "count": 1, "name": "Fragment" }],
         "station": "Ancient Fabricator",
-        "crafting_time": 200
+        "time": 200
       },
       {
         "ingredients": [{ "count": 1, "name": "Fragment" }],
         "station": "Temporary Fabricator",
-        "crafting_time": 60
+        "time": 60
       }
     ],
     "name": "Tablet",
@@ -6025,7 +6025,7 @@
       {
         "ingredients": [{ "count": 1, "name": "Worm Fang" }],
         "station": "Trophy Exchange",
-        "crafting_time": 1
+        "time": 1
       },
       {
         "ingredients": [
@@ -6034,7 +6034,7 @@
           { "count": 1, "name": "Meteor Core" }
         ],
         "station": "Advanced Woodworking Station",
-        "crafting_time": 70
+        "time": 70
       },
       {
         "ingredients": [
@@ -6043,7 +6043,7 @@
           { "count": 1, "name": "Meteor Core" }
         ],
         "station": "Artificer Woodworking Station",
-        "crafting_time": 30
+        "time": 30
       }
     ],
     "name": "Random Knowledge Tablet",
@@ -6058,8 +6058,8 @@
           { "count": 1, "name": "Shattered Fragment" },
           { "count": 1, "name": "Glass" }
         ],
-        "station": "Woodworking",
-        "crafting_time": 30
+        "station": "Woodworking Station",
+        "time": 30
       },
       {
         "ingredients": [
@@ -6067,7 +6067,7 @@
           { "count": 1, "name": "Glass" }
         ],
         "station": "Advanced Woodworking Station",
-        "crafting_time": 15
+        "time": 15
       },
       {
         "ingredients": [
@@ -6075,7 +6075,7 @@
           { "count": 1, "name": "Glass" }
         ],
         "station": "Artificer Woodworking Station",
-        "crafting_time": 5
+        "time": 5
       }
     ],
     "name": "Fragment",
@@ -6094,7 +6094,7 @@
           { "count": 5, "name": "Purified Water" }
         ],
         "station": "Obsidian Machine",
-        "crafting_time": 90
+        "time": 90
       }
     ],
     "name": "Lava Fuel"
@@ -6105,7 +6105,7 @@
       {
         "ingredients": [{ "count": 1, "name": "Earth Wax" }],
         "station": "Furnace",
-        "crafting_time": 1320
+        "time": 1320
       }
     ],
     "name": "Tar",
@@ -6118,13 +6118,13 @@
         "ingredients": [{ "count": 1, "name": "Terrain: Sand" }],
         "output": 100,
         "station": "Soil Excavator",
-        "crafting_time": 29
+        "time": 29
       },
       {
         "ingredients": [{ "count": 1, "name": "Stone" }],
         "output": 10,
-        "station": "Stomping",
-        "crafting_time": 5
+        "station": "Stomping Station",
+        "time": 5
       }
     ],
     "name": "Sand"
@@ -6137,36 +6137,36 @@
         "ingredients": [{ "count": 1, "name": "Aloe Vera" }],
         "output": 2,
         "station": "Campfire",
-        "crafting_time": 3
+        "time": 3
       },
       {
         "ingredients": [{ "count": 1, "name": "Apple" }],
         "output": 15,
-        "station": "Stomping",
-        "crafting_time": 120
+        "station": "Stomping Station",
+        "time": 120
       },
       {
         "ingredients": [{ "count": 1, "name": "Corn" }],
         "output": 2,
-        "station": "Stomping",
-        "crafting_time": 16
+        "station": "Stomping Station",
+        "time": 16
       },
       {
         "ingredients": [{ "count": 1, "name": "Blood Turnip" }],
         "output": 10,
-        "station": "Stomping",
-        "crafting_time": 100
+        "station": "Stomping Station",
+        "time": 100
       },
       {
         "ingredients": [{ "count": 4, "name": "Cactus Flesh" }],
         "station": "Campfire",
-        "crafting_time": 3
+        "time": 3
       },
       {
         "ingredients": [{ "count": 1, "name": "Thornberry" }],
         "output": 3,
-        "station": "Stomping",
-        "crafting_time": 24
+        "station": "Stomping Station",
+        "time": 24
       },
       {
         "ingredients": [
@@ -6175,14 +6175,14 @@
           { "count": 100, "name": "Sand" }
         ],
         "output": 200,
-        "station": "Purification",
-        "crafting_time": 600
+        "station": "Purification Station",
+        "time": 600
       },
       {
         "ingredients": [{ "count": 1, "name": "Huge Cactus Fruit" }],
         "output": 12,
-        "station": "Stomping",
-        "crafting_time": 96
+        "station": "Stomping Station",
+        "time": 96
       },
       {
         "ingredients": [
@@ -6191,24 +6191,24 @@
         ],
         "output": 20,
         "station": "Campfire",
-        "crafting_time": 120
+        "time": 120
       },
       {
         "ingredients": [{ "count": 3, "name": "Cactus Flesh" }],
-        "station": "Stomping",
-        "crafting_time": 8
+        "station": "Stomping Station",
+        "time": 8
       },
       {
         "ingredients": [{ "count": 1, "name": "Aloe Vera" }],
         "output": 3,
-        "station": "Stomping",
-        "crafting_time": 40
+        "station": "Stomping Station",
+        "time": 40
       },
       {
         "ingredients": [{ "count": 5, "name": "Contaminated Water" }],
         "output": 5,
         "station": "Campfire",
-        "crafting_time": 120
+        "time": 120
       }
     ],
     "name": "Purified Water",
@@ -6226,7 +6226,7 @@
           { "count": 1, "name": "Bone Glue" }
         ],
         "station": "Advanced Fiberworking Station",
-        "crafting_time": 60
+        "time": 60
       },
       {
         "ingredients": [
@@ -6234,7 +6234,7 @@
           { "count": 12, "name": "Earth Wax" }
         ],
         "station": "Advanced Fiberworking Station",
-        "crafting_time": 28
+        "time": 28
       }
     ],
     "name": "Nomad Cloth",
@@ -6255,7 +6255,7 @@
           { "count": 10, "name": "Ash" }
         ],
         "station": "Soil Excavator",
-        "crafting_time": 8
+        "time": 8
       }
     ],
     "name": "Clay",
@@ -6271,13 +6271,13 @@
         "ingredients": [{ "count": 2, "name": "Rupu Pelt" }],
         "output": 5,
         "station": "Fiberworking Station",
-        "crafting_time": 5
+        "time": 5
       },
       {
         "ingredients": [{ "count": 10, "name": "Cattail" }],
         "output": 3,
         "station": "Advanced Fiberworking Station",
-        "crafting_time": 3
+        "time": 3
       }
     ],
     "name": "Fiber",
@@ -6292,7 +6292,7 @@
           { "count": 2, "name": "Wood" }
         ],
         "station": "Fiberworking Station",
-        "crafting_time": 5
+        "time": 5
       },
       {
         "ingredients": [
@@ -6300,7 +6300,7 @@
           { "count": 2, "name": "Wood" }
         ],
         "station": "Advanced Fiberworking Station",
-        "crafting_time": 2
+        "time": 2
       }
     ],
     "name": "Fiber Weave",
@@ -6318,7 +6318,7 @@
           { "count": 3, "name": "Bone Splinter" }
         ],
         "station": "Campfire",
-        "crafting_time": 45
+        "time": 45
       }
     ],
     "name": "Bone Glue",
@@ -6332,7 +6332,7 @@
       {
         "ingredients": [{ "count": 1, "name": "Clay" }],
         "station": "Furnace",
-        "crafting_time": 720
+        "time": 720
       }
     ],
     "name": "Ceramic Shard",
@@ -6348,27 +6348,27 @@
           { "count": 2, "name": "Purified Water" }
         ],
         "station": "Soil Excavator",
-        "crafting_time": 16
+        "time": 16
       },
       {
         "ingredients": [{ "count": 15, "name": "Palm Leaves" }],
-        "station": "Stomping",
-        "crafting_time": 25
+        "station": "Stomping Station",
+        "time": 25
       },
       {
         "ingredients": [{ "count": 10, "name": "Rupu Vine" }],
-        "station": "Stomping",
-        "crafting_time": 25
+        "station": "Stomping Station",
+        "time": 25
       },
       {
         "ingredients": [{ "count": 5, "name": "Beeswax" }],
-        "station": "Stomping",
-        "crafting_time": 25
+        "station": "Stomping Station",
+        "time": 25
       },
       {
         "ingredients": [{ "count": 10, "name": "Mushroom Flesh" }],
-        "station": "Stomping",
-        "crafting_time": 25
+        "station": "Stomping Station",
+        "time": 25
       }
     ],
     "name": "Earth Wax",
@@ -6382,7 +6382,7 @@
       {
         "ingredients": [{ "count": 2, "name": "Sand" }],
         "station": "Advanced Furnace",
-        "crafting_time": 1080
+        "time": 1080
       }
     ],
     "name": "Glass",
@@ -6397,7 +6397,7 @@
       {
         "ingredients": [{ "count": 1, "name": "Iron Ore" }],
         "station": "Advanced Furnace",
-        "crafting_time": 2100
+        "time": 2100
       }
     ],
     "name": "Iron Ingot",
@@ -6413,7 +6413,7 @@
           { "count": 8, "name": "Nibiran Mineral" }
         ],
         "station": "Advanced Furnace",
-        "crafting_time": 340
+        "time": 340
       }
     ],
     "name": "Nibiran Ingot",
@@ -6444,7 +6444,7 @@
         ],
         "output": 5,
         "station": "Ancient Fabricator",
-        "crafting_time": 250
+        "time": 250
       },
       {
         "ingredients": [
@@ -6452,7 +6452,7 @@
           { "count": 1, "name": "Iron Ingot" }
         ],
         "station": "Artificer Woodworking Station",
-        "crafting_time": 60
+        "time": 60
       },
       {
         "ingredients": [
@@ -6461,7 +6461,7 @@
         ],
         "output": 10,
         "station": "Lumbermill",
-        "crafting_time": 450
+        "time": 450
       }
     ],
     "name": "Reinforced Plank",
@@ -6478,8 +6478,8 @@
           { "count": 100, "name": "Wood" },
           { "count": 30, "name": "Earth Wax" }
         ],
-        "station": "Woodworking",
-        "crafting_time": 40
+        "station": "Woodworking Station",
+        "time": 40
       },
       {
         "ingredients": [
@@ -6488,7 +6488,7 @@
           { "count": 30, "name": "Earth Wax" }
         ],
         "station": "Advanced Woodworking Station",
-        "crafting_time": 30
+        "time": 30
       },
       {
         "ingredients": [
@@ -6497,7 +6497,7 @@
           { "count": 30, "name": "Earth Wax" }
         ],
         "station": "Artificer Woodworking Station",
-        "crafting_time": 20
+        "time": 20
       }
     ],
     "name": "Walker Mechanism",
@@ -6511,7 +6511,7 @@
       {
         "ingredients": [{ "count": 8, "name": "Cattail" }],
         "station": "Fiberworking Station",
-        "crafting_time": 24
+        "time": 24
       },
       {
         "ingredients": [
@@ -6519,12 +6519,12 @@
           { "count": 2, "name": "Rupu Vine" }
         ],
         "station": "Fiberworking Station",
-        "crafting_time": 38
+        "time": 38
       },
       {
         "ingredients": [{ "count": 8, "name": "Cattail" }],
         "station": "Advanced Fiberworking Station",
-        "crafting_time": 18
+        "time": 18
       },
       {
         "ingredients": [
@@ -6532,7 +6532,7 @@
           { "count": 2, "name": "Rupu Vine" }
         ],
         "station": "Advanced Fiberworking Station",
-        "crafting_time": 26
+        "time": 26
       }
     ],
     "name": "Rope",
@@ -6548,12 +6548,12 @@
       {
         "ingredients": [{ "count": 30, "name": "Torque" }],
         "station": "TorqueConsumption",
-        "crafting_time": 30
+        "time": 30
       },
       {
         "ingredients": [{ "count": 100, "name": "Torque" }],
         "station": "HighTorqueConsumption",
-        "crafting_time": 30
+        "time": 30
       }
     ],
     "name": "Torque",
@@ -6567,8 +6567,8 @@
           { "count": 5, "name": "Wood" },
           { "count": 2, "name": "Fiber" }
         ],
-        "station": "Woodworking",
-        "crafting_time": 5
+        "station": "Woodworking Station",
+        "time": 5
       },
       {
         "ingredients": [
@@ -6576,7 +6576,7 @@
           { "count": 2, "name": "Fiber" }
         ],
         "station": "Advanced Woodworking Station",
-        "crafting_time": 2.5
+        "time": 2.5
       },
       {
         "ingredients": [
@@ -6584,7 +6584,7 @@
           { "count": 2, "name": "Fiber" }
         ],
         "station": "Artificer Woodworking Station",
-        "crafting_time": 1
+        "time": 1
       }
     ],
     "name": "Wood Shaft",
@@ -6597,22 +6597,22 @@
       {
         "ingredients": [{ "count": 1, "name": "Wood" }],
         "station": "FuelBurning",
-        "crafting_time": 21
+        "time": 21
       },
       {
         "ingredients": [{ "count": 5, "name": "Fiber" }],
         "station": "FuelBurning",
-        "crafting_time": 4
+        "time": 4
       },
       {
         "ingredients": [{ "count": 1, "name": "Wood" }],
         "station": "FuelLightSource",
-        "crafting_time": 72
+        "time": 72
       },
       {
         "ingredients": [{ "count": 5, "name": "Fiber" }],
         "station": "FuelLightSource",
-        "crafting_time": 12
+        "time": 12
       }
     ],
     "name": "Ash",
@@ -6624,7 +6624,7 @@
       {
         "ingredients": [{ "count": 1, "name": "Wood Log" }],
         "station": "Lumbermill",
-        "crafting_time": 60
+        "time": 60
       }
     ],
     "name": "Bent Wooden Planks",
@@ -6636,17 +6636,17 @@
       {
         "ingredients": [{ "count": 1, "name": "Wood" }],
         "station": "FuelBurning",
-        "crafting_time": 21
+        "time": 21
       },
       {
         "ingredients": [{ "count": 1, "name": "Wood" }],
         "station": "Furnace",
-        "crafting_time": 300
+        "time": 300
       },
       {
         "ingredients": [{ "count": 1, "name": "Wood" }],
         "station": "FuelLightSource",
-        "crafting_time": 72
+        "time": 72
       }
     ],
     "name": "Charcoal",
@@ -6659,27 +6659,27 @@
       {
         "ingredients": [{ "count": 1, "name": "Wood" }],
         "station": "Fuel",
-        "crafting_time": 2
+        "time": 2
       },
       {
         "ingredients": [{ "count": 1, "name": "Charcoal" }],
         "station": "Fuel",
-        "crafting_time": 20
+        "time": 20
       },
       {
         "ingredients": [{ "count": 1, "name": "Liquid Fuel" }],
         "station": "FurnaceBurning_Tier2",
-        "crafting_time": 60
+        "time": 60
       },
       {
         "ingredients": [{ "count": 1, "name": "Rupu Gel" }],
         "station": "FurnaceBurning_Tier2",
-        "crafting_time": 100
+        "time": 100
       },
       {
         "ingredients": [{ "count": 1, "name": "Lava Fuel" }],
         "station": "FurnaceBurning_Tier2",
-        "crafting_time": 80
+        "time": 80
       }
     ],
     "name": "Fuel",
@@ -6696,12 +6696,12 @@
       {
         "ingredients": [{ "count": 1, "name": "Sulfur" }],
         "station": "Campfire",
-        "crafting_time": 1
+        "time": 1
       },
       {
         "ingredients": [{ "count": 1, "name": "Chitin Plate" }],
         "station": "Campfire",
-        "crafting_time": 1
+        "time": 1
       }
     ],
     "name": "Toxic Remains",
@@ -6714,7 +6714,7 @@
         "ingredients": [{ "count": 1, "name": "Wood Log" }],
         "output": 300,
         "station": "Lumbermill",
-        "crafting_time": 60
+        "time": 60
       }
     ],
     "name": "Wood",
@@ -6727,7 +6727,7 @@
         "ingredients": [{ "count": 1, "name": "Terrain: Worm Sand" }],
         "output": 10,
         "station": "Soil Excavator",
-        "crafting_time": 29
+        "time": 29
       }
     ],
     "name": "Worm Sand",
