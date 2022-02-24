@@ -4,10 +4,11 @@ const fs = require("fs");
 
 const DATA_TO_COMPARE = {
   cost: false,
-  crafting: true,
-  crafting_time: true,
+  crafting: false,
+  crafting_time: false,
   category: false,
   parent: false,
+  damage: true,
 };
 
 controller.compareItems = async (extractedItems) => {
@@ -90,6 +91,13 @@ controller.isTheSame = (extractedItem, githubItem) => {
   if (
     DATA_TO_COMPARE.crafting &&
     !controller.compareCrafting(extractedItem, githubItem)
+  ) {
+    return false;
+  }
+
+  if (
+    DATA_TO_COMPARE.damage &&
+    !Object.is(githubItem.damage, extractedItem.damage)
   ) {
     return false;
   }

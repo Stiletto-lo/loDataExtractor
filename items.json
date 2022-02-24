@@ -99,6 +99,7 @@
         ]
       }
     ],
+    "damage": 1000,
     "trade_price": 1500
   },
   {
@@ -116,6 +117,7 @@
         ]
       }
     ],
+    "damage": 180,
     "trade_price": 25
   },
   {
@@ -179,6 +181,7 @@
         "output": 2
       }
     ],
+    "damage": 500,
     "name": "Bombolt",
     "trade_price": 11.7
   },
@@ -194,6 +197,7 @@
         ]
       }
     ],
+    "damage": 150,
     "name": "Bone Bolt",
     "parent": "Flint Harpoon",
     "trade_price": 5
@@ -209,6 +213,7 @@
         ]
       }
     ],
+    "damage": 5,
     "name": "Bone Harpoon",
     "trade_price": 7.6
   },
@@ -228,6 +233,7 @@
         "time": 75
       }
     ],
+    "damage": 20,
     "name": "Cluster Bomb",
     "parent": "Slingshot",
     "trade_price": 84.7
@@ -243,6 +249,7 @@
         ]
       }
     ],
+    "damage": 700,
     "name": "Catapult Boulder",
     "trade_price": 8
   },
@@ -257,6 +264,7 @@
         ]
       }
     ],
+    "damage": 165,
     "name": "Ceramic-Tipped Bolt",
     "parent": "Bone Bolt",
     "trade_price": 11
@@ -272,6 +280,7 @@
         ]
       }
     ],
+    "damage": 5,
     "name": "Ceramic-Tipped Harpoon",
     "trade_price": 14.1
   },
@@ -304,6 +313,7 @@
         ]
       }
     ],
+    "damage": 25,
     "name": "Explosive Bolt",
     "parent": "Ceramic-Tipped Bolt",
     "trade_price": 17.8
@@ -321,6 +331,7 @@
         "output": 8
       }
     ],
+    "damage": 500,
     "name": "Explosive Dart",
     "parent": "Repeater",
     "trade_price": 49.8
@@ -339,6 +350,7 @@
         "time": 60
       }
     ],
+    "damage": 10,
     "name": "Fire Bomb",
     "parent": "Slingshot",
     "trade_price": 38
@@ -355,6 +367,7 @@
         "output": 8
       }
     ],
+    "damage": 150,
     "name": "Floating Mine",
     "parent": "Repeater",
     "trade_price": 96.4
@@ -372,6 +385,7 @@
         "time": 75
       }
     ],
+    "damage": 20,
     "name": "Green Death Bomb",
     "parent": "Slingshot",
     "trade_price": 36
@@ -391,6 +405,7 @@
         "time": 75
       }
     ],
+    "damage": -5,
     "name": "Aloe Goo Bomb",
     "parent": "Slingshot",
     "trade_price": 40.5
@@ -408,6 +423,7 @@
         ]
       }
     ],
+    "damage": 850,
     "name": "Fire Bolt",
     "parent": "Flint Harpoon",
     "trade_price": 15.6
@@ -426,6 +442,7 @@
         ]
       }
     ],
+    "damage": 1025,
     "name": "Hellfire Bolt",
     "parent": "Fire Bolt",
     "trade_price": 175.3
@@ -443,6 +460,7 @@
         ]
       }
     ],
+    "damage": 1025,
     "name": "Hardened Hellfire Bolt",
     "parent": "Hellfire Bolt",
     "trade_price": 175.3
@@ -460,6 +478,7 @@
         ]
       }
     ],
+    "damage": 145,
     "name": "Hullbreaker Scattershot",
     "parent": "Scattershot",
     "trade_price": 61.8
@@ -479,6 +498,7 @@
         "time": 75
       }
     ],
+    "damage": 20,
     "name": "Insect Bomb",
     "parent": "Slingshot",
     "trade_price": 24.2
@@ -494,6 +514,7 @@
         ]
       }
     ],
+    "damage": 5,
     "name": "Iron-Tipped Harpoon",
     "trade_price": 30.6
   },
@@ -519,6 +540,7 @@
         "station": "Ammo"
       }
     ],
+    "damage": 250,
     "name": "Nibiran-tipped Bolt",
     "trade_price": 16500000000
   },
@@ -534,6 +556,7 @@
         "output": 8
       }
     ],
+    "damage": 30,
     "name": "Dart",
     "trade_price": 1.5
   },
@@ -547,6 +570,7 @@
         ]
       }
     ],
+    "damage": 100,
     "name": "Rupu Rock",
     "trade_price": 1.4
   },
@@ -562,6 +586,7 @@
         "output": 6
       }
     ],
+    "damage": 160,
     "name": "Scattershot",
     "parent": "Scattershot Gun",
     "trade_price": 5.2
@@ -576,6 +601,7 @@
         ]
       }
     ],
+    "damage": 450,
     "name": "Small Boulder",
     "trade_price": 3.1
   },
@@ -589,6 +615,7 @@
         ]
       }
     ],
+    "damage": 125,
     "name": "Flint Bolt",
     "trade_price": 1.3
   },
@@ -604,6 +631,7 @@
         ]
       }
     ],
+    "damage": 5,
     "name": "Flint Harpoon",
     "parent": "Ballista",
     "trade_price": 4.4
@@ -622,6 +650,7 @@
         "time": 120
       }
     ],
+    "damage": 20,
     "name": "Sulfur Bomb",
     "parent": "Green Death Bomb",
     "trade_price": 52.2
@@ -631,6 +660,7 @@
     "crafting": [
       { "ingredients": [{ "count": 6, "name": "Beeswax" }], "station": "Ammo" }
     ],
+    "damage": 2,
     "name": "Water Pitcher",
     "trade_price": 1
   },

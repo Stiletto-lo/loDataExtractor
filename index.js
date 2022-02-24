@@ -201,6 +201,9 @@ function parseItemData(filePath) {
       if (jsonData[1].Properties?.ExpectedPrice) {
         item.trade_price = jsonData[1].Properties.ExpectedPrice;
       }
+      if (jsonData[1].Properties?.ProjectileDamage?.Damage) {
+        item.damage = jsonData[1].Properties.ProjectileDamage.Damage;
+      }
       if (jsonData[1].Properties?.Recipes) {
         let recipesData = jsonData[1].Properties.Recipes;
         let crafting = [];
