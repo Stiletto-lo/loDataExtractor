@@ -29,7 +29,35 @@ const itemTemplate = {
   translation: undefined,
   type: undefined,
   description: undefined,
+  projectileDamage: undefined,
+  experiencieReward: undefined,
+  stackSize: undefined,
+  weight: undefined,
+  durability: undefined,
+  weaponInfo: undefined,
+  toolInfo: undefined,
 };
+
+const weaponInfoTemplate = {
+  durabilityDamage: undefined,
+  weaponSpeed: undefined,
+  impact: undefined,
+  stability: undefined,
+  weaponLength: undefined,
+};
+
+const toolInfoTemplate = {
+  toolType: undefined,
+  tier: undefined,
+};
+
+const projectileDamageTemplate = {
+  damage: undefined,
+  penetration: undefined,
+  effectivenessVsSoak: undefined,
+  effectivenessVsReduce: undefined,
+};
+
 const recipeTemplate = {
   ingredients: [],
   output: undefined,
@@ -99,7 +127,7 @@ allItems.sort(orderByCategory);
 if (allItems.length > 0) {
   fs.writeFile(
     folderPatch + "itemsDetailed.json",
-    JSON.stringify(allItems),
+    JSON.stringify(allItems, null, 2),
     function (err) {
       if (err) {
         console.error("Error creating the file");
@@ -111,17 +139,20 @@ if (allItems.length > 0) {
 }
 
 allItems.forEach((item) => {
-  Object.keys(item).forEach((key) => {
-    if (item["description"] != undefined) {
-      delete item["description"];
-    }
-  });
+  item.description = undefined;
+  item.projectileDamage = undefined;
+  item.experiencieReward = undefined;
+  item.stackSize = undefined;
+  item.weight = undefined;
+  item.durability = undefined;
+  item.weaponInfo = undefined;
+  item.toolInfo = undefined;
 });
 
 if (allItems.length > 0) {
   fs.writeFile(
     folderPatch + "items.json",
-    JSON.stringify(allItems),
+    JSON.stringify(allItems, null, 2),
     function (err) {
       if (err) {
         console.error("Error creating the file");
@@ -231,9 +262,96 @@ function parseItemData(filePath) {
       if (jsonData[1].Properties?.ExpectedPrice) {
         item.trade_price = jsonData[1].Properties.ExpectedPrice;
       }
+
       if (jsonData[1].Properties?.ProjectileDamage?.Damage) {
         item.damage = jsonData[1].Properties.ProjectileDamage.Damage;
       }
+
+      if (jsonData[1].Properties?.ProjectileDamage) {
+        let projectileDamage = { ...projectileDamageTemplate };
+
+        projectileDamage.damage = jsonData[1].Properties?.ProjectileDamage
+          ?.Damage
+          ? jsonData[1].Properties?.ProjectileDamage?.Damage
+          : undefined;
+        projectileDamage.penetration = jsonData[1].Properties?.ProjectileDamage
+          ?.Penetration
+          ? jsonData[1].Properties?.ProjectileDamage?.Penetration
+          : undefined;
+        projectileDamage.effectivenessVsSoak = jsonData[1].Properties
+          ?.ProjectileDamage?.EffectivenessVsSoak
+          ? jsonData[1].Properties?.ProjectileDamage?.EffectivenessVsSoak
+          : undefined;
+        projectileDamage.effectivenessVsReduce = jsonData[1].Properties
+          ?.ProjectileDamage?.EffectivenessVsReduce
+          ? jsonData[1].Properties?.ProjectileDamage?.EffectivenessVsReduce
+          : undefined;
+
+        item.projectileDamage = projectileDamage;
+      }
+
+      if (jsonData[1].Properties?.ExperienceRewardCrafting) {
+        item.experiencieReward =
+          jsonData[1].Properties.ExperienceRewardCrafting;
+      }
+
+      if (jsonData[1].Properties?.MaxStackSize) {
+        item.stackSize = jsonData[1].Properties.MaxStackSize;
+      }
+
+      if (jsonData[1].Properties?.Weight) {
+        item.weight = jsonData[1].Properties.Weight;
+      }
+
+      if (jsonData[1].Properties?.MaxDurability) {
+        item.durability = jsonData[1].Properties.MaxDurability;
+      }
+
+      let weaponInfo = { ...weaponInfoTemplate };
+
+      if (jsonData[1].Properties?.DurabilityDamage) {
+        weaponInfo.durabilityDamage = jsonData[1].Properties.DurabilityDamage;
+        item.weaponInfo = weaponInfo;
+      }
+      if (jsonData[1].Properties?.WeaponSpeed) {
+        weaponInfo.weaponSpeed = jsonData[1].Properties.WeaponSpeed;
+        item.weaponInfo = weaponInfo;
+      }
+      if (jsonData[1].Properties?.Impact) {
+        weaponInfo.impact = jsonData[1].Properties.Impact;
+        item.weaponInfo = weaponInfo;
+      }
+      if (jsonData[1].Properties?.Stability) {
+        weaponInfo.Stability = jsonData[1].Properties.Stability;
+        item.weaponInfo = weaponInfo;
+      }
+      if (jsonData[1].Properties?.WeaponLength) {
+        weaponInfo.WeaponLength = jsonData[1].Properties.WeaponLength;
+        item.weaponInfo = weaponInfo;
+      }
+
+      if (jsonData[1].Properties?.ToolInfo) {
+        let toolInfosData = jsonData[1].Properties.ToolInfo;
+        let toolInfos = [];
+
+        toolInfosData.forEach((toolInfoData) => {
+          let toolInfo = { ...toolInfoTemplate };
+          toolInfo.tier = toolInfoData.Tier;
+          if (toolInfoData.ToolType.includes("TreeCutting")) {
+            toolInfo.toolType = "TreeCutting";
+          } else if (toolInfoData.ToolType.includes("Scythe")) {
+            toolInfo.toolType = "Scythe";
+          } else if (toolInfoData.ToolType.includes("Mining")) {
+            toolInfo.toolType = "Mining";
+          } else {
+            console.warn("New tool type: " + toolInfoData.ToolType);
+          }
+          toolInfos.push(toolInfo);
+        });
+
+        item.toolInfo = toolInfos;
+      }
+
       if (jsonData[1].Properties?.Recipes) {
         let recipesData = jsonData[1].Properties.Recipes;
         let crafting = [];

@@ -47,7 +47,7 @@ controller.compareItems = async (extractedItems, folderPatch) => {
   if (differentItems.length > 0) {
     fs.writeFile(
       folderPatch + "differentItems.json",
-      JSON.stringify(differentItems),
+      JSON.stringify(differentItems, null, 2),
       function (err) {
         if (err) {
           console.error("Error creating the file");
@@ -59,7 +59,7 @@ controller.compareItems = async (extractedItems, folderPatch) => {
   if (itemsNotFound.length > 0) {
     fs.writeFile(
       folderPatch + "itemsNotFound.json",
-      JSON.stringify(itemsNotFound),
+      JSON.stringify(itemsNotFound, null, 2),
       function (err) {
         if (err) {
           console.error("Error creating the file");
@@ -71,7 +71,7 @@ controller.compareItems = async (extractedItems, folderPatch) => {
   if (githubItems.length > 0) {
     fs.writeFile(
       folderPatch + "githubItems.json",
-      JSON.stringify(githubItems),
+      JSON.stringify(githubItems, null, 2),
       function (err) {
         if (err) {
           console.error("Error creating the file");
