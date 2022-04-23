@@ -8,7 +8,8 @@ const DATA_TO_COMPARE = {
   crafting_time: false,
   category: false,
   parent: false,
-  damage: true,
+  damage: false,
+  trade_price: true,
 };
 
 controller.compareItems = async (extractedItems) => {
@@ -112,6 +113,13 @@ controller.isTheSame = (extractedItem, githubItem) => {
   if (
     DATA_TO_COMPARE.parent &&
     !Object.is(githubItem.parent, extractedItem.parent)
+  ) {
+    return false;
+  }
+
+  if (
+    DATA_TO_COMPARE.trade_price &&
+    !Object.is(githubItem.trade_price, extractedItem.trade_price)
   ) {
     return false;
   }
