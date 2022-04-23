@@ -7,6 +7,8 @@ let allItems = [];
 
 translator.initownTranslations();
 
+const folderPatch = "./exported/";
+
 const folderType = [
   "tech",
   "item",
@@ -96,7 +98,7 @@ allItems.sort(orderByCategory);
 
 if (allItems.length > 0) {
   fs.writeFile(
-    "./itemsDetailed.json",
+    folderPatch + "itemsDetailed.json",
     JSON.stringify(allItems),
     function (err) {
       if (err) {
@@ -117,16 +119,20 @@ allItems.forEach((item) => {
 });
 
 if (allItems.length > 0) {
-  fs.writeFile("./items.json", JSON.stringify(allItems), function (err) {
-    if (err) {
-      console.error("Error creating the file");
-    } else {
-      console.log("Data exported");
+  fs.writeFile(
+    folderPatch + "items.json",
+    JSON.stringify(allItems),
+    function (err) {
+      if (err) {
+        console.error("Error creating the file");
+      } else {
+        console.log("Data exported");
+      }
     }
-  });
+  );
 }
 
-comparator.compareItems(allItems);
+comparator.compareItems(allItems, folderPatch);
 
 function loadDirData(techTreeDir, folderType = 0) {
   let dir = path.join(__dirname, techTreeDir);

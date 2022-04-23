@@ -12,7 +12,7 @@ const DATA_TO_COMPARE = {
   trade_price: true,
 };
 
-controller.compareItems = async (extractedItems) => {
+controller.compareItems = async (extractedItems, folderPatch) => {
   console.log("Start of item comparison");
   let githubItems = await controller.getAllItems();
   let itemsNotFound = [];
@@ -46,7 +46,7 @@ controller.compareItems = async (extractedItems) => {
   console.log(`Diferent items: ${differentItems.length}`);
   if (differentItems.length > 0) {
     fs.writeFile(
-      "./differentItems.json",
+      folderPatch + "differentItems.json",
       JSON.stringify(differentItems),
       function (err) {
         if (err) {
@@ -58,7 +58,7 @@ controller.compareItems = async (extractedItems) => {
   console.log(`Items that are not added: ${itemsNotFound.length}`);
   if (itemsNotFound.length > 0) {
     fs.writeFile(
-      "./itemsNotFound.json",
+      folderPatch + "itemsNotFound.json",
       JSON.stringify(itemsNotFound),
       function (err) {
         if (err) {
@@ -70,7 +70,7 @@ controller.compareItems = async (extractedItems) => {
   console.log(`Items not extracted: ${githubItems.length}`);
   if (githubItems.length > 0) {
     fs.writeFile(
-      "./githubItems.json",
+      folderPatch + "githubItems.json",
       JSON.stringify(githubItems),
       function (err) {
         if (err) {
