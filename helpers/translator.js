@@ -1,5 +1,6 @@
 const controller = {};
 let allTranslations = [];
+let allDesriptions = [];
 
 controller.initownTranslations = () => {
   allTranslations["IronOre2"] = "Iron Ore";
@@ -104,8 +105,27 @@ controller.translateItems = (allItems) => {
   }));
 };
 
+controller.addDescriptions = (allItems) => {
+  return (allItems = allItems.map((item) => {
+    let name = item.name;
+    if (item.translation) {
+      name = item.translation;
+    }
+
+    if (allDesriptions[name]) {
+      item.description = allDesriptions[name].trim();
+    }
+
+    return item;
+  }));
+};
+
 controller.addTranslation = (key, translation) => {
   allTranslations[key] = translation;
+};
+
+controller.addDescription = (key, description) => {
+  allDesriptions[key] = description;
 };
 
 module.exports = controller;

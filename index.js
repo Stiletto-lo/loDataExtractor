@@ -26,6 +26,7 @@ const itemTemplate = {
   trade_price: undefined,
   translation: undefined,
   type: undefined,
+  description: undefined,
 };
 const recipeTemplate = {
   ingredients: [],
@@ -59,6 +60,7 @@ loadDirData("./Data/Trade", 3);
 loadDirData("./Data/Placeables", 5);
 
 allItems = translator.translateItems(allItems);
+allItems = translator.addDescriptions(allItems);
 
 allItems.forEach((item) => {
   Object.keys(item).forEach((key) => {
@@ -91,6 +93,28 @@ allItems = allItems
   }, []);
 
 allItems.sort(orderByCategory);
+
+if (allItems.length > 0) {
+  fs.writeFile(
+    "./itemsDetailed.json",
+    JSON.stringify(allItems),
+    function (err) {
+      if (err) {
+        console.error("Error creating the file");
+      } else {
+        console.log("Data exported");
+      }
+    }
+  );
+}
+
+allItems.forEach((item) => {
+  Object.keys(item).forEach((key) => {
+    if (item["description"] != undefined) {
+      delete item["description"];
+    }
+  });
+});
 
 if (allItems.length > 0) {
   fs.writeFile("./items.json", JSON.stringify(allItems), function (err) {
@@ -348,6 +372,11 @@ function parseTranslations(filePath) {
       if (key.includes(".Name")) {
         translator.addTranslation(
           key.replace(".Name", "").trim(),
+          jsonData[0].StringTable.KeysToMetaData[key]
+        );
+      } else if (key.includes(".Description")) {
+        translator.addDescription(
+          key.replace(".Description", "").trim(),
           jsonData[0].StringTable.KeysToMetaData[key]
         );
       }

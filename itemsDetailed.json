@@ -100,7 +100,8 @@
       }
     ],
     "damage": 1000,
-    "trade_price": 1500
+    "trade_price": 1500,
+    "description": "Ammo for catapult. Big boulder filled with iron splinters, charged with meteor core's energy. Designed to shred wood to pieces and severely damage even the sturdiest materials."
   },
   {
     "cost": { "count": 3, "name": "Tablet" },
@@ -118,7 +119,8 @@
       }
     ],
     "damage": 180,
-    "trade_price": 25
+    "trade_price": 25,
+    "description": "Ammo for ballista. An iron tip easily penetrates armor and makes holes in bodies that can't be patched."
   },
   {
     "cost": { "count": 25, "name": "Fragment" },
@@ -140,7 +142,8 @@
         ]
       }
     ],
-    "trade_price": 75.8
+    "trade_price": 75.8,
+    "description": "Most tribes eschew iron armor, despite its protective value. History has proven that it is not pirates whom a nomad must fear most, but the sun."
   },
   {
     "cost": { "count": 50, "name": "Fragment" },
@@ -162,7 +165,8 @@
         ]
       }
     ],
-    "trade_price": 41.1
+    "trade_price": 41.1,
+    "description": "Most tribes eschew iron armor, despite its protective value. History has proven that it is not pirates whom a nomad must fear most, but the sun."
   },
   {
     "cost": { "count": 2, "name": "Fragment" },
@@ -183,7 +187,8 @@
     ],
     "damage": 500,
     "name": "Bombolt",
-    "trade_price": 11.7
+    "trade_price": 11.7,
+    "description": "Used in Tower Walker weapon. Essentially a harpoon with a bomb on its tip that has devastating damage, but low accuracy due to the shape."
   },
   {
     "category": "Ammo",
@@ -200,7 +205,8 @@
     "damage": 150,
     "name": "Bone Bolt",
     "parent": "Flint Harpoon",
-    "trade_price": 5
+    "trade_price": 5,
+    "description": "Ammo for ballista. Bone tips are notorious for splintering and ricocheting inside the body."
   },
   {
     "category": "Ammo",
@@ -215,7 +221,8 @@
     ],
     "damage": 5,
     "name": "Bone Harpoon",
-    "trade_price": 7.6
+    "trade_price": 7.6,
+    "description": "Ammo for ballista. Easily penetrates and latches into wood. A strong tether holds it in place."
   },
   {
     "category": "Ammo",
@@ -236,7 +243,8 @@
     "damage": 20,
     "name": "Cluster Bomb",
     "parent": "Slingshot",
-    "trade_price": 84.7
+    "trade_price": 84.7,
+    "description": "Ammo for sling or catapult. Spawns dozens of tiny explosions covering a large surface area. Very effective at disrupting walkers and nomads on the ground."
   },
   {
     "category": "Ammo",
@@ -251,7 +259,8 @@
     ],
     "damage": 700,
     "name": "Catapult Boulder",
-    "trade_price": 8
+    "trade_price": 8,
+    "description": "Ammo for catapult. This massive boulder obliterates bodies and smashes wood to bits."
   },
   {
     "category": "Ammo",
@@ -267,7 +276,8 @@
     "damage": 165,
     "name": "Ceramic-Tipped Bolt",
     "parent": "Bone Bolt",
-    "trade_price": 11
+    "trade_price": 11,
+    "description": "Ammo for ballista. Ceramic tips guarantee their sharpness and strength."
   },
   {
     "category": "Ammo",
@@ -282,7 +292,8 @@
     ],
     "damage": 5,
     "name": "Ceramic-Tipped Harpoon",
-    "trade_price": 14.1
+    "trade_price": 14.1,
+    "description": "Ammo for ballista. Tether to any target and reel in until the harpoon is destroyed or the tether snaps."
   },
   {
     "category": "Ammo",
@@ -298,9 +309,15 @@
       }
     ],
     "name": "Chalk Bomb",
-    "trade_price": 3.6
+    "trade_price": 3.6,
+    "description": "Ammo for sling or catapult. Releases thick smoke cloud in area. Does not deal any damage."
   },
-  { "category": "Ammo", "name": "Crane Harpoon", "trade_price": 1 },
+  {
+    "category": "Ammo",
+    "name": "Crane Harpoon",
+    "trade_price": 1,
+    "description": "Ammo for ballista. Tether to any target and reel in until the harpoon is destroyed or the tether snaps."
+  },
   {
     "category": "Ammo",
     "cost": { "count": 8, "name": "Tablet" },
@@ -316,7 +333,8 @@
     "damage": 25,
     "name": "Explosive Bolt",
     "parent": "Ceramic-Tipped Bolt",
-    "trade_price": 17.8
+    "trade_price": 17.8,
+    "description": "Shot with Ballista. Explodes on impact, slightly damaging and throwing back everyone in the affected area."
   },
   {
     "category": "Ammo",
@@ -334,7 +352,8 @@
     "damage": 500,
     "name": "Explosive Dart",
     "parent": "Repeater",
-    "trade_price": 49.8
+    "trade_price": 49.8,
+    "description": "Shot with Repeater and Exoskeleton. Explodes on impact, damaging everyone in the affected area."
   },
   {
     "category": "Ammo",
@@ -353,7 +372,8 @@
     "damage": 10,
     "name": "Fire Bomb",
     "parent": "Slingshot",
-    "trade_price": 38
+    "trade_price": 38,
+    "description": "Ammo for sling or catapult. Primitive explosive detonates on impact, releasing lava and setting fire to its surroundings."
   },
   {
     "category": "Ammo",
@@ -370,7 +390,8 @@
     "damage": 150,
     "name": "Floating Mine",
     "parent": "Repeater",
-    "trade_price": 96.4
+    "trade_price": 96.4,
+    "description": "Shot with Repeater and Exoskeleton. After being shot, starts slowly falling down vertically, exploding on impact with anything. Creates a wall of mines when shot repeatedly."
   },
   {
     "category": "Ammo",
@@ -388,7 +409,8 @@
     "damage": 20,
     "name": "Green Death Bomb",
     "parent": "Slingshot",
-    "trade_price": 36
+    "trade_price": 36,
+    "description": "Ammo for sling or catapult. Explodes on impact, releasing a toxic cloud. The poison acts extremely quickly and does consistent damage."
   },
   {
     "category": "Ammo",
@@ -408,7 +430,8 @@
     "damage": -5,
     "name": "Aloe Goo Bomb",
     "parent": "Slingshot",
-    "trade_price": 40.5
+    "trade_price": 40.5,
+    "description": "Ammo for sling or catapult. Covers nomads in green goo that heals them for short duration."
   },
   {
     "category": "Ammo",
@@ -426,7 +449,8 @@
     "damage": 850,
     "name": "Fire Bolt",
     "parent": "Flint Harpoon",
-    "trade_price": 15.6
+    "trade_price": 15.6,
+    "description": "Ammo for ballista. Designed to burn down wooden structures over multiple minutes."
   },
   {
     "category": "Ammo",
@@ -445,7 +469,8 @@
     "damage": 1025,
     "name": "Hellfire Bolt",
     "parent": "Fire Bolt",
-    "trade_price": 175.3
+    "trade_price": 175.3,
+    "description": "Ammo for ballista. Designed to burn down wooden structures over time. A heavy bolt with a crushing bone head, designed to splinter walkers and light wooden structures."
   },
   {
     "category": "Ammo",
@@ -463,7 +488,8 @@
     "damage": 1025,
     "name": "Hardened Hellfire Bolt",
     "parent": "Hellfire Bolt",
-    "trade_price": 175.3
+    "trade_price": 175.3,
+    "description": "Ammo for ballista. Burns quicker while dealing the same damage to the target as a Hellfire Bolt due to its structural properties. Much more difficult to destroy."
   },
   {
     "category": "Ammo",
@@ -481,7 +507,8 @@
     "damage": 145,
     "name": "Hullbreaker Scattershot",
     "parent": "Scattershot",
-    "trade_price": 61.8
+    "trade_price": 61.8,
+    "description": "Ammo for scattershot gun. Blows apart wooden constructions while also dealing some damage to sturdier materials."
   },
   {
     "category": "Ammo",
@@ -501,7 +528,8 @@
     "damage": 20,
     "name": "Insect Bomb",
     "parent": "Slingshot",
-    "trade_price": 24.2
+    "trade_price": 24.2,
+    "description": "Nomads attacked by a swarm of insects have to fight back. Insects will break grappling hook tethers and deal moderate health damage."
   },
   {
     "category": "Ammo",
@@ -516,7 +544,8 @@
     ],
     "damage": 5,
     "name": "Iron-Tipped Harpoon",
-    "trade_price": 30.6
+    "trade_price": 30.6,
+    "description": "Ammo for ballista. The fishing titanium head refuses to come unhooked. A durable tether is hard to snap."
   },
   {
     "category": "Ammo",
@@ -530,7 +559,8 @@
       }
     ],
     "name": "Net",
-    "trade_price": 10.4
+    "trade_price": 10.4,
+    "description": "Ammo for net thrower. Entangles small structures, mannable weapons, walker legs and wings."
   },
   {
     "category": "Ammo",
@@ -542,7 +572,8 @@
     ],
     "damage": 250,
     "name": "Nibiran-tipped Bolt",
-    "trade_price": 16500000000
+    "trade_price": 16500000000,
+    "description": "Ammo for ballista. During an eclipse, these bolts will light up the sky and make enemies glow from the inside out."
   },
   {
     "category": "Ammo",
@@ -558,7 +589,8 @@
     ],
     "damage": 30,
     "name": "Dart",
-    "trade_price": 1.5
+    "trade_price": 1.5,
+    "description": "Shot with Repeater and Exoskeleton. High precision and speed make them deadly against lightly armored targets. Ineffective against walkers and structures."
   },
   {
     "category": "Ammo",
@@ -572,7 +604,8 @@
     ],
     "damage": 100,
     "name": "Rupu Rock",
-    "trade_price": 1.4
+    "trade_price": 1.4,
+    "description": "Ammo for Rupu Sling. Rupus refuse to throw anything else."
   },
   {
     "category": "Ammo",
@@ -589,7 +622,8 @@
     "damage": 160,
     "name": "Scattershot",
     "parent": "Scattershot Gun",
-    "trade_price": 5.2
+    "trade_price": 5.2,
+    "description": "Ammo for scattershot gun. A mixed bag of blunt and sharp debris that spread out when fired."
   },
   {
     "category": "Ammo",
@@ -603,7 +637,8 @@
     ],
     "damage": 450,
     "name": "Small Boulder",
-    "trade_price": 3.1
+    "trade_price": 3.1,
+    "description": "Ammo for slingshot. Deals higher damage the more tension there is on release."
   },
   {
     "category": "Ammo",
@@ -617,7 +652,8 @@
     ],
     "damage": 125,
     "name": "Flint Bolt",
-    "trade_price": 1.3
+    "trade_price": 1.3,
+    "description": "Ammo for ballista. Effective against lightly armored nomads."
   },
   {
     "category": "Ammo",
@@ -634,7 +670,8 @@
     "damage": 5,
     "name": "Flint Harpoon",
     "parent": "Ballista",
-    "trade_price": 4.4
+    "trade_price": 4.4,
+    "description": "Ammo for ballista. Tether to any target and reel in until the harpoon is destroyed or the tether snaps."
   },
   {
     "category": "Ammo",
@@ -653,7 +690,8 @@
     "damage": 20,
     "name": "Sulfur Bomb",
     "parent": "Green Death Bomb",
-    "trade_price": 52.2
+    "trade_price": 52.2,
+    "description": "Ammo for sling or catapult. Releases a short duration sulfur cloud on impact that deals health as well as corrosive durability damage."
   },
   {
     "category": "Ammo",
@@ -679,7 +717,8 @@
         ]
       }
     ],
-    "trade_price": 94
+    "trade_price": 94,
+    "description": "Most tribes eschew iron armor, despite its protective value. History has proven that it is not pirates whom a nomad must fear most, but the sun."
   },
   {
     "category": "Armors",
@@ -694,7 +733,8 @@
     ],
     "name": "Feather Boots",
     "parent": "Fast Grappling Hook",
-    "trade_price": 34
+    "trade_price": 34,
+    "description": "Thick feather-padded soles mitigate fall damage."
   },
   {
     "category": "Armors",
@@ -709,7 +749,8 @@
     ],
     "name": "Fiber Sandals",
     "parent": "Fiber Shirt and Trousers",
-    "trade_price": 1.8
+    "trade_price": 1.8,
+    "description": "Worn by nomads who toil in the Flotilla's underbelly, these itchy fibers may only protect against a sunburn."
   },
   {
     "category": "Armors",
@@ -725,7 +766,8 @@
     ],
     "name": "Baskwood Boots",
     "parent": "Baskwood Armor",
-    "trade_price": 19.8
+    "trade_price": 19.8,
+    "description": "A heavy armor issued to Flotillan servicemen whose responsibilities range from reconnaissance, expiditionary planting, and trade station operation and disassemblement."
   },
   {
     "category": "Armors",
@@ -740,7 +782,8 @@
     ],
     "name": "Rupu Fur Sandals",
     "parent": "Rupu Fur Armor",
-    "trade_price": 2
+    "trade_price": 2,
+    "description": "Worn by nomads who don't mind the smell. Extremely light and maneuverable."
   },
   {
     "category": "Armors",
@@ -754,7 +797,8 @@
       }
     ],
     "name": "Forester's Sandals",
-    "parent": "Forester's Armor"
+    "parent": "Forester's Armor",
+    "description": "Provides average protection and meanueverability."
   },
   {
     "category": "Armors",
@@ -770,7 +814,8 @@
     ],
     "name": "Triple Stitch Boots",
     "parent": "Triple Stitch Armor",
-    "trade_price": 61.1
+    "trade_price": 61.1,
+    "description": "A secret weaving technique creates surprisingly strong armor with no loss in meanueverability."
   },
   {
     "category": "Armors",
@@ -787,7 +832,8 @@
     ],
     "name": "Carapace Boots",
     "parent": "Carapace Armor",
-    "trade_price": 190.5
+    "trade_price": 190.5,
+    "description": "Layers of tough hides are sewn together into a heavy armor worn by the most seasoned nomadic fighters."
   },
   {
     "category": "Armors",
@@ -803,7 +849,8 @@
     ],
     "name": "Redwood Wood Boots",
     "parent": "Redwood Wood Armor",
-    "trade_price": 535.8
+    "trade_price": 535.8,
+    "description": "The Swampwood tribe rarely make contact with the Flotillans or venture beyond their fleet, making the specialty armor they construct from redwood wood a sought after commodity."
   },
   {
     "category": "Armors",
@@ -818,7 +865,8 @@
     ],
     "name": "Fiber Arm Wraps",
     "parent": "Fiber Shirt and Trousers",
-    "trade_price": 3
+    "trade_price": 3,
+    "description": "Worn by nomads who toil in the Flotilla's underbelly, these itchy fibers may only protect against a sunburn."
   },
   {
     "category": "Armors",
@@ -834,7 +882,8 @@
     ],
     "name": "Baskwood Bracers",
     "parent": "Baskwood Armor",
-    "trade_price": 13.7
+    "trade_price": 13.7,
+    "description": "A heavy armor issued to Flotillan servicemen whose responsibilities range from reconnaissance, expiditionary planting, and trade station operation and disassemblement."
   },
   {
     "category": "Armors",
@@ -849,7 +898,8 @@
     ],
     "name": "Rupu Fur Sleeves",
     "parent": "Rupu Fur Armor",
-    "trade_price": 4.6
+    "trade_price": 4.6,
+    "description": "Worn by nomads who don't mind the smell. Extremely light and maneuverable."
   },
   {
     "category": "Armors",
@@ -864,7 +914,8 @@
     ],
     "name": "Forester's Sleeves",
     "parent": "Forester's Armor",
-    "trade_price": 8.9
+    "trade_price": 8.9,
+    "description": "Provides average protection and meanueverability."
   },
   {
     "category": "Armors",
@@ -880,7 +931,8 @@
     ],
     "name": "Triple Stitch Bracers",
     "parent": "Triple Stitch Armor",
-    "trade_price": 16.8
+    "trade_price": 16.8,
+    "description": "A secret weaving technique creates surprisingly strong armor with no loss in meanueverability."
   },
   {
     "category": "Armors",
@@ -897,7 +949,8 @@
     ],
     "name": "Carapace Gauntlets",
     "parent": "Carapace Armor",
-    "trade_price": 159.2
+    "trade_price": 159.2,
+    "description": "Layers of tough hides are sewn together into a heavy armor worn by the most seasoned nomadic fighters."
   },
   {
     "category": "Armors",
@@ -913,7 +966,8 @@
     ],
     "name": "Redwood Wood Bracers",
     "parent": "Redwood Wood Armor",
-    "trade_price": 388.2
+    "trade_price": 388.2,
+    "description": "The Swampwood tribe rarely make contact with the Flotillans or venture beyond their fleet, making the specialty armor they construct from redwood wood a sought after commodity."
   },
   {
     "category": "Armors",
@@ -929,7 +983,8 @@
     ],
     "name": "Gas Mask",
     "parent": "Primitive Bandage",
-    "trade_price": 13.2
+    "trade_price": 13.2,
+    "description": "Protects the wearer against gases if worn correctly, but needs to be replaced regularly. Surprisingly easy to breath through."
   },
   {
     "category": "Armors",
@@ -937,7 +992,8 @@
     "crafting": [{ "ingredients": [{ "count": 12, "name": "Fiber" }] }],
     "name": "Fiber Headwrap",
     "parent": "Fiber Shirt and Trousers",
-    "trade_price": 2.4
+    "trade_price": 2.4,
+    "description": "Worn by nomads who toil in the Flotilla's underbelly, these itchy fibers may only protect against a sunburn."
   },
   {
     "category": "Armors",
@@ -953,7 +1009,8 @@
     ],
     "name": "Cloak",
     "parent": "Redwood Wood Armor",
-    "trade_price": 342.4
+    "trade_price": 342.4,
+    "description": "Long cloak protecting nomads from harsh wind gusts full of sand."
   },
   {
     "category": "Armors",
@@ -966,7 +1023,8 @@
       }
     ],
     "name": "Balaclava",
-    "trade_price": 13.2
+    "trade_price": 13.2,
+    "description": "Perfect for all the wrongdoers and outlaws. Fully conceals one's identity but also makes him or her clearly an individual to avoid."
   },
   {
     "category": "Armors",
@@ -979,7 +1037,8 @@
       }
     ],
     "name": "Ruffian mask",
-    "trade_price": 13.2
+    "trade_price": 13.2,
+    "description": "Makes recognition of another flotilla citizen harder so various miscreants use it to unconfinedly perform their mischievous deeds."
   },
   {
     "category": "Armors",
@@ -992,7 +1051,8 @@
       }
     ],
     "name": "Sunset headdress",
-    "trade_price": 13.2
+    "trade_price": 13.2,
+    "description": "Fiberwork crown used in the most illustrious Flotilla social ceremonials."
   },
   {
     "category": "Armors",
@@ -1005,7 +1065,8 @@
       }
     ],
     "name": "Bucket helmet",
-    "trade_price": 13.2
+    "trade_price": 13.2,
+    "description": "Carefully install this contraption on your braincase and display a wide assortment of still emotions."
   },
   {
     "category": "Armors",
@@ -1018,7 +1079,8 @@
       }
     ],
     "name": "Squared eyepatches",
-    "trade_price": 13.2
+    "trade_price": 13.2,
+    "description": "Odd-looking eyepatches partially disguising wearer's identity."
   },
   {
     "category": "Armors",
@@ -1031,7 +1093,8 @@
       }
     ],
     "name": "Ornate veil cap",
-    "trade_price": 13.2
+    "trade_price": 13.2,
+    "description": "Decorated leatherwork cap covering wearer's eyes."
   },
   {
     "category": "Armors",
@@ -1044,7 +1107,8 @@
       }
     ],
     "name": "Mask and eyepatch",
-    "trade_price": 13.2
+    "trade_price": 13.2,
+    "description": "Mostly used to ease up breathing during sandstorms. The eyepatch is purely for the show-off, however some nomads claim they're using it in a more purposeful manner."
   },
   {
     "category": "Armors",
@@ -1057,7 +1121,8 @@
       }
     ],
     "name": "Feather mask",
-    "trade_price": 13.2
+    "trade_price": 13.2,
+    "description": "Once part of Rupu accountrement, now adopted by upper-caste citizens in shamanic rituals."
   },
   {
     "category": "Armors",
@@ -1070,7 +1135,8 @@
       }
     ],
     "name": "Tied keffiyeh scarf",
-    "trade_price": 13.2
+    "trade_price": 13.2,
+    "description": "Used by nomads as protection from the burning sun and the all-present sand."
   },
   {
     "category": "Armors",
@@ -1083,7 +1149,8 @@
       }
     ],
     "name": "Wrapped keffiyeh scarf",
-    "trade_price": 13.2
+    "trade_price": 13.2,
+    "description": "Used by nomads as protection from the burning sun and the all-present sand."
   },
   {
     "category": "Armors",
@@ -1096,7 +1163,8 @@
       }
     ],
     "name": "Rupu mask",
-    "trade_price": 13.2
+    "trade_price": 13.2,
+    "description": "Intimidating and ostentatious - exactly what every nomad thirsts for."
   },
   {
     "category": "Armors",
@@ -1109,7 +1177,8 @@
       }
     ],
     "name": "Festive Turban",
-    "trade_price": 13.2
+    "trade_price": 13.2,
+    "description": "Embroidered turban typically worn by flotilla's elder community during various festivities and celebrations."
   },
   {
     "category": "Containers",
@@ -1145,7 +1214,8 @@
         ]
       }
     ],
-    "trade_price": 143.4
+    "trade_price": 143.4,
+    "description": "A huge water bag worn on the back with two separate compartments."
   },
   {
     "cost": { "count": 10, "name": "Tablet" },
@@ -1161,7 +1231,8 @@
         ]
       }
     ],
-    "trade_price": 679.5
+    "trade_price": 679.5,
+    "description": "This insulating suit traps excreted fluids and recycles them with state-of-the-art worm technology."
   },
   {
     "cost": { "count": 8, "name": "Tablet" },
@@ -1177,7 +1248,8 @@
         ]
       }
     ],
-    "trade_price": 38.7
+    "trade_price": 38.7,
+    "description": "Mine minerals with increased efficiency."
   },
   {
     "category": "Tools",
@@ -1192,7 +1264,8 @@
     ],
     "name": "Advanced Pickaxe",
     "parent": "Simple Pickaxe",
-    "trade_price": 98.2
+    "trade_price": 98.2,
+    "description": "A nearly unbreakable, highly efficient mining tool."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -1209,7 +1282,8 @@
         ]
       }
     ],
-    "trade_price": 234.4
+    "trade_price": 234.4,
+    "description": "It is said the axe earned its reputation after the tribe that invented them reportedly dug through a mountainside to escape the scorching sun."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -1226,7 +1300,8 @@
         ]
       }
     ],
-    "trade_price": 316.4
+    "trade_price": 316.4,
+    "description": "Flotillan scholars claim that the Wyndan tribe has roots as a prominent civilization that existed long before the apocalypse."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -1243,7 +1318,8 @@
         ]
       }
     ],
-    "trade_price": 259.7
+    "trade_price": 259.7,
+    "description": "The Wyndan tribe is said to have pioneered the first walkers."
   },
   {
     "cost": { "count": 10, "name": "Tablet" },
@@ -1260,7 +1336,8 @@
         ]
       }
     ],
-    "trade_price": 1681.3
+    "trade_price": 1681.3,
+    "description": "Relics like these now decorate the homes of wealthy Flotillan capitalists, or are given as commendations to nomads who have significantly furthered the Flotillan cause."
   },
   {
     "cost": { "count": 12, "name": "Tablet" },
@@ -1277,7 +1354,8 @@
         ]
       }
     ],
-    "trade_price": 1900.2
+    "trade_price": 1900.2,
+    "description": "The miraculously thin blade slips between the fibers of armor. Allegedly used by the Guardian's royal assassins."
   },
   {
     "cost": { "count": 10, "name": "Tablet" },
@@ -1294,7 +1372,8 @@
         ]
       }
     ],
-    "trade_price": 1486.5
+    "trade_price": 1486.5,
+    "description": "Nibiran weapons come from unknown origins, and have not been seen in battle for some time."
   },
   {
     "cost": { "count": 8, "name": "Tablet" },
@@ -1310,7 +1389,8 @@
         ]
       }
     ],
-    "trade_price": 152
+    "trade_price": 152,
+    "description": "Long ago, the Wyndan tribe mediated a lasting peace between the plains people. Today, they serve the Guardians as peacekeepers and engineers."
   },
   {
     "cost": { "count": 22, "name": "Tablet" },
@@ -1327,7 +1407,8 @@
         ]
       }
     ],
-    "trade_price": 1504.8
+    "trade_price": 1504.8,
+    "description": "Metal is rare, even on the battlefield. Most nomads can't comprehend how sharp an iron blade is until they are cut with one."
   },
   {
     "cost": { "count": 22, "name": "Tablet" },
@@ -1344,7 +1425,8 @@
         ]
       }
     ],
-    "trade_price": 1504.8
+    "trade_price": 1504.8,
+    "description": "After it was made in secrecy for one of the wealthiest weapon collectors on the Flotilla, the schemes for this quarterstaff appeared on the market. The few who wield it have seldom lost in combat."
   },
   {
     "cost": { "count": 7, "name": "Tablet" },
@@ -1361,7 +1443,8 @@
         ]
       }
     ],
-    "trade_price": 320.4
+    "trade_price": 320.4,
+    "description": "It is said the axe earned its reputation after the tribe who invented them reportedly dug through a mountainside to escape the scorching sun."
   },
   {
     "cost": { "count": 8, "name": "Tablet" },
@@ -1378,7 +1461,8 @@
         ]
       }
     ],
-    "trade_price": 367.8
+    "trade_price": 367.8,
+    "description": "Flotillan scholars claim that the Wyndan tribe has roots as a prominent civilization that existed long before the apocalypse."
   },
   {
     "cost": { "count": 10, "name": "Tablet" },
@@ -1395,7 +1479,8 @@
         ]
       }
     ],
-    "trade_price": 336.6
+    "trade_price": 336.6,
+    "description": "The Wyndan tribe is said to have pioneered the first walkers."
   },
   {
     "cost": { "count": 12, "name": "Tablet" },
@@ -1412,7 +1497,8 @@
         ]
       }
     ],
-    "trade_price": 2116.6
+    "trade_price": 2116.6,
+    "description": "Surrounded by brigands who sought to take his life, Punparratju swung his wicked axe and severed five of their heads in a single stroke. Punparratju's offensive to recapture the land bridge was successful, and the Flotilla crossed the straight unimpeded."
   },
   {
     "cost": { "count": 15, "name": "Tablet" },
@@ -1429,7 +1515,8 @@
         ]
       }
     ],
-    "trade_price": 2217.3
+    "trade_price": 2217.3,
+    "description": "Pops heads like little grapes. The nibiran minerals used to forge this weapon radiate a faint greenish glow."
   },
   {
     "cost": { "count": 25, "name": "Tablet" },
@@ -1446,7 +1533,8 @@
         ]
       }
     ],
-    "trade_price": 2756.6
+    "trade_price": 2756.6,
+    "description": "Traditionally used in the past for public executions on the Flotilla, until a master craftsman discovered the schematics and manufactured a few more. A feared sword with a dark history."
   },
   {
     "cost": { "count": 3, "name": "Tablet" },
@@ -1569,7 +1657,8 @@
           { "count": 30, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection."
   },
   {
     "cost": { "count": 16, "name": "Tablet" },
@@ -1588,7 +1677,8 @@
           { "count": 100, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Generates the highest possible physical force for walker movement. Very complicated to construct due to their size."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -1603,7 +1693,8 @@
           { "count": 50, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Upscaled wings that are better at generating force for walker movement."
   },
   {
     "cost": { "count": 3, "name": "Tablet" },
@@ -1618,7 +1709,8 @@
           { "count": 4, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -1633,7 +1725,8 @@
           { "count": 14, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -1649,7 +1742,8 @@
           { "count": 3, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement."
   },
   {
     "cost": { "count": 10, "name": "Tablet" },
@@ -1664,7 +1758,8 @@
           { "count": 100, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Providing comparable efficiency to medium-sized wings while being slightly more sturdy than the base ones, Skirmish wings are useful when you don't know what to expect on your travels."
   },
   {
     "cost": { "count": 20, "name": "Tablet" },
@@ -1680,7 +1775,8 @@
           { "count": 6, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance."
   },
   {
     "name": "Mollusk Walker Legs Armored (1 of 2)",
@@ -1693,7 +1789,8 @@
           { "count": 18, "name": "Wood Shaft" }
         ]
       }
-    ]
+    ],
+    "description": "Armored legs that easily deflect simple projectiles."
   },
   {
     "cost": { "count": 20, "name": "Fragment" },
@@ -1723,7 +1820,8 @@
           { "count": 4, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Upscaled wings that are better at generating force for walker movement."
   },
   {
     "name": "Mollusk Walker Wings Small (1 of 2)",
@@ -1737,7 +1835,8 @@
           { "count": 2, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them."
   },
   {
     "cost": { "count": 3, "name": "Tablet" },
@@ -1752,7 +1851,8 @@
           { "count": 6, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type."
   },
   {
     "cost": { "count": 3, "name": "Tablet" },
@@ -1768,7 +1868,8 @@
           { "count": 3, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement."
   },
   {
     "cost": { "count": 7, "name": "Tablet" },
@@ -1783,7 +1884,8 @@
           { "count": 12, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Providing comparable efficiency to medium-sized wings while being slightly more sturdy than the base ones, Skirmish wings are useful when you don't know what to expect on your travels."
   },
   {
     "cost": { "count": 15, "name": "Tablet" },
@@ -1799,7 +1901,8 @@
           { "count": 5, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance."
   },
   {
     "cost": { "count": 15, "name": "Tablet" },
@@ -1840,7 +1943,8 @@
           { "count": 70, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection."
   },
   {
     "cost": { "count": 40, "name": "Tablet" },
@@ -1855,7 +1959,8 @@
           { "count": 10, "name": "Iron Ingot" }
         ]
       }
-    ]
+    ],
+    "description": "Generates the highest possible physical force for walker movement. Very complicated to construct due to their size."
   },
   {
     "cost": { "count": 35, "name": "Tablet" },
@@ -1870,7 +1975,8 @@
           { "count": 32, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Upscaled wings that are better at generating force for walker movement."
   },
   {
     "cost": { "count": 20, "name": "Tablet" },
@@ -1885,7 +1991,8 @@
           { "count": 30, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them."
   },
   {
     "cost": { "count": 35, "name": "Tablet" },
@@ -1901,7 +2008,8 @@
           { "count": 48, "name": "Redwood Wood" }
         ]
       }
-    ]
+    ],
+    "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type."
   },
   {
     "cost": { "count": 35, "name": "Tablet" },
@@ -1917,7 +2025,8 @@
           { "count": 10, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement."
   },
   {
     "cost": { "count": 40, "name": "Tablet" },
@@ -1933,7 +2042,8 @@
           { "count": 30, "name": "Redwood Wood" }
         ]
       }
-    ]
+    ],
+    "description": "Providing comparable efficiency to medium-sized wings while being slightly more sturdy than the base ones, Skirmish wings are useful when you don't know what to expect on your travels."
   },
   {
     "cost": { "count": 60, "name": "Tablet" },
@@ -1949,7 +2059,8 @@
           { "count": 22, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance."
   },
   {
     "cost": { "count": 20, "name": "Tablet" },
@@ -1980,7 +2091,8 @@
           { "count": 30, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection."
   },
   {
     "cost": { "count": 25, "name": "Tablet" },
@@ -2000,7 +2112,8 @@
           { "count": 100, "name": "Worm Silk" }
         ]
       }
-    ]
+    ],
+    "description": "Generates the highest possible physical force for walker movement. Very complicated to construct due to their size."
   },
   {
     "cost": { "count": 20, "name": "Tablet" },
@@ -2015,7 +2128,8 @@
           { "count": 26, "name": "Worm Silk" }
         ]
       }
-    ]
+    ],
+    "description": "Upscaled wings that are better at generating force for walker movement."
   },
   {
     "cost": { "count": 15, "name": "Tablet" },
@@ -2030,7 +2144,8 @@
           { "count": 22, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them."
   },
   {
     "cost": { "count": 20, "name": "Tablet" },
@@ -2046,7 +2161,8 @@
           { "count": 20, "name": "Redwood Wood" }
         ]
       }
-    ]
+    ],
+    "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type."
   },
   {
     "cost": { "count": 20, "name": "Tablet" },
@@ -2062,7 +2178,8 @@
           { "count": 8, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement."
   },
   {
     "cost": { "count": 25, "name": "Tablet" },
@@ -2078,7 +2195,8 @@
           { "count": 20, "name": "Redwood Wood" }
         ]
       }
-    ]
+    ],
+    "description": "Providing comparable efficiency to medium-sized wings while being slightly more sturdy than the base ones, Skirmish wings are useful when you don't know what to expect on your travels."
   },
   {
     "cost": { "count": 40, "name": "Tablet" },
@@ -2094,7 +2212,8 @@
           { "count": 15, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance."
   },
   {
     "cost": { "count": 100, "name": "Tablet" },
@@ -2116,7 +2235,8 @@
           { "count": 15, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection."
   },
   {
     "cost": { "count": 16, "name": "Fragment" },
@@ -2155,7 +2275,8 @@
           { "count": 1, "name": "Bone Glue" }
         ]
       }
-    ]
+    ],
+    "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection."
   },
   {
     "name": "Dinghy Walker Wings Large (1 of 2)",
@@ -2169,7 +2290,8 @@
           { "count": 52, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Generates the highest possible physical force for walker movement. Very complicated to construct due to their size."
   },
   {
     "name": "Dinghy Walker Wings Medium (1 of 2)",
@@ -2183,7 +2305,8 @@
           { "count": 28, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Upscaled wings that are better at generating force for walker movement."
   },
   {
     "cost": { "count": 40, "name": "Fragment" },
@@ -2198,7 +2321,8 @@
           { "count": 10, "name": "Rope" }
         ]
       }
-    ]
+    ],
+    "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them."
   },
   {
     "cost": { "count": 60, "name": "Fragment" },
@@ -2229,7 +2353,8 @@
           { "count": 30, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -2244,7 +2369,8 @@
           { "count": 84, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Generates the highest possible physical force for walker movement. Very complicated to construct due to their size."
   },
   {
     "cost": { "count": 2, "name": "Tablet" },
@@ -2259,7 +2385,8 @@
           { "count": 36, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Upscaled wings that are better at generating force for walker movement."
   },
   {
     "name": "Toboggan Walker Wings Small (1 of 2)",
@@ -2273,7 +2400,8 @@
           { "count": 2, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them."
   },
   {
     "cost": { "count": 2, "name": "Tablet" },
@@ -2289,7 +2417,8 @@
           { "count": 12, "name": "Redwood Wood" }
         ]
       }
-    ]
+    ],
+    "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type."
   },
   {
     "cost": { "count": 2, "name": "Tablet" },
@@ -2305,7 +2434,8 @@
           { "count": 4, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -2321,7 +2451,8 @@
           { "count": 14, "name": "Iron Ore" }
         ]
       }
-    ]
+    ],
+    "description": "Providing comparable efficiency to medium-sized wings while being slightly more sturdy than the base ones, Skirmish wings are useful when you don't know what to expect on your travels."
   },
   {
     "cost": { "count": 17, "name": "Tablet" },
@@ -2337,7 +2468,8 @@
           { "count": 8, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance."
   },
   {
     "cost": { "count": 3, "name": "Tablet" },
@@ -2373,7 +2505,8 @@
           { "count": 60, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection."
   },
   {
     "cost": { "count": 30, "name": "Tablet" },
@@ -2393,7 +2526,8 @@
           { "count": 120, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Generates the highest possible physical force for walker movement. Very complicated to construct due to their size."
   },
   {
     "cost": { "count": 10, "name": "Tablet" },
@@ -2408,7 +2542,8 @@
           { "count": 60, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Upscaled wings that are better at generating force for walker movement."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -2423,7 +2558,8 @@
           { "count": 5, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them."
   },
   {
     "cost": { "count": 10, "name": "Tablet" },
@@ -2439,7 +2575,8 @@
           { "count": 20, "name": "Redwood Wood" }
         ]
       }
-    ]
+    ],
+    "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type."
   },
   {
     "cost": { "count": 10, "name": "Tablet" },
@@ -2455,7 +2592,8 @@
           { "count": 8, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement."
   },
   {
     "cost": { "count": 15, "name": "Tablet" },
@@ -2471,7 +2609,8 @@
           { "count": 20, "name": "Iron Ore" }
         ]
       }
-    ]
+    ],
+    "description": "Providing comparable efficiency to medium-sized wings while being slightly more sturdy than the base ones, Skirmish wings are useful when you don't know what to expect on your travels."
   },
   {
     "cost": { "count": 25, "name": "Tablet" },
@@ -2487,7 +2626,8 @@
           { "count": 15, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance."
   },
   {
     "cost": { "count": 10, "name": "Fragment" },
@@ -2511,7 +2651,8 @@
           { "count": 7, "name": "Fiber Weave" }
         ]
       }
-    ]
+    ],
+    "description": "These towering wings harness the power of the wind to push the walker forward. They are not discreet and generally make good target practice for enemies."
   },
   {
     "cost": { "count": 16, "name": "Fragment" },
@@ -2590,7 +2731,8 @@
           { "count": 5, "name": "Tar" }
         ]
       }
-    ]
+    ],
+    "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection."
   },
   {
     "cost": { "count": 7, "name": "Tablet" },
@@ -2641,7 +2783,8 @@
           { "count": 32, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection."
   },
   {
     "cost": { "count": 40, "name": "Tablet" },
@@ -2656,7 +2799,8 @@
           { "count": 22, "name": "Iron Ingot" }
         ]
       }
-    ]
+    ],
+    "description": "Generates the highest possible physical force for walker movement. Very complicated to construct due to their size."
   },
   {
     "cost": { "count": 35, "name": "Tablet" },
@@ -2671,7 +2815,8 @@
           { "count": 34, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Upscaled wings that are better at generating force for walker movement."
   },
   {
     "cost": { "count": 20, "name": "Tablet" },
@@ -2686,7 +2831,8 @@
           { "count": 48, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them."
   },
   {
     "cost": { "count": 35, "name": "Tablet" },
@@ -2702,7 +2848,8 @@
           { "count": 34, "name": "Redwood Wood" }
         ]
       }
-    ]
+    ],
+    "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type."
   },
   {
     "cost": { "count": 35, "name": "Tablet" },
@@ -2718,7 +2865,8 @@
           { "count": 8, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement."
   },
   {
     "cost": { "count": 40, "name": "Tablet" },
@@ -2734,7 +2882,8 @@
           { "count": 20, "name": "Redwood Wood" }
         ]
       }
-    ]
+    ],
+    "description": "Providing comparable efficiency to medium-sized wings while being slightly more sturdy than the base ones, Skirmish wings are useful when you don't know what to expect on your travels."
   },
   {
     "cost": { "count": 70, "name": "Tablet" },
@@ -2750,7 +2899,8 @@
           { "count": 15, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance."
   },
   {
     "cost": { "count": 12, "name": "Tablet" },
@@ -2790,7 +2940,8 @@
           { "count": 93, "name": "Earth Wax" }
         ]
       }
-    ]
+    ],
+    "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection."
   },
   {
     "cost": { "count": 15, "name": "Tablet" },
@@ -2805,7 +2956,8 @@
           { "count": 142, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Generates the highest possible physical force for walker movement. Very complicated to construct due to their size."
   },
   {
     "cost": { "count": 10, "name": "Tablet" },
@@ -2820,7 +2972,8 @@
           { "count": 83, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Upscaled wings that are better at generating force for walker movement."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -2835,7 +2988,8 @@
           { "count": 8, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them."
   },
   {
     "cost": { "count": 10, "name": "Tablet" },
@@ -2851,7 +3005,8 @@
           { "count": 25, "name": "Redwood Wood" }
         ]
       }
-    ]
+    ],
+    "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type."
   },
   {
     "cost": { "count": 10, "name": "Tablet" },
@@ -2867,7 +3022,8 @@
           { "count": 10, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement."
   },
   {
     "cost": { "count": 15, "name": "Tablet" },
@@ -2883,7 +3039,8 @@
           { "count": 29, "name": "Iron Ore" }
         ]
       }
-    ]
+    ],
+    "description": "Providing comparable efficiency to medium-sized wings while being slightly more sturdy than the base ones, Skirmish wings are useful when you don't know what to expect on your travels."
   },
   {
     "cost": { "count": 25, "name": "Tablet" },
@@ -2899,7 +3056,8 @@
           { "count": 20, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance."
   },
   {
     "cost": { "count": 12, "name": "Tablet" },
@@ -2960,7 +3118,8 @@
           { "count": 70, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection."
   },
   {
     "cost": { "count": 30, "name": "Tablet" },
@@ -2975,7 +3134,8 @@
           { "count": 16, "name": "Iron Ingot" }
         ]
       }
-    ]
+    ],
+    "description": "Generates the highest possible physical force for walker movement. Very complicated to construct due to their size."
   },
   {
     "cost": { "count": 20, "name": "Tablet" },
@@ -2990,7 +3150,8 @@
           { "count": 32, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Upscaled wings that are better at generating force for walker movement."
   },
   {
     "cost": { "count": 10, "name": "Tablet" },
@@ -3005,7 +3166,8 @@
           { "count": 30, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them."
   },
   {
     "cost": { "count": 20, "name": "Tablet" },
@@ -3021,7 +3183,8 @@
           { "count": 44, "name": "Redwood Wood" }
         ]
       }
-    ]
+    ],
+    "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type."
   },
   {
     "cost": { "count": 20, "name": "Tablet" },
@@ -3037,7 +3200,8 @@
           { "count": 12, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement."
   },
   {
     "cost": { "count": 30, "name": "Tablet" },
@@ -3053,7 +3217,8 @@
           { "count": 20, "name": "Redwood Wood" }
         ]
       }
-    ]
+    ],
+    "description": "Providing comparable efficiency to medium-sized wings while being slightly more sturdy than the base ones, Skirmish wings are useful when you don't know what to expect on your travels."
   },
   {
     "cost": { "count": 50, "name": "Tablet" },
@@ -3069,7 +3234,8 @@
           { "count": 22, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance."
   },
   {
     "cost": { "count": 25, "name": "Fragment" },
@@ -3118,7 +3284,8 @@
           { "count": 8, "name": "Bone Glue" }
         ]
       }
-    ]
+    ],
+    "description": "Armored legs that easily deflect simple projectiles."
   },
   {
     "cost": { "count": 20, "name": "Fragment" },
@@ -3148,7 +3315,8 @@
           { "count": 4, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Upscaled wings that are better at generating force for walker movement."
   },
   {
     "name": "Stiletto Walker Wings Small (1 of 2)",
@@ -3162,7 +3330,8 @@
           { "count": 2, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them."
   },
   {
     "cost": { "count": 3, "name": "Tablet" },
@@ -3177,7 +3346,8 @@
           { "count": 2, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type."
   },
   {
     "cost": { "count": 3, "name": "Tablet" },
@@ -3193,7 +3363,8 @@
           { "count": 3, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement."
   },
   {
     "cost": { "count": 7, "name": "Tablet" },
@@ -3209,7 +3380,8 @@
           { "count": 32, "name": "Redwood Wood" }
         ]
       }
-    ]
+    ],
+    "description": "Providing comparable efficiency to medium-sized wings while being slightly more sturdy than the base ones, Skirmish wings are useful when you don't know what to expect on your travels."
   },
   {
     "cost": { "count": 15, "name": "Tablet" },
@@ -3225,7 +3397,8 @@
           { "count": 5, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance."
   },
   {
     "cost": { "count": 3, "name": "Tablet" },
@@ -3260,7 +3433,8 @@
           { "count": 42, "name": "Earth Wax" }
         ]
       }
-    ]
+    ],
+    "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection."
   },
   {
     "cost": { "count": 16, "name": "Tablet" },
@@ -3279,7 +3453,8 @@
           { "count": 100, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Generates the highest possible physical force for walker movement. Very complicated to construct due to their size."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -3294,7 +3469,8 @@
           { "count": 50, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Upscaled wings that are better at generating force for walker movement."
   },
   {
     "cost": { "count": 3, "name": "Tablet" },
@@ -3309,7 +3485,8 @@
           { "count": 4, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -3324,7 +3501,8 @@
           { "count": 14, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -3340,7 +3518,8 @@
           { "count": 3, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement."
   },
   {
     "cost": { "count": 10, "name": "Tablet" },
@@ -3355,7 +3534,8 @@
           { "count": 100, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Providing comparable efficiency to medium-sized wings while being slightly more sturdy than the base ones, Skirmish wings are useful when you don't know what to expect on your travels."
   },
   {
     "cost": { "count": 20, "name": "Tablet" },
@@ -3371,7 +3551,8 @@
           { "count": 5, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance."
   },
   {
     "cost": { "count": 12, "name": "Tablet" },
@@ -3422,7 +3603,8 @@
           { "count": 45, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection."
   },
   {
     "cost": { "count": 12, "name": "Tablet" },
@@ -3442,7 +3624,8 @@
           { "count": 80, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Generates the highest possible physical force for walker movement. Very complicated to construct due to their size."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -3457,7 +3640,8 @@
           { "count": 42, "name": "Hide" }
         ]
       }
-    ]
+    ],
+    "description": "Upscaled wings that are better at generating force for walker movement."
   },
   {
     "cost": { "count": 2, "name": "Tablet" },
@@ -3472,7 +3656,8 @@
           { "count": 4, "name": "Nomad Cloth" }
         ]
       }
-    ]
+    ],
+    "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -3488,7 +3673,8 @@
           { "count": 14, "name": "Redwood Wood" }
         ]
       }
-    ]
+    ],
+    "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type."
   },
   {
     "cost": { "count": 5, "name": "Tablet" },
@@ -3504,7 +3690,8 @@
           { "count": 3, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement."
   },
   {
     "cost": { "count": 10, "name": "Tablet" },
@@ -3520,7 +3707,8 @@
           { "count": 16, "name": "Iron Ore" }
         ]
       }
-    ]
+    ],
+    "description": "Providing comparable efficiency to medium-sized wings while being slightly more sturdy than the base ones, Skirmish wings are useful when you don't know what to expect on your travels."
   },
   {
     "cost": { "count": 20, "name": "Tablet" },
@@ -3536,7 +3724,8 @@
           { "count": 6, "name": "Worm Scale" }
         ]
       }
-    ]
+    ],
+    "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance."
   },
   {
     "cost": { "count": 2, "name": "Tablet" },
@@ -3552,7 +3741,8 @@
     ],
     "name": "Beltless Grappling Hook",
     "parent": "Fast Grappling Hook",
-    "trade_price": 16
+    "trade_price": 16,
+    "description": "Doesn't benefit from torque, but more efficient than other grappling hooks when travelling without a torque belt."
   },
   {
     "cost": { "count": 10, "name": "Fragment" },
@@ -3566,7 +3756,8 @@
     ],
     "name": "Fast Grappling Hook",
     "parent": "Repaired Grappling Hook",
-    "trade_price": 19.4
+    "trade_price": 19.4,
+    "description": "Superior reeling speed, but limited reach. Most effective in combat situations."
   },
   {
     "category": "Armors",
@@ -3574,7 +3765,8 @@
     "crafting": [{ "ingredients": [{ "count": 2, "name": "Fiber Weave" }] }],
     "name": "Fiber Shirt and Trousers",
     "parent": "Primitive Bandage",
-    "trade_price": 1.6
+    "trade_price": 1.6,
+    "description": "Worn by nomads who toil in the Flotilla's underbelly, these itchy fibers may only protect against a sunburn."
   },
   {
     "category": "Armors",
@@ -3590,7 +3782,8 @@
     ],
     "name": "Baskwood Armor",
     "parent": "Fiber Shirt and Trousers",
-    "trade_price": 21.2
+    "trade_price": 21.2,
+    "description": "A heavy armor issued to Flotillan servicemen whose responsibilities range from reconnaissance, expiditionary planting, and trade station operation and disassemblement."
   },
   {
     "category": "Armors",
@@ -3605,7 +3798,8 @@
     ],
     "name": "Rupu Fur Armor",
     "parent": "Fiber Shirt and Trousers",
-    "trade_price": 2.6
+    "trade_price": 2.6,
+    "description": "Worn by nomads who don't mind the smell. Extremely light and maneuverable."
   },
   {
     "category": "Armors",
@@ -3621,7 +3815,8 @@
     ],
     "name": "Cloaked Rupu Fur Armor",
     "parent": "Rupu Fur Armor",
-    "trade_price": 6.6
+    "trade_price": 6.6,
+    "description": "A little added protection, with a little more smell. Still very light and maneuverable."
   },
   {
     "category": "Armors",
@@ -3637,7 +3832,8 @@
     ],
     "name": "Forester's Armor",
     "parent": "Fiber Shirt and Trousers",
-    "trade_price": 13.7
+    "trade_price": 13.7,
+    "description": "Provides average protection and meanueverability."
   },
   {
     "category": "Armors",
@@ -3652,7 +3848,8 @@
     ],
     "name": "Brittle Bone Armor",
     "parent": "Forester's Armor",
-    "trade_price": 66.5
+    "trade_price": 66.5,
+    "description": "The flexible bone plates are stitched into a scalemail that provides increased protection."
   },
   {
     "category": "Armors",
@@ -3667,7 +3864,8 @@
     ],
     "name": "Triple Stitch Armor",
     "parent": "Rupu Fur Armor",
-    "trade_price": 32
+    "trade_price": 32,
+    "description": "A secret weaving technique creates surprisingly strong armor with no loss in meanueverability."
   },
   {
     "category": "Equipment",
@@ -3682,7 +3880,8 @@
     ],
     "name": "Durable Water Sack",
     "parent": "Makeshift Bottle",
-    "trade_price": 7.9
+    "trade_price": 7.9,
+    "description": "Carry large volumes of liquid. Essential for water traders."
   },
   {
     "category": "Equipment",
@@ -3698,7 +3897,8 @@
     ],
     "name": "Bone Bottle",
     "parent": "Makeshift Bottle",
-    "trade_price": 11.9
+    "trade_price": 11.9,
+    "description": "A bottle with an aftertaste."
   },
   {
     "category": "Equipment",
@@ -3714,7 +3914,8 @@
     ],
     "name": "Ceramic Flask",
     "parent": "Bone Bottle",
-    "trade_price": 71.6
+    "trade_price": 71.6,
+    "description": "Ceramic items are difficult to make and usually seen as a mark of quality craftsmanship."
   },
   {
     "category": "Equipment",
@@ -3722,7 +3923,8 @@
     "crafting": [{ "ingredients": [{ "count": 28, "name": "Fiber" }] }],
     "name": "Foraging Pouch",
     "parent": "Makeshift Bottle",
-    "trade_price": 5.6
+    "trade_price": 5.6,
+    "description": "Designed to store a lot of fiber and organic materials, including sediments, like sand."
   },
   {
     "category": "Equipment",
@@ -3739,7 +3941,8 @@
     ],
     "name": "Torque Backpack",
     "parent": "Fast Grappling Hook",
-    "trade_price": 48.5
+    "trade_price": 48.5,
+    "description": "Enables nomads to transport torque between various devices. The belt also significantly increases the effectiveness of grappling hooks."
   },
   {
     "category": "Equipment",
@@ -3755,7 +3958,8 @@
     ],
     "name": "Compacted Torque Battery",
     "parent": "Torque Battery",
-    "trade_price": 8.4
+    "trade_price": 8.4,
+    "description": "Infused battery allowing to store significant amounts of torque at a cost of extreme weight."
   },
   {
     "category": "Equipment",
@@ -3770,7 +3974,8 @@
     ],
     "name": "Improvised Bottle",
     "parent": "Makeshift Bottle",
-    "trade_price": 6.2
+    "trade_price": 6.2,
+    "description": "While it doesn't hold much liquid, it's simple to make and can be crafted using almost any material."
   },
   {
     "category": "Equipment",
@@ -3785,7 +3990,8 @@
     ],
     "name": "Heavy Backpack",
     "parent": "Medium Backpack",
-    "trade_price": 131.5
+    "trade_price": 131.5,
+    "description": "Loads of new inventory space."
   },
   {
     "category": "Equipment",
@@ -3800,7 +4006,8 @@
     ],
     "name": "Large Gathering Pouch",
     "parent": "Foraging Pouch",
-    "trade_price": 10
+    "trade_price": 10,
+    "description": "Holds a lot more fiber than its predecessor."
   },
   {
     "category": "Equipment",
@@ -3816,7 +4023,8 @@
     ],
     "name": "Infused Obsidian Bottle",
     "parent": "Obsidian Flask",
-    "trade_price": 26
+    "trade_price": 26,
+    "description": "A large container made of obsidian with nibiran coating. Withstands very high temperatures."
   },
   {
     "category": "Equipment",
@@ -3831,7 +4039,8 @@
     ],
     "name": "Obsidian Flask",
     "parent": "Bone Bottle",
-    "trade_price": 23
+    "trade_price": 23,
+    "description": "Incredibly durable flask resistant to highest temperatures."
   },
   {
     "category": "Equipment",
@@ -3846,7 +4055,8 @@
     ],
     "name": "Makeshift Bottle",
     "parent": "Equipment",
-    "trade_price": 1.5
+    "trade_price": 1.5,
+    "description": "It's a wonder this little bottle can even stay glued together."
   },
   {
     "category": "Equipment",
@@ -3862,7 +4072,8 @@
     ],
     "name": "Medium Backpack",
     "parent": "Light Backpack",
-    "trade_price": 10.3
+    "trade_price": 10.3,
+    "description": "Grants additional inventory space."
   },
   {
     "category": "Equipment",
@@ -3877,7 +4088,8 @@
     ],
     "name": "Net Pouch",
     "parent": "Throwing Net",
-    "trade_price": 5.6
+    "trade_price": 5.6,
+    "description": "Spacious pouch with compartments for storing throwing nets."
   },
   {
     "category": "Equipment",
@@ -3892,7 +4104,8 @@
     ],
     "name": "Light Backpack",
     "parent": "Foraging Pouch",
-    "trade_price": 5.6
+    "trade_price": 5.6,
+    "description": "A little extra inventory space to carry the bare necessities."
   },
   {
     "category": "Equipment",
@@ -3908,7 +4121,8 @@
     ],
     "name": "Split Bone Bottle",
     "parent": "Bone Bottle",
-    "trade_price": 13.3
+    "trade_price": 13.3,
+    "description": "A small bottle with two seperate containers that can each hold a different type of liquid."
   },
   {
     "category": "Equipment",
@@ -3924,7 +4138,8 @@
     ],
     "name": "Split Ceramic Flask",
     "parent": "Ceramic Flask",
-    "trade_price": 51.6
+    "trade_price": 51.6,
+    "description": "A large bottle with two seperate containers that can each hold a different type of liquid."
   },
   {
     "category": "Equipment",
@@ -3940,7 +4155,8 @@
     ],
     "name": "Torque Battery",
     "parent": "Foraging Pouch",
-    "trade_price": 8.4
+    "trade_price": 8.4,
+    "description": "Stores torque by winding up a mechanism with a rope inside."
   },
   {
     "category": "Equipment",
@@ -3955,7 +4171,8 @@
     ],
     "name": "Wingsuit",
     "parent": "Long Grappling Hook",
-    "trade_price": 29
+    "trade_price": 29,
+    "description": "Nomads are accustomed to leaving their fate to the winds. While some Nomads have managed to stay airborn for long periods of time and can perform nimble landings, many drop like a leaf."
   },
   {
     "category": "Interactables",
@@ -3968,7 +4185,8 @@
       }
     ],
     "name": "Firework 1",
-    "trade_price": 3
+    "trade_price": 3,
+    "description": "Shoots a firework with a circular, colorful explosion."
   },
   {
     "category": "Interactables",
@@ -3994,7 +4212,8 @@
       }
     ],
     "name": "Firework 3",
-    "trade_price": 3
+    "trade_price": 3,
+    "description": "Shoots a firework with a cylindrical, colorful explosion."
   },
   {
     "category": "Interactables",
@@ -4007,7 +4226,8 @@
       }
     ],
     "name": "Firework 4",
-    "trade_price": 3
+    "trade_price": 3,
+    "description": "Shoots a firework with a colorful, double-sphere-like explosion."
   },
   {
     "category": "Interactables",
@@ -4020,7 +4240,8 @@
       }
     ],
     "name": "Firework 5",
-    "trade_price": 3
+    "trade_price": 3,
+    "description": "Shoots a firework with a colorful, radial explosion."
   },
   {
     "category": "Interactables",
@@ -4033,7 +4254,8 @@
       }
     ],
     "name": "Firework 6",
-    "trade_price": 3
+    "trade_price": 3,
+    "description": "Shoots a firework with colorful, killin-shaped explosion."
   },
   {
     "category": "Interactables",
@@ -4046,7 +4268,8 @@
       }
     ],
     "name": "Firework 7",
-    "trade_price": 3
+    "trade_price": 3,
+    "description": "Shoots a firework with a colorful, sparkling explosion."
   },
   {
     "category": "Interactables",
@@ -4059,7 +4282,8 @@
       }
     ],
     "name": "Flare - white",
-    "trade_price": 3
+    "trade_price": 3,
+    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling."
   },
   {
     "category": "Interactables",
@@ -4072,7 +4296,8 @@
       }
     ],
     "name": "Flare - red",
-    "trade_price": 3
+    "trade_price": 3,
+    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling."
   },
   {
     "category": "Interactables",
@@ -4085,7 +4310,8 @@
       }
     ],
     "name": "Flare - green",
-    "trade_price": 3
+    "trade_price": 3,
+    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling."
   },
   {
     "category": "Interactables",
@@ -4098,7 +4324,8 @@
       }
     ],
     "name": "Flare - blue",
-    "trade_price": 3
+    "trade_price": 3,
+    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling."
   },
   {
     "category": "Interactables",
@@ -4111,7 +4338,8 @@
       }
     ],
     "name": "Flare - orange",
-    "trade_price": 15.6
+    "trade_price": 15.6,
+    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling."
   },
   {
     "category": "Interactables",
@@ -4124,7 +4352,8 @@
       }
     ],
     "name": "Flare - purple",
-    "trade_price": 3
+    "trade_price": 3,
+    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling."
   },
   {
     "category": "Interactables",
@@ -4137,7 +4366,8 @@
       }
     ],
     "name": "Flare - teal",
-    "trade_price": 3
+    "trade_price": 3,
+    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling."
   },
   {
     "category": "Tools",
@@ -4153,7 +4383,8 @@
     ],
     "name": "Repaired Grappling Hook",
     "parent": "Equipment",
-    "trade_price": 10
+    "trade_price": 10,
+    "description": "Grapple to any object, reel in and swing. An essential tool for any Nomad who wants to live long enough to see the next oasis."
   },
   {
     "category": "Tools",
@@ -4169,7 +4400,8 @@
     ],
     "name": "Torch",
     "parent": "Woodcutter’s Hatchet",
-    "trade_price": 3.2
+    "trade_price": 3.2,
+    "description": "The nomads travel where the land is always bright, but eclipses will cause periods of unexpected darkness."
   },
   {
     "cost": { "count": 50, "name": "Fragment" },
@@ -4184,7 +4416,8 @@
     ],
     "name": "Long Grappling Hook",
     "parent": "Fast Grappling Hook",
-    "trade_price": 23.5
+    "trade_price": 23.5,
+    "description": "Gets a Nomad places others can't reach. Slower reeling speed may be disadvantegous while fighting."
   },
   {
     "category": "Armors",
@@ -4201,7 +4434,8 @@
     ],
     "name": "Carapace Armor",
     "parent": "Forester's Armor",
-    "trade_price": 164.8
+    "trade_price": 164.8,
+    "description": "Layers of tough hides are sewn together into a heavy armor worn by the most seasoned nomadic fighters."
   },
   {
     "category": "Armors",
@@ -4218,7 +4452,8 @@
     ],
     "name": "Redwood Wood Armor",
     "parent": "Triple Stitch Armor",
-    "trade_price": 719.9
+    "trade_price": 719.9,
+    "description": "The Swampwood tribe rarely make contact with the Flotillans or venture beyond their fleet, making the specialty armor they construct from redwood wood a sought after commodity."
   },
   {
     "category": "Knowledge",
@@ -4235,7 +4470,8 @@
       }
     ],
     "name": "Tablet",
-    "trade_price": 500
+    "trade_price": 500,
+    "description": "Carved images of animals can be felt on this tablet."
   },
   {
     "category": "Knowledge",
@@ -4265,10 +4501,21 @@
       }
     ],
     "name": "Random Knowledge Tablet",
-    "trade_price": 500
+    "trade_price": 500,
+    "description": "Utilizing a mixture of glass, shattered fragments, and crystals from meteor cores, the Flotillans have devised new ways of producing and distributing knowledge tablets."
   },
-  { "category": "Lava", "name": "Lava", "trade_price": 3.5 },
-  { "category": "Liquids", "name": "Contaminated Water", "trade_price": 0.1 },
+  {
+    "category": "Lava",
+    "name": "Lava",
+    "trade_price": 3.5,
+    "description": "Historically believed to be the remains of nomads who were burnt by the Sun, it's been recently discovered to be useful in various productions of fuels, bombs, and other items."
+  },
+  {
+    "category": "Liquids",
+    "name": "Contaminated Water",
+    "trade_price": 0.1,
+    "description": "The red tint is attributed to a ubiquitous variety of toxic algae."
+  },
   {
     "category": "Liquids",
     "crafting": [
@@ -4282,9 +4529,15 @@
         "time": 90
       }
     ],
-    "name": "Lava Fuel"
+    "name": "Lava Fuel",
+    "description": "Being almost as hot as lava itself, it's often used in combat and crafting."
   },
-  { "category": "Resources", "name": "Shattered Fragment", "trade_price": 3 },
+  {
+    "category": "Resources",
+    "name": "Shattered Fragment",
+    "trade_price": 3,
+    "description": "A shattered fragment - some simple information can still be extracted, but without some restoration work it's hard to learn about complex topics from it."
+  },
   {
     "category": "Resources",
     "cost": { "count": 8, "name": "Fragment" },
@@ -4308,13 +4561,34 @@
     ],
     "name": "Nomad Cloth",
     "parent": "Advanced Fiberworking Station",
-    "trade_price": 28
+    "trade_price": 28,
+    "description": "A tightly woven cloth that is hard to cut and nearly waterproof. The Flotillan standard."
   },
   { "category": "Resources", "name": "Beeswax", "trade_price": 1.2 },
-  { "category": "Resources", "name": "Blood Turnip", "trade_price": 0.9 },
-  { "category": "Resources", "name": "Cactus Flesh", "trade_price": 0.2 },
-  { "category": "Resources", "name": "Huge Cactus Fruit", "trade_price": 1.6 },
-  { "category": "Resources", "name": "Chitin Plate", "trade_price": 6.6 },
+  {
+    "category": "Resources",
+    "name": "Blood Turnip",
+    "trade_price": 0.9,
+    "description": "The wandering wisemen use a divining technique to locate the rare blood turnip root, which when cut open bleeds like a slaughtered animal. Many have tried without success to cultivate it."
+  },
+  {
+    "category": "Resources",
+    "name": "Cactus Flesh",
+    "trade_price": 0.2,
+    "description": "The last resort for nomads dying of thirst. At least the taste won't kill you."
+  },
+  {
+    "category": "Resources",
+    "name": "Huge Cactus Fruit",
+    "trade_price": 1.6,
+    "description": "Some strange plants with psychoactive properties can be turned into mind enhancing vitamins."
+  },
+  {
+    "category": "Resources",
+    "name": "Chitin Plate",
+    "trade_price": 6.6,
+    "description": "Skittering parasites make their nests between the gooey cracks. Harvesting chitin is dirty work."
+  },
   {
     "category": "Resources",
     "crafting": [
@@ -4329,10 +4603,21 @@
     ],
     "name": "Clay",
     "parent": "Soil Excavator",
-    "trade_price": 0.1
+    "trade_price": 0.1,
+    "description": "Extracted from lakebed soil."
   },
-  { "category": "Resources", "name": "Terrain: Clay Spots", "trade_price": 1 },
-  { "category": "Resources", "name": "Feather", "trade_price": 1.6 },
+  {
+    "category": "Resources",
+    "name": "Terrain: Clay Spots",
+    "trade_price": 1,
+    "description": ""
+  },
+  {
+    "category": "Resources",
+    "name": "Feather",
+    "trade_price": 1.6,
+    "description": "Migrating flying creatures serve as one of the oldest compasses for lost nomads, like dark arrowheads sailing toward the next oasis."
+  },
   {
     "category": "Resources",
     "crafting": [
@@ -4350,7 +4635,8 @@
       }
     ],
     "name": "Fiber",
-    "trade_price": 0.2
+    "trade_price": 0.2,
+    "description": "Used to make everything from ropes, sails, to garments."
   },
   {
     "category": "Resources",
@@ -4374,9 +4660,15 @@
     ],
     "name": "Fiber Weave",
     "parent": "Fiberworking Station",
-    "trade_price": 0.8
+    "trade_price": 0.8,
+    "description": "A crude fabric woven from strands of natural fiber."
   },
-  { "category": "Resources", "name": "Insects", "trade_price": 0.8 },
+  {
+    "category": "Resources",
+    "name": "Insects",
+    "trade_price": 0.8,
+    "description": "Its extremely hard carapace evolved to shield it from extreme weather."
+  },
   {
     "category": "Resources",
     "cost": { "count": 25, "name": "Fragment" },
@@ -4392,9 +4684,15 @@
     ],
     "name": "Bone Glue",
     "parent": "Purified Water",
-    "trade_price": 1.9
+    "trade_price": 1.9,
+    "description": "Rapidly bonds after application. Discovered by a Flotillan cook who stewed powdered bones of an unknown creature into his soup broth. The nomads he served died of asphyxiation."
   },
-  { "category": "Resources", "name": "Magma Seeds", "trade_price": 0.1 },
+  {
+    "category": "Resources",
+    "name": "Magma Seeds",
+    "trade_price": 0.1,
+    "description": "Thrives in the heat generated by volcanic hotspots."
+  },
   {
     "category": "Resources",
     "crafting": [
@@ -4442,9 +4740,15 @@
     ],
     "name": "Earth Wax",
     "parent": "Soil Excavator",
-    "trade_price": 1.4
+    "trade_price": 1.4,
+    "description": "Nomads rely on earth wax to waterproof walker sails and make their wooden decks resistant to decay. Often found when mining rocks, it can also be extracted from some natural resources through pressure."
   },
-  { "category": "Resources", "name": "Terrain: Black Soil", "trade_price": 1 },
+  {
+    "category": "Resources",
+    "name": "Terrain: Black Soil",
+    "trade_price": 1,
+    "description": ""
+  },
   {
     "category": "Resources",
     "crafting": [
@@ -4455,11 +4759,27 @@
       }
     ],
     "name": "Glass",
-    "trade_price": 1.4
+    "trade_price": 1.4,
+    "description": "A transparent material"
   },
-  { "category": "Resources", "name": "Meteor Core", "trade_price": 600 },
-  { "category": "Resources", "name": "Nibiran Mineral", "trade_price": 16.5 },
-  { "category": "Resources", "name": "Hide", "trade_price": 1.1 },
+  {
+    "category": "Resources",
+    "name": "Meteor Core",
+    "trade_price": 600,
+    "description": "Strange crystal that exudes an almost mesmerising glow. If you listen closely, you can hear a steady humming noise emanating from its energized interior."
+  },
+  {
+    "category": "Resources",
+    "name": "Nibiran Mineral",
+    "trade_price": 16.5,
+    "description": "This inconspicuous rock glows brightly when the Moon and Sun align. The mineral has permeated the soil, water, plant life, and possibly more."
+  },
+  {
+    "category": "Resources",
+    "name": "Hide",
+    "trade_price": 1.1,
+    "description": "The raw skin of an animal."
+  },
   {
     "category": "Resources",
     "crafting": [
@@ -4470,9 +4790,15 @@
       }
     ],
     "name": "Iron Ingot",
-    "trade_price": 12
+    "trade_price": 12,
+    "description": "Extremely strong material used in high quality productions."
   },
-  { "category": "Resources", "name": "Iron Ore", "trade_price": 8 },
+  {
+    "category": "Resources",
+    "name": "Iron Ore",
+    "trade_price": 8,
+    "description": "Over the centuries, nomads have experimented with iron in the construction of their walkers and armor. However, in the race to outrun the sun, it was those who travelled lightest that survived longest."
+  },
   {
     "category": "Resources",
     "crafting": [
@@ -4486,11 +4812,27 @@
       }
     ],
     "name": "Nibiran Ingot",
-    "trade_price": 102.5
+    "trade_price": 102.5,
+    "description": "Iron ingot coated with scraped off green mineral of unkown origin."
   },
-  { "category": "Resources", "name": "Obsidian", "trade_price": 0.8 },
-  { "category": "Resources", "name": "Peculiar Corundum", "trade_price": 220 },
-  { "category": "Resources", "name": "Salt Rock", "trade_price": 0.1 },
+  {
+    "category": "Resources",
+    "name": "Obsidian",
+    "trade_price": 0.8,
+    "description": "Molten rock flowed across the world's surface, and the metropolises were buried."
+  },
+  {
+    "category": "Resources",
+    "name": "Peculiar Corundum",
+    "trade_price": 220,
+    "description": "A strange, slightly translucent stone without a single scratch on the surface or other traces of deterioration. It seems to have endured many burnouts quite unscathed."
+  },
+  {
+    "category": "Resources",
+    "name": "Salt Rock",
+    "trade_price": 0.1,
+    "description": "Mined from desert salt lakes."
+  },
   { "category": "Resources", "name": "Stone", "trade_price": 0.1 },
   {
     "category": "Tools",
@@ -4507,7 +4849,8 @@
     ],
     "name": "Scythe",
     "parent": "Simple Sickle",
-    "trade_price": 17.4
+    "trade_price": 17.4,
+    "description": "Returns a superior yield when used to harvest small plants."
   },
   {
     "category": "Tools",
@@ -4523,7 +4866,8 @@
     ],
     "name": "Simple Pickaxe",
     "parent": "Woodcutter’s Hatchet",
-    "trade_price": 8.4
+    "trade_price": 8.4,
+    "description": "Mine stone and other minerals with this crude tool."
   },
   {
     "category": "Tools",
@@ -4538,7 +4882,8 @@
     ],
     "name": "Simple Repair Hammer",
     "parent": "Woodcutter’s Hatchet",
-    "trade_price": 9.5
+    "trade_price": 9.5,
+    "description": "Repair wings, legs, and any other structures by hammering them. Always cheaper to fix than to rebuild."
   },
   {
     "category": "Tools",
@@ -4554,7 +4899,8 @@
     ],
     "name": "Simple Sickle",
     "parent": "Woodcutter’s Hatchet",
-    "trade_price": 6.2
+    "trade_price": 6.2,
+    "description": "Returns a good yield when used to harvest small plants."
   },
   {
     "category": "Weapons",
@@ -4584,7 +4930,8 @@
     ],
     "name": "Rawbone Club",
     "parent": "Jaggertooth Club",
-    "trade_price": 7.1
+    "trade_price": 7.1,
+    "description": "They call nomads who specialize in using rawbone weaponry \"boneheads,\" an ancient term meaning simpleton."
   },
   {
     "category": "Weapons",
@@ -4601,7 +4948,8 @@
     ],
     "name": "Spikebone Club",
     "parent": "Rawbone Club",
-    "trade_price": 14
+    "trade_price": 14,
+    "description": "Embedded spikebones easily tear through unprotected flesh."
   },
   {
     "category": "Weapons",
@@ -4617,7 +4965,8 @@
     ],
     "name": "Rawbone Hand Axe",
     "parent": "Woodcutter’s Hatchet",
-    "trade_price": 4.8
+    "trade_price": 4.8,
+    "description": "Rawbone weaponry doesn't take half a brain to make, but it will split your enemies in half."
   },
   {
     "category": "Weapons",
@@ -4633,7 +4982,8 @@
     ],
     "name": "Heavy Rawbone Hand Axe",
     "parent": "Rawbone Hand Axe",
-    "trade_price": 10.7
+    "trade_price": 10.7,
+    "description": "Heavier than its counterpart, but the intelligence required to wield it is still low."
   },
   {
     "category": "Weapons",
@@ -4649,7 +4999,8 @@
     ],
     "name": "Bonespike Sword",
     "parent": "Beat Stick",
-    "trade_price": 6.2
+    "trade_price": 6.2,
+    "description": "Bonespike weapons are favoured in the Flotillan arena for their brutality."
   },
   {
     "category": "Weapons",
@@ -4666,7 +5017,8 @@
     ],
     "name": "Firestone Axe",
     "parent": "Rawbone Hand Axe",
-    "trade_price": 80.8
+    "trade_price": 80.8,
+    "description": "With its sharp edge and a balanced handle, a Firestone Axe is a choice of many Nomads seeking reliable and powerful weapons for their battles."
   },
   {
     "category": "Weapons",
@@ -4683,7 +5035,8 @@
     ],
     "name": "Firestone Bludgeon",
     "parent": "Rawbone Club",
-    "trade_price": 81
+    "trade_price": 81,
+    "description": "Reinforced by solidified lava, bluedgeons are often brought back to the Flotilla by the Nomads who dare to explore volcanic areas."
   },
   {
     "category": "Weapons",
@@ -4716,7 +5069,8 @@
     ],
     "name": "Jaggertooth Club",
     "parent": "Beat Stick",
-    "trade_price": 2.5
+    "trade_price": 2.5,
+    "description": "A weapon that is deeply symbolic of nomadic culture, straddling the line between barbarism and innovation."
   },
   {
     "category": "Weapons",
@@ -4732,7 +5086,8 @@
     ],
     "name": "Advanced Hatchet",
     "parent": "Heavy Rawbone Hand Axe",
-    "trade_price": 56.2
+    "trade_price": 56.2,
+    "description": "Even the most obstinate nomad has fun chopping food with this extremely efficient tool."
   },
   {
     "category": "Weapons",
@@ -4748,7 +5103,8 @@
     ],
     "name": "Short Ceramic Hoofmace",
     "parent": "Rawbone Club",
-    "trade_price": 75.8
+    "trade_price": 75.8,
+    "description": "The hoof-shaped handle is attributed to the wandering Herdsmen Tribe, who are now lost, but are fabled to have found The Place That Never Dies. The hoof is a good luck charm among Nomads who are forever at the whim of the path they follow."
   },
   {
     "category": "Weapons",
@@ -4763,7 +5119,8 @@
     ],
     "name": "Short Malletblade",
     "parent": "Bonespike Sword",
-    "trade_price": 88.8
+    "trade_price": 88.8,
+    "description": "The blunt force behind the blade makes it cut much deeper than other swords."
   },
   {
     "category": "Weapons",
@@ -4778,7 +5135,8 @@
     ],
     "name": "Woodcutter’s Hatchet",
     "parent": "Beat Stick",
-    "trade_price": 1.2
+    "trade_price": 1.2,
+    "description": "Nearly all nomads are expert carpenters, and the hatchet is essential to their way of life."
   },
   {
     "category": "Weapons",
@@ -4793,7 +5151,8 @@
     ],
     "name": "Beat Stick",
     "parent": "Equipment",
-    "trade_price": 1.7
+    "trade_price": 1.7,
+    "description": "The fastest way to dispatch a rupu."
   },
   {
     "category": "Weapons",
@@ -4809,7 +5168,8 @@
     ],
     "name": "Rawbone Quarterstaff",
     "parent": "Traveller’s Staff",
-    "trade_price": 8
+    "trade_price": 8,
+    "description": "They call nomads who specialize in using rawbone weaponry \"boneheads,\" an ancient term meaning simpleton."
   },
   {
     "category": "Weapons",
@@ -4826,7 +5186,8 @@
     ],
     "name": "Firestone Hammerstaff",
     "parent": "Rawbone Quarterstaff",
-    "trade_price": 100.7
+    "trade_price": 100.7,
+    "description": "While not being sharp like a similarly built bladestaff, the weight and sturdyness of hammerstaff tips allows to crack enemy skulls with ease and grace."
   },
   {
     "category": "Weapons",
@@ -4843,7 +5204,8 @@
     ],
     "name": "Firestone Bladestaff",
     "parent": "Rawbone Quarterstaff",
-    "trade_price": 100.7
+    "trade_price": 100.7,
+    "description": "Nomads wielding hot bladestaffs made of processed lava have become legendary in some parts of the world for their unique combat techniques and strength."
   },
   {
     "category": "Weapons",
@@ -4858,7 +5220,8 @@
     ],
     "name": "Blunt Quarterstaff",
     "parent": "Beat Stick",
-    "trade_price": 3.1
+    "trade_price": 3.1,
+    "description": "This unflattering weapon may just look like rocks tied to a stick, but it's deceptively powerful in the hands of a skilled nomadic warrior."
   },
   {
     "category": "Weapons",
@@ -4873,7 +5236,8 @@
     ],
     "name": "Traveller’s Staff",
     "parent": "Blunt Quarterstaff",
-    "trade_price": 2.6
+    "trade_price": 2.6,
+    "description": "While nomads no longer travel on foot to make their migration across the world, there exists a deep affection for the old ways. The tradition of converting walking staffs for battle has yet to die."
   },
   {
     "category": "Weapons",
@@ -4889,7 +5253,8 @@
     ],
     "name": "Paddleblade Quarterstaff",
     "parent": "Rawbone Quarterstaff",
-    "trade_price": 124.2
+    "trade_price": 124.2,
+    "description": "Adorning the backs of Swampwood tribe's most adept warriors, this bladed quarterstaff doubles as a paddle while canoeing the misty shores of the South Sea."
   },
   {
     "category": "Weapons",
@@ -4905,7 +5270,8 @@
     ],
     "name": "Javelin",
     "parent": "Beat Stick",
-    "trade_price": 1.6
+    "trade_price": 1.6,
+    "description": "The first throwers were members of a rogue sect of cannabilistic warriors. Their numbers have waned, but they still periodically cause havoc for Flotillan supply caravans."
   },
   {
     "category": "Weapons",
@@ -4921,7 +5287,8 @@
     ],
     "name": "Firebomb",
     "parent": "Javelin",
-    "trade_price": 16.9
+    "trade_price": 16.9,
+    "description": "Lightweight obsidian ball containing highly flammable mixture. Throw it at enemies to deal fire damage."
   },
   {
     "category": "Weapons",
@@ -4937,7 +5304,8 @@
     ],
     "name": "Throwing Net",
     "parent": "Javelin",
-    "trade_price": 8.4
+    "trade_price": 8.4,
+    "description": "A portable net with a release mechanism that allows to throw it by hand."
   },
   {
     "category": "Weapons",
@@ -4953,7 +5321,8 @@
     ],
     "name": "Rawbone Battle Axe",
     "parent": "Rawbone Hand Axe",
-    "trade_price": 18.4
+    "trade_price": 18.4,
+    "description": "Rawbone weaponry doesn't take half a brain to make, but it will split your enemies in half."
   },
   {
     "category": "Weapons",
@@ -4970,7 +5339,8 @@
     ],
     "name": "Rawbone Maul",
     "parent": "Jaggertooth Maul",
-    "trade_price": 24.5
+    "trade_price": 24.5,
+    "description": "They call nomads who specialize in using rawbone weaponry \"boneheads,\" an ancient term meaning simpleton."
   },
   {
     "category": "Weapons",
@@ -4986,7 +5356,8 @@
     ],
     "name": "Spikebone Maul",
     "parent": "Rawbone Maul",
-    "trade_price": 15.8
+    "trade_price": 15.8,
+    "description": "Embedded spikebones easily tear through unprotected flesh."
   },
   {
     "category": "Weapons",
@@ -5002,7 +5373,8 @@
     ],
     "name": "Long Bonespike Swordstaff",
     "parent": "Bonespike Sword",
-    "trade_price": 14.4
+    "trade_price": 14.4,
+    "description": "Bonespike weapons are favoured in the Flotillan arena for their brutality."
   },
   {
     "category": "Weapons",
@@ -5019,7 +5391,8 @@
     ],
     "name": "Firestone Battleaxe",
     "parent": "Rawbone Battle Axe",
-    "trade_price": 81
+    "trade_price": 81,
+    "description": "Sharpened using an ancient Nomadic technique, the blade of a Firestone Battleaxe just as easily cut heads as trees."
   },
   {
     "category": "Weapons",
@@ -5036,7 +5409,8 @@
     ],
     "name": "Firestone Bozdogan",
     "parent": "Rawbone Maul",
-    "trade_price": 104
+    "trade_price": 104,
+    "description": "While the excquisite craftsmanship of the bozdogan weapons draws attention of many, their weight distribution allows only the strongest warriors to wield it effectively."
   },
   {
     "category": "Weapons",
@@ -5053,7 +5427,8 @@
     ],
     "name": "Firestone Longblade",
     "parent": "Long Bonespike Swordstaff",
-    "trade_price": 105.2
+    "trade_price": 105.2,
+    "description": "Pulsating with heat of a firestone, longblades have become a popular weapon among Nomad warriors who can afford their high price."
   },
   {
     "category": "Weapons",
@@ -5069,7 +5444,8 @@
     ],
     "name": "Jaggertooth Maul",
     "parent": "Jaggertooth Club",
-    "trade_price": 5.4
+    "trade_price": 5.4,
+    "description": "A weapon that is deeply symbolic of nomadic culture, straddling the line between barbarism and innovation."
   },
   {
     "category": "Weapons",
@@ -5085,7 +5461,8 @@
     ],
     "name": "Sawtooth Sword",
     "parent": "Beat Stick",
-    "trade_price": 3.7
+    "trade_price": 3.7,
+    "description": "The serrated blade is designed to inflict the utmost pain, without necessarily being lethal. The preferred weapon of many pirates."
   },
   {
     "category": "Weapons",
@@ -5102,7 +5479,8 @@
     ],
     "name": "Long Ceramic Hoofmace",
     "parent": "Rawbone Maul",
-    "trade_price": 118.9
+    "trade_price": 118.9,
+    "description": "The hoof-shaped handle is attributed to the wandering Herdsmen Tribe, who are now lost, but are fabled to have found The Place That Never Dies. The hoof is a good luck charm among Nomads who are forever at the whim of the path they follow."
   },
   {
     "category": "Weapons",
@@ -5119,10 +5497,19 @@
     ],
     "name": "Singblade",
     "parent": "Long Bonespike Swordstaff",
-    "trade_price": 165.8
+    "trade_price": 165.8,
+    "description": "Supossedly one of the only weapons devised by the Guardians themselves, who are rumored to be master engineers. The blades whistle in a pleasant way as they cut through the air."
   },
-  { "name": "Flots", "trade_price": 0.5 },
-  { "name": "Fiery Concoction", "trade_price": 1 },
+  {
+    "name": "Flots",
+    "trade_price": 0.5,
+    "description": "Currency of the Flotilla. Can be withdrawn and deposited at any Trading Station."
+  },
+  {
+    "name": "Fiery Concoction",
+    "trade_price": 1,
+    "description": "A mixture of ingredients with dashes of wood splinters kept in secret by the nomadic outlaws. Used in production of Hellfire Bolts to make fire burn at extremely high temperatures, allowing to damage even the strongest materials."
+  },
   {
     "category": "Containers",
     "cost": { "count": 10, "name": "Fragment" },
@@ -5136,7 +5523,8 @@
       }
     ],
     "name": "Ammo Chest",
-    "parent": "Small Chest"
+    "parent": "Small Chest",
+    "description": "When placed on a walker, weapons will use the ammo from the chest to reload. Placing in a base will only allow to store ammo."
   },
   {
     "category": "Containers",
@@ -5151,7 +5539,8 @@
       }
     ],
     "name": "Base Maintenance Chest",
-    "parent": "Sandbag Wall"
+    "parent": "Sandbag Wall",
+    "description": "A requirement for every Nomad's base. Prevents a base decaying over time with sufficient resources inside. Requires each resource a base is made of to properly maintain it."
   },
   {
     "category": "Containers",
@@ -5167,7 +5556,8 @@
       }
     ],
     "name": "Large Base Walker Packer Body",
-    "parent": "Small Base Walker Packer Body"
+    "parent": "Small Base Walker Packer Body",
+    "description": "Allows to pack a single walker of any type. Requires a foundation of a base to support itself."
   },
   {
     "category": "Containers",
@@ -5183,7 +5573,8 @@
       }
     ],
     "name": "Small Base Walker Packer Body",
-    "parent": "Base Maintenance Chest"
+    "parent": "Base Maintenance Chest",
+    "description": "Allows to pack a single small walkers up to a Dinghy type. Requires a foundation of a base to support itself."
   },
   {
     "category": "Containers",
@@ -5198,7 +5589,8 @@
       }
     ],
     "name": "Gigantic Chest",
-    "parent": "Large Chest"
+    "parent": "Large Chest",
+    "description": "Stack size: 500. An extremely strong chest with a very large amount of inventory space. Items are protected unless the chest is severely damaged."
   },
   {
     "category": "Containers",
@@ -5212,7 +5604,8 @@
       }
     ],
     "name": "Large Chest",
-    "parent": "Medium Chest"
+    "parent": "Medium Chest",
+    "description": "Stack size: 300. A very strong chest with a large amount of inventory space. Items are protected unless the chest is severely damaged."
   },
   {
     "category": "Containers",
@@ -5228,7 +5621,8 @@
       }
     ],
     "name": "Obsidian Canister",
-    "parent": "Obsidian Pot"
+    "parent": "Obsidian Pot",
+    "description": "Extremely durable, large container resistant to highest temperatures."
   },
   {
     "category": "Containers",
@@ -5244,7 +5638,8 @@
       }
     ],
     "name": "Obsidian Pot",
-    "parent": "Large Water Bag"
+    "parent": "Large Water Bag",
+    "description": "Extremly durable container resistant to highest temperatures."
   },
   {
     "category": "Containers",
@@ -5259,7 +5654,8 @@
       }
     ],
     "name": "Medium Chest",
-    "parent": "Small Chest"
+    "parent": "Small Chest",
+    "description": "Stack size: 200. A sturdy chest with a moderate amount of inventory space. Items are protected unless the chest is severely damaged."
   },
   {
     "category": "Containers",
@@ -5273,7 +5669,8 @@
       }
     ],
     "name": "Pedestal Chest",
-    "parent": "Small Chest"
+    "parent": "Small Chest",
+    "description": "A durable chest with adaquate inventory space. Items are protected unless the chest is severely damaged."
   },
   {
     "category": "Containers",
@@ -5288,7 +5685,8 @@
       }
     ],
     "name": "Small Chest",
-    "parent": "Sand Bed"
+    "parent": "Sand Bed",
+    "description": "A weak chest with a small amount of inventory space. Items are protected unless the chest is severely damaged."
   },
   {
     "category": "Containers",
@@ -5303,7 +5701,8 @@
       }
     ],
     "name": "Large Water Bag",
-    "parent": "Medium Water Bag"
+    "parent": "Medium Water Bag",
+    "description": "Store large volumes of liquid. Liquid is protected unless the container is severely damaged."
   },
   {
     "category": "Containers",
@@ -5319,7 +5718,8 @@
       }
     ],
     "name": "Medium Water Bag",
-    "parent": "Small Water Bag"
+    "parent": "Small Water Bag",
+    "description": "Store moderate volumes of liquid. Liquid is protected unless the container is severely damaged."
   },
   {
     "category": "Containers",
@@ -5334,7 +5734,8 @@
       }
     ],
     "name": "Small Water Bag",
-    "parent": "Small Chest"
+    "parent": "Small Chest",
+    "description": "Store small volumes of liquid. Liquid is protected unless the container is severely damaged."
   },
   {
     "category": "Crafting",
@@ -5347,7 +5748,8 @@
         ]
       }
     ],
-    "name": "Camp Fire"
+    "name": "Camp Fire",
+    "description": "Basic crafting station can formulate new liquids and vitamins, in addition to other useful items."
   },
   {
     "category": "Crafting",
@@ -5362,7 +5764,8 @@
       }
     ],
     "name": "Dyeing Station",
-    "parent": "Crafting"
+    "parent": "Crafting",
+    "description": "Bizarre construction that lets you dye your gear."
   },
   {
     "category": "Crafting",
@@ -5377,7 +5780,8 @@
       }
     ],
     "name": "Fiberworking Station",
-    "parent": "Campfire"
+    "parent": "Campfire",
+    "description": "Basic crafting station manufactures fabrics for walker sails and armors."
   },
   {
     "category": "Crafting",
@@ -5392,7 +5796,8 @@
       }
     ],
     "name": "Advanced Fiberworking Station",
-    "parent": "Fiberworking Station"
+    "parent": "Fiberworking Station",
+    "description": "Advanced crafting station manufactures fabrics more efficiently."
   },
   {
     "category": "Crafting",
@@ -5409,7 +5814,8 @@
       }
     ],
     "name": "Furnace",
-    "parent": "Soil Excavator"
+    "parent": "Soil Excavator",
+    "description": "Advanced crafting station smelts raw ore into refined metal."
   },
   {
     "category": "Crafting",
@@ -5440,7 +5846,8 @@
       }
     ],
     "name": "Repairing Station",
-    "parent": "Woodworking Station"
+    "parent": "Woodworking Station",
+    "description": "Basic crafting station repairs damaged equipment at a lower cost than crafting new ones."
   },
   {
     "category": "Crafting",
@@ -5456,7 +5863,8 @@
       }
     ],
     "name": "Lumbermill",
-    "parent": "Advanced Woodworking Station"
+    "parent": "Advanced Woodworking Station",
+    "description": "A huge crafting station uses torque to turn logs into tons of wood. Extremely efficient."
   },
   {
     "category": "Crafting",
@@ -5471,7 +5879,8 @@
       }
     ],
     "name": "Obsidian Machine",
-    "parent": "Soil Excavator"
+    "parent": "Soil Excavator",
+    "description": "With parts carved out of solid obsidian, the machine can safely hold lava to use it in various productions."
   },
   {
     "category": "Crafting",
@@ -5485,7 +5894,8 @@
       }
     ],
     "name": "Purification Station",
-    "parent": "Purified Water"
+    "parent": "Purified Water",
+    "description": "All water that is transported to the Flotilla is cleansed in an ancient water purifying machine. The Guardians are the sole keepers of this machine, a technological relic of the old world which has sustained the Flotillans to this day. However, nomads developed a similar, yet more primitive version of this technology."
   },
   {
     "category": "Crafting",
@@ -5501,7 +5911,8 @@
       }
     ],
     "name": "Quarry",
-    "parent": "Clay"
+    "parent": "Clay",
+    "description": "A huge crafting station uses torque to automatically mine stone, iron and other minerals within a certain radius."
   },
   {
     "category": "Crafting",
@@ -5517,7 +5928,8 @@
       }
     ],
     "name": "Stomping Station",
-    "parent": "Soil Excavator"
+    "parent": "Soil Excavator",
+    "description": "Basic crafting station simulates the blunt force of a foot to crush vegetables and soft minerals. An important tool for nomads who must always keep their feet in top condition."
   },
   {
     "category": "Crafting",
@@ -5532,7 +5944,8 @@
       }
     ],
     "name": "Woodworking Station",
-    "parent": "Campfire"
+    "parent": "Campfire",
+    "description": "Basic crafting station cuts wood into basic parts."
   },
   {
     "category": "Crafting",
@@ -5549,7 +5962,8 @@
       }
     ],
     "name": "Advanced Woodworking Station",
-    "parent": "Woodworking Station"
+    "parent": "Woodworking Station",
+    "description": "Advanced crafting station unlocks new available recipes and cuts wood more efficiently."
   },
   {
     "category": "Crafting",
@@ -5566,7 +5980,8 @@
       }
     ],
     "name": "Artificer Woodworking Station",
-    "parent": "Advanced Woodworking Station"
+    "parent": "Advanced Woodworking Station",
+    "description": "Artificer crafting station unlocks all available recipes and is the most efficient woodworking station."
   },
   {
     "category": "Crafting",
@@ -5592,14 +6007,16 @@
       }
     ],
     "name": "Farmable Area",
-    "parent": "Crafting"
+    "parent": "Crafting",
+    "description": "Grow your own trees from seeds overnight with the help of some Nibiran fertilizer."
   },
   {
     "category": "Crafting",
     "cost": { "count": 50, "name": "Tablet" },
     "crafting": [{ "ingredients": [{ "count": 1, "name": "Magma Seeds" }] }],
     "name": "Pine Tree",
-    "parent": "Farmable Area"
+    "parent": "Farmable Area",
+    "description": "Grow your own trees from seeds overnight with the help of some Nibiran fertilizer."
   },
   {
     "category": "Crafting",
@@ -5615,7 +6032,8 @@
       }
     ],
     "name": "Soil Excavator",
-    "parent": "Campfire"
+    "parent": "Campfire",
+    "description": "Basic crafting station extracts different types of soil from the ground, like sand from the desert, or with more advanced knowledge, clay from mud puddles."
   },
   {
     "category": "Crafting",
@@ -5631,7 +6049,8 @@
       }
     ],
     "name": "Torque Windmill",
-    "parent": "Soil Excavator"
+    "parent": "Soil Excavator",
+    "description": "Harnesses wind to generate torque automatically. A torque belt is required to transfer the torque between devices."
   },
   {
     "category": "Crafting",
@@ -5646,7 +6065,8 @@
       }
     ],
     "name": "Water Condenser",
-    "parent": "Purified Water"
+    "parent": "Purified Water",
+    "description": "Collects moisture from the air and stores it as clean water. Efficiency depends on the area where the condenser is built."
   },
   {
     "category": "Drugs",
@@ -5664,7 +6084,8 @@
     ],
     "name": "Bonebreaker",
     "parent": "Jojo Mojo",
-    "trade_price": 151.4
+    "trade_price": 151.4,
+    "description": "A small injection that may cause balance loss and serious injury from falling off walkers. Grants Nomad double damage after a successful block."
   },
   {
     "category": "Drugs",
@@ -5681,7 +6102,8 @@
     ],
     "name": "Vision Powder",
     "parent": "Vitamins",
-    "trade_price": 34.8
+    "trade_price": 34.8,
+    "description": "Said to induce hallucinations that can reveal ancient wisdom. Grants Nomad the ancient wisdom to build a Walker."
   },
   {
     "category": "Drugs",
@@ -5698,7 +6120,8 @@
     ],
     "name": "Desert Mule",
     "parent": "Vision Powder",
-    "trade_price": 34.5
+    "trade_price": 34.5,
+    "description": "These refreshing eye drops deceive a Nomad into thinking his or her heatstroke is gone. Allows Nomad to carry more weight."
   },
   {
     "category": "Drugs",
@@ -5715,7 +6138,8 @@
       }
     ],
     "name": "Sinus Destroyer",
-    "trade_price": 87.6
+    "trade_price": 87.6,
+    "description": "Snorting this will make a Nomad hyper focused. Grants Nomad more damage and faster reloading with board weapons."
   },
   {
     "category": "Drugs",
@@ -5733,7 +6157,8 @@
     ],
     "name": "Jojo Mojo",
     "parent": "Fury Fumes",
-    "trade_price": 9
+    "trade_price": 9,
+    "description": "A swirling mixture that makes a Nomad burst into song and dance. Negates all falling damage taken by Nomad."
   },
   {
     "category": "Drugs",
@@ -5751,7 +6176,8 @@
     ],
     "name": "Fury Fumes",
     "parent": "Vision Powder",
-    "trade_price": 39.4
+    "trade_price": 39.4,
+    "description": "A bottle of gas that when inhaled infuses a Nomad with rage. Increases Nomad's damage with melee weapons, but also increases damage received."
   },
   {
     "category": "Drugs",
@@ -5768,7 +6194,8 @@
       }
     ],
     "name": "Race Dust",
-    "trade_price": 99.8
+    "trade_price": 99.8,
+    "description": "Makes a Nomad want to race other Nomads. Allows Nomad to sprint without losing stamina."
   },
   {
     "category": "Drugs",
@@ -5786,7 +6213,8 @@
     ],
     "name": "Rupu Repellent",
     "parent": "Desert Mule",
-    "trade_price": 79.9
+    "trade_price": 79.9,
+    "description": "A malodorous perfume that makes every other living creature want to run away. Reduces rupu aggressiveness toward Nomad."
   },
   {
     "category": "Drugs",
@@ -5805,7 +6233,8 @@
     ],
     "name": "Worm Tincture",
     "parent": "Jojo Mojo",
-    "trade_price": 1200
+    "trade_price": 1200,
+    "description": "An extremely potent essence of worm secretion that grants Nomads vivid memoirs of the events long forgotten. Get XP upon consumption. Drinking at max character level grants +1 attribute point."
   },
   {
     "category": "Exoskeleton",
@@ -5821,7 +6250,8 @@
       }
     ],
     "name": "Exoskeleton",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Using repeater ammo to shoot,  this feat of engineering was created on the Flotilla and can be packed into Walker Packing Compartments. Protects nomads wearing them and allows to carry and operate heavy weapons and tools."
   },
   {
     "category": "Furniture",
@@ -5940,7 +6370,8 @@
       }
     ],
     "name": "Fire Goblet",
-    "parent": "Lamp Standing"
+    "parent": "Lamp Standing",
+    "description": "Burns wood to light the surrounding area."
   },
   {
     "category": "Furniture",
@@ -6012,7 +6443,8 @@
       }
     ],
     "name": "Table",
-    "parent": "Flag 1"
+    "parent": "Flag 1",
+    "description": "Decorative furniture that also allows to place objects on it."
   },
   {
     "category": "Furniture",
@@ -6024,7 +6456,8 @@
         ]
       }
     ],
-    "name": "Clan Flag"
+    "name": "Clan Flag",
+    "description": "Various styles of flags that display a nomad's clan colors and clan insignia."
   },
   {
     "category": "Furniture",
@@ -6036,7 +6469,8 @@
         ]
       }
     ],
-    "name": "Clan Flag Hanging"
+    "name": "Clan Flag Hanging",
+    "description": "Various styles of flags that display a nomad's clan colors and clan insignia."
   },
   {
     "category": "Furniture",
@@ -6048,7 +6482,8 @@
         ]
       }
     ],
-    "name": "Banner 1"
+    "name": "Banner 1",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6060,7 +6495,8 @@
         ]
       }
     ],
-    "name": "Banner 2"
+    "name": "Banner 2",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6072,7 +6508,8 @@
         ]
       }
     ],
-    "name": "Banner 3"
+    "name": "Banner 3",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6084,7 +6521,8 @@
         ]
       }
     ],
-    "name": "Arena Fence 1"
+    "name": "Arena Fence 1",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6096,7 +6534,8 @@
         ]
       }
     ],
-    "name": "Arena Fence 2"
+    "name": "Arena Fence 2",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6109,7 +6548,8 @@
         ]
       }
     ],
-    "name": "Gate 1"
+    "name": "Gate 1",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6121,7 +6561,8 @@
         ]
       }
     ],
-    "name": "Roofing 1"
+    "name": "Roofing 1",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6133,7 +6574,8 @@
         ]
       }
     ],
-    "name": "Roofing 2"
+    "name": "Roofing 2",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6145,7 +6587,8 @@
         ]
       }
     ],
-    "name": "Segment 1"
+    "name": "Segment 1",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6157,7 +6600,8 @@
         ]
       }
     ],
-    "name": "Segment 2 (round)"
+    "name": "Segment 2 (round)",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6169,7 +6613,8 @@
         ]
       }
     ],
-    "name": "Segment 3 (round)"
+    "name": "Segment 3 (round)",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6181,7 +6626,8 @@
         ]
       }
     ],
-    "name": "Segment 4 (half)"
+    "name": "Segment 4 (half)",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6193,7 +6639,8 @@
         ]
       }
     ],
-    "name": "Segment 5"
+    "name": "Segment 5",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6206,7 +6653,8 @@
         ]
       }
     ],
-    "name": "Stairs 1"
+    "name": "Stairs 1",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6219,7 +6667,8 @@
         ]
       }
     ],
-    "name": "Stairs 2"
+    "name": "Stairs 2",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6232,7 +6681,8 @@
         ]
       }
     ],
-    "name": "Stairs 3"
+    "name": "Stairs 3",
+    "description": "Decorative wooden construction perfect for building combat arenas, stadiums and hippodromes."
   },
   {
     "category": "Furniture",
@@ -6246,7 +6696,8 @@
       }
     ],
     "name": "Flag 1",
-    "parent": "Sand Bed"
+    "parent": "Sand Bed",
+    "description": "Decorate your surroundings with a banner."
   },
   {
     "category": "Furniture",
@@ -6258,7 +6709,8 @@
         ]
       }
     ],
-    "name": "Flag 2"
+    "name": "Flag 2",
+    "description": "Decorate your surroundings with a banner."
   },
   {
     "category": "Furniture",
@@ -6270,7 +6722,8 @@
         ]
       }
     ],
-    "name": "Flag 3"
+    "name": "Flag 3",
+    "description": "Decorate your surroundings with a banner."
   },
   {
     "category": "Furniture",
@@ -6282,7 +6735,8 @@
         ]
       }
     ],
-    "name": "Flag 4"
+    "name": "Flag 4",
+    "description": "Decorate your surroundings with a banner."
   },
   {
     "category": "Furniture",
@@ -6294,7 +6748,8 @@
         ]
       }
     ],
-    "name": "Flag 5"
+    "name": "Flag 5",
+    "description": "Decorate your surroundings with a banner."
   },
   {
     "category": "Furniture",
@@ -6306,7 +6761,8 @@
         ]
       }
     ],
-    "name": "Flag 6"
+    "name": "Flag 6",
+    "description": "Decorate your surroundings with a banner."
   },
   {
     "category": "Furniture",
@@ -6318,7 +6774,8 @@
         ]
       }
     ],
-    "name": "Flag 7"
+    "name": "Flag 7",
+    "description": "Decorate your surroundings with a banner."
   },
   {
     "category": "Furniture",
@@ -6330,7 +6787,8 @@
         ]
       }
     ],
-    "name": "Meat Rack"
+    "name": "Meat Rack",
+    "description": "Decorate your surroundings with these succulent chunks of meat."
   },
   {
     "category": "Furniture",
@@ -6342,7 +6800,8 @@
         ]
       }
     ],
-    "name": "Haysludge Arch"
+    "name": "Haysludge Arch",
+    "description": "Decorate your surroundings with this peculiar construction - a pinnacle of fine rupu craftsmenship."
   },
   {
     "category": "Furniture",
@@ -6354,7 +6813,8 @@
         ]
       }
     ],
-    "name": "Bone Effigy"
+    "name": "Bone Effigy",
+    "description": "Decorate your surroundings with this charming bone effigy."
   },
   {
     "category": "Furniture",
@@ -6366,7 +6826,8 @@
         ]
       }
     ],
-    "name": "Bones Pile"
+    "name": "Bones Pile",
+    "description": "Decorate your surroundings with this magnificent collection of anthropologial antiquity."
   },
   {
     "category": "Furniture",
@@ -6378,7 +6839,8 @@
         ]
       }
     ],
-    "name": "Cage"
+    "name": "Cage",
+    "description": "Decorate your surroundings with this object of casual incapacitation."
   },
   {
     "category": "Furniture",
@@ -6391,7 +6853,8 @@
         ]
       }
     ],
-    "name": "Rupu Campfire 1"
+    "name": "Rupu Campfire 1",
+    "description": "Decorate your surroundings with this magnificent source of warmth and contentment."
   },
   {
     "category": "Furniture",
@@ -6404,7 +6867,8 @@
         ]
       }
     ],
-    "name": "Rupu Campfire 2"
+    "name": "Rupu Campfire 2",
+    "description": "Decorate your surroundings with this magnificent source of warmth and contentment."
   },
   {
     "category": "Furniture",
@@ -6416,7 +6880,8 @@
         ]
       }
     ],
-    "name": "Haysludge Fence"
+    "name": "Haysludge Fence",
+    "description": "Decorate your surroundings with this peculiar construction - a pinnacle of fine rupu craftsmenship."
   },
   {
     "category": "Furniture",
@@ -6428,7 +6893,8 @@
         ]
       }
     ],
-    "name": "Masked Totem 1"
+    "name": "Masked Totem 1",
+    "description": "Decorate your surroundings with this undeniable pinnacle of rupu ingenuity and artistry."
   },
   {
     "category": "Furniture",
@@ -6440,7 +6906,8 @@
         ]
       }
     ],
-    "name": "Masked Totem 2"
+    "name": "Masked Totem 2",
+    "description": "Decorate your surroundings with this undeniable pinnacle of rupu ingenuity and artistry."
   },
   {
     "category": "Furniture",
@@ -6452,7 +6919,8 @@
         ]
       }
     ],
-    "name": "Masked Totem 3"
+    "name": "Masked Totem 3",
+    "description": "Decorate your surroundings with this undeniable pinnacle of rupu ingenuity and artistry."
   },
   {
     "category": "Furniture",
@@ -6464,7 +6932,8 @@
         ]
       }
     ],
-    "name": "Walker Totem"
+    "name": "Walker Totem",
+    "description": "Decorate your surroundings with this undeniable pinnacle of rupu ingenuity and artistry."
   },
   {
     "category": "Furniture",
@@ -6476,7 +6945,8 @@
         ]
       }
     ],
-    "name": "Worshipping Wreath"
+    "name": "Worshipping Wreath",
+    "description": "Decorate your surroundings with this impressive object of fervent devotion."
   },
   {
     "category": "Furniture",
@@ -6488,7 +6958,8 @@
         ]
       }
     ],
-    "name": "Ornate banner 1"
+    "name": "Ornate banner 1",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6500,7 +6971,8 @@
         ]
       }
     ],
-    "name": "Ornate banner 2"
+    "name": "Ornate banner 2",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6512,7 +6984,8 @@
         ]
       }
     ],
-    "name": "Ornate banner 3"
+    "name": "Ornate banner 3",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6524,7 +6997,8 @@
         ]
       }
     ],
-    "name": "Brazier"
+    "name": "Brazier",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6536,7 +7010,8 @@
         ]
       }
     ],
-    "name": "Cage 1"
+    "name": "Cage 1",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6548,7 +7023,8 @@
         ]
       }
     ],
-    "name": "Cage 2"
+    "name": "Cage 2",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6560,7 +7036,8 @@
         ]
       }
     ],
-    "name": "Throne"
+    "name": "Throne",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6572,7 +7049,8 @@
         ]
       }
     ],
-    "name": "Crate 1"
+    "name": "Crate 1",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6584,7 +7062,8 @@
         ]
       }
     ],
-    "name": "Crate 2"
+    "name": "Crate 2",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6596,7 +7075,8 @@
         ]
       }
     ],
-    "name": "Fence 1"
+    "name": "Fence 1",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6632,7 +7112,8 @@
         ]
       }
     ],
-    "name": "Fence 4"
+    "name": "Fence 4",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6644,7 +7125,8 @@
         ]
       }
     ],
-    "name": "Fence 5"
+    "name": "Fence 5",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6656,7 +7138,8 @@
         ]
       }
     ],
-    "name": "Fence 6"
+    "name": "Fence 6",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6668,7 +7151,8 @@
         ]
       }
     ],
-    "name": "Podium"
+    "name": "Podium",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6680,7 +7164,8 @@
         ]
       }
     ],
-    "name": "Premade Throne"
+    "name": "Premade Throne",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6692,7 +7177,8 @@
         ]
       }
     ],
-    "name": "Rag"
+    "name": "Rag",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6704,7 +7190,8 @@
         ]
       }
     ],
-    "name": "Wreath"
+    "name": "Wreath",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks."
   },
   {
     "category": "Furniture",
@@ -6716,7 +7203,8 @@
         ]
       }
     ],
-    "name": "Stairs"
+    "name": "Stairs",
+    "description": "Wooden stairs."
   },
   {
     "category": "Interactables",
@@ -6731,7 +7219,8 @@
     ],
     "name": "Sterile Bandage",
     "parent": "Primitive Bandage",
-    "trade_price": 1.4
+    "trade_price": 1.4,
+    "description": "Restores a large amount of HP over a period of time. Not usable while in combat."
   },
   {
     "category": "Interactables",
@@ -6739,7 +7228,8 @@
     "crafting": [{ "ingredients": [{ "count": 6, "name": "Fiber" }] }],
     "name": "Primitive Bandage",
     "parent": "Equipment",
-    "trade_price": 1.2
+    "trade_price": 1.2,
+    "description": "Restores a small amount of HP over a period of time. Not usable while in combat."
   },
   {
     "category": "Interactables",
@@ -6754,7 +7244,8 @@
       }
     ],
     "name": "Bed",
-    "parent": "Hammock"
+    "parent": "Hammock",
+    "description": "Comfortable bed with a big water container to hold multiple respawns."
   },
   {
     "category": "Interactables",
@@ -6770,7 +7261,8 @@
       }
     ],
     "name": "Hammock",
-    "parent": "Sand Bed"
+    "parent": "Sand Bed",
+    "description": "Adequate bed with a medium-sized water container that holds a few respawns."
   },
   {
     "category": "Interactables",
@@ -6783,7 +7275,8 @@
       }
     ],
     "name": "Sand Bed",
-    "parent": "Construction"
+    "parent": "Construction",
+    "description": "Uncomfortable bed that's good for occasional respawn."
   },
   {
     "category": "Interactables",
@@ -6798,7 +7291,8 @@
       }
     ],
     "name": "Water Bed",
-    "parent": "Bed"
+    "parent": "Bed",
+    "description": "Luxurious bed with a huge water container to hold the most amount of respawns possible."
   },
   {
     "category": "Interactables",
@@ -6841,7 +7335,8 @@
       }
     ],
     "name": "Cauterizing Station",
-    "parent": "Fury Fumes"
+    "parent": "Fury Fumes",
+    "description": "Quickly heals by cauterizing fresh wounds. Requires a vitamin to be added in order to work."
   },
   {
     "category": "Interactables",
@@ -6861,7 +7356,8 @@
       }
     ],
     "name": "Grappling Belt Charging Station",
-    "parent": "Cauterizing Station"
+    "parent": "Cauterizing Station",
+    "description": "Generate torque manually. Requires nomads to wear a torque belt while using."
   },
   {
     "category": "Interactables",
@@ -6890,7 +7386,8 @@
       }
     ],
     "name": "Rangefinder",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Measures distance to far-away targets."
   },
   {
     "category": "Interactables",
@@ -6917,7 +7414,8 @@
       }
     ],
     "name": "Steering Levers",
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy Walker Body",
+    "description": "The control mechanism required to drive more complex walkers."
   },
   {
     "category": "Interactables",
@@ -6933,9 +7431,14 @@
       }
     ],
     "name": "Poaching Hut",
-    "parent": "Small Chest"
+    "parent": "Small Chest",
+    "description": "A placeable that creates a mini-claim area in moderate radius. Additional resouces will go into this placeable instead of Proxy Walker."
   },
-  { "category": "Interactables", "name": "Wanderer's Potion" },
+  {
+    "category": "Interactables",
+    "name": "Wanderer's Potion",
+    "description": "Forget everything you know about yourself. Resets stats of your character and returns all points."
+  },
   {
     "category": "Knowledge",
     "cost": { "count": 50, "name": "Fragment" },
@@ -6967,7 +7470,8 @@
     ],
     "name": "Fragment",
     "parent": "Woodworking Station",
-    "trade_price": 50
+    "trade_price": 50,
+    "description": "Faint images are etched on the translucent surface."
   },
   {
     "category": "Liquids",
@@ -6979,7 +7483,8 @@
       }
     ],
     "name": "Tar",
-    "trade_price": 3.2
+    "trade_price": 3.2,
+    "description": "Thick liquid used in heavy and complex constructions. Ignitable in combination with other materials."
   },
   {
     "category": "Liquids",
@@ -6997,7 +7502,8 @@
         "time": 5
       }
     ],
-    "name": "Sand"
+    "name": "Sand",
+    "description": "Tiny green mineral flecks dot the sand."
   },
   {
     "category": "Liquids",
@@ -7083,19 +7589,75 @@
     ],
     "name": "Purified Water",
     "parent": "Campfire",
-    "trade_price": 10
+    "trade_price": 10,
+    "description": "All water that is transported to the Flotilla is cleansed in an ancient water purifying machine. The Guardians are the sole keepers of this machine, a technological relic of the old world which has sustained the Flotillans to this day."
   },
-  { "category": "Resources", "name": "Sulfur", "trade_price": 1.4 },
-  { "category": "Resources", "name": "Rupu Gel", "trade_price": 1 },
-  { "category": "Resources", "name": "Pearl", "trade_price": 1.1 },
-  { "category": "Resources", "name": "Aloe Vera", "trade_price": 0.3 },
-  { "category": "Resources", "name": "Apple", "trade_price": 0.2 },
-  { "category": "Resources", "name": "Cattail", "trade_price": 0.2 },
-  { "category": "Resources", "name": "Corn", "trade_price": 0.2 },
-  { "category": "Resources", "name": "Cotton", "trade_price": 2.1 },
-  { "category": "Resources", "name": "Mushroom Flesh", "trade_price": 0.4 },
-  { "category": "Resources", "name": "Lava Poppy", "trade_price": 0.1 },
-  { "category": "Resources", "name": "Red Banana", "trade_price": 0.1 },
+  {
+    "category": "Resources",
+    "name": "Sulfur",
+    "trade_price": 1.4,
+    "description": "A yellow mineral that typically forms in sulfur lakes."
+  },
+  {
+    "category": "Resources",
+    "name": "Rupu Gel",
+    "trade_price": 1,
+    "description": "Rupu Gel is highly flammable, and a sideproduct of a shamanic ritual. A rare ingredient used in crafting ammo and often traded in Trade Stations."
+  },
+  {
+    "category": "Resources",
+    "name": "Pearl",
+    "trade_price": 1.1,
+    "description": "In the dry southern valleys, the fossils of old sea creatures litter the ground, turning the hills white."
+  },
+  {
+    "category": "Resources",
+    "name": "Aloe Vera",
+    "trade_price": 0.3,
+    "description": "This hardy plant grows in the hottest of conditions."
+  },
+  {
+    "category": "Resources",
+    "name": "Apple",
+    "trade_price": 0.2,
+    "description": "Crisp and delicious. No worms guaranteed."
+  },
+  {
+    "category": "Resources",
+    "name": "Cattail",
+    "trade_price": 0.2,
+    "description": "An abundant marsh plant favoured by nomads for its medicinal properties."
+  },
+  {
+    "category": "Resources",
+    "name": "Corn",
+    "trade_price": 0.2,
+    "description": "Corn is seeded by expeditionary planters on the fringe of the Ice Lands."
+  },
+  {
+    "category": "Resources",
+    "name": "Cotton",
+    "trade_price": 2.1,
+    "description": "Grows in open meadows."
+  },
+  {
+    "category": "Resources",
+    "name": "Mushroom Flesh",
+    "trade_price": 0.4,
+    "description": "Make a meal out of it, or a bomb."
+  },
+  {
+    "category": "Resources",
+    "name": "Lava Poppy",
+    "trade_price": 0.1,
+    "description": "Requires high concentrations of volcanic ash to grow."
+  },
+  {
+    "category": "Resources",
+    "name": "Red Banana",
+    "trade_price": 0.1,
+    "description": "Looks delicious, tastes HORRIBLE."
+  },
   {
     "category": "Resources",
     "crafting": [
@@ -7128,7 +7690,8 @@
     ],
     "name": "Reinforced Plank",
     "parent": "Woodworking Station",
-    "trade_price": 15.5
+    "trade_price": 15.5,
+    "description": "Strong wooden plank reinforced using a forgotten technology at Ancient Crafting Sites."
   },
   {
     "category": "Resources",
@@ -7164,7 +7727,8 @@
     ],
     "name": "Walker Mechanism",
     "parent": "Woodworking Station",
-    "trade_price": 700
+    "trade_price": 700,
+    "description": "Masterfully crafted contraption that automatically releases energy and bolsters transmission of walker gear mechanisms. Essential in construction of heavier walkers."
   },
   {
     "category": "Resources",
@@ -7199,13 +7763,33 @@
     ],
     "name": "Rope",
     "parent": "Fiber Weave",
-    "trade_price": 0.5
+    "trade_price": 0.5,
+    "description": "A strong cord used for crafting and construction"
   },
-  { "category": "Resources", "name": "Rupu Pelt", "trade_price": 0.2 },
-  { "category": "Resources", "name": "Rupu Vine", "trade_price": 0.5 },
-  { "category": "Resources", "name": "Terrain: Sand" },
-  { "category": "Resources", "name": "Terrain: Excavatable" },
-  { "category": "Resources", "name": "Thornberry", "trade_price": 2.6 },
+  {
+    "category": "Resources",
+    "name": "Rupu Pelt",
+    "trade_price": 0.2,
+    "description": "Garments made from this oily fur are favoured for voyages into the Ice Lands."
+  },
+  {
+    "category": "Resources",
+    "name": "Rupu Vine",
+    "trade_price": 0.5,
+    "description": "These vines grow exclusively in rupu excrement, which the rupu use as a binding agent in the construction of their mud huts."
+  },
+  { "category": "Resources", "name": "Terrain: Sand", "description": "" },
+  {
+    "category": "Resources",
+    "name": "Terrain: Excavatable",
+    "description": ""
+  },
+  {
+    "category": "Resources",
+    "name": "Thornberry",
+    "trade_price": 2.6,
+    "description": "Grows inside a notoriously dangerous, bulbous plant. The thornberry has mystical properties and is said to have appeared with the arrival of Nibiru."
+  },
   {
     "category": "Resources",
     "crafting": [
@@ -7221,7 +7805,8 @@
       }
     ],
     "name": "Torque",
-    "trade_price": 0.1
+    "trade_price": 0.1,
+    "description": "Torque Consumption"
   },
   {
     "category": "Resources",
@@ -7253,7 +7838,8 @@
     ],
     "name": "Wood Shaft",
     "parent": "Woodworking Station",
-    "trade_price": 0.4
+    "trade_price": 0.4,
+    "description": "The Rupu are skilled imitators, and can crudely reproduce human fighting techniques and constructions. They use wood shafts to prop up their mud huts, giving them a striking resemblance to the Nomads' walkers."
   },
   {
     "category": "Resources",
@@ -7280,7 +7866,8 @@
       }
     ],
     "name": "Ash",
-    "trade_price": 0.1
+    "trade_price": 0.1,
+    "description": "A product of burning wood."
   },
   {
     "category": "Resources",
@@ -7292,7 +7879,8 @@
       }
     ],
     "name": "Bent Wooden Planks",
-    "trade_price": 0.1
+    "trade_price": 0.1,
+    "description": "Produced using a much more wasteful method of log processing than simple lumber, bent planks are significantly more sturdy and don't require any other materials."
   },
   {
     "category": "Resources",
@@ -7314,7 +7902,8 @@
       }
     ],
     "name": "Charcoal",
-    "trade_price": 0.1
+    "trade_price": 0.1,
+    "description": "Burns hotter in a furnace than normal wood."
   },
   {
     "category": "Resources",
@@ -7350,10 +7939,25 @@
     "parent": "Purification Station",
     "trade_price": 1
   },
-  { "category": "Resources", "name": "Lightwood", "trade_price": 3.5 },
-  { "category": "Resources", "name": "Wood Log", "trade_price": 2 },
+  {
+    "category": "Resources",
+    "name": "Lightwood",
+    "trade_price": 3.5,
+    "description": "A type of very light wood with a porous structure and air trapped between the layers of the fiber."
+  },
+  {
+    "category": "Resources",
+    "name": "Wood Log",
+    "trade_price": 2,
+    "description": "Manufactured at a lumber mill."
+  },
   { "category": "Resources", "name": "Palm Leaves", "trade_price": 0.2 },
-  { "category": "Resources", "name": "Redwood Wood", "trade_price": 2.6 },
+  {
+    "category": "Resources",
+    "name": "Redwood Wood",
+    "trade_price": 2.6,
+    "description": "A harder, more sought after wood used for specialty constructions."
+  },
   {
     "category": "Resources",
     "crafting": [
@@ -7369,7 +7973,8 @@
       }
     ],
     "name": "Toxic Remains",
-    "trade_price": 0.5
+    "trade_price": 0.5,
+    "description": "The leftovers of a shamanic ritual."
   },
   {
     "category": "Resources",
@@ -7382,28 +7987,109 @@
       }
     ],
     "name": "Wood",
-    "trade_price": 0.1
+    "trade_price": 0.1,
+    "description": "This versatile material is the focus of Flotillan engineering."
   },
-  { "category": "Resources", "name": "Weightless Module" },
-  { "category": "Resources", "name": "Merchant Module" },
-  { "category": "Resources", "name": "Craftsman Module" },
-  { "category": "Resources", "name": "Fireproof Module" },
-  { "category": "Resources", "name": "Armoury Module" },
-  { "category": "Resources", "name": "Hardening Module" },
-  { "category": "Resources", "name": "Forager Module" },
-  { "category": "Resources", "name": "Scavenger Module" },
-  { "category": "Resources", "name": "Lumberjack Module" },
-  { "category": "Resources", "name": "Pack Speed Module" },
-  { "category": "Resources", "name": "Hearth Module" },
-  { "category": "Resources", "name": "Lifeforce Module" },
-  { "category": "Resources", "name": "Bullrush Module" },
-  { "category": "Resources", "name": "Sandy Module" },
-  { "category": "Resources", "name": "Fortress Module" },
-  { "category": "Resources", "name": "Harpoon Protection Module" },
-  { "category": "Resources", "name": "Battery Module" },
-  { "category": "Resources", "name": "Torque Module" },
-  { "category": "Resources", "name": "Watery Module" },
-  { "category": "Resources", "name": "Pack Mule Module" },
+  {
+    "category": "Resources",
+    "name": "Weightless Module",
+    "description": "Stacking this module decreases the weight of a packed base."
+  },
+  {
+    "category": "Resources",
+    "name": "Merchant Module",
+    "description": "Stacking this module increases the storage capacity of a walker's Cargo container."
+  },
+  {
+    "category": "Resources",
+    "name": "Craftsman Module",
+    "description": "Stacking this module decreases the crafting time of stations attached to a walker."
+  },
+  {
+    "category": "Resources",
+    "name": "Fireproof Module",
+    "description": "Lowers the damage from all fire sources for the walker and all structures."
+  },
+  {
+    "category": "Resources",
+    "name": "Armoury Module",
+    "description": "Stacking this module increases the capacity of a walker's Armor and Weapons container."
+  },
+  {
+    "category": "Resources",
+    "name": "Hardening Module",
+    "description": "Stacking this module reduces damage to a walker from all sources except those that can damage Reinforced armor."
+  },
+  {
+    "category": "Resources",
+    "name": "Forager Module",
+    "description": "Walker legs will automatically harvest foliage when travelling at slow speed. Stacking this module increases the amount of foliage harvested."
+  },
+  {
+    "category": "Resources",
+    "name": "Scavenger Module",
+    "description": "Walker legs will automatically pick up dropped items when travelling at slow speed. Stacking this module increases the maximum speed at which items are picked up."
+  },
+  {
+    "category": "Resources",
+    "name": "Lumberjack Module",
+    "description": "Walker legs will chop wood when they impact with trees. Stacking this module increases the amount of wood."
+  },
+  {
+    "category": "Resources",
+    "name": "Pack Speed Module",
+    "description": "Decreases the time it takes to pack bases and structures."
+  },
+  {
+    "category": "Resources",
+    "name": "Hearth Module",
+    "description": "Stacking this module decreases the water cost of respawning on walker."
+  },
+  {
+    "category": "Resources",
+    "name": "Lifeforce Module",
+    "description": "Nomads that respawn on a walker will recieve a beneficial status effect. Stacking this module increases the potency of this effect."
+  },
+  {
+    "category": "Resources",
+    "name": "Bullrush Module",
+    "description": "Stacking this module decreases the wait time before respawning on a walker."
+  },
+  {
+    "category": "Resources",
+    "name": "Sandy Module",
+    "description": "Stacking this module increases the rate at which sand is removed from a walker's gears after travelling."
+  },
+  {
+    "category": "Resources",
+    "name": "Fortress Module",
+    "description": "Stacking this module increases the armor value of all structures attached to a walker."
+  },
+  {
+    "category": "Resources",
+    "name": "Harpoon Protection Module",
+    "description": "Makes tethers attached to the walker easier to snap."
+  },
+  {
+    "category": "Resources",
+    "name": "Battery Module",
+    "description": "Stacking this module increases the torque battery's maximum capacity."
+  },
+  {
+    "category": "Resources",
+    "name": "Torque Module",
+    "description": "Walker will generate torque. Stacking this module increases the amount of torque generated by a moving walker."
+  },
+  {
+    "category": "Resources",
+    "name": "Watery Module",
+    "description": "Stacking this module decreases the water cost of travelling."
+  },
+  {
+    "category": "Resources",
+    "name": "Pack Mule Module",
+    "description": "Stacking this module increases the maximum weight limit of a walker."
+  },
   {
     "category": "Resources",
     "crafting": [
@@ -7415,12 +8101,33 @@
       }
     ],
     "name": "Worm Sand",
-    "trade_price": 9
+    "trade_price": 9,
+    "description": "Appearing in the sands roamed by the Old Ones - giant worms of the desert, this substance has strange properties affecting both living creatures and mechanical constructions in ways that affect the energy inside them."
   },
-  { "category": "Resources", "name": "Worm Silk", "trade_price": 20 },
-  { "category": "Resources", "name": "Animal Fat", "trade_price": 1 },
-  { "category": "Resources", "name": "Bone Splinter", "trade_price": 1 },
-  { "category": "Resources", "name": "Worm Fang", "trade_price": 10000 },
+  {
+    "category": "Resources",
+    "name": "Worm Silk",
+    "trade_price": 20,
+    "description": "Worm silk exists in vastly different tensile strengths and purities, and must be graded by the Flotillan Merchant's Guild before it can be legally sold at markets. Aside from certain prohibited substances, it is one of the most desirable luxury goods."
+  },
+  {
+    "category": "Resources",
+    "name": "Animal Fat",
+    "trade_price": 1,
+    "description": "A greasy leftover from a once noble creature."
+  },
+  {
+    "category": "Resources",
+    "name": "Bone Splinter",
+    "trade_price": 1,
+    "description": "Flexible bones make excellent tools and armor."
+  },
+  {
+    "category": "Resources",
+    "name": "Worm Fang",
+    "trade_price": 10000,
+    "description": "A trophy of tremendous value proving the ultimate hunting skills and heroism among Nomads. Exchange for valuable rewards!"
+  },
   {
     "category": "StructuralClay",
     "crafting": [
@@ -7432,7 +8139,8 @@
         ]
       }
     ],
-    "name": "Battlement"
+    "name": "Battlement",
+    "description": "Extremely durable. Can only be packed on Founder Walker types (Silur Walker)."
   },
   {
     "category": "StructuralClay",
@@ -7445,7 +8153,8 @@
         ]
       }
     ],
-    "name": "Wall with Windows"
+    "name": "Wall with Windows",
+    "description": "Extremely durable. Can only be packed on Founder Walker types (Silur Walker)."
   },
   {
     "category": "StructuralConcrete",
@@ -7485,7 +8194,8 @@
         ]
       }
     ],
-    "name": "Wall With Window 1"
+    "name": "Wall With Window 1",
+    "description": "Almost impossible to break. Can only be packed on Founder Walker types (Silur Walker)."
   },
   {
     "category": "StructuralConcrete",
@@ -7499,7 +8209,8 @@
         ]
       }
     ],
-    "name": "Wall With Window 2"
+    "name": "Wall With Window 2",
+    "description": "Almost impossible to break. Can only be packed on Founder Walker types (Silur Walker)."
   },
   {
     "category": "StructuralConcrete",
@@ -7513,7 +8224,8 @@
         ]
       }
     ],
-    "name": "Wall With Windows 1"
+    "name": "Wall With Windows 1",
+    "description": "Almost impossible to break. Can only be packed on Founder Walker types (Silur Walker)."
   },
   {
     "category": "StructuralConcrete",
@@ -7527,7 +8239,8 @@
         ]
       }
     ],
-    "name": "Wall With Windows 2"
+    "name": "Wall With Windows 2",
+    "description": "Almost impossible to break. Can only be packed on Founder Walker types (Silur Walker)."
   },
   {
     "category": "StructuralSand",
@@ -7540,7 +8253,8 @@
       }
     ],
     "name": "Cloth Door",
-    "parent": "Sandbag Wall"
+    "parent": "Sandbag Wall",
+    "description": "Weak structure that cannot be packed on walkers."
   },
   {
     "category": "StructuralSand",
@@ -7553,7 +8267,8 @@
       }
     ],
     "name": "Sandbag Roof",
-    "parent": "Cloth Door"
+    "parent": "Cloth Door",
+    "description": "Weak structure that cannot be packed on walkers."
   },
   {
     "category": "StructuralSand",
@@ -7567,7 +8282,8 @@
       }
     ],
     "name": "Sandbag Wall",
-    "parent": "Sand Bed"
+    "parent": "Sand Bed",
+    "description": "Weak structure that cannot be packed on walkers."
   },
   {
     "category": "StructuralSand",
@@ -7580,7 +8296,8 @@
       }
     ],
     "name": "Sandbag Wall Window",
-    "parent": "Cloth Door"
+    "parent": "Cloth Door",
+    "description": "Weak structure that cannot be packed on walkers."
   },
   {
     "category": "StructuralStoneNew",
@@ -7593,7 +8310,8 @@
         ]
       }
     ],
-    "name": "Wall with Window"
+    "name": "Wall with Window",
+    "description": "Extremely durable. Can only be packed on Founder Walker types (Silur Walker)."
   },
   {
     "category": "StructuralWoodHeavy",
@@ -7606,7 +8324,8 @@
         ]
       }
     ],
-    "name": "Wall 1"
+    "name": "Wall 1",
+    "description": "Average strength, can be packed on walkers."
   },
   {
     "category": "StructuralWoodHeavy",
@@ -7619,7 +8338,8 @@
         ]
       }
     ],
-    "name": "Wall 2"
+    "name": "Wall 2",
+    "description": "Average strength, can be packed on walkers."
   },
   {
     "category": "StructuralWoodHeavy",
@@ -7631,7 +8351,8 @@
         ]
       }
     ],
-    "name": "Corner"
+    "name": "Corner",
+    "description": "Average strength, can be packed on walkers."
   },
   {
     "category": "StructuralWoodLight",
@@ -7645,7 +8366,8 @@
         ]
       }
     ],
-    "name": "Walker Gate"
+    "name": "Walker Gate",
+    "description": "Opens and closes to obstruct walkers or allow them passage."
   },
   {
     "category": "StructuralWoodLight",
@@ -7659,7 +8381,8 @@
       }
     ],
     "name": "Guard Rail",
-    "parent": "Light Wood Foundation"
+    "parent": "Light Wood Foundation",
+    "description": "Fence off your territory or build on walker decks to prevent Nomads from falling off."
   },
   {
     "category": "StructuralWoodLight",
@@ -7672,7 +8395,8 @@
       }
     ],
     "name": "Scaffolding",
-    "parent": "Sandbag Wall"
+    "parent": "Sandbag Wall",
+    "description": "A stackable, elevated platform that allows for easier access to high places. Useful in walker construction."
   },
   {
     "category": "StructuralWoodMedium",
@@ -7685,7 +8409,8 @@
         ]
       }
     ],
-    "name": "Door"
+    "name": "Door",
+    "description": "Above average strength, can be packed on walkers."
   },
   {
     "category": "StructuralWoodMedium",
@@ -7698,7 +8423,8 @@
         ]
       }
     ],
-    "name": "Foundation"
+    "name": "Foundation",
+    "description": "Above average strength, can be packed on walkers."
   },
   {
     "category": "StructuralWoodMedium",
@@ -7711,7 +8437,8 @@
         ]
       }
     ],
-    "name": "Wall"
+    "name": "Wall",
+    "description": "Above average strength, can be packed on walkers."
   },
   {
     "category": "StructuralWoodMedium",
@@ -7724,7 +8451,8 @@
         ]
       }
     ],
-    "name": "Floor / Roof"
+    "name": "Floor / Roof",
+    "description": "Above average strength, can be packed on walkers."
   },
   {
     "category": "StructuralWoodMedium",
@@ -7737,7 +8465,8 @@
         ]
       }
     ],
-    "name": "Battlements"
+    "name": "Battlements",
+    "description": "Above average strength, can be packed on walkers."
   },
   {
     "category": "StructuralWoodMedium",
@@ -7750,7 +8479,8 @@
         ]
       }
     ],
-    "name": "Slit Wall"
+    "name": "Slit Wall",
+    "description": "Above average strength, can be packed on walkers."
   },
   {
     "category": "StructuralWoodMedium",
@@ -7763,7 +8493,8 @@
         ]
       }
     ],
-    "name": "Double Slit Wall"
+    "name": "Double Slit Wall",
+    "description": "Above average strength, can be packed on walkers."
   },
   {
     "category": "Traps",
@@ -7778,7 +8509,8 @@
       }
     ],
     "name": "Giant Wall",
-    "parent": "Barrier Base"
+    "parent": "Barrier Base",
+    "description": "(CAN BE BUILT ONLY BY CLAIM OWNERS) Sturdy walls of a massive size used by groups of nomads to defend their territory against walker attacks. Can be packed into a Giant Wall Packer."
   },
   {
     "category": "Traps",
@@ -7791,7 +8523,8 @@
         ]
       }
     ],
-    "name": "Giant Wall Gate"
+    "name": "Giant Wall Gate",
+    "description": "(CAN BE BUILT ONLY BY CLAIM OWNERS) Sturdy gate of a massive size that slides to the side when opened. Large enough to fit most of the walker types known to Nomads."
   },
   {
     "category": "Traps",
@@ -7806,7 +8539,8 @@
       }
     ],
     "name": "Giant Wall Packer",
-    "parent": "Giant Wall"
+    "parent": "Giant Wall",
+    "description": "(CAN BE BUILT ONLY BY CLAIM OWNERS) Large structure allowing Nomads to pack their Giant Wall defenses in a single compartment. Can only be built on bases and packed together with Founder Walkers due to its weight and size."
   },
   {
     "category": "Traps",
@@ -7820,7 +8554,8 @@
       }
     ],
     "name": "Bomb Chest Trap",
-    "parent": "Trip Wire Trap"
+    "parent": "Trip Wire Trap",
+    "description": "Looks like a normal chest, feels like an explosion. Booby trap this chest with any type of bomb."
   },
   {
     "category": "Traps",
@@ -7836,7 +8571,8 @@
       }
     ],
     "name": "Falling Rock Trap",
-    "parent": "Trap Door"
+    "parent": "Trap Door",
+    "description": "Hang a rock below below a platform and manually release it over the heads of your enemies."
   },
   {
     "category": "Traps",
@@ -7851,7 +8587,8 @@
       }
     ],
     "name": "Spring Spikes Trap",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Automatically stabs nomads with hidden spikes when they step on the trigger plate."
   },
   {
     "category": "Traps",
@@ -7866,7 +8603,8 @@
       }
     ],
     "name": "Sharp Spikes",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Sharp spikes that stick out of the ground deal serious damage to nomads who fall or step on them."
   },
   {
     "category": "Traps",
@@ -7881,7 +8619,8 @@
       }
     ],
     "name": "Trap Door",
-    "parent": "Sharp Spikes"
+    "parent": "Sharp Spikes",
+    "description": "Opens automatically when a nomad steps on it. Deadly in combination with other traps, like spikes."
   },
   {
     "category": "Traps",
@@ -7896,7 +8635,8 @@
       }
     ],
     "name": "Trip Wire Trap",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Triggers a small explosion when a nomad steps on the tripwire."
   },
   {
     "category": "Traps",
@@ -7911,7 +8651,8 @@
       }
     ],
     "name": "Barrier Base",
-    "parent": "Light Wood Foundation"
+    "parent": "Light Wood Foundation",
+    "description": "Obstructs walkers from passing through."
   },
   {
     "category": "Traps",
@@ -7924,7 +8665,8 @@
         ]
       }
     ],
-    "name": "Barrier Gate"
+    "name": "Barrier Gate",
+    "description": "Obstructs walkers from passing through."
   },
   {
     "category": "Traps",
@@ -7937,9 +8679,14 @@
         ]
       }
     ],
-    "name": "Barrier Plank"
+    "name": "Barrier Plank",
+    "description": "Obstructs walkers from passing through."
   },
-  { "category": "WalkerParts", "name": "Base Wing" },
+  {
+    "category": "WalkerParts",
+    "name": "Base Wing",
+    "description": "The original wings Nomads designed for their walkers ages ago."
+  },
   {
     "category": "WalkerParts",
     "crafting": [
@@ -7962,7 +8709,8 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Wings (1 of 2)"
+    "name": "Buffalo Walker Wings (1 of 2)",
+    "description": "Before the Flotilla grew too large and switched to manpower, hundreds of buffalo walkers were used to tow the Flotilla on days there was no breeze. Named after an ancient beast, the Buffalo's wide frame, ample deck space, and good maneuverability make it suited for almost any task."
   },
   {
     "category": "WalkerParts",
@@ -7975,7 +8723,8 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Wings (1 of 2)"
+    "name": "Schmetterling Walker Wings (1 of 2)",
+    "description": "One of the oldest walker designs, the caravelas provided mobile homes that an entire family could live on while chasing after the temperate climate. A large cargo hold affords tons of cargo space, and a wide open deck provides enough room for nomads to stretch their legs and build freely. The heavy weight of the caravela makes it less maneuverable."
   },
   {
     "category": "WalkerParts",
@@ -7988,7 +8737,8 @@
         ]
       }
     ],
-    "name": "Tusker Walker Wings (1 of 2)"
+    "name": "Tusker Walker Wings (1 of 2)",
+    "description": "Enough deck space for large weapons and a huge crew to operate them. The cargo walker is a juggernaut when it comes to hauling space, and is primarily used by rich traders that need to transport tons of valuable goods. Slow and unmaneuverable, it's often escorted by swift combat walkers. Owners of cargo walkers rarely fail to get a return on their investment."
   },
   {
     "category": "WalkerParts",
@@ -8000,7 +8750,8 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Wings (1 of 2)"
+    "name": "Dinghy Walker Wings (1 of 2)",
+    "description": "Before the nomadic Flotillans had become aware of the route they needed to take to circumnavigate the planet efficiently, many of them died in the process of locating safe passage. These crudely constructed wind-powered walkers were first devised as scouting vessels because of their cheap cost and the high likelihood that a Nomad would not return from these missions. Has ample deck space for two Nomads."
   },
   {
     "category": "WalkerParts",
@@ -8012,7 +8763,8 @@
         ]
       }
     ],
-    "name": "Falco Walker Wings (1 of 2)"
+    "name": "Falco Walker Wings (1 of 2)",
+    "description": "It's streamlined shape is built for speed, making it a favorite among pirates. It's elevated deck doesn't sport much space for large weapons, but it's height allows for easy boarding of other walkers. Dedicated rear-facing spots for Gun Pods make it easy to fire projectiles at pursuers."
   },
   {
     "category": "WalkerParts",
@@ -8037,7 +8789,8 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Wings (1 of 2)"
+    "name": "Stiletto Walker Wings (1 of 2)",
+    "description": "Developed as the successor to the dinghy walker, the sleek stiletto walker is fast, has a short turn radius, and flaunts more deck space and a stronger hull than its predecessor. Ideal for nomads who prefer to travel alone or in small groups."
   },
   {
     "category": "WalkerParts",
@@ -8049,7 +8802,8 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Wings (1 of 2)"
+    "name": "Toboggan Walker Wings (1 of 2)",
+    "description": "The standard merchant's vessel built for outrunning pirates and getting the goods where they need to go. There's no room for weapons, so this walker is usually accompanied by at least one battle-capable walker on its transport runs."
   },
   {
     "category": "WalkerTools",
@@ -8065,7 +8819,8 @@
       }
     ],
     "name": "Crane",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Pick up and move heavy objects like firefly walkers and tree logs."
   },
   {
     "category": "WalkerTools",
@@ -8080,7 +8835,8 @@
       }
     ],
     "name": "Steering Levers Cage",
-    "parent": "Remote Ballista"
+    "parent": "Remote Ballista",
+    "description": "Sturdy contraption made of strong wood and tight ropes, allowing Nomads to place it around Walker Steering Levers to protect their driver."
   },
   {
     "category": "WalkerTools",
@@ -8094,7 +8850,8 @@
       }
     ],
     "name": "Kite",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Fly a large kite above your walker and climb it for a better vantage point, or to launch wingsuits from. Walker must be moving for the kite to stay elevated."
   },
   {
     "category": "WalkerTools",
@@ -8109,7 +8866,8 @@
       }
     ],
     "name": "Walker Climber",
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy Walker Body",
+    "description": "A buildable attachement that helps yank nomads onto a walker's deck for quick and easy boarding."
   },
   {
     "category": "WalkerTools",
@@ -8124,7 +8882,8 @@
       }
     ],
     "name": "Sawblade Tool",
-    "parent": "Tool Pod"
+    "parent": "Tool Pod",
+    "description": "A mechanical arm with a spinning saw blade attached to it harvests lumber from a distance. Requires torque while sawing."
   },
   {
     "category": "WalkerTools",
@@ -8138,7 +8897,8 @@
         ]
       }
     ],
-    "name": "Long sawblade"
+    "name": "Long sawblade",
+    "description": "A mechanical arm with a spinning saw blade attached to it harvests lumber from a distance. Requires torque while sawing."
   },
   {
     "category": "WalkerTools",
@@ -8154,7 +8914,8 @@
       }
     ],
     "name": "Walker Packing Compartment",
-    "parent": "Steering Levers"
+    "parent": "Steering Levers",
+    "description": "Enables walker to pack other walkers into special compartments attached to the hull."
   },
   {
     "category": "WalkerTools",
@@ -8169,7 +8930,8 @@
       }
     ],
     "name": "Tool Pod",
-    "parent": "Steering Levers"
+    "parent": "Steering Levers",
+    "description": "A rotating pod made to attach below walker decks. Houses a single tool, like a saw blade."
   },
   {
     "category": "Walkers",
@@ -8202,7 +8964,8 @@
       }
     ],
     "name": "Buffalo Walker Body",
-    "parent": "Stiletto Walker Body"
+    "parent": "Stiletto Walker Body",
+    "description": "Before the Flotilla grew too large and switched to manpower, hundreds of buffalo walkers were used to tow the Flotilla on days there was no breeze. Named after an ancient beast, the buffalo's wide frame, ample deck space, and good maneuverability make it suited for almost any task."
   },
   {
     "category": "Walkers",
@@ -8221,7 +8984,8 @@
       }
     ],
     "name": "Schmetterling Walker Body",
-    "parent": "Buffalo Walker Body"
+    "parent": "Buffalo Walker Body",
+    "description": "One of the oldest walker designs, the schmetterlings provided mobile homes that an entire family could live on while chasing after the temperate climate. A large cargo hold affords tons of cargo space, and a wide open deck provides enough room for nomads to stretch their legs and build freely. The heavy weight of the schmetterling makes it less maneuverable."
   },
   {
     "category": "Walkers",
@@ -8241,7 +9005,8 @@
       }
     ],
     "name": "Tusker Walker Body",
-    "parent": "Toboggan Walker Body"
+    "parent": "Toboggan Walker Body",
+    "description": "Enough deck space for both large weapons and the crew needed to operate them. The tusker walker is a juggernaut when it comes to hauling space, and is primarily used by rich traders that need to transport tons of valuable goods. Slow and hard to maneuver, it's often escorted by swift combat walkers. Owners of tusker walkers rarely fail to get a return on their investment."
   },
   {
     "category": "Walkers",
@@ -8261,7 +9026,8 @@
       }
     ],
     "name": "Proxy Walker Body",
-    "parent": "Steering Levers"
+    "parent": "Steering Levers",
+    "description": "The proxy walker is designed to establish a protectorate over an oasis by deploying into an unmovable claim, provided that its owner possesses an official proxy license from the Flotilla. Can only be deployed while an oasis is unclaimed or contested and only becomes the claimant after no other deployed proxy walkers are left standing."
   },
   {
     "category": "Weapons",
@@ -8277,7 +9043,8 @@
       }
     ],
     "name": "Ballista",
-    "parent": "Sand Bed"
+    "parent": "Sand Bed",
+    "description": "Ballista shoots bolts or tethering harpoons that attach to walkers and the environment."
   },
   {
     "category": "Weapons",
@@ -8291,7 +9058,8 @@
         ]
       }
     ],
-    "name": "Small Ballista"
+    "name": "Small Ballista",
+    "description": "Miniature version of a ballista that fits inside a gun pod."
   },
   {
     "category": "Weapons",
@@ -8307,7 +9075,8 @@
       }
     ],
     "name": "Ballista - Tier 2",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Improved Ballista shoots the same projectiles at a higher speed, with a somewhat lower turn rate and reload speed."
   },
   {
     "category": "Weapons",
@@ -8322,7 +9091,8 @@
       }
     ],
     "name": "Ballista - Tier 3",
-    "parent": "Ballista - Tier 2"
+    "parent": "Ballista - Tier 2",
+    "description": "Advanced Ballista shoots projectiles at very high speed, with a very low turn rate and reload speed."
   },
   {
     "category": "Weapons",
@@ -8337,7 +9107,8 @@
       }
     ],
     "name": "Ballista - Tier 4",
-    "parent": "Ballista - Tier 3"
+    "parent": "Ballista - Tier 3",
+    "description": "The ultimate, heavy-duty ballista."
   },
   {
     "category": "Weapons",
@@ -8353,7 +9124,8 @@
       }
     ],
     "name": "Battle Fan",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Recent Flotillian invention allows nomads to manipulate the air by sucking and blowing. Although created to move and store gas clouds, it can also push nomads as well as a walker it's built on using a powerful Superblow."
   },
   {
     "category": "Weapons",
@@ -8370,7 +9142,8 @@
       }
     ],
     "name": "Catapult",
-    "parent": "Slingshot"
+    "parent": "Slingshot",
+    "description": "Launches boulders and bombs extremely far distances. Effective against fortified structures."
   },
   {
     "category": "Weapons",
@@ -8386,7 +9159,8 @@
       }
     ],
     "name": "Hose Station",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Push hostiles off your walker with a powerful jetstream. Also useful for cooling down molten lava."
   },
   {
     "category": "Weapons",
@@ -8401,7 +9175,8 @@
       }
     ],
     "name": "Net Thrower",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Launch nets to temporarily entangle small structures, mannable weapons, and other objects."
   },
   {
     "category": "Weapons",
@@ -8417,7 +9192,8 @@
       }
     ],
     "name": "Remote Ballista",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Ballista shoots bolts or tethering harpoons that attach to walkers and the environment. Can only aim and shoot behind the walker regardless of its position."
   },
   {
     "category": "Weapons",
@@ -8432,7 +9208,8 @@
       }
     ],
     "name": "Repeater",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Unload a volley of high-precision darts that are deadly against lightly armored targets. Ineffective against walkers and structures."
   },
   {
     "category": "Weapons",
@@ -8448,7 +9225,8 @@
       }
     ],
     "name": "Scattershot Gun",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Fire a short-range barrage of sharp stones in a wide angle. Effective against personnel and weak structures."
   },
   {
     "category": "Weapons",
@@ -8462,7 +9240,8 @@
         ]
       }
     ],
-    "name": "Small Scattershot Gun"
+    "name": "Small Scattershot Gun",
+    "description": "Miniature version of a scattershot gun that fits inside a gun pod."
   },
   {
     "category": "Weapons",
@@ -8476,7 +9255,8 @@
       }
     ],
     "name": "Gun Pod",
-    "parent": "Steering Levers"
+    "parent": "Steering Levers",
+    "description": "A rotating pod made to attach below walker decks. Houses a single weapon."
   },
   {
     "category": "Weapons",
@@ -8491,7 +9271,8 @@
       }
     ],
     "name": "Gun Pod Shell",
-    "parent": "Gun Pod"
+    "parent": "Gun Pod",
+    "description": "Attach a light shell of armor to the gun pod to make it safer from attack."
   },
   {
     "category": "Weapons",
@@ -8506,7 +9287,8 @@
       }
     ],
     "name": "Gun Pod Plating",
-    "parent": "Gun Pod Shell"
+    "parent": "Gun Pod Shell",
+    "description": "Attach heavy armor plating to the gun pod to make it safer from attack."
   },
   {
     "category": "Weapons",
@@ -8522,10 +9304,19 @@
       }
     ],
     "name": "Slingshot",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "description": "Launch small rocks and bombs moderate distances. Don't hit your own deck!"
   },
-  { "name": "Proxy License", "trade_price": 100000 },
-  { "name": "Worm Scale", "trade_price": 300 },
+  {
+    "name": "Proxy License",
+    "trade_price": 100000,
+    "description": "A permit to build one proxy walker to claim an oasis."
+  },
+  {
+    "name": "Worm Scale",
+    "trade_price": 300,
+    "description": "The corpse of a single worm can provide enough meat to feed a large family for months; its hard scales can be used to craft armor; its silk makes the sturdiest sails, its sinew the strongest rope; and its blood, when imbibed, heightens the user’s olfactory senses to supernatural levels."
+  },
   {
     "category": "Traps",
     "cost": { "count": 40, "name": "Fragment" },
@@ -8541,7 +9332,8 @@
       }
     ],
     "name": "Defensive Tower",
-    "parent": "Light Wood Foundation"
+    "parent": "Light Wood Foundation",
+    "description": "Build weapons on the tower to protect your territory. Relatively cheap and easy to build."
   },
   {
     "category": "WalkerParts",
@@ -8553,7 +9345,8 @@
         ]
       }
     ],
-    "name": "Hornet Walker Wings (1 of 2)"
+    "name": "Hornet Walker Wings (1 of 2)",
+    "description": "Devised by worm hunters who needed a sturdy walker with a low center of mass so they would not be toppled over, and a high top speed to outrun the giant beasts."
   },
   {
     "category": "WalkerParts",
@@ -8565,7 +9358,8 @@
         ]
       }
     ],
-    "name": "Firefly Walker Legs (1 of 2)"
+    "name": "Firefly Walker Legs (1 of 2)",
+    "description": "These versatile legs can step over fissures, climb rocky mountains, and ford fast flowing rivers. While not very protected, they're light and cheap to construct."
   },
   {
     "category": "WalkerParts",
@@ -8577,7 +9371,8 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Wings (1 of 2)"
+    "name": "Mollusk Walker Wings (1 of 2)",
+    "description": "Small cabin of the walker provides protection to possessions and the driver. While walls may let a nomad live longer, obstructed view from inside the cabin could be a serious drawback in a battle. Has a decent deck and good movement capabilities."
   },
   {
     "category": "WalkerParts",
@@ -8590,7 +9385,8 @@
         ]
       }
     ],
-    "name": "Domus Walker Wings (1 of 2)"
+    "name": "Domus Walker Wings (1 of 2)",
+    "description": "One of the oldest walker designs, the caravelas provided mobile homes that an entire family could live on while chasing after the temperate climate. A large cargo hold affords tons of cargo space, and a wide open deck provides enough room for nomads to stretch their legs and build freely. The heavy weight of the caravela makes it less maneuverable."
   },
   {
     "category": "WalkerParts",
@@ -8665,7 +9461,8 @@
         ]
       }
     ],
-    "name": "Raptor Sky Walker Wings (1 of 2)"
+    "name": "Raptor Sky Walker Wings (1 of 2)",
+    "description": "Wings powered by torque that flap like those of flying creatures."
   },
   {
     "category": "WalkerParts",
@@ -8678,7 +9475,8 @@
         ]
       }
     ],
-    "name": "Raptor Sky Walker Legs (1 of 2)"
+    "name": "Raptor Sky Walker Legs (1 of 2)",
+    "description": "Special landing gear for Sky Walkers, allowing to soften the blow."
   },
   {
     "category": "Walkers",
@@ -8694,7 +9492,8 @@
       }
     ],
     "name": "Dinghy Walker Body",
-    "parent": "Firefly Walker Body"
+    "parent": "Firefly Walker Body",
+    "description": "Before the nomadic Flotillans had become aware of the route they needed to take to circumnavigate the planet efficiently, many of them died in the process of locating safe passage. These crudely constructed wind-powered walkers were first devised as scouting vessels because of their cheap cost and the high likelihood that a Nomad would not return. This walker has ample deck space for two Nomads."
   },
   {
     "category": "Walkers",
@@ -8712,7 +9511,8 @@
       }
     ],
     "name": "Toboggan Walker Body",
-    "parent": "Mollusk Walker Body"
+    "parent": "Mollusk Walker Body",
+    "description": "The standard merchant's vessel built for outrunning pirates and getting the goods where they need to go. There's not much room for weapons, so this walker is usually accompanied by at least one battle-capable walker on its transport runs."
   },
   {
     "category": "Walkers",
@@ -8730,7 +9530,8 @@
       }
     ],
     "name": "Falco Walker Body",
-    "parent": "Hornet Walker Body"
+    "parent": "Hornet Walker Body",
+    "description": "It's streamlined shape is built for speed, making it a favorite among pirates. It's elevated deck doesn't sport much space for large weapons, but it's height allows for easy boarding of other walkers. Dedicated rear-facing spots for Gun Pods make it easy to fire projectiles at pursuers."
   },
   {
     "category": "Walkers",
@@ -8745,7 +9546,8 @@
       }
     ],
     "name": "Nomad Spider Walker Body",
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy Walker Body",
+    "description": "A pedal-powered walker used by nomads for short range transportation. Boasts a spacious inventory and can pack up to three individual structures."
   },
   {
     "category": "Walkers",
@@ -8759,7 +9561,8 @@
         ]
       }
     ],
-    "name": "Spider Walker with Ballista Body"
+    "name": "Spider Walker with Ballista Body",
+    "description": "A pedal-powered walker most nomads build to begin their journey on. Has an additional seat in the back with a built-in ballista!"
   },
   {
     "category": "Walkers",
@@ -8776,7 +9579,8 @@
       }
     ],
     "name": "Stiletto Walker Body",
-    "parent": "Steering Levers"
+    "parent": "Steering Levers",
+    "description": "Developed as the successor to the dinghy walker, the sleek stiletto walker is fast, has a short turn radius, and flaunts more deck space and a stronger hull than its predecessor. Ideal for nomads who prefer to travel alone or in small groups."
   },
   {
     "category": "Walkers",
@@ -8794,7 +9598,8 @@
       }
     ],
     "name": "Titan Walker Body",
-    "parent": "Buffalo Walker Body"
+    "parent": "Buffalo Walker Body",
+    "description": "An iconic walker distinguished by tiered design and open, flat deck spaces. Dozens of large weapons can be stationed on it, but without a crew it's not very defensible."
   },
   {
     "category": "Walkers",
@@ -8814,7 +9619,8 @@
       }
     ],
     "name": "Hornet Walker Body",
-    "parent": "Stiletto Walker Body"
+    "parent": "Stiletto Walker Body",
+    "description": "Devised by worm hunters who needed a sturdy walker with a low center of mass so they would not be toppled over, and a high top speed to outrun the giant beasts."
   },
   {
     "category": "Walkers",
@@ -8829,7 +9635,8 @@
       }
     ],
     "name": "Firefly Walker Body",
-    "parent": "Walkers"
+    "parent": "Walkers",
+    "description": "A pedal-powered walker that nomads build when they want to begin their journey. Has a small deck and can be upgraded by building wings."
   },
   {
     "category": "Walkers",
@@ -8847,7 +9654,8 @@
       }
     ],
     "name": "Mollusk Walker Body",
-    "parent": "Steering Levers"
+    "parent": "Steering Levers",
+    "description": "Small cabin of the walker provides protection to possessions and the driver. While walls may let a nomad live longer, obstructed view from inside the cabin could be a serious drawback in a battle. Has a decent deck and good movement capabilities."
   },
   {
     "category": "Walkers",
@@ -8867,7 +9675,8 @@
       }
     ],
     "name": "Domus Walker Body",
-    "parent": "Mollusk Walker Body"
+    "parent": "Mollusk Walker Body",
+    "description": "Heavily protected with strong walls all around, Domus Walkers are often used to safely transport large numbers of nomads. While slow and difficult to handle, they can withstand massive damages, ensuring structural integrity during battles and defending everything inside."
   },
   {
     "category": "Walkers",
@@ -8887,7 +9696,8 @@
       }
     ],
     "name": "Cobra Walker Body",
-    "parent": "Gun Pod"
+    "parent": "Gun Pod",
+    "description": "Mobile shooting tower operated automatically with wooden machinery that shoots enemy weapons nearby. Requires deployment to shoot, which blocks its steering."
   },
   {
     "category": "Walkers",
@@ -8907,7 +9717,8 @@
       }
     ],
     "name": "Camelop  Walker Body",
-    "parent": "Tool Pod"
+    "parent": "Tool Pod",
+    "description": "Being able to pump water and lava out of lakes, while storing large amounts of liquid, makes this walker an essential tool in various mass productions. Uses torque to move and while pumping."
   },
   {
     "category": "Walkers",
@@ -8928,7 +9739,8 @@
       }
     ],
     "name": "Panda Walker Body",
-    "parent": "Walker Packing Compartment"
+    "parent": "Walker Packing Compartment",
+    "description": "Large walker carrier capable of storing up to 5 walkers of any size and hauling them, providing they're not too heavy. Limited deck size allows to build some weapons for protection."
   },
   {
     "category": "Walkers",
@@ -8945,7 +9757,8 @@
         ]
       }
     ],
-    "name": "Silur Walker Body"
+    "name": "Silur Walker Body",
+    "description": "Founder Walker type of moderate size and protection. Allows to pack and carry a base made of heavy solid materials."
   },
   {
     "category": "Walkers",
@@ -8964,7 +9777,8 @@
       }
     ],
     "name": "Hercul Walker Body",
-    "parent": "Tool Pod"
+    "parent": "Tool Pod",
+    "description": "Capable of producing mass quantities of torque by heating up water with lava, Hercul Walker is an essential tool for any Nomad requiring large amounts of power. Will generate torque over time while holding its water container above a lava lake."
   },
   {
     "category": "Walkers",
@@ -8979,7 +9793,8 @@
         ]
       }
     ],
-    "name": "Balang Walker Body"
+    "name": "Balang Walker Body",
+    "description": "Founder Walker type of the smallest size and least protection. Allows to pack and carry a base made of heavy solid materials."
   },
   {
     "category": "Walkers",
@@ -9000,7 +9815,8 @@
       }
     ],
     "name": "Raptor Sky Walker Body",
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy Walker Body",
+    "description": "Using a technology discovered during an expedition to a city in the sky, the Raptor Sky Walker is the first of its kind created by Nomads. Allows to soar in the sky like a leaf on the wind using torque for flapping its wings."
   },
   {
     "category": "Weapons",
@@ -9016,6 +9832,7 @@
       }
     ],
     "name": "Rupu Sling",
-    "parent": "Light Wood Foundation"
+    "parent": "Light Wood Foundation",
+    "description": "Tied down rupu that throws specially made rupu rocks at intruders. Precise and deadly when the target is close, but very wasteful at longer distances, making it a perfect defense inside a base."
   }
 ]
