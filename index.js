@@ -119,6 +119,7 @@ allItems = translator.translateItems(allItems);
 allItems = translator.addDescriptions(allItems);
 
 allItems.forEach((item) => {
+  item = fixParentItem(item);
   Object.keys(item).forEach((key) => {
     if (item[key] === undefined) {
       delete item[key];
@@ -686,49 +687,44 @@ function parseName(name) {
   name = name.replace("_C", "").trim();
   name = translator.translateName(name);
 
-  if (name.includes("Walker")) {
-    if (/(.+)Walker(.+)Legs/.test(name)) {
-      let match = name.match(/(.+)Walker(.+)Legs/);
-      if (match[1] != null && match[2] != null) {
-        let walkerName = translator.translateName(match[1] + "Walker");
-        let legType = match[2] != "Base" ? match[2] + " (1 of 2)" : "";
-        name = walkerName + " Legs " + legType;
+  if (/(.+)Legs/.test(name)) {
+    let match = name.match(/(.+)Legs/);
+    if (match[1] != null) {
+      let walkerName = translator.translateName(match[1] + " Walker");
+      let legType = "";
+      if (name.includes("_T2")) {
+        legType = "Armored ";
+      } else if (name.includes("_T3")) {
+        legType = "Heavy ";
       }
-    } else if (/(.+)WalkerWings(.+)/.test(name)) {
-      let match = name.match(/(.+)WalkerWings(.+)/);
-      if (match[1] != null && match[2] != null) {
-        let walkerName = translator.translateName(match[1] + "Walker");
-        let wingsType = "Wings (1 of 2)";
-        switch (match[2]) {
-          case "FastSmall":
-            wingsType = "Wings Small (1 of 2)";
-            break;
-          case "FastMedium":
-            wingsType = "Wings Medium (1 of 2)";
-            break;
-          case "FastLarge":
-            wingsType = "Wings Large (1 of 2)";
-            break;
-          case "Heavy1":
-            wingsType = "Wings Heavy (1 of 2)";
-            break;
-          case "Heavy2":
-            wingsType = "Wings Rugged (1 of 2)";
-            break;
-          case "Skirmish1":
-            wingsType = "Wings Skirmish (1 of 2)";
-            break;
-          case "Skirmish2":
-            wingsType = "Wings Raider (1 of 2)";
-            break;
-        }
-        name = walkerName + " " + wingsType;
-      }
-    } else if (/(.+) Walker/.test(name) && !name.includes("Body")) {
-      name = name + " Body";
+      name = walkerName + " Legs " + legType + "(1 of 2)";
     }
-  }
-  if (name.includes("Upgrades")) {
+  } else if (/(.+) Walker/.test(name) && !name.includes("Body")) {
+    name = name + " Body";
+  } else if (/(.+)Wings/.test(name)) {
+    let match = name.match(/(.+)Wings/);
+    if (match[1] != null) {
+      let walkerName = translator.translateName(match[1] + " Walker");
+      let wingsType = "Wings (1 of 2)";
+      if (name.includes("_T2_Small")) {
+        wingsType = "Wings Small (1 of 2)";
+      } else if (name.includes("_T3_Medium")) {
+        wingsType = "Wings Medium (1 of 2)";
+      } else if (name.includes("_T4")) {
+        wingsType = "Wings Large (1 of 2)";
+      } else if (name.includes("_T2_Heavy")) {
+        wingsType = "Wings Heavy (1 of 2)";
+      } else if (name.includes("_T3_Rugged")) {
+        wingsType = "Wings Rugged (1 of 2)";
+      } else if (name.includes("_T2_Skirmish")) {
+        wingsType = "Wings Skirmish (1 of 2)";
+      } else if (name.includes("_T3_Raider")) {
+        wingsType = "Wings Raider (1 of 2)";
+      }
+
+      name = walkerName + " " + wingsType;
+    }
+  } else if (name.includes("Upgrades")) {
     if (/(.+)Walker(.+)Upgrades/.test(name)) {
       let match = name.match(/(.+)Walker(.+)Upgrades/);
       if (match[1] != null && match[2] != null) {
@@ -769,4 +765,18 @@ function parseName(name) {
   }
 
   return name.trim();
+}
+
+function fixParentItem(item) {
+  if (
+    item.category &&
+    item.category.includes("WalkerParts") &&
+    item.parent &&
+    !item.parent.includes("Body") &&
+    !item.parent.includes("Legs") &&
+    !item.parent.includes("Wings")
+  ) {
+    item.parent = item.parent + " Walker Body";
+  }
+  return item;
 }

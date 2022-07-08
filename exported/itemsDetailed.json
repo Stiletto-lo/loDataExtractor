@@ -16276,8 +16276,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "BalangLegs",
-    "parent": "Balang",
+    "name": "Balang Walker Legs (1 of 2)",
+    "parent": "Balang Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
@@ -16285,8 +16285,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "BalangWings",
-    "parent": "Balang",
+    "name": "Balang Walker Wings (1 of 2)",
+    "parent": "Balang Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
@@ -16298,8 +16298,8 @@
       "count": 40,
       "name": "Fragment"
     },
-    "name": "BalangWings_T2_Small",
-    "parent": "BalangWings",
+    "name": "Balang Walker Wings Small (1 of 2)",
+    "parent": "Balang Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
@@ -16307,35 +16307,35 @@
   },
   {
     "category": "WalkerParts",
-    "name": "BattleshipLegs",
+    "name": "Battleship Walker Legs (1 of 2)",
     "structureInfo": {
       "hp": 1800
     }
   },
   {
     "category": "WalkerParts",
-    "name": "BattleshipLegs_T2",
+    "name": "Battleship Walker Legs Armored (1 of 2)",
     "structureInfo": {
       "hp": 3000
     }
   },
   {
     "category": "WalkerParts",
-    "name": "BattleshipLegs_T3",
+    "name": "Battleship Walker Legs Heavy (1 of 2)",
     "structureInfo": {
       "hp": 4500
     }
   },
   {
     "category": "WalkerParts",
-    "name": "BattleshipWings",
+    "name": "Battleship Walker Wings (1 of 2)",
     "structureInfo": {
       "hp": 1350
     }
   },
   {
     "category": "WalkerParts",
-    "name": "BattleshipWings_T2_Small",
+    "name": "Battleship Walker Wings Small (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 2250
@@ -16343,7 +16343,7 @@
   },
   {
     "category": "WalkerParts",
-    "name": "BattleshipWings_T3_Medium",
+    "name": "Battleship Walker Wings Medium (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3375
@@ -16351,7 +16351,7 @@
   },
   {
     "category": "WalkerParts",
-    "name": "BattleshipWings_T4",
+    "name": "Battleship Walker Wings Large (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3750
@@ -16359,8 +16359,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "BuffaloLegs",
-    "parent": "Buffalo",
+    "name": "Buffalo Walker Legs (1 of 2)",
+    "parent": "Buffalo Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 7000
@@ -16372,8 +16372,8 @@
       "count": 3,
       "name": "Tablet"
     },
-    "name": "BuffaloLegs_T2",
-    "parent": "BuffaloLegs",
+    "name": "Buffalo Walker Legs Armored (1 of 2)",
+    "parent": "Buffalo Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 10500
@@ -16385,8 +16385,8 @@
       "count": 6,
       "name": "Tablet"
     },
-    "name": "BuffaloLegs_T3",
-    "parent": "BuffaloLegs_T2",
+    "name": "Buffalo Walker Legs Heavy (1 of 2)",
+    "parent": "Buffalo Walker Legs Armored (1 of 2)",
     "structureInfo": {
       "type": "Reinforced",
       "hp": 13300
@@ -16394,8 +16394,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "BuffaloWings",
-    "parent": "Buffalo",
+    "name": "Buffalo Walker Wings (1 of 2)",
+    "parent": "Buffalo Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
@@ -16407,8 +16407,8 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "BuffaloWings_T2_Heavy",
-    "parent": "BuffaloWings",
+    "name": "Buffalo Walker Wings Heavy (1 of 2)",
+    "parent": "Buffalo Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 4300
@@ -16420,8 +16420,8 @@
       "count": 10,
       "name": "Tablet"
     },
-    "name": "BuffaloWings_T2_Skirmish",
-    "parent": "BuffaloWings",
+    "name": "Buffalo Walker Wings Skirmish (1 of 2)",
+    "parent": "Buffalo Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3300
@@ -16433,8 +16433,8 @@
       "count": 3,
       "name": "Tablet"
     },
-    "name": "BuffaloWings_T2_Small",
-    "parent": "BuffaloWings",
+    "name": "Buffalo Walker Wings Small (1 of 2)",
+    "parent": "Buffalo Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1800
@@ -16446,8 +16446,8 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "BuffaloWings_T3_Medium",
-    "parent": "BuffaloWings_T2_Small",
+    "name": "Buffalo Walker Wings Medium (1 of 2)",
+    "parent": "Buffalo Walker Wings Small (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 2400
@@ -16459,8 +16459,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "BuffaloWings_T3_Raider",
-    "parent": "BuffaloWings_T2_Skirmish",
+    "name": "Buffalo Walker Wings Raider (1 of 2)",
+    "parent": "Buffalo Walker Wings Skirmish (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 3900
@@ -16472,8 +16472,8 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "BuffaloWings_T3_Rugged",
-    "parent": "BuffaloWings_T2_Heavy",
+    "name": "Buffalo Walker Wings Rugged (1 of 2)",
+    "parent": "Buffalo Walker Wings Heavy (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 6100
@@ -16481,8 +16481,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "BuffaloWings_T4",
-    "parent": "BuffaloWings_T3_Medium",
+    "name": "Buffalo Walker Wings Large (1 of 2)",
+    "parent": "Buffalo Walker Wings Medium (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1920
@@ -16490,8 +16490,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "CamelopLegs",
-    "parent": "Camelop",
+    "name": "Camelop Walker Legs (1 of 2)",
+    "parent": "Camelop Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 7000
@@ -16499,8 +16499,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "CobraLegs",
-    "parent": "Cobra",
+    "name": "Cobra Walker Legs (1 of 2)",
+    "parent": "Cobra Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 7000
@@ -16508,7 +16508,7 @@
   },
   {
     "category": "WalkerParts",
-    "name": "DinghyLegs",
+    "name": "Dinghy Walker Legs (1 of 2)",
     "parent": "Dinghy Walker Body",
     "structureInfo": {
       "type": "Soft",
@@ -16517,7 +16517,7 @@
   },
   {
     "category": "WalkerParts",
-    "name": "DinghyLegs_T2",
+    "name": "Dinghy Walker Legs Armored (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 2850
@@ -16525,7 +16525,7 @@
   },
   {
     "category": "WalkerParts",
-    "name": "DinghyLegs_T3",
+    "name": "Dinghy Walker Legs Heavy (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 2375
@@ -16533,7 +16533,7 @@
   },
   {
     "category": "WalkerParts",
-    "name": "DinghyWings",
+    "name": "Dinghy Walker Wings (1 of 2)",
     "parent": "Dinghy Walker Body",
     "structureInfo": {
       "type": "Soft",
@@ -16546,8 +16546,8 @@
       "count": 40,
       "name": "Fragment"
     },
-    "name": "DinghyWings_T2_Small",
-    "parent": "DinghyWings",
+    "name": "Dinghy Walker Wings Small (1 of 2)",
+    "parent": "Dinghy Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
@@ -16555,7 +16555,7 @@
   },
   {
     "category": "WalkerParts",
-    "name": "DinghyWings_T3_Medium",
+    "name": "Dinghy Walker Wings Medium (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1200
@@ -16563,7 +16563,7 @@
   },
   {
     "category": "WalkerParts",
-    "name": "DinghyWings_T4",
+    "name": "Dinghy Walker Wings Large (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1700
@@ -16571,8 +16571,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "DomusLegs",
-    "parent": "Domus",
+    "name": "Domus Walker Legs (1 of 2)",
+    "parent": "Domus Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 20000
@@ -16584,8 +16584,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "DomusLegs_T2",
-    "parent": "DomusLegs",
+    "name": "Domus Walker Legs Armored (1 of 2)",
+    "parent": "Domus Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 24000
@@ -16597,8 +16597,8 @@
       "count": 40,
       "name": "Tablet"
     },
-    "name": "DomusLegs_T3",
-    "parent": "DomusLegs_T2",
+    "name": "Domus Walker Legs Heavy (1 of 2)",
+    "parent": "Domus Walker Legs Armored (1 of 2)",
     "structureInfo": {
       "type": "Reinforced",
       "hp": 37000
@@ -16606,8 +16606,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "DomusWings",
-    "parent": "Domus",
+    "name": "Domus Walker Wings (1 of 2)",
+    "parent": "Domus Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
@@ -16619,8 +16619,8 @@
       "count": 35,
       "name": "Tablet"
     },
-    "name": "DomusWings_T2_Heavy",
-    "parent": "DomusWings",
+    "name": "Domus Walker Wings Heavy (1 of 2)",
+    "parent": "Domus Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 6700
@@ -16632,8 +16632,8 @@
       "count": 40,
       "name": "Tablet"
     },
-    "name": "DomusWings_T2_Skirmish",
-    "parent": "DomusWings",
+    "name": "Domus Walker Wings Skirmish (1 of 2)",
+    "parent": "Domus Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 5500
@@ -16645,8 +16645,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "DomusWings_T2_Small",
-    "parent": "DomusWings",
+    "name": "Domus Walker Wings Small (1 of 2)",
+    "parent": "Domus Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3700
@@ -16658,8 +16658,8 @@
       "count": 35,
       "name": "Tablet"
     },
-    "name": "DomusWings_T3_Medium",
-    "parent": "DomusWings_T2_Small",
+    "name": "Domus Walker Wings Medium (1 of 2)",
+    "parent": "Domus Walker Wings Small (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 4100
@@ -16671,8 +16671,8 @@
       "count": 70,
       "name": "Tablet"
     },
-    "name": "DomusWings_T3_Raider",
-    "parent": "DomusWings_T2_Skirmish",
+    "name": "Domus Walker Wings Raider (1 of 2)",
+    "parent": "Domus Walker Wings Skirmish (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 6200
@@ -16684,8 +16684,8 @@
       "count": 35,
       "name": "Tablet"
     },
-    "name": "DomusWings_T3_Rugged",
-    "parent": "DomusWings_T2_Heavy",
+    "name": "Domus Walker Wings Rugged (1 of 2)",
+    "parent": "Domus Walker Wings Heavy (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 8500
@@ -16697,8 +16697,8 @@
       "count": 40,
       "name": "Tablet"
     },
-    "name": "DomusWings_T4",
-    "parent": "DomusWings_T3_Medium",
+    "name": "Domus Walker Wings Large (1 of 2)",
+    "parent": "Domus Walker Wings Medium (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3750
@@ -16706,8 +16706,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "FalcoLegs",
-    "parent": "Falco",
+    "name": "Falco Walker Legs (1 of 2)",
+    "parent": "Falco Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 11000
@@ -16719,8 +16719,8 @@
       "count": 3,
       "name": "Tablet"
     },
-    "name": "FalcoLegs_T2",
-    "parent": "FalcoLegs",
+    "name": "Falco Walker Legs Armored (1 of 2)",
+    "parent": "Falco Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 16500
@@ -16732,8 +16732,8 @@
       "count": 6,
       "name": "Tablet"
     },
-    "name": "FalcoLegs_T3",
-    "parent": "FalcoLegs_T2",
+    "name": "Falco Walker Legs Heavy (1 of 2)",
+    "parent": "Falco Walker Legs Armored (1 of 2)",
     "structureInfo": {
       "type": "Reinforced",
       "hp": 20900
@@ -16741,8 +16741,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "FalcoWings",
-    "parent": "Falco",
+    "name": "Falco Walker Wings (1 of 2)",
+    "parent": "Falco Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 4000
@@ -16754,8 +16754,8 @@
       "count": 10,
       "name": "Tablet"
     },
-    "name": "FalcoWings_T2_Heavy",
-    "parent": "FalcoWings",
+    "name": "Falco Walker Wings Heavy (1 of 2)",
+    "parent": "Falco Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 5400
@@ -16767,8 +16767,8 @@
       "count": 15,
       "name": "Tablet"
     },
-    "name": "FalcoWings_T2_Skirmish",
-    "parent": "FalcoWings",
+    "name": "Falco Walker Wings Skirmish (1 of 2)",
+    "parent": "Falco Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 4400
@@ -16780,8 +16780,8 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "FalcoWings_T2_Small",
-    "parent": "FalcoWings",
+    "name": "Falco Walker Wings Small (1 of 2)",
+    "parent": "Falco Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 2500
@@ -16793,8 +16793,8 @@
       "count": 10,
       "name": "Tablet"
     },
-    "name": "FalcoWings_T3_Medium",
-    "parent": "FalcoWings_T2_Small",
+    "name": "Falco Walker Wings Medium (1 of 2)",
+    "parent": "Falco Walker Wings Small (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
@@ -16806,8 +16806,8 @@
       "count": 25,
       "name": "Tablet"
     },
-    "name": "FalcoWings_T3_Raider",
-    "parent": "FalcoWings_T2_Skirmish",
+    "name": "Falco Walker Wings Raider (1 of 2)",
+    "parent": "Falco Walker Wings Skirmish (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 5000
@@ -16819,8 +16819,8 @@
       "count": 10,
       "name": "Tablet"
     },
-    "name": "FalcoWings_T3_Rugged",
-    "parent": "FalcoWings_T2_Heavy",
+    "name": "Falco Walker Wings Rugged (1 of 2)",
+    "parent": "Falco Walker Wings Heavy (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 7100
@@ -16832,8 +16832,8 @@
       "count": 15,
       "name": "Tablet"
     },
-    "name": "FalcoWings_T4",
-    "parent": "FalcoWings_T3_Medium",
+    "name": "Falco Walker Wings Large (1 of 2)",
+    "parent": "Falco Walker Wings Medium (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 2500
@@ -16841,7 +16841,7 @@
   },
   {
     "category": "WalkerParts",
-    "name": "FireflyLegs",
+    "name": "Firefly Walker Legs (1 of 2)",
     "parent": "Firefly Walker Body",
     "structureInfo": {
       "type": "Soft",
@@ -16854,8 +16854,8 @@
       "count": 6,
       "name": "Fragment"
     },
-    "name": "FireflyWings",
-    "parent": "FireflyLegs",
+    "name": "Firefly Walker Wings (1 of 2)",
+    "parent": "Firefly Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
@@ -16863,8 +16863,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "HerculLegs",
-    "parent": "Hercul",
+    "name": "Hercul Walker Legs (1 of 2)",
+    "parent": "Hercul Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 7000
@@ -16876,8 +16876,8 @@
       "count": 3,
       "name": "Tablet"
     },
-    "name": "HerculLegs_T2",
-    "parent": "HerculLegs",
+    "name": "Hercul Walker Legs Armored (1 of 2)",
+    "parent": "Hercul Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 10500
@@ -16885,7 +16885,7 @@
   },
   {
     "category": "WalkerParts",
-    "name": "HerculLegs_T3",
+    "name": "Hercul Walker Legs Heavy (1 of 2)",
     "structureInfo": {
       "type": "Reinforced",
       "hp": 13300
@@ -16893,8 +16893,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "HerculWings",
-    "parent": "Hercul",
+    "name": "Hercul Walker Wings (1 of 2)",
+    "parent": "Hercul Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
@@ -16906,8 +16906,8 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "HerculWings_T2_Heavy",
-    "parent": "HerculWings",
+    "name": "Hercul Walker Wings Heavy (1 of 2)",
+    "parent": "Hercul Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 4300
@@ -16919,8 +16919,8 @@
       "count": 10,
       "name": "Tablet"
     },
-    "name": "HerculWings_T2_Skirmish",
-    "parent": "HerculWings",
+    "name": "Hercul Walker Wings Skirmish (1 of 2)",
+    "parent": "Hercul Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3300
@@ -16932,8 +16932,8 @@
       "count": 3,
       "name": "Tablet"
     },
-    "name": "HerculWings_T2_Small",
-    "parent": "HerculWings",
+    "name": "Hercul Walker Wings Small (1 of 2)",
+    "parent": "Hercul Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1800
@@ -16945,8 +16945,8 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "HerculWings_T3_Medium",
-    "parent": "HerculWings_T2_Small",
+    "name": "Hercul Walker Wings Medium (1 of 2)",
+    "parent": "Hercul Walker Wings Small (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 2400
@@ -16958,8 +16958,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "HerculWings_T3_Raider",
-    "parent": "HerculWings_T2_Skirmish",
+    "name": "Hercul Walker Wings Raider (1 of 2)",
+    "parent": "Hercul Walker Wings Skirmish (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 3900
@@ -16971,8 +16971,8 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "HerculWings_T3_Rugged",
-    "parent": "HerculWings_T2_Heavy",
+    "name": "Hercul Walker Wings Rugged (1 of 2)",
+    "parent": "Hercul Walker Wings Heavy (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 6100
@@ -16980,7 +16980,7 @@
   },
   {
     "category": "WalkerParts",
-    "name": "HerculWings_T4",
+    "name": "Hercul Walker Wings Large (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1920
@@ -16988,8 +16988,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "HornetLegs",
-    "parent": "Hornet",
+    "name": "Hornet Walker Legs (1 of 2)",
+    "parent": "Hornet Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 10000
@@ -17001,8 +17001,8 @@
       "count": 2,
       "name": "Tablet"
     },
-    "name": "HornetLegs_T2",
-    "parent": "HornetLegs",
+    "name": "Hornet Walker Legs Armored (1 of 2)",
+    "parent": "Hornet Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 15000
@@ -17014,8 +17014,8 @@
       "count": 10,
       "name": "Tablet"
     },
-    "name": "HornetLegs_T3",
-    "parent": "HornetLegs_T2",
+    "name": "Hornet Walker Legs Heavy (1 of 2)",
+    "parent": "Hornet Walker Legs Armored (1 of 2)",
     "structureInfo": {
       "type": "Reinforced",
       "hp": 19000
@@ -17023,8 +17023,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "HornetWings",
-    "parent": "Hornet",
+    "name": "Hornet Walker Wings (1 of 2)",
+    "parent": "Hornet Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
@@ -17036,8 +17036,8 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "HornetWings_T2_Heavy",
-    "parent": "HornetWings",
+    "name": "Hornet Walker Wings Heavy (1 of 2)",
+    "parent": "Hornet Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 4400
@@ -17049,8 +17049,8 @@
       "count": 10,
       "name": "Tablet"
     },
-    "name": "HornetWings_T2_Skirmish",
-    "parent": "HornetWings",
+    "name": "Hornet Walker Wings Skirmish (1 of 2)",
+    "parent": "Hornet Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3300
@@ -17062,8 +17062,8 @@
       "count": 2,
       "name": "Tablet"
     },
-    "name": "HornetWings_T2_Small",
-    "parent": "HornetWings",
+    "name": "Hornet Walker Wings Small (1 of 2)",
+    "parent": "Hornet Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1800
@@ -17075,8 +17075,8 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "HornetWings_T3_Medium",
-    "parent": "HornetWings_T2_Small",
+    "name": "Hornet Walker Wings Medium (1 of 2)",
+    "parent": "Hornet Walker Wings Small (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 2400
@@ -17088,8 +17088,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "HornetWings_T3_Raider",
-    "parent": "HornetWings_T2_Skirmish",
+    "name": "Hornet Walker Wings Raider (1 of 2)",
+    "parent": "Hornet Walker Wings Skirmish (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 3900
@@ -17101,8 +17101,8 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "HornetWings_T3_Rugged",
-    "parent": "HornetWings_T2_Heavy",
+    "name": "Hornet Walker Wings Rugged (1 of 2)",
+    "parent": "Hornet Walker Wings Heavy (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 6200
@@ -17114,8 +17114,8 @@
       "count": 10,
       "name": "Tablet"
     },
-    "name": "HornetWings_T4",
-    "parent": "HornetWings_T3_Medium",
+    "name": "Hornet Walker Wings Large (1 of 2)",
+    "parent": "Hornet Walker Wings Medium (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3150
@@ -17123,8 +17123,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "MolluskLegs",
-    "parent": "Mollusk",
+    "name": "Mollusk Walker Legs (1 of 2)",
+    "parent": "Mollusk Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 3500
@@ -17132,8 +17132,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "MolluskLegs_T2",
-    "parent": "MolluskLegs",
+    "name": "Mollusk Walker Legs Armored (1 of 2)",
+    "parent": "Mollusk Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 5250
@@ -17141,8 +17141,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "MolluskWings",
-    "parent": "Mollusk",
+    "name": "Mollusk Walker Wings (1 of 2)",
+    "parent": "Mollusk Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 2000
@@ -17154,8 +17154,8 @@
       "count": 3,
       "name": "Tablet"
     },
-    "name": "MolluskWings_T2_Heavy",
-    "parent": "MolluskWings",
+    "name": "Mollusk Walker Wings Heavy (1 of 2)",
+    "parent": "Mollusk Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3400
@@ -17167,8 +17167,8 @@
       "count": 7,
       "name": "Tablet"
     },
-    "name": "MolluskWings_T2_Skirmish",
-    "parent": "MolluskWings",
+    "name": "Mollusk Walker Wings Skirmish (1 of 2)",
+    "parent": "Mollusk Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 2250
@@ -17176,8 +17176,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "MolluskWings_T2_Small",
-    "parent": "MolluskWings",
+    "name": "Mollusk Walker Wings Small (1 of 2)",
+    "parent": "Mollusk Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1200
@@ -17189,8 +17189,8 @@
       "count": 3,
       "name": "Tablet"
     },
-    "name": "MolluskWings_T3_Medium",
-    "parent": "MolluskWings_T2_Small",
+    "name": "Mollusk Walker Wings Medium (1 of 2)",
+    "parent": "Mollusk Walker Wings Small (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1600
@@ -17202,8 +17202,8 @@
       "count": 15,
       "name": "Tablet"
     },
-    "name": "MolluskWings_T3_Raider",
-    "parent": "MolluskWings_T2_Skirmish",
+    "name": "Mollusk Walker Wings Raider (1 of 2)",
+    "parent": "Mollusk Walker Wings Skirmish (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 2800
@@ -17215,8 +17215,8 @@
       "count": 3,
       "name": "Tablet"
     },
-    "name": "MolluskWings_T3_Rugged",
-    "parent": "MolluskWings_T2_Heavy",
+    "name": "Mollusk Walker Wings Rugged (1 of 2)",
+    "parent": "Mollusk Walker Wings Heavy (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 5000
@@ -17224,8 +17224,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "PandaLegs",
-    "parent": "Panda",
+    "name": "Panda Walker Legs (1 of 2)",
+    "parent": "Panda Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 18000
@@ -17237,8 +17237,8 @@
       "count": 3,
       "name": "Tablet"
     },
-    "name": "PandaLegs_T2",
-    "parent": "PandaLegs",
+    "name": "Panda Walker Legs Armored (1 of 2)",
+    "parent": "Panda Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 27000
@@ -17250,8 +17250,8 @@
       "count": 6,
       "name": "Tablet"
     },
-    "name": "PandaLegs_T3",
-    "parent": "PandaLegs_T2",
+    "name": "Panda Walker Legs Heavy (1 of 2)",
+    "parent": "Panda Walker Legs Armored (1 of 2)",
     "structureInfo": {
       "type": "Reinforced",
       "hp": 34200
@@ -17259,8 +17259,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "PandaWings",
-    "parent": "Panda",
+    "name": "Panda Walker Wings (1 of 2)",
+    "parent": "Panda Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
@@ -17272,8 +17272,8 @@
       "count": 10,
       "name": "Tablet"
     },
-    "name": "PandaWings_T2_Heavy",
-    "parent": "PandaWings",
+    "name": "Panda Walker Wings Heavy (1 of 2)",
+    "parent": "Panda Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 6400
@@ -17285,8 +17285,8 @@
       "count": 15,
       "name": "Tablet"
     },
-    "name": "PandaWings_T2_Skirmish",
-    "parent": "PandaWings",
+    "name": "Panda Walker Wings Skirmish (1 of 2)",
+    "parent": "Panda Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 5450
@@ -17298,8 +17298,8 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "PandaWings_T2_Small",
-    "parent": "PandaWings",
+    "name": "Panda Walker Wings Small (1 of 2)",
+    "parent": "Panda Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3700
@@ -17311,8 +17311,8 @@
       "count": 10,
       "name": "Tablet"
     },
-    "name": "PandaWings_T3_Medium",
-    "parent": "PandaWings_T2_Small",
+    "name": "Panda Walker Wings Medium (1 of 2)",
+    "parent": "Panda Walker Wings Small (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 4100
@@ -17324,8 +17324,8 @@
       "count": 25,
       "name": "Tablet"
     },
-    "name": "PandaWings_T3_Raider",
-    "parent": "PandaWings_T2_Skirmish",
+    "name": "Panda Walker Wings Raider (1 of 2)",
+    "parent": "Panda Walker Wings Skirmish (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 6100
@@ -17337,8 +17337,8 @@
       "count": 10,
       "name": "Tablet"
     },
-    "name": "PandaWings_T3_Rugged",
-    "parent": "PandaWings_T2_Heavy",
+    "name": "Panda Walker Wings Rugged (1 of 2)",
+    "parent": "Panda Walker Wings Heavy (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 8100
@@ -17350,8 +17350,8 @@
       "count": 15,
       "name": "Tablet"
     },
-    "name": "PandaWings_T4",
-    "parent": "PandaWings_T3_Medium",
+    "name": "Panda Walker Wings Large (1 of 2)",
+    "parent": "Panda Walker Wings Medium (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3750
@@ -17359,8 +17359,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "ProxyLegs",
-    "parent": "Proxy",
+    "name": "Proxy Walker Legs (1 of 2)",
+    "parent": "Proxy Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 10000
@@ -17368,8 +17368,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "ProxyLegs_T2",
-    "parent": "ProxyLegs",
+    "name": "Proxy Walker Legs Armored (1 of 2)",
+    "parent": "Proxy Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 15000
@@ -17381,8 +17381,8 @@
       "count": 3,
       "name": "Tablet"
     },
-    "name": "ProxyLegs_T3",
-    "parent": "ProxyLegs_T2",
+    "name": "Proxy Walker Legs Heavy (1 of 2)",
+    "parent": "Proxy Walker Legs Armored (1 of 2)",
     "structureInfo": {
       "type": "Reinforced",
       "hp": 19000
@@ -17390,8 +17390,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "RaptorLegs",
-    "parent": "Raptor",
+    "name": "Raptor Walker Legs (1 of 2)",
+    "parent": "Raptor Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 5000
@@ -17399,8 +17399,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "RaptorWings",
-    "parent": "Raptor",
+    "name": "Raptor Walker Wings (1 of 2)",
+    "parent": "Raptor Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
@@ -17408,8 +17408,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "SchmetterlingLegs",
-    "parent": "Schmetterling",
+    "name": "Schmetterling Walker Legs (1 of 2)",
+    "parent": "Schmetterling Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 18000
@@ -17421,8 +17421,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "SchmetterlingLegs_T2",
-    "parent": "SchmetterlingLegs",
+    "name": "Schmetterling Walker Legs Armored (1 of 2)",
+    "parent": "Schmetterling Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 27000
@@ -17434,8 +17434,8 @@
       "count": 40,
       "name": "Tablet"
     },
-    "name": "SchmetterlingLegs_T3",
-    "parent": "SchmetterlingLegs_T2",
+    "name": "Schmetterling Walker Legs Heavy (1 of 2)",
+    "parent": "Schmetterling Walker Legs Armored (1 of 2)",
     "structureInfo": {
       "type": "Reinforced",
       "hp": 34200
@@ -17443,8 +17443,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "SchmetterlingWings",
-    "parent": "Schmetterling",
+    "name": "Schmetterling Walker Wings (1 of 2)",
+    "parent": "Schmetterling Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
@@ -17456,8 +17456,8 @@
       "count": 35,
       "name": "Tablet"
     },
-    "name": "SchmetterlingWings_T2_Heavy",
-    "parent": "SchmetterlingWings",
+    "name": "Schmetterling Walker Wings Heavy (1 of 2)",
+    "parent": "Schmetterling Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 6800
@@ -17469,8 +17469,8 @@
       "count": 40,
       "name": "Tablet"
     },
-    "name": "SchmetterlingWings_T2_Skirmish",
-    "parent": "SchmetterlingWings",
+    "name": "Schmetterling Walker Wings Skirmish (1 of 2)",
+    "parent": "Schmetterling Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 5450
@@ -17482,8 +17482,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "SchmetterlingWings_T2_Small",
-    "parent": "SchmetterlingWings",
+    "name": "Schmetterling Walker Wings Small (1 of 2)",
+    "parent": "Schmetterling Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3700
@@ -17495,8 +17495,8 @@
       "count": 35,
       "name": "Tablet"
     },
-    "name": "SchmetterlingWings_T3_Medium",
-    "parent": "SchmetterlingWings_T2_Small",
+    "name": "Schmetterling Walker Wings Medium (1 of 2)",
+    "parent": "Schmetterling Walker Wings Small (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 4100
@@ -17508,8 +17508,8 @@
       "count": 60,
       "name": "Tablet"
     },
-    "name": "SchmetterlingWings_T3_Raider",
-    "parent": "SchmetterlingWings_T2_Skirmish",
+    "name": "Schmetterling Walker Wings Raider (1 of 2)",
+    "parent": "Schmetterling Walker Wings Skirmish (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 6200
@@ -17521,8 +17521,8 @@
       "count": 35,
       "name": "Tablet"
     },
-    "name": "SchmetterlingWings_T3_Rugged",
-    "parent": "SchmetterlingWings_T2_Heavy",
+    "name": "Schmetterling Walker Wings Rugged (1 of 2)",
+    "parent": "Schmetterling Walker Wings Heavy (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 8500
@@ -17534,8 +17534,8 @@
       "count": 40,
       "name": "Tablet"
     },
-    "name": "SchmetterlingWings_T4",
-    "parent": "SchmetterlingWings_T3_Medium",
+    "name": "Schmetterling Walker Wings Large (1 of 2)",
+    "parent": "Schmetterling Walker Wings Medium (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3750
@@ -17543,8 +17543,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "SilurLegs",
-    "parent": "Silur",
+    "name": "Silur Walker Legs (1 of 2)",
+    "parent": "Silur Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 16500
@@ -17556,8 +17556,8 @@
       "count": 2,
       "name": "Tablet"
     },
-    "name": "SilurLegs_T2",
-    "parent": "SilurLegs",
+    "name": "Silur Walker Legs Armored (1 of 2)",
+    "parent": "Silur Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 25000
@@ -17569,8 +17569,8 @@
       "count": 4,
       "name": "Tablet"
     },
-    "name": "SilurLegs_T3",
-    "parent": "SilurLegs_T2",
+    "name": "Silur Walker Legs Heavy (1 of 2)",
+    "parent": "Silur Walker Legs Armored (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 31000
@@ -17578,8 +17578,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "SpiderLegs",
-    "parent": "Nomad",
+    "name": "Spider Walker Legs (1 of 2)",
+    "parent": "Nomad Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 900
@@ -17591,8 +17591,8 @@
       "count": 25,
       "name": "Fragment"
     },
-    "name": "SpiderLegs_T2",
-    "parent": "SpiderLegs",
+    "name": "Spider Walker Legs Armored (1 of 2)",
+    "parent": "Spider Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 1350
@@ -17600,8 +17600,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "StilettoLegs",
-    "parent": "Stiletto",
+    "name": "Stiletto Walker Legs (1 of 2)",
+    "parent": "Stiletto Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
@@ -17609,8 +17609,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "StilettoLegs_T2",
-    "parent": "StilettoLegs",
+    "name": "Stiletto Walker Legs Armored (1 of 2)",
+    "parent": "Stiletto Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 4500
@@ -17618,8 +17618,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "StilettoWings",
-    "parent": "Stiletto",
+    "name": "Stiletto Walker Wings (1 of 2)",
+    "parent": "Stiletto Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 2000
@@ -17631,8 +17631,8 @@
       "count": 3,
       "name": "Tablet"
     },
-    "name": "StilettoWings_T2_Heavy",
-    "parent": "StilettoWings",
+    "name": "Stiletto Walker Wings Heavy (1 of 2)",
+    "parent": "Stiletto Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3400
@@ -17644,8 +17644,8 @@
       "count": 7,
       "name": "Tablet"
     },
-    "name": "StilettoWings_T2_Skirmish",
-    "parent": "StilettoWings",
+    "name": "Stiletto Walker Wings Skirmish (1 of 2)",
+    "parent": "Stiletto Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 2250
@@ -17653,8 +17653,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "StilettoWings_T2_Small",
-    "parent": "StilettoWings",
+    "name": "Stiletto Walker Wings Small (1 of 2)",
+    "parent": "Stiletto Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1200
@@ -17666,8 +17666,8 @@
       "count": 3,
       "name": "Tablet"
     },
-    "name": "StilettoWings_T3_Medium",
-    "parent": "StilettoWings_T2_Small",
+    "name": "Stiletto Walker Wings Medium (1 of 2)",
+    "parent": "Stiletto Walker Wings Small (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1600
@@ -17679,8 +17679,8 @@
       "count": 15,
       "name": "Tablet"
     },
-    "name": "StilettoWings_T3_Raider",
-    "parent": "StilettoWings_T2_Skirmish",
+    "name": "Stiletto Walker Wings Raider (1 of 2)",
+    "parent": "Stiletto Walker Wings Skirmish (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 2900
@@ -17692,8 +17692,8 @@
       "count": 3,
       "name": "Tablet"
     },
-    "name": "StilettoWings_T3_Rugged",
-    "parent": "StilettoWings_T2_Heavy",
+    "name": "Stiletto Walker Wings Rugged (1 of 2)",
+    "parent": "Stiletto Walker Wings Heavy (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 5100
@@ -17701,8 +17701,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "TitanLegs",
-    "parent": "Titan",
+    "name": "Titan Walker Legs (1 of 2)",
+    "parent": "Titan Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 18000
@@ -17714,8 +17714,8 @@
       "count": 10,
       "name": "Tablet"
     },
-    "name": "TitanLegs_T2",
-    "parent": "TitanLegs",
+    "name": "Titan Walker Legs Armored (1 of 2)",
+    "parent": "Titan Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 27000
@@ -17727,8 +17727,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "TitanLegs_T3",
-    "parent": "TitanLegs_T2",
+    "name": "Titan Walker Legs Heavy (1 of 2)",
+    "parent": "Titan Walker Legs Armored (1 of 2)",
     "structureInfo": {
       "type": "Reinforced",
       "hp": 34200
@@ -17736,8 +17736,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "TitanWings",
-    "parent": "Titan",
+    "name": "Titan Walker Wings (1 of 2)",
+    "parent": "Titan Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
@@ -17749,8 +17749,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "TitanWings_T2_Heavy",
-    "parent": "TitanWings",
+    "name": "Titan Walker Wings Heavy (1 of 2)",
+    "parent": "Titan Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 6400
@@ -17762,8 +17762,8 @@
       "count": 30,
       "name": "Tablet"
     },
-    "name": "TitanWings_T2_Skirmish",
-    "parent": "TitanWings",
+    "name": "Titan Walker Wings Skirmish (1 of 2)",
+    "parent": "Titan Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 5450
@@ -17775,8 +17775,8 @@
       "count": 10,
       "name": "Tablet"
     },
-    "name": "TitanWings_T2_Small",
-    "parent": "TitanWings",
+    "name": "Titan Walker Wings Small (1 of 2)",
+    "parent": "Titan Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3700
@@ -17788,8 +17788,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "TitanWings_T3_Medium",
-    "parent": "TitanWings_T2_Small",
+    "name": "Titan Walker Wings Medium (1 of 2)",
+    "parent": "Titan Walker Wings Small (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 4100
@@ -17801,8 +17801,8 @@
       "count": 50,
       "name": "Tablet"
     },
-    "name": "TitanWings_T3_Raider",
-    "parent": "TitanWings_T2_Skirmish",
+    "name": "Titan Walker Wings Raider (1 of 2)",
+    "parent": "Titan Walker Wings Skirmish (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 6100
@@ -17814,8 +17814,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "TitanWings_T3_Rugged",
-    "parent": "TitanWings_T2_Heavy",
+    "name": "Titan Walker Wings Rugged (1 of 2)",
+    "parent": "Titan Walker Wings Heavy (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 8100
@@ -17827,8 +17827,8 @@
       "count": 30,
       "name": "Tablet"
     },
-    "name": "TitanWings_T4",
-    "parent": "TitanWings_T3_Medium",
+    "name": "Titan Walker Wings Large (1 of 2)",
+    "parent": "Titan Walker Wings Medium (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3750
@@ -17836,8 +17836,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "TobogganLegs",
-    "parent": "Toboggan",
+    "name": "Toboggan Walker Legs (1 of 2)",
+    "parent": "Toboggan Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 8000
@@ -17845,8 +17845,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "TobogganLegs_T2",
-    "parent": "TobogganLegs",
+    "name": "Toboggan Walker Legs Armored (1 of 2)",
+    "parent": "Toboggan Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 12000
@@ -17858,8 +17858,8 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "TobogganLegs_T3",
-    "parent": "TobogganLegs_T2",
+    "name": "Toboggan Walker Legs Heavy (1 of 2)",
+    "parent": "Toboggan Walker Legs Armored (1 of 2)",
     "structureInfo": {
       "type": "Reinforced",
       "hp": 15200
@@ -17867,8 +17867,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "TobogganWings",
-    "parent": "Toboggan",
+    "name": "Toboggan Walker Wings (1 of 2)",
+    "parent": "Toboggan Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 3500
@@ -17880,8 +17880,8 @@
       "count": 2,
       "name": "Tablet"
     },
-    "name": "TobogganWings_T2_Heavy",
-    "parent": "TobogganWings",
+    "name": "Toboggan Walker Wings Heavy (1 of 2)",
+    "parent": "Toboggan Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 4900
@@ -17893,8 +17893,8 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "TobogganWings_T2_Skirmish",
-    "parent": "TobogganWings",
+    "name": "Toboggan Walker Wings Skirmish (1 of 2)",
+    "parent": "Toboggan Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3800
@@ -17902,8 +17902,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "TobogganWings_T2_Small",
-    "parent": "TobogganWings",
+    "name": "Toboggan Walker Wings Small (1 of 2)",
+    "parent": "Toboggan Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 2200
@@ -17915,8 +17915,8 @@
       "count": 2,
       "name": "Tablet"
     },
-    "name": "TobogganWings_T3_Medium",
-    "parent": "TobogganWings_T2_Small",
+    "name": "Toboggan Walker Wings Medium (1 of 2)",
+    "parent": "Toboggan Walker Wings Small (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 2700
@@ -17928,8 +17928,8 @@
       "count": 17,
       "name": "Tablet"
     },
-    "name": "TobogganWings_T3_Raider",
-    "parent": "TobogganWings_T2_Skirmish",
+    "name": "Toboggan Walker Wings Raider (1 of 2)",
+    "parent": "Toboggan Walker Wings Skirmish (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 4400
@@ -17941,8 +17941,8 @@
       "count": 2,
       "name": "Tablet"
     },
-    "name": "TobogganWings_T3_Rugged",
-    "parent": "TobogganWings_T2_Heavy",
+    "name": "Toboggan Walker Wings Rugged (1 of 2)",
+    "parent": "Toboggan Walker Wings Heavy (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 5500
@@ -17954,8 +17954,8 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "TobogganWings_T4",
-    "parent": "TobogganWings_T3_Medium",
+    "name": "Toboggan Walker Wings Large (1 of 2)",
+    "parent": "Toboggan Walker Wings Medium (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 1875
@@ -17963,8 +17963,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "TuskerLegs",
-    "parent": "Tusker",
+    "name": "Tusker Walker Legs (1 of 2)",
+    "parent": "Tusker Walker Body",
     "structureInfo": {
       "type": "Medium",
       "hp": 15000
@@ -17976,8 +17976,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "TuskerLegs_T2",
-    "parent": "TuskerLegs",
+    "name": "Tusker Walker Legs Armored (1 of 2)",
+    "parent": "Tusker Walker Legs (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 22500
@@ -17989,8 +17989,8 @@
       "count": 35,
       "name": "Tablet"
     },
-    "name": "TuskerLegs_T3",
-    "parent": "TuskerLegs_T2",
+    "name": "Tusker Walker Legs Heavy (1 of 2)",
+    "parent": "Tusker Walker Legs Armored (1 of 2)",
     "structureInfo": {
       "type": "Reinforced",
       "hp": 28500
@@ -17998,8 +17998,8 @@
   },
   {
     "category": "WalkerParts",
-    "name": "TuskerWings",
-    "parent": "Tusker",
+    "name": "Tusker Walker Wings (1 of 2)",
+    "parent": "Tusker Walker Body",
     "structureInfo": {
       "type": "Soft",
       "hp": 3500
@@ -18011,8 +18011,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "TuskerWings_T2_Heavy",
-    "parent": "TuskerWings",
+    "name": "Tusker Walker Wings Heavy (1 of 2)",
+    "parent": "Tusker Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
@@ -18024,8 +18024,8 @@
       "count": 25,
       "name": "Tablet"
     },
-    "name": "TuskerWings_T2_Skirmish",
-    "parent": "TuskerWings",
+    "name": "Tusker Walker Wings Skirmish (1 of 2)",
+    "parent": "Tusker Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3900
@@ -18037,8 +18037,8 @@
       "count": 15,
       "name": "Tablet"
     },
-    "name": "TuskerWings_T2_Small",
-    "parent": "TuskerWings",
+    "name": "Tusker Walker Wings Small (1 of 2)",
+    "parent": "Tusker Walker Wings (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 2200
@@ -18050,8 +18050,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "TuskerWings_T3_Medium",
-    "parent": "TuskerWings_T2_Small",
+    "name": "Tusker Walker Wings Medium (1 of 2)",
+    "parent": "Tusker Walker Wings Small (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 3100
@@ -18063,8 +18063,8 @@
       "count": 40,
       "name": "Tablet"
     },
-    "name": "TuskerWings_T3_Raider",
-    "parent": "TuskerWings_T2_Skirmish",
+    "name": "Tusker Walker Wings Raider (1 of 2)",
+    "parent": "Tusker Walker Wings Skirmish (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 4500
@@ -18076,8 +18076,8 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "TuskerWings_T3_Rugged",
-    "parent": "TuskerWings_T2_Heavy",
+    "name": "Tusker Walker Wings Rugged (1 of 2)",
+    "parent": "Tusker Walker Wings Heavy (1 of 2)",
     "structureInfo": {
       "type": "Medium",
       "hp": 5800
@@ -18089,8 +18089,8 @@
       "count": 25,
       "name": "Tablet"
     },
-    "name": "TuskerWings_T4",
-    "parent": "TuskerWings_T3_Medium",
+    "name": "Tusker Walker Wings Large (1 of 2)",
+    "parent": "Tusker Walker Wings Medium (1 of 2)",
     "structureInfo": {
       "type": "Soft",
       "hp": 2500
