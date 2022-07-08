@@ -1599,6 +1599,49 @@
     "name": "Hull Hardening Module"
   },
   {
+    "category": "walkers/buffalo",
+    "cost": {
+      "count": 16,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1620,
+            "name": "Wood"
+          },
+          {
+            "count": 37,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 9,
+            "name": "Rope"
+          },
+          {
+            "count": 1115,
+            "name": "Fiber"
+          },
+          {
+            "count": 1,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 2,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 280,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Buffalo Walker Body",
+    "parent": "Stiletto Walker Body"
+  },
+  {
     "category": "walkers/buffalo/upgrades/tier1",
     "crafting": [
       {
@@ -2270,6 +2313,53 @@
     "name": "Camelop Walker Upgrade - Torque - Tier 4"
   },
   {
+    "category": "walkers/cobra",
+    "cost": {
+      "count": 16,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 900,
+            "name": "Wood"
+          },
+          {
+            "count": 390,
+            "name": "Fiber"
+          },
+          {
+            "count": 350,
+            "name": "Stone"
+          },
+          {
+            "count": 40,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 30,
+            "name": "Rope"
+          },
+          {
+            "count": 10,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 12,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "name": "Cobra Walker Body",
+    "parent": "Gun Pod"
+  },
+  {
     "category": "walkers/cobra/upgrades/tier2",
     "crafting": [
       {
@@ -2454,6 +2544,37 @@
       }
     ],
     "name": "Cobra Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/dinghy",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 380,
+            "name": "Wood"
+          },
+          {
+            "count": 245,
+            "name": "Fiber"
+          },
+          {
+            "count": 100,
+            "name": "Stone"
+          },
+          {
+            "count": 10,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "name": "Dinghy Walker Body",
+    "parent": "Firefly Walker Body"
   },
   {
     "category": "walkers/dinghy/upgrades/tier1",
@@ -2998,6 +3119,53 @@
     "name": "Dinghy Walker Upgrade - Torque - Tier 4"
   },
   {
+    "category": "walkers/domus",
+    "cost": {
+      "count": 50,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 4110,
+            "name": "Wood"
+          },
+          {
+            "count": 235,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 1350,
+            "name": "Fiber"
+          },
+          {
+            "count": 140,
+            "name": "Rope"
+          },
+          {
+            "count": 90,
+            "name": "Obsidian"
+          },
+          {
+            "count": 3,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 9,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 510,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Domus Walker Body",
+    "parent": "Mollusk Walker Body"
+  },
+  {
     "category": "walkers/domus/upgrades/tier2",
     "crafting": [
       {
@@ -3406,6 +3574,45 @@
       }
     ],
     "name": "Domus Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/falco",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1130,
+            "name": "Wood"
+          },
+          {
+            "count": 38,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 40,
+            "name": "Rope"
+          },
+          {
+            "count": 555,
+            "name": "Fiber"
+          },
+          {
+            "count": 400,
+            "name": "Stone"
+          },
+          {
+            "count": 3,
+            "name": "Walker Mechanism"
+          }
+        ]
+      }
+    ],
+    "name": "Falco Walker Body",
+    "parent": "Hornet Walker Body"
   },
   {
     "category": "walkers/falco/upgrades/tier1",
@@ -3950,6 +4157,33 @@
     "name": "Falco Walker Upgrade - Torque - Tier 4"
   },
   {
+    "category": "walkers/firefly",
+    "cost": {
+      "count": 3,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 110,
+            "name": "Wood"
+          },
+          {
+            "count": 100,
+            "name": "Fiber"
+          },
+          {
+            "count": 15,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Firefly Walker Body",
+    "parent": "Walkers"
+  },
+  {
     "category": "walkers/firefly/upgrades/tier1",
     "crafting": [
       {
@@ -4409,6 +4643,53 @@
       }
     ],
     "name": "Firefly Walker Upgrade - Mobility - Tier 4"
+  },
+  {
+    "category": "walkers/hornet",
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1415,
+            "name": "Wood"
+          },
+          {
+            "count": 400,
+            "name": "Stone"
+          },
+          {
+            "count": 550,
+            "name": "Fiber"
+          },
+          {
+            "count": 1,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 42,
+            "name": "Rope"
+          },
+          {
+            "count": 82,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 20,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 55,
+            "name": "Bone Splinter"
+          }
+        ]
+      }
+    ],
+    "name": "Hornet Walker Body",
+    "parent": "Stiletto Walker Body"
   },
   {
     "category": "walkers/hornet/upgrades/tier1",
@@ -4953,6 +5234,45 @@
     "name": "Hornet Walker Upgrade - Torque - Tier 4"
   },
   {
+    "category": "walkers/mollusk",
+    "cost": {
+      "count": 27,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 570,
+            "name": "Wood"
+          },
+          {
+            "count": 12,
+            "name": "Rope"
+          },
+          {
+            "count": 80,
+            "name": "Fiber"
+          },
+          {
+            "count": 2,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 2,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 90,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Mollusk Walker Body",
+    "parent": "Steering Levers"
+  },
+  {
     "category": "walkers/mollusk/upgrades/tier1",
     "crafting": [
       {
@@ -5495,6 +5815,57 @@
     "name": "Mollusk Walker Upgrade - Torque - Tier 4"
   },
   {
+    "category": "walkers/panda",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1360,
+            "name": "Wood"
+          },
+          {
+            "count": 600,
+            "name": "Fiber"
+          },
+          {
+            "count": 350,
+            "name": "Stone"
+          },
+          {
+            "count": 121,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 86,
+            "name": "Rope"
+          },
+          {
+            "count": 5,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 110,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 2,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 35,
+            "name": "Ceramic Shard"
+          }
+        ]
+      }
+    ],
+    "name": "Panda Walker Body",
+    "parent": "Walker Packing Compartment"
+  },
+  {
     "category": "walkers/panda/upgrades/tier2",
     "crafting": [
       {
@@ -5903,6 +6274,96 @@
       }
     ],
     "name": "Panda Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/proxy",
+    "cost": {
+      "count": 20,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 54,
+            "name": "Rope"
+          },
+          {
+            "count": 127,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 835,
+            "name": "Wood"
+          },
+          {
+            "count": 12,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 418,
+            "name": "Fiber"
+          },
+          {
+            "count": 20,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 150,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Proxy License"
+          }
+        ]
+      }
+    ],
+    "name": "Proxy Walker Body",
+    "parent": "Steering Levers"
+  },
+  {
+    "category": "walkers/schmetterling",
+    "cost": {
+      "count": 50,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5177,
+            "name": "Wood"
+          },
+          {
+            "count": 225,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 88,
+            "name": "Rope"
+          },
+          {
+            "count": 1425,
+            "name": "Fiber"
+          },
+          {
+            "count": 5,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 7,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 450,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Schmetterling Walker Body",
+    "parent": "Buffalo Walker Body"
   },
   {
     "category": "walkers/schmetterling/upgrades/tier1",
@@ -7056,6 +7517,41 @@
     "name": "Spider Walker Upgrade - Torque - Tier 4"
   },
   {
+    "category": "walkers/stiletto",
+    "cost": {
+      "count": 30,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 895,
+            "name": "Wood"
+          },
+          {
+            "count": 25,
+            "name": "Rope"
+          },
+          {
+            "count": 276,
+            "name": "Fiber"
+          },
+          {
+            "count": 2,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 90,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Stiletto Walker Body",
+    "parent": "Steering Levers"
+  },
+  {
     "category": "walkers/stiletto/upgrades/tier2",
     "crafting": [
       {
@@ -7464,6 +7960,45 @@
       }
     ],
     "name": "Stiletto Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/titan",
+    "cost": {
+      "count": 100,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3030,
+            "name": "Wood"
+          },
+          {
+            "count": 625,
+            "name": "Fiber"
+          },
+          {
+            "count": 600,
+            "name": "Stone"
+          },
+          {
+            "count": 159,
+            "name": "Rope"
+          },
+          {
+            "count": 385,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 5,
+            "name": "Walker Mechanism"
+          }
+        ]
+      }
+    ],
+    "name": "Titan Walker Body",
+    "parent": "Buffalo Walker Body"
   },
   {
     "category": "walkers/titan/upgrades/tier1",
@@ -8006,6 +8541,45 @@
       }
     ],
     "name": "Titan Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/toboggan",
+    "cost": {
+      "count": 65,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1155,
+            "name": "Wood"
+          },
+          {
+            "count": 68,
+            "name": "Rope"
+          },
+          {
+            "count": 3,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 165,
+            "name": "Fiber"
+          },
+          {
+            "count": 4,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 180,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Toboggan Walker Body",
+    "parent": "Mollusk Walker Body"
   },
   {
     "category": "walkers/toboggan/upgrades/tier1",
@@ -8612,6 +9186,53 @@
     "parent": "Tool Pod"
   },
   {
+    "category": "walkers/tusker",
+    "cost": {
+      "count": 50,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2462,
+            "name": "Wood"
+          },
+          {
+            "count": 270,
+            "name": "Rope"
+          },
+          {
+            "count": 52,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 659,
+            "name": "Fiber"
+          },
+          {
+            "count": 500,
+            "name": "Stone"
+          },
+          {
+            "count": 8,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 5,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 5,
+            "name": "Walker Mechanism"
+          }
+        ]
+      }
+    ],
+    "name": "Tusker Walker Body",
+    "parent": "Toboggan Walker Body"
+  },
+  {
     "category": "walkers/tusker/upgrades/tier1",
     "crafting": [
       {
@@ -9154,6 +9775,49 @@
     "name": "Tusker Walker Upgrade - Torque - Tier 4"
   },
   {
+    "category": "walkers/silur",
+    "cost": {
+      "count": 4,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1615,
+            "name": "Wood"
+          },
+          {
+            "count": 950,
+            "name": "Fiber"
+          },
+          {
+            "count": 390,
+            "name": "Stone"
+          },
+          {
+            "count": 2,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 39,
+            "name": "Rope"
+          },
+          {
+            "count": 42,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 12,
+            "name": "Earth Wax"
+          }
+        ]
+      }
+    ],
+    "name": "Silur Walker Body",
+    "parent": "Balang Walker Body"
+  },
+  {
     "category": "walkers/silur/upgrades/tier2",
     "crafting": [
       {
@@ -9234,6 +9898,49 @@
       }
     ],
     "name": "Silur Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/hercul",
+    "cost": {
+      "count": 16,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1580,
+            "name": "Wood"
+          },
+          {
+            "count": 270,
+            "name": "Stone"
+          },
+          {
+            "count": 1200,
+            "name": "Fiber"
+          },
+          {
+            "count": 15,
+            "name": "Rope"
+          },
+          {
+            "count": 38,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 10,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 2,
+            "name": "Walker Mechanism"
+          }
+        ]
+      }
+    ],
+    "name": "Hercul Walker Body",
+    "parent": "Tool Pod"
   },
   {
     "category": "walkers/hercul/upgrades/tier2",
@@ -9318,6 +10025,41 @@
     "name": "Hercul Walker Upgrade - Torque - Tier 4"
   },
   {
+    "category": "walkers/balang",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 400,
+            "name": "Wood"
+          },
+          {
+            "count": 265,
+            "name": "Fiber"
+          },
+          {
+            "count": 22,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 10,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 85,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Balang Walker Body",
+    "parent": "Firefly Walker Body"
+  },
+  {
     "category": "walkers/balang/upgrades/tier2",
     "crafting": [
       {
@@ -9398,6 +10140,57 @@
       }
     ],
     "name": "Balang Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/raptor",
+    "cost": {
+      "count": 22,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 260,
+            "name": "Lightwood"
+          },
+          {
+            "count": 100,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 142,
+            "name": "Rope"
+          },
+          {
+            "count": 2,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 710,
+            "name": "Fiber"
+          },
+          {
+            "count": 80,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 100,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 200,
+            "name": "Wood"
+          },
+          {
+            "count": 240,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Raptor Sky Walker Body",
+    "parent": "Dinghy Walker Body"
   },
   {
     "category": "walkers/raptor/upgrades/tier2",
@@ -9823,68 +10616,6 @@
     ],
     "name": "Raptor Sky Walker Upgrade - Water - Tier 4",
     "parent": "Raptor Sky Walker Upgrade - Water - Tier 3"
-  },
-  {
-    "category": "buildings/construction/walker",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 370,
-            "name": "Wood"
-          },
-          {
-            "count": 27,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 10,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 25,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Small Base Walker Packer",
-    "parent": "Base Maintenance Chest"
-  },
-  {
-    "category": "buildings/construction/walker",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 6,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 60,
-            "name": "Rope"
-          },
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Large Base Walker Packer",
-    "parent": "Small Base Walker Packer"
   },
   {
     "category": "Furniture",

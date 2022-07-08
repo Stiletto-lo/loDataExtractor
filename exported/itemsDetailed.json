@@ -1104,7 +1104,7 @@
       "name": "Fragment"
     },
     "name": "Balang Walker Upgrade - Water - Tier 2",
-    "parent": "Balang Walker Body"
+    "parent": "Balang Walker"
   },
   {
     "cost": {
@@ -1123,7 +1123,7 @@
     "parent": "Balang Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Balang Walker Body",
+    "name": "Balang Walker",
     "parent": "Balang",
     "description": "Founder Walker type of the smallest size and least protection. Allows to pack and carry a base made of heavy solid materials.",
     "stackSize": 100
@@ -1134,7 +1134,7 @@
       "name": "Tablet"
     },
     "name": "Buffalo Walker Upgrade - Water - Tier 2",
-    "parent": "Buffalo Walker Body"
+    "parent": "Buffalo Walker"
   },
   {
     "cost": {
@@ -1153,7 +1153,7 @@
     "parent": "Buffalo Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Buffalo Walker Body",
+    "name": "Buffalo Walker",
     "parent": "Buffalo",
     "description": "Before the Flotilla grew too large and switched to manpower, hundreds of buffalo walkers were used to tow the Flotilla on days there was no breeze. Named after an ancient beast, the buffalo's wide frame, ample deck space, and good maneuverability make it suited for almost any task.",
     "stackSize": 100
@@ -1164,7 +1164,7 @@
       "name": "Tablet"
     },
     "name": "Camelop Walker Upgrade - Water - Tier 2",
-    "parent": "Camelop Walker Body"
+    "parent": "Camelop Walker"
   },
   {
     "cost": {
@@ -1188,7 +1188,7 @@
       "name": "Tablet"
     },
     "name": "Cobra Walker Upgrade - Water - Tier 2",
-    "parent": "Cobra Walker Body"
+    "parent": "Cobra Walker"
   },
   {
     "cost": {
@@ -1207,7 +1207,7 @@
     "parent": "Cobra Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Cobra Walker Body",
+    "name": "Cobra Walker",
     "parent": "Cobra",
     "description": "Mobile shooting tower operated automatically with wooden machinery that shoots enemy weapons nearby. Requires deployment to shoot, which blocks its steering.",
     "stackSize": 100
@@ -1218,7 +1218,13 @@
       "name": "Fragment"
     },
     "name": "Dinghy Walker Upgrade - Water - Tier 2",
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy Walker"
+  },
+  {
+    "name": "Dinghy Walker",
+    "parent": "Dinghy",
+    "description": "Before the nomadic Flotillans had become aware of the route they needed to take to circumnavigate the planet efficiently, many of them died in the process of locating safe passage. These crudely constructed wind-powered walkers were first devised as scouting vessels because of their cheap cost and the high likelihood that a Nomad would not return. This walker has ample deck space for two Nomads.",
+    "stackSize": 100
   },
   {
     "cost": {
@@ -1242,10 +1248,10 @@
       "name": "Tablet"
     },
     "name": "Domus Walker Upgrade - Water - Tier 2",
-    "parent": "Domus Walker Body"
+    "parent": "Domus Walker"
   },
   {
-    "name": "Domus Walker Body",
+    "name": "Domus Walker",
     "parent": "Domus",
     "description": "Heavily protected with strong walls all around, Domus Walkers are often used to safely transport large numbers of nomads. While slow and difficult to handle, they can withstand massive damages, ensuring structural integrity during battles and defending everything inside.",
     "stackSize": 100
@@ -1272,7 +1278,7 @@
       "name": "Tablet"
     },
     "name": "Falco Walker Upgrade - Water - Tier 2",
-    "parent": "Falco Walker Body"
+    "parent": "Falco Walker"
   },
   {
     "cost": {
@@ -1291,7 +1297,7 @@
     "parent": "Falco Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Falco Walker Body",
+    "name": "Falco Walker",
     "parent": "Falco",
     "description": "It's streamlined shape is built for speed, making it a favorite among pirates. It's elevated deck doesn't sport much space for large weapons, but it's height allows for easy boarding of other walkers. Dedicated rear-facing spots for Gun Pods make it easy to fire projectiles at pursuers.",
     "stackSize": 100
@@ -1302,7 +1308,7 @@
       "name": "Fragment"
     },
     "name": "Firefly Walker Upgrade - Water - Tier 2",
-    "parent": "Firefly Walker Body"
+    "parent": "Firefly Walker"
   },
   {
     "cost": {
@@ -1318,7 +1324,7 @@
       "name": "Tablet"
     },
     "name": "Hercul Walker Upgrade - Water - Tier 2",
-    "parent": "Hercul Walker Body"
+    "parent": "Hercul Walker"
   },
   {
     "cost": {
@@ -1337,7 +1343,7 @@
     "parent": "Hercul Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Hercul Walker Body",
+    "name": "Hercul Walker",
     "parent": "Hercul",
     "description": "Capable of producing mass quantities of torque by heating up water with lava, Hercul Walker is an essential tool for any Nomad requiring large amounts of power. Will generate torque over time while holding its water container above a lava lake.",
     "stackSize": 100
@@ -1348,7 +1354,7 @@
       "name": "Tablet"
     },
     "name": "Hornet Walker Upgrade - Water - Tier 2",
-    "parent": "Hornet Walker Body"
+    "parent": "Hornet Walker"
   },
   {
     "cost": {
@@ -1367,7 +1373,7 @@
     "parent": "Hornet Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Hornet Walker Body",
+    "name": "Hornet Walker",
     "parent": "Hornet",
     "description": "Devised by worm hunters who needed a sturdy walker with a low center of mass so they would not be toppled over, and a high top speed to outrun the giant beasts.",
     "stackSize": 100
@@ -1378,7 +1384,7 @@
       "name": "Fragment"
     },
     "name": "Mollusk Walker Upgrade - Water - Tier 2",
-    "parent": "Mollusk Walker Body"
+    "parent": "Mollusk Walker"
   },
   {
     "cost": {
@@ -1397,7 +1403,7 @@
     "parent": "Mollusk Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Mollusk Walker Body",
+    "name": "Mollusk Walker",
     "parent": "Mollusk",
     "description": "Small cabin of the walker provides protection to possessions and the driver. While walls may let a nomad live longer, obstructed view from inside the cabin could be a serious drawback in a battle. Has a decent deck and good movement capabilities.",
     "stackSize": 100
@@ -1408,10 +1414,10 @@
       "name": "Tablet"
     },
     "name": "Panda Walker Upgrade - Water - Tier 2",
-    "parent": "Panda Walker Body"
+    "parent": "Panda Walker"
   },
   {
-    "name": "Panda Walker Body",
+    "name": "Panda Walker",
     "parent": "Panda",
     "description": "Large walker carrier capable of storing up to 5 walkers of any size and hauling them, providing they're not too heavy. Limited deck size allows to build some weapons for protection.",
     "stackSize": 100
@@ -1438,7 +1444,7 @@
       "name": "Tablet"
     },
     "name": "Raptor Walker Upgrade - Water - Tier 2",
-    "parent": "Raptor Walker Body"
+    "parent": "Raptor Walker"
   },
   {
     "cost": {
@@ -1470,10 +1476,10 @@
       "name": "Tablet"
     },
     "name": "Schmetterling Walker Upgrade - Water - Tier 2",
-    "parent": "Schmetterling Walker Body"
+    "parent": "Schmetterling Walker"
   },
   {
-    "name": "Schmetterling Walker Body",
+    "name": "Schmetterling Walker",
     "parent": "Schmetterling",
     "description": "One of the oldest walker designs, the schmetterlings provided mobile homes that an entire family could live on while chasing after the temperate climate. A large cargo hold affords tons of cargo space, and a wide open deck provides enough room for nomads to stretch their legs and build freely. The heavy weight of the schmetterling makes it less maneuverable.",
     "stackSize": 100
@@ -1500,7 +1506,7 @@
       "name": "Tablet"
     },
     "name": "Silur Walker Upgrade - Water - Tier 2",
-    "parent": "Silur Walker Body"
+    "parent": "Silur Walker"
   },
   {
     "cost": {
@@ -1519,7 +1525,7 @@
     "parent": "Silur Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Silur Walker Body",
+    "name": "Silur Walker",
     "parent": "Silur",
     "description": "Founder Walker type of moderate size and protection. Allows to pack and carry a base made of heavy solid materials.",
     "stackSize": 100
@@ -1530,7 +1536,7 @@
       "name": "Fragment"
     },
     "name": "Spider Walker Upgrade - Water - Tier 2",
-    "parent": "Spider Walker Body"
+    "parent": "Spider Walker"
   },
   {
     "cost": {
@@ -1541,7 +1547,7 @@
     "parent": "Spider Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Spider Walker Body",
+    "name": "Spider Walker",
     "parent": "Nomad",
     "description": "A pedal-powered walker most nomads build to begin their journey on. Has an additional seat in the back with a built-in ballista!",
     "stackSize": 100
@@ -1552,7 +1558,7 @@
       "name": "Fragment"
     },
     "name": "Stiletto Walker Upgrade - Water - Tier 2",
-    "parent": "Stiletto Walker Body"
+    "parent": "Stiletto Walker"
   },
   {
     "cost": {
@@ -1571,7 +1577,7 @@
     "parent": "Stiletto Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Stiletto Walker Body",
+    "name": "Stiletto Walker",
     "parent": "Stiletto",
     "description": "Developed as the successor to the dinghy walker, the sleek stiletto walker is fast, has a short turn radius, and flaunts more deck space and a stronger hull than its predecessor. Ideal for nomads who prefer to travel alone or in small groups.",
     "stackSize": 100
@@ -1582,10 +1588,10 @@
       "name": "Tablet"
     },
     "name": "Titan Walker Upgrade - Water - Tier 2",
-    "parent": "Titan Walker Body"
+    "parent": "Titan Walker"
   },
   {
-    "name": "Titan Walker Body",
+    "name": "Titan Walker",
     "parent": "Titan",
     "description": "An iconic walker distinguished by tiered design and open, flat deck spaces. Dozens of large weapons can be stationed on it, but without a crew it's not very defensible.",
     "stackSize": 100
@@ -1612,10 +1618,10 @@
       "name": "Fragment"
     },
     "name": "Toboggan Walker Upgrade - Water - Tier 2",
-    "parent": "Toboggan Walker Body"
+    "parent": "Toboggan Walker"
   },
   {
-    "name": "Toboggan Walker Body",
+    "name": "Toboggan Walker",
     "parent": "Toboggan",
     "description": "The standard merchant's vessel built for outrunning pirates and getting the goods where they need to go. There's not much room for weapons, so this walker is usually accompanied by at least one battle-capable walker on its transport runs.",
     "stackSize": 100
@@ -1642,7 +1648,7 @@
       "name": "Tablet"
     },
     "name": "Tusker Walker Upgrade - Water - Tier 2",
-    "parent": "Tusker Walker Body"
+    "parent": "Tusker Walker"
   },
   {
     "cost": {
@@ -1661,7 +1667,7 @@
     "parent": "Tusker Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Tusker Walker Body",
+    "name": "Tusker Walker",
     "parent": "Tusker",
     "description": "Enough deck space for both large weapons and the crew needed to operate them. The tusker walker is a juggernaut when it comes to hauling space, and is primarily used by rich traders that need to transport tons of valuable goods. Slow and hard to maneuver, it's often escorted by swift combat walkers. Owners of tusker walkers rarely fail to get a return on their investment.",
     "stackSize": 100
@@ -8170,7 +8176,7 @@
     "weight": 0.2
   },
   {
-    "name": "Large Base Walker Packer Body",
+    "name": "Large Base Walker Packer",
     "description": "Allows to pack a single walker of any type. Requires a foundation of a base to support itself.",
     "stackSize": 100,
     "category": "Containers",
@@ -8200,14 +8206,14 @@
         ]
       }
     ],
-    "parent": "Small Base Walker Packer Body",
+    "parent": "Small Base Walker Packer",
     "structureInfo": {
       "type": "Medium",
       "hp": 21000
     }
   },
   {
-    "name": "Small Base Walker Packer Body",
+    "name": "Small Base Walker Packer",
     "description": "Allows to pack a single small walkers up to a Dinghy type. Requires a foundation of a base to support itself.",
     "stackSize": 100,
     "category": "Containers",
@@ -8307,37 +8313,6 @@
     "trade_price": 34.8,
     "experiencieReward": 45,
     "weight": 0.8
-  },
-  {
-    "category": "Furniture",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Wood"
-          },
-          {
-            "count": 2,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Rupu Gel"
-          }
-        ]
-      }
-    ],
-    "name": "Lamp Standing",
-    "parent": "ClanFlags",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 150
-    }
   },
   {
     "category": "Furniture",
@@ -10087,7 +10062,7 @@
       }
     ],
     "name": "Steering Levers",
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy"
   },
   {
     "category": "Lava",
@@ -11298,7 +11273,7 @@
     "stackSize": 100
   },
   {
-    "name": "Camelop  Walker Body",
+    "name": "Camelop  Walker",
     "description": "Being able to pump water and lava out of lakes, while storing large amounts of liquid, makes this walker an essential tool in various mass productions. Uses torque to move and while pumping.",
     "stackSize": 100
   },
@@ -11528,24 +11503,24 @@
     "weight": 0.5
   },
   {
-    "name": "Jojo Mojo",
-    "description": "A swirling mixture that makes a Nomad burst into song and dance. Negates all falling damage taken by Nomad.",
+    "name": "Race Dust",
+    "description": "Makes a Nomad want to race other Nomads. Allows Nomad to sprint without losing stamina.",
     "stackSize": 100,
     "category": "Drugs",
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 14,
+            "count": 22,
+            "name": "Purified Water"
+          },
+          {
+            "count": 75,
             "name": "Mushroom Flesh"
           },
           {
-            "count": 4,
-            "name": "Earth Wax"
+            "count": 2,
+            "name": "Beeswax"
           },
           {
             "count": 1,
@@ -11556,8 +11531,7 @@
         "time": 60
       }
     ],
-    "parent": "Fury Fumes",
-    "trade_price": 9,
+    "trade_price": 99.8,
     "experiencieReward": 246,
     "weight": 0.5
   },
@@ -11704,35 +11678,6 @@
     "stackSize": 100
   },
   {
-    "name": "Dinghy Walker Body",
-    "description": "Before the nomadic Flotillans had become aware of the route they needed to take to circumnavigate the planet efficiently, many of them died in the process of locating safe passage. These crudely constructed wind-powered walkers were first devised as scouting vessels because of their cheap cost and the high likelihood that a Nomad would not return. This walker has ample deck space for two Nomads.",
-    "stackSize": 100,
-    "category": "Walkers",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 2,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "parent": "Firefly Walker Body",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 3800
-    }
-  },
-  {
     "name": "Advanced Fiberworking Station",
     "description": "Advanced crafting station manufactures fabrics more efficiently.",
     "stackSize": 100
@@ -11758,24 +11703,24 @@
     "stackSize": 100
   },
   {
-    "name": "Race Dust",
-    "description": "Makes a Nomad want to race other Nomads. Allows Nomad to sprint without losing stamina.",
+    "name": "Jojo Mojo",
+    "description": "A swirling mixture that makes a Nomad burst into song and dance. Negates all falling damage taken by Nomad.",
     "stackSize": 100,
     "category": "Drugs",
+    "cost": {
+      "count": 35,
+      "name": "Fragment"
+    },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 22,
-            "name": "Purified Water"
-          },
-          {
-            "count": 75,
+            "count": 14,
             "name": "Mushroom Flesh"
           },
           {
-            "count": 2,
-            "name": "Beeswax"
+            "count": 4,
+            "name": "Earth Wax"
           },
           {
             "count": 1,
@@ -11786,7 +11731,8 @@
         "time": 60
       }
     ],
-    "trade_price": 99.8,
+    "parent": "Fury Fumes",
+    "trade_price": 9,
     "experiencieReward": 246,
     "weight": 0.5
   },
@@ -11958,7 +11904,7 @@
     }
   },
   {
-    "name": "Nomad Walker Body",
+    "name": "Nomad Walker",
     "description": "A pedal-powered walker used by nomads for short range transportation. Boasts a spacious inventory and can pack up to three individual structures.",
     "stackSize": 100
   },
@@ -11973,12 +11919,12 @@
     "stackSize": 100
   },
   {
-    "name": "Proxy Walker Body",
+    "name": "Proxy Walker",
     "description": "The proxy walker is designed to establish a protectorate over an oasis by deploying into an unmovable claim, provided that its owner possesses an official proxy license from the Flotilla. Can only be deployed while an oasis is unclaimed or contested and only becomes the claimant after no other deployed proxy walkers are left standing.",
     "stackSize": 100
   },
   {
-    "name": "Raptor Sky Walker Body",
+    "name": "Raptor Sky Walker",
     "description": "Using a technology discovered during an expedition to a city in the sky, the Raptor Sky Walker is the first of its kind created by Nomads. Allows to soar in the sky like a leaf on the wind using torque for flapping its wings.",
     "stackSize": 100
   },
@@ -12022,6 +11968,24 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
+    }
+  },
+  {
+    "name": "Hangar Wall",
+    "stackSize": 100,
+    "category": "StructuralWoodMedium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "structureInfo": {
+      "hp": 100
     }
   },
   {
@@ -12147,24 +12111,6 @@
     "stackSize": 100
   },
   {
-    "name": "Hangar Wall",
-    "stackSize": 100,
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "structureInfo": {
-      "hp": 100
-    }
-  },
-  {
     "name": "Steering Levers Cage",
     "description": "Sturdy contraption made of strong wood and tight ropes, allowing Nomads to place it around Walker Steering Levers to protect their driver.",
     "stackSize": 100,
@@ -12195,6 +12141,39 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 15000
+    }
+  },
+  {
+    "name": "Tool Pod",
+    "description": "A rotating pod made to attach below walker decks. Houses a single tool, like a saw blade.",
+    "stackSize": 100,
+    "category": "WalkerTools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 400,
+            "name": "Wood"
+          },
+          {
+            "count": 35,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 30,
+            "name": "Rope"
+          },
+          {
+            "count": 4,
+            "name": "Iron Ore"
+          }
+        ]
+      }
+    ],
+    "parent": "Steering Levers",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 5000
     }
   },
   {
@@ -12243,39 +12222,6 @@
     "name": "Tall Stinger",
     "description": "A Small Ballista placed on a raised arm that lets the driver get better firing angles.",
     "stackSize": 100
-  },
-  {
-    "name": "Tool Pod",
-    "description": "A rotating pod made to attach below walker decks. Houses a single tool, like a saw blade.",
-    "stackSize": 100,
-    "category": "WalkerTools",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 400,
-            "name": "Wood"
-          },
-          {
-            "count": 35,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 30,
-            "name": "Rope"
-          },
-          {
-            "count": 4,
-            "name": "Iron Ore"
-          }
-        ]
-      }
-    ],
-    "parent": "Steering Levers",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 5000
-    }
   },
   {
     "name": "Bomb Chest Trap",
@@ -12390,7 +12336,7 @@
         ]
       }
     ],
-    "parent": "Dinghy Walker Body",
+    "parent": "Dinghy",
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
@@ -13690,6 +13636,37 @@
     ],
     "name": "Lamp Double Hanging",
     "parent": "Lamp Standing",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 150
+    }
+  },
+  {
+    "category": "Furniture",
+    "cost": {
+      "count": 40,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Rupu Gel"
+          }
+        ]
+      }
+    ],
+    "name": "Lamp Standing",
+    "parent": "ClanFlags",
     "structureInfo": {
       "type": "Soft",
       "hp": 150
@@ -16293,7 +16270,7 @@
   {
     "category": "WalkerParts",
     "name": "Balang Walker Legs (1 of 2)",
-    "parent": "Balang Walker Body",
+    "parent": "Balang",
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
@@ -16302,7 +16279,7 @@
   {
     "category": "WalkerParts",
     "name": "Balang Walker Wings (1 of 2)",
-    "parent": "Balang Walker Body",
+    "parent": "Balang",
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
@@ -16376,7 +16353,7 @@
   {
     "category": "WalkerParts",
     "name": "Buffalo Walker Legs (1 of 2)",
-    "parent": "Buffalo Walker Body",
+    "parent": "Buffalo",
     "structureInfo": {
       "type": "Medium",
       "hp": 7000
@@ -16411,7 +16388,7 @@
   {
     "category": "WalkerParts",
     "name": "Buffalo Walker Wings (1 of 2)",
-    "parent": "Buffalo Walker Body",
+    "parent": "Buffalo",
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
@@ -16507,7 +16484,7 @@
   {
     "category": "WalkerParts",
     "name": "Camelop Walker Legs (1 of 2)",
-    "parent": "Camelop Walker Body",
+    "parent": "Camelop",
     "structureInfo": {
       "type": "Medium",
       "hp": 7000
@@ -16516,7 +16493,7 @@
   {
     "category": "WalkerParts",
     "name": "Cobra Walker Legs (1 of 2)",
-    "parent": "Cobra Walker Body",
+    "parent": "Cobra",
     "structureInfo": {
       "type": "Medium",
       "hp": 7000
@@ -16525,7 +16502,7 @@
   {
     "category": "WalkerParts",
     "name": "Dinghy Walker Legs (1 of 2)",
-    "parent": "Dinghy Walker Body",
+    "parent": "Dinghy",
     "structureInfo": {
       "type": "Soft",
       "hp": 1900
@@ -16550,7 +16527,7 @@
   {
     "category": "WalkerParts",
     "name": "Dinghy Walker Wings (1 of 2)",
-    "parent": "Dinghy Walker Body",
+    "parent": "Dinghy",
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
@@ -16588,7 +16565,7 @@
   {
     "category": "WalkerParts",
     "name": "Domus Walker Legs (1 of 2)",
-    "parent": "Domus Walker Body",
+    "parent": "Domus",
     "structureInfo": {
       "type": "Medium",
       "hp": 20000
@@ -16623,7 +16600,7 @@
   {
     "category": "WalkerParts",
     "name": "Domus Walker Wings (1 of 2)",
-    "parent": "Domus Walker Body",
+    "parent": "Domus",
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
@@ -16723,7 +16700,7 @@
   {
     "category": "WalkerParts",
     "name": "Falco Walker Legs (1 of 2)",
-    "parent": "Falco Walker Body",
+    "parent": "Falco",
     "structureInfo": {
       "type": "Medium",
       "hp": 11000
@@ -16758,7 +16735,7 @@
   {
     "category": "WalkerParts",
     "name": "Falco Walker Wings (1 of 2)",
-    "parent": "Falco Walker Body",
+    "parent": "Falco",
     "structureInfo": {
       "type": "Soft",
       "hp": 4000
@@ -16858,7 +16835,7 @@
   {
     "category": "WalkerParts",
     "name": "Firefly Walker Legs (1 of 2)",
-    "parent": "Firefly Walker Body",
+    "parent": "Firefly",
     "structureInfo": {
       "type": "Soft",
       "hp": 950
@@ -16880,7 +16857,7 @@
   {
     "category": "WalkerParts",
     "name": "Hercul Walker Legs (1 of 2)",
-    "parent": "Hercul Walker Body",
+    "parent": "Hercul",
     "structureInfo": {
       "type": "Medium",
       "hp": 7000
@@ -16910,7 +16887,7 @@
   {
     "category": "WalkerParts",
     "name": "Hercul Walker Wings (1 of 2)",
-    "parent": "Hercul Walker Body",
+    "parent": "Hercul",
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
@@ -17005,7 +16982,7 @@
   {
     "category": "WalkerParts",
     "name": "Hornet Walker Legs (1 of 2)",
-    "parent": "Hornet Walker Body",
+    "parent": "Hornet",
     "structureInfo": {
       "type": "Medium",
       "hp": 10000
@@ -17040,7 +17017,7 @@
   {
     "category": "WalkerParts",
     "name": "Hornet Walker Wings (1 of 2)",
-    "parent": "Hornet Walker Body",
+    "parent": "Hornet",
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
@@ -17140,7 +17117,7 @@
   {
     "category": "WalkerParts",
     "name": "Mollusk Walker Legs (1 of 2)",
-    "parent": "Mollusk Walker Body",
+    "parent": "Mollusk",
     "structureInfo": {
       "type": "Soft",
       "hp": 3500
@@ -17158,7 +17135,7 @@
   {
     "category": "WalkerParts",
     "name": "Mollusk Walker Wings (1 of 2)",
-    "parent": "Mollusk Walker Body",
+    "parent": "Mollusk",
     "structureInfo": {
       "type": "Soft",
       "hp": 2000
@@ -17241,7 +17218,7 @@
   {
     "category": "WalkerParts",
     "name": "Panda Walker Legs (1 of 2)",
-    "parent": "Panda Walker Body",
+    "parent": "Panda",
     "structureInfo": {
       "type": "Medium",
       "hp": 18000
@@ -17276,7 +17253,7 @@
   {
     "category": "WalkerParts",
     "name": "Panda Walker Wings (1 of 2)",
-    "parent": "Panda Walker Body",
+    "parent": "Panda",
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
@@ -17376,7 +17353,7 @@
   {
     "category": "WalkerParts",
     "name": "Proxy Walker Legs (1 of 2)",
-    "parent": "Proxy Walker Body",
+    "parent": "Proxy",
     "structureInfo": {
       "type": "Medium",
       "hp": 10000
@@ -17407,7 +17384,7 @@
   {
     "category": "WalkerParts",
     "name": "Raptor Walker Legs (1 of 2)",
-    "parent": "Raptor Walker Body",
+    "parent": "Raptor",
     "structureInfo": {
       "type": "Medium",
       "hp": 5000
@@ -17416,7 +17393,7 @@
   {
     "category": "WalkerParts",
     "name": "Raptor Walker Wings (1 of 2)",
-    "parent": "Raptor Walker Body",
+    "parent": "Raptor",
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
@@ -17425,7 +17402,7 @@
   {
     "category": "WalkerParts",
     "name": "Schmetterling Walker Legs (1 of 2)",
-    "parent": "Schmetterling Walker Body",
+    "parent": "Schmetterling",
     "structureInfo": {
       "type": "Medium",
       "hp": 18000
@@ -17460,7 +17437,7 @@
   {
     "category": "WalkerParts",
     "name": "Schmetterling Walker Wings (1 of 2)",
-    "parent": "Schmetterling Walker Body",
+    "parent": "Schmetterling",
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
@@ -17560,7 +17537,7 @@
   {
     "category": "WalkerParts",
     "name": "Silur Walker Legs (1 of 2)",
-    "parent": "Silur Walker Body",
+    "parent": "Silur",
     "structureInfo": {
       "type": "Medium",
       "hp": 16500
@@ -17595,7 +17572,7 @@
   {
     "category": "WalkerParts",
     "name": "Spider Walker Legs (1 of 2)",
-    "parent": "Nomad Walker Body",
+    "parent": "Nomad",
     "structureInfo": {
       "type": "Soft",
       "hp": 900
@@ -17617,7 +17594,7 @@
   {
     "category": "WalkerParts",
     "name": "Stiletto Walker Legs (1 of 2)",
-    "parent": "Stiletto Walker Body",
+    "parent": "Stiletto",
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
@@ -17635,7 +17612,7 @@
   {
     "category": "WalkerParts",
     "name": "Stiletto Walker Wings (1 of 2)",
-    "parent": "Stiletto Walker Body",
+    "parent": "Stiletto",
     "structureInfo": {
       "type": "Soft",
       "hp": 2000
@@ -17718,7 +17695,7 @@
   {
     "category": "WalkerParts",
     "name": "Titan Walker Legs (1 of 2)",
-    "parent": "Titan Walker Body",
+    "parent": "Titan",
     "structureInfo": {
       "type": "Medium",
       "hp": 18000
@@ -17753,7 +17730,7 @@
   {
     "category": "WalkerParts",
     "name": "Titan Walker Wings (1 of 2)",
-    "parent": "Titan Walker Body",
+    "parent": "Titan",
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
@@ -17853,7 +17830,7 @@
   {
     "category": "WalkerParts",
     "name": "Toboggan Walker Legs (1 of 2)",
-    "parent": "Toboggan Walker Body",
+    "parent": "Toboggan",
     "structureInfo": {
       "type": "Medium",
       "hp": 8000
@@ -17884,7 +17861,7 @@
   {
     "category": "WalkerParts",
     "name": "Toboggan Walker Wings (1 of 2)",
-    "parent": "Toboggan Walker Body",
+    "parent": "Toboggan",
     "structureInfo": {
       "type": "Soft",
       "hp": 3500
@@ -17980,7 +17957,7 @@
   {
     "category": "WalkerParts",
     "name": "Tusker Walker Legs (1 of 2)",
-    "parent": "Tusker Walker Body",
+    "parent": "Tusker",
     "structureInfo": {
       "type": "Medium",
       "hp": 15000
@@ -18015,7 +17992,7 @@
   {
     "category": "WalkerParts",
     "name": "Tusker Walker Wings (1 of 2)",
-    "parent": "Tusker Walker Body",
+    "parent": "Tusker",
     "structureInfo": {
       "type": "Soft",
       "hp": 3500
@@ -18192,7 +18169,7 @@
       }
     ],
     "name": "Balang",
-    "parent": "Firefly Walker Body",
+    "parent": "Firefly",
     "structureInfo": {
       "type": "Soft",
       "hp": 8000
@@ -18308,6 +18285,33 @@
   {
     "category": "Walkers",
     "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "name": "Dinghy",
+    "parent": "Firefly",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 3800
+    }
+  },
+  {
+    "category": "Walkers",
+    "cost": {
       "count": 50,
       "name": "Tablet"
     },
@@ -18383,7 +18387,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Body",
+    "name": "Firefly",
     "parent": "Walkers",
     "structureInfo": {
       "type": "Soft",
@@ -18496,7 +18500,7 @@
       }
     ],
     "name": "Nomad",
-    "parent": "Dinghy Walker Body",
+    "parent": "Dinghy",
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
@@ -18573,7 +18577,7 @@
       }
     ],
     "name": "Raptor",
-    "parent": "Dinghy Walker Body",
+    "parent": "Dinghy",
     "structureInfo": {
       "type": "Soft",
       "hp": 14000

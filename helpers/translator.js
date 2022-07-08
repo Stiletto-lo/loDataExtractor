@@ -67,8 +67,8 @@ controller.initownTranslations = () => {
   allTranslations["Stomping"] = "Stomping Station";
   allTranslations["Woodworking"] = "Woodworking Station";
 
-  allTranslations["Dinghy"] = "Dinghy Walker Body";
-  allTranslations["Firefly"] = "Firefly Walker Body";
+  allTranslations["Dinghy"] = "Dinghy";
+  allTranslations["Firefly"] = "Firefly";
 
   allTranslations["Ballista_T3"] = "Ballista - Tier 3";
   allTranslations["Ballista_T2"] = "Ballista - Tier 2";
@@ -99,13 +99,6 @@ controller.translateItems = (allItems) => {
       !name.includes("(1 of 2)")
     ) {
       name = name + " (1 of 2)";
-    } else if (
-      /(.+) Walker/.test(name) &&
-      !name.includes("(1 of 2)") &&
-      !name.includes("Tier") &&
-      !name.includes("Body")
-    ) {
-      name = name + " Body";
     }
 
     item.name = name.trim();

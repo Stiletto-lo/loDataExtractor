@@ -119,7 +119,6 @@ allItems = translator.translateItems(allItems);
 allItems = translator.addDescriptions(allItems);
 
 allItems.forEach((item) => {
-  item = fixParentItem(item);
   Object.keys(item).forEach((key) => {
     if (item[key] === undefined) {
       delete item[key];
@@ -699,8 +698,6 @@ function parseName(name) {
       }
       name = walkerName + " Legs " + legType + "(1 of 2)";
     }
-  } else if (/(.+) Walker/.test(name) && !name.includes("Body")) {
-    name = name + " Body";
   } else if (/(.+)Wings/.test(name)) {
     let match = name.match(/(.+)Wings/);
     if (match[1] != null) {
@@ -765,24 +762,10 @@ function parseName(name) {
       let match = name.match(/(.+)WoodUpgrades/);
       if (match[1] != null) {
         let walkerName = translator.translateName(match[1] + " Walker");
-        name = walkerName + " Body";
+        name = walkerName;
       }
     }
   }
 
   return name.trim();
-}
-
-function fixParentItem(item) {
-  if (
-    item.category &&
-    item.category.includes("WalkerParts") &&
-    item.parent &&
-    !item.parent.includes("Body") &&
-    !item.parent.includes("Legs") &&
-    !item.parent.includes("Wings")
-  ) {
-    item.parent = item.parent + " Walker Body";
-  }
-  return item;
 }

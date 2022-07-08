@@ -804,7 +804,7 @@
       "name": "Fragment"
     },
     "name": "Balang Walker Upgrade - Water - Tier 2",
-    "parent": "Balang Walker Body"
+    "parent": "Balang Walker"
   },
   {
     "cost": {
@@ -823,7 +823,7 @@
     "parent": "Balang Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Balang Walker Body",
+    "name": "Balang Walker",
     "parent": "Balang"
   },
   {
@@ -832,7 +832,7 @@
       "name": "Tablet"
     },
     "name": "Buffalo Walker Upgrade - Water - Tier 2",
-    "parent": "Buffalo Walker Body"
+    "parent": "Buffalo Walker"
   },
   {
     "cost": {
@@ -851,7 +851,7 @@
     "parent": "Buffalo Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Buffalo Walker Body",
+    "name": "Buffalo Walker",
     "parent": "Buffalo"
   },
   {
@@ -860,7 +860,7 @@
       "name": "Tablet"
     },
     "name": "Camelop Walker Upgrade - Water - Tier 2",
-    "parent": "Camelop Walker Body"
+    "parent": "Camelop Walker"
   },
   {
     "cost": {
@@ -884,7 +884,7 @@
       "name": "Tablet"
     },
     "name": "Cobra Walker Upgrade - Water - Tier 2",
-    "parent": "Cobra Walker Body"
+    "parent": "Cobra Walker"
   },
   {
     "cost": {
@@ -903,7 +903,7 @@
     "parent": "Cobra Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Cobra Walker Body",
+    "name": "Cobra Walker",
     "parent": "Cobra"
   },
   {
@@ -912,7 +912,11 @@
       "name": "Fragment"
     },
     "name": "Dinghy Walker Upgrade - Water - Tier 2",
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy Walker"
+  },
+  {
+    "name": "Dinghy Walker",
+    "parent": "Dinghy"
   },
   {
     "cost": {
@@ -936,10 +940,10 @@
       "name": "Tablet"
     },
     "name": "Domus Walker Upgrade - Water - Tier 2",
-    "parent": "Domus Walker Body"
+    "parent": "Domus Walker"
   },
   {
-    "name": "Domus Walker Body",
+    "name": "Domus Walker",
     "parent": "Domus"
   },
   {
@@ -964,7 +968,7 @@
       "name": "Tablet"
     },
     "name": "Falco Walker Upgrade - Water - Tier 2",
-    "parent": "Falco Walker Body"
+    "parent": "Falco Walker"
   },
   {
     "cost": {
@@ -983,7 +987,7 @@
     "parent": "Falco Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Falco Walker Body",
+    "name": "Falco Walker",
     "parent": "Falco"
   },
   {
@@ -992,7 +996,7 @@
       "name": "Fragment"
     },
     "name": "Firefly Walker Upgrade - Water - Tier 2",
-    "parent": "Firefly Walker Body"
+    "parent": "Firefly Walker"
   },
   {
     "cost": {
@@ -1008,7 +1012,7 @@
       "name": "Tablet"
     },
     "name": "Hercul Walker Upgrade - Water - Tier 2",
-    "parent": "Hercul Walker Body"
+    "parent": "Hercul Walker"
   },
   {
     "cost": {
@@ -1027,7 +1031,7 @@
     "parent": "Hercul Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Hercul Walker Body",
+    "name": "Hercul Walker",
     "parent": "Hercul"
   },
   {
@@ -1036,7 +1040,7 @@
       "name": "Tablet"
     },
     "name": "Hornet Walker Upgrade - Water - Tier 2",
-    "parent": "Hornet Walker Body"
+    "parent": "Hornet Walker"
   },
   {
     "cost": {
@@ -1055,7 +1059,7 @@
     "parent": "Hornet Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Hornet Walker Body",
+    "name": "Hornet Walker",
     "parent": "Hornet"
   },
   {
@@ -1064,7 +1068,7 @@
       "name": "Fragment"
     },
     "name": "Mollusk Walker Upgrade - Water - Tier 2",
-    "parent": "Mollusk Walker Body"
+    "parent": "Mollusk Walker"
   },
   {
     "cost": {
@@ -1083,7 +1087,7 @@
     "parent": "Mollusk Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Mollusk Walker Body",
+    "name": "Mollusk Walker",
     "parent": "Mollusk"
   },
   {
@@ -1092,10 +1096,10 @@
       "name": "Tablet"
     },
     "name": "Panda Walker Upgrade - Water - Tier 2",
-    "parent": "Panda Walker Body"
+    "parent": "Panda Walker"
   },
   {
-    "name": "Panda Walker Body",
+    "name": "Panda Walker",
     "parent": "Panda"
   },
   {
@@ -1120,7 +1124,7 @@
       "name": "Tablet"
     },
     "name": "Raptor Walker Upgrade - Water - Tier 2",
-    "parent": "Raptor Walker Body"
+    "parent": "Raptor Walker"
   },
   {
     "cost": {
@@ -1152,10 +1156,10 @@
       "name": "Tablet"
     },
     "name": "Schmetterling Walker Upgrade - Water - Tier 2",
-    "parent": "Schmetterling Walker Body"
+    "parent": "Schmetterling Walker"
   },
   {
-    "name": "Schmetterling Walker Body",
+    "name": "Schmetterling Walker",
     "parent": "Schmetterling"
   },
   {
@@ -1180,7 +1184,7 @@
       "name": "Tablet"
     },
     "name": "Silur Walker Upgrade - Water - Tier 2",
-    "parent": "Silur Walker Body"
+    "parent": "Silur Walker"
   },
   {
     "cost": {
@@ -1199,7 +1203,7 @@
     "parent": "Silur Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Silur Walker Body",
+    "name": "Silur Walker",
     "parent": "Silur"
   },
   {
@@ -1208,7 +1212,7 @@
       "name": "Fragment"
     },
     "name": "Spider Walker Upgrade - Water - Tier 2",
-    "parent": "Spider Walker Body"
+    "parent": "Spider Walker"
   },
   {
     "cost": {
@@ -1219,7 +1223,7 @@
     "parent": "Spider Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Spider Walker Body",
+    "name": "Spider Walker",
     "parent": "Nomad"
   },
   {
@@ -1228,7 +1232,7 @@
       "name": "Fragment"
     },
     "name": "Stiletto Walker Upgrade - Water - Tier 2",
-    "parent": "Stiletto Walker Body"
+    "parent": "Stiletto Walker"
   },
   {
     "cost": {
@@ -1247,7 +1251,7 @@
     "parent": "Stiletto Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Stiletto Walker Body",
+    "name": "Stiletto Walker",
     "parent": "Stiletto"
   },
   {
@@ -1256,10 +1260,10 @@
       "name": "Tablet"
     },
     "name": "Titan Walker Upgrade - Water - Tier 2",
-    "parent": "Titan Walker Body"
+    "parent": "Titan Walker"
   },
   {
-    "name": "Titan Walker Body",
+    "name": "Titan Walker",
     "parent": "Titan"
   },
   {
@@ -1284,10 +1288,10 @@
       "name": "Fragment"
     },
     "name": "Toboggan Walker Upgrade - Water - Tier 2",
-    "parent": "Toboggan Walker Body"
+    "parent": "Toboggan Walker"
   },
   {
-    "name": "Toboggan Walker Body",
+    "name": "Toboggan Walker",
     "parent": "Toboggan"
   },
   {
@@ -1312,7 +1316,7 @@
       "name": "Tablet"
     },
     "name": "Tusker Walker Upgrade - Water - Tier 2",
-    "parent": "Tusker Walker Body"
+    "parent": "Tusker Walker"
   },
   {
     "cost": {
@@ -1331,7 +1335,7 @@
     "parent": "Tusker Walker Upgrade - Water - Tier 3"
   },
   {
-    "name": "Tusker Walker Body",
+    "name": "Tusker Walker",
     "parent": "Tusker"
   },
   {
@@ -5996,7 +6000,7 @@
     "trade_price": 1
   },
   {
-    "name": "Large Base Walker Packer Body",
+    "name": "Large Base Walker Packer",
     "category": "Containers",
     "cost": {
       "count": 5,
@@ -6024,10 +6028,10 @@
         ]
       }
     ],
-    "parent": "Small Base Walker Packer Body"
+    "parent": "Small Base Walker Packer"
   },
   {
-    "name": "Small Base Walker Packer Body",
+    "name": "Small Base Walker Packer",
     "category": "Containers",
     "cost": {
       "count": 25,
@@ -6113,33 +6117,6 @@
     ],
     "parent": "Vitamins",
     "trade_price": 34.8
-  },
-  {
-    "category": "Furniture",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Wood"
-          },
-          {
-            "count": 2,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Rupu Gel"
-          }
-        ]
-      }
-    ],
-    "name": "Lamp Standing",
-    "parent": "ClanFlags"
   },
   {
     "category": "Furniture",
@@ -7603,7 +7580,7 @@
       }
     ],
     "name": "Steering Levers",
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy"
   },
   {
     "category": "Lava",
@@ -8609,7 +8586,7 @@
     "name": "Hammock"
   },
   {
-    "name": "Camelop  Walker Body"
+    "name": "Camelop  Walker"
   },
   {
     "name": "Ammo Chest"
@@ -8797,22 +8774,22 @@
     "trade_price": 39.4
   },
   {
-    "name": "Jojo Mojo",
+    "name": "Race Dust",
     "category": "Drugs",
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 14,
+            "count": 22,
+            "name": "Purified Water"
+          },
+          {
+            "count": 75,
             "name": "Mushroom Flesh"
           },
           {
-            "count": 4,
-            "name": "Earth Wax"
+            "count": 2,
+            "name": "Beeswax"
           },
           {
             "count": 1,
@@ -8823,8 +8800,7 @@
         "time": 60
       }
     ],
-    "parent": "Fury Fumes",
-    "trade_price": 9
+    "trade_price": 99.8
   },
   {
     "name": "Rupu Repellent",
@@ -8951,29 +8927,6 @@
     "name": "Rig T3"
   },
   {
-    "name": "Dinghy Walker Body",
-    "category": "Walkers",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 2,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "parent": "Firefly Walker Body"
-  },
-  {
     "name": "Advanced Fiberworking Station"
   },
   {
@@ -8989,22 +8942,22 @@
     "name": "Gunpod Stinger"
   },
   {
-    "name": "Race Dust",
+    "name": "Jojo Mojo",
     "category": "Drugs",
+    "cost": {
+      "count": 35,
+      "name": "Fragment"
+    },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 22,
-            "name": "Purified Water"
-          },
-          {
-            "count": 75,
+            "count": 14,
             "name": "Mushroom Flesh"
           },
           {
-            "count": 2,
-            "name": "Beeswax"
+            "count": 4,
+            "name": "Earth Wax"
           },
           {
             "count": 1,
@@ -9015,7 +8968,8 @@
         "time": 60
       }
     ],
-    "trade_price": 99.8
+    "parent": "Fury Fumes",
+    "trade_price": 9
   },
   {
     "name": "Poaching Hut",
@@ -9160,7 +9114,7 @@
     "parent": "Ballista"
   },
   {
-    "name": "Nomad Walker Body"
+    "name": "Nomad Walker"
   },
   {
     "name": "Obsidian Canister"
@@ -9169,10 +9123,10 @@
     "name": "Obsidian Pot"
   },
   {
-    "name": "Proxy Walker Body"
+    "name": "Proxy Walker"
   },
   {
-    "name": "Raptor Sky Walker Body"
+    "name": "Raptor Sky Walker"
   },
   {
     "name": "Repair Station"
@@ -9207,6 +9161,20 @@
       }
     ],
     "parent": "SoilExcavator"
+  },
+  {
+    "name": "Hangar Wall",
+    "category": "StructuralWoodMedium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Sawblade",
@@ -9311,20 +9279,6 @@
     "name": "Soil Excavator"
   },
   {
-    "name": "Hangar Wall",
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "name": "Steering Levers Cage",
     "category": "WalkerTools",
     "crafting": [
@@ -9350,6 +9304,33 @@
       }
     ],
     "parent": "Stinger_T3"
+  },
+  {
+    "name": "Tool Pod",
+    "category": "WalkerTools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 400,
+            "name": "Wood"
+          },
+          {
+            "count": 35,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 30,
+            "name": "Rope"
+          },
+          {
+            "count": 4,
+            "name": "Iron Ore"
+          }
+        ]
+      }
+    ],
+    "parent": "Steering Levers"
   },
   {
     "name": "Stinger",
@@ -9387,33 +9368,6 @@
   },
   {
     "name": "Tall Stinger"
-  },
-  {
-    "name": "Tool Pod",
-    "category": "WalkerTools",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 400,
-            "name": "Wood"
-          },
-          {
-            "count": 35,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 30,
-            "name": "Rope"
-          },
-          {
-            "count": 4,
-            "name": "Iron Ore"
-          }
-        ]
-      }
-    ],
-    "parent": "Steering Levers"
   },
   {
     "name": "Bomb Chest Trap"
@@ -9506,7 +9460,7 @@
         ]
       }
     ],
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy"
   },
   {
     "name": "Raptor Sky Walker Legs (1 of 2)"
@@ -10621,6 +10575,33 @@
     ],
     "name": "Lamp Double Hanging",
     "parent": "Lamp Standing"
+  },
+  {
+    "category": "Furniture",
+    "cost": {
+      "count": 40,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Rupu Gel"
+          }
+        ]
+      }
+    ],
+    "name": "Lamp Standing",
+    "parent": "ClanFlags"
   },
   {
     "category": "Interactables",
@@ -12761,12 +12742,12 @@
   {
     "category": "WalkerParts",
     "name": "Balang Walker Legs (1 of 2)",
-    "parent": "Balang Walker Body"
+    "parent": "Balang"
   },
   {
     "category": "WalkerParts",
     "name": "Balang Walker Wings (1 of 2)",
-    "parent": "Balang Walker Body"
+    "parent": "Balang"
   },
   {
     "category": "WalkerParts",
@@ -12808,7 +12789,7 @@
   {
     "category": "WalkerParts",
     "name": "Buffalo Walker Legs (1 of 2)",
-    "parent": "Buffalo Walker Body"
+    "parent": "Buffalo"
   },
   {
     "category": "WalkerParts",
@@ -12831,7 +12812,7 @@
   {
     "category": "WalkerParts",
     "name": "Buffalo Walker Wings (1 of 2)",
-    "parent": "Buffalo Walker Body"
+    "parent": "Buffalo"
   },
   {
     "category": "WalkerParts",
@@ -12895,17 +12876,17 @@
   {
     "category": "WalkerParts",
     "name": "Camelop Walker Legs (1 of 2)",
-    "parent": "Camelop Walker Body"
+    "parent": "Camelop"
   },
   {
     "category": "WalkerParts",
     "name": "Cobra Walker Legs (1 of 2)",
-    "parent": "Cobra Walker Body"
+    "parent": "Cobra"
   },
   {
     "category": "WalkerParts",
     "name": "Dinghy Walker Legs (1 of 2)",
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy"
   },
   {
     "category": "WalkerParts",
@@ -12918,7 +12899,7 @@
   {
     "category": "WalkerParts",
     "name": "Dinghy Walker Wings (1 of 2)",
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy"
   },
   {
     "category": "WalkerParts",
@@ -12940,7 +12921,7 @@
   {
     "category": "WalkerParts",
     "name": "Domus Walker Legs (1 of 2)",
-    "parent": "Domus Walker Body"
+    "parent": "Domus"
   },
   {
     "category": "WalkerParts",
@@ -12963,7 +12944,7 @@
   {
     "category": "WalkerParts",
     "name": "Domus Walker Wings (1 of 2)",
-    "parent": "Domus Walker Body"
+    "parent": "Domus"
   },
   {
     "category": "WalkerParts",
@@ -13031,7 +13012,7 @@
   {
     "category": "WalkerParts",
     "name": "Falco Walker Legs (1 of 2)",
-    "parent": "Falco Walker Body"
+    "parent": "Falco"
   },
   {
     "category": "WalkerParts",
@@ -13054,7 +13035,7 @@
   {
     "category": "WalkerParts",
     "name": "Falco Walker Wings (1 of 2)",
-    "parent": "Falco Walker Body"
+    "parent": "Falco"
   },
   {
     "category": "WalkerParts",
@@ -13122,7 +13103,7 @@
   {
     "category": "WalkerParts",
     "name": "Firefly Walker Legs (1 of 2)",
-    "parent": "Firefly Walker Body"
+    "parent": "Firefly"
   },
   {
     "category": "WalkerParts",
@@ -13136,7 +13117,7 @@
   {
     "category": "WalkerParts",
     "name": "Hercul Walker Legs (1 of 2)",
-    "parent": "Hercul Walker Body"
+    "parent": "Hercul"
   },
   {
     "category": "WalkerParts",
@@ -13154,7 +13135,7 @@
   {
     "category": "WalkerParts",
     "name": "Hercul Walker Wings (1 of 2)",
-    "parent": "Hercul Walker Body"
+    "parent": "Hercul"
   },
   {
     "category": "WalkerParts",
@@ -13217,7 +13198,7 @@
   {
     "category": "WalkerParts",
     "name": "Hornet Walker Legs (1 of 2)",
-    "parent": "Hornet Walker Body"
+    "parent": "Hornet"
   },
   {
     "category": "WalkerParts",
@@ -13240,7 +13221,7 @@
   {
     "category": "WalkerParts",
     "name": "Hornet Walker Wings (1 of 2)",
-    "parent": "Hornet Walker Body"
+    "parent": "Hornet"
   },
   {
     "category": "WalkerParts",
@@ -13308,7 +13289,7 @@
   {
     "category": "WalkerParts",
     "name": "Mollusk Walker Legs (1 of 2)",
-    "parent": "Mollusk Walker Body"
+    "parent": "Mollusk"
   },
   {
     "category": "WalkerParts",
@@ -13318,7 +13299,7 @@
   {
     "category": "WalkerParts",
     "name": "Mollusk Walker Wings (1 of 2)",
-    "parent": "Mollusk Walker Body"
+    "parent": "Mollusk"
   },
   {
     "category": "WalkerParts",
@@ -13373,7 +13354,7 @@
   {
     "category": "WalkerParts",
     "name": "Panda Walker Legs (1 of 2)",
-    "parent": "Panda Walker Body"
+    "parent": "Panda"
   },
   {
     "category": "WalkerParts",
@@ -13396,7 +13377,7 @@
   {
     "category": "WalkerParts",
     "name": "Panda Walker Wings (1 of 2)",
-    "parent": "Panda Walker Body"
+    "parent": "Panda"
   },
   {
     "category": "WalkerParts",
@@ -13464,7 +13445,7 @@
   {
     "category": "WalkerParts",
     "name": "Proxy Walker Legs (1 of 2)",
-    "parent": "Proxy Walker Body"
+    "parent": "Proxy"
   },
   {
     "category": "WalkerParts",
@@ -13483,17 +13464,17 @@
   {
     "category": "WalkerParts",
     "name": "Raptor Walker Legs (1 of 2)",
-    "parent": "Raptor Walker Body"
+    "parent": "Raptor"
   },
   {
     "category": "WalkerParts",
     "name": "Raptor Walker Wings (1 of 2)",
-    "parent": "Raptor Walker Body"
+    "parent": "Raptor"
   },
   {
     "category": "WalkerParts",
     "name": "Schmetterling Walker Legs (1 of 2)",
-    "parent": "Schmetterling Walker Body"
+    "parent": "Schmetterling"
   },
   {
     "category": "WalkerParts",
@@ -13516,7 +13497,7 @@
   {
     "category": "WalkerParts",
     "name": "Schmetterling Walker Wings (1 of 2)",
-    "parent": "Schmetterling Walker Body"
+    "parent": "Schmetterling"
   },
   {
     "category": "WalkerParts",
@@ -13584,7 +13565,7 @@
   {
     "category": "WalkerParts",
     "name": "Silur Walker Legs (1 of 2)",
-    "parent": "Silur Walker Body"
+    "parent": "Silur"
   },
   {
     "category": "WalkerParts",
@@ -13607,7 +13588,7 @@
   {
     "category": "WalkerParts",
     "name": "Spider Walker Legs (1 of 2)",
-    "parent": "Nomad Walker Body"
+    "parent": "Nomad"
   },
   {
     "category": "WalkerParts",
@@ -13621,7 +13602,7 @@
   {
     "category": "WalkerParts",
     "name": "Stiletto Walker Legs (1 of 2)",
-    "parent": "Stiletto Walker Body"
+    "parent": "Stiletto"
   },
   {
     "category": "WalkerParts",
@@ -13631,7 +13612,7 @@
   {
     "category": "WalkerParts",
     "name": "Stiletto Walker Wings (1 of 2)",
-    "parent": "Stiletto Walker Body"
+    "parent": "Stiletto"
   },
   {
     "category": "WalkerParts",
@@ -13686,7 +13667,7 @@
   {
     "category": "WalkerParts",
     "name": "Titan Walker Legs (1 of 2)",
-    "parent": "Titan Walker Body"
+    "parent": "Titan"
   },
   {
     "category": "WalkerParts",
@@ -13709,7 +13690,7 @@
   {
     "category": "WalkerParts",
     "name": "Titan Walker Wings (1 of 2)",
-    "parent": "Titan Walker Body"
+    "parent": "Titan"
   },
   {
     "category": "WalkerParts",
@@ -13777,7 +13758,7 @@
   {
     "category": "WalkerParts",
     "name": "Toboggan Walker Legs (1 of 2)",
-    "parent": "Toboggan Walker Body"
+    "parent": "Toboggan"
   },
   {
     "category": "WalkerParts",
@@ -13796,7 +13777,7 @@
   {
     "category": "WalkerParts",
     "name": "Toboggan Walker Wings (1 of 2)",
-    "parent": "Toboggan Walker Body"
+    "parent": "Toboggan"
   },
   {
     "category": "WalkerParts",
@@ -13860,7 +13841,7 @@
   {
     "category": "WalkerParts",
     "name": "Tusker Walker Legs (1 of 2)",
-    "parent": "Tusker Walker Body"
+    "parent": "Tusker"
   },
   {
     "category": "WalkerParts",
@@ -13883,7 +13864,7 @@
   {
     "category": "WalkerParts",
     "name": "Tusker Walker Wings (1 of 2)",
-    "parent": "Tusker Walker Body"
+    "parent": "Tusker"
   },
   {
     "category": "WalkerParts",
@@ -14017,7 +13998,7 @@
       }
     ],
     "name": "Balang",
-    "parent": "Firefly Walker Body"
+    "parent": "Firefly"
   },
   {
     "category": "Walkers",
@@ -14117,6 +14098,29 @@
   {
     "category": "Walkers",
     "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "name": "Dinghy",
+    "parent": "Firefly"
+  },
+  {
+    "category": "Walkers",
+    "cost": {
       "count": 50,
       "name": "Tablet"
     },
@@ -14184,7 +14188,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Body",
+    "name": "Firefly",
     "parent": "Walkers"
   },
   {
@@ -14281,7 +14285,7 @@
       }
     ],
     "name": "Nomad",
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy"
   },
   {
     "category": "Walkers",
@@ -14346,7 +14350,7 @@
       }
     ],
     "name": "Raptor",
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy"
   },
   {
     "category": "Walkers",

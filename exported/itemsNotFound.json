@@ -40,12 +40,52 @@
     "parent": "RaceDustNew"
   },
   {
+    "name": "Balang Walker",
+    "parent": "Balang"
+  },
+  {
+    "name": "Buffalo Walker",
+    "parent": "Buffalo"
+  },
+  {
+    "name": "Cobra Walker",
+    "parent": "Cobra"
+  },
+  {
+    "name": "Dinghy Walker",
+    "parent": "Dinghy"
+  },
+  {
+    "name": "Domus Walker",
+    "parent": "Domus"
+  },
+  {
+    "name": "Falco Walker",
+    "parent": "Falco"
+  },
+  {
+    "name": "Hercul Walker",
+    "parent": "Hercul"
+  },
+  {
+    "name": "Hornet Walker",
+    "parent": "Hornet"
+  },
+  {
+    "name": "Mollusk Walker",
+    "parent": "Mollusk"
+  },
+  {
+    "name": "Panda Walker",
+    "parent": "Panda"
+  },
+  {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
     "name": "Raptor Walker Upgrade - Water - Tier 2",
-    "parent": "Raptor Walker Body"
+    "parent": "Raptor Walker"
   },
   {
     "cost": {
@@ -72,8 +112,32 @@
     "parent": "Sawblade"
   },
   {
-    "name": "Spider Walker Body",
+    "name": "Schmetterling Walker",
+    "parent": "Schmetterling"
+  },
+  {
+    "name": "Silur Walker",
+    "parent": "Silur"
+  },
+  {
+    "name": "Spider Walker",
     "parent": "Nomad"
+  },
+  {
+    "name": "Stiletto Walker",
+    "parent": "Stiletto"
+  },
+  {
+    "name": "Titan Walker",
+    "parent": "Titan"
+  },
+  {
+    "name": "Toboggan Walker",
+    "parent": "Toboggan"
+  },
+  {
+    "name": "Tusker Walker",
+    "parent": "Tusker"
   },
   {
     "category": "Ammo",
@@ -1114,68 +1178,6 @@
     "trade_price": 0.5
   },
   {
-    "name": "Large Base Walker Packer Body",
-    "category": "Containers",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 6,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 60,
-            "name": "Rope"
-          },
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          }
-        ]
-      }
-    ],
-    "parent": "Small Base Walker Packer Body"
-  },
-  {
-    "name": "Small Base Walker Packer Body",
-    "category": "Containers",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 370,
-            "name": "Wood"
-          },
-          {
-            "count": 27,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 10,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 25,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "parent": "ChestBaseMaintenance"
-  },
-  {
     "category": "Crafting",
     "cost": {
       "count": 10,
@@ -1958,7 +1960,7 @@
     "name": "Terrain: Worm Sand"
   },
   {
-    "name": "Camelop  Walker Body"
+    "name": "Camelop  Walker"
   },
   {
     "name": "Drill Spade",
@@ -2021,10 +2023,30 @@
     ]
   },
   {
-    "name": "Nomad Walker Body"
+    "name": "Nomad Walker"
+  },
+  {
+    "name": "Proxy Walker"
+  },
+  {
+    "name": "Raptor Sky Walker"
   },
   {
     "name": "Repair Station"
+  },
+  {
+    "name": "Hangar Wall",
+    "category": "StructuralWoodMedium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Sawblade",
@@ -2090,20 +2112,6 @@
   },
   {
     "name": "Long Sawblade"
-  },
-  {
-    "name": "Hangar Wall",
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ]
   },
   {
     "name": "Stinger",
@@ -4495,12 +4503,12 @@
   {
     "category": "WalkerParts",
     "name": "Raptor Walker Legs (1 of 2)",
-    "parent": "Raptor Walker Body"
+    "parent": "Raptor"
   },
   {
     "category": "WalkerParts",
     "name": "Raptor Walker Wings (1 of 2)",
-    "parent": "Raptor Walker Body"
+    "parent": "Raptor"
   },
   {
     "category": "Walkers",
@@ -4527,7 +4535,7 @@
       }
     ],
     "name": "Balang",
-    "parent": "Firefly Walker Body"
+    "parent": "Firefly"
   },
   {
     "category": "Walkers",
@@ -4627,6 +4635,29 @@
   {
     "category": "Walkers",
     "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "name": "Dinghy",
+    "parent": "Firefly"
+  },
+  {
+    "category": "Walkers",
+    "cost": {
       "count": 50,
       "name": "Tablet"
     },
@@ -4673,6 +4704,29 @@
     ],
     "name": "Falco",
     "parent": "Hornet"
+  },
+  {
+    "category": "Walkers",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 34,
+            "name": "Wood"
+          },
+          {
+            "count": 41,
+            "name": "Fiber"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Firefly",
+    "parent": "Walkers"
   },
   {
     "category": "Walkers",
@@ -4768,7 +4822,7 @@
       }
     ],
     "name": "Nomad",
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy"
   },
   {
     "category": "Walkers",
@@ -4833,7 +4887,7 @@
       }
     ],
     "name": "Raptor",
-    "parent": "Dinghy Walker Body"
+    "parent": "Dinghy"
   },
   {
     "category": "Walkers",
