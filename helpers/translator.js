@@ -57,6 +57,7 @@ controller.initownTranslations = () => {
   allTranslations["WalkersRoot"] = "Walkers";
   allTranslations["ConstructionRoot"] = "Construction";
   allTranslations["ReinforcedPlank2"] = "Reinforced Plank";
+  allTranslations["BedSand"] = "Sand Bed";
 
   allTranslations["Woodworking_Tier2"] = "Advanced Woodworking Station";
   allTranslations["Woodworking_Tier3"] = "Artificer Woodworking Station";
@@ -65,6 +66,12 @@ controller.initownTranslations = () => {
   allTranslations["Purification"] = "Purification Station";
   allTranslations["Stomping"] = "Stomping Station";
   allTranslations["Woodworking"] = "Woodworking Station";
+
+  allTranslations["Dinghy"] = "Dinghy Walker Body";
+  allTranslations["Firefly"] = "Firefly Walker Body";
+
+  allTranslations["Ballista_T3"] = "Ballista - Tier 3";
+  allTranslations["Ballista_T2"] = "Ballista - Tier 2";
 };
 
 controller.translateName = (name) => {
@@ -95,7 +102,8 @@ controller.translateItems = (allItems) => {
     } else if (
       /(.+) Walker/.test(name) &&
       !name.includes("(1 of 2)") &&
-      !name.includes("Tier")
+      !name.includes("Tier") &&
+      !name.includes("Body")
     ) {
       name = name + " Body";
     }

@@ -4,6 +4,7 @@ const comparator = require("./helpers/comparator");
 const translator = require("./helpers/translator");
 
 let allItems = [];
+const SHOW_DEV_ITEMS = false;
 
 translator.initownTranslations();
 
@@ -16,13 +17,13 @@ const folderType = [
   "trade",
   "placeables",
   "cached",
+  "loottables",
 ];
 
 const itemTemplate = {
   category: undefined,
   cost: undefined,
   crafting: undefined,
-  damage: undefined,
   name: undefined,
   parent: undefined,
   trade_price: undefined,
@@ -36,6 +37,8 @@ const itemTemplate = {
   durability: undefined,
   weaponInfo: undefined,
   toolInfo: undefined,
+  schematicName: undefined,
+  drops: [],
 };
 
 const weaponInfoTemplate = {
@@ -44,6 +47,8 @@ const weaponInfoTemplate = {
   impact: undefined,
   stability: undefined,
   weaponLength: undefined,
+  damage: undefined,
+  penetration: undefined,
 };
 
 const toolInfoTemplate = {
@@ -65,6 +70,13 @@ const recipeTemplate = {
   time: undefined,
 };
 
+const dropTemplate = {
+  location: undefined,
+  chance: undefined,
+  minQuantity: undefined,
+  maxQuantity: undefined,
+};
+
 const ingredienTemplate = { count: undefined, name: undefined };
 
 const costTemplate = {
@@ -81,13 +93,14 @@ const orderByCategory = (a, b) => {
   return 0;
 };
 
-loadDirData("./Data/StringTables", 2);
-loadDirData("./Data/TechTree", 0);
-loadDirData("./Data/Items", 1);
-loadDirData("./Data/Placeables", 4);
-loadDirData("./Data/Recipes", 1);
-loadDirData("./Data/Trade", 3);
-loadDirData("./Data/Placeables", 5);
+loadDirData("./Content/Mist/Data/StringTables", 2);
+loadDirData("./Content/Mist/Data/TechTree", 0);
+loadDirData("./Content/Mist/Data/Items", 1);
+loadDirData("./Content/Mist/Data/Placeables", 4);
+loadDirData("./Content/Mist/Data/Recipes", 1);
+loadDirData("./Content/Mist/Data/Trade", 3);
+loadDirData("./Content/Mist/Data/Placeables", 5);
+//loadDirData("./Content/Mist/Data/LootTables", 6);
 
 allItems = translator.translateItems(allItems);
 allItems = translator.addDescriptions(allItems);
@@ -100,6 +113,10 @@ allItems.forEach((item) => {
       delete item["translation"];
     } else if (item["type"] != undefined) {
       delete item["type"];
+    } else if (item["schematicName"] != undefined) {
+      delete item["schematicName"];
+    } else if (item["drops"] != undefined && item["drops"].length <= 0) {
+      delete item["drops"];
     }
   });
 });
@@ -138,6 +155,8 @@ if (allItems.length > 0) {
   );
 }
 
+/* We remove additional information */
+
 allItems.forEach((item) => {
   item.description = undefined;
   item.projectileDamage = undefined;
@@ -147,6 +166,8 @@ allItems.forEach((item) => {
   item.durability = undefined;
   item.weaponInfo = undefined;
   item.toolInfo = undefined;
+  item.schematicName = undefined;
+  item.drops = undefined;
 });
 
 if (allItems.length > 0) {
@@ -194,6 +215,9 @@ function loadDirData(techTreeDir, folderType = 0) {
             parseCachedItems(techTreeDir + "/" + file);
           }
           break;
+        case 6:
+          parseLootTable(techTreeDir + "/" + file);
+          break;
       }
     }
   });
@@ -216,6 +240,45 @@ function getItem(itemName) {
   return itemCopy;
 }
 
+function parseLootTable(filePath) {
+  let rawdata = fs.readFileSync(filePath);
+  let jsonData = JSON.parse(rawdata);
+  if (jsonData[0]) {
+    let location = "";
+    if (jsonData[0].Name) {
+      location = jsonData[0].Name;
+    }
+    if (jsonData[0].Rows) {
+      let lootItems = jsonData[0].Rows;
+      Object.keys(lootItems).forEach((key) => {
+        if (lootItems[key].Item) {
+          let drop = { ...dropTemplate };
+          let item = getItem(parseName(key));
+          if (item) {
+            let itemDrops = item.drops;
+            let hasDrop = itemDrops.some((drop) => drop.location === location);
+            if (!hasDrop) {
+              drop.location = location;
+              if (lootItems[key].Chance) {
+                drop.chance = lootItems[key].Chance;
+              }
+              if (lootItems[key].MinQuantity) {
+                drop.minQuantity = lootItems[key].MinQuantity;
+              }
+              if (lootItems[key].MaxQuantity) {
+                drop.maxQuantity = lootItems[key].MaxQuantity;
+              }
+              itemDrops.push(drop);
+              item.drops = itemDrops;
+            }
+            allItems.push(item);
+          }
+        }
+      });
+    }
+  }
+}
+
 function parseCachedItems(filePath) {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
@@ -235,9 +298,6 @@ function parseCachedItems(filePath) {
         if (ingredients.length > 0) {
           recipe.ingredients = ingredients;
         }
-        if (key.includes("DinghyWalker_C")) {
-          console.log("Key: " + key + " Name: " + item.name);
-        }
         item.crafting = [recipe];
         allItems.push(item);
       }
@@ -255,16 +315,19 @@ function parseItemData(filePath) {
 
     if (jsonData[1].Properties) {
       if (jsonData[1].Properties?.Category?.ObjectPath) {
-        item.category = parseCategory(
+        let category = parseCategory(
           jsonData[1].Properties.Category.ObjectPath
         );
+        if (category.includes("Schematics")) {
+          item.schematicName = jsonData[1].Type;
+        } else {
+          item.category = parseCategory(
+            jsonData[1].Properties.Category.ObjectPath
+          );
+        }
       }
       if (jsonData[1].Properties?.ExpectedPrice) {
         item.trade_price = jsonData[1].Properties.ExpectedPrice;
-      }
-
-      if (jsonData[1].Properties?.ProjectileDamage?.Damage) {
-        item.damage = jsonData[1].Properties.ProjectileDamage.Damage;
       }
 
       if (jsonData[1].Properties?.ProjectileDamage) {
@@ -322,12 +385,24 @@ function parseItemData(filePath) {
         item.weaponInfo = weaponInfo;
       }
       if (jsonData[1].Properties?.Stability) {
-        weaponInfo.Stability = jsonData[1].Properties.Stability;
+        weaponInfo.stability = jsonData[1].Properties.Stability;
         item.weaponInfo = weaponInfo;
       }
       if (jsonData[1].Properties?.WeaponLength) {
-        weaponInfo.WeaponLength = jsonData[1].Properties.WeaponLength;
+        weaponInfo.weaponLength = jsonData[1].Properties.WeaponLength;
         item.weaponInfo = weaponInfo;
+      }
+
+      if (jsonData[1].Properties?.DamageProperties) {
+        if (jsonData[1].Properties?.DamageProperties?.Damage) {
+          weaponInfo.damage = jsonData[1].Properties.DamageProperties.Damage;
+          item.weaponInfo = weaponInfo;
+        }
+        if (jsonData[1].Properties?.DamageProperties?.Penetration) {
+          weaponInfo.penetration =
+            jsonData[1].Properties.DamageProperties.Penetration;
+          item.weaponInfo = weaponInfo;
+        }
       }
 
       if (jsonData[1].Properties?.ToolInfo) {
@@ -344,7 +419,10 @@ function parseItemData(filePath) {
           } else if (toolInfoData.ToolType.includes("Mining")) {
             toolInfo.toolType = "Mining";
           } else {
-            console.warn("New tool type: " + toolInfoData.ToolType);
+            toolInfo.toolType = toolInfoData.ToolType.replace(
+              "EEquipmentTool::",
+              ""
+            );
           }
           toolInfos.push(toolInfo);
         });
@@ -458,9 +536,9 @@ function parseTechData(filePath) {
   if (jsonData[1] && jsonData[1].Type) {
     let item = getItem(parseName(jsonData[1].Type));
     item.type = jsonData[1].Type;
+
     if (
-      jsonData[1].Properties &&
-      jsonData[1].Properties.Requirements &&
+      jsonData[1]?.Properties?.Requirements &&
       jsonData[1].Properties.Requirements[0] &&
       jsonData[1].Properties.Requirements[0].ObjectName
     ) {
@@ -484,7 +562,12 @@ function parseTechData(filePath) {
 
       item.cost = itemCost;
     }
-    allItems.push(item);
+    if (item.type == "Ballista_C") {
+      console.log(item);
+    }
+    if (!jsonData[1]?.Properties?.bHidden || SHOW_DEV_ITEMS) {
+      allItems.push(item);
+    }
   }
 }
 
@@ -589,7 +672,7 @@ function parseName(name) {
         }
         name = walkerName + " " + wingsType;
       }
-    } else if (/(.+) Walker/.test(name)) {
+    } else if (/(.+) Walker/.test(name) && !name.includes("Body")) {
       name = name + " Body";
     }
   }
