@@ -3008,6 +3008,32 @@
     "trade_price": 1
   },
   {
+    "name": "Vision Powder",
+    "category": "Drugs",
+    "cost": {
+      "count": 6,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Huge Cactus Fruit"
+          },
+          {
+            "count": 10,
+            "name": "Purified Water"
+          }
+        ],
+        "station": "Campfire",
+        "time": 30
+      }
+    ],
+    "parent": "Vitamins",
+    "trade_price": 34.8
+  },
+  {
     "category": "Lava",
     "name": "Lava",
     "trade_price": 3.5
@@ -3329,32 +3355,6 @@
     "trade_price": 2.6
   },
   {
-    "name": "Vision Powder",
-    "category": "Drugs",
-    "cost": {
-      "count": 6,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 3,
-            "name": "Huge Cactus Fruit"
-          },
-          {
-            "count": 10,
-            "name": "Purified Water"
-          }
-        ],
-        "station": "Campfire",
-        "time": 30
-      }
-    ],
-    "parent": "Vitamins",
-    "trade_price": 34.8
-  },
-  {
     "name": "Desert Mule",
     "category": "Drugs",
     "cost": {
@@ -3440,22 +3440,22 @@
     "trade_price": 39.4
   },
   {
-    "name": "Race Dust",
+    "name": "Jojo Mojo",
     "category": "Drugs",
+    "cost": {
+      "count": 35,
+      "name": "Fragment"
+    },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 22,
-            "name": "Purified Water"
-          },
-          {
-            "count": 75,
+            "count": 14,
             "name": "Mushroom Flesh"
           },
           {
-            "count": 2,
-            "name": "Beeswax"
+            "count": 4,
+            "name": "Earth Wax"
           },
           {
             "count": 1,
@@ -3466,31 +3466,8 @@
         "time": 60
       }
     ],
-    "trade_price": 99.8
-  },
-  {
-    "name": "Sterile Bandage",
-    "category": "Interactables",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 2,
-            "name": "Aloe Vera"
-          }
-        ]
-      }
-    ],
-    "parent": "Primitive Bandage",
-    "trade_price": 1.4
+    "parent": "Fury Fumes",
+    "trade_price": 9
   },
   {
     "name": "Rupu Repellent",
@@ -3523,22 +3500,46 @@
     "trade_price": 79.9
   },
   {
-    "name": "Jojo Mojo",
-    "category": "Drugs",
+    "name": "Sterile Bandage",
+    "category": "Interactables",
     "cost": {
-      "count": 35,
+      "count": 15,
       "name": "Fragment"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 14,
+            "count": 1,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 2,
+            "name": "Aloe Vera"
+          }
+        ]
+      }
+    ],
+    "parent": "Primitive Bandage",
+    "trade_price": 1.4
+  },
+  {
+    "name": "Race Dust",
+    "category": "Drugs",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 22,
+            "name": "Purified Water"
+          },
+          {
+            "count": 75,
             "name": "Mushroom Flesh"
           },
           {
-            "count": 4,
-            "name": "Earth Wax"
+            "count": 2,
+            "name": "Beeswax"
           },
           {
             "count": 1,
@@ -3549,8 +3550,7 @@
         "time": 60
       }
     ],
-    "parent": "Fury Fumes",
-    "trade_price": 9
+    "trade_price": 99.8
   },
   {
     "category": "Interactables",

@@ -1103,24 +1103,30 @@
       "count": 16,
       "name": "Fragment"
     },
-    "name": "BalangWalker Upgrade - Water - Tier 2",
-    "parent": "BalangWoodUpgrades"
+    "name": "Balang Walker Upgrade - Water - Tier 2",
+    "parent": "Balang Walker Body"
   },
   {
     "cost": {
       "count": 2,
       "name": "Tablet"
     },
-    "name": "BalangWalker Upgrade - Water - Tier 3",
-    "parent": "BalangWalker Upgrade - Water - Tier 2"
+    "name": "Balang Walker Upgrade - Water - Tier 3",
+    "parent": "Balang Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 4,
       "name": "Tablet"
     },
-    "name": "BalangWalker Upgrade - Water - Tier 4",
-    "parent": "BalangWalker Upgrade - Water - Tier 3"
+    "name": "Balang Walker Upgrade - Water - Tier 4",
+    "parent": "Balang Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Balang Walker Body",
+    "parent": "Balang",
+    "description": "Founder Walker type of the smallest size and least protection. Allows to pack and carry a base made of heavy solid materials.",
+    "stackSize": 100
   },
   {
     "cost": {
@@ -1128,7 +1134,7 @@
       "name": "Tablet"
     },
     "name": "Buffalo Walker Upgrade - Water - Tier 2",
-    "parent": "BuffaloWoodUpgrades"
+    "parent": "Buffalo Walker Body"
   },
   {
     "cost": {
@@ -1147,52 +1153,64 @@
     "parent": "Buffalo Walker Upgrade - Water - Tier 3"
   },
   {
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "name": "CamelopWalker Upgrade - Water - Tier 2",
-    "parent": "CamelopWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 18,
-      "name": "Tablet"
-    },
-    "name": "CamelopWalker Upgrade - Water - Tier 3",
-    "parent": "CamelopWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "name": "CamelopWalker Upgrade - Water - Tier 4",
-    "parent": "CamelopWalker Upgrade - Water - Tier 3"
+    "name": "Buffalo Walker Body",
+    "parent": "Buffalo",
+    "description": "Before the Flotilla grew too large and switched to manpower, hundreds of buffalo walkers were used to tow the Flotilla on days there was no breeze. Named after an ancient beast, the buffalo's wide frame, ample deck space, and good maneuverability make it suited for almost any task.",
+    "stackSize": 100
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "CobraWalker Upgrade - Water - Tier 2",
-    "parent": "CobraWoodUpgrades"
+    "name": "Camelop Walker Upgrade - Water - Tier 2",
+    "parent": "Camelop Walker Body"
   },
   {
     "cost": {
       "count": 18,
       "name": "Tablet"
     },
-    "name": "CobraWalker Upgrade - Water - Tier 3",
-    "parent": "CobraWalker Upgrade - Water - Tier 2"
+    "name": "Camelop Walker Upgrade - Water - Tier 3",
+    "parent": "Camelop Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "CobraWalker Upgrade - Water - Tier 4",
-    "parent": "CobraWalker Upgrade - Water - Tier 3"
+    "name": "Camelop Walker Upgrade - Water - Tier 4",
+    "parent": "Camelop Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "name": "Cobra Walker Upgrade - Water - Tier 2",
+    "parent": "Cobra Walker Body"
+  },
+  {
+    "cost": {
+      "count": 18,
+      "name": "Tablet"
+    },
+    "name": "Cobra Walker Upgrade - Water - Tier 3",
+    "parent": "Cobra Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "name": "Cobra Walker Upgrade - Water - Tier 4",
+    "parent": "Cobra Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Cobra Walker Body",
+    "parent": "Cobra",
+    "description": "Mobile shooting tower operated automatically with wooden machinery that shoots enemy weapons nearby. Requires deployment to shoot, which blocks its steering.",
+    "stackSize": 100
   },
   {
     "cost": {
@@ -1200,7 +1218,7 @@
       "name": "Fragment"
     },
     "name": "Dinghy Walker Upgrade - Water - Tier 2",
-    "parent": "DinghyWoodUpgrades"
+    "parent": "Dinghy Walker Body"
   },
   {
     "cost": {
@@ -1223,48 +1241,60 @@
       "count": 15,
       "name": "Tablet"
     },
-    "name": "DomusWalker Upgrade - Water - Tier 2",
-    "parent": "DomusWoodUpgrades"
+    "name": "Domus Walker Upgrade - Water - Tier 2",
+    "parent": "Domus Walker Body"
+  },
+  {
+    "name": "Domus Walker Body",
+    "parent": "Domus",
+    "description": "Heavily protected with strong walls all around, Domus Walkers are often used to safely transport large numbers of nomads. While slow and difficult to handle, they can withstand massive damages, ensuring structural integrity during battles and defending everything inside.",
+    "stackSize": 100
   },
   {
     "cost": {
       "count": 20,
       "name": "Tablet"
     },
-    "name": "DomusWalker Upgrade - Water - Tier 3",
-    "parent": "DomusWalker Upgrade - Water - Tier 2"
+    "name": "Domus Walker Upgrade - Water - Tier 3",
+    "parent": "Domus Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 25,
       "name": "Tablet"
     },
-    "name": "DomusWalker Upgrade - Water - Tier 4",
-    "parent": "DomusWalker Upgrade - Water - Tier 3"
+    "name": "Domus Walker Upgrade - Water - Tier 4",
+    "parent": "Domus Walker Upgrade - Water - Tier 3"
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "FalcoWalker Upgrade - Water - Tier 2",
-    "parent": "FalcoWoodUpgrades"
+    "name": "Falco Walker Upgrade - Water - Tier 2",
+    "parent": "Falco Walker Body"
   },
   {
     "cost": {
       "count": 18,
       "name": "Tablet"
     },
-    "name": "FalcoWalker Upgrade - Water - Tier 3",
-    "parent": "FalcoWalker Upgrade - Water - Tier 2"
+    "name": "Falco Walker Upgrade - Water - Tier 3",
+    "parent": "Falco Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "FalcoWalker Upgrade - Water - Tier 4",
-    "parent": "FalcoWalker Upgrade - Water - Tier 3"
+    "name": "Falco Walker Upgrade - Water - Tier 4",
+    "parent": "Falco Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Falco Walker Body",
+    "parent": "Falco",
+    "description": "It's streamlined shape is built for speed, making it a favorite among pirates. It's elevated deck doesn't sport much space for large weapons, but it's height allows for easy boarding of other walkers. Dedicated rear-facing spots for Gun Pods make it easy to fire projectiles at pursuers.",
+    "stackSize": 100
   },
   {
     "cost": {
@@ -1272,7 +1302,7 @@
       "name": "Fragment"
     },
     "name": "Firefly Walker Upgrade - Water - Tier 2",
-    "parent": "FireflyWoodUpgrades"
+    "parent": "Firefly Walker Body"
   },
   {
     "cost": {
@@ -1287,120 +1317,144 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "HerculWalker Upgrade - Water - Tier 2",
-    "parent": "HerculWoodUpgrades"
+    "name": "Hercul Walker Upgrade - Water - Tier 2",
+    "parent": "Hercul Walker Body"
   },
   {
     "cost": {
       "count": 9,
       "name": "Tablet"
     },
-    "name": "HerculWalker Upgrade - Water - Tier 3",
-    "parent": "HerculWalker Upgrade - Water - Tier 2"
+    "name": "Hercul Walker Upgrade - Water - Tier 3",
+    "parent": "Hercul Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 16,
       "name": "Tablet"
     },
-    "name": "HerculWalker Upgrade - Water - Tier 4",
-    "parent": "HerculWalker Upgrade - Water - Tier 3"
+    "name": "Hercul Walker Upgrade - Water - Tier 4",
+    "parent": "Hercul Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Hercul Walker Body",
+    "parent": "Hercul",
+    "description": "Capable of producing mass quantities of torque by heating up water with lava, Hercul Walker is an essential tool for any Nomad requiring large amounts of power. Will generate torque over time while holding its water container above a lava lake.",
+    "stackSize": 100
   },
   {
     "cost": {
       "count": 4,
       "name": "Tablet"
     },
-    "name": "HornetWalker Upgrade - Water - Tier 2",
-    "parent": "HornetWoodUpgrades"
+    "name": "Hornet Walker Upgrade - Water - Tier 2",
+    "parent": "Hornet Walker Body"
   },
   {
     "cost": {
       "count": 7,
       "name": "Tablet"
     },
-    "name": "HornetWalker Upgrade - Water - Tier 3",
-    "parent": "HornetWalker Upgrade - Water - Tier 2"
+    "name": "Hornet Walker Upgrade - Water - Tier 3",
+    "parent": "Hornet Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "HornetWalker Upgrade - Water - Tier 4",
-    "parent": "HornetWalker Upgrade - Water - Tier 3"
+    "name": "Hornet Walker Upgrade - Water - Tier 4",
+    "parent": "Hornet Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Hornet Walker Body",
+    "parent": "Hornet",
+    "description": "Devised by worm hunters who needed a sturdy walker with a low center of mass so they would not be toppled over, and a high top speed to outrun the giant beasts.",
+    "stackSize": 100
   },
   {
     "cost": {
       "count": 20,
       "name": "Fragment"
     },
-    "name": "MolluskWalker Upgrade - Water - Tier 2",
-    "parent": "MolluskWoodUpgrades"
+    "name": "Mollusk Walker Upgrade - Water - Tier 2",
+    "parent": "Mollusk Walker Body"
   },
   {
     "cost": {
       "count": 2,
       "name": "Tablet"
     },
-    "name": "MolluskWalker Upgrade - Water - Tier 3",
-    "parent": "MolluskWalker Upgrade - Water - Tier 2"
+    "name": "Mollusk Walker Upgrade - Water - Tier 3",
+    "parent": "Mollusk Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 5,
       "name": "Tablet"
     },
-    "name": "MolluskWalker Upgrade - Water - Tier 4",
-    "parent": "MolluskWalker Upgrade - Water - Tier 3"
+    "name": "Mollusk Walker Upgrade - Water - Tier 4",
+    "parent": "Mollusk Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Mollusk Walker Body",
+    "parent": "Mollusk",
+    "description": "Small cabin of the walker provides protection to possessions and the driver. While walls may let a nomad live longer, obstructed view from inside the cabin could be a serious drawback in a battle. Has a decent deck and good movement capabilities.",
+    "stackSize": 100
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "PandaWalker Upgrade - Water - Tier 2",
-    "parent": "PandaWoodUpgrades"
+    "name": "Panda Walker Upgrade - Water - Tier 2",
+    "parent": "Panda Walker Body"
+  },
+  {
+    "name": "Panda Walker Body",
+    "parent": "Panda",
+    "description": "Large walker carrier capable of storing up to 5 walkers of any size and hauling them, providing they're not too heavy. Limited deck size allows to build some weapons for protection.",
+    "stackSize": 100
   },
   {
     "cost": {
       "count": 18,
       "name": "Tablet"
     },
-    "name": "PandaWalker Upgrade - Water - Tier 3",
-    "parent": "PandaWalker Upgrade - Water - Tier 2"
+    "name": "Panda Walker Upgrade - Water - Tier 3",
+    "parent": "Panda Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "PandaWalker Upgrade - Water - Tier 4",
-    "parent": "PandaWalker Upgrade - Water - Tier 3"
+    "name": "Panda Walker Upgrade - Water - Tier 4",
+    "parent": "Panda Walker Upgrade - Water - Tier 3"
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "RaptorWalker Upgrade - Water - Tier 2",
-    "parent": "RaptorWoodUpgrades"
+    "name": "Raptor Walker Upgrade - Water - Tier 2",
+    "parent": "Raptor Walker Body"
   },
   {
     "cost": {
       "count": 18,
       "name": "Tablet"
     },
-    "name": "RaptorWalker Upgrade - Water - Tier 3",
-    "parent": "RaptorWalker Upgrade - Water - Tier 2"
+    "name": "Raptor Walker Upgrade - Water - Tier 3",
+    "parent": "Raptor Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "RaptorWalker Upgrade - Water - Tier 4",
-    "parent": "RaptorWalker Upgrade - Water - Tier 3"
+    "name": "Raptor Walker Upgrade - Water - Tier 4",
+    "parent": "Raptor Walker Upgrade - Water - Tier 3"
   },
   {
     "cost": {
@@ -1415,48 +1469,60 @@
       "count": 15,
       "name": "Tablet"
     },
-    "name": "SchmetterlingWalker Upgrade - Water - Tier 2",
-    "parent": "SchmetterlingWoodUpgrades"
+    "name": "Schmetterling Walker Upgrade - Water - Tier 2",
+    "parent": "Schmetterling Walker Body"
+  },
+  {
+    "name": "Schmetterling Walker Body",
+    "parent": "Schmetterling",
+    "description": "One of the oldest walker designs, the schmetterlings provided mobile homes that an entire family could live on while chasing after the temperate climate. A large cargo hold affords tons of cargo space, and a wide open deck provides enough room for nomads to stretch their legs and build freely. The heavy weight of the schmetterling makes it less maneuverable.",
+    "stackSize": 100
   },
   {
     "cost": {
       "count": 20,
       "name": "Tablet"
     },
-    "name": "SchmetterlingWalker Upgrade - Water - Tier 3",
-    "parent": "SchmetterlingWalker Upgrade - Water - Tier 2"
+    "name": "Schmetterling Walker Upgrade - Water - Tier 3",
+    "parent": "Schmetterling Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 25,
       "name": "Tablet"
     },
-    "name": "SchmetterlingWalker Upgrade - Water - Tier 4",
-    "parent": "SchmetterlingWalker Upgrade - Water - Tier 3"
+    "name": "Schmetterling Walker Upgrade - Water - Tier 4",
+    "parent": "Schmetterling Walker Upgrade - Water - Tier 3"
   },
   {
     "cost": {
       "count": 2,
       "name": "Tablet"
     },
-    "name": "SilurWalker Upgrade - Water - Tier 2",
-    "parent": "SilurWoodUpgrades"
+    "name": "Silur Walker Upgrade - Water - Tier 2",
+    "parent": "Silur Walker Body"
   },
   {
     "cost": {
       "count": 4,
       "name": "Tablet"
     },
-    "name": "SilurWalker Upgrade - Water - Tier 3",
-    "parent": "SilurWalker Upgrade - Water - Tier 2"
+    "name": "Silur Walker Upgrade - Water - Tier 3",
+    "parent": "Silur Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 7,
       "name": "Tablet"
     },
-    "name": "SilurWalker Upgrade - Water - Tier 4",
-    "parent": "SilurWalker Upgrade - Water - Tier 3"
+    "name": "Silur Walker Upgrade - Water - Tier 4",
+    "parent": "Silur Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Silur Walker Body",
+    "parent": "Silur",
+    "description": "Founder Walker type of moderate size and protection. Allows to pack and carry a base made of heavy solid materials.",
+    "stackSize": 100
   },
   {
     "cost": {
@@ -1464,7 +1530,7 @@
       "name": "Fragment"
     },
     "name": "Spider Walker Upgrade - Water - Tier 2",
-    "parent": "SpiderWoodUpgrades"
+    "parent": "Spider Walker Body"
   },
   {
     "cost": {
@@ -1475,12 +1541,18 @@
     "parent": "Spider Walker Upgrade - Water - Tier 3"
   },
   {
+    "name": "Spider Walker Body",
+    "parent": "Nomad",
+    "description": "A pedal-powered walker most nomads build to begin their journey on. Has an additional seat in the back with a built-in ballista!",
+    "stackSize": 100
+  },
+  {
     "cost": {
       "count": 20,
       "name": "Fragment"
     },
     "name": "Stiletto Walker Upgrade - Water - Tier 2",
-    "parent": "StilettoWoodUpgrades"
+    "parent": "Stiletto Walker Body"
   },
   {
     "cost": {
@@ -1499,76 +1571,100 @@
     "parent": "Stiletto Walker Upgrade - Water - Tier 3"
   },
   {
+    "name": "Stiletto Walker Body",
+    "parent": "Stiletto",
+    "description": "Developed as the successor to the dinghy walker, the sleek stiletto walker is fast, has a short turn radius, and flaunts more deck space and a stronger hull than its predecessor. Ideal for nomads who prefer to travel alone or in small groups.",
+    "stackSize": 100
+  },
+  {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "TitanWalker Upgrade - Water - Tier 2",
-    "parent": "TitanWoodUpgrades"
+    "name": "Titan Walker Upgrade - Water - Tier 2",
+    "parent": "Titan Walker Body"
+  },
+  {
+    "name": "Titan Walker Body",
+    "parent": "Titan",
+    "description": "An iconic walker distinguished by tiered design and open, flat deck spaces. Dozens of large weapons can be stationed on it, but without a crew it's not very defensible.",
+    "stackSize": 100
   },
   {
     "cost": {
       "count": 50,
       "name": "Tablet"
     },
-    "name": "TitanWalker Upgrade - Water - Tier 3",
-    "parent": "TitanWalker Upgrade - Water - Tier 2"
+    "name": "Titan Walker Upgrade - Water - Tier 3",
+    "parent": "Titan Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 100,
       "name": "Tablet"
     },
-    "name": "TitanWalker Upgrade - Water - Tier 4",
-    "parent": "TitanWalker Upgrade - Water - Tier 3"
+    "name": "Titan Walker Upgrade - Water - Tier 4",
+    "parent": "Titan Walker Upgrade - Water - Tier 3"
   },
   {
     "cost": {
       "count": 60,
       "name": "Fragment"
     },
-    "name": "TobogganWalker Upgrade - Water - Tier 2",
-    "parent": "TobogganWoodUpgrades"
+    "name": "Toboggan Walker Upgrade - Water - Tier 2",
+    "parent": "Toboggan Walker Body"
+  },
+  {
+    "name": "Toboggan Walker Body",
+    "parent": "Toboggan",
+    "description": "The standard merchant's vessel built for outrunning pirates and getting the goods where they need to go. There's not much room for weapons, so this walker is usually accompanied by at least one battle-capable walker on its transport runs.",
+    "stackSize": 100
   },
   {
     "cost": {
       "count": 2,
       "name": "Tablet"
     },
-    "name": "TobogganWalker Upgrade - Water - Tier 3",
-    "parent": "TobogganWalker Upgrade - Water - Tier 2"
+    "name": "Toboggan Walker Upgrade - Water - Tier 3",
+    "parent": "Toboggan Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 5,
       "name": "Tablet"
     },
-    "name": "TobogganWalker Upgrade - Water - Tier 4",
-    "parent": "TobogganWalker Upgrade - Water - Tier 3"
+    "name": "Toboggan Walker Upgrade - Water - Tier 4",
+    "parent": "Toboggan Walker Upgrade - Water - Tier 3"
   },
   {
     "cost": {
       "count": 15,
       "name": "Tablet"
     },
-    "name": "TuskerWalker Upgrade - Water - Tier 2",
-    "parent": "TuskerWoodUpgrades"
+    "name": "Tusker Walker Upgrade - Water - Tier 2",
+    "parent": "Tusker Walker Body"
   },
   {
     "cost": {
       "count": 20,
       "name": "Tablet"
     },
-    "name": "TuskerWalker Upgrade - Water - Tier 3",
-    "parent": "TuskerWalker Upgrade - Water - Tier 2"
+    "name": "Tusker Walker Upgrade - Water - Tier 3",
+    "parent": "Tusker Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 25,
       "name": "Tablet"
     },
-    "name": "TuskerWalker Upgrade - Water - Tier 4",
-    "parent": "TuskerWalker Upgrade - Water - Tier 3"
+    "name": "Tusker Walker Upgrade - Water - Tier 4",
+    "parent": "Tusker Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Tusker Walker Body",
+    "parent": "Tusker",
+    "description": "Enough deck space for both large weapons and the crew needed to operate them. The tusker walker is a juggernaut when it comes to hauling space, and is primarily used by rich traders that need to transport tons of valuable goods. Slow and hard to maneuver, it's often escorted by swift combat walkers. Owners of tusker walkers rarely fail to get a return on their investment.",
+    "stackSize": 100
   },
   {
     "category": "Ammo",
@@ -8074,6 +8170,80 @@
     "weight": 0.2
   },
   {
+    "name": "Large Base Walker Packer Body",
+    "description": "Allows to pack a single walker of any type. Requires a foundation of a base to support itself.",
+    "stackSize": 100,
+    "category": "Containers",
+    "cost": {
+      "count": 5,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Reinforced Plank"
+          },
+          {
+            "count": 6,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 60,
+            "name": "Rope"
+          },
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          }
+        ]
+      }
+    ],
+    "parent": "Small Base Walker Packer Body",
+    "structureInfo": {
+      "type": "Medium",
+      "hp": 21000
+    }
+  },
+  {
+    "name": "Small Base Walker Packer Body",
+    "description": "Allows to pack a single small walkers up to a Dinghy type. Requires a foundation of a base to support itself.",
+    "stackSize": 100,
+    "category": "Containers",
+    "cost": {
+      "count": 25,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 370,
+            "name": "Wood"
+          },
+          {
+            "count": 27,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 10,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 25,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "parent": "ChestBaseMaintenance",
+    "structureInfo": {
+      "type": "Medium",
+      "hp": 8000
+    }
+  },
+  {
     "category": "Crafting",
     "cost": {
       "count": 10,
@@ -8109,186 +8279,34 @@
     }
   },
   {
-    "category": "Furniture",
+    "name": "Vision Powder",
+    "description": "Said to induce hallucinations that can reveal ancient wisdom. Grants Nomad the ancient wisdom to build a Walker.",
+    "stackSize": 100,
+    "category": "Drugs",
     "cost": {
-      "count": 40,
+      "count": 6,
       "name": "Fragment"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 5,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Carpet Light",
-    "parent": "ClanFlags",
-    "structureInfo": {
-      "hp": 30
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 5,
-            "name": "Rupu Pelt"
-          }
-        ]
-      }
-    ],
-    "name": "Carpet Dark",
-    "structureInfo": {
-      "hp": 30
-    }
-  },
-  {
-    "category": "Furniture",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 25,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "name": "Chair throne",
-    "parent": "Chair Simple",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 250
-    }
-  },
-  {
-    "category": "Furniture",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Wood"
+            "count": 3,
+            "name": "Huge Cactus Fruit"
           },
           {
             "count": 10,
-            "name": "Fiber"
+            "name": "Purified Water"
           }
-        ]
+        ],
+        "station": "Campfire",
+        "time": 30
       }
     ],
-    "name": "Chair Simple",
-    "parent": "ClanFlags",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 100
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Chair Comfortable",
-    "parent": "Chair Simple",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 150
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 4,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 25,
-            "name": "Stone"
-          },
-          {
-            "count": 3,
-            "name": "Rupu Gel"
-          }
-        ]
-      }
-    ],
-    "name": "Fire Goblet",
-    "parent": "Lamp Standing",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 300
-    }
-  },
-  {
-    "category": "Furniture",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 3,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Rupu Gel"
-          }
-        ]
-      }
-    ],
-    "name": "Lamp Double Hanging",
-    "parent": "Lamp Standing",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 150
-    }
+    "parent": "Vitamins",
+    "trade_price": 34.8,
+    "experiencieReward": 45,
+    "weight": 0.8
   },
   {
     "category": "Furniture",
@@ -9723,6 +9741,39 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
+    }
+  },
+  {
+    "name": "Cauterizing Station",
+    "description": "Quickly heals by cauterizing fresh wounds. Requires a vitamin to be added in order to work.",
+    "stackSize": 100,
+    "category": "Interactables",
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 45,
+            "name": "Wood"
+          },
+          {
+            "count": 20,
+            "name": "Stone"
+          },
+          {
+            "count": 20,
+            "name": "Aloe Vera"
+          }
+        ]
+      }
+    ],
+    "parent": "Fury Fumes",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 500
     }
   },
   {
@@ -11205,122 +11256,6 @@
     "weight": 1
   },
   {
-    "name": "Balang Walker Body",
-    "description": "Founder Walker type of the smallest size and least protection. Allows to pack and carry a base made of heavy solid materials.",
-    "stackSize": 100
-  },
-  {
-    "name": "Large Base Walker Packer Body",
-    "description": "Allows to pack a single walker of any type. Requires a foundation of a base to support itself.",
-    "stackSize": 100,
-    "category": "Containers",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 6,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 60,
-            "name": "Rope"
-          },
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          }
-        ]
-      }
-    ],
-    "parent": "Small Base Walker Packer Body",
-    "structureInfo": {
-      "type": "Medium",
-      "hp": 21000
-    }
-  },
-  {
-    "name": "Small Base Walker Packer Body",
-    "description": "Allows to pack a single small walkers up to a Dinghy type. Requires a foundation of a base to support itself.",
-    "stackSize": 100,
-    "category": "Containers",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 370,
-            "name": "Wood"
-          },
-          {
-            "count": 27,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 10,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 25,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "parent": "ChestBaseMaintenance",
-    "structureInfo": {
-      "type": "Medium",
-      "hp": 8000
-    }
-  },
-  {
-    "name": "Lumbermill",
-    "description": "A huge crafting station uses torque to turn logs into tons of wood. Extremely efficient.",
-    "stackSize": 100,
-    "category": "Crafting",
-    "cost": {
-      "count": 40,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 70,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 1,
-            "name": "Reinforced Plank"
-          }
-        ]
-      }
-    ],
-    "parent": "WoodworkingStation_T2",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 20000
-    }
-  },
-  {
     "name": "Battle Fan",
     "description": "Recent Flotillian invention allows nomads to manipulate the air by sucking and blowing. Although created to move and store gas clouds, it can also push nomads as well as a walker it's built on using a powerful Superblow.",
     "stackSize": 100,
@@ -11363,77 +11298,9 @@
     "stackSize": 100
   },
   {
-    "name": "Buffalo Walker Body",
-    "description": "Before the Flotilla grew too large and switched to manpower, hundreds of buffalo walkers were used to tow the Flotilla on days there was no breeze. Named after an ancient beast, the buffalo's wide frame, ample deck space, and good maneuverability make it suited for almost any task.",
-    "stackSize": 100
-  },
-  {
-    "name": "Vision Powder",
-    "description": "Said to induce hallucinations that can reveal ancient wisdom. Grants Nomad the ancient wisdom to build a Walker.",
-    "stackSize": 100,
-    "category": "Drugs",
-    "cost": {
-      "count": 6,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 3,
-            "name": "Huge Cactus Fruit"
-          },
-          {
-            "count": 10,
-            "name": "Purified Water"
-          }
-        ],
-        "station": "Campfire",
-        "time": 30
-      }
-    ],
-    "parent": "Vitamins",
-    "trade_price": 34.8,
-    "experiencieReward": 45,
-    "weight": 0.8
-  },
-  {
     "name": "Camelop  Walker Body",
     "description": "Being able to pump water and lava out of lakes, while storing large amounts of liquid, makes this walker an essential tool in various mass productions. Uses torque to move and while pumping.",
     "stackSize": 100
-  },
-  {
-    "name": "Cauterizing Station",
-    "description": "Quickly heals by cauterizing fresh wounds. Requires a vitamin to be added in order to work.",
-    "stackSize": 100,
-    "category": "Interactables",
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 45,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Aloe Vera"
-          }
-        ]
-      }
-    ],
-    "parent": "Fury Fumes",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 500
-    }
   },
   {
     "name": "Ammo Chest",
@@ -11491,6 +11358,43 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 900
+    }
+  },
+  {
+    "name": "Lumbermill",
+    "description": "A huge crafting station uses torque to turn logs into tons of wood. Extremely efficient.",
+    "stackSize": 100,
+    "category": "Crafting",
+    "cost": {
+      "count": 40,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 70,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 1,
+            "name": "Reinforced Plank"
+          }
+        ]
+      }
+    ],
+    "parent": "WoodworkingStation_T2",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 20000
     }
   },
   {
@@ -11624,24 +11528,24 @@
     "weight": 0.5
   },
   {
-    "name": "Race Dust",
-    "description": "Makes a Nomad want to race other Nomads. Allows Nomad to sprint without losing stamina.",
+    "name": "Jojo Mojo",
+    "description": "A swirling mixture that makes a Nomad burst into song and dance. Negates all falling damage taken by Nomad.",
     "stackSize": 100,
     "category": "Drugs",
+    "cost": {
+      "count": 35,
+      "name": "Fragment"
+    },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 22,
-            "name": "Purified Water"
-          },
-          {
-            "count": 75,
+            "count": 14,
             "name": "Mushroom Flesh"
           },
           {
-            "count": 2,
-            "name": "Beeswax"
+            "count": 4,
+            "name": "Earth Wax"
           },
           {
             "count": 1,
@@ -11652,42 +11556,10 @@
         "time": 60
       }
     ],
-    "trade_price": 99.8,
+    "parent": "Fury Fumes",
+    "trade_price": 9,
     "experiencieReward": 246,
     "weight": 0.5
-  },
-  {
-    "name": "Sterile Bandage",
-    "description": "Restores a large amount of HP over a period of time. Not usable while in combat.",
-    "stackSize": 100,
-    "category": "Interactables",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 2,
-            "name": "Aloe Vera"
-          }
-        ]
-      }
-    ],
-    "parent": "Primitive Bandage",
-    "trade_price": 1.4,
-    "experiencieReward": 55,
-    "weight": 0.05
-  },
-  {
-    "name": "Cobra Walker Body",
-    "description": "Mobile shooting tower operated automatically with wooden machinery that shoots enemy weapons nearby. Requires deployment to shoot, which blocks its steering.",
-    "stackSize": 100
   },
   {
     "name": "Rupu Repellent",
@@ -11724,49 +11596,32 @@
     "weight": 0.5
   },
   {
-    "name": "Poaching Hut",
-    "description": "A placeable that creates a mini-claim area in moderate radius. Additional resouces will go into this placeable instead of Proxy Walker.",
+    "name": "Sterile Bandage",
+    "description": "Restores a large amount of HP over a period of time. Not usable while in combat.",
     "stackSize": 100,
     "category": "Interactables",
     "cost": {
-      "count": 4,
-      "name": "Tablet"
+      "count": 15,
+      "name": "Fragment"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 1000,
-            "name": "Wood"
+            "count": 1,
+            "name": "Fiber Weave"
           },
           {
-            "count": 50,
-            "name": "Rope"
-          },
-          {
-            "count": 100,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 100,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 300,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 300,
-            "name": "Chitin Plate"
+            "count": 2,
+            "name": "Aloe Vera"
           }
         ]
       }
     ],
-    "parent": "ChestSmall",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 5000
-    }
+    "parent": "Primitive Bandage",
+    "trade_price": 1.4,
+    "experiencieReward": 55,
+    "weight": 0.05
   },
   {
     "name": "Drill Spade",
@@ -11849,21 +11704,6 @@
     "stackSize": 100
   },
   {
-    "category": "WalkerRigs",
-    "name": "Hammerhead Rig",
-    "stackSize": 100,
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "HammerheadDinghyRigSchematic"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "name": "Dinghy Walker Body",
     "description": "Before the nomadic Flotillans had become aware of the route they needed to take to circumnavigate the planet efficiently, many of them died in the process of locating safe passage. These crudely constructed wind-powered walkers were first devised as scouting vessels because of their cheap cost and the high likelihood that a Nomad would not return. This walker has ample deck space for two Nomads.",
     "stackSize": 100,
@@ -11893,16 +11733,6 @@
     }
   },
   {
-    "name": "Domus Walker Body",
-    "description": "Heavily protected with strong walls all around, Domus Walkers are often used to safely transport large numbers of nomads. While slow and difficult to handle, they can withstand massive damages, ensuring structural integrity during battles and defending everything inside.",
-    "stackSize": 100
-  },
-  {
-    "name": "Falco Walker Body",
-    "description": "It's streamlined shape is built for speed, making it a favorite among pirates. It's elevated deck doesn't sport much space for large weapons, but it's height allows for easy boarding of other walkers. Dedicated rear-facing spots for Gun Pods make it easy to fire projectiles at pursuers.",
-    "stackSize": 100
-  },
-  {
     "name": "Advanced Fiberworking Station",
     "description": "Advanced crafting station manufactures fabrics more efficiently.",
     "stackSize": 100
@@ -11928,34 +11758,24 @@
     "stackSize": 100
   },
   {
-    "name": "Hercul Walker Body",
-    "description": "Capable of producing mass quantities of torque by heating up water with lava, Hercul Walker is an essential tool for any Nomad requiring large amounts of power. Will generate torque over time while holding its water container above a lava lake.",
-    "stackSize": 100
-  },
-  {
-    "name": "Hornet Walker Body",
-    "description": "Devised by worm hunters who needed a sturdy walker with a low center of mass so they would not be toppled over, and a high top speed to outrun the giant beasts.",
-    "stackSize": 100
-  },
-  {
-    "name": "Jojo Mojo",
-    "description": "A swirling mixture that makes a Nomad burst into song and dance. Negates all falling damage taken by Nomad.",
+    "name": "Race Dust",
+    "description": "Makes a Nomad want to race other Nomads. Allows Nomad to sprint without losing stamina.",
     "stackSize": 100,
     "category": "Drugs",
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 14,
+            "count": 22,
+            "name": "Purified Water"
+          },
+          {
+            "count": 75,
             "name": "Mushroom Flesh"
           },
           {
-            "count": 4,
-            "name": "Earth Wax"
+            "count": 2,
+            "name": "Beeswax"
           },
           {
             "count": 1,
@@ -11966,10 +11786,106 @@
         "time": 60
       }
     ],
-    "parent": "Fury Fumes",
-    "trade_price": 9,
+    "trade_price": 99.8,
     "experiencieReward": 246,
     "weight": 0.5
+  },
+  {
+    "name": "Poaching Hut",
+    "description": "A placeable that creates a mini-claim area in moderate radius. Additional resouces will go into this placeable instead of Proxy Walker.",
+    "stackSize": 100,
+    "category": "Interactables",
+    "cost": {
+      "count": 4,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1000,
+            "name": "Wood"
+          },
+          {
+            "count": 50,
+            "name": "Rope"
+          },
+          {
+            "count": 100,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 100,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 300,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 300,
+            "name": "Chitin Plate"
+          }
+        ]
+      }
+    ],
+    "parent": "ChestSmall",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 5000
+    }
+  },
+  {
+    "category": "WalkerRigs",
+    "name": "Hammerhead Rig",
+    "stackSize": 100,
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "HammerheadDinghyRigSchematic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Walker Packing Compartment",
+    "description": "Enables walker to pack other walkers into special compartments attached to the hull.",
+    "stackSize": 100,
+    "category": "WalkerTools",
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 400,
+            "name": "Wood"
+          },
+          {
+            "count": 35,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 20,
+            "name": "Rope"
+          },
+          {
+            "count": 10,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "parent": "Steering Levers",
+    "structureInfo": {
+      "type": "Medium",
+      "hp": 5000
+    }
   },
   {
     "name": "Hose Station",
@@ -12007,11 +11923,6 @@
       "type": "Soft",
       "hp": 5000
     }
-  },
-  {
-    "name": "Mollusk Walker Body",
-    "description": "Small cabin of the walker provides protection to possessions and the driver. While walls may let a nomad live longer, obstructed view from inside the cabin could be a serious drawback in a battle. Has a decent deck and good movement capabilities.",
-    "stackSize": 100
   },
   {
     "name": "Net Thrower",
@@ -12062,11 +11973,6 @@
     "stackSize": 100
   },
   {
-    "name": "Panda Walker Body",
-    "description": "Large walker carrier capable of storing up to 5 walkers of any size and hauling them, providing they're not too heavy. Limited deck size allows to build some weapons for protection.",
-    "stackSize": 100
-  },
-  {
     "name": "Proxy Walker Body",
     "description": "The proxy walker is designed to establish a protectorate over an oasis by deploying into an unmovable claim, provided that its owner possesses an official proxy license from the Flotilla. Can only be deployed while an oasis is unclaimed or contested and only becomes the claimant after no other deployed proxy walkers are left standing.",
     "stackSize": 100
@@ -12080,6 +11986,72 @@
     "name": "Repair Station",
     "description": "Basic crafting station repairs damaged equipment at a lower cost than crafting new ones.",
     "stackSize": 100
+  },
+  {
+    "name": "Stomping Station",
+    "description": "Basic crafting station simulates the blunt force of a foot to crush vegetables and soft minerals. An important tool for nomads who must always keep their feet in top condition.",
+    "stackSize": 100,
+    "category": "Crafting",
+    "cost": {
+      "count": 25,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 45,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 20,
+            "name": "Stone"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "parent": "SoilExcavator",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 3000
+    }
+  },
+  {
+    "name": "Sawblade",
+    "description": "A mechanical arm with a spinning saw blade attached to it harvests lumber from a distance. Requires torque while sawing.",
+    "stackSize": 100,
+    "category": "WalkerTools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 60,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 100,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 20,
+            "name": "Rope"
+          },
+          {
+            "count": 2,
+            "name": "Iron Ore"
+          }
+        ]
+      }
+    ],
+    "parent": "Tool Pod"
   },
   {
     "name": "Rokker",
@@ -12128,35 +12100,6 @@
     "stackSize": 100
   },
   {
-    "name": "Sawblade",
-    "description": "A mechanical arm with a spinning saw blade attached to it harvests lumber from a distance. Requires torque while sawing.",
-    "stackSize": 100,
-    "category": "WalkerTools",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 60,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 100,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 20,
-            "name": "Rope"
-          },
-          {
-            "count": 2,
-            "name": "Iron Ore"
-          }
-        ]
-      }
-    ],
-    "parent": "Tool Pod"
-  },
-  {
     "name": "Long Sawblade",
     "description": "A mechanical arm with a spinning saw blade attached to it harvests lumber from a distance. Requires torque while sawing.",
     "stackSize": 100
@@ -12199,61 +12142,27 @@
     }
   },
   {
-    "name": "Schmetterling Walker Body",
-    "description": "One of the oldest walker designs, the schmetterlings provided mobile homes that an entire family could live on while chasing after the temperate climate. A large cargo hold affords tons of cargo space, and a wide open deck provides enough room for nomads to stretch their legs and build freely. The heavy weight of the schmetterling makes it less maneuverable.",
-    "stackSize": 100
-  },
-  {
-    "name": "Silur Walker Body",
-    "description": "Founder Walker type of moderate size and protection. Allows to pack and carry a base made of heavy solid materials.",
-    "stackSize": 100
-  },
-  {
-    "name": "Walker Packing Compartment",
-    "description": "Enables walker to pack other walkers into special compartments attached to the hull.",
-    "stackSize": 100,
-    "category": "WalkerTools",
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 400,
-            "name": "Wood"
-          },
-          {
-            "count": 35,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 20,
-            "name": "Rope"
-          },
-          {
-            "count": 10,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "parent": "Steering Levers",
-    "structureInfo": {
-      "type": "Medium",
-      "hp": 5000
-    }
-  },
-  {
     "name": "Soil Excavator",
     "description": "Basic crafting station extracts different types of soil from the ground, like sand from the desert, or with more advanced knowledge, clay from mud puddles.",
     "stackSize": 100
   },
   {
-    "name": "Spider Walker Body",
-    "description": "A pedal-powered walker most nomads build to begin their journey on. Has an additional seat in the back with a built-in ballista!",
-    "stackSize": 100
+    "name": "Hangar Wall",
+    "stackSize": 100,
+    "category": "StructuralWoodMedium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "structureInfo": {
+      "hp": 100
+    }
   },
   {
     "name": "Steering Levers Cage",
@@ -12287,11 +12196,6 @@
       "type": "Soft",
       "hp": 15000
     }
-  },
-  {
-    "name": "Stiletto Walker Body",
-    "description": "Developed as the successor to the dinghy walker, the sleek stiletto walker is fast, has a short turn radius, and flaunts more deck space and a stronger hull than its predecessor. Ideal for nomads who prefer to travel alone or in small groups.",
-    "stackSize": 100
   },
   {
     "name": "Stinger",
@@ -12338,71 +12242,6 @@
   {
     "name": "Tall Stinger",
     "description": "A Small Ballista placed on a raised arm that lets the driver get better firing angles.",
-    "stackSize": 100
-  },
-  {
-    "name": "Stomping Station",
-    "description": "Basic crafting station simulates the blunt force of a foot to crush vegetables and soft minerals. An important tool for nomads who must always keep their feet in top condition.",
-    "stackSize": 100,
-    "category": "Crafting",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 45,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 20,
-            "name": "Stone"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "parent": "SoilExcavator",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 3000
-    }
-  },
-  {
-    "name": "Hangar Wall",
-    "stackSize": 100,
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "structureInfo": {
-      "hp": 100
-    }
-  },
-  {
-    "name": "Titan Walker Body",
-    "description": "An iconic walker distinguished by tiered design and open, flat deck spaces. Dozens of large weapons can be stationed on it, but without a crew it's not very defensible.",
-    "stackSize": 100
-  },
-  {
-    "name": "Toboggan Walker Body",
-    "description": "The standard merchant's vessel built for outrunning pirates and getting the goods where they need to go. There's not much room for weapons, so this walker is usually accompanied by at least one battle-capable walker on its transport runs.",
     "stackSize": 100
   },
   {
@@ -12489,11 +12328,6 @@
   {
     "name": "Trip Wire Trap",
     "description": "Triggers a small explosion when a nomad steps on the tripwire.",
-    "stackSize": 100
-  },
-  {
-    "name": "Tusker Walker Body",
-    "description": "Enough deck space for both large weapons and the crew needed to operate them. The tusker walker is a juggernaut when it comes to hauling space, and is primarily used by rich traders that need to transport tons of valuable goods. Slow and hard to maneuver, it's often escorted by swift combat walkers. Owners of tusker walkers rarely fail to get a return on their investment.",
     "stackSize": 100
   },
   {
@@ -13677,6 +13511,188 @@
     "name": "Basket Open",
     "structureInfo": {
       "hp": 50
+    }
+  },
+  {
+    "category": "Furniture",
+    "cost": {
+      "count": 40,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 5,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Carpet Light",
+    "parent": "ClanFlags",
+    "structureInfo": {
+      "hp": 30
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 5,
+            "name": "Rupu Pelt"
+          }
+        ]
+      }
+    ],
+    "name": "Carpet Dark",
+    "structureInfo": {
+      "hp": 30
+    }
+  },
+  {
+    "category": "Furniture",
+    "cost": {
+      "count": 3,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 25,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "name": "Chair throne",
+    "parent": "Chair Simple",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 250
+    }
+  },
+  {
+    "category": "Furniture",
+    "cost": {
+      "count": 40,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Chair Simple",
+    "parent": "ClanFlags",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 100
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Chair Comfortable",
+    "parent": "Chair Simple",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 150
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 4,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 25,
+            "name": "Stone"
+          },
+          {
+            "count": 3,
+            "name": "Rupu Gel"
+          }
+        ]
+      }
+    ],
+    "name": "Fire Goblet",
+    "parent": "Lamp Standing",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 300
+    }
+  },
+  {
+    "category": "Furniture",
+    "cost": {
+      "count": 40,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 3,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Rupu Gel"
+          }
+        ]
+      }
+    ],
+    "name": "Lamp Double Hanging",
+    "parent": "Lamp Standing",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 150
     }
   },
   {

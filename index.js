@@ -728,7 +728,7 @@ function parseName(name) {
     if (/(.+)Walker(.+)Upgrades/.test(name)) {
       let match = name.match(/(.+)Walker(.+)Upgrades/);
       if (match[1] != null && match[2] != null) {
-        let walkerName = translator.translateName(match[1] + "Walker");
+        let walkerName = translator.translateName(match[1] + " Walker");
         let tier = "1";
         switch (match[2]) {
           case "Bone":
@@ -746,20 +746,26 @@ function parseName(name) {
     } else if (/(.+)BoneUpgrades/.test(name)) {
       let match = name.match(/(.+)BoneUpgrades/);
       if (match[1] != null) {
-        let walkerName = translator.translateName(match[1] + "Walker");
+        let walkerName = translator.translateName(match[1] + " Walker");
         name = walkerName + " Upgrade - Water - Tier 2";
       }
     } else if (/(.+)CeramicUpgrades/.test(name)) {
       let match = name.match(/(.+)CeramicUpgrades/);
       if (match[1] != null) {
-        let walkerName = translator.translateName(match[1] + "Walker");
+        let walkerName = translator.translateName(match[1] + " Walker");
         name = walkerName + " Upgrade - Water - Tier 3";
       }
     } else if (/(.+)IronUpgrades/.test(name)) {
       let match = name.match(/(.+)IronUpgrades/);
       if (match[1] != null) {
-        let walkerName = translator.translateName(match[1] + "Walker");
+        let walkerName = translator.translateName(match[1] + " Walker");
         name = walkerName + " Upgrade - Water - Tier 4";
+      }
+    } else if (/(.+)WoodUpgrades/.test(name)) {
+      let match = name.match(/(.+)WoodUpgrades/);
+      if (match[1] != null) {
+        let walkerName = translator.translateName(match[1] + " Walker");
+        name = walkerName + " Body";
       }
     }
   }

@@ -41,243 +41,27 @@
   },
   {
     "cost": {
-      "count": 16,
-      "name": "Fragment"
-    },
-    "name": "BalangWalker Upgrade - Water - Tier 2",
-    "parent": "BalangWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
-    "name": "BalangWalker Upgrade - Water - Tier 3",
-    "parent": "BalangWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
-    "name": "BalangWalker Upgrade - Water - Tier 4",
-    "parent": "BalangWalker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "CamelopWalker Upgrade - Water - Tier 2",
-    "parent": "CamelopWoodUpgrades"
+    "name": "Raptor Walker Upgrade - Water - Tier 2",
+    "parent": "Raptor Walker Body"
   },
   {
     "cost": {
       "count": 18,
       "name": "Tablet"
     },
-    "name": "CamelopWalker Upgrade - Water - Tier 3",
-    "parent": "CamelopWalker Upgrade - Water - Tier 2"
+    "name": "Raptor Walker Upgrade - Water - Tier 3",
+    "parent": "Raptor Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "CamelopWalker Upgrade - Water - Tier 4",
-    "parent": "CamelopWalker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "name": "CobraWalker Upgrade - Water - Tier 2",
-    "parent": "CobraWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 18,
-      "name": "Tablet"
-    },
-    "name": "CobraWalker Upgrade - Water - Tier 3",
-    "parent": "CobraWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "name": "CobraWalker Upgrade - Water - Tier 4",
-    "parent": "CobraWalker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": {
-      "count": 15,
-      "name": "Tablet"
-    },
-    "name": "DomusWalker Upgrade - Water - Tier 2",
-    "parent": "DomusWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
-    "name": "DomusWalker Upgrade - Water - Tier 3",
-    "parent": "DomusWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
-    "name": "DomusWalker Upgrade - Water - Tier 4",
-    "parent": "DomusWalker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "name": "FalcoWalker Upgrade - Water - Tier 2",
-    "parent": "FalcoWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 18,
-      "name": "Tablet"
-    },
-    "name": "FalcoWalker Upgrade - Water - Tier 3",
-    "parent": "FalcoWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "name": "FalcoWalker Upgrade - Water - Tier 4",
-    "parent": "FalcoWalker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "name": "HerculWalker Upgrade - Water - Tier 2",
-    "parent": "HerculWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 9,
-      "name": "Tablet"
-    },
-    "name": "HerculWalker Upgrade - Water - Tier 3",
-    "parent": "HerculWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 16,
-      "name": "Tablet"
-    },
-    "name": "HerculWalker Upgrade - Water - Tier 4",
-    "parent": "HerculWalker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
-    "name": "HornetWalker Upgrade - Water - Tier 2",
-    "parent": "HornetWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 7,
-      "name": "Tablet"
-    },
-    "name": "HornetWalker Upgrade - Water - Tier 3",
-    "parent": "HornetWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "name": "HornetWalker Upgrade - Water - Tier 4",
-    "parent": "HornetWalker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "name": "MolluskWalker Upgrade - Water - Tier 2",
-    "parent": "MolluskWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
-    "name": "MolluskWalker Upgrade - Water - Tier 3",
-    "parent": "MolluskWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "name": "MolluskWalker Upgrade - Water - Tier 4",
-    "parent": "MolluskWalker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "name": "PandaWalker Upgrade - Water - Tier 2",
-    "parent": "PandaWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 18,
-      "name": "Tablet"
-    },
-    "name": "PandaWalker Upgrade - Water - Tier 3",
-    "parent": "PandaWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "name": "PandaWalker Upgrade - Water - Tier 4",
-    "parent": "PandaWalker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "name": "RaptorWalker Upgrade - Water - Tier 2",
-    "parent": "RaptorWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 18,
-      "name": "Tablet"
-    },
-    "name": "RaptorWalker Upgrade - Water - Tier 3",
-    "parent": "RaptorWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "name": "RaptorWalker Upgrade - Water - Tier 4",
-    "parent": "RaptorWalker Upgrade - Water - Tier 3"
+    "name": "Raptor Walker Upgrade - Water - Tier 4",
+    "parent": "Raptor Walker Upgrade - Water - Tier 3"
   },
   {
     "cost": {
@@ -288,124 +72,8 @@
     "parent": "Sawblade"
   },
   {
-    "cost": {
-      "count": 15,
-      "name": "Tablet"
-    },
-    "name": "SchmetterlingWalker Upgrade - Water - Tier 2",
-    "parent": "SchmetterlingWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
-    "name": "SchmetterlingWalker Upgrade - Water - Tier 3",
-    "parent": "SchmetterlingWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
-    "name": "SchmetterlingWalker Upgrade - Water - Tier 4",
-    "parent": "SchmetterlingWalker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
-    "name": "SilurWalker Upgrade - Water - Tier 2",
-    "parent": "SilurWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
-    "name": "SilurWalker Upgrade - Water - Tier 3",
-    "parent": "SilurWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 7,
-      "name": "Tablet"
-    },
-    "name": "SilurWalker Upgrade - Water - Tier 4",
-    "parent": "SilurWalker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "name": "TitanWalker Upgrade - Water - Tier 2",
-    "parent": "TitanWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 50,
-      "name": "Tablet"
-    },
-    "name": "TitanWalker Upgrade - Water - Tier 3",
-    "parent": "TitanWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 100,
-      "name": "Tablet"
-    },
-    "name": "TitanWalker Upgrade - Water - Tier 4",
-    "parent": "TitanWalker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": {
-      "count": 60,
-      "name": "Fragment"
-    },
-    "name": "TobogganWalker Upgrade - Water - Tier 2",
-    "parent": "TobogganWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
-    "name": "TobogganWalker Upgrade - Water - Tier 3",
-    "parent": "TobogganWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "name": "TobogganWalker Upgrade - Water - Tier 4",
-    "parent": "TobogganWalker Upgrade - Water - Tier 3"
-  },
-  {
-    "cost": {
-      "count": 15,
-      "name": "Tablet"
-    },
-    "name": "TuskerWalker Upgrade - Water - Tier 2",
-    "parent": "TuskerWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
-    "name": "TuskerWalker Upgrade - Water - Tier 3",
-    "parent": "TuskerWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
-    "name": "TuskerWalker Upgrade - Water - Tier 4",
-    "parent": "TuskerWalker Upgrade - Water - Tier 3"
+    "name": "Spider Walker Body",
+    "parent": "Nomad"
   },
   {
     "category": "Ammo",
@@ -1446,6 +1114,68 @@
     "trade_price": 0.5
   },
   {
+    "name": "Large Base Walker Packer Body",
+    "category": "Containers",
+    "cost": {
+      "count": 5,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Reinforced Plank"
+          },
+          {
+            "count": 6,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 60,
+            "name": "Rope"
+          },
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          }
+        ]
+      }
+    ],
+    "parent": "Small Base Walker Packer Body"
+  },
+  {
+    "name": "Small Base Walker Packer Body",
+    "category": "Containers",
+    "cost": {
+      "count": 25,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 370,
+            "name": "Wood"
+          },
+          {
+            "count": 27,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 10,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 25,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "parent": "ChestBaseMaintenance"
+  },
+  {
     "category": "Crafting",
     "cost": {
       "count": 10,
@@ -2228,68 +1958,6 @@
     "name": "Terrain: Worm Sand"
   },
   {
-    "name": "Large Base Walker Packer Body",
-    "category": "Containers",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 6,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 60,
-            "name": "Rope"
-          },
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          }
-        ]
-      }
-    ],
-    "parent": "Small Base Walker Packer Body"
-  },
-  {
-    "name": "Small Base Walker Packer Body",
-    "category": "Containers",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 370,
-            "name": "Wood"
-          },
-          {
-            "count": 27,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 10,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 25,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "parent": "ChestBaseMaintenance"
-  },
-  {
     "name": "Camelop  Walker Body"
   },
   {
@@ -2336,6 +2004,9 @@
     "name": "Rig T3"
   },
   {
+    "name": "Gunpod Stinger"
+  },
+  {
     "category": "WalkerRigs",
     "name": "Hammerhead Rig",
     "crafting": [
@@ -2350,13 +2021,37 @@
     ]
   },
   {
-    "name": "Gunpod Stinger"
-  },
-  {
     "name": "Nomad Walker Body"
   },
   {
     "name": "Repair Station"
+  },
+  {
+    "name": "Sawblade",
+    "category": "WalkerTools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 60,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 100,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 20,
+            "name": "Rope"
+          },
+          {
+            "count": 2,
+            "name": "Iron Ore"
+          }
+        ]
+      }
+    ],
+    "parent": "Tool Pod"
   },
   {
     "name": "Rokker",
@@ -2394,37 +2089,21 @@
     "parent": "Ballista"
   },
   {
-    "name": "Sawblade",
-    "category": "WalkerTools",
+    "name": "Long Sawblade"
+  },
+  {
+    "name": "Hangar Wall",
+    "category": "StructuralWoodMedium",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 60,
-            "name": "Wood Shaft"
-          },
-          {
             "count": 100,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 20,
-            "name": "Rope"
-          },
-          {
-            "count": 2,
-            "name": "Iron Ore"
+            "name": "Wood"
           }
         ]
       }
-    ],
-    "parent": "Tool Pod"
-  },
-  {
-    "name": "Long Sawblade"
-  },
-  {
-    "name": "Spider Walker Body"
+    ]
   },
   {
     "name": "Stinger",
@@ -2462,20 +2141,6 @@
   },
   {
     "name": "Tall Stinger"
-  },
-  {
-    "name": "Hangar Wall",
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ]
   },
   {
     "name": "Windmill",

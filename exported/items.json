@@ -803,24 +803,28 @@
       "count": 16,
       "name": "Fragment"
     },
-    "name": "BalangWalker Upgrade - Water - Tier 2",
-    "parent": "BalangWoodUpgrades"
+    "name": "Balang Walker Upgrade - Water - Tier 2",
+    "parent": "Balang Walker Body"
   },
   {
     "cost": {
       "count": 2,
       "name": "Tablet"
     },
-    "name": "BalangWalker Upgrade - Water - Tier 3",
-    "parent": "BalangWalker Upgrade - Water - Tier 2"
+    "name": "Balang Walker Upgrade - Water - Tier 3",
+    "parent": "Balang Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 4,
       "name": "Tablet"
     },
-    "name": "BalangWalker Upgrade - Water - Tier 4",
-    "parent": "BalangWalker Upgrade - Water - Tier 3"
+    "name": "Balang Walker Upgrade - Water - Tier 4",
+    "parent": "Balang Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Balang Walker Body",
+    "parent": "Balang"
   },
   {
     "cost": {
@@ -828,7 +832,7 @@
       "name": "Tablet"
     },
     "name": "Buffalo Walker Upgrade - Water - Tier 2",
-    "parent": "BuffaloWoodUpgrades"
+    "parent": "Buffalo Walker Body"
   },
   {
     "cost": {
@@ -847,52 +851,60 @@
     "parent": "Buffalo Walker Upgrade - Water - Tier 3"
   },
   {
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "name": "CamelopWalker Upgrade - Water - Tier 2",
-    "parent": "CamelopWoodUpgrades"
-  },
-  {
-    "cost": {
-      "count": 18,
-      "name": "Tablet"
-    },
-    "name": "CamelopWalker Upgrade - Water - Tier 3",
-    "parent": "CamelopWalker Upgrade - Water - Tier 2"
-  },
-  {
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "name": "CamelopWalker Upgrade - Water - Tier 4",
-    "parent": "CamelopWalker Upgrade - Water - Tier 3"
+    "name": "Buffalo Walker Body",
+    "parent": "Buffalo"
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "CobraWalker Upgrade - Water - Tier 2",
-    "parent": "CobraWoodUpgrades"
+    "name": "Camelop Walker Upgrade - Water - Tier 2",
+    "parent": "Camelop Walker Body"
   },
   {
     "cost": {
       "count": 18,
       "name": "Tablet"
     },
-    "name": "CobraWalker Upgrade - Water - Tier 3",
-    "parent": "CobraWalker Upgrade - Water - Tier 2"
+    "name": "Camelop Walker Upgrade - Water - Tier 3",
+    "parent": "Camelop Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "CobraWalker Upgrade - Water - Tier 4",
-    "parent": "CobraWalker Upgrade - Water - Tier 3"
+    "name": "Camelop Walker Upgrade - Water - Tier 4",
+    "parent": "Camelop Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "name": "Cobra Walker Upgrade - Water - Tier 2",
+    "parent": "Cobra Walker Body"
+  },
+  {
+    "cost": {
+      "count": 18,
+      "name": "Tablet"
+    },
+    "name": "Cobra Walker Upgrade - Water - Tier 3",
+    "parent": "Cobra Walker Upgrade - Water - Tier 2"
+  },
+  {
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "name": "Cobra Walker Upgrade - Water - Tier 4",
+    "parent": "Cobra Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Cobra Walker Body",
+    "parent": "Cobra"
   },
   {
     "cost": {
@@ -900,7 +912,7 @@
       "name": "Fragment"
     },
     "name": "Dinghy Walker Upgrade - Water - Tier 2",
-    "parent": "DinghyWoodUpgrades"
+    "parent": "Dinghy Walker Body"
   },
   {
     "cost": {
@@ -923,48 +935,56 @@
       "count": 15,
       "name": "Tablet"
     },
-    "name": "DomusWalker Upgrade - Water - Tier 2",
-    "parent": "DomusWoodUpgrades"
+    "name": "Domus Walker Upgrade - Water - Tier 2",
+    "parent": "Domus Walker Body"
+  },
+  {
+    "name": "Domus Walker Body",
+    "parent": "Domus"
   },
   {
     "cost": {
       "count": 20,
       "name": "Tablet"
     },
-    "name": "DomusWalker Upgrade - Water - Tier 3",
-    "parent": "DomusWalker Upgrade - Water - Tier 2"
+    "name": "Domus Walker Upgrade - Water - Tier 3",
+    "parent": "Domus Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 25,
       "name": "Tablet"
     },
-    "name": "DomusWalker Upgrade - Water - Tier 4",
-    "parent": "DomusWalker Upgrade - Water - Tier 3"
+    "name": "Domus Walker Upgrade - Water - Tier 4",
+    "parent": "Domus Walker Upgrade - Water - Tier 3"
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "FalcoWalker Upgrade - Water - Tier 2",
-    "parent": "FalcoWoodUpgrades"
+    "name": "Falco Walker Upgrade - Water - Tier 2",
+    "parent": "Falco Walker Body"
   },
   {
     "cost": {
       "count": 18,
       "name": "Tablet"
     },
-    "name": "FalcoWalker Upgrade - Water - Tier 3",
-    "parent": "FalcoWalker Upgrade - Water - Tier 2"
+    "name": "Falco Walker Upgrade - Water - Tier 3",
+    "parent": "Falco Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "FalcoWalker Upgrade - Water - Tier 4",
-    "parent": "FalcoWalker Upgrade - Water - Tier 3"
+    "name": "Falco Walker Upgrade - Water - Tier 4",
+    "parent": "Falco Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Falco Walker Body",
+    "parent": "Falco"
   },
   {
     "cost": {
@@ -972,7 +992,7 @@
       "name": "Fragment"
     },
     "name": "Firefly Walker Upgrade - Water - Tier 2",
-    "parent": "FireflyWoodUpgrades"
+    "parent": "Firefly Walker Body"
   },
   {
     "cost": {
@@ -987,120 +1007,136 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "HerculWalker Upgrade - Water - Tier 2",
-    "parent": "HerculWoodUpgrades"
+    "name": "Hercul Walker Upgrade - Water - Tier 2",
+    "parent": "Hercul Walker Body"
   },
   {
     "cost": {
       "count": 9,
       "name": "Tablet"
     },
-    "name": "HerculWalker Upgrade - Water - Tier 3",
-    "parent": "HerculWalker Upgrade - Water - Tier 2"
+    "name": "Hercul Walker Upgrade - Water - Tier 3",
+    "parent": "Hercul Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 16,
       "name": "Tablet"
     },
-    "name": "HerculWalker Upgrade - Water - Tier 4",
-    "parent": "HerculWalker Upgrade - Water - Tier 3"
+    "name": "Hercul Walker Upgrade - Water - Tier 4",
+    "parent": "Hercul Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Hercul Walker Body",
+    "parent": "Hercul"
   },
   {
     "cost": {
       "count": 4,
       "name": "Tablet"
     },
-    "name": "HornetWalker Upgrade - Water - Tier 2",
-    "parent": "HornetWoodUpgrades"
+    "name": "Hornet Walker Upgrade - Water - Tier 2",
+    "parent": "Hornet Walker Body"
   },
   {
     "cost": {
       "count": 7,
       "name": "Tablet"
     },
-    "name": "HornetWalker Upgrade - Water - Tier 3",
-    "parent": "HornetWalker Upgrade - Water - Tier 2"
+    "name": "Hornet Walker Upgrade - Water - Tier 3",
+    "parent": "Hornet Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "HornetWalker Upgrade - Water - Tier 4",
-    "parent": "HornetWalker Upgrade - Water - Tier 3"
+    "name": "Hornet Walker Upgrade - Water - Tier 4",
+    "parent": "Hornet Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Hornet Walker Body",
+    "parent": "Hornet"
   },
   {
     "cost": {
       "count": 20,
       "name": "Fragment"
     },
-    "name": "MolluskWalker Upgrade - Water - Tier 2",
-    "parent": "MolluskWoodUpgrades"
+    "name": "Mollusk Walker Upgrade - Water - Tier 2",
+    "parent": "Mollusk Walker Body"
   },
   {
     "cost": {
       "count": 2,
       "name": "Tablet"
     },
-    "name": "MolluskWalker Upgrade - Water - Tier 3",
-    "parent": "MolluskWalker Upgrade - Water - Tier 2"
+    "name": "Mollusk Walker Upgrade - Water - Tier 3",
+    "parent": "Mollusk Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 5,
       "name": "Tablet"
     },
-    "name": "MolluskWalker Upgrade - Water - Tier 4",
-    "parent": "MolluskWalker Upgrade - Water - Tier 3"
+    "name": "Mollusk Walker Upgrade - Water - Tier 4",
+    "parent": "Mollusk Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Mollusk Walker Body",
+    "parent": "Mollusk"
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "PandaWalker Upgrade - Water - Tier 2",
-    "parent": "PandaWoodUpgrades"
+    "name": "Panda Walker Upgrade - Water - Tier 2",
+    "parent": "Panda Walker Body"
+  },
+  {
+    "name": "Panda Walker Body",
+    "parent": "Panda"
   },
   {
     "cost": {
       "count": 18,
       "name": "Tablet"
     },
-    "name": "PandaWalker Upgrade - Water - Tier 3",
-    "parent": "PandaWalker Upgrade - Water - Tier 2"
+    "name": "Panda Walker Upgrade - Water - Tier 3",
+    "parent": "Panda Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "PandaWalker Upgrade - Water - Tier 4",
-    "parent": "PandaWalker Upgrade - Water - Tier 3"
+    "name": "Panda Walker Upgrade - Water - Tier 4",
+    "parent": "Panda Walker Upgrade - Water - Tier 3"
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "RaptorWalker Upgrade - Water - Tier 2",
-    "parent": "RaptorWoodUpgrades"
+    "name": "Raptor Walker Upgrade - Water - Tier 2",
+    "parent": "Raptor Walker Body"
   },
   {
     "cost": {
       "count": 18,
       "name": "Tablet"
     },
-    "name": "RaptorWalker Upgrade - Water - Tier 3",
-    "parent": "RaptorWalker Upgrade - Water - Tier 2"
+    "name": "Raptor Walker Upgrade - Water - Tier 3",
+    "parent": "Raptor Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "RaptorWalker Upgrade - Water - Tier 4",
-    "parent": "RaptorWalker Upgrade - Water - Tier 3"
+    "name": "Raptor Walker Upgrade - Water - Tier 4",
+    "parent": "Raptor Walker Upgrade - Water - Tier 3"
   },
   {
     "cost": {
@@ -1115,48 +1151,56 @@
       "count": 15,
       "name": "Tablet"
     },
-    "name": "SchmetterlingWalker Upgrade - Water - Tier 2",
-    "parent": "SchmetterlingWoodUpgrades"
+    "name": "Schmetterling Walker Upgrade - Water - Tier 2",
+    "parent": "Schmetterling Walker Body"
+  },
+  {
+    "name": "Schmetterling Walker Body",
+    "parent": "Schmetterling"
   },
   {
     "cost": {
       "count": 20,
       "name": "Tablet"
     },
-    "name": "SchmetterlingWalker Upgrade - Water - Tier 3",
-    "parent": "SchmetterlingWalker Upgrade - Water - Tier 2"
+    "name": "Schmetterling Walker Upgrade - Water - Tier 3",
+    "parent": "Schmetterling Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 25,
       "name": "Tablet"
     },
-    "name": "SchmetterlingWalker Upgrade - Water - Tier 4",
-    "parent": "SchmetterlingWalker Upgrade - Water - Tier 3"
+    "name": "Schmetterling Walker Upgrade - Water - Tier 4",
+    "parent": "Schmetterling Walker Upgrade - Water - Tier 3"
   },
   {
     "cost": {
       "count": 2,
       "name": "Tablet"
     },
-    "name": "SilurWalker Upgrade - Water - Tier 2",
-    "parent": "SilurWoodUpgrades"
+    "name": "Silur Walker Upgrade - Water - Tier 2",
+    "parent": "Silur Walker Body"
   },
   {
     "cost": {
       "count": 4,
       "name": "Tablet"
     },
-    "name": "SilurWalker Upgrade - Water - Tier 3",
-    "parent": "SilurWalker Upgrade - Water - Tier 2"
+    "name": "Silur Walker Upgrade - Water - Tier 3",
+    "parent": "Silur Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 7,
       "name": "Tablet"
     },
-    "name": "SilurWalker Upgrade - Water - Tier 4",
-    "parent": "SilurWalker Upgrade - Water - Tier 3"
+    "name": "Silur Walker Upgrade - Water - Tier 4",
+    "parent": "Silur Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Silur Walker Body",
+    "parent": "Silur"
   },
   {
     "cost": {
@@ -1164,7 +1208,7 @@
       "name": "Fragment"
     },
     "name": "Spider Walker Upgrade - Water - Tier 2",
-    "parent": "SpiderWoodUpgrades"
+    "parent": "Spider Walker Body"
   },
   {
     "cost": {
@@ -1175,12 +1219,16 @@
     "parent": "Spider Walker Upgrade - Water - Tier 3"
   },
   {
+    "name": "Spider Walker Body",
+    "parent": "Nomad"
+  },
+  {
     "cost": {
       "count": 20,
       "name": "Fragment"
     },
     "name": "Stiletto Walker Upgrade - Water - Tier 2",
-    "parent": "StilettoWoodUpgrades"
+    "parent": "Stiletto Walker Body"
   },
   {
     "cost": {
@@ -1199,76 +1247,92 @@
     "parent": "Stiletto Walker Upgrade - Water - Tier 3"
   },
   {
+    "name": "Stiletto Walker Body",
+    "parent": "Stiletto"
+  },
+  {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "TitanWalker Upgrade - Water - Tier 2",
-    "parent": "TitanWoodUpgrades"
+    "name": "Titan Walker Upgrade - Water - Tier 2",
+    "parent": "Titan Walker Body"
+  },
+  {
+    "name": "Titan Walker Body",
+    "parent": "Titan"
   },
   {
     "cost": {
       "count": 50,
       "name": "Tablet"
     },
-    "name": "TitanWalker Upgrade - Water - Tier 3",
-    "parent": "TitanWalker Upgrade - Water - Tier 2"
+    "name": "Titan Walker Upgrade - Water - Tier 3",
+    "parent": "Titan Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 100,
       "name": "Tablet"
     },
-    "name": "TitanWalker Upgrade - Water - Tier 4",
-    "parent": "TitanWalker Upgrade - Water - Tier 3"
+    "name": "Titan Walker Upgrade - Water - Tier 4",
+    "parent": "Titan Walker Upgrade - Water - Tier 3"
   },
   {
     "cost": {
       "count": 60,
       "name": "Fragment"
     },
-    "name": "TobogganWalker Upgrade - Water - Tier 2",
-    "parent": "TobogganWoodUpgrades"
+    "name": "Toboggan Walker Upgrade - Water - Tier 2",
+    "parent": "Toboggan Walker Body"
+  },
+  {
+    "name": "Toboggan Walker Body",
+    "parent": "Toboggan"
   },
   {
     "cost": {
       "count": 2,
       "name": "Tablet"
     },
-    "name": "TobogganWalker Upgrade - Water - Tier 3",
-    "parent": "TobogganWalker Upgrade - Water - Tier 2"
+    "name": "Toboggan Walker Upgrade - Water - Tier 3",
+    "parent": "Toboggan Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 5,
       "name": "Tablet"
     },
-    "name": "TobogganWalker Upgrade - Water - Tier 4",
-    "parent": "TobogganWalker Upgrade - Water - Tier 3"
+    "name": "Toboggan Walker Upgrade - Water - Tier 4",
+    "parent": "Toboggan Walker Upgrade - Water - Tier 3"
   },
   {
     "cost": {
       "count": 15,
       "name": "Tablet"
     },
-    "name": "TuskerWalker Upgrade - Water - Tier 2",
-    "parent": "TuskerWoodUpgrades"
+    "name": "Tusker Walker Upgrade - Water - Tier 2",
+    "parent": "Tusker Walker Body"
   },
   {
     "cost": {
       "count": 20,
       "name": "Tablet"
     },
-    "name": "TuskerWalker Upgrade - Water - Tier 3",
-    "parent": "TuskerWalker Upgrade - Water - Tier 2"
+    "name": "Tusker Walker Upgrade - Water - Tier 3",
+    "parent": "Tusker Walker Upgrade - Water - Tier 2"
   },
   {
     "cost": {
       "count": 25,
       "name": "Tablet"
     },
-    "name": "TuskerWalker Upgrade - Water - Tier 4",
-    "parent": "TuskerWalker Upgrade - Water - Tier 3"
+    "name": "Tusker Walker Upgrade - Water - Tier 4",
+    "parent": "Tusker Walker Upgrade - Water - Tier 3"
+  },
+  {
+    "name": "Tusker Walker Body",
+    "parent": "Tusker"
   },
   {
     "category": "Ammo",
@@ -5932,6 +5996,68 @@
     "trade_price": 1
   },
   {
+    "name": "Large Base Walker Packer Body",
+    "category": "Containers",
+    "cost": {
+      "count": 5,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Reinforced Plank"
+          },
+          {
+            "count": 6,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 60,
+            "name": "Rope"
+          },
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          }
+        ]
+      }
+    ],
+    "parent": "Small Base Walker Packer Body"
+  },
+  {
+    "name": "Small Base Walker Packer Body",
+    "category": "Containers",
+    "cost": {
+      "count": 25,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 370,
+            "name": "Wood"
+          },
+          {
+            "count": 27,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 10,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 25,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "parent": "ChestBaseMaintenance"
+  },
+  {
     "category": "Crafting",
     "cost": {
       "count": 10,
@@ -5963,160 +6089,30 @@
     "parent": "DrillSpade"
   },
   {
-    "category": "Furniture",
+    "name": "Vision Powder",
+    "category": "Drugs",
     "cost": {
-      "count": 40,
+      "count": 6,
       "name": "Fragment"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 5,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Carpet Light",
-    "parent": "ClanFlags"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 5,
-            "name": "Rupu Pelt"
-          }
-        ]
-      }
-    ],
-    "name": "Carpet Dark"
-  },
-  {
-    "category": "Furniture",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 25,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "name": "Chair throne",
-    "parent": "Chair Simple"
-  },
-  {
-    "category": "Furniture",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Wood"
+            "count": 3,
+            "name": "Huge Cactus Fruit"
           },
           {
             "count": 10,
-            "name": "Fiber"
+            "name": "Purified Water"
           }
-        ]
+        ],
+        "station": "Campfire",
+        "time": 30
       }
     ],
-    "name": "Chair Simple",
-    "parent": "ClanFlags"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Chair Comfortable",
-    "parent": "Chair Simple"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 4,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 25,
-            "name": "Stone"
-          },
-          {
-            "count": 3,
-            "name": "Rupu Gel"
-          }
-        ]
-      }
-    ],
-    "name": "Fire Goblet",
-    "parent": "Lamp Standing"
-  },
-  {
-    "category": "Furniture",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 3,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Rupu Gel"
-          }
-        ]
-      }
-    ],
-    "name": "Lamp Double Hanging",
-    "parent": "Lamp Standing"
+    "parent": "Vitamins",
+    "trade_price": 34.8
   },
   {
     "category": "Furniture",
@@ -7302,6 +7298,33 @@
       }
     ],
     "name": "Wreath"
+  },
+  {
+    "name": "Cauterizing Station",
+    "category": "Interactables",
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 45,
+            "name": "Wood"
+          },
+          {
+            "count": 20,
+            "name": "Stone"
+          },
+          {
+            "count": 20,
+            "name": "Aloe Vera"
+          }
+        ]
+      }
+    ],
+    "parent": "Fury Fumes"
   },
   {
     "category": "Interactables",
@@ -8552,102 +8575,6 @@
     "name": "Terrain: Worm Sand"
   },
   {
-    "name": "Balang Walker Body"
-  },
-  {
-    "name": "Large Base Walker Packer Body",
-    "category": "Containers",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 6,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 60,
-            "name": "Rope"
-          },
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          }
-        ]
-      }
-    ],
-    "parent": "Small Base Walker Packer Body"
-  },
-  {
-    "name": "Small Base Walker Packer Body",
-    "category": "Containers",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 370,
-            "name": "Wood"
-          },
-          {
-            "count": 27,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 10,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 25,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "parent": "ChestBaseMaintenance"
-  },
-  {
-    "name": "Lumbermill",
-    "category": "Crafting",
-    "cost": {
-      "count": 40,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 70,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 1,
-            "name": "Reinforced Plank"
-          }
-        ]
-      }
-    ],
-    "parent": "WoodworkingStation_T2"
-  },
-  {
     "name": "Battle Fan",
     "category": "Weapons",
     "cost": {
@@ -8682,63 +8609,7 @@
     "name": "Hammock"
   },
   {
-    "name": "Buffalo Walker Body"
-  },
-  {
-    "name": "Vision Powder",
-    "category": "Drugs",
-    "cost": {
-      "count": 6,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 3,
-            "name": "Huge Cactus Fruit"
-          },
-          {
-            "count": 10,
-            "name": "Purified Water"
-          }
-        ],
-        "station": "Campfire",
-        "time": 30
-      }
-    ],
-    "parent": "Vitamins",
-    "trade_price": 34.8
-  },
-  {
     "name": "Camelop  Walker Body"
-  },
-  {
-    "name": "Cauterizing Station",
-    "category": "Interactables",
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 45,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Aloe Vera"
-          }
-        ]
-      }
-    ],
-    "parent": "Fury Fumes"
   },
   {
     "name": "Ammo Chest"
@@ -8781,6 +8652,37 @@
       }
     ],
     "parent": "Campfire"
+  },
+  {
+    "name": "Lumbermill",
+    "category": "Crafting",
+    "cost": {
+      "count": 40,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 70,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 1,
+            "name": "Reinforced Plank"
+          }
+        ]
+      }
+    ],
+    "parent": "WoodworkingStation_T2"
   },
   {
     "name": "Obsidian Machine",
@@ -8895,22 +8797,22 @@
     "trade_price": 39.4
   },
   {
-    "name": "Race Dust",
+    "name": "Jojo Mojo",
     "category": "Drugs",
+    "cost": {
+      "count": 35,
+      "name": "Fragment"
+    },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 22,
-            "name": "Purified Water"
-          },
-          {
-            "count": 75,
+            "count": 14,
             "name": "Mushroom Flesh"
           },
           {
-            "count": 2,
-            "name": "Beeswax"
+            "count": 4,
+            "name": "Earth Wax"
           },
           {
             "count": 1,
@@ -8921,34 +8823,8 @@
         "time": 60
       }
     ],
-    "trade_price": 99.8
-  },
-  {
-    "name": "Sterile Bandage",
-    "category": "Interactables",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 2,
-            "name": "Aloe Vera"
-          }
-        ]
-      }
-    ],
-    "parent": "Primitive Bandage",
-    "trade_price": 1.4
-  },
-  {
-    "name": "Cobra Walker Body"
+    "parent": "Fury Fumes",
+    "trade_price": 9
   },
   {
     "name": "Rupu Repellent",
@@ -8981,43 +8857,28 @@
     "trade_price": 79.9
   },
   {
-    "name": "Poaching Hut",
+    "name": "Sterile Bandage",
     "category": "Interactables",
     "cost": {
-      "count": 4,
-      "name": "Tablet"
+      "count": 15,
+      "name": "Fragment"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 1000,
-            "name": "Wood"
+            "count": 1,
+            "name": "Fiber Weave"
           },
           {
-            "count": 50,
-            "name": "Rope"
-          },
-          {
-            "count": 100,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 100,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 300,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 300,
-            "name": "Chitin Plate"
+            "count": 2,
+            "name": "Aloe Vera"
           }
         ]
       }
     ],
-    "parent": "ChestSmall"
+    "parent": "Primitive Bandage",
+    "trade_price": 1.4
   },
   {
     "name": "Drill Spade",
@@ -9090,20 +8951,6 @@
     "name": "Rig T3"
   },
   {
-    "category": "WalkerRigs",
-    "name": "Hammerhead Rig",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "HammerheadDinghyRigSchematic"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "name": "Dinghy Walker Body",
     "category": "Walkers",
     "cost": {
@@ -9127,12 +8974,6 @@
     "parent": "Firefly Walker Body"
   },
   {
-    "name": "Domus Walker Body"
-  },
-  {
-    "name": "Falco Walker Body"
-  },
-  {
     "name": "Advanced Fiberworking Station"
   },
   {
@@ -9148,28 +8989,22 @@
     "name": "Gunpod Stinger"
   },
   {
-    "name": "Hercul Walker Body"
-  },
-  {
-    "name": "Hornet Walker Body"
-  },
-  {
-    "name": "Jojo Mojo",
+    "name": "Race Dust",
     "category": "Drugs",
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 14,
+            "count": 22,
+            "name": "Purified Water"
+          },
+          {
+            "count": 75,
             "name": "Mushroom Flesh"
           },
           {
-            "count": 4,
-            "name": "Earth Wax"
+            "count": 2,
+            "name": "Beeswax"
           },
           {
             "count": 1,
@@ -9180,8 +9015,91 @@
         "time": 60
       }
     ],
-    "parent": "Fury Fumes",
-    "trade_price": 9
+    "trade_price": 99.8
+  },
+  {
+    "name": "Poaching Hut",
+    "category": "Interactables",
+    "cost": {
+      "count": 4,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1000,
+            "name": "Wood"
+          },
+          {
+            "count": 50,
+            "name": "Rope"
+          },
+          {
+            "count": 100,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 100,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 300,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 300,
+            "name": "Chitin Plate"
+          }
+        ]
+      }
+    ],
+    "parent": "ChestSmall"
+  },
+  {
+    "category": "WalkerRigs",
+    "name": "Hammerhead Rig",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "HammerheadDinghyRigSchematic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Walker Packing Compartment",
+    "category": "WalkerTools",
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 400,
+            "name": "Wood"
+          },
+          {
+            "count": 35,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 20,
+            "name": "Rope"
+          },
+          {
+            "count": 10,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "parent": "Steering Levers"
   },
   {
     "name": "Hose Station",
@@ -9213,9 +9131,6 @@
       }
     ],
     "parent": "Ballista"
-  },
-  {
-    "name": "Mollusk Walker Body"
   },
   {
     "name": "Net Thrower",
@@ -9254,9 +9169,6 @@
     "name": "Obsidian Pot"
   },
   {
-    "name": "Panda Walker Body"
-  },
-  {
     "name": "Proxy Walker Body"
   },
   {
@@ -9264,6 +9176,64 @@
   },
   {
     "name": "Repair Station"
+  },
+  {
+    "name": "Stomping Station",
+    "category": "Crafting",
+    "cost": {
+      "count": 25,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 45,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 20,
+            "name": "Stone"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "parent": "SoilExcavator"
+  },
+  {
+    "name": "Sawblade",
+    "category": "WalkerTools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 60,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 100,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 20,
+            "name": "Rope"
+          },
+          {
+            "count": 2,
+            "name": "Iron Ore"
+          }
+        ]
+      }
+    ],
+    "parent": "Tool Pod"
   },
   {
     "name": "Rokker",
@@ -9304,33 +9274,6 @@
     "name": "Rupu Sling"
   },
   {
-    "name": "Sawblade",
-    "category": "WalkerTools",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 60,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 100,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 20,
-            "name": "Rope"
-          },
-          {
-            "count": 2,
-            "name": "Iron Ore"
-          }
-        ]
-      }
-    ],
-    "parent": "Tool Pod"
-  },
-  {
     "name": "Long Sawblade"
   },
   {
@@ -9365,47 +9308,21 @@
     "parent": "Ballista"
   },
   {
-    "name": "Schmetterling Walker Body"
+    "name": "Soil Excavator"
   },
   {
-    "name": "Silur Walker Body"
-  },
-  {
-    "name": "Walker Packing Compartment",
-    "category": "WalkerTools",
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
+    "name": "Hangar Wall",
+    "category": "StructuralWoodMedium",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 400,
+            "count": 100,
             "name": "Wood"
-          },
-          {
-            "count": 35,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 20,
-            "name": "Rope"
-          },
-          {
-            "count": 10,
-            "name": "Rupu Vine"
           }
         ]
       }
-    ],
-    "parent": "Steering Levers"
-  },
-  {
-    "name": "Soil Excavator"
-  },
-  {
-    "name": "Spider Walker Body"
+    ]
   },
   {
     "name": "Steering Levers Cage",
@@ -9433,9 +9350,6 @@
       }
     ],
     "parent": "Stinger_T3"
-  },
-  {
-    "name": "Stiletto Walker Body"
   },
   {
     "name": "Stinger",
@@ -9473,57 +9387,6 @@
   },
   {
     "name": "Tall Stinger"
-  },
-  {
-    "name": "Stomping Station",
-    "category": "Crafting",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 45,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 20,
-            "name": "Stone"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "parent": "SoilExcavator"
-  },
-  {
-    "name": "Hangar Wall",
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Titan Walker Body"
-  },
-  {
-    "name": "Toboggan Walker Body"
   },
   {
     "name": "Tool Pod",
@@ -9590,9 +9453,6 @@
   },
   {
     "name": "Trip Wire Trap"
-  },
-  {
-    "name": "Tusker Walker Body"
   },
   {
     "name": "Barrier Base",
@@ -10605,6 +10465,162 @@
       }
     ],
     "name": "Basket Open"
+  },
+  {
+    "category": "Furniture",
+    "cost": {
+      "count": 40,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 5,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Carpet Light",
+    "parent": "ClanFlags"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 5,
+            "name": "Rupu Pelt"
+          }
+        ]
+      }
+    ],
+    "name": "Carpet Dark"
+  },
+  {
+    "category": "Furniture",
+    "cost": {
+      "count": 3,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 25,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "name": "Chair throne",
+    "parent": "Chair Simple"
+  },
+  {
+    "category": "Furniture",
+    "cost": {
+      "count": 40,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Chair Simple",
+    "parent": "ClanFlags"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Chair Comfortable",
+    "parent": "Chair Simple"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 4,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 25,
+            "name": "Stone"
+          },
+          {
+            "count": 3,
+            "name": "Rupu Gel"
+          }
+        ]
+      }
+    ],
+    "name": "Fire Goblet",
+    "parent": "Lamp Standing"
+  },
+  {
+    "category": "Furniture",
+    "cost": {
+      "count": 40,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 3,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Rupu Gel"
+          }
+        ]
+      }
+    ],
+    "name": "Lamp Double Hanging",
+    "parent": "Lamp Standing"
   },
   {
     "category": "Interactables",
