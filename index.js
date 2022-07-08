@@ -532,8 +532,8 @@ function parsePlaceableData(filePath) {
         );
       }
 
-      if (jsonData[1].Properties?.Requirements) {
-        let recipeData = jsonData[1].Properties.Requirements;
+      if (jsonData[1].Properties?.FullCost) {
+        let recipeData = jsonData[1].Properties.FullCost;
         if (recipeData.Inputs) {
           let recipe = { ...recipeTemplate };
           let ingredients = [];
