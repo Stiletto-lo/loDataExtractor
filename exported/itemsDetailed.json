@@ -206,7 +206,12 @@
     "experiencieReward": 170,
     "stackSize": 100,
     "weight": 4,
-    "durability": 330
+    "durability": 330,
+    "armorInfo": {
+      "soak": 12,
+      "reduce": 8
+    },
+    "movementSpeedReduction": 5
   },
   {
     "cost": {
@@ -251,7 +256,12 @@
     "experiencieReward": 140,
     "stackSize": 100,
     "weight": 5,
-    "durability": 330
+    "durability": 330,
+    "armorInfo": {
+      "soak": 12,
+      "reduce": 8
+    },
+    "movementSpeedReduction": 5
   },
   {
     "cost": {
@@ -288,7 +298,12 @@
     "experiencieReward": 250,
     "stackSize": 100,
     "weight": 14.8,
-    "durability": 330
+    "durability": 330,
+    "armorInfo": {
+      "soak": 31,
+      "reduce": 20
+    },
+    "movementSpeedReduction": 15
   },
   {
     "name": "Obsidian Canister",
@@ -9014,7 +9029,11 @@
     "experiencieReward": 413,
     "stackSize": 100,
     "weight": 0.4,
-    "durability": 1000
+    "durability": 1000,
+    "armorInfo": {
+      "soak": 4,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9039,7 +9058,11 @@
     "experiencieReward": 24,
     "stackSize": 100,
     "weight": 1,
-    "durability": 120
+    "durability": 120,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9068,7 +9091,12 @@
     "experiencieReward": 100,
     "stackSize": 100,
     "weight": 4.3,
-    "durability": 200
+    "durability": 200,
+    "armorInfo": {
+      "soak": 7,
+      "reduce": 4
+    },
+    "movementSpeedReduction": 4
   },
   {
     "category": "Armors",
@@ -9099,7 +9127,11 @@
     "experiencieReward": 24,
     "stackSize": 100,
     "weight": 1,
-    "durability": 150
+    "durability": 150,
+    "armorInfo": {
+      "soak": 8,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9127,7 +9159,12 @@
     "experiencieReward": 40,
     "stackSize": 100,
     "weight": 1.3,
-    "durability": 180
+    "durability": 180,
+    "armorInfo": {
+      "soak": 13,
+      "reduce": 2
+    },
+    "movementSpeedReduction": 3
   },
   {
     "category": "Armors",
@@ -9160,7 +9197,11 @@
     "experiencieReward": 90,
     "stackSize": 100,
     "weight": 1.5,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 12,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9197,7 +9238,12 @@
     "experiencieReward": 100,
     "stackSize": 100,
     "weight": 3.3,
-    "durability": 280
+    "durability": 280,
+    "armorInfo": {
+      "soak": 18,
+      "reduce": 2
+    },
+    "movementSpeedReduction": 5
   },
   {
     "category": "Armors",
@@ -9230,7 +9276,12 @@
     "experiencieReward": 150,
     "stackSize": 100,
     "weight": 2,
-    "durability": 420
+    "durability": 420,
+    "armorInfo": {
+      "soak": 15,
+      "reduce": 1
+    },
+    "movementSpeedReduction": 1
   },
   {
     "category": "Armors",
@@ -9255,7 +9306,11 @@
     "experiencieReward": 20,
     "stackSize": 100,
     "weight": 0.4,
-    "durability": 120
+    "durability": 120,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9284,7 +9339,12 @@
     "experiencieReward": 60,
     "stackSize": 100,
     "weight": 3.8,
-    "durability": 200
+    "durability": 200,
+    "armorInfo": {
+      "soak": 7,
+      "reduce": 4
+    },
+    "movementSpeedReduction": 4
   },
   {
     "category": "Armors",
@@ -9315,7 +9375,11 @@
     "experiencieReward": 50,
     "stackSize": 100,
     "weight": 0.7,
-    "durability": 150
+    "durability": 150,
+    "armorInfo": {
+      "soak": 8,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9344,7 +9408,12 @@
     "experiencieReward": 70,
     "stackSize": 100,
     "weight": 1,
-    "durability": 180
+    "durability": 180,
+    "armorInfo": {
+      "soak": 13,
+      "reduce": 2
+    },
+    "movementSpeedReduction": 3
   },
   {
     "category": "Armors",
@@ -9377,7 +9446,11 @@
     "experiencieReward": 100,
     "stackSize": 100,
     "weight": 1.4,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 12,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9414,7 +9487,12 @@
     "experiencieReward": 85,
     "stackSize": 100,
     "weight": 3.1,
-    "durability": 280
+    "durability": 280,
+    "armorInfo": {
+      "soak": 18,
+      "reduce": 2
+    },
+    "movementSpeedReduction": 5
   },
   {
     "category": "Armors",
@@ -9447,7 +9525,12 @@
     "experiencieReward": 150,
     "stackSize": 100,
     "weight": 1.8,
-    "durability": 420
+    "durability": 420,
+    "armorInfo": {
+      "soak": 15,
+      "reduce": 1
+    },
+    "movementSpeedReduction": 1
   },
   {
     "category": "Armors",
@@ -9480,7 +9563,11 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.4,
-    "durability": 120
+    "durability": 120,
+    "armorInfo": {
+      "soak": 5,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9501,7 +9588,11 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 120
+    "durability": 120,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9530,7 +9621,11 @@
     "experiencieReward": 100,
     "stackSize": 100,
     "weight": 1,
-    "durability": 420
+    "durability": 420,
+    "armorInfo": {
+      "soak": 12,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9550,7 +9645,11 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9570,7 +9669,11 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9590,7 +9693,11 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9610,7 +9717,11 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9630,7 +9741,11 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9650,7 +9765,11 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9670,7 +9789,11 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9690,7 +9813,11 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9710,7 +9837,11 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9730,7 +9861,11 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9750,7 +9885,11 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -9770,7 +9909,11 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 6,
+      "reduce": 1
+    }
   },
   {
     "category": "Armors",
@@ -10858,7 +11001,12 @@
     "experiencieReward": 30,
     "stackSize": 100,
     "weight": 2,
-    "durability": 120
+    "durability": 120,
+    "armorInfo": {
+      "soak": 22,
+      "reduce": 1
+    },
+    "movementSpeedReduction": 2
   },
   {
     "category": "Armors",
@@ -10891,7 +11039,12 @@
     "experiencieReward": 75,
     "stackSize": 100,
     "weight": 7,
-    "durability": 200
+    "durability": 200,
+    "armorInfo": {
+      "soak": 25,
+      "reduce": 8
+    },
+    "movementSpeedReduction": 13
   },
   {
     "category": "Armors",
@@ -10918,7 +11071,12 @@
     "experiencieReward": 75,
     "stackSize": 100,
     "weight": 2.8,
-    "durability": 150
+    "durability": 150,
+    "armorInfo": {
+      "soak": 29,
+      "reduce": 1
+    },
+    "movementSpeedReduction": 1
   },
   {
     "category": "Tools",
@@ -11328,7 +11486,12 @@
     "experiencieReward": 75,
     "stackSize": 100,
     "weight": 3,
-    "durability": 170
+    "durability": 170,
+    "armorInfo": {
+      "soak": 32,
+      "reduce": 2
+    },
+    "movementSpeedReduction": 2
   },
   {
     "category": "Armors",
@@ -11361,7 +11524,12 @@
     "experiencieReward": 75,
     "stackSize": 100,
     "weight": 4.2,
-    "durability": 180
+    "durability": 180,
+    "armorInfo": {
+      "soak": 39,
+      "reduce": 4
+    },
+    "movementSpeedReduction": 9
   },
   {
     "category": "Armors",
@@ -11398,7 +11566,12 @@
     "experiencieReward": 75,
     "stackSize": 100,
     "weight": 4.5,
-    "durability": 480
+    "durability": 480,
+    "armorInfo": {
+      "soak": 43,
+      "reduce": 4
+    },
+    "movementSpeedReduction": 10
   },
   {
     "category": "Armors",
@@ -11431,7 +11604,12 @@
     "experiencieReward": 80,
     "stackSize": 100,
     "weight": 3.8,
-    "durability": 250
+    "durability": 250,
+    "armorInfo": {
+      "soak": 35,
+      "reduce": 1
+    },
+    "movementSpeedReduction": 1
   },
   {
     "category": "Armors",
@@ -11468,7 +11646,12 @@
     "experiencieReward": 100,
     "stackSize": 100,
     "weight": 6.7,
-    "durability": 280
+    "durability": 280,
+    "armorInfo": {
+      "soak": 48,
+      "reduce": 5
+    },
+    "movementSpeedReduction": 15
   },
   {
     "category": "Armors",
@@ -11505,7 +11688,12 @@
     "experiencieReward": 250,
     "stackSize": 100,
     "weight": 3.7,
-    "durability": 420
+    "durability": 420,
+    "armorInfo": {
+      "soak": 41,
+      "reduce": 1
+    },
+    "movementSpeedReduction": 3
   },
   {
     "category": "Furniture",
@@ -16617,7 +16805,6 @@
       }
     ],
     "name": "Ballista",
-    "parent": "Sand Bed",
     "description": "Ballista shoots bolts or tethering harpoons that attach to walkers and the environment.",
     "stackSize": 100
   },

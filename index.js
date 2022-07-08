@@ -38,6 +38,8 @@ const itemTemplate = {
   weaponInfo: undefined,
   toolInfo: undefined,
   schematicName: undefined,
+  armorInfo: undefined,
+  movementSpeedReduction: undefined,
   drops: [],
 };
 
@@ -75,6 +77,11 @@ const dropTemplate = {
   chance: undefined,
   minQuantity: undefined,
   maxQuantity: undefined,
+};
+
+const armorInfoTemplate = {
+  soak: undefined,
+  reduce: undefined,
 };
 
 const ingredienTemplate = { count: undefined, name: undefined };
@@ -156,7 +163,6 @@ if (allItems.length > 0) {
 }
 
 /* We remove additional information */
-
 allItems.forEach((item) => {
   item.description = undefined;
   item.projectileDamage = undefined;
@@ -168,6 +174,8 @@ allItems.forEach((item) => {
   item.toolInfo = undefined;
   item.schematicName = undefined;
   item.drops = undefined;
+  item.armorInfo = undefined;
+  item.movementSpeedReduction = undefined;
 });
 
 if (allItems.length > 0) {
@@ -330,6 +338,11 @@ function parseItemData(filePath) {
         item.trade_price = jsonData[1].Properties.ExpectedPrice;
       }
 
+      if (jsonData[1].Properties?.MovementSpeedReduction) {
+        item.movementSpeedReduction =
+          jsonData[1].Properties.MovementSpeedReduction;
+      }
+
       if (jsonData[1].Properties?.ProjectileDamage) {
         let projectileDamage = { ...projectileDamageTemplate };
 
@@ -351,6 +364,19 @@ function parseItemData(filePath) {
           : undefined;
 
         item.projectileDamage = projectileDamage;
+      }
+
+      if (jsonData[1].Properties?.DefenseProperties) {
+        let armorInfo = { ...armorInfoTemplate };
+
+        armorInfo.soak = jsonData[1].Properties?.DefenseProperties?.Soak
+          ? jsonData[1].Properties?.DefenseProperties?.Soak
+          : undefined;
+        armorInfo.reduce = jsonData[1].Properties?.DefenseProperties?.Reduce
+          ? jsonData[1].Properties?.DefenseProperties?.Reduce
+          : undefined;
+
+        item.armorInfo = armorInfo;
       }
 
       if (jsonData[1].Properties?.ExperienceRewardCrafting) {
@@ -562,9 +588,7 @@ function parseTechData(filePath) {
 
       item.cost = itemCost;
     }
-    if (item.type == "Ballista_C") {
-      console.log(item);
-    }
+
     if (!jsonData[1]?.Properties?.bHidden || SHOW_DEV_ITEMS) {
       allItems.push(item);
     }
