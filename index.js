@@ -41,6 +41,7 @@ const itemTemplate = {
   armorInfo: undefined,
   movementSpeedReduction: undefined,
   drops: [],
+  structureInfo: undefined,
 };
 
 const weaponInfoTemplate = {
@@ -82,6 +83,11 @@ const dropTemplate = {
 const armorInfoTemplate = {
   soak: undefined,
   reduce: undefined,
+};
+
+const structureInfoTemplate = {
+  type: undefined,
+  hp: undefined,
 };
 
 const ingredienTemplate = { count: undefined, name: undefined };
@@ -176,6 +182,7 @@ allItems.forEach((item) => {
   item.drops = undefined;
   item.armorInfo = undefined;
   item.movementSpeedReduction = undefined;
+  item.structureInfo = undefined;
 });
 
 if (allItems.length > 0) {
@@ -543,11 +550,32 @@ function parsePlaceableData(filePath) {
         }
       }
 
-      if (jsonData[1].Properties?.Name?.Key) {
+      if (jsonData[1].Properties?.CachedCraftingPartsInfo) {
+        let structureInfo = { ...structureInfoTemplate };
+
+        if (jsonData[1].Properties?.CachedCraftingPartsInfo?.MaxHP) {
+          structureInfo.hp =
+            jsonData[1].Properties.CachedCraftingPartsInfo.MaxHP;
+          item.structureInfo = structureInfo;
+        }
+        if (jsonData[1].Properties?.CachedCraftingPartsInfo?.Protection) {
+          structureInfo.type =
+            jsonData[1].Properties.CachedCraftingPartsInfo.Protection.replace(
+              "EMistMaterialProtection::",
+              ""
+            );
+          item.structureInfo = structureInfo;
+        }
+      }
+
+      /*if (jsonData[1].Properties?.Name?.Key) {
         item.translation = jsonData[1].Properties.Name.Key.replace(
           ".Name",
           ""
         ).trim();
+      }*/
+      if (jsonData[1].Properties?.Name?.SourceString) {
+        item.name = jsonData[1].Properties.Name.SourceString.trim();
       }
     }
 
