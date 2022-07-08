@@ -32,6 +32,899 @@
     "parent": "Equipment"
   },
   {
+    "category": "Resources",
+    "name": "Terrain: Clay Spots",
+    "trade_price": 1
+  },
+  {
+    "name": "Flots",
+    "trade_price": 0.5
+  },
+  {
+    "category": "Containers",
+    "cost": {
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Wood"
+          },
+          {
+            "count": 25,
+            "name": "Fiber"
+          },
+          {
+            "count": 8,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Maintenance Box",
+    "parent": "WallSand"
+  },
+  {
+    "name": "Repair Station",
+    "category": "Crafting",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 125,
+            "name": "Wood"
+          },
+          {
+            "count": 6,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 15,
+            "name": "Rope"
+          }
+        ]
+      }
+    ],
+    "parent": "Woodworking Station"
+  },
+  {
+    "name": "Windmill",
+    "category": "Crafting",
+    "cost": {
+      "count": 40,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 75,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 4,
+            "name": "Rope"
+          },
+          {
+            "count": 5,
+            "name": "Earth Wax"
+          }
+        ]
+      }
+    ],
+    "parent": "SoilExcavator"
+  },
+  {
+    "category": "Crafting",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Wood"
+          },
+          {
+            "count": 11,
+            "name": "Fiber"
+          },
+          {
+            "count": 18,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Camp Fire"
+  },
+  {
+    "category": "Crafting",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 500,
+            "name": "Fiber"
+          },
+          {
+            "count": 50,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Farmable Area"
+  },
+  {
+    "category": "Crafting",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Magma Seeds"
+          }
+        ]
+      }
+    ],
+    "name": "Pine Tree"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Stairs"
+  },
+  {
+    "category": "Interactables",
+    "name": "LootBoxTest"
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "_CheatingLevers"
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Aloe Vera"
+          }
+        ],
+        "station": "Stomping Station",
+        "time": 40
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Apple"
+          }
+        ],
+        "output": 8,
+        "station": "Stomping Station",
+        "time": 120
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Corn"
+          }
+        ],
+        "station": "Stomping Station",
+        "time": 16
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Blood Turnip"
+          }
+        ],
+        "output": 3,
+        "station": "Stomping Station",
+        "time": 100
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Huge Cactus Fruit"
+          }
+        ],
+        "station": "Stomping Station",
+        "time": 96
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Thornberry"
+          }
+        ],
+        "station": "Stomping Station",
+        "time": 24
+      },
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Cactus Flesh"
+          }
+        ],
+        "station": "Stomping Station",
+        "time": 18
+      }
+    ],
+    "name": "Fruit Pulp"
+  },
+  {
+    "category": "Resources",
+    "name": "Terrain: Black Soil",
+    "trade_price": 1
+  },
+  {
+    "category": "Resources",
+    "name": "Flint",
+    "trade_price": 0.1
+  },
+  {
+    "category": "Resources",
+    "name": "Nurr Fang",
+    "trade_price": 0.4
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Wood"
+          },
+          {
+            "count": 14,
+            "name": "Flint"
+          }
+        ],
+        "station": "Woodworking Station",
+        "time": 120
+      }
+    ],
+    "name": "Toothwheel",
+    "trade_price": 50
+  },
+  {
+    "category": "Resources",
+    "name": "Terrain: Sand"
+  },
+  {
+    "category": "Resources",
+    "name": "Terrain: Excavatable"
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Wood"
+          },
+          {
+            "count": 22,
+            "name": "Fiber"
+          },
+          {
+            "count": 1,
+            "name": "Charcoal"
+          }
+        ],
+        "output": 10,
+        "station": "Woodworking Station",
+        "time": 120
+      }
+    ],
+    "name": "Blazing Slab",
+    "trade_price": 0.1
+  },
+  {
+    "category": "Resources",
+    "name": "Terrain: Worm Sand"
+  },
+  {
+    "category": "Resources",
+    "name": "Armoury Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Fortress Module"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Durability - Tier 1 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Cargo Hold - Tier 1 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Mobility - Tier 1 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Gear Storage - Tier 1 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Base Packing - Tier 1 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Torque Capacity - Tier 1 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Water Storage - Tier 1 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Durability - Tier 2 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Cargo Hold - Tier 2 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Mobility - Tier 2 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Gear Storage - Tier 2 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Base Packing - Tier 2 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Torque Capacity - Tier 2 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Water Storage - Tier 2 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Durability - Tier 3 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Cargo Hold - Tier 3 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Mobility - Tier 3 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Gear Storage - Tier 3 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Base Packing - Tier 3 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Torque Capacity - Tier 3 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Water Storage - Tier 3 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Durability - Tier 4 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Cargo Hold - Tier 4 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Mobility - Tier 4 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Gear Storage - Tier 4 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Base Packing - Tier 4 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Torque Capacity - Tier 4 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Water Storage - Tier 4 Upgrade"
+  },
+  {
+    "category": "StructuralConcrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          },
+          {
+            "count": 20,
+            "name": "Stone"
+          },
+          {
+            "count": 50,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "BalangCore"
+  },
+  {
+    "category": "StructuralConcrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 200,
+            "name": "Wood"
+          },
+          {
+            "count": 50,
+            "name": "Stone"
+          },
+          {
+            "count": 100,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "SilurCore"
+  },
+  {
+    "category": "StructuralWoodLight",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 38,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 11,
+            "name": "Stone"
+          },
+          {
+            "count": 2,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Walker Gate"
+  },
+  {
+    "name": "Hangar Wall",
+    "category": "StructuralWoodMedium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "StructuralWoodMedium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Hangar Gate"
+  },
+  {
+    "category": "StructuralWoodMedium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Hangar Roof"
+  },
+  {
+    "category": "StructuralWoodMedium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Hangar Wall with Door"
+  },
+  {
+    "name": "Drill Spade",
+    "category": "Tools",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 9,
+            "name": "Flint"
+          },
+          {
+            "count": 1,
+            "name": "Rope"
+          },
+          {
+            "count": 1,
+            "name": "Toothwheel"
+          }
+        ]
+      }
+    ],
+    "parent": "Tube Spade"
+  },
+  {
+    "category": "Tools",
+    "cost": {
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Wood"
+          },
+          {
+            "count": 12,
+            "name": "Fiber"
+          },
+          {
+            "count": 7,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Tube Spade",
+    "parent": "Campfire"
+  },
+  {
+    "category": "WalkerRigs",
+    "name": "Rig T2"
+  },
+  {
+    "category": "WalkerRigs",
+    "name": "Rig T3"
+  },
+  {
+    "category": "WalkerRigs",
+    "name": "Hammerhead Rig",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "HammerheadDinghyRigSchematic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sawblade",
+    "category": "WalkerTools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 60,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 100,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 20,
+            "name": "Rope"
+          },
+          {
+            "count": 2,
+            "name": "Iron Ore"
+          }
+        ]
+      }
+    ],
+    "parent": "Tool Pod"
+  },
+  {
+    "name": "Long Sawblade",
+    "category": "WalkerTools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 280,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2000,
+            "name": "Wood"
+          },
+          {
+            "count": 400,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ore"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Camelop  Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 650,
+            "name": "Wood"
+          },
+          {
+            "count": 90,
+            "name": "Fiber"
+          },
+          {
+            "count": 120,
+            "name": "Stone"
+          },
+          {
+            "count": 125,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 70,
+            "name": "Rope"
+          },
+          {
+            "count": 50,
+            "name": "Obsidian"
+          },
+          {
+            "count": 20,
+            "name": "Clay"
+          },
+          {
+            "count": 1,
+            "name": "Walker Mechanism"
+          }
+        ]
+      }
+    ],
+    "parent": "Tool Pod"
+  },
+  {
+    "name": "Nomad Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 15,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 110,
+            "name": "Wood"
+          },
+          {
+            "count": 100,
+            "name": "Fiber"
+          },
+          {
+            "count": 15,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "parent": "Dinghy"
+  },
+  {
+    "name": "Proxy Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 20,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 225,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 750,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 1400,
+            "name": "Wood"
+          },
+          {
+            "count": 1500,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 300,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 300,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 150,
+            "name": "Rope"
+          },
+          {
+            "count": 300,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 1,
+            "name": "ProxyLicense"
+          }
+        ]
+      }
+    ],
+    "parent": "Steering Levers"
+  },
+  {
+    "name": "Raptor Sky Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 22,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 260,
+            "name": "Lightwood"
+          },
+          {
+            "count": 100,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 142,
+            "name": "Rope"
+          },
+          {
+            "count": 2,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 710,
+            "name": "Fiber"
+          },
+          {
+            "count": 80,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 100,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 200,
+            "name": "Wood"
+          },
+          {
+            "count": 240,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "parent": "Dinghy"
+  },
+  {
     "cost": {
       "count": 3,
       "name": "Tablet"
@@ -62,6 +955,37 @@
   {
     "name": "Falco Walker",
     "parent": "Falco"
+  },
+  {
+    "name": "Firefly Walker",
+    "parent": "Walkers",
+    "category": "Walkers",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 126,
+            "name": "Wood"
+          },
+          {
+            "count": 123,
+            "name": "Fiber"
+          },
+          {
+            "count": 28,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 20,
+            "name": "Stone"
+          },
+          {
+            "count": 2,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Hercul Walker",
@@ -459,62 +1383,6 @@
     "name": "Rupu Shaman Armor"
   },
   {
-    "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 55,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Advanced Repair Hammer",
-    "parent": "Simple Repair Hammer",
-    "trade_price": 9.5
-  },
-  {
-    "category": "Armors",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 25,
-            "name": "Lightwood"
-          },
-          {
-            "count": 10,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 20,
-            "name": "Worm Silk"
-          }
-        ]
-      }
-    ],
-    "name": "Lightwood Padded Armor",
-    "parent": "Triple Stitch Armor",
-    "trade_price": 719.9
-  },
-  {
     "category": "Equipment",
     "cost": {
       "count": 10,
@@ -655,6 +1523,30 @@
     ],
     "name": "Flare - teal",
     "trade_price": 3
+  },
+  {
+    "category": "Tools",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 55,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Advanced Repair Hammer",
+    "parent": "Simple Repair Hammer",
+    "trade_price": 9.5
   },
   {
     "category": "Tools",
@@ -829,1596 +1721,7 @@
     "trade_price": 17.4
   },
   {
-    "category": "Resources",
-    "name": "Terrain: Clay Spots",
-    "trade_price": 1
-  },
-  {
-    "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 55,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Master Repair Hammer",
-    "parent": "Advanced Repair Hammer",
-    "trade_price": 9.5
-  },
-  {
-    "category": "Tools",
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 14,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 10,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 2,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 8,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Master Scythe",
-    "parent": "Scythe",
-    "trade_price": 17.4
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 1,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "name": "Nurrfang Toothclub",
-    "parent": "Jaggertooth Club",
-    "trade_price": 7.1
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Stone"
-          },
-          {
-            "count": 14,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Crude Hatchet",
-    "parent": "Beat Stick",
-    "trade_price": 1.2
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 3,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 6,
-            "name": "Rope"
-          },
-          {
-            "count": 5,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "NurrFang"
-          }
-        ]
-      }
-    ],
-    "name": "Rawbone Scimitar",
-    "parent": "Beat Stick",
-    "trade_price": 6.2
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Stone"
-          },
-          {
-            "count": 10,
-            "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Axe",
-    "parent": "Crude Hatchet",
-    "trade_price": 1.2
-  },
-  {
-    "category": "Weapons",
-    "name": "Stone Monkey Sword"
-  },
-  {
-    "category": "Weapons",
-    "name": "Rupu Mace"
-  },
-  {
-    "category": "Weapons",
-    "name": "Rupu Stone Mace"
-  },
-  {
-    "category": "Weapons",
-    "name": "Wooden Club"
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Stone"
-          },
-          {
-            "count": 5,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Bomb Javelin",
-    "parent": "Beat Stick",
-    "trade_price": 1.6
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Stone"
-          },
-          {
-            "count": 5,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Heavy Javelin",
-    "parent": "Beat Stick",
-    "trade_price": 1.6
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 5,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Stone"
-          },
-          {
-            "count": 5,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Light Javelin",
-    "parent": "Beat Stick",
-    "trade_price": 1.6
-  },
-  {
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Stone"
-          }
-        ],
-        "station": "Campfire",
-        "time": 4
-      }
-    ],
-    "name": "Throwstone",
-    "trade_price": 1.6
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 14,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 2,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 6,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Rawbone Sawsword",
-    "parent": "Long Bonespike Swordstaff",
-    "trade_price": 15
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 4,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 10,
-            "name": "Flint"
-          }
-        ]
-      }
-    ],
-    "name": "Jaggertooth Swordclub",
-    "parent": "Jaggertooth Club",
-    "trade_price": 3.7
-  },
-  {
-    "name": "Flots",
-    "trade_price": 0.5
-  },
-  {
-    "category": "Crafting",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Torque Battery"
-          },
-          {
-            "count": 2,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 1,
-            "name": "Terrain: Excavatable"
-          }
-        ]
-      }
-    ],
-    "name": "SoilExcavator",
-    "parent": "DrillSpade"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "ClanFlag"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Wood"
-          },
-          {
-            "count": 2,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "ClanFlagHanging"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 8,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Banner_1"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 4,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Banner_2"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 4,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Banner_3"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Fence_1"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Fence_2"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 50,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 60,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Gate_1"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 8,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Roofing_1"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 8,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Roofing_2"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 25,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Segment_1"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 25,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Segment_2"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 25,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Segment_3"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Wood"
-          },
-          {
-            "count": 12,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Segment_4"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 25,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Segment_5"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 18,
-            "name": "Wood"
-          },
-          {
-            "count": 22,
-            "name": "Fiber"
-          },
-          {
-            "count": 6,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Stairs_1"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Wood"
-          },
-          {
-            "count": 15,
-            "name": "Fiber"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Stairs_2"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Fiber"
-          },
-          {
-            "count": 2,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Stairs_3"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 25,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 50,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Arena_Wall_1"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 5,
-            "name": "Rupu Pelt"
-          }
-        ]
-      }
-    ],
-    "name": "MeatRack_01"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Throneage_01_C"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Throneage_02_C"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Thronehair_01_C"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Thronerates_01_C"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Thronerates_02_C"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Stairs"
-  },
-  {
-    "category": "Interactables",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 4,
-            "name": "Rupu Pelt"
-          }
-        ]
-      }
-    ],
-    "name": "BedHammock",
-    "parent": "Sand Bed"
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 188,
-            "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 15,
-            "name": "Purified Water"
-          },
-          {
-            "count": 8,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "BedWater"
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "_CheatingLevers"
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 80,
-            "name": "Wood"
-          },
-          {
-            "count": 22,
-            "name": "Stone"
-          },
-          {
-            "count": 3,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "name": "LadderBig"
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 34,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 40,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "LadderSmall"
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Aloe Vera"
-          }
-        ],
-        "station": "Stomping Station",
-        "time": 40
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Apple"
-          }
-        ],
-        "output": 8,
-        "station": "Stomping Station",
-        "time": 120
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Corn"
-          }
-        ],
-        "station": "Stomping Station",
-        "time": 16
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Blood Turnip"
-          }
-        ],
-        "output": 3,
-        "station": "Stomping Station",
-        "time": 100
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Huge Cactus Fruit"
-          }
-        ],
-        "station": "Stomping Station",
-        "time": 96
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Thornberry"
-          }
-        ],
-        "station": "Stomping Station",
-        "time": 24
-      },
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Cactus Flesh"
-          }
-        ],
-        "station": "Stomping Station",
-        "time": 18
-      }
-    ],
-    "name": "Fruit Pulp"
-  },
-  {
-    "category": "Resources",
-    "name": "Terrain: Black Soil",
-    "trade_price": 1
-  },
-  {
-    "category": "Resources",
-    "name": "Flint",
-    "trade_price": 0.1
-  },
-  {
-    "category": "Resources",
-    "name": "Nurr Fang",
-    "trade_price": 0.4
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Wood"
-          },
-          {
-            "count": 14,
-            "name": "Flint"
-          }
-        ],
-        "station": "Woodworking Station",
-        "time": 120
-      }
-    ],
-    "name": "Toothwheel",
-    "trade_price": 50
-  },
-  {
-    "category": "Resources",
-    "name": "Terrain: Sand"
-  },
-  {
-    "category": "Resources",
-    "name": "Terrain: Excavatable"
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Wood"
-          },
-          {
-            "count": 22,
-            "name": "Fiber"
-          },
-          {
-            "count": 1,
-            "name": "Charcoal"
-          }
-        ],
-        "output": 10,
-        "station": "Woodworking Station",
-        "time": 120
-      }
-    ],
-    "name": "Blazing Slab",
-    "trade_price": 0.1
-  },
-  {
-    "category": "Resources",
-    "name": "Terrain: Worm Sand"
-  },
-  {
-    "name": "Camelop  Walker"
-  },
-  {
-    "name": "Drill Spade",
-    "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 18,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 9,
-            "name": "Flint"
-          },
-          {
-            "count": 1,
-            "name": "Rope"
-          },
-          {
-            "count": 1,
-            "name": "Toothwheel"
-          }
-        ]
-      }
-    ],
-    "parent": "Tube Spade"
-  },
-  {
-    "category": "WalkerRigs",
-    "name": "Rig T2"
-  },
-  {
-    "category": "WalkerRigs",
-    "name": "Rig T3"
-  },
-  {
-    "name": "Gunpod Stinger"
-  },
-  {
-    "category": "WalkerRigs",
-    "name": "Hammerhead Rig",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "HammerheadDinghyRigSchematic"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Nomad Walker"
-  },
-  {
-    "name": "Proxy Walker"
-  },
-  {
-    "name": "Raptor Sky Walker"
-  },
-  {
-    "name": "Repair Station"
-  },
-  {
-    "name": "Hangar Wall",
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Sawblade",
-    "category": "WalkerTools",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 60,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 100,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 20,
-            "name": "Rope"
-          },
-          {
-            "count": 2,
-            "name": "Iron Ore"
-          }
-        ]
-      }
-    ],
-    "parent": "Tool Pod"
-  },
-  {
-    "name": "Rokker",
-    "category": "Weapons",
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 140,
-            "name": "Wood"
-          },
-          {
-            "count": 60,
-            "name": "Stone"
-          },
-          {
-            "count": 35,
-            "name": "Rope"
-          },
-          {
-            "count": 35,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 20,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "parent": "Ballista"
-  },
-  {
-    "name": "Long Sawblade"
-  },
-  {
-    "name": "Stinger",
-    "category": "Weapons",
-    "cost": {
-      "count": 2,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 2,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 28,
-            "name": "Fiber"
-          },
-          {
-            "count": 5,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "parent": "Ballista"
-  },
-  {
-    "name": "Medium Stinger"
-  },
-  {
-    "name": "Tall Stinger"
-  },
-  {
-    "name": "Windmill",
-    "category": "Crafting",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 75,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 4,
-            "name": "Rope"
-          },
-          {
-            "count": 5,
-            "name": "Earth Wax"
-          }
-        ]
-      }
-    ],
-    "parent": "SoilExcavator"
-  },
-  {
-    "category": "Containers",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 23,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 20,
-            "name": "Stone"
-          },
-          {
-            "count": 40,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "ChestAmmo",
-    "parent": "ChestSmall"
-  },
-  {
-    "category": "Containers",
-    "cost": {
-      "count": 5,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 130,
-            "name": "Wood"
-          },
-          {
-            "count": 150,
-            "name": "Fiber"
-          },
-          {
-            "count": 25,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "ChestBaseMaintenance",
-    "parent": "WallSand"
-  },
-  {
-    "category": "Containers",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 25,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 85,
-            "name": "Stone"
-          },
-          {
-            "count": 110,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "ChestGigantic",
-    "parent": "ChestLarge"
-  },
-  {
-    "category": "Containers",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 25,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 25,
-            "name": "Stone"
-          },
-          {
-            "count": 65,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "ChestLarge",
-    "parent": "ChestMedium"
-  },
-  {
-    "category": "Containers",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 25,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 15,
-            "name": "Stone"
-          },
-          {
-            "count": 35,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "ChestMedium",
-    "parent": "ChestSmall"
-  },
-  {
-    "category": "Containers",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 24,
-            "name": "Fiber"
-          },
-          {
-            "count": 2,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 40,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "ChestPedestal"
-  },
-  {
-    "category": "Containers",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 25,
-            "name": "Wood"
-          },
-          {
-            "count": 5,
-            "name": "Stone"
-          },
-          {
-            "count": 10,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "ChestSmall",
-    "parent": "Sand Bed"
-  },
-  {
-    "category": "Containers",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Wood"
-          },
-          {
-            "count": 25,
-            "name": "Fiber"
-          },
-          {
-            "count": 8,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Maintenance Box",
-    "parent": "WallSand"
-  },
-  {
-    "category": "Containers",
-    "cost": {
-      "count": 6,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Obsidian"
-          },
-          {
-            "count": 50,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 65,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          }
-        ]
-      }
-    ],
-    "name": "ObsidianContainerLarge",
-    "parent": "ObsidianContainerSmall"
-  },
-  {
-    "category": "Containers",
+    "category": "Armors",
     "cost": {
       "count": 3,
       "name": "Tablet"
@@ -2427,261 +1730,27 @@
       {
         "ingredients": [
           {
-            "count": 38,
-            "name": "Obsidian"
-          },
-          {
             "count": 10,
             "name": "Nomad Cloth"
-          },
-          {
-            "count": 30,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 20,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "name": "ObsidianContainerSmall",
-    "parent": "Large Water Bag"
-  },
-  {
-    "category": "Crafting",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 16,
-            "name": "Wood"
-          },
-          {
-            "count": 11,
-            "name": "Fiber"
-          },
-          {
-            "count": 18,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Camp Fire"
-  },
-  {
-    "category": "Crafting",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 120,
-            "name": "Wood"
-          },
-          {
-            "count": 2,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 3,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "FiberworkingStation_T2",
-    "parent": "Fiberworking Station"
-  },
-  {
-    "category": "Crafting",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Ceramic Shard"
           },
           {
             "count": 25,
-            "name": "Wood Shaft"
+            "name": "Lightwood"
           },
           {
             "count": 10,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 12,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "Furnace_T2",
-    "parent": "Furnace"
-  },
-  {
-    "category": "Crafting",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 125,
-            "name": "Wood"
-          },
-          {
-            "count": 6,
             "name": "Bone Glue"
           },
           {
-            "count": 15,
-            "name": "Rope"
-          }
-        ]
-      }
-    ],
-    "name": "RepairStation",
-    "parent": "Woodworking Station"
-  },
-  {
-    "category": "Crafting",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 200,
-            "name": "Wood"
-          },
-          {
-            "count": 4,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 15,
-            "name": "Cattail"
-          },
-          {
-            "count": 8,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 10,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "name": "WoodworkingStation_T2",
-    "parent": "Woodworking Station"
-  },
-  {
-    "category": "Crafting",
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 250,
-            "name": "Wood"
-          },
-          {
-            "count": 180,
-            "name": "Fiber"
-          },
-          {
-            "count": 25,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 8,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 10,
-            "name": "Iron Ingot"
-          }
-        ]
-      }
-    ],
-    "name": "WoodworkingStation_T3",
-    "parent": "WoodworkingStation_T2"
-  },
-  {
-    "category": "Crafting",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 500,
-            "name": "Fiber"
-          },
-          {
-            "count": 50,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "Farmable Area"
-  },
-  {
-    "category": "Crafting",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Magma Seeds"
-          }
-        ]
-      }
-    ],
-    "name": "TreePine"
-  },
-  {
-    "category": "Interactables",
-    "name": "LootBoxTest"
-  },
-  {
-    "category": "StructuralClay",
-    "crafting": [
-      {
-        "ingredients": [
-          {
             "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Clay"
+            "name": "Worm Silk"
           }
         ]
       }
     ],
-    "name": "WallClay"
+    "name": "Lightwood Padded Armor",
+    "parent": "Triple Stitch Armor",
+    "trade_price": 719.9
   },
   {
     "category": "StructuralClay",
@@ -2703,117 +1772,7 @@
         ]
       }
     ],
-    "name": "WallClayBattlement"
-  },
-  {
-    "category": "StructuralClay",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 40,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "WallClayCorner"
-  },
-  {
-    "category": "StructuralClay",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "WallClayDoor"
-  },
-  {
-    "category": "StructuralClay",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Cattail"
-          },
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 25,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "WallClayFoundation"
-  },
-  {
-    "category": "StructuralClay",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "WallClayRoof"
-  },
-  {
-    "category": "StructuralClay",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "WallClayWindow"
+    "name": "Battlement"
   },
   {
     "category": "StructuralClay",
@@ -2835,59 +1794,7 @@
         ]
       }
     ],
-    "name": "WallClayWindow2"
-  },
-  {
-    "category": "StructuralConcrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 45,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 45,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "WallConcrete"
-  },
-  {
-    "category": "StructuralConcrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 45,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 45,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "WallConcrete2"
+    "name": "Wall with Windows"
   },
   {
     "category": "StructuralConcrete",
@@ -2913,33 +1820,7 @@
         ]
       }
     ],
-    "name": "WallConcreteBattlement"
-  },
-  {
-    "category": "StructuralConcrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 35,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "WallConcreteCorner"
+    "name": "Corner"
   },
   {
     "category": "StructuralConcrete",
@@ -2965,7 +1846,7 @@
         ]
       }
     ],
-    "name": "WallConcreteDoor"
+    "name": "Door"
   },
   {
     "category": "StructuralConcrete",
@@ -2991,7 +1872,7 @@
         ]
       }
     ],
-    "name": "WallConcreteFoundation"
+    "name": "Foundation"
   },
   {
     "category": "StructuralConcrete",
@@ -3017,7 +1898,7 @@
         ]
       }
     ],
-    "name": "WallConcreteRoof"
+    "name": "Floor / Roof"
   },
   {
     "category": "StructuralConcrete",
@@ -3043,7 +1924,7 @@
         ]
       }
     ],
-    "name": "WallConcreteWindow"
+    "name": "Wall With Window 1"
   },
   {
     "category": "StructuralConcrete",
@@ -3069,7 +1950,7 @@
         ]
       }
     ],
-    "name": "WallConcreteWindow2"
+    "name": "Wall With Window 2"
   },
   {
     "category": "StructuralConcrete",
@@ -3095,7 +1976,7 @@
         ]
       }
     ],
-    "name": "WallConcreteWindow3"
+    "name": "Wall With Windows 1"
   },
   {
     "category": "StructuralConcrete",
@@ -3121,878 +2002,7 @@
         ]
       }
     ],
-    "name": "WallConcreteWindow4"
-  },
-  {
-    "category": "StructuralStoneNew",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "WallStone"
-  },
-  {
-    "category": "StructuralStoneNew",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "WallStoneDoor"
-  },
-  {
-    "category": "StructuralStoneNew",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "WallStoneFoundation"
-  },
-  {
-    "category": "StructuralStoneNew",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "WallStoneRoof"
-  },
-  {
-    "category": "StructuralStoneNew",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "WallStoneWindow"
-  },
-  {
-    "category": "StructuralWoodHeavy",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodHeavy"
-  },
-  {
-    "category": "StructuralWoodHeavy",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodHeavy2"
-  },
-  {
-    "category": "StructuralWoodHeavy",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodHeavyBattlement"
-  },
-  {
-    "category": "StructuralWoodHeavy",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodHeavyCorner"
-  },
-  {
-    "category": "StructuralWoodHeavy",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodHeavyDoor"
-  },
-  {
-    "category": "StructuralWoodHeavy",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodHeavyFoundation"
-  },
-  {
-    "category": "StructuralWoodHeavy",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodHeavyRoof"
-  },
-  {
-    "category": "StructuralWoodHeavy",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodHeavyWindow"
-  },
-  {
-    "category": "StructuralWoodHeavy",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodHeavyWindow2"
-  },
-  {
-    "category": "StructuralWoodLight",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Guard Rail"
-  },
-  {
-    "category": "StructuralWoodLight",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Scaffolding"
-  },
-  {
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodMedium"
-  },
-  {
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodMediumDoor"
-  },
-  {
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodMediumFoundation"
-  },
-  {
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodMediumRoof"
-  },
-  {
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodMediumWindow2"
-  },
-  {
-    "category": "WalkerTools",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Rope"
-          },
-          {
-            "count": 20,
-            "name": "Fiber"
-          },
-          {
-            "count": 5,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Automaton"
-  },
-  {
-    "category": "WalkerTools",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 280,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2000,
-            "name": "Wood"
-          },
-          {
-            "count": 400,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ore"
-          }
-        ]
-      }
-    ],
-    "name": "Sawblade_T2"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodHeavyStairs"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodLight"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodLightBattlement"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodLightCorner"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodLightDoor"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodLightFoundation"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodLightRoof"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodLightWindow"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodLightWindow2"
-  },
-  {
-    "category": "Resources",
-    "name": "Armoury Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Fortress Module"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Base Packing - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Base Packing - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Base Packing - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Base Packing - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 4 Upgrade"
-  },
-  {
-    "category": "StructuralConcrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Stone"
-          },
-          {
-            "count": 50,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "BalangCore"
-  },
-  {
-    "category": "StructuralConcrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 200,
-            "name": "Wood"
-          },
-          {
-            "count": 50,
-            "name": "Stone"
-          },
-          {
-            "count": 100,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "SilurCore"
-  },
-  {
-    "category": "StructuralSand",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 14,
-            "name": "Fiber"
-          },
-          {
-            "count": 18,
-            "name": "Sand"
-          },
-          {
-            "count": 4,
-            "name": "Palm Leaves"
-          }
-        ]
-      }
-    ],
-    "name": "WallSand",
-    "parent": "Sand Bed"
-  },
-  {
-    "category": "StructuralSand",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Fiber"
-          },
-          {
-            "count": 10,
-            "name": "Sand"
-          },
-          {
-            "count": 8,
-            "name": "Palm Leaves"
-          }
-        ]
-      }
-    ],
-    "name": "WallSandDoor"
+    "name": "Wall With Windows 2"
   },
   {
     "category": "StructuralSand",
@@ -4057,52 +2067,128 @@
     "name": "Sand Ramp"
   },
   {
-    "category": "StructuralSand",
+    "category": "StructuralStoneNew",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 20,
-            "name": "Fiber"
-          },
-          {
-            "count": 6,
+            "count": 28,
             "name": "Wood"
           },
           {
-            "count": 12,
-            "name": "Palm Leaves"
-          }
-        ]
-      }
-    ],
-    "name": "WallSandRoof"
-  },
-  {
-    "category": "StructuralSand",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 14,
-            "name": "Fiber"
+            "count": 10,
+            "name": "Stone"
           },
           {
-            "count": 18,
-            "name": "Sand"
-          },
-          {
-            "count": 8,
-            "name": "Palm Leaves"
-          },
-          {
-            "count": 4,
+            "count": 1,
             "name": "Wood Shaft"
           }
         ]
       }
     ],
-    "name": "WallSandWindow"
+    "name": "Wall"
+  },
+  {
+    "category": "StructuralStoneNew",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Wall with Window"
+  },
+  {
+    "category": "StructuralWoodHeavy",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Wall 2"
+  },
+  {
+    "category": "StructuralWoodHeavy",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Battlements"
+  },
+  {
+    "category": "StructuralWoodHeavy",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Slit Wall"
+  },
+  {
+    "category": "StructuralWoodHeavy",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Double Slit Wall"
   },
   {
     "category": "StructuralWoodLight",
@@ -4110,260 +2196,38 @@
       {
         "ingredients": [
           {
-            "count": 38,
+            "count": 28,
             "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 11,
-            "name": "Stone"
-          },
-          {
-            "count": 2,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Walker Gate"
-  },
-  {
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Hangar Gate"
-  },
-  {
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Hangar Roof"
-  },
-  {
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Hangar Wall with Door"
-  },
-  {
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodMediumBattlement"
-  },
-  {
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "WallWoodMediumWindow"
-  },
-  {
-    "category": "Tools",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 18,
-            "name": "Wood"
-          },
-          {
-            "count": 12,
-            "name": "Fiber"
-          },
-          {
-            "count": 7,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Tube Spade",
-    "parent": "Campfire"
-  },
-  {
-    "category": "Traps",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 9,
-            "name": "Bent Wooden Planks"
-          },
-          {
-            "count": 50,
-            "name": "Stone"
-          },
-          {
-            "count": 12,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "WallGiant"
-  },
-  {
-    "category": "Traps",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 50,
-            "name": "Bent Wooden Planks"
-          },
-          {
-            "count": 30,
-            "name": "Obsidian"
           },
           {
             "count": 45,
-            "name": "Wood Shaft"
+            "name": "Fiber"
           }
         ]
       }
     ],
-    "name": "WallGiantGate"
+    "name": "Guard Rail"
   },
   {
-    "category": "Traps",
-    "cost": {
-      "count": 7,
-      "name": "Tablet"
-    },
+    "category": "StructuralWoodLight",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 85,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 10,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 55,
-            "name": "Rope"
-          }
-        ]
-      }
-    ],
-    "name": "WallGiantPacker",
-    "parent": "WallGiants"
-  },
-  {
-    "category": "Traps",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 30,
+            "count": 28,
             "name": "Wood"
           },
           {
-            "count": 10,
-            "name": "Redwood Wood"
+            "count": 45,
+            "name": "Fiber"
           }
         ]
       }
     ],
-    "name": "TrapBombChest",
-    "parent": "TrapTripWire"
+    "name": "Scaffolding"
   },
   {
-    "category": "Traps",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 40,
-            "name": "Stone"
-          },
-          {
-            "count": 7,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 10,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "TrapRockFalling"
-  },
-  {
-    "category": "Traps",
+    "category": "Tools",
     "cost": {
       "count": 10,
       "name": "Fragment"
@@ -4372,76 +2236,51 @@
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 50,
-            "name": "Wood"
-          },
-          {
-            "count": 6,
-            "name": "Bone Splinter"
-          }
-        ]
-      }
-    ],
-    "name": "TrapSpikesSharp",
-    "parent": "Ballista"
-  },
-  {
-    "category": "Traps",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 150,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 6,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "TrapSpikesSpring",
-    "parent": "TrapSpikesSharp"
-  },
-  {
-    "category": "Traps",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Lava"
-          },
-          {
-            "count": 4,
-            "name": "Rope"
-          },
-          {
-            "count": 6,
+            "count": 10,
             "name": "Wood Shaft"
+          },
+          {
+            "count": 55,
+            "name": "Stone"
           }
         ]
       }
     ],
-    "name": "TrapTripWire",
-    "parent": "TrapSpikesSharp"
+    "name": "Master Repair Hammer",
+    "parent": "Advanced Repair Hammer",
+    "trade_price": 9.5
+  },
+  {
+    "category": "Tools",
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 14,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 10,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 2,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 8,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Master Scythe",
+    "parent": "Scythe",
+    "trade_price": 17.4
   },
   {
     "category": "WalkerParts",
@@ -4745,85 +2584,30 @@
     "name": "Hercul Walker Wings Large (1 of 2)"
   },
   {
-    "category": "WalkerParts",
+    "category": "WalkerTools",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 35,
-            "name": "Lightwood"
-          },
-          {
-            "count": 70,
-            "name": "Fiber"
+            "count": 15,
+            "name": "Wood"
           },
           {
             "count": 10,
             "name": "Rope"
-          }
-        ]
-      }
-    ],
-    "name": "Raptor Walker Legs (1 of 2)",
-    "parent": "Raptor"
-  },
-  {
-    "category": "WalkerParts",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 30,
-            "name": "Lightwood"
           },
           {
-            "count": 40,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 25,
-            "name": "Earth Wax"
-          }
-        ]
-      }
-    ],
-    "name": "Raptor Walker Wings (1 of 2)",
-    "parent": "Raptor"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 400,
-            "name": "Wood"
-          },
-          {
-            "count": 265,
+            "count": 20,
             "name": "Fiber"
           },
           {
-            "count": 22,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 10,
+            "count": 5,
             "name": "Wood Shaft"
-          },
-          {
-            "count": 85,
-            "name": "Stone"
           }
         ]
       }
     ],
-    "name": "Balang",
-    "parent": "Firefly"
+    "name": "Automaton"
   },
   {
     "category": "Walkers",
@@ -4845,147 +2629,93 @@
         ]
       }
     ],
-    "name": "Battleship"
+    "name": "Battleship Walker"
   },
   {
-    "category": "Walkers",
+    "category": "Weapons",
     "cost": {
-      "count": 16,
-      "name": "Tablet"
+      "count": 20,
+      "name": "Fragment"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 1620,
-            "name": "Wood"
-          },
-          {
-            "count": 37,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 9,
-            "name": "Rope"
-          },
-          {
-            "count": 1115,
-            "name": "Fiber"
-          },
-          {
-            "count": 1,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 2,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 280,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Buffalo",
-    "parent": "Stiletto"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 650,
-            "name": "Wood"
-          },
-          {
-            "count": 90,
-            "name": "Fiber"
-          },
-          {
-            "count": 120,
-            "name": "Stone"
-          },
-          {
-            "count": 125,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 70,
-            "name": "Rope"
-          },
-          {
-            "count": 50,
-            "name": "Obsidian"
-          },
-          {
-            "count": 20,
-            "name": "Clay"
-          },
-          {
-            "count": 1,
-            "name": "Walker Mechanism"
-          }
-        ]
-      }
-    ],
-    "name": "Camelop",
-    "parent": "Tool Pod"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 16,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 900,
-            "name": "Wood"
-          },
-          {
-            "count": 390,
-            "name": "Fiber"
-          },
-          {
-            "count": 350,
-            "name": "Stone"
-          },
-          {
-            "count": 40,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 30,
-            "name": "Rope"
-          },
-          {
-            "count": 10,
+            "count": 5,
             "name": "Bone Splinter"
           },
           {
-            "count": 12,
-            "name": "Rupu Vine"
+            "count": 4,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 1,
+            "name": "Nomad Cloth"
           }
         ]
       }
     ],
-    "name": "Cobra",
-    "parent": "GunPod"
+    "name": "Nurrfang Toothclub",
+    "parent": "Jaggertooth Club",
+    "trade_price": 7.1
   },
   {
-    "category": "Walkers",
+    "category": "Weapons",
+    "cost": {
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Stone"
+          },
+          {
+            "count": 14,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Crude Hatchet",
+    "parent": "Beat Stick",
+    "trade_price": 1.2
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 6,
+            "name": "Rope"
+          },
+          {
+            "count": 5,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "NurrFang"
+          }
+        ]
+      }
+    ],
+    "name": "Rawbone Scimitar",
+    "parent": "Beat Stick",
+    "trade_price": 6.2
+  },
+  {
+    "category": "Weapons",
     "cost": {
       "count": 10,
       "name": "Fragment"
@@ -4994,498 +2724,227 @@
       {
         "ingredients": [
           {
-            "count": 380,
-            "name": "Wood"
-          },
-          {
-            "count": 245,
-            "name": "Fiber"
-          },
-          {
-            "count": 100,
+            "count": 8,
             "name": "Stone"
           },
           {
             "count": 10,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "name": "Dinghy",
-    "parent": "Firefly"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 50,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 4110,
             "name": "Wood"
-          },
-          {
-            "count": 235,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 1350,
-            "name": "Fiber"
-          },
-          {
-            "count": 140,
-            "name": "Rope"
-          },
-          {
-            "count": 90,
-            "name": "Obsidian"
-          },
-          {
-            "count": 3,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 9,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 510,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Domus",
-    "parent": "Mollusk"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1130,
-            "name": "Wood"
-          },
-          {
-            "count": 555,
-            "name": "Fiber"
-          },
-          {
-            "count": 400,
-            "name": "Stone"
-          },
-          {
-            "count": 38,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 40,
-            "name": "Rope"
-          },
-          {
-            "count": 3,
-            "name": "Walker Mechanism"
-          }
-        ]
-      }
-    ],
-    "name": "Falco",
-    "parent": "Hornet"
-  },
-  {
-    "category": "Walkers",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 126,
-            "name": "Wood"
-          },
-          {
-            "count": 123,
-            "name": "Fiber"
-          },
-          {
-            "count": 28,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 20,
-            "name": "Stone"
-          },
-          {
-            "count": 2,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "name": "Firefly",
-    "parent": "Walkers"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 16,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1580,
-            "name": "Wood"
-          },
-          {
-            "count": 270,
-            "name": "Stone"
-          },
-          {
-            "count": 1200,
-            "name": "Fiber"
-          },
-          {
-            "count": 15,
-            "name": "Rope"
-          },
-          {
-            "count": 38,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 10,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 2,
-            "name": "Walker Mechanism"
-          }
-        ]
-      }
-    ],
-    "name": "Hercul",
-    "parent": "Tool Pod"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1415,
-            "name": "Wood"
-          },
-          {
-            "count": 400,
-            "name": "Stone"
-          },
-          {
-            "count": 550,
-            "name": "Fiber"
           },
           {
             "count": 1,
-            "name": "Walker Mechanism"
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Axe",
+    "parent": "Crude Hatchet",
+    "trade_price": 1.2
+  },
+  {
+    "category": "Weapons",
+    "name": "Stone Monkey Sword"
+  },
+  {
+    "category": "Weapons",
+    "name": "Rupu Mace"
+  },
+  {
+    "category": "Weapons",
+    "name": "Rupu Stone Mace"
+  },
+  {
+    "category": "Weapons",
+    "name": "Wooden Club"
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood Shaft"
           },
           {
-            "count": 42,
-            "name": "Rope"
+            "count": 2,
+            "name": "Stone"
           },
           {
-            "count": 82,
-            "name": "Rupu Vine"
+            "count": 5,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Bomb Javelin",
+    "parent": "Beat Stick",
+    "trade_price": 1.6
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood Shaft"
           },
           {
-            "count": 20,
-            "name": "Fiber Weave"
+            "count": 2,
+            "name": "Stone"
           },
           {
-            "count": 55,
+            "count": 5,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Javelin",
+    "parent": "Beat Stick",
+    "trade_price": 1.6
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 5,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2,
+            "name": "Stone"
+          },
+          {
+            "count": 5,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Javelin",
+    "parent": "Beat Stick",
+    "trade_price": 1.6
+  },
+  {
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Stone"
+          }
+        ],
+        "station": "Campfire",
+        "time": 4
+      }
+    ],
+    "name": "Throwstone",
+    "trade_price": 1.6
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 40,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 14,
             "name": "Bone Splinter"
+          },
+          {
+            "count": 2,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 6,
+            "name": "Wood Shaft"
           }
         ]
       }
     ],
-    "name": "Hornet",
-    "parent": "Stiletto"
+    "name": "Rawbone Sawsword",
+    "parent": "Long Bonespike Swordstaff",
+    "trade_price": 15
   },
   {
-    "category": "Walkers",
+    "category": "Weapons",
     "cost": {
-      "count": 27,
+      "count": 10,
       "name": "Fragment"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 570,
-            "name": "Wood"
+            "count": 5,
+            "name": "Wood Shaft"
           },
           {
-            "count": 12,
-            "name": "Rope"
-          },
-          {
-            "count": 80,
-            "name": "Fiber"
-          },
-          {
-            "count": 90,
-            "name": "Stone"
-          },
-          {
-            "count": 2,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 2,
+            "count": 4,
             "name": "Fiber Weave"
+          },
+          {
+            "count": 10,
+            "name": "Flint"
           }
         ]
       }
     ],
-    "name": "Mollusk",
-    "parent": "Steering Levers"
+    "name": "Jaggertooth Swordclub",
+    "parent": "Jaggertooth Club",
+    "trade_price": 3.7
   },
   {
-    "category": "Walkers",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
+    "name": "Gunpod Stinger",
+    "category": "Weapons",
     "crafting": [
       {
         "ingredients": [
-          {
-            "count": 110,
-            "name": "Wood"
-          },
-          {
-            "count": 100,
-            "name": "Fiber"
-          },
           {
             "count": 15,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Nomad",
-    "parent": "Dinghy"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1360,
             "name": "Wood"
           },
           {
-            "count": 600,
+            "count": 10,
+            "name": "Rope"
+          },
+          {
+            "count": 20,
             "name": "Fiber"
           },
           {
-            "count": 350,
-            "name": "Stone"
-          },
-          {
-            "count": 121,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 86,
-            "name": "Rope"
-          },
-          {
             "count": 5,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 110,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 2,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 35,
-            "name": "Ceramic Shard"
-          }
-        ]
-      }
-    ],
-    "name": "Panda",
-    "parent": "Walker Packing Compartment"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 225,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 750,
             "name": "Wood Shaft"
-          },
-          {
-            "count": 1400,
-            "name": "Wood"
-          },
-          {
-            "count": 1500,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 300,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 300,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 150,
-            "name": "Rope"
-          },
-          {
-            "count": 300,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 1,
-            "name": "ProxyLicense"
           }
         ]
       }
     ],
-    "name": "Proxy",
     "parent": "Steering Levers"
   },
   {
-    "category": "Walkers",
-    "cost": {
-      "count": 22,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 260,
-            "name": "Lightwood"
-          },
-          {
-            "count": 100,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 142,
-            "name": "Rope"
-          },
-          {
-            "count": 2,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 710,
-            "name": "Fiber"
-          },
-          {
-            "count": 80,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 100,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 200,
-            "name": "Wood"
-          },
-          {
-            "count": 240,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Raptor",
-    "parent": "Dinghy"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 50,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5177,
-            "name": "Wood"
-          },
-          {
-            "count": 225,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 88,
-            "name": "Rope"
-          },
-          {
-            "count": 1425,
-            "name": "Fiber"
-          },
-          {
-            "count": 5,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 7,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 450,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Schmetterling",
-    "parent": "Buffalo"
-  },
-  {
-    "category": "Walkers",
+    "name": "Rokker",
+    "category": "Weapons",
     "cost": {
       "count": 4,
       "name": "Tablet"
@@ -5494,445 +2953,63 @@
       {
         "ingredients": [
           {
-            "count": 1615,
+            "count": 140,
             "name": "Wood"
           },
           {
-            "count": 950,
-            "name": "Fiber"
-          },
-          {
-            "count": 390,
+            "count": 60,
             "name": "Stone"
           },
           {
-            "count": 2,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 39,
+            "count": 35,
             "name": "Rope"
           },
           {
-            "count": 42,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 12,
-            "name": "Earth Wax"
-          }
-        ]
-      }
-    ],
-    "name": "Silur",
-    "parent": "Balang"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 117,
-            "name": "Wood"
-          },
-          {
-            "count": 114,
-            "name": "Fiber"
-          },
-          {
-            "count": 18,
-            "name": "Stone"
-          },
-          {
-            "count": 10,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "name": "Spider",
-    "parent": "Nomad"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 30,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 895,
-            "name": "Wood"
-          },
-          {
-            "count": 25,
-            "name": "Rope"
-          },
-          {
-            "count": 276,
-            "name": "Fiber"
-          },
-          {
-            "count": 2,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 90,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Stiletto",
-    "parent": "Steering Levers"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 100,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 3030,
-            "name": "Wood"
-          },
-          {
-            "count": 625,
-            "name": "Fiber"
-          },
-          {
-            "count": 600,
-            "name": "Stone"
-          },
-          {
-            "count": 159,
-            "name": "Rope"
-          },
-          {
-            "count": 385,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 5,
-            "name": "Walker Mechanism"
-          }
-        ]
-      }
-    ],
-    "name": "Titan",
-    "parent": "Buffalo"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 65,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1155,
-            "name": "Wood"
-          },
-          {
-            "count": 68,
-            "name": "Rope"
-          },
-          {
-            "count": 3,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 165,
-            "name": "Fiber"
-          },
-          {
-            "count": 4,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 180,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Toboggan",
-    "parent": "Mollusk"
-  },
-  {
-    "category": "Walkers",
-    "cost": {
-      "count": 50,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 2462,
-            "name": "Wood"
-          },
-          {
-            "count": 270,
-            "name": "Rope"
-          },
-          {
-            "count": 52,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 659,
-            "name": "Fiber"
-          },
-          {
-            "count": 500,
-            "name": "Stone"
-          },
-          {
-            "count": 8,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 5,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 5,
-            "name": "Walker Mechanism"
-          }
-        ]
-      }
-    ],
-    "name": "Tusker",
-    "parent": "Toboggan"
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 3,
+            "count": 35,
             "name": "Earth Wax"
           },
           {
-            "count": 15,
-            "name": "Rupu Pelt"
-          },
-          {
-            "count": 15,
-            "name": "Rope"
-          },
-          {
-            "count": 45,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "RupuSling",
-    "parent": "Light Wood Foundation"
-  },
-  {
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          {
             "count": 20,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 10,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 20,
-            "name": "Rope"
-          }
-        ]
-      }
-    ],
-    "name": "Ballista_T4"
-  },
-  {
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 280,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Rope"
-          },
-          {
-            "count": 3,
-            "name": "Iron Ore"
-          }
-        ]
-      }
-    ],
-    "name": "GunPod",
-    "parent": "Steering Levers"
-  },
-  {
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 30,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Stone"
-          },
-          {
-            "count": 30,
-            "name": "Fiber"
-          },
-          {
-            "count": 6,
-            "name": "Earth Wax"
-          }
-        ]
-      }
-    ],
-    "name": "GunPodScattershotGun"
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 7,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 26,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 89,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "GunPodShell",
-    "parent": "GunPod"
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 164,
-            "name": "Wood"
-          },
-          {
-            "count": 12,
-            "name": "Obsidian"
-          },
-          {
-            "count": 37,
-            "name": "Bone Splinter"
-          }
-        ]
-      }
-    ],
-    "name": "GunPodShell_T2",
-    "parent": "GunPodShell"
-  },
-  {
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Rope"
-          },
-          {
-            "count": 20,
-            "name": "Fiber"
-          },
-          {
-            "count": 5,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "GunpodStinger",
-    "parent": "Steering Levers"
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 2,
             "name": "Fiber Weave"
-          },
-          {
-            "count": 28,
-            "name": "Fiber"
-          },
-          {
-            "count": 5,
-            "name": "Wood Shaft"
           }
         ]
       }
     ],
-    "name": "Stinger_T2",
     "parent": "Ballista"
   },
   {
+    "name": "Stinger",
+    "category": "Weapons",
+    "cost": {
+      "count": 2,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 28,
+            "name": "Fiber"
+          },
+          {
+            "count": 5,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "parent": "Ballista"
+  },
+  {
+    "name": "Medium Stinger",
     "category": "Weapons",
     "cost": {
       "count": 10,
@@ -5960,7 +3037,37 @@
         ]
       }
     ],
-    "name": "Stinger_T3",
+    "parent": "Ballista"
+  },
+  {
+    "name": "Tall Stinger",
+    "category": "Weapons",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 28,
+            "name": "Fiber"
+          },
+          {
+            "count": 5,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
     "parent": "Ballista"
   }
 ]

@@ -576,6 +576,8 @@ function parsePlaceableData(filePath) {
       }*/
       if (jsonData[1].Properties?.Name?.SourceString) {
         item.name = jsonData[1].Properties.Name.SourceString.trim();
+      } else if (jsonData[1].Properties?.Name?.Key) {
+        item.name = jsonData[1].Properties.Name.Key.replace(".Name","").trim();
       }
     }
 
