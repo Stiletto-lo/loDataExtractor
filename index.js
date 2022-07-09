@@ -83,6 +83,7 @@ const dropTemplate = {
 const armorInfoTemplate = {
   soak: undefined,
   reduce: undefined,
+  movementSpeedReduction: undefined,
 };
 
 const structureInfoTemplate = {
@@ -130,6 +131,8 @@ allItems.forEach((item) => {
       delete item["schematicName"];
     } else if (item["drops"] != undefined && item["drops"].length <= 0) {
       delete item["drops"];
+    } else if (item["toolInfo"] != undefined && item["toolInfo"].length <= 0) {
+      delete item["toolInfo"];
     }
   });
 });
@@ -194,7 +197,6 @@ allItems.forEach((item) => {
   item.schematicName = undefined;
   item.drops = undefined;
   item.armorInfo = undefined;
-  item.movementSpeedReduction = undefined;
   item.structureInfo = undefined;
 });
 
@@ -358,11 +360,6 @@ function parseItemData(filePath) {
         item.trade_price = jsonData[1].Properties.ExpectedPrice;
       }
 
-      if (jsonData[1].Properties?.MovementSpeedReduction) {
-        item.movementSpeedReduction =
-          jsonData[1].Properties.MovementSpeedReduction;
-      }
-
       if (jsonData[1].Properties?.ProjectileDamage) {
         let projectileDamage = { ...projectileDamageTemplate };
 
@@ -395,6 +392,11 @@ function parseItemData(filePath) {
         armorInfo.reduce = jsonData[1].Properties?.DefenseProperties?.Reduce
           ? jsonData[1].Properties?.DefenseProperties?.Reduce
           : undefined;
+
+        if (jsonData[1].Properties?.MovementSpeedReduction) {
+          armorInfo.movementSpeedReduction =
+            jsonData[1].Properties.MovementSpeedReduction;
+        }
 
         item.armorInfo = armorInfo;
       }
@@ -453,27 +455,28 @@ function parseItemData(filePath) {
 
       if (jsonData[1].Properties?.ToolInfo) {
         let toolInfosData = jsonData[1].Properties.ToolInfo;
-        let toolInfos = [];
+        let toolInfos = item.toolInfo ? item.toolInfo : [];
 
         toolInfosData.forEach((toolInfoData) => {
-          let toolInfo = { ...toolInfoTemplate };
-          toolInfo.tier = toolInfoData.Tier;
+          let baseToolInfo = { ...toolInfoTemplate };
+          baseToolInfo.tier = toolInfoData.Tier;
           if (toolInfoData.ToolType.includes("TreeCutting")) {
-            toolInfo.toolType = "TreeCutting";
+            baseToolInfo.toolType = "TreeCutting";
           } else if (toolInfoData.ToolType.includes("Scythe")) {
-            toolInfo.toolType = "Scythe";
+            baseToolInfo.toolType = "Scythe";
           } else if (toolInfoData.ToolType.includes("Mining")) {
-            toolInfo.toolType = "Mining";
+            baseToolInfo.toolType = "Mining";
           } else {
-            toolInfo.toolType = toolInfoData.ToolType.replace(
+            baseToolInfo.toolType = toolInfoData.ToolType.replace(
               "EEquipmentTool::",
               ""
             );
           }
-          toolInfos.push(toolInfo);
+          toolInfos.push(baseToolInfo);
         });
-
-        item.toolInfo = toolInfos;
+        if (toolInfos.length > 0) {
+          item.toolInfo = toolInfos;
+        }
       }
 
       if (jsonData[1].Properties?.Recipes) {
