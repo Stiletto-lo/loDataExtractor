@@ -18,6 +18,7 @@ const folderType = [
   "placeables",
   "cached",
   "loottables",
+  "upgrages",
 ];
 
 const itemTemplate = {
@@ -121,6 +122,9 @@ loadDirData("./Content/Mist/Data/Placeables", 4);
 loadDirData("./Content/Mist/Data/Recipes", 1);
 loadDirData("./Content/Mist/Data/Trade", 3);
 loadDirData("./Content/Mist/Data/Placeables", 5);
+
+//loadDirData("./Content/Mist/Data/Walkers", 7);
+
 //loadDirData("./Content/Mist/Data/LootTables", 6);
 
 allItems = translator.translateItems(allItems);
