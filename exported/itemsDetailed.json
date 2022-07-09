@@ -3214,7 +3214,11 @@
     "name": "Weightless Module",
     "description": "Stacking this module decreases the weight of a packed base.",
     "experiencieReward": 65,
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 10,
+      "maxIncrease": 90
+    }
   },
   {
     "category": "Resources",
@@ -3228,81 +3232,130 @@
     "name": "Craftsman Module",
     "description": "Stacking this module decreases the crafting time of stations attached to a walker.",
     "experiencieReward": 65,
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 4.5,
+      "maxIncrease": 90
+    }
   },
   {
     "category": "Resources",
     "name": "Fireproof Module",
     "description": "Lowers the damage from all fire sources for the walker and all structures.",
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 2,
+      "maxIncrease": 40
+    }
   },
   {
     "category": "Resources",
     "name": "Armoury Module",
     "description": "Stacking this module increases the capacity of a walker's Armor and Weapons container.",
     "experiencieReward": 65,
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 10,
+      "increase": 2
+    }
   },
   {
     "category": "Resources",
     "name": "Hardening Module",
     "description": "Stacking this module reduces damage to a walker from all sources except those that can damage Reinforced armor.",
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 5,
+      "maxIncrease": 100
+    }
   },
   {
     "category": "Resources",
     "name": "Forager Module",
     "description": "Walker legs will automatically harvest foliage when travelling at slow speed. Stacking this module increases the amount of foliage harvested.",
     "experiencieReward": 65,
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 10,
+      "increase": 1
+    }
   },
   {
     "category": "Resources",
     "name": "Scavenger Module",
     "description": "Walker legs will automatically pick up dropped items when travelling at slow speed. Stacking this module increases the maximum speed at which items are picked up.",
     "experiencieReward": 65,
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 50,
+      "increase": 100
+    }
   },
   {
     "category": "Resources",
     "name": "Lumberjack Module",
     "description": "Walker legs will chop wood when they impact with trees. Stacking this module increases the amount of wood.",
     "experiencieReward": 65,
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 10,
+      "increase": 1
+    }
   },
   {
     "category": "Resources",
     "name": "Pack Speed Module",
     "description": "Decreases the time it takes to pack bases and structures.",
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 4,
+      "maxIncrease": 80
+    }
   },
   {
     "category": "Resources",
     "name": "Hearth Module",
     "description": "Stacking this module decreases the water cost of respawning on walker.",
     "experiencieReward": 65,
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 10,
+      "increase": 2.5,
+      "maxIncrease": 25
+    }
   },
   {
     "category": "Resources",
     "name": "Lifeforce Module",
     "description": "Nomads that respawn on a walker will recieve a beneficial status effect. Stacking this module increases the potency of this effect.",
     "experiencieReward": 65,
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 50,
+      "increase": 5
+    }
   },
   {
     "category": "Resources",
     "name": "Bullrush Module",
     "description": "Stacking this module decreases the wait time before respawning on a walker.",
     "experiencieReward": 65,
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 3,
+      "maxIncrease": 30
+    }
   },
   {
     "category": "Resources",
     "name": "Sandy Module",
     "description": "Stacking this module increases the rate at which sand is removed from a walker's gears after travelling.",
     "experiencieReward": 65,
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 20,
+      "increase": 10
+    }
   },
   {
     "category": "SpareParts",
@@ -7495,7 +7548,11 @@
   {
     "category": "Resources",
     "name": "Harpoon Protection Module",
-    "description": "Makes tethers attached to the walker easier to snap."
+    "description": "Makes tethers attached to the walker easier to snap.",
+    "moduleInfo": {
+      "increase": 4.5,
+      "maxIncrease": 90
+    }
   },
   {
     "category": "Resources",
@@ -7516,14 +7573,21 @@
     "name": "Watery Module",
     "description": "Stacking this module decreases the water cost of travelling.",
     "experiencieReward": 65,
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 2.5,
+      "maxIncrease": 50
+    }
   },
   {
     "category": "Resources",
     "name": "Pack Mule Module",
     "description": "Stacking this module increases the maximum weight limit of a walker.",
     "experiencieReward": 65,
-    "weight": 0.24
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 2
+    }
   },
   {
     "category": "StructuralConcrete",
@@ -8558,7 +8622,7 @@
       "count": 16,
       "name": "Fragment"
     },
-    "name": "Balang Walker Upgrade - Water - Tier 2",
+    "name": "Balang Walker Upgrades - Tier 2",
     "parent": "Balang Walker"
   },
   {
@@ -8566,16 +8630,16 @@
       "count": 2,
       "name": "Tablet"
     },
-    "name": "Balang Walker Upgrade - Water - Tier 3",
-    "parent": "Balang Walker Upgrade - Water - Tier 2"
+    "name": "Balang Walker Upgrades - Tier 3",
+    "parent": "Balang Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 4,
       "name": "Tablet"
     },
-    "name": "Balang Walker Upgrade - Water - Tier 4",
-    "parent": "Balang Walker Upgrade - Water - Tier 3"
+    "name": "Balang Walker Upgrades - Tier 4",
+    "parent": "Balang Walker Upgrades - Tier 3"
   },
   {
     "cost": {
@@ -8598,7 +8662,7 @@
       "count": 5,
       "name": "Tablet"
     },
-    "name": "Buffalo Walker Upgrade - Water - Tier 2",
+    "name": "Buffalo Walker Upgrades - Tier 2",
     "parent": "Buffalo Walker"
   },
   {
@@ -8606,23 +8670,23 @@
       "count": 9,
       "name": "Tablet"
     },
-    "name": "Buffalo Walker Upgrade - Water - Tier 3",
-    "parent": "Buffalo Walker Upgrade - Water - Tier 2"
+    "name": "Buffalo Walker Upgrades - Tier 3",
+    "parent": "Buffalo Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 16,
       "name": "Tablet"
     },
-    "name": "Buffalo Walker Upgrade - Water - Tier 4",
-    "parent": "Buffalo Walker Upgrade - Water - Tier 3"
+    "name": "Buffalo Walker Upgrades - Tier 4",
+    "parent": "Buffalo Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "Camelop Walker Upgrade - Water - Tier 2",
+    "name": "Camelop Walker Upgrades - Tier 2",
     "parent": "Camelop Walker"
   },
   {
@@ -8630,23 +8694,23 @@
       "count": 18,
       "name": "Tablet"
     },
-    "name": "Camelop Walker Upgrade - Water - Tier 3",
-    "parent": "Camelop Walker Upgrade - Water - Tier 2"
+    "name": "Camelop Walker Upgrades - Tier 3",
+    "parent": "Camelop Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "Camelop Walker Upgrade - Water - Tier 4",
-    "parent": "Camelop Walker Upgrade - Water - Tier 3"
+    "name": "Camelop Walker Upgrades - Tier 4",
+    "parent": "Camelop Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "Cobra Walker Upgrade - Water - Tier 2",
+    "name": "Cobra Walker Upgrades - Tier 2",
     "parent": "Cobra Walker"
   },
   {
@@ -8654,23 +8718,23 @@
       "count": 18,
       "name": "Tablet"
     },
-    "name": "Cobra Walker Upgrade - Water - Tier 3",
-    "parent": "Cobra Walker Upgrade - Water - Tier 2"
+    "name": "Cobra Walker Upgrades - Tier 3",
+    "parent": "Cobra Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "Cobra Walker Upgrade - Water - Tier 4",
-    "parent": "Cobra Walker Upgrade - Water - Tier 3"
+    "name": "Cobra Walker Upgrades - Tier 4",
+    "parent": "Cobra Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 16,
       "name": "Fragment"
     },
-    "name": "Dinghy Walker Upgrade - Water - Tier 2",
+    "name": "Dinghy Walker Upgrades - Tier 2",
     "parent": "Dinghy Walker"
   },
   {
@@ -8678,23 +8742,23 @@
       "count": 2,
       "name": "Tablet"
     },
-    "name": "Dinghy Walker Upgrade - Water - Tier 3",
-    "parent": "Dinghy Walker Upgrade - Water - Tier 2"
+    "name": "Dinghy Walker Upgrades - Tier 3",
+    "parent": "Dinghy Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 4,
       "name": "Tablet"
     },
-    "name": "Dinghy Walker Upgrade - Water - Tier 4",
-    "parent": "Dinghy Walker Upgrade - Water - Tier 3"
+    "name": "Dinghy Walker Upgrades - Tier 4",
+    "parent": "Dinghy Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 15,
       "name": "Tablet"
     },
-    "name": "Domus Walker Upgrade - Water - Tier 2",
+    "name": "Domus Walker Upgrades - Tier 2",
     "parent": "Domus Walker"
   },
   {
@@ -8702,23 +8766,23 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "Domus Walker Upgrade - Water - Tier 3",
-    "parent": "Domus Walker Upgrade - Water - Tier 2"
+    "name": "Domus Walker Upgrades - Tier 3",
+    "parent": "Domus Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 25,
       "name": "Tablet"
     },
-    "name": "Domus Walker Upgrade - Water - Tier 4",
-    "parent": "Domus Walker Upgrade - Water - Tier 3"
+    "name": "Domus Walker Upgrades - Tier 4",
+    "parent": "Domus Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "Falco Walker Upgrade - Water - Tier 2",
+    "name": "Falco Walker Upgrades - Tier 2",
     "parent": "Falco Walker"
   },
   {
@@ -8726,23 +8790,23 @@
       "count": 18,
       "name": "Tablet"
     },
-    "name": "Falco Walker Upgrade - Water - Tier 3",
-    "parent": "Falco Walker Upgrade - Water - Tier 2"
+    "name": "Falco Walker Upgrades - Tier 3",
+    "parent": "Falco Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "Falco Walker Upgrade - Water - Tier 4",
-    "parent": "Falco Walker Upgrade - Water - Tier 3"
+    "name": "Falco Walker Upgrades - Tier 4",
+    "parent": "Falco Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 10,
       "name": "Fragment"
     },
-    "name": "Firefly Walker Upgrade - Water - Tier 2",
+    "name": "Firefly Walker Upgrades - Tier 2",
     "parent": "Firefly Walker"
   },
   {
@@ -8750,15 +8814,15 @@
       "count": 2,
       "name": "Tablet"
     },
-    "name": "Firefly Walker Upgrade - Water - Tier 4",
-    "parent": "Firefly Walker Upgrade - Water - Tier 3"
+    "name": "Firefly Walker Upgrades - Tier 4",
+    "parent": "Firefly Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 5,
       "name": "Tablet"
     },
-    "name": "Hercul Walker Upgrade - Water - Tier 2",
+    "name": "Hercul Walker Upgrades - Tier 2",
     "parent": "Hercul Walker"
   },
   {
@@ -8766,23 +8830,23 @@
       "count": 9,
       "name": "Tablet"
     },
-    "name": "Hercul Walker Upgrade - Water - Tier 3",
-    "parent": "Hercul Walker Upgrade - Water - Tier 2"
+    "name": "Hercul Walker Upgrades - Tier 3",
+    "parent": "Hercul Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 16,
       "name": "Tablet"
     },
-    "name": "Hercul Walker Upgrade - Water - Tier 4",
-    "parent": "Hercul Walker Upgrade - Water - Tier 3"
+    "name": "Hercul Walker Upgrades - Tier 4",
+    "parent": "Hercul Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 4,
       "name": "Tablet"
     },
-    "name": "Hornet Walker Upgrade - Water - Tier 2",
+    "name": "Hornet Walker Upgrades - Tier 2",
     "parent": "Hornet Walker"
   },
   {
@@ -8790,23 +8854,23 @@
       "count": 7,
       "name": "Tablet"
     },
-    "name": "Hornet Walker Upgrade - Water - Tier 3",
-    "parent": "Hornet Walker Upgrade - Water - Tier 2"
+    "name": "Hornet Walker Upgrades - Tier 3",
+    "parent": "Hornet Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "Hornet Walker Upgrade - Water - Tier 4",
-    "parent": "Hornet Walker Upgrade - Water - Tier 3"
+    "name": "Hornet Walker Upgrades - Tier 4",
+    "parent": "Hornet Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 20,
       "name": "Fragment"
     },
-    "name": "Mollusk Walker Upgrade - Water - Tier 2",
+    "name": "Mollusk Walker Upgrades - Tier 2",
     "parent": "Mollusk Walker"
   },
   {
@@ -8814,23 +8878,23 @@
       "count": 2,
       "name": "Tablet"
     },
-    "name": "Mollusk Walker Upgrade - Water - Tier 3",
-    "parent": "Mollusk Walker Upgrade - Water - Tier 2"
+    "name": "Mollusk Walker Upgrades - Tier 3",
+    "parent": "Mollusk Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 5,
       "name": "Tablet"
     },
-    "name": "Mollusk Walker Upgrade - Water - Tier 4",
-    "parent": "Mollusk Walker Upgrade - Water - Tier 3"
+    "name": "Mollusk Walker Upgrades - Tier 4",
+    "parent": "Mollusk Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "Panda Walker Upgrade - Water - Tier 2",
+    "name": "Panda Walker Upgrades - Tier 2",
     "parent": "Panda Walker"
   },
   {
@@ -8838,23 +8902,23 @@
       "count": 18,
       "name": "Tablet"
     },
-    "name": "Panda Walker Upgrade - Water - Tier 3",
-    "parent": "Panda Walker Upgrade - Water - Tier 2"
+    "name": "Panda Walker Upgrades - Tier 3",
+    "parent": "Panda Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "Panda Walker Upgrade - Water - Tier 4",
-    "parent": "Panda Walker Upgrade - Water - Tier 3"
+    "name": "Panda Walker Upgrades - Tier 4",
+    "parent": "Panda Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 12,
       "name": "Tablet"
     },
-    "name": "Raptor Sky Walker Upgrade - Water - Tier 2",
+    "name": "Raptor Sky Walker Upgrades - Tier 2",
     "parent": "Raptor Sky Walker"
   },
   {
@@ -8862,16 +8926,16 @@
       "count": 18,
       "name": "Tablet"
     },
-    "name": "Raptor Sky Walker Upgrade - Water - Tier 3",
-    "parent": "Raptor Sky Walker Upgrade - Water - Tier 2"
+    "name": "Raptor Sky Walker Upgrades - Tier 3",
+    "parent": "Raptor Sky Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "Raptor Sky Walker Upgrade - Water - Tier 4",
-    "parent": "Raptor Sky Walker Upgrade - Water - Tier 3"
+    "name": "Raptor Sky Walker Upgrades - Tier 4",
+    "parent": "Raptor Sky Walker Upgrades - Tier 3"
   },
   {
     "cost": {
@@ -8886,7 +8950,7 @@
       "count": 15,
       "name": "Tablet"
     },
-    "name": "Schmetterling Walker Upgrade - Water - Tier 2",
+    "name": "Schmetterling Walker Upgrades - Tier 2",
     "parent": "Schmetterling Walker"
   },
   {
@@ -8894,23 +8958,23 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "Schmetterling Walker Upgrade - Water - Tier 3",
-    "parent": "Schmetterling Walker Upgrade - Water - Tier 2"
+    "name": "Schmetterling Walker Upgrades - Tier 3",
+    "parent": "Schmetterling Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 25,
       "name": "Tablet"
     },
-    "name": "Schmetterling Walker Upgrade - Water - Tier 4",
-    "parent": "Schmetterling Walker Upgrade - Water - Tier 3"
+    "name": "Schmetterling Walker Upgrades - Tier 4",
+    "parent": "Schmetterling Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 2,
       "name": "Tablet"
     },
-    "name": "Silur Walker Upgrade - Water - Tier 2",
+    "name": "Silur Walker Upgrades - Tier 2",
     "parent": "Silur Walker"
   },
   {
@@ -8918,23 +8982,23 @@
       "count": 4,
       "name": "Tablet"
     },
-    "name": "Silur Walker Upgrade - Water - Tier 3",
-    "parent": "Silur Walker Upgrade - Water - Tier 2"
+    "name": "Silur Walker Upgrades - Tier 3",
+    "parent": "Silur Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 7,
       "name": "Tablet"
     },
-    "name": "Silur Walker Upgrade - Water - Tier 4",
-    "parent": "Silur Walker Upgrade - Water - Tier 3"
+    "name": "Silur Walker Upgrades - Tier 4",
+    "parent": "Silur Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 20,
       "name": "Fragment"
     },
-    "name": "Nomad Spider Walker Upgrade - Water - Tier 2",
+    "name": "Nomad Spider Walker Upgrades - Tier 2",
     "parent": "Nomad Spider Walker"
   },
   {
@@ -8942,15 +9006,15 @@
       "count": 2,
       "name": "Tablet"
     },
-    "name": "Nomad Spider Walker Upgrade - Water - Tier 4",
-    "parent": "Nomad Spider Walker Upgrade - Water - Tier 3"
+    "name": "Nomad Spider Walker Upgrades - Tier 4",
+    "parent": "Nomad Spider Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 20,
       "name": "Fragment"
     },
-    "name": "Stiletto Walker Upgrade - Water - Tier 2",
+    "name": "Stiletto Walker Upgrades - Tier 2",
     "parent": "Stiletto Walker"
   },
   {
@@ -8958,23 +9022,23 @@
       "count": 2,
       "name": "Tablet"
     },
-    "name": "Stiletto Walker Upgrade - Water - Tier 3",
-    "parent": "Stiletto Walker Upgrade - Water - Tier 2"
+    "name": "Stiletto Walker Upgrades - Tier 3",
+    "parent": "Stiletto Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 5,
       "name": "Tablet"
     },
-    "name": "Stiletto Walker Upgrade - Water - Tier 4",
-    "parent": "Stiletto Walker Upgrade - Water - Tier 3"
+    "name": "Stiletto Walker Upgrades - Tier 4",
+    "parent": "Stiletto Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 30,
       "name": "Tablet"
     },
-    "name": "Titan Walker Upgrade - Water - Tier 2",
+    "name": "Titan Walker Upgrades - Tier 2",
     "parent": "Titan Walker"
   },
   {
@@ -8982,23 +9046,23 @@
       "count": 50,
       "name": "Tablet"
     },
-    "name": "Titan Walker Upgrade - Water - Tier 3",
-    "parent": "Titan Walker Upgrade - Water - Tier 2"
+    "name": "Titan Walker Upgrades - Tier 3",
+    "parent": "Titan Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 100,
       "name": "Tablet"
     },
-    "name": "Titan Walker Upgrade - Water - Tier 4",
-    "parent": "Titan Walker Upgrade - Water - Tier 3"
+    "name": "Titan Walker Upgrades - Tier 4",
+    "parent": "Titan Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 60,
       "name": "Fragment"
     },
-    "name": "Toboggan Walker Upgrade - Water - Tier 2",
+    "name": "Toboggan Walker Upgrades - Tier 2",
     "parent": "Toboggan Walker"
   },
   {
@@ -9006,23 +9070,23 @@
       "count": 2,
       "name": "Tablet"
     },
-    "name": "Toboggan Walker Upgrade - Water - Tier 3",
-    "parent": "Toboggan Walker Upgrade - Water - Tier 2"
+    "name": "Toboggan Walker Upgrades - Tier 3",
+    "parent": "Toboggan Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 5,
       "name": "Tablet"
     },
-    "name": "Toboggan Walker Upgrade - Water - Tier 4",
-    "parent": "Toboggan Walker Upgrade - Water - Tier 3"
+    "name": "Toboggan Walker Upgrades - Tier 4",
+    "parent": "Toboggan Walker Upgrades - Tier 3"
   },
   {
     "cost": {
       "count": 15,
       "name": "Tablet"
     },
-    "name": "Tusker Walker Upgrade - Water - Tier 2",
+    "name": "Tusker Walker Upgrades - Tier 2",
     "parent": "Tusker Walker"
   },
   {
@@ -9030,16 +9094,16 @@
       "count": 20,
       "name": "Tablet"
     },
-    "name": "Tusker Walker Upgrade - Water - Tier 3",
-    "parent": "Tusker Walker Upgrade - Water - Tier 2"
+    "name": "Tusker Walker Upgrades - Tier 3",
+    "parent": "Tusker Walker Upgrades - Tier 2"
   },
   {
     "cost": {
       "count": 25,
       "name": "Tablet"
     },
-    "name": "Tusker Walker Upgrade - Water - Tier 4",
-    "parent": "Tusker Walker Upgrade - Water - Tier 3"
+    "name": "Tusker Walker Upgrades - Tier 4",
+    "parent": "Tusker Walker Upgrades - Tier 3"
   },
   {
     "category": "Ammo",

@@ -1706,6 +1706,37 @@
     "name": "Buffalo Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/buffalo/upgrades/tier2",
+    "cost": {
+      "count": 5,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 160,
+            "name": "Fiber"
+          },
+          {
+            "count": 24,
+            "name": "Hide"
+          },
+          {
+            "count": 24,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Buffalo Walker Upgrade - Water - Tier 2",
+    "parent": "Buffalo Walker Body"
+  },
+  {
     "category": "walkers/buffalo/upgrades/tier3",
     "crafting": [
       {
@@ -1834,6 +1865,37 @@
       }
     ],
     "name": "Buffalo Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/buffalo/upgrades/tier3",
+    "cost": {
+      "count": 9,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 32,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 72,
+            "name": "Hide"
+          },
+          {
+            "count": 136,
+            "name": "Wood"
+          },
+          {
+            "count": 56,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Buffalo Walker Upgrade - Water - Tier 3",
+    "parent": "Buffalo Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/buffalo/upgrades/tier4",
@@ -1986,6 +2048,41 @@
     "name": "Buffalo Walker Upgrade - Torque - Tier 4"
   },
   {
+    "category": "walkers/buffalo/upgrades/tier4",
+    "cost": {
+      "count": 16,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 13,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 40,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 128,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 48,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 24,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Buffalo Walker Upgrade - Water - Tier 4",
+    "parent": "Buffalo Walker Upgrade - Water - Tier 3"
+  },
+  {
     "category": "walkers/camelop",
     "cost": {
       "count": 12,
@@ -2059,6 +2156,37 @@
     "name": "Camelop Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/camelop/upgrades/tier2",
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 160,
+            "name": "Fiber"
+          },
+          {
+            "count": 24,
+            "name": "Hide"
+          },
+          {
+            "count": 24,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Camelop Walker Upgrade - Water - Tier 2",
+    "parent": "Camelop Walker Body"
+  },
+  {
     "category": "walkers/camelop/upgrades/tier3",
     "crafting": [
       {
@@ -2083,6 +2211,37 @@
       }
     ],
     "name": "Camelop Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/camelop/upgrades/tier3",
+    "cost": {
+      "count": 18,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 32,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 72,
+            "name": "Hide"
+          },
+          {
+            "count": 136,
+            "name": "Wood"
+          },
+          {
+            "count": 56,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Camelop Walker Upgrade - Water - Tier 3",
+    "parent": "Camelop Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/camelop/upgrades/tier4",
@@ -2113,6 +2272,41 @@
       }
     ],
     "name": "Camelop Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/camelop/upgrades/tier4",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 13,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 40,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 128,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 48,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 24,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Camelop Walker Upgrade - Water - Tier 4",
+    "parent": "Camelop Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/cobra",
@@ -2236,6 +2430,37 @@
     "name": "Cobra Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/cobra/upgrades/tier2",
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 160,
+            "name": "Fiber"
+          },
+          {
+            "count": 24,
+            "name": "Hide"
+          },
+          {
+            "count": 24,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Cobra Walker Upgrade - Water - Tier 2",
+    "parent": "Cobra Walker Body"
+  },
+  {
     "category": "walkers/cobra/upgrades/tier3",
     "crafting": [
       {
@@ -2286,6 +2511,37 @@
       }
     ],
     "name": "Cobra Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/cobra/upgrades/tier3",
+    "cost": {
+      "count": 18,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 32,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 72,
+            "name": "Hide"
+          },
+          {
+            "count": 136,
+            "name": "Wood"
+          },
+          {
+            "count": 56,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Cobra Walker Upgrade - Water - Tier 3",
+    "parent": "Cobra Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/cobra/upgrades/tier4",
@@ -2346,6 +2602,41 @@
       }
     ],
     "name": "Cobra Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/cobra/upgrades/tier4",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 13,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 40,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 128,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 48,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 24,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Cobra Walker Upgrade - Water - Tier 4",
+    "parent": "Cobra Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/dinghy",
@@ -2641,6 +2932,37 @@
     "name": "Dinghy Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/dinghy/upgrades/tier2",
+    "cost": {
+      "count": 16,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 100,
+            "name": "Fiber"
+          },
+          {
+            "count": 15,
+            "name": "Rupu Pelt"
+          },
+          {
+            "count": 15,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Dinghy Walker Upgrade - Water - Tier 2",
+    "parent": "Dinghy Walker Body"
+  },
+  {
     "category": "walkers/dinghy/upgrades/tier3",
     "crafting": [
       {
@@ -2769,6 +3091,37 @@
       }
     ],
     "name": "Dinghy Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/dinghy/upgrades/tier3",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 45,
+            "name": "Rupu Pelt"
+          },
+          {
+            "count": 85,
+            "name": "Wood"
+          },
+          {
+            "count": 35,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Dinghy Walker Upgrade - Water - Tier 3",
+    "parent": "Dinghy Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/dinghy/upgrades/tier4",
@@ -2919,6 +3272,41 @@
       }
     ],
     "name": "Dinghy Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/dinghy/upgrades/tier4",
+    "cost": {
+      "count": 4,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 25,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 80,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 30,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 15,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Dinghy Walker Upgrade - Water - Tier 4",
+    "parent": "Dinghy Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/domus",
@@ -3098,6 +3486,37 @@
     "name": "Domus Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/domus/upgrades/tier2",
+    "cost": {
+      "count": 15,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 250,
+            "name": "Fiber"
+          },
+          {
+            "count": 38,
+            "name": "Hide"
+          },
+          {
+            "count": 38,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Domus Walker Upgrade - Water - Tier 2",
+    "parent": "Domus Walker Body"
+  },
+  {
     "category": "walkers/domus/upgrades/tier3",
     "crafting": [
       {
@@ -3226,6 +3645,37 @@
       }
     ],
     "name": "Domus Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/domus/upgrades/tier3",
+    "cost": {
+      "count": 20,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 113,
+            "name": "Hide"
+          },
+          {
+            "count": 213,
+            "name": "Wood"
+          },
+          {
+            "count": 88,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Domus Walker Upgrade - Water - Tier 3",
+    "parent": "Domus Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/domus/upgrades/tier4",
@@ -3376,6 +3826,41 @@
       }
     ],
     "name": "Domus Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/domus/upgrades/tier4",
+    "cost": {
+      "count": 25,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 63,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 200,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 75,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 38,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Domus Walker Upgrade - Water - Tier 4",
+    "parent": "Domus Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/falco",
@@ -3679,6 +4164,37 @@
     "name": "Falco Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/falco/upgrades/tier2",
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 160,
+            "name": "Fiber"
+          },
+          {
+            "count": 24,
+            "name": "Hide"
+          },
+          {
+            "count": 24,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Falco Walker Upgrade - Water - Tier 2",
+    "parent": "Falco Walker Body"
+  },
+  {
     "category": "walkers/falco/upgrades/tier3",
     "crafting": [
       {
@@ -3807,6 +4323,37 @@
       }
     ],
     "name": "Falco Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/falco/upgrades/tier3",
+    "cost": {
+      "count": 18,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 32,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 72,
+            "name": "Hide"
+          },
+          {
+            "count": 136,
+            "name": "Wood"
+          },
+          {
+            "count": 56,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Falco Walker Upgrade - Water - Tier 3",
+    "parent": "Falco Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/falco/upgrades/tier4",
@@ -3957,6 +4504,41 @@
       }
     ],
     "name": "Falco Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/falco/upgrades/tier4",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 13,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 40,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 128,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 48,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 24,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Falco Walker Upgrade - Water - Tier 4",
+    "parent": "Falco Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/firefly",
@@ -4190,6 +4772,37 @@
       }
     ],
     "name": "Firefly Walker Upgrade - Mobility - Tier 2"
+  },
+  {
+    "category": "walkers/firefly/upgrades/tier2",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 100,
+            "name": "Fiber"
+          },
+          {
+            "count": 15,
+            "name": "Rupu Pelt"
+          },
+          {
+            "count": 15,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Firefly Walker Upgrade - Water - Tier 2",
+    "parent": "Firefly Walker Body"
   },
   {
     "category": "walkers/firefly/upgrades/tier3",
@@ -4445,6 +5058,41 @@
       }
     ],
     "name": "Firefly Walker Upgrade - Mobility - Tier 4"
+  },
+  {
+    "category": "walkers/firefly/upgrades/tier4",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 25,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 80,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 30,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 15,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Firefly Walker Upgrade - Water - Tier 4",
+    "parent": "Firefly Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/hornet",
@@ -4756,6 +5404,37 @@
     "name": "Hornet Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/hornet/upgrades/tier2",
+    "cost": {
+      "count": 4,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 160,
+            "name": "Fiber"
+          },
+          {
+            "count": 24,
+            "name": "Hide"
+          },
+          {
+            "count": 24,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Hornet Walker Upgrade - Water - Tier 2",
+    "parent": "Hornet Walker Body"
+  },
+  {
     "category": "walkers/hornet/upgrades/tier3",
     "crafting": [
       {
@@ -4884,6 +5563,37 @@
       }
     ],
     "name": "Hornet Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/hornet/upgrades/tier3",
+    "cost": {
+      "count": 7,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 32,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 72,
+            "name": "Hide"
+          },
+          {
+            "count": 136,
+            "name": "Wood"
+          },
+          {
+            "count": 56,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Hornet Walker Upgrade - Water - Tier 3",
+    "parent": "Hornet Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/hornet/upgrades/tier4",
@@ -5034,6 +5744,41 @@
       }
     ],
     "name": "Hornet Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/hornet/upgrades/tier4",
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 13,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 40,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 128,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 48,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 24,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Hornet Walker Upgrade - Water - Tier 4",
+    "parent": "Hornet Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/mollusk",
@@ -5337,6 +6082,37 @@
     "name": "Mollusk Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/mollusk/upgrades/tier2",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 160,
+            "name": "Fiber"
+          },
+          {
+            "count": 24,
+            "name": "Hide"
+          },
+          {
+            "count": 24,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Mollusk Walker Upgrade - Water - Tier 2",
+    "parent": "Mollusk Walker Body"
+  },
+  {
     "category": "walkers/mollusk/upgrades/tier3",
     "crafting": [
       {
@@ -5465,6 +6241,37 @@
       }
     ],
     "name": "Mollusk Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/mollusk/upgrades/tier3",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 32,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 72,
+            "name": "Hide"
+          },
+          {
+            "count": 136,
+            "name": "Wood"
+          },
+          {
+            "count": 56,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Mollusk Walker Upgrade - Water - Tier 3",
+    "parent": "Mollusk Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/mollusk/upgrades/tier4",
@@ -5615,6 +6422,41 @@
       }
     ],
     "name": "Mollusk Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/mollusk/upgrades/tier4",
+    "cost": {
+      "count": 5,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 13,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 40,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 128,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 48,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 24,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Mollusk Walker Upgrade - Water - Tier 4",
+    "parent": "Mollusk Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/panda",
@@ -5798,6 +6640,37 @@
     "name": "Panda Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/panda/upgrades/tier2",
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 250,
+            "name": "Fiber"
+          },
+          {
+            "count": 38,
+            "name": "Hide"
+          },
+          {
+            "count": 38,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Panda Walker Upgrade - Water - Tier 2",
+    "parent": "Panda Walker Body"
+  },
+  {
     "category": "walkers/panda/upgrades/tier3",
     "crafting": [
       {
@@ -5926,6 +6799,37 @@
       }
     ],
     "name": "Panda Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/panda/upgrades/tier3",
+    "cost": {
+      "count": 18,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 113,
+            "name": "Hide"
+          },
+          {
+            "count": 213,
+            "name": "Wood"
+          },
+          {
+            "count": 88,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Panda Walker Upgrade - Water - Tier 3",
+    "parent": "Panda Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/panda/upgrades/tier4",
@@ -6076,6 +6980,41 @@
       }
     ],
     "name": "Panda Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/panda/upgrades/tier4",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 63,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 200,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 75,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 38,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Panda Walker Upgrade - Water - Tier 4",
+    "parent": "Panda Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/proxy",
@@ -6430,6 +7369,37 @@
     "name": "Schmetterling Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/schmetterling/upgrades/tier2",
+    "cost": {
+      "count": 15,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 250,
+            "name": "Fiber"
+          },
+          {
+            "count": 38,
+            "name": "Hide"
+          },
+          {
+            "count": 38,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Schmetterling Walker Upgrade - Water - Tier 2",
+    "parent": "Schmetterling Walker Body"
+  },
+  {
     "category": "walkers/schmetterling/upgrades/tier3",
     "crafting": [
       {
@@ -6558,6 +7528,37 @@
       }
     ],
     "name": "Schmetterling Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/schmetterling/upgrades/tier3",
+    "cost": {
+      "count": 20,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 113,
+            "name": "Hide"
+          },
+          {
+            "count": 213,
+            "name": "Wood"
+          },
+          {
+            "count": 88,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Schmetterling Walker Upgrade - Water - Tier 3",
+    "parent": "Schmetterling Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/schmetterling/upgrades/tier4",
@@ -6708,6 +7709,41 @@
       }
     ],
     "name": "Schmetterling Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/schmetterling/upgrades/tier4",
+    "cost": {
+      "count": 25,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 63,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 200,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 75,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 38,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Schmetterling Walker Upgrade - Water - Tier 4",
+    "parent": "Schmetterling Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/spider",
@@ -7550,6 +8586,37 @@
     "name": "Stiletto Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/stiletto/upgrades/tier2",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 160,
+            "name": "Fiber"
+          },
+          {
+            "count": 24,
+            "name": "Hide"
+          },
+          {
+            "count": 24,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Stiletto Walker Upgrade - Water - Tier 2",
+    "parent": "Stiletto Walker Body"
+  },
+  {
     "category": "walkers/stiletto/upgrades/tier3",
     "crafting": [
       {
@@ -7678,6 +8745,37 @@
       }
     ],
     "name": "Stiletto Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/stiletto/upgrades/tier3",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 32,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 72,
+            "name": "Hide"
+          },
+          {
+            "count": 136,
+            "name": "Wood"
+          },
+          {
+            "count": 56,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Stiletto Walker Upgrade - Water - Tier 3",
+    "parent": "Stiletto Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/stiletto/upgrades/tier4",
@@ -7828,6 +8926,41 @@
       }
     ],
     "name": "Stiletto Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/stiletto/upgrades/tier4",
+    "cost": {
+      "count": 5,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 13,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 40,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 128,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 48,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 24,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Stiletto Walker Upgrade - Water - Tier 4",
+    "parent": "Stiletto Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/titan",
@@ -8131,6 +9264,37 @@
     "name": "Titan Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/titan/upgrades/tier2",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 250,
+            "name": "Fiber"
+          },
+          {
+            "count": 38,
+            "name": "Hide"
+          },
+          {
+            "count": 38,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Titan Walker Upgrade - Water - Tier 2",
+    "parent": "Titan Walker Body"
+  },
+  {
     "category": "walkers/titan/upgrades/tier3",
     "crafting": [
       {
@@ -8259,6 +9423,37 @@
       }
     ],
     "name": "Titan Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/titan/upgrades/tier3",
+    "cost": {
+      "count": 50,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 113,
+            "name": "Hide"
+          },
+          {
+            "count": 213,
+            "name": "Wood"
+          },
+          {
+            "count": 88,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Titan Walker Upgrade - Water - Tier 3",
+    "parent": "Titan Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/titan/upgrades/tier4",
@@ -8409,6 +9604,41 @@
       }
     ],
     "name": "Titan Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/titan/upgrades/tier4",
+    "cost": {
+      "count": 100,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 63,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 200,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 75,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 38,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Titan Walker Upgrade - Water - Tier 4",
+    "parent": "Titan Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/toboggan",
@@ -8712,6 +9942,37 @@
     "name": "Toboggan Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/toboggan/upgrades/tier2",
+    "cost": {
+      "count": 60,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 160,
+            "name": "Fiber"
+          },
+          {
+            "count": 24,
+            "name": "Hide"
+          },
+          {
+            "count": 24,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Toboggan Walker Upgrade - Water - Tier 2",
+    "parent": "Toboggan Walker Body"
+  },
+  {
     "category": "walkers/toboggan/upgrades/tier3",
     "crafting": [
       {
@@ -8840,6 +10101,37 @@
       }
     ],
     "name": "Toboggan Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/toboggan/upgrades/tier3",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 32,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 72,
+            "name": "Hide"
+          },
+          {
+            "count": 136,
+            "name": "Wood"
+          },
+          {
+            "count": 56,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Toboggan Walker Upgrade - Water - Tier 3",
+    "parent": "Toboggan Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/toboggan/upgrades/tier4",
@@ -8990,6 +10282,41 @@
       }
     ],
     "name": "Toboggan Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/toboggan/upgrades/tier4",
+    "cost": {
+      "count": 5,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 13,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 40,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 128,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 48,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 24,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Toboggan Walker Upgrade - Water - Tier 4",
+    "parent": "Toboggan Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "WalkerTools",
@@ -9363,6 +10690,37 @@
     "name": "Tusker Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/tusker/upgrades/tier2",
+    "cost": {
+      "count": 15,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 250,
+            "name": "Fiber"
+          },
+          {
+            "count": 38,
+            "name": "Hide"
+          },
+          {
+            "count": 38,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Tusker Walker Upgrade - Water - Tier 2",
+    "parent": "Tusker Walker Body"
+  },
+  {
     "category": "walkers/tusker/upgrades/tier3",
     "crafting": [
       {
@@ -9491,6 +10849,37 @@
       }
     ],
     "name": "Tusker Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/tusker/upgrades/tier3",
+    "cost": {
+      "count": 20,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 113,
+            "name": "Hide"
+          },
+          {
+            "count": 213,
+            "name": "Wood"
+          },
+          {
+            "count": 88,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Tusker Walker Upgrade - Water - Tier 3",
+    "parent": "Tusker Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/tusker/upgrades/tier4",
@@ -9643,6 +11032,41 @@
     "name": "Tusker Walker Upgrade - Torque - Tier 4"
   },
   {
+    "category": "walkers/tusker/upgrades/tier4",
+    "cost": {
+      "count": 25,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 63,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 200,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 75,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 38,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Tusker Walker Upgrade - Water - Tier 4",
+    "parent": "Tusker Walker Upgrade - Water - Tier 3"
+  },
+  {
     "category": "walkers/silur",
     "cost": {
       "count": 4,
@@ -9684,6 +11108,37 @@
     ],
     "name": "Silur Walker Body",
     "parent": "Balang Walker Body"
+  },
+  {
+    "category": "walkers/silur/upgrades/tier2",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 160,
+            "name": "Fiber"
+          },
+          {
+            "count": 24,
+            "name": "Hide"
+          },
+          {
+            "count": 24,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Silur Walker Upgrade - Water - Tier 2",
+    "parent": "Silur Walker Body"
   },
   {
     "category": "walkers/silur/upgrades/tier2",
@@ -9738,6 +11193,37 @@
     "name": "Silur Walker Upgrade - Torque - Tier 3"
   },
   {
+    "category": "walkers/silur/upgrades/tier3",
+    "cost": {
+      "count": 4,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 32,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 72,
+            "name": "Hide"
+          },
+          {
+            "count": 136,
+            "name": "Wood"
+          },
+          {
+            "count": 56,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Silur Walker Upgrade - Water - Tier 3",
+    "parent": "Silur Walker Upgrade - Water - Tier 2"
+  },
+  {
     "category": "walkers/silur/upgrades/tier4",
     "crafting": [
       {
@@ -9766,6 +11252,41 @@
       }
     ],
     "name": "Silur Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/silur/upgrades/tier4",
+    "cost": {
+      "count": 7,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 13,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 40,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 128,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 48,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 24,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Silur Walker Upgrade - Water - Tier 4",
+    "parent": "Silur Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/hercul",
@@ -9837,6 +11358,37 @@
     "name": "Hercul Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/hercul/upgrades/tier2",
+    "cost": {
+      "count": 5,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 160,
+            "name": "Fiber"
+          },
+          {
+            "count": 24,
+            "name": "Hide"
+          },
+          {
+            "count": 24,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Hercul Walker Upgrade - Water - Tier 2",
+    "parent": "Hercul Walker Body"
+  },
+  {
     "category": "walkers/hercul/upgrades/tier3",
     "crafting": [
       {
@@ -9861,6 +11413,37 @@
       }
     ],
     "name": "Hercul Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/hercul/upgrades/tier3",
+    "cost": {
+      "count": 9,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 32,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 72,
+            "name": "Hide"
+          },
+          {
+            "count": 136,
+            "name": "Wood"
+          },
+          {
+            "count": 56,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Hercul Walker Upgrade - Water - Tier 3",
+    "parent": "Hercul Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/hercul/upgrades/tier4",
@@ -9891,6 +11474,41 @@
       }
     ],
     "name": "Hercul Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/hercul/upgrades/tier4",
+    "cost": {
+      "count": 16,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 13,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 40,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 128,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 48,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 24,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Hercul Walker Upgrade - Water - Tier 4",
+    "parent": "Hercul Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/balang",
@@ -9954,6 +11572,37 @@
     "name": "Balang Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/balang/upgrades/tier2",
+    "cost": {
+      "count": 16,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 100,
+            "name": "Fiber"
+          },
+          {
+            "count": 15,
+            "name": "Rupu Pelt"
+          },
+          {
+            "count": 15,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Balang Walker Upgrade - Water - Tier 2",
+    "parent": "Balang Walker Body"
+  },
+  {
     "category": "walkers/balang/upgrades/tier3",
     "crafting": [
       {
@@ -9978,6 +11627,37 @@
       }
     ],
     "name": "Balang Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/balang/upgrades/tier3",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 45,
+            "name": "Rupu Pelt"
+          },
+          {
+            "count": 85,
+            "name": "Wood"
+          },
+          {
+            "count": 35,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Balang Walker Upgrade - Water - Tier 3",
+    "parent": "Balang Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/balang/upgrades/tier4",
@@ -10008,6 +11688,41 @@
       }
     ],
     "name": "Balang Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/balang/upgrades/tier4",
+    "cost": {
+      "count": 4,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 25,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 80,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 30,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 15,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Balang Walker Upgrade - Water - Tier 4",
+    "parent": "Balang Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/raptor",
@@ -10165,6 +11880,37 @@
     "name": "Raptor Sky Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/raptor/upgrades/tier2",
+    "cost": {
+      "count": 22,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 24,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 160,
+            "name": "Fiber"
+          },
+          {
+            "count": 30,
+            "name": "Lightwood"
+          },
+          {
+            "count": 20,
+            "name": "Rope"
+          }
+        ]
+      }
+    ],
+    "name": "Raptor Sky Walker Upgrade - Water - Tier 2",
+    "parent": "Raptor Sky Walker Body"
+  },
+  {
     "category": "walkers/raptor/upgrades/tier3",
     "crafting": [
       {
@@ -10267,6 +12013,37 @@
       }
     ],
     "name": "Raptor Sky Walker Upgrade - Torque - Tier 3"
+  },
+  {
+    "category": "walkers/raptor/upgrades/tier3",
+    "cost": {
+      "count": 18,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 60,
+            "name": "Lightwood"
+          },
+          {
+            "count": 45,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 20,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "name": "Raptor Sky Walker Upgrade - Water - Tier 3",
+    "parent": "Raptor Sky Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/raptor/upgrades/tier4",
@@ -10387,6 +12164,41 @@
       }
     ],
     "name": "Raptor Sky Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/raptor/upgrades/tier4",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 45,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 25,
+            "name": "Worm Silk"
+          },
+          {
+            "count": 100,
+            "name": "Lightwood"
+          },
+          {
+            "count": 20,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Raptor Sky Walker Upgrade - Water - Tier 4",
+    "parent": "Raptor Sky Walker Upgrade - Water - Tier 3"
   },
   {
     "name": "Animals Tablet",

@@ -37,6 +37,7 @@ const itemTemplate = {
   durability: undefined,
   weaponInfo: undefined,
   toolInfo: undefined,
+  moduleInfo: undefined,
   schematicName: undefined,
   armorInfo: undefined,
   movementSpeedReduction: undefined,
@@ -89,6 +90,12 @@ const armorInfoTemplate = {
 const structureInfoTemplate = {
   type: undefined,
   hp: undefined,
+};
+
+const moduleInfoTemplate = {
+  max: undefined,
+  increase: undefined,
+  maxIncrease: undefined,
 };
 
 const ingredienTemplate = { count: undefined, name: undefined };
@@ -198,6 +205,7 @@ allItems.forEach((item) => {
   item.drops = undefined;
   item.armorInfo = undefined;
   item.structureInfo = undefined;
+  item.moduleInfo = undefined;
 });
 
 if (allItems.length > 0) {
@@ -359,6 +367,32 @@ function parseItemData(filePath) {
       }
       if (jsonData[1].Properties?.ExpectedPrice) {
         item.trade_price = jsonData[1].Properties.ExpectedPrice;
+      }
+
+      if (jsonData[1].Properties?.MaximumQuantity) {
+        if (item.moduleInfo == undefined) {
+          let moduleInfoBase = { ...moduleInfoTemplate };
+          item.moduleInfo = moduleInfoBase;
+        }
+
+        item.moduleInfo.max = jsonData[1].Properties.MaximumQuantity;
+        item.moduleInfo.increase = jsonData[1].Properties
+          .AbsoluteIncreasePerItem
+          ? jsonData[1].Properties.AbsoluteIncreasePerItem
+          : undefined;
+      }
+
+      if (jsonData[1].Properties?.PercentageIncreasePerItem) {
+        if (item.moduleInfo == undefined) {
+          let moduleInfoBase = { ...moduleInfoTemplate };
+          item.moduleInfo = moduleInfoBase;
+        }
+
+        item.moduleInfo.increase =
+          jsonData[1].Properties.PercentageIncreasePerItem;
+        item.moduleInfo.maxIncrease = jsonData[1].Properties.MaximumPercentage
+          ? jsonData[1].Properties.MaximumPercentage
+          : undefined;
       }
 
       if (jsonData[1].Properties?.ProjectileDamage) {
@@ -746,41 +780,23 @@ function parseName(name) {
       name = walkerName + " " + wingsType;
     }
   } else if (name.includes("Upgrades")) {
-    if (/(.+)Walker(.+)Upgrades/.test(name)) {
-      let match = name.match(/(.+)Walker(.+)Upgrades/);
-      if (match[1] != null && match[2] != null) {
-        let walkerName = translator.translateName(match[1] + " Walker");
-        let tier = "1";
-        switch (match[2]) {
-          case "Bone":
-            tier = "2";
-            break;
-          case "Ceramic":
-            tier = "3";
-            break;
-          case "Iron":
-            tier = "4";
-            break;
-        }
-        name = walkerName + " Upgrade - Water - Tier " + tier;
-      }
-    } else if (/(.+)BoneUpgrades/.test(name)) {
+    if (/(.+)BoneUpgrades/.test(name)) {
       let match = name.match(/(.+)BoneUpgrades/);
       if (match[1] != null) {
         let walkerName = translator.translateName(match[1] + " Walker");
-        name = walkerName + " Upgrade - Water - Tier 2";
+        name = walkerName + " Upgrades - Tier 2";
       }
     } else if (/(.+)CeramicUpgrades/.test(name)) {
       let match = name.match(/(.+)CeramicUpgrades/);
       if (match[1] != null) {
         let walkerName = translator.translateName(match[1] + " Walker");
-        name = walkerName + " Upgrade - Water - Tier 3";
+        name = walkerName + " Upgrades - Tier 3";
       }
     } else if (/(.+)IronUpgrades/.test(name)) {
       let match = name.match(/(.+)IronUpgrades/);
       if (match[1] != null) {
         let walkerName = translator.translateName(match[1] + " Walker");
-        name = walkerName + " Upgrade - Water - Tier 4";
+        name = walkerName + " Upgrades - Tier 4";
       }
     } else if (/(.+)WoodUpgrades/.test(name)) {
       let match = name.match(/(.+)WoodUpgrades/);
