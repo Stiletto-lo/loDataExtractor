@@ -162,7 +162,20 @@ if (allItems.length > 0) {
       if (err) {
         console.error("Error creating the file");
       } else {
-        console.log("Data exported");
+        console.log("Items detailed exported");
+      }
+    }
+  );
+}
+if (allItems.length > 0) {
+  fs.writeFile(
+    folderPatch + "items_min.json",
+    JSON.stringify(allItems),
+    function (err) {
+      if (err) {
+        console.error("Error creating the file");
+      } else {
+        console.log("Items.min exported");
       }
     }
   );
@@ -577,7 +590,7 @@ function parsePlaceableData(filePath) {
       if (jsonData[1].Properties?.Name?.SourceString) {
         item.name = jsonData[1].Properties.Name.SourceString.trim();
       } else if (jsonData[1].Properties?.Name?.Key) {
-        item.name = jsonData[1].Properties.Name.Key.replace(".Name","").trim();
+        item.name = jsonData[1].Properties.Name.Key.replace(".Name", "").trim();
       }
     }
 
@@ -619,9 +632,14 @@ function parseTechData(filePath) {
       item.cost = itemCost;
     }
 
-    if (!jsonData[1]?.Properties?.bHidden || SHOW_DEV_ITEMS) {
-      allItems.push(item);
+    if (jsonData[1]?.Properties?.bHidden) {
+      item.onlyDevs = true;
     }
+
+    if (jsonData[1]?.Properties?.bHidden && !SHOW_DEV_ITEMS) {
+      item.parent = undefined;
+    }
+    allItems.push(item);
   }
 }
 

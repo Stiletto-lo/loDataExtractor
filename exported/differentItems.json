@@ -156,763 +156,6 @@
     "trade_price": 679.5
   },
   {
-    "category": "Lava",
-    "name": "Lava",
-    "trade_price": 3.5
-  },
-  {
-    "category": "Liquids",
-    "name": "Contaminated Water",
-    "trade_price": 0.1
-  },
-  {
-    "category": "Resources",
-    "name": "Beeswax",
-    "trade_price": 1.2
-  },
-  {
-    "category": "Resources",
-    "name": "Blood Turnip",
-    "trade_price": 0.9
-  },
-  {
-    "category": "Resources",
-    "name": "Cactus Flesh",
-    "trade_price": 0.2
-  },
-  {
-    "category": "Resources",
-    "name": "Huge Cactus Fruit",
-    "trade_price": 1.6
-  },
-  {
-    "category": "Resources",
-    "name": "Chitin Plate",
-    "trade_price": 6.6
-  },
-  {
-    "name": "Vision Powder",
-    "category": "Drugs",
-    "cost": {
-      "count": 6,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 3,
-            "name": "Huge Cactus Fruit"
-          },
-          {
-            "count": 10,
-            "name": "Purified Water"
-          }
-        ],
-        "station": "Campfire",
-        "time": 30
-      }
-    ],
-    "parent": "Vitamins",
-    "trade_price": 34.8
-  },
-  {
-    "name": "Desert Mule",
-    "category": "Drugs",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Aloe Vera"
-          },
-          {
-            "count": 10,
-            "name": "Purified Water"
-          }
-        ],
-        "station": "Campfire",
-        "time": 135
-      }
-    ],
-    "parent": "Vision Powder",
-    "trade_price": 34.5
-  },
-  {
-    "name": "Sinus Destroyer",
-    "category": "Drugs",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 18,
-            "name": "Purified Water"
-          },
-          {
-            "count": 18,
-            "name": "Blood Turnip"
-          },
-          {
-            "count": 20,
-            "name": "Insects"
-          },
-          {
-            "count": 1,
-            "name": "Glass"
-          }
-        ],
-        "station": "Campfire",
-        "time": 60
-      }
-    ],
-    "trade_price": 87.6
-  },
-  {
-    "name": "Fury Fumes",
-    "category": "Drugs",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Purified Water"
-          },
-          {
-            "count": 2,
-            "name": "Rupu Gel"
-          },
-          {
-            "count": 1,
-            "name": "Glass"
-          }
-        ],
-        "station": "Campfire",
-        "time": 60
-      }
-    ],
-    "parent": "Vision Powder",
-    "trade_price": 39.4
-  },
-  {
-    "name": "Jojo Mojo",
-    "category": "Drugs",
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 14,
-            "name": "Mushroom Flesh"
-          },
-          {
-            "count": 4,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 1,
-            "name": "Glass"
-          }
-        ],
-        "station": "Campfire",
-        "time": 60
-      }
-    ],
-    "parent": "Fury Fumes",
-    "trade_price": 9
-  },
-  {
-    "name": "Race Dust",
-    "category": "Drugs",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 22,
-            "name": "Purified Water"
-          },
-          {
-            "count": 75,
-            "name": "Mushroom Flesh"
-          },
-          {
-            "count": 2,
-            "name": "Beeswax"
-          },
-          {
-            "count": 1,
-            "name": "Glass"
-          }
-        ],
-        "station": "Campfire",
-        "time": 60
-      }
-    ],
-    "trade_price": 99.8
-  },
-  {
-    "name": "Rupu Repellent",
-    "category": "Drugs",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Purified Water"
-          },
-          {
-            "count": 12,
-            "name": "Thornberry"
-          },
-          {
-            "count": 44,
-            "name": "Cattail"
-          },
-          {
-            "count": 1,
-            "name": "Glass"
-          }
-        ],
-        "station": "Campfire",
-        "time": 60
-      }
-    ],
-    "parent": "Desert Mule",
-    "trade_price": 79.9
-  },
-  {
-    "name": "Sterile Bandage",
-    "category": "Interactables",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 2,
-            "name": "Aloe Vera"
-          }
-        ]
-      }
-    ],
-    "parent": "Primitive Bandage",
-    "trade_price": 1.4
-  },
-  {
-    "category": "Interactables",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Fiber"
-          },
-          {
-            "count": 7,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "Primitive Bandage",
-    "parent": "Equipment",
-    "trade_price": 1.2
-  },
-  {
-    "category": "Resources",
-    "name": "Feather",
-    "trade_price": 1.6
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Rupu Pelt"
-          }
-        ],
-        "output": 3,
-        "station": "Fiberworking Station",
-        "time": 11
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Palm Leaves"
-          }
-        ],
-        "station": "Woodworking Station",
-        "time": 8
-      },
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Cattail"
-          }
-        ],
-        "output": 3,
-        "station": "Advanced Fiberworking Station",
-        "time": 3
-      }
-    ],
-    "name": "Fiber",
-    "trade_price": 0.2
-  },
-  {
-    "category": "Resources",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Fiber"
-          },
-          {
-            "count": 2,
-            "name": "Wood"
-          }
-        ],
-        "station": "Fiberworking Station",
-        "time": 5
-      },
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Fiber"
-          },
-          {
-            "count": 2,
-            "name": "Wood"
-          }
-        ],
-        "station": "Advanced Fiberworking Station",
-        "time": 2
-      }
-    ],
-    "name": "Fiber Weave",
-    "parent": "Fiberworking Station",
-    "trade_price": 0.8
-  },
-  {
-    "category": "Resources",
-    "name": "Insects",
-    "trade_price": 0.8
-  },
-  {
-    "name": "Fiery Concoction",
-    "trade_price": 1
-  },
-  {
-    "category": "Resources",
-    "name": "Magma Seeds",
-    "trade_price": 0.1
-  },
-  {
-    "category": "Resources",
-    "name": "Meteor Core",
-    "trade_price": 600
-  },
-  {
-    "category": "Resources",
-    "name": "Nibiran Mineral",
-    "trade_price": 16.5
-  },
-  {
-    "category": "Resources",
-    "name": "Hide",
-    "trade_price": 1.1
-  },
-  {
-    "category": "Resources",
-    "name": "Iron Ore",
-    "trade_price": 8
-  },
-  {
-    "category": "Resources",
-    "name": "Obsidian",
-    "trade_price": 0.8
-  },
-  {
-    "category": "Resources",
-    "name": "Salt Rock",
-    "trade_price": 0.1
-  },
-  {
-    "category": "Resources",
-    "name": "Sulfur",
-    "trade_price": 1.4
-  },
-  {
-    "category": "Resources",
-    "name": "Rupu Gel",
-    "trade_price": 1
-  },
-  {
-    "category": "Resources",
-    "name": "Pearl",
-    "trade_price": 1.1
-  },
-  {
-    "category": "Resources",
-    "name": "Apple",
-    "trade_price": 0.2
-  },
-  {
-    "category": "Resources",
-    "name": "Cattail",
-    "trade_price": 0.2
-  },
-  {
-    "category": "Resources",
-    "name": "Corn",
-    "trade_price": 0.2
-  },
-  {
-    "category": "Resources",
-    "name": "Cotton",
-    "trade_price": 2.1
-  },
-  {
-    "category": "Resources",
-    "name": "Mushroom Flesh",
-    "trade_price": 0.4
-  },
-  {
-    "category": "Resources",
-    "name": "Red Banana",
-    "trade_price": 0.1
-  },
-  {
-    "category": "Resources",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Meteor Core"
-          },
-          {
-            "count": 100,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Earth Wax"
-          }
-        ],
-        "station": "Advanced Woodworking Station",
-        "time": 30
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Meteor Core"
-          },
-          {
-            "count": 100,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Earth Wax"
-          }
-        ],
-        "station": "Artificer Woodworking Station",
-        "time": 20
-      }
-    ],
-    "name": "Walker Mechanism",
-    "parent": "Woodworking Station",
-    "trade_price": 700
-  },
-  {
-    "category": "Resources",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Cattail"
-          }
-        ],
-        "station": "Fiberworking Station",
-        "time": 24
-      },
-      {
-        "ingredients": [
-          {
-            "count": 40,
-            "name": "Fiber"
-          },
-          {
-            "count": 2,
-            "name": "Rupu Vine"
-          }
-        ],
-        "station": "Fiberworking Station",
-        "time": 38
-      },
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Cattail"
-          }
-        ],
-        "station": "Advanced Fiberworking Station",
-        "time": 18
-      },
-      {
-        "ingredients": [
-          {
-            "count": 40,
-            "name": "Fiber"
-          },
-          {
-            "count": 2,
-            "name": "Rupu Vine"
-          }
-        ],
-        "station": "Advanced Fiberworking Station",
-        "time": 26
-      }
-    ],
-    "name": "Rope",
-    "parent": "Fiber Weave",
-    "trade_price": 0.5
-  },
-  {
-    "category": "Resources",
-    "name": "Rupu Pelt",
-    "trade_price": 0.2
-  },
-  {
-    "category": "Resources",
-    "name": "Rupu Vine",
-    "trade_price": 0.5
-  },
-  {
-    "category": "Resources",
-    "name": "Thornberry",
-    "trade_price": 2.6
-  },
-  {
-    "category": "Resources",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 4,
-            "name": "Wood"
-          },
-          {
-            "count": 2,
-            "name": "Fiber"
-          }
-        ],
-        "station": "Woodworking Station",
-        "time": 5
-      },
-      {
-        "ingredients": [
-          {
-            "count": 4,
-            "name": "Wood"
-          },
-          {
-            "count": 2,
-            "name": "Fiber"
-          }
-        ],
-        "station": "Advanced Woodworking Station",
-        "time": 2.5
-      },
-      {
-        "ingredients": [
-          {
-            "count": 4,
-            "name": "Wood"
-          },
-          {
-            "count": 2,
-            "name": "Fiber"
-          }
-        ],
-        "station": "Artificer Woodworking Station",
-        "time": 1
-      }
-    ],
-    "name": "Wood Shaft",
-    "parent": "Woodworking Station",
-    "trade_price": 0.4
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood"
-          }
-        ],
-        "station": "FuelBurning",
-        "time": 21
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood"
-          }
-        ],
-        "station": "Furnace",
-        "time": 300
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood"
-          }
-        ],
-        "station": "FuelLightSource",
-        "time": 72
-      }
-    ],
-    "name": "Charcoal",
-    "trade_price": 0.1
-  },
-  {
-    "category": "Resources",
-    "name": "Lightwood",
-    "trade_price": 3.5
-  },
-  {
-    "category": "Resources",
-    "name": "Wood Log",
-    "trade_price": 2
-  },
-  {
-    "category": "Resources",
-    "name": "Palm Leaves",
-    "trade_price": 0.2
-  },
-  {
-    "category": "Resources",
-    "name": "Redwood Wood",
-    "trade_price": 2.6
-  },
-  {
-    "category": "Resources",
-    "name": "Weightless Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Merchant Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Craftsman Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Fireproof Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Hardening Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Forager Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Scavenger Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Lumberjack Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Pack Speed Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Hearth Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Lifeforce Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Bullrush Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Sandy Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Harpoon Protection Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Battery Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Torque Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Watery Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Pack Mule Module"
-  },
-  {
     "cost": {
       "count": 5,
       "name": "Tablet"
@@ -1822,6 +1065,98 @@
     "trade_price": 342.4
   },
   {
+    "category": "Armors",
+    "cost": {
+      "count": 35,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 10,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 20,
+            "name": "Cattail"
+          },
+          {
+            "count": 20,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Brittle Bone Armor",
+    "parent": "Forester's Armor",
+    "trade_price": 66.5
+  },
+  {
+    "category": "Armors",
+    "cost": {
+      "count": 35,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 15,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 25,
+            "name": "Cotton"
+          }
+        ]
+      }
+    ],
+    "name": "Triple Stitch Armor",
+    "parent": "Rupu Fur Armor",
+    "trade_price": 32
+  },
+  {
+    "category": "Armors",
+    "cost": {
+      "count": 5,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 20,
+            "name": "Obsidian"
+          },
+          {
+            "count": 10,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 30,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Carapace Armor",
+    "parent": "Forester's Armor",
+    "trade_price": 164.8
+  },
+  {
     "category": "Equipment",
     "cost": {
       "count": 10,
@@ -2317,25 +1652,6 @@
     "trade_price": 29
   },
   {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Flare - white",
-    "trade_price": 3
-  },
-  {
     "category": "Tools",
     "crafting": [
       {
@@ -2441,108 +1757,6 @@
     "trade_price": 2.6
   },
   {
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Rope"
-          },
-          {
-            "count": 12,
-            "name": "Beeswax"
-          }
-        ]
-      }
-    ],
-    "name": "Fast Grappling Hook",
-    "parent": "Repaired Grappling Hook",
-    "trade_price": 19.4
-  },
-  {
-    "category": "Tools",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Fiber"
-          },
-          {
-            "count": 22,
-            "name": "Wood"
-          },
-          {
-            "count": 2,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Repaired Grappling Hook",
-    "parent": "Equipment",
-    "trade_price": 10
-  },
-  {
-    "category": "Tools",
-    "cost": {
-      "count": 3,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Wood"
-          },
-          {
-            "count": 9,
-            "name": "Fiber"
-          },
-          {
-            "count": 2,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Torch",
-    "parent": "Stone Axe",
-    "trade_price": 3.2
-  },
-  {
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 3,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 30,
-            "name": "Rope"
-          },
-          {
-            "count": 2,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "name": "Long Grappling Hook",
-    "parent": "Fast Grappling Hook",
-    "trade_price": 23.5
-  },
-  {
     "category": "Armors",
     "cost": {
       "count": 25,
@@ -2605,96 +1819,270 @@
     "trade_price": 13.7
   },
   {
-    "category": "Armors",
+    "name": "Vision Powder",
+    "category": "Drugs",
+    "cost": {
+      "count": 6,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Huge Cactus Fruit"
+          },
+          {
+            "count": 10,
+            "name": "Purified Water"
+          }
+        ],
+        "station": "Campfire",
+        "time": 30
+      }
+    ],
+    "parent": "Vitamins",
+    "trade_price": 34.8
+  },
+  {
+    "name": "Desert Mule",
+    "category": "Drugs",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Aloe Vera"
+          },
+          {
+            "count": 10,
+            "name": "Purified Water"
+          }
+        ],
+        "station": "Campfire",
+        "time": 135
+      }
+    ],
+    "parent": "Vision Powder",
+    "trade_price": 34.5
+  },
+  {
+    "name": "Sinus Destroyer",
+    "category": "Drugs",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Purified Water"
+          },
+          {
+            "count": 18,
+            "name": "Blood Turnip"
+          },
+          {
+            "count": 20,
+            "name": "Insects"
+          },
+          {
+            "count": 1,
+            "name": "Glass"
+          }
+        ],
+        "station": "Campfire",
+        "time": 60
+      }
+    ],
+    "trade_price": 87.6
+  },
+  {
+    "name": "Fury Fumes",
+    "category": "Drugs",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Purified Water"
+          },
+          {
+            "count": 2,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 1,
+            "name": "Glass"
+          }
+        ],
+        "station": "Campfire",
+        "time": 60
+      }
+    ],
+    "parent": "Vision Powder",
+    "trade_price": 39.4
+  },
+  {
+    "name": "Jojo Mojo",
+    "category": "Drugs",
     "cost": {
       "count": 35,
       "name": "Fragment"
     },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 14,
+            "name": "Mushroom Flesh"
+          },
+          {
+            "count": 4,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 1,
+            "name": "Glass"
+          }
+        ],
+        "station": "Campfire",
+        "time": 60
+      }
+    ],
+    "parent": "Fury Fumes",
+    "trade_price": 9
+  },
+  {
+    "name": "Race Dust",
+    "category": "Drugs",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 22,
+            "name": "Purified Water"
+          },
+          {
+            "count": 75,
+            "name": "Mushroom Flesh"
+          },
+          {
+            "count": 2,
+            "name": "Beeswax"
+          },
+          {
+            "count": 1,
+            "name": "Glass"
+          }
+        ],
+        "station": "Campfire",
+        "time": 60
+      }
+    ],
+    "trade_price": 99.8
+  },
+  {
+    "name": "Rupu Repellent",
+    "category": "Drugs",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Purified Water"
+          },
+          {
+            "count": 12,
+            "name": "Thornberry"
+          },
+          {
+            "count": 44,
+            "name": "Cattail"
+          },
+          {
+            "count": 1,
+            "name": "Glass"
+          }
+        ],
+        "station": "Campfire",
+        "time": 60
+      }
+    ],
+    "parent": "Desert Mule",
+    "trade_price": 79.9
+  },
+  {
+    "category": "Interactables",
     "crafting": [
       {
         "ingredients": [
           {
             "count": 5,
-            "name": "Bone Glue"
+            "name": "Charcoal"
           },
           {
-            "count": 10,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 20,
+            "count": 5,
             "name": "Cattail"
-          },
-          {
-            "count": 20,
-            "name": "Fiber"
           }
         ]
       }
     ],
-    "name": "Brittle Bone Armor",
-    "parent": "Forester's Armor",
-    "trade_price": 66.5
+    "name": "Flare - white",
+    "trade_price": 3
   },
   {
-    "category": "Armors",
+    "name": "Sterile Bandage",
+    "category": "Interactables",
     "cost": {
-      "count": 35,
+      "count": 15,
       "name": "Fragment"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 20,
+            "count": 1,
             "name": "Fiber Weave"
           },
           {
-            "count": 15,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 25,
-            "name": "Cotton"
+            "count": 2,
+            "name": "Aloe Vera"
           }
         ]
       }
     ],
-    "name": "Triple Stitch Armor",
-    "parent": "Rupu Fur Armor",
-    "trade_price": 32
+    "parent": "Primitive Bandage",
+    "trade_price": 1.4
   },
   {
-    "category": "Armors",
+    "category": "Interactables",
     "cost": {
-      "count": 5,
-      "name": "Tablet"
+      "name": "Fragment"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Bone Glue"
+            "count": 12,
+            "name": "Fiber"
           },
           {
-            "count": 20,
-            "name": "Obsidian"
-          },
-          {
-            "count": 10,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 30,
-            "name": "Fiber Weave"
+            "count": 7,
+            "name": "Ash"
           }
         ]
       }
     ],
-    "name": "Carapace Armor",
-    "parent": "Forester's Armor",
-    "trade_price": 164.8
+    "name": "Primitive Bandage",
+    "parent": "Equipment",
+    "trade_price": 1.2
   },
   {
     "category": "Interactables",
@@ -2750,6 +2138,16 @@
     ],
     "name": "Tablet",
     "trade_price": 500
+  },
+  {
+    "category": "Lava",
+    "name": "Lava",
+    "trade_price": 3.5
+  },
+  {
+    "category": "Liquids",
+    "name": "Contaminated Water",
+    "trade_price": 0.1
   },
   {
     "category": "Liquids",
@@ -2854,23 +2252,130 @@
   },
   {
     "category": "Resources",
-    "name": "Worm Silk",
-    "trade_price": 20
+    "name": "Beeswax",
+    "trade_price": 1.2
   },
   {
     "category": "Resources",
-    "name": "Animal Fat",
-    "trade_price": 1
+    "name": "Blood Turnip",
+    "trade_price": 0.9
   },
   {
     "category": "Resources",
-    "name": "Bone Splinter",
-    "trade_price": 1
+    "name": "Cactus Flesh",
+    "trade_price": 0.2
   },
   {
     "category": "Resources",
-    "name": "Worm Fang",
-    "trade_price": 10000
+    "name": "Huge Cactus Fruit",
+    "trade_price": 1.6
+  },
+  {
+    "category": "Resources",
+    "name": "Chitin Plate",
+    "trade_price": 6.6
+  },
+  {
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Rope"
+          },
+          {
+            "count": 12,
+            "name": "Beeswax"
+          }
+        ]
+      }
+    ],
+    "name": "Fast Grappling Hook",
+    "parent": "Repaired Grappling Hook",
+    "trade_price": 19.4
+  },
+  {
+    "category": "Tools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Fiber"
+          },
+          {
+            "count": 22,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Repaired Grappling Hook",
+    "parent": "Equipment",
+    "trade_price": 10
+  },
+  {
+    "category": "Tools",
+    "cost": {
+      "count": 3,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Wood"
+          },
+          {
+            "count": 9,
+            "name": "Fiber"
+          },
+          {
+            "count": 2,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Torch",
+    "parent": "Stone Axe",
+    "trade_price": 3.2
+  },
+  {
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 30,
+            "name": "Rope"
+          },
+          {
+            "count": 2,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "name": "Long Grappling Hook",
+    "parent": "Fast Grappling Hook",
+    "trade_price": 23.5
   },
   {
     "category": "Tools",
@@ -3790,6 +3295,501 @@
     "name": "Singblade",
     "parent": "Long Bonespike Swordstaff",
     "trade_price": 165.8
+  },
+  {
+    "category": "Resources",
+    "name": "Feather",
+    "trade_price": 1.6
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Rupu Pelt"
+          }
+        ],
+        "output": 3,
+        "station": "Fiberworking Station",
+        "time": 11
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Palm Leaves"
+          }
+        ],
+        "station": "Woodworking Station",
+        "time": 8
+      },
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Cattail"
+          }
+        ],
+        "output": 3,
+        "station": "Advanced Fiberworking Station",
+        "time": 3
+      }
+    ],
+    "name": "Fiber",
+    "trade_price": 0.2
+  },
+  {
+    "category": "Resources",
+    "cost": {
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Fiber"
+          },
+          {
+            "count": 2,
+            "name": "Wood"
+          }
+        ],
+        "station": "Fiberworking Station",
+        "time": 5
+      },
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Fiber"
+          },
+          {
+            "count": 2,
+            "name": "Wood"
+          }
+        ],
+        "station": "Advanced Fiberworking Station",
+        "time": 2
+      }
+    ],
+    "name": "Fiber Weave",
+    "parent": "Fiberworking Station",
+    "trade_price": 0.8
+  },
+  {
+    "category": "Resources",
+    "name": "Insects",
+    "trade_price": 0.8
+  },
+  {
+    "name": "Fiery Concoction",
+    "trade_price": 1
+  },
+  {
+    "category": "Resources",
+    "name": "Magma Seeds",
+    "trade_price": 0.1
+  },
+  {
+    "category": "Resources",
+    "name": "Meteor Core",
+    "trade_price": 600
+  },
+  {
+    "category": "Resources",
+    "name": "Nibiran Mineral",
+    "trade_price": 16.5
+  },
+  {
+    "category": "Resources",
+    "name": "Hide",
+    "trade_price": 1.1
+  },
+  {
+    "category": "Resources",
+    "name": "Iron Ore",
+    "trade_price": 8
+  },
+  {
+    "category": "Resources",
+    "name": "Obsidian",
+    "trade_price": 0.8
+  },
+  {
+    "category": "Resources",
+    "name": "Salt Rock",
+    "trade_price": 0.1
+  },
+  {
+    "category": "Resources",
+    "name": "Sulfur",
+    "trade_price": 1.4
+  },
+  {
+    "category": "Resources",
+    "name": "Rupu Gel",
+    "trade_price": 1
+  },
+  {
+    "category": "Resources",
+    "name": "Pearl",
+    "trade_price": 1.1
+  },
+  {
+    "category": "Resources",
+    "name": "Apple",
+    "trade_price": 0.2
+  },
+  {
+    "category": "Resources",
+    "name": "Cattail",
+    "trade_price": 0.2
+  },
+  {
+    "category": "Resources",
+    "name": "Corn",
+    "trade_price": 0.2
+  },
+  {
+    "category": "Resources",
+    "name": "Cotton",
+    "trade_price": 2.1
+  },
+  {
+    "category": "Resources",
+    "name": "Mushroom Flesh",
+    "trade_price": 0.4
+  },
+  {
+    "category": "Resources",
+    "name": "Red Banana",
+    "trade_price": 0.1
+  },
+  {
+    "category": "Resources",
+    "cost": {
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Meteor Core"
+          },
+          {
+            "count": 100,
+            "name": "Wood"
+          },
+          {
+            "count": 30,
+            "name": "Earth Wax"
+          }
+        ],
+        "station": "Advanced Woodworking Station",
+        "time": 30
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Meteor Core"
+          },
+          {
+            "count": 100,
+            "name": "Wood"
+          },
+          {
+            "count": 30,
+            "name": "Earth Wax"
+          }
+        ],
+        "station": "Artificer Woodworking Station",
+        "time": 20
+      }
+    ],
+    "name": "Walker Mechanism",
+    "parent": "Woodworking Station",
+    "trade_price": 700
+  },
+  {
+    "category": "Resources",
+    "cost": {
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Cattail"
+          }
+        ],
+        "station": "Fiberworking Station",
+        "time": 24
+      },
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Fiber"
+          },
+          {
+            "count": 2,
+            "name": "Rupu Vine"
+          }
+        ],
+        "station": "Fiberworking Station",
+        "time": 38
+      },
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Cattail"
+          }
+        ],
+        "station": "Advanced Fiberworking Station",
+        "time": 18
+      },
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Fiber"
+          },
+          {
+            "count": 2,
+            "name": "Rupu Vine"
+          }
+        ],
+        "station": "Advanced Fiberworking Station",
+        "time": 26
+      }
+    ],
+    "name": "Rope",
+    "parent": "Fiber Weave",
+    "trade_price": 0.5
+  },
+  {
+    "category": "Resources",
+    "name": "Rupu Pelt",
+    "trade_price": 0.2
+  },
+  {
+    "category": "Resources",
+    "name": "Rupu Vine",
+    "trade_price": 0.5
+  },
+  {
+    "category": "Resources",
+    "name": "Thornberry",
+    "trade_price": 2.6
+  },
+  {
+    "category": "Resources",
+    "cost": {
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 4,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Fiber"
+          }
+        ],
+        "station": "Woodworking Station",
+        "time": 5
+      },
+      {
+        "ingredients": [
+          {
+            "count": 4,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Fiber"
+          }
+        ],
+        "station": "Advanced Woodworking Station",
+        "time": 2.5
+      },
+      {
+        "ingredients": [
+          {
+            "count": 4,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Fiber"
+          }
+        ],
+        "station": "Artificer Woodworking Station",
+        "time": 1
+      }
+    ],
+    "name": "Wood Shaft",
+    "parent": "Woodworking Station",
+    "trade_price": 0.4
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood"
+          }
+        ],
+        "station": "FuelBurning",
+        "time": 21
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood"
+          }
+        ],
+        "station": "Furnace",
+        "time": 300
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood"
+          }
+        ],
+        "station": "FuelLightSource",
+        "time": 72
+      }
+    ],
+    "name": "Charcoal",
+    "trade_price": 0.1
+  },
+  {
+    "category": "Resources",
+    "name": "Lightwood",
+    "trade_price": 3.5
+  },
+  {
+    "category": "Resources",
+    "name": "Wood Log",
+    "trade_price": 2
+  },
+  {
+    "category": "Resources",
+    "name": "Palm Leaves",
+    "trade_price": 0.2
+  },
+  {
+    "category": "Resources",
+    "name": "Redwood Wood",
+    "trade_price": 2.6
+  },
+  {
+    "category": "Resources",
+    "name": "Weightless Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Merchant Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Craftsman Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Fireproof Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Hardening Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Forager Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Scavenger Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Lumberjack Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Pack Speed Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Hearth Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Lifeforce Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Bullrush Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Sandy Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Harpoon Protection Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Battery Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Torque Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Watery Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Pack Mule Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Worm Silk",
+    "trade_price": 20
+  },
+  {
+    "category": "Resources",
+    "name": "Animal Fat",
+    "trade_price": 1
+  },
+  {
+    "category": "Resources",
+    "name": "Bone Splinter",
+    "trade_price": 1
+  },
+  {
+    "category": "Resources",
+    "name": "Worm Fang",
+    "trade_price": 10000
   },
   {
     "name": "Proxy License",

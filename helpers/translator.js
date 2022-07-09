@@ -67,8 +67,8 @@ controller.initownTranslations = () => {
   allTranslations["Stomping"] = "Stomping Station";
   allTranslations["Woodworking"] = "Woodworking Station";
 
-  allTranslations["Dinghy"] = "Dinghy";
-  allTranslations["Firefly"] = "Firefly";
+  allTranslations["GunPod"] = "Gun Pod";
+  allTranslations["GunPodShell"] = "Gun Pod Shell";
 
   allTranslations["Ballista_T3"] = "Ballista - Tier 3";
   allTranslations["Ballista_T2"] = "Ballista - Tier 2";
