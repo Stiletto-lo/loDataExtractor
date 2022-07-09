@@ -301,6 +301,7 @@ function parseLootTable(filePath) {
               itemDrops.push(drop);
               item.drops = itemDrops;
             }
+
             allItems.push(item);
           }
         }
@@ -584,16 +585,13 @@ function parsePlaceableData(filePath) {
         }
       }
 
-      /*if (jsonData[1].Properties?.Name?.Key) {
+      if (jsonData[1].Properties?.Name?.SourceString) {
+        item.name = jsonData[1].Properties.Name.SourceString.trim();
+      } else if (jsonData[1].Properties?.Name?.Key) {
         item.translation = jsonData[1].Properties.Name.Key.replace(
           ".Name",
           ""
         ).trim();
-      }*/
-      if (jsonData[1].Properties?.Name?.SourceString) {
-        item.name = jsonData[1].Properties.Name.SourceString.trim();
-      } else if (jsonData[1].Properties?.Name?.Key) {
-        item.name = jsonData[1].Properties.Name.Key.replace(".Name", "").trim();
       }
     }
 
@@ -614,8 +612,8 @@ function parseTechData(filePath) {
       jsonData[1].Properties.Requirements[0] &&
       jsonData[1].Properties.Requirements[0].ObjectName
     ) {
-      item.parent = parseName(
-        jsonData[1].Properties.Requirements[0].ObjectName
+      item.parent = translator.translateName(
+        parseName(jsonData[1].Properties.Requirements[0].ObjectName)
       );
     }
     if (jsonData[1]?.Properties?.Cost != 1) {
@@ -707,7 +705,10 @@ function parseType(name) {
 function parseName(name) {
   name = parseType(name);
   name = name.replace("_C", "").trim();
-  name = translator.translateName(name);
+  let translateName = translator.translateName(name);
+  if (translateName != null) {
+    name = translateName;
+  }
 
   if (/(.+)Legs/.test(name)) {
     let match = name.match(/(.+)Legs/);

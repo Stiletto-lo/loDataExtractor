@@ -72,27 +72,61 @@ controller.initownTranslations = () => {
 
   allTranslations["Ballista_T3"] = "Ballista - Tier 3";
   allTranslations["Ballista_T2"] = "Ballista - Tier 2";
+
+  allTranslations["Dinghy"] = "Dinghy Walker";
+  allTranslations["Firefly"] = "Firefly Walker";
+  allTranslations["Proxy"] = "Proxy Walker";
+  allTranslations["Raptor"] = "Raptor Sky Walker";
+  allTranslations["Buffalo"] = "Buffalo Walker";
+  allTranslations["Battleship"] = "Battleship Walker";
+  allTranslations["Camelop"] = "Camelop Walker";
+  allTranslations["Hornet"] = "Hornet Walker";
+  allTranslations["Tusker"] = "Tusker Walker";
+  allTranslations["Titan"] = "Titan Walker";
+  allTranslations["Falco"] = "Falco Walker";
+  allTranslations["Hercul"] = "Hercul Walker";
+  allTranslations["Spider"] = "Nomad Spider Walker";
+  allTranslations["Nomad Walker"] = "Nomad Spider Walker";
+  allTranslations["Spider Walker"] = "Nomad Spider Walker";
+  allTranslations["Nomad"] = "Nomad Spider Walker";
+  allTranslations["Stiletto"] = "Stiletto Walker";
+  allTranslations["Silur"] = "Silur Walker";
+  allTranslations["Balang"] = "Balang Walker";
+  allTranslations["Cobra"] = "Cobra Walker";
+  allTranslations["Panda"] = "Panda Walker";
+  allTranslations["Domus"] = "Domus Walker";
+  allTranslations["Mollusk"] = "Mollusk Walker";
+  allTranslations["Raptor Walker"] = "Raptor Sky Walker";
+  allTranslations["Schmetterling"] = "Schmetterling Walker";
+  allTranslations["Toboggan"] = "Toboggan Walker";
 };
 
 controller.translateName = (name) => {
-  if (name != null) {
-    if (allTranslations[name]) {
-      return allTranslations[name];
-    }
-
-    return name.trim();
-  } else {
-    return name;
+  if (name != null && allTranslations[name]) {
+    return allTranslations[name].trim();
   }
+  return name.trim();
+};
+
+controller.searchName = (name) => {
+  if (name != null && allTranslations[name]) {
+    return allTranslations[name];
+  }
+  return null;
 };
 
 controller.translateItems = (allItems) => {
   return (allItems = allItems.map((item) => {
     let name = item.name;
+
     if (item.translation) {
       name = item.translation;
     }
-    name = controller.translateName(name);
+
+    let translateName = controller.searchName(item.translation);
+    if (translateName) {
+      name = translateName;
+    }
 
     if (
       (name.includes(" Legs") || name.includes(" Wings")) &&

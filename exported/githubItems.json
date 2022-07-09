@@ -7008,6 +7008,37 @@
     "name": "Spider Walker Upgrade - Torque - Tier 2"
   },
   {
+    "category": "walkers/spider/upgrades/tier2",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 100,
+            "name": "Fiber"
+          },
+          {
+            "count": 15,
+            "name": "Rupu Pelt"
+          },
+          {
+            "count": 15,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Spider Walker Upgrade - Water - Tier 2",
+    "parent": "Nomad Spider Walker Body"
+  },
+  {
     "category": "walkers/spider/upgrades/tier3",
     "crafting": [
       {
@@ -7317,6 +7348,41 @@
       }
     ],
     "name": "Spider Walker Upgrade - Torque - Tier 4"
+  },
+  {
+    "category": "walkers/spider/upgrades/tier4",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 25,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 80,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 30,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 15,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Spider Walker Upgrade - Water - Tier 4",
+    "parent": "Spider Walker Upgrade - Water - Tier 3"
   },
   {
     "category": "walkers/stiletto",
@@ -10099,37 +10165,6 @@
     "name": "Raptor Sky Walker Upgrade - Torque - Tier 2"
   },
   {
-    "category": "walkers/raptor/upgrades/tier2",
-    "cost": {
-      "count": 22,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 24,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 160,
-            "name": "Fiber"
-          },
-          {
-            "count": 30,
-            "name": "Lightwood"
-          },
-          {
-            "count": 20,
-            "name": "Rope"
-          }
-        ]
-      }
-    ],
-    "name": "Raptor Sky Walker Upgrade - Water - Tier 2",
-    "parent": "Raptor Sky Walker Body"
-  },
-  {
     "category": "walkers/raptor/upgrades/tier3",
     "crafting": [
       {
@@ -10232,37 +10267,6 @@
       }
     ],
     "name": "Raptor Sky Walker Upgrade - Torque - Tier 3"
-  },
-  {
-    "category": "walkers/raptor/upgrades/tier3",
-    "cost": {
-      "count": 18,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 40,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 60,
-            "name": "Lightwood"
-          },
-          {
-            "count": 45,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 20,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "name": "Raptor Sky Walker Upgrade - Water - Tier 3",
-    "parent": "Raptor Sky Walker Upgrade - Water - Tier 2"
   },
   {
     "category": "walkers/raptor/upgrades/tier4",
@@ -10383,41 +10387,6 @@
       }
     ],
     "name": "Raptor Sky Walker Upgrade - Torque - Tier 4"
-  },
-  {
-    "category": "walkers/raptor/upgrades/tier4",
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 16,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 45,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 25,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 100,
-            "name": "Lightwood"
-          },
-          {
-            "count": 20,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "Raptor Sky Walker Upgrade - Water - Tier 4",
-    "parent": "Raptor Sky Walker Upgrade - Water - Tier 3"
   },
   {
     "name": "Animals Tablet",
