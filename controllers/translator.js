@@ -69,6 +69,9 @@ allTranslations["Woodworking"] = "Woodworking Station";
 allTranslations["GunPod"] = "Gun Pod";
 allTranslations["GunPodShell"] = "Gun Pod Shell";
 
+allTranslations["ChestBaseMaintenance"] = "Base Maintenance Chest";
+allTranslations["ClanFlags"] = "Clan Flags";
+
 allTranslations["Ballista_T3"] = "Ballista - Tier 3";
 allTranslations["Ballista_T2"] = "Ballista - Tier 2";
 

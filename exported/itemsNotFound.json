@@ -4,7 +4,7 @@
       "count": 25,
       "name": "Fragment"
     },
-    "name": "ClanFlags",
+    "name": "Clan Flags",
     "parent": "Sand Bed"
   },
   {
@@ -32,31 +32,30 @@
     "parent": "Equipment"
   },
   {
-    "name": "Repair Station",
-    "category": "Crafting",
+    "category": "Containers",
     "cost": {
-      "count": 20,
       "name": "Fragment"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 125,
+            "count": 15,
             "name": "Wood"
           },
           {
-            "count": 6,
-            "name": "Bone Glue"
+            "count": 25,
+            "name": "Fiber"
           },
           {
-            "count": 15,
-            "name": "Rope"
+            "count": 8,
+            "name": "Stone"
           }
         ]
       }
     ],
-    "parent": "Woodworking Station"
+    "name": "Maintenance Box",
+    "parent": "WallSand"
   },
   {
     "name": "Windmill",
@@ -90,9 +89,1712 @@
     "parent": "SoilExcavator"
   },
   {
+    "category": "Crafting",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Wood"
+          },
+          {
+            "count": 11,
+            "name": "Fiber"
+          },
+          {
+            "count": 18,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Camp Fire"
+  },
+  {
+    "category": "Interactables",
+    "name": "LootBoxTest"
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "_CheatingLevers"
+  },
+  {
+    "name": "Drill Spade",
+    "category": "Tools",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 9,
+            "name": "Flint"
+          },
+          {
+            "count": 1,
+            "name": "Rope"
+          },
+          {
+            "count": 1,
+            "name": "Toothwheel"
+          }
+        ]
+      }
+    ],
+    "parent": "Tube Spade"
+  },
+  {
+    "category": "WalkerRigs",
+    "name": "Rig T2"
+  },
+  {
+    "category": "WalkerRigs",
+    "name": "Rig T3"
+  },
+  {
+    "category": "WalkerRigs",
+    "name": "Hammerhead Rig",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "HammerheadDinghyRigSchematic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Buffalo Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 16,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1620,
+            "name": "Wood"
+          },
+          {
+            "count": 37,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 9,
+            "name": "Rope"
+          },
+          {
+            "count": 1115,
+            "name": "Fiber"
+          },
+          {
+            "count": 1,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 2,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 280,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "parent": "Stiletto Walker"
+  },
+  {
+    "name": "Camelop  Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 650,
+            "name": "Wood"
+          },
+          {
+            "count": 90,
+            "name": "Fiber"
+          },
+          {
+            "count": 120,
+            "name": "Stone"
+          },
+          {
+            "count": 125,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 70,
+            "name": "Rope"
+          },
+          {
+            "count": 50,
+            "name": "Obsidian"
+          },
+          {
+            "count": 20,
+            "name": "Clay"
+          },
+          {
+            "count": 1,
+            "name": "Walker Mechanism"
+          }
+        ]
+      }
+    ],
+    "parent": "Tool Pod"
+  },
+  {
+    "name": "Cobra Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 16,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 900,
+            "name": "Wood"
+          },
+          {
+            "count": 390,
+            "name": "Fiber"
+          },
+          {
+            "count": 350,
+            "name": "Stone"
+          },
+          {
+            "count": 40,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 30,
+            "name": "Rope"
+          },
+          {
+            "count": 10,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 12,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "parent": "Gun Pod"
+  },
+  {
+    "name": "Dinghy Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 380,
+            "name": "Wood"
+          },
+          {
+            "count": 245,
+            "name": "Fiber"
+          },
+          {
+            "count": 100,
+            "name": "Stone"
+          },
+          {
+            "count": 10,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "parent": "Firefly Walker"
+  },
+  {
+    "name": "Domus Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 50,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 4110,
+            "name": "Wood"
+          },
+          {
+            "count": 235,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 1350,
+            "name": "Fiber"
+          },
+          {
+            "count": 140,
+            "name": "Rope"
+          },
+          {
+            "count": 90,
+            "name": "Obsidian"
+          },
+          {
+            "count": 3,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 9,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 510,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "parent": "Mollusk Walker"
+  },
+  {
+    "name": "Falco Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1130,
+            "name": "Wood"
+          },
+          {
+            "count": 555,
+            "name": "Fiber"
+          },
+          {
+            "count": 400,
+            "name": "Stone"
+          },
+          {
+            "count": 38,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 40,
+            "name": "Rope"
+          },
+          {
+            "count": 3,
+            "name": "Walker Mechanism"
+          }
+        ]
+      }
+    ],
+    "parent": "Hornet Walker"
+  },
+  {
+    "name": "Hercul Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 16,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1580,
+            "name": "Wood"
+          },
+          {
+            "count": 270,
+            "name": "Stone"
+          },
+          {
+            "count": 1200,
+            "name": "Fiber"
+          },
+          {
+            "count": 15,
+            "name": "Rope"
+          },
+          {
+            "count": 38,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 10,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 2,
+            "name": "Walker Mechanism"
+          }
+        ]
+      }
+    ],
+    "parent": "Tool Pod"
+  },
+  {
+    "name": "Hornet Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1415,
+            "name": "Wood"
+          },
+          {
+            "count": 400,
+            "name": "Stone"
+          },
+          {
+            "count": 550,
+            "name": "Fiber"
+          },
+          {
+            "count": 1,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 42,
+            "name": "Rope"
+          },
+          {
+            "count": 82,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 20,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 55,
+            "name": "Bone Splinter"
+          }
+        ]
+      }
+    ],
+    "parent": "Stiletto Walker"
+  },
+  {
+    "name": "Mollusk Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 27,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 570,
+            "name": "Wood"
+          },
+          {
+            "count": 12,
+            "name": "Rope"
+          },
+          {
+            "count": 80,
+            "name": "Fiber"
+          },
+          {
+            "count": 90,
+            "name": "Stone"
+          },
+          {
+            "count": 2,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 2,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "parent": "Steering Levers"
+  },
+  {
+    "name": "Gunpod Stinger",
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Rope"
+          },
+          {
+            "count": 20,
+            "name": "Fiber"
+          },
+          {
+            "count": 5,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "parent": "Steering Levers"
+  },
+  {
+    "name": "Nomad Walker"
+  },
+  {
+    "name": "Repair Station",
+    "category": "Crafting",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 125,
+            "name": "Wood"
+          },
+          {
+            "count": 6,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 15,
+            "name": "Rope"
+          }
+        ]
+      }
+    ],
+    "parent": "Woodworking Station"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Stairs"
+  },
+  {
     "category": "Resources",
     "name": "Terrain: Clay Spots",
     "trade_price": 1
+  },
+  {
+    "name": "Flots",
+    "trade_price": 0.5
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Aloe Vera"
+          }
+        ],
+        "station": "Stomping Station",
+        "time": 40
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Apple"
+          }
+        ],
+        "output": 8,
+        "station": "Stomping Station",
+        "time": 120
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Corn"
+          }
+        ],
+        "station": "Stomping Station",
+        "time": 16
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Blood Turnip"
+          }
+        ],
+        "output": 3,
+        "station": "Stomping Station",
+        "time": 100
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Huge Cactus Fruit"
+          }
+        ],
+        "station": "Stomping Station",
+        "time": 96
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Thornberry"
+          }
+        ],
+        "station": "Stomping Station",
+        "time": 24
+      },
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Cactus Flesh"
+          }
+        ],
+        "station": "Stomping Station",
+        "time": 18
+      }
+    ],
+    "name": "Fruit Pulp"
+  },
+  {
+    "category": "Resources",
+    "name": "Terrain: Black Soil",
+    "trade_price": 1
+  },
+  {
+    "category": "Resources",
+    "name": "Flint",
+    "trade_price": 0.1
+  },
+  {
+    "category": "Resources",
+    "name": "Nurr Fang",
+    "trade_price": 0.4
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Wood"
+          },
+          {
+            "count": 14,
+            "name": "Flint"
+          }
+        ],
+        "station": "Woodworking Station",
+        "time": 120
+      }
+    ],
+    "name": "Toothwheel",
+    "trade_price": 50
+  },
+  {
+    "category": "Resources",
+    "name": "Terrain: Sand"
+  },
+  {
+    "category": "Resources",
+    "name": "Terrain: Excavatable"
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Wood"
+          },
+          {
+            "count": 22,
+            "name": "Fiber"
+          },
+          {
+            "count": 1,
+            "name": "Charcoal"
+          }
+        ],
+        "output": 10,
+        "station": "Woodworking Station",
+        "time": 120
+      }
+    ],
+    "name": "Blazing Slab",
+    "trade_price": 0.1
+  },
+  {
+    "category": "Resources",
+    "name": "Terrain: Worm Sand"
+  },
+  {
+    "category": "Resources",
+    "name": "Armoury Module"
+  },
+  {
+    "category": "Resources",
+    "name": "Fortress Module"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Durability - Tier 1 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Cargo Hold - Tier 1 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Mobility - Tier 1 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Gear Storage - Tier 1 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Torque Capacity - Tier 1 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Water Storage - Tier 1 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Durability - Tier 2 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Cargo Hold - Tier 2 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Mobility - Tier 2 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Gear Storage - Tier 2 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Torque Capacity - Tier 2 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Water Storage - Tier 2 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Durability - Tier 3 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Cargo Hold - Tier 3 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Mobility - Tier 3 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Gear Storage - Tier 3 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Torque Capacity - Tier 3 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Water Storage - Tier 3 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Durability - Tier 4 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Cargo Hold - Tier 4 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Mobility - Tier 4 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Gear Storage - Tier 4 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Torque Capacity - Tier 4 Upgrade"
+  },
+  {
+    "category": "SpareParts",
+    "name": "Water Storage - Tier 4 Upgrade"
+  },
+  {
+    "category": "StructuralConcrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          },
+          {
+            "count": 20,
+            "name": "Stone"
+          },
+          {
+            "count": 50,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "BalangCore"
+  },
+  {
+    "category": "StructuralConcrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 200,
+            "name": "Wood"
+          },
+          {
+            "count": 50,
+            "name": "Stone"
+          },
+          {
+            "count": 100,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "SilurCore"
+  },
+  {
+    "category": "StructuralSand",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Fiber"
+          },
+          {
+            "count": 18,
+            "name": "Sand"
+          }
+        ]
+      }
+    ],
+    "name": "Sand Foundation"
+  },
+  {
+    "category": "StructuralSand",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Fiber"
+          },
+          {
+            "count": 14,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 22,
+            "name": "Palm Leaves"
+          }
+        ]
+      }
+    ],
+    "name": "Sandbag Gate"
+  },
+  {
+    "category": "StructuralSand",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Fiber"
+          },
+          {
+            "count": 20,
+            "name": "Sand"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Sand Ramp"
+  },
+  {
+    "category": "StructuralWoodLight",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 38,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 11,
+            "name": "Stone"
+          },
+          {
+            "count": 2,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Walker Gate"
+  },
+  {
+    "name": "Hangar Wall",
+    "category": "StructuralWoodMedium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "StructuralWoodMedium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Hangar Gate"
+  },
+  {
+    "category": "StructuralWoodMedium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Hangar Roof"
+  },
+  {
+    "category": "StructuralWoodMedium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Hangar Wall with Door"
+  },
+  {
+    "category": "Tools",
+    "cost": {
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Wood"
+          },
+          {
+            "count": 12,
+            "name": "Fiber"
+          },
+          {
+            "count": 7,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Tube Spade",
+    "parent": "Campfire"
+  },
+  {
+    "category": "WalkerParts",
+    "name": "Base Wing"
+  },
+  {
+    "category": "WalkerParts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 900,
+            "name": "Wood"
+          },
+          {
+            "count": 500,
+            "name": "Fiber"
+          },
+          {
+            "count": 3,
+            "name": "Reinforced Plank"
+          }
+        ]
+      }
+    ],
+    "name": "Battleship Walker Legs Armored (1 of 2)"
+  },
+  {
+    "category": "WalkerParts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1800,
+            "name": "Wood"
+          },
+          {
+            "count": 1000,
+            "name": "Fiber"
+          },
+          {
+            "count": 6,
+            "name": "Reinforced Plank"
+          }
+        ]
+      }
+    ],
+    "name": "Battleship Walker Legs Heavy (1 of 2)"
+  },
+  {
+    "category": "WalkerParts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 450,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "name": "Battleship Walker Wings Small (1 of 2)"
+  },
+  {
+    "category": "WalkerParts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 720,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "name": "Battleship Walker Wings Medium (1 of 2)"
+  },
+  {
+    "category": "WalkerParts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 900,
+            "name": "Wood"
+          },
+          {
+            "count": 14,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "name": "Battleship Walker Wings Large (1 of 2)"
+  },
+  {
+    "category": "WalkerParts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 66,
+            "name": "Reinforced Plank"
+          },
+          {
+            "count": 56,
+            "name": "Worm Silk"
+          },
+          {
+            "count": 100,
+            "name": "Hide"
+          }
+        ]
+      }
+    ],
+    "name": "Buffalo Walker Wings Large (1 of 2)",
+    "parent": "Buffalo Walker Wings Medium (1 of 2)"
+  },
+  {
+    "name": "Sawblade",
+    "category": "WalkerTools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 60,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 100,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 20,
+            "name": "Rope"
+          },
+          {
+            "count": 2,
+            "name": "Iron Ore"
+          }
+        ]
+      }
+    ],
+    "parent": "Tool Pod"
+  },
+  {
+    "name": "Long Sawblade",
+    "category": "WalkerTools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 280,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2000,
+            "name": "Wood"
+          },
+          {
+            "count": 400,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ore"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Balang Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 400,
+            "name": "Wood"
+          },
+          {
+            "count": 265,
+            "name": "Fiber"
+          },
+          {
+            "count": 22,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 10,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 85,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "parent": "Balang Walker"
+  },
+  {
+    "name": "Panda Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1360,
+            "name": "Wood"
+          },
+          {
+            "count": 600,
+            "name": "Fiber"
+          },
+          {
+            "count": 350,
+            "name": "Stone"
+          },
+          {
+            "count": 121,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 86,
+            "name": "Rope"
+          },
+          {
+            "count": 5,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 110,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 2,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 35,
+            "name": "Ceramic Shard"
+          }
+        ]
+      }
+    ],
+    "parent": "Walker Packing Compartment"
+  },
+  {
+    "name": "Proxy Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 20,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 225,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 750,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 1400,
+            "name": "Wood"
+          },
+          {
+            "count": 1500,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 300,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 300,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 150,
+            "name": "Rope"
+          },
+          {
+            "count": 300,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 1,
+            "name": "ProxyLicense"
+          }
+        ]
+      }
+    ],
+    "parent": "Steering Levers"
+  },
+  {
+    "name": "Raptor Sky Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 22,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 260,
+            "name": "Lightwood"
+          },
+          {
+            "count": 100,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 142,
+            "name": "Rope"
+          },
+          {
+            "count": 2,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 710,
+            "name": "Fiber"
+          },
+          {
+            "count": 80,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 100,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 200,
+            "name": "Wood"
+          },
+          {
+            "count": 240,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "parent": "Dinghy Walker"
+  },
+  {
+    "name": "Schmetterling Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 50,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5177,
+            "name": "Wood"
+          },
+          {
+            "count": 225,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 88,
+            "name": "Rope"
+          },
+          {
+            "count": 1425,
+            "name": "Fiber"
+          },
+          {
+            "count": 5,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 7,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 450,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "parent": "Buffalo Walker"
+  },
+  {
+    "name": "Silur Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 4,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1615,
+            "name": "Wood"
+          },
+          {
+            "count": 950,
+            "name": "Fiber"
+          },
+          {
+            "count": 390,
+            "name": "Stone"
+          },
+          {
+            "count": 2,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 39,
+            "name": "Rope"
+          },
+          {
+            "count": 42,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 12,
+            "name": "Earth Wax"
+          }
+        ]
+      }
+    ],
+    "parent": "Silur Walker"
+  },
+  {
+    "name": "Spider Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 117,
+            "name": "Wood"
+          },
+          {
+            "count": 114,
+            "name": "Fiber"
+          },
+          {
+            "count": 18,
+            "name": "Stone"
+          },
+          {
+            "count": 10,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "parent": "Nomad Spider Walker"
+  },
+  {
+    "name": "Stiletto Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 30,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 895,
+            "name": "Wood"
+          },
+          {
+            "count": 25,
+            "name": "Rope"
+          },
+          {
+            "count": 276,
+            "name": "Fiber"
+          },
+          {
+            "count": 2,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 90,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "parent": "Steering Levers"
+  },
+  {
+    "name": "Titan Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 100,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3030,
+            "name": "Wood"
+          },
+          {
+            "count": 625,
+            "name": "Fiber"
+          },
+          {
+            "count": 600,
+            "name": "Stone"
+          },
+          {
+            "count": 159,
+            "name": "Rope"
+          },
+          {
+            "count": 385,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 5,
+            "name": "Walker Mechanism"
+          }
+        ]
+      }
+    ],
+    "parent": "Buffalo Walker"
+  },
+  {
+    "name": "Toboggan Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 65,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1155,
+            "name": "Wood"
+          },
+          {
+            "count": 68,
+            "name": "Rope"
+          },
+          {
+            "count": 3,
+            "name": "Walker Mechanism"
+          },
+          {
+            "count": 165,
+            "name": "Fiber"
+          },
+          {
+            "count": 4,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 180,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "parent": "Mollusk Walker"
+  },
+  {
+    "name": "Tusker Walker",
+    "category": "Walkers",
+    "cost": {
+      "count": 50,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2462,
+            "name": "Wood"
+          },
+          {
+            "count": 270,
+            "name": "Rope"
+          },
+          {
+            "count": 52,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 659,
+            "name": "Fiber"
+          },
+          {
+            "count": 500,
+            "name": "Stone"
+          },
+          {
+            "count": 8,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 5,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 5,
+            "name": "Walker Mechanism"
+          }
+        ]
+      }
+    ],
+    "parent": "Toboggan Walker"
+  },
+  {
+    "category": "Walkers",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 126,
+            "name": "Wood"
+          },
+          {
+            "count": 123,
+            "name": "Fiber"
+          },
+          {
+            "count": 28,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 20,
+            "name": "Stone"
+          },
+          {
+            "count": 2,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "name": "Firefly Walker",
+    "parent": "Walkers"
   },
   {
     "cost": {
@@ -1264,1708 +2966,6 @@
     "trade_price": 719.9
   },
   {
-    "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 55,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Master Repair Hammer",
-    "parent": "Advanced Repair Hammer",
-    "trade_price": 9.5
-  },
-  {
-    "category": "Tools",
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 14,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 10,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 2,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 8,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Master Scythe",
-    "parent": "Scythe",
-    "trade_price": 17.4
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 1,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "name": "Nurrfang Toothclub",
-    "parent": "Jaggertooth Club",
-    "trade_price": 7.1
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Stone"
-          },
-          {
-            "count": 14,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Crude Hatchet",
-    "parent": "Beat Stick",
-    "trade_price": 1.2
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 3,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 6,
-            "name": "Rope"
-          },
-          {
-            "count": 5,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "NurrFang"
-          }
-        ]
-      }
-    ],
-    "name": "Rawbone Scimitar",
-    "parent": "Beat Stick",
-    "trade_price": 6.2
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Stone"
-          },
-          {
-            "count": 10,
-            "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Axe",
-    "parent": "Crude Hatchet",
-    "trade_price": 1.2
-  },
-  {
-    "category": "Weapons",
-    "name": "Stone Monkey Sword"
-  },
-  {
-    "category": "Weapons",
-    "name": "Rupu Mace"
-  },
-  {
-    "category": "Weapons",
-    "name": "Rupu Stone Mace"
-  },
-  {
-    "category": "Weapons",
-    "name": "Wooden Club"
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Stone"
-          },
-          {
-            "count": 5,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Bomb Javelin",
-    "parent": "Beat Stick",
-    "trade_price": 1.6
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Stone"
-          },
-          {
-            "count": 5,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Heavy Javelin",
-    "parent": "Beat Stick",
-    "trade_price": 1.6
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 5,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Stone"
-          },
-          {
-            "count": 5,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Light Javelin",
-    "parent": "Beat Stick",
-    "trade_price": 1.6
-  },
-  {
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Stone"
-          }
-        ],
-        "station": "Campfire",
-        "time": 4
-      }
-    ],
-    "name": "Throwstone",
-    "trade_price": 1.6
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 14,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 2,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 6,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Rawbone Sawsword",
-    "parent": "Long Bonespike Swordstaff",
-    "trade_price": 15
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 4,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 10,
-            "name": "Flint"
-          }
-        ]
-      }
-    ],
-    "name": "Jaggertooth Swordclub",
-    "parent": "Jaggertooth Club",
-    "trade_price": 3.7
-  },
-  {
-    "name": "Flots",
-    "trade_price": 0.5
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Aloe Vera"
-          }
-        ],
-        "station": "Stomping Station",
-        "time": 40
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Apple"
-          }
-        ],
-        "output": 8,
-        "station": "Stomping Station",
-        "time": 120
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Corn"
-          }
-        ],
-        "station": "Stomping Station",
-        "time": 16
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Blood Turnip"
-          }
-        ],
-        "output": 3,
-        "station": "Stomping Station",
-        "time": 100
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Huge Cactus Fruit"
-          }
-        ],
-        "station": "Stomping Station",
-        "time": 96
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Thornberry"
-          }
-        ],
-        "station": "Stomping Station",
-        "time": 24
-      },
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Cactus Flesh"
-          }
-        ],
-        "station": "Stomping Station",
-        "time": 18
-      }
-    ],
-    "name": "Fruit Pulp"
-  },
-  {
-    "category": "Resources",
-    "name": "Terrain: Black Soil",
-    "trade_price": 1
-  },
-  {
-    "category": "Resources",
-    "name": "Flint",
-    "trade_price": 0.1
-  },
-  {
-    "category": "Resources",
-    "name": "Nurr Fang",
-    "trade_price": 0.4
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Wood"
-          },
-          {
-            "count": 14,
-            "name": "Flint"
-          }
-        ],
-        "station": "Woodworking Station",
-        "time": 120
-      }
-    ],
-    "name": "Toothwheel",
-    "trade_price": 50
-  },
-  {
-    "category": "Resources",
-    "name": "Terrain: Sand"
-  },
-  {
-    "category": "Resources",
-    "name": "Terrain: Excavatable"
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Wood"
-          },
-          {
-            "count": 22,
-            "name": "Fiber"
-          },
-          {
-            "count": 1,
-            "name": "Charcoal"
-          }
-        ],
-        "output": 10,
-        "station": "Woodworking Station",
-        "time": 120
-      }
-    ],
-    "name": "Blazing Slab",
-    "trade_price": 0.1
-  },
-  {
-    "category": "Resources",
-    "name": "Terrain: Worm Sand"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 1 Upgrade"
-  },
-  {
-    "name": "Hangar Wall",
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Drill Spade",
-    "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 18,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 9,
-            "name": "Flint"
-          },
-          {
-            "count": 1,
-            "name": "Rope"
-          },
-          {
-            "count": 1,
-            "name": "Toothwheel"
-          }
-        ]
-      }
-    ],
-    "parent": "Tube Spade"
-  },
-  {
-    "category": "WalkerRigs",
-    "name": "Rig T2"
-  },
-  {
-    "category": "WalkerRigs",
-    "name": "Rig T3"
-  },
-  {
-    "category": "WalkerRigs",
-    "name": "Hammerhead Rig",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "HammerheadDinghyRigSchematic"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Sawblade",
-    "category": "WalkerTools",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 60,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 100,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 20,
-            "name": "Rope"
-          },
-          {
-            "count": 2,
-            "name": "Iron Ore"
-          }
-        ]
-      }
-    ],
-    "parent": "Tool Pod"
-  },
-  {
-    "name": "Long Sawblade",
-    "category": "WalkerTools",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 280,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2000,
-            "name": "Wood"
-          },
-          {
-            "count": 400,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ore"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Balang Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 400,
-            "name": "Wood"
-          },
-          {
-            "count": 265,
-            "name": "Fiber"
-          },
-          {
-            "count": 22,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 10,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 85,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "parent": "Balang Walker"
-  },
-  {
-    "name": "Buffalo Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 16,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1620,
-            "name": "Wood"
-          },
-          {
-            "count": 37,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 9,
-            "name": "Rope"
-          },
-          {
-            "count": 1115,
-            "name": "Fiber"
-          },
-          {
-            "count": 1,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 2,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 280,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "parent": "Stiletto Walker"
-  },
-  {
-    "name": "Camelop  Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 650,
-            "name": "Wood"
-          },
-          {
-            "count": 90,
-            "name": "Fiber"
-          },
-          {
-            "count": 120,
-            "name": "Stone"
-          },
-          {
-            "count": 125,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 70,
-            "name": "Rope"
-          },
-          {
-            "count": 50,
-            "name": "Obsidian"
-          },
-          {
-            "count": 20,
-            "name": "Clay"
-          },
-          {
-            "count": 1,
-            "name": "Walker Mechanism"
-          }
-        ]
-      }
-    ],
-    "parent": "Tool Pod"
-  },
-  {
-    "name": "Cobra Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 16,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 900,
-            "name": "Wood"
-          },
-          {
-            "count": 390,
-            "name": "Fiber"
-          },
-          {
-            "count": 350,
-            "name": "Stone"
-          },
-          {
-            "count": 40,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 30,
-            "name": "Rope"
-          },
-          {
-            "count": 10,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 12,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "parent": "Gun Pod"
-  },
-  {
-    "name": "Dinghy Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 380,
-            "name": "Wood"
-          },
-          {
-            "count": 245,
-            "name": "Fiber"
-          },
-          {
-            "count": 100,
-            "name": "Stone"
-          },
-          {
-            "count": 10,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "parent": "Firefly Walker"
-  },
-  {
-    "name": "Domus Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 50,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 4110,
-            "name": "Wood"
-          },
-          {
-            "count": 235,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 1350,
-            "name": "Fiber"
-          },
-          {
-            "count": 140,
-            "name": "Rope"
-          },
-          {
-            "count": 90,
-            "name": "Obsidian"
-          },
-          {
-            "count": 3,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 9,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 510,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "parent": "Mollusk Walker"
-  },
-  {
-    "name": "Falco Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1130,
-            "name": "Wood"
-          },
-          {
-            "count": 555,
-            "name": "Fiber"
-          },
-          {
-            "count": 400,
-            "name": "Stone"
-          },
-          {
-            "count": 38,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 40,
-            "name": "Rope"
-          },
-          {
-            "count": 3,
-            "name": "Walker Mechanism"
-          }
-        ]
-      }
-    ],
-    "parent": "Hornet Walker"
-  },
-  {
-    "name": "Hercul Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 16,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1580,
-            "name": "Wood"
-          },
-          {
-            "count": 270,
-            "name": "Stone"
-          },
-          {
-            "count": 1200,
-            "name": "Fiber"
-          },
-          {
-            "count": 15,
-            "name": "Rope"
-          },
-          {
-            "count": 38,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 10,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 2,
-            "name": "Walker Mechanism"
-          }
-        ]
-      }
-    ],
-    "parent": "Tool Pod"
-  },
-  {
-    "name": "Hornet Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1415,
-            "name": "Wood"
-          },
-          {
-            "count": 400,
-            "name": "Stone"
-          },
-          {
-            "count": 550,
-            "name": "Fiber"
-          },
-          {
-            "count": 1,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 42,
-            "name": "Rope"
-          },
-          {
-            "count": 82,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 20,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 55,
-            "name": "Bone Splinter"
-          }
-        ]
-      }
-    ],
-    "parent": "Stiletto Walker"
-  },
-  {
-    "name": "Mollusk Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 27,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 570,
-            "name": "Wood"
-          },
-          {
-            "count": 12,
-            "name": "Rope"
-          },
-          {
-            "count": 80,
-            "name": "Fiber"
-          },
-          {
-            "count": 90,
-            "name": "Stone"
-          },
-          {
-            "count": 2,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 2,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "parent": "Steering Levers"
-  },
-  {
-    "name": "Panda Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1360,
-            "name": "Wood"
-          },
-          {
-            "count": 600,
-            "name": "Fiber"
-          },
-          {
-            "count": 350,
-            "name": "Stone"
-          },
-          {
-            "count": 121,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 86,
-            "name": "Rope"
-          },
-          {
-            "count": 5,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 110,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 2,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 35,
-            "name": "Ceramic Shard"
-          }
-        ]
-      }
-    ],
-    "parent": "Walker Packing Compartment"
-  },
-  {
-    "name": "Proxy Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 225,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 750,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 1400,
-            "name": "Wood"
-          },
-          {
-            "count": 1500,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 300,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 300,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 150,
-            "name": "Rope"
-          },
-          {
-            "count": 300,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 1,
-            "name": "ProxyLicense"
-          }
-        ]
-      }
-    ],
-    "parent": "Steering Levers"
-  },
-  {
-    "name": "Raptor Sky Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 22,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 260,
-            "name": "Lightwood"
-          },
-          {
-            "count": 100,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 142,
-            "name": "Rope"
-          },
-          {
-            "count": 2,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 710,
-            "name": "Fiber"
-          },
-          {
-            "count": 80,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 100,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 200,
-            "name": "Wood"
-          },
-          {
-            "count": 240,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "parent": "Dinghy Walker"
-  },
-  {
-    "name": "Schmetterling Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 50,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5177,
-            "name": "Wood"
-          },
-          {
-            "count": 225,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 88,
-            "name": "Rope"
-          },
-          {
-            "count": 1425,
-            "name": "Fiber"
-          },
-          {
-            "count": 5,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 7,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 450,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "parent": "Buffalo Walker"
-  },
-  {
-    "name": "Silur Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1615,
-            "name": "Wood"
-          },
-          {
-            "count": 950,
-            "name": "Fiber"
-          },
-          {
-            "count": 390,
-            "name": "Stone"
-          },
-          {
-            "count": 2,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 39,
-            "name": "Rope"
-          },
-          {
-            "count": 42,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 12,
-            "name": "Earth Wax"
-          }
-        ]
-      }
-    ],
-    "parent": "Silur Walker"
-  },
-  {
-    "name": "Spider Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 117,
-            "name": "Wood"
-          },
-          {
-            "count": 114,
-            "name": "Fiber"
-          },
-          {
-            "count": 18,
-            "name": "Stone"
-          },
-          {
-            "count": 10,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "parent": "Nomad Spider Walker"
-  },
-  {
-    "name": "Stiletto Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 30,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 895,
-            "name": "Wood"
-          },
-          {
-            "count": 25,
-            "name": "Rope"
-          },
-          {
-            "count": 276,
-            "name": "Fiber"
-          },
-          {
-            "count": 2,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 90,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "parent": "Steering Levers"
-  },
-  {
-    "name": "Titan Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 100,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 3030,
-            "name": "Wood"
-          },
-          {
-            "count": 625,
-            "name": "Fiber"
-          },
-          {
-            "count": 600,
-            "name": "Stone"
-          },
-          {
-            "count": 159,
-            "name": "Rope"
-          },
-          {
-            "count": 385,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 5,
-            "name": "Walker Mechanism"
-          }
-        ]
-      }
-    ],
-    "parent": "Buffalo Walker"
-  },
-  {
-    "name": "Toboggan Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 65,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1155,
-            "name": "Wood"
-          },
-          {
-            "count": 68,
-            "name": "Rope"
-          },
-          {
-            "count": 3,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 165,
-            "name": "Fiber"
-          },
-          {
-            "count": 4,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 180,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "parent": "Mollusk Walker"
-  },
-  {
-    "name": "Tusker Walker",
-    "category": "Walkers",
-    "cost": {
-      "count": 50,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 2462,
-            "name": "Wood"
-          },
-          {
-            "count": 270,
-            "name": "Rope"
-          },
-          {
-            "count": 52,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 659,
-            "name": "Fiber"
-          },
-          {
-            "count": 500,
-            "name": "Stone"
-          },
-          {
-            "count": 8,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 5,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 5,
-            "name": "Walker Mechanism"
-          }
-        ]
-      }
-    ],
-    "parent": "Toboggan Walker"
-  },
-  {
-    "name": "Gunpod Stinger",
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Rope"
-          },
-          {
-            "count": 20,
-            "name": "Fiber"
-          },
-          {
-            "count": 5,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "parent": "Steering Levers"
-  },
-  {
-    "name": "Nomad Walker"
-  },
-  {
-    "category": "Containers",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Wood"
-          },
-          {
-            "count": 25,
-            "name": "Fiber"
-          },
-          {
-            "count": 8,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Maintenance Box",
-    "parent": "WallSand"
-  },
-  {
-    "category": "Crafting",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 16,
-            "name": "Wood"
-          },
-          {
-            "count": 11,
-            "name": "Fiber"
-          },
-          {
-            "count": 18,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Camp Fire"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Stairs"
-  },
-  {
-    "category": "Interactables",
-    "name": "LootBoxTest"
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "_CheatingLevers"
-  },
-  {
-    "category": "Resources",
-    "name": "Armoury Module"
-  },
-  {
-    "category": "Resources",
-    "name": "Fortress Module"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Base Packing - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Base Packing - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Base Packing - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Base Packing - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 4 Upgrade"
-  },
-  {
     "category": "StructuralClay",
     "crafting": [
       {
@@ -3008,50 +3008,6 @@
       }
     ],
     "name": "Wall with Windows"
-  },
-  {
-    "category": "StructuralConcrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Stone"
-          },
-          {
-            "count": 50,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "BalangCore"
-  },
-  {
-    "category": "StructuralConcrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 200,
-            "name": "Wood"
-          },
-          {
-            "count": 50,
-            "name": "Stone"
-          },
-          {
-            "count": 100,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "SilurCore"
   },
   {
     "category": "StructuralConcrete",
@@ -3262,68 +3218,6 @@
     "name": "Wall With Windows 2"
   },
   {
-    "category": "StructuralSand",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Fiber"
-          },
-          {
-            "count": 18,
-            "name": "Sand"
-          }
-        ]
-      }
-    ],
-    "name": "Sand Foundation"
-  },
-  {
-    "category": "StructuralSand",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Fiber"
-          },
-          {
-            "count": 14,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 22,
-            "name": "Palm Leaves"
-          }
-        ]
-      }
-    ],
-    "name": "Sandbag Gate"
-  },
-  {
-    "category": "StructuralSand",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Fiber"
-          },
-          {
-            "count": 20,
-            "name": "Sand"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Sand Ramp"
-  },
-  {
     "category": "StructuralStoneNew",
     "crafting": [
       {
@@ -3448,98 +3342,60 @@
     "name": "Double Slit Wall"
   },
   {
-    "category": "StructuralWoodLight",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 38,
-            "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 11,
-            "name": "Stone"
-          },
-          {
-            "count": 2,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Walker Gate"
-  },
-  {
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Hangar Gate"
-  },
-  {
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Hangar Roof"
-  },
-  {
-    "category": "StructuralWoodMedium",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Hangar Wall with Door"
-  },
-  {
     "category": "Tools",
     "cost": {
+      "count": 10,
       "name": "Fragment"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 18,
-            "name": "Wood"
+            "count": 10,
+            "name": "Wood Shaft"
           },
           {
-            "count": 12,
-            "name": "Fiber"
-          },
-          {
-            "count": 7,
+            "count": 55,
             "name": "Stone"
           }
         ]
       }
     ],
-    "name": "Tube Spade",
-    "parent": "Campfire"
+    "name": "Master Repair Hammer",
+    "parent": "Advanced Repair Hammer",
+    "trade_price": 9.5
+  },
+  {
+    "category": "Tools",
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 14,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 10,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 2,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 8,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Master Scythe",
+    "parent": "Scythe",
+    "trade_price": 17.4
   },
   {
     "category": "Upgrades",
@@ -4079,70 +3935,6 @@
     "name": "Balang Walker Upgrade - Durability - Tier 4",
     "upgradeInfo": {
       "bonusHp": 4000
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Balang Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Balang Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Balang Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Balang Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Buffalo Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Buffalo Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Buffalo Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Buffalo Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
     }
   },
   {
@@ -4687,38 +4479,6 @@
   },
   {
     "category": "Upgrades",
-    "name": "Camelop Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Camelop Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Camelop Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Camelop Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
     "crafting": [
       {
         "ingredients": [
@@ -5139,70 +4899,6 @@
   },
   {
     "category": "Upgrades",
-    "name": "Cobra Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Cobra Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Cobra Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Cobra Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Dinghy Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Dinghy Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Dinghy Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Dinghy Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
     "crafting": [
       {
         "ingredients": [
@@ -5364,70 +5060,6 @@
   },
   {
     "category": "Upgrades",
-    "name": "Domus Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Domus Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Domus Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Domus Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Falco Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Falco Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Falco Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Falco Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
     "crafting": [
       {
         "ingredients": [
@@ -5552,38 +5184,6 @@
     "name": "Firefly Walker Upgrade - Torque - Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 4000
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Firefly Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Firefly Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Firefly Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Firefly Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
     }
   },
   {
@@ -6128,70 +5728,6 @@
   },
   {
     "category": "Upgrades",
-    "name": "Hercul Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Hercul Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Hercul Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Hercul Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Hornet Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Hornet Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Hornet Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Hornet Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
     "crafting": [
       {
         "ingredients": [
@@ -6247,38 +5783,6 @@
     "name": "MediumSparePartsProfile",
     "upgradeInfo": {
       "containerSlots": 16
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Mollusk Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Mollusk Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Mollusk Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Mollusk Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
     }
   },
   {
@@ -6444,38 +5948,6 @@
   },
   {
     "category": "Upgrades",
-    "name": "Panda Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Panda Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Panda Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Panda Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
     "name": "Proxy Walker Upgrade - Water - Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 2000
@@ -6511,38 +5983,6 @@
     "upgradeInfo": {
       "engineTorqueMultiplier": 1.5,
       "sprintingTorqueDiscount": 0.4
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Proxy Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Proxy Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Proxy Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Proxy Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
     }
   },
   {
@@ -7415,70 +6855,6 @@
   },
   {
     "category": "Upgrades",
-    "name": "Raptor Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Raptor Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Raptor Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Raptor Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Schmetterling Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Schmetterling Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Schmetterling Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Schmetterling Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
     "crafting": [
       {
         "ingredients": [
@@ -8019,38 +7395,6 @@
   },
   {
     "category": "Upgrades",
-    "name": "Silur Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Silur Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Silur Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Silur Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
     "crafting": [
       {
         "ingredients": [
@@ -8103,38 +7447,6 @@
     "name": "Spider Walker Upgrade - Torque - Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 1000
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Spider Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Spider Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Spider Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Spider Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
     }
   },
   {
@@ -8299,288 +7611,288 @@
     }
   },
   {
-    "category": "Upgrades",
-    "name": "Stiletto Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Stiletto Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Stiletto Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Stiletto Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Titan Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Titan Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Titan Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Titan Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Toboggan Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Toboggan Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Toboggan Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Toboggan Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Tusker Walker Upgrade - Packing - Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "sdditionalSlots": 1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Tusker Walker Upgrade - Packing - Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "sdditionalSlots": 2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Tusker Walker Upgrade - Packing - Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "sdditionalSlots": 3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Tusker Walker Upgrade - Packing - Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "sdditionalSlots": 4
-    }
-  },
-  {
-    "category": "WalkerParts",
-    "name": "Base Wing"
-  },
-  {
-    "category": "WalkerParts",
+    "category": "Weapons",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 900,
-            "name": "Wood"
+            "count": 5,
+            "name": "Bone Splinter"
           },
           {
-            "count": 500,
-            "name": "Fiber"
-          },
-          {
-            "count": 3,
-            "name": "Reinforced Plank"
-          }
-        ]
-      }
-    ],
-    "name": "Battleship Walker Legs Armored (1 of 2)"
-  },
-  {
-    "category": "WalkerParts",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1800,
-            "name": "Wood"
-          },
-          {
-            "count": 1000,
-            "name": "Fiber"
-          },
-          {
-            "count": 6,
-            "name": "Reinforced Plank"
-          }
-        ]
-      }
-    ],
-    "name": "Battleship Walker Legs Heavy (1 of 2)"
-  },
-  {
-    "category": "WalkerParts",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 450,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "name": "Battleship Walker Wings Small (1 of 2)"
-  },
-  {
-    "category": "WalkerParts",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 720,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "name": "Battleship Walker Wings Medium (1 of 2)"
-  },
-  {
-    "category": "WalkerParts",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 900,
-            "name": "Wood"
-          },
-          {
-            "count": 14,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "name": "Battleship Walker Wings Large (1 of 2)"
-  },
-  {
-    "category": "WalkerParts",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 66,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 56,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 100,
-            "name": "Hide"
-          }
-        ]
-      }
-    ],
-    "name": "Buffalo Walker Wings Large (1 of 2)",
-    "parent": "Buffalo Walker Wings Medium (1 of 2)"
-  },
-  {
-    "category": "Walkers",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 126,
-            "name": "Wood"
-          },
-          {
-            "count": 123,
-            "name": "Fiber"
-          },
-          {
-            "count": 28,
+            "count": 4,
             "name": "Wood Shaft"
           },
           {
-            "count": 20,
-            "name": "Stone"
-          },
-          {
-            "count": 2,
-            "name": "Rupu Vine"
+            "count": 1,
+            "name": "Nomad Cloth"
           }
         ]
       }
     ],
-    "name": "Firefly Walker",
-    "parent": "Walkers"
+    "name": "Nurrfang Toothclub",
+    "parent": "Jaggertooth Club",
+    "trade_price": 7.1
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Stone"
+          },
+          {
+            "count": 14,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Crude Hatchet",
+    "parent": "Beat Stick",
+    "trade_price": 1.2
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 6,
+            "name": "Rope"
+          },
+          {
+            "count": 5,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "NurrFang"
+          }
+        ]
+      }
+    ],
+    "name": "Rawbone Scimitar",
+    "parent": "Beat Stick",
+    "trade_price": 6.2
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Stone"
+          },
+          {
+            "count": 10,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Axe",
+    "parent": "Crude Hatchet",
+    "trade_price": 1.2
+  },
+  {
+    "category": "Weapons",
+    "name": "Stone Monkey Sword"
+  },
+  {
+    "category": "Weapons",
+    "name": "Rupu Mace"
+  },
+  {
+    "category": "Weapons",
+    "name": "Rupu Stone Mace"
+  },
+  {
+    "category": "Weapons",
+    "name": "Wooden Club"
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2,
+            "name": "Stone"
+          },
+          {
+            "count": 5,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Bomb Javelin",
+    "parent": "Beat Stick",
+    "trade_price": 1.6
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2,
+            "name": "Stone"
+          },
+          {
+            "count": 5,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Javelin",
+    "parent": "Beat Stick",
+    "trade_price": 1.6
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 5,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2,
+            "name": "Stone"
+          },
+          {
+            "count": 5,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Javelin",
+    "parent": "Beat Stick",
+    "trade_price": 1.6
+  },
+  {
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Stone"
+          }
+        ],
+        "station": "Campfire",
+        "time": 4
+      }
+    ],
+    "name": "Throwstone",
+    "trade_price": 1.6
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 40,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 14,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 2,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 6,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Rawbone Sawsword",
+    "parent": "Long Bonespike Swordstaff",
+    "trade_price": 15
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 4,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 10,
+            "name": "Flint"
+          }
+        ]
+      }
+    ],
+    "name": "Jaggertooth Swordclub",
+    "parent": "Jaggertooth Club",
+    "trade_price": 3.7
   },
   {
     "name": "Rokker",

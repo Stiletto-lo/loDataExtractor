@@ -79,6 +79,7 @@ allItems = allItems
     return item;
   })
   .filter((item) => item.name && Object.keys(item).length > 2)
+  .filter((item) => !item.name.includes("Packing"))
   .reduce((acc, current) => {
     const x = acc.find((item) => item.name === current.name);
     if (!x) {

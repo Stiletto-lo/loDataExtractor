@@ -2268,6 +2268,37 @@
     "parent": "Tool Pod"
   },
   {
+    "category": "WalkerTools",
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 400,
+            "name": "Wood"
+          },
+          {
+            "count": 35,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 20,
+            "name": "Rope"
+          },
+          {
+            "count": 10,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "name": "Walker Packing Compartment",
+    "parent": "Steering Levers"
+  },
+  {
     "category": "walkers/tusker",
     "cost": {
       "count": 50,
