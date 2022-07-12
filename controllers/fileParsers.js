@@ -195,7 +195,7 @@ controller.parseItemData = (filePath) => {
           jsonData[1].Properties.ExperienceRewardCrafting;
       }
 
-      if (jsonData[1].Properties?.MaxStackSize) {
+      if (EXTRACT_ALL_DATA && jsonData[1].Properties?.MaxStackSize) {
         item.stackSize = jsonData[1].Properties.MaxStackSize;
       }
 
@@ -320,6 +320,16 @@ controller.parseItemData = (filePath) => {
       }
     }
 
+    if (
+      !item.category &&
+      (item.name == "Worm Scale" ||
+        item.name == "Proxy License" ||
+        item.name == "Flots" ||
+        item.name == "Fiery Concoction")
+    ) {
+      item.category = "Resources";
+    }
+
     allItems.push(item);
   }
 };
@@ -385,6 +395,14 @@ controller.parsePlaceableData = (filePath) => {
           ""
         ).trim();
       }
+
+      if (item.category && item.category.includes("Structural")) {
+        item.name = dataParser.parseStructureName(
+          item.category,
+          translator.translateItem(item).name
+        );
+        item.translation = undefined;
+      }
     }
 
     allItems.push(item);
@@ -437,6 +455,13 @@ controller.parseTechData = (filePath) => {
     if (jsonData[1]?.Properties?.bHidden && !SHOW_DEV_ITEMS) {
       item.parent = undefined;
     }
+    if (item.name) {
+      if (item.name.includes("Upgrades")) {
+        item.category = "Upgrades";
+      } else if (item.name.includes("Hook")) {
+        item.category = "Grappling Hooks";
+      }
+    }
     allItems.push(item);
   }
 };
@@ -475,6 +500,10 @@ controller.parsePrices = (filePath) => {
 
         if (order.Price > item.trade_price) {
           item.trade_price = order.Price;
+        }
+
+        if (!item.category && item.name == "ProxyLicense") {
+          item.category = "Resources";
         }
 
         allItems.push(item);

@@ -21,12 +21,12 @@ allTranslations["LampsHanging"] = "Lamp Double Hanging";
 allTranslations["LampsOverhanging"] = "Lamp Overhanging";
 allTranslations["LampsStanding"] = "Lamp Standing";
 allTranslations["GiantWalls"] = "Giant Wall";
-allTranslations["StoneStructures"] = "Stone Wall";
-allTranslations["ClayStructures"] = "Clay Wall";
-allTranslations["CementFoundation"] = "Cement Wall 1";
-allTranslations["WoodenWallsLight"] = "Light Wood Foundation";
-allTranslations["WoodenWallsMedium"] = "Medium Wood Wall";
-allTranslations["WoodenWallsHeavy"] = "Heavy Wood Wall 1";
+allTranslations["StoneStructures"] = "Stone Structures";
+allTranslations["ClayStructures"] = "Clay Structures";
+allTranslations["CementFoundation"] = "Cement Structures";
+allTranslations["WoodenWallsLight"] = "Light Wood Structures";
+allTranslations["WoodenWallsMedium"] = "Medium Wood Structures";
+allTranslations["WoodenWallsHeavy"] = "Heavy Wood Structures";
 allTranslations["BoneGlueProduction"] = "Bone Glue";
 allTranslations["SimpleWaterPurification"] = "Purified Water";
 allTranslations["WaterFiltration"] = "Purification Station";
@@ -89,7 +89,7 @@ allTranslations["Falco"] = "Falco Walker";
 allTranslations["Hercul"] = "Hercul Walker";
 allTranslations["Spider"] = "Nomad Spider Walker";
 allTranslations["Nomad Walker"] = "Nomad Spider Walker";
-allTranslations["Spider Walker"] = "Nomad Spider Walker";
+allTranslations["Spider Walker"] = "Spider Walker With Ballista";
 allTranslations["Nomad"] = "Nomad Spider Walker";
 allTranslations["Stiletto"] = "Stiletto Walker";
 allTranslations["Silur"] = "Silur Walker";
@@ -101,6 +101,20 @@ allTranslations["Mollusk"] = "Mollusk Walker";
 allTranslations["Raptor Walker"] = "Raptor Sky Walker";
 allTranslations["Schmetterling"] = "Schmetterling Walker";
 allTranslations["Toboggan"] = "Toboggan Walker";
+
+allTranslations["StructuralStoneNew"] = "Stone Structures";
+allTranslations["StructuralConcrete"] = "Cement Structures";
+allTranslations["StructuralClay"] = "Clay Structures";
+allTranslations["StructuralWoodMedium"] = "Medium Wood Structures";
+allTranslations["StructuralWoodHeavy"] = "Heavy Wood Structures";
+allTranslations["StructuralSand"] = "Sand Structures";
+allTranslations["StructuralHangar"] = "Hangar Structures";
+
+allTranslations["Structural (concrete)"] = "Cement Structures";
+allTranslations["Structural (clay)"] = "Clay Structures";
+allTranslations["Structural (wood: medium)"] = "Medium Wood Structures";
+allTranslations["Structural (wood: heavy)"] = "Heavy Wood Structures";
+allTranslations["WallGiants"] = "Giant Structures";
 
 controller.translateName = (name) => {
   if (name != null && allTranslations[name]) {
@@ -118,27 +132,39 @@ controller.searchName = (name) => {
 
 controller.translateItems = (allItems) => {
   return (allItems = allItems.map((item) => {
-    let name = item.name;
-
-    if (item.translation) {
-      name = item.translation;
-    }
-
-    let translateName = controller.searchName(item.translation);
-    if (translateName) {
-      name = translateName;
-    }
-
-    if (
-      (name.includes(" Legs") || name.includes(" Wings")) &&
-      !name.includes("(1 of 2)")
-    ) {
-      name = name + " (1 of 2)";
-    }
-
-    item.name = name.trim();
-    return item;
+    return controller.translateItem(item);
   }));
+};
+
+controller.translateItem = (item) => {
+  let name = item.name;
+
+  if (item.translation) {
+    name = item.translation;
+  }
+
+  let translateName = controller.searchName(item.translation);
+  if (translateName) {
+    name = translateName;
+  }
+
+  if (
+    (name.includes(" Legs") || name.includes(" Wings")) &&
+    !name.includes("(1 of 2)")
+  ) {
+    name = name + " (1 of 2)";
+  }
+
+  item.name = name.trim();
+
+  if (item.category) {
+    let translateCategory = controller.searchName(item.category);
+    if (translateCategory) {
+      item.category = translateCategory.trim();
+    }
+  }
+
+  return item;
 };
 
 controller.addDescriptions = (allItems) => {

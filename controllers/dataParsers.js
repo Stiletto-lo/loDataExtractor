@@ -1,3 +1,5 @@
+const { category } = require("../templates/item");
+
 const controller = {};
 
 controller.parseName = (translator, name) => {
@@ -71,6 +73,10 @@ controller.parseName = (translator, name) => {
     }
   }
 
+  if (name == "Nomad Walker") {
+    name = "Nomad Spider Walker";
+  }
+
   return name.trim();
 };
 
@@ -90,6 +96,25 @@ controller.parseCategory = (category) => {
     .trim();
   category = category.replace(".0", "").trim();
   return category;
+};
+
+controller.parseStructureName = (category, name) => {
+  let type = "";
+  if (category.includes("Concrete")) {
+    type = "Cement";
+  } else if (category.includes("WoodLight")) {
+    type = "Light Wood";
+  } else if (category.includes("Ceramic") || category.includes("Clay")) {
+    type = "Clay";
+  } else if (category.includes("StoneNew")) {
+    type = "Stone";
+  } else if (category.includes("WoodHeavy")) {
+    type = "Heavy Wood";
+  } else if (category.includes("WoodMedium")) {
+    type = "Medium Wood";
+  }
+
+  return `${type} ${name}`.trim();
 };
 
 controller.parseUpgradeName = (name, profile) => {
