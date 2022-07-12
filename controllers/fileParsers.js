@@ -608,9 +608,16 @@ controller.getUpgradeItem = (upgradePure) => {
           upgradePure.crafting[0].ingredients &&
           superUpgradeData.crafting[0].ingredients
         ) {
+          let ingredientsFiltered =
+            superUpgradeData.crafting[0].ingredients.filter(
+              (ingredient) =>
+                !upgradePure.crafting[0].ingredients.some(
+                  (i) => i.name == ingredient.name
+                )
+            );
           recipe.ingredients = [].concat(
             upgradePure.crafting[0].ingredients,
-            superUpgradeData.crafting[0].ingredients
+            ingredientsFiltered
           );
         } else if (upgradePure.crafting[0].ingredients) {
           recipe.ingredients = upgradePure.crafting[0].ingredients;
