@@ -14,8 +14,11 @@ const structureInfoTemplate = require("../templates/structureInfo");
 const moduleInfoTemplate = require("../templates/moduleInfo");
 const ingredienTemplate = require("../templates/cost");
 const costTemplate = require("../templates/cost");
+const upgradeTemplate = require("../templates/upgrade");
+const upgradeInfoTemplate = require("../templates/upgradeInfo");
 
 let allItems = [];
+let upgradesData = [];
 
 controller.parseLootTable = (filePath) => {
   let rawdata = fs.readFileSync(filePath);
@@ -470,6 +473,172 @@ controller.parsePrices = (filePath) => {
   }
 };
 
+controller.parseUpgrades = (filePath) => {
+  let rawdata = fs.readFileSync(filePath);
+  let jsonData = JSON.parse(rawdata);
+
+  if (jsonData[0]?.Name) {
+    let profile = dataParser.parseName(translator, jsonData[0].Name);
+    let superUp = jsonData[0].Super
+      ? dataParser.parseName(translator, jsonData[0].Super)
+      : undefined;
+
+    if (jsonData[1]?.Properties) {
+      for (const key in jsonData[1]?.Properties) {
+        if (key.includes("Upgrade")) {
+          let enabled = jsonData[1]?.Properties[key]?.bIsEnabled
+            ? jsonData[1].Properties[key].bIsEnabled
+            : true;
+
+          if (!enabled) {
+            continue;
+          }
+
+          let upgrade = { ...upgradeTemplate };
+          let upgradeInfo = { ...upgradeInfoTemplate };
+          let upgradeInfoValid = false;
+
+          upgrade.profile = profile;
+          upgrade.super = superUp;
+          upgrade.name = dataParser.parseName(translator, key);
+
+          upgradeInfo.containerSlots = jsonData[1]?.Properties[key]
+            ?.ContainerSlots
+            ? jsonData[1].Properties[key].ContainerSlots
+            : undefined;
+          upgradeInfo.engineTorqueMultiplier = jsonData[1]?.Properties[key]
+            ?.EngineTorqueMultiplier
+            ? jsonData[1].Properties[key].EngineTorqueMultiplier
+            : undefined;
+          upgradeInfo.sprintingTorqueDiscount = jsonData[1]?.Properties[key]
+            ?.SprintingTorqueDiscount
+            ? jsonData[1].Properties[key].SprintingTorqueDiscount
+            : undefined;
+          upgradeInfo.additionalParts = jsonData[1]?.Properties[key]
+            ?.AdditionalParts
+            ? jsonData[1].Properties[key].AdditionalParts
+            : undefined;
+          upgradeInfo.sdditionalSlots = jsonData[1]?.Properties[key]
+            ?.AdditionalSlots
+            ? jsonData[1].Properties[key].AdditionalSlots
+            : undefined;
+          upgradeInfo.containerSlots = jsonData[1]?.Properties[key]
+            ?.ContainerSlots
+            ? jsonData[1].Properties[key].ContainerSlots
+            : undefined;
+          upgradeInfo.stackSizeOverride = jsonData[1]?.Properties[key]
+            ?.StackSizeOverride
+            ? jsonData[1].Properties[key].StackSizeOverride
+            : undefined;
+          upgradeInfo.bonusHp = jsonData[1]?.Properties[key]?.BonusHp
+            ? jsonData[1].Properties[key].BonusHp
+            : undefined;
+
+          Object.keys(upgradeInfo).forEach((keyUpgradeInfo) => {
+            if (upgradeInfo[keyUpgradeInfo] === undefined) {
+              delete upgradeInfo[keyUpgradeInfo];
+            } else {
+              upgradeInfoValid = true;
+            }
+          });
+
+          if (upgradeInfoValid) {
+            upgrade.upgradeInfo = upgradeInfo;
+          }
+
+          if (jsonData[1]?.Properties[key]?.Inputs) {
+            let recipeData = jsonData[1]?.Properties[key]?.Inputs;
+            let recipe = { ...recipeTemplate };
+            let ingredients = [];
+            for (const keyInput in recipeData) {
+              let ingredient = { ...ingredienTemplate };
+              ingredient.name = dataParser.parseName(translator, keyInput);
+              ingredient.count = recipeData[keyInput];
+              ingredients.push(ingredient);
+            }
+            if (ingredients.length > 0) {
+              recipe.ingredients = ingredients;
+            }
+            if (jsonData[1]?.Properties[key]?.CraftingTime) {
+              recipe.time = jsonData[1].Properties[key].CraftingTime;
+            }
+            upgrade.crafting = [recipe];
+          }
+          upgradesData.push(upgrade);
+        }
+      }
+    }
+  }
+};
+
+controller.parseUpgradesToItems = () => {
+  upgradesData.forEach((upgradePure) => {
+    let item = controller.getUpgradeItem(upgradePure);
+    if (item) {
+      allItems.push(item);
+    }
+  });
+};
+
+controller.getUpgradeItem = (upgradePure) => {
+  if (upgradePure.super) {
+    let superUpgrade = upgradesData.find(
+      (up) => up.profile == upgradePure.super && up.name == upgradePure.name
+    );
+    let superUpgradeData = controller.getUpgradeItem(superUpgrade);
+    if (superUpgradeData) {
+      let item = { ...itemTemplate };
+      item.name = dataParser.parseUpgradeName(
+        upgradePure.name,
+        upgradePure.profile
+      );
+      item.upgradeInfo = {
+        ...superUpgradeData.upgradeInfo,
+        ...upgradePure.upgradeInfo,
+      };
+      if (upgradePure.crafting && superUpgradeData.crafting) {
+        let recipe = { ...recipeTemplate };
+        if (upgradePure.crafting[0].time) {
+          recipe.time = upgradePure.crafting[0].time;
+        } else if (superUpgradeData.crafting[0].time) {
+          recipe.time = superUpgradeData.crafting[0].time;
+        }
+
+        if (
+          upgradePure.crafting[0].ingredients &&
+          superUpgradeData.crafting[0].ingredients
+        ) {
+          recipe.ingredients = [].concat(
+            upgradePure.crafting[0].ingredients,
+            superUpgradeData.crafting[0].ingredients
+          );
+        } else if (upgradePure.crafting[0].ingredients) {
+          recipe.ingredients = upgradePure.crafting[0].ingredients;
+        } else if (superUpgradeData.crafting[0].ingredients) {
+          recipe.ingredients = superUpgradeData.crafting[0].ingredients;
+        }
+        item.crafting = [recipe];
+      } else if (upgradePure.crafting) {
+        item.crafting = upgradePure.crafting;
+      } else if (superUpgradeData.crafting) {
+        item.crafting = superUpgradeData.crafting;
+      }
+      return item;
+    } else {
+      return null;
+    }
+  } else {
+    let item = { ...itemTemplate };
+    item.name = dataParser.parseUpgradeName(
+      upgradePure.name,
+      upgradePure.profile
+    );
+    item.upgradeInfo = upgradePure.upgradeInfo;
+    item.crafting = upgradePure.crafting;
+    return item;
+  }
+};
+
 controller.getItem = (itemName) => {
   let itemCopy = { ...itemTemplate };
   allItems = allItems.filter((item) => {
@@ -489,6 +658,10 @@ controller.getItem = (itemName) => {
 
 controller.getItems = () => {
   return allItems;
+};
+
+controller.getUpgrades = () => {
+  return upgradesData;
 };
 
 controller.getTranslator = () => {

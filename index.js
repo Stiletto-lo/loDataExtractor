@@ -36,9 +36,11 @@ loadDirData("./Content/Mist/Data/Recipes", "item");
 loadDirData("./Content/Mist/Data/Trade", "trade");
 loadDirData("./Content/Mist/Data/Placeables", "cached");
 
-//loadDirData("./Content/Mist/Data/Walkers", 7);
+loadDirData("./Content/Mist/Data/Walkers", "upgrages");
 
-//loadDirData("./Content/Mist/Data/LootTables", 6);
+//loadDirData("./Content/Mist/Data/LootTables", "loottables");
+
+fileParser.parseUpgradesToItems();
 
 allItems = fileParser.getItems();
 const translator = fileParser.getTranslator();
@@ -63,6 +65,10 @@ allItems.forEach((item) => {
     }
   });
 });
+
+if (!SHOW_DEV_ITEMS) {
+  allItems = allItems.filter((item) => !item.onlyDevs);
+}
 
 allItems = allItems
   .map((item) => {
@@ -175,6 +181,9 @@ function loadDirData(techTreeDir, folderType) {
           break;
         case 6:
           fileParser.parseLootTable(techTreeDir + "/" + file);
+          break;
+        case 7:
+          fileParser.parseUpgrades(techTreeDir + "/" + file);
           break;
       }
     }

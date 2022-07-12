@@ -92,4 +92,47 @@ controller.parseCategory = (category) => {
   return category;
 };
 
+controller.parseUpgradeName = (name, profile) => {
+  if (
+    profile.includes("BaseSparePartsProfile") ||
+    profile.includes("MediumSparePartsProfile") ||
+    profile.includes("LargeSparePartsProfile") ||
+    profile.includes("SmallSparePartsProfile")
+  ) {
+    return profile;
+  }
+
+  let walkerName = profile.replaceAll("SparePartsProfile", "").trim();
+  let tier = 1;
+  let type = "Water";
+
+  if (name.includes("Wood")) {
+    tier = 1;
+  } else if (name.includes("Bone")) {
+    tier = 2;
+  } else if (name.includes("Ceramic")) {
+    tier = 3;
+  } else if (name.includes("Iron")) {
+    tier = 4;
+  }
+
+  if (name.includes("Cargo")) {
+    type = "Cargo";
+  } else if (name.includes("Hatch")) {
+    type = "Gear";
+  } else if (name.includes("Water")) {
+    type = "Water";
+  } else if (name.includes("Torque")) {
+    type = "Torque";
+  } else if (name.includes("Gears")) {
+    type = "Mobility";
+  } else if (name.includes("Armor")) {
+    type = "Durability";
+  } else if (name.includes("Packing")) {
+    type = "Packing";
+  }
+
+  return `${walkerName} Walker Upgrade - ${type} - Tier ${tier}`;
+};
+
 module.exports = controller;
