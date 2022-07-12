@@ -111,13 +111,9 @@
     "trade_price": 1500,
     "description": "Ammo for catapult. Big boulder filled with iron splinters, charged with meteor core's energy. Designed to shred wood to pieces and severely damage even the sturdiest materials.",
     "projectileDamage": {
-      "damage": 1000,
-      "penetration": 10,
-      "effectivenessVsSoak": 0.12,
-      "effectivenessVsReduce": 0.12
+      "damage": 1000
     },
     "stackSize": 10,
-    "weight": 3,
     "toolInfo": [
       {
         "toolType": "CatapultRock",
@@ -158,12 +154,9 @@
     "trade_price": 25,
     "description": "Ammo for Ballista. An iron tip easily penetrates armor and makes holes in bodies that can't be patched.",
     "projectileDamage": {
-      "damage": 180,
-      "penetration": 10
+      "damage": 180
     },
-    "experiencieReward": 50,
     "stackSize": 20,
-    "weight": 0.7,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -203,14 +196,11 @@
     ],
     "trade_price": 75.8,
     "description": "Most tribes eschew iron armor, despite its protective value. History has proven that it is not pirates whom a nomad must fear most, but the sun.",
-    "experiencieReward": 170,
     "stackSize": 100,
-    "weight": 4,
-    "durability": 330,
     "armorInfo": {
-      "soak": 12,
-      "reduce": 8,
-      "movementSpeedReduction": 5
+      "absorbing": 12,
+      "reduction": 8,
+      "speedReduction": 5
     }
   },
   {
@@ -253,14 +243,11 @@
     ],
     "trade_price": 41.1,
     "description": "Most tribes eschew iron armor, despite its protective value. History has proven that it is not pirates whom a nomad must fear most, but the sun.",
-    "experiencieReward": 140,
     "stackSize": 100,
-    "weight": 5,
-    "durability": 330,
     "armorInfo": {
-      "soak": 12,
-      "reduce": 8,
-      "movementSpeedReduction": 5
+      "absorbing": 12,
+      "reduction": 8,
+      "speedReduction": 5
     }
   },
   {
@@ -295,14 +282,11 @@
     ],
     "trade_price": 94,
     "description": "Most tribes eschew iron armor, despite its protective value. History has proven that it is not pirates whom a nomad must fear most, but the sun.",
-    "experiencieReward": 250,
     "stackSize": 100,
-    "weight": 14.8,
-    "durability": 330,
     "armorInfo": {
-      "soak": 31,
-      "reduce": 20,
-      "movementSpeedReduction": 15
+      "absorbing": 31,
+      "reduction": 20,
+      "speedReduction": 15
     }
   },
   {
@@ -578,40 +562,73 @@
     }
   },
   {
-    "name": "Obsidian Pot",
-    "description": "Extremly durable container resistant to highest temperatures.",
+    "name": "Large Water Bag",
+    "description": "Store large volumes of liquid. Liquid is protected unless the container is severely damaged.",
+    "stackSize": 100,
+    "category": "Containers",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 6,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 5,
+            "name": "Clay"
+          },
+          {
+            "count": 80,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "parent": "Medium Water Bag",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 2000
+    }
+  },
+  {
+    "name": "Medium Water Bag",
+    "description": "Store moderate volumes of liquid. Liquid is protected unless the container is severely damaged.",
     "stackSize": 100,
     "category": "Containers",
     "cost": {
-      "count": 3,
-      "name": "Tablet"
+      "count": 10,
+      "name": "Fragment"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 38,
-            "name": "Obsidian"
-          },
-          {
-            "count": 10,
+            "count": 2,
             "name": "Nomad Cloth"
           },
           {
-            "count": 30,
-            "name": "Redwood Wood"
+            "count": 90,
+            "name": "Fiber"
           },
           {
-            "count": 20,
-            "name": "Rupu Vine"
+            "count": 2,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 15,
+            "name": "Stone"
           }
         ]
       }
     ],
-    "parent": "Large Water Bag",
+    "parent": "Small Water Bag",
     "structureInfo": {
       "type": "Soft",
-      "hp": 3000
+      "hp": 1500
     }
   },
   {
@@ -845,39 +862,6 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 20000
-    }
-  },
-  {
-    "name": "Obsidian Machine",
-    "description": "With parts carved out of solid obsidian, the machine can safely hold lava to use it in various productions.",
-    "stackSize": 100,
-    "category": "Crafting",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 36,
-            "name": "Obsidian"
-          },
-          {
-            "count": 12,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 2,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "parent": "SoilExcavator",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 4000
     }
   },
   {
@@ -1263,9 +1247,7 @@
       }
     ],
     "parent": "Vitamins",
-    "trade_price": 34.8,
-    "experiencieReward": 45,
-    "weight": 0.8
+    "trade_price": 34.8
   },
   {
     "name": "Desert Mule",
@@ -1293,9 +1275,7 @@
       }
     ],
     "parent": "Vision Powder",
-    "trade_price": 34.5,
-    "experiencieReward": 275,
-    "weight": 0.6
+    "trade_price": 34.5
   },
   {
     "name": "Sinus Destroyer",
@@ -1326,9 +1306,7 @@
         "time": 60
       }
     ],
-    "trade_price": 87.6,
-    "experiencieReward": 246,
-    "weight": 0.5
+    "trade_price": 87.6
   },
   {
     "name": "Fury Fumes",
@@ -1360,9 +1338,7 @@
       }
     ],
     "parent": "Vision Powder",
-    "trade_price": 39.4,
-    "experiencieReward": 246,
-    "weight": 0.5
+    "trade_price": 39.4
   },
   {
     "name": "Jojo Mojo",
@@ -1394,9 +1370,7 @@
       }
     ],
     "parent": "Fury Fumes",
-    "trade_price": 9,
-    "experiencieReward": 246,
-    "weight": 0.5
+    "trade_price": 9
   },
   {
     "name": "Worm Tincture",
@@ -1432,9 +1406,7 @@
       }
     ],
     "parent": "Jojo Mojo",
-    "trade_price": 1200,
-    "experiencieReward": 60,
-    "weight": 0.5
+    "trade_price": 1200
   },
   {
     "category": "Drugs",
@@ -1461,9 +1433,7 @@
     "name": "Bonebreaker",
     "trade_price": 151.4,
     "description": "A small injection that may cause balance loss and serious injury from falling off walkers. Grants Nomad double damage after a successful block.",
-    "experiencieReward": 275,
-    "stackSize": 100,
-    "weight": 0.6
+    "stackSize": 100
   },
   {
     "cost": {
@@ -1497,10 +1467,7 @@
     ],
     "trade_price": 143.4,
     "description": "A huge water bag worn on the back with two separate compartments.",
-    "experiencieReward": 300,
-    "stackSize": 100,
-    "weight": 3,
-    "durability": 380
+    "stackSize": 100
   },
   {
     "cost": {
@@ -1530,10 +1497,7 @@
     ],
     "trade_price": 679.5,
     "description": "This insulating suit traps excreted fluids and recycles them with state-of-the-art worm technology.",
-    "experiencieReward": 255,
-    "stackSize": 100,
-    "weight": 3,
-    "durability": 400
+    "stackSize": 100
   },
   {
     "category": "Exoskeleton",
@@ -2547,6 +2511,465 @@
     }
   },
   {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Wood"
+          },
+          {
+            "count": 30,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Haysludge Arch",
+    "description": "Decorate your surroundings with this peculiar construction - a pinnacle of fine rupu craftsmenship.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 150
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Rupu Pelt"
+          }
+        ]
+      }
+    ],
+    "name": "Bone Effigy",
+    "description": "Decorate your surroundings with this charming bone effigy.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 50
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Fiber"
+          },
+          {
+            "count": 5,
+            "name": "Rupu Pelt"
+          }
+        ]
+      }
+    ],
+    "name": "Bones Pile",
+    "description": "Decorate your surroundings with this magnificent collection of anthropologial antiquity.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 50
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Wood"
+          },
+          {
+            "count": 30,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Cage",
+    "description": "Decorate your surroundings with this object of casual incapacitation.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 200
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Wood"
+          },
+          {
+            "count": 11,
+            "name": "Fiber"
+          },
+          {
+            "count": 5,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Rupu Campfire 1",
+    "description": "Decorate your surroundings with this magnificent source of warmth and contentment.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 1500
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Wood"
+          },
+          {
+            "count": 11,
+            "name": "Fiber"
+          },
+          {
+            "count": 5,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Rupu Campfire 2",
+    "description": "Decorate your surroundings with this magnificent source of warmth and contentment.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 1500
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 20,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Haysludge Fence",
+    "description": "Decorate your surroundings with this peculiar construction - a pinnacle of fine rupu craftsmenship.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 150
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Wood"
+          },
+          {
+            "count": 30,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Masked Totem 1",
+    "description": "Decorate your surroundings with this undeniable pinnacle of rupu ingenuity and artistry.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 150
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Wood"
+          },
+          {
+            "count": 30,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Masked Totem 2",
+    "description": "Decorate your surroundings with this undeniable pinnacle of rupu ingenuity and artistry.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 150
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Wood"
+          },
+          {
+            "count": 30,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Masked Totem 3",
+    "description": "Decorate your surroundings with this undeniable pinnacle of rupu ingenuity and artistry.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 150
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 60,
+            "name": "Wood"
+          },
+          {
+            "count": 35,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Walker Totem",
+    "description": "Decorate your surroundings with this undeniable pinnacle of rupu ingenuity and artistry.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 150
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Wood"
+          },
+          {
+            "count": 30,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Worshipping Wreath",
+    "description": "Decorate your surroundings with this impressive object of fervent devotion.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 150
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Ornate banner 1",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 250
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Ornate banner 2",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 250
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 15,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Ornate banner 3",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 250
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Wood"
+          },
+          {
+            "count": 20,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Brazier",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 300
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Cage 1",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 250
+    }
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Cage 2",
+    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 250
+    }
+  },
+  {
+    "name": "Hammock",
+    "description": "A simple bed with a small water container that, when filled, allows a couple respawns.",
+    "stackSize": 100,
+    "category": "Interactables",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 4,
+            "name": "Rupu Pelt"
+          }
+        ]
+      }
+    ],
+    "parent": "Sand Bed",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 500
+    }
+  },
+  {
     "name": "Cauterizing Station",
     "description": "Quickly heals by cauterizing fresh wounds. Requires a vitamin to be added in order to work.",
     "stackSize": 100,
@@ -2603,15 +3026,12 @@
       }
     ],
     "parent": "Primitive Bandage",
-    "trade_price": 1.4,
-    "experiencieReward": 55,
-    "weight": 0.05
+    "trade_price": 1.4
   },
   {
     "category": "Interactables",
     "name": "LootBoxTest",
-    "stackSize": 50,
-    "weight": 1
+    "stackSize": 50
   },
   {
     "category": "Interactables",
@@ -2636,9 +3056,7 @@
     "parent": "Equipment",
     "trade_price": 1.2,
     "description": "Restores a small amount of HP over a period of time. Not usable while in combat.",
-    "experiencieReward": 2,
-    "stackSize": 100,
-    "weight": 0.03
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -2845,8 +3263,7 @@
         ]
       }
     ],
-    "parent": "Tube Spade",
-    "durability": 350
+    "parent": "Tube Spade"
   },
   {
     "name": "Defensive Tower",
@@ -3543,73 +3960,73 @@
     "stackSize": 100
   },
   {
-    "name": "Large Water Bag",
-    "description": "Store large volumes of liquid. Liquid is protected unless the container is severely damaged.",
-    "stackSize": 100,
-    "category": "Containers",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 6,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 5,
-            "name": "Clay"
-          },
-          {
-            "count": 80,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "parent": "Medium Water Bag",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 2000
-    }
-  },
-  {
-    "name": "Medium Water Bag",
-    "description": "Store moderate volumes of liquid. Liquid is protected unless the container is severely damaged.",
+    "name": "Obsidian Pot",
+    "description": "Extremly durable container resistant to highest temperatures.",
     "stackSize": 100,
     "category": "Containers",
     "cost": {
-      "count": 10,
-      "name": "Fragment"
+      "count": 3,
+      "name": "Tablet"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 2,
+            "count": 38,
+            "name": "Obsidian"
+          },
+          {
+            "count": 10,
             "name": "Nomad Cloth"
           },
           {
-            "count": 90,
-            "name": "Fiber"
+            "count": 30,
+            "name": "Redwood Wood"
           },
           {
-            "count": 2,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 15,
-            "name": "Stone"
+            "count": 20,
+            "name": "Rupu Vine"
           }
         ]
       }
     ],
-    "parent": "Small Water Bag",
+    "parent": "Large Water Bag",
     "structureInfo": {
       "type": "Soft",
-      "hp": 1500
+      "hp": 3000
+    }
+  },
+  {
+    "name": "Obsidian Machine",
+    "description": "With parts carved out of solid obsidian, the machine can safely hold lava to use it in various productions.",
+    "stackSize": 100,
+    "category": "Crafting",
+    "cost": {
+      "count": 25,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 36,
+            "name": "Obsidian"
+          },
+          {
+            "count": 12,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 2,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "parent": "SoilExcavator",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 4000
     }
   },
   {
@@ -3747,9 +4164,7 @@
         "time": 60
       }
     ],
-    "trade_price": 99.8,
-    "experiencieReward": 246,
-    "weight": 0.5
+    "trade_price": 99.8
   },
   {
     "name": "Rupu Repellent",
@@ -3781,431 +4196,7 @@
       }
     ],
     "parent": "Desert Mule",
-    "trade_price": 79.9,
-    "experiencieReward": 246,
-    "weight": 0.5
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 50,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Haysludge Arch",
-    "description": "Decorate your surroundings with this peculiar construction - a pinnacle of fine rupu craftsmenship.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 150
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Rupu Pelt"
-          }
-        ]
-      }
-    ],
-    "name": "Bone Effigy",
-    "description": "Decorate your surroundings with this charming bone effigy.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 50
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Fiber"
-          },
-          {
-            "count": 5,
-            "name": "Rupu Pelt"
-          }
-        ]
-      }
-    ],
-    "name": "Bones Pile",
-    "description": "Decorate your surroundings with this magnificent collection of anthropologial antiquity.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 50
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 50,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Cage",
-    "description": "Decorate your surroundings with this object of casual incapacitation.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 200
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 16,
-            "name": "Wood"
-          },
-          {
-            "count": 11,
-            "name": "Fiber"
-          },
-          {
-            "count": 5,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Rupu Campfire 1",
-    "description": "Decorate your surroundings with this magnificent source of warmth and contentment.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 1500
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 16,
-            "name": "Wood"
-          },
-          {
-            "count": 11,
-            "name": "Fiber"
-          },
-          {
-            "count": 5,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Rupu Campfire 2",
-    "description": "Decorate your surroundings with this magnificent source of warmth and contentment.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 1500
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Haysludge Fence",
-    "description": "Decorate your surroundings with this peculiar construction - a pinnacle of fine rupu craftsmenship.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 150
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 40,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Masked Totem 1",
-    "description": "Decorate your surroundings with this undeniable pinnacle of rupu ingenuity and artistry.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 150
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 40,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Masked Totem 2",
-    "description": "Decorate your surroundings with this undeniable pinnacle of rupu ingenuity and artistry.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 150
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 40,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Masked Totem 3",
-    "description": "Decorate your surroundings with this undeniable pinnacle of rupu ingenuity and artistry.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 150
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 60,
-            "name": "Wood"
-          },
-          {
-            "count": 35,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Walker Totem",
-    "description": "Decorate your surroundings with this undeniable pinnacle of rupu ingenuity and artistry.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 150
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 40,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Worshipping Wreath",
-    "description": "Decorate your surroundings with this impressive object of fervent devotion.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 150
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Ornate banner 1",
-    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 250
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Ornate banner 2",
-    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 250
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 15,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Ornate banner 3",
-    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 250
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Brazier",
-    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 300
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Cage 1",
-    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 250
-    }
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Cage 2",
-    "description": "Make your adversaries bow before this intimidating assembly of sticks and planks.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 250
-    }
+    "trade_price": 79.9
   },
   {
     "category": "Furniture",
@@ -4527,43 +4518,6 @@
     }
   },
   {
-    "name": "Hammock",
-    "description": "A simple bed with a small water container that, when filled, allows a couple respawns.",
-    "stackSize": 100,
-    "category": "Interactables",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 4,
-            "name": "Rupu Pelt"
-          }
-        ]
-      }
-    ],
-    "parent": "Sand Bed",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 500
-    }
-  },
-  {
     "name": "Poaching Hut",
     "description": "A placeable that creates a mini-claim area in moderate radius. Additional resouces will go into this placeable instead of Proxy Walker.",
     "stackSize": 100,
@@ -4687,16 +4641,14 @@
     "name": "Lava",
     "trade_price": 3.5,
     "description": "Historically believed to be the remains of nomads who were burnt by the Sun, it's been recently discovered to be useful in various productions of fuels, bombs, and other items.",
-    "stackSize": 100,
-    "weight": 0.58
+    "stackSize": 100
   },
   {
     "category": "Liquids",
     "name": "Contaminated Water",
     "trade_price": 0.1,
     "description": "The red tint is attributed to a ubiquitous variety of toxic algae.",
-    "stackSize": 100,
-    "weight": 0.5
+    "stackSize": 100
   },
   {
     "category": "Liquids",
@@ -4722,9 +4674,26 @@
     ],
     "name": "Lava Fuel",
     "description": "Being almost as hot as lava itself, it's often used in combat and crafting.",
-    "experiencieReward": 3,
-    "stackSize": 100,
-    "weight": 0.5
+    "stackSize": 100
+  },
+  {
+    "category": "Liquids",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Earth Wax"
+          }
+        ],
+        "station": "Furnace",
+        "time": 1320
+      }
+    ],
+    "name": "Tar",
+    "trade_price": 3.2,
+    "description": "Thick liquid used in heavy and complex constructions. Ignitable in combination with other materials.",
+    "stackSize": 100
   },
   {
     "category": "Liquids",
@@ -4754,15 +4723,13 @@
     ],
     "name": "Sand",
     "description": "Tiny green mineral flecks dot the sand.",
-    "stackSize": 100,
-    "weight": 0.22
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Shattered Fragment",
     "trade_price": 3,
     "description": "A shattered fragment - some simple information can still be extracted, but without some restoration work it's hard to learn about complex topics from it.",
-    "experiencieReward": 10,
     "stackSize": 100
   },
   {
@@ -4804,53 +4771,41 @@
     "parent": "FiberworkingStation_T2",
     "trade_price": 28,
     "description": "A tightly woven cloth that is hard to cut and nearly waterproof. The Flotillan standard.",
-    "experiencieReward": 65,
-    "stackSize": 100,
-    "weight": 0.24
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Beeswax",
     "trade_price": 1.2,
-    "experiencieReward": 18,
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Blood Turnip",
     "trade_price": 0.9,
     "description": "The wandering wisemen use a divining technique to locate the rare blood turnip root, which when cut open bleeds like a slaughtered animal. Many have tried without success to cultivate it.",
-    "experiencieReward": 16,
-    "stackSize": 100,
-    "weight": 0.5
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Cactus Flesh",
     "trade_price": 0.2,
     "description": "The last resort for nomads dying of thirst. At least the taste won't kill you.",
-    "experiencieReward": 2,
-    "stackSize": 100,
-    "weight": 0.12
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Huge Cactus Fruit",
     "trade_price": 1.6,
     "description": "Some strange plants with psychoactive properties can be turned into mind enhancing vitamins.",
-    "experiencieReward": 20,
-    "stackSize": 100,
-    "weight": 1.2
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Chitin Plate",
     "trade_price": 6.6,
     "description": "Skittering parasites make their nests between the gooey cracks. Harvesting chitin is dirty work.",
-    "experiencieReward": 6,
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -4877,16 +4832,13 @@
     "parent": "SoilExcavator",
     "trade_price": 0.1,
     "description": "Extracted from lakebed soil.",
-    "experiencieReward": 1,
-    "stackSize": 100,
-    "weight": 0.35
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Terrain: Clay Spots",
     "trade_price": 1,
-    "description": "",
-    "weight": 1
+    "description": ""
   },
   {
     "name": "Flots",
@@ -4899,9 +4851,7 @@
     "name": "Feather",
     "trade_price": 1.6,
     "description": "Migrating flying creatures serve as one of the oldest compasses for lost nomads, like dark arrowheads sailing toward the next oasis.",
-    "experiencieReward": 12,
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -4942,9 +4892,7 @@
     "name": "Fiber",
     "trade_price": 0.2,
     "description": "Used to make everything from ropes, sails, to garments.",
-    "experiencieReward": 2,
-    "stackSize": 100,
-    "weight": 0.02
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -4985,45 +4933,20 @@
     "parent": "Fiberworking Station",
     "trade_price": 0.8,
     "description": "A crude fabric woven from strands of natural fiber.",
-    "experiencieReward": 9,
-    "stackSize": 100,
-    "weight": 0.11
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Insects",
     "trade_price": 0.8,
     "description": "Its extremely hard carapace evolved to shield it from extreme weather.",
-    "experiencieReward": 18,
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "name": "Fiery Concoction",
     "trade_price": 1,
     "description": "A mixture of ingredients with dashes of wood splinters kept in secret by the nomadic outlaws. Used in production of Hellfire Bolts to make fire burn at extremely high temperatures, allowing to damage even the strongest materials.",
-    "stackSize": 5,
-    "weight": 0.2
-  },
-  {
-    "category": "Liquids",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Earth Wax"
-          }
-        ],
-        "station": "Furnace",
-        "time": 1320
-      }
-    ],
-    "name": "Tar",
-    "trade_price": 3.2,
-    "description": "Thick liquid used in heavy and complex constructions. Ignitable in combination with other materials.",
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 5
   },
   {
     "category": "Resources",
@@ -5064,9 +4987,7 @@
     "parent": "Purified Water",
     "trade_price": 1.9,
     "description": "Rapidly bonds after application. Discovered by a Flotillan cook who stewed powdered bones of an unknown creature into his soup broth. The nomads he served died of asphyxiation.",
-    "experiencieReward": 12,
-    "stackSize": 100,
-    "weight": 0.17
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -5145,17 +5066,14 @@
       }
     ],
     "name": "Fruit Pulp",
-    "stackSize": 100,
-    "weight": 0.34
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Magma Seeds",
     "trade_price": 0.1,
     "description": "Thrives in the heat generated by volcanic hotspots.",
-    "experiencieReward": 6,
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -5177,8 +5095,7 @@
     "name": "Ceramic Shard",
     "parent": "Furnace",
     "trade_price": 7.2,
-    "stackSize": 100,
-    "weight": 0.22
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -5245,16 +5162,13 @@
     "parent": "SoilExcavator",
     "trade_price": 1.4,
     "description": "Nomads rely on earth wax to waterproof walker sails and make their wooden decks resistant to decay. Often found when mining rocks, it can also be extracted from some natural resources through pressure.",
-    "experiencieReward": 8,
-    "stackSize": 100,
-    "weight": 0.44
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Terrain: Black Soil",
     "trade_price": 1,
-    "description": "",
-    "weight": 1
+    "description": ""
   },
   {
     "category": "Resources",
@@ -5273,44 +5187,35 @@
     "name": "Glass",
     "trade_price": 1.4,
     "description": "A transparent material",
-    "stackSize": 100,
-    "weight": 0.05
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Meteor Core",
     "trade_price": 600,
     "description": "Strange crystal that exudes an almost mesmerising glow. If you listen closely, you can hear a steady humming noise emanating from its energized interior.",
-    "experiencieReward": 50,
-    "stackSize": 100,
-    "weight": 0.3
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Flint",
     "trade_price": 0.1,
     "description": "A sharp mineral, handy for the production of primitive blades and extra pointy sticks",
-    "experiencieReward": 3,
-    "stackSize": 100,
-    "weight": 0.4
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Nibiran Mineral",
     "trade_price": 16.5,
     "description": "This inconspicuous rock glows brightly when the Moon and Sun align. The mineral has permeated the soil, water, plant life, and possibly more.",
-    "experiencieReward": 12,
-    "stackSize": 100,
-    "weight": 0.28
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Hide",
     "trade_price": 1.1,
     "description": "The raw skin of an animal.",
-    "experiencieReward": 3,
-    "stackSize": 100,
-    "weight": 0.34
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -5333,17 +5238,14 @@
     "parent": "Furnace_T2",
     "trade_price": 12,
     "description": "Extremely strong material used in high quality productions.",
-    "stackSize": 100,
-    "weight": 0.65
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Iron Ore",
     "trade_price": 8,
     "description": "Over the centuries, nomads have experimented with iron in the construction of their walkers and armor. However, in the race to outrun the sun, it was those who travelled lightest that survived longest.",
-    "experiencieReward": 9,
-    "stackSize": 100,
-    "weight": 0.78
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -5366,146 +5268,117 @@
     "name": "Nibiran Ingot",
     "trade_price": 102.5,
     "description": "Iron ingot coated with scraped off green mineral of unkown origin.",
-    "experiencieReward": 50,
-    "stackSize": 100,
-    "weight": 0.75
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Obsidian",
     "trade_price": 0.8,
     "description": "Molten rock flowed across the world's surface, and the metropolises were buried.",
-    "experiencieReward": 16,
-    "stackSize": 100,
-    "weight": 2.5
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Peculiar Corundum",
     "trade_price": 220,
     "description": "A strange, slightly translucent stone without a single scratch on the surface or other traces of deterioration. It seems to have endured many burnouts quite unscathed.",
-    "stackSize": 100,
-    "weight": 0.82
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Salt Rock",
     "trade_price": 0.1,
     "description": "Mined from desert salt lakes.",
-    "experiencieReward": 12,
-    "stackSize": 100,
-    "weight": 0.23
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Stone",
     "trade_price": 0.1,
-    "experiencieReward": 3,
-    "stackSize": 100,
-    "weight": 0.4
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Sulfur",
     "trade_price": 1.4,
     "description": "A yellow mineral that typically forms in sulfur lakes.",
-    "stackSize": 100,
-    "weight": 0.03
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Rupu Gel",
     "trade_price": 1,
     "description": "Rupu Gel is highly flammable, and a sideproduct of a shamanic ritual. A rare ingredient used in crafting ammo and often traded in Trade Stations.",
-    "stackSize": 100,
-    "weight": 0.2
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Nurr Fang",
     "trade_price": 0.4,
-    "experiencieReward": 8,
-    "stackSize": 100,
-    "weight": 0.28
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Pearl",
     "trade_price": 1.1,
     "description": "In the dry southern valleys, the fossils of old sea creatures litter the ground, turning the hills white.",
-    "experiencieReward": 6,
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Aloe Vera",
     "trade_price": 0.3,
     "description": "This hardy plant grows in the hottest of conditions.",
-    "experiencieReward": 6,
-    "stackSize": 100,
-    "weight": 0.4
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Apple",
     "trade_price": 0.2,
     "description": "Crisp and delicious. No worms guaranteed.",
-    "experiencieReward": 8,
-    "stackSize": 100,
-    "weight": 0.266
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Cattail",
     "trade_price": 0.2,
     "description": "An abundant marsh plant favoured by nomads for its medicinal properties.",
-    "experiencieReward": 1,
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Corn",
     "trade_price": 0.2,
     "description": "Corn is seeded by expeditionary planters on the fringe of the Ice Lands.",
-    "experiencieReward": 7,
-    "stackSize": 100,
-    "weight": 0.22
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Cotton",
     "trade_price": 2.1,
     "description": "Grows in open meadows.",
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Mushroom Flesh",
     "trade_price": 0.4,
     "description": "Make a meal out of it, or a bomb.",
-    "experiencieReward": 2,
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Lava Poppy",
     "trade_price": 0.1,
     "description": "Requires high concentrations of volcanic ash to grow.",
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Red Banana",
     "trade_price": 0.1,
     "description": "Looks delicious, tastes HORRIBLE.",
-    "experiencieReward": 1,
-    "stackSize": 100,
-    "weight": 0.18
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -5562,9 +5435,7 @@
     "parent": "Woodworking Station",
     "trade_price": 15.5,
     "description": "Strong wooden plank reinforced using a forgotten technology at Ancient Crafting Sites.",
-    "experiencieReward": 25,
-    "stackSize": 100,
-    "weight": 0.45
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -5587,9 +5458,7 @@
     "name": "Toothwheel",
     "trade_price": 50,
     "description": "A simple yet elegant mechanism used in the transfer of power",
-    "experiencieReward": 25,
-    "stackSize": 100,
-    "weight": 20
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -5638,9 +5507,7 @@
     "parent": "Woodworking Station",
     "trade_price": 700,
     "description": "Masterfully crafted contraption that automatically releases energy and bolsters transmission of walker gear mechanisms. Essential in construction of heavier walkers.",
-    "experiencieReward": 25,
-    "stackSize": 100,
-    "weight": 0.55
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -5701,47 +5568,38 @@
     "parent": "Fiber Weave",
     "trade_price": 0.5,
     "description": "A strong cord used for crafting and construction",
-    "experiencieReward": 9,
-    "stackSize": 100,
-    "weight": 0.25
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Rupu Pelt",
     "trade_price": 0.2,
     "description": "Garments made from this oily fur are favoured for voyages into the Ice Lands.",
-    "stackSize": 100,
-    "weight": 0.55
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Rupu Vine",
     "trade_price": 0.5,
     "description": "These vines grow exclusively in rupu excrement, which the rupu use as a binding agent in the construction of their mud huts.",
-    "experiencieReward": 18,
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Terrain: Sand",
-    "description": "",
-    "weight": 1
+    "description": ""
   },
   {
     "category": "Resources",
     "name": "Terrain: Excavatable",
-    "description": "",
-    "weight": 1
+    "description": ""
   },
   {
     "category": "Resources",
     "name": "Thornberry",
     "trade_price": 2.6,
     "description": "Grows inside a notoriously dangerous, bulbous plant. The thornberry has mystical properties and is said to have appeared with the arrival of Nibiru.",
-    "experiencieReward": 4,
-    "stackSize": 100,
-    "weight": 0.05
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -5770,9 +5628,7 @@
     "name": "Torque",
     "trade_price": 0.1,
     "description": "Torque Consumption",
-    "experiencieReward": 1,
-    "stackSize": 10000,
-    "weight": 0.01
+    "stackSize": 10000
   },
   {
     "category": "Resources",
@@ -5827,9 +5683,7 @@
     "parent": "Woodworking Station",
     "trade_price": 0.4,
     "description": "The Rupu are skilled imitators, and can crudely reproduce human fighting techniques and constructions. They use wood shafts to prop up their mud huts, giving them a striking resemblance to the Nomads' walkers.",
-    "experiencieReward": 12,
-    "stackSize": 100,
-    "weight": 0.21
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -5888,9 +5742,7 @@
     "name": "Ash",
     "trade_price": 0.1,
     "description": "A product of burning wood.",
-    "experiencieReward": 1,
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -5909,9 +5761,7 @@
     "name": "Bent Wooden Planks",
     "trade_price": 0.1,
     "description": "Produced using a much more wasteful method of log processing than simple lumber, bent planks are significantly more sturdy and don't require any other materials.",
-    "experiencieReward": 1,
-    "stackSize": 100,
-    "weight": 0.21
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -5938,9 +5788,7 @@
     ],
     "name": "Blazing Slab",
     "trade_price": 0.1,
-    "experiencieReward": 1,
-    "stackSize": 100,
-    "weight": 0.1
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -5979,9 +5827,7 @@
     "name": "Charcoal",
     "trade_price": 0.1,
     "description": "Burns hotter in a furnace than normal wood.",
-    "experiencieReward": 1,
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -6043,43 +5889,34 @@
     "name": "Fuel",
     "parent": "Purification Station",
     "trade_price": 1,
-    "experiencieReward": 1,
-    "stackSize": 10000,
-    "weight": 0.01
+    "stackSize": 10000
   },
   {
     "category": "Resources",
     "name": "Lightwood",
     "trade_price": 3.5,
     "description": "A type of very light wood with a porous structure and air trapped between the layers of the fiber.",
-    "experiencieReward": 12,
-    "stackSize": 100,
-    "weight": 0.1
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Wood Log",
     "trade_price": 2,
     "description": "Manufactured at a lumber mill.",
-    "stackSize": 999,
-    "weight": 100
+    "stackSize": 999
   },
   {
     "category": "Resources",
     "name": "Palm Leaves",
     "trade_price": 0.2,
-    "experiencieReward": 4,
-    "stackSize": 100,
-    "weight": 0.1
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Redwood Wood",
     "trade_price": 2.6,
     "description": "A harder, more sought after wood used for specialty constructions.",
-    "experiencieReward": 12,
-    "stackSize": 100,
-    "weight": 0.73
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -6108,9 +5945,7 @@
     "name": "Toxic Remains",
     "trade_price": 0.5,
     "description": "The leftovers of a shamanic ritual.",
-    "experiencieReward": 1,
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -6130,21 +5965,12 @@
     "name": "Wood",
     "trade_price": 0.1,
     "description": "This versatile material is the focus of Flotillan engineering.",
-    "experiencieReward": 1,
-    "stackSize": 100,
-    "weight": 0.19
-  },
-  {
-    "category": "Resources",
-    "name": "Terrain: Worm Sand",
-    "weight": 1
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Weightless Module",
     "description": "Stacking this module decreases the weight of a packed base.",
-    "experiencieReward": 65,
-    "weight": 0.24,
     "moduleInfo": {
       "increase": 10,
       "maxIncrease": 90
@@ -6153,16 +5979,12 @@
   {
     "category": "Resources",
     "name": "Merchant Module",
-    "description": "Stacking this module increases the storage capacity of a walker's Cargo container.",
-    "experiencieReward": 65,
-    "weight": 0.24
+    "description": "Stacking this module increases the storage capacity of a walker's Cargo container."
   },
   {
     "category": "Resources",
     "name": "Craftsman Module",
     "description": "Stacking this module decreases the crafting time of stations attached to a walker.",
-    "experiencieReward": 65,
-    "weight": 0.24,
     "moduleInfo": {
       "increase": 4.5,
       "maxIncrease": 90
@@ -6172,7 +5994,6 @@
     "category": "Resources",
     "name": "Fireproof Module",
     "description": "Lowers the damage from all fire sources for the walker and all structures.",
-    "weight": 0.24,
     "moduleInfo": {
       "increase": 2,
       "maxIncrease": 40
@@ -6182,8 +6003,6 @@
     "category": "Resources",
     "name": "Armoury Module",
     "description": "Stacking this module increases the capacity of a walker's Armor and Weapons container.",
-    "experiencieReward": 65,
-    "weight": 0.24,
     "moduleInfo": {
       "max": 10,
       "increase": 2
@@ -6193,7 +6012,6 @@
     "category": "Resources",
     "name": "Hardening Module",
     "description": "Stacking this module reduces damage to a walker from all sources except those that can damage Reinforced armor.",
-    "weight": 0.24,
     "moduleInfo": {
       "increase": 5,
       "maxIncrease": 100
@@ -6203,8 +6021,6 @@
     "category": "Resources",
     "name": "Forager Module",
     "description": "Walker legs will automatically harvest foliage when travelling at slow speed. Stacking this module increases the amount of foliage harvested.",
-    "experiencieReward": 65,
-    "weight": 0.24,
     "moduleInfo": {
       "max": 10,
       "increase": 1
@@ -6214,8 +6030,6 @@
     "category": "Resources",
     "name": "Scavenger Module",
     "description": "Walker legs will automatically pick up dropped items when travelling at slow speed. Stacking this module increases the maximum speed at which items are picked up.",
-    "experiencieReward": 65,
-    "weight": 0.24,
     "moduleInfo": {
       "max": 50,
       "increase": 100
@@ -6225,8 +6039,6 @@
     "category": "Resources",
     "name": "Lumberjack Module",
     "description": "Walker legs will chop wood when they impact with trees. Stacking this module increases the amount of wood.",
-    "experiencieReward": 65,
-    "weight": 0.24,
     "moduleInfo": {
       "max": 10,
       "increase": 1
@@ -6236,7 +6048,6 @@
     "category": "Resources",
     "name": "Pack Speed Module",
     "description": "Decreases the time it takes to pack bases and structures.",
-    "weight": 0.24,
     "moduleInfo": {
       "increase": 4,
       "maxIncrease": 80
@@ -6246,8 +6057,6 @@
     "category": "Resources",
     "name": "Hearth Module",
     "description": "Stacking this module decreases the water cost of respawning on walker.",
-    "experiencieReward": 65,
-    "weight": 0.24,
     "moduleInfo": {
       "max": 10,
       "increase": 2.5,
@@ -6258,8 +6067,6 @@
     "category": "Resources",
     "name": "Lifeforce Module",
     "description": "Nomads that respawn on a walker will recieve a beneficial status effect. Stacking this module increases the potency of this effect.",
-    "experiencieReward": 65,
-    "weight": 0.24,
     "moduleInfo": {
       "max": 50,
       "increase": 5
@@ -6269,8 +6076,6 @@
     "category": "Resources",
     "name": "Bullrush Module",
     "description": "Stacking this module decreases the wait time before respawning on a walker.",
-    "experiencieReward": 65,
-    "weight": 0.24,
     "moduleInfo": {
       "increase": 3,
       "maxIncrease": 30
@@ -6280,8 +6085,6 @@
     "category": "Resources",
     "name": "Sandy Module",
     "description": "Stacking this module increases the rate at which sand is removed from a walker's gears after travelling.",
-    "experiencieReward": 65,
-    "weight": 0.24,
     "moduleInfo": {
       "max": 20,
       "increase": 10
@@ -6290,9 +6093,7 @@
   {
     "category": "Resources",
     "name": "Fortress Module",
-    "description": "Stacking this module increases the armor value of all structures attached to a walker.",
-    "experiencieReward": 65,
-    "weight": 0.24
+    "description": "Stacking this module increases the armor value of all structures attached to a walker."
   },
   {
     "category": "Resources",
@@ -6306,23 +6107,17 @@
   {
     "category": "Resources",
     "name": "Battery Module",
-    "description": "Stacking this module increases the torque battery's maximum capacity.",
-    "experiencieReward": 65,
-    "weight": 0.24
+    "description": "Stacking this module increases the torque battery's maximum capacity."
   },
   {
     "category": "Resources",
     "name": "Torque Module",
-    "description": "Walker will generate torque. Stacking this module increases the amount of torque generated by a moving walker.",
-    "experiencieReward": 65,
-    "weight": 0.24
+    "description": "Walker will generate torque. Stacking this module increases the amount of torque generated by a moving walker."
   },
   {
     "category": "Resources",
     "name": "Watery Module",
     "description": "Stacking this module decreases the water cost of travelling.",
-    "experiencieReward": 65,
-    "weight": 0.24,
     "moduleInfo": {
       "increase": 2.5,
       "maxIncrease": 50
@@ -6332,155 +6127,9 @@
     "category": "Resources",
     "name": "Pack Mule Module",
     "description": "Stacking this module increases the maximum weight limit of a walker.",
-    "experiencieReward": 65,
-    "weight": 0.24,
     "moduleInfo": {
       "increase": 2
     }
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 1 Upgrade",
-    "experiencieReward": 10,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 1 Upgrade",
-    "experiencieReward": 10,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 1 Upgrade",
-    "experiencieReward": 10,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 1 Upgrade",
-    "experiencieReward": 10,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 1 Upgrade",
-    "experiencieReward": 10,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 1 Upgrade",
-    "experiencieReward": 10,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 2 Upgrade",
-    "experiencieReward": 20,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 2 Upgrade",
-    "experiencieReward": 20,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 2 Upgrade",
-    "experiencieReward": 20,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 2 Upgrade",
-    "experiencieReward": 20,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 2 Upgrade",
-    "experiencieReward": 20,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 2 Upgrade",
-    "experiencieReward": 20,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 3 Upgrade",
-    "experiencieReward": 30,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 3 Upgrade",
-    "experiencieReward": 30,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 3 Upgrade",
-    "experiencieReward": 30,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 3 Upgrade",
-    "experiencieReward": 30,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 3 Upgrade",
-    "experiencieReward": 30,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 3 Upgrade",
-    "experiencieReward": 30,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 4 Upgrade",
-    "experiencieReward": 40,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 4 Upgrade",
-    "experiencieReward": 40,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 4 Upgrade",
-    "experiencieReward": 40,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 4 Upgrade",
-    "experiencieReward": 40,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 4 Upgrade",
-    "experiencieReward": 40,
-    "durability": 100
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 4 Upgrade",
-    "experiencieReward": 40,
-    "durability": 100
   },
   {
     "category": "StructuralConcrete",
@@ -6795,8 +6444,7 @@
     ],
     "name": "Tube Spade",
     "parent": "Campfire",
-    "description": "Used for harvesting resources from the soil, it is the simplest and most efficient way of digging in the ground that the great minds of the Flotilla could come up with.",
-    "durability": 100
+    "description": "Used for harvesting resources from the soil, it is the simplest and most efficient way of digging in the ground that the great minds of the Flotilla could come up with."
   },
   {
     "name": "Bomb Chest Trap",
@@ -12745,14 +12393,9 @@
     ],
     "trade_price": 234.4,
     "description": "It is said the axe earned its reputation after the tribe that invented them reportedly dug through a mountainside to escape the scorching sun.",
-    "experiencieReward": 1203,
     "stackSize": 100,
-    "weight": 4,
-    "durability": 750,
     "weaponInfo": {
       "weaponSpeed": 95,
-      "impact": 55,
-      "stability": 45,
       "weaponLength": 72,
       "damage": 57,
       "penetration": 12
@@ -12796,13 +12439,9 @@
     ],
     "trade_price": 316.4,
     "description": "Flotillan scholars claim that the Wyndan tribe has roots as a prominent civilization that existed long before the apocalypse.",
-    "experiencieReward": 1197,
     "stackSize": 100,
-    "weight": 4.5,
-    "durability": 760,
     "weaponInfo": {
       "weaponSpeed": 90,
-      "impact": 70,
       "weaponLength": 61,
       "damage": 61,
       "penetration": 15
@@ -12840,14 +12479,9 @@
     ],
     "trade_price": 259.7,
     "description": "The Wyndan tribe is said to have pioneered the first walkers.",
-    "experiencieReward": 1242,
     "stackSize": 100,
-    "weight": 2.5,
-    "durability": 770,
     "weaponInfo": {
       "weaponSpeed": 130,
-      "impact": 25,
-      "stability": 10,
       "weaponLength": 55,
       "damage": 55,
       "penetration": 35
@@ -12891,13 +12525,8 @@
     ],
     "trade_price": 1681.3,
     "description": "Relics like these now decorate the homes of wealthy Flotillan capitalists, or are given as commendations to nomads who have significantly furthered the Flotillan cause.",
-    "experiencieReward": 1583,
     "stackSize": 100,
-    "weight": 3,
-    "durability": 700,
     "weaponInfo": {
-      "impact": 50,
-      "stability": 40,
       "weaponLength": 60,
       "damage": 80,
       "penetration": 10
@@ -12941,14 +12570,9 @@
     ],
     "trade_price": 1900.2,
     "description": "The miraculously thin blade slips between the fibers of armor. Allegedly used by the Guardian's royal assassins.",
-    "experiencieReward": 1489,
     "stackSize": 100,
-    "weight": 1.7,
-    "durability": 770,
     "weaponInfo": {
       "weaponSpeed": 135,
-      "impact": 15,
-      "stability": 5,
       "weaponLength": 55,
       "damage": 58,
       "penetration": 40
@@ -12992,14 +12616,9 @@
     ],
     "trade_price": 1486.5,
     "description": "Nibiran weapons come from unknown origins, and have not been seen in battle for some time.",
-    "experiencieReward": 1500,
     "stackSize": 100,
-    "weight": 3.2,
-    "durability": 760,
     "weaponInfo": {
       "weaponSpeed": 90,
-      "impact": 66,
-      "stability": 35,
       "weaponLength": 62,
       "damage": 65,
       "penetration": 15
@@ -13033,10 +12652,7 @@
     ],
     "trade_price": 152,
     "description": "Long ago, the Wyndan tribe mediated a lasting peace between the plains people. Today, they serve the Guardians as peacekeepers and engineers.",
-    "experiencieReward": 1227,
     "stackSize": 100,
-    "weight": 4.8,
-    "durability": 740,
     "weaponInfo": {
       "weaponLength": 107,
       "damage": 61,
@@ -13075,10 +12691,7 @@
     ],
     "trade_price": 1504.8,
     "description": "Metal is rare, even on the battlefield. Most nomads can't comprehend how sharp an iron blade is until they are cut with one.",
-    "experiencieReward": 1521,
     "stackSize": 100,
-    "weight": 5.3,
-    "durability": 740,
     "weaponInfo": {
       "weaponLength": 106,
       "damage": 85,
@@ -13117,10 +12730,7 @@
     ],
     "trade_price": 1504.8,
     "description": "After it was made in secrecy for one of the wealthiest weapon collectors on the Flotilla, the schemes for this quarterstaff appeared on the market. The few who wield it have seldom lost in combat.",
-    "experiencieReward": 1498,
     "stackSize": 100,
-    "weight": 5.6,
-    "durability": 740,
     "weaponInfo": {
       "weaponLength": 93,
       "damage": 85,
@@ -13167,13 +12777,9 @@
     ],
     "trade_price": 320.4,
     "description": "It is said the axe earned its reputation after the tribe who invented them reportedly dug through a mountainside to escape the scorching sun.",
-    "experiencieReward": 1622,
     "stackSize": 100,
-    "weight": 5.8,
-    "durability": 780,
     "weaponInfo": {
       "weaponSpeed": 115,
-      "stability": 65,
       "weaponLength": 62,
       "damage": 65,
       "penetration": 10
@@ -13217,14 +12823,9 @@
     ],
     "trade_price": 367.8,
     "description": "Flotillan scholars claim that the Wyndan tribe has roots as a prominent civilization that existed long before the apocalypse.",
-    "experiencieReward": 1257,
     "stackSize": 100,
-    "weight": 6,
-    "durability": 780,
     "weaponInfo": {
       "weaponSpeed": 110,
-      "impact": 85,
-      "stability": 75,
       "weaponLength": 73,
       "damage": 75,
       "penetration": 5
@@ -13262,14 +12863,9 @@
     ],
     "trade_price": 336.6,
     "description": "The Wyndan tribe is said to have pioneered the first walkers.",
-    "experiencieReward": 1349,
     "stackSize": 100,
-    "weight": 4.8,
-    "durability": 800,
     "weaponInfo": {
       "weaponSpeed": 130,
-      "impact": 45,
-      "stability": 55,
       "weaponLength": 96,
       "damage": 59,
       "penetration": 20
@@ -13313,14 +12909,9 @@
     ],
     "trade_price": 2116.6,
     "description": "Surrounded by brigands who sought to take his life, Punparratju swung his wicked axe and severed five of their heads in a single stroke. Punparratju's offensive to recapture the land bridge was successful, and the Flotilla crossed the straight unimpeded.",
-    "experiencieReward": 1544,
     "stackSize": 100,
-    "weight": 4.8,
-    "durability": 780,
     "weaponInfo": {
       "weaponSpeed": 120,
-      "impact": 70,
-      "stability": 60,
       "weaponLength": 65,
       "damage": 99,
       "penetration": 10
@@ -13364,14 +12955,9 @@
     ],
     "trade_price": 2217.3,
     "description": "Pops heads like little grapes. The nibiran minerals used to forge this weapon radiate a faint greenish glow.",
-    "experiencieReward": 1509,
     "stackSize": 100,
-    "weight": 5.1,
-    "durability": 780,
     "weaponInfo": {
       "weaponSpeed": 115,
-      "impact": 90,
-      "stability": 80,
       "weaponLength": 88,
       "damage": 80,
       "penetration": 5
@@ -13409,14 +12995,9 @@
     ],
     "trade_price": 2756.6,
     "description": "Traditionally used in the past for public executions on the Flotilla, until a master craftsman discovered the schematics and manufactured a few more. A feared sword with a dark history.",
-    "experiencieReward": 1602,
     "stackSize": 100,
-    "weight": 3.6,
-    "durability": 800,
     "weaponInfo": {
       "weaponSpeed": 120,
-      "impact": 40,
-      "stability": 65,
       "weaponLength": 97,
       "damage": 64,
       "penetration": 35
@@ -13940,9 +13521,7 @@
     "projectileDamage": {
       "damage": 500
     },
-    "experiencieReward": 15,
-    "stackSize": 100,
-    "weight": 0.3
+    "stackSize": 100
   },
   {
     "category": "Ammo",
@@ -13975,9 +13554,7 @@
     "projectileDamage": {
       "damage": 75
     },
-    "experiencieReward": 15,
     "stackSize": 100,
-    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -14016,9 +13593,7 @@
     "projectileDamage": {
       "damage": 15
     },
-    "experiencieReward": 10,
     "stackSize": 20,
-    "weight": 0.4,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -14065,13 +13640,9 @@
     "trade_price": 84.7,
     "description": "Ammo for sling or catapult. Spawns dozens of tiny explosions covering a large surface area. Very effective at disrupting walkers and nomads on the ground.",
     "projectileDamage": {
-      "damage": 20,
-      "penetration": 55,
-      "effectivenessVsSoak": 95,
-      "effectivenessVsReduce": 85
+      "damage": 20
     },
-    "stackSize": 100,
-    "weight": 30
+    "stackSize": 100
   },
   {
     "category": "Ammo",
@@ -14098,11 +13669,9 @@
     "trade_price": 8,
     "description": "Ammo for catapult. This massive boulder obliterates bodies and smashes wood to bits.",
     "projectileDamage": {
-      "damage": 700,
-      "penetration": 30
+      "damage": 700
     },
     "stackSize": 100,
-    "weight": 2,
     "toolInfo": [
       {
         "toolType": "CatapultRock",
@@ -14135,12 +13704,9 @@
     "trade_price": 11,
     "description": "Ammo for Ballista. Ceramic tips guarantee their sharpness and strength.",
     "projectileDamage": {
-      "damage": 165,
-      "penetration": 10
+      "damage": 165
     },
-    "experiencieReward": 12,
     "stackSize": 100,
-    "weight": 0.2,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -14174,9 +13740,7 @@
     "projectileDamage": {
       "damage": 5
     },
-    "experiencieReward": 12,
     "stackSize": 20,
-    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -14210,8 +13774,7 @@
     "trade_price": 3.6,
     "description": "Ammo for sling or catapult. Releases thick smoke cloud in area. Does not deal any damage.",
     "projectileDamage": {},
-    "stackSize": 100,
-    "weight": 2.4
+    "stackSize": 100
   },
   {
     "category": "Ammo",
@@ -14240,9 +13803,7 @@
     "projectileDamage": {
       "damage": 113
     },
-    "experiencieReward": 15,
     "stackSize": 100,
-    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -14276,9 +13837,7 @@
     "projectileDamage": {
       "damage": 20
     },
-    "experiencieReward": 10,
     "stackSize": 20,
-    "weight": 0.4,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -14312,9 +13871,7 @@
     "projectileDamage": {
       "damage": 38
     },
-    "experiencieReward": 15,
     "stackSize": 100,
-    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "RepeaterBolt",
@@ -14348,9 +13905,7 @@
     "projectileDamage": {
       "damage": 57
     },
-    "experiencieReward": 15,
     "stackSize": 100,
-    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "RepeaterBolt",
@@ -14364,9 +13919,7 @@
     "trade_price": 1,
     "description": "Ammo for Ballista. Tether to any target and reel in until the harpoon is destroyed or the tether snaps.",
     "projectileDamage": {},
-    "experiencieReward": 15,
-    "stackSize": 20,
-    "weight": 0.68
+    "stackSize": 20
   },
   {
     "category": "Ammo",
@@ -14399,9 +13952,7 @@
     "projectileDamage": {
       "damage": 25
     },
-    "experiencieReward": 15,
-    "stackSize": 100,
-    "weight": 0.3
+    "stackSize": 100
   },
   {
     "category": "Ammo",
@@ -14436,7 +13987,6 @@
       "damage": 500
     },
     "stackSize": 28,
-    "weight": 0.6,
     "toolInfo": [
       {
         "toolType": "SlingshotRock",
@@ -14475,11 +14025,9 @@
     "trade_price": 38,
     "description": "Ammo for sling or catapult. Primitive explosive detonates on impact, releasing lava and setting fire to its surroundings.",
     "projectileDamage": {
-      "damage": 10,
-      "penetration": 1
+      "damage": 10
     },
-    "stackSize": 100,
-    "weight": 3
+    "stackSize": 100
   },
   {
     "category": "Ammo",
@@ -14516,9 +14064,7 @@
     "projectileDamage": {
       "damage": 78
     },
-    "experiencieReward": 75,
     "stackSize": 100,
-    "weight": 1,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -14552,11 +14098,9 @@
     "trade_price": 96.4,
     "description": "Shot with Repeater and Exoskeleton. After being shot, starts slowly falling down vertically, exploding on impact with anything. Creates a wall of mines when shot repeatedly.",
     "projectileDamage": {
-      "damage": 150,
-      "penetration": 30
+      "damage": 150
     },
-    "stackSize": 28,
-    "weight": 0.6
+    "stackSize": 28
   },
   {
     "category": "Ammo",
@@ -14587,8 +14131,7 @@
     "projectileDamage": {
       "damage": 20
     },
-    "stackSize": 100,
-    "weight": 3
+    "stackSize": 100
   },
   {
     "category": "Ammo",
@@ -14625,12 +14168,9 @@
     "trade_price": 40.5,
     "description": "Ammo for sling or catapult. Covers nomads in green goo that heals them for short duration.",
     "projectileDamage": {
-      "damage": -5,
-      "effectivenessVsSoak": 40,
-      "effectivenessVsReduce": 90
+      "damage": -5
     },
-    "stackSize": 100,
-    "weight": 3.2
+    "stackSize": 100
   },
   {
     "category": "Ammo",
@@ -14667,9 +14207,7 @@
     "projectileDamage": {
       "damage": 200
     },
-    "experiencieReward": 75,
     "stackSize": 100,
-    "weight": 1,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -14714,12 +14252,9 @@
     "trade_price": 175.3,
     "description": "Ammo for ballista. Designed to burn down wooden structures over time. A heavy bolt with a crushing bone head, designed to splinter walkers and light wooden structures.",
     "projectileDamage": {
-      "damage": 1025,
-      "penetration": 10
+      "damage": 1025
     },
-    "experiencieReward": 75,
     "stackSize": 100,
-    "weight": 1,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -14760,12 +14295,9 @@
     "trade_price": 175.3,
     "description": "Ammo for ballista. Burns quicker while dealing the same damage to the target as a Hellfire Bolt due to its structural properties. Much more difficult to destroy.",
     "projectileDamage": {
-      "damage": 1025,
-      "penetration": 10
+      "damage": 1025
     },
-    "experiencieReward": 115,
     "stackSize": 100,
-    "weight": 1,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -14809,7 +14341,6 @@
       "damage": 145
     },
     "stackSize": 100,
-    "weight": 1.2,
     "toolInfo": [
       {
         "toolType": "Scattershot",
@@ -14854,8 +14385,7 @@
     "projectileDamage": {
       "damage": 20
     },
-    "stackSize": 100,
-    "weight": 2.6
+    "stackSize": 100
   },
   {
     "category": "Ammo",
@@ -14882,11 +14412,9 @@
     "trade_price": 5.2,
     "description": "Ammo for the Rokker. The pinnacle of hull-piercing ammunition, short of the largest of boulders.",
     "projectileDamage": {
-      "damage": 900,
-      "effectivenessVsSoak": 60
+      "damage": 900
     },
     "stackSize": 10,
-    "weight": 5,
     "toolInfo": [
       {
         "toolType": "Scattershot",
@@ -14920,9 +14448,7 @@
     "projectileDamage": {
       "damage": 5
     },
-    "experiencieReward": 75,
     "stackSize": 20,
-    "weight": 0.8,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -14957,7 +14483,6 @@
       "damage": 5
     },
     "stackSize": 100,
-    "weight": 1.2,
     "toolInfo": [
       {
         "toolType": "Net",
@@ -14971,12 +14496,9 @@
     "trade_price": 16500000000,
     "description": "Ammo for ballista. During an eclipse, these bolts will light up the sky and make enemies glow from the inside out.",
     "projectileDamage": {
-      "damage": 250,
-      "penetration": 10
+      "damage": 250
     },
-    "experiencieReward": 100,
     "stackSize": 20,
-    "weight": 0.5,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -15009,11 +14531,9 @@
     "trade_price": 5.2,
     "description": "Ammo for the Rokker. A solid chunk of obsidian fashioned into a terrifying projectile.",
     "projectileDamage": {
-      "damage": 600,
-      "effectivenessVsSoak": 60
+      "damage": 600
     },
     "stackSize": 10,
-    "weight": 5,
     "toolInfo": [
       {
         "toolType": "Scattershot",
@@ -15050,7 +14570,6 @@
       "damage": 25
     },
     "stackSize": 28,
-    "weight": 0.6,
     "toolInfo": [
       {
         "toolType": "RepeaterBolt",
@@ -15066,9 +14585,7 @@
     "projectileDamage": {
       "damage": 35
     },
-    "experiencieReward": 15,
     "stackSize": 20,
-    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -15084,9 +14601,7 @@
     "projectileDamage": {
       "damage": 35
     },
-    "experiencieReward": 15,
-    "stackSize": 20,
-    "weight": 0.3
+    "stackSize": 20
   },
   {
     "category": "Ammo",
@@ -15108,11 +14623,9 @@
     "trade_price": 1.4,
     "description": "Ammo for Rupu Sling. Rupus refuse to throw anything else.",
     "projectileDamage": {
-      "damage": 100,
-      "penetration": 42
+      "damage": 100
     },
     "stackSize": 24,
-    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "Scattershot",
@@ -15146,11 +14659,9 @@
     "trade_price": 5.2,
     "description": "Ammo for scattershot gun. A mixed bag of blunt and sharp debris that spread out when fired.",
     "projectileDamage": {
-      "damage": 100,
-      "effectivenessVsSoak": 60
+      "damage": 100
     },
     "stackSize": 100,
-    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "Scattershot",
@@ -15181,7 +14692,6 @@
       "damage": 450
     },
     "stackSize": 100,
-    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "SlingshotRock",
@@ -15213,9 +14723,7 @@
     "projectileDamage": {
       "damage": 50
     },
-    "experiencieReward": 12,
     "stackSize": 100,
-    "weight": 0.7,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -15248,11 +14756,9 @@
     "trade_price": 5.2,
     "description": "Ammo for the Rokker. Slow but powerful, it is devastating against walkers.",
     "projectileDamage": {
-      "damage": 400,
-      "effectivenessVsSoak": 60
+      "damage": 400
     },
     "stackSize": 100,
-    "weight": 5,
     "toolInfo": [
       {
         "toolType": "Scattershot",
@@ -15292,7 +14798,6 @@
       "damage": 10
     },
     "stackSize": 20,
-    "weight": 0.8,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -15333,8 +14838,7 @@
     "projectileDamage": {
       "damage": 20
     },
-    "stackSize": 100,
-    "weight": 4
+    "stackSize": 100
   },
   {
     "category": "Ammo",
@@ -15344,7 +14848,6 @@
       "damage": 5
     },
     "stackSize": 20,
-    "weight": 0.8,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
@@ -15390,13 +14893,10 @@
     "parent": "Fast Grappling Hook",
     "trade_price": 34,
     "description": "Thick feather-padded soles mitigate fall damage.",
-    "experiencieReward": 413,
     "stackSize": 100,
-    "weight": 0.4,
-    "durability": 1000,
     "armorInfo": {
-      "soak": 4,
-      "reduce": 1
+      "absorbing": 4,
+      "reduction": 1
     }
   },
   {
@@ -15419,13 +14919,10 @@
     "parent": "Primitive Bandage",
     "trade_price": 1.8,
     "description": "Worn by nomads who toil in the Flotilla's underbelly, these itchy fibers may only protect against a sunburn.",
-    "experiencieReward": 24,
     "stackSize": 100,
-    "weight": 1,
-    "durability": 120,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
@@ -15452,14 +14949,11 @@
     "parent": "Baskwood Armor",
     "trade_price": 19.8,
     "description": "A heavy armor issued to Flotillan servicemen whose responsibilities range from reconnaissance, expiditionary planting, and trade station operation and disassemblement.",
-    "experiencieReward": 100,
     "stackSize": 100,
-    "weight": 4.3,
-    "durability": 200,
     "armorInfo": {
-      "soak": 7,
-      "reduce": 4,
-      "movementSpeedReduction": 4
+      "absorbing": 7,
+      "reduction": 4,
+      "speedReduction": 4
     }
   },
   {
@@ -15488,13 +14982,10 @@
     "parent": "Rupu Fur Armor",
     "trade_price": 2,
     "description": "Worn by nomads who don't mind the smell. Extremely light and maneuverable.",
-    "experiencieReward": 24,
     "stackSize": 100,
-    "weight": 1,
-    "durability": 150,
     "armorInfo": {
-      "soak": 8,
-      "reduce": 1
+      "absorbing": 8,
+      "reduction": 1
     }
   },
   {
@@ -15520,14 +15011,11 @@
     "name": "Forester's Sandals",
     "parent": "Forester's Armor",
     "description": "Provides average protection and meanueverability.",
-    "experiencieReward": 40,
     "stackSize": 100,
-    "weight": 1.3,
-    "durability": 180,
     "armorInfo": {
-      "soak": 13,
-      "reduce": 2,
-      "movementSpeedReduction": 3
+      "absorbing": 13,
+      "reduction": 2,
+      "speedReduction": 3
     }
   },
   {
@@ -15558,13 +15046,10 @@
     "parent": "Triple Stitch Armor",
     "trade_price": 61.1,
     "description": "A secret weaving technique creates surprisingly strong armor with no loss in meanueverability.",
-    "experiencieReward": 90,
     "stackSize": 100,
-    "weight": 1.5,
-    "durability": 250,
     "armorInfo": {
-      "soak": 12,
-      "reduce": 1
+      "absorbing": 12,
+      "reduction": 1
     }
   },
   {
@@ -15599,14 +15084,11 @@
     "parent": "Carapace Armor",
     "trade_price": 190.5,
     "description": "Layers of tough hides are sewn together into a heavy armor worn by the most seasoned nomadic fighters.",
-    "experiencieReward": 100,
     "stackSize": 100,
-    "weight": 3.3,
-    "durability": 280,
     "armorInfo": {
-      "soak": 18,
-      "reduce": 2,
-      "movementSpeedReduction": 5
+      "absorbing": 18,
+      "reduction": 2,
+      "speedReduction": 5
     }
   },
   {
@@ -15637,14 +15119,11 @@
     "parent": "Lightwood Padded Armor",
     "trade_price": 535.8,
     "description": "The Swampwood tribe rarely make contact with the Flotillans or venture beyond their fleet, making the specialty armor they construct from lightwood a sought after commodity.",
-    "experiencieReward": 150,
     "stackSize": 100,
-    "weight": 2,
-    "durability": 420,
     "armorInfo": {
-      "soak": 15,
-      "reduce": 1,
-      "movementSpeedReduction": 1
+      "absorbing": 15,
+      "reduction": 1,
+      "speedReduction": 1
     }
   },
   {
@@ -15667,13 +15146,10 @@
     "parent": "Primitive Bandage",
     "trade_price": 3,
     "description": "Worn by nomads who toil in the Flotilla's underbelly, these itchy fibers may only protect against a sunburn.",
-    "experiencieReward": 20,
     "stackSize": 100,
-    "weight": 0.4,
-    "durability": 120,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
@@ -15700,14 +15176,11 @@
     "parent": "Baskwood Armor",
     "trade_price": 13.7,
     "description": "A heavy armor issued to Flotillan servicemen whose responsibilities range from reconnaissance, expiditionary planting, and trade station operation and disassemblement.",
-    "experiencieReward": 60,
     "stackSize": 100,
-    "weight": 3.8,
-    "durability": 200,
     "armorInfo": {
-      "soak": 7,
-      "reduce": 4,
-      "movementSpeedReduction": 4
+      "absorbing": 7,
+      "reduction": 4,
+      "speedReduction": 4
     }
   },
   {
@@ -15736,13 +15209,10 @@
     "parent": "Rupu Fur Armor",
     "trade_price": 4.6,
     "description": "Worn by nomads who don't mind the smell. Extremely light and maneuverable.",
-    "experiencieReward": 50,
     "stackSize": 100,
-    "weight": 0.7,
-    "durability": 150,
     "armorInfo": {
-      "soak": 8,
-      "reduce": 1
+      "absorbing": 8,
+      "reduction": 1
     }
   },
   {
@@ -15769,14 +15239,11 @@
     "parent": "Forester's Armor",
     "trade_price": 8.9,
     "description": "Provides average protection and meanueverability.",
-    "experiencieReward": 70,
     "stackSize": 100,
-    "weight": 1,
-    "durability": 180,
     "armorInfo": {
-      "soak": 13,
-      "reduce": 2,
-      "movementSpeedReduction": 3
+      "absorbing": 13,
+      "reduction": 2,
+      "speedReduction": 3
     }
   },
   {
@@ -15807,13 +15274,10 @@
     "parent": "Triple Stitch Armor",
     "trade_price": 16.8,
     "description": "A secret weaving technique creates surprisingly strong armor with no loss in meanueverability.",
-    "experiencieReward": 100,
     "stackSize": 100,
-    "weight": 1.4,
-    "durability": 250,
     "armorInfo": {
-      "soak": 12,
-      "reduce": 1
+      "absorbing": 12,
+      "reduction": 1
     }
   },
   {
@@ -15848,14 +15312,11 @@
     "parent": "Carapace Armor",
     "trade_price": 159.2,
     "description": "Layers of tough hides are sewn together into a heavy armor worn by the most seasoned nomadic fighters.",
-    "experiencieReward": 85,
     "stackSize": 100,
-    "weight": 3.1,
-    "durability": 280,
     "armorInfo": {
-      "soak": 18,
-      "reduce": 2,
-      "movementSpeedReduction": 5
+      "absorbing": 18,
+      "reduction": 2,
+      "speedReduction": 5
     }
   },
   {
@@ -15886,14 +15347,11 @@
     "parent": "Lightwood Padded Armor",
     "trade_price": 388.2,
     "description": "The Swampwood tribe rarely make contact with the Flotillans or venture beyond their fleet, making the specialty armor they construct from redwood wood a sought after commodity.",
-    "experiencieReward": 150,
     "stackSize": 100,
-    "weight": 1.8,
-    "durability": 420,
     "armorInfo": {
-      "soak": 15,
-      "reduce": 1,
-      "movementSpeedReduction": 1
+      "absorbing": 15,
+      "reduction": 1,
+      "speedReduction": 1
     }
   },
   {
@@ -15924,13 +15382,10 @@
     "parent": "Primitive Bandage",
     "trade_price": 13.2,
     "description": "Protects the wearer against gases if worn correctly, but needs to be replaced regularly. Surprisingly easy to breath through.",
-    "experiencieReward": 10,
     "stackSize": 100,
-    "weight": 0.4,
-    "durability": 120,
     "armorInfo": {
-      "soak": 5,
-      "reduce": 1
+      "absorbing": 5,
+      "reduction": 1
     }
   },
   {
@@ -15949,13 +15404,10 @@
     "parent": "Primitive Bandage",
     "trade_price": 2.4,
     "description": "Worn by nomads who toil in the Flotilla's underbelly, these itchy fibers may only protect against a sunburn.",
-    "experiencieReward": 10,
     "stackSize": 100,
-    "weight": 0.2,
-    "durability": 120,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
@@ -15982,13 +15434,10 @@
     "parent": "Lightwood Padded Armor",
     "trade_price": 342.4,
     "description": "Medium cloak designed to protect nomads from harsh wind gusts full of sand. A mixture of lightwood from the lands of Kali and worm silk left behind by roaming Long Ones.",
-    "experiencieReward": 100,
     "stackSize": 100,
-    "weight": 1,
-    "durability": 420,
     "armorInfo": {
-      "soak": 12,
-      "reduce": 1
+      "absorbing": 12,
+      "reduction": 1
     }
   },
   {
@@ -16006,13 +15455,10 @@
     "name": "Balaclava",
     "trade_price": 13.2,
     "description": "Perfect for all the wrongdoers and outlaws. Fully conceals one's identity but also makes him or her clearly an individual to avoid.",
-    "experiencieReward": 10,
     "stackSize": 100,
-    "weight": 0.2,
-    "durability": 250,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
@@ -16030,13 +15476,10 @@
     "name": "Ruffian mask",
     "trade_price": 13.2,
     "description": "Makes recognition of another flotilla citizen harder so various miscreants use it to unconfinedly perform their mischievous deeds.",
-    "experiencieReward": 10,
     "stackSize": 100,
-    "weight": 0.2,
-    "durability": 250,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
@@ -16054,13 +15497,10 @@
     "name": "Sunset headdress",
     "trade_price": 13.2,
     "description": "Fiberwork crown used in the most illustrious Flotilla social ceremonials.",
-    "experiencieReward": 10,
     "stackSize": 100,
-    "weight": 0.2,
-    "durability": 250,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
@@ -16078,13 +15518,10 @@
     "name": "Bucket helmet",
     "trade_price": 13.2,
     "description": "Carefully install this contraption on your braincase and display a wide assortment of still emotions.",
-    "experiencieReward": 10,
     "stackSize": 100,
-    "weight": 0.2,
-    "durability": 250,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
@@ -16102,13 +15539,10 @@
     "name": "Squared eyepatches",
     "trade_price": 13.2,
     "description": "Odd-looking eyepatches partially disguising wearer's identity.",
-    "experiencieReward": 10,
     "stackSize": 100,
-    "weight": 0.2,
-    "durability": 250,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
@@ -16126,13 +15560,10 @@
     "name": "Ornate veil cap",
     "trade_price": 13.2,
     "description": "Decorated leatherwork cap covering wearer's eyes.",
-    "experiencieReward": 10,
     "stackSize": 100,
-    "weight": 0.2,
-    "durability": 250,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
@@ -16150,13 +15581,10 @@
     "name": "Mask and eyepatch",
     "trade_price": 13.2,
     "description": "Mostly used to ease up breathing during sandstorms. The eyepatch is purely for the show-off, however some nomads claim they're using it in a more purposeful manner.",
-    "experiencieReward": 10,
     "stackSize": 100,
-    "weight": 0.2,
-    "durability": 250,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
@@ -16174,13 +15602,10 @@
     "name": "Feather mask",
     "trade_price": 13.2,
     "description": "Once part of Rupu accountrement, now adopted by upper-caste citizens in shamanic rituals.",
-    "experiencieReward": 10,
     "stackSize": 100,
-    "weight": 0.2,
-    "durability": 250,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
@@ -16198,13 +15623,10 @@
     "name": "Tied keffiyeh scarf",
     "trade_price": 13.2,
     "description": "Used by nomads as protection from the burning sun and the all-present sand.",
-    "experiencieReward": 10,
     "stackSize": 100,
-    "weight": 0.2,
-    "durability": 250,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
@@ -16222,13 +15644,10 @@
     "name": "Wrapped keffiyeh scarf",
     "trade_price": 13.2,
     "description": "Used by nomads as protection from the burning sun and the all-present sand.",
-    "experiencieReward": 10,
     "stackSize": 100,
-    "weight": 0.2,
-    "durability": 250,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
@@ -16246,13 +15665,10 @@
     "name": "Rupu mask",
     "trade_price": 13.2,
     "description": "Intimidating and ostentatious - exactly what every nomad thirsts for.",
-    "experiencieReward": 10,
     "stackSize": 100,
-    "weight": 0.2,
-    "durability": 250,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
@@ -16270,42 +15686,31 @@
     "name": "Festive Turban",
     "trade_price": 13.2,
     "description": "Embroidered turban typically worn by flotilla's elder community during various festivities and celebrations.",
-    "experiencieReward": 10,
     "stackSize": 100,
-    "weight": 0.2,
-    "durability": 250,
     "armorInfo": {
-      "soak": 6,
-      "reduce": 1
+      "absorbing": 6,
+      "reduction": 1
     }
   },
   {
     "category": "Armors",
     "name": "Rupu Firebrand Armor",
-    "stackSize": 100,
-    "weight": 1,
-    "durability": 1000
+    "stackSize": 100
   },
   {
     "category": "Armors",
     "name": "Rupu Hazraki Armor",
-    "stackSize": 100,
-    "weight": 1,
-    "durability": 1000
+    "stackSize": 100
   },
   {
     "category": "Armors",
     "name": "Rupu Sentinel Armor",
-    "stackSize": 100,
-    "weight": 1,
-    "durability": 1000
+    "stackSize": 100
   },
   {
     "category": "Armors",
     "name": "Rupu Shaman Armor",
-    "stackSize": 100,
-    "weight": 1,
-    "durability": 1000
+    "stackSize": 100
   },
   {
     "category": "Armors",
@@ -16327,14 +15732,11 @@
     "parent": "Primitive Bandage",
     "trade_price": 1.6,
     "description": "Worn by nomads who toil in the Flotilla's underbelly, these itchy fibers may only protect against a sunburn.",
-    "experiencieReward": 30,
     "stackSize": 100,
-    "weight": 2,
-    "durability": 120,
     "armorInfo": {
-      "soak": 22,
-      "reduce": 1,
-      "movementSpeedReduction": 2
+      "absorbing": 22,
+      "reduction": 1,
+      "speedReduction": 2
     }
   },
   {
@@ -16361,10 +15763,7 @@
     "parent": "Makeshift Bottle",
     "trade_price": 7.9,
     "description": "Carry large volumes of liquid. Essential for water traders.",
-    "experiencieReward": 35,
-    "stackSize": 100,
-    "weight": 3,
-    "durability": 80
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16394,10 +15793,7 @@
     "parent": "Makeshift Bottle",
     "trade_price": 11.9,
     "description": "A bottle with an aftertaste.",
-    "experiencieReward": 50,
-    "stackSize": 100,
-    "weight": 1.7,
-    "durability": 100
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16427,10 +15823,7 @@
     "parent": "Bone Bottle",
     "trade_price": 71.6,
     "description": "Ceramic items are difficult to make and usually seen as a mark of quality craftsmanship.",
-    "experiencieReward": 65,
-    "stackSize": 100,
-    "weight": 2,
-    "durability": 150
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16452,10 +15845,7 @@
     "parent": "Makeshift Bottle",
     "trade_price": 5.6,
     "description": "Designed to store a lot of fiber and organic materials, including sediments, like sand.",
-    "experiencieReward": 26,
-    "stackSize": 100,
-    "weight": 0.2,
-    "durability": 70
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16489,10 +15879,7 @@
     "parent": "Fast Grappling Hook",
     "trade_price": 48.5,
     "description": "Enables nomads to transport torque between various devices. The belt also significantly increases the effectiveness of grappling hooks.",
-    "experiencieReward": 154,
-    "stackSize": 100,
-    "weight": 0.5,
-    "durability": 200
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16522,10 +15909,7 @@
     "parent": "Torque Battery",
     "trade_price": 8.4,
     "description": "Infused battery allowing to store significant amounts of torque at a cost of extreme weight.",
-    "experiencieReward": 26,
-    "stackSize": 100,
-    "weight": 150,
-    "durability": 210
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16551,10 +15935,7 @@
     "parent": "Makeshift Bottle",
     "trade_price": 6.2,
     "description": "While it doesn't hold much liquid, it's simple to make and can be crafted using almost any material.",
-    "experiencieReward": 25,
-    "stackSize": 100,
-    "weight": 0.5,
-    "durability": 70
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16580,9 +15961,7 @@
     "parent": "Medium Backpack",
     "trade_price": 131.5,
     "description": "Loads of new inventory space.",
-    "stackSize": 100,
-    "weight": 7.5,
-    "durability": 500
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16608,10 +15987,7 @@
     "parent": "Foraging Pouch",
     "trade_price": 10,
     "description": "Holds a lot more fiber than its predecessor.",
-    "experiencieReward": 83,
-    "stackSize": 100,
-    "weight": 0.5,
-    "durability": 100
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16641,10 +16017,7 @@
     "parent": "Obsidian Flask",
     "trade_price": 26,
     "description": "A large container made of obsidian with nibiran coating. Withstands very high temperatures.",
-    "experiencieReward": 50,
-    "stackSize": 100,
-    "weight": 1.5,
-    "durability": 220
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16670,10 +16043,7 @@
     "parent": "Bone Bottle",
     "trade_price": 23,
     "description": "Incredibly durable flask resistant to highest temperatures.",
-    "experiencieReward": 50,
-    "stackSize": 100,
-    "weight": 1,
-    "durability": 200
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16702,9 +16072,7 @@
     "parent": "Equipment",
     "trade_price": 1.5,
     "description": "It's a wonder this little bottle can even stay glued together.",
-    "experiencieReward": 12,
-    "stackSize": 100,
-    "weight": 0.1
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16734,10 +16102,7 @@
     "parent": "Light Backpack",
     "trade_price": 10.3,
     "description": "Grants additional inventory space.",
-    "experiencieReward": 150,
-    "stackSize": 100,
-    "weight": 5.2,
-    "durability": 140
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16763,10 +16128,7 @@
     "parent": "Throwing Net",
     "trade_price": 5.6,
     "description": "Spacious pouch with compartments for storing throwing nets.",
-    "experiencieReward": 32,
-    "stackSize": 100,
-    "weight": 0.5,
-    "durability": 70
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16796,10 +16158,7 @@
     "parent": "Foraging Pouch",
     "trade_price": 5.6,
     "description": "A crude, lightweight leather bag that makes carrying bundles of scrolls much easier.",
-    "experiencieReward": 26,
-    "stackSize": 100,
-    "weight": 0.2,
-    "durability": 70
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16825,10 +16184,7 @@
     "parent": "Foraging Pouch",
     "trade_price": 5.6,
     "description": "A little extra inventory space to carry the bare necessities.",
-    "experiencieReward": 55,
-    "stackSize": 100,
-    "weight": 2.8,
-    "durability": 120
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16858,10 +16214,7 @@
     "parent": "Bone Bottle",
     "trade_price": 13.3,
     "description": "A small bottle with two seperate containers that can each hold a different type of liquid.",
-    "experiencieReward": 55,
-    "stackSize": 100,
-    "weight": 3.2,
-    "durability": 130
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16891,10 +16244,7 @@
     "parent": "Ceramic Flask",
     "trade_price": 51.6,
     "description": "A large bottle with two seperate containers that can each hold a different type of liquid.",
-    "experiencieReward": 70,
-    "stackSize": 100,
-    "weight": 3.4,
-    "durability": 160
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16924,10 +16274,7 @@
     "parent": "Foraging Pouch",
     "trade_price": 8.4,
     "description": "Stores torque by winding up a mechanism with a rope inside.",
-    "experiencieReward": 26,
-    "stackSize": 100,
-    "weight": 0.1,
-    "durability": 120
+    "stackSize": 100
   },
   {
     "category": "Equipment",
@@ -16953,10 +16300,7 @@
     "parent": "Long Grappling Hook",
     "trade_price": 29,
     "description": "Nomads are accustomed to leaving their fate to the winds. While some Nomads have managed to stay airborn for long periods of time and can perform nimble landings, many drop like a leaf.",
-    "experiencieReward": 162,
-    "stackSize": 100,
-    "weight": 4,
-    "durability": 120
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -16977,8 +16321,7 @@
     "name": "Firework 1",
     "trade_price": 3,
     "description": "Shoots a firework with a circular, colorful explosion.",
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -16998,8 +16341,7 @@
     ],
     "name": "Firework 2",
     "trade_price": 3,
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -17020,8 +16362,7 @@
     "name": "Firework 3",
     "trade_price": 3,
     "description": "Shoots a firework with a cylindrical, colorful explosion.",
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -17042,8 +16383,7 @@
     "name": "Firework 4",
     "trade_price": 3,
     "description": "Shoots a firework with a colorful, double-sphere-like explosion.",
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -17064,8 +16404,7 @@
     "name": "Firework 5",
     "trade_price": 3,
     "description": "Shoots a firework with a colorful, radial explosion.",
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -17086,8 +16425,7 @@
     "name": "Firework 6",
     "trade_price": 3,
     "description": "Shoots a firework with colorful, killin-shaped explosion.",
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -17108,8 +16446,7 @@
     "name": "Firework 7",
     "trade_price": 3,
     "description": "Shoots a firework with a colorful, sparkling explosion.",
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -17130,8 +16467,7 @@
     "name": "Flare - white",
     "trade_price": 3,
     "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -17152,8 +16488,7 @@
     "name": "Flare - red",
     "trade_price": 3,
     "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -17174,8 +16509,7 @@
     "name": "Flare - green",
     "trade_price": 3,
     "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -17196,8 +16530,7 @@
     "name": "Flare - blue",
     "trade_price": 3,
     "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -17218,8 +16551,7 @@
     "name": "Flare - orange",
     "trade_price": 15.6,
     "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -17240,8 +16572,7 @@
     "name": "Flare - purple",
     "trade_price": 3,
     "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Interactables",
@@ -17262,8 +16593,7 @@
     "name": "Flare - teal",
     "trade_price": 3,
     "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
-    "stackSize": 100,
-    "weight": 0.15
+    "stackSize": 100
   },
   {
     "category": "Tools",
@@ -17289,10 +16619,7 @@
     "parent": "Bone Pickaxe",
     "trade_price": 98.2,
     "description": "A nearly unbreakable, highly efficient mining tool.",
-    "experiencieReward": 120,
     "stackSize": 100,
-    "weight": 5,
-    "durability": 550,
     "weaponInfo": {
       "weaponLength": 66,
       "damage": 30,
@@ -17328,10 +16655,7 @@
     "name": "Advanced Repair Hammer",
     "parent": "Simple Repair Hammer",
     "trade_price": 9.5,
-    "experiencieReward": 50,
     "stackSize": 100,
-    "weight": 3.12,
-    "durability": 200,
     "weaponInfo": {
       "weaponLength": 42,
       "damage": 20,
@@ -17369,7 +16693,6 @@
     "parent": "Fast Grappling Hook",
     "trade_price": 16,
     "description": "Doesn't benefit from torque, but more efficient than other grappling hooks when travelling without a torque belt.",
-    "experiencieReward": 76,
     "stackSize": 100
   },
   {
@@ -17400,10 +16723,7 @@
     "parent": "Simple Pickaxe",
     "trade_price": 24,
     "description": "Mine stone and other minerals at higher efficiency with this bone tool.",
-    "experiencieReward": 70,
     "stackSize": 100,
-    "weight": 4,
-    "durability": 300,
     "weaponInfo": {
       "weaponLength": 54,
       "damage": 25,
@@ -17439,10 +16759,7 @@
     "name": "Bone Repair Hammer",
     "parent": "Simple Repair Hammer",
     "trade_price": 9.5,
-    "experiencieReward": 50,
     "stackSize": 100,
-    "weight": 3.12,
-    "durability": 200,
     "weaponInfo": {
       "weaponLength": 42,
       "damage": 20,
@@ -17480,10 +16797,7 @@
     "name": "Bone Sickle",
     "parent": "Simple Sickle",
     "trade_price": 6.2,
-    "experiencieReward": 25,
     "stackSize": 100,
-    "weight": 2.2,
-    "durability": 190,
     "weaponInfo": {
       "weaponLength": 47,
       "damage": 20,
@@ -17519,7 +16833,6 @@
     "parent": "Repaired Grappling Hook",
     "trade_price": 19.4,
     "description": "Superior reeling speed, but limited reach. Most effective in combat situations.",
-    "experiencieReward": 45,
     "stackSize": 100
   },
   {
@@ -17546,7 +16859,6 @@
     "parent": "Equipment",
     "trade_price": 10,
     "description": "Grapple to any object, reel in and swing. An essential tool for any nomad who wants to live long enough to see the next oasis.",
-    "experiencieReward": 38,
     "stackSize": 100
   },
   {
@@ -17578,8 +16890,6 @@
     "trade_price": 3.2,
     "description": "The nomads travel where the land is always bright, but eclipses will cause periods of unexpected darkness.",
     "stackSize": 100,
-    "weight": 0.8,
-    "durability": 100,
     "weaponInfo": {
       "weaponLength": 31,
       "damage": 25,
@@ -17613,10 +16923,7 @@
     "name": "Infused Pickaxe",
     "parent": "Master Pickaxe",
     "trade_price": 38.7,
-    "experiencieReward": 160,
     "stackSize": 100,
-    "weight": 6,
-    "durability": 750,
     "weaponInfo": {
       "weaponLength": 66,
       "damage": 35,
@@ -17652,10 +16959,7 @@
     "name": "Infused Repair Hammer",
     "parent": "Master Repair Hammer",
     "trade_price": 9.5,
-    "experiencieReward": 50,
     "stackSize": 100,
-    "weight": 3.12,
-    "durability": 200,
     "weaponInfo": {
       "weaponLength": 42,
       "damage": 20,
@@ -17697,10 +17001,7 @@
     "name": "Infused Scythe",
     "parent": "Master Scythe",
     "trade_price": 17.4,
-    "experiencieReward": 80,
     "stackSize": 100,
-    "weight": 6.3,
-    "durability": 420,
     "weaponInfo": {
       "weaponLength": 102,
       "damage": 30,
@@ -17740,7 +17041,6 @@
     "parent": "Fast Grappling Hook",
     "trade_price": 23.5,
     "description": "Gets a Nomad places others can't reach. Slower reeling speed may be disadvantegous while fighting.",
-    "experiencieReward": 60,
     "stackSize": 100
   },
   {
@@ -17771,14 +17071,11 @@
     "parent": "Fiber Shirt and Trousers",
     "trade_price": 21.2,
     "description": "A heavy armor issued to Flotillan servicemen whose responsibilities range from reconnaissance, expiditionary planting, and trade station operation and disassemblement.",
-    "experiencieReward": 75,
     "stackSize": 100,
-    "weight": 7,
-    "durability": 200,
     "armorInfo": {
-      "soak": 25,
-      "reduce": 8,
-      "movementSpeedReduction": 13
+      "absorbing": 25,
+      "reduction": 8,
+      "speedReduction": 13
     }
   },
   {
@@ -17803,14 +17100,11 @@
     "parent": "Fiber Shirt and Trousers",
     "trade_price": 2.6,
     "description": "Worn by nomads who don't mind the smell. Extremely light and maneuverable.",
-    "experiencieReward": 75,
     "stackSize": 100,
-    "weight": 2.8,
-    "durability": 150,
     "armorInfo": {
-      "soak": 29,
-      "reduce": 1,
-      "movementSpeedReduction": 1
+      "absorbing": 29,
+      "reduction": 1,
+      "speedReduction": 1
     }
   },
   {
@@ -17847,14 +17141,11 @@
     "parent": "Rupu Fur Armor",
     "trade_price": 6.6,
     "description": "A little added protection, with a little more smell. Still very light and maneuverable.",
-    "experiencieReward": 75,
     "stackSize": 100,
-    "weight": 3,
-    "durability": 170,
     "armorInfo": {
-      "soak": 32,
-      "reduce": 2,
-      "movementSpeedReduction": 2
+      "absorbing": 32,
+      "reduction": 2,
+      "speedReduction": 2
     }
   },
   {
@@ -17885,14 +17176,11 @@
     "parent": "Fiber Shirt and Trousers",
     "trade_price": 13.7,
     "description": "Provides average protection and meanueverability.",
-    "experiencieReward": 75,
     "stackSize": 100,
-    "weight": 4.2,
-    "durability": 180,
     "armorInfo": {
-      "soak": 39,
-      "reduce": 4,
-      "movementSpeedReduction": 9
+      "absorbing": 39,
+      "reduction": 4,
+      "speedReduction": 9
     }
   },
   {
@@ -17927,14 +17215,11 @@
     "parent": "Forester's Armor",
     "trade_price": 66.5,
     "description": "The flexible bone plates are stitched into a scalemail that provides increased protection.",
-    "experiencieReward": 75,
     "stackSize": 100,
-    "weight": 4.5,
-    "durability": 480,
     "armorInfo": {
-      "soak": 43,
-      "reduce": 4,
-      "movementSpeedReduction": 10
+      "absorbing": 43,
+      "reduction": 4,
+      "speedReduction": 10
     }
   },
   {
@@ -17965,14 +17250,11 @@
     "parent": "Rupu Fur Armor",
     "trade_price": 32,
     "description": "A secret weaving technique creates surprisingly strong armor with no loss in meanueverability.",
-    "experiencieReward": 80,
     "stackSize": 100,
-    "weight": 3.8,
-    "durability": 250,
     "armorInfo": {
-      "soak": 35,
-      "reduce": 1,
-      "movementSpeedReduction": 1
+      "absorbing": 35,
+      "reduction": 1,
+      "speedReduction": 1
     }
   },
   {
@@ -18007,14 +17289,11 @@
     "parent": "Forester's Armor",
     "trade_price": 164.8,
     "description": "Layers of tough hides are sewn together into a heavy armor worn by the most seasoned nomadic fighters.",
-    "experiencieReward": 100,
     "stackSize": 100,
-    "weight": 6.7,
-    "durability": 280,
     "armorInfo": {
-      "soak": 48,
-      "reduce": 5,
-      "movementSpeedReduction": 15
+      "absorbing": 48,
+      "reduction": 5,
+      "speedReduction": 15
     }
   },
   {
@@ -18049,59 +17328,48 @@
     "parent": "Triple Stitch Armor",
     "trade_price": 719.9,
     "description": "The Swampwood tribe rarely make contact with the Flotillans or venture beyond their fleet, making the specialty armor they construct from redwood wood a sought after commodity.",
-    "experiencieReward": 250,
     "stackSize": 100,
-    "weight": 3.7,
-    "durability": 420,
     "armorInfo": {
-      "soak": 41,
-      "reduce": 1,
-      "movementSpeedReduction": 3
+      "absorbing": 41,
+      "reduction": 1,
+      "speedReduction": 3
     }
   },
   {
     "category": "Interactables",
     "name": "Wanderer's Potion",
     "description": "Forget everything you know about yourself. Resets stats of your character and returns all points.",
-    "experiencieReward": 2,
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "category": "Interactables",
     "name": "Armor Strongbox",
-    "stackSize": 100,
-    "weight": 1
+    "stackSize": 100
   },
   {
     "category": "Interactables",
     "name": "Equipment Strongbox",
-    "stackSize": 100,
-    "weight": 1
+    "stackSize": 100
   },
   {
     "category": "Interactables",
     "name": "Tablets Strongbox",
-    "stackSize": 100,
-    "weight": 1
+    "stackSize": 100
   },
   {
     "category": "Interactables",
     "name": "Tools Strongbox",
-    "stackSize": 100,
-    "weight": 1
+    "stackSize": 100
   },
   {
     "category": "Interactables",
     "name": "Weapons Strongbox",
-    "stackSize": 100,
-    "weight": 1
+    "stackSize": 100
   },
   {
     "category": "Interactables",
     "name": "Modules Strongbox",
-    "stackSize": 100,
-    "weight": 1
+    "stackSize": 100
   },
   {
     "category": "Liquids",
@@ -18199,9 +17467,7 @@
     "parent": "Campfire",
     "trade_price": 10,
     "description": "All water that is transported to the Flotilla is cleansed in an ancient water purifying machine. The Guardians are the sole keepers of this machine, a technological relic of the old world which has sustained the Flotillans to this day.",
-    "experiencieReward": 3,
-    "stackSize": 100,
-    "weight": 0.2
+    "stackSize": 100
   },
   {
     "category": "Resources",
@@ -18221,45 +17487,35 @@
     "name": "Worm Sand",
     "trade_price": 9,
     "description": "Appearing in the sands roamed by the Old Ones - giant worms of the desert, this substance has strange properties affecting both living creatures and mechanical constructions in ways that affect the energy inside them.",
-    "experiencieReward": 22,
-    "stackSize": 100,
-    "weight": 0.1
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Worm Silk",
     "trade_price": 20,
     "description": "Worm silk exists in vastly different tensile strengths and purities, and must be graded by the Flotillan Merchant's Guild before it can be legally sold at markets. Aside from certain prohibited substances, it is one of the most desirable luxury goods.",
-    "experiencieReward": 22,
-    "stackSize": 100,
-    "weight": 0.01
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Animal Fat",
     "trade_price": 1,
     "description": "A greasy leftover from a once noble creature.",
-    "experiencieReward": 3,
-    "stackSize": 100,
-    "weight": 0.34
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Bone Splinter",
     "trade_price": 1,
     "description": "Flexible bones make excellent tools and armor.",
-    "experiencieReward": 8,
-    "stackSize": 100,
-    "weight": 0.28
+    "stackSize": 100
   },
   {
     "category": "Resources",
     "name": "Worm Fang",
     "trade_price": 10000,
     "description": "A trophy of tremendous value proving the ultimate hunting skills and heroism among Nomads. Exchange for valuable rewards!",
-    "experiencieReward": 22,
-    "stackSize": 100,
-    "weight": 20
+    "stackSize": 100
   },
   {
     "category": "StructuralClay",
@@ -18745,10 +18001,7 @@
     "parent": "Advanced Pickaxe",
     "trade_price": 38.7,
     "description": "Mine minerals with increased efficiency.",
-    "experiencieReward": 160,
     "stackSize": 100,
-    "weight": 6,
-    "durability": 750,
     "weaponInfo": {
       "weaponLength": 66,
       "damage": 35,
@@ -18784,10 +18037,7 @@
     "name": "Master Repair Hammer",
     "parent": "Advanced Repair Hammer",
     "trade_price": 9.5,
-    "experiencieReward": 50,
     "stackSize": 100,
-    "weight": 3.12,
-    "durability": 200,
     "weaponInfo": {
       "weaponLength": 42,
       "damage": 20,
@@ -18825,10 +18075,7 @@
     "name": "Master Scythe",
     "parent": "Scythe",
     "trade_price": 17.4,
-    "experiencieReward": 80,
     "stackSize": 100,
-    "weight": 6.3,
-    "durability": 420,
     "weaponInfo": {
       "weaponLength": 102,
       "damage": 30,
@@ -18873,10 +18120,7 @@
     "parent": "Simple Sickle",
     "trade_price": 17.4,
     "description": "Returns a superior yield when used to harvest small plants.",
-    "experiencieReward": 80,
     "stackSize": 100,
-    "weight": 6.3,
-    "durability": 420,
     "weaponInfo": {
       "weaponLength": 102,
       "damage": 30,
@@ -18921,10 +18165,7 @@
     "parent": "Stone Axe",
     "trade_price": 8.4,
     "description": "Mine stone and other minerals with this crude tool.",
-    "experiencieReward": 55,
     "stackSize": 100,
-    "weight": 3,
-    "durability": 300,
     "weaponInfo": {
       "weaponLength": 54,
       "damage": 20,
@@ -18965,10 +18206,7 @@
     "parent": "Stone Axe",
     "trade_price": 9.5,
     "description": "Repair wings, legs, and any other structures by hammering them. Always cheaper to fix than to rebuild.",
-    "experiencieReward": 50,
     "stackSize": 100,
-    "weight": 3.12,
-    "durability": 200,
     "weaponInfo": {
       "weaponLength": 42,
       "damage": 20,
@@ -19007,10 +18245,7 @@
     "parent": "Stone Axe",
     "trade_price": 6.2,
     "description": "Returns a good yield when used to harvest small plants.",
-    "experiencieReward": 25,
     "stackSize": 100,
-    "weight": 2.2,
-    "durability": 300,
     "weaponInfo": {
       "weaponLength": 47,
       "damage": 20,
@@ -19107,40 +18342,6 @@
     "name": "Balang Walker Upgrade - Cargo - Tier 3",
     "upgradeInfo": {
       "containerSlots": 13
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 28,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 12,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 60,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 25,
-            "name": "Worm Silk"
-          }
-        ],
-        "time": 180
-      }
-    ],
-    "name": "Balang Walker Upgrade - Cargo - Tier 4",
-    "upgradeInfo": {
-      "containerSlots": 16
     }
   },
   {
@@ -19302,16 +18503,47 @@
     "name": "Proxy License",
     "trade_price": 1000000,
     "description": "A permit to build one proxy walker to claim an oasis.",
-    "stackSize": 5,
-    "weight": 0.2
+    "stackSize": 5
   },
   {
     "name": "Worm Scale",
     "trade_price": 300,
     "description": "The corpse of a single worm can provide enough meat to feed a large family for months; its hard scales can be used to craft armor; its silk makes the sturdiest sails, its sinew the strongest rope; and its blood, when imbibed, heightens the user’s olfactory senses to supernatural levels.",
-    "experiencieReward": 50,
-    "stackSize": 100,
-    "weight": 2.5
+    "stackSize": 100
+  },
+  {
+    "category": "Upgrades",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 28,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 12,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 60,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 25,
+            "name": "Worm Silk"
+          }
+        ],
+        "time": 180
+      }
+    ],
+    "name": "Balang Walker Upgrade - Cargo - Tier 4",
+    "upgradeInfo": {
+      "containerSlots": 16
+    }
   },
   {
     "category": "Upgrades",
@@ -34200,14 +33432,9 @@
     "parent": "Jaggertooth Club",
     "trade_price": 7.1,
     "description": "Clubs lined with sharp fangs are terrifying weapons used by the most aggressive Nomad tribes.",
-    "experiencieReward": 100,
     "stackSize": 100,
-    "weight": 2.5,
-    "durability": 415,
     "weaponInfo": {
       "weaponSpeed": 110,
-      "impact": 40,
-      "stability": 35,
       "weaponLength": 73,
       "damage": 49,
       "penetration": 15
@@ -34245,13 +33472,8 @@
     "parent": "Nurrfang Toothclub",
     "trade_price": 14,
     "description": "Razor-sharp bone splinters stick out of the shaft, punching holes in unprotected flesh with every strike.",
-    "experiencieReward": 100,
     "stackSize": 100,
-    "weight": 2.8,
-    "durability": 430,
     "weaponInfo": {
-      "impact": 50,
-      "stability": 40,
       "weaponLength": 75,
       "damage": 49,
       "penetration": 22
@@ -34285,14 +33507,9 @@
     "parent": "Stone Axe",
     "trade_price": 4.8,
     "description": "Nomads quickly learned that sharpened chunks of sun-dried bone are quite useful for chopping things.",
-    "experiencieReward": 114,
     "stackSize": 100,
-    "weight": 2.2,
-    "durability": 400,
     "weaponInfo": {
       "weaponSpeed": 120,
-      "impact": 55,
-      "stability": 35,
       "weaponLength": 60,
       "damage": 46,
       "penetration": 12
@@ -34327,14 +33544,9 @@
     "parent": "Beat Stick",
     "trade_price": 1.2,
     "description": "A roughly chipped piece of stone hastily tied to a stick. Will chop a few trees down, but don't expect it to last.",
-    "experiencieReward": 25,
     "stackSize": 100,
-    "weight": 1.8,
-    "durability": 82,
     "weaponInfo": {
       "weaponSpeed": 115,
-      "impact": 35,
-      "stability": 25,
       "weaponLength": 53,
       "damage": 35,
       "penetration": 10
@@ -34374,14 +33586,9 @@
     "parent": "Rawbone Hand Axe",
     "trade_price": 10.7,
     "description": "Heavier than its counterpart, but the intelligence required to wield it is still low.",
-    "experiencieReward": 100,
     "stackSize": 100,
-    "weight": 2.9,
-    "durability": 430,
     "weaponInfo": {
       "weaponSpeed": 80,
-      "impact": 70,
-      "stability": 60,
       "weaponLength": 87,
       "damage": 50,
       "penetration": 12
@@ -34425,14 +33632,9 @@
     "parent": "Beat Stick",
     "trade_price": 6.2,
     "description": "Rawbone weapons are favoured by many Nomad tribes for its connection to the beasts of the land.",
-    "experiencieReward": 100,
     "stackSize": 100,
-    "weight": 2.5,
-    "durability": 450,
     "weaponInfo": {
       "weaponSpeed": 110,
-      "impact": 35,
-      "stability": 25,
       "weaponLength": 88,
       "damage": 45,
       "penetration": 21
@@ -34476,13 +33678,8 @@
     "parent": "Rawbone Hand Axe",
     "trade_price": 80.8,
     "description": "With its sharp edge and a balanced handle, a Firestone Axe is a choice of many Nomads seeking reliable and powerful weapons for their battles.",
-    "experiencieReward": 210,
     "stackSize": 100,
-    "weight": 4.6,
-    "durability": 780,
     "weaponInfo": {
-      "impact": 35,
-      "stability": 30,
       "weaponLength": 68,
       "damage": 55,
       "penetration": 12
@@ -34526,14 +33723,9 @@
     "parent": "Nurrfang Toothclub",
     "trade_price": 81,
     "description": "Reinforced by solidified lava, bluedgeons are often brought back to the Flotilla by the Nomads who dare to explore volcanic areas.",
-    "experiencieReward": 210,
     "stackSize": 100,
-    "weight": 4.9,
-    "durability": 775,
     "weaponInfo": {
       "weaponSpeed": 110,
-      "impact": 45,
-      "stability": 45,
       "weaponLength": 65,
       "damage": 56,
       "penetration": 16
@@ -34570,14 +33762,9 @@
     "name": "Firestone Kopesh",
     "parent": "Rawbone Scimitar",
     "trade_price": 103,
-    "experiencieReward": 210,
     "stackSize": 100,
-    "weight": 4.2,
-    "durability": 685,
     "weaponInfo": {
       "weaponSpeed": 105,
-      "impact": 45,
-      "stability": 40,
       "weaponLength": 69,
       "damage": 54,
       "penetration": 21
@@ -34617,14 +33804,9 @@
     "parent": "Beat Stick",
     "trade_price": 2.5,
     "description": "A weapon that is deeply symbolic of nomadic culture, straddling the line between barbarism and innovation.",
-    "experiencieReward": 49,
     "stackSize": 100,
-    "weight": 7.5,
-    "durability": 320,
     "weaponInfo": {
       "weaponSpeed": 88,
-      "impact": 65,
-      "stability": 35,
       "weaponLength": 66,
       "damage": 40,
       "penetration": 15
@@ -34658,13 +33840,8 @@
     "parent": "Heavy Rawbone Hand Axe",
     "trade_price": 56.2,
     "description": "Even the most obstinate nomad has fun chopping food with this extremely efficient tool.",
-    "experiencieReward": 200,
     "stackSize": 100,
-    "weight": 4.5,
-    "durability": 500,
     "weaponInfo": {
-      "impact": 35,
-      "stability": 30,
       "weaponLength": 52,
       "damage": 53,
       "penetration": 12
@@ -34704,14 +33881,9 @@
     "parent": "Nurrfang Toothclub",
     "trade_price": 75.8,
     "description": "The hoof-shaped handle is attributed to the wandering Herdsmen Tribe, who are now lost, but are fabled to have found The Place That Never Dies. The hoof is a good luck charm among Nomads who are forever at the whim of the path they follow.",
-    "experiencieReward": 200,
     "stackSize": 100,
-    "weight": 4.1,
-    "durability": 520,
     "weaponInfo": {
       "weaponSpeed": 110,
-      "impact": 45,
-      "stability": 45,
       "weaponLength": 50,
       "damage": 54,
       "penetration": 15
@@ -34741,14 +33913,9 @@
     "parent": "Rawbone Scimitar",
     "trade_price": 88.8,
     "description": "The blunt force behind the blade makes it cut much deeper than other swords.",
-    "experiencieReward": 200,
     "stackSize": 100,
-    "weight": 4,
-    "durability": 500,
     "weaponInfo": {
       "weaponSpeed": 105,
-      "impact": 45,
-      "stability": 40,
       "weaponLength": 67,
       "damage": 50,
       "penetration": 18
@@ -34788,14 +33955,9 @@
     "parent": "Crude Hatchet",
     "trade_price": 1.2,
     "description": "Nearly all nomads are expert carpenters, and the hatchet is essential to their way of life.",
-    "experiencieReward": 25,
     "stackSize": 100,
-    "weight": 1.8,
-    "durability": 200,
     "weaponInfo": {
       "weaponSpeed": 115,
-      "impact": 35,
-      "stability": 25,
       "weaponLength": 53,
       "damage": 40,
       "penetration": 10
@@ -34830,14 +33992,9 @@
     "parent": "Equipment",
     "trade_price": 1.7,
     "description": "The fastest way to dispatch a rupu.",
-    "experiencieReward": 22,
     "stackSize": 100,
-    "weight": 3.2,
-    "durability": 150,
     "weaponInfo": {
       "weaponSpeed": 110,
-      "impact": 25,
-      "stability": 20,
       "weaponLength": 72,
       "damage": 30,
       "penetration": 5
@@ -34871,10 +34028,7 @@
     "parent": "TravellersStaff",
     "trade_price": 8,
     "description": "They call nomads who specialize in using rawbone weaponry \"boneheads,\" an ancient term meaning simpleton.",
-    "experiencieReward": 377,
     "stackSize": 100,
-    "weight": 3.48,
-    "durability": 1000,
     "weaponInfo": {
       "weaponLength": 145,
       "damage": 52,
@@ -34913,10 +34067,7 @@
     "parent": "Rawbone Quarterstaff",
     "trade_price": 100.7,
     "description": "While not being sharp like a similarly built bladestaff, the weight and sturdyness of hammerstaff tips allows to crack enemy skulls with ease and grace.",
-    "experiencieReward": 220,
     "stackSize": 100,
-    "weight": 5.5,
-    "durability": 735,
     "weaponInfo": {
       "weaponLength": 99,
       "damage": 58,
@@ -34955,10 +34106,7 @@
     "parent": "Rawbone Quarterstaff",
     "trade_price": 100.7,
     "description": "Nomads wielding hot bladestaffs made of processed lava have become legendary in some parts of the world for their unique combat techniques and strength.",
-    "experiencieReward": 220,
     "stackSize": 100,
-    "weight": 5.5,
-    "durability": 735,
     "weaponInfo": {
       "weaponLength": 123,
       "damage": 58,
@@ -34997,10 +34145,7 @@
     "parent": "Beat Stick",
     "trade_price": 3.1,
     "description": "This unflattering weapon may just look like rocks tied to a stick, but it's deceptively powerful in the hands of a skilled nomadic warrior.",
-    "experiencieReward": 26,
     "stackSize": 100,
-    "weight": 6.8,
-    "durability": 420,
     "weaponInfo": {
       "weaponLength": 124,
       "damage": 39,
@@ -35031,10 +34176,7 @@
     "parent": "Blunt Quarterstaff",
     "trade_price": 2.6,
     "description": "While nomads no longer travel on foot to make their migration across the world, there exists a deep affection for the old ways. The tradition of converting walking staffs for battle has yet to die.",
-    "experiencieReward": 45,
     "stackSize": 100,
-    "weight": 4.1,
-    "durability": 320,
     "weaponInfo": {
       "weaponLength": 116,
       "damage": 46,
@@ -35069,10 +34211,7 @@
     "parent": "Rawbone Quarterstaff",
     "trade_price": 124.2,
     "description": "Adorning the backs of Swampwood tribe's most adept warriors, this bladed quarterstaff doubles as a paddle while canoeing the misty shores of the South Sea.",
-    "experiencieReward": 200,
     "stackSize": 100,
-    "weight": 5,
-    "durability": 510,
     "weaponInfo": {
       "weaponLength": 142,
       "damage": 57,
@@ -35083,8 +34222,6 @@
     "category": "Weapons",
     "name": "Stone Monkey Sword",
     "stackSize": 100,
-    "weight": 1,
-    "durability": 280,
     "weaponInfo": {
       "weaponLength": 72,
       "damage": 40,
@@ -35096,9 +34233,7 @@
     "name": "Firebomb",
     "trade_price": 16.9,
     "description": "Lightweight obsidian ball containing highly flammable mixture. Throw it at enemies to deal fire damage.",
-    "experiencieReward": 20,
     "stackSize": 5,
-    "weight": 0.3,
     "weaponInfo": {
       "damage": 20,
       "penetration": 50
@@ -35131,8 +34266,6 @@
     "category": "Weapons",
     "name": "Rupu Mace",
     "stackSize": 100,
-    "weight": 4.58,
-    "durability": 350,
     "weaponInfo": {
       "weaponLength": 97,
       "damage": 30,
@@ -35143,8 +34276,6 @@
     "category": "Weapons",
     "name": "Rupu Stone Mace",
     "stackSize": 100,
-    "weight": 4.58,
-    "durability": 300,
     "weaponInfo": {
       "weaponLength": 92,
       "damage": 38,
@@ -35154,10 +34285,7 @@
   {
     "category": "Weapons",
     "name": "Wooden Club",
-    "experiencieReward": 22,
     "stackSize": 100,
-    "weight": 8.4,
-    "durability": 200,
     "weaponInfo": {
       "weaponLength": 72,
       "damage": 18,
@@ -35193,7 +34321,6 @@
     "trade_price": 1.6,
     "description": "The Nomad that came up with the innovative idea of attaching a bomb to a stick was rewarded with a large walker by the Flotilla for their contribution to science.",
     "stackSize": 100,
-    "weight": 2,
     "weaponInfo": {
       "damage": 75,
       "penetration": 30
@@ -35228,7 +34355,6 @@
     "trade_price": 1.6,
     "description": "While short spears were found to be cumbersome in boarding actions, their stopping power when thrown proved useful for fighting bigger kinds of the Rupu.",
     "stackSize": 100,
-    "weight": 2,
     "weaponInfo": {
       "damage": 45,
       "penetration": 25
@@ -35263,7 +34389,6 @@
     "trade_price": 1.6,
     "description": "The first Throwers were members of a rogue sect of cannabilistic warriors. Their numbers have waned, but they still periodically cause havoc for Flotillan supply caravans.",
     "stackSize": 5,
-    "weight": 2,
     "weaponInfo": {
       "damage": 30,
       "penetration": 30
@@ -35297,7 +34422,6 @@
     "parent": "Light Javelin",
     "trade_price": 8.4,
     "description": "A portable net with a release mechanism that allows to throw it by hand.",
-    "weight": 3,
     "toolInfo": [
       {
         "toolType": "Net",
@@ -35324,14 +34448,9 @@
     "trade_price": 1.6,
     "description": "Either a fantastically aerodynamic stone, its form perfected for best throwing experience... Or just a sharp chip of rock that you can throw at someone in a pinch.",
     "projectileDamage": {
-      "damage": 32,
-      "penetration": 5,
-      "effectivenessVsSoak": 50,
-      "effectivenessVsReduce": 50
+      "damage": 32
     },
-    "experiencieReward": 3,
     "stackSize": 10,
-    "weight": 0.3,
     "weaponInfo": {
       "damage": 15,
       "penetration": 5
@@ -35371,14 +34490,9 @@
     "parent": "Rawbone Hand Axe",
     "trade_price": 18.4,
     "description": "Rawbone weaponry doesn't take half a brain to make, but it will split your enemies in half.",
-    "experiencieReward": 100,
     "stackSize": 100,
-    "weight": 4.66,
-    "durability": 440,
     "weaponInfo": {
       "weaponSpeed": 80,
-      "impact": 80,
-      "stability": 60,
       "weaponLength": 120,
       "damage": 52,
       "penetration": 10
@@ -35418,10 +34532,7 @@
     "parent": "Jaggertooth Maul",
     "trade_price": 15.8,
     "description": "They call nomads who specialize in using rawbone weaponry \"boneheads,\" an ancient term meaning simpleton.",
-    "experiencieReward": 105,
     "stackSize": 100,
-    "weight": 4.6,
-    "durability": 420,
     "weaponInfo": {
       "weaponSpeed": 120,
       "weaponLength": 97,
@@ -35457,14 +34568,9 @@
     "parent": "Rawbone Scimitar",
     "trade_price": 14.4,
     "description": "Bonespike weapons are favoured in the Flotillan arena for their brutality.",
-    "experiencieReward": 100,
     "stackSize": 100,
-    "weight": 4.6,
-    "durability": 500,
     "weaponInfo": {
       "weaponSpeed": 105,
-      "impact": 60,
-      "stability": 65,
       "weaponLength": 124,
       "damage": 53,
       "penetration": 15
@@ -35504,14 +34610,9 @@
     "parent": "Long Bonespike Swordstaff",
     "trade_price": 15,
     "description": "A symbol of status among many Nomad tribes,  the Sawsword is valued for its devastating damage.",
-    "experiencieReward": 100,
     "stackSize": 100,
-    "weight": 3.8,
-    "durability": 500,
     "weaponInfo": {
       "weaponSpeed": 110,
-      "impact": 50,
-      "stability": 60,
       "weaponLength": 122,
       "damage": 56,
       "penetration": 16
@@ -35555,14 +34656,9 @@
     "parent": "Rawbone Battle Axe",
     "trade_price": 81,
     "description": "Sharpened using an ancient Nomadic technique, the blade of a Firestone Battleaxe just as easily cut heads as trees.",
-    "experiencieReward": 220,
     "stackSize": 100,
-    "weight": 5.2,
-    "durability": 750,
     "weaponInfo": {
       "weaponSpeed": 80,
-      "impact": 80,
-      "stability": 60,
       "weaponLength": 83,
       "damage": 61,
       "penetration": 10
@@ -35606,14 +34702,9 @@
     "parent": "Rawbone Maul",
     "trade_price": 104,
     "description": "While the excquisite craftsmanship of the bozdogan weapons draws attention of many, their weight distribution allows only the strongest warriors to wield it effectively.",
-    "experiencieReward": 220,
     "stackSize": 100,
-    "weight": 6.2,
-    "durability": 780,
     "weaponInfo": {
       "weaponSpeed": 95,
-      "impact": 80,
-      "stability": 65,
       "weaponLength": 83,
       "damage": 69,
       "penetration": 7
@@ -35651,14 +34742,9 @@
     "parent": "Long Bonespike Swordstaff",
     "trade_price": 105.2,
     "description": "Pulsating with heat of a firestone, longblades have become a popular weapon among Nomad warriors who can afford their high price.",
-    "experiencieReward": 200,
     "stackSize": 100,
-    "weight": 5.6,
-    "durability": 690,
     "weaponInfo": {
       "weaponSpeed": 135,
-      "impact": 40,
-      "stability": 55,
       "weaponLength": 76,
       "damage": 57,
       "penetration": 20
@@ -35698,13 +34784,9 @@
     "parent": "Jaggertooth Club",
     "trade_price": 5.4,
     "description": "A weapon that is deeply symbolic of nomadic culture, straddling the line between barbarism and innovation.",
-    "experiencieReward": 52,
     "stackSize": 100,
-    "weight": 10.8,
-    "durability": 340,
     "weaponInfo": {
       "weaponSpeed": 110,
-      "stability": 60,
       "weaponLength": 77,
       "damage": 52,
       "penetration": 10
@@ -35738,14 +34820,9 @@
     "parent": "Jaggertooth Club",
     "trade_price": 3.7,
     "description": "The serrated flint blade is designed to inflict the utmost pain, without necessarily being lethal. The preferred weapon of many pirates.",
-    "experiencieReward": 25,
     "stackSize": 100,
-    "weight": 8.5,
-    "durability": 350,
     "weaponInfo": {
       "weaponSpeed": 110,
-      "impact": 40,
-      "stability": 55,
       "weaponLength": 122,
       "damage": 45,
       "penetration": 15
@@ -35789,14 +34866,9 @@
     "parent": "Rawbone Maul",
     "trade_price": 118.9,
     "description": "The hoof-shaped handle is attributed to the wandering Herdsmen Tribe, who are now lost, but are fabled to have found The Place That Never Dies. The hoof is a good luck charm among Nomads who are forever at the whim of the path they follow.",
-    "experiencieReward": 200,
     "stackSize": 100,
-    "weight": 6.5,
-    "durability": 540,
     "weaponInfo": {
       "weaponSpeed": 95,
-      "impact": 80,
-      "stability": 65,
       "weaponLength": 115,
       "damage": 62,
       "penetration": 10
@@ -35834,14 +34906,9 @@
     "parent": "Long Bonespike Swordstaff",
     "trade_price": 165.8,
     "description": "Supossedly one of the only weapons devised by the Guardians themselves, who are rumored to be master engineers. The blades whistle in a pleasant way as they cut through the air.",
-    "experiencieReward": 200,
     "stackSize": 100,
-    "weight": 5.8,
-    "durability": 550,
     "weaponInfo": {
       "weaponSpeed": 135,
-      "impact": 40,
-      "stability": 55,
       "weaponLength": 99,
       "damage": 58,
       "penetration": 20

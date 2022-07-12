@@ -471,35 +471,62 @@
     "parent": "ObsidianContainerSmall"
   },
   {
-    "name": "Obsidian Pot",
+    "name": "Large Water Bag",
+    "category": "Containers",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 6,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 5,
+            "name": "Clay"
+          },
+          {
+            "count": 80,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "parent": "Medium Water Bag"
+  },
+  {
+    "name": "Medium Water Bag",
     "category": "Containers",
     "cost": {
-      "count": 3,
-      "name": "Tablet"
+      "count": 10,
+      "name": "Fragment"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 38,
-            "name": "Obsidian"
-          },
-          {
-            "count": 10,
+            "count": 2,
             "name": "Nomad Cloth"
           },
           {
-            "count": 30,
-            "name": "Redwood Wood"
+            "count": 90,
+            "name": "Fiber"
           },
           {
-            "count": 20,
-            "name": "Rupu Vine"
+            "count": 2,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 15,
+            "name": "Stone"
           }
         ]
       }
     ],
-    "parent": "Large Water Bag"
+    "parent": "Small Water Bag"
   },
   {
     "name": "Small Water Bag",
@@ -695,33 +722,6 @@
       }
     ],
     "parent": "WoodworkingStation_T2"
-  },
-  {
-    "name": "Obsidian Machine",
-    "category": "Crafting",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 36,
-            "name": "Obsidian"
-          },
-          {
-            "count": 12,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 2,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "parent": "SoilExcavator"
   },
   {
     "name": "Water Condenser",
@@ -2105,6 +2105,369 @@
     "name": "Meat Rack"
   },
   {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Wood"
+          },
+          {
+            "count": 30,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Haysludge Arch"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Rupu Pelt"
+          }
+        ]
+      }
+    ],
+    "name": "Bone Effigy"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Fiber"
+          },
+          {
+            "count": 5,
+            "name": "Rupu Pelt"
+          }
+        ]
+      }
+    ],
+    "name": "Bones Pile"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Wood"
+          },
+          {
+            "count": 30,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Cage"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Wood"
+          },
+          {
+            "count": 11,
+            "name": "Fiber"
+          },
+          {
+            "count": 5,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Rupu Campfire 1"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Wood"
+          },
+          {
+            "count": 11,
+            "name": "Fiber"
+          },
+          {
+            "count": 5,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Rupu Campfire 2"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 20,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Haysludge Fence"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Wood"
+          },
+          {
+            "count": 30,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Masked Totem 1"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Wood"
+          },
+          {
+            "count": 30,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Masked Totem 2"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Wood"
+          },
+          {
+            "count": 30,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Masked Totem 3"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 60,
+            "name": "Wood"
+          },
+          {
+            "count": 35,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Walker Totem"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Wood"
+          },
+          {
+            "count": 30,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Worshipping Wreath"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Ornate banner 1"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Ornate banner 2"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 15,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Ornate banner 3"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Wood"
+          },
+          {
+            "count": 20,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Brazier"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Cage 1"
+  },
+  {
+    "category": "Furniture",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Cage 2"
+  },
+  {
+    "name": "Hammock",
+    "category": "Interactables",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 4,
+            "name": "Rupu Pelt"
+          }
+        ]
+      }
+    ],
+    "parent": "Sand Bed"
+  },
+  {
     "name": "Cauterizing Station",
     "category": "Interactables",
     "cost": {
@@ -2975,62 +3338,62 @@
     "name": "Nomad Walker"
   },
   {
-    "name": "Large Water Bag",
-    "category": "Containers",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 6,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 5,
-            "name": "Clay"
-          },
-          {
-            "count": 80,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "parent": "Medium Water Bag"
-  },
-  {
-    "name": "Medium Water Bag",
+    "name": "Obsidian Pot",
     "category": "Containers",
     "cost": {
-      "count": 10,
-      "name": "Fragment"
+      "count": 3,
+      "name": "Tablet"
     },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 2,
+            "count": 38,
+            "name": "Obsidian"
+          },
+          {
+            "count": 10,
             "name": "Nomad Cloth"
           },
           {
-            "count": 90,
-            "name": "Fiber"
+            "count": 30,
+            "name": "Redwood Wood"
           },
           {
-            "count": 2,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 15,
-            "name": "Stone"
+            "count": 20,
+            "name": "Rupu Vine"
           }
         ]
       }
     ],
-    "parent": "Small Water Bag"
+    "parent": "Large Water Bag"
+  },
+  {
+    "name": "Obsidian Machine",
+    "category": "Crafting",
+    "cost": {
+      "count": 25,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 36,
+            "name": "Obsidian"
+          },
+          {
+            "count": 12,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 2,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "parent": "SoilExcavator"
   },
   {
     "name": "Repair Station",
@@ -3179,338 +3542,6 @@
     ],
     "parent": "Desert Mule",
     "trade_price": 79.9
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 50,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Haysludge Arch"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Rupu Pelt"
-          }
-        ]
-      }
-    ],
-    "name": "Bone Effigy"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Fiber"
-          },
-          {
-            "count": 5,
-            "name": "Rupu Pelt"
-          }
-        ]
-      }
-    ],
-    "name": "Bones Pile"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 50,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Cage"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 16,
-            "name": "Wood"
-          },
-          {
-            "count": 11,
-            "name": "Fiber"
-          },
-          {
-            "count": 5,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Rupu Campfire 1"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 16,
-            "name": "Wood"
-          },
-          {
-            "count": 11,
-            "name": "Fiber"
-          },
-          {
-            "count": 5,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Rupu Campfire 2"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Haysludge Fence"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 40,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Masked Totem 1"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 40,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Masked Totem 2"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 40,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Masked Totem 3"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 60,
-            "name": "Wood"
-          },
-          {
-            "count": 35,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Walker Totem"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 40,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Worshipping Wreath"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Ornate banner 1"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Ornate banner 2"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 15,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Ornate banner 3"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Brazier"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Cage 1"
-  },
-  {
-    "category": "Furniture",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Cage 2"
   },
   {
     "category": "Furniture",
@@ -3765,37 +3796,6 @@
     "name": "Wreath"
   },
   {
-    "name": "Hammock",
-    "category": "Interactables",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 4,
-            "name": "Rupu Pelt"
-          }
-        ]
-      }
-    ],
-    "parent": "Sand Bed"
-  },
-  {
     "name": "Poaching Hut",
     "category": "Interactables",
     "cost": {
@@ -3937,6 +3937,23 @@
       }
     ],
     "name": "Lava Fuel"
+  },
+  {
+    "category": "Liquids",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Earth Wax"
+          }
+        ],
+        "station": "Furnace",
+        "time": 1320
+      }
+    ],
+    "name": "Tar",
+    "trade_price": 3.2
   },
   {
     "category": "Liquids",
@@ -4160,23 +4177,6 @@
   {
     "name": "Fiery Concoction",
     "trade_price": 1
-  },
-  {
-    "category": "Liquids",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Earth Wax"
-          }
-        ],
-        "station": "Furnace",
-        "time": 1320
-      }
-    ],
-    "name": "Tar",
-    "trade_price": 3.2
   },
   {
     "category": "Resources",
@@ -5105,10 +5105,6 @@
   },
   {
     "category": "Resources",
-    "name": "Terrain: Worm Sand"
-  },
-  {
-    "category": "Resources",
     "name": "Weightless Module"
   },
   {
@@ -5186,102 +5182,6 @@
   {
     "category": "Resources",
     "name": "Pack Mule Module"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 1 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 2 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 3 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Durability - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Cargo Hold - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Mobility - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Gear Storage - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Torque Capacity - Tier 4 Upgrade"
-  },
-  {
-    "category": "SpareParts",
-    "name": "Water Storage - Tier 4 Upgrade"
   },
   {
     "category": "StructuralConcrete",
@@ -15405,40 +15305,6 @@
     }
   },
   {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 28,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 12,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 60,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 25,
-            "name": "Worm Silk"
-          }
-        ],
-        "time": 180
-      }
-    ],
-    "name": "Balang Walker Upgrade - Cargo - Tier 4",
-    "upgradeInfo": {
-      "containerSlots": 16
-    }
-  },
-  {
     "category": "Weapons",
     "crafting": [
       {
@@ -15575,6 +15441,40 @@
   {
     "name": "Worm Scale",
     "trade_price": 300
+  },
+  {
+    "category": "Upgrades",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 28,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 12,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 60,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 25,
+            "name": "Worm Silk"
+          }
+        ],
+        "time": 180
+      }
+    ],
+    "name": "Balang Walker Upgrade - Cargo - Tier 4",
+    "upgradeInfo": {
+      "containerSlots": 16
+    }
   },
   {
     "category": "Upgrades",
