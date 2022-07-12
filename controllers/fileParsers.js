@@ -17,6 +17,8 @@ const costTemplate = require("../templates/cost");
 const upgradeTemplate = require("../templates/upgrade");
 const upgradeInfoTemplate = require("../templates/upgradeInfo");
 
+const EXTRACT_ALL_DATA = false;
+
 let allItems = [];
 let upgradesData = [];
 
@@ -146,18 +148,21 @@ controller.parseItemData = (filePath) => {
           ?.Damage
           ? jsonData[1].Properties?.ProjectileDamage?.Damage
           : undefined;
-        projectileDamage.penetration = jsonData[1].Properties?.ProjectileDamage
-          ?.Penetration
-          ? jsonData[1].Properties?.ProjectileDamage?.Penetration
-          : undefined;
-        projectileDamage.effectivenessVsSoak = jsonData[1].Properties
-          ?.ProjectileDamage?.EffectivenessVsSoak
-          ? jsonData[1].Properties?.ProjectileDamage?.EffectivenessVsSoak
-          : undefined;
-        projectileDamage.effectivenessVsReduce = jsonData[1].Properties
-          ?.ProjectileDamage?.EffectivenessVsReduce
-          ? jsonData[1].Properties?.ProjectileDamage?.EffectivenessVsReduce
-          : undefined;
+        projectileDamage.penetration =
+          EXTRACT_ALL_DATA &&
+          jsonData[1].Properties?.ProjectileDamage?.Penetration
+            ? jsonData[1].Properties?.ProjectileDamage?.Penetration
+            : undefined;
+        projectileDamage.effectivenessVsSoak =
+          EXTRACT_ALL_DATA &&
+          jsonData[1].Properties?.ProjectileDamage?.EffectivenessVsSoak
+            ? jsonData[1].Properties?.ProjectileDamage?.EffectivenessVsSoak
+            : undefined;
+        projectileDamage.effectivenessVsReduce =
+          EXTRACT_ALL_DATA &&
+          jsonData[1].Properties?.ProjectileDamage?.EffectivenessVsReduce
+            ? jsonData[1].Properties?.ProjectileDamage?.EffectivenessVsReduce
+            : undefined;
 
         item.projectileDamage = projectileDamage;
       }
@@ -165,22 +170,25 @@ controller.parseItemData = (filePath) => {
       if (jsonData[1].Properties?.DefenseProperties) {
         let armorInfo = { ...armorInfoTemplate };
 
-        armorInfo.soak = jsonData[1].Properties?.DefenseProperties?.Soak
+        armorInfo.absorbing = jsonData[1].Properties?.DefenseProperties?.Soak
           ? jsonData[1].Properties?.DefenseProperties?.Soak
           : undefined;
-        armorInfo.reduce = jsonData[1].Properties?.DefenseProperties?.Reduce
+        armorInfo.reduction = jsonData[1].Properties?.DefenseProperties?.Reduce
           ? jsonData[1].Properties?.DefenseProperties?.Reduce
           : undefined;
 
         if (jsonData[1].Properties?.MovementSpeedReduction) {
-          armorInfo.movementSpeedReduction =
+          armorInfo.speedReduction =
             jsonData[1].Properties.MovementSpeedReduction;
         }
 
         item.armorInfo = armorInfo;
       }
 
-      if (jsonData[1].Properties?.ExperienceRewardCrafting) {
+      if (
+        EXTRACT_ALL_DATA &&
+        jsonData[1].Properties?.ExperienceRewardCrafting
+      ) {
         item.experiencieReward =
           jsonData[1].Properties.ExperienceRewardCrafting;
       }
@@ -189,17 +197,17 @@ controller.parseItemData = (filePath) => {
         item.stackSize = jsonData[1].Properties.MaxStackSize;
       }
 
-      if (jsonData[1].Properties?.Weight) {
+      if (EXTRACT_ALL_DATA && jsonData[1].Properties?.Weight) {
         item.weight = jsonData[1].Properties.Weight;
       }
 
-      if (jsonData[1].Properties?.MaxDurability) {
+      if (EXTRACT_ALL_DATA && jsonData[1].Properties?.MaxDurability) {
         item.durability = jsonData[1].Properties.MaxDurability;
       }
 
       let weaponInfo = { ...weaponInfoTemplate };
 
-      if (jsonData[1].Properties?.DurabilityDamage) {
+      if (EXTRACT_ALL_DATA && jsonData[1].Properties?.DurabilityDamage) {
         weaponInfo.durabilityDamage = jsonData[1].Properties.DurabilityDamage;
         item.weaponInfo = weaponInfo;
       }
@@ -207,11 +215,11 @@ controller.parseItemData = (filePath) => {
         weaponInfo.weaponSpeed = jsonData[1].Properties.WeaponSpeed;
         item.weaponInfo = weaponInfo;
       }
-      if (jsonData[1].Properties?.Impact) {
+      if (EXTRACT_ALL_DATA && jsonData[1].Properties?.Impact) {
         weaponInfo.impact = jsonData[1].Properties.Impact;
         item.weaponInfo = weaponInfo;
       }
-      if (jsonData[1].Properties?.Stability) {
+      if (EXTRACT_ALL_DATA && jsonData[1].Properties?.Stability) {
         weaponInfo.stability = jsonData[1].Properties.Stability;
         item.weaponInfo = weaponInfo;
       }

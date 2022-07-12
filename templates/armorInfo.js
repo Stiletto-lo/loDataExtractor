@@ -1,5 +1,5 @@
 module.exports = {
-  soak: undefined,
-  reduce: undefined,
-  movementSpeedReduction: undefined,
+  absorbing: undefined,
+  reduction: undefined,
+  speedReduction: undefined,
 };
