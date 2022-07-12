@@ -588,6 +588,7 @@ controller.getUpgradeItem = (upgradePure) => {
     let superUpgradeData = controller.getUpgradeItem(superUpgrade);
     if (superUpgradeData) {
       let item = { ...itemTemplate };
+      item.category = "Upgrades";
       item.name = dataParser.parseUpgradeName(
         upgradePure.name,
         upgradePure.profile
@@ -636,6 +637,7 @@ controller.getUpgradeItem = (upgradePure) => {
     }
   } else {
     let item = { ...itemTemplate };
+    item.category = "Upgrades";
     item.name = dataParser.parseUpgradeName(
       upgradePure.name,
       upgradePure.profile
