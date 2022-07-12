@@ -1,10 +1,11 @@
+require("dotenv").config();
 const fs = require("fs");
 const path = require("path");
 const comparator = require("./controllers/comparator");
 const fileParser = require("./controllers/fileParsers");
 
 let allItems = [];
-const SHOW_DEV_ITEMS = false;
+const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
 
 const folderPatch = "./exported/";
 
@@ -149,7 +150,9 @@ if (allItems.length > 0) {
   );
 }
 
-comparator.compareItems(allItems, folderPatch);
+if (process.env.COMPARE === "true") {
+  comparator.compareItems(allItems, folderPatch);
+}
 
 function loadDirData(techTreeDir, folderType) {
   let dir = path.join(__dirname, techTreeDir);
@@ -161,7 +164,7 @@ function loadDirData(techTreeDir, folderType) {
     } else if (file.includes(".json")) {
       switch (folderTypes.indexOf(folderType)) {
         case 0:
-          fileParser.parseTechData(techTreeDir + "/" + file, SHOW_DEV_ITEMS);
+          fileParser.parseTechData(techTreeDir + "/" + file);
           break;
         case 1:
           fileParser.parseItemData(techTreeDir + "/" + file);

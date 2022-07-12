@@ -1,15 +1,17 @@
+require("dotenv").config();
+
 const controller = {};
 const Axios = require("axios");
 const fs = require("fs");
 
 const DATA_TO_COMPARE = {
-  cost: false,
-  crafting: false,
-  crafting_time: false,
-  category: false,
-  parent: false,
-  damage: false,
-  trade_price: true,
+  cost: process.env.COMPARE_COST === "true",
+  crafting: process.env.COMPARE_CRAFTING === "true",
+  crafting_time: process.env.COMPARE_CRAFTING_TIME === "true",
+  category: process.env.COMPARE_CATEGORY === "true",
+  parent: process.env.COMPARE_PARENT === "true",
+  damage: process.env.COMPARE_DAMAGE === "true",
+  trade_price: process.env.COMPARE_PRICE === "true",
 };
 
 controller.compareItems = async (extractedItems, folderPatch) => {

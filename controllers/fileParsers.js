@@ -1,3 +1,4 @@
+require("dotenv").config();
 const controller = {};
 const fs = require("fs");
 const dataParser = require("./dataParsers");
@@ -17,7 +18,8 @@ const costTemplate = require("../templates/cost");
 const upgradeTemplate = require("../templates/upgrade");
 const upgradeInfoTemplate = require("../templates/upgradeInfo");
 
-const EXTRACT_ALL_DATA = false;
+const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
+const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
 
 let allItems = [];
 let upgradesData = [];
@@ -389,7 +391,7 @@ controller.parsePlaceableData = (filePath) => {
   }
 };
 
-controller.parseTechData = (filePath, show_dev = false) => {
+controller.parseTechData = (filePath) => {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
 
@@ -432,7 +434,7 @@ controller.parseTechData = (filePath, show_dev = false) => {
       item.onlyDevs = true;
     }
 
-    if (jsonData[1]?.Properties?.bHidden && !show_dev) {
+    if (jsonData[1]?.Properties?.bHidden && !SHOW_DEV_ITEMS) {
       item.parent = undefined;
     }
     allItems.push(item);
