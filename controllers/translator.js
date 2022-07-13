@@ -107,6 +107,7 @@ allTranslations["Toboggan"] = "Toboggan Walker";
 allTranslations["StructuralStoneNew"] = "Stone Structures";
 allTranslations["StructuralConcrete"] = "Cement Structures";
 allTranslations["StructuralClay"] = "Clay Structures";
+allTranslations["StructuralWoodLight"] = "Light Wood Structures";
 allTranslations["StructuralWoodMedium"] = "Medium Wood Structures";
 allTranslations["StructuralWoodHeavy"] = "Heavy Wood Structures";
 allTranslations["StructuralSand"] = "Sand Structures";

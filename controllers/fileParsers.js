@@ -396,6 +396,14 @@ controller.parsePlaceableData = (filePath) => {
         ).trim();
       }
 
+      if (
+        !item.category &&
+        item.translation &&
+        item.translation.includes("WallsWoodLight")
+      ) {
+        item.category = "StructuralWoodLight";
+      }
+
       if (item.category && item.category.includes("Structural")) {
         item.name = dataParser.parseStructureName(
           item.category,

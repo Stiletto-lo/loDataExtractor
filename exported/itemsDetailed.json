@@ -25,14 +25,6 @@
   },
   {
     "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "name": "Light Wood Structures",
-    "parent": "Base Maintenance Chest"
-  },
-  {
-    "cost": {
       "count": 40,
       "name": "Tablet"
     },
@@ -114,52 +106,6 @@
         "tier": 3
       }
     ]
-  },
-  {
-    "cost": {
-      "count": 8,
-      "name": "Tablet"
-    },
-    "name": "Iron Studded Boots",
-    "parent": "Iron Studded Armor",
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 10,
-            "name": "Insects"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 15,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "trade_price": 75.8,
-    "description": "Most tribes eschew iron armor, despite its protective value. History has proven that it is not pirates whom a nomad must fear most, but the sun.",
-    "armorInfo": {
-      "absorbing": 12,
-      "reduction": 8,
-      "speedReduction": 5
-    }
-  },
-  {
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
-    "name": "Flare - White",
-    "parent": "Equipment"
   },
   {
     "category": "Ammo",
@@ -1505,6 +1451,52 @@
       "count": 8,
       "name": "Tablet"
     },
+    "name": "Iron Studded Boots",
+    "parent": "Iron Studded Armor",
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 10,
+            "name": "Insects"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 15,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "trade_price": 75.8,
+    "description": "Most tribes eschew iron armor, despite its protective value. History has proven that it is not pirates whom a nomad must fear most, but the sun.",
+    "armorInfo": {
+      "absorbing": 12,
+      "reduction": 8,
+      "speedReduction": 5
+    }
+  },
+  {
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "name": "Flare - White",
+    "parent": "Equipment"
+  },
+  {
+    "cost": {
+      "count": 8,
+      "name": "Tablet"
+    },
     "name": "Iron Studded Gauntlets",
     "parent": "Iron Studded Armor",
     "category": "Armors",
@@ -2015,6 +2007,15 @@
     },
     "name": "Cobra Walker Upgrades - Tier 3",
     "parent": "Cobra Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "name": "Cobra Walker Upgrades - Tier 4",
+    "parent": "Cobra Walker Upgrades - Tier 3"
   },
   {
     "cost": {
@@ -2660,15 +2661,6 @@
   {
     "category": "Upgrades",
     "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "name": "Cobra Walker Upgrades - Tier 4",
-    "parent": "Cobra Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
       "count": 16,
       "name": "Fragment"
     },
@@ -3121,6 +3113,14 @@
     },
     "name": "Heavy Wood Structures",
     "parent": "Medium Wood Structures"
+  },
+  {
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "name": "Structural (wood: light)",
+    "parent": "Base Maintenance Chest"
   },
   {
     "cost": {
@@ -9146,6 +9146,11 @@
     "description": "The control mechanism required to drive more complex walkers."
   },
   {
+    "category": "Interactables",
+    "name": "Wanderer's Potion",
+    "description": "Forget everything you know about yourself. Resets stats of your character and returns all points."
+  },
+  {
     "category": "Knowledge",
     "crafting": [
       {
@@ -9224,6 +9229,211 @@
     "description": "Historically believed to be the remains of nomads who were burnt by the Sun, it's been recently discovered to be useful in various productions of fuels, bombs, and other items."
   },
   {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 38,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 11,
+            "name": "Stone"
+          },
+          {
+            "count": 2,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Walker Gate",
+    "structureInfo": {
+      "hp": 1000
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Wall",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 2250
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Battlements",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 2250
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Corner",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 2250
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Door",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 2250
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Foundation",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 3520
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Floor / Roof",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 2250
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Slit Wall",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 2250
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Double Slit Wall",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 2250
+    }
+  },
+  {
     "category": "Liquids",
     "name": "Contaminated Water",
     "trade_price": 0.1,
@@ -9300,6 +9510,354 @@
     ],
     "name": "Sand",
     "description": "Tiny green mineral flecks dot the sand."
+  },
+  {
+    "category": "Liquids",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Cactus Flesh"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 35
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "FruitPulp"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 35
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Aloe Vera"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 35
+      },
+      {
+        "ingredients": [
+          {
+            "count": 200,
+            "name": "Contaminated Water"
+          },
+          {
+            "count": 25,
+            "name": "Charcoal"
+          },
+          {
+            "count": 100,
+            "name": "Sand"
+          }
+        ],
+        "output": 200,
+        "station": "Purification Station",
+        "time": 600
+      },
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Contaminated Water"
+          },
+          {
+            "count": 1,
+            "name": "Charcoal"
+          }
+        ],
+        "output": 5,
+        "station": "Camp Fire",
+        "time": 55
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Contaminated Water"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 75
+      },
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Thornberry"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 35
+      }
+    ],
+    "name": "Purified Water",
+    "parent": "Camp Fire",
+    "trade_price": 10,
+    "description": "All water that is transported to the Flotilla is cleansed in an ancient water purifying machine. The Guardians are the sole keepers of this machine, a technological relic of the old world which has sustained the Flotillans to this day."
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Hangar Gate",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 12000
+    }
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Hangar Roof",
+    "structureInfo": {
+      "hp": 100
+    }
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Hangar Wall",
+    "structureInfo": {
+      "hp": 100
+    }
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Hangar Wall with Door",
+    "structureInfo": {
+      "hp": 100
+    }
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Wall",
+    "structureInfo": {
+      "type": "Hard",
+      "hp": 2500
+    }
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Battlements",
+    "structureInfo": {
+      "type": "Hard",
+      "hp": 2500
+    }
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Door",
+    "structureInfo": {
+      "type": "Hard",
+      "hp": 2500
+    }
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Foundation",
+    "structureInfo": {
+      "type": "Hard",
+      "hp": 2500
+    }
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Floor / Roof",
+    "structureInfo": {
+      "type": "Hard",
+      "hp": 2500
+    }
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Slit Wall",
+    "structureInfo": {
+      "type": "Hard",
+      "hp": 2500
+    }
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Double Slit Wall",
+    "structureInfo": {
+      "type": "Hard",
+      "hp": 2500
+    }
   },
   {
     "category": "Resources",
@@ -10606,665 +11164,6 @@
     }
   },
   {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Wall",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3500
-    }
-  },
-  {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Door",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3500
-    }
-  },
-  {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Foundation",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3500
-    }
-  },
-  {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Floor / Roof",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3500
-    }
-  },
-  {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Wall with Window",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3500
-    }
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Wall",
-    "description": "Average strength, can be packed on walkers.",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 2250
-    }
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Battlements",
-    "description": "Average strength, can be packed on walkers.",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 2250
-    }
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Corner",
-    "description": "Average strength, can be packed on walkers.",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 2250
-    }
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Door",
-    "description": "Average strength, can be packed on walkers.",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 2250
-    }
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Foundation",
-    "description": "Average strength, can be packed on walkers.",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 3520
-    }
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Floor / Roof",
-    "description": "Average strength, can be packed on walkers.",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 2250
-    }
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Slit Wall",
-    "description": "Average strength, can be packed on walkers.",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 2250
-    }
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Double Slit Wall",
-    "description": "Average strength, can be packed on walkers.",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 2250
-    }
-  },
-  {
-    "category": "Interactables",
-    "name": "Wanderer's Potion",
-    "description": "Forget everything you know about yourself. Resets stats of your character and returns all points."
-  },
-  {
-    "category": "Liquids",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Cactus Flesh"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 35
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "FruitPulp"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 35
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Aloe Vera"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 35
-      },
-      {
-        "ingredients": [
-          {
-            "count": 200,
-            "name": "Contaminated Water"
-          },
-          {
-            "count": 25,
-            "name": "Charcoal"
-          },
-          {
-            "count": 100,
-            "name": "Sand"
-          }
-        ],
-        "output": 200,
-        "station": "Purification Station",
-        "time": 600
-      },
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Contaminated Water"
-          },
-          {
-            "count": 1,
-            "name": "Charcoal"
-          }
-        ],
-        "output": 5,
-        "station": "Camp Fire",
-        "time": 55
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Contaminated Water"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 75
-      },
-      {
-        "ingredients": [
-          {
-            "count": 3,
-            "name": "Thornberry"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 35
-      }
-    ],
-    "name": "Purified Water",
-    "parent": "Camp Fire",
-    "trade_price": 10,
-    "description": "All water that is transported to the Flotilla is cleansed in an ancient water purifying machine. The Guardians are the sole keepers of this machine, a technological relic of the old world which has sustained the Flotillans to this day."
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Hangar Gate",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 12000
-    }
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Hangar Roof",
-    "structureInfo": {
-      "hp": 100
-    }
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Hangar Wall",
-    "structureInfo": {
-      "hp": 100
-    }
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Hangar Wall with Door",
-    "structureInfo": {
-      "hp": 100
-    }
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Wall",
-    "structureInfo": {
-      "type": "Hard",
-      "hp": 2500
-    }
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Battlements",
-    "structureInfo": {
-      "type": "Hard",
-      "hp": 2500
-    }
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Door",
-    "structureInfo": {
-      "type": "Hard",
-      "hp": 2500
-    }
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Foundation",
-    "structureInfo": {
-      "type": "Hard",
-      "hp": 2500
-    }
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Floor / Roof",
-    "structureInfo": {
-      "type": "Hard",
-      "hp": 2500
-    }
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Slit Wall",
-    "structureInfo": {
-      "type": "Hard",
-      "hp": 2500
-    }
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Double Slit Wall",
-    "structureInfo": {
-      "type": "Hard",
-      "hp": 2500
-    }
-  },
-  {
     "category": "Resources",
     "name": "Fortress Module",
     "description": "Stacking this module increases the armor value of all structures attached to a walker."
@@ -11465,32 +11364,133 @@
     }
   },
   {
-    "category": "StructuralWoodLight",
+    "category": "Stone Structures",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 38,
+            "count": 28,
             "name": "Wood"
           },
           {
-            "count": 1,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 11,
+            "count": 10,
             "name": "Stone"
           },
           {
-            "count": 2,
+            "count": 1,
             "name": "Wood Shaft"
           }
         ]
       }
     ],
-    "name": "Light Wood Walker Gate",
+    "name": "Stone Wall",
     "structureInfo": {
-      "hp": 1000
+      "type": "Solid",
+      "hp": 3500
+    }
+  },
+  {
+    "category": "Stone Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Door",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3500
+    }
+  },
+  {
+    "category": "Stone Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Foundation",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3500
+    }
+  },
+  {
+    "category": "Stone Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Floor / Roof",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3500
+    }
+  },
+  {
+    "category": "Stone Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Wall with Window",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3500
     }
   },
   {

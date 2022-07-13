@@ -25,14 +25,6 @@
   },
   {
     "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "name": "Light Wood Structures",
-    "parent": "Base Maintenance Chest"
-  },
-  {
-    "cost": {
       "count": 40,
       "name": "Tablet"
     },
@@ -94,46 +86,6 @@
       }
     ],
     "trade_price": 25
-  },
-  {
-    "cost": {
-      "count": 8,
-      "name": "Tablet"
-    },
-    "name": "Iron Studded Boots",
-    "parent": "Iron Studded Armor",
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 10,
-            "name": "Insects"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 15,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "trade_price": 75.8
-  },
-  {
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
-    "name": "Flare - White",
-    "parent": "Equipment"
   },
   {
     "category": "Ammo",
@@ -1137,6 +1089,46 @@
       "count": 8,
       "name": "Tablet"
     },
+    "name": "Iron Studded Boots",
+    "parent": "Iron Studded Armor",
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 10,
+            "name": "Insects"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 15,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "trade_price": 75.8
+  },
+  {
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "name": "Flare - White",
+    "parent": "Equipment"
+  },
+  {
+    "cost": {
+      "count": 8,
+      "name": "Tablet"
+    },
     "name": "Iron Studded Gauntlets",
     "parent": "Iron Studded Armor",
     "category": "Armors",
@@ -1620,6 +1612,15 @@
     },
     "name": "Cobra Walker Upgrades - Tier 3",
     "parent": "Cobra Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "name": "Cobra Walker Upgrades - Tier 4",
+    "parent": "Cobra Walker Upgrades - Tier 3"
   },
   {
     "cost": {
@@ -2116,15 +2117,6 @@
   {
     "category": "Upgrades",
     "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "name": "Cobra Walker Upgrades - Tier 4",
-    "parent": "Cobra Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
       "count": 16,
       "name": "Fragment"
     },
@@ -2577,6 +2569,14 @@
     },
     "name": "Heavy Wood Structures",
     "parent": "Medium Wood Structures"
+  },
+  {
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "name": "Structural (wood: light)",
+    "parent": "Base Maintenance Chest"
   },
   {
     "cost": {
@@ -7695,6 +7695,10 @@
     "parent": "Dinghy Walker"
   },
   {
+    "category": "Interactables",
+    "name": "Wanderer's Potion"
+  },
+  {
     "category": "Knowledge",
     "crafting": [
       {
@@ -7770,6 +7774,176 @@
     "trade_price": 3.5
   },
   {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 38,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 11,
+            "name": "Stone"
+          },
+          {
+            "count": 2,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Walker Gate"
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Wall"
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Battlements"
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Corner"
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Door"
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Foundation"
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Floor / Roof"
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Slit Wall"
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Double Slit Wall"
+  },
+  {
     "category": "Liquids",
     "name": "Contaminated Water",
     "trade_price": 0.1
@@ -7842,6 +8016,312 @@
       }
     ],
     "name": "Sand"
+  },
+  {
+    "category": "Liquids",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Cactus Flesh"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 35
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "FruitPulp"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 35
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Aloe Vera"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 35
+      },
+      {
+        "ingredients": [
+          {
+            "count": 200,
+            "name": "Contaminated Water"
+          },
+          {
+            "count": 25,
+            "name": "Charcoal"
+          },
+          {
+            "count": 100,
+            "name": "Sand"
+          }
+        ],
+        "output": 200,
+        "station": "Purification Station",
+        "time": 600
+      },
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Contaminated Water"
+          },
+          {
+            "count": 1,
+            "name": "Charcoal"
+          }
+        ],
+        "output": 5,
+        "station": "Camp Fire",
+        "time": 55
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Contaminated Water"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 75
+      },
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Thornberry"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 35
+      }
+    ],
+    "name": "Purified Water",
+    "parent": "Camp Fire",
+    "trade_price": 10
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Hangar Gate"
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Hangar Roof"
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Hangar Wall"
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Hangar Wall with Door"
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Wall"
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Battlements"
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Door"
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Foundation"
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Floor / Roof"
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Slit Wall"
+  },
+  {
+    "category": "Medium Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Double Slit Wall"
   },
   {
     "category": "Resources",
@@ -9022,562 +9502,6 @@
     "name": "Sandy Module"
   },
   {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Wall"
-  },
-  {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Door"
-  },
-  {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Foundation"
-  },
-  {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Floor / Roof"
-  },
-  {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Wall with Window"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Wall"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Battlements"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Corner"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Door"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Foundation"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Floor / Roof"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Slit Wall"
-  },
-  {
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Double Slit Wall"
-  },
-  {
-    "category": "Interactables",
-    "name": "Wanderer's Potion"
-  },
-  {
-    "category": "Liquids",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Cactus Flesh"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 35
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "FruitPulp"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 35
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Aloe Vera"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 35
-      },
-      {
-        "ingredients": [
-          {
-            "count": 200,
-            "name": "Contaminated Water"
-          },
-          {
-            "count": 25,
-            "name": "Charcoal"
-          },
-          {
-            "count": 100,
-            "name": "Sand"
-          }
-        ],
-        "output": 200,
-        "station": "Purification Station",
-        "time": 600
-      },
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Contaminated Water"
-          },
-          {
-            "count": 1,
-            "name": "Charcoal"
-          }
-        ],
-        "output": 5,
-        "station": "Camp Fire",
-        "time": 55
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Contaminated Water"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 75
-      },
-      {
-        "ingredients": [
-          {
-            "count": 3,
-            "name": "Thornberry"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 35
-      }
-    ],
-    "name": "Purified Water",
-    "parent": "Camp Fire",
-    "trade_price": 10
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Hangar Gate"
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Hangar Roof"
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Hangar Wall"
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Hangar Wall with Door"
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Wall"
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Battlements"
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Door"
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Foundation"
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Floor / Roof"
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Slit Wall"
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Double Slit Wall"
-  },
-  {
     "category": "Resources",
     "name": "Fortress Module"
   },
@@ -9738,30 +9662,114 @@
     "name": "Sand Ramp"
   },
   {
-    "category": "StructuralWoodLight",
+    "category": "Stone Structures",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 38,
+            "count": 28,
             "name": "Wood"
           },
           {
-            "count": 1,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 11,
+            "count": 10,
             "name": "Stone"
           },
           {
-            "count": 2,
+            "count": 1,
             "name": "Wood Shaft"
           }
         ]
       }
     ],
-    "name": "Light Wood Walker Gate"
+    "name": "Stone Wall"
+  },
+  {
+    "category": "Stone Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Door"
+  },
+  {
+    "category": "Stone Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Foundation"
+  },
+  {
+    "category": "Stone Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Floor / Roof"
+  },
+  {
+    "category": "Stone Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Wall with Window"
   },
   {
     "category": "Tools",
