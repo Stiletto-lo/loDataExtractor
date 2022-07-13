@@ -59,6 +59,7 @@ allTranslations["ReinforcedPlank2"] = "Reinforced Plank";
 allTranslations["BedSand"] = "Sand Bed";
 allTranslations["CampFire"] = "Camp Fire";
 allTranslations["Campfire"] = "Camp Fire";
+allTranslations["SawbladeTool_2"] = "Long Sawblade";
 
 allTranslations["Woodworking_Tier2"] = "Advanced Woodworking Station";
 allTranslations["Woodworking_Tier3"] = "Artificer Woodworking Station";
@@ -117,6 +118,7 @@ allTranslations["Structural (concrete)"] = "Cement Structures";
 allTranslations["Structural (clay)"] = "Clay Structures";
 allTranslations["Structural (wood: medium)"] = "Medium Wood Structures";
 allTranslations["Structural (wood: heavy)"] = "Heavy Wood Structures";
+allTranslations["Structural (wood: light)"] = "Light Wood Structures";
 allTranslations["WallGiants"] = "Giant Structures";
 
 controller.translateName = (name) => {

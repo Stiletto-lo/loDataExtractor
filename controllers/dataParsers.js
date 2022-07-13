@@ -160,4 +160,35 @@ controller.parseUpgradeName = (name, profile) => {
   return `${walkerName} Walker Upgrade - ${type} - Tier ${tier}`;
 };
 
+controller.itemMerger = (allItems = [], mainItemName, otherItemName) => {
+  let mainItem = allItems.find(
+    (item) => item.name && item.name == mainItemName
+  );
+  let otherItem = allItems.find(
+    (item) => item.name && item.name == otherItemName
+  );
+
+  let allItemsFiltered = allItems.filter(
+    (item) =>
+      item.name && item.name != otherItemName && item.name != mainItemName
+  );
+
+  if (mainItem && otherItem) {
+    let newItem = { ...mainItem };
+
+    for (const key in otherItem) {
+      if (otherItem[key] && !mainItem[key]) {
+        newItem[key] = otherItem[key];
+      }
+    }
+
+    allItemsFiltered.push(newItem);
+  } else if (mainItem) {
+    allItemsFiltered.push(mainItem);
+  } else if (otherItem) {
+    allItemsFiltered.push(otherItem);
+  }
+  return allItemsFiltered;
+};
+
 module.exports = controller;

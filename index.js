@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const comparator = require("./controllers/comparator");
 const fileParser = require("./controllers/fileParsers");
+const dataParser = require("./controllers/dataParsers");
 
 let allItems = [];
 const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
@@ -96,6 +97,8 @@ allItems = allItems
       return acc;
     }
   }, []);
+
+allItems = dataParser.itemMerger(allItems, "Long Sawblade", "Sawblade_Tier2");
 
 allItems.sort(orderByCategory);
 
