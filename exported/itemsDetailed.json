@@ -33,13 +33,6 @@
   },
   {
     "cost": {
-      "name": "Fragment"
-    },
-    "name": "Campfire",
-    "parent": "Crafting"
-  },
-  {
-    "cost": {
       "count": 40,
       "name": "Tablet"
     },
@@ -121,6 +114,52 @@
         "tier": 3
       }
     ]
+  },
+  {
+    "cost": {
+      "count": 8,
+      "name": "Tablet"
+    },
+    "name": "Iron Studded Boots",
+    "parent": "Iron Studded Armor",
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 10,
+            "name": "Insects"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 15,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "trade_price": 75.8,
+    "description": "Most tribes eschew iron armor, despite its protective value. History has proven that it is not pirates whom a nomad must fear most, but the sun.",
+    "armorInfo": {
+      "absorbing": 12,
+      "reduction": 8,
+      "speedReduction": 5
+    }
+  },
+  {
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "name": "Flare - White",
+    "parent": "Equipment"
   },
   {
     "category": "Ammo",
@@ -261,7 +300,7 @@
             "name": "Tar"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 75
       }
     ],
@@ -392,7 +431,7 @@
             "name": "Bone Splinter"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 90
       }
     ],
@@ -634,7 +673,7 @@
             "name": "Feather"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 60
       }
     ],
@@ -735,7 +774,7 @@
             "name": "Mushroom Flesh"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 75
       }
     ],
@@ -773,7 +812,7 @@
             "name": "Nomad Cloth"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 75
       }
     ],
@@ -983,7 +1022,7 @@
             "name": "Insects"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 75
       }
     ],
@@ -1421,7 +1460,7 @@
             "name": "Sulfur"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 120
       }
     ],
@@ -1460,52 +1499,6 @@
         "tier": 1
       }
     ]
-  },
-  {
-    "cost": {
-      "count": 8,
-      "name": "Tablet"
-    },
-    "name": "Iron Studded Boots",
-    "parent": "Iron Studded Armor",
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 10,
-            "name": "Insects"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 15,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "trade_price": 75.8,
-    "description": "Most tribes eschew iron armor, despite its protective value. History has proven that it is not pirates whom a nomad must fear most, but the sun.",
-    "armorInfo": {
-      "absorbing": 12,
-      "reduction": 8,
-      "speedReduction": 5
-    }
-  },
-  {
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
-    "name": "Flare - White",
-    "parent": "Equipment"
   },
   {
     "cost": {
@@ -2013,6 +2006,15 @@
     },
     "name": "Cobra Walker Upgrades - Tier 2",
     "parent": "Cobra Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 18,
+      "name": "Tablet"
+    },
+    "name": "Cobra Walker Upgrades - Tier 3",
+    "parent": "Cobra Walker Upgrades - Tier 2"
   },
   {
     "cost": {
@@ -2654,15 +2656,6 @@
     },
     "name": "FlamingWaterNew",
     "parent": "RaceDustNew"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 18,
-      "name": "Tablet"
-    },
-    "name": "Cobra Walker Upgrades - Tier 3",
-    "parent": "Cobra Walker Upgrades - Tier 2"
   },
   {
     "category": "Upgrades",
@@ -5317,7 +5310,7 @@
         ]
       }
     ],
-    "parent": "Campfire",
+    "parent": "Camp Fire",
     "structureInfo": {
       "type": "Soft",
       "hp": 900
@@ -5739,6 +5732,9 @@
   },
   {
     "category": "Crafting",
+    "cost": {
+      "name": "Fragment"
+    },
     "crafting": [
       {
         "ingredients": [
@@ -5758,6 +5754,7 @@
       }
     ],
     "name": "Camp Fire",
+    "parent": "Crafting",
     "description": "Basic crafting station can formulate new liquids and vitamins, in addition to other useful items.",
     "structureInfo": {
       "type": "Soft",
@@ -5883,7 +5880,7 @@
       }
     ],
     "name": "Woodworking Station",
-    "parent": "Campfire",
+    "parent": "Camp Fire",
     "description": "Basic crafting station cuts wood into basic parts.",
     "structureInfo": {
       "type": "Soft",
@@ -5931,7 +5928,7 @@
             "name": "Purified Water"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 30
       }
     ],
@@ -5958,7 +5955,7 @@
             "name": "Purified Water"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 135
       }
     ],
@@ -5989,7 +5986,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 60
       }
     ],
@@ -6019,7 +6016,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 60
       }
     ],
@@ -6050,7 +6047,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 60
       }
     ],
@@ -6081,7 +6078,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 60
       }
     ],
@@ -6111,7 +6108,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 60
       }
     ],
@@ -6146,7 +6143,7 @@
             "name": "Worm Fang"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 100
       }
     ],
@@ -6171,7 +6168,7 @@
             "name": "Ceramic Shard"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 135
       }
     ],
@@ -9532,7 +9529,7 @@
             "name": "Bone Splinter"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 45
       },
       {
@@ -9546,7 +9543,7 @@
             "name": "Purified Water"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 45
       }
     ],
@@ -10448,7 +10445,7 @@
             "name": "Sulfur"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 1
       },
       {
@@ -10458,7 +10455,7 @@
             "name": "Chitin Plate"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 1
       }
     ],
@@ -10933,7 +10930,7 @@
             "name": "Cactus Flesh"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 35
       },
       {
@@ -10943,7 +10940,7 @@
             "name": "FruitPulp"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 35
       },
       {
@@ -10953,7 +10950,7 @@
             "name": "Aloe Vera"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 35
       },
       {
@@ -10987,7 +10984,7 @@
           }
         ],
         "output": 5,
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 55
       },
       {
@@ -10997,7 +10994,7 @@
             "name": "Contaminated Water"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 75
       },
       {
@@ -11007,12 +11004,12 @@
             "name": "Thornberry"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 35
       }
     ],
     "name": "Purified Water",
-    "parent": "Campfire",
+    "parent": "Camp Fire",
     "trade_price": 10,
     "description": "All water that is transported to the Flotilla is cleansed in an ancient water purifying machine. The Guardians are the sole keepers of this machine, a technological relic of the old world which has sustained the Flotillans to this day."
   },
@@ -12184,7 +12181,7 @@
       }
     ],
     "name": "Tube Spade",
-    "parent": "Campfire",
+    "parent": "Camp Fire",
     "description": "Used for harvesting resources from the soil, it is the simplest and most efficient way of digging in the ground that the great minds of the Flotilla could come up with."
   },
   {
@@ -34542,7 +34539,7 @@
             "name": "Stone"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 4
       }
     ],

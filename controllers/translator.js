@@ -57,6 +57,8 @@ allTranslations["WalkersRoot"] = "Walkers";
 allTranslations["ConstructionRoot"] = "Construction";
 allTranslations["ReinforcedPlank2"] = "Reinforced Plank";
 allTranslations["BedSand"] = "Sand Bed";
+allTranslations["CampFire"] = "Camp Fire";
+allTranslations["Campfire"] = "Camp Fire";
 
 allTranslations["Woodworking_Tier2"] = "Advanced Woodworking Station";
 allTranslations["Woodworking_Tier3"] = "Artificer Woodworking Station";

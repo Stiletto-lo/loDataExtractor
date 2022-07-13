@@ -33,13 +33,6 @@
   },
   {
     "cost": {
-      "name": "Fragment"
-    },
-    "name": "Campfire",
-    "parent": "Crafting"
-  },
-  {
-    "cost": {
       "count": 40,
       "name": "Tablet"
     },
@@ -101,6 +94,46 @@
       }
     ],
     "trade_price": 25
+  },
+  {
+    "cost": {
+      "count": 8,
+      "name": "Tablet"
+    },
+    "name": "Iron Studded Boots",
+    "parent": "Iron Studded Armor",
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 10,
+            "name": "Insects"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 15,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "trade_price": 75.8
+  },
+  {
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "name": "Flare - White",
+    "parent": "Equipment"
   },
   {
     "category": "Ammo",
@@ -217,7 +250,7 @@
             "name": "Tar"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 75
       }
     ],
@@ -314,7 +347,7 @@
             "name": "Bone Splinter"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 90
       }
     ],
@@ -498,7 +531,7 @@
             "name": "Feather"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 60
       }
     ],
@@ -581,7 +614,7 @@
             "name": "Mushroom Flesh"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 75
       }
     ],
@@ -615,7 +648,7 @@
             "name": "Nomad Cloth"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 75
       }
     ],
@@ -781,7 +814,7 @@
             "name": "Insects"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 75
       }
     ],
@@ -1081,7 +1114,7 @@
             "name": "Sulfur"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 120
       }
     ],
@@ -1098,46 +1131,6 @@
     "category": "Ammo",
     "name": "Water Pitcher",
     "trade_price": 1
-  },
-  {
-    "cost": {
-      "count": 8,
-      "name": "Tablet"
-    },
-    "name": "Iron Studded Boots",
-    "parent": "Iron Studded Armor",
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 10,
-            "name": "Insects"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 15,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "trade_price": 75.8
-  },
-  {
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
-    "name": "Flare - White",
-    "parent": "Equipment"
   },
   {
     "cost": {
@@ -1618,6 +1611,15 @@
     },
     "name": "Cobra Walker Upgrades - Tier 2",
     "parent": "Cobra Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 18,
+      "name": "Tablet"
+    },
+    "name": "Cobra Walker Upgrades - Tier 3",
+    "parent": "Cobra Walker Upgrades - Tier 2"
   },
   {
     "cost": {
@@ -2110,15 +2112,6 @@
     },
     "name": "FlamingWaterNew",
     "parent": "RaceDustNew"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 18,
-      "name": "Tablet"
-    },
-    "name": "Cobra Walker Upgrades - Tier 3",
-    "parent": "Cobra Walker Upgrades - Tier 2"
   },
   {
     "category": "Upgrades",
@@ -4407,7 +4400,7 @@
         ]
       }
     ],
-    "parent": "Campfire"
+    "parent": "Camp Fire"
   },
   {
     "name": "Advanced Fiberworking Station",
@@ -4767,6 +4760,9 @@
   },
   {
     "category": "Crafting",
+    "cost": {
+      "name": "Fragment"
+    },
     "crafting": [
       {
         "ingredients": [
@@ -4785,7 +4781,8 @@
         ]
       }
     ],
-    "name": "Camp Fire"
+    "name": "Camp Fire",
+    "parent": "Crafting"
   },
   {
     "category": "Crafting",
@@ -4891,7 +4888,7 @@
       }
     ],
     "name": "Woodworking Station",
-    "parent": "Campfire"
+    "parent": "Camp Fire"
   },
   {
     "category": "Crafting",
@@ -4930,7 +4927,7 @@
             "name": "Purified Water"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 30
       }
     ],
@@ -4956,7 +4953,7 @@
             "name": "Purified Water"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 135
       }
     ],
@@ -4986,7 +4983,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 60
       }
     ],
@@ -5015,7 +5012,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 60
       }
     ],
@@ -5045,7 +5042,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 60
       }
     ],
@@ -5075,7 +5072,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 60
       }
     ],
@@ -5104,7 +5101,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 60
       }
     ],
@@ -5138,7 +5135,7 @@
             "name": "Worm Fang"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 100
       }
     ],
@@ -5163,7 +5160,7 @@
             "name": "Ceramic Shard"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 135
       }
     ],
@@ -8060,7 +8057,7 @@
             "name": "Bone Splinter"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 45
       },
       {
@@ -8074,7 +8071,7 @@
             "name": "Purified Water"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 45
       }
     ],
@@ -8933,7 +8930,7 @@
             "name": "Sulfur"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 1
       },
       {
@@ -8943,7 +8940,7 @@
             "name": "Chitin Plate"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 1
       }
     ],
@@ -9288,7 +9285,7 @@
             "name": "Cactus Flesh"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 35
       },
       {
@@ -9298,7 +9295,7 @@
             "name": "FruitPulp"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 35
       },
       {
@@ -9308,7 +9305,7 @@
             "name": "Aloe Vera"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 35
       },
       {
@@ -9342,7 +9339,7 @@
           }
         ],
         "output": 5,
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 55
       },
       {
@@ -9352,7 +9349,7 @@
             "name": "Contaminated Water"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 75
       },
       {
@@ -9362,12 +9359,12 @@
             "name": "Thornberry"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 35
       }
     ],
     "name": "Purified Water",
-    "parent": "Campfire",
+    "parent": "Camp Fire",
     "trade_price": 10
   },
   {
@@ -10305,7 +10302,7 @@
       }
     ],
     "name": "Tube Spade",
-    "parent": "Campfire"
+    "parent": "Camp Fire"
   },
   {
     "name": "Defensive Tower",
@@ -31499,7 +31496,7 @@
             "name": "Stone"
           }
         ],
-        "station": "Campfire",
+        "station": "Camp Fire",
         "time": 4
       }
     ],

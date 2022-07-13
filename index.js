@@ -6,6 +6,7 @@ const fileParser = require("./controllers/fileParsers");
 
 let allItems = [];
 const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
+const DEBUG = process.env.DEBUG === "true";
 
 const folderPatch = "./exported/";
 
@@ -53,16 +54,22 @@ allItems.forEach((item) => {
   Object.keys(item).forEach((key) => {
     if (item[key] === undefined) {
       delete item[key];
-    } else if (item["translation"] != undefined) {
-      delete item["translation"];
-    } else if (item["type"] != undefined) {
-      delete item["type"];
-    } else if (item["schematicName"] != undefined) {
-      delete item["schematicName"];
-    } else if (item["drops"] != undefined && item["drops"].length <= 0) {
-      delete item["drops"];
-    } else if (item["toolInfo"] != undefined && item["toolInfo"].length <= 0) {
-      delete item["toolInfo"];
+    }
+    if (!DEBUG) {
+      if (item["translation"] != undefined) {
+        delete item["translation"];
+      } else if (item["type"] != undefined) {
+        delete item["type"];
+      } else if (item["schematicName"] != undefined) {
+        delete item["schematicName"];
+      } else if (item["drops"] != undefined && item["drops"].length <= 0) {
+        delete item["drops"];
+      } else if (
+        item["toolInfo"] != undefined &&
+        item["toolInfo"].length <= 0
+      ) {
+        delete item["toolInfo"];
+      }
     }
   });
 });
