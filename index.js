@@ -41,11 +41,14 @@ loadDirData("./Content/Mist/Data/Placeables", "cached");
 
 loadDirData("./Content/Mist/Data/Walkers", "upgrages");
 
-//loadDirData("./Content/Mist/Data/LootTables", "loottables");
+if (process.env.EXTRACT_LOOT_TABLES === "true") {
+  loadDirData("./Content/Mist/Data/LootTables", "loottables");
+}
 
 fileParser.parseUpgradesToItems();
 
 allItems = fileParser.getItems();
+
 const translator = fileParser.getTranslator();
 
 allItems = translator.translateItems(allItems);

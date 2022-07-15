@@ -19,6 +19,6 @@ module.exports = {
   schematicName: undefined,
   armorInfo: undefined,
   movementSpeedReduction: undefined,
-  drops: [],
+  drops: undefined,
   structureInfo: undefined,
 };

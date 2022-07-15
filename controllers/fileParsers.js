@@ -28,34 +28,35 @@ controller.parseLootTable = (filePath) => {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
   if (jsonData[0]) {
-    let location = "";
-    if (jsonData[0].Name) {
-      location = jsonData[0].Name;
-    }
-    if (jsonData[0].Rows) {
+    let location = jsonData[0].Name ? jsonData[0].Name : null;
+    if (
+      location != null &&
+      jsonData[0].Type &&
+      jsonData[0].Type == "DataTable" &&
+      jsonData[0].Rows
+    ) {
       let lootItems = jsonData[0].Rows;
       Object.keys(lootItems).forEach((key) => {
-        if (lootItems[key].Item) {
-          let drop = { ...dropTemplate };
+        if (key != location && lootItems[key].Item) {
           let item = controller.getItem(dataParser.parseName(translator, key));
-          if (item) {
-            let itemDrops = item.drops;
-            let hasDrop = itemDrops.some((drop) => drop.location === location);
-            if (!hasDrop) {
+          if (item && item.name) {
+            let itemDrops = item.drops ? item.drops : [];
+            let hasDrop = itemDrops.some((d) => d.location === location);
+            if (!hasDrop && item.name != location) {
+              let drop = { ...dropTemplate };
               drop.location = location;
-              if (lootItems[key].Chance) {
+              if (EXTRACT_ALL_DATA && lootItems[key].Chance) {
                 drop.chance = lootItems[key].Chance;
               }
-              if (lootItems[key].MinQuantity) {
+              if (EXTRACT_ALL_DATA && lootItems[key].MinQuantity) {
                 drop.minQuantity = lootItems[key].MinQuantity;
               }
-              if (lootItems[key].MaxQuantity) {
+              if (EXTRACT_ALL_DATA && lootItems[key].MaxQuantity) {
                 drop.maxQuantity = lootItems[key].MaxQuantity;
               }
               itemDrops.push(drop);
               item.drops = itemDrops;
             }
-
             allItems.push(item);
           }
         }
@@ -621,7 +622,7 @@ controller.parseUpgrades = (filePath) => {
 controller.parseUpgradesToItems = () => {
   upgradesData.forEach((upgradePure) => {
     let item = controller.getUpgradeItem(upgradePure);
-    if (item) {
+    if (item && item.name) {
       allItems.push(item);
     }
   });
