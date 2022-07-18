@@ -121,6 +121,15 @@ allTranslations["Structural (wood: heavy)"] = "Heavy Wood Structures";
 allTranslations["Structural (wood: light)"] = "Light Wood Structures";
 allTranslations["WallGiants"] = "Giant Structures";
 
+allTranslations["LootBoxModulesTable"] = "Modules Strongbox";
+
+controller.translateLootSite = (name) => {
+  if (name != null && allTranslations[name]) {
+    return allTranslations[name].trim();
+  }
+  return name.trim();
+};
+
 controller.translateName = (name) => {
   if (name != null && allTranslations[name]) {
     return allTranslations[name].trim();

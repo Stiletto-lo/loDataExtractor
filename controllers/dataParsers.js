@@ -5,6 +5,7 @@ const controller = {};
 controller.parseName = (translator, name) => {
   name = controller.parseType(name);
   name = name.replace("_C", "").trim();
+  name = name.replace("DataTable", "").trim();
   let translateName = translator.translateName(name);
   if (translateName != null) {
     name = translateName;

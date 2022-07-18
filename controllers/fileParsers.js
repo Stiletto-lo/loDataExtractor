@@ -17,6 +17,9 @@ const ingredienTemplate = require("../templates/cost");
 const costTemplate = require("../templates/cost");
 const upgradeTemplate = require("../templates/upgrade");
 const upgradeInfoTemplate = require("../templates/upgradeInfo");
+const dropDataTemplate = require("../templates/dropData");
+const dataTableTemplate = require("../templates/datatable");
+const blueprintTemplate = require("../templates/lootBlueprint");
 
 const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
 const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
@@ -24,7 +27,135 @@ const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
 let allItems = [];
 let upgradesData = [];
 
+let allDatatables = [];
+let allBlueprints = [];
+
+controller.parseBlueprintsToItems = () => {
+  allBlueprints.forEach((blueprint) => {
+    let location = translator.translateLootSite(blueprint.name);
+    console.log(location + " | " + blueprint.tables.length);
+    blueprint.tables.forEach((dataTable) => {
+      let dataTableChance = 0;
+      dataTable.dropItems.forEach((lootItemData) => {
+        let item = controller.getItem(
+          dataParser.parseName(translator, lootItemData.name)
+        );
+        if (item && item.name) {
+          let itemDrops = item.drops ? item.drops : [];
+          let hasDrop = itemDrops.some((d) => d.location === location);
+          if (!hasDrop && item.name != location) {
+            let drop = { ...dropTemplate };
+            drop.location = location;
+            if (EXTRACT_ALL_DATA && lootItemData.Chance) {
+              drop.chance = lootItemData.Chance;
+            }
+            if (EXTRACT_ALL_DATA && lootItemData.MinQuantity) {
+              drop.minQuantity = lootItemData.MinQuantity;
+            }
+            if (EXTRACT_ALL_DATA && lootItemData.MaxQuantity) {
+              drop.maxQuantity = lootItemData.MaxQuantity;
+            }
+            itemDrops.push(drop);
+            item.drops = itemDrops;
+          }
+          allItems.push(item);
+        }
+      });
+    });
+  });
+};
+
 controller.parseLootTable = (filePath) => {
+  let rawdata = fs.readFileSync(filePath);
+  let jsonData = JSON.parse(rawdata);
+  if (
+    jsonData[0].Type &&
+    jsonData[0].Name &&
+    jsonData[0].Rows &&
+    jsonData[0].Type == "DataTable"
+  ) {
+    let dataTable = { ...dataTableTemplate };
+    dataTable.name = dataParser.parseName(translator, jsonData[0].Name);
+    let lootItems = jsonData[0].Rows;
+    let dataTableItems = [];
+    Object.keys(lootItems).forEach((key) => {
+      if (key != dataTable.name && lootItems[key].Item) {
+        let name = dataParser.parseName(translator, key);
+        if (name) {
+          let hasDrop = dataTable.dropItems.some((d) => d.name === name);
+          if (!hasDrop && name != dataTable.name) {
+            let drop = { ...dropDataTemplate };
+            drop.name = name;
+            if (EXTRACT_ALL_DATA && lootItems[key].Chance) {
+              drop.chance = lootItems[key].Chance;
+            }
+            if (EXTRACT_ALL_DATA && lootItems[key].MinQuantity) {
+              drop.minQuantity = lootItems[key].MinQuantity;
+            }
+            if (EXTRACT_ALL_DATA && lootItems[key].MaxQuantity) {
+              drop.maxQuantity = lootItems[key].MaxQuantity;
+            }
+            dataTableItems.push(drop);
+          }
+        }
+      }
+    });
+    dataTable.dropItems = dataTableItems;
+    allDatatables.push(dataTable);
+  }
+};
+
+controller.parseLootBlueprint = (filePath) => {
+  let rawdata = fs.readFileSync(filePath);
+  let jsonData = JSON.parse(rawdata);
+  if (
+    jsonData[0].Type &&
+    jsonData[0].Name &&
+    jsonData[0].Type == "BlueprintGeneratedClass"
+  ) {
+    if (jsonData[1]?.Type) {
+      let blueprint = { ...blueprintTemplate };
+      blueprint.name = dataParser.parseName(translator, jsonData[1].Type);
+      if (jsonData[1]?.Properties?.Loot?.Tables) {
+        let allBlueprintTables = [];
+        let tables = jsonData[1].Properties.Loot.Tables;
+        tables.forEach((table) => {
+          if (table?.Table?.ObjectPath) {
+            let name = dataParser.parseName(translator, table.Table.ObjectName);
+            let dataTable = allDatatables.find((data) => data.name == name);
+            if (dataTable) {
+              dataTable.chance = table.RunChance ? table.RunChance : undefined;
+              dataTable.minIterations = table.MinIterations
+                ? table.MinIterations
+                : undefined;
+              dataTable.maxIterations = table.MaxIterations
+                ? table.MaxIterations
+                : undefined;
+              dataTable.iterationRunChance = table.PerIterationRunChance
+                ? table.PerIterationRunChance
+                : undefined;
+              dataTable.minQuantityMultiplier = table.MinQuantityMultiplier
+                ? table.MinQuantityMultiplier
+                : undefined;
+              dataTable.maxQuantityMultiplier = table.MaxQuantityMultiplier
+                ? table.MaxQuantityMultiplier
+                : undefined;
+              dataTable.onlyOne = table.bGiveItemOnlyOnce
+                ? table.bGiveItemOnlyOnce
+                : undefined;
+
+              allBlueprintTables.push(dataTable);
+            }
+          }
+        });
+        blueprint.tables = allBlueprintTables;
+        allBlueprints.push(blueprint);
+      }
+    }
+  }
+};
+
+controller.parseLootTableOld = (filePath) => {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
   if (jsonData[0]) {
@@ -35,6 +166,7 @@ controller.parseLootTable = (filePath) => {
       jsonData[0].Type == "DataTable" &&
       jsonData[0].Rows
     ) {
+      location = dataParser.parseName(translator, location);
       let lootItems = jsonData[0].Rows;
       Object.keys(lootItems).forEach((key) => {
         if (key != location && lootItems[key].Item) {
@@ -719,6 +851,10 @@ controller.getItems = () => {
 
 controller.getUpgrades = () => {
   return upgradesData;
+};
+
+controller.getAllBlueprints = () => {
+  return allBlueprints;
 };
 
 controller.getTranslator = () => {
