@@ -21,6 +21,7 @@ const folderTypes = [
   "loottables",
   "upgrages",
   "blueprintsloot",
+  "damagetypes",
 ];
 
 const orderByCategory = (a, b) => {
@@ -41,6 +42,7 @@ loadDirData("./Content/Mist/Data/Trade", "trade");
 loadDirData("./Content/Mist/Data/Placeables", "cached");
 
 loadDirData("./Content/Mist/Data/Walkers", "upgrages");
+loadDirData("./Content/Mist/Data/DamageTypes", "damagetypes");
 
 if (process.env.EXTRACT_LOOT_TABLES === "true") {
   loadDirData("./Content/Mist/Data/LootTables", "loottables");
@@ -207,6 +209,9 @@ function loadDirData(techTreeDir, folderType) {
           break;
         case 8:
           fileParser.parseLootBlueprint(techTreeDir + "/" + file);
+          break;
+        case 9:
+          fileParser.parseDamage(techTreeDir + "/" + file);
           break;
       }
     }

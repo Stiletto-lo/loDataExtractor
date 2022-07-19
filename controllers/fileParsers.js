@@ -328,11 +328,11 @@ controller.parseItemData = (filePath) => {
           jsonData[1].Properties.ExperienceRewardCrafting;
       }
 
-      if (EXTRACT_ALL_DATA && jsonData[1].Properties?.MaxStackSize) {
+      if (jsonData[1].Properties?.MaxStackSize) {
         item.stackSize = jsonData[1].Properties.MaxStackSize;
       }
 
-      if (EXTRACT_ALL_DATA && jsonData[1].Properties?.Weight) {
+      if (jsonData[1].Properties?.Weight) {
         item.weight = jsonData[1].Properties.Weight;
       }
 
@@ -451,6 +451,13 @@ controller.parseItemData = (filePath) => {
           ).trim();
         }
       }
+
+      if (jsonData[1].Properties?.DamageType?.ObjectName) {
+        item.damageType = dataParser.parseName(
+          translator,
+          jsonData[1].Properties.DamageType.ObjectName
+        );
+      }
     }
 
     if (
@@ -518,6 +525,14 @@ controller.parsePlaceableData = (filePath) => {
             );
           item.structureInfo = structureInfo;
         }
+      }
+
+      if (jsonData[1].Properties?.WalkerCategory) {
+        item.walkerinfo = {
+          category: dataParser.parseCategory(
+            jsonData[1].Properties.WalkerCategory
+          ),
+        };
       }
 
       if (jsonData[1].Properties?.Name?.SourceString) {
@@ -604,6 +619,42 @@ controller.parseTechData = (filePath) => {
       }
     }
     allItems.push(item);
+  }
+};
+
+controller.parseDamage = (filePath) => {
+  let rawdata = fs.readFileSync(filePath);
+  let jsonData = JSON.parse(rawdata);
+  if (jsonData[1]?.Type) {
+    let damageTypeName = dataParser.parseName(translator, jsonData[1].Type);
+    let itemSearch = allItems.find((item) => item.damageType == damageTypeName);
+    if (itemSearch) {
+      let item = controller.getItem(itemSearch.name);
+      if (item) {
+        let proyectileDamage = item.projectileDamage
+          ? item.projectileDamage
+          : { ...projectileDamageTemplate };
+        proyectileDamage.vsSoft = jsonData[1]?.Properties?.DamageAgainstSoft
+          ? parseInt(jsonData[1].Properties.DamageAgainstSoft * 100, 10)
+          : undefined;
+        proyectileDamage.vsMedium = jsonData[1]?.Properties?.DamageAgainstMedium
+          ? parseInt(jsonData[1].Properties.DamageAgainstMedium * 100, 10)
+          : undefined;
+        proyectileDamage.vsHard = jsonData[1]?.Properties?.DamageAgainstHard
+          ? parseInt(jsonData[1].Properties.DamageAgainstHard * 100, 10)
+          : undefined;
+        proyectileDamage.vsReinforced = jsonData[1]?.Properties
+          ?.DamageAgainstReinforced
+          ? parseInt(jsonData[1].Properties.DamageAgainstReinforced * 100, 10)
+          : undefined;
+        proyectileDamage.vsSolid = jsonData[1]?.Properties?.DamageAgainstSolid
+          ? parseInt(jsonData[1].Properties.DamageAgainstSolid * 100, 10)
+          : undefined;
+
+        item.projectileDamage = proyectileDamage;
+        allItems.push(item);
+      }
+    }
   }
 };
 

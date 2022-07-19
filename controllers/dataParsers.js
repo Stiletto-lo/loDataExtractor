@@ -95,6 +95,7 @@ controller.parseCategory = (category) => {
   category = category
     .replace("Mist/Content/Mist/Data/Items/Categories/", "")
     .trim();
+  category = category.replace("EMistWalkerCategory::", "").trim();
   category = category.replace(".0", "").trim();
   return category;
 };
