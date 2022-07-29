@@ -180,37 +180,37 @@ function loadDirData(techTreeDir, folderType) {
     if (fileData.isDirectory()) {
       loadDirData(techTreeDir + "/" + file, folderType);
     } else if (file.includes(".json")) {
-      switch (folderTypes.indexOf(folderType)) {
-        case 0:
+      switch (folderType) {
+        case "tech":
           fileParser.parseTechData(techTreeDir + "/" + file);
           break;
-        case 1:
+        case "item":
           fileParser.parseItemData(techTreeDir + "/" + file);
           break;
-        case 2:
+        case "translation":
           fileParser.parseTranslations(techTreeDir + "/" + file);
           break;
-        case 3:
+        case "trade":
           fileParser.parsePrices(techTreeDir + "/" + file);
           break;
-        case 4:
+        case "placeables":
           fileParser.parsePlaceableData(techTreeDir + "/" + file);
           break;
-        case 5:
+        case "cached":
           if (file.includes("CachedPlaceablesCosts.json")) {
             fileParser.parseCachedItems(techTreeDir + "/" + file);
           }
           break;
-        case 6:
+        case "loottables":
           fileParser.parseLootTable(techTreeDir + "/" + file);
           break;
-        case 7:
+        case "upgrages":
           fileParser.parseUpgrades(techTreeDir + "/" + file);
           break;
-        case 8:
+        case "blueprintsloot":
           fileParser.parseLootBlueprint(techTreeDir + "/" + file);
           break;
-        case 9:
+        case "damagetypes":
           fileParser.parseDamage(techTreeDir + "/" + file);
           break;
       }
