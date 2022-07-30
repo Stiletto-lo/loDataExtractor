@@ -73,6 +73,8 @@ allTranslations["Purification"] = "Purification Station";
 allTranslations["Stomping"] = "Stomping Station";
 allTranslations["Woodworking"] = "Woodworking Station";
 allTranslations["ChestSmall"] = "Small Chest";
+allTranslations["ChestMedium"] = "Medium Chest";
+allTranslations["ChestLarge"] = "Large Chest";
 
 allTranslations["GunPod"] = "Gun Pod";
 allTranslations["GunPodShell"] = "Gun Pod Shell";
