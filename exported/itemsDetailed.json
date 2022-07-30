@@ -367,7 +367,7 @@
       }
     ],
     "name": "Aloe Goo Bomb",
-    "parent": "SlingshotAmmo",
+    "parent": "Small Boulder",
     "trade_price": 40.5,
     "description": "Ammo for sling or catapult. Covers nomads in green goo that heals them for short duration.",
     "projectileDamage": {
@@ -498,7 +498,7 @@
       }
     ],
     "name": "Insect Bomb",
-    "parent": "SlingshotAmmo",
+    "parent": "Small Boulder",
     "trade_price": 24.2,
     "description": "Nomads attacked by a swarm of insects have to fight back. Insects will break grappling hook tethers and deal moderate health damage.",
     "projectileDamage": {
@@ -656,7 +656,7 @@
       }
     ],
     "name": "Obsidian Rok",
-    "parent": "StoneRok",
+    "parent": "Flint Rok",
     "trade_price": 5.2,
     "description": "Ammo for the Rokker. A solid chunk of obsidian fashioned into a terrifying projectile.",
     "projectileDamage": {
@@ -1280,7 +1280,7 @@
         "time": 60
       }
     ],
-    "parent": "SlingshotAmmo",
+    "parent": "Small Boulder",
     "trade_price": 38,
     "projectileDamage": {
       "damage": 10,
@@ -1488,6 +1488,7 @@
         ]
       }
     ],
+    "parent": "Slingshot",
     "trade_price": 3.1,
     "projectileDamage": {
       "damage": 450,

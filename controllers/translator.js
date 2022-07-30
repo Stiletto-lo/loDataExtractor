@@ -81,6 +81,8 @@ allTranslations["Stinger_T3"] = "Tall Stinger";
 allTranslations["BallistaBolt"] = "Flint Bolt";
 allTranslations["TrapSpikesSharp"] = "Sharp Spikes";
 allTranslations["TrapTripWire"] = "Trip Wire Trap";
+allTranslations["SlingshotAmmo"] = "Small Boulder";
+allTranslations["StoneRok"] = "Flint Rok";
 
 allTranslations["GunPod"] = "Gun Pod";
 allTranslations["GunPodShell"] = "Gun Pod Shell";

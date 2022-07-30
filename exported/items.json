@@ -283,7 +283,7 @@
       }
     ],
     "name": "Aloe Goo Bomb",
-    "parent": "SlingshotAmmo",
+    "parent": "Small Boulder",
     "trade_price": 40.5,
     "damageType": "BluntDamage"
   },
@@ -384,7 +384,7 @@
       }
     ],
     "name": "Insect Bomb",
-    "parent": "SlingshotAmmo",
+    "parent": "Small Boulder",
     "trade_price": 24.2,
     "damageType": "BluntDamage"
   },
@@ -488,7 +488,7 @@
       }
     ],
     "name": "Obsidian Rok",
-    "parent": "StoneRok",
+    "parent": "Flint Rok",
     "trade_price": 5.2,
     "damageType": "PiercingDamageBone"
   },
@@ -923,7 +923,7 @@
         "time": 60
       }
     ],
-    "parent": "SlingshotAmmo",
+    "parent": "Small Boulder",
     "trade_price": 38,
     "damageType": "FireDamage"
   },
@@ -1074,6 +1074,7 @@
         ]
       }
     ],
+    "parent": "Slingshot",
     "trade_price": 3.1,
     "damageType": "SmallRockDamage"
   },
