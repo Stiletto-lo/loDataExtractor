@@ -60,6 +60,8 @@ allTranslations["BedSand"] = "Sand Bed";
 allTranslations["CampFire"] = "Camp Fire";
 allTranslations["Campfire"] = "Camp Fire";
 allTranslations["SawbladeTool_2"] = "Long Sawblade";
+allTranslations["FlamingWaterNew"] = "Sinus Destroyer";
+allTranslations["RaceDustNew"] = "Race Dust";
 
 allTranslations["Woodworking_Tier2"] = "Advanced Woodworking Station";
 allTranslations["Woodworking_Tier3"] = "Artificer Woodworking Station";

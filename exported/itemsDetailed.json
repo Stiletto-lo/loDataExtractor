@@ -3692,6 +3692,10 @@
     "description": "Snorting this will make a Nomad hyper focused. Grants Nomad more damage and faster reloading with board weapons.",
     "stackSize": 100,
     "category": "Drugs",
+    "cost": {
+      "count": 3,
+      "name": "Tablet"
+    },
     "crafting": [
       {
         "ingredients": [
@@ -3716,6 +3720,7 @@
         "time": 60
       }
     ],
+    "parent": "Race Dust",
     "trade_price": 87.6,
     "weight": 0.5
   },
@@ -3814,6 +3819,7 @@
         "time": 60
       }
     ],
+    "parent": "Fury Fumes",
     "trade_price": 99.8,
     "weight": 0.5
   },
@@ -9351,6 +9357,430 @@
     },
     "name": "Cobra Walker Upgrades - Tier 4",
     "parent": "Cobra Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 16,
+      "name": "Fragment"
+    },
+    "name": "Dinghy Walker Upgrades - Tier 2",
+    "parent": "Dinghy Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "name": "Dinghy Walker Upgrades - Tier 3",
+    "parent": "Dinghy Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 4,
+      "name": "Tablet"
+    },
+    "name": "Dinghy Walker Upgrades - Tier 4",
+    "parent": "Dinghy Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 15,
+      "name": "Tablet"
+    },
+    "name": "Domus Walker Upgrades - Tier 2",
+    "parent": "Domus Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 20,
+      "name": "Tablet"
+    },
+    "name": "Domus Walker Upgrades - Tier 3",
+    "parent": "Domus Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 25,
+      "name": "Tablet"
+    },
+    "name": "Domus Walker Upgrades - Tier 4",
+    "parent": "Domus Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "name": "Falco Walker Upgrades - Tier 2",
+    "parent": "Falco Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 18,
+      "name": "Tablet"
+    },
+    "name": "Falco Walker Upgrades - Tier 3",
+    "parent": "Falco Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "name": "Falco Walker Upgrades - Tier 4",
+    "parent": "Falco Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "name": "Firefly Walker Upgrades - Tier 2",
+    "parent": "Firefly Walker"
+  },
+  {
+    "category": "Upgrades",
+    "name": "Firefly Walker Upgrades - Tier 3",
+    "parent": "Firefly Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "name": "Firefly Walker Upgrades - Tier 4",
+    "parent": "Firefly Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 5,
+      "name": "Tablet"
+    },
+    "name": "Hercul Walker Upgrades - Tier 2",
+    "parent": "Hercul Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 9,
+      "name": "Tablet"
+    },
+    "name": "Hercul Walker Upgrades - Tier 3",
+    "parent": "Hercul Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 16,
+      "name": "Tablet"
+    },
+    "name": "Hercul Walker Upgrades - Tier 4",
+    "parent": "Hercul Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 4,
+      "name": "Tablet"
+    },
+    "name": "Hornet Walker Upgrades - Tier 2",
+    "parent": "Hornet Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 7,
+      "name": "Tablet"
+    },
+    "name": "Hornet Walker Upgrades - Tier 3",
+    "parent": "Hornet Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "name": "Hornet Walker Upgrades - Tier 4",
+    "parent": "Hornet Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "name": "Mollusk Walker Upgrades - Tier 2",
+    "parent": "Mollusk Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "name": "Mollusk Walker Upgrades - Tier 3",
+    "parent": "Mollusk Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 5,
+      "name": "Tablet"
+    },
+    "name": "Mollusk Walker Upgrades - Tier 4",
+    "parent": "Mollusk Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "name": "Panda Walker Upgrades - Tier 2",
+    "parent": "Panda Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 18,
+      "name": "Tablet"
+    },
+    "name": "Panda Walker Upgrades - Tier 3",
+    "parent": "Panda Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "name": "Panda Walker Upgrades - Tier 4",
+    "parent": "Panda Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "name": "Raptor Sky Walker Upgrades - Tier 2",
+    "parent": "Raptor Sky Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 18,
+      "name": "Tablet"
+    },
+    "name": "Raptor Sky Walker Upgrades - Tier 3",
+    "parent": "Raptor Sky Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "name": "Raptor Sky Walker Upgrades - Tier 4",
+    "parent": "Raptor Sky Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 15,
+      "name": "Tablet"
+    },
+    "name": "Schmetterling Walker Upgrades - Tier 2",
+    "parent": "Schmetterling Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 20,
+      "name": "Tablet"
+    },
+    "name": "Schmetterling Walker Upgrades - Tier 3",
+    "parent": "Schmetterling Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 25,
+      "name": "Tablet"
+    },
+    "name": "Schmetterling Walker Upgrades - Tier 4",
+    "parent": "Schmetterling Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "name": "Silur Walker Upgrades - Tier 2",
+    "parent": "Silur Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 4,
+      "name": "Tablet"
+    },
+    "name": "Silur Walker Upgrades - Tier 3",
+    "parent": "Silur Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 7,
+      "name": "Tablet"
+    },
+    "name": "Silur Walker Upgrades - Tier 4",
+    "parent": "Silur Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "name": "Spider Walker With Ballista Upgrades - Tier 2",
+    "parent": "Spider Walker With Ballista"
+  },
+  {
+    "category": "Upgrades",
+    "name": "Spider Walker With Ballista Upgrades - Tier 3",
+    "parent": "Spider Walker With Ballista Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "name": "Spider Walker With Ballista Upgrades - Tier 4",
+    "parent": "Spider Walker With Ballista Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "name": "Stiletto Walker Upgrades - Tier 2",
+    "parent": "Stiletto Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "name": "Stiletto Walker Upgrades - Tier 3",
+    "parent": "Stiletto Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 5,
+      "name": "Tablet"
+    },
+    "name": "Stiletto Walker Upgrades - Tier 4",
+    "parent": "Stiletto Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 30,
+      "name": "Tablet"
+    },
+    "name": "Titan Walker Upgrades - Tier 2",
+    "parent": "Titan Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 50,
+      "name": "Tablet"
+    },
+    "name": "Titan Walker Upgrades - Tier 3",
+    "parent": "Titan Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 100,
+      "name": "Tablet"
+    },
+    "name": "Titan Walker Upgrades - Tier 4",
+    "parent": "Titan Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 60,
+      "name": "Fragment"
+    },
+    "name": "Toboggan Walker Upgrades - Tier 2",
+    "parent": "Toboggan Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "name": "Toboggan Walker Upgrades - Tier 3",
+    "parent": "Toboggan Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 5,
+      "name": "Tablet"
+    },
+    "name": "Toboggan Walker Upgrades - Tier 4",
+    "parent": "Toboggan Walker Upgrades - Tier 3"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 15,
+      "name": "Tablet"
+    },
+    "name": "Tusker Walker Upgrades - Tier 2",
+    "parent": "Tusker Walker"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 20,
+      "name": "Tablet"
+    },
+    "name": "Tusker Walker Upgrades - Tier 3",
+    "parent": "Tusker Walker Upgrades - Tier 2"
+  },
+  {
+    "category": "Upgrades",
+    "cost": {
+      "count": 25,
+      "name": "Tablet"
+    },
+    "name": "Tusker Walker Upgrades - Tier 4",
+    "parent": "Tusker Walker Upgrades - Tier 3"
   },
   {
     "category": "Upgrades",
@@ -29848,438 +30278,6 @@
       }
     ],
     "damageType": "MeleeCuttingDamage"
-  },
-  {
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
-    "name": "FlamingWaterNew",
-    "parent": "RaceDustNew"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 16,
-      "name": "Fragment"
-    },
-    "name": "Dinghy Walker Upgrades - Tier 2",
-    "parent": "Dinghy Walker"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
-    "name": "Dinghy Walker Upgrades - Tier 3",
-    "parent": "Dinghy Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
-    "name": "Dinghy Walker Upgrades - Tier 4",
-    "parent": "Dinghy Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 15,
-      "name": "Tablet"
-    },
-    "name": "Domus Walker Upgrades - Tier 2",
-    "parent": "Domus Walker"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
-    "name": "Domus Walker Upgrades - Tier 3",
-    "parent": "Domus Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
-    "name": "Domus Walker Upgrades - Tier 4",
-    "parent": "Domus Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "name": "Falco Walker Upgrades - Tier 2",
-    "parent": "Falco Walker"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 18,
-      "name": "Tablet"
-    },
-    "name": "Falco Walker Upgrades - Tier 3",
-    "parent": "Falco Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "name": "Falco Walker Upgrades - Tier 4",
-    "parent": "Falco Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "name": "Firefly Walker Upgrades - Tier 2",
-    "parent": "Firefly Walker"
-  },
-  {
-    "category": "Upgrades",
-    "name": "Firefly Walker Upgrades - Tier 3",
-    "parent": "Firefly Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
-    "name": "Firefly Walker Upgrades - Tier 4",
-    "parent": "Firefly Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "name": "Hercul Walker Upgrades - Tier 2",
-    "parent": "Hercul Walker"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 9,
-      "name": "Tablet"
-    },
-    "name": "Hercul Walker Upgrades - Tier 3",
-    "parent": "Hercul Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 16,
-      "name": "Tablet"
-    },
-    "name": "Hercul Walker Upgrades - Tier 4",
-    "parent": "Hercul Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
-    "name": "Hornet Walker Upgrades - Tier 2",
-    "parent": "Hornet Walker"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 7,
-      "name": "Tablet"
-    },
-    "name": "Hornet Walker Upgrades - Tier 3",
-    "parent": "Hornet Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "name": "Hornet Walker Upgrades - Tier 4",
-    "parent": "Hornet Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "name": "Mollusk Walker Upgrades - Tier 2",
-    "parent": "Mollusk Walker"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
-    "name": "Mollusk Walker Upgrades - Tier 3",
-    "parent": "Mollusk Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "name": "Mollusk Walker Upgrades - Tier 4",
-    "parent": "Mollusk Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "name": "Panda Walker Upgrades - Tier 2",
-    "parent": "Panda Walker"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 18,
-      "name": "Tablet"
-    },
-    "name": "Panda Walker Upgrades - Tier 3",
-    "parent": "Panda Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "name": "Panda Walker Upgrades - Tier 4",
-    "parent": "Panda Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "name": "Raptor Sky Walker Upgrades - Tier 2",
-    "parent": "Raptor Sky Walker"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 18,
-      "name": "Tablet"
-    },
-    "name": "Raptor Sky Walker Upgrades - Tier 3",
-    "parent": "Raptor Sky Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "name": "Raptor Sky Walker Upgrades - Tier 4",
-    "parent": "Raptor Sky Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 15,
-      "name": "Tablet"
-    },
-    "name": "Schmetterling Walker Upgrades - Tier 2",
-    "parent": "Schmetterling Walker"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
-    "name": "Schmetterling Walker Upgrades - Tier 3",
-    "parent": "Schmetterling Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
-    "name": "Schmetterling Walker Upgrades - Tier 4",
-    "parent": "Schmetterling Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
-    "name": "Silur Walker Upgrades - Tier 2",
-    "parent": "Silur Walker"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
-    "name": "Silur Walker Upgrades - Tier 3",
-    "parent": "Silur Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 7,
-      "name": "Tablet"
-    },
-    "name": "Silur Walker Upgrades - Tier 4",
-    "parent": "Silur Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "name": "Spider Walker With Ballista Upgrades - Tier 2",
-    "parent": "Spider Walker With Ballista"
-  },
-  {
-    "category": "Upgrades",
-    "name": "Spider Walker With Ballista Upgrades - Tier 3",
-    "parent": "Spider Walker With Ballista Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
-    "name": "Spider Walker With Ballista Upgrades - Tier 4",
-    "parent": "Spider Walker With Ballista Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "name": "Stiletto Walker Upgrades - Tier 2",
-    "parent": "Stiletto Walker"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
-    "name": "Stiletto Walker Upgrades - Tier 3",
-    "parent": "Stiletto Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "name": "Stiletto Walker Upgrades - Tier 4",
-    "parent": "Stiletto Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
-    "name": "Titan Walker Upgrades - Tier 2",
-    "parent": "Titan Walker"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 50,
-      "name": "Tablet"
-    },
-    "name": "Titan Walker Upgrades - Tier 3",
-    "parent": "Titan Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 100,
-      "name": "Tablet"
-    },
-    "name": "Titan Walker Upgrades - Tier 4",
-    "parent": "Titan Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 60,
-      "name": "Fragment"
-    },
-    "name": "Toboggan Walker Upgrades - Tier 2",
-    "parent": "Toboggan Walker"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
-    "name": "Toboggan Walker Upgrades - Tier 3",
-    "parent": "Toboggan Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "name": "Toboggan Walker Upgrades - Tier 4",
-    "parent": "Toboggan Walker Upgrades - Tier 3"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 15,
-      "name": "Tablet"
-    },
-    "name": "Tusker Walker Upgrades - Tier 2",
-    "parent": "Tusker Walker"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
-    "name": "Tusker Walker Upgrades - Tier 3",
-    "parent": "Tusker Walker Upgrades - Tier 2"
-  },
-  {
-    "category": "Upgrades",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
-    "name": "Tusker Walker Upgrades - Tier 4",
-    "parent": "Tusker Walker Upgrades - Tier 3"
   },
   {
     "category": "Weapons",
