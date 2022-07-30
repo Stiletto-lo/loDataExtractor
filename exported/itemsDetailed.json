@@ -3087,7 +3087,7 @@
         ]
       }
     ],
-    "parent": "SoilExcavator",
+    "parent": "Soil Excavator",
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
@@ -3193,7 +3193,7 @@
         ]
       }
     ],
-    "parent": "SoilExcavator",
+    "parent": "Soil Excavator",
     "structureInfo": {
       "type": "Soft",
       "hp": 4000
@@ -3299,7 +3299,7 @@
         ]
       }
     ],
-    "parent": "DrillSpade",
+    "parent": "Drill Spade",
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
@@ -3336,7 +3336,7 @@
         ]
       }
     ],
-    "parent": "SoilExcavator",
+    "parent": "Soil Excavator",
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
@@ -3435,7 +3435,7 @@
         ]
       }
     ],
-    "parent": "SoilExcavator",
+    "parent": "Soil Excavator",
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
@@ -7065,7 +7065,7 @@
           }
         ],
         "output": 100,
-        "station": "SoilExcavator",
+        "station": "Soil Excavator",
         "time": 29
       },
       {
@@ -7540,12 +7540,12 @@
             "name": "Ash"
           }
         ],
-        "station": "SoilExcavator",
+        "station": "Soil Excavator",
         "time": 8
       }
     ],
     "name": "Clay",
-    "parent": "SoilExcavator",
+    "parent": "Soil Excavator",
     "trade_price": 0.1,
     "description": "Extracted from lakebed soil.",
     "stackSize": 100,
@@ -7843,7 +7843,7 @@
             "name": "Purified Water"
           }
         ],
-        "station": "SoilExcavator",
+        "station": "Soil Excavator",
         "time": 16
       },
       {
@@ -7888,7 +7888,7 @@
       }
     ],
     "name": "Earth Wax",
-    "parent": "SoilExcavator",
+    "parent": "Soil Excavator",
     "trade_price": 1.4,
     "description": "Nomads rely on earth wax to waterproof walker sails and make their wooden decks resistant to decay. Often found when mining rocks, it can also be extracted from some natural resources through pressure.",
     "stackSize": 100,
@@ -8951,7 +8951,7 @@
           }
         ],
         "output": 10,
-        "station": "SoilExcavator",
+        "station": "Soil Excavator",
         "time": 29
       }
     ],

@@ -2380,7 +2380,7 @@
         ]
       }
     ],
-    "parent": "SoilExcavator"
+    "parent": "Soil Excavator"
   },
   {
     "name": "Advanced Furnace",
@@ -2469,7 +2469,7 @@
         ]
       }
     ],
-    "parent": "SoilExcavator"
+    "parent": "Soil Excavator"
   },
   {
     "name": "Quarry",
@@ -2558,7 +2558,7 @@
         ]
       }
     ],
-    "parent": "DrillSpade"
+    "parent": "Drill Spade"
   },
   {
     "name": "Stomping Station",
@@ -2589,7 +2589,7 @@
         ]
       }
     ],
-    "parent": "SoilExcavator"
+    "parent": "Soil Excavator"
   },
   {
     "name": "Water Condenser",
@@ -2670,7 +2670,7 @@
         ]
       }
     ],
-    "parent": "SoilExcavator"
+    "parent": "Soil Excavator"
   },
   {
     "name": "Advanced Woodworking Station",
@@ -5696,7 +5696,7 @@
           }
         ],
         "output": 100,
-        "station": "SoilExcavator",
+        "station": "Soil Excavator",
         "time": 29
       },
       {
@@ -6105,12 +6105,12 @@
             "name": "Ash"
           }
         ],
-        "station": "SoilExcavator",
+        "station": "Soil Excavator",
         "time": 8
       }
     ],
     "name": "Clay",
-    "parent": "SoilExcavator",
+    "parent": "Soil Excavator",
     "trade_price": 0.1
   },
   {
@@ -6376,7 +6376,7 @@
             "name": "Purified Water"
           }
         ],
-        "station": "SoilExcavator",
+        "station": "Soil Excavator",
         "time": 16
       },
       {
@@ -6421,7 +6421,7 @@
       }
     ],
     "name": "Earth Wax",
-    "parent": "SoilExcavator",
+    "parent": "Soil Excavator",
     "trade_price": 1.4
   },
   {
@@ -7241,7 +7241,7 @@
           }
         ],
         "output": 10,
-        "station": "SoilExcavator",
+        "station": "Soil Excavator",
         "time": 29
       }
     ],
