@@ -618,6 +618,7 @@ controller.parseTechData = (filePath) => {
         item.category = "Grappling Hooks";
       }
     }
+
     allItems.push(item);
   }
 };
@@ -881,16 +882,27 @@ controller.getUpgradeItem = (upgradePure) => {
 
 controller.getItem = (itemName) => {
   let itemCopy = { ...itemTemplate };
+  let found = false;
+
   allItems = allItems.filter((item) => {
-    if (
-      item.name == itemName ||
-      (item.translation && item.translation == itemName)
-    ) {
+    if (item.name == itemName) {
       itemCopy = item;
+      found = true;
       return false;
     }
     return true;
   });
+
+  if (!found) {
+    allItems = allItems.filter((item) => {
+      if (item.translation && item.translation == itemName) {
+        itemCopy = item;
+        return false;
+      }
+      return true;
+    });
+  }
+
   itemCopy.name = itemName;
 
   return itemCopy;
