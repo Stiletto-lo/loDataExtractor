@@ -83,6 +83,8 @@ allTranslations["TrapSpikesSharp"] = "Sharp Spikes";
 allTranslations["TrapTripWire"] = "Trip Wire Trap";
 allTranslations["SlingshotAmmo"] = "Small Boulder";
 allTranslations["StoneRok"] = "Flint Rok";
+allTranslations["MetalHarpoon2"] = "Iron-Tipped Bolt";
+allTranslations["BoltCompactBone"] = "Bone Dart";
 
 allTranslations["GunPod"] = "Gun Pod";
 allTranslations["GunPodShell"] = "Gun Pod Shell";

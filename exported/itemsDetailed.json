@@ -35,13 +35,51 @@
   },
   {
     "cost": {
-      "count": 3,
+      "count": 8,
       "name": "Tablet"
     },
-    "name": "Iron-Tipped Bolt",
-    "parent": "Bone Bolt",
-    "description": "Ammo for Ballista. An iron tip easily penetrates armor and makes holes in bodies that can't be patched.",
-    "stackSize": 100
+    "name": "Iron Studded Boots",
+    "parent": "Iron Studded Armor",
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 10,
+            "name": "Insects"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 15,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "trade_price": 75.8,
+    "description": "Most tribes eschew iron armor, despite its protective value. History has proven that it is not pirates whom a nomad must fear most, but the sun.",
+    "stackSize": 100,
+    "weight": 4,
+    "armorInfo": {
+      "absorbing": 12,
+      "reduction": 8,
+      "speedReduction": 5
+    }
+  },
+  {
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "name": "Flare - White",
+    "parent": "Equipment"
   },
   {
     "category": "Ammo",
@@ -552,7 +590,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "MetalHarpoon2"
+            "name": "Iron-Tipped Bolt"
           },
           {
             "count": 2,
@@ -966,54 +1004,6 @@
     "damageType": "HarpoonDamage"
   },
   {
-    "cost": {
-      "count": 8,
-      "name": "Tablet"
-    },
-    "name": "Iron Studded Boots",
-    "parent": "Iron Studded Armor",
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 10,
-            "name": "Insects"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 15,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "trade_price": 75.8,
-    "description": "Most tribes eschew iron armor, despite its protective value. History has proven that it is not pirates whom a nomad must fear most, but the sun.",
-    "stackSize": 100,
-    "weight": 4,
-    "armorInfo": {
-      "absorbing": 12,
-      "reduction": 8,
-      "speedReduction": 5
-    }
-  },
-  {
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
-    "name": "Flare - White",
-    "parent": "Equipment"
-  },
-  {
     "name": "Bone Dart",
     "description": "Ammo for Stingers and Repeater. Tipped with a sharpened piece of bone, it will shatter inside the target.",
     "stackSize": 20,
@@ -1036,6 +1026,7 @@
         ]
       }
     ],
+    "parent": "Tall Stinger",
     "trade_price": 5,
     "projectileDamage": {
       "damage": 38,
@@ -1320,7 +1311,7 @@
         ]
       }
     ],
-    "parent": "BoltCompactBone",
+    "parent": "Bone Dart",
     "trade_price": 15.6,
     "projectileDamage": {
       "damage": 78,
@@ -1468,6 +1459,52 @@
       }
     ],
     "damageType": "HullbreakerScattershotDamage"
+  },
+  {
+    "name": "Iron-Tipped Bolt",
+    "description": "Ammo for Ballista. An iron tip easily penetrates armor and makes holes in bodies that can't be patched.",
+    "stackSize": 20,
+    "category": "Ammo",
+    "cost": {
+      "count": 3,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 1,
+            "name": "Iron Ore"
+          },
+          {
+            "count": 3,
+            "name": "Feather"
+          },
+          {
+            "count": 25,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "parent": "Bone Bolt",
+    "trade_price": 25,
+    "projectileDamage": {
+      "damage": 180,
+      "vsReinforced": 10
+    },
+    "weight": 0.7,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 3
+      }
+    ],
+    "damageType": "PiercingDamageIron"
   },
   {
     "name": "Small Boulder",
@@ -9196,6 +9233,33 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 3500
+    }
+  },
+  {
+    "category": "Traps",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Bent Wooden Planks"
+          },
+          {
+            "count": 30,
+            "name": "Obsidian"
+          },
+          {
+            "count": 45,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Giant Wall Gate",
+    "description": "(CAN BE BUILT ONLY BY CLAIM OWNERS) Sturdy gate of a massive size that slides to the side when opened. Large enough to fit most of the walker types known to Nomads.",
+    "structureInfo": {
+      "type": "Hard",
+      "hp": 2500
     }
   },
   {
@@ -33042,33 +33106,6 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 15000
-    }
-  },
-  {
-    "category": "Traps",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 50,
-            "name": "Bent Wooden Planks"
-          },
-          {
-            "count": 30,
-            "name": "Obsidian"
-          },
-          {
-            "count": 45,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Giant Wall Gate",
-    "description": "(CAN BE BUILT ONLY BY CLAIM OWNERS) Sturdy gate of a massive size that slides to the side when opened. Large enough to fit most of the walker types known to Nomads.",
-    "structureInfo": {
-      "type": "Hard",
-      "hp": 2500
     }
   },
   {

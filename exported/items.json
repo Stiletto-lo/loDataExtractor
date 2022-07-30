@@ -33,11 +33,43 @@
   },
   {
     "cost": {
-      "count": 3,
+      "count": 8,
       "name": "Tablet"
     },
-    "name": "Iron-Tipped Bolt",
-    "parent": "Bone Bolt"
+    "name": "Iron Studded Boots",
+    "parent": "Iron Studded Armor",
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 10,
+            "name": "Insects"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 15,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "trade_price": 75.8
+  },
+  {
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "name": "Flare - White",
+    "parent": "Equipment"
   },
   {
     "category": "Ammo",
@@ -420,7 +452,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "MetalHarpoon2"
+            "name": "Iron-Tipped Bolt"
           },
           {
             "count": 2,
@@ -685,46 +717,6 @@
     "damageType": "HarpoonDamage"
   },
   {
-    "cost": {
-      "count": 8,
-      "name": "Tablet"
-    },
-    "name": "Iron Studded Boots",
-    "parent": "Iron Studded Armor",
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 10,
-            "name": "Insects"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 15,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "trade_price": 75.8
-  },
-  {
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
-    "name": "Flare - White",
-    "parent": "Equipment"
-  },
-  {
     "name": "Bone Dart",
     "category": "Ammo",
     "crafting": [
@@ -745,6 +737,7 @@
         ]
       }
     ],
+    "parent": "Tall Stinger",
     "trade_price": 5,
     "damageType": "PiercingDamageStone"
   },
@@ -956,7 +949,7 @@
         ]
       }
     ],
-    "parent": "BoltCompactBone",
+    "parent": "Bone Dart",
     "trade_price": 15.6,
     "damageType": "HullbreakerBallistaDamage"
   },
@@ -1056,6 +1049,39 @@
     "parent": "Scattershot",
     "trade_price": 61.8,
     "damageType": "HullbreakerScattershotDamage"
+  },
+  {
+    "name": "Iron-Tipped Bolt",
+    "category": "Ammo",
+    "cost": {
+      "count": 3,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 1,
+            "name": "Iron Ore"
+          },
+          {
+            "count": 3,
+            "name": "Feather"
+          },
+          {
+            "count": 25,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "parent": "Bone Bolt",
+    "trade_price": 25,
+    "damageType": "PiercingDamageIron"
   },
   {
     "name": "Small Boulder",
@@ -7444,6 +7470,28 @@
       }
     ],
     "name": "Stone Wall with Window"
+  },
+  {
+    "category": "Traps",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Bent Wooden Planks"
+          },
+          {
+            "count": 30,
+            "name": "Obsidian"
+          },
+          {
+            "count": 45,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Giant Wall Gate"
   },
   {
     "category": "Traps",
@@ -29790,28 +29838,6 @@
         ]
       }
     ]
-  },
-  {
-    "category": "Traps",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 50,
-            "name": "Bent Wooden Planks"
-          },
-          {
-            "count": 30,
-            "name": "Obsidian"
-          },
-          {
-            "count": 45,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Giant Wall Gate"
   },
   {
     "name": "Raptor Sky Walker Legs (1 of 2)",
