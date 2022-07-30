@@ -75,6 +75,10 @@ allTranslations["Woodworking"] = "Woodworking Station";
 allTranslations["ChestSmall"] = "Small Chest";
 allTranslations["ChestMedium"] = "Medium Chest";
 allTranslations["ChestLarge"] = "Large Chest";
+allTranslations["BedHammock"] = "Hammock";
+allTranslations["WallSand"] = "Sandbag Wall";
+allTranslations["Stinger_T3"] = "Tall Stinger";
+allTranslations["BallistaBolt"] = "Flint Bolt";
 
 allTranslations["GunPod"] = "Gun Pod";
 allTranslations["GunPodShell"] = "Gun Pod Shell";

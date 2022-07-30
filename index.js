@@ -34,6 +34,7 @@ const orderByCategory = (a, b) => {
 };
 
 loadDirData("./Content/Mist/Data/StringTables", "translation");
+loadDirData("./Content/Localization/Game/en", "translation");
 loadDirData("./Content/Mist/Data/TechTree", "tech");
 loadDirData("./Content/Mist/Data/Items", "item");
 loadDirData("./Content/Mist/Data/Placeables", "placeables");
