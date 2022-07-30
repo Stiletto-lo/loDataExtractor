@@ -66,6 +66,7 @@ allTranslations["RaceDustNew"] = "Race Dust";
 allTranslations["Woodworking_Tier2"] = "Advanced Woodworking Station";
 allTranslations["Woodworking_Tier3"] = "Artificer Woodworking Station";
 allTranslations["FiberworkingTier_02"] = "Advanced Fiberworking Station";
+allTranslations["FiberworkingStation_T2"] = "Advanced Fiberworking Station";
 allTranslations["Fiberworking"] = "Fiberworking Station";
 allTranslations["Purification"] = "Purification Station";
 allTranslations["Stomping"] = "Stomping Station";
