@@ -64,6 +64,7 @@ allTranslations["FlamingWaterNew"] = "Sinus Destroyer";
 allTranslations["RaceDustNew"] = "Race Dust";
 
 allTranslations["Woodworking_Tier2"] = "Advanced Woodworking Station";
+allTranslations["WoodworkingStation_T2"] = "Advanced Woodworking Station";
 allTranslations["Woodworking_Tier3"] = "Artificer Woodworking Station";
 allTranslations["FiberworkingTier_02"] = "Advanced Fiberworking Station";
 allTranslations["FiberworkingStation_T2"] = "Advanced Fiberworking Station";
@@ -71,6 +72,7 @@ allTranslations["Fiberworking"] = "Fiberworking Station";
 allTranslations["Purification"] = "Purification Station";
 allTranslations["Stomping"] = "Stomping Station";
 allTranslations["Woodworking"] = "Woodworking Station";
+allTranslations["ChestSmall"] = "Small Chest";
 
 allTranslations["GunPod"] = "Gun Pod";
 allTranslations["GunPodShell"] = "Gun Pod Shell";
