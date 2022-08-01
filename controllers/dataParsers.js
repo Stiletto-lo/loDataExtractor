@@ -3,9 +3,10 @@ const { category } = require("../templates/item");
 const controller = {};
 
 controller.parseName = (translator, name) => {
+  name = name.replaceAll(".Name", "").trim();
   name = controller.parseType(name);
-  name = name.replace("_C", "").trim();
-  name = name.replace("DataTable", "").trim();
+  name = name.replaceAll("_C", "").trim();
+  name = name.replaceAll("DataTable", "").trim();
   let translateName = translator.translateName(name);
   if (translateName != null) {
     name = translateName;
@@ -92,11 +93,13 @@ controller.parseType = (name) => {
 };
 
 controller.parseCategory = (category) => {
-  category = category
-    .replace("Mist/Content/Mist/Data/Items/Categories/", "")
-    .trim();
-  category = category.replace("EMistWalkerCategory::", "").trim();
-  category = category.replace(".0", "").trim();
+  if (category) {
+    category = category
+      .replace("Mist/Content/Mist/Data/Items/Categories/", "")
+      .trim();
+    category = category.replace("EMistWalkerCategory::", "").trim();
+    category = category.replace(".0", "").trim();
+  }
   return category;
 };
 

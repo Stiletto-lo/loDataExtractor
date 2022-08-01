@@ -224,6 +224,10 @@ controller.parseCachedItems = (filePath) => {
 };
 
 controller.parseItemData = (filePath) => {
+  if (filePath.includes("Schematics")) {
+    controller.parseSchematicItemData(filePath);
+    return;
+  }
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
 
@@ -471,6 +475,51 @@ controller.parseItemData = (filePath) => {
     }
 
     allItems.push(item);
+  }
+};
+
+controller.parseSchematicItemData = (filePath) => {
+  let rawdata = fs.readFileSync(filePath);
+  let jsonData = JSON.parse(rawdata);
+
+  if (jsonData[1] && jsonData[1].Type) {
+    let name = undefined;
+    if (jsonData[1].Properties?.Name?.Key) {
+      name = jsonData[1].Properties.Name.Key;
+      name = name.replaceAll(".Name", "").trim();
+      name = translator.searchName(name);
+    }
+    if (name) {
+      name = name + " Schematic";
+      let item = controller.getItem(name);
+
+      if (jsonData[1].Properties) {
+        if (jsonData[1].Properties?.Category?.ObjectPath) {
+          item.category = dataParser.parseCategory(
+            jsonData[1].Properties.Category.ObjectPath
+          );
+        }
+
+        if (jsonData[1].Properties?.MaxStackSize) {
+          item.stackSize = jsonData[1].Properties.MaxStackSize;
+        }
+        if (jsonData[1].Properties?.Items) {
+          let allCraftingItems = jsonData[1].Properties.Items;
+          let itemsSchematic = [];
+          allCraftingItems.forEach((schematicItem) => {
+            if (schematicItem.AssetPathName) {
+              itemsSchematic.push(
+                dataParser.parseName(translator, schematicItem.AssetPathName)
+              );
+            }
+          });
+          if (allCraftingItems.length > 0) {
+            item.learn = itemsSchematic;
+            allItems.push(item);
+          }
+        }
+      }
+    }
   }
 };
 
