@@ -9,6 +9,15 @@
   },
   {
     "cost": {
+      "count": 2,
+      "name": "Fragment"
+    },
+    "name": "Scattershot",
+    "parent": "Scattershot Gun",
+    "description": "Ammo for Scattershot gun and Thumper. A mixed bag of blunt and sharp debris that spread out when fired."
+  },
+  {
+    "cost": {
       "count": 5,
       "name": "Tablet"
     },
@@ -24,12 +33,56 @@
     "parent": "Medium Wood Structures"
   },
   {
+    "name": "Flint Bolt",
+    "parent": "Ballista",
+    "category": "Ammo",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 1,
+            "name": "Flint"
+          }
+        ],
+        "output": 3,
+        "station": "Woodworking Station",
+        "time": 5.5
+      }
+    ],
+    "trade_price": 1.3,
+    "description": "Ammo for Ballista. Effective against lightly armored nomads.",
+    "projectileDamage": {
+      "damage": 100
+    },
+    "stackSize": 20,
+    "weight": 0.7,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 1
+      }
+    ],
+    "damageType": "PiercingDamage"
+  },
+  {
     "cost": {
       "count": 50,
       "name": "Fragment"
     },
     "name": "Flare - White",
     "parent": "Equipment"
+  },
+  {
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "name": "Simple Bags",
+    "parent": "Foraging Pouch"
   },
   {
     "cost": {
@@ -121,7 +174,10 @@
             "count": 15,
             "name": "Fiber"
           }
-        ]
+        ],
+        "output": 3,
+        "station": "Woodworking Station",
+        "time": 5
       }
     ],
     "name": "Chitin Shard Bolt",
@@ -129,7 +185,7 @@
     "trade_price": 5,
     "description": "Ammo for Ballista. Naturally serrated shards of chitin make fine, if terrifying, tips for bolts.",
     "projectileDamage": {
-      "damage": 113
+      "damage": 225
     },
     "stackSize": 20,
     "weight": 0.3,
@@ -139,7 +195,7 @@
         "tier": 1
       }
     ],
-    "damageType": "PiercingDamageBone"
+    "damageType": "PiercingDamage"
   },
   {
     "category": "Ammo",
@@ -158,7 +214,9 @@
             "count": 4,
             "name": "Rope"
           }
-        ]
+        ],
+        "station": "Woodworking Station",
+        "time": 5
       }
     ],
     "name": "Chitin Harpoon",
@@ -194,7 +252,10 @@
             "count": 15,
             "name": "Fiber"
           }
-        ]
+        ],
+        "output": 10,
+        "station": "Woodworking Station",
+        "time": 5
       }
     ],
     "name": "Chitin Dart",
@@ -211,7 +272,7 @@
         "tier": 1
       }
     ],
-    "damageType": "PiercingDamageStone"
+    "damageType": "LightDamage"
   },
   {
     "category": "Ammo",
@@ -299,6 +360,47 @@
         "tier": 1
       }
     ]
+  },
+  {
+    "category": "Ammo",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "FlintBolt"
+          },
+          {
+            "count": 2,
+            "name": "Hide"
+          },
+          {
+            "count": 5,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "name": "Flint Harpoon",
+    "parent": "Flint Bolt",
+    "trade_price": 4.4,
+    "description": "Ammo for Ballista. Tether to any target and reel in until the harpoon is destroyed or the tether snaps.",
+    "projectileDamage": {
+      "damage": 10
+    },
+    "stackSize": 20,
+    "weight": 0.8,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 1
+      }
+    ],
+    "damageType": "HarpoonDamage"
   },
   {
     "category": "Ammo",
@@ -402,7 +504,7 @@
       }
     ],
     "name": "Fire Bolt",
-    "parent": "Bone Bolt",
+    "parent": "BoneBolt",
     "trade_price": 15.6,
     "description": "Ammo for ballista. Designed to burn down wooden structures over multiple minutes.",
     "projectileDamage": {
@@ -539,7 +641,7 @@
         "tier": 1
       }
     ],
-    "damageType": "PiercingDamageBone"
+    "damageType": "DemolishingDamage"
   },
   {
     "category": "Ammo",
@@ -576,42 +678,6 @@
       }
     ],
     "damageType": "HarpoonDamage"
-  },
-  {
-    "category": "Ammo",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 25,
-            "name": "Fiber"
-          },
-          {
-            "count": 4,
-            "name": "Stone"
-          },
-          {
-            "count": 10,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "name": "Net",
-    "trade_price": 10.4,
-    "description": "Ammo for net thrower. Entangles small structures, mannable weapons, walker legs and wings.",
-    "projectileDamage": {
-      "damage": 5
-    },
-    "stackSize": 50,
-    "weight": 1.2,
-    "toolInfo": [
-      {
-        "toolType": "Net",
-        "tier": 0
-      }
-    ],
-    "damageType": "PiercingDamageBone"
   },
   {
     "category": "Ammo",
@@ -666,33 +732,13 @@
         "tier": 1
       }
     ],
-    "damageType": "PiercingDamageBone"
+    "damageType": "DemolishingDamage"
   },
   {
     "category": "Ammo",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 5,
-            "name": "Fiber"
-          },
-          {
-            "count": 1,
-            "name": "Stone"
-          }
-        ],
-        "station": "Woodworking Station",
-        "time": 3.5
-      }
-    ],
-    "name": "Flint Dart",
+    "name": "Rupu Dart",
     "trade_price": 1.5,
-    "description": "Ammo for Stingers and Repeater.  Weak and crude, best suited for hunting Phemke and unarmored Nomads.",
+    "description": "Little more than sharpened stick, used by the Rupu as ammo for their light weapons.",
     "projectileDamage": {
       "damage": 25
     },
@@ -704,25 +750,18 @@
         "tier": 1
       }
     ],
-    "damageType": "PiercingDamageStone"
+    "damageType": "LightDamage"
   },
   {
     "category": "Ammo",
-    "name": "Rupu Bone Javelin",
-    "trade_price": 5,
-    "description": "A crude javelin made out of sharpened bone used by the Rupu to damage walkers.",
+    "name": "CrudeOrb",
+    "trade_price": 5.2,
     "projectileDamage": {
-      "damage": 35
+      "damage": 50
     },
-    "stackSize": 20,
-    "weight": 0.3,
-    "toolInfo": [
-      {
-        "toolType": "BallistaHarpoon",
-        "tier": 2
-      }
-    ],
-    "damageType": "PiercingDamageBone"
+    "stackSize": 100,
+    "weight": 5,
+    "damageType": "ProjectileBluntDamage"
   },
   {
     "category": "Ammo",
@@ -758,10 +797,39 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 5,
-      "name": "Fragment"
+    "name": "Rupu Rok",
+    "trade_price": 5.2,
+    "description": "Unwieldy, big projectile used by the Rupu as ammo for their looted Rokkers.",
+    "projectileDamage": {
+      "damage": 300
     },
+    "stackSize": 10,
+    "weight": 5,
+    "toolInfo": [
+      {
+        "toolType": "Scattershot",
+        "tier": 1
+      }
+    ],
+    "damageType": "DemolishingDamage"
+  },
+  {
+    "category": "Ammo",
+    "name": "Scattershot Ammo",
+    "trade_price": 5.2,
+    "description": "Ammo for Scattershot gun and Thumper. A mixed bag of blunt and sharp debris that spread out when fired.",
+    "projectileDamage": {
+      "damage": 100
+    },
+    "stackSize": 24,
+    "weight": 0.3,
+    "toolInfo": [
+      {
+        "toolType": "Scattershot",
+        "tier": 1
+      }
+    ],
+    "damageType": "ProjectileBluntDamage",
     "crafting": [
       {
         "ingredients": [
@@ -774,60 +842,9 @@
             "name": "Fiber Weave"
           }
         ],
-        "output": 6
+        "output": 15
       }
-    ],
-    "name": "Scattershot",
-    "parent": "Scattershot Gun",
-    "trade_price": 5.2,
-    "description": "Ammo for scattershot gun. A mixed bag of blunt and sharp debris that spread out when fired.",
-    "projectileDamage": {
-      "damage": 100
-    },
-    "stackSize": 24,
-    "weight": 0.3,
-    "toolInfo": [
-      {
-        "toolType": "Scattershot",
-        "tier": 1
-      }
-    ],
-    "damageType": "PiercingDamageBone"
-  },
-  {
-    "category": "Ammo",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 2,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 5,
-            "name": "Stone"
-          }
-        ],
-        "station": "Woodworking Station",
-        "time": 5.5
-      }
-    ],
-    "name": "Flint Bolt",
-    "parent": "Ballista",
-    "trade_price": 1.3,
-    "description": "Ammo for Ballista. Effective against lightly armored nomads.",
-    "projectileDamage": {
-      "damage": 50
-    },
-    "stackSize": 20,
-    "weight": 0.7,
-    "toolInfo": [
-      {
-        "toolType": "BallistaHarpoon",
-        "tier": 1
-      }
-    ],
-    "damageType": "PiercingDamageStone"
+    ]
   },
   {
     "category": "Ammo",
@@ -854,7 +871,7 @@
     "trade_price": 5.2,
     "description": "Ammo for the Rokker. Slow but powerful, it is devastating against walkers.",
     "projectileDamage": {
-      "damage": 400
+      "damage": 200
     },
     "stackSize": 10,
     "weight": 5,
@@ -864,48 +881,7 @@
         "tier": 1
       }
     ],
-    "damageType": "PiercingDamageBone"
-  },
-  {
-    "category": "Ammo",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Flint Bolt"
-          },
-          {
-            "count": 2,
-            "name": "Hide"
-          },
-          {
-            "count": 5,
-            "name": "Rupu Vine"
-          }
-        ]
-      }
-    ],
-    "name": "Flint Harpoon",
-    "parent": "Flint Bolt",
-    "trade_price": 4.4,
-    "description": "Ammo for Ballista. Tether to any target and reel in until the harpoon is destroyed or the tether snaps.",
-    "projectileDamage": {
-      "damage": 10
-    },
-    "stackSize": 20,
-    "weight": 0.8,
-    "toolInfo": [
-      {
-        "toolType": "BallistaHarpoon",
-        "tier": 1
-      }
-    ],
-    "damageType": "HarpoonDamage"
+    "damageType": "DemolishingDamage"
   },
   {
     "category": "Ammo",
@@ -960,6 +936,2045 @@
       }
     ],
     "damageType": "HarpoonDamage"
+  },
+  {
+    "category": "Ammo",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2,
+            "name": "Fiber"
+          },
+          {
+            "count": 1,
+            "name": "Stone"
+          }
+        ],
+        "output": 10,
+        "station": "Woodworking Station",
+        "time": 3.5
+      }
+    ],
+    "name": "Wooden Dart",
+    "parent": "Repeater",
+    "trade_price": 1.5,
+    "description": "Ammo for Stingers and Repeater.  Weak and crude, best suited for hunting Phemke and unarmored Nomads.",
+    "projectileDamage": {
+      "damage": 25
+    },
+    "stackSize": 28,
+    "weight": 0.6,
+    "toolInfo": [
+      {
+        "toolType": "RepeaterBolt",
+        "tier": 1
+      }
+    ],
+    "damageType": "LightDamage"
+  },
+  {
+    "category": "Ammo",
+    "name": "Wooden Rod",
+    "trade_price": 1.3,
+    "description": "Roughly sharpened pieces of Walker wrecks, fashioned by the Rupu into crude bolts and used as ammo for Ballista.",
+    "projectileDamage": {
+      "damage": 100
+    },
+    "stackSize": 20,
+    "weight": 0.7,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 1
+      }
+    ],
+    "damageType": "PiercingDamage"
+  },
+  {
+    "category": "Ammo",
+    "cost": {
+      "count": 12,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 30,
+            "name": "Obsidian"
+          },
+          {
+            "count": 10,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 50,
+            "name": "Mushroom Flesh"
+          },
+          {
+            "count": 1,
+            "name": "Lava Fuel"
+          },
+          {
+            "count": 10,
+            "name": "Tar"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 75
+      }
+    ],
+    "name": "Cluster Bomb",
+    "parent": "Fire Bomb",
+    "trade_price": 84.7,
+    "description": "Ammo for sling or catapult. Spawns dozens of tiny explosions covering a large surface area. Very effective at disrupting walkers and nomads on the ground.",
+    "projectileDamage": {
+      "damage": 20
+    },
+    "stackSize": 10,
+    "weight": 30,
+    "damageType": "ExplosionDamage"
+  },
+  {
+    "category": "Ammo",
+    "cost": {
+      "count": 3,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Stone"
+          },
+          {
+            "count": 8,
+            "name": "Lava"
+          },
+          {
+            "count": 5,
+            "name": "Feather"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 60
+      }
+    ],
+    "name": "Fire Bomb",
+    "parent": "Small Boulder",
+    "trade_price": 38,
+    "description": "Ammo for sling or catapult. Primitive explosive detonates on impact, releasing lava and setting fire to its surroundings.",
+    "projectileDamage": {
+      "damage": 10,
+      "vsReinforced": 10
+    },
+    "stackSize": 10,
+    "weight": 3,
+    "damageType": "FireDamage"
+  },
+  {
+    "category": "Ammo",
+    "cost": {
+      "count": 16,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 1,
+            "name": "Lava Fuel"
+          },
+          {
+            "count": 5,
+            "name": "Obsidian"
+          }
+        ],
+        "output": 2
+      }
+    ],
+    "name": "Bombolt",
+    "parent": "Cobra Walker",
+    "trade_price": 11.7,
+    "description": "Used in Tower Walker weapon. Essentially a harpoon with a bomb on its tip that has devastating damage, but low accuracy due to the shape.",
+    "projectileDamage": {
+      "damage": 500,
+      "vsHard": 20,
+      "vsReinforced": 20
+    },
+    "stackSize": 20,
+    "weight": 0.3,
+    "damageType": "FirelessExplosionDamage"
+  },
+  {
+    "category": "Ammo",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "BoneBolt"
+          },
+          {
+            "count": 2,
+            "name": "Hide"
+          },
+          {
+            "count": 4,
+            "name": "Rope"
+          }
+        ],
+        "station": "Woodworking Station",
+        "time": 5
+      }
+    ],
+    "name": "Bone Harpoon",
+    "parent": "BoneBolt",
+    "trade_price": 7.6,
+    "description": "Ammo for Ballista. Easily penetrates and latches into wood. A strong tether holds it in place.",
+    "projectileDamage": {
+      "damage": 15,
+      "vsMedium": 30,
+      "vsHard": 15,
+      "vsReinforced": 30,
+      "vsSolid": 15
+    },
+    "stackSize": 20,
+    "weight": 0.4,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 4
+      }
+    ],
+    "damageType": "HarpoonDamage"
+  },
+  {
+    "category": "Ammo",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 2,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 2,
+            "name": "Sulfur"
+          }
+        ],
+        "output": 10
+      }
+    ],
+    "name": "Fire Dart",
+    "parent": "BoneDart",
+    "trade_price": 15.6,
+    "description": "A small dart covered in chunks of sulfur and other flammable substances. Good for setting stuff on fire.",
+    "projectileDamage": {
+      "damage": 78,
+      "vsHard": 100,
+      "vsReinforced": 100
+    },
+    "stackSize": 20,
+    "weight": 1,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 1
+      }
+    ],
+    "damageType": "HullbreakerBallistaDamage"
+  },
+  {
+    "category": "Ammo",
+    "cost": {
+      "count": 20,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Fire Bolt"
+          },
+          {
+            "count": 3,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 35,
+            "name": "Tar"
+          },
+          {
+            "count": 5,
+            "name": "Lava Fuel"
+          },
+          {
+            "count": 1,
+            "name": "Fiery Concoction"
+          }
+        ]
+      }
+    ],
+    "name": "Hellfire Bolt",
+    "parent": "Fire Bolt",
+    "trade_price": 175.3,
+    "description": "Ammo for ballista. Designed to burn down wooden structures over time. A heavy bolt with a crushing bone head, designed to splinter walkers and light wooden structures.",
+    "projectileDamage": {
+      "damage": 1025,
+      "vsHard": 100,
+      "vsReinforced": 100,
+      "vsSolid": 100
+    },
+    "stackSize": 20,
+    "weight": 1,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 1
+      }
+    ],
+    "damageType": "HullbreakerBallistaDamage_Tier2"
+  },
+  {
+    "category": "Ammo",
+    "cost": {
+      "count": 40,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Stone"
+          },
+          {
+            "count": 15,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 3,
+            "name": "Meteor Core"
+          },
+          {
+            "count": 15,
+            "name": "Iron Ore"
+          }
+        ]
+      }
+    ],
+    "name": "Charged Boulder",
+    "parent": "Catapult Boulder",
+    "trade_price": 1500,
+    "description": "Ammo for catapult. Big boulder filled with iron splinters, charged with meteor core's energy. Designed to shred wood to pieces and severely damage even the sturdiest materials.",
+    "projectileDamage": {
+      "damage": 1000,
+      "vsHard": 65,
+      "vsReinforced": 57,
+      "vsSolid": 50
+    },
+    "stackSize": 10,
+    "weight": 3,
+    "toolInfo": [
+      {
+        "toolType": "CatapultRock",
+        "tier": 1
+      }
+    ],
+    "damageType": "HullbreakerCatapultDamage"
+  },
+  {
+    "category": "Ammo",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 15,
+            "name": "Fiber"
+          }
+        ],
+        "output": 10
+      }
+    ],
+    "name": "Bone Dart",
+    "parent": "Tall Stinger",
+    "trade_price": 5,
+    "description": "Ammo for Stingers and Repeater. Tipped with a sharpened piece of bone, it will shatter inside the target.",
+    "projectileDamage": {
+      "damage": 38,
+      "vsMedium": 50,
+      "vsHard": 10,
+      "vsReinforced": 50,
+      "vsSolid": 10
+    },
+    "stackSize": 20,
+    "weight": 0.3,
+    "toolInfo": [
+      {
+        "toolType": "RepeaterBolt",
+        "tier": 1
+      }
+    ],
+    "damageType": "LightDamage"
+  },
+  {
+    "category": "Ammo",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 3,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 1,
+            "name": "Fiber Weave"
+          }
+        ],
+        "output": 3,
+        "station": "Woodworking Station",
+        "time": 5
+      }
+    ],
+    "name": "Bone Bolt",
+    "parent": "FlintHarpoon",
+    "trade_price": 5,
+    "description": "Ammo for Ballista. Bone tips are notorious for splintering and ricocheting inside the body.",
+    "projectileDamage": {
+      "damage": 150,
+      "vsMedium": 25,
+      "vsHard": 10,
+      "vsReinforced": 25,
+      "vsSolid": 10
+    },
+    "stackSize": 20,
+    "weight": 0.3,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 2
+      }
+    ],
+    "damageType": "PiercingDamage"
+  },
+  {
+    "category": "Ammo",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Fiber"
+          },
+          {
+            "count": 4,
+            "name": "Stone"
+          },
+          {
+            "count": 10,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "name": "Net",
+    "trade_price": 10.4,
+    "description": "Ammo for net thrower. Entangles small structures, mannable weapons, walker legs and wings.",
+    "projectileDamage": {
+      "damage": 5,
+      "vsReinforced": 10
+    },
+    "stackSize": 50,
+    "weight": 1.2,
+    "toolInfo": [
+      {
+        "toolType": "Net",
+        "tier": 0
+      }
+    ],
+    "damageType": "PiercingDamageBone"
+  },
+  {
+    "category": "Ammo",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 1,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 15,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Ceramic-Tipped Bolt",
+    "parent": "BoneBolt",
+    "trade_price": 11,
+    "description": "Ammo for Ballista. Ceramic tips guarantee their sharpness and strength.",
+    "projectileDamage": {
+      "damage": 165,
+      "vsReinforced": 10
+    },
+    "stackSize": 20,
+    "weight": 0.2,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 4
+      }
+    ],
+    "damageType": "PiercingDamageCeramic"
+  },
+  {
+    "category": "Ammo",
+    "cost": {
+      "count": 3,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 1,
+            "name": "Iron Ore"
+          },
+          {
+            "count": 3,
+            "name": "Feather"
+          },
+          {
+            "count": 25,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Iron-Tipped Bolt",
+    "parent": "BoneBolt",
+    "trade_price": 25,
+    "description": "Ammo for Ballista. An iron tip easily penetrates armor and makes holes in bodies that can't be patched.",
+    "projectileDamage": {
+      "damage": 180,
+      "vsReinforced": 10
+    },
+    "stackSize": 20,
+    "weight": 0.7,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 3
+      }
+    ],
+    "damageType": "PiercingDamageIron"
+  },
+  {
+    "category": "Ammo",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Flint"
+          }
+        ]
+      }
+    ],
+    "name": "Flint Orb",
+    "parent": "Rokette",
+    "trade_price": 5.2,
+    "description": "A shaped piece of flint that shatters on impact. Cuts through rupu fur like butter.",
+    "projectileDamage": {
+      "damage": 25,
+      "vsSoft": 100,
+      "vsMedium": 85,
+      "vsHard": 30,
+      "vsReinforced": 85,
+      "vsSolid": 30
+    },
+    "stackSize": 100,
+    "weight": 5,
+    "damageType": "ProjectileBluntDamage"
+  },
+  {
+    "category": "Ammo",
+    "name": "Rupu Bone Javelin",
+    "trade_price": 5,
+    "description": "A crude javelin made out of sharpened bone used by the Rupu to damage walkers.",
+    "projectileDamage": {
+      "damage": 50,
+      "vsMedium": 65,
+      "vsHard": 20,
+      "vsReinforced": 65,
+      "vsSolid": 20
+    },
+    "stackSize": 20,
+    "weight": 0.3,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 2
+      }
+    ],
+    "damageType": "RupuBoltDamage"
+  },
+  {
+    "category": "Ammo",
+    "name": "Rupu Bomb Javelin",
+    "trade_price": 17.8,
+    "description": "A volatile projectile used by the Rupu Raiders to damage walkers.",
+    "projectileDamage": {
+      "damage": 35
+    },
+    "stackSize": 20,
+    "weight": 0.3,
+    "damageType": "RupuJavelinExplosionDamage"
+  },
+  {
+    "category": "Ammo",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Obsidian"
+          },
+          {
+            "count": 8,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 12,
+            "name": "Sulfur"
+          },
+          {
+            "count": 1,
+            "name": "Rupu Gel"
+          }
+        ]
+      }
+    ],
+    "name": "Hullbreaker Scattershot",
+    "parent": "Scattershot Ammo",
+    "trade_price": 61.8,
+    "description": "Ammo for scattershot gun. Blows apart wooden constructions while also dealing some damage to sturdier materials.",
+    "projectileDamage": {
+      "damage": 145,
+      "vsMedium": 85,
+      "vsHard": 30,
+      "vsReinforced": 85,
+      "vsSolid": 30
+    },
+    "stackSize": 10,
+    "weight": 1.2,
+    "toolInfo": [
+      {
+        "toolType": "Scattershot",
+        "tier": 1
+      }
+    ],
+    "damageType": "ShatteringDamage"
+  },
+  {
+    "category": "Ammo",
+    "name": "Rupu Stone Bolas",
+    "trade_price": 5,
+    "description": "Invented by the Rupu out of pure spite for Nomads' creations, these projectiles are used to tear wings apart and snap their beams to immobilize walkers.",
+    "projectileDamage": {
+      "damage": 60,
+      "vsSoft": 150,
+      "vsMedium": 50,
+      "vsHard": 10,
+      "vsReinforced": 50,
+      "vsSolid": 10
+    },
+    "stackSize": 20,
+    "weight": 0.3,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 2
+      }
+    ],
+    "damageType": "ShreddingDamage"
+  },
+  {
+    "category": "Ammo",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Stone"
+          },
+          {
+            "count": 2,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Small Boulder",
+    "parent": "Slingshot",
+    "trade_price": 3.1,
+    "description": "Ammo for slingshot. Deals higher damage the more tension there is on release.",
+    "projectileDamage": {
+      "damage": 450,
+      "vsReinforced": 10
+    },
+    "stackSize": 10,
+    "weight": 0.3,
+    "toolInfo": [
+      {
+        "toolType": "SlingshotRock",
+        "tier": 1
+      }
+    ],
+    "damageType": "SmallRockDamage"
+  },
+  {
+    "category": "Ammo",
+    "name": "Water Pitcher",
+    "trade_price": 1,
+    "projectileDamage": {
+      "damage": 2
+    },
+    "toolInfo": [
+      {
+        "toolType": "HoseStation",
+        "tier": 1
+      }
+    ],
+    "damageType": "WaterHoseDamage"
+  },
+  {
+    "category": "Cement Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 45,
+            "name": "Stone"
+          },
+          {
+            "count": 20,
+            "name": "Tar"
+          },
+          {
+            "count": 20,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 45,
+            "name": "Ash"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Wall 1",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    }
+  },
+  {
+    "category": "Cement Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 45,
+            "name": "Stone"
+          },
+          {
+            "count": 20,
+            "name": "Tar"
+          },
+          {
+            "count": 20,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 45,
+            "name": "Ash"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Wall 2",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    }
+  },
+  {
+    "category": "Cement Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Stone"
+          },
+          {
+            "count": 20,
+            "name": "Tar"
+          },
+          {
+            "count": 20,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 35,
+            "name": "Ash"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Battlements",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    }
+  },
+  {
+    "category": "Cement Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Stone"
+          },
+          {
+            "count": 20,
+            "name": "Tar"
+          },
+          {
+            "count": 20,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 35,
+            "name": "Ash"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Corner",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    }
+  },
+  {
+    "category": "Cement Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Stone"
+          },
+          {
+            "count": 20,
+            "name": "Tar"
+          },
+          {
+            "count": 20,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 50,
+            "name": "Ash"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Door",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    }
+  },
+  {
+    "category": "Cement Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 60,
+            "name": "Stone"
+          },
+          {
+            "count": 20,
+            "name": "Tar"
+          },
+          {
+            "count": 20,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 60,
+            "name": "Ash"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Foundation",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    }
+  },
+  {
+    "category": "Cement Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 60,
+            "name": "Stone"
+          },
+          {
+            "count": 20,
+            "name": "Tar"
+          },
+          {
+            "count": 20,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 60,
+            "name": "Ash"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Floor / Roof",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    }
+  },
+  {
+    "category": "Cement Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 45,
+            "name": "Stone"
+          },
+          {
+            "count": 20,
+            "name": "Tar"
+          },
+          {
+            "count": 20,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 45,
+            "name": "Ash"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Wall With Window 1",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    }
+  },
+  {
+    "category": "Cement Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 45,
+            "name": "Stone"
+          },
+          {
+            "count": 20,
+            "name": "Tar"
+          },
+          {
+            "count": 20,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 45,
+            "name": "Ash"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Wall With Window 2",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    }
+  },
+  {
+    "category": "Cement Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 45,
+            "name": "Stone"
+          },
+          {
+            "count": 20,
+            "name": "Tar"
+          },
+          {
+            "count": 20,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 45,
+            "name": "Ash"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Wall With Windows 1",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    }
+  },
+  {
+    "category": "Cement Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 45,
+            "name": "Stone"
+          },
+          {
+            "count": 20,
+            "name": "Tar"
+          },
+          {
+            "count": 20,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 45,
+            "name": "Ash"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Wall With Windows 2",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    }
+  },
+  {
+    "category": "Clay Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Cattail"
+          },
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 20,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Wall",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 9000
+    }
+  },
+  {
+    "category": "Clay Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Cattail"
+          },
+          {
+            "count": 20,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Battlement",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 9000
+    }
+  },
+  {
+    "category": "Clay Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Cattail"
+          },
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 40,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Corner",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 9000
+    }
+  },
+  {
+    "category": "Clay Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Cattail"
+          },
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 20,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Door",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 9000
+    }
+  },
+  {
+    "category": "Clay Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Cattail"
+          },
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 25,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Foundation",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 9000
+    }
+  },
+  {
+    "category": "Clay Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Cattail"
+          },
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 20,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Floor / Roof",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 9000
+    }
+  },
+  {
+    "category": "Clay Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Cattail"
+          },
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 20,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Wall with Window",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 9000
+    }
+  },
+  {
+    "category": "Clay Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Cattail"
+          },
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 15,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Wall with Windows",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 9000
+    }
+  },
+  {
+    "category": "Heavy Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Wall 1",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3520
+    }
+  },
+  {
+    "category": "Heavy Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Wall 2",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3520
+    }
+  },
+  {
+    "category": "Heavy Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Battlements",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3520
+    }
+  },
+  {
+    "category": "Heavy Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Corner",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3520
+    }
+  },
+  {
+    "category": "Heavy Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Door",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3520
+    }
+  },
+  {
+    "category": "Heavy Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Foundation",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3520
+    }
+  },
+  {
+    "category": "Heavy Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Floor / Roof",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3520
+    }
+  },
+  {
+    "category": "Heavy Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Slit Wall",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3520
+    }
+  },
+  {
+    "category": "Heavy Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Double Slit Wall",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3520
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Wood"
+          },
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Wall",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 2250
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Battlements",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 2250
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Corner",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 2250
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Wood"
+          },
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Door",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 2250
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Wood"
+          },
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Foundation",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 3520
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Wood"
+          },
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Floor / Roof",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 2250
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Slit Wall",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 2250
+    }
+  },
+  {
+    "category": "Light Wood Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Double Slit Wall",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 2250
+    }
+  },
+  {
+    "category": "Stone Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Wall",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3500
+    }
+  },
+  {
+    "category": "Stone Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Door",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3500
+    }
+  },
+  {
+    "category": "Stone Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Foundation",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3500
+    }
+  },
+  {
+    "category": "Stone Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Floor / Roof",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3500
+    }
+  },
+  {
+    "category": "Stone Structures",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Wall with Window",
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 3500
+    }
+  },
+  {
+    "category": "WalkerTools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Rope"
+          },
+          {
+            "count": 20,
+            "name": "Fiber"
+          },
+          {
+            "count": 5,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Automaton",
+    "parent": "Steering Levers",
+    "description": "A remote-controlled mechanical tool that can handle mounted weapons.",
+    "structureInfo": {
+      "hp": 100
+    }
+  },
+  {
+    "category": "WalkerTools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 60,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 100,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 20,
+            "name": "Rope"
+          },
+          {
+            "count": 2,
+            "name": "Iron Ore"
+          }
+        ]
+      }
+    ],
+    "name": "Sawblade",
+    "parent": "Tool Pod",
+    "description": "A mechanical arm with a spinning saw blade attached to it harvests lumber from a distance. Requires torque while sawing."
+  },
+  {
+    "category": "WalkerTools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 400,
+            "name": "Wood"
+          },
+          {
+            "count": 35,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 30,
+            "name": "Rope"
+          },
+          {
+            "count": 4,
+            "name": "Iron Ore"
+          }
+        ]
+      }
+    ],
+    "name": "Tool Pod",
+    "parent": "Steering Levers",
+    "description": "A rotating pod made to attach below walker decks. Houses a single tool, like a saw blade.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 5000
+    }
+  },
+  {
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 52,
+            "name": "Wood"
+          },
+          {
+            "count": 20,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 12,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Dinghy Gate",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 3500
+    }
+  },
+  {
+    "category": "Ammo",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Clay"
+          },
+          {
+            "count": 20,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 60,
+            "name": "Mushroom Flesh"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 75
+      }
+    ],
+    "name": "Green Death Bomb",
+    "parent": "Slingshot",
+    "trade_price": 36,
+    "description": "Ammo for sling or catapult. Explodes on impact, releasing a toxic cloud. The poison acts extremely quickly and does consistent damage.",
+    "projectileDamage": {
+      "damage": 20
+    },
+    "stackSize": 10,
+    "weight": 3,
+    "damageType": "BluntDamage"
+  },
+  {
+    "category": "Ammo",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Stone"
+          },
+          {
+            "count": 2,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 18,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Catapult Boulder",
+    "parent": "Catapult",
+    "trade_price": 8,
+    "description": "Ammo for catapult. This massive boulder obliterates bodies and smashes wood to bits.",
+    "projectileDamage": {
+      "damage": 700,
+      "vsHard": 100,
+      "vsReinforced": 100,
+      "vsSolid": 100
+    },
+    "stackSize": 10,
+    "weight": 2,
+    "toolInfo": [
+      {
+        "toolType": "CatapultRock",
+        "tier": 1
+      }
+    ],
+    "damageType": "DemolishingDamage"
   },
   {
     "category": "Interactables",
@@ -1271,12 +3286,12 @@
   {
     "category": "Weapons",
     "name": "Throwstone",
-    "trade_price": 1.6,
+    "trade_price": 16.9,
     "description": "Either a fantastically aerodynamic stone, its form perfected for best throwing experience... Or just a sharp chip of rock that you can throw at someone in a pinch.",
     "projectileDamage": {
       "damage": 32
     },
-    "stackSize": 10,
+    "stackSize": 5,
     "weight": 0.3,
     "toolInfo": [
       {
@@ -1284,27 +3299,7 @@
         "tier": 1
       }
     ],
-    "damageType": "BluntDamage",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Stone"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 4
-      }
-    ],
-    "parent": "Equipment",
-    "weaponInfo": {
-      "damage": 15,
-      "penetration": 5
-    }
+    "damageType": "ProjectileBluntDamage"
   },
   {
     "cost": {
@@ -1345,660 +3340,6 @@
     },
     "name": "Medium Wood Structures",
     "parent": "Light Wood Structures"
-  },
-  {
-    "category": "Ammo",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Clay"
-          },
-          {
-            "count": 20,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 60,
-            "name": "Mushroom Flesh"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 75
-      }
-    ],
-    "name": "Green Death Bomb",
-    "parent": "Slingshot",
-    "trade_price": 36,
-    "description": "Ammo for sling or catapult. Explodes on impact, releasing a toxic cloud. The poison acts extremely quickly and does consistent damage.",
-    "projectileDamage": {
-      "damage": 20
-    },
-    "stackSize": 10,
-    "weight": 3,
-    "damageType": "BluntDamage"
-  },
-  {
-    "category": "Ammo",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Stone"
-          },
-          {
-            "count": 2,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 18,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Catapult Boulder",
-    "parent": "Catapult",
-    "trade_price": 8,
-    "description": "Ammo for catapult. This massive boulder obliterates bodies and smashes wood to bits.",
-    "projectileDamage": {
-      "damage": 700,
-      "vsReinforced": 10
-    },
-    "stackSize": 10,
-    "weight": 2,
-    "toolInfo": [
-      {
-        "toolType": "CatapultRock",
-        "tier": 1
-      }
-    ],
-    "damageType": "CatapultDamage"
-  },
-  {
-    "category": "Ammo",
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 30,
-            "name": "Obsidian"
-          },
-          {
-            "count": 10,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 50,
-            "name": "Mushroom Flesh"
-          },
-          {
-            "count": 1,
-            "name": "Lava Fuel"
-          },
-          {
-            "count": 10,
-            "name": "Tar"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 75
-      }
-    ],
-    "name": "Cluster Bomb",
-    "parent": "Fire Bomb",
-    "trade_price": 84.7,
-    "description": "Ammo for sling or catapult. Spawns dozens of tiny explosions covering a large surface area. Very effective at disrupting walkers and nomads on the ground.",
-    "projectileDamage": {
-      "damage": 20
-    },
-    "stackSize": 10,
-    "weight": 30,
-    "damageType": "ExplosionDamage"
-  },
-  {
-    "category": "Ammo",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Stone"
-          },
-          {
-            "count": 8,
-            "name": "Lava"
-          },
-          {
-            "count": 5,
-            "name": "Feather"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 60
-      }
-    ],
-    "name": "Fire Bomb",
-    "parent": "Small Boulder",
-    "trade_price": 38,
-    "description": "Ammo for sling or catapult. Primitive explosive detonates on impact, releasing lava and setting fire to its surroundings.",
-    "projectileDamage": {
-      "damage": 10,
-      "vsReinforced": 10
-    },
-    "stackSize": 10,
-    "weight": 3,
-    "damageType": "FireDamage"
-  },
-  {
-    "category": "Ammo",
-    "cost": {
-      "count": 16,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 1,
-            "name": "Lava Fuel"
-          },
-          {
-            "count": 5,
-            "name": "Obsidian"
-          }
-        ],
-        "output": 2
-      }
-    ],
-    "name": "Bombolt",
-    "parent": "Cobra Walker",
-    "trade_price": 11.7,
-    "description": "Used in Tower Walker weapon. Essentially a harpoon with a bomb on its tip that has devastating damage, but low accuracy due to the shape.",
-    "projectileDamage": {
-      "damage": 500,
-      "vsHard": 20,
-      "vsReinforced": 20
-    },
-    "stackSize": 20,
-    "weight": 0.3,
-    "damageType": "FirelessExplosionDamage"
-  },
-  {
-    "category": "Ammo",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Bone Bolt"
-          },
-          {
-            "count": 2,
-            "name": "Hide"
-          },
-          {
-            "count": 4,
-            "name": "Rope"
-          }
-        ]
-      }
-    ],
-    "name": "Bone Harpoon",
-    "parent": "Bone Bolt",
-    "trade_price": 7.6,
-    "description": "Ammo for Ballista. Easily penetrates and latches into wood. A strong tether holds it in place.",
-    "projectileDamage": {
-      "damage": 15,
-      "vsReinforced": 10
-    },
-    "stackSize": 20,
-    "weight": 0.4,
-    "toolInfo": [
-      {
-        "toolType": "BallistaHarpoon",
-        "tier": 4
-      }
-    ],
-    "damageType": "HarpoonDamage"
-  },
-  {
-    "category": "Ammo",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 2,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 2,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 2,
-            "name": "Sulfur"
-          }
-        ]
-      }
-    ],
-    "name": "Fire Dart",
-    "parent": "Bone Dart",
-    "trade_price": 15.6,
-    "description": "A small dart covered in chunks of sulfur and other flammable substances. Good for setting stuff on fire.",
-    "projectileDamage": {
-      "damage": 78,
-      "vsHard": 100,
-      "vsReinforced": 100
-    },
-    "stackSize": 20,
-    "weight": 1,
-    "toolInfo": [
-      {
-        "toolType": "BallistaHarpoon",
-        "tier": 1
-      }
-    ],
-    "damageType": "HullbreakerBallistaDamage"
-  },
-  {
-    "category": "Ammo",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Fire Bolt"
-          },
-          {
-            "count": 3,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 35,
-            "name": "Tar"
-          },
-          {
-            "count": 5,
-            "name": "Lava Fuel"
-          },
-          {
-            "count": 1,
-            "name": "Fiery Concoction"
-          }
-        ]
-      }
-    ],
-    "name": "Hellfire Bolt",
-    "parent": "Fire Bolt",
-    "trade_price": 175.3,
-    "description": "Ammo for ballista. Designed to burn down wooden structures over time. A heavy bolt with a crushing bone head, designed to splinter walkers and light wooden structures.",
-    "projectileDamage": {
-      "damage": 1025,
-      "vsHard": 100,
-      "vsReinforced": 100,
-      "vsSolid": 100
-    },
-    "stackSize": 20,
-    "weight": 1,
-    "toolInfo": [
-      {
-        "toolType": "BallistaHarpoon",
-        "tier": 1
-      }
-    ],
-    "damageType": "HullbreakerBallistaDamage_Tier2"
-  },
-  {
-    "category": "Ammo",
-    "cost": {
-      "count": 40,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Stone"
-          },
-          {
-            "count": 15,
-            "name": "Rupu Gel"
-          },
-          {
-            "count": 3,
-            "name": "Meteor Core"
-          },
-          {
-            "count": 15,
-            "name": "Iron Ore"
-          }
-        ]
-      }
-    ],
-    "name": "Charged Boulder",
-    "parent": "Catapult Boulder",
-    "trade_price": 1500,
-    "description": "Ammo for catapult. Big boulder filled with iron splinters, charged with meteor core's energy. Designed to shred wood to pieces and severely damage even the sturdiest materials.",
-    "projectileDamage": {
-      "damage": 1000,
-      "vsHard": 65,
-      "vsReinforced": 57,
-      "vsSolid": 50
-    },
-    "stackSize": 10,
-    "weight": 3,
-    "toolInfo": [
-      {
-        "toolType": "CatapultRock",
-        "tier": 1
-      }
-    ],
-    "damageType": "HullbreakerCatapultDamage"
-  },
-  {
-    "category": "Ammo",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 50,
-            "name": "Obsidian"
-          },
-          {
-            "count": 8,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 12,
-            "name": "Sulfur"
-          },
-          {
-            "count": 1,
-            "name": "Rupu Gel"
-          }
-        ]
-      }
-    ],
-    "name": "Hullbreaker Scattershot",
-    "parent": "Scattershot",
-    "trade_price": 61.8,
-    "description": "Ammo for scattershot gun. Blows apart wooden constructions while also dealing some damage to sturdier materials.",
-    "projectileDamage": {
-      "damage": 145,
-      "vsHard": 100,
-      "vsReinforced": 100,
-      "vsSolid": 50
-    },
-    "stackSize": 10,
-    "weight": 1.2,
-    "toolInfo": [
-      {
-        "toolType": "Scattershot",
-        "tier": 1
-      }
-    ],
-    "damageType": "HullbreakerScattershotDamage"
-  },
-  {
-    "category": "Ammo",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 2,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 3,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 15,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Bone Bolt",
-    "parent": "Flint Harpoon",
-    "trade_price": 5,
-    "description": "Ammo for Ballista. Bone tips are notorious for splintering and ricocheting inside the body.",
-    "projectileDamage": {
-      "damage": 75,
-      "vsReinforced": 10
-    },
-    "stackSize": 20,
-    "weight": 0.3,
-    "toolInfo": [
-      {
-        "toolType": "BallistaHarpoon",
-        "tier": 2
-      }
-    ],
-    "damageType": "PiercingDamageBone"
-  },
-  {
-    "category": "Ammo",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 2,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 1,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 15,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Ceramic-Tipped Bolt",
-    "parent": "Bone Bolt",
-    "trade_price": 11,
-    "description": "Ammo for Ballista. Ceramic tips guarantee their sharpness and strength.",
-    "projectileDamage": {
-      "damage": 165,
-      "vsReinforced": 10
-    },
-    "stackSize": 20,
-    "weight": 0.2,
-    "toolInfo": [
-      {
-        "toolType": "BallistaHarpoon",
-        "tier": 4
-      }
-    ],
-    "damageType": "PiercingDamageCeramic"
-  },
-  {
-    "category": "Ammo",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 1,
-            "name": "Iron Ore"
-          },
-          {
-            "count": 3,
-            "name": "Feather"
-          },
-          {
-            "count": 25,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Iron-Tipped Bolt",
-    "parent": "Bone Bolt",
-    "trade_price": 25,
-    "description": "Ammo for Ballista. An iron tip easily penetrates armor and makes holes in bodies that can't be patched.",
-    "projectileDamage": {
-      "damage": 180,
-      "vsReinforced": 10
-    },
-    "stackSize": 20,
-    "weight": 0.7,
-    "toolInfo": [
-      {
-        "toolType": "BallistaHarpoon",
-        "tier": 3
-      }
-    ],
-    "damageType": "PiercingDamageIron"
-  },
-  {
-    "category": "Ammo",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 15,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Bone Dart",
-    "parent": "Tall Stinger",
-    "trade_price": 5,
-    "description": "Ammo for Stingers and Repeater. Tipped with a sharpened piece of bone, it will shatter inside the target.",
-    "projectileDamage": {
-      "damage": 38,
-      "vsReinforced": 10
-    },
-    "stackSize": 20,
-    "weight": 0.3,
-    "toolInfo": [
-      {
-        "toolType": "RepeaterBolt",
-        "tier": 1
-      }
-    ],
-    "damageType": "PiercingDamageStone"
-  },
-  {
-    "category": "Ammo",
-    "name": "Rupu Bomb Javelin",
-    "trade_price": 17.8,
-    "description": "A volatile projectile used by the Rupu Raiders to damage walkers.",
-    "projectileDamage": {
-      "damage": 35
-    },
-    "stackSize": 20,
-    "weight": 0.3,
-    "damageType": "RupuJavelinExplosionDamage"
-  },
-  {
-    "category": "Ammo",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Stone"
-          },
-          {
-            "count": 2,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
-    "name": "Small Boulder",
-    "parent": "Slingshot",
-    "trade_price": 3.1,
-    "description": "Ammo for slingshot. Deals higher damage the more tension there is on release.",
-    "projectileDamage": {
-      "damage": 450,
-      "vsReinforced": 10
-    },
-    "stackSize": 10,
-    "weight": 0.3,
-    "toolInfo": [
-      {
-        "toolType": "SlingshotRock",
-        "tier": 1
-      }
-    ],
-    "damageType": "SmallRockDamage"
-  },
-  {
-    "category": "Ammo",
-    "name": "Water Pitcher",
-    "trade_price": 1,
-    "projectileDamage": {
-      "damage": 2
-    },
-    "toolInfo": [
-      {
-        "toolType": "HoseStation",
-        "tier": 1
-      }
-    ],
-    "damageType": "WaterHoseDamage"
   },
   {
     "category": "Armors",
@@ -2590,16 +3931,20 @@
       {
         "ingredients": [
           {
-            "count": 3,
+            "count": 1,
             "name": "Nomad Cloth"
           },
           {
-            "count": 12,
+            "count": 6,
             "name": "Charcoal"
           },
           {
-            "count": 5,
+            "count": 4,
             "name": "Hide"
+          },
+          {
+            "count": 8,
+            "name": "Aloe Gel"
           }
         ]
       }
@@ -2935,13 +4280,37 @@
   },
   {
     "category": "Armors",
+    "name": "Rupu Desolator Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
     "name": "Rupu Firebrand Armor",
     "stackSize": 100,
     "weight": 1
   },
   {
     "category": "Armors",
+    "name": "Rupu Forerunner Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Harasser Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
     "name": "Rupu Hazraki Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Plainstrider Armor",
     "stackSize": 100,
     "weight": 1
   },
@@ -2954,6 +4323,18 @@
   {
     "category": "Armors",
     "name": "Rupu Shaman Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Skirmisher Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Thug Armor",
     "stackSize": 100,
     "weight": 1
   },
@@ -3114,7 +4495,9 @@
             "count": 35,
             "name": "Fiber"
           }
-        ]
+        ],
+        "station": "Fiberworking Station",
+        "time": 24
       }
     ],
     "name": "Forester's Armor",
@@ -3154,7 +4537,9 @@
             "count": 20,
             "name": "Fiber"
           }
-        ]
+        ],
+        "station": "Fiberworking Station",
+        "time": 24
       }
     ],
     "name": "Brittle Bone Armor",
@@ -3378,544 +4763,6 @@
     }
   },
   {
-    "category": "Cement Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 45,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 45,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "Cement Wall 1",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
-    }
-  },
-  {
-    "category": "Cement Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 45,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 45,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "Cement Wall 2",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
-    }
-  },
-  {
-    "category": "Cement Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 35,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "Cement Battlements",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
-    }
-  },
-  {
-    "category": "Cement Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 35,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "Cement Corner",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
-    }
-  },
-  {
-    "category": "Cement Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 50,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 50,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "Cement Door",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
-    }
-  },
-  {
-    "category": "Cement Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 60,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 60,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "Cement Foundation",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
-    }
-  },
-  {
-    "category": "Cement Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 60,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 60,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "Cement Floor / Roof",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
-    }
-  },
-  {
-    "category": "Cement Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 45,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 45,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "Cement Wall With Window 1",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
-    }
-  },
-  {
-    "category": "Cement Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 45,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 45,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "Cement Wall With Window 2",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
-    }
-  },
-  {
-    "category": "Cement Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 45,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 45,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "Cement Wall With Windows 1",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
-    }
-  },
-  {
-    "category": "Cement Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 45,
-            "name": "Stone"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
-          },
-          {
-            "count": 20,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 45,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "Cement Wall With Windows 2",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
-    }
-  },
-  {
-    "category": "Clay Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "Clay Wall",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 9000
-    }
-  },
-  {
-    "category": "Clay Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Cattail"
-          },
-          {
-            "count": 20,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "Clay Battlement",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 9000
-    }
-  },
-  {
-    "category": "Clay Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 40,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "Clay Corner",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 9000
-    }
-  },
-  {
-    "category": "Clay Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "Clay Door",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 9000
-    }
-  },
-  {
-    "category": "Clay Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Cattail"
-          },
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 25,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "Clay Foundation",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 9000
-    }
-  },
-  {
-    "category": "Clay Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "Clay Floor / Roof",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 9000
-    }
-  },
-  {
-    "category": "Clay Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "Clay Wall with Window",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 9000
-    }
-  },
-  {
-    "category": "Clay Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 15,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "Clay Wall with Windows",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 9000
-    }
-  },
-  {
     "category": "Containers",
     "cost": {
       "count": 5,
@@ -4039,6 +4886,10 @@
           {
             "count": 25,
             "name": "Stone"
+          },
+          {
+            "count": 12,
+            "name": "WoodenSlab"
           }
         ]
       }
@@ -4121,16 +4972,32 @@
       {
         "ingredients": [
           {
-            "count": 25,
+            "count": 22,
             "name": "Bone Splinter"
           },
           {
-            "count": 15,
+            "count": 45,
             "name": "Stone"
           },
           {
-            "count": 35,
+            "count": 55,
             "name": "Fiber"
+          },
+          {
+            "count": 15,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 2,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 16,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -4152,7 +5019,7 @@
       {
         "ingredients": [
           {
-            "count": 25,
+            "count": 10,
             "name": "Wood"
           },
           {
@@ -4160,7 +5027,7 @@
             "name": "Stone"
           },
           {
-            "count": 10,
+            "count": 15,
             "name": "Fiber"
           }
         ]
@@ -4282,6 +5149,49 @@
       {
         "ingredients": [
           {
+            "count": 40,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 40,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 12,
+            "name": "WoodenSlab"
+          },
+          {
+            "count": 24,
+            "name": "Fiber"
+          },
+          {
+            "count": 12,
+            "name": "Stone"
+          },
+          {
+            "count": 18,
+            "name": "Bone Splinter"
+          }
+        ]
+      }
+    ],
+    "name": "Scroll Rack",
+    "parent": "Small Chest",
+    "description": "Designed by Flotillan inventors as a mean of storing and accessing their precious schematics while building new marvels around their workshop, this container is invaluable for any Nomad.",
+    "structureInfo": {
+      "hp": 750
+    }
+  },
+  {
+    "category": "Containers",
+    "crafting": [
+      {
+        "ingredients": [
+          {
             "count": 5,
             "name": "Earth Wax"
           },
@@ -4364,6 +5274,10 @@
           {
             "count": 15,
             "name": "Fiber"
+          },
+          {
+            "count": 1,
+            "name": "WoodenSlab"
           }
         ]
       }
@@ -4449,16 +5363,28 @@
       {
         "ingredients": [
           {
-            "count": 14,
+            "count": 30,
             "name": "Wood"
           },
           {
-            "count": 10,
+            "count": 25,
             "name": "Fiber"
           },
           {
-            "count": 2,
+            "count": 8,
             "name": "Wood Shaft"
+          },
+          {
+            "count": 6,
+            "name": "WoodenSlab"
+          },
+          {
+            "count": 2,
+            "name": "Toothwheel"
+          },
+          {
+            "count": 4,
+            "name": "Rupu Vine"
           }
         ]
       }
@@ -4668,7 +5594,7 @@
     ],
     "name": "Purification Station",
     "parent": "Purified Water",
-    "description": "All water that is transported to the Flotilla is cleansed in an ancient water purifying machine. The Guardians are the sole keepers of this machine, a technological relic of the old world which has sustained the Flotillans to this day. However, nomads developed a similar, yet more primitive version of this technology.",
+    "description": "All toxic water that is transported to the Flotilla is first cleansed in an ancient water purifying machine. The Guardians are the sole keepers of this machine, a technological relic of the old world which has sustained the Flotillans to this day. However, nomads developed a similar, yet more primitive version of this technology.",
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
@@ -4744,6 +5670,58 @@
   {
     "category": "Crafting",
     "cost": {
+      "count": 30,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 3,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 10,
+            "name": "WoodenSlab"
+          },
+          {
+            "count": 25,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 8,
+            "name": "Flint"
+          },
+          {
+            "count": 6,
+            "name": "Toothwheel"
+          },
+          {
+            "count": 18,
+            "name": "Rope"
+          },
+          {
+            "count": 45,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Small Repair Hoist",
+    "parent": "Woodworking Station",
+    "description": "Intricate ceiling-mounted contraption that uses raw materials to repair the Walker parked under it.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 1250
+    }
+  },
+  {
+    "category": "Crafting",
+    "cost": {
       "count": 25,
       "name": "Fragment"
     },
@@ -4751,7 +5729,7 @@
       {
         "ingredients": [
           {
-            "count": 45,
+            "count": 165,
             "name": "Wood"
           },
           {
@@ -4759,12 +5737,24 @@
             "name": "Rupu Vine"
           },
           {
-            "count": 20,
+            "count": 80,
             "name": "Stone"
           },
           {
-            "count": 4,
+            "count": 28,
             "name": "Wood Shaft"
+          },
+          {
+            "count": 25,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 28,
+            "name": "Rope"
+          },
+          {
+            "count": 2,
+            "name": "Toothwheel"
           }
         ]
       }
@@ -4787,7 +5777,7 @@
       {
         "ingredients": [
           {
-            "count": 20,
+            "count": 35,
             "name": "Wood"
           },
           {
@@ -5398,6 +6388,11 @@
   },
   {
     "category": "Equipment",
+    "name": "CheatBackpack",
+    "weight": 1
+  },
+  {
+    "category": "Equipment",
     "cost": {
       "count": 5,
       "name": "Fragment"
@@ -5444,7 +6439,9 @@
             "count": 85,
             "name": "Wood"
           }
-        ]
+        ],
+        "station": "Empty",
+        "time": 1
       }
     ],
     "name": "Torque Backpack",
@@ -5641,7 +6638,7 @@
             "name": "Wood"
           },
           {
-            "count": 6,
+            "count": 3,
             "name": "Rupu Pelt"
           }
         ]
@@ -5679,7 +6676,7 @@
       }
     ],
     "name": "Medium Backpack",
-    "parent": "Light Backpack",
+    "parent": "Simple Bags",
     "trade_price": 10.3,
     "description": "Grants additional inventory space.",
     "stackSize": 100,
@@ -5745,10 +6742,6 @@
   },
   {
     "category": "Equipment",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -5764,7 +6757,6 @@
       }
     ],
     "name": "Light Backpack",
-    "parent": "Foraging Pouch",
     "trade_price": 5.6,
     "description": "A little extra inventory space to carry the bare necessities.",
     "stackSize": 100,
@@ -5986,7 +6978,7 @@
     ],
     "name": "Exoskeleton",
     "parent": "Ballista",
-    "description": "Using repeater ammo to shoot,  this feat of engineering was created on the Flotilla and can be packed into Walker Packing Compartments. Protects nomads wearing them and allows to carry and operate heavy weapons and tools.",
+    "description": "Using darts to shoot,  this feat of engineering was created on the Flotilla and can be packed into Walker Packing Compartments. Protects nomads wearing them and allows to carry and operate heavy weapons and tools.",
     "structureInfo": {
       "type": "Soft",
       "hp": 3500
@@ -7738,6 +8730,39 @@
   {
     "category": "Grappling Hooks",
     "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Rope"
+          },
+          {
+            "count": 5,
+            "name": "Beeswax"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 15,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Fast Grappling Hook",
+    "parent": "Nomad Grappling Hook",
+    "trade_price": 19.4,
+    "description": "Superior reeling speed, but limited reach. Most effective in combat situations."
+  },
+  {
+    "category": "Grappling Hooks",
+    "cost": {
       "count": 2,
       "name": "Tablet"
     },
@@ -7763,35 +8788,10 @@
         ]
       }
     ],
-    "name": "Beltless Grappling Hook",
+    "name": "Flotillan Grappling Hook",
     "parent": "Fast Grappling Hook",
     "trade_price": 16,
-    "description": "Doesn't benefit from torque, but more efficient than other grappling hooks when travelling without a torque belt."
-  },
-  {
-    "category": "Grappling Hooks",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Rope"
-          },
-          {
-            "count": 12,
-            "name": "Beeswax"
-          }
-        ]
-      }
-    ],
-    "name": "Fast Grappling Hook",
-    "parent": "Repaired Grappling Hook",
-    "trade_price": 19.4,
-    "description": "Superior reeling speed, but limited reach. Most effective in combat situations."
+    "description": "Better in every way than the regular nomadic variety, but not specialized in any aspects like other grappling hook types."
   },
   {
     "category": "Grappling Hooks",
@@ -7823,237 +8823,128 @@
     "description": "Gets a Nomad places others can't reach. Slower reeling speed may be disadvantegous while fighting."
   },
   {
-    "category": "Heavy Wood Structures",
+    "category": "Grappling Hooks",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 35,
-            "name": "Redwood Wood"
+            "count": 10,
+            "name": "Rope"
           },
           {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
+            "count": 12,
+            "name": "Beeswax"
           }
         ]
       }
     ],
-    "name": "Heavy Wood Wall 1",
+    "name": "Sturdy Grappling Hook",
+    "parent": "Nomad Grappling Hook",
+    "trade_price": 19.4,
+    "description": "Sturdy grappling hook"
+  },
+  {
+    "category": "Hangar",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "WoodenSlab"
+          },
+          {
+            "count": 14,
+            "name": "Rope"
+          },
+          {
+            "count": 12,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Hangar Gate",
     "structureInfo": {
-      "type": "Solid",
-      "hp": 3520
+      "type": "Reinforced",
+      "hp": 7500
     }
   },
   {
-    "category": "Heavy Wood Structures",
+    "category": "Hangar",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 35,
-            "name": "Redwood Wood"
+            "count": 4,
+            "name": "WoodenSlab"
           },
           {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
+            "count": 12,
+            "name": "Fiber Weave"
           }
         ]
       }
     ],
-    "name": "Heavy Wood Wall 2",
+    "name": "Hangar Roof",
     "structureInfo": {
-      "type": "Solid",
-      "hp": 3520
+      "type": "Reinforced",
+      "hp": 5000
     }
   },
   {
-    "category": "Heavy Wood Structures",
+    "category": "Hangar",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 35,
-            "name": "Redwood Wood"
+            "count": 12,
+            "name": "WoodenSlab"
           },
           {
-            "count": 5,
-            "name": "Iron Ingot"
+            "count": 16,
+            "name": "Rope"
           },
           {
-            "count": 1,
-            "name": "Bone Glue"
+            "count": 8,
+            "name": "Wood Shaft"
           }
         ]
       }
     ],
-    "name": "Heavy Wood Battlements",
+    "name": "Hangar Wall",
     "structureInfo": {
-      "type": "Solid",
-      "hp": 3520
+      "type": "Reinforced",
+      "hp": 5000
     }
   },
   {
-    "category": "Heavy Wood Structures",
+    "category": "Hangar",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 35,
-            "name": "Redwood Wood"
+            "count": 12,
+            "name": "WoodenSlab"
           },
           {
-            "count": 5,
-            "name": "Iron Ingot"
+            "count": 16,
+            "name": "Rope"
           },
           {
-            "count": 1,
-            "name": "Bone Glue"
+            "count": 14,
+            "name": "Wood Shaft"
           }
         ]
       }
     ],
-    "name": "Heavy Wood Corner",
+    "name": "Hangar Wall with Door",
     "structureInfo": {
-      "type": "Solid",
-      "hp": 3520
-    }
-  },
-  {
-    "category": "Heavy Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "Heavy Wood Door",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3520
-    }
-  },
-  {
-    "category": "Heavy Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "Heavy Wood Foundation",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3520
-    }
-  },
-  {
-    "category": "Heavy Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "Heavy Wood Floor / Roof",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3520
-    }
-  },
-  {
-    "category": "Heavy Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "Heavy Wood Slit Wall",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3520
-    }
-  },
-  {
-    "category": "Heavy Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "Heavy Wood Double Slit Wall",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3520
+      "type": "Reinforced",
+      "hp": 5000
     }
   },
   {
@@ -8076,8 +8967,8 @@
             "name": "Fiber Weave"
           },
           {
-            "count": 2,
-            "name": "Aloe Vera"
+            "count": 5,
+            "name": "Aloe Gel"
           }
         ]
       }
@@ -8114,6 +9005,38 @@
     "description": "Restores a small amount of HP over a period of time. Not usable while in combat.",
     "stackSize": 100,
     "weight": 0.03
+  },
+  {
+    "category": "Interactables",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Stone"
+          },
+          {
+            "count": 8,
+            "name": "Wood"
+          },
+          {
+            "count": 4,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Humidifier",
+    "parent": "Camp Fire",
+    "description": "When placed in a base and filled with water, this ingenious contraption slowly releases a soothing mist that sates thirst over time. Its efficiency depends on the number of Nomads gathered around it.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 500
+    }
   },
   {
     "category": "Interactables",
@@ -8157,20 +9080,28 @@
       {
         "ingredients": [
           {
-            "count": 8,
+            "count": 30,
             "name": "Wood"
           },
           {
-            "count": 10,
+            "count": 35,
             "name": "Fiber Weave"
           },
           {
-            "count": 4,
+            "count": 46,
             "name": "Wood Shaft"
           },
           {
-            "count": 4,
+            "count": 38,
             "name": "Rupu Pelt"
+          },
+          {
+            "count": 2,
+            "name": "WoodenSlab"
+          },
+          {
+            "count": 8,
+            "name": "Rope"
           }
         ]
       }
@@ -8333,30 +9264,6 @@
       "type": "Soft",
       "hp": 350
     }
-  },
-  {
-    "category": "Interactables",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 2,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Rope"
-          }
-        ]
-      }
-    ],
-    "name": "Steering Levers",
-    "parent": "Dinghy Walker",
-    "description": "The control mechanism required to drive more complex walkers."
   },
   {
     "category": "Interactables",
@@ -8557,188 +9464,25 @@
     }
   },
   {
-    "category": "Light Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Light Wood Wall",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 2250
-    }
-  },
-  {
-    "category": "Light Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Light Wood Battlements",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 2250
-    }
-  },
-  {
-    "category": "Light Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Light Wood Corner",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 2250
-    }
-  },
-  {
-    "category": "Light Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Light Wood Door",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 2250
-    }
-  },
-  {
-    "category": "Light Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Light Wood Foundation",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 3520
-    }
-  },
-  {
-    "category": "Light Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Light Wood Floor / Roof",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 2250
-    }
-  },
-  {
-    "category": "Light Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Light Wood Slit Wall",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 2250
-    }
-  },
-  {
-    "category": "Light Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Light Wood Double Slit Wall",
-    "structureInfo": {
-      "type": "Reinforced",
-      "hp": 2250
-    }
+    "category": "Liquids",
+    "name": "Toxic Water",
+    "trade_price": 0.1,
+    "stackSize": 100,
+    "weight": 0.5
   },
   {
     "category": "Liquids",
-    "name": "Contaminated Water",
+    "name": "Dirty Water",
     "trade_price": 0.1,
-    "description": "The red tint is attributed to a ubiquitous variety of toxic algae.",
     "stackSize": 100,
     "weight": 0.5
+  },
+  {
+    "category": "Liquids",
+    "name": "Gelatinous Goo",
+    "trade_price": 1.9,
+    "stackSize": 100,
+    "weight": 0.17
   },
   {
     "category": "Liquids",
@@ -8763,7 +9507,7 @@
       }
     ],
     "name": "Lava Fuel",
-    "description": "Being almost as hot as lava itself, it's often used in combat and crafting.",
+    "description": "Being almost as hot as lava itself, it's often used in crafting and combat by spraying it and setting on fire.",
     "stackSize": 100,
     "weight": 0.5
   },
@@ -8848,37 +9592,27 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Aloe Vera"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 35
-      },
-      {
-        "ingredients": [
-          {
-            "count": 200,
+            "count": 50,
             "name": "Contaminated Water"
           },
           {
-            "count": 25,
+            "count": 6,
             "name": "Charcoal"
           },
           {
-            "count": 100,
+            "count": 25,
             "name": "Sand"
           }
         ],
-        "output": 200,
+        "output": 50,
         "station": "Purification Station",
-        "time": 600
+        "time": 150
       },
       {
         "ingredients": [
           {
             "count": 5,
-            "name": "Contaminated Water"
+            "name": "DirtyWater"
           },
           {
             "count": 1,
@@ -8893,7 +9627,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Contaminated Water"
+            "name": "DirtyWater"
           }
         ],
         "station": "Camp Fire",
@@ -8912,79 +9646,10 @@
     ],
     "name": "Purified Water",
     "parent": "Camp Fire",
-    "trade_price": 10,
+    "trade_price": 3,
     "description": "All water that is transported to the Flotilla is cleansed in an ancient water purifying machine. The Guardians are the sole keepers of this machine, a technological relic of the old world which has sustained the Flotillans to this day.",
     "stackSize": 100,
     "weight": 0.2
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Hangar Gate",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 12000
-    }
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Hangar Roof",
-    "structureInfo": {
-      "hp": 100
-    }
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Hangar Wall",
-    "structureInfo": {
-      "hp": 100
-    }
-  },
-  {
-    "category": "Medium Wood Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Wood Hangar Wall with Door",
-    "structureInfo": {
-      "hp": 100
-    }
   },
   {
     "category": "Medium Wood Structures",
@@ -9008,7 +9673,7 @@
     ],
     "name": "Medium Wood Wall",
     "structureInfo": {
-      "type": "Hard",
+      "type": "Reinforced",
       "hp": 2500
     }
   },
@@ -9034,7 +9699,7 @@
     ],
     "name": "Medium Wood Battlements",
     "structureInfo": {
-      "type": "Hard",
+      "type": "Reinforced",
       "hp": 2500
     }
   },
@@ -9060,7 +9725,7 @@
     ],
     "name": "Medium Wood Door",
     "structureInfo": {
-      "type": "Hard",
+      "type": "Reinforced",
       "hp": 2500
     }
   },
@@ -9086,7 +9751,7 @@
     ],
     "name": "Medium Wood Foundation",
     "structureInfo": {
-      "type": "Hard",
+      "type": "Reinforced",
       "hp": 2500
     }
   },
@@ -9112,7 +9777,7 @@
     ],
     "name": "Medium Wood Floor / Roof",
     "structureInfo": {
-      "type": "Hard",
+      "type": "Reinforced",
       "hp": 2500
     }
   },
@@ -9138,7 +9803,7 @@
     ],
     "name": "Medium Wood Slit Wall",
     "structureInfo": {
-      "type": "Hard",
+      "type": "Reinforced",
       "hp": 2500
     }
   },
@@ -9164,7 +9829,7 @@
     ],
     "name": "Medium Wood Double Slit Wall",
     "structureInfo": {
-      "type": "Hard",
+      "type": "Reinforced",
       "hp": 2500
     }
   },
@@ -9192,7 +9857,7 @@
             "name": "Bone Glue"
           }
         ],
-        "station": "Advanced Fiberworking Station",
+        "station": "Fiberworking Station",
         "time": 60
       },
       {
@@ -9357,12 +10022,8 @@
       {
         "ingredients": [
           {
-            "count": 15,
+            "count": 6,
             "name": "Fiber"
-          },
-          {
-            "count": 2,
-            "name": "Wood"
           }
         ],
         "station": "Fiberworking Station",
@@ -9371,12 +10032,8 @@
       {
         "ingredients": [
           {
-            "count": 15,
+            "count": 6,
             "name": "Fiber"
-          },
-          {
-            "count": 2,
-            "name": "Wood"
           }
         ],
         "station": "Advanced Fiberworking Station",
@@ -9439,6 +10096,20 @@
         ],
         "station": "Camp Fire",
         "time": 45
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Gelatinous Goo"
+          },
+          {
+            "count": 1,
+            "name": "Bone Splinter"
+          }
+        ],
+        "station": "Stomping Station",
+        "time": 40
       }
     ],
     "name": "Bone Glue",
@@ -9451,16 +10122,6 @@
   {
     "category": "Resources",
     "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Aloe Vera"
-          }
-        ],
-        "station": "Stomping Station",
-        "time": 40
-      },
       {
         "ingredients": [
           {
@@ -9535,6 +10196,26 @@
     "description": "Thrives in the heat generated by volcanic hotspots.",
     "stackSize": 100,
     "weight": 0.01
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Aloe Vera"
+          }
+        ],
+        "station": "Stomping Station",
+        "time": 35
+      }
+    ],
+    "name": "Aloe Gel",
+    "trade_price": 1.4,
+    "description": "The gel extracted from aloe plants contained amazing healing properties",
+    "stackSize": 100,
+    "weight": 0.44
   },
   {
     "category": "Resources",
@@ -9808,7 +10489,7 @@
     "category": "Resources",
     "name": "Aloe Vera",
     "trade_price": 0.3,
-    "description": "This hardy plant grows in the hottest of conditions.",
+    "description": "This hardy plant grows in the hottest of conditions. Great for stomping.",
     "stackSize": 100,
     "weight": 0.4
   },
@@ -9932,8 +10613,8 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Wood"
+            "count": 1,
+            "name": "WoodenSlab"
           },
           {
             "count": 14,
@@ -10019,7 +10700,7 @@
       {
         "ingredients": [
           {
-            "count": 40,
+            "count": 20,
             "name": "Fiber"
           },
           {
@@ -10056,7 +10737,7 @@
       }
     ],
     "name": "Rope",
-    "parent": "Fiber Weave",
+    "parent": "Fiberworking Station",
     "trade_price": 0.5,
     "description": "A strong cord used for crafting and construction",
     "stackSize": 100,
@@ -10104,6 +10785,35 @@
       {
         "ingredients": [
           {
+            "count": 1,
+            "name": "Charcoal"
+          }
+        ],
+        "station": "HumidificationFuelConsumption",
+        "time": 14400
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Purified Water"
+          }
+        ],
+        "station": "HumidificationWaterConsumption",
+        "time": 43200
+      }
+    ],
+    "name": "Humidity",
+    "trade_price": 0.1,
+    "stackSize": 10000,
+    "weight": 0.01
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
             "count": 30,
             "name": "Torque"
           }
@@ -10137,12 +10847,8 @@
       {
         "ingredients": [
           {
-            "count": 4,
+            "count": 3,
             "name": "Wood"
-          },
-          {
-            "count": 2,
-            "name": "Fiber"
           }
         ],
         "station": "Woodworking Station",
@@ -10211,11 +10917,12 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "BlazingSlab"
+            "name": "WoodenSlab"
           }
         ],
+        "output": 9,
         "station": "FuelBurning",
-        "time": 38
+        "time": 90
       },
       {
         "ingredients": [
@@ -10270,34 +10977,6 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Wood"
-          },
-          {
-            "count": 22,
-            "name": "Fiber"
-          },
-          {
-            "count": 1,
-            "name": "Charcoal"
-          }
-        ],
-        "output": 10,
-        "station": "Woodworking Station",
-        "time": 120
-      }
-    ],
-    "name": "Blazing Slab",
-    "trade_price": 0.1,
-    "stackSize": 100,
-    "weight": 0.1
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          {
             "count": 1,
             "name": "Wood"
           }
@@ -10328,7 +11007,7 @@
     ],
     "name": "Charcoal",
     "trade_price": 0.1,
-    "description": "Burns hotter in a furnace than normal wood.",
+    "description": "Burns hotter in a furnace than normal wood. Produced from wood burning and found as mineral in rocks.",
     "stackSize": 100,
     "weight": 0.15
   },
@@ -10473,9 +11152,32 @@
     ],
     "name": "Wood",
     "trade_price": 0.1,
-    "description": "This versatile material is the focus of Flotillan engineering.",
+    "description": "This versatile material is the focus of Flotillan engineering. Produces ash and charcoal when burnt.",
     "stackSize": 100,
     "weight": 0.19
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Wood"
+          },
+          {
+            "count": 3,
+            "name": "Fiber"
+          }
+        ],
+        "station": "Woodworking Station",
+        "time": 14
+      }
+    ],
+    "name": "Wooden Slab",
+    "trade_price": 0.1,
+    "stackSize": 100,
+    "weight": 0.1
   },
   {
     "category": "Resources",
@@ -10743,11 +11445,11 @@
       {
         "ingredients": [
           {
-            "count": 14,
+            "count": 6,
             "name": "Fiber"
           },
           {
-            "count": 18,
+            "count": 12,
             "name": "Sand"
           },
           {
@@ -10792,15 +11494,15 @@
       {
         "ingredients": [
           {
-            "count": 35,
+            "count": 16,
             "name": "Fiber"
           },
           {
-            "count": 14,
+            "count": 8,
             "name": "Wood Shaft"
           },
           {
-            "count": 22,
+            "count": 12,
             "name": "Palm Leaves"
           }
         ]
@@ -10864,45 +11566,10 @@
   },
   {
     "category": "Schematics",
-    "name": "Flint Bolt Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Light Javelin",
-      "Flint Bolt",
-      "Flint Harpoon",
-      "Dart"
-    ]
-  },
-  {
-    "category": "Schematics",
     "name": "Durable Water Sack Schematic",
     "stackSize": 100,
     "learn": [
       "Durable Water Sack"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Beltless Grappling Hook Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Beltless Grappling Hook"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Bone Dart Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Bone Dart"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Chitin Dart Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Chitin Dart"
     ]
   },
   {
@@ -10955,6 +11622,14 @@
   },
   {
     "category": "Schematics",
+    "name": "Bone Dart Schematic",
+    "stackSize": 100,
+    "learn": [
+      "BoneDart"
+    ]
+  },
+  {
+    "category": "Schematics",
     "name": "Rawbone Club Schematic",
     "stackSize": 100,
     "learn": [
@@ -10963,27 +11638,10 @@
   },
   {
     "category": "Schematics",
-    "name": "Bone Pickaxe Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Bone Pickaxe"
-    ]
-  },
-  {
-    "category": "Schematics",
     "name": "Rawbone Maul Schematic",
     "stackSize": 100,
     "learn": [
       "Rawbone Maul"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Bone Bolt Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Bone Bolt",
-      "Bone Harpoon"
     ]
   },
   {
@@ -11061,15 +11719,6 @@
   },
   {
     "category": "Schematics",
-    "name": "Chitin Shard Bolt Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Chitin Shard Bolt",
-      "Chitin Harpoon"
-    ]
-  },
-  {
-    "category": "Schematics",
     "name": "Sterile Bandage Schematic",
     "stackSize": 100,
     "learn": [
@@ -11134,10 +11783,10 @@
   },
   {
     "category": "Schematics",
-    "name": "Repaired Grappling Hook Schematic",
+    "name": "Nomad Grappling Hook Schematic",
     "stackSize": 100,
     "learn": [
-      "Repaired Grappling Hook"
+      "Nomad Grappling Hook"
     ]
   },
   {
@@ -11158,10 +11807,10 @@
   },
   {
     "category": "Schematics",
-    "name": "Foraging Pouch Schematic",
+    "name": "Flotillan Grappling Hook Schematic",
     "stackSize": 100,
     "learn": [
-      "Foraging Pouch"
+      "FlotillanGrapplingHook"
     ]
   },
   {
@@ -11190,14 +11839,6 @@
   },
   {
     "category": "Schematics",
-    "name": "Torque Backpack Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Torque Backpack"
-    ]
-  },
-  {
-    "category": "Schematics",
     "name": "Torch Schematic",
     "stackSize": 100,
     "learn": [
@@ -11210,14 +11851,6 @@
     "stackSize": 100,
     "learn": [
       "Aloe Goo Bomb"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Heavy Javelin Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Heavy Javelin"
     ]
   },
   {
@@ -11567,22 +12200,6 @@
   },
   {
     "category": "Schematics",
-    "name": "Scattershot Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Scattershot"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Schematic Bag Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Schematic Bag"
-    ]
-  },
-  {
-    "category": "Schematics",
     "name": "Scythe Schematic",
     "stackSize": 100,
     "learn": [
@@ -11599,18 +12216,20 @@
   },
   {
     "category": "Schematics",
-    "name": "Light Backpack Schematic",
+    "name": "Simple Bags Schematic",
     "stackSize": 100,
     "learn": [
+      "Foraging Pouch",
+      "Schematic Bag",
       "Light Backpack"
     ]
   },
   {
     "category": "Schematics",
-    "name": "Simple Pickaxe Schematic",
+    "name": "Simple Construction Schematic",
     "stackSize": 100,
     "learn": [
-      "Simple Pickaxe"
+      "Flare - white"
     ]
   },
   {
@@ -11623,9 +12242,11 @@
   },
   {
     "category": "Schematics",
-    "name": "Simple Sickle Schematic",
+    "name": "Simple Tools Schematic",
     "stackSize": 100,
     "learn": [
+      "Stone Axe",
+      "Simple Pickaxe",
       "Simple Sickle"
     ]
   },
@@ -11672,20 +12293,20 @@
   },
   {
     "category": "Schematics",
-    "name": "Stone Axe Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Stone Axe"
-    ]
-  },
-  {
-    "category": "Schematics",
     "name": "Flint Rok Schematic",
     "stackSize": 100,
     "learn": [
       "Flint Rok",
       "Iron Rok",
       "Obsidian Rok"
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Sturdy Grappling Hook Schematic",
+    "stackSize": 100,
+    "learn": [
+      "Sturdy Grappling Hook"
     ]
   },
   {
@@ -11980,136 +12601,6 @@
     ]
   },
   {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Wall",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3500
-    }
-  },
-  {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Door",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3500
-    }
-  },
-  {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Foundation",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3500
-    }
-  },
-  {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Floor / Roof",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3500
-    }
-  },
-  {
-    "category": "Stone Structures",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          },
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Stone Wall with Window",
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 3500
-    }
-  },
-  {
     "category": "Tools",
     "cost": {
       "count": 20,
@@ -12186,6 +12677,102 @@
   },
   {
     "category": "Tools",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 6,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 10,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 6,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Sulfur"
+          }
+        ]
+      }
+    ],
+    "name": "Chitin PickAxe",
+    "parent": "Simple Pickaxe",
+    "trade_price": 24,
+    "stackSize": 100,
+    "weight": 4,
+    "weaponInfo": {
+      "weaponLength": 54,
+      "damage": 25,
+      "penetration": 20
+    },
+    "toolInfo": [
+      {
+        "toolType": "Mining",
+        "tier": 2
+      }
+    ],
+    "damageType": "MeleePickaxeDamage"
+  },
+  {
+    "category": "Tools",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 22,
+            "name": "Fiber"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 6,
+            "name": "Nurr Fang"
+          },
+          {
+            "count": 6,
+            "name": "Cattail"
+          }
+        ]
+      }
+    ],
+    "name": "Chitin Sickle",
+    "parent": "Simple Sickle",
+    "trade_price": 6.2,
+    "stackSize": 100,
+    "weight": 2.2,
+    "weaponInfo": {
+      "weaponLength": 47,
+      "damage": 20,
+      "penetration": 40
+    },
+    "toolInfo": [
+      {
+        "toolType": "Scythe",
+        "tier": 3
+      }
+    ],
+    "damageType": "MeleeCuttingDamage"
+  },
+  {
+    "category": "Tools",
     "crafting": [
       {
         "ingredients": [
@@ -12204,9 +12791,15 @@
         ]
       }
     ],
-    "name": "Repaired Grappling Hook",
+    "name": "Nomad Grappling Hook",
     "parent": "Equipment",
     "trade_price": 10,
+    "description": "Grapple to any object, reel in and swing. An essential tool for any nomad who wants to live long enough to see the next oasis.",
+    "stackSize": 100
+  },
+  {
+    "category": "Tools",
+    "name": "Repaired Grappling Hook",
     "description": "Grapple to any object, reel in and swing. An essential tool for any Nomad who wants to live long enough to see the next oasis.",
     "stackSize": 100
   },
@@ -12693,7 +13286,7 @@
     ],
     "name": "Tube Spade",
     "parent": "Camp Fire",
-    "description": "Used for harvesting resources from the soil, it is the simplest and most efficient way of digging in the ground that the great minds of the Flotilla could come up with."
+    "description": "[Use from Inventory or Quick Slots] Used for harvesting resources from the soil. Long ago, Nomads invented it as the simplest and most efficient way of digging in the ground while traveling."
   },
   {
     "category": "Tools",
@@ -12755,7 +13348,7 @@
             "name": "Stone"
           },
           {
-            "count": 12,
+            "count": 3,
             "name": "Nurr Fang"
           }
         ]
@@ -29342,11 +29935,11 @@
       {
         "ingredients": [
           {
-            "count": 76,
+            "count": 22,
             "name": "Wood"
           },
           {
-            "count": 10,
+            "count": 8,
             "name": "Wood Shaft"
           }
         ]
@@ -29356,8 +29949,8 @@
     "parent": "Dinghy Walker",
     "description": "These versatile legs can step over fissures, climb rocky mountains, and ford fast flowing rivers. While not very protected, they're light and cheap to construct.",
     "structureInfo": {
-      "type": "Soft",
-      "hp": 1900
+      "type": "Medium",
+      "hp": 1200
     }
   },
   {
@@ -29370,12 +29963,16 @@
             "name": "Wood"
           },
           {
-            "count": 18,
+            "count": 4,
             "name": "Fiber Weave"
           },
           {
-            "count": 22,
+            "count": 9,
             "name": "Hide"
+          },
+          {
+            "count": 5,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -29385,7 +29982,7 @@
     "description": "Before the nomadic Flotillans had become aware of the route they needed to take to circumnavigate the planet efficiently, many of them died in the process of locating safe passage. These crudely constructed wind-powered walkers were first devised as scouting vessels because of their cheap cost and the high likelihood that a Nomad would not return from these missions. Has ample deck space for two Nomads.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 1500
+      "hp": 800
     }
   },
   {
@@ -29398,16 +29995,24 @@
       {
         "ingredients": [
           {
-            "count": 18,
+            "count": 8,
             "name": "Wood Shaft"
           },
           {
-            "count": 45,
+            "count": 12,
             "name": "Fiber Weave"
           },
           {
-            "count": 10,
+            "count": 4,
             "name": "Rope"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 1,
+            "name": "Nomad Cloth"
           }
         ]
       }
@@ -30158,11 +30763,11 @@
       {
         "ingredients": [
           {
-            "count": 9,
+            "count": 5,
             "name": "Wood"
           },
           {
-            "count": 3,
+            "count": 2,
             "name": "Wood Shaft"
           }
         ]
@@ -30173,7 +30778,7 @@
     "description": "These versatile legs can step over fissures, climb rocky mountains, and ford fast flowing rivers. While not very protected, they're light and cheap to construct.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 950
+      "hp": 780
     }
   },
   {
@@ -30198,8 +30803,8 @@
             "name": "Rope"
           },
           {
-            "count": 1,
-            "name": "Bone Glue"
+            "count": 4,
+            "name": "Rupu Vine"
           }
         ]
       }
@@ -30869,12 +31474,16 @@
       {
         "ingredients": [
           {
-            "count": 140,
+            "count": 55,
             "name": "Wood"
           },
           {
-            "count": 18,
+            "count": 12,
             "name": "Wood Shaft"
+          },
+          {
+            "count": 4,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -30883,8 +31492,8 @@
     "parent": "Mollusk Walker",
     "description": "These versatile legs can step over fissures, climb rocky mountains, and ford fast flowing rivers. While not very protected, they're light and cheap to construct.",
     "structureInfo": {
-      "type": "Soft",
-      "hp": 3500
+      "type": "Medium",
+      "hp": 2700
     }
   },
   {
@@ -30893,19 +31502,19 @@
       {
         "ingredients": [
           {
-            "count": 490,
+            "count": 240,
             "name": "Wood"
           },
           {
-            "count": 60,
+            "count": 50,
             "name": "Wood Shaft"
           },
           {
-            "count": 24,
+            "count": 12,
             "name": "Ceramic Shard"
           },
           {
-            "count": 8,
+            "count": 4,
             "name": "Bone Glue"
           }
         ]
@@ -30915,7 +31524,7 @@
     "parent": "Mollusk Walker Legs (1 of 2)",
     "description": "Armored legs that easily deflect simple projectiles.",
     "structureInfo": {
-      "type": "Soft",
+      "type": "Medium",
       "hp": 5250
     }
   },
@@ -30925,12 +31534,24 @@
       {
         "ingredients": [
           {
-            "count": 47,
+            "count": 35,
             "name": "Wood"
           },
           {
-            "count": 28,
+            "count": 8,
             "name": "Fiber Weave"
+          },
+          {
+            "count": 4,
+            "name": "Rope"
+          },
+          {
+            "count": 4,
+            "name": "Hide"
+          },
+          {
+            "count": 1,
+            "name": "Toothwheel"
           }
         ]
       }
@@ -30940,7 +31561,7 @@
     "description": "Small cabin of the walker provides protection to possessions and the driver. While walls may let a nomad live longer, obstructed view from inside the cabin could be a serious drawback in a battle. Has a decent deck and good movement capabilities.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 2000
+      "hp": 1800
     }
   },
   {
@@ -30953,16 +31574,24 @@
       {
         "ingredients": [
           {
-            "count": 38,
+            "count": 12,
             "name": "Wood Shaft"
           },
           {
-            "count": 30,
+            "count": 5,
             "name": "Rope"
           },
           {
-            "count": 6,
+            "count": 1,
             "name": "Nomad Cloth"
+          },
+          {
+            "count": 2,
+            "name": "Hide"
+          },
+          {
+            "count": 4,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -30985,16 +31614,24 @@
       {
         "ingredients": [
           {
-            "count": 76,
+            "count": 14,
             "name": "Wood Shaft"
           },
           {
-            "count": 60,
+            "count": 7,
             "name": "Rope"
           },
           {
-            "count": 12,
+            "count": 1,
             "name": "Nomad Cloth"
+          },
+          {
+            "count": 5,
+            "name": "Hide"
+          },
+          {
+            "count": 1,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -31013,16 +31650,20 @@
       {
         "ingredients": [
           {
-            "count": 28,
+            "count": 6,
             "name": "Wood Shaft"
           },
           {
-            "count": 10,
+            "count": 6,
             "name": "Rope"
           },
           {
             "count": 2,
             "name": "Nomad Cloth"
+          },
+          {
+            "count": 4,
+            "name": "Hide"
           }
         ]
       }
@@ -32191,11 +32832,11 @@
       {
         "ingredients": [
           {
-            "count": 140,
+            "count": 43,
             "name": "Wood"
           },
           {
-            "count": 18,
+            "count": 10,
             "name": "Wood Shaft"
           }
         ]
@@ -32205,8 +32846,8 @@
     "parent": "Stiletto Walker",
     "description": "These versatile legs can step over fissures, climb rocky mountains, and ford fast flowing rivers. While not very protected, they're light and cheap to construct.",
     "structureInfo": {
-      "type": "Soft",
-      "hp": 3000
+      "type": "Medium",
+      "hp": 2400
     }
   },
   {
@@ -32215,7 +32856,7 @@
       {
         "ingredients": [
           {
-            "count": 490,
+            "count": 270,
             "name": "Wood"
           },
           {
@@ -32223,11 +32864,11 @@
             "name": "Wood Shaft"
           },
           {
-            "count": 24,
+            "count": 16,
             "name": "Ceramic Shard"
           },
           {
-            "count": 8,
+            "count": 6,
             "name": "Bone Glue"
           }
         ]
@@ -32237,7 +32878,7 @@
     "parent": "Stiletto Walker Legs (1 of 2)",
     "description": "Armored legs that easily deflect simple projectiles.",
     "structureInfo": {
-      "type": "Soft",
+      "type": "Medium",
       "hp": 4500
     }
   },
@@ -32247,12 +32888,28 @@
       {
         "ingredients": [
           {
-            "count": 47,
+            "count": 28,
             "name": "Wood"
           },
           {
-            "count": 28,
+            "count": 4,
             "name": "Fiber Weave"
+          },
+          {
+            "count": 3,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 10,
+            "name": "Hide"
+          },
+          {
+            "count": 1,
+            "name": "Toothwheel"
+          },
+          {
+            "count": 4,
+            "name": "Rope"
           }
         ]
       }
@@ -32262,7 +32919,7 @@
     "description": "Developed as the successor to the dinghy walker, the sleek stiletto walker is fast, has a short turn radius, and flaunts more deck space and a stronger hull than its predecessor. Ideal for nomads who prefer to travel alone or in small groups.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 2000
+      "hp": 1600
     }
   },
   {
@@ -32275,16 +32932,24 @@
       {
         "ingredients": [
           {
-            "count": 45,
+            "count": 12,
             "name": "Wood Shaft"
           },
           {
-            "count": 32,
+            "count": 7,
             "name": "Rope"
           },
           {
-            "count": 2,
+            "count": 1,
             "name": "Nomad Cloth"
+          },
+          {
+            "count": 5,
+            "name": "Hide"
+          },
+          {
+            "count": 2,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -32307,20 +32972,24 @@
       {
         "ingredients": [
           {
-            "count": 80,
+            "count": 10,
             "name": "Wood Shaft"
           },
           {
-            "count": 70,
+            "count": 5,
             "name": "Rope"
           },
           {
-            "count": 20,
+            "count": 3,
             "name": "Nomad Cloth"
           },
           {
-            "count": 32,
-            "name": "Redwood Wood"
+            "count": 2,
+            "name": "Hide"
+          },
+          {
+            "count": 4,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -32339,16 +33008,24 @@
       {
         "ingredients": [
           {
-            "count": 25,
+            "count": 8,
             "name": "Wood Shaft"
           },
           {
-            "count": 12,
+            "count": 6,
             "name": "Rope"
           },
           {
-            "count": 2,
+            "count": 3,
             "name": "Nomad Cloth"
+          },
+          {
+            "count": 3,
+            "name": "Hide"
+          },
+          {
+            "count": 3,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -32838,15 +33515,15 @@
       {
         "ingredients": [
           {
-            "count": 240,
+            "count": 40,
             "name": "Wood"
           },
           {
-            "count": 30,
+            "count": 6,
             "name": "Wood Shaft"
           },
           {
-            "count": 36,
+            "count": 12,
             "name": "Earth Wax"
           }
         ]
@@ -32857,7 +33534,7 @@
     "description": "These versatile legs can step over fissures, climb rocky mountains, and ford fast flowing rivers. While not very protected, they're light and cheap to construct.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 8000
+      "hp": 3000
     }
   },
   {
@@ -32866,19 +33543,19 @@
       {
         "ingredients": [
           {
-            "count": 840,
+            "count": 146,
             "name": "Wood"
           },
           {
-            "count": 104,
+            "count": 12,
             "name": "Wood Shaft"
           },
           {
-            "count": 52,
+            "count": 6,
             "name": "Ceramic Shard"
           },
           {
-            "count": 16,
+            "count": 10,
             "name": "Bone Glue"
           }
         ]
@@ -32924,7 +33601,7 @@
     "parent": "Toboggan Walker Legs Armored (1 of 2)",
     "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection.",
     "structureInfo": {
-      "type": "Reinforced",
+      "type": "Medium",
       "hp": 15200
     }
   },
@@ -32934,12 +33611,28 @@
       {
         "ingredients": [
           {
-            "count": 80,
+            "count": 25,
             "name": "Wood"
           },
           {
-            "count": 45,
+            "count": 5,
             "name": "Fiber Weave"
+          },
+          {
+            "count": 4,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 4,
+            "name": "Hide"
+          },
+          {
+            "count": 2,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 1,
+            "name": "Toothwheel"
           }
         ]
       }
@@ -32949,7 +33642,7 @@
     "description": "The standard merchant's vessel built for outrunning pirates and getting the goods where they need to go. There's no room for weapons, so this walker is usually accompanied by at least one battle-capable walker on its transport runs.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 3500
+      "hp": 2000
     }
   },
   {
@@ -32962,7 +33655,7 @@
       {
         "ingredients": [
           {
-            "count": 54,
+            "count": 52,
             "name": "Wood Shaft"
           },
           {
@@ -32976,6 +33669,10 @@
           {
             "count": 12,
             "name": "Redwood Wood"
+          },
+          {
+            "count": 52,
+            "name": "Reinforced Plank"
           }
         ]
       }
@@ -33003,7 +33700,7 @@
           },
           {
             "count": 42,
-            "name": "Worm Silk"
+            "name": "Worm Scale"
           },
           {
             "count": 94,
@@ -33012,6 +33709,10 @@
           {
             "count": 14,
             "name": "Iron Ore"
+          },
+          {
+            "count": 52,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -33594,6 +34295,30 @@
   },
   {
     "category": "WalkerTools",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2,
+            "name": "Rope"
+          }
+        ]
+      }
+    ],
+    "name": "Steering Levers",
+    "parent": "Dinghy Walker",
+    "description": "The control mechanism required to drive more complex walkers."
+  },
+  {
+    "category": "WalkerTools",
     "crafting": [
       {
         "ingredients": [
@@ -33654,66 +34379,6 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
-    }
-  },
-  {
-    "category": "WalkerTools",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 60,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 100,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 20,
-            "name": "Rope"
-          },
-          {
-            "count": 2,
-            "name": "Iron Ore"
-          }
-        ]
-      }
-    ],
-    "name": "Sawblade",
-    "parent": "Tool Pod",
-    "description": "A mechanical arm with a spinning saw blade attached to it harvests lumber from a distance. Requires torque while sawing."
-  },
-  {
-    "category": "WalkerTools",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 400,
-            "name": "Wood"
-          },
-          {
-            "count": 35,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 30,
-            "name": "Rope"
-          },
-          {
-            "count": 4,
-            "name": "Iron Ore"
-          }
-        ]
-      }
-    ],
-    "name": "Tool Pod",
-    "parent": "Steering Levers",
-    "description": "A rotating pod made to attach below walker decks. Houses a single tool, like a saw blade.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 5000
     }
   },
   {
@@ -33962,20 +34627,28 @@
       {
         "ingredients": [
           {
-            "count": 380,
+            "count": 126,
             "name": "Wood"
           },
           {
-            "count": 245,
+            "count": 88,
             "name": "Fiber"
           },
           {
-            "count": 100,
+            "count": 8,
+            "name": "WoodenSlab"
+          },
+          {
+            "count": 43,
             "name": "Stone"
           },
           {
-            "count": 10,
+            "count": 8,
             "name": "Rupu Vine"
+          },
+          {
+            "count": 8,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -33984,8 +34657,8 @@
     "parent": "Firefly Walker",
     "description": "Before the nomadic Flotillans had become aware of the route they needed to take to circumnavigate the planet efficiently, many of them died in the process of locating safe passage. These crudely constructed wind-powered walkers were first devised as scouting vessels because of their cheap cost and the high likelihood that a Nomad would not return. This walker has ample deck space for two Nomads.",
     "structureInfo": {
-      "type": "Soft",
-      "hp": 3800
+      "type": "Medium",
+      "hp": 2000
     },
     "walkerinfo": {
       "category": "Small"
@@ -34099,23 +34772,27 @@
       {
         "ingredients": [
           {
-            "count": 126,
+            "count": 85,
             "name": "Wood"
           },
           {
-            "count": 123,
+            "count": 46,
             "name": "Fiber"
           },
           {
-            "count": 28,
-            "name": "Wood Shaft"
+            "count": 3,
+            "name": "WoodenSlab"
           },
           {
-            "count": 20,
+            "count": 25,
             "name": "Stone"
           },
           {
-            "count": 2,
+            "count": 22,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 6,
             "name": "Rupu Vine"
           }
         ]
@@ -34126,7 +34803,7 @@
     "description": "A pedal-powered walker that nomads build when they want to begin their journey. Has a small deck and can be upgraded by building wings.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 1900
+      "hp": 1300
     },
     "walkerinfo": {
       "category": "Small"
@@ -34248,27 +34925,27 @@
       {
         "ingredients": [
           {
-            "count": 570,
+            "count": 185,
             "name": "Wood"
           },
           {
-            "count": 12,
+            "count": 7,
             "name": "Rope"
           },
           {
-            "count": 80,
+            "count": 16,
+            "name": "WoodenSlab"
+          },
+          {
+            "count": 110,
             "name": "Fiber"
           },
           {
-            "count": 90,
+            "count": 57,
             "name": "Stone"
           },
           {
-            "count": 2,
-            "name": "Walker Mechanism"
-          },
-          {
-            "count": 2,
+            "count": 4,
             "name": "Fiber Weave"
           }
         ]
@@ -34278,8 +34955,8 @@
     "parent": "Steering Levers",
     "description": "Small cabin of the walker provides protection to possessions and the driver. While walls may let a nomad live longer, obstructed view from inside the cabin could be a serious drawback in a battle. Has a decent deck and good movement capabilities.",
     "structureInfo": {
-      "type": "Soft",
-      "hp": 7000
+      "type": "Medium",
+      "hp": 4500
     },
     "walkerinfo": {
       "category": "Medium"
@@ -34613,15 +35290,15 @@
       {
         "ingredients": [
           {
-            "count": 895,
+            "count": 185,
             "name": "Wood"
           },
           {
-            "count": 25,
+            "count": 14,
             "name": "Rope"
           },
           {
-            "count": 276,
+            "count": 87,
             "name": "Fiber"
           },
           {
@@ -34629,7 +35306,11 @@
             "name": "Fiber Weave"
           },
           {
-            "count": 90,
+            "count": 8,
+            "name": "WoodenSlab"
+          },
+          {
+            "count": 50,
             "name": "Stone"
           }
         ]
@@ -34639,8 +35320,8 @@
     "parent": "Steering Levers",
     "description": "Developed as the successor to the dinghy walker, the sleek stiletto walker is fast, has a short turn radius, and flaunts more deck space and a stronger hull than its predecessor. Ideal for nomads who prefer to travel alone or in small groups.",
     "structureInfo": {
-      "type": "Soft",
-      "hp": 6000
+      "type": "Medium",
+      "hp": 4000
     },
     "walkerinfo": {
       "category": "Medium"
@@ -34703,27 +35384,35 @@
       {
         "ingredients": [
           {
-            "count": 1155,
+            "count": 310,
             "name": "Wood"
           },
           {
-            "count": 68,
+            "count": 29,
             "name": "Rope"
           },
           {
-            "count": 3,
-            "name": "Walker Mechanism"
+            "count": 2,
+            "name": "Bone Glue"
           },
           {
-            "count": 165,
+            "count": 12,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 15,
+            "name": "WoodenSlab"
+          },
+          {
+            "count": 115,
             "name": "Fiber"
           },
           {
-            "count": 4,
+            "count": 2,
             "name": "Fiber Weave"
           },
           {
-            "count": 180,
+            "count": 45,
             "name": "Stone"
           }
         ]
@@ -34733,8 +35422,8 @@
     "parent": "Mollusk Walker",
     "description": "The standard merchant's vessel built for outrunning pirates and getting the goods where they need to go. There's not much room for weapons, so this walker is usually accompanied by at least one battle-capable walker on its transport runs.",
     "structureInfo": {
-      "type": "Soft",
-      "hp": 16700
+      "type": "Medium",
+      "hp": 5000
     },
     "walkerinfo": {
       "category": "Medium"
@@ -34813,8 +35502,8 @@
             "name": "Wood Shaft"
           },
           {
-            "count": 2,
-            "name": "Nomad Cloth"
+            "count": 5,
+            "name": "Fiber Weave"
           },
           {
             "count": 2,
@@ -34914,7 +35603,7 @@
     "toolInfo": [
       {
         "toolType": "TreeCutting",
-        "tier": 1
+        "tier": 3
       }
     ],
     "damageType": "MeleeAxeDamage"
@@ -35936,11 +36625,11 @@
     "stackSize": 100,
     "weight": 1,
     "weaponInfo": {
-      "weaponLength": 72,
-      "damage": 40,
-      "penetration": 22
+      "weaponLength": 62,
+      "damage": 50,
+      "penetration": 25
     },
-    "damageType": "MeleeCuttingDamage"
+    "damageType": "RupuMeleeBluntDamage"
   },
   {
     "category": "Weapons",
@@ -35954,10 +36643,6 @@
       "penetration": 50
     },
     "damageType": "Class MistFireDamageType",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -35973,10 +36658,11 @@
             "count": 1,
             "name": "Feather"
           }
-        ]
+        ],
+        "station": "Empty",
+        "time": 1
       }
-    ],
-    "parent": "Light Javelin"
+    ]
   },
   {
     "category": "Weapons",
@@ -35988,7 +36674,7 @@
       "damage": 30,
       "penetration": 10
     },
-    "damageType": "MeleeBluntDamage"
+    "damageType": "RupuMeleeBluntDamage"
   },
   {
     "category": "Weapons",
@@ -36000,7 +36686,7 @@
       "damage": 38,
       "penetration": 10
     },
-    "damageType": "MeleeBluntDamage"
+    "damageType": "RupuMeleeBluntDamage"
   },
   {
     "category": "Weapons",
@@ -36012,7 +36698,7 @@
       "damage": 18,
       "penetration": 10
     },
-    "damageType": "MeleeBluntDamage"
+    "damageType": "RupuMeleeBluntDamage"
   },
   {
     "category": "Weapons",
@@ -36064,14 +36750,11 @@
             "name": "Wood Shaft"
           },
           {
-            "count": 2,
+            "count": 1,
             "name": "Stone"
-          },
-          {
-            "count": 5,
-            "name": "Fiber"
           }
-        ]
+        ],
+        "output": 3
       }
     ],
     "name": "Light Javelin",
@@ -36081,10 +36764,10 @@
     "stackSize": 5,
     "weight": 2,
     "weaponInfo": {
-      "damage": 30,
-      "penetration": 30
+      "damage": 45,
+      "penetration": 15
     },
-    "damageType": "MeleePiercingDamage"
+    "damageType": "PiercingDamage_Walker"
   },
   {
     "category": "Weapons",
@@ -36181,8 +36864,8 @@
             "name": "Wood Shaft"
           },
           {
-            "count": 2,
-            "name": "Nomad Cloth"
+            "count": 4,
+            "name": "Fiber Weave"
           },
           {
             "count": 10,
@@ -36924,16 +37607,12 @@
       {
         "ingredients": [
           {
-            "count": 20,
+            "count": 12,
             "name": "Wood"
           },
           {
             "count": 2,
             "name": "Fiber Weave"
-          },
-          {
-            "count": 28,
-            "name": "Fiber"
           },
           {
             "count": 5,
@@ -36946,8 +37625,8 @@
     "parent": "Sand Bed",
     "description": "Ballista shoots bolts or tethering harpoons that attach to walkers and the environment.",
     "structureInfo": {
-      "type": "Soft",
-      "hp": 900
+      "type": "Medium",
+      "hp": 700
     }
   },
   {
@@ -37022,7 +37701,7 @@
     "parent": "Slingshot",
     "description": "Launches boulders and bombs extremely far distances. Effective against fortified structures.",
     "structureInfo": {
-      "type": "Soft",
+      "type": "Hard",
       "hp": 7000
     }
   },
@@ -37195,7 +37874,7 @@
     ],
     "name": "Hose Station",
     "parent": "Ballista",
-    "description": "Push hostiles off your walker with a powerful jetstream. Also useful for cooling down molten lava.",
+    "description": "Push hostiles off your walker with a powerful water jetstream or cool down molten lava. Can also use fuel to spread it around and set on fire against the enemy.",
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
@@ -37243,7 +37922,74 @@
       {
         "ingredients": [
           {
-            "count": 20,
+            "count": 7,
+            "name": "Wood"
+          },
+          {
+            "count": 5,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 3,
+            "name": "Flint"
+          },
+          {
+            "count": 8,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Lobber",
+    "parent": "Ballista",
+    "description": "A small weapon for remote control while driving walkers. Launches bursts of solid projectiles.",
+    "structureInfo": {
+      "type": "Medium",
+      "hp": 550
+    }
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 2,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 4,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Flint"
+          },
+          {
+            "count": 5,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Spinner",
+    "parent": "Ballista",
+    "structureInfo": {
+      "type": "Medium",
+      "hp": 750
+    }
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 2,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 4,
             "name": "Wood"
           },
           {
@@ -37251,11 +37997,11 @@
             "name": "Fiber Weave"
           },
           {
-            "count": 28,
+            "count": 8,
             "name": "Fiber"
           },
           {
-            "count": 5,
+            "count": 1,
             "name": "Wood Shaft"
           }
         ]
@@ -37265,8 +38011,8 @@
     "parent": "Ballista",
     "description": "Small Ballista for remote control while steering. Needs to be reloaded manually.",
     "structureInfo": {
-      "type": "Soft",
-      "hp": 300
+      "type": "Medium",
+      "hp": 500
     }
   },
   {
@@ -37301,8 +38047,8 @@
     "parent": "Ballista",
     "description": "A Small Ballista that can be remotely controlled by the driver, placed on a rotating platform.",
     "structureInfo": {
-      "type": "Soft",
-      "hp": 400
+      "type": "Medium",
+      "hp": 800
     }
   },
   {
@@ -37337,8 +38083,44 @@
     "parent": "Ballista",
     "description": "A Small Ballista placed on a raised arm that lets the driver get better firing angles.",
     "structureInfo": {
-      "type": "Soft",
+      "type": "Medium",
       "hp": 3000
+    }
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 2,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wood"
+          },
+          {
+            "count": 5,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 2,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 3,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Thumper",
+    "parent": "Stinger",
+    "description": "At some point in their sunny life, every Nomad finds out that in some situations blasting a bunch of projectiles at the problem solves it faster than one could say \"cactus\". Uses Throwstones as ammo..",
+    "structureInfo": {
+      "type": "Medium",
+      "hp": 600
     }
   },
   {
@@ -37351,16 +38133,16 @@
       {
         "ingredients": [
           {
-            "count": 65,
-            "name": "Wood"
+            "count": 3,
+            "name": "Bone Splinter"
           },
           {
-            "count": 28,
-            "name": "Stone"
+            "count": 4,
+            "name": "Wood Shaft"
           },
           {
-            "count": 8,
-            "name": "Rupu Vine"
+            "count": 1,
+            "name": "Rope"
           }
         ]
       }
@@ -37369,8 +38151,8 @@
     "parent": "Ballista",
     "description": "Unload a rapid volley of darts that are deadly against lightly armored targets. Weak against walkers and structures.",
     "structureInfo": {
-      "type": "Soft",
-      "hp": 788
+      "type": "Medium",
+      "hp": 900
     }
   },
   {
@@ -37409,8 +38191,8 @@
     "parent": "Ballista",
     "description": "A heavy weapon that launches deadly roks. Invented out of necessity when various Nomad factions started fielding large Walkers against each other.",
     "structureInfo": {
-      "type": "Soft",
-      "hp": 7000
+      "type": "Medium",
+      "hp": 1200
     }
   },
   {
@@ -37423,30 +38205,34 @@
       {
         "ingredients": [
           {
-            "count": 52,
+            "count": 8,
             "name": "Wood"
           },
           {
-            "count": 70,
+            "count": 12,
             "name": "Stone"
           },
           {
-            "count": 45,
+            "count": 6,
             "name": "Fiber"
           },
           {
-            "count": 12,
+            "count": 2,
             "name": "Earth Wax"
+          },
+          {
+            "count": 1,
+            "name": "Toothwheel"
           }
         ]
       }
     ],
     "name": "Scattershot Gun",
     "parent": "Ballista",
-    "description": "Fire a short-range barrage of sharp stones in a wide angle. Effective against personnel and weak structures.",
+    "description": "Fire a short-range barrage of sharp stones in a wide angle. Effective against personnel and weak structures. Uses Scattershot Ammo.",
     "structureInfo": {
-      "type": "Soft",
-      "hp": 338
+      "type": "Medium",
+      "hp": 700
     }
   },
   {
@@ -37628,7 +38414,10 @@
             "count": 5,
             "name": "Fiber"
           }
-        ]
+        ],
+        "output": 3,
+        "station": "Woodworking Station",
+        "time": 5
       }
     ],
     "name": "Heavy Javelin",
@@ -37636,14 +38425,15 @@
     "trade_price": 1.6,
     "description": "While short spears were found to be cumbersome in boarding actions, their stopping power when thrown proved useful for fighting bigger kinds of the Rupu.",
     "projectileDamage": {
-      "vsSoft": 35
+      "vsMedium": 25,
+      "vsHard": 10
     },
     "stackSize": 5,
     "weight": 2,
     "weaponInfo": {
-      "damage": 45,
+      "damage": 60,
       "penetration": 25
     },
-    "damageType": "MeleePiercingDamage"
+    "damageType": "PiercingDamage_Walker"
   }
 ]
