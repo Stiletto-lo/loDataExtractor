@@ -82,6 +82,12 @@ controller.parseLootTable = (filePath) => {
       if (key != dataTable.name && lootItems[key].Item) {
         let name = dataParser.parseName(translator, key);
         if (name) {
+          if (
+            lootItems[key].Item.AssetPathName &&
+            lootItems[key].Item.AssetPathName.includes("Schematics")
+          ) {
+            name = name + " Schematic";
+          }
           let hasDrop = dataTable.dropItems.some((d) => d.name === name);
           if (!hasDrop && name != dataTable.name) {
             let drop = { ...dropDataTemplate };
