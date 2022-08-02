@@ -88,6 +88,7 @@ allTranslations["T2_Heavy_Gloves_01_w"] = "Iron Studded Gauntlets";
 allTranslations["ThrowingLavaBomb"] = "Firebomb";
 allTranslations["TwoHandedIronAxe2"] = "Bouldercut Battle Axe";
 allTranslations["NurrFang"] = "Nurr Fang";
+allTranslations["WoodenSlab"] = "Wooden Slab";
 
 allTranslations["Woodworking_Tier2"] = "Advanced Woodworking Station";
 allTranslations["WoodworkingStation_T2"] = "Advanced Woodworking Station";
