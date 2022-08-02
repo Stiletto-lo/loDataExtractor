@@ -1,6 +1,6 @@
 {
   "name": "lodataextractor",
-  "version": "0.0.13",
+  "version": "1.1.9",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,7 @@
   "author": "Dm94Dani",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.24.0"
+    "axios": "^0.24.0",
+    "dotenv": "^16.0.1"
   }
 }

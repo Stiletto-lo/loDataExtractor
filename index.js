@@ -1,76 +1,28 @@
+require("dotenv").config();
 const fs = require("fs");
 const path = require("path");
-const comparator = require("./helpers/comparator");
-const translator = require("./helpers/translator");
+const comparator = require("./controllers/comparator");
+const fileParser = require("./controllers/fileParsers");
+const dataParser = require("./controllers/dataParsers");
 
 let allItems = [];
-
-translator.initownTranslations();
+const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
+const DEBUG = process.env.DEBUG === "true";
 
 const folderPatch = "./exported/";
 
-const folderType = [
+const folderTypes = [
   "tech",
   "item",
   "translation",
   "trade",
   "placeables",
   "cached",
+  "loottables",
+  "upgrages",
+  "blueprintsloot",
+  "damagetypes",
 ];
-
-const itemTemplate = {
-  category: undefined,
-  cost: undefined,
-  crafting: undefined,
-  damage: undefined,
-  name: undefined,
-  parent: undefined,
-  trade_price: undefined,
-  translation: undefined,
-  type: undefined,
-  description: undefined,
-  projectileDamage: undefined,
-  experiencieReward: undefined,
-  stackSize: undefined,
-  weight: undefined,
-  durability: undefined,
-  weaponInfo: undefined,
-  toolInfo: undefined,
-};
-
-const weaponInfoTemplate = {
-  durabilityDamage: undefined,
-  weaponSpeed: undefined,
-  impact: undefined,
-  stability: undefined,
-  weaponLength: undefined,
-};
-
-const toolInfoTemplate = {
-  toolType: undefined,
-  tier: undefined,
-};
-
-const projectileDamageTemplate = {
-  damage: undefined,
-  penetration: undefined,
-  effectivenessVsSoak: undefined,
-  effectivenessVsReduce: undefined,
-};
-
-const recipeTemplate = {
-  ingredients: [],
-  output: undefined,
-  station: undefined,
-  time: undefined,
-};
-
-const ingredienTemplate = { count: undefined, name: undefined };
-
-const costTemplate = {
-  count: undefined,
-  name: undefined,
-};
 
 const orderByCategory = (a, b) => {
   if (a.category < b.category) {
@@ -81,13 +33,29 @@ const orderByCategory = (a, b) => {
   return 0;
 };
 
-loadDirData("./Data/StringTables", 2);
-loadDirData("./Data/TechTree", 0);
-loadDirData("./Data/Items", 1);
-loadDirData("./Data/Placeables", 4);
-loadDirData("./Data/Recipes", 1);
-loadDirData("./Data/Trade", 3);
-loadDirData("./Data/Placeables", 5);
+loadDirData("./Content/Mist/Data/StringTables", "translation");
+loadDirData("./Content/Localization/Game/en", "translation");
+loadDirData("./Content/Mist/Data/TechTree", "tech");
+loadDirData("./Content/Mist/Data/Items", "item");
+loadDirData("./Content/Mist/Data/Placeables", "placeables");
+loadDirData("./Content/Mist/Data/Recipes", "item");
+loadDirData("./Content/Mist/Data/Trade", "trade");
+loadDirData("./Content/Mist/Data/Placeables", "cached");
+
+loadDirData("./Content/Mist/Data/Walkers", "upgrages");
+loadDirData("./Content/Mist/Data/DamageTypes", "damagetypes");
+
+if (process.env.EXTRACT_LOOT_TABLES === "true") {
+  loadDirData("./Content/Mist/Data/LootTables", "loottables");
+  loadDirData("./Content/Mist/Data/LootTables", "blueprintsloot");
+  fileParser.parseBlueprintsToItems();
+}
+
+fileParser.parseUpgradesToItems();
+
+allItems = fileParser.getItems();
+
+const translator = fileParser.getTranslator();
 
 allItems = translator.translateItems(allItems);
 allItems = translator.addDescriptions(allItems);
@@ -96,13 +64,29 @@ allItems.forEach((item) => {
   Object.keys(item).forEach((key) => {
     if (item[key] === undefined) {
       delete item[key];
-    } else if (item["translation"] != undefined) {
-      delete item["translation"];
-    } else if (item["type"] != undefined) {
-      delete item["type"];
+    }
+    if (!DEBUG) {
+      if (item["translation"] != undefined) {
+        delete item["translation"];
+      } else if (item["type"] != undefined) {
+        delete item["type"];
+      } else if (item["schematicName"] != undefined) {
+        delete item["schematicName"];
+      } else if (item["drops"] != undefined && item["drops"].length <= 0) {
+        delete item["drops"];
+      } else if (
+        item["toolInfo"] != undefined &&
+        item["toolInfo"].length <= 0
+      ) {
+        delete item["toolInfo"];
+      }
     }
   });
 });
+
+if (!SHOW_DEV_ITEMS) {
+  allItems = allItems.filter((item) => !item.onlyDevs);
+}
 
 allItems = allItems
   .map((item) => {
@@ -113,6 +97,7 @@ allItems = allItems
     return item;
   })
   .filter((item) => item.name && Object.keys(item).length > 2)
+  .filter((item) => !item.name.includes("Packing"))
   .reduce((acc, current) => {
     const x = acc.find((item) => item.name === current.name);
     if (!x) {
@@ -121,6 +106,8 @@ allItems = allItems
       return acc;
     }
   }, []);
+
+allItems = dataParser.itemMerger(allItems, "Long Sawblade", "Sawblade_Tier2");
 
 allItems.sort(orderByCategory);
 
@@ -132,12 +119,26 @@ if (allItems.length > 0) {
       if (err) {
         console.error("Error creating the file");
       } else {
-        console.log("Data exported");
+        console.log("Items detailed exported");
+      }
+    }
+  );
+}
+if (allItems.length > 0) {
+  fs.writeFile(
+    folderPatch + "items_min.json",
+    JSON.stringify(allItems),
+    function (err) {
+      if (err) {
+        console.error("Error creating the file");
+      } else {
+        console.log("Items.min exported");
       }
     }
   );
 }
 
+/* We remove additional information */
 allItems.forEach((item) => {
   item.description = undefined;
   item.projectileDamage = undefined;
@@ -147,6 +148,11 @@ allItems.forEach((item) => {
   item.durability = undefined;
   item.weaponInfo = undefined;
   item.toolInfo = undefined;
+  item.schematicName = undefined;
+  item.drops = undefined;
+  item.armorInfo = undefined;
+  item.structureInfo = undefined;
+  item.moduleInfo = undefined;
 });
 
 if (allItems.length > 0) {
@@ -163,9 +169,11 @@ if (allItems.length > 0) {
   );
 }
 
-comparator.compareItems(allItems, folderPatch);
+if (process.env.COMPARE === "true") {
+  comparator.compareItems(allItems, folderPatch);
+}
 
-function loadDirData(techTreeDir, folderType = 0) {
+function loadDirData(techTreeDir, folderType) {
   let dir = path.join(__dirname, techTreeDir);
   let files = fs.readdirSync(dir);
   files.forEach((file) => {
@@ -174,464 +182,39 @@ function loadDirData(techTreeDir, folderType = 0) {
       loadDirData(techTreeDir + "/" + file, folderType);
     } else if (file.includes(".json")) {
       switch (folderType) {
-        case 0:
-          parseTechData(techTreeDir + "/" + file);
+        case "tech":
+          fileParser.parseTechData(techTreeDir + "/" + file);
           break;
-        case 1:
-          parseItemData(techTreeDir + "/" + file);
+        case "item":
+          fileParser.parseItemData(techTreeDir + "/" + file);
           break;
-        case 2:
-          parseTranslations(techTreeDir + "/" + file);
+        case "translation":
+          fileParser.parseTranslations(techTreeDir + "/" + file);
           break;
-        case 3:
-          parsePrices(techTreeDir + "/" + file);
+        case "trade":
+          fileParser.parsePrices(techTreeDir + "/" + file);
           break;
-        case 4:
-          parsePlaceableData(techTreeDir + "/" + file);
+        case "placeables":
+          fileParser.parsePlaceableData(techTreeDir + "/" + file);
           break;
-        case 5:
+        case "cached":
           if (file.includes("CachedPlaceablesCosts.json")) {
-            parseCachedItems(techTreeDir + "/" + file);
+            fileParser.parseCachedItems(techTreeDir + "/" + file);
           }
+          break;
+        case "loottables":
+          fileParser.parseLootTable(techTreeDir + "/" + file);
+          break;
+        case "upgrages":
+          fileParser.parseUpgrades(techTreeDir + "/" + file);
+          break;
+        case "blueprintsloot":
+          fileParser.parseLootBlueprint(techTreeDir + "/" + file);
+          break;
+        case "damagetypes":
+          fileParser.parseDamage(techTreeDir + "/" + file);
           break;
       }
     }
   });
-}
-
-function getItem(itemName) {
-  let itemCopy = { ...itemTemplate };
-  allItems = allItems.filter((item) => {
-    if (
-      item.name == itemName ||
-      (item.translation && item.translation == itemName)
-    ) {
-      itemCopy = item;
-      return false;
-    }
-    return true;
-  });
-  itemCopy.name = itemName;
-
-  return itemCopy;
-}
-
-function parseCachedItems(filePath) {
-  let rawdata = fs.readFileSync(filePath);
-  let jsonData = JSON.parse(rawdata);
-  if (jsonData[0] && jsonData[0]?.Properties.CachedTotalCost) {
-    let cachedItems = jsonData[0].Properties.CachedTotalCost;
-    Object.keys(cachedItems).forEach((key) => {
-      if (cachedItems[key].Inputs) {
-        let recipe = { ...recipeTemplate };
-        let item = getItem(parseName(key));
-        let ingredients = [];
-        for (const ingredientKey in cachedItems[key].Inputs) {
-          let ingredient = { ...ingredienTemplate };
-          ingredient.name = parseName(ingredientKey);
-          ingredient.count = cachedItems[key].Inputs[ingredientKey];
-          ingredients.push(ingredient);
-        }
-        if (ingredients.length > 0) {
-          recipe.ingredients = ingredients;
-        }
-        if (key.includes("DinghyWalker_C")) {
-          console.log("Key: " + key + " Name: " + item.name);
-        }
-        item.crafting = [recipe];
-        allItems.push(item);
-      }
-    });
-  }
-}
-
-function parseItemData(filePath) {
-  let rawdata = fs.readFileSync(filePath);
-  let jsonData = JSON.parse(rawdata);
-
-  if (jsonData[1] && jsonData[1].Type) {
-    let item = getItem(parseName(jsonData[1].Type));
-    item.type = jsonData[1].Type;
-
-    if (jsonData[1].Properties) {
-      if (jsonData[1].Properties?.Category?.ObjectPath) {
-        item.category = parseCategory(
-          jsonData[1].Properties.Category.ObjectPath
-        );
-      }
-      if (jsonData[1].Properties?.ExpectedPrice) {
-        item.trade_price = jsonData[1].Properties.ExpectedPrice;
-      }
-
-      if (jsonData[1].Properties?.ProjectileDamage?.Damage) {
-        item.damage = jsonData[1].Properties.ProjectileDamage.Damage;
-      }
-
-      if (jsonData[1].Properties?.ProjectileDamage) {
-        let projectileDamage = { ...projectileDamageTemplate };
-
-        projectileDamage.damage = jsonData[1].Properties?.ProjectileDamage
-          ?.Damage
-          ? jsonData[1].Properties?.ProjectileDamage?.Damage
-          : undefined;
-        projectileDamage.penetration = jsonData[1].Properties?.ProjectileDamage
-          ?.Penetration
-          ? jsonData[1].Properties?.ProjectileDamage?.Penetration
-          : undefined;
-        projectileDamage.effectivenessVsSoak = jsonData[1].Properties
-          ?.ProjectileDamage?.EffectivenessVsSoak
-          ? jsonData[1].Properties?.ProjectileDamage?.EffectivenessVsSoak
-          : undefined;
-        projectileDamage.effectivenessVsReduce = jsonData[1].Properties
-          ?.ProjectileDamage?.EffectivenessVsReduce
-          ? jsonData[1].Properties?.ProjectileDamage?.EffectivenessVsReduce
-          : undefined;
-
-        item.projectileDamage = projectileDamage;
-      }
-
-      if (jsonData[1].Properties?.ExperienceRewardCrafting) {
-        item.experiencieReward =
-          jsonData[1].Properties.ExperienceRewardCrafting;
-      }
-
-      if (jsonData[1].Properties?.MaxStackSize) {
-        item.stackSize = jsonData[1].Properties.MaxStackSize;
-      }
-
-      if (jsonData[1].Properties?.Weight) {
-        item.weight = jsonData[1].Properties.Weight;
-      }
-
-      if (jsonData[1].Properties?.MaxDurability) {
-        item.durability = jsonData[1].Properties.MaxDurability;
-      }
-
-      let weaponInfo = { ...weaponInfoTemplate };
-
-      if (jsonData[1].Properties?.DurabilityDamage) {
-        weaponInfo.durabilityDamage = jsonData[1].Properties.DurabilityDamage;
-        item.weaponInfo = weaponInfo;
-      }
-      if (jsonData[1].Properties?.WeaponSpeed) {
-        weaponInfo.weaponSpeed = jsonData[1].Properties.WeaponSpeed;
-        item.weaponInfo = weaponInfo;
-      }
-      if (jsonData[1].Properties?.Impact) {
-        weaponInfo.impact = jsonData[1].Properties.Impact;
-        item.weaponInfo = weaponInfo;
-      }
-      if (jsonData[1].Properties?.Stability) {
-        weaponInfo.Stability = jsonData[1].Properties.Stability;
-        item.weaponInfo = weaponInfo;
-      }
-      if (jsonData[1].Properties?.WeaponLength) {
-        weaponInfo.WeaponLength = jsonData[1].Properties.WeaponLength;
-        item.weaponInfo = weaponInfo;
-      }
-
-      if (jsonData[1].Properties?.ToolInfo) {
-        let toolInfosData = jsonData[1].Properties.ToolInfo;
-        let toolInfos = [];
-
-        toolInfosData.forEach((toolInfoData) => {
-          let toolInfo = { ...toolInfoTemplate };
-          toolInfo.tier = toolInfoData.Tier;
-          if (toolInfoData.ToolType.includes("TreeCutting")) {
-            toolInfo.toolType = "TreeCutting";
-          } else if (toolInfoData.ToolType.includes("Scythe")) {
-            toolInfo.toolType = "Scythe";
-          } else if (toolInfoData.ToolType.includes("Mining")) {
-            toolInfo.toolType = "Mining";
-          } else {
-            console.warn("New tool type: " + toolInfoData.ToolType);
-          }
-          toolInfos.push(toolInfo);
-        });
-
-        item.toolInfo = toolInfos;
-      }
-
-      if (jsonData[1].Properties?.Recipes) {
-        let recipesData = jsonData[1].Properties.Recipes;
-        let crafting = [];
-        recipesData.forEach((recipeData) => {
-          let recipe = { ...recipeTemplate };
-          if (recipeData.Inputs) {
-            let ingredients = [];
-            for (const key in recipeData.Inputs) {
-              let ingredient = { ...ingredienTemplate };
-              ingredient.name = parseName(key);
-              ingredient.count = recipeData.Inputs[key];
-              ingredients.push(ingredient);
-            }
-            if (ingredients.length > 0) {
-              recipe.ingredients = ingredients;
-            }
-          }
-          if (recipeData.Quantity && recipeData.Quantity > 1) {
-            recipe.output = recipeData.Quantity;
-          }
-          if (recipeData.CraftingTime && recipeData.CraftingTime > 0) {
-            recipe.time = recipeData.CraftingTime;
-          }
-          if (
-            recipeData?.Category?.ObjectName &&
-            !recipeData.Category.ObjectName.includes("Base")
-          ) {
-            recipe.station = parseName(recipeData.Category.ObjectName).trim();
-          }
-          crafting.push(recipe);
-        });
-        if (crafting.length > 0) {
-          item.crafting = crafting;
-        }
-      }
-      if (jsonData[1].Properties.Name && jsonData[1].Properties.Name.Key) {
-        if (
-          jsonData[1].Properties.Name.SourceString &&
-          jsonData[1].Properties.Name.SourceString.trim() != ""
-        ) {
-          item.translation = jsonData[1].Properties.Name.SourceString.trim();
-        } else {
-          item.translation = jsonData[1].Properties.Name.Key.replace(
-            ".Name",
-            ""
-          ).trim();
-        }
-      }
-    }
-
-    allItems.push(item);
-  }
-}
-
-function parsePlaceableData(filePath) {
-  let rawdata = fs.readFileSync(filePath);
-  let jsonData = JSON.parse(rawdata);
-
-  if (jsonData[1] && jsonData[1].Type) {
-    let item = getItem(parseName(jsonData[1].Type));
-    item.type = jsonData[1].Type;
-
-    if (jsonData[1].Properties) {
-      if (jsonData[1].Properties?.Category?.ObjectPath) {
-        item.category = parseCategory(
-          jsonData[1].Properties.Category.ObjectPath
-        );
-      }
-
-      if (jsonData[1].Properties?.Requirements) {
-        let recipeData = jsonData[1].Properties.Requirements;
-        if (recipeData.Inputs) {
-          let recipe = { ...recipeTemplate };
-          let ingredients = [];
-          for (const key in recipeData.Inputs) {
-            let ingredient = { ...ingredienTemplate };
-            ingredient.name = parseName(key);
-            ingredient.count = recipeData.Inputs[key];
-            ingredients.push(ingredient);
-          }
-          if (ingredients.length > 0) {
-            recipe.ingredients = ingredients;
-          }
-          item.crafting = [recipe];
-        }
-      }
-
-      if (jsonData[1].Properties?.Name?.Key) {
-        item.translation = jsonData[1].Properties.Name.Key.replace(
-          ".Name",
-          ""
-        ).trim();
-      }
-    }
-
-    allItems.push(item);
-  }
-}
-
-function parseTechData(filePath) {
-  let rawdata = fs.readFileSync(filePath);
-  let jsonData = JSON.parse(rawdata);
-
-  if (jsonData[1] && jsonData[1].Type) {
-    let item = getItem(parseName(jsonData[1].Type));
-    item.type = jsonData[1].Type;
-    if (
-      jsonData[1].Properties &&
-      jsonData[1].Properties.Requirements &&
-      jsonData[1].Properties.Requirements[0] &&
-      jsonData[1].Properties.Requirements[0].ObjectName
-    ) {
-      item.parent = parseName(
-        jsonData[1].Properties.Requirements[0].ObjectName
-      );
-    }
-    if (jsonData[1]?.Properties?.Cost != 1) {
-      let itemCost = { ...costTemplate };
-      if (
-        jsonData[1].Properties.TechTreeTier &&
-        (jsonData[1].Properties.TechTreeTier.includes("Tier4") ||
-          jsonData[1].Properties.TechTreeTier.includes("Tier5") ||
-          jsonData[1].Properties.TechTreeTier.includes("Tier6"))
-      ) {
-        itemCost.name = "Tablet";
-      } else {
-        itemCost.name = "Fragment";
-      }
-      itemCost.count = jsonData[1].Properties.Cost;
-
-      item.cost = itemCost;
-    }
-    allItems.push(item);
-  }
-}
-
-function parseTranslations(filePath) {
-  let rawdata = fs.readFileSync(filePath);
-  let jsonData = JSON.parse(rawdata);
-  if (jsonData[0]?.StringTable?.KeysToMetaData) {
-    for (const key in jsonData[0].StringTable.KeysToMetaData) {
-      if (key.includes(".Name")) {
-        translator.addTranslation(
-          key.replace(".Name", "").trim(),
-          jsonData[0].StringTable.KeysToMetaData[key]
-        );
-      } else if (key.includes(".Description")) {
-        translator.addDescription(
-          key.replace(".Description", "").trim(),
-          jsonData[0].StringTable.KeysToMetaData[key]
-        );
-      }
-    }
-  }
-}
-
-function parsePrices(filePath) {
-  let rawdata = fs.readFileSync(filePath);
-  let jsonData = JSON.parse(rawdata);
-  if (jsonData[1]?.Properties?.OrdersArray) {
-    let allOrders = jsonData[1].Properties.OrdersArray;
-
-    allOrders.forEach((order) => {
-      if (order?.ItemClass?.ObjectName && order?.Price) {
-        let item = getItem(parseName(order.ItemClass.ObjectName));
-
-        if (order.Price > item.trade_price) {
-          item.trade_price = order.Price;
-        }
-
-        allItems.push(item);
-      }
-    });
-  }
-}
-
-function parseCategory(category) {
-  category = category
-    .replace("Mist/Content/Mist/Data/Items/Categories/", "")
-    .trim();
-  category = category.replace(".0", "").trim();
-  return category;
-}
-
-function parseType(name) {
-  name = name.replace("BlueprintGeneratedClass", "").trim();
-  name = name.replace(".0", "").trim();
-  let dot = name.indexOf(".");
-  if (dot > 0) {
-    name = name.slice(dot + 1);
-  }
-  return name;
-}
-
-function parseName(name) {
-  name = parseType(name);
-  name = name.replace("_C", "").trim();
-  name = translator.translateName(name);
-
-  if (name.includes("Walker")) {
-    if (/(.+)Walker(.+)Legs/.test(name)) {
-      let match = name.match(/(.+)Walker(.+)Legs/);
-      if (match[1] != null && match[2] != null) {
-        let walkerName = translator.translateName(match[1] + "Walker");
-        let legType = match[2] != "Base" ? match[2] + " (1 of 2)" : "";
-        name = walkerName + " Legs " + legType;
-      }
-    } else if (/(.+)WalkerWings(.+)/.test(name)) {
-      let match = name.match(/(.+)WalkerWings(.+)/);
-      if (match[1] != null && match[2] != null) {
-        let walkerName = translator.translateName(match[1] + "Walker");
-        let wingsType = "Wings (1 of 2)";
-        switch (match[2]) {
-          case "FastSmall":
-            wingsType = "Wings Small (1 of 2)";
-            break;
-          case "FastMedium":
-            wingsType = "Wings Medium (1 of 2)";
-            break;
-          case "FastLarge":
-            wingsType = "Wings Large (1 of 2)";
-            break;
-          case "Heavy1":
-            wingsType = "Wings Heavy (1 of 2)";
-            break;
-          case "Heavy2":
-            wingsType = "Wings Rugged (1 of 2)";
-            break;
-          case "Skirmish1":
-            wingsType = "Wings Skirmish (1 of 2)";
-            break;
-          case "Skirmish2":
-            wingsType = "Wings Raider (1 of 2)";
-            break;
-        }
-        name = walkerName + " " + wingsType;
-      }
-    } else if (/(.+) Walker/.test(name)) {
-      name = name + " Body";
-    }
-  }
-  if (name.includes("Upgrades")) {
-    if (/(.+)Walker(.+)Upgrades/.test(name)) {
-      let match = name.match(/(.+)Walker(.+)Upgrades/);
-      if (match[1] != null && match[2] != null) {
-        let walkerName = translator.translateName(match[1] + "Walker");
-        let tier = "1";
-        switch (match[2]) {
-          case "Bone":
-            tier = "2";
-            break;
-          case "Ceramic":
-            tier = "3";
-            break;
-          case "Iron":
-            tier = "4";
-            break;
-        }
-        name = walkerName + " Upgrade - Water - Tier " + tier;
-      }
-    } else if (/(.+)BoneUpgrades/.test(name)) {
-      let match = name.match(/(.+)BoneUpgrades/);
-      if (match[1] != null) {
-        let walkerName = translator.translateName(match[1] + "Walker");
-        name = walkerName + " Upgrade - Water - Tier 2";
-      }
-    } else if (/(.+)CeramicUpgrades/.test(name)) {
-      let match = name.match(/(.+)CeramicUpgrades/);
-      if (match[1] != null) {
-        let walkerName = translator.translateName(match[1] + "Walker");
-        name = walkerName + " Upgrade - Water - Tier 3";
-      }
-    } else if (/(.+)IronUpgrades/.test(name)) {
-      let match = name.match(/(.+)IronUpgrades/);
-      if (match[1] != null) {
-        let walkerName = translator.translateName(match[1] + "Walker");
-        name = walkerName + " Upgrade - Water - Tier 4";
-      }
-    }
-  }
-
-  return name.trim();
 }
