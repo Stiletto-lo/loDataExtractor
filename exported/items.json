@@ -1832,11 +1832,11 @@
       {
         "ingredients": [
           {
-            "count": 18,
+            "count": 6,
             "name": "Wood"
           },
           {
-            "count": 12,
+            "count": 14,
             "name": "Fiber"
           }
         ]
@@ -1850,11 +1850,11 @@
       {
         "ingredients": [
           {
-            "count": 28,
+            "count": 6,
             "name": "Wood"
           },
           {
-            "count": 45,
+            "count": 14,
             "name": "Fiber"
           }
         ]
@@ -1868,11 +1868,11 @@
       {
         "ingredients": [
           {
-            "count": 28,
+            "count": 6,
             "name": "Wood"
           },
           {
-            "count": 45,
+            "count": 14,
             "name": "Fiber"
           }
         ]
@@ -1886,11 +1886,11 @@
       {
         "ingredients": [
           {
-            "count": 18,
+            "count": 6,
             "name": "Wood"
           },
           {
-            "count": 12,
+            "count": 14,
             "name": "Fiber"
           }
         ]
@@ -1904,11 +1904,11 @@
       {
         "ingredients": [
           {
-            "count": 18,
+            "count": 6,
             "name": "Wood"
           },
           {
-            "count": 12,
+            "count": 14,
             "name": "Fiber"
           }
         ]
@@ -1922,11 +1922,11 @@
       {
         "ingredients": [
           {
-            "count": 18,
+            "count": 6,
             "name": "Wood"
           },
           {
-            "count": 12,
+            "count": 14,
             "name": "Fiber"
           }
         ]
@@ -1940,11 +1940,11 @@
       {
         "ingredients": [
           {
-            "count": 28,
+            "count": 6,
             "name": "Wood"
           },
           {
-            "count": 45,
+            "count": 14,
             "name": "Fiber"
           }
         ]
@@ -1958,11 +1958,11 @@
       {
         "ingredients": [
           {
-            "count": 28,
+            "count": 6,
             "name": "Wood"
           },
           {
-            "count": 45,
+            "count": 14,
             "name": "Fiber"
           }
         ]
@@ -2503,8 +2503,24 @@
   {
     "category": "Weapons",
     "name": "Throwstone",
-    "trade_price": 16.9,
-    "damageType": "ProjectileBluntDamage"
+    "trade_price": 1.6,
+    "damageType": "ProjectileBluntDamage",
+    "cost": {
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Stone"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 4
+      }
+    ],
+    "parent": "Equipment"
   },
   {
     "cost": {
@@ -3421,7 +3437,7 @@
     ],
     "name": "Forester's Armor",
     "parent": "Fiber Shirt and Trousers",
-    "trade_price": 13.7
+    "trade_price": 66.5
   },
   {
     "category": "Armors",
@@ -3441,8 +3457,8 @@
             "name": "Chitin Plate"
           },
           {
-            "count": 20,
-            "name": "Cattail"
+            "count": 8,
+            "name": "Hide"
           },
           {
             "count": 20,
@@ -3455,7 +3471,7 @@
     ],
     "name": "Brittle Bone Armor",
     "parent": "Forester's Armor",
-    "trade_price": 66.5
+    "trade_price": 13.7
   },
   {
     "category": "Armors",
@@ -3813,20 +3829,12 @@
             "name": "Stone"
           },
           {
-            "count": 55,
-            "name": "Fiber"
-          },
-          {
-            "count": 15,
-            "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          },
-          {
             "count": 2,
             "name": "Nomad Cloth"
+          },
+          {
+            "count": 18,
+            "name": "Redwood Wood"
           },
           {
             "count": 16,
@@ -16991,7 +16999,7 @@
       {
         "ingredients": [
           {
-            "count": 6,
+            "count": 2,
             "name": "Fiber Weave"
           },
           {
@@ -17115,15 +17123,11 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 30,
+            "count": 18,
             "name": "Wood"
           },
           {
-            "count": 25,
+            "count": 12,
             "name": "Fiber"
           },
           {
@@ -17239,12 +17243,8 @@
       {
         "ingredients": [
           {
-            "count": 3,
+            "count": 1,
             "name": "Toothwheel"
-          },
-          {
-            "count": 3,
-            "name": "Rope"
           },
           {
             "count": 32,
@@ -17367,12 +17367,12 @@
       {
         "ingredients": [
           {
-            "count": 3,
-            "name": "Toothwheel"
+            "count": 8,
+            "name": "Wooden Slab"
           },
           {
-            "count": 2,
-            "name": "Rope"
+            "count": 1,
+            "name": "Toothwheel"
           },
           {
             "count": 35,
@@ -17503,7 +17503,7 @@
       {
         "ingredients": [
           {
-            "count": 40,
+            "count": 5,
             "name": "Wood"
           },
           {
@@ -27248,12 +27248,8 @@
             "name": "Wood"
           },
           {
-            "count": 4,
+            "count": 5,
             "name": "Fiber Weave"
-          },
-          {
-            "count": 9,
-            "name": "Hide"
           },
           {
             "count": 5,
@@ -32917,6 +32913,38 @@
   },
   {
     "category": "Weapons",
+    "name": "Heavy Javelin",
+    "trade_price": 1.6,
+    "damageType": "MeleePiercingDamage",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2,
+            "name": "Stone"
+          },
+          {
+            "count": 5,
+            "name": "Fiber"
+          }
+        ],
+        "output": 3,
+        "station": "Woodworking Station",
+        "time": 5
+      }
+    ],
+    "parent": "Beat Stick"
+  },
+  {
+    "category": "Weapons",
     "cost": {
       "count": 5,
       "name": "Fragment"
@@ -34210,37 +34238,5 @@
     "parent": "Equipment",
     "trade_price": 1.7,
     "damageType": "MeleeBluntWeakDamage"
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Stone"
-          },
-          {
-            "count": 5,
-            "name": "Fiber"
-          }
-        ],
-        "output": 3,
-        "station": "Woodworking Station",
-        "time": 5
-      }
-    ],
-    "name": "Heavy Javelin",
-    "parent": "Beat Stick",
-    "trade_price": 1.6,
-    "damageType": "PiercingDamage_Walker"
   }
 ]
