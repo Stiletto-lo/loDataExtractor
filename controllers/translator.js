@@ -1,11 +1,17 @@
 const controller = {};
 const aditionalTranslations = require("../translations/aditionalTranslations");
+const lootSitesTranslations = require("../translations/lootSites");
 let allTranslations = [];
 let allDesriptions = [];
 
 controller.translateLootSite = (name) => {
-  if (name != null && allTranslations[name]) {
-    return allTranslations[name].trim();
+  if (name != null && lootSitesTranslations[name]) {
+    return lootSitesTranslations[name].trim();
+  }
+
+  let anotherName = controller.searchName(name);
+  if (anotherName != null) {
+    return anotherName;
   }
   return name.trim();
 };

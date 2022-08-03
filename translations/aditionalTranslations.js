@@ -165,6 +165,4 @@ allTranslations["Structural (wood: heavy)"] = "Heavy Wood Structures";
 allTranslations["Structural (wood: light)"] = "Light Wood Structures";
 allTranslations["WallGiants"] = "Giant Structures";
 
-allTranslations["LootBoxModulesTable"] = "Modules Strongbox";
-
 module.exports = allTranslations;
