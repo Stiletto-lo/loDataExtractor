@@ -78,14 +78,6 @@
   },
   {
     "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "name": "Simple Bags",
-    "parent": "Foraging Pouch"
-  },
-  {
-    "cost": {
       "count": 35,
       "name": "Fragment"
     },
@@ -6676,7 +6668,7 @@
       }
     ],
     "name": "Medium Backpack",
-    "parent": "Simple Bags",
+    "parent": "Light Backpack",
     "trade_price": 10.3,
     "description": "Grants additional inventory space.",
     "stackSize": 100,
@@ -6742,6 +6734,10 @@
   },
   {
     "category": "Equipment",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
     "crafting": [
       {
         "ingredients": [
@@ -6757,6 +6753,7 @@
       }
     ],
     "name": "Light Backpack",
+    "parent": "Foraging Pouch",
     "trade_price": 5.6,
     "description": "A little extra inventory space to carry the bare necessities.",
     "stackSize": 100,
@@ -12216,7 +12213,7 @@
   },
   {
     "category": "Schematics",
-    "name": "Simple Bags Schematic",
+    "name": "Light Backpack Schematic",
     "stackSize": 100,
     "learn": [
       "Foraging Pouch",
