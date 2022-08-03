@@ -113,6 +113,7 @@ allTranslations["ObsidianContainerSmall"] = "Obsidian Pot";
 allTranslations["SoilExcavator"] = "Soil Excavator";
 allTranslations["DrillSpade"] = "Drill Spade";
 
+allTranslations["FlotillanGrapplingHook"] = "Flotillan Grappling Hook";
 allTranslations["GunPod"] = "Gun Pod";
 allTranslations["GunPodShell"] = "Gun Pod Shell";
 
