@@ -507,11 +507,7 @@ controller.parseSchematicItemData = (filePath) => {
       let item = controller.getItem(name);
 
       if (jsonData[1].Properties) {
-        if (jsonData[1].Properties?.Category?.ObjectPath) {
-          item.category = dataParser.parseCategory(
-            jsonData[1].Properties.Category.ObjectPath
-          );
-        }
+        item.category = "Schematics";
 
         let itemsSchematic = [];
 
