@@ -231,7 +231,6 @@ controller.parseCachedItems = (filePath) => {
 
 controller.parseItemData = (filePath) => {
   if (filePath.includes("Schematics")) {
-    controller.parseSchematicItemData(filePath);
     return;
   }
   let rawdata = fs.readFileSync(filePath);
@@ -495,6 +494,14 @@ controller.parseSchematicItemData = (filePath) => {
       name = name.replaceAll(".Name", "").trim();
       name = translator.searchName(name);
     }
+    if (
+      name == null &&
+      jsonData[1].Properties?.Name?.SourceString &&
+      jsonData[1].Properties.Name.SourceString.length > 0
+    ) {
+      name = jsonData[1].Properties.Name.SourceString;
+      name = name.trim();
+    }
     if (name) {
       name = name + " Schematic";
       let item = controller.getItem(name);
@@ -506,12 +513,13 @@ controller.parseSchematicItemData = (filePath) => {
           );
         }
 
+        let itemsSchematic = [];
+
         if (jsonData[1].Properties?.MaxStackSize) {
           item.stackSize = jsonData[1].Properties.MaxStackSize;
         }
         if (jsonData[1].Properties?.Items) {
           let allCraftingItems = jsonData[1].Properties.Items;
-          let itemsSchematic = [];
           allCraftingItems.forEach((schematicItem) => {
             if (schematicItem.AssetPathName) {
               itemsSchematic.push(
@@ -519,10 +527,23 @@ controller.parseSchematicItemData = (filePath) => {
               );
             }
           });
-          if (allCraftingItems.length > 0) {
-            item.learn = itemsSchematic;
-            allItems.push(item);
-          }
+        }
+        if (jsonData[1].Properties?.Placeables) {
+          let allCraftingPlaceables = jsonData[1].Properties.Placeables;
+          allCraftingPlaceables.forEach((schematicPlaceable) => {
+            if (schematicPlaceable.AssetPathName) {
+              itemsSchematic.push(
+                dataParser.parseName(
+                  translator,
+                  schematicPlaceable.AssetPathName
+                )
+              );
+            }
+          });
+        }
+        if (itemsSchematic.length > 0) {
+          item.learn = itemsSchematic;
+          allItems.push(item);
         }
       }
     }
