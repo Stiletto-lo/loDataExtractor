@@ -42,7 +42,6 @@ loadDirData("./Content/Mist/Data/Placeables", "placeables");
 loadDirData("./Content/Mist/Data/Recipes", "item");
 loadDirData("./Content/Mist/Data/Trade", "trade");
 loadDirData("./Content/Mist/Data/Placeables", "cached");
-
 loadDirData("./Content/Mist/Data/Walkers", "upgrages");
 loadDirData("./Content/Mist/Data/DamageTypes", "damagetypes");
 loadDirData("./Content/Mist/Data/Items/Schematics", "schematics");
