@@ -140,37 +140,6 @@ if (allItems.length > 0) {
   );
 }
 
-/* We remove additional information */
-allItems.forEach((item) => {
-  item.description = undefined;
-  item.projectileDamage = undefined;
-  item.experiencieReward = undefined;
-  item.stackSize = undefined;
-  item.weight = undefined;
-  item.durability = undefined;
-  item.weaponInfo = undefined;
-  item.toolInfo = undefined;
-  item.schematicName = undefined;
-  item.drops = undefined;
-  item.armorInfo = undefined;
-  item.structureInfo = undefined;
-  item.moduleInfo = undefined;
-});
-
-if (allItems.length > 0) {
-  fs.writeFile(
-    folderPatch + "items.json",
-    JSON.stringify(allItems, null, 2),
-    function (err) {
-      if (err) {
-        console.error("Error creating the file");
-      } else {
-        console.log("Data exported");
-      }
-    }
-  );
-}
-
 if (process.env.COMPARE === "true") {
   comparator.compareItems(allItems, folderPatch);
 }
