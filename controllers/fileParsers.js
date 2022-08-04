@@ -515,6 +515,10 @@ controller.parseSchematicItemData = (filePath) => {
 
         let itemsSchematic = [];
 
+        if (jsonData[1].Type) {
+          item.type = jsonData[1].Type;
+        }
+
         if (jsonData[1].Properties?.MaxStackSize) {
           item.stackSize = jsonData[1].Properties.MaxStackSize;
         }
@@ -522,9 +526,16 @@ controller.parseSchematicItemData = (filePath) => {
           let allCraftingItems = jsonData[1].Properties.Items;
           allCraftingItems.forEach((schematicItem) => {
             if (schematicItem.AssetPathName) {
-              itemsSchematic.push(
-                dataParser.parseName(translator, schematicItem.AssetPathName)
+              let schematicItemName = dataParser.parseName(
+                translator,
+                schematicItem.AssetPathName
               );
+              let itemFound = controller.getItemByType(schematicItemName);
+              if (itemFound) {
+                itemsSchematic.push(itemFound.name);
+              } else {
+                itemsSchematic.push(schematicItemName);
+              }
             }
           });
         }
@@ -532,12 +543,16 @@ controller.parseSchematicItemData = (filePath) => {
           let allCraftingPlaceables = jsonData[1].Properties.Placeables;
           allCraftingPlaceables.forEach((schematicPlaceable) => {
             if (schematicPlaceable.AssetPathName) {
-              itemsSchematic.push(
-                dataParser.parseName(
-                  translator,
-                  schematicPlaceable.AssetPathName
-                )
+              let schematicPlaceableName = dataParser.parseName(
+                translator,
+                schematicPlaceable.AssetPathName
               );
+              let itemFound = controller.getItemByType(schematicPlaceableName);
+              if (itemFound) {
+                itemsSchematic.push(itemFound.name);
+              } else {
+                itemsSchematic.push(schematicPlaceableName);
+              }
             }
           });
         }
@@ -954,6 +969,12 @@ controller.getUpgradeItem = (upgradePure) => {
     item.crafting = upgradePure.crafting;
     return item;
   }
+};
+
+controller.getItemByType = (itemType) => {
+  return allItems.find((it) => {
+    return it.type && it.type == itemType + "_C";
+  });
 };
 
 controller.getItem = (itemName) => {

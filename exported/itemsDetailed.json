@@ -14685,17 +14685,17 @@
     "name": "Concrete Base Schematic",
     "stackSize": 100,
     "learn": [
-      "WallConcrete",
-      "WallConcrete2",
-      "WallConcreteBattlement",
-      "WallConcreteCorner",
-      "WallConcreteDoor",
-      "WallConcreteFoundation",
-      "WallConcreteRoof",
-      "WallConcreteWindow",
-      "WallConcreteWindow2",
-      "WallConcreteWindow3",
-      "WallConcreteWindow4"
+      "Cement Wall 1",
+      "Cement Wall 2",
+      "Cement Battlements",
+      "Cement Corner",
+      "Cement Door",
+      "Cement Foundation",
+      "Cement Floor / Roof",
+      "Cement Wall With Window 1",
+      "Cement Wall With Window 2",
+      "Cement Wall With Windows 1",
+      "Cement Wall With Windows 2"
     ]
   },
   {
@@ -14787,14 +14787,14 @@
     "name": "Clay Base Schematic",
     "stackSize": 100,
     "learn": [
-      "WallClay",
-      "WallClayBattlement",
-      "WallClayCorner",
-      "WallClayDoor",
-      "WallClayFoundation",
-      "WallClayRoof",
-      "WallClayWindow",
-      "WallClayWindow2"
+      "Clay Wall",
+      "Clay Battlement",
+      "Clay Corner",
+      "Clay Door",
+      "Clay Foundation",
+      "Clay Floor / Roof",
+      "Clay Wall with Window",
+      "Clay Wall with Windows"
     ]
   },
   {
@@ -15872,11 +15872,11 @@
     "name": "Stone Base Schematic",
     "stackSize": 100,
     "learn": [
-      "WallStone",
-      "WallStoneDoor",
-      "WallStoneFoundation",
-      "WallStoneRoof",
-      "WallStoneWindow"
+      "Stone Wall",
+      "Stone Door",
+      "Stone Foundation",
+      "Stone Floor / Roof",
+      "Stone Wall with Window"
     ]
   },
   {
@@ -15884,10 +15884,10 @@
     "name": "Hangar Wall Schematic",
     "stackSize": 100,
     "learn": [
-      "HangarWall",
-      "HangarGate",
-      "HangarRoof",
-      "HangarWallWithDoor"
+      "Hangar Wall",
+      "Hangar Gate",
+      "Hangar Roof",
+      "Hangar Wall with Door"
     ]
   },
   {
@@ -16524,15 +16524,15 @@
     "name": "Heavy Wood Base Schematic",
     "stackSize": 100,
     "learn": [
-      "WallWoodHeavy",
-      "WallWoodHeavy2",
-      "WallWoodHeavyBattlement",
-      "WallWoodHeavyCorner",
-      "WallWoodHeavyDoor",
-      "WallWoodHeavyFoundation",
-      "WallWoodHeavyRoof",
-      "WallWoodHeavyWindow",
-      "WallWoodHeavyWindow2"
+      "Heavy Wood Wall 1",
+      "Heavy Wood Wall 2",
+      "Heavy Wood Battlements",
+      "Heavy Wood Corner",
+      "Heavy Wood Door",
+      "Heavy Wood Foundation",
+      "Heavy Wood Floor / Roof",
+      "Heavy Wood Slit Wall",
+      "Heavy Wood Double Slit Wall"
     ]
   },
   {
@@ -16540,17 +16540,17 @@
     "name": "Light Wood Base Schematic",
     "stackSize": 100,
     "learn": [
-      "LightWoodGate",
+      "Dinghy Gate",
       "WallWoodHeavyStairs",
-      "WallWoodLight",
-      "WallWoodLightBattlement",
-      "WallWoodLightDoor",
-      "WallWoodLightFoundation",
-      "WallWoodLightRoof",
-      "WallWoodLightWindow",
-      "WallWoodLightWindow2",
+      "Light Wood Wall",
+      "Light Wood Battlements",
+      "Light Wood Door",
+      "Light Wood Foundation",
+      "Light Wood Floor / Roof",
+      "Light Wood Slit Wall",
+      "Light Wood Double Slit Wall",
       "Guard Rail",
-      "WallWoodLightCorner"
+      "Light Wood Corner"
     ]
   },
   {
@@ -16558,13 +16558,13 @@
     "name": "Medium Wood Base Schematic",
     "stackSize": 100,
     "learn": [
-      "WallWoodMedium",
-      "WallWoodMediumBattlement",
-      "WallWoodMediumDoor",
-      "WallWoodMediumFoundation",
-      "WallWoodMediumRoof",
-      "WallWoodMediumWindow",
-      "WallWoodMediumWindow2"
+      "Medium Wood Wall",
+      "Medium Wood Battlements",
+      "Medium Wood Door",
+      "Medium Wood Foundation",
+      "Medium Wood Floor / Roof",
+      "Medium Wood Slit Wall",
+      "Medium Wood Double Slit Wall"
     ]
   },
   {
@@ -35507,7 +35507,7 @@
     "name": "Rig T3 Schematic",
     "stackSize": 100,
     "learn": [
-      "DefaultTobogganRig_T3"
+      "Rig T3"
     ]
   },
   {
@@ -35515,7 +35515,7 @@
     "name": "Rig T2 Schematic",
     "stackSize": 100,
     "learn": [
-      "FireflyRig_2"
+      "Rig T2"
     ]
   },
   {
@@ -35523,7 +35523,7 @@
     "name": "Hammerhead Rig Schematic",
     "stackSize": 100,
     "learn": [
-      "HammerheadDinghyRig"
+      "Hammerhead Rig"
     ]
   },
   {
