@@ -318,19 +318,10 @@
     "parent": "Ballista",
     "drops": [
       {
-        "location": "HardLargeRupuCamp_01"
+        "location": "Loot"
       },
       {
-        "location": "HardSmallRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01_1"
-      },
-      {
-        "location": "Large Rupu Camp - Small Chest"
-      },
-      {
-        "location": "Large Rupu Camp - Large Chest"
+        "location": "Large Rupu Camp"
       }
     ]
   },
@@ -815,24 +806,17 @@
             "name": "Fiber Weave"
           }
         ],
-        "output": 15
+        "output": 15,
+        "station": "Woodworking Station",
+        "time": 5
       }
     ],
     "drops": [
       {
-        "location": "HardLargeRupuCamp_01"
+        "location": "Loot"
       },
       {
-        "location": "HardSmallRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01_1"
-      },
-      {
-        "location": "Large Rupu Camp - Small Chest"
-      },
-      {
-        "location": "Large Rupu Camp - Large Chest"
+        "location": "Large Rupu Camp"
       }
     ]
   },
@@ -1023,7 +1007,7 @@
     ],
     "drops": [
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ancient City - Ruins"
       }
     ],
     "damageType": "PiercingDamageCeramic"
@@ -1064,7 +1048,7 @@
     ],
     "drops": [
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ancient City - Ruins"
       }
     ],
     "damageType": "HarpoonDamage"
@@ -1106,19 +1090,10 @@
     ],
     "drops": [
       {
-        "location": "HardLargeRupuCamp_01"
+        "location": "Loot"
       },
       {
-        "location": "HardSmallRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01_1"
-      },
-      {
-        "location": "Large Rupu Camp - Small Chest"
-      },
-      {
-        "location": "Large Rupu Camp - Large Chest"
+        "location": "Large Rupu Camp"
       }
     ],
     "damageType": "PiercingDamageBone"
@@ -1170,28 +1145,13 @@
     ],
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "HarpoonDamage"
@@ -1224,7 +1184,7 @@
     },
     "drops": [
       {
-        "location": "LootableBrokenBarrelComponent"
+        "location": "Loot"
       }
     ]
   },
@@ -1256,7 +1216,7 @@
     },
     "drops": [
       {
-        "location": "LootableBrokenBarrelComponent"
+        "location": "Loot"
       }
     ]
   },
@@ -1284,7 +1244,7 @@
     },
     "drops": [
       {
-        "location": "LootableBrokenBarrelComponent"
+        "location": "Loot"
       }
     ]
   },
@@ -1317,7 +1277,7 @@
     },
     "drops": [
       {
-        "location": "LootableBrokenBarrelComponent"
+        "location": "Loot"
       }
     ]
   },
@@ -1517,37 +1477,19 @@
     },
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Kali Spires - Rupus"
       },
       {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -1584,37 +1526,19 @@
     },
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Kali Spires - Rupus"
       },
       {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -1655,37 +1579,19 @@
     },
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Kali Spires - Rupus"
       },
       {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -1723,28 +1629,13 @@
     },
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -1782,28 +1673,13 @@
     },
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -1838,28 +1714,13 @@
     },
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -1895,28 +1756,13 @@
     },
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -1953,28 +1799,13 @@
     },
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -2017,28 +1848,13 @@
     },
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -2085,28 +1901,13 @@
     },
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -2151,34 +1952,16 @@
     },
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Armor Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -2223,34 +2006,16 @@
     },
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Armor Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -2295,34 +2060,16 @@
     },
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Armor Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -2362,43 +2109,22 @@
     },
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Armor Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -2438,43 +2164,22 @@
     },
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Armor Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -2515,43 +2220,22 @@
     },
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Armor Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -2596,43 +2280,22 @@
     },
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Armor Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -2677,43 +2340,22 @@
     },
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Armor Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -2758,43 +2400,22 @@
     },
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Armor Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -2860,13 +2481,13 @@
     "weight": 3,
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Open"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       }
     ]
   },
@@ -3142,19 +2763,10 @@
     "weight": 2.8,
     "drops": [
       {
-        "location": "HardLargeRupuCamp_01"
+        "location": "Loot"
       },
       {
-        "location": "HardSmallRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01_1"
-      },
-      {
-        "location": "Large Rupu Camp - Small Chest"
-      },
-      {
-        "location": "Large Rupu Camp - Large Chest"
+        "location": "Large Rupu Camp"
       }
     ]
   },
@@ -3182,19 +2794,10 @@
     "weight": 0.2,
     "drops": [
       {
-        "location": "HardLargeRupuCamp_01"
+        "location": "Loot"
       },
       {
-        "location": "HardSmallRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01_1"
-      },
-      {
-        "location": "Large Rupu Camp - Small Chest"
-      },
-      {
-        "location": "Large Rupu Camp - Large Chest"
+        "location": "Large Rupu Camp"
       }
     ]
   },
@@ -3226,70 +2829,25 @@
     "weight": 0.5,
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "PoiSmallSkeletonLoot_T0"
+        "location": "Loot"
       },
       {
         "location": "All rupus"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "NC_Lootsite_01"
-      },
-      {
-        "location": "NC_Lootsite_01_1"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -3325,34 +2883,16 @@
     "weight": 1.7,
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Equipment Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -3388,22 +2928,19 @@
     "weight": 2,
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Equipment Strongbox"
       },
       {
-        "location": "PyramidFinal_5"
+        "location": "Pyramid"
       }
     ]
   },
@@ -3435,16 +2972,13 @@
     "weight": 0.05,
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       }
     ]
   },
@@ -3475,76 +3009,22 @@
     "weight": 0.03,
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Loot"
       },
       {
-        "location": "BP_Lootsite_Volcanic_02"
+        "location": "Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "EasyMediumRupuCamp_01"
-      },
-      {
-        "location": "EasyMediumRupuCamp_01_1"
-      },
-      {
-        "location": "HardLargeRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01_1"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "NC_Lootsite_01"
-      },
-      {
-        "location": "NC_Lootsite_01_1"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -3578,7 +3058,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ancient City - Ruins"
       }
     ]
   },
@@ -3603,16 +3083,13 @@
     "weight": 0.15,
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       }
     ]
   },
@@ -3648,19 +3125,19 @@
     "weight": 0.22,
     "drops": [
       {
-        "location": "RupuLoot_Scavenger"
+        "location": "Rupu Scavenger"
       },
       {
         "location": "All rupus"
       },
       {
-        "location": "RupuSkirmisherLootCradle"
+        "location": "Rupu Skirmisher"
       },
       {
         "location": "Rupu Thug"
       },
       {
-        "location": "RupuDrudges_T0"
+        "location": "Rupu Drudge"
       },
       {
         "location": "Rupu Harasser"
@@ -3729,7 +3206,7 @@
     "weight": 0.45,
     "drops": [
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ancient City - Ruins"
       }
     ]
   },
@@ -3742,7 +3219,7 @@
     "weight": 0.78,
     "drops": [
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ancient City - Ruins"
       }
     ]
   },
@@ -3755,7 +3232,7 @@
     "weight": 0.4,
     "drops": [
       {
-        "location": "ForagingOutpost"
+        "location": "Loot"
       }
     ]
   },
@@ -3802,16 +3279,13 @@
     "weight": 0.24,
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       }
     ]
   },
@@ -3839,16 +3313,13 @@
     "weight": 0.22,
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       }
     ]
   },
@@ -3881,13 +3352,13 @@
     "weight": 0.35,
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Open"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       }
     ]
   },
@@ -3900,16 +3371,13 @@
     "weight": 0.01,
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       }
     ]
   },
@@ -3924,13 +3392,13 @@
     },
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Open"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       }
     ]
   },
@@ -3945,16 +3413,7 @@
     },
     "drops": [
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Modules Strongbox"
@@ -3972,16 +3431,7 @@
     },
     "drops": [
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Modules Strongbox"
@@ -3998,16 +3448,7 @@
     },
     "drops": [
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Modules Strongbox"
@@ -4035,31 +3476,19 @@
     "weight": 0.05,
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "CanyonEndCampUrn"
+        "location": "Loot"
       },
       {
-        "location": "HardLargeRupuCamp_01"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "HardSmallRupuCamp_01"
+        "location": "Kali Spires - Rupus"
       },
       {
-        "location": "HardSmallRupuCamp_01_1"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "Large Rupu Camp - Small Chest"
-      },
-      {
-        "location": "Large Rupu Camp - Large Chest"
+        "location": "Large Rupu Camp"
       }
     ]
   },
@@ -4072,49 +3501,13 @@
     "weight": 1.2,
     "drops": [
       {
-        "location": "BP_DesertClam"
+        "location": "Desert Clam"
       },
       {
-        "location": "CanyonEndCampUrn"
+        "location": "Loot"
       },
       {
-        "location": "CanyonSavannahUrn"
-      },
-      {
-        "location": "EasyMediumRupuCamp_01"
-      },
-      {
-        "location": "EasyMediumRupuCamp_01_1"
-      },
-      {
-        "location": "HardLargeRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01_1"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
+        "location": "Ruins"
       }
     ]
   },
@@ -4126,61 +3519,19 @@
     "weight": 0.1,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -4225,61 +3576,19 @@
     "weight": 0.15,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -4292,61 +3601,19 @@
     "weight": 0.01,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -4359,67 +3626,25 @@
     "weight": 0.4,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "CanyonCampfireLoot"
+        "location": "Loot"
       },
       {
         "location": "All rupus"
       },
       {
-        "location": "MiniHotSpot01"
+        "location": "Ruins"
       },
       {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -4431,61 +3656,19 @@
     "weight": 0.01,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -4498,73 +3681,25 @@
     "weight": 0.01,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Rupus"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Ruins"
       },
       {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -4577,43 +3712,16 @@
     "weight": 0.01,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -4626,55 +3734,22 @@
     "weight": 0.73,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Rupus"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -4687,55 +3762,25 @@
     "weight": 0.01,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Rupus"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Large Rupu Camp"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "Large Rupu Camp - Large Chest"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ]
   },
@@ -4750,136 +3795,37 @@
     },
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -4890,136 +3836,37 @@
     "weight": 0.24,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -5034,136 +3881,37 @@
     },
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -5178,136 +3926,37 @@
     },
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -5322,136 +3971,37 @@
     },
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -5466,136 +4016,37 @@
     },
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -5610,136 +4061,37 @@
     },
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -5755,136 +4107,37 @@
     },
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -5899,136 +4152,37 @@
     },
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -6043,136 +4197,37 @@
     },
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -6187,136 +4242,37 @@
     },
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -6327,136 +4283,37 @@
     "weight": 0.24,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -6467,136 +4324,37 @@
     "weight": 0.24,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -6607,136 +4365,37 @@
     "weight": 0.24,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -6751,136 +4410,37 @@
     },
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -6894,136 +4454,37 @@
     },
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_06"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_07"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Modules Strongbox"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ]
   },
@@ -7052,7 +4513,7 @@
     "weight": 0.65,
     "drops": [
       {
-        "location": "PyramidFinal_5"
+        "location": "Pyramid"
       }
     ]
   },
@@ -7065,7 +4526,7 @@
     "weight": 2.5,
     "drops": [
       {
-        "location": "PyramidFinal_5"
+        "location": "Pyramid"
       }
     ]
   },
@@ -7078,58 +4539,22 @@
     "weight": 0.28,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Rupus"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_5"
+        "location": "Pyramid"
       }
     ]
   },
@@ -7142,7 +4567,7 @@
     "weight": 0.01,
     "drops": [
       {
-        "location": "PyramidFinal_5"
+        "location": "Pyramid"
       }
     ]
   },
@@ -7155,64 +4580,19 @@
     "weight": 0.01,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_5"
+        "location": "Pyramid"
       }
     ]
   },
@@ -7278,67 +4658,19 @@
     "weight": 0.01,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_5"
+        "location": "Pyramid"
       }
     ]
   },
@@ -7367,88 +4699,40 @@
     "weight": 0.03,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Rupus"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Ruin with Burnable Chest"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruin with Dragable Chest"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
+        "location": "Ruin of the wreck"
       },
       {
-        "location": "BP_Lootsite_Volcanic_02"
+        "location": "All rupus"
       },
       {
-        "location": "BP_Lootsite_Volcanic_02_1"
+        "location": "Rupu Raider"
       },
       {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "PoiMediumBurnableChestLoot_T0"
-      },
-      {
-        "location": "PoiMediumDraggableChestLoot_T0"
-      },
-      {
-        "location": "PoiMediumWreckChestLoot_T0"
-      },
-      {
-        "location": "RupuLoot_T3"
-      },
-      {
-        "location": "RupuRaiderLoot_T0"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       },
       {
         "location": "Rupu Drudge"
@@ -7467,70 +4751,28 @@
     "weight": 0.28,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "HardLargeRupuCamp_01_2"
+        "location": "Loot"
       },
       {
         "location": "All rupus"
       },
       {
-        "location": "RupuRaiderMountLoot_T0"
+        "location": "Rupu Raider Nurr"
       },
       {
-        "location": "MiniHotSpot01"
+        "location": "Ruins"
       },
       {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       },
       {
         "location": "Rupu Forerunner"
@@ -7606,16 +4848,16 @@
         "location": "White Death"
       },
       {
-        "location": "Cradle Map - Fortified Camp"
+        "location": "Fortified Camp"
       },
       {
-        "location": "Cradle Map - Ruin"
+        "location": "Ruins"
       },
       {
-        "location": "PoiMediumWreckHangingBagLoot_T0"
+        "location": "Ruin with Small Hanging Bag"
       },
       {
-        "location": "PoiSmallHangingBagLoot_T0"
+        "location": "Ruin of the wreck"
       },
       {
         "location": "Rupu Forager"
@@ -7624,7 +4866,7 @@
         "location": "All rupus"
       },
       {
-        "location": "RupuSkirmisherLootCradle"
+        "location": "Rupu Skirmisher"
       },
       {
         "location": "Rupu Urn"
@@ -7633,13 +4875,10 @@
         "location": "Rupu Hermit"
       },
       {
-        "location": "Plainstrider"
+        "location": "Plainst rider"
       },
       {
         "location": "Rupu Firebrand"
-      },
-      {
-        "location": "RupuHazraki"
       },
       {
         "location": "Rupu Hazraki"
@@ -7657,160 +4896,58 @@
     "weight": 0.4,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Loot"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "CanyonEndCampUrn"
-      },
-      {
-        "location": "CanyonSavannahUrn"
-      },
-      {
-        "location": "FearfulRupu"
-      },
-      {
-        "location": "ForagingOutpost"
-      },
-      {
-        "location": "HardLargeRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01_1"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
+        "location": "Ruins"
       },
       {
         "location": "Yellow Rupu"
       },
       {
-        "location": "PoiMediumBurnableChestLoot_T0"
+        "location": "Ruin with Burnable Chest"
       },
       {
-        "location": "PoiMediumCradlePackageLoot_T0"
+        "location": "Ruin with Dragable Chest"
       },
       {
-        "location": "PoiMediumDraggableChestLoot_T0"
+        "location": "Ruin of the wreck"
       },
       {
-        "location": "PoiMediumWreckChestLoot_T0"
+        "location": "Ruin with Small Hanging Bag"
       },
       {
-        "location": "PoiMediumWreckHangingBagLoot_T0"
-      },
-      {
-        "location": "PoiMediumWreckPackageLoot_T0"
-      },
-      {
-        "location": "PoiPocketClimbingHotspotBarrel"
-      },
-      {
-        "location": "PoiSmallBarrelLoot_T0"
-      },
-      {
-        "location": "PoiSmallHangingBagLoot_T0"
-      },
-      {
-        "location": "PoiSmallSkeletonLoot_T0"
-      },
-      {
-        "location": "PoiTinyCradleRupuCamp"
-      },
-      {
-        "location": "RupuLoot_Scavenger"
+        "location": "Rupu Scavenger"
       },
       {
         "location": "All rupus"
       },
       {
-        "location": "RupuLoot_T3"
+        "location": "Rupu Raider"
       },
       {
-        "location": "RupuRaiderLoot_T0"
-      },
-      {
-        "location": "RupuSkirmisherLootCradle"
+        "location": "Rupu Skirmisher"
       },
       {
         "location": "Rupu Thug"
       },
       {
-        "location": "Large Rupu Camp - Small Chest"
+        "location": "Large Rupu Camp"
       },
       {
-        "location": "Large Rupu Camp - Large Chest"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "NC_Lootsite_01"
-      },
-      {
-        "location": "NC_Lootsite_01_1"
-      },
-      {
-        "location": "NC_Lootsite_01_2"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       },
       {
         "location": "Rupu Drudge"
-      },
-      {
-        "location": "RupuDrudges_T0"
       },
       {
         "location": "Rupu Firebrand"
@@ -7823,9 +4960,6 @@
       },
       {
         "location": "Rupu Hazraki"
-      },
-      {
-        "location": "Rupu Scavenger"
       },
       {
         "location": "Rupu Sentinel"
@@ -7850,10 +4984,13 @@
         "location": "White Death"
       },
       {
-        "location": "Cradle Map - Fortified Camp"
+        "location": "Fortified Camp"
       },
       {
-        "location": "Cradle Map - Ruin"
+        "location": "Ruins"
+      },
+      {
+        "location": "Ruin with Small Hanging Bag"
       },
       {
         "location": "Rupu Forager"
@@ -7865,7 +5002,7 @@
         "location": "Rupu Hermit"
       },
       {
-        "location": "Plainstrider"
+        "location": "Plainst rider"
       },
       {
         "location": "Rupu Drudge"
@@ -7875,9 +5012,6 @@
       },
       {
         "location": "Rupu Forerunner"
-      },
-      {
-        "location": "RupuHazraki"
       },
       {
         "location": "Rupu Hazraki"
@@ -7893,7 +5027,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Canyon Map - Ruin Camp"
+        "location": "Ruin Camp"
       }
     ],
     "learn": [
@@ -7906,7 +5040,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "CanyonEndCampWalkerTotem"
+        "location": "Loot"
       }
     ],
     "learn": [
@@ -7925,7 +5059,7 @@
         "location": "Canyon Islands Map - Shelter Urn"
       },
       {
-        "location": "CanyonMainVillageChest"
+        "location": "Loot"
       }
     ],
     "learn": [
@@ -7938,13 +5072,10 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "CanyonBasinEndCampTotem"
+        "location": "Loot"
       },
       {
         "location": "Canyon Map - Village Camp"
-      },
-      {
-        "location": "CanyonMainVillageChest"
       }
     ],
     "learn": [
@@ -7973,28 +5104,22 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Canyon Map - Ruin Camp"
+        "location": "Ruin Camp"
       },
       {
-        "location": "CanyonendCampWalkerWreck"
+        "location": "Loot"
       },
       {
-        "location": "CanyonFortressChest"
+        "location": "Nurr Raider"
       },
       {
-        "location": "Canyon Map - Nurr Raider"
+        "location": "Nurr Raider Camp"
       },
       {
-        "location": "Canyon Map - Nurr Raider Camp"
+        "location": "Ruin with Burnable Chest"
       },
       {
-        "location": "CanyonPapak"
-      },
-      {
-        "location": "Canyon Map - Ruin - Burnable Chest"
-      },
-      {
-        "location": "Canyon Map - Ruin - Dragable Chest"
+        "location": "Ruin with Dragable Chest"
       }
     ],
     "learn": [
@@ -8007,16 +5132,16 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "CanyonBasinEndCampTotem"
+        "location": "Loot"
       },
       {
         "location": "Canyon Map - Village Camp"
       },
       {
-        "location": "Canyon Map - Nurr Raider"
+        "location": "Nurr Raider"
       },
       {
-        "location": "Canyon Map - Ruin - Burnable Chest"
+        "location": "Ruin with Burnable Chest"
       },
       {
         "location": "Canyon Map - Camp Chest"
@@ -8032,10 +5157,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "CanyonNurrLair"
-      },
-      {
-        "location": "CanyonSavannahCampUrn"
+        "location": "Loot"
       }
     ],
     "learn": [
@@ -8051,16 +5173,16 @@
         "location": "Canyon Map - Village Camp"
       },
       {
-        "location": "Canyon Map - Nurr Raider"
+        "location": "Nurr Raider"
       },
       {
-        "location": "Canyon Map - Nurr Raider Camp"
+        "location": "Nurr Raider Camp"
       },
       {
-        "location": "Canyon Map - Ruin - Burnable Chest"
+        "location": "Ruin with Burnable Chest"
       },
       {
-        "location": "Canyon Map - Ruin - Dragable Chest"
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Canyon Map - Camp Chest"
@@ -8102,7 +5224,7 @@
     "description": "Unload a rapid volley of darts that are deadly against lightly armored targets. Weak against walkers and structures.",
     "drops": [
       {
-        "location": "CanyonMainVillageChest"
+        "location": "Loot"
       }
     ],
     "structureInfo": {
@@ -8124,7 +5246,7 @@
     "description": "Carved images of celestial bodies can be felt on this tablet.",
     "drops": [
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ancient City - Ruins"
       },
       {
         "location": "Tablets Strongbox"
@@ -8136,7 +5258,7 @@
     "description": "Carved images of earthly elements can be felt on this tablet.",
     "drops": [
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ancient City - Ruins"
       },
       {
         "location": "Tablets Strongbox"
@@ -8191,7 +5313,7 @@
     ],
     "drops": [
       {
-        "location": "PoiMediumWreckChestLoot_T0"
+        "location": "Ruin of the wreck"
       }
     ],
     "damageType": "PiercingDamage"
@@ -11079,28 +8201,13 @@
     "weight": 0.8,
     "drops": [
       {
-        "location": "BP_DesertClam"
+        "location": "Desert Clam"
       },
       {
-        "location": "LootableAttackableUrnComponent"
+        "location": "Loot"
       },
       {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
+        "location": "Ruins"
       },
       {
         "location": "Rupu Shaman"
@@ -11384,13 +8491,13 @@
     "weight": 3.2,
     "drops": [
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ancient City - Ruins"
       },
       {
         "location": "Equipment Strongbox"
       },
       {
-        "location": "PoiMediumDraggableChestLoot_T0"
+        "location": "Ruin with Dragable Chest"
       }
     ]
   },
@@ -13659,7 +10766,7 @@
     ],
     "name": "Stone Humidifier",
     "parent": "Camp Fire",
-    "description": "When placed in a base and filled with water, this ingenious contraption slowly releases a soothing mist that sates thirst over time. Its efficiency depends on the number of Nomads gathered around it.",
+    "description": "When placed in a base and filled with water and charcoal, this ingenious contraption slowly releases a mist that  keeps you hydrated over time. Its efficiency depends on the number of Nomads gathered around it.",
     "structureInfo": {
       "type": "Soft",
       "hp": 500
@@ -14236,7 +11343,7 @@
     "weight": 0.5,
     "drops": [
       {
-        "location": "PoiTinyCradleCampFireLoot"
+        "location": "Loot"
       }
     ]
   },
@@ -14248,10 +11355,7 @@
     "weight": 0.5,
     "drops": [
       {
-        "location": "CanyonCampfireLoot"
-      },
-      {
-        "location": "RupuCampFireLoot"
+        "location": "Loot"
       }
     ]
   },
@@ -14892,19 +11996,19 @@
     "weight": 0.05,
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Open"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
-        "location": "PhemkeNestLoot_T0"
+        "location": "Phemke Nest"
       },
       {
-        "location": "PoiTinyCradleRupuCamp"
+        "location": "Loot"
       }
     ]
   },
@@ -14917,10 +12021,10 @@
     "weight": 0.34,
     "drops": [
       {
-        "location": "NurrLairLoot_T0"
+        "location": "Nurr Lair"
       },
       {
-        "location": "RupuRaiderMountLoot_T0"
+        "location": "Rupu Raider Nurr"
       }
     ]
   },
@@ -14963,10 +12067,6 @@
           {
             "count": 1,
             "name": "Gelatinous Goo"
-          },
-          {
-            "count": 1,
-            "name": "Bone Splinter"
           }
         ],
         "station": "Stomping Station",
@@ -14981,28 +12081,22 @@
     "weight": 0.17,
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "All rupus"
       },
       {
-        "location": "RupuLoot_T3"
+        "location": "Rupu Raider"
       },
       {
-        "location": "RupuRaiderLoot_T0"
-      },
-      {
-        "location": "RupuRaiderOutpostLoot_T0"
+        "location": "Rupu Raider Outpost"
       }
     ]
   },
@@ -15024,28 +12118,22 @@
         "location": "Rupu Forager"
       },
       {
-        "location": "RupuLoot_Scavenger"
+        "location": "Rupu Scavenger"
       },
       {
         "location": "All rupus"
       },
       {
-        "location": "RupuLoot_T3"
+        "location": "Rupu Raider"
       },
       {
-        "location": "RupuRaiderLoot_T0"
-      },
-      {
-        "location": "RupuSkirmisherLootCradle"
+        "location": "Rupu Skirmisher"
       },
       {
         "location": "Rupu Thug"
       },
       {
         "location": "Rupu Drudge"
-      },
-      {
-        "location": "RupuDrudges_T0"
       },
       {
         "location": "Rupu Firebrand"
@@ -15060,9 +12148,6 @@
         "location": "Rupu Hazraki"
       },
       {
-        "location": "Rupu Scavenger"
-      },
-      {
         "location": "Rupu Sentinel"
       },
       {
@@ -15074,18 +12159,12 @@
     "category": "Resources",
     "name": "Cactus Flesh",
     "trade_price": 0.2,
-    "description": "The last resort for nomads dying of thirst. At least the taste won't kill you.",
+    "description": "Significantly reduces stamina regenarion if eaten raw, but drinking clean water inreaes it again.The last resort for nomads dying of thirst.",
     "stackSize": 100,
     "weight": 0.12,
     "drops": [
       {
-        "location": "PoIPocketCradleCampFireLoot"
-      },
-      {
-        "location": "PoiTinyCradleCampFireLoot"
-      },
-      {
-        "location": "RupuCampFireLoot"
+        "location": "Loot"
       },
       {
         "location": "Rupu Forerunner"
@@ -15164,10 +12243,10 @@
     "weight": 0.44,
     "drops": [
       {
-        "location": "NurrLairLoot_T0"
+        "location": "Nurr Lair"
       },
       {
-        "location": "RupuRaiderMountLoot_T0"
+        "location": "Rupu Raider Nurr"
       },
       {
         "location": "Rupu Shaman"
@@ -15211,91 +12290,34 @@
     "weight": 0.01,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Loot"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Kali Spires - Rupus"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
+        "location": "Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_02"
+        "location": "Pyramid"
       },
       {
-        "location": "BP_Lootsite_Volcanic_02_1"
+        "location": "Pyramid Guard Rupu"
       },
       {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "CampChest"
-      },
-      {
-        "location": "CampTotem"
-      },
-      {
-        "location": "Dungeon_TabletMonument"
-      },
-      {
-        "location": "FearfulRupu"
-      },
-      {
-        "location": "FlyingRupu"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidGuardRupu"
-      },
-      {
-        "location": "RupuTotem"
+        "location": "Rupu Totem"
       }
     ]
   },
@@ -15342,166 +12364,64 @@
     "weight": 0.02,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "CanyonEndCampUrn"
-      },
-      {
-        "location": "CanyonSavannahUrn"
-      },
-      {
-        "location": "EasyMediumRupuCamp_01"
-      },
-      {
-        "location": "EasyMediumRupuCamp_01_1"
-      },
-      {
-        "location": "FearfulRupu"
-      },
-      {
-        "location": "ForagingOutpost"
-      },
-      {
-        "location": "HardLargeRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01_1"
+        "location": "Loot"
       },
       {
         "location": "Yellow Rupu"
       },
       {
-        "location": "NurrLairLoot_T0"
+        "location": "Nurr Lair"
       },
       {
-        "location": "PhemkeNestLoot_T0"
+        "location": "Phemke Nest"
       },
       {
-        "location": "PoiMediumBurnableChestLoot_T0"
+        "location": "Ruin with Burnable Chest"
       },
       {
-        "location": "PoiMediumCradlePackageLoot_T0"
+        "location": "Ruins"
       },
       {
-        "location": "PoiMediumDraggableChestLoot_T0"
+        "location": "Ruin with Dragable Chest"
       },
       {
-        "location": "PoiMediumWreckChestLoot_T0"
+        "location": "Ruin of the wreck"
       },
       {
-        "location": "PoiMediumWreckHangingBagLoot_T0"
+        "location": "Ruin with Small Hanging Bag"
       },
       {
-        "location": "PoiMediumWreckPackageLoot_T0"
-      },
-      {
-        "location": "PoiSmallBarrelLoot_T0"
-      },
-      {
-        "location": "PoiSmallHangingBagLoot_T0"
-      },
-      {
-        "location": "PoiSmallSkeletonLoot_T0"
-      },
-      {
-        "location": "PoiTinyCradleRupuCamp"
-      },
-      {
-        "location": "RupuLoot_Scavenger"
+        "location": "Rupu Scavenger"
       },
       {
         "location": "All rupus"
       },
       {
-        "location": "RupuLoot_T3"
+        "location": "Rupu Raider"
       },
       {
-        "location": "RupuRaiderLoot_T0"
-      },
-      {
-        "location": "RupuSkirmisherLootCradle"
+        "location": "Rupu Skirmisher"
       },
       {
         "location": "Rupu Thug"
       },
       {
-        "location": "Large Rupu Camp - Small Chest"
+        "location": "Large Rupu Camp"
       },
       {
-        "location": "Large Rupu Camp - Large Chest"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "NC_Lootsite_01"
-      },
-      {
-        "location": "NC_Lootsite_01_1"
-      },
-      {
-        "location": "NC_Lootsite_01_2"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       },
       {
         "location": "Rupu Drudge"
-      },
-      {
-        "location": "RupuDrudges_T0"
       },
       {
         "location": "Rupu Firebrand"
@@ -15516,16 +12436,13 @@
         "location": "Rupu Hazraki"
       },
       {
-        "location": "Rupu Scavenger"
-      },
-      {
         "location": "Rupu Sentinel"
       },
       {
         "location": "Rupu Shaman"
       },
       {
-        "location": "TreeMonkeyCamp"
+        "location": "Tree Monkey Camp"
       }
     ]
   },
@@ -15564,109 +12481,28 @@
     "weight": 0.11,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
+        "location": "Pyramid"
       },
       {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "CanyonEndCampUrn"
-      },
-      {
-        "location": "CanyonSavannahUrn"
-      },
-      {
-        "location": "EasyMediumRupuCamp_01"
-      },
-      {
-        "location": "EasyMediumRupuCamp_01_1"
-      },
-      {
-        "location": "ForagingOutpost"
-      },
-      {
-        "location": "HardLargeRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01_1"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "NC_Lootsite_01"
-      },
-      {
-        "location": "NC_Lootsite_01_1"
-      },
-      {
-        "location": "NC_Lootsite_01_2"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "TreeMonkeyCamp"
+        "location": "Tree Monkey Camp"
       }
     ]
   },
@@ -15692,157 +12528,58 @@
     "weight": 0.19,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "EasyMediumRupuCamp_01"
-      },
-      {
-        "location": "EasyMediumRupuCamp_01_1"
-      },
-      {
-        "location": "FearfulRupu"
-      },
-      {
-        "location": "ForagingOutpost"
-      },
-      {
-        "location": "HardLargeRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01_1"
+        "location": "Loot"
       },
       {
         "location": "Yellow Rupu"
       },
       {
-        "location": "LootableBreakableWoodenBoxComponent"
+        "location": "Ruin with Burnable Chest"
       },
       {
-        "location": "PoiMediumBurnableChestLoot_T0"
+        "location": "Ruins"
       },
       {
-        "location": "PoiMediumCradlePackageLoot_T0"
+        "location": "Ruin with Dragable Chest"
       },
       {
-        "location": "PoiMediumDraggableChestLoot_T0"
+        "location": "Ruin of the wreck"
       },
       {
-        "location": "PoiMediumWreckChestLoot_T0"
+        "location": "Ruin with Small Hanging Bag"
       },
       {
-        "location": "PoiMediumWreckHangingBagLoot_T0"
-      },
-      {
-        "location": "PoiMediumWreckPackageLoot_T0"
-      },
-      {
-        "location": "PoiSmallBarrelLoot_T0"
-      },
-      {
-        "location": "PoiSmallHangingBagLoot_T0"
-      },
-      {
-        "location": "PoiSmallSkeletonLoot_T0"
-      },
-      {
-        "location": "PoiTinyCradleRupuCamp"
-      },
-      {
-        "location": "RupuLoot_Scavenger"
+        "location": "Rupu Scavenger"
       },
       {
         "location": "All rupus"
       },
       {
-        "location": "RupuLoot_T3"
+        "location": "Rupu Raider"
       },
       {
-        "location": "RupuRaiderLoot_T0"
-      },
-      {
-        "location": "RupuSkirmisherLootCradle"
+        "location": "Rupu Skirmisher"
       },
       {
         "location": "Rupu Thug"
       },
       {
-        "location": "Large Rupu Camp - Small Chest"
+        "location": "Large Rupu Camp"
       },
       {
-        "location": "Large Rupu Camp - Large Chest"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "NC_Lootsite_01"
-      },
-      {
-        "location": "NC_Lootsite_01_1"
-      },
-      {
-        "location": "NC_Lootsite_01_2"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       },
       {
         "location": "Rupu Drudge"
-      },
-      {
-        "location": "RupuDrudges_T0"
       },
       {
         "location": "Rupu Firebrand"
@@ -15857,16 +12594,13 @@
         "location": "Rupu Hazraki"
       },
       {
-        "location": "Rupu Scavenger"
-      },
-      {
         "location": "Rupu Sentinel"
       },
       {
         "location": "Rupu Shaman"
       },
       {
-        "location": "TreeMonkeyCamp"
+        "location": "Tree Monkey Camp"
       }
     ]
   },
@@ -15923,118 +12657,31 @@
     "weight": 0.21,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "CanyonEndCampUrn"
-      },
-      {
-        "location": "CanyonSavannahUrn"
-      },
-      {
-        "location": "EasyMediumRupuCamp_01"
-      },
-      {
-        "location": "EasyMediumRupuCamp_01_1"
-      },
-      {
-        "location": "ForagingOutpost"
-      },
-      {
-        "location": "HardLargeRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01_1"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "NC_Lootsite_01"
-      },
-      {
-        "location": "NC_Lootsite_01_1"
-      },
-      {
-        "location": "NC_Lootsite_01_2"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       },
       {
         "location": "Rupu Scavenger"
       },
       {
-        "location": "TreeMonkeyCamp"
+        "location": "Tree Monkey Camp"
       }
     ]
   },
@@ -16046,148 +12693,37 @@
     "stackSize": 999999,
     "drops": [
       {
-        "location": "AbandonedTradingStation"
+        "location": "Abandoned Trading Station"
       },
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Desert Clam"
       },
       {
-        "location": "AncientStructure_Blueprint_1"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Test Dungeon"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
+        "location": "Loot"
       },
       {
-        "location": "BP_AncientLootsite_01"
+        "location": "Ruins"
       },
       {
-        "location": "BP_DesertClam"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01"
+        "location": "Kali Spires - Rupus"
       },
       {
-        "location": "BP_Lootsite_Volcanic_01_1"
+        "location": "Pyramid"
       },
       {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02_1"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_03"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_07"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_01_2"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotLootableMeshComponent"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_01"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_05"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
-      },
-      {
-        "location": "LootableAttackableUrnComponent"
-      },
-      {
-        "location": "LootableBackpackComponent"
-      },
-      {
-        "location": "LootableBreakableWoodenBoxComponent"
-      },
-      {
-        "location": "LootableBrokenBarrelComponent"
-      },
-      {
-        "location": "LootableRockHotspotComponent"
-      },
-      {
-        "location": "LootableSiegeCrateComponent"
-      },
-      {
-        "location": "MiniHotSpot01"
-      },
-      {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot06"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "NC_Lootsite_01"
-      },
-      {
-        "location": "NC_Lootsite_01_1"
-      },
-      {
-        "location": "NC_Lootsite_01_2"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_1"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "PyramidFinal_4"
-      },
-      {
-        "location": "WalkerGraveyard"
+        "location": "Walker Graveyard"
       }
     ]
   },
@@ -16200,15 +12736,15 @@
       {
         "ingredients": [
           {
-            "count": 6,
+            "count": 3,
             "name": "Fiber"
           },
           {
-            "count": 12,
+            "count": 6,
             "name": "Sand"
           },
           {
-            "count": 4,
+            "count": 2,
             "name": "Palm Leaves"
           }
         ]
@@ -16227,11 +12763,11 @@
       {
         "ingredients": [
           {
-            "count": 10,
+            "count": 5,
             "name": "Fiber"
           },
           {
-            "count": 18,
+            "count": 9,
             "name": "Sand"
           }
         ]
@@ -18317,7 +14853,9 @@
             "count": 2,
             "name": "Flint"
           }
-        ]
+        ],
+        "station": "Woodworking Station",
+        "time": 5
       }
     ],
     "name": "Flint Orb",
@@ -18651,7 +15189,7 @@
     "name": "Purified Water",
     "parent": "Camp Fire",
     "trade_price": 3,
-    "description": "All water that is transported to the Flotilla is cleansed in an ancient water purifying machine. The Guardians are the sole keepers of this machine, a technological relic of the old world which has sustained the Flotillans to this day.",
+    "description": "Significantly increaes stamina regeneration when consumed. All water that is transported to the Flotilla is cleansed in an ancient water purifying machine.",
     "stackSize": 100,
     "weight": 0.2
   },
@@ -20663,7 +17201,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Cradle Map - Fortified Camp"
+        "location": "Fortified Camp"
       }
     ],
     "learn": [
@@ -20676,7 +17214,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Cradle Map - Fortified Camp"
+        "location": "Fortified Camp"
       }
     ],
     "learn": [
@@ -20689,7 +17227,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "PoiMediumBurnableChestLoot_T0"
+        "location": "Ruin with Burnable Chest"
       }
     ],
     "learn": [
@@ -20702,7 +17240,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "PoiMediumBurnableChestLoot_T0"
+        "location": "Ruin with Burnable Chest"
       }
     ],
     "learn": [
@@ -20715,16 +17253,16 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "CanyonIslandShelterImproveChest"
+        "location": "Loot"
       },
       {
         "location": "Canyon Islands Map - Shelter Urn"
       },
       {
-        "location": "Cradle Map - Fortified Camp"
+        "location": "Fortified Camp"
       },
       {
-        "location": "Cradle Map - Ruin"
+        "location": "Ruin with Small Hanging Bag"
       }
     ],
     "learn": [
@@ -20737,7 +17275,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "PoiMediumDraggableChestLoot_T0"
+        "location": "Ruin with Dragable Chest"
       }
     ],
     "learn": [
@@ -20750,7 +17288,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "PoiMediumDraggableChestLoot_T0"
+        "location": "Ruin with Dragable Chest"
       }
     ],
     "learn": [
@@ -20763,19 +17301,16 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "CanyonBasinEndCampTotem"
+        "location": "Loot"
       },
       {
         "location": "Canyon Map - Village Camp"
       },
       {
-        "location": "CanyonMainVillageChest"
-      },
-      {
         "location": "Canyon Map - Camp Chest"
       },
       {
-        "location": "PoiMediumDraggableChestLoot_T0"
+        "location": "Ruin with Dragable Chest"
       }
     ],
     "learn": [
@@ -20788,7 +17323,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "PoiMediumWreckChestLoot_T0"
+        "location": "Ruin of the wreck"
       }
     ],
     "learn": [
@@ -20801,7 +17336,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "PhemkeLoot_T0"
+        "location": "Phemke"
       },
       {
         "location": "Rupu Forager"
@@ -20845,7 +17380,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "RupuLoot_T3"
+        "location": "All rupus"
       }
     ],
     "learn": [
@@ -20858,7 +17393,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "RupuRaiderLoot_T0"
+        "location": "Rupu Raider"
       }
     ],
     "learn": [
@@ -20871,7 +17406,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "RupuRaiderLoot_T0"
+        "location": "Rupu Raider"
       }
     ],
     "learn": [
@@ -20884,7 +17419,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "RupuRaiderLoot_T0"
+        "location": "Rupu Raider"
       }
     ],
     "learn": [
@@ -20897,7 +17432,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "RupuRaiderLoot_T0"
+        "location": "Rupu Raider"
       }
     ],
     "learn": [
@@ -20910,7 +17445,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "RupuRaiderLoot_T0"
+        "location": "Rupu Raider"
       }
     ],
     "learn": [
@@ -20923,13 +17458,13 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "NurrLairLoot_T0"
+        "location": "Nurr Lair"
       },
       {
-        "location": "RupuRaiderOutpostLoot_T0"
+        "location": "Rupu Raider Outpost"
       },
       {
-        "location": "RupuTotemLoot_T0"
+        "location": "Rupu Totem"
       }
     ],
     "learn": [
@@ -20942,19 +17477,19 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "NurrLairLoot_T0"
+        "location": "Nurr Lair"
       },
       {
-        "location": "PhemkeLoot_T0"
+        "location": "Phemke"
       },
       {
         "location": "All rupus"
       },
       {
-        "location": "RupuRaiderOutpostLoot_T0"
+        "location": "Rupu Raider Outpost"
       },
       {
-        "location": "RupuTotemLoot_T0"
+        "location": "Rupu Totem"
       }
     ],
     "learn": [
@@ -20967,16 +17502,16 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "NurrLairLoot_T0"
+        "location": "Nurr Lair"
       },
       {
-        "location": "PoiMediumBurnableChestLoot_T0"
+        "location": "Ruin with Burnable Chest"
       },
       {
-        "location": "RupuRaiderOutpostLoot_T0"
+        "location": "Rupu Raider Outpost"
       },
       {
-        "location": "RupuTotemLoot_T0"
+        "location": "Rupu Totem"
       }
     ],
     "learn": [
@@ -21036,7 +17571,7 @@
         "location": "All rupus"
       },
       {
-        "location": "RupuDrudges_T0"
+        "location": "Rupu Drudge"
       },
       {
         "location": "Rupu Harasser"
@@ -21052,16 +17587,16 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "CanyonSavannahCampUrn"
+        "location": "Loot"
       },
       {
-        "location": "Cradle Map - Fortified Camp"
+        "location": "Fortified Camp"
       },
       {
-        "location": "Plainstrider"
+        "location": "Plainst rider"
       },
       {
-        "location": "RupuHazraki"
+        "location": "Rupu Hazraki"
       }
     ],
     "learn": [
@@ -21074,7 +17609,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "CanyonIslandShelterImproveChest"
+        "location": "Loot"
       },
       {
         "location": "Canyon Islands Map - Shelter Urn"
@@ -21086,7 +17621,7 @@
         "location": "All rupus"
       },
       {
-        "location": "RupuSkirmisherLootCradle"
+        "location": "Rupu Skirmisher"
       },
       {
         "location": "Rupu Urn"
@@ -21105,16 +17640,16 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "CanyonIslandShelterImproveChest"
+        "location": "Loot"
       },
       {
         "location": "Canyon Islands Map - Shelter Urn"
       },
       {
-        "location": "Cradle Map - Fortified Camp"
+        "location": "Fortified Camp"
       },
       {
-        "location": "PhemkeLoot_T0"
+        "location": "Phemke"
       },
       {
         "location": "Rupu Sentinel"
@@ -21133,7 +17668,7 @@
         "location": "Canyon Islands Map - Shelter Urn"
       },
       {
-        "location": "Cradle Map - Ruin"
+        "location": "Ruins"
       },
       {
         "location": "Rupu Forager"
@@ -21173,16 +17708,13 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "CanyonBasinEndCampTotem"
+        "location": "Loot"
       },
       {
         "location": "Canyon Map - Village Camp"
       },
       {
         "location": "Canyon Islands Map - Shelter Urn"
-      },
-      {
-        "location": "CanyonMainVillageChest"
       },
       {
         "location": "Rupu Shaman"
@@ -21198,7 +17730,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "SandhillBonus"
+        "location": "Digging in the sand"
       }
     ],
     "learn": [
@@ -21324,10 +17856,10 @@
     },
     "drops": [
       {
-        "location": "PoiMediumWreckHangingBagLoot_T0"
+        "location": "Ruin of the wreck"
       },
       {
-        "location": "PoiSmallHangingBagLoot_T0"
+        "location": "Ruin with Small Hanging Bag"
       }
     ],
     "damageType": "MeleeBluntTorchDamage"
@@ -21375,7 +17907,7 @@
     },
     "drops": [
       {
-        "location": "RupuLoot_T3"
+        "location": "All rupus"
       }
     ],
     "damageType": "MeleeRepairHammerDamage"
@@ -21427,7 +17959,7 @@
     ],
     "drops": [
       {
-        "location": "RupuLoot_T3"
+        "location": "All rupus"
       }
     ],
     "damageType": "MeleeCuttingDamage"
@@ -21469,58 +18001,25 @@
     },
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Tools Strongbox"
       },
       {
-        "location": "PoiMediumDraggableChestLoot_T0"
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "All rupus"
       },
       {
-        "location": "MiniHotSpot01"
+        "location": "Ruins"
       },
       {
-        "location": "MiniHotSpot02"
-      },
-      {
-        "location": "MiniHotSpot02_1"
-      },
-      {
-        "location": "MiniHotSpot03"
-      },
-      {
-        "location": "MiniHotSpot09"
-      },
-      {
-        "location": "NC_Lootsite_01"
-      },
-      {
-        "location": "NC_Lootsite_01_1"
-      },
-      {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeRepairHammerDamage"
@@ -21567,34 +18066,16 @@
     ],
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Tools Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleePickaxeDamage"
@@ -21646,37 +18127,19 @@
     ],
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Tools Strongbox"
       },
       {
-        "location": "RupuRaiderLoot_T0"
+        "location": "Rupu Raider"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeCuttingDamage"
@@ -21728,49 +18191,25 @@
     ],
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "HardLargeRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01_1"
+        "location": "Loot"
       },
       {
         "location": "Tools Strongbox"
       },
       {
-        "location": "Large Rupu Camp - Small Chest"
+        "location": "Large Rupu Camp"
       },
       {
-        "location": "Large Rupu Camp - Large Chest"
+        "location": "Pyramid"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "TreeMonkeyCamp"
+        "location": "Tree Monkey Camp"
       }
     ],
     "damageType": "MeleePickaxeDamage"
@@ -21822,43 +18261,25 @@
     ],
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Tools Strongbox"
       },
       {
-        "location": "RupuRaiderOutpostLoot_T0"
+        "location": "Rupu Raider Outpost"
       },
       {
-        "location": "Large Rupu Camp - Small Chest"
+        "location": "Large Rupu Camp"
       },
       {
-        "location": "Large Rupu Camp - Large Chest"
+        "location": "Pyramid"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
-      },
-      {
-        "location": "TreeMonkeyCamp"
+        "location": "Tree Monkey Camp"
       }
     ],
     "damageType": "MeleeCuttingDamage"
@@ -37613,7 +34034,7 @@
     "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 1000
+      "hp": 3300
     }
   },
   {
@@ -38388,10 +34809,6 @@
           {
             "count": 7,
             "name": "Fiber Weave"
-          },
-          {
-            "count": 2,
-            "name": "Rope"
           },
           {
             "count": 4,
@@ -45289,31 +41706,16 @@
     },
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Weapons Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeBluntDamage"
@@ -45359,31 +41761,16 @@
     },
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Weapons Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeBluntDamage"
@@ -45427,36 +41814,21 @@
     "toolInfo": [
       {
         "toolType": "TreeCutting",
-        "tier": 3
+        "tier": 4
       }
     ],
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Weapons Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeAxeDamage"
@@ -45505,31 +41877,16 @@
     ],
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Weapons Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeAxeDamage"
@@ -45572,31 +41929,16 @@
     },
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Weapons Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeBluntDamage"
@@ -45645,31 +41987,16 @@
     ],
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Weapons Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeCuttingDamage"
@@ -45717,31 +42044,16 @@
     ],
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Tools Strongbox"
@@ -45750,13 +42062,7 @@
         "location": "Weapons Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeAxeDamage"
@@ -45799,43 +42105,22 @@
     },
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Weapons Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeBluntDamage"
@@ -45880,43 +42165,22 @@
     ],
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Weapons Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeCuttingDamage"
@@ -45963,43 +42227,22 @@
     },
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Weapons Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeBluntDamage"
@@ -46052,46 +42295,25 @@
     ],
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Weapons Strongbox"
       },
       {
-        "location": "RupuRaiderLoot_T0"
+        "location": "Rupu Raider"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeCuttingDamage"
@@ -46133,43 +42355,22 @@
     },
     "drops": [
       {
-        "location": "AncientCity_RandomLoot_00"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
+        "location": "Kali Spires - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_AncientLootsite_01"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Open"
-      },
-      {
-        "location": "KaliSpires_RandomLoot_Rupu"
+        "location": "Kali Spires - Rupus"
       },
       {
         "location": "Weapons Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeBluntDamage"
@@ -46207,31 +42408,16 @@
     },
     "drops": [
       {
-        "location": "DungeonLootableMeshComponent_03"
+        "location": "Test Dungeon"
       },
       {
-        "location": "DungeonLootableMeshComponent_07"
+        "location": "Loot"
       },
       {
-        "location": "DungeonLootableMeshComponent_08"
+        "location": "Ruins"
       },
       {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       }
     ],
     "damageType": "MeleeBluntDamage"
@@ -46270,43 +42456,19 @@
     },
     "drops": [
       {
-        "location": "DungeonLootableMeshComponent_03"
+        "location": "Test Dungeon"
       },
       {
-        "location": "DungeonLootableMeshComponent_07"
+        "location": "Loot"
       },
       {
-        "location": "DungeonLootableMeshComponent_08"
+        "location": "Ruins"
       },
       {
-        "location": "DungeonLootableMeshComponent_10"
+        "location": "Large Rupu Camp"
       },
       {
-        "location": "EasyMediumRupuCamp_01"
-      },
-      {
-        "location": "EasyMediumRupuCamp_01_1"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_02"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_03"
-      },
-      {
-        "location": "HotspotMountainLootableMeshComponent_10"
-      },
-      {
-        "location": "Large Rupu Camp - Small Chest"
-      },
-      {
-        "location": "Large Rupu Camp - Large Chest"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       },
       {
         "location": "Rupu Forerunner"
@@ -46352,22 +42514,13 @@
     },
     "drops": [
       {
-        "location": "DungeonLootableMeshComponent_03"
+        "location": "Test Dungeon"
       },
       {
-        "location": "DungeonLootableMeshComponent_07"
+        "location": "Loot"
       },
       {
-        "location": "DungeonLootableMeshComponent_08"
-      },
-      {
-        "location": "DungeonLootableMeshComponent_10"
-      },
-      {
-        "location": "HardLargeRupuCamp_02"
-      },
-      {
-        "location": "PyramidFinal_4"
+        "location": "Pyramid"
       },
       {
         "location": "Rupu Drudge"
@@ -46425,19 +42578,10 @@
     ],
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Tools Strongbox"
@@ -46446,13 +42590,7 @@
         "location": "Weapons Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       },
       {
         "location": "Rupu Hazraki"
@@ -46508,31 +42646,16 @@
     ],
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Weapons Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       },
       {
         "location": "Rupu Shaman"
@@ -46584,19 +42707,10 @@
     ],
     "drops": [
       {
-        "location": "AncientStructure_Blueprint"
+        "location": "Ancient City - Ruins"
       },
       {
-        "location": "AncientStructure_Blueprint_2"
-      },
-      {
-        "location": "AncientStructure_Blueprint_3"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_02"
-      },
-      {
-        "location": "BP_Lootsite_Volcanic_04"
+        "location": "Volcanic Map - Ruins"
       },
       {
         "location": "Yellow Rupu"
@@ -46605,13 +42719,7 @@
         "location": "Weapons Strongbox"
       },
       {
-        "location": "PyramidFinal"
-      },
-      {
-        "location": "PyramidFinal_2"
-      },
-      {
-        "location": "PyramidFinal_3"
+        "location": "Pyramid"
       },
       {
         "location": "Rupu Shaman"
@@ -46663,25 +42771,16 @@
     ],
     "drops": [
       {
-        "location": "HardLargeRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01"
-      },
-      {
-        "location": "HardSmallRupuCamp_01_1"
+        "location": "Loot"
       },
       {
         "location": "Tools Strongbox"
       },
       {
-        "location": "Large Rupu Camp - Small Chest"
+        "location": "Large Rupu Camp"
       },
       {
-        "location": "Large Rupu Camp - Large Chest"
-      },
-      {
-        "location": "TreeMonkeyCamp"
+        "location": "Tree Monkey Camp"
       }
     ],
     "damageType": "MeleeAxeDamage"

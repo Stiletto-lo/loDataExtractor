@@ -13,6 +13,7 @@ controller.translateLootSite = (name) => {
   if (anotherName != null) {
     return anotherName;
   }
+  return "Loot";
   return name.trim();
 };
 
