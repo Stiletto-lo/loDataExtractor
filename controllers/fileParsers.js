@@ -452,6 +452,7 @@ controller.parseItemData = (filePath) => {
           jsonData[1].Properties.Name.SourceString &&
           jsonData[1].Properties.Name.SourceString.trim() != ""
         ) {
+          item.name = jsonData[1].Properties.Name.SourceString.trim();
           item.translation = jsonData[1].Properties.Name.SourceString.trim();
         } else {
           item.translation = jsonData[1].Properties.Name.Key.replace(

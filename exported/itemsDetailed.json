@@ -4890,87 +4890,6 @@
   },
   {
     "category": "Resources",
-    "name": "Stone",
-    "trade_price": 0.1,
-    "stackSize": 100,
-    "weight": 0.4,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Yellow Rupu"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Ruin of the wreck"
-      },
-      {
-        "location": "Ruin with Small Hanging Bag"
-      },
-      {
-        "location": "Rupu Scavenger"
-      },
-      {
-        "location": "All rupus"
-      },
-      {
-        "location": "Rupu Raider"
-      },
-      {
-        "location": "Rupu Skirmisher"
-      },
-      {
-        "location": "Rupu Thug"
-      },
-      {
-        "location": "Large Rupu Camp"
-      },
-      {
-        "location": "Pyramid"
-      },
-      {
-        "location": "Rupu Drudge"
-      },
-      {
-        "location": "Rupu Firebrand"
-      },
-      {
-        "location": "Rupu Forerunner"
-      },
-      {
-        "location": "Rupu Harasser"
-      },
-      {
-        "location": "Rupu Hazraki"
-      },
-      {
-        "location": "Rupu Sentinel"
-      },
-      {
-        "location": "Rupu Shaman"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
     "name": "Rupu Vine",
     "trade_price": 0.5,
     "description": "These vines grow exclusively in rupu excrement, which the rupu use as a binding agent in the construction of their mud huts.",
@@ -5022,6 +4941,61 @@
     ]
   },
   {
+    "category": "Resources",
+    "name": "Rupu Pelt",
+    "trade_price": 0.2,
+    "description": "Garments made from this oily fur are favoured for voyages into the Ice Lands.",
+    "stackSize": 100,
+    "weight": 0.55,
+    "drops": [
+      {
+        "location": "Yellow Rupu"
+      },
+      {
+        "location": "White Death"
+      },
+      {
+        "location": "Rupu Forager"
+      },
+      {
+        "location": "Rupu Scavenger"
+      },
+      {
+        "location": "All rupus"
+      },
+      {
+        "location": "Rupu Raider"
+      },
+      {
+        "location": "Rupu Skirmisher"
+      },
+      {
+        "location": "Rupu Thug"
+      },
+      {
+        "location": "Rupu Drudge"
+      },
+      {
+        "location": "Rupu Firebrand"
+      },
+      {
+        "location": "Rupu Forerunner"
+      },
+      {
+        "location": "Rupu Harasser"
+      },
+      {
+        "location": "Rupu Hazraki"
+      },
+      {
+        "location": "Rupu Sentinel"
+      },
+      {
+        "location": "Rupu Shaman"
+      }
+    ]
+  },
+  {
     "category": "Schematics",
     "name": "Torque Battery Schematic",
     "stackSize": 100,
@@ -5040,7 +5014,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Rupu Camp - Walker Totem"
       }
     ],
     "learn": [
@@ -7897,42 +7871,6 @@
     }
   },
   {
-    "category": "Crafting",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 75,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 4,
-            "name": "Rope"
-          },
-          {
-            "count": 5,
-            "name": "Earth Wax"
-          }
-        ]
-      }
-    ],
-    "name": "Windmill",
-    "parent": "Soil Excavator",
-    "description": "Harnesses wind to generate torque automatically. A torque belt is required to transfer the torque between devices.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 1000
-    }
-  },
-  {
     "category": "Drugs",
     "cost": {
       "count": 10,
@@ -10736,6 +10674,42 @@
   },
   {
     "category": "Interactables",
+    "name": "Armor Strongbox",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Interactables",
+    "name": "Equipment Strongbox",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Interactables",
+    "name": "Modules Strongbox",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Interactables",
+    "name": "Tablets Strongbox",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Interactables",
+    "name": "Tools Strongbox",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Interactables",
+    "name": "Weapons Strongbox",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Interactables",
     "name": "LootBoxTest",
     "stackSize": 50,
     "weight": 1
@@ -11593,6 +11567,92 @@
   },
   {
     "category": "Resources",
+    "name": "Stone",
+    "trade_price": 0.1,
+    "stackSize": 100,
+    "weight": 0.4,
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "parent": "Base Maintenance Chest",
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Yellow Rupu"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Ruin of the wreck"
+      },
+      {
+        "location": "Ruin with Small Hanging Bag"
+      },
+      {
+        "location": "Rupu Scavenger"
+      },
+      {
+        "location": "All rupus"
+      },
+      {
+        "location": "Rupu Raider"
+      },
+      {
+        "location": "Rupu Skirmisher"
+      },
+      {
+        "location": "Rupu Thug"
+      },
+      {
+        "location": "Large Rupu Camp"
+      },
+      {
+        "location": "Pyramid"
+      },
+      {
+        "location": "Rupu Drudge"
+      },
+      {
+        "location": "Rupu Firebrand"
+      },
+      {
+        "location": "Rupu Forerunner"
+      },
+      {
+        "location": "Rupu Harasser"
+      },
+      {
+        "location": "Rupu Hazraki"
+      },
+      {
+        "location": "Rupu Sentinel"
+      },
+      {
+        "location": "Rupu Shaman"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
     "name": "Terrain: Black Soil",
     "trade_price": 1,
     "description": "",
@@ -12097,61 +12157,6 @@
       },
       {
         "location": "Rupu Raider Outpost"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Rupu Pelt",
-    "trade_price": 0.2,
-    "description": "Garments made from this oily fur are favoured for voyages into the Ice Lands.",
-    "stackSize": 100,
-    "weight": 0.55,
-    "drops": [
-      {
-        "location": "Yellow Rupu"
-      },
-      {
-        "location": "White Death"
-      },
-      {
-        "location": "Rupu Forager"
-      },
-      {
-        "location": "Rupu Scavenger"
-      },
-      {
-        "location": "All rupus"
-      },
-      {
-        "location": "Rupu Raider"
-      },
-      {
-        "location": "Rupu Skirmisher"
-      },
-      {
-        "location": "Rupu Thug"
-      },
-      {
-        "location": "Rupu Drudge"
-      },
-      {
-        "location": "Rupu Firebrand"
-      },
-      {
-        "location": "Rupu Forerunner"
-      },
-      {
-        "location": "Rupu Harasser"
-      },
-      {
-        "location": "Rupu Hazraki"
-      },
-      {
-        "location": "Rupu Sentinel"
-      },
-      {
-        "location": "Rupu Shaman"
       }
     ]
   },
@@ -13517,160 +13522,6 @@
     }
   },
   {
-    "category": "Traps",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 30,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Redwood Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Bomb Chest Trap",
-    "parent": "Trip Wire Trap",
-    "description": "Looks like a normal chest, feels like an explosion. Booby trap this chest with any type of bomb.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 200
-    }
-  },
-  {
-    "category": "Traps",
-    "cost": {
-      "count": 12,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 45,
-            "name": "Wood"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 3,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "Trap Door",
-    "parent": "Sharp Spikes",
-    "description": "Opens automatically when a nomad steps on it. Deadly in combination with other traps, like spikes.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 200
-    }
-  },
-  {
-    "category": "Traps",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 50,
-            "name": "Wood"
-          },
-          {
-            "count": 6,
-            "name": "Bone Splinter"
-          }
-        ]
-      }
-    ],
-    "name": "Sharp Spikes",
-    "parent": "Ballista",
-    "description": "Sharp spikes that stick out of the ground deal serious damage to nomads who fall or step on them.",
-    "structureInfo": {
-      "hp": 200
-    }
-  },
-  {
-    "category": "Traps",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 150,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 6,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "Spring Spikes Trap",
-    "parent": "Sharp Spikes",
-    "description": "Automatically stabs nomads with hidden spikes when they step on the trigger plate.",
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 200
-    }
-  },
-  {
-    "category": "Traps",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Lava"
-          },
-          {
-            "count": 4,
-            "name": "Rope"
-          },
-          {
-            "count": 6,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Trip Wire Trap",
-    "parent": "Sharp Spikes",
-    "description": "Triggers a small explosion when a nomad steps on the tripwire.",
-    "structureInfo": {
-      "hp": 10
-    }
-  },
-  {
     "category": "Upgrades",
     "cost": {
       "count": 16,
@@ -15032,6 +14883,42 @@
   {
     "category": "Crafting",
     "cost": {
+      "count": 40,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 75,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 4,
+            "name": "Rope"
+          },
+          {
+            "count": 5,
+            "name": "Earth Wax"
+          }
+        ]
+      }
+    ],
+    "name": "Windmill",
+    "parent": "Soil Excavator",
+    "description": "Harnesses wind to generate torque automatically. A torque belt is required to transfer the torque between devices.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 1000
+    }
+  },
+  {
+    "category": "Crafting",
+    "cost": {
       "count": 32,
       "name": "Tablet"
     },
@@ -15069,42 +14956,6 @@
     "weight": 0.01
   },
   {
-    "category": "Interactables",
-    "name": "Armor Strongbox",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Interactables",
-    "name": "Equipment Strongbox",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Interactables",
-    "name": "Tablets Strongbox",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Interactables",
-    "name": "Tools Strongbox",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Interactables",
-    "name": "Weapons Strongbox",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Interactables",
-    "name": "Modules Strongbox",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
     "category": "Liquids",
     "cost": {
       "count": 10,
@@ -15125,7 +14976,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "FruitPulp"
+            "name": "Fruit Pulp"
           }
         ],
         "station": "Camp Fire",
@@ -15135,7 +14986,7 @@
         "ingredients": [
           {
             "count": 50,
-            "name": "Contaminated Water"
+            "name": "Toxic Water"
           },
           {
             "count": 6,
@@ -15154,7 +15005,7 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "DirtyWater"
+            "name": "Dirty Water"
           },
           {
             "count": 1,
@@ -15169,7 +15020,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "DirtyWater"
+            "name": "Dirty Water"
           }
         ],
         "station": "Camp Fire",
@@ -15599,8 +15450,8 @@
     "name": "Chitin Tools Schematic",
     "stackSize": 100,
     "learn": [
-      "ChitinPickAxe",
-      "ChitinSickle"
+      "Chitin PickAxe",
+      "Chitin Sickle"
     ]
   },
   {
@@ -18283,6 +18134,160 @@
       }
     ],
     "damageType": "MeleeCuttingDamage"
+  },
+  {
+    "category": "Traps",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 30,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Redwood Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Bomb Chest Trap",
+    "parent": "Trip Wire Trap",
+    "description": "Looks like a normal chest, feels like an explosion. Booby trap this chest with any type of bomb.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 200
+    }
+  },
+  {
+    "category": "Traps",
+    "cost": {
+      "count": 12,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 45,
+            "name": "Wood"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 3,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Trap Door",
+    "parent": "Sharp Spikes",
+    "description": "Opens automatically when a nomad steps on it. Deadly in combination with other traps, like spikes.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 200
+    }
+  },
+  {
+    "category": "Traps",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 50,
+            "name": "Wood"
+          },
+          {
+            "count": 6,
+            "name": "Bone Splinter"
+          }
+        ]
+      }
+    ],
+    "name": "Sharp Spikes",
+    "parent": "Ballista",
+    "description": "Sharp spikes that stick out of the ground deal serious damage to nomads who fall or step on them.",
+    "structureInfo": {
+      "hp": 200
+    }
+  },
+  {
+    "category": "Traps",
+    "cost": {
+      "count": 15,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 150,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 6,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Spring Spikes Trap",
+    "parent": "Sharp Spikes",
+    "description": "Automatically stabs nomads with hidden spikes when they step on the trigger plate.",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 200
+    }
+  },
+  {
+    "category": "Traps",
+    "cost": {
+      "count": 15,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Lava"
+          },
+          {
+            "count": 4,
+            "name": "Rope"
+          },
+          {
+            "count": 6,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Trip Wire Trap",
+    "parent": "Sharp Spikes",
+    "description": "Triggers a small explosion when a nomad steps on the tripwire.",
+    "structureInfo": {
+      "hp": 10
+    }
   },
   {
     "category": "Traps",

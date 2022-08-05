@@ -14,7 +14,7 @@ controller.translateLootSite = (name) => {
     return anotherName;
   }
   return "Loot";
-  return name.trim();
+  //return name.trim();
 };
 
 controller.translateName = (name) => {

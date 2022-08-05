@@ -112,6 +112,9 @@ allTranslations["BoltCompactBone"] = "Bone Dart";
 allTranslations["ObsidianContainerSmall"] = "Obsidian Pot";
 allTranslations["SoilExcavator"] = "Soil Excavator";
 allTranslations["DrillSpade"] = "Drill Spade";
+allTranslations["DirtyWater"] = "Dirty Water";
+allTranslations["ContaminatedWater"] = "Toxic Water";
+allTranslations["FruitPulp"] = "Fruit Pulp";
 
 allTranslations["FlotillanGrapplingHook"] = "Flotillan Grappling Hook";
 allTranslations["GunPod"] = "Gun Pod";

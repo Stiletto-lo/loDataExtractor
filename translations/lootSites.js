@@ -121,6 +121,8 @@ lootSites["MediumLargeRupuCamp_01_2"] = "Large Rupu Camp";
 lootSites["MediumLargeRupuCamp_01_1"] = "Large Rupu Camp";
 lootSites["MediumLargeRupuCamp_01"] = "Large Rupu Camp";
 
+lootSites["CanyonEndCampWalkerTotem"] = "Rupu Camp - Walker Totem";
+
 /* POI */
 
 lootSites["PyramidFinal"] = "Pyramid";
