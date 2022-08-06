@@ -115,6 +115,7 @@ allTranslations["DrillSpade"] = "Drill Spade";
 allTranslations["DirtyWater"] = "Dirty Water";
 allTranslations["ContaminatedWater"] = "Toxic Water";
 allTranslations["FruitPulp"] = "Fruit Pulp";
+allTranslations["PumpWalker"] = "Camelop Walker";
 
 allTranslations["FlotillanGrapplingHook"] = "Flotillan Grappling Hook";
 allTranslations["GunPod"] = "Gun Pod";

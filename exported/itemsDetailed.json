@@ -6024,7 +6024,19 @@
   },
   {
     "category": "Armors",
+    "name": "Rupu Drudge Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
     "name": "Rupu Firebrand Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Forager Armor",
     "stackSize": 100,
     "weight": 1
   },
@@ -10348,7 +10360,7 @@
             "name": "Wooden Slab"
           },
           {
-            "count": 14,
+            "count": 2,
             "name": "Rope"
           },
           {
@@ -10396,7 +10408,7 @@
             "name": "Wooden Slab"
           },
           {
-            "count": 16,
+            "count": 6,
             "name": "Rope"
           },
           {
@@ -10422,11 +10434,11 @@
             "name": "Wooden Slab"
           },
           {
-            "count": 16,
+            "count": 18,
             "name": "Rope"
           },
           {
-            "count": 14,
+            "count": 4,
             "name": "Wood Shaft"
           }
         ]
@@ -13013,7 +13025,7 @@
     "category": "Tools",
     "cost": {
       "count": 20,
-      "name": "Fragment"
+      "name": "Tablet"
     },
     "crafting": [
       {
@@ -13028,7 +13040,7 @@
           },
           {
             "count": 6,
-            "name": "Bone Splinter"
+            "name": "Chitin Plate"
           },
           {
             "count": 4,
@@ -13059,7 +13071,7 @@
     "category": "Tools",
     "cost": {
       "count": 10,
-      "name": "Fragment"
+      "name": "Tablet"
     },
     "crafting": [
       {
@@ -13082,7 +13094,7 @@
           },
           {
             "count": 6,
-            "name": "Cattail"
+            "name": "Chitin Plate"
           }
         ]
       }
@@ -15330,7 +15342,7 @@
   },
   {
     "category": "Schematics",
-    "name": "Camelop  Walker Schematic",
+    "name": "Camelop Walker Schematic",
     "stackSize": 100,
     "learn": [
       "Camelop Walker"
@@ -38472,7 +38484,7 @@
         ]
       }
     ],
-    "name": "Camelop  Walker",
+    "name": "Camelop Walker",
     "parent": "Tool Pod",
     "description": "Being able to pump water and lava out of lakes, while storing large amounts of liquid, makes this walker an essential tool in various mass productions. Uses torque to move and while pumping.",
     "structureInfo": {
@@ -38579,7 +38591,7 @@
     "description": "Before the nomadic Flotillans had become aware of the route they needed to take to circumnavigate the planet efficiently, many of them died in the process of locating safe passage. These crudely constructed wind-powered walkers were first devised as scouting vessels because of their cheap cost and the high likelihood that a Nomad would not return. This walker has ample deck space for two Nomads.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 2000
+      "hp": 15000
     },
     "walkerinfo": {
       "category": "Small"
@@ -38724,7 +38736,7 @@
     "description": "A pedal-powered walker that nomads build when they want to begin their journey. Has a small deck and can be upgraded by building wings.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 1300
+      "hp": 9750
     },
     "walkerinfo": {
       "category": "Small"
@@ -38877,7 +38889,7 @@
     "description": "Small cabin of the walker provides protection to possessions and the driver. While walls may let a nomad live longer, obstructed view from inside the cabin could be a serious drawback in a battle. Has a decent deck and good movement capabilities.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 4500
+      "hp": 33750
     },
     "walkerinfo": {
       "category": "Medium"
@@ -39242,7 +39254,7 @@
     "description": "Developed as the successor to the dinghy walker, the sleek stiletto walker is fast, has a short turn radius, and flaunts more deck space and a stronger hull than its predecessor. Ideal for nomads who prefer to travel alone or in small groups.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 4000
+      "hp": 30000
     },
     "walkerinfo": {
       "category": "Medium"
@@ -39344,7 +39356,7 @@
     "description": "The standard merchant's vessel built for outrunning pirates and getting the goods where they need to go. There's not much room for weapons, so this walker is usually accompanied by at least one battle-capable walker on its transport runs.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 5000
+      "hp": 37500
     },
     "walkerinfo": {
       "category": "Medium"
@@ -40477,6 +40489,26 @@
       "type": "Soft",
       "hp": 3000
     }
+  },
+  {
+    "category": "Weapons",
+    "name": "Rupu Throwstone",
+    "trade_price": 16.9,
+    "description": "Used by Rupus by hitting rocks against each other to produce a more usable projectile for throwing at unexpecting Nomads",
+    "projectileDamage": {
+      "damage": 32,
+      "vsMedium": 25,
+      "vsHard": 10
+    },
+    "stackSize": 5,
+    "weight": 0.3,
+    "toolInfo": [
+      {
+        "toolType": "Scattershot",
+        "tier": 1
+      }
+    ],
+    "damageType": "PiercingDamage_Walker"
   },
   {
     "category": "Weapons",
@@ -42547,7 +42579,7 @@
         "ingredients": [
           {
             "count": 2,
-            "name": "Nurr Fang"
+            "name": "Bone Splinter"
           },
           {
             "count": 3,
