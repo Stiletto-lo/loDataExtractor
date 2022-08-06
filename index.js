@@ -34,30 +34,48 @@ const orderByCategory = (a, b) => {
   return 0;
 };
 
+console.info("Loading StringTables");
 loadDirData("./Content/Mist/Data/StringTables", "translation");
+console.info("Loading Localization");
 loadDirData("./Content/Localization/Game/en", "translation");
+console.info("Loading TechTree");
 loadDirData("./Content/Mist/Data/TechTree", "tech");
+console.info("Loading Items");
 loadDirData("./Content/Mist/Data/Items", "item");
+console.info("Loading Placeables");
 loadDirData("./Content/Mist/Data/Placeables", "placeables");
+console.info("Loading Recipes");
 loadDirData("./Content/Mist/Data/Recipes", "item");
+console.info("Loading Trade");
 loadDirData("./Content/Mist/Data/Trade", "trade");
+console.info("Loading Placeables Cached");
 loadDirData("./Content/Mist/Data/Placeables", "cached");
+console.info("Loading Walkers Upgrades");
 loadDirData("./Content/Mist/Data/Walkers", "upgrages");
+console.info("Loading Damages");
 loadDirData("./Content/Mist/Data/DamageTypes", "damagetypes");
+console.info("Loading Schematics");
 loadDirData("./Content/Mist/Data/Items/Schematics", "schematics");
 
 if (process.env.EXTRACT_LOOT_TABLES === "true") {
+  console.info("Loading LootTables");
   loadDirData("./Content/Mist/Data/LootTables", "loottables");
   loadDirData("./Content/Mist/Data/LootTables", "blueprintsloot");
   fileParser.parseBlueprintsToItems();
 }
 
+console.info("Parse Upgrades to Items");
 fileParser.parseUpgradesToItems();
 
 allItems = fileParser.getItems();
 
 const translator = fileParser.getTranslator();
 
+if (!SHOW_DEV_ITEMS) {
+  allItems = allItems.filter((item) => !item.onlyDevs);
+}
+
+console.info("Translating the items");
 allItems = translator.translateItems(allItems);
 allItems = translator.addDescriptions(allItems);
 
@@ -84,10 +102,6 @@ allItems.forEach((item) => {
     }
   });
 });
-
-if (!SHOW_DEV_ITEMS) {
-  allItems = allItems.filter((item) => !item.onlyDevs);
-}
 
 allItems = allItems
   .map((item) => {
@@ -120,12 +134,10 @@ if (allItems.length > 0) {
       if (err) {
         console.error("Error creating the file");
       } else {
-        console.log("Items detailed exported");
+        console.log("Items exported");
       }
     }
   );
-}
-if (allItems.length > 0) {
   fs.writeFile(
     folderPatch + "items_min.json",
     JSON.stringify(allItems),

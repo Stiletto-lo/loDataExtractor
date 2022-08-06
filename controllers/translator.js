@@ -1,8 +1,10 @@
+require("dotenv").config();
 const controller = {};
 const aditionalTranslations = require("../translations/aditionalTranslations");
 const lootSitesTranslations = require("../translations/lootSites");
 let allTranslations = [];
 let allDesriptions = [];
+const DEBUG = process.env.DEBUG === "true";
 
 controller.translateLootSite = (name) => {
   if (name != null && lootSitesTranslations[name]) {
@@ -13,8 +15,10 @@ controller.translateLootSite = (name) => {
   if (anotherName != null) {
     return anotherName;
   }
+  if (DEBUG) {
+    return name.trim();
+  }
   return "Loot";
-  //return name.trim();
 };
 
 controller.translateName = (name) => {

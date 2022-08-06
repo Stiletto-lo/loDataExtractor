@@ -23,6 +23,7 @@ const blueprintTemplate = require("../templates/lootBlueprint");
 
 const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
 const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
+const DEBUG = process.env.DEBUG === "true";
 
 let allItems = [];
 let upgradesData = [];
@@ -33,7 +34,9 @@ let allBlueprints = [];
 controller.parseBlueprintsToItems = () => {
   allBlueprints.forEach((blueprint) => {
     let location = translator.translateLootSite(blueprint.name);
-    console.log(location + " | " + blueprint.tables.length);
+    if (DEBUG) {
+      console.log(location + " | " + blueprint.tables.length);
+    }
     blueprint.tables.forEach((dataTable) => {
       let dataTableChance = 0;
       dataTable.dropItems.forEach((lootItemData) => {
