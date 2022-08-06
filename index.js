@@ -114,7 +114,7 @@ allItems.sort(orderByCategory);
 
 if (allItems.length > 0) {
   fs.writeFile(
-    folderPatch + "itemsDetailed.json",
+    folderPatch + "items.json",
     JSON.stringify(allItems, null, 2),
     function (err) {
       if (err) {
