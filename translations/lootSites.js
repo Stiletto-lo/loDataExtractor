@@ -47,9 +47,7 @@ lootSites["RupuRaiderLoot_T0"] = "Rupu Raider";
 lootSites["RupuRaiderMountLoot_T0"] = "Rupu Raider Nurr";
 lootSites["PyramidGuardRupu"] = "Pyramid Guard Rupu";
 lootSites["Plainstrider"] = "Plainst rider";
-
-lootSites["RupuTotemLoot_T0"] = "Rupu Totem";
-lootSites["RupuTotem"] = "Rupu Totem";
+lootSites["FlyingRupu"] = "Rupu Hazraki";
 
 /* MOBS */
 
@@ -57,6 +55,9 @@ lootSites["PhemkeLoot_T0"] = "Phemke";
 lootSites["PhemkeNestLoot_T0"] = "Phemke Nest";
 lootSites["NurrLairLoot_T0"] = "Nurr Lair";
 lootSites["CanyonNurrRaider"] = "Nurr Raider";
+lootSites["CanyonNurrLair"] = "Nurr Lair";
+lootSites["CanyonPapak"] = "Papak";
+lootSites["NurrLoot_T0"] = "Nurr";
 
 /* RUINS */
 
@@ -82,6 +83,18 @@ lootSites["PoiSmallHangingBagLoot_T0"] = "Ruin with Small Hanging Bag";
 lootSites["PoiMediumCradleHangingBagLoot_T0"] = "Ruin with Small Hanging Bag";
 
 lootSites["BP_DesertClam"] = "Desert Clam";
+
+lootSites["LootableAttackableUrnComponent"] = "Urn";
+lootSites["PoiPocketClimbingHotspotBreakablesLootBonusWater"] = "Large Urn";
+lootSites["LootableBackpackComponent"] = "Bag";
+lootSites["PoiPocketClimbingHotspotBreakablesLoot_T0"] = "Bag";
+lootSites["LootableBreakableWoodenBoxComponent"] = "Old Crate";
+lootSites["LootableBrokenBarrelComponent"] = "Package";
+lootSites["PoiMediumWreckPackageLoot_T0"] = "Package";
+lootSites["PoiPocketClimbingHotspotBarrel"] = "Barrel";
+lootSites["LootableRockHotspotComponent"] = "Ruin with Burnable Chest";
+lootSites["LootableSiegeCrateComponent"] = "Ruin with Dragable Chest";
+lootSites["PoiSmallBarrelLoot_T0"] = "Barrel";
 
 lootSites["HotspotMountainLootableMeshComponent_01"] = "Ruins";
 lootSites["HotspotMountainLootableMeshComponent_02"] = "Ruins";
@@ -117,11 +130,35 @@ lootSites["CradleFortifiedCamp"] = "Fortified Camp";
 lootSites["PoiCradleChestLoot_T0"] = "Ruins";
 lootSites["PoiMediumCradlePackageLoot_T0"] = "Ruins";
 
-lootSites["MediumLargeRupuCamp_01_2"] = "Large Rupu Camp";
-lootSites["MediumLargeRupuCamp_01_1"] = "Large Rupu Camp";
-lootSites["MediumLargeRupuCamp_01"] = "Large Rupu Camp";
+lootSites["MediumLargeRupuCamp_01_2"] = "Large Rupu Camp - Medium";
+lootSites["MediumLargeRupuCamp_01_1"] = "Large Rupu Camp - Medium";
+lootSites["MediumLargeRupuCamp_01"] = "Large Rupu Camp - Medium";
+lootSites["HardLargeRupuCamp_01"] = "Large Rupu Camp - Hard";
+lootSites["HardLargeRupuCamp_01_2"] = "Large Rupu Camp - Hard";
+lootSites["HardLargeRupuCamp_02"] = "Large Rupu Camp - Hard";
+
+lootSites["EasyMediumRupuCamp_01"] = "Medium Rupu Camp - Easy";
+lootSites["EasyMediumRupuCamp_01_1"] = "Medium Rupu Camp - Easy";
+
+lootSites["HardSmallRupuCamp_01"] = "Small Rupu Camp - Hard";
+lootSites["HardSmallRupuCamp_01_1"] = "Small Rupu Camp - Hard";
 
 lootSites["CanyonEndCampWalkerTotem"] = "Rupu Camp - Walker Totem";
+lootSites["CanyonFortressWalkerWreck"] = "Rupu Camp - Walker Totem";
+lootSites["BoneAmmo"] = "Rupu Camp - Ammo Box";
+lootSites["CampChest"] = "Rupu Camp - Rupu Campfire";
+lootSites["CanyonCampfireLoot"] = "Rupu Camp - Rupu Campfire";
+lootSites["RupuCampFireLoot"] = "Rupu Camp - Rupu Campfire";
+lootSites["CampTotem"] = "Rupu Camp - Totem";
+lootSites["CanyonEndCampUrn"] = "Rupu Camp - Urn";
+lootSites["CanyonSavannahCampUrn"] = "Rupu Camp - Urn";
+lootSites["CanyonSavannahUrn"] = "Rupu Camp - Urn";
+lootSites["CanyonendCampWalkerWreck"] = "Rupu Camp - Walker Wreck";
+lootSites["CanyonFortressChest"] = "Rupu Camp - Chest";
+lootSites["CanyonIslandShelterImproveChest"] = "Rupu Camp - Chest";
+lootSites["CanyonMainVillageChest"] = "Rupu Camp - Chest";
+lootSites["RupuTotemLoot_T0"] = "Rupu Camp - Totem";
+lootSites["RupuTotem"] = "Rupu Camp - Totem";
 
 /* POI */
 
@@ -149,10 +186,11 @@ lootSites["AncientStructure_Blueprint_2"] = "Ancient City - Ruins";
 lootSites["AncientStructure_Blueprint_3"] = "Ancient City - Ruins";
 lootSites["BP_AncientLootsite_01"] = "Ancient City - Ruins";
 
-lootSites["DungeonLootableMeshComponent_03"] = "Test Dungeon";
-lootSites["DungeonLootableMeshComponent_07"] = "Test Dungeon";
-lootSites["DungeonLootableMeshComponent_08"] = "Test Dungeon";
-lootSites["DungeonLootableMeshComponent_10"] = "Test Dungeon";
+lootSites["DungeonLootableMeshComponent_03"] = "Loot";
+lootSites["DungeonLootableMeshComponent_07"] = "Loot";
+lootSites["DungeonLootableMeshComponent_08"] = "Loot";
+lootSites["DungeonLootableMeshComponent_10"] = "Loot";
+lootSites["Dungeon_TabletMonument"] = "Loot";
 
 lootSites["KaliSpires_RandomLoot_Open"] = "Kali Spires - Ruins";
 lootSites["KaliSpires_RandomLoot_Rupu"] = "Kali Spires - Rupus";

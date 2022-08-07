@@ -318,10 +318,13 @@
     "parent": "Ballista",
     "drops": [
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
-        "location": "Large Rupu Camp"
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
+        "location": "Large Rupu Camp - Medium"
       }
     ]
   },
@@ -813,10 +816,13 @@
     ],
     "drops": [
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
-        "location": "Large Rupu Camp"
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
+        "location": "Large Rupu Camp - Medium"
       }
     ]
   },
@@ -1090,10 +1096,13 @@
     ],
     "drops": [
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
-        "location": "Large Rupu Camp"
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
+        "location": "Large Rupu Camp - Medium"
       }
     ],
     "damageType": "PiercingDamageBone"
@@ -1184,7 +1193,7 @@
     },
     "drops": [
       {
-        "location": "Loot"
+        "location": "Package"
       }
     ]
   },
@@ -1216,7 +1225,7 @@
     },
     "drops": [
       {
-        "location": "Loot"
+        "location": "Package"
       }
     ]
   },
@@ -1244,7 +1253,7 @@
     },
     "drops": [
       {
-        "location": "Loot"
+        "location": "Package"
       }
     ]
   },
@@ -1277,7 +1286,7 @@
     },
     "drops": [
       {
-        "location": "Loot"
+        "location": "Package"
       }
     ]
   },
@@ -2763,10 +2772,13 @@
     "weight": 2.8,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
-        "location": "Large Rupu Camp"
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
+        "location": "Large Rupu Camp - Medium"
       }
     ]
   },
@@ -2794,10 +2806,13 @@
     "weight": 0.2,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
-        "location": "Large Rupu Camp"
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
+        "location": "Large Rupu Camp - Medium"
       }
     ]
   },
@@ -2839,6 +2854,15 @@
       },
       {
         "location": "Ruins"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Package"
       },
       {
         "location": "Loot"
@@ -3018,10 +3042,22 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Loot"
+        "location": "Medium Rupu Camp - Easy"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Package"
       },
       {
         "location": "Pyramid"
@@ -3479,7 +3515,13 @@
         "location": "Ancient City - Ruins"
       },
       {
-        "location": "Loot"
+        "location": "Rupu Camp - Urn"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
       },
       {
         "location": "Kali Spires - Ruins"
@@ -3488,7 +3530,7 @@
         "location": "Kali Spires - Rupus"
       },
       {
-        "location": "Large Rupu Camp"
+        "location": "Large Rupu Camp - Medium"
       }
     ]
   },
@@ -3504,7 +3546,19 @@
         "location": "Desert Clam"
       },
       {
-        "location": "Loot"
+        "location": "Rupu Camp - Urn"
+      },
+      {
+        "location": "Medium Rupu Camp - Easy"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
+        "location": "Urn"
       },
       {
         "location": "Ruins"
@@ -3635,7 +3689,7 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Loot"
+        "location": "Rupu Camp - Rupu Campfire"
       },
       {
         "location": "All rupus"
@@ -3777,7 +3831,7 @@
         "location": "Kali Spires - Rupus"
       },
       {
-        "location": "Large Rupu Camp"
+        "location": "Large Rupu Camp - Medium"
       },
       {
         "location": "Pyramid"
@@ -3807,10 +3861,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -3820,6 +3874,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -3848,10 +3920,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -3861,6 +3933,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -3893,10 +3983,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -3906,6 +3996,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -3938,10 +4046,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -3951,6 +4059,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -3983,10 +4109,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -3996,6 +4122,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -4028,10 +4172,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -4041,6 +4185,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -4073,10 +4235,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -4086,6 +4248,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -4119,10 +4299,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -4132,6 +4312,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -4164,10 +4362,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -4177,6 +4375,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -4209,10 +4425,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -4222,6 +4438,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -4254,10 +4488,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -4267,6 +4501,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -4295,10 +4547,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -4308,6 +4560,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -4336,10 +4606,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -4349,6 +4619,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -4377,10 +4665,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -4390,6 +4678,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -4422,10 +4728,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -4435,6 +4741,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -4466,10 +4790,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -4479,6 +4803,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Modules Strongbox"
@@ -4760,7 +5102,7 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "All rupus"
@@ -5033,7 +5375,7 @@
         "location": "Canyon Islands Map - Shelter Urn"
       },
       {
-        "location": "Loot"
+        "location": "Rupu Camp - Chest"
       }
     ],
     "learn": [
@@ -5050,6 +5392,9 @@
       },
       {
         "location": "Canyon Map - Village Camp"
+      },
+      {
+        "location": "Rupu Camp - Chest"
       }
     ],
     "learn": [
@@ -5081,13 +5426,19 @@
         "location": "Ruin Camp"
       },
       {
-        "location": "Loot"
+        "location": "Rupu Camp - Walker Wreck"
+      },
+      {
+        "location": "Rupu Camp - Chest"
       },
       {
         "location": "Nurr Raider"
       },
       {
         "location": "Nurr Raider Camp"
+      },
+      {
+        "location": "Papak"
       },
       {
         "location": "Ruin with Burnable Chest"
@@ -5131,7 +5482,10 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Nurr Lair"
+      },
+      {
+        "location": "Rupu Camp - Urn"
       }
     ],
     "learn": [
@@ -5198,7 +5552,7 @@
     "description": "Unload a rapid volley of darts that are deadly against lightly armored targets. Weak against walkers and structures.",
     "drops": [
       {
-        "location": "Loot"
+        "location": "Rupu Camp - Chest"
       }
     ],
     "structureInfo": {
@@ -8154,7 +8508,7 @@
         "location": "Desert Clam"
       },
       {
-        "location": "Loot"
+        "location": "Urn"
       },
       {
         "location": "Ruins"
@@ -11341,7 +11695,7 @@
     "weight": 0.5,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Rupu Camp - Rupu Campfire"
       }
     ]
   },
@@ -11599,7 +11953,16 @@
         "location": "Volcanic Map - Ruins"
       },
       {
+        "location": "Rupu Camp - Urn"
+      },
+      {
         "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -11615,6 +11978,12 @@
       },
       {
         "location": "Ruin of the wreck"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Barrel"
       },
       {
         "location": "Ruin with Small Hanging Bag"
@@ -11635,7 +12004,7 @@
         "location": "Rupu Thug"
       },
       {
-        "location": "Large Rupu Camp"
+        "location": "Large Rupu Camp - Medium"
       },
       {
         "location": "Pyramid"
@@ -12184,6 +12553,9 @@
         "location": "Loot"
       },
       {
+        "location": "Rupu Camp - Rupu Campfire"
+      },
+      {
         "location": "Rupu Forerunner"
       },
       {
@@ -12316,7 +12688,16 @@
         "location": "Volcanic Map - Ruins"
       },
       {
+        "location": "Rupu Camp - Rupu Campfire"
+      },
+      {
+        "location": "Rupu Camp - Totem"
+      },
+      {
         "location": "Loot"
+      },
+      {
+        "location": "Rupu Hazraki"
       },
       {
         "location": "Kali Spires - Ruins"
@@ -12332,9 +12713,6 @@
       },
       {
         "location": "Pyramid Guard Rupu"
-      },
-      {
-        "location": "Rupu Totem"
       }
     ]
   },
@@ -12390,7 +12768,19 @@
         "location": "Volcanic Map - Ruins"
       },
       {
+        "location": "Rupu Camp - Urn"
+      },
+      {
+        "location": "Medium Rupu Camp - Easy"
+      },
+      {
         "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
       },
       {
         "location": "Yellow Rupu"
@@ -12414,6 +12804,12 @@
         "location": "Ruin of the wreck"
       },
       {
+        "location": "Package"
+      },
+      {
+        "location": "Barrel"
+      },
+      {
         "location": "Ruin with Small Hanging Bag"
       },
       {
@@ -12432,7 +12828,7 @@
         "location": "Rupu Thug"
       },
       {
-        "location": "Large Rupu Camp"
+        "location": "Large Rupu Camp - Medium"
       },
       {
         "location": "Pyramid"
@@ -12510,10 +12906,28 @@
         "location": "Volcanic Map - Ruins"
       },
       {
+        "location": "Rupu Camp - Urn"
+      },
+      {
+        "location": "Medium Rupu Camp - Easy"
+      },
+      {
         "location": "Loot"
       },
       {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
         "location": "Ruins"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Old Crate"
       },
       {
         "location": "Pyramid"
@@ -12554,10 +12968,22 @@
         "location": "Volcanic Map - Ruins"
       },
       {
+        "location": "Medium Rupu Camp - Easy"
+      },
+      {
         "location": "Loot"
       },
       {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
         "location": "Yellow Rupu"
+      },
+      {
+        "location": "Old Crate"
       },
       {
         "location": "Ruin with Burnable Chest"
@@ -12570,6 +12996,12 @@
       },
       {
         "location": "Ruin of the wreck"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Barrel"
       },
       {
         "location": "Ruin with Small Hanging Bag"
@@ -12590,7 +13022,7 @@
         "location": "Rupu Thug"
       },
       {
-        "location": "Large Rupu Camp"
+        "location": "Large Rupu Camp - Medium"
       },
       {
         "location": "Pyramid"
@@ -12686,10 +13118,31 @@
         "location": "Volcanic Map - Ruins"
       },
       {
+        "location": "Rupu Camp - Urn"
+      },
+      {
+        "location": "Medium Rupu Camp - Easy"
+      },
+      {
         "location": "Loot"
       },
       {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
         "location": "Ruins"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
       },
       {
         "location": "Pyramid"
@@ -12722,10 +13175,10 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -12735,6 +13188,24 @@
       },
       {
         "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
       },
       {
         "location": "Pyramid"
@@ -17116,7 +17587,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Rupu Camp - Chest"
       },
       {
         "location": "Canyon Islands Map - Shelter Urn"
@@ -17168,6 +17639,9 @@
       },
       {
         "location": "Canyon Map - Village Camp"
+      },
+      {
+        "location": "Rupu Camp - Chest"
       },
       {
         "location": "Canyon Map - Camp Chest"
@@ -17327,7 +17801,7 @@
         "location": "Rupu Raider Outpost"
       },
       {
-        "location": "Rupu Totem"
+        "location": "Rupu Camp - Totem"
       }
     ],
     "learn": [
@@ -17352,7 +17826,7 @@
         "location": "Rupu Raider Outpost"
       },
       {
-        "location": "Rupu Totem"
+        "location": "Rupu Camp - Totem"
       }
     ],
     "learn": [
@@ -17374,7 +17848,7 @@
         "location": "Rupu Raider Outpost"
       },
       {
-        "location": "Rupu Totem"
+        "location": "Rupu Camp - Totem"
       }
     ],
     "learn": [
@@ -17450,7 +17924,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Rupu Camp - Urn"
       },
       {
         "location": "Fortified Camp"
@@ -17472,7 +17946,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Rupu Camp - Chest"
       },
       {
         "location": "Canyon Islands Map - Shelter Urn"
@@ -17503,7 +17977,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Rupu Camp - Chest"
       },
       {
         "location": "Canyon Islands Map - Shelter Urn"
@@ -17578,6 +18052,9 @@
       },
       {
         "location": "Canyon Islands Map - Shelter Urn"
+      },
+      {
+        "location": "Rupu Camp - Chest"
       },
       {
         "location": "Rupu Shaman"
@@ -18060,13 +18537,16 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
       },
       {
         "location": "Tools Strongbox"
       },
       {
-        "location": "Large Rupu Camp"
+        "location": "Large Rupu Camp - Medium"
       },
       {
         "location": "Pyramid"
@@ -18136,7 +18616,7 @@
         "location": "Rupu Raider Outpost"
       },
       {
-        "location": "Large Rupu Camp"
+        "location": "Large Rupu Camp - Medium"
       },
       {
         "location": "Pyramid"
@@ -42445,10 +42925,10 @@
     },
     "drops": [
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
@@ -42493,16 +42973,19 @@
     },
     "drops": [
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Medium Rupu Camp - Easy"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Ruins"
       },
       {
-        "location": "Large Rupu Camp"
+        "location": "Large Rupu Camp - Medium"
       },
       {
         "location": "Pyramid"
@@ -42551,10 +43034,10 @@
     },
     "drops": [
       {
-        "location": "Test Dungeon"
+        "location": "Loot"
       },
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
       },
       {
         "location": "Pyramid"
@@ -42808,13 +43291,16 @@
     ],
     "drops": [
       {
-        "location": "Loot"
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
       },
       {
         "location": "Tools Strongbox"
       },
       {
-        "location": "Large Rupu Camp"
+        "location": "Large Rupu Camp - Medium"
       },
       {
         "location": "Tree Monkey Camp"
