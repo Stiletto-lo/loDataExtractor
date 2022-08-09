@@ -25,11 +25,17 @@ const folderTypes = [
   "schematics",
 ];
 
-const orderByCategory = (a, b) => {
+const orderByCategoryAndName = (a, b) => {
   if (a.category < b.category) {
     return -1;
   } else if (a.category > b.category) {
     return 1;
+  } else {
+    if (a.name < b.name) {
+      return -1;
+    } else if (a.name > b.name) {
+      return 1;
+    }
   }
   return 0;
 };
@@ -124,7 +130,7 @@ allItems = allItems
 
 allItems = dataParser.itemMerger(allItems, "Long Sawblade", "Sawblade_Tier2");
 
-allItems.sort(orderByCategory);
+allItems.sort(orderByCategoryAndName);
 
 if (allItems.length > 0) {
   fs.writeFile(

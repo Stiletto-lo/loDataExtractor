@@ -43,9 +43,6 @@ controller.parseBlueprintsToItems = () => {
         let item = controller.getItem(
           dataParser.parseName(translator, lootItemData.name)
         );
-        if (lootItemData.name.includes("Repair")) {
-          console.log(item);
-        }
         if (item && item.name) {
           let itemDrops = item.drops ? item.drops : [];
           let hasDrop = itemDrops.some((d) => d.location === location);
