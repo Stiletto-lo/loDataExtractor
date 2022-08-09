@@ -43,6 +43,9 @@ controller.parseBlueprintsToItems = () => {
         let item = controller.getItem(
           dataParser.parseName(translator, lootItemData.name)
         );
+        if (lootItemData.name.includes("Repair")) {
+          console.log(item);
+        }
         if (item && item.name) {
           let itemDrops = item.drops ? item.drops : [];
           let hasDrop = itemDrops.some((d) => d.location === location);
@@ -89,7 +92,12 @@ controller.parseLootTable = (filePath) => {
             lootItems[key].Item.AssetPathName &&
             lootItems[key].Item.AssetPathName.includes("Schematics")
           ) {
-            name = name + " Schematic";
+            let completeItem = controller.getItemByType(name);
+            if (completeItem && completeItem.name) {
+              name = completeItem.name;
+            } else {
+              name = name + " Schematic";
+            }
           }
           let hasDrop = dataTable.dropItems.some((d) => d.name === name);
           if (!hasDrop && name != dataTable.name) {
