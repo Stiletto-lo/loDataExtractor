@@ -34,9 +34,6 @@ let allBlueprints = [];
 controller.parseBlueprintsToItems = () => {
   allBlueprints.forEach((blueprint) => {
     let location = translator.translateLootSite(blueprint.name);
-    if (DEBUG) {
-      console.log(location + " | " + blueprint.tables.length);
-    }
     blueprint.tables.forEach((dataTable) => {
       let dataTableChance = 0;
       dataTable.dropItems.forEach((lootItemData) => {
@@ -85,16 +82,17 @@ controller.parseLootTable = (filePath) => {
       if (lootItems[key].Item) {
         let name = dataParser.parseName(translator, key);
         if (name) {
-          if (
+          let itemName = dataParser.parseType(
+            lootItems[key].Item.AssetPathName
+          );
+          let completeItem = controller.getItemByType(itemName);
+          if (completeItem && completeItem.name) {
+            name = completeItem.name;
+          } else if (
             lootItems[key].Item.AssetPathName &&
             lootItems[key].Item.AssetPathName.includes("Schematics")
           ) {
-            let completeItem = controller.getItemByType(name);
-            if (completeItem && completeItem.name) {
-              name = completeItem.name;
-            } else {
-              name = name + " Schematic";
-            }
+            name = name + " Schematic";
           }
           let hasDrop = dataTable.dropItems.some((d) => d.name === name);
           if (!hasDrop && name != dataTable.name) {
@@ -977,8 +975,11 @@ controller.getUpgradeItem = (upgradePure) => {
 };
 
 controller.getItemByType = (itemType) => {
+  if (!itemType.includes("_C")) {
+    itemType = itemType + "_C";
+  }
   return allItems.find((it) => {
-    return it.type && it.type == itemType + "_C";
+    return it.type && it.type == itemType;
   });
 };
 
