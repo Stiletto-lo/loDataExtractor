@@ -82,7 +82,7 @@ controller.parseLootTable = (filePath) => {
     let lootItems = jsonData[0].Rows;
     let dataTableItems = [];
     Object.keys(lootItems).forEach((key) => {
-      if (key != dataTable.name && lootItems[key].Item) {
+      if (lootItems[key].Item) {
         let name = dataParser.parseName(translator, key);
         if (name) {
           if (

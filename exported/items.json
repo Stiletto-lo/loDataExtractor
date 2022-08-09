@@ -1060,57 +1060,335 @@
     "damageType": "HarpoonDamage"
   },
   {
-    "category": "Ammo",
+    "category": "Equipment",
+    "name": "CheatBackpack",
+    "weight": 1
+  },
+  {
+    "category": "Interactables",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Fiber"
+            "count": 5,
+            "name": "Charcoal"
           },
           {
-            "count": 4,
-            "name": "Stone"
-          },
-          {
-            "count": 10,
-            "name": "Rupu Vine"
+            "count": 5,
+            "name": "Cattail"
           }
         ]
       }
     ],
-    "name": "Net",
-    "trade_price": 10.4,
-    "description": "Ammo for net thrower. Entangles small structures, mannable weapons, walker legs and wings.",
-    "projectileDamage": {
-      "damage": 5,
-      "vsReinforced": 10
-    },
-    "stackSize": 50,
-    "weight": 1.2,
-    "toolInfo": [
-      {
-        "toolType": "Net",
-        "tier": 0
-      }
-    ],
-    "drops": [
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Small Rupu Camp - Hard"
-      },
-      {
-        "location": "Large Rupu Camp - Medium"
-      }
-    ],
-    "damageType": "PiercingDamageBone"
+    "name": "Firework 1",
+    "trade_price": 3,
+    "description": "Shoots a firework with a circular, colorful explosion.",
+    "stackSize": 100,
+    "weight": 0.15
   },
   {
-    "category": "Ammo",
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Charcoal"
+          },
+          {
+            "count": 5,
+            "name": "Cattail"
+          }
+        ]
+      }
+    ],
+    "name": "Firework 2",
+    "trade_price": 3,
+    "stackSize": 100,
+    "weight": 0.15
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Charcoal"
+          },
+          {
+            "count": 5,
+            "name": "Cattail"
+          }
+        ]
+      }
+    ],
+    "name": "Firework 3",
+    "trade_price": 3,
+    "description": "Shoots a firework with a cylindrical, colorful explosion.",
+    "stackSize": 100,
+    "weight": 0.15
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Charcoal"
+          },
+          {
+            "count": 5,
+            "name": "Cattail"
+          }
+        ]
+      }
+    ],
+    "name": "Firework 4",
+    "trade_price": 3,
+    "description": "Shoots a firework with a colorful, double-sphere-like explosion.",
+    "stackSize": 100,
+    "weight": 0.15
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Charcoal"
+          },
+          {
+            "count": 5,
+            "name": "Cattail"
+          }
+        ]
+      }
+    ],
+    "name": "Firework 5",
+    "trade_price": 3,
+    "description": "Shoots a firework with a colorful, radial explosion.",
+    "stackSize": 100,
+    "weight": 0.15
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Charcoal"
+          },
+          {
+            "count": 5,
+            "name": "Cattail"
+          }
+        ]
+      }
+    ],
+    "name": "Firework 6",
+    "trade_price": 3,
+    "description": "Shoots a firework with colorful, killin-shaped explosion.",
+    "stackSize": 100,
+    "weight": 0.15
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Charcoal"
+          },
+          {
+            "count": 5,
+            "name": "Cattail"
+          }
+        ]
+      }
+    ],
+    "name": "Firework 7",
+    "trade_price": 3,
+    "description": "Shoots a firework with a colorful, sparkling explosion.",
+    "stackSize": 100,
+    "weight": 0.15
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Charcoal"
+          },
+          {
+            "count": 5,
+            "name": "Cattail"
+          }
+        ]
+      }
+    ],
+    "name": "Flare - white",
+    "trade_price": 3,
+    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
+    "stackSize": 100,
+    "weight": 0.15
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Charcoal"
+          },
+          {
+            "count": 5,
+            "name": "Cattail"
+          }
+        ]
+      }
+    ],
+    "name": "Flare - red",
+    "trade_price": 3,
+    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
+    "stackSize": 100,
+    "weight": 0.15
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Charcoal"
+          },
+          {
+            "count": 5,
+            "name": "Cattail"
+          }
+        ]
+      }
+    ],
+    "name": "Flare - green",
+    "trade_price": 3,
+    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
+    "stackSize": 100,
+    "weight": 0.15
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Charcoal"
+          },
+          {
+            "count": 5,
+            "name": "Cattail"
+          }
+        ]
+      }
+    ],
+    "name": "Flare - blue",
+    "trade_price": 3,
+    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
+    "stackSize": 100,
+    "weight": 0.15
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Charcoal"
+          },
+          {
+            "count": 5,
+            "name": "Cattail"
+          }
+        ]
+      }
+    ],
+    "name": "Flare - orange",
+    "trade_price": 15.6,
+    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
+    "stackSize": 100,
+    "weight": 0.15
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Charcoal"
+          },
+          {
+            "count": 5,
+            "name": "Cattail"
+          }
+        ]
+      }
+    ],
+    "name": "Flare - purple",
+    "trade_price": 3,
+    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
+    "stackSize": 100,
+    "weight": 0.15
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Charcoal"
+          },
+          {
+            "count": 5,
+            "name": "Cattail"
+          }
+        ]
+      }
+    ],
+    "name": "Flare - teal",
+    "trade_price": 3,
+    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
+    "stackSize": 100,
+    "weight": 0.15
+  },
+  {
+    "category": "Weapons",
+    "name": "Throwstone",
+    "trade_price": 1.6,
+    "description": "Either a fantastically aerodynamic stone, its form perfected for best throwing experience... Or just a sharp chip of rock that you can throw at someone in a pinch.",
+    "projectileDamage": {
+      "damage": 30
+    },
+    "stackSize": 10,
+    "weight": 0.3,
+    "toolInfo": [
+      {
+        "toolType": "Scattershot",
+        "tier": 1
+      }
+    ],
+    "damageType": "ProjectileBluntDamage",
     "cost": {
-      "count": 20,
       "name": "Fragment"
     },
     "crafting": [
@@ -1118,52 +1396,506 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "BoneBolt"
+            "name": "Stone"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 4
+      }
+    ],
+    "parent": "Equipment",
+    "weaponInfo": {
+      "damage": 30,
+      "penetration": 5
+    }
+  },
+  {
+    "cost": {
+      "count": 35,
+      "name": "Fragment"
+    },
+    "name": "Clay Structures",
+    "parent": "Stone Structures"
+  },
+  {
+    "cost": {
+      "count": 5,
+      "name": "Tablet"
+    },
+    "name": "Cement Structures",
+    "parent": "Clay Structures"
+  },
+  {
+    "cost": {
+      "count": 10,
+      "name": "Tablet"
+    },
+    "name": "Heavy Wood Structures",
+    "parent": "Medium Wood Structures"
+  },
+  {
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "name": "Light Wood Structures",
+    "parent": "Base Maintenance Chest"
+  },
+  {
+    "cost": {
+      "count": 35,
+      "name": "Fragment"
+    },
+    "name": "Medium Wood Structures",
+    "parent": "Light Wood Structures"
+  },
+  {
+    "category": "Armors",
+    "cost": {
+      "count": 25,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Worm Silk"
           },
           {
             "count": 2,
+            "name": "Rope"
+          }
+        ]
+      }
+    ],
+    "name": "Feather Boots",
+    "parent": "Fast Grappling Hook",
+    "trade_price": 34,
+    "description": "Thick feather-padded soles mitigate fall damage.",
+    "stackSize": 100,
+    "weight": 0.4,
+    "armorInfo": {
+      "absorbing": 4,
+      "reduction": 1
+    }
+  },
+  {
+    "category": "Armors",
+    "cost": {
+      "count": 3,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 6,
+            "name": "Charcoal"
+          },
+          {
+            "count": 4,
             "name": "Hide"
+          },
+          {
+            "count": 8,
+            "name": "Aloe Gel"
+          }
+        ]
+      }
+    ],
+    "name": "Gas Mask",
+    "parent": "Primitive Bandage",
+    "trade_price": 13.2,
+    "description": "Protects the wearer against gases if worn correctly, but needs to be replaced regularly. Surprisingly easy to breath through.",
+    "stackSize": 100,
+    "weight": 0.4,
+    "armorInfo": {
+      "absorbing": 5,
+      "reduction": 1
+    }
+  },
+  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Balaclava",
+    "trade_price": 13.2,
+    "description": "Perfect for all the wrongdoers and outlaws. Fully conceals one's identity but also makes him or her clearly an individual to avoid.",
+    "stackSize": 100,
+    "weight": 0.2,
+    "armorInfo": {
+      "absorbing": 6,
+      "reduction": 1
+    }
+  },
+  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Ruffian mask",
+    "trade_price": 13.2,
+    "description": "Makes recognition of another flotilla citizen harder so various miscreants use it to unconfinedly perform their mischievous deeds.",
+    "stackSize": 100,
+    "weight": 0.2,
+    "armorInfo": {
+      "absorbing": 6,
+      "reduction": 1
+    }
+  },
+  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Sunset headdress",
+    "trade_price": 13.2,
+    "description": "Fiberwork crown used in the most illustrious Flotilla social ceremonials.",
+    "stackSize": 100,
+    "weight": 0.2,
+    "armorInfo": {
+      "absorbing": 6,
+      "reduction": 1
+    }
+  },
+  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Bucket helmet",
+    "trade_price": 13.2,
+    "description": "Carefully install this contraption on your braincase and display a wide assortment of still emotions.",
+    "stackSize": 100,
+    "weight": 0.2,
+    "armorInfo": {
+      "absorbing": 6,
+      "reduction": 1
+    }
+  },
+  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Squared eyepatches",
+    "trade_price": 13.2,
+    "description": "Odd-looking eyepatches partially disguising wearer's identity.",
+    "stackSize": 100,
+    "weight": 0.2,
+    "armorInfo": {
+      "absorbing": 6,
+      "reduction": 1
+    }
+  },
+  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Ornate veil cap",
+    "trade_price": 13.2,
+    "description": "Decorated leatherwork cap covering wearer's eyes.",
+    "stackSize": 100,
+    "weight": 0.2,
+    "armorInfo": {
+      "absorbing": 6,
+      "reduction": 1
+    }
+  },
+  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Mask and eyepatch",
+    "trade_price": 13.2,
+    "description": "Mostly used to ease up breathing during sandstorms. The eyepatch is purely for the show-off, however some nomads claim they're using it in a more purposeful manner.",
+    "stackSize": 100,
+    "weight": 0.2,
+    "armorInfo": {
+      "absorbing": 6,
+      "reduction": 1
+    }
+  },
+  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Feather mask",
+    "trade_price": 13.2,
+    "description": "Once part of Rupu accountrement, now adopted by upper-caste citizens in shamanic rituals.",
+    "stackSize": 100,
+    "weight": 0.2,
+    "armorInfo": {
+      "absorbing": 6,
+      "reduction": 1
+    }
+  },
+  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Tied keffiyeh scarf",
+    "trade_price": 13.2,
+    "description": "Used by nomads as protection from the burning sun and the all-present sand.",
+    "stackSize": 100,
+    "weight": 0.2,
+    "armorInfo": {
+      "absorbing": 6,
+      "reduction": 1
+    }
+  },
+  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Wrapped keffiyeh scarf",
+    "trade_price": 13.2,
+    "description": "Used by nomads as protection from the burning sun and the all-present sand.",
+    "stackSize": 100,
+    "weight": 0.2,
+    "armorInfo": {
+      "absorbing": 6,
+      "reduction": 1
+    }
+  },
+  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Rupu mask",
+    "trade_price": 13.2,
+    "description": "Intimidating and ostentatious - exactly what every nomad thirsts for.",
+    "stackSize": 100,
+    "weight": 0.2,
+    "armorInfo": {
+      "absorbing": 6,
+      "reduction": 1
+    }
+  },
+  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Festive Turban",
+    "trade_price": 13.2,
+    "description": "Embroidered turban typically worn by flotilla's elder community during various festivities and celebrations.",
+    "stackSize": 100,
+    "weight": 0.2,
+    "armorInfo": {
+      "absorbing": 6,
+      "reduction": 1
+    }
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Desolator Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Drudge Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Firebrand Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Forager Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Forerunner Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Harasser Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Hazraki Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Plainstrider Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Sentinel Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Shaman Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Skirmisher Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Thug Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "cost": {
+      "count": 25,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Fiber Weave"
           },
           {
             "count": 4,
             "name": "Rope"
+          },
+          {
+            "count": 9,
+            "name": "Rupu Pelt"
+          },
+          {
+            "count": 4,
+            "name": "Hide"
           }
         ],
-        "station": "Woodworking Station",
-        "time": 5
+        "station": "Fiberworking Station",
+        "time": 25
       }
     ],
-    "name": "Bone Harpoon",
-    "parent": "BoneBolt",
-    "trade_price": 7.6,
-    "description": "Ammo for Ballista. Easily penetrates and latches into wood. A strong tether holds it in place.",
-    "projectileDamage": {
-      "damage": 15,
-      "vsMedium": 30,
-      "vsHard": 15,
-      "vsReinforced": 30,
-      "vsSolid": 15
-    },
-    "stackSize": 20,
-    "weight": 0.4,
-    "toolInfo": [
-      {
-        "toolType": "BallistaHarpoon",
-        "tier": 4
-      }
-    ],
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ],
-    "damageType": "HarpoonDamage"
+    "name": "Cloaked Rupu Fur Armor",
+    "parent": "Rupu Fur Armor",
+    "trade_price": 6.6,
+    "description": "A little added protection, with a little more smell. Still very light and maneuverable.",
+    "stackSize": 100,
+    "weight": 3,
+    "armorInfo": {
+      "absorbing": 32,
+      "reduction": 2,
+      "speedReduction": 2
+    }
   },
   {
     "category": "Armors",
@@ -1452,6 +2184,1170 @@
         "location": "Armor Strongbox"
       }
     ]
+  },
+  {
+    "category": "Drugs",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Aloe Vera"
+          },
+          {
+            "count": 10,
+            "name": "Purified Water"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 135
+      }
+    ],
+    "name": "Desert Mule",
+    "parent": "Vision Powder",
+    "trade_price": 34.5,
+    "description": "These refreshing eye drops deceive a Nomad into thinking his or her heatstroke is gone. Allows Nomad to carry more weight.",
+    "stackSize": 100,
+    "weight": 0.6,
+    "drops": [
+      {
+        "location": "Rupu Shaman"
+      }
+    ]
+  },
+  {
+    "category": "Equipment",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 3,
+            "name": "Earth Wax"
+          }
+        ]
+      }
+    ],
+    "name": "Durable Water Sack",
+    "parent": "Makeshift Bottle",
+    "trade_price": 7.9,
+    "description": "Carry large volumes of liquid. Essential for water traders.",
+    "stackSize": 100,
+    "weight": 3,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      }
+    ]
+  },
+  {
+    "category": "Equipment",
+    "cost": {
+      "count": 35,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 4,
+            "name": "Rope"
+          },
+          {
+            "count": 8,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Backpack",
+    "parent": "Light Backpack",
+    "trade_price": 10.3,
+    "description": "Grants additional inventory space.",
+    "stackSize": 100,
+    "weight": 5.2,
+    "drops": [
+      {
+        "location": "Equipment Strongbox"
+      }
+    ]
+  },
+  {
+    "category": "Equipment",
+    "cost": {
+      "count": 10,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Worm Silk"
+          },
+          {
+            "count": 14,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Backpack",
+    "parent": "Medium Backpack",
+    "trade_price": 131.5,
+    "description": "Loads of new inventory space.",
+    "stackSize": 100,
+    "weight": 7.5,
+    "drops": [
+      {
+        "location": "Equipment Strongbox"
+      }
+    ]
+  },
+  {
+    "category": "Equipment",
+    "cost": {
+      "count": 25,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 35,
+            "name": "Palm Leaves"
+          },
+          {
+            "count": 112,
+            "name": "Fiber"
+          },
+          {
+            "count": 15,
+            "name": "Beeswax"
+          }
+        ]
+      }
+    ],
+    "name": "Split Durable Water Sack",
+    "parent": "Durable Water Sack",
+    "trade_price": 143.4,
+    "description": "A huge water bag worn on the back with two separate compartments.",
+    "stackSize": 100,
+    "weight": 3,
+    "drops": [
+      {
+        "location": "Equipment Strongbox"
+      }
+    ]
+  },
+  {
+    "category": "Equipment",
+    "cost": {
+      "count": 10,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 38,
+            "name": "Worm Silk"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 25,
+            "name": "Rope"
+          }
+        ]
+      }
+    ],
+    "name": "Water Circulator",
+    "parent": "Durable Water Sack",
+    "trade_price": 679.5,
+    "description": "This insulating suit traps excreted fluids and recycles them with state-of-the-art worm technology.",
+    "stackSize": 100,
+    "weight": 3,
+    "drops": [
+      {
+        "location": "Equipment Strongbox"
+      }
+    ]
+  },
+  {
+    "category": "Equipment",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Obsidian"
+          },
+          {
+            "count": 50,
+            "name": "Ash"
+          },
+          {
+            "count": 50,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Obsidian Flask",
+    "parent": "Bone Bottle",
+    "trade_price": 23,
+    "description": "Incredibly durable flask resistant to highest temperatures.",
+    "stackSize": 100,
+    "weight": 1,
+    "drops": [
+      {
+        "location": "Equipment Strongbox"
+      }
+    ]
+  },
+  {
+    "category": "Equipment",
+    "cost": {
+      "count": 3,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 4,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 40,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Split Ceramic Flask",
+    "parent": "Ceramic Flask",
+    "trade_price": 51.6,
+    "description": "A large bottle with two seperate containers that can each hold a different type of liquid.",
+    "stackSize": 100,
+    "weight": 3.4,
+    "drops": [
+      {
+        "location": "Equipment Strongbox"
+      }
+    ]
+  },
+  {
+    "category": "Equipment",
+    "cost": {
+      "count": 20,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 6,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 20,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Wingsuit",
+    "parent": "Long Grappling Hook",
+    "trade_price": 29,
+    "description": "Nomads are accustomed to leaving their fate to the winds. While some Nomads have managed to stay airborn for long periods of time and can perform nimble landings, many drop like a leaf.",
+    "stackSize": 100,
+    "weight": 4,
+    "drops": [
+      {
+        "location": "Equipment Strongbox"
+      }
+    ]
+  },
+  {
+    "category": "Interactables",
+    "cost": {
+      "count": 15,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 5,
+            "name": "Aloe Gel"
+          }
+        ]
+      }
+    ],
+    "name": "Sterile Bandage",
+    "parent": "Primitive Bandage",
+    "trade_price": 1.4,
+    "description": "Restores a large amount of HP over a period of time. Not usable while in combat.",
+    "stackSize": 100,
+    "weight": 0.05,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      }
+    ]
+  },
+  {
+    "category": "Knowledge",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Fragment"
+          }
+        ],
+        "station": "Ancient Fabricator",
+        "time": 200
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Fragment"
+          }
+        ],
+        "station": "Temporary Fabricator",
+        "time": 60
+      }
+    ],
+    "name": "Tablet",
+    "trade_price": 500,
+    "description": "Carved images of animals can be felt on this tablet.",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      }
+    ]
+  },
+  {
+    "category": "Liquids",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Earth Wax"
+          }
+        ],
+        "station": "Furnace",
+        "time": 1320
+      }
+    ],
+    "name": "Tar",
+    "trade_price": 3.2,
+    "description": "Thick liquid used in heavy and complex constructions. Ignitable in combination with other materials.",
+    "stackSize": 100,
+    "weight": 0.15,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "cost": {
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Iron Ingot"
+          }
+        ],
+        "output": 5,
+        "station": "Ancient Fabricator",
+        "time": 250
+      },
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Iron Ingot"
+          }
+        ],
+        "station": "Artificer Woodworking Station",
+        "time": 60
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood Log"
+          },
+          {
+            "count": 2,
+            "name": "Iron Ingot"
+          }
+        ],
+        "output": 10,
+        "station": "Lumbermill",
+        "time": 450
+      }
+    ],
+    "name": "Reinforced Plank",
+    "parent": "Woodworking Station",
+    "trade_price": 15.5,
+    "description": "Strong wooden plank reinforced using a forgotten technology at Ancient Crafting Sites.",
+    "stackSize": 100,
+    "weight": 0.45,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Iron Ore",
+    "trade_price": 8,
+    "description": "Over the centuries, nomads have experimented with iron in the construction of their walkers and armor. However, in the race to outrun the sun, it was those who travelled lightest that survived longest.",
+    "stackSize": 100,
+    "weight": 0.78,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Flint",
+    "trade_price": 0.1,
+    "description": "A sharp mineral, handy for the production of primitive blades and extra pointy sticks",
+    "stackSize": 100,
+    "weight": 0.4,
+    "drops": [
+      {
+        "location": "Loot"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "cost": {
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Cattail"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ],
+        "station": "Fiberworking Station",
+        "time": 60
+      },
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Cotton"
+          },
+          {
+            "count": 12,
+            "name": "Earth Wax"
+          }
+        ],
+        "station": "Advanced Fiberworking Station",
+        "time": 28
+      }
+    ],
+    "name": "Nomad Cloth",
+    "parent": "Advanced Fiberworking Station",
+    "trade_price": 28,
+    "description": "A tightly woven cloth that is hard to cut and nearly waterproof. The Flotillan standard.",
+    "stackSize": 100,
+    "weight": 0.24,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "cost": {
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Clay"
+          }
+        ],
+        "station": "Furnace",
+        "time": 720
+      }
+    ],
+    "name": "Ceramic Shard",
+    "parent": "Furnace",
+    "trade_price": 7.2,
+    "stackSize": 100,
+    "weight": 0.22,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "cost": {
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Terrain: Clay Spots"
+          },
+          {
+            "count": 10,
+            "name": "Ash"
+          }
+        ],
+        "station": "Soil Excavator",
+        "time": 8
+      }
+    ],
+    "name": "Clay",
+    "parent": "Soil Excavator",
+    "trade_price": 0.1,
+    "description": "Extracted from lakebed soil.",
+    "stackSize": 100,
+    "weight": 0.35,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Chitin Plate",
+    "trade_price": 6.6,
+    "description": "Skittering parasites make their nests between the gooey cracks. Harvesting chitin is dirty work.",
+    "stackSize": 100,
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Hardening Module",
+    "description": "Stacking this module reduces damage to a walker from all sources except those that can damage Reinforced armor.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 5,
+      "maxIncrease": 100
+    },
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Fireproof Module",
+    "description": "Lowers the damage from all fire sources for the walker and all structures.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 2,
+      "maxIncrease": 40
+    },
+    "drops": [
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Modules Strongbox"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Pack Speed Module",
+    "description": "Decreases the time it takes to pack bases and structures.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 4,
+      "maxIncrease": 80
+    },
+    "drops": [
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Modules Strongbox"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Harpoon Protection Module",
+    "description": "Makes tethers attached to the walker easier to snap.",
+    "moduleInfo": {
+      "increase": 4.5,
+      "maxIncrease": 90
+    },
+    "drops": [
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Modules Strongbox"
+      }
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Torque Battery Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Village Camp with big rock - Chest"
+      }
+    ],
+    "learn": [
+      "Torque Battery"
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Purification Station Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Village Camp with big rock - Walker Totem"
+      }
+    ],
+    "learn": [
+      "Purification Station"
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Scroll Rack Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Canyon Map - Village Camp"
+      },
+      {
+        "location": "Canyon Islands Map - Shelter Urn"
+      },
+      {
+        "location": "Rupu Camp - Chest"
+      }
+    ],
+    "learn": [
+      "Scroll Rack"
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Soil Excavator Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Canyon Map - Village Camp"
+      },
+      {
+        "location": "Rupu Camp - Chest"
+      }
+    ],
+    "learn": [
+      "Soil Excavator"
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Small Water Bag Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Canyon Map - Village Camp"
+      },
+      {
+        "location": "Canyon Islands Map - Shelter Urn"
+      }
+    ],
+    "learn": [
+      "Small Water Bag"
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Hangar Wall Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Village Camp with big rock - Walker Wreck"
+      },
+      {
+        "location": "Canyon Map - Village Camp"
+      },
+      {
+        "location": "Rupu Camp - Chest"
+      }
+    ],
+    "learn": [
+      "Hangar Wall",
+      "Hangar Gate",
+      "Hangar Roof",
+      "Hangar Wall with Door"
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Long Bonespike Swordstaff Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Village Camp with big rock - Chest"
+      },
+      {
+        "location": "Village Camp with big rock - Walker Wreck"
+      },
+      {
+        "location": "Rupu Camp - Chest"
+      },
+      {
+        "location": "Nurr Raider"
+      },
+      {
+        "location": "Nurr Raider Camp"
+      },
+      {
+        "location": "Papak"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      }
+    ],
+    "learn": [
+      "Long Bonespike Swordstaff"
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Gas Mask Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Canyon Map - Village Camp"
+      },
+      {
+        "location": "Nurr Raider"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Canyon Map - Camp Chest"
+      }
+    ],
+    "learn": [
+      "Gas Mask"
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Bone Bottle Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Nurr Lair"
+      },
+      {
+        "location": "Rupu Camp - Urn"
+      }
+    ],
+    "learn": [
+      "Bone Bottle"
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Medium Chest Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Canyon Map - Village Camp"
+      },
+      {
+        "location": "Nurr Raider"
+      },
+      {
+        "location": "Nurr Raider Camp"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Canyon Map - Camp Chest"
+      },
+      {
+        "location": "White Death"
+      }
+    ],
+    "learn": [
+      "Medium Chest"
+    ]
+  },
+  {
+    "category": "Weapons",
+    "cost": {
+      "count": 35,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 1,
+            "name": "Rope"
+          }
+        ]
+      }
+    ],
+    "name": "Repeater",
+    "parent": "Ballista",
+    "description": "Unload a rapid volley of darts that are deadly against lightly armored targets. Weak against walkers and structures.",
+    "drops": [
+      {
+        "location": "Rupu Camp - Chest"
+      }
+    ],
+    "structureInfo": {
+      "type": "Medium",
+      "hp": 900
+    }
+  },
+  {
+    "name": "Animals Tablet",
+    "description": "Carved images of animals can be felt on this tablet.",
+    "drops": [
+      {
+        "location": "Tablets Strongbox"
+      }
+    ]
+  },
+  {
+    "name": "Celestial Tablet",
+    "description": "Carved images of celestial bodies can be felt on this tablet.",
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Tablets Strongbox"
+      }
+    ]
+  },
+  {
+    "name": "Elements Tablet",
+    "description": "Carved images of earthly elements can be felt on this tablet.",
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Tablets Strongbox"
+      }
+    ]
+  },
+  {
+    "category": "Ammo",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 3,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 1,
+            "name": "Fiber Weave"
+          }
+        ],
+        "output": 3,
+        "station": "Woodworking Station",
+        "time": 5
+      }
+    ],
+    "name": "Bone Bolt",
+    "parent": "FlintHarpoon",
+    "trade_price": 5,
+    "description": "Ammo for Ballista. Bone tips are notorious for splintering and ricocheting inside the body.",
+    "projectileDamage": {
+      "damage": 150,
+      "vsMedium": 25,
+      "vsHard": 10,
+      "vsReinforced": 25,
+      "vsSolid": 10
+    },
+    "stackSize": 20,
+    "weight": 0.3,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 2
+      }
+    ],
+    "drops": [
+      {
+        "location": "Ruin of the wreck"
+      }
+    ],
+    "damageType": "PiercingDamage"
+  },
+  {
+    "category": "Ammo",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Fiber"
+          },
+          {
+            "count": 4,
+            "name": "Stone"
+          },
+          {
+            "count": 10,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "name": "Net",
+    "trade_price": 10.4,
+    "description": "Ammo for net thrower. Entangles small structures, mannable weapons, walker legs and wings.",
+    "projectileDamage": {
+      "damage": 5,
+      "vsReinforced": 10
+    },
+    "stackSize": 50,
+    "weight": 1.2,
+    "toolInfo": [
+      {
+        "toolType": "Net",
+        "tier": 0
+      }
+    ],
+    "drops": [
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
+        "location": "Large Rupu Camp - Medium"
+      }
+    ],
+    "damageType": "PiercingDamageBone"
+  },
+  {
+    "category": "Ammo",
+    "cost": {
+      "count": 20,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "BoneBolt"
+          },
+          {
+            "count": 2,
+            "name": "Hide"
+          },
+          {
+            "count": 4,
+            "name": "Rope"
+          }
+        ],
+        "station": "Woodworking Station",
+        "time": 5
+      }
+    ],
+    "name": "Bone Harpoon",
+    "parent": "BoneBolt",
+    "trade_price": 7.6,
+    "description": "Ammo for Ballista. Easily penetrates and latches into wood. A strong tether holds it in place.",
+    "projectileDamage": {
+      "damage": 15,
+      "vsMedium": 30,
+      "vsHard": 15,
+      "vsReinforced": 30,
+      "vsSolid": 15
+    },
+    "stackSize": 20,
+    "weight": 0.4,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 4
+      }
+    ],
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ],
+    "damageType": "HarpoonDamage"
   },
   {
     "category": "Armors",
@@ -2427,4062 +4323,6 @@
         "location": "Pyramid"
       }
     ]
-  },
-  {
-    "category": "Drugs",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Aloe Vera"
-          },
-          {
-            "count": 10,
-            "name": "Purified Water"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 135
-      }
-    ],
-    "name": "Desert Mule",
-    "parent": "Vision Powder",
-    "trade_price": 34.5,
-    "description": "These refreshing eye drops deceive a Nomad into thinking his or her heatstroke is gone. Allows Nomad to carry more weight.",
-    "stackSize": 100,
-    "weight": 0.6,
-    "drops": [
-      {
-        "location": "Rupu Shaman"
-      }
-    ]
-  },
-  {
-    "category": "Equipment",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 3,
-            "name": "Earth Wax"
-          }
-        ]
-      }
-    ],
-    "name": "Durable Water Sack",
-    "parent": "Makeshift Bottle",
-    "trade_price": 7.9,
-    "description": "Carry large volumes of liquid. Essential for water traders.",
-    "stackSize": 100,
-    "weight": 3,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      }
-    ]
-  },
-  {
-    "category": "Equipment",
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 4,
-            "name": "Rope"
-          },
-          {
-            "count": 8,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "Medium Backpack",
-    "parent": "Light Backpack",
-    "trade_price": 10.3,
-    "description": "Grants additional inventory space.",
-    "stackSize": 100,
-    "weight": 5.2,
-    "drops": [
-      {
-        "location": "Equipment Strongbox"
-      }
-    ]
-  },
-  {
-    "category": "Equipment",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 14,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "name": "Heavy Backpack",
-    "parent": "Medium Backpack",
-    "trade_price": 131.5,
-    "description": "Loads of new inventory space.",
-    "stackSize": 100,
-    "weight": 7.5,
-    "drops": [
-      {
-        "location": "Equipment Strongbox"
-      }
-    ]
-  },
-  {
-    "category": "Equipment",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 35,
-            "name": "Palm Leaves"
-          },
-          {
-            "count": 112,
-            "name": "Fiber"
-          },
-          {
-            "count": 15,
-            "name": "Beeswax"
-          }
-        ]
-      }
-    ],
-    "name": "Split Durable Water Sack",
-    "parent": "Durable Water Sack",
-    "trade_price": 143.4,
-    "description": "A huge water bag worn on the back with two separate compartments.",
-    "stackSize": 100,
-    "weight": 3,
-    "drops": [
-      {
-        "location": "Equipment Strongbox"
-      }
-    ]
-  },
-  {
-    "category": "Equipment",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 38,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 25,
-            "name": "Rope"
-          }
-        ]
-      }
-    ],
-    "name": "Water Circulator",
-    "parent": "Durable Water Sack",
-    "trade_price": 679.5,
-    "description": "This insulating suit traps excreted fluids and recycles them with state-of-the-art worm technology.",
-    "stackSize": 100,
-    "weight": 3,
-    "drops": [
-      {
-        "location": "Equipment Strongbox"
-      }
-    ]
-  },
-  {
-    "category": "Equipment",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Obsidian"
-          },
-          {
-            "count": 50,
-            "name": "Ash"
-          },
-          {
-            "count": 50,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Obsidian Flask",
-    "parent": "Bone Bottle",
-    "trade_price": 23,
-    "description": "Incredibly durable flask resistant to highest temperatures.",
-    "stackSize": 100,
-    "weight": 1,
-    "drops": [
-      {
-        "location": "Equipment Strongbox"
-      }
-    ]
-  },
-  {
-    "category": "Equipment",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 4,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 40,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Split Ceramic Flask",
-    "parent": "Ceramic Flask",
-    "trade_price": 51.6,
-    "description": "A large bottle with two seperate containers that can each hold a different type of liquid.",
-    "stackSize": 100,
-    "weight": 3.4,
-    "drops": [
-      {
-        "location": "Equipment Strongbox"
-      }
-    ]
-  },
-  {
-    "category": "Equipment",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 6,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 20,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Wingsuit",
-    "parent": "Long Grappling Hook",
-    "trade_price": 29,
-    "description": "Nomads are accustomed to leaving their fate to the winds. While some Nomads have managed to stay airborn for long periods of time and can perform nimble landings, many drop like a leaf.",
-    "stackSize": 100,
-    "weight": 4,
-    "drops": [
-      {
-        "location": "Equipment Strongbox"
-      }
-    ]
-  },
-  {
-    "category": "Equipment",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 4,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 12,
-            "name": "Hide"
-          }
-        ]
-      }
-    ],
-    "name": "Light Backpack",
-    "parent": "Foraging Pouch",
-    "trade_price": 5.6,
-    "description": "A little extra inventory space to carry the bare necessities.",
-    "stackSize": 100,
-    "weight": 2.8,
-    "drops": [
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Small Rupu Camp - Hard"
-      },
-      {
-        "location": "Large Rupu Camp - Medium"
-      }
-    ]
-  },
-  {
-    "category": "Equipment",
-    "cost": {
-      "count": 5,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 28,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Foraging Pouch",
-    "parent": "Makeshift Bottle",
-    "trade_price": 5.6,
-    "description": "Designed to store a lot of fiber and organic materials, including sediments, like sand.",
-    "stackSize": 100,
-    "weight": 0.2,
-    "drops": [
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Small Rupu Camp - Hard"
-      },
-      {
-        "location": "Large Rupu Camp - Medium"
-      }
-    ]
-  },
-  {
-    "category": "Equipment",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Huge Cactus Fruit"
-          },
-          {
-            "count": 20,
-            "name": "Fiber"
-          },
-          {
-            "count": 2,
-            "name": "Hide"
-          }
-        ]
-      }
-    ],
-    "name": "Improvised Bottle",
-    "parent": "Makeshift Bottle",
-    "trade_price": 6.2,
-    "description": "While it doesn't hold much liquid, it's simple to make and can be crafted using almost any material.",
-    "stackSize": 100,
-    "weight": 0.5,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "All rupus"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Equipment",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 5,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 32,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Bone Bottle",
-    "parent": "Makeshift Bottle",
-    "trade_price": 11.9,
-    "description": "A bottle with an aftertaste.",
-    "stackSize": 100,
-    "weight": 1.7,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Equipment Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Equipment",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 4,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 32,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Ceramic Flask",
-    "parent": "Bone Bottle",
-    "trade_price": 71.6,
-    "description": "Ceramic items are difficult to make and usually seen as a mark of quality craftsmanship.",
-    "stackSize": 100,
-    "weight": 2,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Equipment Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Interactables",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 5,
-            "name": "Aloe Gel"
-          }
-        ]
-      }
-    ],
-    "name": "Sterile Bandage",
-    "parent": "Primitive Bandage",
-    "trade_price": 1.4,
-    "description": "Restores a large amount of HP over a period of time. Not usable while in combat.",
-    "stackSize": 100,
-    "weight": 0.05,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      }
-    ]
-  },
-  {
-    "category": "Interactables",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Fiber"
-          },
-          {
-            "count": 7,
-            "name": "Ash"
-          }
-        ]
-      }
-    ],
-    "name": "Primitive Bandage",
-    "parent": "Equipment",
-    "trade_price": 1.2,
-    "description": "Restores a small amount of HP over a period of time. Not usable while in combat.",
-    "stackSize": 100,
-    "weight": 0.03,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Medium Rupu Camp - Easy"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Small Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Knowledge",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Fragment"
-          }
-        ],
-        "station": "Ancient Fabricator",
-        "time": 200
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Fragment"
-          }
-        ],
-        "station": "Temporary Fabricator",
-        "time": 60
-      }
-    ],
-    "name": "Tablet",
-    "trade_price": 500,
-    "description": "Carved images of animals can be felt on this tablet.",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      }
-    ]
-  },
-  {
-    "category": "Liquids",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Earth Wax"
-          }
-        ],
-        "station": "Furnace",
-        "time": 1320
-      }
-    ],
-    "name": "Tar",
-    "trade_price": 3.2,
-    "description": "Thick liquid used in heavy and complex constructions. Ignitable in combination with other materials.",
-    "stackSize": 100,
-    "weight": 0.15,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      }
-    ]
-  },
-  {
-    "category": "Liquids",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Terrain: Sand"
-          }
-        ],
-        "output": 100,
-        "station": "Soil Excavator",
-        "time": 29
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Stone"
-          }
-        ],
-        "output": 10,
-        "station": "Stomping Station",
-        "time": 5
-      }
-    ],
-    "name": "Sand",
-    "description": "Tiny green mineral flecks dot the sand.",
-    "stackSize": 100,
-    "weight": 0.22,
-    "drops": [
-      {
-        "location": "Rupu Scavenger"
-      },
-      {
-        "location": "All rupus"
-      },
-      {
-        "location": "Rupu Skirmisher"
-      },
-      {
-        "location": "Rupu Thug"
-      },
-      {
-        "location": "Rupu Drudge"
-      },
-      {
-        "location": "Rupu Harasser"
-      },
-      {
-        "location": "Rupu Sentinel"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "cost": {
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 50,
-            "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Iron Ingot"
-          }
-        ],
-        "output": 5,
-        "station": "Ancient Fabricator",
-        "time": 250
-      },
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Iron Ingot"
-          }
-        ],
-        "station": "Artificer Woodworking Station",
-        "time": 60
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood Log"
-          },
-          {
-            "count": 2,
-            "name": "Iron Ingot"
-          }
-        ],
-        "output": 10,
-        "station": "Lumbermill",
-        "time": 450
-      }
-    ],
-    "name": "Reinforced Plank",
-    "parent": "Woodworking Station",
-    "trade_price": 15.5,
-    "description": "Strong wooden plank reinforced using a forgotten technology at Ancient Crafting Sites.",
-    "stackSize": 100,
-    "weight": 0.45,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Iron Ore",
-    "trade_price": 8,
-    "description": "Over the centuries, nomads have experimented with iron in the construction of their walkers and armor. However, in the race to outrun the sun, it was those who travelled lightest that survived longest.",
-    "stackSize": 100,
-    "weight": 0.78,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Flint",
-    "trade_price": 0.1,
-    "description": "A sharp mineral, handy for the production of primitive blades and extra pointy sticks",
-    "stackSize": 100,
-    "weight": 0.4,
-    "drops": [
-      {
-        "location": "Loot"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 50,
-            "name": "Cattail"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
-          }
-        ],
-        "station": "Fiberworking Station",
-        "time": 60
-      },
-      {
-        "ingredients": [
-          {
-            "count": 18,
-            "name": "Cotton"
-          },
-          {
-            "count": 12,
-            "name": "Earth Wax"
-          }
-        ],
-        "station": "Advanced Fiberworking Station",
-        "time": 28
-      }
-    ],
-    "name": "Nomad Cloth",
-    "parent": "Advanced Fiberworking Station",
-    "trade_price": 28,
-    "description": "A tightly woven cloth that is hard to cut and nearly waterproof. The Flotillan standard.",
-    "stackSize": 100,
-    "weight": 0.24,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "cost": {
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Clay"
-          }
-        ],
-        "station": "Furnace",
-        "time": 720
-      }
-    ],
-    "name": "Ceramic Shard",
-    "parent": "Furnace",
-    "trade_price": 7.2,
-    "stackSize": 100,
-    "weight": 0.22,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "cost": {
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Terrain: Clay Spots"
-          },
-          {
-            "count": 10,
-            "name": "Ash"
-          }
-        ],
-        "station": "Soil Excavator",
-        "time": 8
-      }
-    ],
-    "name": "Clay",
-    "parent": "Soil Excavator",
-    "trade_price": 0.1,
-    "description": "Extracted from lakebed soil.",
-    "stackSize": 100,
-    "weight": 0.35,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Chitin Plate",
-    "trade_price": 6.6,
-    "description": "Skittering parasites make their nests between the gooey cracks. Harvesting chitin is dirty work.",
-    "stackSize": 100,
-    "weight": 0.01,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Hardening Module",
-    "description": "Stacking this module reduces damage to a walker from all sources except those that can damage Reinforced armor.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "increase": 5,
-      "maxIncrease": 100
-    },
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Fireproof Module",
-    "description": "Lowers the damage from all fire sources for the walker and all structures.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "increase": 2,
-      "maxIncrease": 40
-    },
-    "drops": [
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Modules Strongbox"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Pack Speed Module",
-    "description": "Decreases the time it takes to pack bases and structures.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "increase": 4,
-      "maxIncrease": 80
-    },
-    "drops": [
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Modules Strongbox"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Harpoon Protection Module",
-    "description": "Makes tethers attached to the walker easier to snap.",
-    "moduleInfo": {
-      "increase": 4.5,
-      "maxIncrease": 90
-    },
-    "drops": [
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Modules Strongbox"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 2,
-            "name": "Sand"
-          }
-        ],
-        "station": "Furnace_T2",
-        "time": 1080
-      }
-    ],
-    "name": "Glass",
-    "trade_price": 1.4,
-    "description": "A transparent material",
-    "stackSize": 100,
-    "weight": 0.05,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Rupu Camp - Urn"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Small Rupu Camp - Hard"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Large Rupu Camp - Medium"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Huge Cactus Fruit",
-    "trade_price": 1.6,
-    "description": "Some strange plants with psychoactive properties can be turned into mind enhancing vitamins.",
-    "stackSize": 100,
-    "weight": 1.2,
-    "drops": [
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Rupu Camp - Urn"
-      },
-      {
-        "location": "Medium Rupu Camp - Easy"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Small Rupu Camp - Hard"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Ruins"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Palm Leaves",
-    "trade_price": 0.2,
-    "stackSize": 100,
-    "weight": 0.1,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood"
-          }
-        ],
-        "station": "FuelBurning",
-        "time": 21
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood"
-          }
-        ],
-        "station": "Furnace",
-        "time": 300
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood"
-          }
-        ],
-        "station": "FuelLightSource",
-        "time": 72
-      }
-    ],
-    "name": "Charcoal",
-    "trade_price": 0.1,
-    "description": "Burns hotter in a furnace than normal wood. Produced from wood burning and found as mineral in rocks.",
-    "stackSize": 100,
-    "weight": 0.15,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Cattail",
-    "trade_price": 0.2,
-    "description": "An abundant marsh plant favoured by nomads for its medicinal properties.",
-    "stackSize": 100,
-    "weight": 0.01,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Aloe Vera",
-    "trade_price": 0.3,
-    "description": "This hardy plant grows in the hottest of conditions. Great for stomping.",
-    "stackSize": 100,
-    "weight": 0.4,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Rupu Camp - Rupu Campfire"
-      },
-      {
-        "location": "All rupus"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Beeswax",
-    "trade_price": 1.2,
-    "stackSize": 100,
-    "weight": 0.01,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Pearl",
-    "trade_price": 1.1,
-    "description": "In the dry southern valleys, the fossils of old sea creatures litter the ground, turning the hills white.",
-    "stackSize": 100,
-    "weight": 0.01,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Cotton",
-    "trade_price": 2.1,
-    "description": "Grows in open meadows.",
-    "stackSize": 100,
-    "weight": 0.01,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Redwood Wood",
-    "trade_price": 2.6,
-    "description": "A harder, more sought after wood used for specialty constructions.",
-    "stackSize": 100,
-    "weight": 0.73,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Worm Silk",
-    "trade_price": 20,
-    "description": "Worm silk exists in vastly different tensile strengths and purities, and must be graded by the Flotillan Merchant's Guild before it can be legally sold at markets. Aside from certain prohibited substances, it is one of the most desirable luxury goods.",
-    "stackSize": 100,
-    "weight": 0.01,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Large Rupu Camp - Medium"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Weightless Module",
-    "description": "Stacking this module decreases the weight of a packed base.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "increase": 10,
-      "maxIncrease": 90
-    },
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Merchant Module",
-    "description": "Stacking this module increases the storage capacity of a walker's Cargo container.",
-    "weight": 0.24,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Craftsman Module",
-    "description": "Stacking this module decreases the crafting time of stations attached to a walker.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "increase": 4.5,
-      "maxIncrease": 90
-    },
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Armoury Module",
-    "description": "Stacking this module increases the capacity of a walker's Armor and Weapons container.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "max": 10,
-      "increase": 2
-    },
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Forager Module",
-    "description": "Walker legs will automatically harvest foliage when travelling at slow speed. Stacking this module increases the amount of foliage harvested.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "max": 10,
-      "increase": 1
-    },
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Scavenger Module",
-    "description": "Walker legs will automatically pick up dropped items when travelling at slow speed. Stacking this module increases the maximum speed at which items are picked up.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "max": 50,
-      "increase": 100
-    },
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Lumberjack Module",
-    "description": "Walker legs will chop wood when they impact with trees. Stacking this module increases the amount of wood.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "max": 10,
-      "increase": 1
-    },
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Hearth Module",
-    "description": "Stacking this module decreases the water cost of respawning on walker.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "max": 10,
-      "increase": 2.5,
-      "maxIncrease": 25
-    },
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Lifeforce Module",
-    "description": "Nomads that respawn on a walker will recieve a beneficial status effect. Stacking this module increases the potency of this effect.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "max": 50,
-      "increase": 5
-    },
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Bullrush Module",
-    "description": "Stacking this module decreases the wait time before respawning on a walker.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "increase": 3,
-      "maxIncrease": 30
-    },
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Sandy Module",
-    "description": "Stacking this module increases the rate at which sand is removed from a walker's gears after travelling.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "max": 20,
-      "increase": 10
-    },
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Fortress Module",
-    "description": "Stacking this module increases the armor value of all structures attached to a walker.",
-    "weight": 0.24,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Battery Module",
-    "description": "Stacking this module increases the torque battery's maximum capacity.",
-    "weight": 0.24,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Torque Module",
-    "description": "Walker will generate torque. Stacking this module increases the amount of torque generated by a moving walker.",
-    "weight": 0.24,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Watery Module",
-    "description": "Stacking this module decreases the water cost of travelling.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "increase": 2.5,
-      "maxIncrease": 50
-    },
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Pack Mule Module",
-    "description": "Stacking this module increases the maximum weight limit of a walker.",
-    "weight": 0.24,
-    "moduleInfo": {
-      "increase": 2
-    },
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Modules Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "cost": {
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Iron Ore"
-          }
-        ],
-        "station": "Furnace_T2",
-        "time": 2100
-      }
-    ],
-    "name": "Iron Ingot",
-    "parent": "Furnace_T2",
-    "trade_price": 12,
-    "description": "Extremely strong material used in high quality productions.",
-    "stackSize": 100,
-    "weight": 0.65,
-    "drops": [
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Obsidian",
-    "trade_price": 0.8,
-    "description": "Molten rock flowed across the world's surface, and the metropolises were buried.",
-    "stackSize": 100,
-    "weight": 2.5,
-    "drops": [
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Nibiran Mineral",
-    "trade_price": 16.5,
-    "description": "This inconspicuous rock glows brightly when the Moon and Sun align. The mineral has permeated the soil, water, plant life, and possibly more.",
-    "stackSize": 100,
-    "weight": 0.28,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Insects",
-    "trade_price": 0.8,
-    "description": "Its extremely hard carapace evolved to shield it from extreme weather.",
-    "stackSize": 100,
-    "weight": 0.01,
-    "drops": [
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Mushroom Flesh",
-    "trade_price": 0.4,
-    "description": "Make a meal out of it, or a bomb.",
-    "stackSize": 100,
-    "weight": 0.01,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood"
-          }
-        ],
-        "station": "FuelBurning",
-        "time": 13
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Fiber"
-          }
-        ],
-        "station": "FuelBurning",
-        "time": 1
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wooden Slab"
-          }
-        ],
-        "output": 9,
-        "station": "FuelBurning",
-        "time": 90
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood"
-          }
-        ],
-        "station": "FuelLightSource",
-        "time": 72
-      },
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Fiber"
-          }
-        ],
-        "station": "FuelLightSource",
-        "time": 12
-      }
-    ],
-    "name": "Ash",
-    "trade_price": 0.1,
-    "description": "A product of burning wood.",
-    "stackSize": 100,
-    "weight": 0.01,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Red Banana",
-    "trade_price": 0.1,
-    "description": "Looks delicious, tastes HORRIBLE.",
-    "stackSize": 100,
-    "weight": 0.18,
-    "drops": [
-      {
-        "location": "Rupu Drudge"
-      },
-      {
-        "location": "Rupu Forerunner"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Sulfur",
-    "trade_price": 1.4,
-    "description": "A yellow mineral that typically forms in sulfur lakes.",
-    "stackSize": 100,
-    "weight": 0.03,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Ruin of the wreck"
-      },
-      {
-        "location": "All rupus"
-      },
-      {
-        "location": "Rupu Raider"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Pyramid"
-      },
-      {
-        "location": "Rupu Drudge"
-      },
-      {
-        "location": "Rupu Forerunner"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Bone Splinter",
-    "trade_price": 1,
-    "description": "Flexible bones make excellent tools and armor.",
-    "stackSize": 100,
-    "weight": 0.28,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "All rupus"
-      },
-      {
-        "location": "Rupu Raider Nurr"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Pyramid"
-      },
-      {
-        "location": "Rupu Forerunner"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Cattail"
-          }
-        ],
-        "station": "Fiberworking Station",
-        "time": 24
-      },
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Fiber"
-          },
-          {
-            "count": 2,
-            "name": "Rupu Vine"
-          }
-        ],
-        "station": "Fiberworking Station",
-        "time": 38
-      },
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "Cattail"
-          }
-        ],
-        "station": "Advanced Fiberworking Station",
-        "time": 18
-      },
-      {
-        "ingredients": [
-          {
-            "count": 40,
-            "name": "Fiber"
-          },
-          {
-            "count": 2,
-            "name": "Rupu Vine"
-          }
-        ],
-        "station": "Advanced Fiberworking Station",
-        "time": 26
-      }
-    ],
-    "name": "Rope",
-    "parent": "Fiberworking Station",
-    "trade_price": 0.5,
-    "description": "A strong cord used for crafting and construction",
-    "stackSize": 100,
-    "weight": 0.25,
-    "drops": [
-      {
-        "location": "Yellow Rupu"
-      },
-      {
-        "location": "White Death"
-      },
-      {
-        "location": "Fortified Camp"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Ruin with Small Hanging Bag"
-      },
-      {
-        "location": "Ruin of the wreck"
-      },
-      {
-        "location": "Rupu Forager"
-      },
-      {
-        "location": "All rupus"
-      },
-      {
-        "location": "Rupu Skirmisher"
-      },
-      {
-        "location": "Rupu Urn"
-      },
-      {
-        "location": "Rupu Hermit"
-      },
-      {
-        "location": "Plainst rider"
-      },
-      {
-        "location": "Rupu Firebrand"
-      },
-      {
-        "location": "Rupu Hazraki"
-      },
-      {
-        "location": "Rupu Shaman"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Rupu Vine",
-    "trade_price": 0.5,
-    "description": "These vines grow exclusively in rupu excrement, which the rupu use as a binding agent in the construction of their mud huts.",
-    "stackSize": 100,
-    "weight": 0.01,
-    "drops": [
-      {
-        "location": "Yellow Rupu"
-      },
-      {
-        "location": "White Death"
-      },
-      {
-        "location": "Fortified Camp"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Ruin with Small Hanging Bag"
-      },
-      {
-        "location": "Rupu Forager"
-      },
-      {
-        "location": "Rupu Urn"
-      },
-      {
-        "location": "Rupu Hermit"
-      },
-      {
-        "location": "Plainst rider"
-      },
-      {
-        "location": "Rupu Drudge"
-      },
-      {
-        "location": "Rupu Firebrand"
-      },
-      {
-        "location": "Rupu Forerunner"
-      },
-      {
-        "location": "Rupu Hazraki"
-      },
-      {
-        "location": "Rupu Shaman"
-      }
-    ]
-  },
-  {
-    "category": "Resources",
-    "name": "Rupu Pelt",
-    "trade_price": 0.2,
-    "description": "Garments made from this oily fur are favoured for voyages into the Ice Lands.",
-    "stackSize": 100,
-    "weight": 0.55,
-    "drops": [
-      {
-        "location": "Yellow Rupu"
-      },
-      {
-        "location": "White Death"
-      },
-      {
-        "location": "Rupu Forager"
-      },
-      {
-        "location": "Rupu Scavenger"
-      },
-      {
-        "location": "All rupus"
-      },
-      {
-        "location": "Rupu Raider"
-      },
-      {
-        "location": "Rupu Skirmisher"
-      },
-      {
-        "location": "Rupu Thug"
-      },
-      {
-        "location": "Rupu Drudge"
-      },
-      {
-        "location": "Rupu Firebrand"
-      },
-      {
-        "location": "Rupu Forerunner"
-      },
-      {
-        "location": "Rupu Harasser"
-      },
-      {
-        "location": "Rupu Hazraki"
-      },
-      {
-        "location": "Rupu Sentinel"
-      },
-      {
-        "location": "Rupu Shaman"
-      }
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Torque Battery Schematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Ruin Camp"
-      }
-    ],
-    "learn": [
-      "Torque Battery"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Purification Station Schematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Rupu Camp - Walker Totem"
-      }
-    ],
-    "learn": [
-      "Purification Station"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Scroll Rack Schematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Canyon Map - Village Camp"
-      },
-      {
-        "location": "Canyon Islands Map - Shelter Urn"
-      },
-      {
-        "location": "Rupu Camp - Chest"
-      }
-    ],
-    "learn": [
-      "Scroll Rack"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Soil Excavator Schematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Canyon Map - Village Camp"
-      },
-      {
-        "location": "Rupu Camp - Chest"
-      }
-    ],
-    "learn": [
-      "Soil Excavator"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Small Water Bag Schematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Canyon Map - Village Camp"
-      },
-      {
-        "location": "Canyon Islands Map - Shelter Urn"
-      }
-    ],
-    "learn": [
-      "Small Water Bag"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Long Bonespike Swordstaff Schematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Ruin Camp"
-      },
-      {
-        "location": "Rupu Camp - Walker Wreck"
-      },
-      {
-        "location": "Rupu Camp - Chest"
-      },
-      {
-        "location": "Nurr Raider"
-      },
-      {
-        "location": "Nurr Raider Camp"
-      },
-      {
-        "location": "Papak"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      }
-    ],
-    "learn": [
-      "Long Bonespike Swordstaff"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Gas Mask Schematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Canyon Map - Village Camp"
-      },
-      {
-        "location": "Nurr Raider"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Canyon Map - Camp Chest"
-      }
-    ],
-    "learn": [
-      "Gas Mask"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Bone Bottle Schematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Nurr Lair"
-      },
-      {
-        "location": "Rupu Camp - Urn"
-      }
-    ],
-    "learn": [
-      "Bone Bottle"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Medium Chest Schematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Canyon Map - Village Camp"
-      },
-      {
-        "location": "Nurr Raider"
-      },
-      {
-        "location": "Nurr Raider Camp"
-      },
-      {
-        "location": "Ruin with Burnable Chest"
-      },
-      {
-        "location": "Ruin with Dragable Chest"
-      },
-      {
-        "location": "Canyon Map - Camp Chest"
-      },
-      {
-        "location": "White Death"
-      }
-    ],
-    "learn": [
-      "Medium Chest"
-    ]
-  },
-  {
-    "category": "Weapons",
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 3,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 4,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 1,
-            "name": "Rope"
-          }
-        ]
-      }
-    ],
-    "name": "Repeater",
-    "parent": "Ballista",
-    "description": "Unload a rapid volley of darts that are deadly against lightly armored targets. Weak against walkers and structures.",
-    "drops": [
-      {
-        "location": "Rupu Camp - Chest"
-      }
-    ],
-    "structureInfo": {
-      "type": "Medium",
-      "hp": 900
-    }
-  },
-  {
-    "name": "Animals Tablet",
-    "description": "Carved images of animals can be felt on this tablet.",
-    "drops": [
-      {
-        "location": "Tablets Strongbox"
-      }
-    ]
-  },
-  {
-    "name": "Celestial Tablet",
-    "description": "Carved images of celestial bodies can be felt on this tablet.",
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Tablets Strongbox"
-      }
-    ]
-  },
-  {
-    "name": "Elements Tablet",
-    "description": "Carved images of earthly elements can be felt on this tablet.",
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Tablets Strongbox"
-      }
-    ]
-  },
-  {
-    "category": "Ammo",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 2,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 3,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 1,
-            "name": "Fiber Weave"
-          }
-        ],
-        "output": 3,
-        "station": "Woodworking Station",
-        "time": 5
-      }
-    ],
-    "name": "Bone Bolt",
-    "parent": "FlintHarpoon",
-    "trade_price": 5,
-    "description": "Ammo for Ballista. Bone tips are notorious for splintering and ricocheting inside the body.",
-    "projectileDamage": {
-      "damage": 150,
-      "vsMedium": 25,
-      "vsHard": 10,
-      "vsReinforced": 25,
-      "vsSolid": 10
-    },
-    "stackSize": 20,
-    "weight": 0.3,
-    "toolInfo": [
-      {
-        "toolType": "BallistaHarpoon",
-        "tier": 2
-      }
-    ],
-    "drops": [
-      {
-        "location": "Ruin of the wreck"
-      }
-    ],
-    "damageType": "PiercingDamage"
-  },
-  {
-    "category": "Equipment",
-    "name": "CheatBackpack",
-    "weight": 1
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Firework 1",
-    "trade_price": 3,
-    "description": "Shoots a firework with a circular, colorful explosion.",
-    "stackSize": 100,
-    "weight": 0.15
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Firework 2",
-    "trade_price": 3,
-    "stackSize": 100,
-    "weight": 0.15
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Firework 3",
-    "trade_price": 3,
-    "description": "Shoots a firework with a cylindrical, colorful explosion.",
-    "stackSize": 100,
-    "weight": 0.15
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Firework 4",
-    "trade_price": 3,
-    "description": "Shoots a firework with a colorful, double-sphere-like explosion.",
-    "stackSize": 100,
-    "weight": 0.15
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Firework 5",
-    "trade_price": 3,
-    "description": "Shoots a firework with a colorful, radial explosion.",
-    "stackSize": 100,
-    "weight": 0.15
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Firework 6",
-    "trade_price": 3,
-    "description": "Shoots a firework with colorful, killin-shaped explosion.",
-    "stackSize": 100,
-    "weight": 0.15
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Firework 7",
-    "trade_price": 3,
-    "description": "Shoots a firework with a colorful, sparkling explosion.",
-    "stackSize": 100,
-    "weight": 0.15
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Flare - white",
-    "trade_price": 3,
-    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
-    "stackSize": 100,
-    "weight": 0.15
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Flare - red",
-    "trade_price": 3,
-    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
-    "stackSize": 100,
-    "weight": 0.15
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Flare - green",
-    "trade_price": 3,
-    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
-    "stackSize": 100,
-    "weight": 0.15
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Flare - blue",
-    "trade_price": 3,
-    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
-    "stackSize": 100,
-    "weight": 0.15
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Flare - orange",
-    "trade_price": 15.6,
-    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
-    "stackSize": 100,
-    "weight": 0.15
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Flare - purple",
-    "trade_price": 3,
-    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
-    "stackSize": 100,
-    "weight": 0.15
-  },
-  {
-    "category": "Interactables",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Charcoal"
-          },
-          {
-            "count": 5,
-            "name": "Cattail"
-          }
-        ]
-      }
-    ],
-    "name": "Flare - teal",
-    "trade_price": 3,
-    "description": "Fires an illuminating projectile high in the air that is visible from a long distance. The primary function is position signaling.",
-    "stackSize": 100,
-    "weight": 0.15
-  },
-  {
-    "category": "Weapons",
-    "name": "Throwstone",
-    "trade_price": 1.6,
-    "description": "Either a fantastically aerodynamic stone, its form perfected for best throwing experience... Or just a sharp chip of rock that you can throw at someone in a pinch.",
-    "projectileDamage": {
-      "damage": 30
-    },
-    "stackSize": 10,
-    "weight": 0.3,
-    "toolInfo": [
-      {
-        "toolType": "Scattershot",
-        "tier": 1
-      }
-    ],
-    "damageType": "ProjectileBluntDamage",
-    "cost": {
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Stone"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 4
-      }
-    ],
-    "parent": "Equipment",
-    "weaponInfo": {
-      "damage": 30,
-      "penetration": 5
-    }
-  },
-  {
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
-    "name": "Clay Structures",
-    "parent": "Stone Structures"
-  },
-  {
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
-    "name": "Cement Structures",
-    "parent": "Clay Structures"
-  },
-  {
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
-    "name": "Heavy Wood Structures",
-    "parent": "Medium Wood Structures"
-  },
-  {
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "name": "Light Wood Structures",
-    "parent": "Base Maintenance Chest"
-  },
-  {
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
-    "name": "Medium Wood Structures",
-    "parent": "Light Wood Structures"
-  },
-  {
-    "category": "Armors",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 2,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 2,
-            "name": "Rope"
-          }
-        ]
-      }
-    ],
-    "name": "Feather Boots",
-    "parent": "Fast Grappling Hook",
-    "trade_price": 34,
-    "description": "Thick feather-padded soles mitigate fall damage.",
-    "stackSize": 100,
-    "weight": 0.4,
-    "armorInfo": {
-      "absorbing": 4,
-      "reduction": 1
-    }
-  },
-  {
-    "category": "Armors",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 6,
-            "name": "Charcoal"
-          },
-          {
-            "count": 4,
-            "name": "Hide"
-          },
-          {
-            "count": 8,
-            "name": "Aloe Gel"
-          }
-        ]
-      }
-    ],
-    "name": "Gas Mask",
-    "parent": "Primitive Bandage",
-    "trade_price": 13.2,
-    "description": "Protects the wearer against gases if worn correctly, but needs to be replaced regularly. Surprisingly easy to breath through.",
-    "stackSize": 100,
-    "weight": 0.4,
-    "armorInfo": {
-      "absorbing": 5,
-      "reduction": 1
-    }
-  },
-  {
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Balaclava",
-    "trade_price": 13.2,
-    "description": "Perfect for all the wrongdoers and outlaws. Fully conceals one's identity but also makes him or her clearly an individual to avoid.",
-    "stackSize": 100,
-    "weight": 0.2,
-    "armorInfo": {
-      "absorbing": 6,
-      "reduction": 1
-    }
-  },
-  {
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Ruffian mask",
-    "trade_price": 13.2,
-    "description": "Makes recognition of another flotilla citizen harder so various miscreants use it to unconfinedly perform their mischievous deeds.",
-    "stackSize": 100,
-    "weight": 0.2,
-    "armorInfo": {
-      "absorbing": 6,
-      "reduction": 1
-    }
-  },
-  {
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Sunset headdress",
-    "trade_price": 13.2,
-    "description": "Fiberwork crown used in the most illustrious Flotilla social ceremonials.",
-    "stackSize": 100,
-    "weight": 0.2,
-    "armorInfo": {
-      "absorbing": 6,
-      "reduction": 1
-    }
-  },
-  {
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Bucket helmet",
-    "trade_price": 13.2,
-    "description": "Carefully install this contraption on your braincase and display a wide assortment of still emotions.",
-    "stackSize": 100,
-    "weight": 0.2,
-    "armorInfo": {
-      "absorbing": 6,
-      "reduction": 1
-    }
-  },
-  {
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Squared eyepatches",
-    "trade_price": 13.2,
-    "description": "Odd-looking eyepatches partially disguising wearer's identity.",
-    "stackSize": 100,
-    "weight": 0.2,
-    "armorInfo": {
-      "absorbing": 6,
-      "reduction": 1
-    }
-  },
-  {
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Ornate veil cap",
-    "trade_price": 13.2,
-    "description": "Decorated leatherwork cap covering wearer's eyes.",
-    "stackSize": 100,
-    "weight": 0.2,
-    "armorInfo": {
-      "absorbing": 6,
-      "reduction": 1
-    }
-  },
-  {
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Mask and eyepatch",
-    "trade_price": 13.2,
-    "description": "Mostly used to ease up breathing during sandstorms. The eyepatch is purely for the show-off, however some nomads claim they're using it in a more purposeful manner.",
-    "stackSize": 100,
-    "weight": 0.2,
-    "armorInfo": {
-      "absorbing": 6,
-      "reduction": 1
-    }
-  },
-  {
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Feather mask",
-    "trade_price": 13.2,
-    "description": "Once part of Rupu accountrement, now adopted by upper-caste citizens in shamanic rituals.",
-    "stackSize": 100,
-    "weight": 0.2,
-    "armorInfo": {
-      "absorbing": 6,
-      "reduction": 1
-    }
-  },
-  {
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Tied keffiyeh scarf",
-    "trade_price": 13.2,
-    "description": "Used by nomads as protection from the burning sun and the all-present sand.",
-    "stackSize": 100,
-    "weight": 0.2,
-    "armorInfo": {
-      "absorbing": 6,
-      "reduction": 1
-    }
-  },
-  {
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Wrapped keffiyeh scarf",
-    "trade_price": 13.2,
-    "description": "Used by nomads as protection from the burning sun and the all-present sand.",
-    "stackSize": 100,
-    "weight": 0.2,
-    "armorInfo": {
-      "absorbing": 6,
-      "reduction": 1
-    }
-  },
-  {
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Rupu mask",
-    "trade_price": 13.2,
-    "description": "Intimidating and ostentatious - exactly what every nomad thirsts for.",
-    "stackSize": 100,
-    "weight": 0.2,
-    "armorInfo": {
-      "absorbing": 6,
-      "reduction": 1
-    }
-  },
-  {
-    "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Festive Turban",
-    "trade_price": 13.2,
-    "description": "Embroidered turban typically worn by flotilla's elder community during various festivities and celebrations.",
-    "stackSize": 100,
-    "weight": 0.2,
-    "armorInfo": {
-      "absorbing": 6,
-      "reduction": 1
-    }
-  },
-  {
-    "category": "Armors",
-    "name": "Rupu Desolator Armor",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Armors",
-    "name": "Rupu Drudge Armor",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Armors",
-    "name": "Rupu Firebrand Armor",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Armors",
-    "name": "Rupu Forager Armor",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Armors",
-    "name": "Rupu Forerunner Armor",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Armors",
-    "name": "Rupu Harasser Armor",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Armors",
-    "name": "Rupu Hazraki Armor",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Armors",
-    "name": "Rupu Plainstrider Armor",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Armors",
-    "name": "Rupu Sentinel Armor",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Armors",
-    "name": "Rupu Shaman Armor",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Armors",
-    "name": "Rupu Skirmisher Armor",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Armors",
-    "name": "Rupu Thug Armor",
-    "stackSize": 100,
-    "weight": 1
-  },
-  {
-    "category": "Armors",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 4,
-            "name": "Rope"
-          },
-          {
-            "count": 9,
-            "name": "Rupu Pelt"
-          },
-          {
-            "count": 4,
-            "name": "Hide"
-          }
-        ],
-        "station": "Fiberworking Station",
-        "time": 25
-      }
-    ],
-    "name": "Cloaked Rupu Fur Armor",
-    "parent": "Rupu Fur Armor",
-    "trade_price": 6.6,
-    "description": "A little added protection, with a little more smell. Still very light and maneuverable.",
-    "stackSize": 100,
-    "weight": 3,
-    "armorInfo": {
-      "absorbing": 32,
-      "reduction": 2,
-      "speedReduction": 2
-    }
   },
   {
     "category": "Cement Structures",
@@ -8802,6 +6642,230 @@
       },
       {
         "location": "Ruin with Dragable Chest"
+      }
+    ]
+  },
+  {
+    "category": "Equipment",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 4,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 12,
+            "name": "Hide"
+          }
+        ]
+      }
+    ],
+    "name": "Light Backpack",
+    "parent": "Foraging Pouch",
+    "trade_price": 5.6,
+    "description": "A little extra inventory space to carry the bare necessities.",
+    "stackSize": 100,
+    "weight": 2.8,
+    "drops": [
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
+        "location": "Large Rupu Camp - Medium"
+      }
+    ]
+  },
+  {
+    "category": "Equipment",
+    "cost": {
+      "count": 5,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Foraging Pouch",
+    "parent": "Makeshift Bottle",
+    "trade_price": 5.6,
+    "description": "Designed to store a lot of fiber and organic materials, including sediments, like sand.",
+    "stackSize": 100,
+    "weight": 0.2,
+    "drops": [
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
+        "location": "Large Rupu Camp - Medium"
+      }
+    ]
+  },
+  {
+    "category": "Equipment",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Huge Cactus Fruit"
+          },
+          {
+            "count": 20,
+            "name": "Fiber"
+          },
+          {
+            "count": 2,
+            "name": "Hide"
+          }
+        ]
+      }
+    ],
+    "name": "Improvised Bottle",
+    "parent": "Makeshift Bottle",
+    "trade_price": 6.2,
+    "description": "While it doesn't hold much liquid, it's simple to make and can be crafted using almost any material.",
+    "stackSize": 100,
+    "weight": 0.5,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "All rupus"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Equipment",
+    "cost": {
+      "count": 25,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 5,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 32,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Bone Bottle",
+    "parent": "Makeshift Bottle",
+    "trade_price": 11.9,
+    "description": "A bottle with an aftertaste.",
+    "stackSize": 100,
+    "weight": 1.7,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Equipment Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Equipment",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 4,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 32,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Ceramic Flask",
+    "parent": "Bone Bottle",
+    "trade_price": 71.6,
+    "description": "Ceramic items are difficult to make and usually seen as a mark of quality craftsmanship.",
+    "stackSize": 100,
+    "weight": 2,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Equipment Strongbox"
+      },
+      {
+        "location": "Pyramid"
       }
     ]
   },
@@ -11384,6 +9448,64 @@
     }
   },
   {
+    "category": "Interactables",
+    "cost": {
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Fiber"
+          },
+          {
+            "count": 7,
+            "name": "Ash"
+          }
+        ]
+      }
+    ],
+    "name": "Primitive Bandage",
+    "parent": "Equipment",
+    "trade_price": 1.2,
+    "description": "Restores a small amount of HP over a period of time. Not usable while in combat.",
+    "stackSize": 100,
+    "weight": 0.03,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Medium Rupu Camp - Easy"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
     "category": "Knowledge",
     "crafting": [
       {
@@ -11700,6 +9822,60 @@
     ]
   },
   {
+    "category": "Liquids",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Terrain: Sand"
+          }
+        ],
+        "output": 100,
+        "station": "Soil Excavator",
+        "time": 29
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Stone"
+          }
+        ],
+        "output": 10,
+        "station": "Stomping Station",
+        "time": 5
+      }
+    ],
+    "name": "Sand",
+    "description": "Tiny green mineral flecks dot the sand.",
+    "stackSize": 100,
+    "weight": 0.22,
+    "drops": [
+      {
+        "location": "Rupu Scavenger"
+      },
+      {
+        "location": "All rupus"
+      },
+      {
+        "location": "Rupu Skirmisher"
+      },
+      {
+        "location": "Rupu Thug"
+      },
+      {
+        "location": "Rupu Drudge"
+      },
+      {
+        "location": "Rupu Harasser"
+      },
+      {
+        "location": "Rupu Sentinel"
+      }
+    ]
+  },
+  {
     "category": "Medium Wood Structures",
     "crafting": [
       {
@@ -11951,6 +10127,9 @@
       },
       {
         "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Village Camp with big rock - Urn"
       },
       {
         "location": "Rupu Camp - Urn"
@@ -12543,6 +10722,1855 @@
   },
   {
     "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Sand"
+          }
+        ],
+        "station": "Furnace_T2",
+        "time": 1080
+      }
+    ],
+    "name": "Glass",
+    "trade_price": 1.4,
+    "description": "A transparent material",
+    "stackSize": 100,
+    "weight": 0.05,
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Village Camp with big rock - Urn"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Large Rupu Camp - Medium"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Huge Cactus Fruit",
+    "trade_price": 1.6,
+    "description": "Some strange plants with psychoactive properties can be turned into mind enhancing vitamins.",
+    "stackSize": 100,
+    "weight": 1.2,
+    "drops": [
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Village Camp with big rock - Urn"
+      },
+      {
+        "location": "Rupu Camp - Urn"
+      },
+      {
+        "location": "Medium Rupu Camp - Easy"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Small Rupu Camp - Hard"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Ruins"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Palm Leaves",
+    "trade_price": 0.2,
+    "stackSize": 100,
+    "weight": 0.1,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood"
+          }
+        ],
+        "station": "FuelBurning",
+        "time": 21
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood"
+          }
+        ],
+        "station": "Furnace",
+        "time": 300
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood"
+          }
+        ],
+        "station": "FuelLightSource",
+        "time": 72
+      }
+    ],
+    "name": "Charcoal",
+    "trade_price": 0.1,
+    "description": "Burns hotter in a furnace than normal wood. Produced from wood burning and found as mineral in rocks.",
+    "stackSize": 100,
+    "weight": 0.15,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Cattail",
+    "trade_price": 0.2,
+    "description": "An abundant marsh plant favoured by nomads for its medicinal properties.",
+    "stackSize": 100,
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Aloe Vera",
+    "trade_price": 0.3,
+    "description": "This hardy plant grows in the hottest of conditions. Great for stomping.",
+    "stackSize": 100,
+    "weight": 0.4,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Rupu Camp - Rupu Campfire"
+      },
+      {
+        "location": "All rupus"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Beeswax",
+    "trade_price": 1.2,
+    "stackSize": 100,
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Pearl",
+    "trade_price": 1.1,
+    "description": "In the dry southern valleys, the fossils of old sea creatures litter the ground, turning the hills white.",
+    "stackSize": 100,
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Cotton",
+    "trade_price": 2.1,
+    "description": "Grows in open meadows.",
+    "stackSize": 100,
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Redwood Wood",
+    "trade_price": 2.6,
+    "description": "A harder, more sought after wood used for specialty constructions.",
+    "stackSize": 100,
+    "weight": 0.73,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Worm Silk",
+    "trade_price": 20,
+    "description": "Worm silk exists in vastly different tensile strengths and purities, and must be graded by the Flotillan Merchant's Guild before it can be legally sold at markets. Aside from certain prohibited substances, it is one of the most desirable luxury goods.",
+    "stackSize": 100,
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Large Rupu Camp - Medium"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Weightless Module",
+    "description": "Stacking this module decreases the weight of a packed base.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 10,
+      "maxIncrease": 90
+    },
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Merchant Module",
+    "description": "Stacking this module increases the storage capacity of a walker's Cargo container.",
+    "weight": 0.24,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Craftsman Module",
+    "description": "Stacking this module decreases the crafting time of stations attached to a walker.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 4.5,
+      "maxIncrease": 90
+    },
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Armoury Module",
+    "description": "Stacking this module increases the capacity of a walker's Armor and Weapons container.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 10,
+      "increase": 2
+    },
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Forager Module",
+    "description": "Walker legs will automatically harvest foliage when travelling at slow speed. Stacking this module increases the amount of foliage harvested.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 10,
+      "increase": 1
+    },
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Scavenger Module",
+    "description": "Walker legs will automatically pick up dropped items when travelling at slow speed. Stacking this module increases the maximum speed at which items are picked up.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 50,
+      "increase": 100
+    },
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Lumberjack Module",
+    "description": "Walker legs will chop wood when they impact with trees. Stacking this module increases the amount of wood.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 10,
+      "increase": 1
+    },
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Hearth Module",
+    "description": "Stacking this module decreases the water cost of respawning on walker.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 10,
+      "increase": 2.5,
+      "maxIncrease": 25
+    },
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Lifeforce Module",
+    "description": "Nomads that respawn on a walker will recieve a beneficial status effect. Stacking this module increases the potency of this effect.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 50,
+      "increase": 5
+    },
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Bullrush Module",
+    "description": "Stacking this module decreases the wait time before respawning on a walker.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 3,
+      "maxIncrease": 30
+    },
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Sandy Module",
+    "description": "Stacking this module increases the rate at which sand is removed from a walker's gears after travelling.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 20,
+      "increase": 10
+    },
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Fortress Module",
+    "description": "Stacking this module increases the armor value of all structures attached to a walker.",
+    "weight": 0.24,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Battery Module",
+    "description": "Stacking this module increases the torque battery's maximum capacity.",
+    "weight": 0.24,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Torque Module",
+    "description": "Walker will generate torque. Stacking this module increases the amount of torque generated by a moving walker.",
+    "weight": 0.24,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Watery Module",
+    "description": "Stacking this module decreases the water cost of travelling.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 2.5,
+      "maxIncrease": 50
+    },
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Pack Mule Module",
+    "description": "Stacking this module increases the maximum weight limit of a walker.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "increase": 2
+    },
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Desert Clam"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Urn"
+      },
+      {
+        "location": "Bag"
+      },
+      {
+        "location": "Old Crate"
+      },
+      {
+        "location": "Package"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Modules Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "cost": {
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Iron Ore"
+          }
+        ],
+        "station": "Furnace_T2",
+        "time": 2100
+      }
+    ],
+    "name": "Iron Ingot",
+    "parent": "Furnace_T2",
+    "trade_price": 12,
+    "description": "Extremely strong material used in high quality productions.",
+    "stackSize": 100,
+    "weight": 0.65,
+    "drops": [
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Obsidian",
+    "trade_price": 0.8,
+    "description": "Molten rock flowed across the world's surface, and the metropolises were buried.",
+    "stackSize": 100,
+    "weight": 2.5,
+    "drops": [
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Nibiran Mineral",
+    "trade_price": 16.5,
+    "description": "This inconspicuous rock glows brightly when the Moon and Sun align. The mineral has permeated the soil, water, plant life, and possibly more.",
+    "stackSize": 100,
+    "weight": 0.28,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Insects",
+    "trade_price": 0.8,
+    "description": "Its extremely hard carapace evolved to shield it from extreme weather.",
+    "stackSize": 100,
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Mushroom Flesh",
+    "trade_price": 0.4,
+    "description": "Make a meal out of it, or a bomb.",
+    "stackSize": 100,
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood"
+          }
+        ],
+        "station": "FuelBurning",
+        "time": 13
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Fiber"
+          }
+        ],
+        "station": "FuelBurning",
+        "time": 1
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wooden Slab"
+          }
+        ],
+        "output": 9,
+        "station": "FuelBurning",
+        "time": 90
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood"
+          }
+        ],
+        "station": "FuelLightSource",
+        "time": 72
+      },
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Fiber"
+          }
+        ],
+        "station": "FuelLightSource",
+        "time": 12
+      }
+    ],
+    "name": "Ash",
+    "trade_price": 0.1,
+    "description": "A product of burning wood.",
+    "stackSize": 100,
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Red Banana",
+    "trade_price": 0.1,
+    "description": "Looks delicious, tastes HORRIBLE.",
+    "stackSize": 100,
+    "weight": 0.18,
+    "drops": [
+      {
+        "location": "Rupu Drudge"
+      },
+      {
+        "location": "Rupu Forerunner"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Sulfur",
+    "trade_price": 1.4,
+    "description": "A yellow mineral that typically forms in sulfur lakes.",
+    "stackSize": 100,
+    "weight": 0.03,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Ruin with Dragable Chest"
+      },
+      {
+        "location": "Ruin of the wreck"
+      },
+      {
+        "location": "All rupus"
+      },
+      {
+        "location": "Rupu Raider"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Pyramid"
+      },
+      {
+        "location": "Rupu Drudge"
+      },
+      {
+        "location": "Rupu Forerunner"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Bone Splinter",
+    "trade_price": 1,
+    "description": "Flexible bones make excellent tools and armor.",
+    "stackSize": 100,
+    "weight": 0.28,
+    "drops": [
+      {
+        "location": "Abandoned Trading Station"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Large Rupu Camp - Hard"
+      },
+      {
+        "location": "All rupus"
+      },
+      {
+        "location": "Rupu Raider Nurr"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Pyramid"
+      },
+      {
+        "location": "Rupu Forerunner"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "cost": {
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Cattail"
+          }
+        ],
+        "station": "Fiberworking Station",
+        "time": 24
+      },
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Fiber"
+          },
+          {
+            "count": 2,
+            "name": "Rupu Vine"
+          }
+        ],
+        "station": "Fiberworking Station",
+        "time": 38
+      },
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Cattail"
+          }
+        ],
+        "station": "Advanced Fiberworking Station",
+        "time": 18
+      },
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Fiber"
+          },
+          {
+            "count": 2,
+            "name": "Rupu Vine"
+          }
+        ],
+        "station": "Advanced Fiberworking Station",
+        "time": 26
+      }
+    ],
+    "name": "Rope",
+    "parent": "Fiberworking Station",
+    "trade_price": 0.5,
+    "description": "A strong cord used for crafting and construction",
+    "stackSize": 100,
+    "weight": 0.25,
+    "drops": [
+      {
+        "location": "Yellow Rupu"
+      },
+      {
+        "location": "White Death"
+      },
+      {
+        "location": "Cradle - Fortified Camp"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Ruin with Small Hanging Bag"
+      },
+      {
+        "location": "Ruin of the wreck"
+      },
+      {
+        "location": "Rupu Forager"
+      },
+      {
+        "location": "All rupus"
+      },
+      {
+        "location": "Rupu Skirmisher"
+      },
+      {
+        "location": "Rupu Urn"
+      },
+      {
+        "location": "Rupu Hermit"
+      },
+      {
+        "location": "Plainst rider"
+      },
+      {
+        "location": "Rupu Firebrand"
+      },
+      {
+        "location": "Rupu Hazraki"
+      },
+      {
+        "location": "Rupu Shaman"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Rupu Vine",
+    "trade_price": 0.5,
+    "description": "These vines grow exclusively in rupu excrement, which the rupu use as a binding agent in the construction of their mud huts.",
+    "stackSize": 100,
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "Yellow Rupu"
+      },
+      {
+        "location": "White Death"
+      },
+      {
+        "location": "Cradle - Fortified Camp"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Ruin with Small Hanging Bag"
+      },
+      {
+        "location": "Rupu Forager"
+      },
+      {
+        "location": "Rupu Urn"
+      },
+      {
+        "location": "Rupu Hermit"
+      },
+      {
+        "location": "Plainst rider"
+      },
+      {
+        "location": "Rupu Drudge"
+      },
+      {
+        "location": "Rupu Firebrand"
+      },
+      {
+        "location": "Rupu Forerunner"
+      },
+      {
+        "location": "Rupu Hazraki"
+      },
+      {
+        "location": "Rupu Shaman"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Rupu Pelt",
+    "trade_price": 0.2,
+    "description": "Garments made from this oily fur are favoured for voyages into the Ice Lands.",
+    "stackSize": 100,
+    "weight": 0.55,
+    "drops": [
+      {
+        "location": "Yellow Rupu"
+      },
+      {
+        "location": "White Death"
+      },
+      {
+        "location": "Rupu Forager"
+      },
+      {
+        "location": "Rupu Scavenger"
+      },
+      {
+        "location": "All rupus"
+      },
+      {
+        "location": "Rupu Raider"
+      },
+      {
+        "location": "Rupu Skirmisher"
+      },
+      {
+        "location": "Rupu Thug"
+      },
+      {
+        "location": "Rupu Drudge"
+      },
+      {
+        "location": "Rupu Firebrand"
+      },
+      {
+        "location": "Rupu Forerunner"
+      },
+      {
+        "location": "Rupu Harasser"
+      },
+      {
+        "location": "Rupu Hazraki"
+      },
+      {
+        "location": "Rupu Sentinel"
+      },
+      {
+        "location": "Rupu Shaman"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
     "name": "Cactus Flesh",
     "trade_price": 0.2,
     "description": "Significantly reduces stamina regenarion if eaten raw, but drinking clean water inreaes it again.The last resort for nomads dying of thirst.",
@@ -12768,6 +12796,9 @@
         "location": "Volcanic Map - Ruins"
       },
       {
+        "location": "Village Camp with big rock - Urn"
+      },
+      {
         "location": "Rupu Camp - Urn"
       },
       {
@@ -12904,6 +12935,9 @@
       },
       {
         "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Village Camp with big rock - Urn"
       },
       {
         "location": "Rupu Camp - Urn"
@@ -13116,6 +13150,9 @@
       },
       {
         "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Village Camp with big rock - Urn"
       },
       {
         "location": "Rupu Camp - Urn"
@@ -16867,17 +16904,6 @@
   },
   {
     "category": "Schematics",
-    "name": "Hangar Wall Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Hangar Wall",
-      "Hangar Gate",
-      "Hangar Roof",
-      "Hangar Wall with Door"
-    ]
-  },
-  {
-    "category": "Schematics",
     "name": "Sturdy Grappling Hook Schematic",
     "stackSize": 100,
     "learn": [
@@ -17535,7 +17561,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Fortified Camp"
+        "location": "Cradle - Fortified Camp"
       }
     ],
     "learn": [
@@ -17548,7 +17574,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Fortified Camp"
+        "location": "Cradle - Fortified Camp"
       }
     ],
     "learn": [
@@ -17579,28 +17605,6 @@
     ],
     "learn": [
       "ChestAmmo"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Automaton Schematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Rupu Camp - Chest"
-      },
-      {
-        "location": "Canyon Islands Map - Shelter Urn"
-      },
-      {
-        "location": "Fortified Camp"
-      },
-      {
-        "location": "Ruin with Small Hanging Bag"
-      }
-    ],
-    "learn": [
-      "Automaton"
     ]
   },
   {
@@ -17814,10 +17818,25 @@
     "stackSize": 100,
     "drops": [
       {
+        "location": "Rupu Camp - Chest"
+      },
+      {
+        "location": "Canyon Islands Map - Shelter Urn"
+      },
+      {
+        "location": "Canyon Map - Camp Chest"
+      },
+      {
+        "location": "Cradle - Fortified Camp"
+      },
+      {
         "location": "Nurr Lair"
       },
       {
         "location": "Phemke"
+      },
+      {
+        "location": "Ruin with Small Hanging Bag"
       },
       {
         "location": "All rupus"
@@ -17838,6 +17857,18 @@
     "name": "Repeater Schematic",
     "stackSize": 100,
     "drops": [
+      {
+        "location": "Rupu Camp - Chest"
+      },
+      {
+        "location": "Nurr Raider Camp"
+      },
+      {
+        "location": "Papak"
+      },
+      {
+        "location": "Canyon Map - Camp Chest"
+      },
       {
         "location": "Nurr Lair"
       },
@@ -17898,6 +17929,49 @@
   },
   {
     "category": "Schematics",
+    "name": "Automaton Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Loot"
+      },
+      {
+        "location": "Canyon Map - Village Camp"
+      },
+      {
+        "location": "Rupu Camp - Chest"
+      },
+      {
+        "location": "Canyon Islands Map - Shelter Urn"
+      },
+      {
+        "location": "Nurr Raider"
+      },
+      {
+        "location": "Ruin with Burnable Chest"
+      },
+      {
+        "location": "Canyon Map - Camp Chest"
+      },
+      {
+        "location": "Cradle - Fortified Camp"
+      },
+      {
+        "location": "Ruins"
+      },
+      {
+        "location": "Ruin with Small Hanging Bag"
+      },
+      {
+        "location": "Rupu Urn"
+      }
+    ],
+    "learn": [
+      "Automaton"
+    ]
+  },
+  {
+    "category": "Schematics",
     "name": "Traveller’s Staff Schematic",
     "stackSize": 100,
     "drops": [
@@ -17927,7 +18001,7 @@
         "location": "Rupu Camp - Urn"
       },
       {
-        "location": "Fortified Camp"
+        "location": "Cradle - Fortified Camp"
       },
       {
         "location": "Plainst rider"
@@ -17983,7 +18057,7 @@
         "location": "Canyon Islands Map - Shelter Urn"
       },
       {
-        "location": "Fortified Camp"
+        "location": "Cradle - Fortified Camp"
       },
       {
         "location": "Phemke"

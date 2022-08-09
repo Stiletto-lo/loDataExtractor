@@ -123,10 +123,16 @@ lootSites["SandhillBonus"] = "Digging in the sand";
 lootSites["RupuRaiderOutpostLoot_T0"] = "Rupu Raider Outpost";
 lootSites["CanyonNurrRaiderCamp"] = "Nurr Raider Camp";
 
-lootSites["CanyonEndCampChest"] = "Ruin Camp";
+lootSites["CanyonEndCampChest"] = "Village Camp with big rock - Chest";
+lootSites["CanyonEndCampWalkerTotem"] =
+  "Village Camp with big rock - Walker Totem";
+lootSites["CanyonEndCampUrn"] = "Village Camp with big rock - Urn";
+lootSites["CanyonendCampWalkerWreck"] =
+  "Village Camp with big rock - Walker Wreck";
+
 lootSites["TreeMonkeyCamp"] = "Tree Monkey Camp";
 
-lootSites["CradleFortifiedCamp"] = "Fortified Camp";
+lootSites["CradleFortifiedCamp"] = "Cradle - Fortified Camp";
 lootSites["PoiCradleChestLoot_T0"] = "Ruins";
 lootSites["PoiMediumCradlePackageLoot_T0"] = "Ruins";
 
@@ -143,17 +149,14 @@ lootSites["EasyMediumRupuCamp_01_1"] = "Medium Rupu Camp - Easy";
 lootSites["HardSmallRupuCamp_01"] = "Small Rupu Camp - Hard";
 lootSites["HardSmallRupuCamp_01_1"] = "Small Rupu Camp - Hard";
 
-lootSites["CanyonEndCampWalkerTotem"] = "Rupu Camp - Walker Totem";
 lootSites["CanyonFortressWalkerWreck"] = "Rupu Camp - Walker Totem";
 lootSites["BoneAmmo"] = "Rupu Camp - Ammo Box";
 lootSites["CampChest"] = "Rupu Camp - Rupu Campfire";
 lootSites["CanyonCampfireLoot"] = "Rupu Camp - Rupu Campfire";
 lootSites["RupuCampFireLoot"] = "Rupu Camp - Rupu Campfire";
 lootSites["CampTotem"] = "Rupu Camp - Totem";
-lootSites["CanyonEndCampUrn"] = "Rupu Camp - Urn";
 lootSites["CanyonSavannahCampUrn"] = "Rupu Camp - Urn";
 lootSites["CanyonSavannahUrn"] = "Rupu Camp - Urn";
-lootSites["CanyonendCampWalkerWreck"] = "Rupu Camp - Walker Wreck";
 lootSites["CanyonFortressChest"] = "Rupu Camp - Chest";
 lootSites["CanyonIslandShelterImproveChest"] = "Rupu Camp - Chest";
 lootSites["CanyonMainVillageChest"] = "Rupu Camp - Chest";
