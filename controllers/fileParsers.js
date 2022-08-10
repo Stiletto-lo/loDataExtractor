@@ -501,16 +501,28 @@ controller.parseSchematicItemData = (filePath) => {
       name = name.replaceAll(".Name", "").trim();
       name = translator.searchName(name);
     }
-    if (
-      name == null &&
-      jsonData[1].Properties?.Name?.SourceString &&
-      jsonData[1].Properties.Name.SourceString.length > 0
-    ) {
-      name = jsonData[1].Properties.Name.SourceString;
-      name = name.trim();
+    if (name == null) {
+      if (jsonData[1].Type.includes("Rig")) {
+        name = dataParser.parseName(translator, jsonData[1].Type);
+      } else if (
+        jsonData[1].Properties?.Name?.SourceString &&
+        jsonData[1].Properties.Name.SourceString.length > 0
+      ) {
+        name = jsonData[1].Properties.Name.SourceString;
+        name = name.trim();
+      } else {
+        name = dataParser.parseType(jsonData[1].Type);
+
+        let foundItem = controller.getItemByType(name);
+        if (foundItem && foundItem.name) {
+          name = foundItem.name;
+        }
+      }
     }
     if (name) {
-      name = name + " Schematic";
+      if (!name.includes("Schematic")) {
+        name = name + " Schematic";
+      }
       let item = controller.getItem(name);
 
       if (jsonData[1].Properties) {
@@ -583,6 +595,8 @@ controller.parsePlaceableData = (filePath) => {
         item.category = dataParser.parseCategory(
           jsonData[1].Properties.Category.ObjectPath
         );
+      } else if (jsonData[1].Type.includes("Rig")) {
+        item.category = "Rigs";
       }
 
       if (jsonData[1].Properties?.FullCost) {
@@ -595,6 +609,9 @@ controller.parsePlaceableData = (filePath) => {
             ingredient.name = dataParser.parseName(translator, key);
             ingredient.count = recipeData.Inputs[key];
             ingredients.push(ingredient);
+            if (key.includes("Rig")) {
+              console.log(key, ingredient);
+            }
           }
           if (ingredients.length > 0) {
             recipe.ingredients = ingredients;
@@ -636,6 +653,14 @@ controller.parsePlaceableData = (filePath) => {
           ".Name",
           ""
         ).trim();
+      }
+
+      if (
+        jsonData[2] &&
+        jsonData[2].Template &&
+        jsonData[2].Template == "WalkerRig"
+      ) {
+        //item.rigDesign = "No data";
       }
 
       if (

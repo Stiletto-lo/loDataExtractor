@@ -75,6 +75,8 @@ controller.parseName = (translator, name) => {
     }
   }
 
+  name = controller.parseRigName(translator, name);
+
   if (name == "Nomad Walker") {
     name = "Nomad Spider Walker";
   }
@@ -101,6 +103,32 @@ controller.parseCategory = (category) => {
     category = category.replace(".0", "").trim();
   }
   return category;
+};
+
+controller.parseRigName = (translator, name) => {
+  if (name.includes("Hammerhead")) {
+    return "Dinghy Walker Hammerhead Rig";
+  }
+  if (name.includes("Rig") && /(.+)Rig_/.test(name)) {
+    let rig = "";
+    if (name.includes("2")) {
+      rig = "T2";
+    } else if (name.includes("T1")) {
+      rig = "T1";
+    } else if (name.includes("T3")) {
+      rig = "T3";
+    }
+    if (name.includes("Default")) {
+      name = name.replaceAll("Default", "").trim();
+    }
+    let match = name.match(/(.+)Rig_/);
+    if (match[1] != null) {
+      let walkerName = translator.translateName(match[1] + " Walker");
+      name = walkerName + " Rig " + rig;
+    }
+  }
+
+  return name;
 };
 
 controller.parseStructureName = (category, name) => {
