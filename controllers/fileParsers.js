@@ -609,9 +609,6 @@ controller.parsePlaceableData = (filePath) => {
             ingredient.name = dataParser.parseName(translator, key);
             ingredient.count = recipeData.Inputs[key];
             ingredients.push(ingredient);
-            if (key.includes("Rig")) {
-              console.log(key, ingredient);
-            }
           }
           if (ingredients.length > 0) {
             recipe.ingredients = ingredients;
