@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "extract": "node extract.js"
   },
   "author": "Dm94Dani",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.24.0",
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "unreal.js": "^1.3.5"
   }
 }

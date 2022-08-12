@@ -105,16 +105,17 @@ lootSites["HotspotMountainLootableMeshComponent_07"] = "Ruins";
 lootSites["HotspotMountainLootableMeshComponent_10"] = "Ruins";
 lootSites["HotspotLootableMeshComponent"] = "Ruins";
 
-lootSites["MiniHotSpot01"] = "Ruins";
-lootSites["MiniHotSpot02"] = "Ruins";
-lootSites["MiniHotSpot02_1"] = "Ruins";
-lootSites["MiniHotSpot03"] = "Ruins";
-lootSites["MiniHotSpot06"] = "Ruins";
-lootSites["MiniHotSpot09"] = "Ruins";
+lootSites["MiniHotSpot01"] = "Rupu War Tower";
+lootSites["MiniHotSpot02"] = "Rupu War Tower";
+lootSites["MiniHotSpot02_1"] = "Rupu War Tower";
+lootSites["MiniHotSpot03"] = "Rupu War Tower";
+lootSites["MiniHotSpot06"] = "Rupu War Tower";
+lootSites["MiniHotSpot09"] = "Rupu War Tower";
+lootSites["MiniHotSpot10"] = "Rupu War Tower";
 
-lootSites["NC_Lootsite_01"] = "Ruins";
-lootSites["NC_Lootsite_01_1"] = "Ruins";
-lootSites["NC_Lootsite_01_2"] = "Ruins";
+lootSites["NC_Lootsite_01"] = "Rupu Walker Wreckage";
+lootSites["NC_Lootsite_01_1"] = "Rupu Walker Wreckage";
+lootSites["NC_Lootsite_01_2"] = "Rupu Walker Wreckage";
 
 lootSites["SandhillBonus"] = "Digging in the sand";
 
@@ -133,8 +134,8 @@ lootSites["CanyonendCampWalkerWreck"] =
 lootSites["TreeMonkeyCamp"] = "Tree Monkey Camp";
 
 lootSites["CradleFortifiedCamp"] = "Cradle - Fortified Camp";
-lootSites["PoiCradleChestLoot_T0"] = "Ruins";
-lootSites["PoiMediumCradlePackageLoot_T0"] = "Ruins";
+lootSites["PoiCradleChestLoot_T0"] = "Cradle - Chest";
+lootSites["PoiMediumCradlePackageLoot_T0"] = "Cradle - Package";
 
 lootSites["MediumLargeRupuCamp_01_2"] = "Large Rupu Camp - Medium";
 lootSites["MediumLargeRupuCamp_01_1"] = "Large Rupu Camp - Medium";
