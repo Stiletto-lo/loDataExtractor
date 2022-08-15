@@ -127,6 +127,7 @@ allTranslations["ClanFlags"] = "Clan Flags";
 
 allTranslations["Ballista_T3"] = "Ballista - Tier 3";
 allTranslations["Ballista_T2"] = "Ballista - Tier 2";
+allTranslations["Furnace_T2"] = "Advanced Furnace";
 
 allTranslations["Dinghy"] = "Dinghy Walker";
 allTranslations["Firefly"] = "Firefly Walker";
