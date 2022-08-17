@@ -117,17 +117,15 @@ allTranslations["ContaminatedWater"] = "Toxic Water";
 allTranslations["FruitPulp"] = "Fruit Pulp";
 allTranslations["PumpWalker"] = "Camelop Walker";
 allTranslations["RepairStation"] = "Repair Station";
-
 allTranslations["FlotillanGrapplingHook"] = "Flotillan Grappling Hook";
 allTranslations["GunPod"] = "Gun Pod";
 allTranslations["GunPodShell"] = "Gun Pod Shell";
-
 allTranslations["ChestBaseMaintenance"] = "Base Maintenance Chest";
 allTranslations["ClanFlags"] = "Clan Flags";
-
 allTranslations["Ballista_T3"] = "Ballista - Tier 3";
 allTranslations["Ballista_T2"] = "Ballista - Tier 2";
 allTranslations["Furnace_T2"] = "Advanced Furnace";
+allTranslations["BoneDart"] = "Bone Dart";
 
 allTranslations["Dinghy"] = "Dinghy Walker";
 allTranslations["Firefly"] = "Firefly Walker";
