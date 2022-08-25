@@ -73,11 +73,11 @@ lootSites["CanyonMainVillageUrn"] = "Canyon Map - Village Camp";
 lootSites["PoiMediumWreckHangingBagLoot_T0"] = "Ruin of the wreck";
 lootSites["PoiMediumWreckChestLoot_T0"] = "Ruin of the wreck";
 
-lootSites["CanyonPOIDragableChest"] = "Ruin with Dragable Chest";
-lootSites["PoiMediumDraggableChestLoot_T0"] = "Ruin with Dragable Chest";
+lootSites["CanyonPOIDragableChest"] = "Rupu Defensive Storage";
+lootSites["PoiMediumDraggableChestLoot_T0"] = "Rupu Defensive Storage";
 
-lootSites["PoiMediumBurnableChestLoot_T0"] = "Ruin with Burnable Chest";
-lootSites["CanyonPOIBurnableChest"] = "Ruin with Burnable Chest";
+lootSites["PoiMediumBurnableChestLoot_T0"] = "Rupu Raiding Checkpoint";
+lootSites["CanyonPOIBurnableChest"] = "Rupu Raiding Checkpoint";
 
 lootSites["PoiSmallHangingBagLoot_T0"] = "Ruin with Small Hanging Bag";
 lootSites["PoiMediumCradleHangingBagLoot_T0"] = "Ruin with Small Hanging Bag";
@@ -92,8 +92,8 @@ lootSites["LootableBreakableWoodenBoxComponent"] = "Old Crate";
 lootSites["LootableBrokenBarrelComponent"] = "Package";
 lootSites["PoiMediumWreckPackageLoot_T0"] = "Package";
 lootSites["PoiPocketClimbingHotspotBarrel"] = "Barrel";
-lootSites["LootableRockHotspotComponent"] = "Ruin with Burnable Chest";
-lootSites["LootableSiegeCrateComponent"] = "Ruin with Dragable Chest";
+lootSites["LootableRockHotspotComponent"] = "Rupu Raiding Checkpoint";
+lootSites["LootableSiegeCrateComponent"] = "Rupu Defensive Storage";
 lootSites["PoiSmallBarrelLoot_T0"] = "Barrel";
 
 lootSites["HotspotMountainLootableMeshComponent_01"] = "Ruins";
@@ -122,14 +122,12 @@ lootSites["SandhillBonus"] = "Digging in the sand";
 /* RUPU CAMPS */
 
 lootSites["RupuRaiderOutpostLoot_T0"] = "Rupu Raider Outpost";
-lootSites["CanyonNurrRaiderCamp"] = "Nurr Raider Camp";
+lootSites["CanyonNurrRaiderCamp"] = "Nurr Raiding Camp";
 
-lootSites["CanyonEndCampChest"] = "Village Camp with big rock - Chest";
-lootSites["CanyonEndCampWalkerTotem"] =
-  "Village Camp with big rock - Walker Totem";
-lootSites["CanyonEndCampUrn"] = "Village Camp with big rock - Urn";
-lootSites["CanyonendCampWalkerWreck"] =
-  "Village Camp with big rock - Walker Wreck";
+lootSites["CanyonEndCampChest"] = "Rupu Fortress";
+lootSites["CanyonEndCampWalkerTotem"] = "Rupu Fortress";
+lootSites["CanyonEndCampUrn"] = "Rupu Fortress";
+lootSites["CanyonendCampWalkerWreck"] = "Rupu Fortress";
 
 lootSites["TreeMonkeyCamp"] = "Tree Monkey Camp";
 
