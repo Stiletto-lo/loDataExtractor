@@ -617,7 +617,10 @@ controller.parsePlaceableData = (filePath) => {
         }
       }
 
-      if (jsonData[1].Properties?.Requirements?.ExperienceRewardCrafting) {
+      if (
+        EXTRACT_ALL_DATA &&
+        jsonData[1].Properties?.Requirements?.ExperienceRewardCrafting
+      ) {
         item.experiencieReward =
           jsonData[1].Properties.Requirements.ExperienceRewardCrafting;
       }
