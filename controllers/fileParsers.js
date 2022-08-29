@@ -617,6 +617,11 @@ controller.parsePlaceableData = (filePath) => {
         }
       }
 
+      if (jsonData[1].Properties?.Requirements?.ExperienceRewardCrafting) {
+        item.experiencieReward =
+          jsonData[1].Properties.Requirements.ExperienceRewardCrafting;
+      }
+
       if (jsonData[1].Properties?.CachedCraftingPartsInfo) {
         let structureInfo = { ...structureInfoTemplate };
 
