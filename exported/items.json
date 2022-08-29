@@ -16081,6 +16081,9 @@
         "location": "Rupu Hazraki"
       },
       {
+        "location": "Rupu Sentinel"
+      },
+      {
         "location": "Rupu Shaman"
       }
     ]
@@ -16478,7 +16481,7 @@
         "location": "Pyramid"
       },
       {
-        "location": "Rupu Forerunner"
+        "location": "Rupu Sentinel"
       },
       {
         "location": "Walker Graveyard"
@@ -16569,7 +16572,7 @@
         "location": "Rupu Camp - Rupu Campfire"
       },
       {
-        "location": "Rupu Forerunner"
+        "location": "Rupu Sentinel"
       },
       {
         "location": "Rupu Shaman"
@@ -16595,6 +16598,15 @@
       },
       {
         "location": "Loot"
+      },
+      {
+        "location": "Rupu Ashdweller"
+      },
+      {
+        "location": "Rupu Hunter"
+      },
+      {
+        "location": "Rupu Sentinel"
       },
       {
         "location": "Rupu War Tower"
@@ -16778,6 +16790,15 @@
       },
       {
         "location": "Loot"
+      },
+      {
+        "location": "Rupu Ashdweller"
+      },
+      {
+        "location": "Rupu Hunter"
+      },
+      {
+        "location": "Rupu Sentinel"
       }
     ]
   },
@@ -16800,6 +16821,15 @@
       },
       {
         "location": "Loot"
+      },
+      {
+        "location": "Rupu Ashdweller"
+      },
+      {
+        "location": "Rupu Hunter"
+      },
+      {
+        "location": "Rupu Sentinel"
       },
       {
         "location": "Pyramid"
@@ -17272,6 +17302,9 @@
       },
       {
         "location": "All rupus"
+      },
+      {
+        "location": "Rupu Rabble"
       },
       {
         "location": "Rupu Raider"
@@ -17886,6 +17919,15 @@
         "location": "Loot"
       },
       {
+        "location": "Rupu Ashdweller"
+      },
+      {
+        "location": "Rupu Hunter"
+      },
+      {
+        "location": "Rupu Sentinel"
+      },
+      {
         "location": "Pyramid"
       }
     ]
@@ -18481,7 +18523,7 @@
         "location": "Pyramid"
       },
       {
-        "location": "Rupu Forerunner"
+        "location": "Rupu Sentinel"
       }
     ]
   },
@@ -18575,6 +18617,9 @@
         "location": "All rupus"
       },
       {
+        "location": "Rupu Rabble"
+      },
+      {
         "location": "Rupu Skirmisher"
       },
       {
@@ -18631,10 +18676,13 @@
         "location": "White Death"
       },
       {
-        "location": "Loot"
+        "location": "Rupu Ashdweller"
       },
       {
         "location": "Rupu Forager"
+      },
+      {
+        "location": "Rupu Hunter"
       },
       {
         "location": "Rupu Scavenger"
@@ -18643,7 +18691,16 @@
         "location": "All rupus"
       },
       {
+        "location": "Rupu Overseer"
+      },
+      {
+        "location": "Rupu Rabble"
+      },
+      {
         "location": "Rupu Raider"
+      },
+      {
+        "location": "Rupu Sentinel"
       },
       {
         "location": "Rupu Skirmisher"
@@ -18665,9 +18722,6 @@
       },
       {
         "location": "Rupu Hazraki"
-      },
-      {
-        "location": "Rupu Sentinel"
       },
       {
         "location": "Rupu Shaman"
@@ -18702,6 +18756,9 @@
       },
       {
         "location": "Rupu Forager"
+      },
+      {
+        "location": "Rupu Rabble"
       },
       {
         "location": "Rupu Urn"
@@ -19100,6 +19157,9 @@
         "location": "Rupu Forager"
       },
       {
+        "location": "Rupu Rabble"
+      },
+      {
         "location": "Rupu Urn"
       },
       {
@@ -19398,6 +19458,9 @@
         "location": "All rupus"
       },
       {
+        "location": "Rupu Rabble"
+      },
+      {
         "location": "Rupu Raider"
       },
       {
@@ -19606,6 +19669,9 @@
         "location": "All rupus"
       },
       {
+        "location": "Rupu Rabble"
+      },
+      {
         "location": "Rupu Skirmisher"
       },
       {
@@ -19709,6 +19775,15 @@
     "drops": [
       {
         "location": "Loot"
+      },
+      {
+        "location": "Rupu Ashdweller"
+      },
+      {
+        "location": "Rupu Hunter"
+      },
+      {
+        "location": "Rupu Overseer"
       }
     ],
     "learn": [
@@ -19722,6 +19797,9 @@
     "drops": [
       {
         "location": "Loot"
+      },
+      {
+        "location": "Rupu Overseer"
       }
     ],
     "learn": [
@@ -20102,7 +20180,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "War Okkam"
       }
     ],
     "learn": [
@@ -20116,6 +20194,15 @@
     "drops": [
       {
         "location": "Loot"
+      },
+      {
+        "location": "Okkam"
+      },
+      {
+        "location": "War Papak"
+      },
+      {
+        "location": "Yellow Rupu"
       }
     ],
     "learn": [
@@ -20132,6 +20219,12 @@
       },
       {
         "location": "All rupus"
+      },
+      {
+        "location": "Rupu Oracle"
+      },
+      {
+        "location": "War Okkam"
       }
     ],
     "learn": [
@@ -20146,7 +20239,10 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Rupu Oracle"
+      },
+      {
+        "location": "Rupu Overseer"
       }
     ],
     "learn": [
@@ -20220,6 +20316,12 @@
       },
       {
         "location": "White Death"
+      },
+      {
+        "location": "War Papak"
+      },
+      {
+        "location": "Yellow Rupu"
       }
     ],
     "learn": [
@@ -20365,6 +20467,9 @@
     "drops": [
       {
         "location": "Loot"
+      },
+      {
+        "location": "War Okkam"
       }
     ],
     "learn": [
@@ -20517,7 +20622,16 @@
     "stackSize": 100,
     "drops": [
       {
+        "location": "Okkam"
+      },
+      {
         "location": "Loot"
+      },
+      {
+        "location": "War Okkam"
+      },
+      {
+        "location": "War Papak"
       }
     ],
     "learn": [
@@ -20565,6 +20679,9 @@
         "location": "Loot"
       },
       {
+        "location": "Okkam"
+      },
+      {
         "location": "All rupus"
       }
     ],
@@ -20604,6 +20721,12 @@
     "drops": [
       {
         "location": "Loot"
+      },
+      {
+        "location": "Okkam"
+      },
+      {
+        "location": "War Okkam"
       }
     ],
     "learn": [
@@ -20734,6 +20857,9 @@
     "drops": [
       {
         "location": "Loot"
+      },
+      {
+        "location": "War Okkam"
       }
     ],
     "learn": [
@@ -20933,6 +21059,9 @@
     "drops": [
       {
         "location": "Loot"
+      },
+      {
+        "location": "Rupu Overseer"
       }
     ],
     "learn": [
@@ -20946,6 +21075,9 @@
     "drops": [
       {
         "location": "Loot"
+      },
+      {
+        "location": "War Papak"
       }
     ],
     "learn": [
@@ -21206,6 +21338,12 @@
     "drops": [
       {
         "location": "Loot"
+      },
+      {
+        "location": "Rupu Hunter"
+      },
+      {
+        "location": "War Papak"
       }
     ],
     "learn": [
@@ -21525,6 +21663,12 @@
     "drops": [
       {
         "location": "Loot"
+      },
+      {
+        "location": "War Papak"
+      },
+      {
+        "location": "Yellow Rupu"
       }
     ],
     "learn": [
@@ -21552,6 +21696,9 @@
         "location": "All rupus"
       },
       {
+        "location": "Rupu Rabble"
+      },
+      {
         "location": "Rupu Skirmisher"
       },
       {
@@ -21577,7 +21724,13 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Rupu Overseer"
+      },
+      {
+        "location": "War Papak"
+      },
+      {
+        "location": "Yellow Rupu"
       }
     ],
     "learn": [
@@ -21684,6 +21837,15 @@
     "drops": [
       {
         "location": "Loot"
+      },
+      {
+        "location": "Rupu Ashdweller"
+      },
+      {
+        "location": "Rupu Hunter"
+      },
+      {
+        "location": "War Papak"
       }
     ],
     "learn": [
@@ -21696,7 +21858,16 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Rupu Hunter"
+      },
+      {
+        "location": "Rupu Oracle"
+      },
+      {
+        "location": "Rupu Overseer"
+      },
+      {
+        "location": "War Okkam"
       }
     ],
     "learn": [
@@ -21839,6 +22010,12 @@
     "drops": [
       {
         "location": "Loot"
+      },
+      {
+        "location": "Rupu Oracle"
+      },
+      {
+        "location": "War Okkam"
       }
     ],
     "learn": [
@@ -22008,6 +22185,9 @@
       },
       {
         "location": "Rupu Defensive Storage"
+      },
+      {
+        "location": "Rupu Oracle"
       }
     ],
     "learn": [
@@ -22116,6 +22296,12 @@
     "drops": [
       {
         "location": "Loot"
+      },
+      {
+        "location": "Rupu Oracle"
+      },
+      {
+        "location": "Yellow Rupu"
       }
     ],
     "learn": [
@@ -22209,6 +22395,12 @@
     "drops": [
       {
         "location": "Loot"
+      },
+      {
+        "location": "War Papak"
+      },
+      {
+        "location": "Yellow Rupu"
       }
     ],
     "learn": [
@@ -22291,6 +22483,9 @@
       },
       {
         "location": "Ruin of the wreck"
+      },
+      {
+        "location": "Rupu Overseer"
       }
     ],
     "learn": [
@@ -22334,6 +22529,9 @@
       },
       {
         "location": "Loot"
+      },
+      {
+        "location": "Okkam"
       }
     ],
     "learn": [

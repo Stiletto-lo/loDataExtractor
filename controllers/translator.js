@@ -18,6 +18,7 @@ controller.translateLootSite = (name) => {
   if (DEBUG) {
     return name.trim();
   }
+  console.warn("No translation for: " + name);
   return "Loot";
 };
 
