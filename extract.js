@@ -1,5 +1,5 @@
 const { FileProvider, FGuid, Ue4Version, Oodle } = require("unreal.js");
-const { writeFileSync } = require("fs");
+const fs = require("fs-extra");
 
 const GAMEPATH =
   "C:/Program Files (x86)/Steam/steamapps/common/Last Oasis/Mist/Content/Paks/";
@@ -12,16 +12,9 @@ const folderPatch = "./gamefiles/";
   await Oodle.downloadDLL();
   const provider = new FileProvider(GAMEPATH, Ue4Version.GAME_UE4_27);
   provider.mappingsProvider.reload();
-  provider.populateIoStoreFiles = true;
+  provider.ioStoreTocReadOptions = 0;
   await provider.initialize();
   await provider.submitKey(FGuid.mainGuid, AES_KEY);
-
-  const pkg = provider.loadGameFile(
-    "Mist/Content/Mist/Data/TechTree/Walkers/Tusker/TuskerWings_T3_Raider.uasset"
-  );
-  console.log(pkg.toJson());
-
-  return;
 
   let techTreeFiles = provider.files.filter(
     (file) => file.path && file.path.includes("Content/Mist/Data/TechTree")
@@ -29,16 +22,21 @@ const folderPatch = "./gamefiles/";
 
   if (techTreeFiles) {
     techTreeFiles.each((file) => {
-      console.log(file);
-      //let formated = provider.loadObject(file.path);
+      let package = provider.loadGameFile(file);
+      console.log(package.toJson());
 
+      /*
       let path = file.getPathWithoutExtension().trim();
-
-      /*fs.writeFile(folderPatch + path + ".json", formated, function (err) {
-        if (err) {
-          console.error(err);
+      fs.outputFile(
+        folderPatch + path + ".json",
+        pkg.toString(),
+        function (err) {
+          if (err) {
+            console.error(err);
+          }
         }
-      });*/
+      );
+      */
     });
   }
 
@@ -46,6 +44,27 @@ const folderPatch = "./gamefiles/";
     (file) => file.path && file.path.includes("Content/Mist/Data/Items")
   );
 
-  //const pkg = provider.loadLocres("Mist/Content/Mist/Data/StringTables/Items");
-  //console.log(pkg.toJson());
+  const saveGameFiles = (files) => {
+    if (files) {
+      files.each((file) => {
+        let buffer = provider.saveGameFile(file);
+        console.log(buffer.toString());
+
+        /*
+        let path = file.getPathWithoutExtension().trim();
+        fs.outputFile(
+          folderPatch + path + ".json",
+          pkg.toString(),
+          function (err) {
+            if (err) {
+              console.error(err);
+            }
+          }
+        );
+        */
+      });
+    }
+  };
+
+  //aveGameFiles(itemsFiles);
 })();

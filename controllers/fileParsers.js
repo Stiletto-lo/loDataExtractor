@@ -35,7 +35,22 @@ controller.parseBlueprintsToItems = () => {
   allBlueprints.forEach((blueprint) => {
     let location = translator.translateLootSite(blueprint.name);
     blueprint.tables.forEach((dataTable) => {
-      let dataTableChance = 0;
+      let dataTableChance = 100;
+      let minIterations = 1;
+      let maxIterations = 1;
+      if (dataTable.minIterations) {
+        minIterations = dataTable.minIterations;
+      }
+      if (dataTable.maxIterations) {
+        maxIterations = dataTable.minIterations;
+      }
+      if (dataTable.dataTableChance) {
+        dataTableChance = dataTable.dataTableChance;
+      }
+
+      let minChance = (dataTableChance * minIterations) / 100;
+      let maxChance = (dataTableChance * maxIterations) / 100;
+
       dataTable.dropItems.forEach((lootItemData) => {
         let item = controller.getItem(
           dataParser.parseName(translator, lootItemData.name)
@@ -46,14 +61,17 @@ controller.parseBlueprintsToItems = () => {
           if (!hasDrop && item.name != location) {
             let drop = { ...dropTemplate };
             drop.location = location;
-            if (EXTRACT_ALL_DATA && lootItemData.Chance) {
-              drop.chance = lootItemData.Chance;
+            if (EXTRACT_ALL_DATA && lootItemData.chance) {
+              drop.chance = lootItemData.chance;
             }
-            if (EXTRACT_ALL_DATA && lootItemData.MinQuantity) {
-              drop.minQuantity = lootItemData.MinQuantity;
+            if (EXTRACT_ALL_DATA && lootItemData.minQuantity) {
+              drop.minQuantity = lootItemData.minQuantity;
             }
-            if (EXTRACT_ALL_DATA && lootItemData.MaxQuantity) {
-              drop.maxQuantity = lootItemData.MaxQuantity;
+            if (EXTRACT_ALL_DATA && lootItemData.maxQuantity) {
+              drop.maxQuantity = lootItemData.maxQuantity;
+            }
+            if (drop.chance) {
+              drop.chance = (drop.chance * maxChance) / 100;
             }
             itemDrops.push(drop);
             item.drops = itemDrops;

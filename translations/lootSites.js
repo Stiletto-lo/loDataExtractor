@@ -37,6 +37,7 @@ lootSites["RupuForerunner_T3"] = "Rupu Forerunner";
 lootSites["RupuSentinel"] = "Rupu Sentinel";
 lootSites["RupuSentinel_T2"] = "Rupu Sentinel";
 lootSites["RupuSentinel_T3"] = "Rupu Sentinel";
+/*
 lootSites["RupuScuttler"] = "Rupu Sentinel";
 lootSites["RupuRabble"] = "Rupu Rabble";
 lootSites["RupuOverseer"] = "Rupu Overseer";
@@ -49,6 +50,7 @@ lootSites["RupuDrudges_T0"] = "Rupu Drudge";
 lootSites["NativeRupu"] = "Rupu Hermit";
 lootSites["YellowRupu"] = "Yellow Rupu";
 lootSites["IllusiveGiantRupu"] = "Yellow Rupu";
+*/
 lootSites["RupuSkirmisherLootCradle"] = "Rupu Skirmisher";
 lootSites["RupuRaiderLoot_T0"] = "Rupu Raider";
 lootSites["RupuRaiderMountLoot_T0"] = "Rupu Raider Nurr";
@@ -66,8 +68,10 @@ lootSites["CanyonNurrLair"] = "Nurr Lair";
 lootSites["CanyonPapak"] = "Papak";
 lootSites["NurrLoot_T0"] = "Nurr";
 lootSites["Okkam"] = "Okkam";
+/*
 lootSites["WarOkkam"] = "War Okkam";
 lootSites["WarPapak"] = "War Papak";
+*/
 
 /* RUINS */
 
