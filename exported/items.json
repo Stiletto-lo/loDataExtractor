@@ -16533,7 +16533,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "NimmoDinghyRigSchematic"
+            "name": "Dinghy Walker Rig Nimmo Schematic"
           }
         ]
       }
@@ -16589,7 +16589,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "TravelerDinghyRigSchematic"
+            "name": "Dinghy Walker Rig Traveler Schematic"
           }
         ]
       }
@@ -17341,6 +17341,22 @@
   },
   {
     "category": "Schematics",
+    "name": "Dinghy Walker Rig Nimmo Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rupu Camp - Chest"
+      },
+      {
+        "location": "Cradle - Fortified Camp"
+      }
+    ],
+    "learn": [
+      "Nimmo Rig"
+    ]
+  },
+  {
+    "category": "Schematics",
     "name": "Dinghy Walker Rig T2 Schematic",
     "stackSize": 100,
     "drops": [
@@ -17362,6 +17378,22 @@
     ],
     "learn": [
       "Dinghy Walker Rig T2"
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Dinghy Walker Rig Traveler Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rupu Camp - Chest"
+      },
+      {
+        "location": "Cradle - Fortified Camp"
+      }
+    ],
+    "learn": [
+      "Traveler Rig"
     ]
   },
   {
@@ -18910,22 +18942,6 @@
   },
   {
     "category": "Schematics",
-    "name": "NimmoDinghyRigSchematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Rupu Camp - Chest"
-      },
-      {
-        "location": "Cradle - Fortified Camp"
-      }
-    ],
-    "learn": [
-      "Nimmo Rig"
-    ]
-  },
-  {
-    "category": "Schematics",
     "name": "Nomad Grappling Hook Schematic",
     "stackSize": 100,
     "drops": [
@@ -20280,22 +20296,6 @@
     "stackSize": 100,
     "learn": [
       "Trap Door"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "TravelerDinghyRigSchematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Rupu Camp - Chest"
-      },
-      {
-        "location": "Cradle - Fortified Camp"
-      }
-    ],
-    "learn": [
-      "Traveler Rig"
     ]
   },
   {

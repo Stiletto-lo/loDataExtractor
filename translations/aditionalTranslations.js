@@ -132,6 +132,11 @@ allTranslations["Windmill_Tier2"] = "Advanced Windmill";
 allTranslations["TorqueConsumption"] = "Torque generation";
 allTranslations["HighTorqueConsumption"] = "Torque generation";
 
+allTranslations["TravelerDinghyRigSchematic"] =
+  "Dinghy Walker Rig Traveler Schematic";
+allTranslations["NimmoDinghyRigSchematic"] =
+  "Dinghy Walker Rig Nimmo Schematic";
+
 allTranslations["Dinghy"] = "Dinghy Walker";
 allTranslations["Firefly"] = "Firefly Walker";
 allTranslations["Proxy"] = "Proxy Walker";
