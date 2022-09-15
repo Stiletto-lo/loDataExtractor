@@ -126,6 +126,18 @@ allTranslations["Ballista_T3"] = "Ballista - Tier 3";
 allTranslations["Ballista_T2"] = "Ballista - Tier 2";
 allTranslations["Furnace_T2"] = "Advanced Furnace";
 allTranslations["BoneDart"] = "Bone Dart";
+allTranslations["LatheCrafting"] = "Lathe";
+allTranslations["Windmill_Tier2"] = "Advanced Windmill";
+
+allTranslations["TorqueConsumption"] = "Torque generation";
+allTranslations["HighTorqueConsumption"] = "Torque generation";
+
+allTranslations["TravelerDinghyRigSchematic"] =
+  "Dinghy Walker Rig Traveler Schematic";
+allTranslations["NimmoDinghyRigSchematic"] =
+  "Dinghy Walker Rig Nimmo Schematic";
+
+allTranslations["Boots_Rain"] = "Swampwood Galoshes";
 
 allTranslations["Dinghy"] = "Dinghy Walker";
 allTranslations["Firefly"] = "Firefly Walker";

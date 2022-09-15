@@ -104,6 +104,8 @@ allItems.forEach((item) => {
         item["toolInfo"].length <= 0
       ) {
         delete item["toolInfo"];
+      } else if (item["damageType"] != undefined) {
+        delete item["damageType"];
       }
     }
   });
