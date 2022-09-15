@@ -59,14 +59,16 @@ controller.translateItem = (item) => {
     name = translateName;
   }
 
-  if (
-    (name.includes(" Legs") || name.includes(" Wings")) &&
-    !name.includes("(1 of 2)")
-  ) {
-    name = name + " (1 of 2)";
-  }
+  if (name) {
+    if (
+      (name.includes(" Legs") || name.includes(" Wings")) &&
+      !name.includes("(1 of 2)")
+    ) {
+      name = name + " (1 of 2)";
+    }
 
-  item.name = name.trim();
+    item.name = name.trim();
+  }
 
   if (item.category) {
     let translateCategory = controller.searchName(item.category);

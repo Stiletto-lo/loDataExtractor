@@ -437,6 +437,9 @@ controller.parseItemData = (filePath) => {
             ".Name",
             ""
           ).trim();
+          if (item.name == undefined) {
+            item.name = dataParser.parseName(translator, item.translation);
+          }
         }
       }
 
@@ -455,6 +458,10 @@ controller.parseItemData = (filePath) => {
         item.name == "Fiery Concoction")
     ) {
       item.category = "Resources";
+    }
+
+    if (jsonData[1].Type == "Scythe_C") {
+      console.log(item);
     }
 
     allItems.push(item);
