@@ -100,10 +100,9 @@ controller.parseLootTable = (filePath) => {
       if (lootItems[key].Item) {
         let name = dataParser.parseName(translator, key);
         if (name) {
-          let itemName = dataParser.parseType(
-            lootItems[key].Item.AssetPathName
+          let completeItem = controller.getItemByType(
+            dataParser.parseType(lootItems[key].Item.AssetPathName)
           );
-          let completeItem = controller.getItemByType(itemName);
           if (completeItem && completeItem.name) {
             name = completeItem.name;
           } else if (
@@ -185,48 +184,6 @@ controller.parseLootBlueprint = (filePath) => {
   }
 };
 
-controller.parseLootTableOld = (filePath) => {
-  let rawdata = fs.readFileSync(filePath);
-  let jsonData = JSON.parse(rawdata);
-  if (jsonData[0]) {
-    let location = jsonData[0].Name ? jsonData[0].Name : null;
-    if (
-      location != null &&
-      jsonData[0].Type &&
-      jsonData[0].Type == "DataTable" &&
-      jsonData[0].Rows
-    ) {
-      location = dataParser.parseName(translator, location);
-      let lootItems = jsonData[0].Rows;
-      Object.keys(lootItems).forEach((key) => {
-        if (key != location && lootItems[key].Item) {
-          let item = controller.getItem(dataParser.parseName(translator, key));
-          if (item && item.name) {
-            let itemDrops = item.drops ? item.drops : [];
-            let hasDrop = itemDrops.some((d) => d.location === location);
-            if (!hasDrop && item.name != location) {
-              let drop = { ...dropTemplate };
-              drop.location = location;
-              if (EXTRACT_ALL_DATA && lootItems[key].Chance) {
-                drop.chance = lootItems[key].Chance;
-              }
-              if (EXTRACT_ALL_DATA && lootItems[key].MinQuantity) {
-                drop.minQuantity = lootItems[key].MinQuantity;
-              }
-              if (EXTRACT_ALL_DATA && lootItems[key].MaxQuantity) {
-                drop.maxQuantity = lootItems[key].MaxQuantity;
-              }
-              itemDrops.push(drop);
-              item.drops = itemDrops;
-            }
-            allItems.push(item);
-          }
-        }
-      });
-    }
-  }
-};
-
 controller.parseCachedItems = (filePath) => {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
@@ -261,10 +218,7 @@ controller.parseItemData = (filePath) => {
   let jsonData = JSON.parse(rawdata);
 
   if (jsonData[1] && jsonData[1].Type) {
-    let item = controller.getItem(
-      dataParser.parseName(translator, jsonData[1].Type)
-    );
-    item.type = jsonData[1].Type;
+    let item = controller.extractItemByType(jsonData[1].Type);
 
     if (jsonData[1].Properties) {
       if (jsonData[1].Properties?.Category?.ObjectPath) {
@@ -487,8 +441,7 @@ controller.parseItemData = (filePath) => {
       }
 
       if (jsonData[1].Properties?.DamageType?.ObjectName) {
-        item.damageType = dataParser.parseName(
-          translator,
+        item.damageType = dataParser.parseType(
           jsonData[1].Properties.DamageType.ObjectName
         );
       }
@@ -513,6 +466,7 @@ controller.parseSchematicItemData = (filePath) => {
   let jsonData = JSON.parse(rawdata);
 
   if (jsonData[1] && jsonData[1].Type) {
+    let item = controller.extractItemByType(jsonData[1].Type);
     let name = undefined;
     if (jsonData[1].Properties?.Name?.Key) {
       name = jsonData[1].Properties.Name.Key;
@@ -541,58 +495,58 @@ controller.parseSchematicItemData = (filePath) => {
       if (!name.includes("Schematic")) {
         name = name + " Schematic";
       }
-      let item = controller.getItem(name);
+      item.name = name;
+    }
 
-      if (jsonData[1].Properties) {
-        item.category = "Schematics";
+    if (jsonData[1].Properties) {
+      item.category = "Schematics";
 
-        let itemsSchematic = [];
+      let itemsSchematic = [];
 
-        if (jsonData[1].Type) {
-          item.type = jsonData[1].Type;
-        }
-
-        if (jsonData[1].Properties?.MaxStackSize) {
-          item.stackSize = jsonData[1].Properties.MaxStackSize;
-        }
-        if (jsonData[1].Properties?.Items) {
-          let allCraftingItems = jsonData[1].Properties.Items;
-          allCraftingItems.forEach((schematicItem) => {
-            if (schematicItem.AssetPathName) {
+      if (jsonData[1].Properties?.MaxStackSize) {
+        item.stackSize = jsonData[1].Properties.MaxStackSize;
+      }
+      if (jsonData[1].Properties?.Items) {
+        let allCraftingItems = jsonData[1].Properties.Items;
+        allCraftingItems.forEach((schematicItem) => {
+          if (schematicItem.AssetPathName) {
+            let itemFound = controller.getItemByType(
+              dataParser.parseType(schematicItem.AssetPathName)
+            );
+            if (itemFound) {
+              itemsSchematic.push(itemFound.name);
+            } else {
               let schematicItemName = dataParser.parseName(
                 translator,
                 schematicItem.AssetPathName
               );
-              let itemFound = controller.getItemByType(schematicItemName);
-              if (itemFound) {
-                itemsSchematic.push(itemFound.name);
-              } else {
-                itemsSchematic.push(schematicItemName);
-              }
+              itemsSchematic.push(schematicItemName);
             }
-          });
-        }
-        if (jsonData[1].Properties?.Placeables) {
-          let allCraftingPlaceables = jsonData[1].Properties.Placeables;
-          allCraftingPlaceables.forEach((schematicPlaceable) => {
-            if (schematicPlaceable.AssetPathName) {
+          }
+        });
+      }
+      if (jsonData[1].Properties?.Placeables) {
+        let allCraftingPlaceables = jsonData[1].Properties.Placeables;
+        allCraftingPlaceables.forEach((schematicPlaceable) => {
+          if (schematicPlaceable.AssetPathName) {
+            let itemFound = controller.getItemByType(
+              dataParser.parseType(schematicPlaceable.AssetPathName)
+            );
+            if (itemFound) {
+              itemsSchematic.push(itemFound.name);
+            } else {
               let schematicPlaceableName = dataParser.parseName(
                 translator,
                 schematicPlaceable.AssetPathName
               );
-              let itemFound = controller.getItemByType(schematicPlaceableName);
-              if (itemFound) {
-                itemsSchematic.push(itemFound.name);
-              } else {
-                itemsSchematic.push(schematicPlaceableName);
-              }
+              itemsSchematic.push(schematicPlaceableName);
             }
-          });
-        }
-        if (itemsSchematic.length > 0) {
-          item.learn = itemsSchematic;
-          allItems.push(item);
-        }
+          }
+        });
+      }
+      if (itemsSchematic.length > 0) {
+        item.learn = itemsSchematic;
+        allItems.push(item);
       }
     }
   }
@@ -603,10 +557,36 @@ controller.parsePlaceableData = (filePath) => {
   let jsonData = JSON.parse(rawdata);
 
   if (jsonData[1] && jsonData[1].Type) {
-    let item = controller.getItem(
-      dataParser.parseName(translator, jsonData[1].Type)
-    );
-    item.type = jsonData[1].Type;
+    let item = controller.extractItemByType(jsonData[1].Type);
+    if (jsonData[1].Type.includes("Rig")) {
+      let rigName = null;
+      let wakerName = null;
+      if (jsonData[1].Properties?.Name?.SourceString) {
+        rigName = dataParser.parseName(
+          translator,
+          jsonData[1].Properties.Name.SourceString.trim()
+        );
+      } else if (jsonData[1].Properties?.Name?.Key) {
+        rigName = dataParser.parseName(
+          translator,
+          jsonData[1].Properties.Name.Key.trim()
+        );
+      }
+      if (jsonData[1].Properties?.Description?.Key) {
+        wakerName = dataParser.parseName(
+          translator,
+          jsonData[1].Properties.Description.Key.trim()
+        );
+      }
+      if (rigName != null && wakerName != null) {
+        item.name = wakerName + " " + rigName;
+        console.log(item.name);
+      } else {
+        item.name = dataParser.parseRigName(translator, jsonData[1].Type);
+      }
+    } else {
+      item.name = dataParser.parseName(translator, jsonData[1].Type);
+    }
 
     if (jsonData[1].Properties) {
       if (jsonData[1].Properties?.Category?.ObjectPath) {
@@ -669,21 +649,23 @@ controller.parsePlaceableData = (filePath) => {
         };
       }
 
-      if (jsonData[1].Properties?.Name?.SourceString) {
-        item.name = jsonData[1].Properties.Name.SourceString.trim();
-      } else if (jsonData[1].Properties?.Name?.Key) {
-        item.translation = jsonData[1].Properties.Name.Key.replace(
-          ".Name",
-          ""
-        ).trim();
-      }
-
       if (
         jsonData[2] &&
         jsonData[2].Template &&
         jsonData[2].Template == "WalkerRig"
       ) {
         //item.rigDesign = "No data";
+      }
+
+      if (!jsonData[1].Type.includes("Rig")) {
+        if (jsonData[1].Properties?.Name?.SourceString) {
+          item.name = jsonData[1].Properties.Name.SourceString.trim();
+        } else if (jsonData[1].Properties?.Name?.Key) {
+          item.translation = jsonData[1].Properties.Name.Key.replace(
+            ".Name",
+            ""
+          ).trim();
+        }
       }
 
       if (
@@ -712,10 +694,7 @@ controller.parseTechData = (filePath) => {
   let jsonData = JSON.parse(rawdata);
 
   if (jsonData[1] && jsonData[1].Type) {
-    let item = controller.getItem(
-      dataParser.parseName(translator, jsonData[1].Type)
-    );
-    item.type = jsonData[1].Type;
+    let item = controller.extractItemByType(jsonData[1].Type);
 
     if (
       jsonData[1]?.Properties?.Requirements &&
@@ -769,8 +748,10 @@ controller.parseDamage = (filePath) => {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
   if (jsonData[1]?.Type) {
-    let damageTypeName = dataParser.parseName(translator, jsonData[1].Type);
-    let itemSearch = allItems.find((item) => item.damageType == damageTypeName);
+    let damageTypeClass = jsonData[1].Type;
+    let itemSearch = allItems.find(
+      (item) => item.damageType == damageTypeClass
+    );
     if (itemSearch) {
       let item = controller.getItem(itemSearch.name);
       if (item) {
@@ -829,8 +810,8 @@ controller.parsePrices = (filePath) => {
 
     allOrders.forEach((order) => {
       if (order?.ItemClass?.ObjectName && order?.Price) {
-        let item = controller.getItem(
-          dataParser.parseName(translator, order.ItemClass.ObjectName)
+        let item = controller.extractItemByType(
+          dataParser.parseType(order.ItemClass.ObjectName)
         );
 
         if (order.Price > item.trade_price) {
@@ -1029,6 +1010,26 @@ controller.getItemByType = (itemType) => {
   return allItems.find((it) => {
     return it.type && it.type == itemType;
   });
+};
+
+controller.extractItemByType = (itemType) => {
+  let itemCopy = { ...itemTemplate };
+
+  if (!itemType.includes("_C")) {
+    itemType = itemType + "_C";
+  }
+
+  allItems = allItems.filter((it) => {
+    if (it.type && it.type == itemType) {
+      itemCopy = it;
+      return false;
+    }
+    return true;
+  });
+
+  itemCopy.type = itemType;
+
+  return itemCopy;
 };
 
 controller.getItem = (itemName) => {

@@ -106,9 +106,6 @@ controller.parseCategory = (category) => {
 };
 
 controller.parseRigName = (translator, name) => {
-  if (name.includes("Hammerhead")) {
-    return "Dinghy Walker Hammerhead Rig";
-  }
   if (name.includes("Rig") && /(.+)Rig_/.test(name)) {
     let rig = "";
     if (name.includes("2")) {
