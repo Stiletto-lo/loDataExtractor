@@ -580,7 +580,6 @@ controller.parsePlaceableData = (filePath) => {
       }
       if (rigName != null && wakerName != null) {
         item.name = wakerName + " " + rigName;
-        console.log(item.name);
       } else {
         item.name = dataParser.parseRigName(translator, jsonData[1].Type);
       }

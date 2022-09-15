@@ -9,6 +9,9 @@ lootSites["LootBoxModules"] = "Modules Strongbox";
 lootSites["LootBoxTablets"] = "Tablets Strongbox";
 lootSites["LootBoxTools"] = "Tools Strongbox";
 lootSites["LootBoxWeapons"] = "Weapons Strongbox";
+lootSites["LootboxArmorsCanyon"] = "Armor Strongbox";
+lootSites["LootboxToolsandEquipmentCanyon"] = "Tools and Equipment Strongbox";
+lootSites["LootboxWeaponsCanyon"] = "Weapon Strongbox";
 
 /* RUPUS */
 
