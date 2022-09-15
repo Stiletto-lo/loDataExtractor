@@ -83,11 +83,7 @@ controller.translateItem = (item) => {
   if (item.learn) {
     let newItemLearn = [];
     item.learn.forEach((value) => {
-      let valueTr = controller.translateItemPart(value);
-      newItemLearn.push(valueTr);
-      if (valueTr != value) {
-        console.log(value + " | " + valueTr);
-      }
+      newItemLearn.push(controller.translateItemPart(value));
     });
     item.learn = newItemLearn;
   }
