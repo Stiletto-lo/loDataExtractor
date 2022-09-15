@@ -137,6 +137,8 @@ allTranslations["TravelerDinghyRigSchematic"] =
 allTranslations["NimmoDinghyRigSchematic"] =
   "Dinghy Walker Rig Nimmo Schematic";
 
+allTranslations["Boots_Rain"] = "Swampwood Galoshes";
+
 allTranslations["Dinghy"] = "Dinghy Walker";
 allTranslations["Firefly"] = "Firefly Walker";
 allTranslations["Proxy"] = "Proxy Walker";
