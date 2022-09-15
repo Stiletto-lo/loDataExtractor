@@ -56,6 +56,9 @@ controller.translateItem = (item) => {
 
   let translateName = controller.searchName(item.translation);
   if (translateName) {
+    if (item.name) {
+      controller.addTranslation(item.name, translateName);
+    }
     name = translateName;
   }
 
@@ -77,7 +80,38 @@ controller.translateItem = (item) => {
     }
   }
 
+  if (item.learn) {
+    let newItemLearn = [];
+    item.learn.forEach((value) => {
+      let valueTr = controller.translateItemPart(value);
+      newItemLearn.push(valueTr);
+      if (valueTr != value) {
+        console.log(value + " | " + valueTr);
+      }
+    });
+    item.learn = newItemLearn;
+  }
+
   return item;
+};
+
+controller.translateItemPart = (value) => {
+  if (value) {
+    let translateValue = controller.searchName(value);
+    if (translateValue) {
+      value = translateValue;
+    }
+    if (
+      (value.includes(" Legs") || value.includes(" Wings")) &&
+      !value.includes("(1 of 2)")
+    ) {
+      value = value + " (1 of 2)";
+    }
+
+    value = value.trim();
+  }
+
+  return value;
 };
 
 controller.addDescriptions = (allItems) => {
@@ -96,7 +130,9 @@ controller.addDescriptions = (allItems) => {
 };
 
 controller.addTranslation = (key, translation) => {
-  allTranslations[key] = translation;
+  if (key && translation && !allTranslations[key]) {
+    allTranslations[key] = translation;
+  }
 };
 
 controller.addDescription = (key, description) => {

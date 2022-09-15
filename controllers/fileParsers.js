@@ -460,10 +460,6 @@ controller.parseItemData = (filePath) => {
       item.category = "Resources";
     }
 
-    if (jsonData[1].Type == "Scythe_C") {
-      console.log(item);
-    }
-
     allItems.push(item);
   }
 };
