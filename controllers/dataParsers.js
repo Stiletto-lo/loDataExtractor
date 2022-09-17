@@ -221,4 +221,19 @@ controller.itemMerger = (allItems = [], mainItemName, otherItemName) => {
   return allItemsFiltered;
 };
 
+controller.cleanEmptyObject = (obj) => {
+  if (obj) {
+    Object.keys(obj).forEach((key) => {
+      if (obj[key] === undefined || obj[key] === null) {
+        delete obj[key];
+      }
+    });
+    if (Object.keys(obj).length > 0) {
+      return obj;
+    }
+  }
+
+  return null;
+};
+
 module.exports = controller;

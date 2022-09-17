@@ -751,10 +751,10 @@ controller.parseDamage = (filePath) => {
   let jsonData = JSON.parse(rawdata);
   if (jsonData[1]?.Type) {
     let damageTypeClass = jsonData[1].Type;
-    let itemSearch = allItems.find(
+    let allItemsWithThatDamage = allItems.filter(
       (item) => item.damageType == damageTypeClass
     );
-    if (itemSearch) {
+    allItemsWithThatDamage.forEach((itemSearch) => {
       let item = controller.getItem(itemSearch.name);
       if (item) {
         let proyectileDamage = item.projectileDamage
@@ -777,10 +777,14 @@ controller.parseDamage = (filePath) => {
           ? parseInt(jsonData[1].Properties.DamageAgainstSolid * 100, 10)
           : undefined;
 
-        item.projectileDamage = proyectileDamage;
+        proyectileDamage = dataParser.cleanEmptyObject(proyectileDamage);
+        if (proyectileDamage != null) {
+          item.projectileDamage = proyectileDamage;
+        }
+
         allItems.push(item);
       }
-    }
+    });
   }
 };
 

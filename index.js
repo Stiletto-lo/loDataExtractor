@@ -40,6 +40,15 @@ const orderByCategoryAndName = (a, b) => {
   return 0;
 };
 
+const orderByName = (a, b) => {
+  if (a.name < b.name) {
+    return -1;
+  } else if (a.name > b.name) {
+    return 1;
+  }
+  return 0;
+};
+
 console.info("Loading StringTables");
 loadDirData("./Content/Mist/Data/StringTables", "translation");
 console.info("Loading Localization");
@@ -132,7 +141,7 @@ allItems = allItems
 
 allItems = dataParser.itemMerger(allItems, "Long Sawblade", "Sawblade_Tier2");
 
-allItems.sort(orderByCategoryAndName);
+allItems.sort(orderByName);
 
 if (allItems.length > 0) {
   fs.writeFile(
@@ -146,6 +155,7 @@ if (allItems.length > 0) {
       }
     }
   );
+  allItems.sort(orderByCategoryAndName);
   fs.writeFile(
     folderPatch + "items_min.json",
     JSON.stringify(allItems),
