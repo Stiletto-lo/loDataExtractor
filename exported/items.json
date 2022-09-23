@@ -103,205 +103,6 @@
     ]
   },
   {
-    "category": "Weapons",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 34,
-            "name": "Stone"
-          },
-          {
-            "count": 7,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 6,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 4,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "name": "Advanced Hatchet",
-    "parent": "Heavy Rawbone Hand Axe",
-    "trade_price": 56.2,
-    "description": "Even the most obstinate nomad has fun chopping food with this extremely efficient tool.",
-    "projectileDamage": {
-      "vsSoft": 35
-    },
-    "stackSize": 100,
-    "weight": 4.5,
-    "weaponInfo": {
-      "weaponLength": 52,
-      "damage": 54,
-      "penetration": 11
-    },
-    "toolInfo": [
-      {
-        "toolType": "TreeCutting",
-        "tier": 7
-      }
-    ],
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Tools Strongbox"
-      },
-      {
-        "location": "Tools and Equipment Strongbox"
-      },
-      {
-        "location": "Weapons Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Advanced Hatchet Schematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Loot"
-      }
-    ],
-    "learn": [
-      "Advanced Hatchet"
-    ]
-  },
-  {
-    "category": "Tools",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 20,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Bone Glue"
-          }
-        ]
-      }
-    ],
-    "name": "Advanced Pickaxe",
-    "parent": "Bone Pickaxe",
-    "trade_price": 98.2,
-    "description": "A nearly unbreakable, highly efficient mining tool.",
-    "projectileDamage": {
-      "vsSoft": 35
-    },
-    "stackSize": 100,
-    "weight": 5,
-    "weaponInfo": {
-      "weaponLength": 66,
-      "damage": 30,
-      "penetration": 20
-    },
-    "toolInfo": [
-      {
-        "toolType": "Mining",
-        "tier": 7
-      }
-    ],
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Tools Strongbox"
-      },
-      {
-        "location": "Tools and Equipment Strongbox"
-      },
-      {
-        "location": "Pyramid"
-      }
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Advanced Pickaxe Schematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Loot"
-      }
-    ],
-    "learn": [
-      "Advanced Pickaxe"
-    ]
-  },
-  {
-    "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 55,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Advanced Repair Hammer",
-    "parent": "Simple Repair Hammer",
-    "trade_price": 9.5,
-    "stackSize": 100,
-    "weight": 3.12,
-    "weaponInfo": {
-      "weaponLength": 42,
-      "damage": 20,
-      "penetration": 10
-    }
-  },
-  {
-    "category": "Schematics",
-    "name": "Advanced Repair Hammer Schematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Loot"
-      }
-    ],
-    "learn": [
-      "Advanced Repair Hammer"
-    ]
-  },
-  {
     "category": "Crafting",
     "cost": {
       "count": 40,
@@ -311,20 +112,24 @@
       {
         "ingredients": [
           {
-            "count": 36,
+            "count": 87,
             "name": "Redwood Wood"
           },
           {
-            "count": 6,
+            "count": 34,
             "name": "Nomad Cloth"
           },
           {
-            "count": 4,
+            "count": 16,
             "name": "Rope"
           },
           {
-            "count": 3,
+            "count": 8,
             "name": "Rubber Block"
+          },
+          {
+            "count": 45,
+            "name": "Cotton"
           }
         ]
       }
@@ -332,7 +137,7 @@
     "name": "Advanced Windmill",
     "parent": "Windmill",
     "structureInfo": {
-      "type": "Medium",
+      "type": "Reinforced",
       "hp": 2500
     }
   },
@@ -2941,8 +2746,8 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 1,
-            "name": "Fiber Weave"
+            "count": 8,
+            "name": "Fiber"
           }
         ],
         "output": 3,
@@ -2960,8 +2765,8 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 1,
-            "name": "Fiber Weave"
+            "count": 8,
+            "name": "Fiber"
           }
         ],
         "output": 3,
@@ -3084,8 +2889,8 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 1,
-            "name": "Fiber Weave"
+            "count": 5,
+            "name": "Fiber"
           }
         ],
         "output": 10,
@@ -3103,8 +2908,8 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 1,
-            "name": "Fiber Weave"
+            "count": 5,
+            "name": "Fiber"
           }
         ],
         "output": 10,
@@ -3121,7 +2926,7 @@
       "vsMedium": 7,
       "vsHard": 5
     },
-    "stackSize": 20,
+    "stackSize": 100,
     "weight": 0.3,
     "toolInfo": [
       {
@@ -3387,16 +3192,12 @@
       {
         "ingredients": [
           {
-            "count": 6,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 8,
+            "count": 26,
             "name": "Bone Splinter"
           },
           {
-            "count": 1,
-            "name": "Rope"
+            "count": 11,
+            "name": "Hide"
           }
         ]
       }
@@ -7547,6 +7348,46 @@
     ]
   },
   {
+    "category": "Ammo",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 1,
+            "name": "Ceramic Shard"
+          }
+        ],
+        "output": 10,
+        "station": "Advanced Woodworking Station",
+        "time": 3.5
+      }
+    ],
+    "name": "Ceramic Dart",
+    "parent": "BoltCompactChitin",
+    "trade_price": 1.5,
+    "projectileDamage": {
+      "damage": 66,
+      "vsMedium": 7,
+      "vsHard": 5
+    },
+    "stackSize": 100,
+    "weight": 0.6,
+    "toolInfo": [
+      {
+        "toolType": "RepeaterBolt",
+        "tier": 1
+      }
+    ]
+  },
+  {
     "category": "Equipment",
     "cost": {
       "count": 2,
@@ -7608,6 +7449,90 @@
     ]
   },
   {
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Cotton"
+          },
+          {
+            "count": 17,
+            "name": "Wood"
+          },
+          {
+            "count": 9,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 4,
+            "name": "Leather"
+          }
+        ]
+      }
+    ],
+    "name": "Ceramic Hatchet",
+    "parent": "Heavy Rawbone Hand Axe",
+    "trade_price": 56.2,
+    "description": "Even the most obstinate nomad has fun chopping food with this extremely efficient tool.",
+    "projectileDamage": {
+      "vsSoft": 35
+    },
+    "stackSize": 100,
+    "weight": 4.5,
+    "weaponInfo": {
+      "weaponLength": 52,
+      "damage": 54,
+      "penetration": 11
+    },
+    "toolInfo": [
+      {
+        "toolType": "TreeCutting",
+        "tier": 7
+      }
+    ],
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
+        "location": "Tools Strongbox"
+      },
+      {
+        "location": "Tools and Equipment Strongbox"
+      },
+      {
+        "location": "Weapons Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Ceramic Hatchet Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Loot"
+      }
+    ],
+    "learn": [
+      "Ceramic Hatchet"
+    ]
+  },
+  {
     "category": "Resources",
     "cost": {
       "name": "Fragment"
@@ -7631,6 +7556,129 @@
     "description": "Hardened ceramic nails used for construction of more advanced structures and walkers.",
     "stackSize": 100,
     "weight": 0.28
+  },
+  {
+    "category": "Tools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 20,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Ceramic Pickaxe",
+    "parent": "Bone Pickaxe",
+    "trade_price": 98.2,
+    "description": "A nearly unbreakable, highly efficient mining tool.",
+    "projectileDamage": {
+      "vsSoft": 35
+    },
+    "stackSize": 100,
+    "weight": 5,
+    "weaponInfo": {
+      "weaponLength": 66,
+      "damage": 30,
+      "penetration": 20
+    },
+    "toolInfo": [
+      {
+        "toolType": "Mining",
+        "tier": 7
+      }
+    ],
+    "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Volcanic Map - Ruins"
+      },
+      {
+        "location": "Tools Strongbox"
+      },
+      {
+        "location": "Tools and Equipment Strongbox"
+      },
+      {
+        "location": "Pyramid"
+      }
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Ceramic Pickaxe Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Loot"
+      }
+    ],
+    "learn": [
+      "Ceramic Pickaxe"
+    ]
+  },
+  {
+    "category": "Tools",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 22,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 14,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 6,
+            "name": "Rope"
+          },
+          {
+            "count": 24,
+            "name": "Cotton"
+          }
+        ]
+      }
+    ],
+    "name": "Ceramic Repair Hammer",
+    "parent": "Bone Repair Hammer",
+    "trade_price": 9.5,
+    "stackSize": 100,
+    "weight": 3.12,
+    "weaponInfo": {
+      "weaponLength": 42,
+      "damage": 20,
+      "penetration": 10
+    }
+  },
+  {
+    "category": "Schematics",
+    "name": "Ceramic Repair Hammer Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Loot"
+      }
+    ],
+    "learn": [
+      "Ceramic Repair Hammer"
+    ]
   },
   {
     "category": "Resources",
@@ -7680,8 +7728,8 @@
             "name": "Ceramic Shard"
           },
           {
-            "count": 15,
-            "name": "Fiber"
+            "count": 3,
+            "name": "Fiber Weave"
           }
         ],
         "output": 3,
@@ -7725,7 +7773,7 @@
     "learn": [
       "Ceramic-Tipped Bolt",
       "Ceramic-Tipped Harpoon",
-      "CeramicDart"
+      "Ceramic Dart"
     ]
   },
   {
@@ -8026,12 +8074,12 @@
             "name": "Wood Shaft"
           },
           {
-            "count": 3,
+            "count": 2,
             "name": "Chitin Plate"
           },
           {
-            "count": 15,
-            "name": "Fiber"
+            "count": 1,
+            "name": "Fiber Weave"
           }
         ],
         "output": 10,
@@ -8045,12 +8093,12 @@
             "name": "Wood Shaft"
           },
           {
-            "count": 3,
+            "count": 2,
             "name": "Chitin Plate"
           },
           {
-            "count": 15,
-            "name": "Fiber"
+            "count": 1,
+            "name": "Fiber Weave"
           }
         ],
         "output": 10,
@@ -8066,7 +8114,7 @@
       "vsMedium": 7,
       "vsHard": 5
     },
-    "stackSize": 20,
+    "stackSize": 100,
     "weight": 0.3,
     "toolInfo": [
       {
@@ -8207,6 +8255,49 @@
     ]
   },
   {
+    "category": "Tools",
+    "cost": {
+      "count": 15,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 14,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 22,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 5,
+            "name": "Rope"
+          }
+        ]
+      }
+    ],
+    "name": "Chitin Repair Hammer",
+    "parent": "Bone Repair Hammer",
+    "trade_price": 9.5,
+    "stackSize": 100,
+    "weight": 3.12,
+    "weaponInfo": {
+      "weaponLength": 42,
+      "damage": 20,
+      "penetration": 10
+    }
+  },
+  {
+    "category": "Schematics",
+    "name": "Chitin Repair Hammer Schematic",
+    "stackSize": 100,
+    "learn": [
+      "Chitin Repair Hammer"
+    ]
+  },
+  {
     "category": "Ammo",
     "crafting": [
       {
@@ -8220,8 +8311,8 @@
             "name": "Chitin Plate"
           },
           {
-            "count": 15,
-            "name": "Fiber"
+            "count": 2,
+            "name": "Fiber Weave"
           }
         ],
         "output": 3,
@@ -8239,8 +8330,8 @@
             "name": "Chitin Plate"
           },
           {
-            "count": 15,
-            "name": "Fiber"
+            "count": 2,
+            "name": "Fiber Weave"
           }
         ],
         "output": 3,
@@ -9754,8 +9845,8 @@
     "name": "Corn",
     "trade_price": 0.2,
     "description": "Corn is seeded by expeditionary planters on the fringe of the Ice Lands.",
-    "stackSize": 100,
-    "weight": 0.22
+    "stackSize": 50,
+    "weight": 0.33
   },
   {
     "category": "Resources",
@@ -10003,8 +10094,8 @@
     "projectileDamage": {
       "damage": 50,
       "vsSoft": 100,
-      "vsMedium": 85,
-      "vsHard": 30,
+      "vsMedium": 12,
+      "vsHard": 10,
       "vsReinforced": 5,
       "vsSolid": 2
     },
@@ -10116,6 +10207,11 @@
     "learn": [
       "Defensive Tower"
     ]
+  },
+  {
+    "category": "Resources",
+    "name": "Delivery Token",
+    "stackSize": 100
   },
   {
     "category": "Drugs",
@@ -17635,14 +17731,14 @@
     "trade_price": 5.2,
     "description": "A shaped piece of flint that shatters on impact. Cuts through rupu fur like butter.",
     "projectileDamage": {
-      "damage": 57,
+      "damage": 80,
       "vsSoft": 35,
       "vsHard": 60,
       "vsReinforced": 20,
       "vsSolid": 5
     },
     "stackSize": 100,
-    "weight": 5
+    "weight": 1.5
   },
   {
     "category": "Ammo",
@@ -22492,7 +22588,7 @@
       }
     ],
     "name": "Infused Pickaxe",
-    "parent": "Master Pickaxe",
+    "parent": "Iron Pickaxe",
     "trade_price": 38.7,
     "projectileDamage": {
       "vsSoft": 35
@@ -22540,7 +22636,7 @@
       }
     ],
     "name": "Infused Repair Hammer",
-    "parent": "Master Repair Hammer",
+    "parent": "Iron Repair Hammer",
     "trade_price": 9.5,
     "stackSize": 100,
     "weight": 3.12,
@@ -22591,7 +22687,7 @@
       }
     ],
     "name": "Infused Scythe",
-    "parent": "Master Scythe",
+    "parent": "Iron Scythe",
     "trade_price": 17.4,
     "stackSize": 100,
     "weight": 6.3,
@@ -22698,6 +22794,107 @@
     ]
   },
   {
+    "category": "Tools",
+    "cost": {
+      "count": 8,
+      "name": "Tablet"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 28,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 1,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "name": "Iron Pickaxe",
+    "parent": "Ceramic Pickaxe",
+    "trade_price": 38.7,
+    "description": "Mine minerals with increased efficiency.",
+    "projectileDamage": {
+      "vsSoft": 35
+    },
+    "stackSize": 100,
+    "weight": 6,
+    "weaponInfo": {
+      "weaponLength": 66,
+      "damage": 35,
+      "penetration": 20
+    },
+    "toolInfo": [
+      {
+        "toolType": "Mining",
+        "tier": 4
+      }
+    ],
+    "drops": [
+      {
+        "location": "Tools Strongbox"
+      }
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Iron Pickaxe Schematic",
+    "stackSize": 100,
+    "learn": [
+      "Iron Pickaxe"
+    ]
+  },
+  {
+    "category": "Tools",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 12,
+            "name": "Leather"
+          }
+        ]
+      }
+    ],
+    "name": "Iron Repair Hammer",
+    "parent": "Ceramic Repair Hammer",
+    "trade_price": 9.5,
+    "stackSize": 100,
+    "weight": 3.12,
+    "weaponInfo": {
+      "weaponLength": 42,
+      "damage": 20,
+      "penetration": 10
+    }
+  },
+  {
+    "category": "Schematics",
+    "name": "Iron Repair Hammer Schematic",
+    "stackSize": 100,
+    "learn": [
+      "Iron Repair Hammer"
+    ]
+  },
+  {
     "category": "Ammo",
     "cost": {
       "count": 5,
@@ -22734,6 +22931,59 @@
         "toolType": "Scattershot",
         "tier": 1
       }
+    ]
+  },
+  {
+    "category": "Tools",
+    "cost": {
+      "count": 50,
+      "name": "Fragment"
+    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 14,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 10,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 2,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 8,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Iron Scythe",
+    "parent": "Scythe",
+    "trade_price": 17.4,
+    "stackSize": 100,
+    "weight": 6.3,
+    "weaponInfo": {
+      "weaponLength": 102,
+      "damage": 30,
+      "penetration": 40
+    },
+    "toolInfo": [
+      {
+        "toolType": "Scythe",
+        "tier": 4
+      }
+    ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Iron Scythe Schematic",
+    "stackSize": 100,
+    "learn": [
+      "Iron Scythe"
     ]
   },
   {
@@ -24538,7 +24788,7 @@
       {
         "ingredients": [
           {
-            "count": 20,
+            "count": 14,
             "name": "Wood Shaft"
           },
           {
@@ -24546,12 +24796,12 @@
             "name": "Ceramic Shard"
           },
           {
-            "count": 5,
+            "count": 3,
             "name": "Nomad Cloth"
           },
           {
-            "count": 70,
-            "name": "Stone"
+            "count": 7,
+            "name": "Leather"
           }
         ]
       }
@@ -25012,156 +25262,6 @@
     }
   },
   {
-    "category": "Tools",
-    "cost": {
-      "count": 8,
-      "name": "Tablet"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 3,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 28,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 1,
-            "name": "Nomad Cloth"
-          }
-        ]
-      }
-    ],
-    "name": "Master Pickaxe",
-    "parent": "Advanced Pickaxe",
-    "trade_price": 38.7,
-    "description": "Mine minerals with increased efficiency.",
-    "projectileDamage": {
-      "vsSoft": 35
-    },
-    "stackSize": 100,
-    "weight": 6,
-    "weaponInfo": {
-      "weaponLength": 66,
-      "damage": 35,
-      "penetration": 20
-    },
-    "toolInfo": [
-      {
-        "toolType": "Mining",
-        "tier": 4
-      }
-    ],
-    "drops": [
-      {
-        "location": "Tools Strongbox"
-      }
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Master Pickaxe Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Master Pickaxe"
-    ]
-  },
-  {
-    "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 55,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Master Repair Hammer",
-    "parent": "Advanced Repair Hammer",
-    "trade_price": 9.5,
-    "stackSize": 100,
-    "weight": 3.12,
-    "weaponInfo": {
-      "weaponLength": 42,
-      "damage": 20,
-      "penetration": 10
-    }
-  },
-  {
-    "category": "Schematics",
-    "name": "Master Repair Hammer Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Master Repair Hammer"
-    ]
-  },
-  {
-    "category": "Tools",
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 14,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 10,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 2,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 8,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "Master Scythe",
-    "parent": "Scythe",
-    "trade_price": 17.4,
-    "stackSize": 100,
-    "weight": 6.3,
-    "weaponInfo": {
-      "weaponLength": 102,
-      "damage": 30,
-      "penetration": 40
-    },
-    "toolInfo": [
-      {
-        "toolType": "Scythe",
-        "tier": 4
-      }
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Master Scythe Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Master Scythe"
-    ]
-  },
-  {
     "category": "Furniture",
     "crafting": [
       {
@@ -25215,9 +25315,6 @@
       },
       {
         "location": "Tools and Equipment Strongbox"
-      },
-      {
-        "location": "Loot"
       }
     ]
   },
@@ -25227,7 +25324,13 @@
     "stackSize": 100,
     "drops": [
       {
+        "location": "Tools and Equipment Strongbox"
+      },
+      {
         "location": "Nurr Lair"
+      },
+      {
+        "location": "Loot"
       },
       {
         "location": "Rupu Raider Outpost"
@@ -25457,9 +25560,6 @@
     "name": "Medium Water Bag Schematic",
     "stackSize": 100,
     "drops": [
-      {
-        "location": "Loot"
-      },
       {
         "location": "Nurr Lair"
       },
@@ -28386,20 +28486,20 @@
       {
         "ingredients": [
           {
-            "count": 17,
+            "count": 23,
             "name": "Wood Shaft"
           },
           {
-            "count": 15,
+            "count": 7,
             "name": "Ceramic Shard"
           },
           {
-            "count": 58,
-            "name": "Stone"
+            "count": 3,
+            "name": "Cotton"
           },
           {
-            "count": 3,
-            "name": "Beeswax"
+            "count": 8,
+            "name": "Leather"
           }
         ]
       }
@@ -30234,143 +30334,24 @@
     ]
   },
   {
-    "category": "Liquids",
+    "category": "Resources",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 10,
-            "name": "Cactus Flesh"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 35
-      },
-      {
-        "ingredients": [
-          {
-            "count": 10,
-            "name": "Cactus Flesh"
-          }
-        ],
-        "station": "Clay Pot",
-        "time": 35
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Fruit Pulp"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 35
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Fruit Pulp"
-          }
-        ],
-        "station": "Clay Pot",
-        "time": 35
-      },
-      {
-        "ingredients": [
-          {
-            "count": 50,
-            "name": "Toxic Water"
-          },
-          {
-            "count": 6,
-            "name": "Charcoal"
-          },
-          {
-            "count": 25,
-            "name": "Sand"
-          }
-        ],
-        "output": 50,
-        "station": "Purification Station",
-        "time": 150
-      },
-      {
-        "ingredients": [
-          {
             "count": 5,
-            "name": "Dirty Water"
-          },
-          {
-            "count": 1,
-            "name": "Charcoal"
+            "name": "Purified Water"
           }
         ],
-        "output": 5,
-        "station": "Camp Fire",
-        "time": 55
-      },
-      {
-        "ingredients": [
-          {
-            "count": 5,
-            "name": "Dirty Water"
-          },
-          {
-            "count": 1,
-            "name": "Charcoal"
-          }
-        ],
-        "output": 5,
-        "station": "Clay Pot",
-        "time": 55
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Dirty Water"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 75
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Dirty Water"
-          }
-        ],
-        "station": "Clay Pot",
-        "time": 75
-      },
-      {
-        "ingredients": [
-          {
-            "count": 3,
-            "name": "Thornberry"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 35
-      },
-      {
-        "ingredients": [
-          {
-            "count": 3,
-            "name": "Thornberry"
-          }
-        ],
-        "station": "Clay Pot",
-        "time": 35
+        "station": "FuelBurning",
+        "time": 360
       }
     ],
     "name": "Purified Water",
-    "trade_price": 3,
+    "trade_price": 0.1,
     "description": "Significantly increaes stamina regeneration when consumed. All water that is transported to the Flotilla is cleansed in an ancient water purifying machine.",
-    "stackSize": 100,
-    "weight": 0.2
+    "stackSize": 10000,
+    "weight": 0.01
   },
   {
     "category": "Crafting",
@@ -33741,11 +33722,11 @@
       {
         "ingredients": [
           {
-            "count": 60,
+            "count": 12,
             "name": "Wood Shaft"
           },
           {
-            "count": 100,
+            "count": 65,
             "name": "Bone Splinter"
           },
           {
@@ -33753,8 +33734,16 @@
             "name": "Rope"
           },
           {
+            "count": 35,
+            "name": "Tallow"
+          },
+          {
             "count": 2,
-            "name": "Iron Ore"
+            "name": "Toothwheel"
+          },
+          {
+            "count": 4,
+            "name": "Wooden Slab"
           }
         ]
       }
@@ -33831,8 +33820,8 @@
     "projectileDamage": {
       "damage": 100,
       "vsSoft": 100,
-      "vsMedium": 85,
-      "vsHard": 30,
+      "vsMedium": 12,
+      "vsHard": 10,
       "vsReinforced": 5,
       "vsSolid": 2
     },
@@ -35557,16 +35546,16 @@
             "name": "Wood Shaft"
           },
           {
-            "count": 7,
+            "count": 12,
             "name": "Ceramic Shard"
           },
           {
-            "count": 55,
-            "name": "Stone"
+            "count": 4,
+            "name": "Leather"
           },
           {
-            "count": 5,
-            "name": "Nomad Cloth"
+            "count": 2,
+            "name": "Rope"
           }
         ]
       }
@@ -35639,6 +35628,10 @@
           {
             "count": 4,
             "name": "Nomad Cloth"
+          },
+          {
+            "count": 7,
+            "name": "Cotton"
           }
         ]
       }
@@ -36734,15 +36727,15 @@
       {
         "ingredients": [
           {
-            "count": 10,
-            "name": "Wood Shaft"
+            "count": 22,
+            "name": "Wood"
           },
           {
             "count": 17,
             "name": "Stone"
           },
           {
-            "count": 1,
+            "count": 15,
             "name": "Rupu Vine"
           }
         ]
@@ -36945,7 +36938,7 @@
             "name": "Ceramic Shard"
           },
           {
-            "count": 18,
+            "count": 9,
             "name": "Wood Shaft"
           },
           {
@@ -36953,8 +36946,8 @@
             "name": "Nomad Cloth"
           },
           {
-            "count": 80,
-            "name": "Stone"
+            "count": 7,
+            "name": "Leather"
           }
         ]
       }
@@ -40791,6 +40784,11 @@
     "category": "Schematics",
     "name": "Swampwood Galoshes Schematic",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Loot"
+      }
+    ],
     "learn": [
       "Swampwood Galoshes"
     ]
@@ -41210,12 +41208,12 @@
     "description": "Either a fantastically aerodynamic stone, its form perfected for best throwing experience... Or just a sharp chip of rock that you can throw at someone in a pinch.",
     "projectileDamage": {
       "vsSoft": 100,
-      "vsMedium": 85,
-      "vsHard": 30,
+      "vsMedium": 12,
+      "vsHard": 10,
       "vsReinforced": 5,
       "vsSolid": 2
     },
-    "stackSize": 10,
+    "stackSize": 50,
     "weight": 0.3,
     "weaponInfo": {
       "damage": 30,
@@ -43845,20 +43843,20 @@
       {
         "ingredients": [
           {
-            "count": 400,
-            "name": "Wood"
+            "count": 25,
+            "name": "Wooden Slab"
           },
           {
-            "count": 35,
-            "name": "Nomad Cloth"
+            "count": 15,
+            "name": "Leather"
           },
           {
             "count": 30,
             "name": "Rope"
           },
           {
-            "count": 4,
-            "name": "Iron Ore"
+            "count": 24,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -46708,7 +46706,7 @@
       "vsMedium": 7,
       "vsHard": 5
     },
-    "stackSize": 28,
+    "stackSize": 100,
     "weight": 0.6,
     "toolInfo": [
       {
