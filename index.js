@@ -8,6 +8,9 @@ const dataParser = require("./controllers/dataParsers");
 let allItems = [];
 const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
 const DEBUG = process.env.DEBUG === "true";
+const CONTENT_FOLDER_PATH = process.env.CONTENT_FOLDER_PATH
+  ? process.env.CONTENT_FOLDER_PATH
+  : "./";
 
 const folderPatch = "./exported/";
 
@@ -50,32 +53,50 @@ const orderByName = (a, b) => {
 };
 
 console.info("Loading StringTables");
-loadDirData("./Content/Mist/Data/StringTables", "translation");
+loadDirData(
+  CONTENT_FOLDER_PATH + "Content/Mist/Data/StringTables",
+  "translation"
+);
 console.info("Loading Localization");
-loadDirData("./Content/Localization/Game/en", "translation");
+loadDirData(
+  CONTENT_FOLDER_PATH + "Content/Localization/Game/en",
+  "translation"
+);
 console.info("Loading TechTree");
-loadDirData("./Content/Mist/Data/TechTree", "tech");
+loadDirData(CONTENT_FOLDER_PATH + "Content/Mist/Data/TechTree", "tech");
 console.info("Loading Items");
-loadDirData("./Content/Mist/Data/Items", "item");
+loadDirData(CONTENT_FOLDER_PATH + "Content/Mist/Data/Items", "item");
 console.info("Loading Placeables");
-loadDirData("./Content/Mist/Data/Placeables", "placeables");
+loadDirData(CONTENT_FOLDER_PATH + "Content/Mist/Data/Placeables", "placeables");
 console.info("Loading Recipes");
-loadDirData("./Content/Mist/Data/Recipes", "item");
+loadDirData(CONTENT_FOLDER_PATH + "Content/Mist/Data/Recipes", "item");
 console.info("Loading Trade");
-loadDirData("./Content/Mist/Data/Trade", "trade");
+loadDirData(CONTENT_FOLDER_PATH + "Content/Mist/Data/Trade", "trade");
 //console.info("Loading Placeables Cached");
 //loadDirData("./Content/Mist/Data/Placeables", "cached");
 console.info("Loading Walkers Upgrades");
-loadDirData("./Content/Mist/Data/Walkers", "upgrages");
+loadDirData(CONTENT_FOLDER_PATH + "Content/Mist/Data/Walkers", "upgrages");
 console.info("Loading Damages");
-loadDirData("./Content/Mist/Data/DamageTypes", "damagetypes");
+loadDirData(
+  CONTENT_FOLDER_PATH + "Content/Mist/Data/DamageTypes",
+  "damagetypes"
+);
 console.info("Loading Schematics");
-loadDirData("./Content/Mist/Data/Items/Schematics", "schematics");
+loadDirData(
+  CONTENT_FOLDER_PATH + "Content/Mist/Data/Items/Schematics",
+  "schematics"
+);
 
 if (process.env.EXTRACT_LOOT_TABLES === "true") {
   console.info("Loading LootTables");
-  loadDirData("./Content/Mist/Data/LootTables", "loottables");
-  loadDirData("./Content/Mist/Data/LootTables", "blueprintsloot");
+  loadDirData(
+    CONTENT_FOLDER_PATH + "Content/Mist/Data/LootTables",
+    "loottables"
+  );
+  loadDirData(
+    CONTENT_FOLDER_PATH + "Content/Mist/Data/LootTables",
+    "blueprintsloot"
+  );
   fileParser.parseBlueprintsToItems();
 }
 
@@ -174,8 +195,8 @@ if (process.env.COMPARE === "true") {
 }
 
 function loadDirData(techTreeDir, folderType) {
-  let dir = path.join(__dirname, techTreeDir);
-  let files = fs.readdirSync(dir);
+  //let dir = path.join(techTreeDir);
+  let files = fs.readdirSync(techTreeDir);
   files.forEach((file) => {
     let fileData = fs.statSync(techTreeDir + "/" + file);
     if (fileData.isDirectory()) {

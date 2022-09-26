@@ -1745,7 +1745,7 @@
     "description": "Ballista shoots bolts or tethering harpoons that attach to walkers and the environment.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 700
+      "hp": 1000
     }
   },
   {
@@ -15139,11 +15139,10 @@
       }
     ],
     "learn": [
-      "Winged Helmet",
-      "Fiber Headwrap",
       "Fiber Shirt and Trousers",
       "Fiber Sandals",
-      "Fiber Arm Wraps"
+      "Fiber Arm Wraps",
+      "Fiber Headwrap"
     ]
   },
   {
@@ -24674,7 +24673,7 @@
     "description": "A small weapon for remote control while driving walkers. Launches bursts of solid projectiles.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 750
+      "hp": 850
     }
   },
   {
@@ -32435,7 +32434,7 @@
     "description": "Unload a rapid volley of darts that are deadly against lightly armored targets. Weak against walkers and structures.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 900
+      "hp": 1150
     }
   },
   {
@@ -32516,7 +32515,7 @@
     "description": "A heavy weapon that launches deadly roks. Invented out of necessity when various Nomad factions started fielding large Walkers against each other.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 1200
+      "hp": 1350
     }
   },
   {
@@ -33915,7 +33914,7 @@
     "description": "Fire a short-range barrage of sharp stones in a wide angle. Effective against personnel and weak structures. Uses Scattershot Ammo.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 700
+      "hp": 1050
     }
   },
   {
@@ -46282,18 +46281,8 @@
   },
   {
     "category": "Armors",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 2,
-            "name": "Fiber Weave"
-          }
-        ]
-      }
-    ],
     "name": "Winged Helmet",
-    "parent": "Fiber Headwrap",
+    "parent": "Primitive Bandage",
     "trade_price": 2.4,
     "stackSize": 100,
     "weight": 0.2,
