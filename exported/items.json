@@ -145,6 +145,11 @@
     "category": "Schematics",
     "name": "Advanced Windmill Schematic",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Loot"
+      }
+    ],
     "learn": [
       "Advanced Windmill"
     ]
@@ -8538,6 +8543,11 @@
     "category": "Schematics",
     "name": "Clay Base Schematic",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Loot"
+      }
+    ],
     "learn": [
       "Clay Wall",
       "Clay Battlement",
@@ -15129,10 +15139,11 @@
       }
     ],
     "learn": [
-      "Fiber Shirt and Trousers",
+      "Winged Helmet",
       "Fiber Headwrap",
-      "Fiber Arm Wraps",
-      "Fiber Sandals"
+      "Fiber Shirt and Trousers",
+      "Fiber Sandals",
+      "Fiber Arm Wraps"
     ]
   },
   {
@@ -25125,6 +25136,11 @@
     "category": "Schematics",
     "name": "Maintenance Vault Schematic",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Loot"
+      }
+    ],
     "learn": [
       "Maintenance Vault"
     ]
@@ -30533,7 +30549,7 @@
     "description": "Measures distance to far-away targets.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 350
+      "hp": 800
     }
   },
   {
@@ -46263,6 +46279,28 @@
     "learn": [
       "Windmill"
     ]
+  },
+  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Winged Helmet",
+    "parent": "Fiber Headwrap",
+    "trade_price": 2.4,
+    "stackSize": 100,
+    "weight": 0.2,
+    "armorInfo": {
+      "absorbing": 8,
+      "reduction": 3
+    }
   },
   {
     "category": "Equipment",
