@@ -135,6 +135,7 @@ lootSites["NC_Lootsite_01_1"] = "Rupu Walker Wreckage";
 lootSites["NC_Lootsite_01_2"] = "Rupu Walker Wreckage";
 
 lootSites["SandhillBonus"] = "Digging in the sand";
+lootSites["FlatlandsRuinsTotem"] = "Foragers Outpost";
 
 /* RUPU CAMPS */
 
