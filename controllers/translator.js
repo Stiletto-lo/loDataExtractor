@@ -15,11 +15,13 @@ controller.translateLootSite = (name) => {
   if (anotherName != null) {
     return anotherName;
   }
+
+  console.warn("No translation for: " + name);
+
   if (name.includes("Strongbox") || DEBUG) {
     return name.trim();
   }
 
-  console.warn("No translation for: " + name);
   return "Loot";
 };
 

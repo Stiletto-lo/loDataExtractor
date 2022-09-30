@@ -96,6 +96,9 @@ lootSites["CanyonPOIBurnableChest"] = "Rupu Raiding Checkpoint";
 lootSites["PoiSmallHangingBagLoot_T0"] = "Ruin with Small Hanging Bag";
 lootSites["PoiMediumCradleHangingBagLoot_T0"] = "Ruin with Small Hanging Bag";
 
+lootSites["RaiderOutpostChest"] = "Raider Outpost";
+lootSites["RaiderOutpostBag"] = "Raider Outpost";
+
 lootSites["BP_DesertClam"] = "Desert Clam";
 
 lootSites["LootableAttackableUrnComponent"] = "Urn";
@@ -179,6 +182,8 @@ lootSites["RupuTotem"] = "Rupu Camp - Totem";
 lootSites["AshFortressTotem"] = "Ash Oracle Fortress";
 lootSites["AshArtilleryCampChest"] = "Ash Oracle Fortress";
 lootSites["AshFortressValuableResources"] = "Ash Oracle Fortress";
+
+lootSites["LakeCampTotem"] = "Sunken Temple";
 
 /* POI */
 
