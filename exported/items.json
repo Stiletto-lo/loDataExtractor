@@ -3690,6 +3690,9 @@
         "location": "Rupu Raider"
       },
       {
+        "location": "Loot"
+      },
+      {
         "location": "Plainst rider"
       },
       {
@@ -3871,7 +3874,7 @@
     "parent": "Stiletto Walker",
     "description": "Before the Flotilla grew too large and switched to manpower, hundreds of buffalo walkers were used to tow the Flotilla on days there was no breeze. Named after an ancient beast, the buffalo's wide frame, ample deck space, and good maneuverability make it suited for almost any task.",
     "structureInfo": {
-      "type": "Soft",
+      "type": "Medium",
       "hp": 40000
     },
     "walkerinfo": {
@@ -3884,7 +3887,7 @@
       {
         "ingredients": [
           {
-            "count": 280,
+            "count": 70,
             "name": "Wood"
           },
           {
@@ -3894,6 +3897,10 @@
           {
             "count": 42,
             "name": "Earth Wax"
+          },
+          {
+            "count": 16,
+            "name": "Rubber Block"
           }
         ]
       }
@@ -3903,7 +3910,7 @@
     "description": "These versatile legs can step over fissures, climb rocky mountains, and ford fast flowing rivers. While not very protected, they're light and cheap to construct.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 4800
+      "hp": 4200
     }
   },
   {
@@ -3916,20 +3923,28 @@
       {
         "ingredients": [
           {
-            "count": 1470,
+            "count": 169,
             "name": "Wood"
           },
           {
-            "count": 183,
+            "count": 134,
             "name": "Wood Shaft"
           },
           {
-            "count": 102,
+            "count": 23,
+            "name": "Rubber Block"
+          },
+          {
+            "count": 24,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 28,
             "name": "Ceramic Shard"
           },
           {
-            "count": 33,
-            "name": "Bone Glue"
+            "count": 11,
+            "name": "Starch Cement"
           }
         ]
       }
@@ -3939,7 +3954,7 @@
     "description": "Armored legs that easily deflect simple projectiles.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 10500
+      "hp": 8600
     }
   },
   {
@@ -3975,7 +3990,7 @@
     "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection.",
     "structureInfo": {
       "type": "Reinforced",
-      "hp": 13300
+      "hp": 14800
     }
   },
   {
@@ -5045,20 +5060,20 @@
       {
         "ingredients": [
           {
-            "count": 93,
-            "name": "Wood"
+            "count": 14,
+            "name": "Wood Shaft"
           },
           {
-            "count": 52,
+            "count": 22,
             "name": "Fiber Weave"
           },
           {
-            "count": 4,
-            "name": "Starch Cement"
+            "count": 27,
+            "name": "Earth Wax"
           },
           {
-            "count": 10,
-            "name": "Leather"
+            "count": 4,
+            "name": "Toothwheel"
           }
         ]
       }
@@ -5081,16 +5096,20 @@
       {
         "ingredients": [
           {
-            "count": 78,
+            "count": 22,
             "name": "Wood Shaft"
           },
           {
-            "count": 40,
+            "count": 18,
             "name": "Rope"
           },
           {
-            "count": 14,
-            "name": "Nomad Cloth"
+            "count": 4,
+            "name": "Toothwheel"
+          },
+          {
+            "count": 45,
+            "name": "Leather"
           }
         ]
       }
@@ -5100,7 +5119,7 @@
     "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 4300
+      "hp": 11500
     }
   },
   {
@@ -5128,7 +5147,7 @@
     "description": "Generates the highest possible physical force for walker movement. Very complicated to construct due to their size.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 1920
+      "hp": 12500
     }
   },
   {
@@ -5141,16 +5160,20 @@
       {
         "ingredients": [
           {
-            "count": 92,
+            "count": 43,
             "name": "Wood Shaft"
           },
           {
-            "count": 8,
+            "count": 26,
             "name": "Nomad Cloth"
           },
           {
-            "count": 50,
-            "name": "Hide"
+            "count": 14,
+            "name": "Rope"
+          },
+          {
+            "count": 5,
+            "name": "Toothwheel"
           }
         ]
       }
@@ -5160,7 +5183,7 @@
     "description": "Upscaled wings that are better at generating force for walker movement.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 2400
+      "hp": 9600
     }
   },
   {
@@ -5173,20 +5196,20 @@
       {
         "ingredients": [
           {
-            "count": 70,
-            "name": "Reinforced Plank"
+            "count": 32,
+            "name": "Wood Shaft"
           },
           {
-            "count": 70,
+            "count": 18,
             "name": "Worm Silk"
           },
           {
-            "count": 120,
-            "name": "Hide"
+            "count": 14,
+            "name": "Tallow"
           },
           {
-            "count": 6,
-            "name": "Worm Scale"
+            "count": 25,
+            "name": "Fiber Weave"
           }
         ]
       }
@@ -5196,7 +5219,7 @@
     "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 3900
+      "hp": 10200
     }
   },
   {
@@ -5209,20 +5232,20 @@
       {
         "ingredients": [
           {
-            "count": 60,
-            "name": "Reinforced Plank"
+            "count": 24,
+            "name": "Wood Shaft"
           },
           {
-            "count": 50,
-            "name": "Worm Silk"
+            "count": 22,
+            "name": "Ceramic Shard"
           },
           {
-            "count": 60,
-            "name": "Hide"
+            "count": 30,
+            "name": "Starch Cement"
           },
           {
-            "count": 3,
-            "name": "Worm Scale"
+            "count": 11,
+            "name": "Leather"
           }
         ]
       }
@@ -5232,7 +5255,7 @@
     "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 6100
+      "hp": 14000
     }
   },
   {
@@ -5245,16 +5268,20 @@
       {
         "ingredients": [
           {
-            "count": 70,
-            "name": "Reinforced Plank"
+            "count": 27,
+            "name": "Nomad Cloth"
           },
           {
-            "count": 60,
-            "name": "Worm Silk"
+            "count": 18,
+            "name": "Rope"
           },
           {
-            "count": 100,
-            "name": "Hide"
+            "count": 35,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 4,
+            "name": "Toothwheel"
           }
         ]
       }
@@ -5264,7 +5291,7 @@
     "description": "Providing comparable efficiency to medium-sized wings while being slightly more sturdy than the base ones, Skirmish wings are useful when you don't know what to expect on your travels.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 3300
+      "hp": 9200
     }
   },
   {
@@ -5281,12 +5308,16 @@
             "name": "Wood Shaft"
           },
           {
-            "count": 18,
-            "name": "Rope"
+            "count": 12,
+            "name": "Worm Silk"
+          },
+          {
+            "count": 42,
+            "name": "Fiber Weave"
           },
           {
             "count": 4,
-            "name": "Nomad Cloth"
+            "name": "Toothwheel"
           }
         ]
       }
@@ -5296,7 +5327,7 @@
     "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 1800
+      "hp": 8800
     }
   },
   {
@@ -7621,19 +7652,6 @@
     ]
   },
   {
-    "category": "Schematics",
-    "name": "Ceramic Pickaxe Schematic",
-    "stackSize": 100,
-    "drops": [
-      {
-        "location": "Loot"
-      }
-    ],
-    "learn": [
-      "Ceramic Pickaxe"
-    ]
-  },
-  {
     "category": "Tools",
     "cost": {
       "count": 10,
@@ -7720,6 +7738,20 @@
     ]
   },
   {
+    "category": "Schematics",
+    "name": "Ceramic Tools Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Loot"
+      }
+    ],
+    "learn": [
+      "Ceramic Pickaxe",
+      "Scythe"
+    ]
+  },
+  {
     "category": "Ammo",
     "crafting": [
       {
@@ -7746,7 +7778,7 @@
     "trade_price": 11,
     "description": "Ammo for Ballista. Ceramic tips guarantee their sharpness and strength.",
     "projectileDamage": {
-      "damage": 280,
+      "damage": 250,
       "vsMedium": 10,
       "vsHard": 10,
       "vsReinforced": 5,
@@ -8349,7 +8381,7 @@
     "trade_price": 5,
     "description": "Ammo for Ballista. Naturally serrated shards of chitin make fine, if terrifying, tips for bolts.",
     "projectileDamage": {
-      "damage": 225,
+      "damage": 200,
       "vsMedium": 10,
       "vsHard": 10,
       "vsReinforced": 5,
@@ -10149,7 +10181,7 @@
     "description": "Combination of a simple alchemical station and a tanning rack that allows processing and curing of various resources.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 500
+      "hp": 1500
     }
   },
   {
@@ -12981,7 +13013,7 @@
     "parent": "Hornet Walker",
     "description": "It's streamlined shape is built for speed, making it a favorite among pirates. It's elevated deck doesn't sport much space for large weapons, but it's height allows for easy boarding of other walkers. Dedicated rear-facing spots for Gun Pods make it easy to fire projectiles at pursuers.",
     "structureInfo": {
-      "type": "Soft",
+      "type": "Medium",
       "hp": 24500
     },
     "walkerinfo": {
@@ -12994,8 +13026,8 @@
       {
         "ingredients": [
           {
-            "count": 320,
-            "name": "Wood"
+            "count": 26,
+            "name": "Wooden Slab"
           },
           {
             "count": 40,
@@ -13012,6 +13044,10 @@
           {
             "count": 4,
             "name": "Rubber Block"
+          },
+          {
+            "count": 26,
+            "name": "Wood"
           }
         ]
       }
@@ -13021,7 +13057,7 @@
     "description": "These versatile legs can step over fissures, climb rocky mountains, and ford fast flowing rivers. While not very protected, they're light and cheap to construct.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 5600
+      "hp": 4900
     }
   },
   {
@@ -13034,20 +13070,40 @@
       {
         "ingredients": [
           {
-            "count": 1176,
+            "count": 85,
             "name": "Wood"
           },
           {
-            "count": 148,
+            "count": 74,
             "name": "Wood Shaft"
           },
           {
-            "count": 82,
+            "count": 41,
+            "name": "Rubber Block"
+          },
+          {
+            "count": 14,
+            "name": "Tallow"
+          },
+          {
+            "count": 11,
+            "name": "Rope"
+          },
+          {
+            "count": 74,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 41,
             "name": "Ceramic Shard"
           },
           {
-            "count": 28,
-            "name": "Bone Glue"
+            "count": 14,
+            "name": "Starch Cement"
+          },
+          {
+            "count": 8,
+            "name": "Ceramic Nails"
           }
         ]
       }
@@ -13057,7 +13113,7 @@
     "description": "Armored legs that easily deflect simple projectiles.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 16500
+      "hp": 8200
     }
   },
   {
@@ -13093,7 +13149,7 @@
     "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection.",
     "structureInfo": {
       "type": "Reinforced",
-      "hp": 20900
+      "hp": 12500
     }
   },
   {
@@ -14160,20 +14216,20 @@
       {
         "ingredients": [
           {
-            "count": 107,
+            "count": 58,
             "name": "Wood"
           },
           {
-            "count": 58,
+            "count": 47,
             "name": "Fiber Weave"
           },
           {
-            "count": 6,
-            "name": "Starch Cement"
+            "count": 26,
+            "name": "Earth Wax"
           },
           {
-            "count": 14,
-            "name": "Leather"
+            "count": 31,
+            "name": "Hide"
           }
         ]
       }
@@ -14183,7 +14239,7 @@
     "description": "It's streamlined shape is built for speed, making it a favorite among pirates. It's elevated deck doesn't sport much space for large weapons, but it's height allows for easy boarding of other walkers. Dedicated rear-facing spots for Gun Pods make it easy to fire projectiles at pursuers.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 10000
+      "hp": 8850
     }
   },
   {
@@ -14196,19 +14252,19 @@
       {
         "ingredients": [
           {
-            "count": 84,
+            "count": 48,
             "name": "Wood Shaft"
           },
           {
-            "count": 42,
-            "name": "Rope"
+            "count": 4,
+            "name": "Toothwheel"
           },
           {
-            "count": 12,
-            "name": "Nomad Cloth"
+            "count": 18,
+            "name": "Leather"
           },
           {
-            "count": 20,
+            "count": 27,
             "name": "Redwood Wood"
           }
         ]
@@ -14219,7 +14275,7 @@
     "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 5400
+      "hp": 11300
     }
   },
   {
@@ -14251,7 +14307,7 @@
     "description": "Generates the highest possible physical force for walker movement. Very complicated to construct due to their size.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 2500
+      "hp": 15000
     }
   },
   {
@@ -14268,12 +14324,16 @@
             "name": "Wood Shaft"
           },
           {
-            "count": 10,
+            "count": 15,
             "name": "Nomad Cloth"
           },
           {
-            "count": 60,
-            "name": "Hide"
+            "count": 27,
+            "name": "Rubber Block"
+          },
+          {
+            "count": 4,
+            "name": "Toothwheel"
           }
         ]
       }
@@ -14283,7 +14343,7 @@
     "description": "Upscaled wings that are better at generating force for walker movement.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 3000
+      "hp": 9500
     }
   },
   {
@@ -14296,20 +14356,20 @@
       {
         "ingredients": [
           {
-            "count": 80,
-            "name": "Reinforced Plank"
+            "count": 45,
+            "name": "Wood Shaft"
           },
           {
-            "count": 80,
-            "name": "Worm Silk"
+            "count": 36,
+            "name": "Tallow"
           },
           {
-            "count": 110,
-            "name": "Hide"
+            "count": 38,
+            "name": "Fiber Weave"
           },
           {
-            "count": 15,
-            "name": "Worm Scale"
+            "count": 4,
+            "name": "Toothwheel"
           }
         ]
       }
@@ -14319,7 +14379,7 @@
     "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 5000
+      "hp": 10000
     }
   },
   {
@@ -14332,20 +14392,20 @@
       {
         "ingredients": [
           {
-            "count": 75,
-            "name": "Reinforced Plank"
+            "count": 65,
+            "name": "Wood Shaft"
           },
           {
-            "count": 60,
-            "name": "Worm Silk"
+            "count": 25,
+            "name": "Starch Cement"
           },
           {
-            "count": 100,
-            "name": "Hide"
+            "count": 35,
+            "name": "Ceramic Shard"
           },
           {
-            "count": 8,
-            "name": "Worm Scale"
+            "count": 21,
+            "name": "Leather"
           }
         ]
       }
@@ -14355,7 +14415,7 @@
     "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 7100
+      "hp": 13500
     }
   },
   {
@@ -14368,20 +14428,20 @@
       {
         "ingredients": [
           {
-            "count": 80,
-            "name": "Reinforced Plank"
+            "count": 46,
+            "name": "Wood Shaft"
           },
           {
-            "count": 70,
+            "count": 18,
             "name": "Worm Silk"
           },
           {
-            "count": 120,
-            "name": "Hide"
+            "count": 41,
+            "name": "Fiber Weave"
           },
           {
-            "count": 20,
-            "name": "Iron Ore"
+            "count": 4,
+            "name": "Toothwheel"
           }
         ]
       }
@@ -14391,7 +14451,7 @@
     "description": "Providing comparable efficiency to medium-sized wings while being slightly more sturdy than the base ones, Skirmish wings are useful when you don't know what to expect on your travels.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 4400
+      "hp": 9250
     }
   },
   {
@@ -14412,8 +14472,12 @@
             "name": "Rope"
           },
           {
-            "count": 5,
+            "count": 12,
             "name": "Nomad Cloth"
+          },
+          {
+            "count": 4,
+            "name": "Toothwheel"
           }
         ]
       }
@@ -14423,7 +14487,7 @@
     "description": "Mesmerizing to watch as they catch the wind, these intricate wings boast more power and efficiency than standard wings. Their horizontal, low profile design make them smaller targets for incoming projectiles, and at the same time allow nomads to shoot over them.",
     "structureInfo": {
       "type": "Soft",
-      "hp": 2500
+      "hp": 8600
     }
   },
   {
@@ -15571,8 +15635,8 @@
             "name": "Stone"
           },
           {
-            "count": 3,
-            "name": "Rupu Gel"
+            "count": 45,
+            "name": "Animal Fat"
           }
         ]
       }
@@ -18483,15 +18547,15 @@
       {
         "ingredients": [
           {
-            "count": 85,
-            "name": "Stone"
+            "count": 12,
+            "name": "Rope"
           },
           {
             "count": 25,
             "name": "Wood Shaft"
           },
           {
-            "count": 20,
+            "count": 225,
             "name": "Clay"
           },
           {
@@ -18500,7 +18564,11 @@
           },
           {
             "count": 25,
-            "name": "Earth Wax"
+            "name": "Tallow"
+          },
+          {
+            "count": 7,
+            "name": "Charcoal"
           }
         ]
       }
@@ -22613,7 +22681,7 @@
     "toolInfo": [
       {
         "toolType": "Mining",
-        "tier": 5
+        "tier": 16
       }
     ]
   },
@@ -22844,7 +22912,7 @@
     "toolInfo": [
       {
         "toolType": "Mining",
-        "tier": 4
+        "tier": 11
       }
     ],
     "drops": [
@@ -22920,6 +22988,10 @@
           {
             "count": 4,
             "name": "Fiber Weave"
+          },
+          {
+            "count": 2,
+            "name": "Iron Ingot"
           }
         ]
       }
@@ -23561,8 +23633,8 @@
             "name": "Stone"
           },
           {
-            "count": 1,
-            "name": "Rupu Gel"
+            "count": 5,
+            "name": "Animal Fat"
           }
         ]
       }
@@ -23587,8 +23659,8 @@
             "name": "Stone"
           },
           {
-            "count": 1,
-            "name": "Rupu Gel"
+            "count": 12,
+            "name": "Animal Fat"
           }
         ]
       }
@@ -23613,8 +23685,8 @@
             "name": "Stone"
           },
           {
-            "count": 1,
-            "name": "Rupu Gel"
+            "count": 12,
+            "name": "Animal Fat"
           }
         ]
       }
@@ -23639,8 +23711,8 @@
             "name": "Stone"
           },
           {
-            "count": 1,
-            "name": "Rupu Gel"
+            "count": 8,
+            "name": "Animal Fat"
           }
         ]
       }
@@ -23702,15 +23774,19 @@
         "ingredients": [
           {
             "count": 25,
-            "name": "Ceramic Shard"
+            "name": "Ceramic Nails"
           },
           {
-            "count": 25,
-            "name": "Stone"
+            "count": 12,
+            "name": "Rope"
           },
           {
-            "count": 65,
-            "name": "Fiber"
+            "count": 10,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 17,
+            "name": "Starch Cement"
           }
         ]
       }
@@ -26018,7 +26094,7 @@
       {
         "ingredients": [
           {
-            "count": 240,
+            "count": 42,
             "name": "Wood"
           },
           {
@@ -26026,8 +26102,8 @@
             "name": "Wood Shaft"
           },
           {
-            "count": 12,
-            "name": "Ceramic Shard"
+            "count": 25,
+            "name": "Chitin Plate"
           },
           {
             "count": 4,
@@ -28295,6 +28371,10 @@
           {
             "count": 4,
             "name": "Fiber Weave"
+          },
+          {
+            "count": 2,
+            "name": "Obsidian"
           }
         ]
       }
@@ -30358,7 +30438,7 @@
             "name": "Purified Water"
           }
         ],
-        "station": "FuelBurning",
+        "station": "Camp Fire",
         "time": 360
       }
     ],
@@ -32620,7 +32700,7 @@
       {
         "ingredients": [
           {
-            "count": 40,
+            "count": 20,
             "name": "Fiber"
           },
           {
@@ -35342,14 +35422,6 @@
       {
         "location": "Pyramid"
       }
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Scythe Schematic",
-    "stackSize": 100,
-    "learn": [
-      "Scythe"
     ]
   },
   {
@@ -38949,7 +39021,7 @@
       {
         "ingredients": [
           {
-            "count": 270,
+            "count": 53,
             "name": "Wood"
           },
           {
@@ -38957,8 +39029,8 @@
             "name": "Wood Shaft"
           },
           {
-            "count": 16,
-            "name": "Ceramic Shard"
+            "count": 36,
+            "name": "Chitin Plate"
           },
           {
             "count": 6,
@@ -42592,7 +42664,7 @@
     "description": "Armored legs that easily deflect simple projectiles.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 12000
+      "hp": 5700
     }
   },
   {
@@ -42632,7 +42704,7 @@
     "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 15200
+      "hp": 9800
     }
   },
   {
@@ -43880,7 +43952,7 @@
     "parent": "Steering Levers",
     "description": "A rotating pod made to attach below walker decks. Houses a single tool, like a saw blade.",
     "structureInfo": {
-      "type": "Soft",
+      "type": "Medium",
       "hp": 5000
     }
   },
@@ -46270,9 +46342,6 @@
       },
       {
         "location": "Loot"
-      },
-      {
-        "location": "Okkam"
       }
     ],
     "learn": [

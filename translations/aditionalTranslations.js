@@ -128,6 +128,7 @@ allTranslations["Furnace_T2"] = "Advanced Furnace";
 allTranslations["BoneDart"] = "Bone Dart";
 allTranslations["LatheCrafting"] = "Lathe";
 allTranslations["Windmill_Tier2"] = "Advanced Windmill";
+allTranslations["CuringFuel"] = "Camp Fire";
 
 allTranslations["TorqueConsumption"] = "Torque generation";
 allTranslations["HighTorqueConsumption"] = "Torque generation";
