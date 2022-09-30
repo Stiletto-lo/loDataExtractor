@@ -58,6 +58,7 @@ lootSites["RupuRaiderMountLoot_T0"] = "Rupu Raider Nurr";
 lootSites["PyramidGuardRupu"] = "Pyramid Guard Rupu";
 lootSites["Plainstrider"] = "Plainst rider";
 lootSites["FlyingRupu"] = "Rupu Hazraki";
+lootSites["RupuSeeker"] = "Rupu Seeker";
 
 /* MOBS */
 
@@ -174,6 +175,10 @@ lootSites["CanyonIslandShelterImproveChest"] = "Rupu Camp - Chest";
 lootSites["CanyonMainVillageChest"] = "Rupu Camp - Chest";
 lootSites["RupuTotemLoot_T0"] = "Rupu Camp - Totem";
 lootSites["RupuTotem"] = "Rupu Camp - Totem";
+
+lootSites["AshFortressTotem"] = "Ash Oracle Fortress";
+lootSites["AshArtilleryCampChest"] = "Ash Oracle Fortress";
+lootSites["AshFortressValuableResources"] = "Ash Oracle Fortress";
 
 /* POI */
 
