@@ -22,7 +22,7 @@ controller.translateLootSite = (name) => {
     return name.trim();
   }
 
-  return "Loot";
+  return "Unknown";
 };
 
 controller.translateName = (name) => {
