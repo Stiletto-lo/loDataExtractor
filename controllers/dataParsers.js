@@ -1,5 +1,3 @@
-const { category } = require("../templates/item");
-
 const controller = {};
 
 controller.parseName = (translator, name) => {
