@@ -67,7 +67,8 @@ controller.translateItem = (item) => {
   if (name) {
     if (
       (name.includes(" Legs") || name.includes(" Wings")) &&
-      !name.includes("(1 of 2)")
+      !name.includes("(1 of 2)") &&
+      !name.includes("Schematic")
     ) {
       name = name + " (1 of 2)";
     }

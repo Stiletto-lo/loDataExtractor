@@ -16,34 +16,41 @@ controller.parseName = (translator, name) => {
       let walkerName = translator.translateName(match[1] + " Walker");
       let legType = "";
       if (name.includes("_T2")) {
-        legType = "Armored ";
+        legType = "Armored";
       } else if (name.includes("_T3")) {
-        legType = "Heavy ";
+        legType = "Heavy";
       }
-      name = walkerName + " Legs " + legType + "(1 of 2)";
+      name = walkerName + " Legs " + legType;
+      if (!name.includes("Schematic")) {
+        name = name.trim() + " (1 of 2)";
+      }
     }
   } else if (/(.+)Wings/.test(name)) {
     let match = name.match(/(.+)Wings/);
     if (match[1] != null) {
       let walkerName = translator.translateName(match[1] + " Walker");
-      let wingsType = "Wings (1 of 2)";
+      let wingsType = "Wings";
       if (name.includes("_T2_Small")) {
-        wingsType = "Wings Small (1 of 2)";
+        wingsType = "Wings Small";
       } else if (name.includes("_T3_Medium")) {
-        wingsType = "Wings Medium (1 of 2)";
+        wingsType = "Wings Medium";
       } else if (name.includes("_T4")) {
-        wingsType = "Wings Large (1 of 2)";
+        wingsType = "Wings Large";
       } else if (name.includes("_T2_Heavy")) {
-        wingsType = "Wings Heavy (1 of 2)";
+        wingsType = "Wings Heavy";
       } else if (name.includes("_T3_Rugged")) {
-        wingsType = "Wings Rugged (1 of 2)";
+        wingsType = "Wings Rugged";
       } else if (name.includes("_T2_Skirmish")) {
-        wingsType = "Wings Skirmish (1 of 2)";
+        wingsType = "Wings Skirmish";
       } else if (name.includes("_T3_Raider")) {
-        wingsType = "Wings Raider (1 of 2)";
+        wingsType = "Wings Raider";
       }
 
       name = walkerName + " " + wingsType;
+
+      if (!name.includes("Schematic")) {
+        name = name.trim() + " (1 of 2)";
+      }
     }
   } else if (name.includes("Upgrades")) {
     if (/(.+)BoneUpgrades/.test(name)) {
