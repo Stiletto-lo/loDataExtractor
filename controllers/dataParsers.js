@@ -10,72 +10,75 @@ controller.parseName = (translator, name) => {
     name = translateName;
   }
 
-  if (/(.+)Legs/.test(name)) {
-    let match = name.match(/(.+)Legs/);
-    if (match[1] != null) {
-      let walkerName = translator.translateName(match[1] + " Walker");
-      let legType = "";
-      if (name.includes("_T2")) {
-        legType = "Armored";
-      } else if (name.includes("_T3")) {
-        legType = "Heavy";
+  if (!name.includes("Schematic")) {
+    if (/(.+)Legs/.test(name)) {
+      let match = name.match(/(.+)Legs/);
+      if (match[1] != null) {
+        let walkerName = translator.translateName(match[1].trim() + " Walker");
+        let legType = "";
+        if (name.includes("_T2")) {
+          legType = "Armored";
+        } else if (name.includes("_T3")) {
+          legType = "Heavy";
+        }
+        name = (walkerName.trim() + " Legs " + legType).trim() + " (1 of 2)";
       }
-      name = walkerName + " Legs " + legType;
-      if (!name.includes("Schematic")) {
-        name = name.trim() + " (1 of 2)";
-      }
-    }
-  } else if (/(.+)Wings/.test(name)) {
-    let match = name.match(/(.+)Wings/);
-    if (match[1] != null) {
-      let walkerName = translator.translateName(match[1] + " Walker");
-      let wingsType = "Wings";
-      if (name.includes("_T2_Small")) {
-        wingsType = "Wings Small";
-      } else if (name.includes("_T3_Medium")) {
-        wingsType = "Wings Medium";
-      } else if (name.includes("_T4")) {
-        wingsType = "Wings Large";
-      } else if (name.includes("_T2_Heavy")) {
-        wingsType = "Wings Heavy";
-      } else if (name.includes("_T3_Rugged")) {
-        wingsType = "Wings Rugged";
-      } else if (name.includes("_T2_Skirmish")) {
-        wingsType = "Wings Skirmish";
-      } else if (name.includes("_T3_Raider")) {
-        wingsType = "Wings Raider";
-      }
+    } else if (/(.+)Wings/.test(name)) {
+      let match = name.match(/(.+)Wings/);
+      if (match[1] != null) {
+        let walkerName = translator.translateName(match[1].trim() + " Walker");
+        let wingsType = "Wings";
+        if (name.includes("_T2_Small")) {
+          wingsType = "Wings Small";
+        } else if (name.includes("_T3_Medium")) {
+          wingsType = "Wings Medium";
+        } else if (name.includes("_T4")) {
+          wingsType = "Wings Large";
+        } else if (name.includes("_T2_Heavy")) {
+          wingsType = "Wings Heavy";
+        } else if (name.includes("_T3_Rugged")) {
+          wingsType = "Wings Rugged";
+        } else if (name.includes("_T2_Skirmish")) {
+          wingsType = "Wings Skirmish";
+        } else if (name.includes("_T3_Raider")) {
+          wingsType = "Wings Raider";
+        }
 
-      name = walkerName + " " + wingsType;
-
-      if (!name.includes("Schematic")) {
-        name = name.trim() + " (1 of 2)";
+        name = (walkerName.trim() + " " + wingsType).trim() + " (1 of 2)";
       }
-    }
-  } else if (name.includes("Upgrades")) {
-    if (/(.+)BoneUpgrades/.test(name)) {
-      let match = name.match(/(.+)BoneUpgrades/);
-      if (match[1] != null) {
-        let walkerName = translator.translateName(match[1] + " Walker");
-        name = walkerName + " Upgrades - Tier 2";
-      }
-    } else if (/(.+)CeramicUpgrades/.test(name)) {
-      let match = name.match(/(.+)CeramicUpgrades/);
-      if (match[1] != null) {
-        let walkerName = translator.translateName(match[1] + " Walker");
-        name = walkerName + " Upgrades - Tier 3";
-      }
-    } else if (/(.+)IronUpgrades/.test(name)) {
-      let match = name.match(/(.+)IronUpgrades/);
-      if (match[1] != null) {
-        let walkerName = translator.translateName(match[1] + " Walker");
-        name = walkerName + " Upgrades - Tier 4";
-      }
-    } else if (/(.+)WoodUpgrades/.test(name)) {
-      let match = name.match(/(.+)WoodUpgrades/);
-      if (match[1] != null) {
-        let walkerName = translator.translateName(match[1] + " Walker");
-        name = walkerName;
+    } else if (name.includes("Upgrades")) {
+      if (/(.+)BoneUpgrades/.test(name)) {
+        let match = name.match(/(.+)BoneUpgrades/);
+        if (match[1] != null) {
+          let walkerName = translator.translateName(
+            match[1].trim() + " Walker"
+          );
+          name = walkerName + " Upgrades - Tier 2";
+        }
+      } else if (/(.+)CeramicUpgrades/.test(name)) {
+        let match = name.match(/(.+)CeramicUpgrades/);
+        if (match[1] != null) {
+          let walkerName = translator.translateName(
+            match[1].trim() + " Walker"
+          );
+          name = walkerName + " Upgrades - Tier 3";
+        }
+      } else if (/(.+)IronUpgrades/.test(name)) {
+        let match = name.match(/(.+)IronUpgrades/);
+        if (match[1] != null) {
+          let walkerName = translator.translateName(
+            match[1].trim() + " Walker"
+          );
+          name = walkerName + " Upgrades - Tier 4";
+        }
+      } else if (/(.+)WoodUpgrades/.test(name)) {
+        let match = name.match(/(.+)WoodUpgrades/);
+        if (match[1] != null) {
+          let walkerName = translator.translateName(
+            match[1].trim() + " Walker"
+          );
+          name = walkerName;
+        }
       }
     }
   }

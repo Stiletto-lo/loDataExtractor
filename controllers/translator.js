@@ -102,7 +102,8 @@ controller.translateItemPart = (value) => {
     }
     if (
       (value.includes(" Legs") || value.includes(" Wings")) &&
-      !value.includes("(1 of 2)")
+      !value.includes("(1 of 2)") &&
+      !value.includes("Schematic")
     ) {
       value = value + " (1 of 2)";
     }
