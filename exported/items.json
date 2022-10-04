@@ -18022,8 +18022,8 @@
     "projectileDamage": {
       "damage": 80,
       "vsSoft": 35,
-      "vsHard": 60,
-      "vsReinforced": 20,
+      "vsHard": 25,
+      "vsReinforced": 10,
       "vsSolid": 5
     },
     "stackSize": 100,
@@ -33747,7 +33747,7 @@
     "trade_price": 5.2,
     "description": "Unwieldy, big projectile used by the Rupu as ammo for their looted Rokkers.",
     "projectileDamage": {
-      "damage": 300,
+      "damage": 400,
       "vsHard": 100,
       "vsReinforced": 50,
       "vsSolid": 10
