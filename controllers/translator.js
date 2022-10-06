@@ -2,8 +2,13 @@ require("dotenv").config();
 const controller = {};
 const aditionalTranslations = require("../translations/aditionalTranslations");
 const lootSitesTranslations = require("../translations/lootSites");
+
 let allTranslations = [];
 let allDesriptions = [];
+let translationsFromOtherLanguajes = [];
+let descriptionsFromOtherLanguajes = [];
+let translationsInUse = [];
+
 const DEBUG = process.env.DEBUG === "true";
 
 controller.translateLootSite = (name) => {
@@ -35,9 +40,11 @@ controller.translateName = (name) => {
 
 controller.searchName = (name) => {
   if (name != null && aditionalTranslations[name]) {
+    controller.addTranslationInUuse(name, aditionalTranslations[name].trim());
     return aditionalTranslations[name].trim();
   }
   if (name != null && allTranslations[name]) {
+    controller.addTranslationInUuse(name, allTranslations[name].trim());
     return allTranslations[name].trim();
   }
   return null;
@@ -129,14 +136,46 @@ controller.addDescriptions = (allItems) => {
   }));
 };
 
-controller.addTranslation = (key, translation) => {
-  if (key && translation && !allTranslations[key]) {
-    allTranslations[key] = translation;
+controller.addTranslation = (key, translation, languaje = null) => {
+  if (languaje == null) {
+    if (key && translation && !allTranslations[key]) {
+      allTranslations[key] = translation;
+    }
+  } else {
+    if (translationsFromOtherLanguajes[languaje]) {
+      let arrayL = translationsFromOtherLanguajes[languaje];
+      arrayL[key] = translation;
+      translationsFromOtherLanguajes[languaje] = arrayL;
+    } else {
+      let arrayL = [];
+      arrayL[key] = translation;
+      translationsFromOtherLanguajes[languaje] = arrayL;
+    }
   }
 };
 
-controller.addDescription = (key, description) => {
-  allDesriptions[key] = description;
+controller.addDescription = (key, description, languaje = null) => {
+  if (languaje == null) {
+    allDesriptions[key] = description;
+  } else {
+    if (descriptionsFromOtherLanguajes[languaje]) {
+      descriptionsFromOtherLanguajes[languaje][key] = description;
+    } else {
+      descriptionsFromOtherLanguajes[languaje] = [];
+      descriptionsFromOtherLanguajes[languaje][key] = description;
+    }
+  }
+};
+
+controller.addTranslationInUuse = (key, translation) => {
+  translationsInUse[key] = translation;
+};
+
+controller.getTranslateFiles = () => {
+  for (const languaje in translationsFromOtherLanguajes) {
+  }
+
+  console.log(Object.keys(descriptionsFromOtherLanguajes).length);
 };
 
 module.exports = controller;

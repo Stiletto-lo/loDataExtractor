@@ -808,6 +808,35 @@ controller.parseTranslations = (filePath) => {
   }
 };
 
+controller.parseOtherTranslations = (filePath) => {
+  if (/\/Game\/(.+)\/Game.json/.test(filePath)) {
+    let match = filePath.match("/Game/(.+)/Game.json");
+    if (match[1] != null) {
+      let languaje = match[1];
+      let rawdata = fs.readFileSync(filePath);
+      let jsonData = JSON.parse(rawdata);
+
+      for (const translationGroup in jsonData) {
+        for (const key in jsonData[translationGroup]) {
+          if (key.includes(".Description")) {
+            translator.addDescription(
+              key.replace(".Description", "").trim(),
+              jsonData[translationGroup][key],
+              languaje
+            );
+          } else {
+            translator.addTranslation(
+              key.replace(".Name", "").trim(),
+              jsonData[translationGroup][key],
+              languaje
+            );
+          }
+        }
+      }
+    }
+  }
+};
+
 controller.parsePrices = (filePath) => {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
