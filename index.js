@@ -17,7 +17,7 @@ const folderPatch = "./exported/";
 const folderTypes = [
   "tech",
   "item",
-  "translation",
+  "stringtables",
   "trade",
   "placeables",
   "cached",
@@ -26,6 +26,7 @@ const folderTypes = [
   "blueprintsloot",
   "damagetypes",
   "schematics",
+  "translationOthers",
 ];
 
 const orderByCategoryAndName = (a, b) => {
@@ -55,12 +56,16 @@ const orderByName = (a, b) => {
 console.info("Loading StringTables");
 loadDirData(
   CONTENT_FOLDER_PATH + "Content/Mist/Data/StringTables",
-  "translation"
+  "stringtables"
 );
 console.info("Loading Localization");
 loadDirData(
   CONTENT_FOLDER_PATH + "Content/Localization/Game/en",
   "translation"
+);
+loadDirData(
+  CONTENT_FOLDER_PATH + "Content/Localization/Game",
+  "translationOthers"
 );
 console.info("Loading TechTree");
 loadDirData(CONTENT_FOLDER_PATH + "Content/Mist/Data/TechTree", "tech");
@@ -190,6 +195,10 @@ if (allItems.length > 0) {
   );
 }
 
+if (process.env.TRANSLATE_FILES === "true") {
+  translator.getTranslateFiles();
+}
+
 if (process.env.COMPARE === "true") {
   comparator.compareItems(allItems, folderPatch);
 }
@@ -209,7 +218,7 @@ function loadDirData(techTreeDir, folderType) {
         case "item":
           fileParser.parseItemData(techTreeDir + "/" + file);
           break;
-        case "translation":
+        case "stringtables":
           fileParser.parseTranslations(techTreeDir + "/" + file);
           break;
         case "trade":
@@ -237,6 +246,9 @@ function loadDirData(techTreeDir, folderType) {
           break;
         case "schematics":
           fileParser.parseSchematicItemData(techTreeDir + "/" + file);
+          break;
+        case "translationOthers":
+          fileParser.parseOtherTranslations(techTreeDir + "/" + file);
           break;
       }
     }

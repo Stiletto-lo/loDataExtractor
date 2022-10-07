@@ -49,13 +49,13 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Raider Outpost"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ],
     "learn": [
@@ -316,7 +316,7 @@
         "location": "Rupu Camp - Rupu Campfire"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu War Tower"
@@ -811,7 +811,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Canyon Map - Village Camp"
@@ -889,24 +889,32 @@
       {
         "ingredients": [
           {
-            "count": 400,
-            "name": "Wood"
-          },
-          {
-            "count": 265,
-            "name": "Fiber"
-          },
-          {
-            "count": 22,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 10,
+            "count": 18,
             "name": "Wood Shaft"
           },
           {
-            "count": 85,
-            "name": "Stone"
+            "count": 28,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 27,
+            "name": "Rope"
+          },
+          {
+            "count": 30,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 100,
+            "name": "Fiber"
+          },
+          {
+            "count": 65,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Rupu Vine"
           }
         ]
       }
@@ -915,7 +923,7 @@
     "parent": "Firefly Walker",
     "description": "Founder Walker type of the smallest size and least protection. Allows to pack and carry a base made of heavy solid materials.",
     "structureInfo": {
-      "type": "Soft",
+      "type": "Medium",
       "hp": 8000
     },
     "walkerinfo": {
@@ -1572,16 +1580,16 @@
       {
         "ingredients": [
           {
+            "count": 45,
+            "name": "Rupu Pelt"
+          },
+          {
             "count": 30,
             "name": "Wood"
           },
           {
             "count": 25,
             "name": "Fiber"
-          },
-          {
-            "count": 5,
-            "name": "Rupu Pelt"
           }
         ],
         "time": 10
@@ -1598,12 +1606,16 @@
       {
         "ingredients": [
           {
-            "count": 10,
-            "name": "Bone Splinter"
+            "count": 45,
+            "name": "Fiber"
           },
           {
-            "count": 100,
-            "name": "Fiber"
+            "count": 10,
+            "name": "Bone Glue"
+          },
+          {
+            "count": 10,
+            "name": "Bone Splinter"
           },
           {
             "count": 15,
@@ -1628,6 +1640,14 @@
       {
         "ingredients": [
           {
+            "count": 5,
+            "name": "Tallow"
+          },
+          {
+            "count": 45,
+            "name": "Hide"
+          },
+          {
             "count": 20,
             "name": "Ceramic Shard"
           },
@@ -1649,7 +1669,7 @@
     ],
     "name": "Balang Walker Upgrade - Water - Tier 3",
     "upgradeInfo": {
-      "stackSizeOverride": 300
+      "stackSizeOverride": 250
     }
   },
   {
@@ -1657,6 +1677,14 @@
     "crafting": [
       {
         "ingredients": [
+          {
+            "count": 15,
+            "name": "Starch Cement"
+          },
+          {
+            "count": 8,
+            "name": "Leather"
+          },
           {
             "count": 8,
             "name": "Iron Ingot"
@@ -1683,7 +1711,7 @@
     ],
     "name": "Balang Walker Upgrade - Water - Tier 4",
     "upgradeInfo": {
-      "stackSizeOverride": 600
+      "stackSizeOverride": 320
     }
   },
   {
@@ -1817,10 +1845,10 @@
         "location": "Barrel"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Raider Outpost"
@@ -2035,7 +2063,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Canyon Map - Village Camp"
@@ -2607,10 +2635,10 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Thug"
@@ -2715,7 +2743,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ],
     "learn": [
@@ -2765,7 +2793,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ],
     "learn": [
@@ -3094,7 +3122,7 @@
         "location": "Rupu Hunter"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Raider"
@@ -3264,7 +3292,7 @@
     },
     "drops": [
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ]
   },
@@ -3274,7 +3302,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Canyon Map - Village Camp"
@@ -3345,7 +3373,7 @@
         "location": "Tools and Equipment Strongbox"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ]
   },
@@ -3370,7 +3398,7 @@
         "location": "Large Rupu Camp - Hard"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Raider Nurr"
@@ -5462,7 +5490,7 @@
     "weight": 0.12,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Camp - Rupu Campfire"
@@ -6391,7 +6419,7 @@
   },
   {
     "category": "Schematics",
-    "name": "Capital Walker Legs Schematic (1 of 2)",
+    "name": "Capital Walker Legs Schematic",
     "stackSize": 100,
     "learn": [
       "Domus Walker Legs (1 of 2)",
@@ -6410,7 +6438,7 @@
   },
   {
     "category": "Schematics",
-    "name": "Capital Walker Wings Schematic (1 of 2)",
+    "name": "Capital Walker Wings Schematic",
     "stackSize": 100,
     "learn": [
       "Domus Walker Wings (1 of 2)",
@@ -6803,7 +6831,7 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Ashdweller"
@@ -7329,7 +7357,7 @@
         "location": "Ash Oracle Fortress"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Oracle"
@@ -7454,6 +7482,10 @@
   },
   {
     "category": "Ammo",
+    "cost": {
+      "count": 10,
+      "name": "Fragment"
+    },
     "crafting": [
       {
         "ingredients": [
@@ -7476,7 +7508,7 @@
       }
     ],
     "name": "Ceramic Dart",
-    "parent": "BoltCompactChitin",
+    "parent": "Tall Stinger",
     "trade_price": 1.5,
     "projectileDamage": {
       "damage": 66,
@@ -7633,7 +7665,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Foragers Outpost"
@@ -7783,7 +7815,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Raider Outpost"
@@ -7836,7 +7868,7 @@
         "location": "Ash Oracle Fortress"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Ashdweller"
@@ -7906,7 +7938,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       }
     ],
     "learn": [
@@ -8191,7 +8223,7 @@
         "location": "Rupu Raiding Checkpoint"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "White Death"
@@ -8561,7 +8593,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Fortress"
@@ -8681,7 +8713,7 @@
         "location": "Kali Spires - Rupus"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Ashdweller"
@@ -8700,7 +8732,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       }
     ],
     "learn": [
@@ -8890,7 +8922,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       }
     ],
     "learn": [
@@ -9076,7 +9108,7 @@
     },
     "drops": [
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ]
   },
@@ -10031,7 +10063,7 @@
         "location": "Volcanic Map - Ruins"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Ashdweller"
@@ -10559,7 +10591,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Fortress"
@@ -10617,7 +10649,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Fortress"
@@ -11584,7 +11616,7 @@
         "location": "Rupu Camp - Rupu Campfire"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       }
     ]
   },
@@ -12959,7 +12991,7 @@
         "location": "Nurr Lair"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Raider Nurr"
@@ -14723,6 +14755,9 @@
         "location": "Loot"
       },
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Rupu Hazraki"
       },
       {
@@ -15025,6 +15060,9 @@
         "location": "Medium Rupu Camp - Easy"
       },
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Large Rupu Camp - Hard"
       },
       {
@@ -15070,7 +15108,7 @@
         "location": "Rupu Scavenger"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Rabble"
@@ -15340,7 +15378,7 @@
         "location": "Rupu Scavenger"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Thug"
@@ -15421,6 +15459,9 @@
         "location": "Medium Rupu Camp - Easy"
       },
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Large Rupu Camp - Hard"
       },
       {
@@ -15475,7 +15516,7 @@
         "location": "Rupu Forager"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Rabble"
@@ -15589,7 +15630,7 @@
         "location": "Canyon Islands Map - Shelter Urn"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Skirmisher"
@@ -17803,7 +17844,7 @@
     "weight": 0.4,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       }
     ]
   },
@@ -17981,8 +18022,8 @@
     "projectileDamage": {
       "damage": 80,
       "vsSoft": 35,
-      "vsHard": 60,
-      "vsReinforced": 20,
+      "vsHard": 25,
+      "vsReinforced": 10,
       "vsSolid": 5
     },
     "stackSize": 100,
@@ -18053,7 +18094,7 @@
         "location": "Okkam"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "War Okkam"
@@ -18401,7 +18442,7 @@
         "location": "Armor Strongbox"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       }
     ],
     "learn": [
@@ -18776,7 +18817,7 @@
         "location": "Okkam"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ],
     "learn": [
@@ -18898,7 +18939,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Canyon Map - Village Camp"
@@ -19136,7 +19177,7 @@
         "location": "Ash Oracle Fortress"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Large Rupu Camp - Medium"
@@ -19171,7 +19212,7 @@
       {
         "ingredients": [
           {
-            "count": 280,
+            "count": 27,
             "name": "Wood"
           },
           {
@@ -19179,8 +19220,12 @@
             "name": "Rope"
           },
           {
-            "count": 3,
-            "name": "Iron Ore"
+            "count": 8,
+            "name": "Toothwheel"
+          },
+          {
+            "count": 35,
+            "name": "Bone Splinter"
           }
         ]
       }
@@ -19319,6 +19364,14 @@
     "category": "Schematics",
     "name": "Gunpod Stinger Schematic",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Ash Oracle Fortress"
+      },
+      {
+        "location": "Unknown"
+      }
+    ],
     "learn": [
       "Gunpod Stinger"
     ]
@@ -19395,7 +19448,7 @@
         "location": "Phemke"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       }
     ],
     "learn": [
@@ -22605,7 +22658,7 @@
         "location": "Rupu Urn"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu War Tower"
@@ -22765,10 +22818,10 @@
         "location": "Package"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu War Tower"
@@ -23012,7 +23065,7 @@
     "weight": 0.01,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Ashdweller"
@@ -23646,10 +23699,10 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Thug"
@@ -23774,7 +23827,7 @@
         "location": "Weapon Strongbox"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ]
   },
@@ -24064,7 +24117,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       }
     ],
     "learn": [
@@ -24073,8 +24126,25 @@
   },
   {
     "category": "Schematics",
-    "name": "Large Walker Legs Schematic (1 of 2)",
+    "name": "Large Walker Legs Schematic",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Ash Oracle Fortress"
+      },
+      {
+        "location": "Foragers Outpost"
+      },
+      {
+        "location": "War Okkam"
+      },
+      {
+        "location": "War Papak"
+      },
+      {
+        "location": "Yellow Rupu"
+      }
+    ],
     "learn": [
       "Buffalo Walker Legs (1 of 2)",
       "Buffalo Walker Legs Armored (1 of 2)",
@@ -24101,8 +24171,25 @@
   },
   {
     "category": "Schematics",
-    "name": "Large Walker Wings Schematic (1 of 2)",
+    "name": "Large Walker Wings Schematic",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Ash Oracle Fortress"
+      },
+      {
+        "location": "Foragers Outpost"
+      },
+      {
+        "location": "War Okkam"
+      },
+      {
+        "location": "War Papak"
+      },
+      {
+        "location": "Yellow Rupu"
+      }
+    ],
     "learn": [
       "Buffalo Walker Wings (1 of 2)",
       "Buffalo Walker Wings Heavy (1 of 2)",
@@ -24486,7 +24573,7 @@
         "location": "Barrel"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Forager"
@@ -24518,7 +24605,7 @@
     },
     "drops": [
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ]
   },
@@ -24534,7 +24621,7 @@
         "location": "Rupu Camp - Urn"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Hazraki"
@@ -24561,7 +24648,7 @@
         "location": "Rupu Forager"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Skirmisher"
@@ -24986,7 +25073,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Canyon Map - Village Camp"
@@ -25067,7 +25154,7 @@
         "location": "Weapon Strongbox"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Pyramid"
@@ -25098,7 +25185,7 @@
         "location": "Weapon Strongbox"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ],
     "learn": [
@@ -25179,7 +25266,7 @@
         "location": "Raider Outpost"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Overseer"
@@ -25676,7 +25763,7 @@
         "location": "Nurr Lair"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Raider Outpost"
@@ -25756,7 +25843,7 @@
         "location": "White Death"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       }
     ],
     "learn": [
@@ -25805,7 +25892,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Canyon Map - Village Camp"
@@ -25814,7 +25901,7 @@
         "location": "Rupu Camp - Chest"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ],
     "learn": [
@@ -25823,8 +25910,46 @@
   },
   {
     "category": "Schematics",
-    "name": "Medium Walker Legs Schematic (1 of 2)",
+    "name": "Medium Walker Legs Schematic",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Unknown"
+      },
+      {
+        "location": "Rupu Fortress"
+      },
+      {
+        "location": "Rupu War Tower"
+      },
+      {
+        "location": "Rupu Camp - Chest"
+      },
+      {
+        "location": "Papak"
+      },
+      {
+        "location": "Canyon Map - Camp Chest"
+      },
+      {
+        "location": "Foragers Outpost"
+      },
+      {
+        "location": "Nurr Lair"
+      },
+      {
+        "location": "Rupu Raiding Checkpoint"
+      },
+      {
+        "location": "Raider Outpost"
+      },
+      {
+        "location": "Rupu Raider Outpost"
+      },
+      {
+        "location": "Rupu Camp - Totem"
+      }
+    ],
     "learn": [
       "Cobra Walker Legs (1 of 2)",
       "Mollusk Walker Legs (1 of 2)",
@@ -25838,8 +25963,40 @@
   },
   {
     "category": "Schematics",
-    "name": "Medium Walker Wings Schematic (1 of 2)",
+    "name": "Medium Walker Wings Schematic",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Unknown"
+      },
+      {
+        "location": "Rupu Fortress"
+      },
+      {
+        "location": "Rupu War Tower"
+      },
+      {
+        "location": "Rupu Camp - Chest"
+      },
+      {
+        "location": "Papak"
+      },
+      {
+        "location": "Canyon Map - Camp Chest"
+      },
+      {
+        "location": "Foragers Outpost"
+      },
+      {
+        "location": "Rupu Defensive Storage"
+      },
+      {
+        "location": "Ruin of the wreck"
+      },
+      {
+        "location": "Raider Outpost"
+      }
+    ],
     "learn": [
       "Mollusk Walker Wings (1 of 2)",
       "Mollusk Walker Wings Heavy (1 of 2)",
@@ -25950,7 +26107,7 @@
         "location": "Ruin of the wreck"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ],
     "learn": [
@@ -26411,7 +26568,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Fortress"
@@ -27361,16 +27518,24 @@
       {
         "ingredients": [
           {
-            "count": 52,
+            "count": 22,
             "name": "Wood Shaft"
           },
           {
-            "count": 28,
-            "name": "Hide"
+            "count": 12,
+            "name": "Rope"
           },
           {
-            "count": 4,
-            "name": "Nomad Cloth"
+            "count": 10,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 2,
+            "name": "Toothwheel"
+          },
+          {
+            "count": 25,
+            "name": "Fiber Weave"
           }
         ]
       }
@@ -27393,20 +27558,24 @@
       {
         "ingredients": [
           {
-            "count": 90,
+            "count": 17,
             "name": "Wood Shaft"
           },
           {
-            "count": 30,
-            "name": "Worm Silk"
+            "count": 2,
+            "name": "Toothwheel"
           },
           {
-            "count": 50,
+            "count": 33,
             "name": "Hide"
           },
           {
-            "count": 5,
-            "name": "Worm Scale"
+            "count": 7,
+            "name": "Rope"
+          },
+          {
+            "count": 26,
+            "name": "Bone Splinter"
           }
         ]
       }
@@ -27434,15 +27603,19 @@
           },
           {
             "count": 25,
-            "name": "Hide"
+            "name": "Rope"
           },
           {
             "count": 15,
-            "name": "Worm Silk"
+            "name": "Fiber Weave"
           },
           {
-            "count": 3,
-            "name": "Worm Scale"
+            "count": 35,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 0,
+            "name": "Toothwheel"
           }
         ]
       }
@@ -28270,7 +28443,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Canyon Map - Village Camp"
@@ -28279,7 +28452,7 @@
         "location": "Canyon Map - Camp Chest"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Skirmisher"
@@ -30329,13 +30502,13 @@
         "location": "Bag"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Scavenger"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Urn"
@@ -30427,6 +30600,9 @@
       },
       {
         "location": "Barrel"
+      },
+      {
+        "location": "Unknown"
       },
       {
         "location": "Rupu Urn"
@@ -31000,7 +31176,7 @@
   },
   {
     "category": "Schematics",
-    "name": "Raptor Sky Walker Legs Schematic (1 of 2)",
+    "name": "Raptor Sky Walker Legs Schematic",
     "stackSize": 100,
     "learn": [
       "Raptor Sky Walker Legs (1 of 2)"
@@ -31044,7 +31220,7 @@
   },
   {
     "category": "Schematics",
-    "name": "Raptor Sky Walker Wings Schematic (1 of 2)",
+    "name": "Raptor Sky Walker Wings Schematic",
     "stackSize": 100,
     "learn": [
       "Raptor Sky Walker Wings (1 of 2)"
@@ -31969,7 +32145,7 @@
         "location": "Weapons Strongbox"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Pyramid"
@@ -31982,7 +32158,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ],
     "learn": [
@@ -32248,7 +32424,7 @@
         "location": "Nurr Lair"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Pyramid"
@@ -32276,7 +32452,7 @@
         "location": "Weapon Strongbox"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ],
     "learn": [
@@ -32457,7 +32633,7 @@
         "location": "Weapon Strongbox"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Hermit"
@@ -32754,7 +32930,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ]
   },
@@ -32808,7 +32984,7 @@
         "location": "Canyon Map - Camp Chest"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Nurr Lair"
@@ -32883,7 +33059,7 @@
         "location": "Ash Oracle Fortress"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Foragers Outpost"
@@ -33014,7 +33190,7 @@
         "location": "White Death"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Cradle - Fortified Camp"
@@ -33032,7 +33208,7 @@
         "location": "Rupu Forager"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Skirmisher"
@@ -33328,13 +33504,13 @@
         "location": "Cradle - Chest"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Forager"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Rabble"
@@ -33484,7 +33660,7 @@
     "weight": 0.2,
     "drops": [
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Raider"
@@ -33548,7 +33724,7 @@
         "location": "Rupu Scavenger"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Overseer"
@@ -33675,7 +33851,7 @@
     "trade_price": 5.2,
     "description": "Unwieldy, big projectile used by the Rupu as ammo for their looted Rokkers.",
     "projectileDamage": {
-      "damage": 300,
+      "damage": 400,
       "vsHard": 100,
       "vsReinforced": 50,
       "vsSolid": 10
@@ -33827,7 +34003,7 @@
         "location": "White Death"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Cradle - Fortified Camp"
@@ -33935,7 +34111,7 @@
         "location": "Rupu Scavenger"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Skirmisher"
@@ -34348,7 +34524,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Canyon Map - Village Camp"
@@ -35902,7 +36078,7 @@
         "location": "Rupu Defensive Storage"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Nurr"
@@ -35960,7 +36136,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ],
     "learn": [
@@ -36043,7 +36219,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Ashdweller"
@@ -37054,13 +37230,13 @@
         "location": "Barrel"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Forager"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Thug"
@@ -37163,7 +37339,7 @@
         "location": "Tools Strongbox"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Large Rupu Camp - Medium"
@@ -37240,7 +37416,7 @@
         "location": "Rupu Defensive Storage"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu War Tower"
@@ -37268,7 +37444,7 @@
         "location": "Phemke"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Plainst rider"
@@ -37362,7 +37538,7 @@
         "location": "Rupu Forager"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Skirmisher"
@@ -37916,7 +38092,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Canyon Map - Village Camp"
@@ -38025,7 +38201,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ],
     "learn": [
@@ -38817,7 +38993,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu War Tower"
@@ -38951,7 +39127,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       }
     ],
     "learn": [
@@ -39321,7 +39497,7 @@
         "location": "Ash Oracle Fortress"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Raiding Checkpoint"
@@ -39460,7 +39636,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Fortress"
@@ -39491,7 +39667,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Fortress"
@@ -40496,7 +40672,7 @@
           },
           {
             "count": 24,
-            "name": "Hide"
+            "name": "Chitin Plate"
           }
         ]
       }
@@ -40533,6 +40709,10 @@
           {
             "count": 21,
             "name": "Chitin Plate"
+          },
+          {
+            "count": 2,
+            "name": "Toothwheel"
           }
         ]
       }
@@ -40711,7 +40891,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Canyon Map - Village Camp"
@@ -40748,6 +40928,9 @@
       },
       {
         "location": "Loot"
+      },
+      {
+        "location": "Unknown"
       },
       {
         "location": "Large Rupu Camp - Hard"
@@ -40789,7 +40972,7 @@
         "location": "Rupu Scavenger"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Rabble"
@@ -41160,7 +41343,7 @@
         "location": "Ruin of the wreck"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Raider"
@@ -41512,7 +41695,7 @@
         "location": "Rupu Camp - Rupu Campfire"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Cradle - Fortified Camp"
@@ -41634,7 +41817,7 @@
         "location": "Ash Oracle Fortress"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Oracle"
@@ -41687,7 +41870,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       }
     ],
     "learn": [
@@ -41793,7 +41976,7 @@
         "location": "Ash Oracle Fortress"
       },
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Sunken Temple"
@@ -43195,7 +43378,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Overseer"
@@ -44406,7 +44589,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "War Papak"
@@ -44868,7 +45051,7 @@
         "location": "Rupu Forager"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Drudge"
@@ -44995,7 +45178,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Rupu Raiding Checkpoint"
@@ -46425,7 +46608,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Loot"
+        "location": "Unknown"
       },
       {
         "location": "Canyon Map - Village Camp"
@@ -46888,6 +47071,9 @@
         "location": "Medium Rupu Camp - Easy"
       },
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Large Rupu Camp - Hard"
       },
       {
@@ -46927,7 +47113,7 @@
         "location": "Rupu Scavenger"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Rabble"
@@ -47089,6 +47275,9 @@
         "location": "Medium Rupu Camp - Easy"
       },
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Large Rupu Camp - Hard"
       },
       {
@@ -47155,7 +47344,7 @@
         "location": "Rupu Scavenger"
       },
       {
-        "location": "All rupus"
+        "location": "Some rupus"
       },
       {
         "location": "Rupu Rabble"
