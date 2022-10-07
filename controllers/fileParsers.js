@@ -153,6 +153,19 @@ controller.parseLootBlueprint = (filePath) => {
             let name = dataParser.parseName(translator, table.Table.ObjectName);
             let dataTable = allDatatables.find((data) => data.name == name);
             if (dataTable) {
+              let blueChance = null;
+              let minBlueChance = 0;
+              let maxBlueChance = 0;
+              if (table.RunChance) {
+                blueChance = table.RunChance;
+              }
+              if (blueChance != null && table.MinIterations) {
+                minBlueChance = blueChance * table.MinIterations;
+              }
+              if (blueChance != null && table.MaxIterations) {
+                maxBlueChance = blueChance * table.MaxIterations;
+              }
+
               dataTable.chance = table.RunChance ? table.RunChance : undefined;
               dataTable.minIterations = table.MinIterations
                 ? table.MinIterations
