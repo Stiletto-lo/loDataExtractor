@@ -1,5 +1,5 @@
 require("dotenv").config();
-const fs = require("fs");
+const fs = require("fs-extra");
 const path = require("path");
 const comparator = require("./controllers/comparator");
 const fileParser = require("./controllers/fileParsers");
@@ -196,7 +196,24 @@ if (allItems.length > 0) {
 }
 
 if (process.env.TRANSLATE_FILES === "true") {
-  translator.getTranslateFiles();
+  let translateData = translator.getTranslateFiles();
+  for (const languaje in translateData) {
+    let fileData = translateData[languaje];
+    if (languaje == "es-ES") {
+      console.log(fileData);
+    }
+    fs.outputFile(
+      folderPatch + `locales/${languaje.toLowerCase()}/items.json`,
+      JSON.stringify(fileData, null, 2),
+      function (err) {
+        if (err) {
+          console.error("Error creating the file: " + languaje, err);
+        } else {
+          console.log(`Translated files ${languaje} exported`);
+        }
+      }
+    );
+  }
 }
 
 if (process.env.COMPARE === "true") {

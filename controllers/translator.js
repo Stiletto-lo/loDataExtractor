@@ -143,9 +143,7 @@ controller.addTranslation = (key, translation, languaje = null) => {
     }
   } else {
     if (translationsFromOtherLanguajes[languaje]) {
-      let arrayL = translationsFromOtherLanguajes[languaje];
-      arrayL[key] = translation;
-      translationsFromOtherLanguajes[languaje] = arrayL;
+      translationsFromOtherLanguajes[languaje][key] = translation;
     } else {
       let arrayL = [];
       arrayL[key] = translation;
@@ -171,11 +169,30 @@ controller.addTranslationInUuse = (key, translation) => {
   translationsInUse[key] = translation;
 };
 
-controller.getTranslateFiles = () => {
-  for (const languaje in translationsFromOtherLanguajes) {
-  }
+controller.isKeyTranslationInUse = (key) => {
+  return translationsInUse[key] != null && translationsInUse[key] != undefined;
+};
 
-  console.log(Object.keys(descriptionsFromOtherLanguajes).length);
+controller.getTranslateFiles = () => {
+  let translationsFiltered = {};
+
+  for (const languaje in translationsFromOtherLanguajes) {
+    for (const key in translationsFromOtherLanguajes[languaje]) {
+      if (!translationsFiltered[languaje]) {
+        translationsFiltered[languaje] = {};
+      }
+      if (
+        translationsFromOtherLanguajes[languaje][key] &&
+        controller.isKeyTranslationInUse(key)
+      ) {
+        let translation = translationsInUse[key];
+
+        translationsFiltered[languaje][translation] =
+          translationsFromOtherLanguajes[languaje][key];
+      }
+    }
+  }
+  return translationsFiltered;
 };
 
 module.exports = controller;
