@@ -199,9 +199,6 @@ if (process.env.TRANSLATE_FILES === "true") {
   let translateData = translator.getTranslateFiles();
   for (const languaje in translateData) {
     let fileData = translateData[languaje];
-    if (languaje == "es-ES") {
-      console.log(fileData);
-    }
     fs.outputFile(
       folderPatch + `locales/${languaje.toLowerCase()}/items.json`,
       JSON.stringify(fileData, null, 2),
