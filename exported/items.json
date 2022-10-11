@@ -439,6 +439,23 @@
     ]
   },
   {
+    "category": "Tools",
+    "name": "Ancient Repair Hammer",
+    "trade_price": 9.5,
+    "stackSize": 100,
+    "weight": 3.12,
+    "weaponInfo": {
+      "weaponLength": 42,
+      "damage": 20,
+      "penetration": 10
+    },
+    "drops": [
+      {
+        "location": "Unknown"
+      }
+    ]
+  },
+  {
     "category": "Resources",
     "name": "Animal Fat",
     "trade_price": 1,
@@ -729,7 +746,7 @@
           }
         ],
         "station": "FuelLightSource",
-        "time": 72
+        "time": 90
       },
       {
         "ingredients": [
@@ -739,7 +756,17 @@
           }
         ],
         "station": "FuelLightSource",
-        "time": 12
+        "time": 20
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wooden Slab"
+          }
+        ],
+        "station": "FuelLightSource",
+        "time": 300
       }
     ],
     "name": "Ash",
@@ -758,6 +785,9 @@
         "location": "Volcanic Map - Ruins"
       },
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Loot"
       },
       {
@@ -767,10 +797,25 @@
         "location": "Ruins"
       },
       {
+        "location": "Kali Spires - Ruins"
+      },
+      {
+        "location": "Kali Spires - Rupus"
+      },
+      {
         "location": "Rupu War Tower"
       },
       {
+        "location": "Rupu Walker Wreckage"
+      },
+      {
         "location": "Pyramid"
+      },
+      {
+        "location": "Tutorial"
+      },
+      {
+        "location": "Walker Graveyard"
       }
     ]
   },
@@ -923,8 +968,8 @@
     "parent": "Firefly Walker",
     "description": "Founder Walker type of the smallest size and least protection. Allows to pack and carry a base made of heavy solid materials.",
     "structureInfo": {
-      "type": "Medium",
-      "hp": 8000
+      "type": "Solid",
+      "hp": 50000
     },
     "walkerinfo": {
       "category": "Small"
@@ -958,6 +1003,15 @@
     "name": "Balang Walker Schematic",
     "stackSize": 100,
     "drops": [
+      {
+        "location": "Unknown"
+      },
+      {
+        "location": "Rupu Fortress"
+      },
+      {
+        "location": "Rupu War Tower"
+      },
       {
         "location": "Rupu Raider"
       }
@@ -2500,6 +2554,9 @@
       },
       {
         "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Unknown"
       },
       {
         "location": "Volcanic Map - Ruins"
@@ -4065,7 +4122,7 @@
     "parent": "Buffalo Walker Legs Armored (1 of 2)",
     "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection.",
     "structureInfo": {
-      "type": "Reinforced",
+      "type": "Medium",
       "hp": 14800
     }
   },
@@ -5300,7 +5357,7 @@
     "parent": "Buffalo Walker Wings Skirmish (1 of 2)",
     "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance.",
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 10200
     }
   },
@@ -5336,7 +5393,7 @@
     "parent": "Buffalo Walker Wings Heavy (1 of 2)",
     "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement.",
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 14000
     }
   },
@@ -7354,6 +7411,9 @@
     "stackSize": 100,
     "drops": [
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Ash Oracle Fortress"
       },
       {
@@ -7925,11 +7985,6 @@
         "toolType": "BallistaHarpoon",
         "tier": 4
       }
-    ],
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      }
     ]
   },
   {
@@ -7985,11 +8040,6 @@
       {
         "toolType": "BallistaHarpoon",
         "tier": 3
-      }
-    ],
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
       }
     ]
   },
@@ -13315,7 +13365,7 @@
     "parent": "Falco Walker Legs Armored (1 of 2)",
     "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection.",
     "structureInfo": {
-      "type": "Reinforced",
+      "type": "Medium",
       "hp": 12500
     }
   },
@@ -14548,7 +14598,7 @@
     "parent": "Falco Walker Wings Skirmish (1 of 2)",
     "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance.",
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 10000
     }
   },
@@ -14584,7 +14634,7 @@
     "parent": "Falco Walker Wings Heavy (1 of 2)",
     "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement.",
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 13500
     }
   },
@@ -15441,6 +15491,9 @@
         "location": "Ancient City - Ruins"
       },
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Desert Clam"
       },
       {
@@ -15457,9 +15510,6 @@
       },
       {
         "location": "Medium Rupu Camp - Easy"
-      },
-      {
-        "location": "Unknown"
       },
       {
         "location": "Large Rupu Camp - Hard"
@@ -15908,6 +15958,11 @@
     "category": "Schematics",
     "name": "Firebomb Schematic",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Unknown"
+      }
+    ],
     "learn": [
       "Firebomb"
     ]
@@ -18173,66 +18228,7 @@
     "name": "Flots",
     "trade_price": 0.5,
     "description": "Currency of the Flotilla. Can be withdrawn and deposited at any Trading Station.",
-    "stackSize": 999999,
-    "drops": [
-      {
-        "location": "Abandoned Trading Station"
-      },
-      {
-        "location": "Ancient City - Ruins"
-      },
-      {
-        "location": "Desert Clam"
-      },
-      {
-        "location": "Volcanic Map - Ruins"
-      },
-      {
-        "location": "Loot"
-      },
-      {
-        "location": "Large Rupu Camp - Hard"
-      },
-      {
-        "location": "Ruins"
-      },
-      {
-        "location": "Kali Spires - Ruins"
-      },
-      {
-        "location": "Kali Spires - Rupus"
-      },
-      {
-        "location": "Urn"
-      },
-      {
-        "location": "Bag"
-      },
-      {
-        "location": "Old Crate"
-      },
-      {
-        "location": "Package"
-      },
-      {
-        "location": "Rupu Raiding Checkpoint"
-      },
-      {
-        "location": "Rupu Defensive Storage"
-      },
-      {
-        "location": "Rupu War Tower"
-      },
-      {
-        "location": "Rupu Walker Wreckage"
-      },
-      {
-        "location": "Pyramid"
-      },
-      {
-        "location": "Walker Graveyard"
-      }
-    ]
+    "stackSize": 999999
   },
   {
     "category": "Resources",
@@ -18337,6 +18333,18 @@
       },
       {
         "location": "Large Rupu Camp - Medium"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Forebear Coin",
+    "trade_price": 1.1,
+    "stackSize": 100,
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "Unknown"
       }
     ]
   },
@@ -19365,6 +19373,9 @@
     "name": "Gunpod Stinger Schematic",
     "stackSize": 100,
     "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
       {
         "location": "Ash Oracle Fortress"
       },
@@ -21357,6 +21368,22 @@
     ]
   },
   {
+    "category": "Weapons",
+    "name": "Holly Fire",
+    "trade_price": 16.9,
+    "stackSize": 5,
+    "weight": 0.3,
+    "weaponInfo": {
+      "damage": 20,
+      "penetration": 50
+    },
+    "drops": [
+      {
+        "location": "Unknown"
+      }
+    ]
+  },
+  {
     "category": "Walkers",
     "cost": {
       "count": 12,
@@ -23052,6 +23079,11 @@
     "category": "Schematics",
     "name": "Insect Bomb Schematic",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Unknown"
+      }
+    ],
     "learn": [
       "Insect Bomb"
     ]
@@ -23114,9 +23146,6 @@
     "stackSize": 100,
     "weight": 0.78,
     "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      },
       {
         "location": "Yellow Rupu"
       },
@@ -25072,6 +25101,9 @@
     "name": "Lobber Schematic",
     "stackSize": 100,
     "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
       {
         "location": "Unknown"
       },
@@ -27584,7 +27616,7 @@
     "parent": "Mollusk Walker Wings Skirmish (1 of 2)",
     "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance.",
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 7800
     }
   },
@@ -27624,7 +27656,7 @@
     "parent": "Mollusk Walker Wings Heavy (1 of 2)",
     "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement.",
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 8600
     }
   },
@@ -29081,6 +29113,9 @@
       },
       {
         "location": "War Papak"
+      },
+      {
+        "location": "Unknown"
       }
     ],
     "learn": [
@@ -32783,6 +32818,9 @@
         "location": "Ancient City - Ruins"
       },
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Volcanic Map - Ruins"
       },
       {
@@ -32872,12 +32910,7 @@
     "trade_price": 15.5,
     "description": "Strong wooden plank reinforced using a forgotten technology at Ancient Crafting Sites.",
     "stackSize": 100,
-    "weight": 0.45,
-    "drops": [
-      {
-        "location": "Ancient City - Ruins"
-      }
-    ]
+    "weight": 0.45
   },
   {
     "category": "Crafting",
@@ -33056,10 +33089,13 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Ash Oracle Fortress"
+        "location": "Unknown"
       },
       {
-        "location": "Unknown"
+        "location": "Ancient City - Ruins"
+      },
+      {
+        "location": "Ash Oracle Fortress"
       },
       {
         "location": "Foragers Outpost"
@@ -33184,13 +33220,13 @@
     "weight": 0.25,
     "drops": [
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Yellow Rupu"
       },
       {
         "location": "White Death"
-      },
-      {
-        "location": "Unknown"
       },
       {
         "location": "Cradle - Fortified Camp"
@@ -33997,13 +34033,13 @@
     "weight": 0.01,
     "drops": [
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Yellow Rupu"
       },
       {
         "location": "White Death"
-      },
-      {
-        "location": "Unknown"
       },
       {
         "location": "Cradle - Fortified Camp"
@@ -36307,6 +36343,9 @@
     "stackSize": 100,
     "drops": [
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Rupu Hunter"
       },
       {
@@ -37635,6 +37674,9 @@
     "stackSize": 100,
     "drops": [
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Ash Oracle Fortress"
       },
       {
@@ -38200,6 +38242,12 @@
     "name": "Spider Walker Schematic",
     "stackSize": 100,
     "drops": [
+      {
+        "location": "Unknown"
+      },
+      {
+        "location": "Ancient City - Ruins"
+      },
       {
         "location": "Some rupus"
       }
@@ -39050,9 +39098,6 @@
     "weight": 3.2,
     "drops": [
       {
-        "location": "Ancient City - Ruins"
-      },
-      {
         "location": "Equipment Strongbox"
       },
       {
@@ -39433,6 +39478,9 @@
     "name": "Steering Levers Cage Schematic",
     "stackSize": 100,
     "drops": [
+      {
+        "location": "Unknown"
+      },
       {
         "location": "Rupu Raider"
       }
@@ -40681,7 +40729,7 @@
     "parent": "Stiletto Walker Wings Skirmish (1 of 2)",
     "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance.",
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 7000
     }
   },
@@ -41471,6 +41519,9 @@
       },
       {
         "location": "Raider Outpost"
+      },
+      {
+        "location": "Unknown"
       }
     ],
     "learn": [
@@ -41683,6 +41734,9 @@
         "location": "Ancient City - Ruins"
       },
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Kali Spires - Ruins"
       },
       {
@@ -41693,9 +41747,6 @@
       },
       {
         "location": "Rupu Camp - Rupu Campfire"
-      },
-      {
-        "location": "Unknown"
       },
       {
         "location": "Cradle - Fortified Camp"
@@ -41963,6 +42014,9 @@
     "name": "Thumper Schematic",
     "stackSize": 100,
     "drops": [
+      {
+        "location": "Ancient City - Ruins"
+      },
       {
         "location": "Rupu Camp - Chest"
       },
@@ -44435,7 +44489,7 @@
     "parent": "Toboggan Walker Wings Skirmish (1 of 2)",
     "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance.",
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 8850
     }
   },
@@ -44475,7 +44529,7 @@
     "parent": "Toboggan Walker Wings Heavy (1 of 2)",
     "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement.",
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 10500
     }
   },
@@ -47257,6 +47311,9 @@
         "location": "Ancient City - Ruins"
       },
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Desert Clam"
       },
       {
@@ -47273,9 +47330,6 @@
       },
       {
         "location": "Medium Rupu Camp - Easy"
-      },
-      {
-        "location": "Unknown"
       },
       {
         "location": "Large Rupu Camp - Hard"
