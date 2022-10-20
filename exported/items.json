@@ -3446,6 +3446,9 @@
         "location": "Abandoned Trading Station"
       },
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Ancient City - Ruins"
       },
       {
@@ -12931,6 +12934,12 @@
     "stackSize": 100,
     "drops": [
       {
+        "location": "Unknown"
+      },
+      {
+        "location": "Foragers Outpost"
+      },
+      {
         "location": "Sunken Temple"
       },
       {
@@ -13231,7 +13240,7 @@
     "description": "It's streamlined shape is built for speed, making it a favorite among pirates. It's elevated deck doesn't sport much space for large weapons, but it's height allows for easy boarding of other walkers. Dedicated rear-facing spots for Gun Pods make it easy to fire projectiles at pursuers.",
     "structureInfo": {
       "type": "Medium",
-      "hp": 24500
+      "hp": 34500
     },
     "walkerinfo": {
       "category": "Large"
@@ -26096,6 +26105,12 @@
     "stackSize": 100,
     "drops": [
       {
+        "location": "Ash Oracle Fortress"
+      },
+      {
+        "location": "Foragers Outpost"
+      },
+      {
         "location": "Nurr Lair"
       },
       {
@@ -29106,6 +29121,9 @@
     "stackSize": 100,
     "drops": [
       {
+        "location": "Unknown"
+      },
+      {
         "location": "Raider Outpost"
       },
       {
@@ -29113,9 +29131,6 @@
       },
       {
         "location": "War Papak"
-      },
-      {
-        "location": "Unknown"
       }
     ],
     "learn": [
@@ -32913,7 +32928,7 @@
     "weight": 0.45
   },
   {
-    "category": "Crafting",
+    "category": "Interactables",
     "cost": {
       "count": 20,
       "name": "Fragment"
@@ -32948,6 +32963,15 @@
     "name": "Repair Station Schematic",
     "stackSize": 100,
     "drops": [
+      {
+        "location": "Rupu Camp - Chest"
+      },
+      {
+        "location": "Canyon Map - Camp Chest"
+      },
+      {
+        "location": "Unknown"
+      },
       {
         "location": "Rupu Defensive Storage"
       }
