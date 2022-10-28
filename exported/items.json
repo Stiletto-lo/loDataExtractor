@@ -7776,6 +7776,25 @@
     "weight": 0.28
   },
   {
+    "category": "Ammo",
+    "cost": {
+      "count": 2,
+      "name": "Tablet"
+    },
+    "name": "Ceramic Orb",
+    "parent": "Rokette",
+    "trade_price": 5.2,
+    "projectileDamage": {
+      "damage": 110,
+      "vsSoft": 35,
+      "vsHard": 25,
+      "vsReinforced": 10,
+      "vsSolid": 5
+    },
+    "stackSize": 100,
+    "weight": 1.5
+  },
+  {
     "category": "Tools",
     "crafting": [
       {
@@ -13399,6 +13418,9 @@
     "drops": [
       {
         "location": "Ash Oracle Fortress"
+      },
+      {
+        "location": "Unknown"
       }
     ],
     "learn": [
@@ -15960,6 +15982,9 @@
     "drops": [
       {
         "location": "Rupu Firebrand"
+      },
+      {
+        "location": "Unknown"
       }
     ]
   },
@@ -19853,7 +19878,7 @@
     "stackSize": 5,
     "weight": 2,
     "weaponInfo": {
-      "damage": 60,
+      "damage": 105,
       "penetration": 25
     }
   },
@@ -24174,6 +24199,9 @@
         "location": "Foragers Outpost"
       },
       {
+        "location": "Unknown"
+      },
+      {
         "location": "War Okkam"
       },
       {
@@ -24217,6 +24245,9 @@
       },
       {
         "location": "Foragers Outpost"
+      },
+      {
+        "location": "Unknown"
       },
       {
         "location": "War Okkam"
@@ -25596,6 +25627,9 @@
         "location": "Ash Oracle Fortress"
       },
       {
+        "location": "Unknown"
+      },
+      {
         "location": "War Okkam"
       }
     ],
@@ -26112,6 +26146,9 @@
       },
       {
         "location": "Nurr Lair"
+      },
+      {
+        "location": "Unknown"
       },
       {
         "location": "Rupu Raider Outpost"
@@ -33830,6 +33867,12 @@
   {
     "category": "Armors",
     "name": "Rupu Plainstrider Armor",
+    "stackSize": 100,
+    "weight": 1
+  },
+  {
+    "category": "Armors",
+    "name": "Rupu Prophet Armor",
     "stackSize": 100,
     "weight": 1
   },
