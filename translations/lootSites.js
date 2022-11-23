@@ -59,6 +59,11 @@ lootSites["PyramidGuardRupu"] = "Pyramid Guard Rupu";
 lootSites["Plainstrider"] = "Plainst rider";
 lootSites["FlyingRupu"] = "Rupu Hazraki";
 lootSites["RupuSeeker"] = "Rupu Seeker";
+lootSites["RupuZealot"] = "Rupu Zealot";
+lootSites["RupuStalker"] = "Rupu Stalker";
+lootSites["RupuPriestess"] = "Rupu Priestess";
+lootSites["RupuProphet"] = "Rupu Prophet";
+lootSites["RupuMatriarch"] = "Rupu Matriarch";
 
 /* MOBS */
 
@@ -196,6 +201,12 @@ lootSites["PyramidFinal_4"] = "Pyramid";
 lootSites["PyramidFinal_5"] = "Pyramid";
 lootSites["AbandonedTradingStation"] = "Abandoned Trading Station";
 lootSites["WalkerGraveyard"] = "Walker Graveyard";
+
+/* Ancient City */
+
+lootSites["AltaroftheDawn"] = "Altar of the Dawn";
+lootSites["AltarofTheDusk"] = "Altar of the Dusk";
+lootSites["AltarofTheStars"] = "Altar of the Stars";
 
 /* Maps */
 
