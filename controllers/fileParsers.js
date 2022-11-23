@@ -246,7 +246,10 @@ controller.parseItemData = (filePath) => {
           );
         }
       }
-      if (jsonData[1].Properties?.ExpectedPrice) {
+      if (
+        jsonData[1].Properties?.ExpectedPrice &&
+        jsonData[1].Properties.ExpectedPrice > 0
+      ) {
         item.trade_price = jsonData[1].Properties.ExpectedPrice;
       }
 
@@ -723,7 +726,8 @@ controller.parseTechData = (filePath) => {
         )
       );
     }
-    if (jsonData[1]?.Properties?.Cost != 1) {
+
+    if (EXTRACT_ALL_DATA && jsonData[1]?.Properties?.Cost != 1) {
       let itemCost = { ...costTemplate };
       if (
         jsonData[1].Properties.TechTreeTier &&

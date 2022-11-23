@@ -1,10 +1,6 @@
 [
   {
     "category": "Crafting",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -64,10 +60,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -107,10 +99,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -162,10 +150,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -249,10 +233,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -328,10 +308,6 @@
   },
   {
     "category": "Containers",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -658,10 +634,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -926,10 +898,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -1793,10 +1761,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -1824,10 +1788,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -1847,7 +1807,7 @@
       }
     ],
     "name": "Ballista",
-    "parent": "Sand Bed",
+    "parent": "Stinger",
     "description": "Ballista shoots bolts or tethering harpoons that attach to walkers and the environment.",
     "structureInfo": {
       "type": "Medium",
@@ -2077,10 +2037,6 @@
   },
   {
     "category": "Containers",
-    "cost": {
-      "count": 5,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -2268,10 +2224,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -2449,9 +2401,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -2504,10 +2453,6 @@
   },
   {
     "category": "Interactables",
-    "cost": {
-      "count": 30,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -2645,10 +2590,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -2716,10 +2657,6 @@
   },
   {
     "category": "Traps",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -2757,10 +2694,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -2809,10 +2742,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 16,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -2859,10 +2788,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -2939,10 +2864,6 @@
   },
   {
     "category": "Equipment",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -3194,10 +3115,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -3269,10 +3186,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -3319,10 +3232,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -3383,10 +3292,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -3511,10 +3416,6 @@
   },
   {
     "category": "Drugs",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -3723,10 +3624,6 @@
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -3964,10 +3861,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 16,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -4051,10 +3944,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -4095,10 +3984,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 6,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -5230,10 +5115,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -5294,10 +5175,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -5330,10 +5207,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -5366,10 +5239,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -5402,10 +5271,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -5438,10 +5303,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -5634,10 +5495,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -6537,10 +6394,6 @@
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -6607,10 +6460,6 @@
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -6667,10 +6516,6 @@
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -6769,10 +6614,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -6912,10 +6753,6 @@
   },
   {
     "category": "Interactables",
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -7352,10 +7189,6 @@
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -7545,10 +7378,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -7589,10 +7418,6 @@
   },
   {
     "category": "Equipment",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -7752,9 +7577,6 @@
   },
   {
     "category": "Resources",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -7777,10 +7599,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "name": "Ceramic Orb",
     "parent": "Rokette",
     "trade_price": 5.2,
@@ -7854,10 +7672,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -7909,9 +7723,6 @@
   },
   {
     "category": "Resources",
-    "cost": {
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -8090,10 +7901,6 @@
   },
   {
     "category": "Furniture",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -8117,10 +7924,6 @@
   },
   {
     "category": "Furniture",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -8430,10 +8233,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -8502,10 +8301,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -8607,10 +8402,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -8950,10 +8741,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -9117,10 +8904,6 @@
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -9205,10 +8988,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 16,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -10023,10 +9802,6 @@
   },
   {
     "category": "Equipment",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -10222,10 +9997,6 @@
   },
   {
     "category": "WalkerTools",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -10326,9 +10097,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -10382,10 +10150,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -10435,10 +10199,6 @@
   },
   {
     "category": "Traps",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -10493,10 +10253,6 @@
   },
   {
     "category": "Drugs",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -10560,10 +10316,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -11639,10 +11391,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -11694,10 +11442,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 50,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -11777,10 +11521,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -11813,10 +11553,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 40,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -12620,10 +12356,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 35,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -12656,10 +12388,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 40,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -12688,10 +12416,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 35,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -12720,10 +12444,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 70,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -12756,10 +12476,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 35,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -12792,10 +12508,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 40,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -12828,10 +12540,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -12860,10 +12568,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -12911,10 +12615,6 @@
   },
   {
     "category": "Equipment",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -12971,10 +12671,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 5,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -13108,10 +12804,6 @@
   },
   {
     "category": "Exoskeleton",
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -13208,10 +12900,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -13307,10 +12995,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -13363,10 +13047,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 6,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -14495,10 +14175,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -14531,10 +14207,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 15,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -14563,10 +14235,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -14599,10 +14267,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -14635,10 +14299,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -14671,10 +14331,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 15,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -14707,10 +14363,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -14742,10 +14394,6 @@
     }
   },
   {
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -14860,10 +14508,6 @@
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -15483,9 +15127,6 @@
   },
   {
     "category": "Resources",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -15657,10 +15298,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 9,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -15737,10 +15374,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -15791,10 +15424,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -15847,10 +15476,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -15947,10 +15572,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -16943,10 +16564,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 6,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -16993,10 +16610,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -17058,10 +16671,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -17121,10 +16730,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -17226,10 +16831,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -17283,10 +16884,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -17339,10 +16936,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -17398,10 +16991,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -18010,10 +17599,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -18068,10 +17653,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -18120,10 +17701,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -18218,10 +17795,6 @@
     ]
   },
   {
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -18335,10 +17908,6 @@
   },
   {
     "category": "Equipment",
-    "cost": {
-      "count": 5,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -18373,21 +17942,10 @@
   {
     "category": "Resources",
     "name": "Forebear Coin",
-    "trade_price": 1.1,
-    "stackSize": 100,
-    "weight": 0.01,
-    "drops": [
-      {
-        "location": "Unknown"
-      }
-    ]
+    "stackSize": 999999
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -18802,10 +18360,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -18897,10 +18451,6 @@
   },
   {
     "category": "Drugs",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -18938,10 +18488,6 @@
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -19090,10 +18636,6 @@
   },
   {
     "category": "Traps",
-    "cost": {
-      "count": 7,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -19139,10 +18681,6 @@
   },
   {
     "category": "Containers",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -19282,10 +18820,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -19340,10 +18874,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -19442,10 +18972,6 @@
   },
   {
     "category": "Interactables",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -19624,10 +19150,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 22,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -19884,10 +19406,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 32,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -20234,10 +19752,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -20293,10 +19807,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 16,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -20372,10 +19882,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -21167,10 +20673,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -21199,10 +20701,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -21231,10 +20729,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -21267,10 +20761,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -21303,10 +20793,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -21335,10 +20821,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -21403,7 +20885,7 @@
   },
   {
     "category": "Weapons",
-    "name": "Holly Fire",
+    "name": "Holy Fire",
     "trade_price": 16.9,
     "stackSize": 5,
     "weight": 0.3,
@@ -21419,10 +20901,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 12,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -21502,10 +20980,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -21538,10 +21012,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -22386,10 +21856,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -22422,10 +21888,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -22454,10 +21916,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -22486,10 +21944,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -22522,10 +21976,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -22558,10 +22008,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -22594,10 +22040,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -22626,10 +22068,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -22728,10 +22166,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -22913,10 +22347,6 @@
   },
   {
     "category": "Equipment",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -22952,10 +22382,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 8,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -22975,7 +22401,7 @@
       }
     ],
     "name": "Infused Pickaxe",
-    "parent": "Iron Pickaxe",
+    "parent": "Ceramic Pickaxe",
     "trade_price": 38.7,
     "projectileDamage": {
       "vsSoft": 35
@@ -23004,10 +22430,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -23023,7 +22445,7 @@
       }
     ],
     "name": "Infused Repair Hammer",
-    "parent": "Iron Repair Hammer",
+    "parent": "Bone Repair Hammer",
     "trade_price": 9.5,
     "stackSize": 100,
     "weight": 3.12,
@@ -23043,10 +22465,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -23074,7 +22492,7 @@
       }
     ],
     "name": "Infused Scythe",
-    "parent": "Iron Scythe",
+    "parent": "Scythe",
     "trade_price": 17.4,
     "stackSize": 100,
     "weight": 6.3,
@@ -23107,17 +22525,17 @@
       "damage": 20
     },
     "stackSize": 10,
-    "weight": 2.6
+    "weight": 2.6,
+    "drops": [
+      {
+        "location": "Unknown"
+      }
+    ]
   },
   {
     "category": "Schematics",
     "name": "Insect Bomb Schematic",
     "stackSize": 100,
-    "drops": [
-      {
-        "location": "Unknown"
-      }
-    ],
     "learn": [
       "Insect Bomb"
     ]
@@ -23196,10 +22614,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 8,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -23254,10 +22668,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -23297,10 +22707,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -23340,10 +22746,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -23689,10 +23091,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -23783,10 +23181,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -23845,10 +23239,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -23909,10 +23299,6 @@
   },
   {
     "category": "Drugs",
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -24054,10 +23440,6 @@
   },
   {
     "category": "Containers",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -24149,10 +23531,6 @@
   },
   {
     "category": "Equipment",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -24371,10 +23749,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -24964,10 +24338,6 @@
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -25102,10 +24472,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 2,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -25129,7 +24495,7 @@
       }
     ],
     "name": "Lobber",
-    "parent": "Ballista",
+    "parent": "Thumper",
     "description": "A small weapon for remote control while driving walkers. Launches bursts of solid projectiles.",
     "structureInfo": {
       "type": "Medium",
@@ -25169,10 +24535,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 30,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -25349,10 +24711,6 @@
     ]
   },
   {
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -25551,9 +24909,6 @@
   },
   {
     "category": "Containers",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -25581,10 +24936,6 @@
   },
   {
     "category": "Containers",
-    "cost": {
-      "count": 5,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -25639,9 +24990,6 @@
   },
   {
     "category": "Equipment",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -25853,10 +25201,6 @@
   },
   {
     "category": "Containers",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -25927,10 +25271,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -25954,7 +25294,7 @@
       }
     ],
     "name": "Medium Stinger",
-    "parent": "Ballista",
+    "parent": "Rokette",
     "description": "A Small Ballista that can be remotely controlled by the driver, placed on a rotating platform.",
     "structureInfo": {
       "type": "Medium",
@@ -26099,10 +25439,6 @@
   },
   {
     "category": "Containers",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -26497,10 +25833,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 27,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -27554,10 +26886,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -27594,10 +26922,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -27634,10 +26958,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 15,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -27674,10 +26994,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -27714,10 +27030,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 7,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -27929,10 +27241,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -28430,9 +27738,6 @@
   },
   {
     "category": "Resources",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -28585,10 +27890,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -28635,16 +27936,12 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Bone Splinter"
+            "count": 4,
+            "name": "Nurr Fang"
           },
           {
             "count": 4,
@@ -28685,6 +27982,26 @@
     "category": "Schematics",
     "name": "Nurrfang Toothclub Schematic",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Canyon Map - Village Camp"
+      },
+      {
+        "location": "Rupu Camp - Chest"
+      },
+      {
+        "location": "Rupu Camp - Urn"
+      },
+      {
+        "location": "White Death"
+      },
+      {
+        "location": "Rupu Hermit"
+      },
+      {
+        "location": "Rupu Hazraki"
+      }
+    ],
     "learn": [
       "Nurrfang Toothclub"
     ]
@@ -28704,10 +28021,6 @@
   },
   {
     "category": "Containers",
-    "cost": {
-      "count": 6,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -28788,10 +28101,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -28828,10 +28137,6 @@
   },
   {
     "category": "Containers",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -28872,10 +28177,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -28912,6 +28213,42 @@
         "tier": 1
       }
     ]
+  },
+  {
+    "category": "Table",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 300,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "OkkamStatue_1",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 250
+    }
+  },
+  {
+    "category": "Table",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 300,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "OkkamStatue_2",
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 250
+    }
   },
   {
     "category": "Furniture",
@@ -29200,10 +28537,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -29287,10 +28620,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -29335,10 +28664,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 6,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -30181,10 +29506,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -30217,10 +29538,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 15,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -30249,10 +29566,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -30281,10 +29594,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -30317,10 +29626,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -30353,10 +29658,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 15,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -30389,10 +29690,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -30460,10 +29757,6 @@
   },
   {
     "category": "Interactables",
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -30613,9 +29906,6 @@
   },
   {
     "category": "Interactables",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -30715,10 +30005,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -30834,10 +30120,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -30977,10 +30259,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 35,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -31128,10 +30406,6 @@
   },
   {
     "category": "Interactables",
-    "cost": {
-      "count": 5,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -31176,10 +30450,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 22,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -32187,8 +31457,8 @@
       {
         "ingredients": [
           {
-            "count": 14,
-            "name": "Bone Splinter"
+            "count": 10,
+            "name": "Nurr Fang"
           },
           {
             "count": 8,
@@ -32245,7 +31515,22 @@
     "stackSize": 100,
     "drops": [
       {
+        "location": "Rupu Fortress"
+      },
+      {
+        "location": "Canyon Map - Village Camp"
+      },
+      {
+        "location": "Rupu War Tower"
+      },
+      {
+        "location": "White Death"
+      },
+      {
         "location": "Some rupus"
+      },
+      {
+        "location": "Rupu Shaman"
       }
     ],
     "learn": [
@@ -32254,10 +31539,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -32338,10 +31619,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -32548,10 +31825,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 30,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -32647,10 +31920,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -32738,10 +32007,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -32965,11 +32230,43 @@
     "weight": 0.45
   },
   {
+    "category": "Resources",
+    "name": "Relic of Dawn",
+    "trade_price": 450,
+    "stackSize": 100,
+    "weight": 0.4,
+    "drops": [
+      {
+        "location": "Unknown"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Relic of Dusk",
+    "trade_price": 1000,
+    "stackSize": 100,
+    "weight": 0.5,
+    "drops": [
+      {
+        "location": "Unknown"
+      }
+    ]
+  },
+  {
+    "category": "Resources",
+    "name": "Relic of the Stars",
+    "trade_price": 2500,
+    "stackSize": 100,
+    "weight": 0.25,
+    "drops": [
+      {
+        "location": "Unknown"
+      }
+    ]
+  },
+  {
     "category": "Interactables",
-    "cost": {
-      "count": 20,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -33030,10 +32327,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -33102,10 +32395,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -33220,9 +32509,6 @@
   },
   {
     "category": "Resources",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -33634,10 +32920,6 @@
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -33692,10 +32974,6 @@
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -33988,10 +33266,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -34235,9 +33509,6 @@
   },
   {
     "category": "Interactables",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -34332,9 +33603,6 @@
   },
   {
     "category": "Sand Structures",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -34583,10 +33851,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 28,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -34726,10 +33990,6 @@
   },
   {
     "category": "Equipment",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -34762,10 +34022,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 50,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -34841,10 +34097,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -34877,10 +34129,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 40,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -35688,10 +34936,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 35,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -35724,10 +34968,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 40,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -35756,10 +34996,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 35,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -35788,10 +35024,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 60,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -35824,10 +35056,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 35,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -35860,10 +35088,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 40,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -35896,10 +35120,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -35990,10 +35210,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 50,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -36204,10 +35420,6 @@
   },
   {
     "category": "Traps",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -36431,10 +35643,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -36510,10 +35718,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -36546,10 +35750,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 4,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -37368,24 +36568,21 @@
       "Stinger",
       "Dyeing Station",
       "Stone Humidifier",
-      "Dinghy Walker Legs (1 of 2)",
-      "Spider Walker Legs (1 of 2)",
-      "Spider Walker Legs Armored (1 of 2)",
+      "Packing Station",
       "Balang Walker Legs (1 of 2)",
-      "Firefly Walker Legs (1 of 2)",
       "Balang Walker Wings (1 of 2)",
-      "Dinghy Walker Wings (1 of 2)",
-      "Firefly Walker Wings (1 of 2)",
       "Balang Walker Wings Small (1 of 2)",
-      "Dinghy Walker Wings Small (1 of 2)"
+      "Dinghy Walker Legs (1 of 2)",
+      "Dinghy Walker Wings (1 of 2)",
+      "Dinghy Walker Wings Small (1 of 2)",
+      "Firefly Walker Legs (1 of 2)",
+      "Firefly Walker Wings (1 of 2)",
+      "Spider Walker Legs (1 of 2)",
+      "Spider Walker Legs Armored (1 of 2)"
     ]
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -37460,10 +36657,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -37562,10 +36755,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -37667,10 +36856,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -37799,10 +36984,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -37843,10 +37024,6 @@
   },
   {
     "category": "Containers",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -37928,9 +37105,6 @@
   },
   {
     "category": "Containers",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -37959,10 +37133,6 @@
   },
   {
     "category": "WalkerTools",
-    "cost": {
-      "count": 30,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -38079,10 +37249,6 @@
   },
   {
     "category": "Containers",
-    "cost": {
-      "count": 6,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -38161,10 +37327,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -38216,10 +37378,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -38279,10 +37437,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -39073,10 +38227,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 2,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -39096,7 +38246,7 @@
       }
     ],
     "name": "Spinner",
-    "parent": "Ballista",
+    "parent": "Stinger_T2",
     "structureInfo": {
       "type": "Medium",
       "hp": 750
@@ -39135,10 +38285,6 @@
   },
   {
     "category": "Equipment",
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -39199,10 +38345,6 @@
   },
   {
     "category": "Equipment",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -39291,10 +38433,6 @@
   },
   {
     "category": "Traps",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -39558,10 +38696,6 @@
   },
   {
     "category": "Interactables",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -39630,10 +38764,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 30,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -40682,10 +39812,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -40722,10 +39848,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -40762,10 +39884,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 15,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -40802,10 +39920,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -40842,10 +39956,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 7,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -40918,10 +40028,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 2,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -40945,7 +40051,7 @@
       }
     ],
     "name": "Stinger",
-    "parent": "Ballista",
+    "parent": "Sand Bed",
     "description": "Small Ballista for remote control while steering. Needs to be reloaded manually.",
     "structureInfo": {
       "type": "Medium",
@@ -40954,10 +40060,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -41138,10 +40240,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -41296,10 +40394,6 @@
   },
   {
     "category": "Interactables",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -41394,10 +40488,6 @@
     }
   },
   {
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -41479,10 +40569,6 @@
   },
   {
     "category": "Ammo",
-    "cost": {
-      "count": 3,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -41660,10 +40746,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -41890,10 +40972,53 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 2,
+            "name": "Sulfur"
+          },
+          {
+            "count": 6,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 1,
+            "name": "Gelatinous Goo"
+          }
+        ]
+      }
+    ],
+    "name": "Throwable Gas Bomb",
+    "parent": "Light Javelin",
+    "trade_price": 16.9,
+    "stackSize": 5,
+    "weight": 0.3,
+    "weaponInfo": {
+      "damage": 20,
+      "penetration": 50
+    }
+  },
+  {
+    "category": "Schematics",
+    "name": "Throwable Gas Bomb Schematic",
+    "stackSize": 100,
+    "drops": [
+      {
+        "location": "Unknown"
+      }
+    ],
+    "learn": [
+      "Throwable Gas Bomb"
+    ]
+  },
+  {
+    "category": "Weapons",
     "crafting": [
       {
         "ingredients": [
@@ -41932,10 +41057,10 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Ash Oracle Fortress"
+        "location": "Unknown"
       },
       {
-        "location": "Unknown"
+        "location": "Ash Oracle Fortress"
       },
       {
         "location": "Rupu Oracle"
@@ -41997,9 +41122,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -42042,10 +41164,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 2,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -42134,10 +41252,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 100,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -42209,10 +41323,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -42245,10 +41355,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -43055,10 +42161,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -43091,10 +42193,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -43123,10 +42221,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -43155,10 +42249,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 50,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -43191,10 +42281,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -43227,10 +42313,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 30,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -43263,10 +42345,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -43295,10 +42373,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 65,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -43414,10 +42488,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -44406,10 +43476,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -44446,10 +43512,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -44486,10 +43548,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -44522,10 +43580,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 17,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -44562,10 +43616,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -44602,10 +43652,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 5,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -44789,10 +43835,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "count": 3,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -44884,10 +43926,6 @@
   },
   {
     "category": "Equipment",
-    "cost": {
-      "count": 2,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -44921,10 +43959,6 @@
   },
   {
     "category": "Equipment",
-    "cost": {
-      "count": 25,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -45076,10 +44110,6 @@
   },
   {
     "category": "Traps",
-    "cost": {
-      "count": 12,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -45116,10 +44146,6 @@
   },
   {
     "category": "Weapons",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -45195,10 +44221,6 @@
   },
   {
     "category": "Traps",
-    "cost": {
-      "count": 15,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -45234,10 +44256,6 @@
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 35,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -45325,10 +44343,6 @@
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 12,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -45385,10 +44399,6 @@
   },
   {
     "category": "Armors",
-    "cost": {
-      "count": 12,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -45445,9 +44455,6 @@
   },
   {
     "category": "Tools",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -45472,10 +44479,6 @@
   },
   {
     "category": "Walkers",
-    "cost": {
-      "count": 50,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -45555,10 +44558,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -45591,10 +44590,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 35,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -46402,10 +45397,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -46438,10 +45429,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -46470,10 +45457,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -46502,10 +45485,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 40,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -46538,10 +45517,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 20,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -46574,10 +45549,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 25,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -46610,10 +45581,6 @@
   },
   {
     "category": "WalkerParts",
-    "cost": {
-      "count": 15,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -46642,10 +45609,6 @@
   },
   {
     "category": "Drugs",
-    "cost": {
-      "count": 6,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -46693,10 +45656,6 @@
   },
   {
     "category": "WalkerTools",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -46750,9 +45709,6 @@
   },
   {
     "category": "Resources",
-    "cost": {
-      "name": "Fragment"
-    },
     "name": "Walker Mechanism",
     "parent": "Woodworking Station",
     "trade_price": 700,
@@ -46854,10 +45810,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 32,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -47058,10 +46010,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 40,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -47296,9 +46244,6 @@
   },
   {
     "category": "Resources",
-    "cost": {
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -47696,10 +46641,6 @@
   },
   {
     "category": "Crafting",
-    "cost": {
-      "count": 10,
-      "name": "Fragment"
-    },
     "crafting": [
       {
         "ingredients": [
@@ -47792,10 +46733,6 @@
   },
   {
     "category": "Drugs",
-    "cost": {
-      "count": 10,
-      "name": "Tablet"
-    },
     "crafting": [
       {
         "ingredients": [
