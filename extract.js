@@ -1,10 +1,9 @@
+require("dotenv").config();
 const { FileProvider, FGuid, Ue4Version, Oodle } = require("unreal.js");
 const fs = require("fs-extra");
 
-const GAMEPATH =
-  "C:/Program Files (x86)/Steam/steamapps/common/Last Oasis/Mist/Content/Paks/";
-const AES_KEY =
-  "0xFED592820455B2B9A8CA3E85DD8CD37BB3BAC9D44116D4D32A6ED77CA75452D0";
+const GAMEPATH = process.env.PAKS_FOLDER;
+const AES_KEY = process.env.AES_KEY;
 
 const folderPatch = "./gamefiles/";
 
