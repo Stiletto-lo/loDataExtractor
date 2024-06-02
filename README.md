@@ -1,6 +1,6 @@
 # loDataExtractor
 
-Data extractor for the game Last Oasis. Used to generate a JSON with the desired data from the different items.
+Data extractor for the game. Used to generate a JSON with the desired data from the different items.
 
 ## How it works
 
