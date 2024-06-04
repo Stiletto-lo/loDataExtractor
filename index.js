@@ -219,7 +219,17 @@ if (process.env.COMPARE === "true") {
 
 function loadDirData(techTreeDir, folderType) {
   //let dir = path.join(techTreeDir);
-  let files = fs.readdirSync(techTreeDir);
+  if (!fs.exists(techTreeDir)) {
+    return;
+  }
+
+  let files = [];
+
+  try {
+    files = fs.readdirSync(techTreeDir);
+  } catch(error) {
+    console.error(error);
+  }
   files.forEach((file) => {
     let fileData = fs.statSync(techTreeDir + "/" + file);
     if (fileData.isDirectory()) {

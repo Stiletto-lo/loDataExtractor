@@ -1,6 +1,11 @@
 const controller = {};
 
 controller.parseName = (translator, name) => {
+  if (name == null) {
+    return;
+  }
+
+  name = String(name);
   name = name.replaceAll(".Name", "").trim();
   name = controller.parseType(name);
   name = name.replaceAll("_C", "").trim();
@@ -156,6 +161,10 @@ controller.parseStructureName = (category, name) => {
 };
 
 controller.parseUpgradeName = (name, profile) => {
+  if (profile == null) {
+    return "";
+  }
+
   if (
     profile.includes("BaseSparePartsProfile") ||
     profile.includes("MediumSparePartsProfile") ||
@@ -169,30 +178,32 @@ controller.parseUpgradeName = (name, profile) => {
   let tier = 1;
   let type = "Water";
 
-  if (name.includes("Wood")) {
-    tier = 1;
-  } else if (name.includes("Bone")) {
-    tier = 2;
-  } else if (name.includes("Ceramic")) {
-    tier = 3;
-  } else if (name.includes("Iron")) {
-    tier = 4;
-  }
-
-  if (name.includes("Cargo")) {
-    type = "Cargo";
-  } else if (name.includes("Hatch")) {
-    type = "Gear";
-  } else if (name.includes("Water")) {
-    type = "Water";
-  } else if (name.includes("Torque")) {
-    type = "Torque";
-  } else if (name.includes("Gears")) {
-    type = "Mobility";
-  } else if (name.includes("Armor")) {
-    type = "Durability";
-  } else if (name.includes("Packing")) {
-    type = "Packing";
+  if (name != null) {
+    if (name.includes("Wood")) {
+      tier = 1;
+    } else if (name.includes("Bone")) {
+      tier = 2;
+    } else if (name.includes("Ceramic")) {
+      tier = 3;
+    } else if (name.includes("Iron")) {
+      tier = 4;
+    }
+  
+    if (name.includes("Cargo")) {
+      type = "Cargo";
+    } else if (name.includes("Hatch")) {
+      type = "Gear";
+    } else if (name.includes("Water")) {
+      type = "Water";
+    } else if (name.includes("Torque")) {
+      type = "Torque";
+    } else if (name.includes("Gears")) {
+      type = "Mobility";
+    } else if (name.includes("Armor")) {
+      type = "Durability";
+    } else if (name.includes("Packing")) {
+      type = "Packing";
+    }
   }
 
   return `${walkerName} Walker Upgrade - ${type} - Tier ${tier}`;

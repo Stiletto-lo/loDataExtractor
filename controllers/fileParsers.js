@@ -988,7 +988,7 @@ controller.parseUpgradesToItems = () => {
 };
 
 controller.getUpgradeItem = (upgradePure) => {
-  if (upgradePure.super) {
+  if (upgradePure?.super) {
     let superUpgrade = upgradesData.find(
       (up) => up.profile == upgradePure.super && up.name == upgradePure.name
     );
@@ -997,8 +997,8 @@ controller.getUpgradeItem = (upgradePure) => {
       let item = { ...itemTemplate };
       item.category = "Upgrades";
       item.name = dataParser.parseUpgradeName(
-        upgradePure.name,
-        upgradePure.profile
+        upgradePure?.name,
+        upgradePure?.profile
       );
       item.upgradeInfo = {
         ...superUpgradeData.upgradeInfo,
@@ -1046,11 +1046,11 @@ controller.getUpgradeItem = (upgradePure) => {
     let item = { ...itemTemplate };
     item.category = "Upgrades";
     item.name = dataParser.parseUpgradeName(
-      upgradePure.name,
-      upgradePure.profile
+      upgradePure?.name,
+      upgradePure?.profile
     );
-    item.upgradeInfo = upgradePure.upgradeInfo;
-    item.crafting = upgradePure.crafting;
+    item.upgradeInfo = upgradePure?.upgradeInfo;
+    item.crafting = upgradePure?.crafting;
     return item;
   }
 };
