@@ -1,4 +1,4 @@
-module.exports = {
+const datatable = {
   name: undefined,
   chance: undefined,
   minIterations: undefined,
@@ -9,3 +9,7 @@ module.exports = {
   onlyOne: undefined,
   dropItems: [],
 };
+
+Object.freeze(datatable);
+
+module.exports = datatable;

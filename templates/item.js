@@ -1,4 +1,4 @@
-module.exports = {
+const item = {
   category: undefined,
   cost: undefined,
   crafting: undefined,
@@ -22,3 +22,7 @@ module.exports = {
   drops: undefined,
   structureInfo: undefined,
 };
+
+Object.freeze(item);
+
+module.exports = item;

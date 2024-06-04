@@ -1,4 +1,4 @@
-module.exports = {
+const weaponInfo = {
   durabilityDamage: undefined,
   weaponSpeed: undefined,
   impact: undefined,
@@ -7,3 +7,7 @@ module.exports = {
   damage: undefined,
   penetration: undefined,
 };
+
+Object.freeze(weaponInfo);
+
+module.exports = weaponInfo;

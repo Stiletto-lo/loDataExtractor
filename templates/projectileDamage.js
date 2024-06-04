@@ -1,4 +1,4 @@
-module.exports = {
+const projectileDamage = {
   damage: undefined,
   penetration: undefined,
   effectivenessVsSoak: undefined,
@@ -9,3 +9,7 @@ module.exports = {
   vsReinforced: undefined,
   vsSolid: undefined,
 };
+
+Object.freeze(projectileDamage);
+
+module.exports = projectileDamage;

@@ -1,4 +1,4 @@
-module.exports = {
+const rig = {
   medium: undefined,
   small: undefined,
   large: undefined,
@@ -6,3 +6,7 @@ module.exports = {
   edgeMedium: undefined,
   edgeSmall: undefined,
 };
+
+Object.freeze(rig);
+
+module.exports = rig;

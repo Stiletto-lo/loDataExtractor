@@ -1,4 +1,4 @@
-module.exports = {
+const upgradeInfo = {
   engineTorqueMultiplier: undefined,
   sprintingTorqueDiscount: undefined,
   additionalParts: undefined,
@@ -7,3 +7,7 @@ module.exports = {
   stackSizeOverride: undefined,
   bonusHp: undefined,
 };
+
+Object.freeze(upgradeInfo);
+
+module.exports = upgradeInfo;

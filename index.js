@@ -228,8 +228,9 @@ function loadDirData(techTreeDir, folderType) {
   try {
     files = fs.readdirSync(techTreeDir);
   } catch(error) {
-    console.error(error);
+    console.error(`The folder ${techTreeDir} not exists`);
   }
+
   files.forEach((file) => {
     let fileData = fs.statSync(techTreeDir + "/" + file);
     if (fileData.isDirectory()) {
