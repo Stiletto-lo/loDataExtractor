@@ -89,36 +89,36 @@ controller.isTheSame = (extractedItem, githubItem) => {
     !controller.compareCost(extractedItem, githubItem)
   ) {
     return false;
-  }
+  } 
 
   if (
     DATA_TO_COMPARE.crafting &&
     !controller.compareCrafting(extractedItem, githubItem)
   ) {
     return false;
-  }
+  } 
 
   if (
     DATA_TO_COMPARE.damage &&
     !Object.is(githubItem.damage, extractedItem.damage)
   ) {
     return false;
-  }
+  } 
 
   if (
     DATA_TO_COMPARE.category &&
     !Object.is(githubItem.category, extractedItem.category)
   ) {
     return false;
-  }
-
+  } 
+  
   if (
     DATA_TO_COMPARE.parent &&
     !Object.is(githubItem.parent, extractedItem.parent)
   ) {
     return false;
   }
-
+  
   if (
     DATA_TO_COMPARE.trade_price &&
     !Object.is(githubItem.trade_price, extractedItem.trade_price)
@@ -138,8 +138,8 @@ controller.compareCrafting = (extractedItem, githubItem) => {
     ) {
       return false;
     } else if (
-      (githubItem.crafting[0] && githubItem.crafting[0].ingredients) ||
-      (extractedItem.crafting[0] && extractedItem.crafting[0].ingredients)
+      githubItem?.crafting?.[0]?.ingredients ||
+      xtractedItem?.crafting?.[0]?.ingredients
     ) {
       if (
         githubItem.crafting[0].ingredients === undefined ||
@@ -207,13 +207,16 @@ controller.compareCost = (extractedItem, githubItem) => {
     if (githubItem.cost === undefined || extractedItem.cost === undefined) {
       return false;
     }
+
     if (
       githubItem.cost.count === undefined ||
       extractedItem.cost.count === undefined ||
       githubItem.cost.count != extractedItem.cost.count
     ) {
       return false;
-    } else if (
+    }
+
+    if (
       githubItem.cost.name === undefined ||
       extractedItem.cost.name === undefined ||
       githubItem.cost.name != extractedItem.cost.name

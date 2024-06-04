@@ -36,11 +36,7 @@ controller.parseBlueprintsToItems = () => {
     let location = translator.translateLootSite(blueprint.name);
     blueprint.tables.forEach((dataTable) => {
       let dataTableChance = 100;
-      let minIterations = 1;
       let maxIterations = 1;
-      if (dataTable.minIterations) {
-        minIterations = dataTable.minIterations;
-      }
       if (dataTable.maxIterations) {
         maxIterations = dataTable.minIterations;
       }
@@ -48,14 +44,13 @@ controller.parseBlueprintsToItems = () => {
         dataTableChance = dataTable.dataTableChance;
       }
 
-      let minChance = (dataTableChance * minIterations) / 100;
       let maxChance = (dataTableChance * maxIterations) / 100;
 
       dataTable.dropItems.forEach((lootItemData) => {
         let item = controller.getItem(
           dataParser.parseName(translator, lootItemData.name)
         );
-        if (item && item.name) {
+        if (item?.name) {
           let itemDrops = item.drops ? item.drops : [];
           let hasDrop = itemDrops.some((d) => d.location === location);
           if (!hasDrop && item.name != location) {
@@ -103,11 +98,10 @@ controller.parseLootTable = (filePath) => {
           let completeItem = controller.getItemByType(
             dataParser.parseType(lootItems[key].Item.AssetPathName)
           );
-          if (completeItem && completeItem.name) {
+          if (completeItem?.name) {
             name = completeItem.name;
           } else if (
-            lootItems[key].Item.AssetPathName &&
-            lootItems[key].Item.AssetPathName.includes("Schematics")
+            lootItems[key]?.Item?.AssetPathName?.includes?.("Schematics")
           ) {
             name = name + " Schematic";
           }
@@ -153,19 +147,6 @@ controller.parseLootBlueprint = (filePath) => {
             let name = dataParser.parseName(translator, table.Table.ObjectName);
             let dataTable = allDatatables.find((data) => data.name == name);
             if (dataTable) {
-              let blueChance = null;
-              let minBlueChance = 0;
-              let maxBlueChance = 0;
-              if (table.RunChance) {
-                blueChance = table.RunChance;
-              }
-              if (blueChance != null && table.MinIterations) {
-                minBlueChance = blueChance * table.MinIterations;
-              }
-              if (blueChance != null && table.MaxIterations) {
-                maxBlueChance = blueChance * table.MaxIterations;
-              }
-
               dataTable.chance = table.RunChance ? table.RunChance : undefined;
               dataTable.minIterations = table.MinIterations
                 ? table.MinIterations
@@ -200,7 +181,7 @@ controller.parseLootBlueprint = (filePath) => {
 controller.parseCachedItems = (filePath) => {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
-  if (jsonData[0] && jsonData[0]?.Properties.CachedTotalCost) {
+  if (jsonData[0]?.Properties?.CachedTotalCost) {
     let cachedItems = jsonData[0].Properties.CachedTotalCost;
     Object.keys(cachedItems).forEach((key) => {
       if (cachedItems[key].Inputs) {
@@ -230,7 +211,7 @@ controller.parseItemData = (filePath) => {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
 
-  if (jsonData[1] && jsonData[1].Type) {
+  if (jsonData[1]?.Type) {
     let item = controller.extractItemByType(jsonData[1].Type);
 
     if (jsonData[1].Properties) {
@@ -412,10 +393,7 @@ controller.parseItemData = (filePath) => {
           if (recipeData.Inputs) {
             let ingredients = [];
             for (const key in recipeData.Inputs) {
-              let ingredient = { ...ingredienTemplate };
-              ingredient.name = dataParser.parseName(translator, key);
-              ingredient.count = recipeData.Inputs[key];
-              ingredients.push(ingredient);
+              ingredients.push(controller.getIngredientsFromItem(recipeData.Inputs, key));
             }
             if (ingredients.length > 0) {
               recipe.ingredients = ingredients;
@@ -441,7 +419,7 @@ controller.parseItemData = (filePath) => {
           item.crafting = crafting;
         }
       }
-      if (jsonData[1].Properties.Name && jsonData[1].Properties.Name.Key) {
+      if (jsonData?.[1]?.Properties?.Name?.Key) {
         if (
           jsonData[1].Properties.Name.SourceString &&
           jsonData[1].Properties.Name.SourceString.trim() != ""
@@ -484,9 +462,9 @@ controller.parseSchematicItemData = (filePath) => {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
 
-  if (jsonData[1] && jsonData[1].Type) {
+  if (jsonData?.[1]?.Type) {
     let item = controller.extractItemByType(jsonData[1].Type);
-    let name = undefined;
+    let name;
     if (jsonData[1].Properties?.Name?.Key) {
       name = jsonData[1].Properties.Name.Key;
       name = name.replaceAll(".Name", "").trim();
@@ -505,7 +483,7 @@ controller.parseSchematicItemData = (filePath) => {
         name = dataParser.parseType(jsonData[1].Type);
 
         let foundItem = controller.getItemByType(name);
-        if (foundItem && foundItem.name) {
+        if (foundItem?.name) {
           name = foundItem.name;
         }
       }
@@ -575,7 +553,7 @@ controller.parsePlaceableData = (filePath) => {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
 
-  if (jsonData[1] && jsonData[1].Type) {
+  if (jsonData?.[1]?.Type) {
     let item = controller.extractItemByType(jsonData[1].Type);
     if (jsonData[1].Type.includes("Rig")) {
       let rigName = null;
@@ -621,11 +599,9 @@ controller.parsePlaceableData = (filePath) => {
           let recipe = { ...recipeTemplate };
           let ingredients = [];
           for (const key in recipeData.Inputs) {
-            let ingredient = { ...ingredienTemplate };
-            ingredient.name = dataParser.parseName(translator, key);
-            ingredient.count = recipeData.Inputs[key];
-            ingredients.push(ingredient);
+            ingredients.push(controller.getIngredientsFromItem(recipeData.Inputs, key));
           }
+
           if (ingredients.length > 0) {
             recipe.ingredients = ingredients;
           }
@@ -667,14 +643,6 @@ controller.parsePlaceableData = (filePath) => {
         };
       }
 
-      if (
-        jsonData[2] &&
-        jsonData[2].Template &&
-        jsonData[2].Template == "WalkerRig"
-      ) {
-        //item.rigDesign = "No data";
-      }
-
       if (!jsonData[1].Type.includes("Rig")) {
         if (jsonData[1].Properties?.Name?.SourceString) {
           item.name = jsonData[1].Properties.Name.SourceString.trim();
@@ -688,13 +656,12 @@ controller.parsePlaceableData = (filePath) => {
 
       if (
         !item.category &&
-        item.translation &&
-        item.translation.includes("WallsWoodLight")
+        item?.translation?.includes?.("WallsWoodLight")
       ) {
         item.category = "StructuralWoodLight";
       }
 
-      if (item.category && item.category.includes("Structural")) {
+      if (item?.category?.includes?.("Structural")) {
         item.name = dataParser.parseStructureName(
           item.category,
           translator.translateItem(item).name
@@ -711,13 +678,11 @@ controller.parseTechData = (filePath) => {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
 
-  if (jsonData[1] && jsonData[1].Type) {
+  if (jsonData?.[1]?.Type) {
     let item = controller.extractItemByType(jsonData[1].Type);
 
     if (
-      jsonData[1]?.Properties?.Requirements &&
-      jsonData[1].Properties.Requirements[0] &&
-      jsonData[1].Properties.Requirements[0].ObjectName
+      jsonData?.[1]?.Properties?.Requirements?.[0]?.ObjectName
     ) {
       item.parent = translator.translateName(
         dataParser.parseName(
@@ -911,35 +876,27 @@ controller.parseUpgrades = (filePath) => {
 
           upgradeInfo.containerSlots = jsonData[1]?.Properties[key]
             ?.ContainerSlots
-            ? jsonData[1].Properties[key].ContainerSlots
-            : undefined;
+            ?? undefined;
           upgradeInfo.engineTorqueMultiplier = jsonData[1]?.Properties[key]
             ?.EngineTorqueMultiplier
-            ? jsonData[1].Properties[key].EngineTorqueMultiplier
-            : undefined;
+            ?? undefined;
           upgradeInfo.sprintingTorqueDiscount = jsonData[1]?.Properties[key]
             ?.SprintingTorqueDiscount
-            ? jsonData[1].Properties[key].SprintingTorqueDiscount
-            : undefined;
+            ?? undefined;
           upgradeInfo.additionalParts = jsonData[1]?.Properties[key]
             ?.AdditionalParts
-            ? jsonData[1].Properties[key].AdditionalParts
-            : undefined;
+            ?? undefined;
           upgradeInfo.sdditionalSlots = jsonData[1]?.Properties[key]
             ?.AdditionalSlots
-            ? jsonData[1].Properties[key].AdditionalSlots
-            : undefined;
+            ?? undefined;
           upgradeInfo.containerSlots = jsonData[1]?.Properties[key]
             ?.ContainerSlots
-            ? jsonData[1].Properties[key].ContainerSlots
-            : undefined;
+            ?? undefined;
           upgradeInfo.stackSizeOverride = jsonData[1]?.Properties[key]
             ?.StackSizeOverride
-            ? jsonData[1].Properties[key].StackSizeOverride
-            : undefined;
+            ?? undefined;
           upgradeInfo.bonusHp = jsonData[1]?.Properties[key]?.BonusHp
-            ? jsonData[1].Properties[key].BonusHp
-            : undefined;
+            ?? undefined;
 
           Object.keys(upgradeInfo).forEach((keyUpgradeInfo) => {
             if (upgradeInfo[keyUpgradeInfo] === undefined) {
@@ -959,8 +916,8 @@ controller.parseUpgrades = (filePath) => {
             let ingredients = [];
             for (const keyInput in recipeData) {
               let ingredient = { ...ingredienTemplate };
-              ingredient.name = dataParser.parseName(translator, keyInput);
-              ingredient.count = recipeData[keyInput];
+              ingredient.name = dataParser.parseName(translator, Object.keys(keyInput)[0]);
+              ingredient.count = Object.values(recipeData[keyInput])[0];
               ingredients.push(ingredient);
             }
             if (ingredients.length > 0) {
@@ -981,7 +938,7 @@ controller.parseUpgrades = (filePath) => {
 controller.parseUpgradesToItems = () => {
   upgradesData.forEach((upgradePure) => {
     let item = controller.getUpgradeItem(upgradePure);
-    if (item && item.name) {
+    if (item?.name) {
       allItems.push(item);
     }
   });
@@ -1127,5 +1084,13 @@ controller.getAllBlueprints = () => {
 controller.getTranslator = () => {
   return translator;
 };
+
+controller.getIngredientsFromItem = (data, key) => {
+  let ingredient = { ...ingredienTemplate };
+  ingredient.name = dataParser.parseName(translator, Object.keys(data[key])[0]);
+  ingredient.count = Object.values(data[key])[0];
+
+  return ingredient;
+}
 
 module.exports = controller;

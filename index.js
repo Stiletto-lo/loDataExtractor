@@ -1,6 +1,5 @@
 require("dotenv").config();
 const fs = require("fs-extra");
-const path = require("path");
 const comparator = require("./controllers/comparator");
 const fileParser = require("./controllers/fileParsers");
 const dataParser = require("./controllers/dataParsers");
@@ -14,33 +13,17 @@ const CONTENT_FOLDER_PATH = process.env.CONTENT_FOLDER_PATH
 
 const folderPatch = "./exported/";
 
-const folderTypes = [
-  "tech",
-  "item",
-  "stringtables",
-  "trade",
-  "placeables",
-  "cached",
-  "loottables",
-  "upgrages",
-  "blueprintsloot",
-  "damagetypes",
-  "schematics",
-  "translationOthers",
-];
-
 const orderByCategoryAndName = (a, b) => {
   if (a.category < b.category) {
     return -1;
   } else if (a.category > b.category) {
     return 1;
-  } else {
-    if (a.name < b.name) {
-      return -1;
-    } else if (a.name > b.name) {
-      return 1;
-    }
+  } else if (a.name < b.name) {
+    return -1;
+  } else if (a.name > b.name) {
+    return 1;
   }
+  
   return 0;
 };
 
@@ -218,7 +201,6 @@ if (process.env.COMPARE === "true") {
 }
 
 function loadDirData(techTreeDir, folderType) {
-  //let dir = path.join(techTreeDir);
   if (!fs.exists(techTreeDir)) {
     return;
   }

@@ -6,6 +6,7 @@ controller.parseName = (translator, name) => {
   }
 
   name = String(name);
+  name = name.replaceAll("'", "").trim();
   name = name.replaceAll(".Name", "").trim();
   name = controller.parseType(name);
   name = name.replaceAll("_C", "").trim();

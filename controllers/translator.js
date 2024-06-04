@@ -50,11 +50,7 @@ controller.searchName = (name) => {
   return null;
 };
 
-controller.translateItems = (allItems) => {
-  return (allItems = allItems.map((item) => {
-    return controller.translateItem(item);
-  }));
-};
+controller.translateItems = (allItems) => allItems.map((item) => controller.translateItem(item));
 
 controller.translateItem = (item) => {
   let name = item.name;
@@ -121,47 +117,41 @@ controller.translateItemPart = (value) => {
   return value;
 };
 
-controller.addDescriptions = (allItems) => {
-  return (allItems = allItems.map((item) => {
-    let name = item.name;
-    if (item.translation) {
-      name = item.translation;
-    }
+controller.addDescriptions = (allItems) => allItems.map((item) => {
+  let name = item.name;
+  if (item.translation) {
+    name = item.translation;
+  }
 
-    if (allDesriptions[name]) {
-      item.description = allDesriptions[name].trim();
-    }
+  if (allDesriptions[name]) {
+    item.description = allDesriptions[name].trim();
+  }
 
-    return item;
-  }));
-};
+  return item;
+});
 
 controller.addTranslation = (key, translation, languaje = null) => {
   if (languaje == null) {
     if (key && translation && !allTranslations[key]) {
       allTranslations[key] = translation;
     }
+  } else if (translationsFromOtherLanguajes[languaje]) {
+    translationsFromOtherLanguajes[languaje][key] = translation;
   } else {
-    if (translationsFromOtherLanguajes[languaje]) {
-      translationsFromOtherLanguajes[languaje][key] = translation;
-    } else {
-      let arrayL = [];
-      arrayL[key] = translation;
-      translationsFromOtherLanguajes[languaje] = arrayL;
-    }
+    let arrayL = [];
+    arrayL[key] = translation;
+    translationsFromOtherLanguajes[languaje] = arrayL;
   }
 };
 
 controller.addDescription = (key, description, languaje = null) => {
   if (languaje == null) {
     allDesriptions[key] = description;
+  } else if (descriptionsFromOtherLanguajes[languaje]) {
+    descriptionsFromOtherLanguajes[languaje][key] = description;
   } else {
-    if (descriptionsFromOtherLanguajes[languaje]) {
-      descriptionsFromOtherLanguajes[languaje][key] = description;
-    } else {
-      descriptionsFromOtherLanguajes[languaje] = [];
-      descriptionsFromOtherLanguajes[languaje][key] = description;
-    }
+    descriptionsFromOtherLanguajes[languaje] = [];
+    descriptionsFromOtherLanguajes[languaje][key] = description;
   }
 };
 
