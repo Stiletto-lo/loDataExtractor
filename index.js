@@ -182,8 +182,9 @@ if (process.env.TRANSLATE_FILES === "true") {
   let translateData = translator.getTranslateFiles();
   for (const languaje in translateData) {
     let fileData = translateData[languaje];
+    const languajeArray = languaje.split("-");
     fs.outputFile(
-      folderPatch + `locales/${languaje.toLowerCase()}/items.json`,
+      folderPatch + `locales/${languajeArray[0].toLowerCase()}/items.json`,
       JSON.stringify(fileData, null, 2),
       function (err) {
         if (err) {
