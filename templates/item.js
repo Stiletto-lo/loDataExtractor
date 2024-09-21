@@ -21,6 +21,7 @@ const item = {
   movementSpeedReduction: undefined,
   drops: undefined,
   structureInfo: undefined,
+  wikiVisibility: undefined,
 };
 
 Object.freeze(item);

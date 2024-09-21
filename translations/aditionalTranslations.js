@@ -183,5 +183,6 @@ allTranslations["Structural (wood: heavy)"] = "Heavy Wood Structures";
 allTranslations["Structural (wood: light)"] = "Light Wood Structures";
 allTranslations["WallGiants"] = "Giant Structures";
 allTranslations["HangarWalls"] = "Hangar Wall";
+allTranslations["ModuleCrafting"] = "Module Fabricator";
 
 module.exports = allTranslations;

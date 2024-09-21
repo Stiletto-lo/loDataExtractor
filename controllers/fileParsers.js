@@ -204,254 +204,271 @@ controller.parseCachedItems = (filePath) => {
   }
 };
 
+controller.getItemFromItemData = (itemData, oldItem) => {
+  if (!itemData) {
+    return oldItem ?? undefined;
+  }
+
+  let item = oldItem ?? controller.extractItemByType(itemData.Type);
+
+  if (itemData.Properties) {
+    if (itemData.Properties?.Category?.ObjectPath) {
+      let category = dataParser.parseCategory(
+        itemData.Properties.Category.ObjectPath
+      );
+      if (category.includes("Schematics")) {
+        item.schematicName = itemData.Type;
+      } else {
+        item.category = dataParser.parseCategory(
+          itemData.Properties.Category.ObjectPath
+        );
+      }
+    }
+    if (
+      itemData.Properties?.ExpectedPrice &&
+      itemData.Properties.ExpectedPrice > 0
+    ) {
+      item.trade_price = itemData.Properties.ExpectedPrice;
+    }
+
+    if (itemData.Properties?.MaximumQuantity) {
+      if (item.moduleInfo == undefined) {
+        let moduleInfoBase = { ...moduleInfoTemplate };
+        item.moduleInfo = moduleInfoBase;
+      }
+
+      item.moduleInfo.max = itemData.Properties.MaximumQuantity;
+      item.moduleInfo.increase = itemData.Properties
+        .AbsoluteIncreasePerItem
+        ? itemData.Properties.AbsoluteIncreasePerItem
+        : undefined;
+    }
+
+    if (itemData.Properties?.PercentageIncreasePerItem) {
+      if (item.moduleInfo == undefined) {
+        let moduleInfoBase = { ...moduleInfoTemplate };
+        item.moduleInfo = moduleInfoBase;
+      }
+
+      item.moduleInfo.increase =
+      itemData.Properties.PercentageIncreasePerItem;
+      item.moduleInfo.maxIncrease = itemData.Properties.MaximumPercentage
+        ? itemData.Properties.MaximumPercentage
+        : undefined;
+    }
+
+    if (itemData.Properties?.ProjectileDamage) {
+      let projectileDamage = { ...projectileDamageTemplate };
+
+      projectileDamage.damage = itemData.Properties?.ProjectileDamage
+        ?.Damage
+        ? itemData.Properties?.ProjectileDamage?.Damage
+        : undefined;
+      projectileDamage.penetration =
+        EXTRACT_ALL_DATA &&
+        itemData.Properties?.ProjectileDamage?.Penetration
+          ? itemData.Properties?.ProjectileDamage?.Penetration
+          : undefined;
+      projectileDamage.effectivenessVsSoak =
+        EXTRACT_ALL_DATA &&
+        itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
+          ? itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
+          : undefined;
+      projectileDamage.effectivenessVsReduce =
+        EXTRACT_ALL_DATA &&
+        itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
+          ? itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
+          : undefined;
+
+      item.projectileDamage = projectileDamage;
+    }
+
+    if (itemData.Properties?.DefenseProperties) {
+      let armorInfo = { ...armorInfoTemplate };
+
+      armorInfo.absorbing = itemData.Properties?.DefenseProperties?.Soak
+        ? itemData.Properties?.DefenseProperties?.Soak
+        : undefined;
+      armorInfo.reduction = itemData.Properties?.DefenseProperties?.Reduce
+        ? itemData.Properties?.DefenseProperties?.Reduce
+        : undefined;
+
+      if (itemData.Properties?.MovementSpeedReduction) {
+        armorInfo.speedReduction =
+          itemData.Properties.MovementSpeedReduction;
+      }
+
+      item.armorInfo = armorInfo;
+    }
+
+    if (
+      EXTRACT_ALL_DATA &&
+      itemData.Properties?.ExperienceRewardCrafting
+    ) {
+      item.experiencieReward =
+        itemData.Properties.ExperienceRewardCrafting;
+    }
+
+    if (itemData.Properties?.MaxStackSize) {
+      item.stackSize = itemData.Properties.MaxStackSize;
+    }
+
+    if (itemData.Properties?.Weight) {
+      item.weight = itemData.Properties.Weight;
+    }
+
+    if (EXTRACT_ALL_DATA && itemData.Properties?.MaxDurability) {
+      item.durability = itemData.Properties.MaxDurability;
+    }
+
+    let weaponInfo = { ...weaponInfoTemplate };
+
+    if (EXTRACT_ALL_DATA && itemData.Properties?.DurabilityDamage) {
+      weaponInfo.durabilityDamage = itemData.Properties.DurabilityDamage;
+      item.weaponInfo = weaponInfo;
+    }
+    if (itemData.Properties?.WeaponSpeed) {
+      weaponInfo.weaponSpeed = itemData.Properties.WeaponSpeed;
+      item.weaponInfo = weaponInfo;
+    }
+    if (EXTRACT_ALL_DATA && itemData.Properties?.Impact) {
+      weaponInfo.impact = itemData.Properties.Impact;
+      item.weaponInfo = weaponInfo;
+    }
+    if (EXTRACT_ALL_DATA && itemData.Properties?.Stability) {
+      weaponInfo.stability = itemData.Properties.Stability;
+      item.weaponInfo = weaponInfo;
+    }
+    if (itemData.Properties?.WeaponLength) {
+      weaponInfo.weaponLength = itemData.Properties.WeaponLength;
+      item.weaponInfo = weaponInfo;
+    }
+
+    if (itemData.Properties?.DamageProperties) {
+      if (itemData.Properties?.DamageProperties?.Damage) {
+        weaponInfo.damage = itemData.Properties.DamageProperties.Damage;
+        item.weaponInfo = weaponInfo;
+      }
+      if (itemData.Properties?.DamageProperties?.Penetration) {
+        weaponInfo.penetration =
+          itemData.Properties.DamageProperties.Penetration;
+        item.weaponInfo = weaponInfo;
+      }
+    }
+
+    if (itemData.Properties?.ToolInfo) {
+      let toolInfosData = itemData.Properties.ToolInfo;
+      let toolInfos = item.toolInfo ? item.toolInfo : [];
+
+      toolInfosData.forEach((toolInfoData) => {
+        let baseToolInfo = { ...toolInfoTemplate };
+        baseToolInfo.tier = toolInfoData.Tier;
+        if (toolInfoData.ToolType.includes("TreeCutting")) {
+          baseToolInfo.toolType = "TreeCutting";
+        } else if (toolInfoData.ToolType.includes("Scythe")) {
+          baseToolInfo.toolType = "Scythe";
+        } else if (toolInfoData.ToolType.includes("Mining")) {
+          baseToolInfo.toolType = "Mining";
+        } else {
+          baseToolInfo.toolType = toolInfoData.ToolType.replace(
+            "EEquipmentTool::",
+            ""
+          );
+        }
+        toolInfos.push(baseToolInfo);
+      });
+      if (toolInfos.length > 0) {
+        item.toolInfo = toolInfos;
+      }
+    }
+
+    if (itemData.Properties?.Recipes) {
+      let recipesData = itemData.Properties.Recipes;
+      let crafting = [];
+      recipesData.forEach((recipeData) => {
+        let recipe = { ...recipeTemplate };
+        if (recipeData.Inputs) {
+          let ingredients = [];
+          for (const key in recipeData.Inputs) {
+            ingredients.push(controller.getIngredientsFromItem(recipeData.Inputs, key));
+          }
+          if (ingredients.length > 0) {
+            recipe.ingredients = ingredients;
+          }
+        }
+        if (recipeData.Quantity && recipeData.Quantity > 1) {
+          recipe.output = recipeData.Quantity;
+        }
+        if (recipeData.CraftingTime && recipeData.CraftingTime > 0) {
+          recipe.time = recipeData.CraftingTime;
+        }
+        if (
+          recipeData?.Category?.ObjectName &&
+          !recipeData.Category.ObjectName.includes("Base")
+        ) {
+          recipe.station = dataParser
+            .parseName(translator, recipeData.Category.ObjectName)
+            .trim();
+        }
+        crafting.push(recipe);
+      });
+      if (crafting.length > 0) {
+        item.crafting = crafting;
+      }
+    }
+    if (itemData?.Properties?.Name?.Key) {
+      if (
+        itemData.Properties.Name.SourceString &&
+        itemData.Properties.Name.SourceString.trim() != ""
+      ) {
+        item.name = itemData.Properties.Name.SourceString.trim();
+        item.translation = itemData.Properties.Name.SourceString.trim();
+      } else {
+        item.translation = itemData.Properties.Name.Key.replace(
+          ".Name",
+          ""
+        ).trim();
+        if (item.name == undefined) {
+          item.name = dataParser.parseName(translator, item.translation);
+        }
+      }
+    }
+
+    if (itemData?.Properties?.DamageType?.ObjectName) {
+      item.damageType = dataParser.parseType(
+        itemData.Properties.DamageType.ObjectName
+      );
+    }
+
+    item.wikiVisibility = itemData?.Properties?.bWikiVisibility;
+  }
+
+  if (
+    !item.category &&
+    (item.name == "Worm Scale" ||
+      item.name == "Proxy License" ||
+      item.name == "Flots" ||
+      item.name == "Fiery Concoction")
+  ) {
+    item.category = "Resources";
+  }
+
+  return item;
+}
+
 controller.parseItemData = (filePath) => {
   if (filePath.includes("Schematics")) {
     return;
   }
+
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
 
   if (jsonData[1]?.Type) {
-    let item = controller.extractItemByType(jsonData[1].Type);
+    let item = controller.getItemFromItemData(jsonData[1]);
 
-    if (jsonData[1].Properties) {
-      if (jsonData[1].Properties?.Category?.ObjectPath) {
-        let category = dataParser.parseCategory(
-          jsonData[1].Properties.Category.ObjectPath
-        );
-        if (category.includes("Schematics")) {
-          item.schematicName = jsonData[1].Type;
-        } else {
-          item.category = dataParser.parseCategory(
-            jsonData[1].Properties.Category.ObjectPath
-          );
-        }
-      }
-      if (
-        jsonData[1].Properties?.ExpectedPrice &&
-        jsonData[1].Properties.ExpectedPrice > 0
-      ) {
-        item.trade_price = jsonData[1].Properties.ExpectedPrice;
-      }
-
-      if (jsonData[1].Properties?.MaximumQuantity) {
-        if (item.moduleInfo == undefined) {
-          let moduleInfoBase = { ...moduleInfoTemplate };
-          item.moduleInfo = moduleInfoBase;
-        }
-
-        item.moduleInfo.max = jsonData[1].Properties.MaximumQuantity;
-        item.moduleInfo.increase = jsonData[1].Properties
-          .AbsoluteIncreasePerItem
-          ? jsonData[1].Properties.AbsoluteIncreasePerItem
-          : undefined;
-      }
-
-      if (jsonData[1].Properties?.PercentageIncreasePerItem) {
-        if (item.moduleInfo == undefined) {
-          let moduleInfoBase = { ...moduleInfoTemplate };
-          item.moduleInfo = moduleInfoBase;
-        }
-
-        item.moduleInfo.increase =
-          jsonData[1].Properties.PercentageIncreasePerItem;
-        item.moduleInfo.maxIncrease = jsonData[1].Properties.MaximumPercentage
-          ? jsonData[1].Properties.MaximumPercentage
-          : undefined;
-      }
-
-      if (jsonData[1].Properties?.ProjectileDamage) {
-        let projectileDamage = { ...projectileDamageTemplate };
-
-        projectileDamage.damage = jsonData[1].Properties?.ProjectileDamage
-          ?.Damage
-          ? jsonData[1].Properties?.ProjectileDamage?.Damage
-          : undefined;
-        projectileDamage.penetration =
-          EXTRACT_ALL_DATA &&
-          jsonData[1].Properties?.ProjectileDamage?.Penetration
-            ? jsonData[1].Properties?.ProjectileDamage?.Penetration
-            : undefined;
-        projectileDamage.effectivenessVsSoak =
-          EXTRACT_ALL_DATA &&
-          jsonData[1].Properties?.ProjectileDamage?.EffectivenessVsSoak
-            ? jsonData[1].Properties?.ProjectileDamage?.EffectivenessVsSoak
-            : undefined;
-        projectileDamage.effectivenessVsReduce =
-          EXTRACT_ALL_DATA &&
-          jsonData[1].Properties?.ProjectileDamage?.EffectivenessVsReduce
-            ? jsonData[1].Properties?.ProjectileDamage?.EffectivenessVsReduce
-            : undefined;
-
-        item.projectileDamage = projectileDamage;
-      }
-
-      if (jsonData[1].Properties?.DefenseProperties) {
-        let armorInfo = { ...armorInfoTemplate };
-
-        armorInfo.absorbing = jsonData[1].Properties?.DefenseProperties?.Soak
-          ? jsonData[1].Properties?.DefenseProperties?.Soak
-          : undefined;
-        armorInfo.reduction = jsonData[1].Properties?.DefenseProperties?.Reduce
-          ? jsonData[1].Properties?.DefenseProperties?.Reduce
-          : undefined;
-
-        if (jsonData[1].Properties?.MovementSpeedReduction) {
-          armorInfo.speedReduction =
-            jsonData[1].Properties.MovementSpeedReduction;
-        }
-
-        item.armorInfo = armorInfo;
-      }
-
-      if (
-        EXTRACT_ALL_DATA &&
-        jsonData[1].Properties?.ExperienceRewardCrafting
-      ) {
-        item.experiencieReward =
-          jsonData[1].Properties.ExperienceRewardCrafting;
-      }
-
-      if (jsonData[1].Properties?.MaxStackSize) {
-        item.stackSize = jsonData[1].Properties.MaxStackSize;
-      }
-
-      if (jsonData[1].Properties?.Weight) {
-        item.weight = jsonData[1].Properties.Weight;
-      }
-
-      if (EXTRACT_ALL_DATA && jsonData[1].Properties?.MaxDurability) {
-        item.durability = jsonData[1].Properties.MaxDurability;
-      }
-
-      let weaponInfo = { ...weaponInfoTemplate };
-
-      if (EXTRACT_ALL_DATA && jsonData[1].Properties?.DurabilityDamage) {
-        weaponInfo.durabilityDamage = jsonData[1].Properties.DurabilityDamage;
-        item.weaponInfo = weaponInfo;
-      }
-      if (jsonData[1].Properties?.WeaponSpeed) {
-        weaponInfo.weaponSpeed = jsonData[1].Properties.WeaponSpeed;
-        item.weaponInfo = weaponInfo;
-      }
-      if (EXTRACT_ALL_DATA && jsonData[1].Properties?.Impact) {
-        weaponInfo.impact = jsonData[1].Properties.Impact;
-        item.weaponInfo = weaponInfo;
-      }
-      if (EXTRACT_ALL_DATA && jsonData[1].Properties?.Stability) {
-        weaponInfo.stability = jsonData[1].Properties.Stability;
-        item.weaponInfo = weaponInfo;
-      }
-      if (jsonData[1].Properties?.WeaponLength) {
-        weaponInfo.weaponLength = jsonData[1].Properties.WeaponLength;
-        item.weaponInfo = weaponInfo;
-      }
-
-      if (jsonData[1].Properties?.DamageProperties) {
-        if (jsonData[1].Properties?.DamageProperties?.Damage) {
-          weaponInfo.damage = jsonData[1].Properties.DamageProperties.Damage;
-          item.weaponInfo = weaponInfo;
-        }
-        if (jsonData[1].Properties?.DamageProperties?.Penetration) {
-          weaponInfo.penetration =
-            jsonData[1].Properties.DamageProperties.Penetration;
-          item.weaponInfo = weaponInfo;
-        }
-      }
-
-      if (jsonData[1].Properties?.ToolInfo) {
-        let toolInfosData = jsonData[1].Properties.ToolInfo;
-        let toolInfos = item.toolInfo ? item.toolInfo : [];
-
-        toolInfosData.forEach((toolInfoData) => {
-          let baseToolInfo = { ...toolInfoTemplate };
-          baseToolInfo.tier = toolInfoData.Tier;
-          if (toolInfoData.ToolType.includes("TreeCutting")) {
-            baseToolInfo.toolType = "TreeCutting";
-          } else if (toolInfoData.ToolType.includes("Scythe")) {
-            baseToolInfo.toolType = "Scythe";
-          } else if (toolInfoData.ToolType.includes("Mining")) {
-            baseToolInfo.toolType = "Mining";
-          } else {
-            baseToolInfo.toolType = toolInfoData.ToolType.replace(
-              "EEquipmentTool::",
-              ""
-            );
-          }
-          toolInfos.push(baseToolInfo);
-        });
-        if (toolInfos.length > 0) {
-          item.toolInfo = toolInfos;
-        }
-      }
-
-      if (jsonData[1].Properties?.Recipes) {
-        let recipesData = jsonData[1].Properties.Recipes;
-        let crafting = [];
-        recipesData.forEach((recipeData) => {
-          let recipe = { ...recipeTemplate };
-          if (recipeData.Inputs) {
-            let ingredients = [];
-            for (const key in recipeData.Inputs) {
-              ingredients.push(controller.getIngredientsFromItem(recipeData.Inputs, key));
-            }
-            if (ingredients.length > 0) {
-              recipe.ingredients = ingredients;
-            }
-          }
-          if (recipeData.Quantity && recipeData.Quantity > 1) {
-            recipe.output = recipeData.Quantity;
-          }
-          if (recipeData.CraftingTime && recipeData.CraftingTime > 0) {
-            recipe.time = recipeData.CraftingTime;
-          }
-          if (
-            recipeData?.Category?.ObjectName &&
-            !recipeData.Category.ObjectName.includes("Base")
-          ) {
-            recipe.station = dataParser
-              .parseName(translator, recipeData.Category.ObjectName)
-              .trim();
-          }
-          crafting.push(recipe);
-        });
-        if (crafting.length > 0) {
-          item.crafting = crafting;
-        }
-      }
-      if (jsonData?.[1]?.Properties?.Name?.Key) {
-        if (
-          jsonData[1].Properties.Name.SourceString &&
-          jsonData[1].Properties.Name.SourceString.trim() != ""
-        ) {
-          item.name = jsonData[1].Properties.Name.SourceString.trim();
-          item.translation = jsonData[1].Properties.Name.SourceString.trim();
-        } else {
-          item.translation = jsonData[1].Properties.Name.Key.replace(
-            ".Name",
-            ""
-          ).trim();
-          if (item.name == undefined) {
-            item.name = dataParser.parseName(translator, item.translation);
-          }
-        }
-      }
-
-      if (jsonData[1].Properties?.DamageType?.ObjectName) {
-        item.damageType = dataParser.parseType(
-          jsonData[1].Properties.DamageType.ObjectName
-        );
-      }
-    }
-
-    if (
-      !item.category &&
-      (item.name == "Worm Scale" ||
-        item.name == "Proxy License" ||
-        item.name == "Flots" ||
-        item.name == "Fiery Concoction")
-    ) {
-      item.category = "Resources";
+    if (!item?.name) {
+      item = controller.getItemFromItemData(jsonData?.[2], item);
     }
 
     allItems.push(item);
