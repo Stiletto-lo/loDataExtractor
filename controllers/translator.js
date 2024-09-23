@@ -21,6 +21,13 @@ controller.translateLootSite = (name) => {
     return anotherName;
   }
 
+  name = controller.translateEachPart(name);
+
+  let other = controller.customTranslation(name);
+  if (other != name) {
+    return other.trim();
+  }
+
   console.warn("No translation for: " + name);
 
   if (name.includes("Strongbox") || DEBUG) {
@@ -29,6 +36,29 @@ controller.translateLootSite = (name) => {
 
   return "Unknown";
 };
+
+controller.customTranslation = (name) => {
+  name = name.replaceAll("T1", "(Easy)");
+  name = name.replaceAll("T2", "(Medium)");
+  name = name.replaceAll("T3", "(Hard)");
+  name = name.replaceAll("T4", "(Very Hard)");
+
+  return name;
+}
+
+controller.translateEachPart = (name) => {
+  const words = name.split('_');
+
+
+  return words.reduce((accumulator, word) => {
+    let anotherName = controller.searchName(word);
+    if (anotherName != null) {
+      return `${accumulator} ${anotherName}`;
+    } else {
+      return `${accumulator} ${word}`;
+    }
+  }, "");
+}
 
 controller.translateName = (name) => {
   let anotherName = controller.searchName(name);

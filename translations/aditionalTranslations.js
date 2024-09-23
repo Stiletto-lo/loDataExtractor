@@ -185,4 +185,9 @@ allTranslations["WallGiants"] = "Giant Structures";
 allTranslations["HangarWalls"] = "Hangar Wall";
 allTranslations["ModuleCrafting"] = "Module Fabricator";
 
+allTranslations["EasyRupu_T1"] = "Rupu Forerunner";
+allTranslations["MediumRupuCamp"] = "Small Rupu Outpost";
+allTranslations["EasyRupuCamp"] = "Small Rupu Hut";
+allTranslations["HardRupuCamp"] = "Ancient Camp";
+
 module.exports = allTranslations;
