@@ -24,7 +24,6 @@ const creatureTemplate = require("../templates/creature");
 
 const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
 const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
-const DEBUG = process.env.DEBUG === "true";
 
 let allItems = [];
 let upgradesData = [];

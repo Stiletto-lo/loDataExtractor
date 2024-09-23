@@ -6,7 +6,6 @@ const dataParser = require("./controllers/dataParsers");
 
 let allItems = [];
 const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
-const DEBUG = process.env.DEBUG === "true";
 const CONTENT_FOLDER_PATH = process.env.CONTENT_FOLDER_PATH
   ? process.env.CONTENT_FOLDER_PATH
   : "./";
@@ -121,23 +120,14 @@ allItems.forEach((item) => {
     if (item[key] === undefined) {
       delete item[key];
     }
-    if (!DEBUG) {
-      if (item["translation"] != undefined) {
-        delete item["translation"];
-      } else if (item["type"] != undefined) {
-        delete item["type"];
-      } else if (item["schematicName"] != undefined) {
-        delete item["schematicName"];
-      } else if (item["drops"] != undefined && item["drops"].length <= 0) {
-        delete item["drops"];
-      } else if (
-        item["toolInfo"] != undefined &&
-        item["toolInfo"].length <= 0
-      ) {
-        delete item["toolInfo"];
-      } else if (item["damageType"] != undefined) {
-        delete item["damageType"];
-      }
+    if (item["drops"] != undefined && item["drops"].length <= 0) {
+      delete item["drops"];
+    }
+    if (
+      item["toolInfo"] != undefined &&
+      item["toolInfo"].length <= 0
+    ) {
+      delete item["toolInfo"];
     }
   });
 });
@@ -177,6 +167,24 @@ if (allItems.length > 0) {
       }
     }
   );
+
+  allItems.forEach((item) => {
+    Object.keys(item).forEach((key) => {
+      if (item[key] === undefined) {
+        delete item[key];
+      }
+      if (item["translation"] != undefined) {
+        delete item["translation"];
+      } else if (item["type"] != undefined) {
+        delete item["type"];
+      } else if (item["schematicName"] != undefined) {
+        delete item["schematicName"];
+      } else if (item["damageType"] != undefined) {
+        delete item["damageType"];
+      }
+    });
+  });
+
   allItems.sort(orderByCategoryAndName);
   fs.writeFile(
     folderPatch + "items_min.json",
@@ -197,14 +205,6 @@ creatures.forEach((creature) => {
     if (creature[key] === undefined) {
       delete creature[key];
     }
-    if (!DEBUG) {
-      if (creature["lootTable"] !== undefined) {
-        delete creature["lootTable"];
-      }
-      if (creature["type"] !== undefined) {
-        delete creature["type"];
-      }
-    }
   });
 });
 
@@ -223,6 +223,21 @@ if (creatures.length > 0) {
       }
     }
   );
+
+  creatures.forEach((creature) => {
+    Object.keys(creature).forEach((key) => {
+      if (creature[key] === undefined) {
+        delete creature[key];
+      }
+      if (creature["lootTable"] !== undefined) {
+        delete creature["lootTable"];
+      }
+      if (creature["type"] !== undefined) {
+        delete creature["type"];
+      }
+    });
+  });
+
   fs.writeFile(
     folderPatch + "creatures_min.json",
     JSON.stringify(creatures),
