@@ -10,6 +10,7 @@ controller.parseName = (translator, name) => {
   name = name.replaceAll(".Name", "").trim();
   name = controller.parseType(name);
   name = name.replaceAll("_C", "").trim();
+  name = name.replaceAll("_Q", "").trim();
   name = name.replaceAll("DataTable", "").trim();
   let translateName = translator.translateName(name);
   if (translateName != null) {
