@@ -50,6 +50,19 @@ loadDirData(
   CONTENT_FOLDER_PATH + "Content/Localization/Game",
   "translationOthers"
 );
+console.info("Loading Loot sites");
+loadDirData(
+  CONTENT_FOLDER_PATH + "Content/Mist/Characters/Creatures/Monkey",
+  "lootsites"
+);
+loadDirData(
+  CONTENT_FOLDER_PATH + "Content/Mist/Characters/Creatures/Okkam",
+  "lootsites"
+);
+loadDirData(
+  CONTENT_FOLDER_PATH + "Content/Mist/Characters/Creatures/Papak",
+  "lootsites"
+);
 console.info("Loading TechTree");
 loadDirData(CONTENT_FOLDER_PATH + "Content/Mist/Data/TechTree", "tech");
 console.info("Loading Items");
@@ -178,6 +191,51 @@ if (allItems.length > 0) {
   );
 }
 
+let creatures = fileParser.getCreatures();
+creatures.forEach((creature) => {
+  Object.keys(creature).forEach((key) => {
+    if (creature[key] === undefined) {
+      delete creature[key];
+    }
+    if (!DEBUG) {
+      if (creature["lootTable"] !== undefined) {
+        delete creature["lootTable"];
+      }
+      if (creature["type"] !== undefined) {
+        delete creature["type"];
+      }
+    }
+  });
+});
+
+creatures = creatures.filter((item) => item.name && Object.keys(item).length > 2);
+
+creatures.sort(orderByName);
+if (creatures.length > 0) {
+  fs.writeFile(
+    folderPatch + "creatures.json",
+    JSON.stringify(creatures, null, 2),
+    function (err) {
+      if (err) {
+        console.error("Error creating the file");
+      } else {
+        console.log("Creatures exported");
+      }
+    }
+  );
+  fs.writeFile(
+    folderPatch + "creatures_min.json",
+    JSON.stringify(creatures),
+    function (err) {
+      if (err) {
+        console.error("Error creating the file");
+      } else {
+        console.log("Creatures.min exported");
+      }
+    }
+  );
+}
+
 if (process.env.TRANSLATE_FILES === "true") {
   let translateData = translator.getTranslateFiles();
   for (const languaje in translateData) {
@@ -257,6 +315,9 @@ function loadDirData(techTreeDir, folderType) {
           break;
         case "translationOthers":
           fileParser.parseOtherTranslations(techTreeDir + "/" + file);
+          break;
+        case "lootsites":
+          fileParser.parseLootSites(techTreeDir + "/" + file);
           break;
       }
     }

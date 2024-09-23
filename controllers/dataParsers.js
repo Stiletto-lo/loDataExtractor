@@ -119,6 +119,16 @@ controller.parseCategory = (category) => {
   return category;
 };
 
+controller.parseObjectPath = (objectName) => {
+  if (objectName) {
+    const objectNameArray = objectName.split("/");
+    const last = objectNameArray[objectNameArray.length - 1];
+    objectName = last.replace(".0", "").trim();
+  }
+  return objectName;
+};
+
+
 controller.parseRigName = (translator, name) => {
   if (name.includes("Rig") && /(.+)Rig_/.test(name)) {
     let rig = "";

@@ -20,6 +20,7 @@ const upgradeInfoTemplate = require("../templates/upgradeInfo");
 const dropDataTemplate = require("../templates/dropData");
 const dataTableTemplate = require("../templates/datatable");
 const blueprintTemplate = require("../templates/lootBlueprint");
+const creatureTemplate = require("../templates/creature");
 
 const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
 const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
@@ -27,54 +28,67 @@ const DEBUG = process.env.DEBUG === "true";
 
 let allItems = [];
 let upgradesData = [];
+let creatures = [];
 
 let allDatatables = [];
 let allBlueprints = [];
 
+controller.parseLocation = (blueprint, location) => {
+  blueprint.tables.forEach((dataTable) => {
+    let dataTableChance = 100;
+    let maxIterations = 1;
+    if (dataTable.maxIterations) {
+      maxIterations = dataTable.minIterations;
+    }
+    if (dataTable.dataTableChance) {
+      dataTableChance = dataTable.dataTableChance;
+    }
+
+    let maxChance = (dataTableChance * maxIterations) / 100;
+
+    dataTable.dropItems.forEach((lootItemData) => {
+      let item = controller.getItem(
+        dataParser.parseName(translator, lootItemData.name)
+      );
+      if (item?.name) {
+        let itemDrops = item.drops ? item.drops : [];
+        let hasDrop = itemDrops.some((d) => d.location === location);
+        if (!hasDrop && item.name != location) {
+          let drop = { ...dropTemplate };
+          drop.location = location;
+          if (EXTRACT_ALL_DATA && lootItemData.chance) {
+            drop.chance = lootItemData.chance;
+          }
+          if (EXTRACT_ALL_DATA && lootItemData.minQuantity) {
+            drop.minQuantity = lootItemData.minQuantity;
+          }
+          if (EXTRACT_ALL_DATA && lootItemData.maxQuantity) {
+            drop.maxQuantity = lootItemData.maxQuantity;
+          }
+          if (drop.chance) {
+            drop.chance = (drop.chance * maxChance) / 100;
+          }
+          itemDrops.push(drop);
+          item.drops = itemDrops;
+        }
+        allItems.push(item);
+      }
+    });
+  });
+}
+
 controller.parseBlueprintsToItems = () => {
   allBlueprints.forEach((blueprint) => {
-    let location = translator.translateLootSite(blueprint.name);
-    blueprint.tables.forEach((dataTable) => {
-      let dataTableChance = 100;
-      let maxIterations = 1;
-      if (dataTable.maxIterations) {
-        maxIterations = dataTable.minIterations;
-      }
-      if (dataTable.dataTableChance) {
-        dataTableChance = dataTable.dataTableChance;
-      }
 
-      let maxChance = (dataTableChance * maxIterations) / 100;
-
-      dataTable.dropItems.forEach((lootItemData) => {
-        let item = controller.getItem(
-          dataParser.parseName(translator, lootItemData.name)
-        );
-        if (item?.name) {
-          let itemDrops = item.drops ? item.drops : [];
-          let hasDrop = itemDrops.some((d) => d.location === location);
-          if (!hasDrop && item.name != location) {
-            let drop = { ...dropTemplate };
-            drop.location = location;
-            if (EXTRACT_ALL_DATA && lootItemData.chance) {
-              drop.chance = lootItemData.chance;
-            }
-            if (EXTRACT_ALL_DATA && lootItemData.minQuantity) {
-              drop.minQuantity = lootItemData.minQuantity;
-            }
-            if (EXTRACT_ALL_DATA && lootItemData.maxQuantity) {
-              drop.maxQuantity = lootItemData.maxQuantity;
-            }
-            if (drop.chance) {
-              drop.chance = (drop.chance * maxChance) / 100;
-            }
-            itemDrops.push(drop);
-            item.drops = itemDrops;
-          }
-          allItems.push(item);
-        }
+    const locations = creatures.filter((c) => c.lootTable === blueprint.name);
+    if (locations.length > 0) {
+      locations.forEach((location) => {
+        controller.parseLocation(blueprint, location.name);
       });
-    });
+    } else {
+      const location = translator.translateLootSite(blueprint.name);
+      controller.parseLocation(blueprint, location);
+    }
   });
 };
 
@@ -82,10 +96,9 @@ controller.parseLootTable = (filePath) => {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
   if (
-    jsonData[0].Type &&
     jsonData[0].Name &&
     jsonData[0].Rows &&
-    jsonData[0].Type == "DataTable"
+    jsonData?.[0]?.Type == "DataTable"
   ) {
     let dataTable = { ...dataTableTemplate };
     dataTable.name = dataParser.parseName(translator, jsonData[0].Name);
@@ -132,9 +145,8 @@ controller.parseLootBlueprint = (filePath) => {
   let rawdata = fs.readFileSync(filePath);
   let jsonData = JSON.parse(rawdata);
   if (
-    jsonData[0].Type &&
     jsonData[0].Name &&
-    jsonData[0].Type == "BlueprintGeneratedClass"
+    jsonData?.[0]?.Type == "BlueprintGeneratedClass"
   ) {
     if (jsonData[1]?.Type) {
       let blueprint = { ...blueprintTemplate };
@@ -807,6 +819,45 @@ controller.parseTranslations = (filePath) => {
   }
 };
 
+controller.getLootSiteNameFromObject = (objectData) => objectData?.Properties?.MobName?.LocalizedString ?? objectData?.Properties?.CampName?.LocalizedString ?? undefined;
+
+controller.parseLootSites = (filePath) => {
+  let rawdata = fs.readFileSync(filePath);
+  if (!rawdata) {
+    return;
+  }
+
+  let jsonData = JSON.parse(rawdata);
+  if (!jsonData) {
+    return;
+  }
+
+  const objectsFiltered = jsonData.filter((o) => o?.Type !== "Function" && o?.Type !== "BlueprintGeneratedClass" && !o?.Type.includes("Component"));
+
+  let name = objectsFiltered?.[0]?.Type;
+  let translation = controller.getLootSiteNameFromObject(objectsFiltered?.[0]);
+
+  if (!translation || !name) {
+    return;
+  }
+
+  translator.addLootSiteTranslation(
+    name,
+    translation
+  );
+
+  const creature = { ...creatureTemplate, type: name, name: translation};
+
+  const additionalInfo = jsonData.find((o) => o.Type === "MistHumanoidMobVariationComponent");
+  if (additionalInfo) {
+    creature.experiencie = additionalInfo?.Properties?.ExperienceAward;
+    creature.health = additionalInfo?.Properties?.MaxHealth;
+    creature.lootTable = dataParser.parseObjectPath(additionalInfo?.Properties?.Loot?.ObjectPath);
+  }
+
+  creatures.push(creature);
+};
+
 controller.parseOtherTranslations = (filePath) => {
   if (/\/Game\/(.+)\/Game.json/.test(filePath)) {
     let match = filePath.match("/Game/(.+)/Game.json");
@@ -1088,6 +1139,10 @@ controller.getItem = (itemName) => {
 
 controller.getItems = () => {
   return allItems;
+};
+
+controller.getCreatures = () => {
+  return creatures;
 };
 
 controller.getUpgrades = () => {

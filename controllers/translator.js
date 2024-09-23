@@ -21,12 +21,14 @@ controller.translateLootSite = (name) => {
     return anotherName;
   }
 
-  name = controller.translateEachPart(name);
+  // name = controller.translateEachPart(name);
 
+  /*
   let other = controller.customTranslation(name);
   if (other != name) {
     return other.trim();
   }
+  */
 
   console.warn("No translation for: " + name);
 
@@ -69,14 +71,25 @@ controller.translateName = (name) => {
 };
 
 controller.searchName = (name) => {
-  if (name != null && aditionalTranslations[name]) {
+  if (name == null || !name) {
+    return null;
+  }
+
+  if (aditionalTranslations[name]) {
     controller.addTranslationInUuse(name, aditionalTranslations[name].trim());
     return aditionalTranslations[name].trim();
   }
-  if (name != null && allTranslations[name]) {
+
+  if (allTranslations[name]) {
     controller.addTranslationInUuse(name, allTranslations[name].trim());
     return allTranslations[name].trim();
   }
+
+  if (lootSitesTranslations[name]) {
+    controller.addTranslationInUuse(name, lootSitesTranslations[name].trim());
+    return lootSitesTranslations[name].trim();
+  }
+
   return null;
 };
 
@@ -159,6 +172,18 @@ controller.addDescriptions = (allItems) => allItems.map((item) => {
 
   return item;
 });
+
+controller.addLootSiteTranslation = (key, translation) => {
+  if (!key || !translation) {
+    return;
+  }
+
+  const keyCleaned = key.replaceAll("_C", "").trim();
+
+  if (!lootSitesTranslations[keyCleaned]) {
+    lootSitesTranslations[keyCleaned] = translation.trim();
+  }
+};
 
 controller.addTranslation = (key, translation, languaje = null) => {
   if (languaje == null) {
