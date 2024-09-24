@@ -112,8 +112,8 @@ if (!SHOW_DEV_ITEMS) {
 }
 
 console.info("Translating the items");
-allItems = translator.translateItems(allItems);
 allItems = translator.addDescriptions(allItems);
+allItems = translator.translateItems(allItems);
 
 allItems.forEach((item) => {
   Object.keys(item).forEach((key) => {

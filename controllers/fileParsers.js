@@ -654,7 +654,6 @@ controller.parsePlaceableData = (filePath) => {
           item.structureInfo = structureInfo;
         }
         if (jsonData[1].Properties?.CachedCraftingPartsInfo?.Protection?.ObjectName) {
-          console.log("jsonData[1].Properties.CachedCraftingPartsInfo.Protection", jsonData[1].Properties.CachedCraftingPartsInfo.Protection);
           structureInfo.type =
             jsonData[1].Properties.CachedCraftingPartsInfo.Protection?.ObjectName.replace(
               "Class'MistArmor",
@@ -1162,8 +1161,8 @@ controller.getTranslator = () => {
 
 controller.getIngredientsFromItem = (data, key) => {
   let ingredient = { ...ingredienTemplate };
-  ingredient.name = dataParser.parseName(translator, Object.keys(data[key])[0]);
-  ingredient.count = Object.values(data[key])[0];
+  ingredient.name = data[key]?.Key ? dataParser.parseName(translator,  data[key]?.Key) : dataParser.parseName(translator, Object.keys(data[key])[0]);
+  ingredient.count = data[key]?.Key ? data[key]?.Value : Object.values(data[key])[0];
 
   return ingredient;
 }
