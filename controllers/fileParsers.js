@@ -653,10 +653,14 @@ controller.parsePlaceableData = (filePath) => {
             jsonData[1].Properties.CachedCraftingPartsInfo.MaxHP;
           item.structureInfo = structureInfo;
         }
-        if (jsonData[1].Properties?.CachedCraftingPartsInfo?.Protection) {
+        if (jsonData[1].Properties?.CachedCraftingPartsInfo?.Protection?.ObjectName) {
+          console.log("jsonData[1].Properties.CachedCraftingPartsInfo.Protection", jsonData[1].Properties.CachedCraftingPartsInfo.Protection);
           structureInfo.type =
-            jsonData[1].Properties.CachedCraftingPartsInfo.Protection.replace(
-              "EMistMaterialProtection::",
+            jsonData[1].Properties.CachedCraftingPartsInfo.Protection?.ObjectName.replace(
+              "Class'MistArmor",
+              ""
+            ).replace(
+              "'",
               ""
             );
           item.structureInfo = structureInfo;
