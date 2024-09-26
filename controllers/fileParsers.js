@@ -985,9 +985,7 @@ controller.parseUpgrades = (filePath) => {
             let recipe = { ...recipeTemplate };
             let ingredients = [];
             for (const keyInput in recipeData) {
-              let ingredient = { ...ingredienTemplate };
-              ingredient.name = dataParser.parseName(translator, Object.keys(keyInput)[0]);
-              ingredient.count = Object.values(recipeData[keyInput])[0];
+              let ingredient =  controller.getIngredientsFromItem(recipeData, keyInput);
               ingredients.push(ingredient);
             }
             if (ingredients.length > 0) {
