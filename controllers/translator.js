@@ -3,25 +3,27 @@ const controller = {};
 const aditionalTranslations = require("../translations/aditionalTranslations");
 const lootSitesTranslations = require("../translations/lootSites");
 
-let allTranslations = [];
-let allDesriptions = [];
-let translationsFromOtherLanguajes = [];
-let descriptionsFromOtherLanguajes = [];
-let translationsInUse = [];
+const allTranslations = [];
+const allDesriptions = [];
+const translationsFromOtherLanguajes = [];
+const descriptionsFromOtherLanguajes = [];
+const translationsInUse = [];
 
-controller.translateLootSite = (name) => {
+controller.translateLootSite = (oldName) => {
+  let name = oldName;
+
   if (name != null && lootSitesTranslations[name]) {
     return lootSitesTranslations[name].trim();
   }
 
-  let anotherName = controller.searchName(name);
+  const anotherName = controller.searchName(name);
   if (anotherName != null) {
     return anotherName;
   }
 
   name = controller.translateEachPart(name);
 
-  console.warn("No translation for: " + name);
+  console.warn(`No translation for: ${name}`);
 
   return name.trim();
 };
@@ -29,22 +31,23 @@ controller.translateLootSite = (name) => {
 controller.translateEachPart = (name) => {
   const words = name.split('_');
 
-
   return words.reduce((accumulator, word) => {
-    let anotherName = controller.searchName(word);
+    const anotherName = controller.searchName(word);
     if (anotherName != null) {
       return `${accumulator} ${anotherName}`;
-    } else {
-      return `${accumulator} ${word}`;
     }
+
+    return `${accumulator} ${word}`;
   }, "");
 }
 
 controller.translateName = (name) => {
-  let anotherName = controller.searchName(name);
+  const anotherName = controller.searchName(name);
+
   if (anotherName != null) {
     return anotherName;
   }
+
   return name.trim();
 };
 
@@ -80,7 +83,7 @@ controller.translateItem = (item) => {
     name = item.translation;
   }
 
-  let translateName = controller.searchName(item.translation);
+  const translateName = controller.searchName(item.translation);
   if (translateName) {
     if (item.name) {
       controller.addTranslation(item.name, translateName);
@@ -94,24 +97,22 @@ controller.translateItem = (item) => {
       !name.includes("(1 of 2)") &&
       !name.includes("Schematic")
     ) {
-      name = name + " (1 of 2)";
+      name = `${name} (1 of 2)`;
     }
 
     item.name = name.trim();
   }
 
   if (item.category) {
-    let translateCategory = controller.searchName(item.category);
+    const translateCategory = controller.searchName(item.category);
     if (translateCategory) {
       item.category = translateCategory.trim();
     }
   }
 
   if (item.learn) {
-    let newItemLearn = [];
-    item.learn.forEach((value) => {
-      newItemLearn.push(controller.translateItemPart(value));
-    });
+    const newItemLearn = item.learn.map((value) => controller.translateItemPart(value));
+
     item.learn = newItemLearn;
   }
 
@@ -119,23 +120,24 @@ controller.translateItem = (item) => {
 };
 
 controller.translateItemPart = (value) => {
-  if (value) {
-    let translateValue = controller.searchName(value);
+  let newValue = value;
+  if (newValue) {
+    const translateValue = controller.searchName(newValue);
     if (translateValue) {
-      value = translateValue;
+      newValue = translateValue;
     }
     if (
-      (value.includes(" Legs") || value.includes(" Wings")) &&
-      !value.includes("(1 of 2)") &&
-      !value.includes("Schematic")
+      (newValue.includes(" Legs") || newValue.includes(" Wings")) &&
+      !newValue.includes("(1 of 2)") &&
+      !newValue.includes("Schematic")
     ) {
-      value = value + " (1 of 2)";
+      newValue = `${newValue} (1 of 2)`;
     }
 
-    value = value.trim();
+    newValue = newValue.trim();
   }
 
-  return value;
+  return newValue;
 };
 
 controller.addDescriptions = (allItems) => allItems.map((item) => {
@@ -171,7 +173,7 @@ controller.addTranslation = (key, translation, languaje = null) => {
   } else if (translationsFromOtherLanguajes[languaje]) {
     translationsFromOtherLanguajes[languaje][key] = translation;
   } else {
-    let arrayL = [];
+    const arrayL = [];
     arrayL[key] = translation;
     translationsFromOtherLanguajes[languaje] = arrayL;
   }
@@ -193,11 +195,17 @@ controller.addTranslationInUuse = (key, translation) => {
 };
 
 controller.isKeyTranslationInUse = (key) => {
-  return translationsInUse[key] != null && translationsInUse[key] != undefined;
+  return translationsInUse[key] != null && translationsInUse[key] !== undefined;
+};
+
+controller.addTranslationIfTtDoesNotAlreadyExist = (key, translation) => {
+  if (!translationsInUse[key]) {
+    translationsInUse[key] = translation;
+  }
 };
 
 controller.getTranslateFiles = () => {
-  let translationsFiltered = {};
+  const translationsFiltered = {};
 
   for (const languaje in translationsFromOtherLanguajes) {
     for (const key in translationsFromOtherLanguajes[languaje]) {
@@ -208,7 +216,7 @@ controller.getTranslateFiles = () => {
         translationsFromOtherLanguajes[languaje][key] &&
         controller.isKeyTranslationInUse(key)
       ) {
-        let translation = translationsInUse[key];
+        const translation = translationsInUse[key];
 
         translationsFiltered[languaje][translation] =
           translationsFromOtherLanguajes[languaje][key];

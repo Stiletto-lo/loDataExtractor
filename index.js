@@ -15,88 +15,66 @@ const folderPatch = "./exported/";
 const orderByCategoryAndName = (a, b) => {
   if (a.category < b.category) {
     return -1;
-  } else if (a.category > b.category) {
-    return 1;
-  } else if (a.name < b.name) {
-    return -1;
-  } else if (a.name > b.name) {
+  }
+
+  if (a.category > b.category) {
     return 1;
   }
-  
+
+  if (a.name < b.name) {
+    return -1;
+  }
+
+  if (a.name > b.name) {
+    return 1;
+  }
+
   return 0;
 };
 
 const orderByName = (a, b) => {
   if (a.name < b.name) {
     return -1;
-  } else if (a.name > b.name) {
+  }
+
+  if (a.name > b.name) {
     return 1;
   }
   return 0;
 };
 
 console.info("Loading StringTables");
-loadDirData(
-  CONTENT_FOLDER_PATH + "Content/Mist/Data/StringTables",
-  "stringtables"
-);
+loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/StringTables`, "stringtables");
 console.info("Loading Localization");
-loadDirData(
-  CONTENT_FOLDER_PATH + "Content/Localization/Game/en",
-  "translation"
-);
-loadDirData(
-  CONTENT_FOLDER_PATH + "Content/Localization/Game",
-  "translationOthers"
-);
+loadDirData(`${CONTENT_FOLDER_PATH}Content/Localization/Game/en`, "translation");
+loadDirData(`${CONTENT_FOLDER_PATH}Content/Localization/Game`, "translationOthers");
 console.info("Loading Loot sites");
-loadDirData(
-  CONTENT_FOLDER_PATH + "Content/Mist/Characters/Creatures/Monkey",
-  "lootsites"
-);
-loadDirData(
-  CONTENT_FOLDER_PATH + "Content/Mist/Characters/Creatures/Okkam",
-  "lootsites"
-);
-loadDirData(
-  CONTENT_FOLDER_PATH + "Content/Mist/Characters/Creatures/Papak",
-  "lootsites"
-);
+loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Characters/Creatures/Monkey`, "lootsites");
+loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Characters/Creatures/Okkam`, "lootsites");
+loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Characters/Creatures/Papak`, "lootsites");
 console.info("Loading TechTree");
-loadDirData(CONTENT_FOLDER_PATH + "Content/Mist/Data/TechTree", "tech");
+loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/TechTree`, "tech");
 console.info("Loading Items");
-loadDirData(CONTENT_FOLDER_PATH + "Content/Mist/Data/Items", "item");
+loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Items`, "item");
 console.info("Loading Placeables");
-loadDirData(CONTENT_FOLDER_PATH + "Content/Mist/Data/Placeables", "placeables");
+loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Placeables`, "placeables");
 console.info("Loading Recipes");
-loadDirData(CONTENT_FOLDER_PATH + "Content/Mist/Data/Recipes", "item");
+loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Recipes`, "item");
 console.info("Loading Trade");
-loadDirData(CONTENT_FOLDER_PATH + "Content/Mist/Data/Trade", "trade");
+loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Trade`, "trade");
 //console.info("Loading Placeables Cached");
 //loadDirData("./Content/Mist/Data/Placeables", "cached");
 console.info("Loading Walkers Upgrades");
-loadDirData(CONTENT_FOLDER_PATH + "Content/Mist/Data/Walkers", "upgrages");
+loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Walkers`, "upgrages");
 console.info("Loading Damages");
-loadDirData(
-  CONTENT_FOLDER_PATH + "Content/Mist/Data/DamageTypes",
-  "damagetypes"
-);
+loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/DamageTypes`, "damagetypes");
 console.info("Loading Schematics");
-loadDirData(
-  CONTENT_FOLDER_PATH + "Content/Mist/Data/Items/Schematics",
-  "schematics"
-);
+loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Items/Schematics`, "schematics");
 
 if (process.env.EXTRACT_LOOT_TABLES === "true") {
   console.info("Loading LootTables");
-  loadDirData(
-    CONTENT_FOLDER_PATH + "Content/Mist/Data/LootTables",
-    "loottables"
-  );
-  loadDirData(
-    CONTENT_FOLDER_PATH + "Content/Mist/Data/LootTables",
-    "blueprintsloot"
-  );
+  loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables`, "loottables");
+  loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables`, "blueprintsloot");
   fileParser.parseBlueprintsToItems();
 }
 
@@ -115,26 +93,26 @@ console.info("Translating the items");
 allItems = translator.addDescriptions(allItems);
 allItems = translator.translateItems(allItems);
 
-allItems.forEach((item) => {
-  Object.keys(item).forEach((key) => {
+for (const item of allItems) {
+  for (const key of Object.keys(item)) {
     if (item[key] === undefined) {
       delete item[key];
     }
-    if (item["drops"] != undefined && item["drops"].length <= 0) {
-      delete item["drops"];
+    if (item?.drops !== undefined && item.drops.length <= 0) {
+      delete item.drops;
     }
     if (
-      item["toolInfo"] != undefined &&
-      item["toolInfo"].length <= 0
+      item?.toolInfo !== undefined &&
+      item.toolInfo.length <= 0
     ) {
-      delete item["toolInfo"];
+      delete item.toolInfo;
     }
-  });
-});
+  }
+}
 
 allItems = allItems
   .map((item) => {
-    let countItems = allItems.filter((item2) => item.name == item2.name);
+    const countItems = allItems.filter((item2) => item.name === item2.name);
     if (countItems.length > 1) {
       return { ...countItems[0], ...countItems[1] };
     }
@@ -146,9 +124,9 @@ allItems = allItems
     const x = acc.find((item) => item.name === current.name);
     if (!x) {
       return acc.concat([current]);
-    } else {
-      return acc;
     }
+
+    return acc;
   }, []);
 
 allItems = dataParser.itemMerger(allItems, "Long Sawblade", "Sawblade_Tier2");
@@ -157,9 +135,9 @@ allItems.sort(orderByName);
 
 if (allItems.length > 0) {
   fs.writeFile(
-    folderPatch + "items.json",
+    `${folderPatch}items.json`,
     JSON.stringify(allItems, null, 2),
-    function (err) {
+    (err) => {
       if (err) {
         console.error("Error creating the file");
       } else {
@@ -168,28 +146,28 @@ if (allItems.length > 0) {
     }
   );
 
-  allItems.forEach((item) => {
-    Object.keys(item).forEach((key) => {
+  for (const item of allItems) {
+    for (const key of Object.keys(item)) {
       if (item[key] === undefined) {
         delete item[key];
       }
-      if (item["translation"] != undefined) {
-        delete item["translation"];
-      } else if (item["type"] != undefined) {
-        delete item["type"];
-      } else if (item["schematicName"] != undefined) {
-        delete item["schematicName"];
-      } else if (item["damageType"] != undefined) {
-        delete item["damageType"];
+      if (item?.translation !== undefined) {
+        delete item.translation;
+      } else if (item?.type !== undefined) {
+        delete item.type;
+      } else if (item?.schematicName !== undefined) {
+        delete item.schematicName;
+      } else if (item?.damageType !== undefined) {
+        delete item.damageType;
       }
-    });
-  });
+    }
+  }
 
   allItems.sort(orderByCategoryAndName);
   fs.writeFile(
-    folderPatch + "items_min.json",
+    `${folderPatch}items_min.json`,
     JSON.stringify(allItems),
-    function (err) {
+    (err) => {
       if (err) {
         console.error("Error creating the file");
       } else {
@@ -200,22 +178,23 @@ if (allItems.length > 0) {
 }
 
 let creatures = fileParser.getCreatures();
-creatures.forEach((creature) => {
-  Object.keys(creature).forEach((key) => {
+
+for (const creature of creatures) {
+  for (const key of Object.keys(creature)) {
     if (creature[key] === undefined) {
       delete creature[key];
     }
-  });
-});
+  }
+}
 
 creatures = creatures.filter((item) => item.name && Object.keys(item).length > 2);
 
 creatures.sort(orderByName);
 if (creatures.length > 0) {
   fs.writeFile(
-    folderPatch + "creatures.json",
+    `${folderPatch}creatures.json`,
     JSON.stringify(creatures, null, 2),
-    function (err) {
+    (err) => {
       if (err) {
         console.error("Error creating the file");
       } else {
@@ -224,24 +203,24 @@ if (creatures.length > 0) {
     }
   );
 
-  creatures.forEach((creature) => {
-    Object.keys(creature).forEach((key) => {
+  for (const creature of creatures) {
+    for (const key of Object.keys(creature)) {
       if (creature[key] === undefined) {
         delete creature[key];
       }
-      if (creature["lootTable"] !== undefined) {
-        delete creature["lootTable"];
+      if (creature?.lootTable !== undefined) {
+        delete creature.lootTable;
       }
-      if (creature["type"] !== undefined) {
-        delete creature["type"];
+      if (creature?.type !== undefined) {
+        delete creature.type;
       }
-    });
-  });
+    }
+  }
 
   fs.writeFile(
-    folderPatch + "creatures_min.json",
+    `${folderPatch}creatures_min.json`,
     JSON.stringify(creatures),
-    function (err) {
+    (err) => {
       if (err) {
         console.error("Error creating the file");
       } else {
@@ -252,16 +231,16 @@ if (creatures.length > 0) {
 }
 
 if (process.env.TRANSLATE_FILES === "true") {
-  let translateData = translator.getTranslateFiles();
+  const translateData = translator.getTranslateFiles();
   for (const languaje in translateData) {
-    let fileData = translateData[languaje];
+    const fileData = translateData[languaje];
     const languajeArray = languaje.split("-");
     fs.outputFile(
-      folderPatch + `locales/${languajeArray[0].toLowerCase()}/items.json`,
+      `${folderPatch}locales/${languajeArray[0].toLowerCase()}/items.json`,
       JSON.stringify(fileData, null, 2),
-      function (err) {
+      (err) => {
         if (err) {
-          console.error("Error creating the file: " + languaje, err);
+          console.error(`Error creating the file: ${languaje}`, err);
         } else {
           console.log(`Translated files ${languaje} exported`);
         }
@@ -283,58 +262,60 @@ function loadDirData(techTreeDir, folderType) {
 
   try {
     files = fs.readdirSync(techTreeDir);
-  } catch(error) {
+  } catch (error) {
     console.error(`The folder ${techTreeDir} not exists`);
   }
 
-  files.forEach((file) => {
-    let fileData = fs.statSync(techTreeDir + "/" + file);
+  for (const file of files) {
+    const path = `${techTreeDir}/${file}`;
+
+    const fileData = fs.statSync(path);
     if (fileData.isDirectory()) {
-      loadDirData(techTreeDir + "/" + file, folderType);
+      loadDirData(path, folderType);
     } else if (file.includes(".json")) {
       switch (folderType) {
         case "tech":
-          fileParser.parseTechData(techTreeDir + "/" + file);
+          fileParser.parseTechData(path);
           break;
         case "item":
-          fileParser.parseItemData(techTreeDir + "/" + file);
+          fileParser.parseItemData(path);
           break;
         case "stringtables":
-          fileParser.parseTranslations(techTreeDir + "/" + file);
+          fileParser.parseTranslations(path);
           break;
         case "trade":
-          fileParser.parsePrices(techTreeDir + "/" + file);
+          fileParser.parsePrices(path);
           break;
         case "placeables":
-          fileParser.parsePlaceableData(techTreeDir + "/" + file);
+          fileParser.parsePlaceableData(path);
           break;
         case "cached":
           if (file.includes("CachedPlaceablesCosts.json")) {
-            fileParser.parseCachedItems(techTreeDir + "/" + file);
+            fileParser.parseCachedItems(path);
           }
           break;
         case "loottables":
-          fileParser.parseLootTable(techTreeDir + "/" + file);
+          fileParser.parseLootTable(path);
           break;
         case "upgrages":
-          fileParser.parseUpgrades(techTreeDir + "/" + file);
+          fileParser.parseUpgrades(path);
           break;
         case "blueprintsloot":
-          fileParser.parseLootBlueprint(techTreeDir + "/" + file);
+          fileParser.parseLootBlueprint(path);
           break;
         case "damagetypes":
-          fileParser.parseDamage(techTreeDir + "/" + file);
+          fileParser.parseDamage(path);
           break;
         case "schematics":
-          fileParser.parseSchematicItemData(techTreeDir + "/" + file);
+          fileParser.parseSchematicItemData(path);
           break;
         case "translationOthers":
-          fileParser.parseOtherTranslations(techTreeDir + "/" + file);
+          fileParser.parseOtherTranslations(path);
           break;
         case "lootsites":
-          fileParser.parseLootSites(techTreeDir + "/" + file);
+          fileParser.parseLootSites(path);
           break;
       }
     }
-  });
+  }
 }
