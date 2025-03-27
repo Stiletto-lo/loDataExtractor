@@ -1,4 +1,4 @@
-let allTranslations = [];
+const allTranslations = [];
 
 allTranslations["IronOre2"] = "Iron Ore";
 allTranslations["IronIngot2"] = "Iron Ingot";

@@ -26,11 +26,11 @@ const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
 const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
 
 let allItems = [];
-let upgradesData = [];
-let creatures = [];
+const upgradesData = [];
+const creatures = [];
 
-let allDatatables = [];
-let allBlueprints = [];
+const allDatatables = [];
+const allBlueprints = [];
 
 controller.parseLocation = (blueprint, location) => {
 	blueprint.tables.forEach((dataTable) => {
@@ -43,17 +43,17 @@ controller.parseLocation = (blueprint, location) => {
 			dataTableChance = dataTable.dataTableChance;
 		}
 
-		let maxChance = (dataTableChance * maxIterations) / 100;
+		const maxChance = (dataTableChance * maxIterations) / 100;
 
 		dataTable.dropItems.forEach((lootItemData) => {
-			let item = controller.getItem(
+			const item = controller.getItem(
 				dataParser.parseName(translator, lootItemData.name),
 			);
 			if (item?.name) {
-				let itemDrops = item.drops ? item.drops : [];
-				let hasDrop = itemDrops.some((d) => d.location === location);
+				const itemDrops = item.drops ? item.drops : [];
+				const hasDrop = itemDrops.some((d) => d.location === location);
 				if (!hasDrop && item.name != location) {
-					let drop = { ...dropTemplate };
+					const drop = { ...dropTemplate };
 					drop.location = location;
 					if (EXTRACT_ALL_DATA && lootItemData.chance) {
 						drop.chance = lootItemData.chance;
@@ -91,22 +91,22 @@ controller.parseBlueprintsToItems = () => {
 };
 
 controller.parseLootTable = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 	if (
 		jsonData[0].Name &&
 		jsonData[0].Rows &&
 		jsonData?.[0]?.Type == "DataTable"
 	) {
-		let dataTable = { ...dataTableTemplate };
+		const dataTable = { ...dataTableTemplate };
 		dataTable.name = dataParser.parseName(translator, jsonData[0].Name);
-		let lootItems = jsonData[0].Rows;
-		let dataTableItems = [];
+		const lootItems = jsonData[0].Rows;
+		const dataTableItems = [];
 		Object.keys(lootItems).forEach((key) => {
 			if (lootItems[key].Item) {
 				let name = dataParser.parseName(translator, key);
 				if (name) {
-					let completeItem = controller.getItemByType(
+					const completeItem = controller.getItemByType(
 						dataParser.parseType(lootItems[key].Item.AssetPathName),
 					);
 					if (completeItem?.name) {
@@ -116,9 +116,9 @@ controller.parseLootTable = (filePath) => {
 					) {
 						name = name + " Schematic";
 					}
-					let hasDrop = dataTable.dropItems.some((d) => d.name === name);
+					const hasDrop = dataTable.dropItems.some((d) => d.name === name);
 					if (!hasDrop && name != dataTable.name) {
-						let drop = { ...dropDataTemplate };
+						const drop = { ...dropDataTemplate };
 						drop.name = name;
 						if (EXTRACT_ALL_DATA && lootItems[key].Chance) {
 							drop.chance = lootItems[key].Chance;
@@ -140,19 +140,19 @@ controller.parseLootTable = (filePath) => {
 };
 
 controller.parseLootBlueprint = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 	if (jsonData[0].Name && jsonData?.[0]?.Type == "BlueprintGeneratedClass") {
 		if (jsonData[1]?.Type) {
-			let blueprint = { ...blueprintTemplate };
+			const blueprint = { ...blueprintTemplate };
 			blueprint.name = dataParser.parseName(translator, jsonData[1].Type);
 			if (jsonData[1]?.Properties?.Loot?.Tables) {
-				let allBlueprintTables = [];
-				let tables = jsonData[1].Properties.Loot.Tables;
+				const allBlueprintTables = [];
+				const tables = jsonData[1].Properties.Loot.Tables;
 				tables.forEach((table) => {
 					if (table?.Table?.ObjectPath) {
-						let name = dataParser.parseName(translator, table.Table.ObjectName);
-						let dataTable = allDatatables.find((data) => data.name == name);
+						const name = dataParser.parseName(translator, table.Table.ObjectName);
+						const dataTable = allDatatables.find((data) => data.name == name);
 						if (dataTable) {
 							dataTable.chance = table.RunChance ? table.RunChance : undefined;
 							dataTable.minIterations = table.MinIterations
@@ -186,17 +186,17 @@ controller.parseLootBlueprint = (filePath) => {
 };
 
 controller.parseCachedItems = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 	if (jsonData[0]?.Properties?.CachedTotalCost) {
-		let cachedItems = jsonData[0].Properties.CachedTotalCost;
+		const cachedItems = jsonData[0].Properties.CachedTotalCost;
 		Object.keys(cachedItems).forEach((key) => {
 			if (cachedItems[key].Inputs) {
-				let recipe = { ...recipeTemplate };
-				let item = controller.getItem(dataParser.parseName(translator, key));
-				let ingredients = [];
+				const recipe = { ...recipeTemplate };
+				const item = controller.getItem(dataParser.parseName(translator, key));
+				const ingredients = [];
 				for (const ingredientKey in cachedItems[key].Inputs) {
-					let ingredient = { ...ingredienTemplate };
+					const ingredient = { ...ingredienTemplate };
 					ingredient.name = dataParser.parseName(translator, ingredientKey);
 					ingredient.count = cachedItems[key].Inputs[ingredientKey];
 					ingredients.push(ingredient);
@@ -216,11 +216,11 @@ controller.getItemFromItemData = (itemData, oldItem) => {
 		return oldItem ?? undefined;
 	}
 
-	let item = oldItem ?? controller.extractItemByType(itemData.Type);
+	const item = oldItem ?? controller.extractItemByType(itemData.Type);
 
 	if (itemData.Properties) {
 		if (itemData.Properties?.Category?.ObjectPath) {
-			let category = dataParser.parseCategory(
+			const category = dataParser.parseCategory(
 				itemData.Properties.Category.ObjectPath,
 			);
 			if (category.includes("Schematics")) {
@@ -240,7 +240,7 @@ controller.getItemFromItemData = (itemData, oldItem) => {
 
 		if (itemData.Properties?.MaximumQuantity) {
 			if (item.moduleInfo == undefined) {
-				let moduleInfoBase = { ...moduleInfoTemplate };
+				const moduleInfoBase = { ...moduleInfoTemplate };
 				item.moduleInfo = moduleInfoBase;
 			}
 
@@ -252,7 +252,7 @@ controller.getItemFromItemData = (itemData, oldItem) => {
 
 		if (itemData.Properties?.PercentageIncreasePerItem) {
 			if (item.moduleInfo == undefined) {
-				let moduleInfoBase = { ...moduleInfoTemplate };
+				const moduleInfoBase = { ...moduleInfoTemplate };
 				item.moduleInfo = moduleInfoBase;
 			}
 
@@ -263,7 +263,7 @@ controller.getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (itemData.Properties?.ProjectileDamage) {
-			let projectileDamage = { ...projectileDamageTemplate };
+			const projectileDamage = { ...projectileDamageTemplate };
 
 			projectileDamage.damage = itemData.Properties?.ProjectileDamage?.Damage
 				? itemData.Properties?.ProjectileDamage?.Damage
@@ -287,7 +287,7 @@ controller.getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (itemData.Properties?.DefenseProperties) {
-			let armorInfo = { ...armorInfoTemplate };
+			const armorInfo = { ...armorInfoTemplate };
 
 			armorInfo.absorbing = itemData.Properties?.DefenseProperties?.Soak
 				? itemData.Properties?.DefenseProperties?.Soak
@@ -319,7 +319,7 @@ controller.getItemFromItemData = (itemData, oldItem) => {
 			item.durability = itemData.Properties.MaxDurability;
 		}
 
-		let weaponInfo = { ...weaponInfoTemplate };
+		const weaponInfo = { ...weaponInfoTemplate };
 
 		if (EXTRACT_ALL_DATA && itemData.Properties?.DurabilityDamage) {
 			weaponInfo.durabilityDamage = itemData.Properties.DurabilityDamage;
@@ -355,11 +355,11 @@ controller.getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (itemData.Properties?.ToolInfo) {
-			let toolInfosData = itemData.Properties.ToolInfo;
-			let toolInfos = item.toolInfo ? item.toolInfo : [];
+			const toolInfosData = itemData.Properties.ToolInfo;
+			const toolInfos = item.toolInfo ? item.toolInfo : [];
 
 			toolInfosData.forEach((toolInfoData) => {
-				let baseToolInfo = { ...toolInfoTemplate };
+				const baseToolInfo = { ...toolInfoTemplate };
 				baseToolInfo.tier = toolInfoData.Tier;
 				if (toolInfoData.ToolType.includes("TreeCutting")) {
 					baseToolInfo.toolType = "TreeCutting";
@@ -381,12 +381,12 @@ controller.getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (itemData.Properties?.Recipes) {
-			let recipesData = itemData.Properties.Recipes;
-			let crafting = [];
+			const recipesData = itemData.Properties.Recipes;
+			const crafting = [];
 			recipesData.forEach((recipeData) => {
-				let recipe = { ...recipeTemplate };
+				const recipe = { ...recipeTemplate };
 				if (recipeData.Inputs) {
-					let ingredients = [];
+					const ingredients = [];
 					for (const key in recipeData.Inputs) {
 						ingredients.push(
 							controller.getIngredientsFromItem(recipeData.Inputs, key),
@@ -461,8 +461,8 @@ controller.parseItemData = (filePath) => {
 		return;
 	}
 
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 
 	if (jsonData[1]?.Type) {
 		let item = controller.getItemFromItemData(jsonData[1]);
@@ -476,11 +476,11 @@ controller.parseItemData = (filePath) => {
 };
 
 controller.parseSchematicItemData = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 
 	if (jsonData?.[1]?.Type) {
-		let item = controller.extractItemByType(jsonData[1].Type);
+		const item = controller.extractItemByType(jsonData[1].Type);
 		let name;
 		if (jsonData[1].Properties?.Name?.Key) {
 			name = jsonData[1].Properties.Name.Key;
@@ -499,7 +499,7 @@ controller.parseSchematicItemData = (filePath) => {
 			} else {
 				name = dataParser.parseType(jsonData[1].Type);
 
-				let foundItem = controller.getItemByType(name);
+				const foundItem = controller.getItemByType(name);
 				if (foundItem?.name) {
 					name = foundItem.name;
 				}
@@ -515,22 +515,22 @@ controller.parseSchematicItemData = (filePath) => {
 		if (jsonData[1].Properties) {
 			item.category = "Schematics";
 
-			let itemsSchematic = [];
+			const itemsSchematic = [];
 
 			if (jsonData[1].Properties?.MaxStackSize) {
 				item.stackSize = jsonData[1].Properties.MaxStackSize;
 			}
 			if (jsonData[1].Properties?.Items) {
-				let allCraftingItems = jsonData[1].Properties.Items;
+				const allCraftingItems = jsonData[1].Properties.Items;
 				allCraftingItems.forEach((schematicItem) => {
 					if (schematicItem.AssetPathName) {
-						let itemFound = controller.getItemByType(
+						const itemFound = controller.getItemByType(
 							dataParser.parseType(schematicItem.AssetPathName),
 						);
 						if (itemFound) {
 							itemsSchematic.push(itemFound.name);
 						} else {
-							let schematicItemName = dataParser.parseName(
+							const schematicItemName = dataParser.parseName(
 								translator,
 								schematicItem.AssetPathName,
 							);
@@ -540,16 +540,16 @@ controller.parseSchematicItemData = (filePath) => {
 				});
 			}
 			if (jsonData[1].Properties?.Placeables) {
-				let allCraftingPlaceables = jsonData[1].Properties.Placeables;
+				const allCraftingPlaceables = jsonData[1].Properties.Placeables;
 				allCraftingPlaceables.forEach((schematicPlaceable) => {
 					if (schematicPlaceable.AssetPathName) {
-						let itemFound = controller.getItemByType(
+						const itemFound = controller.getItemByType(
 							dataParser.parseType(schematicPlaceable.AssetPathName),
 						);
 						if (itemFound) {
 							itemsSchematic.push(itemFound.name);
 						} else {
-							let schematicPlaceableName = dataParser.parseName(
+							const schematicPlaceableName = dataParser.parseName(
 								translator,
 								schematicPlaceable.AssetPathName,
 							);
@@ -567,11 +567,11 @@ controller.parseSchematicItemData = (filePath) => {
 };
 
 controller.parsePlaceableData = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 
 	if (jsonData?.[1]?.Type) {
-		let item = controller.extractItemByType(jsonData[1].Type);
+		const item = controller.extractItemByType(jsonData[1].Type);
 		if (jsonData[1].Type.includes("Rig")) {
 			let rigName = null;
 			let wakerName = null;
@@ -611,10 +611,10 @@ controller.parsePlaceableData = (filePath) => {
 			}
 
 			if (jsonData[1].Properties?.FullCost) {
-				let recipeData = jsonData[1].Properties.FullCost;
+				const recipeData = jsonData[1].Properties.FullCost;
 				if (recipeData.Inputs) {
-					let recipe = { ...recipeTemplate };
-					let ingredients = [];
+					const recipe = { ...recipeTemplate };
+					const ingredients = [];
 					for (const key in recipeData.Inputs) {
 						ingredients.push(
 							controller.getIngredientsFromItem(recipeData.Inputs, key),
@@ -637,7 +637,7 @@ controller.parsePlaceableData = (filePath) => {
 			}
 
 			if (jsonData[1].Properties?.CachedCraftingPartsInfo) {
-				let structureInfo = { ...structureInfoTemplate };
+				const structureInfo = { ...structureInfoTemplate };
 
 				if (jsonData[1].Properties?.CachedCraftingPartsInfo?.MaxHP) {
 					structureInfo.hp =
@@ -694,11 +694,11 @@ controller.parsePlaceableData = (filePath) => {
 };
 
 controller.parseTechData = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 
 	if (jsonData?.[1]?.Type) {
-		let item = controller.extractItemByType(jsonData[1].Type);
+		const item = controller.extractItemByType(jsonData[1].Type);
 
 		if (jsonData?.[1]?.Properties?.Requirements?.[0]?.ObjectName) {
 			item.parent = translator.translateName(
@@ -710,7 +710,7 @@ controller.parseTechData = (filePath) => {
 		}
 
 		if (EXTRACT_ALL_DATA && jsonData[1]?.Properties?.Cost != 1) {
-			let itemCost = { ...costTemplate };
+			const itemCost = { ...costTemplate };
 			if (
 				jsonData[1].Properties.TechTreeTier &&
 				(jsonData[1].Properties.TechTreeTier.includes("Tier4") ||
@@ -746,34 +746,34 @@ controller.parseTechData = (filePath) => {
 };
 
 controller.parseDamage = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 	if (jsonData[1]?.Type) {
-		let damageTypeClass = jsonData[1].Type;
-		let allItemsWithThatDamage = allItems.filter(
+		const damageTypeClass = jsonData[1].Type;
+		const allItemsWithThatDamage = allItems.filter(
 			(item) => item.damageType == damageTypeClass,
 		);
 		allItemsWithThatDamage.forEach((itemSearch) => {
-			let item = controller.getItem(itemSearch.name);
+			const item = controller.getItem(itemSearch.name);
 			if (item) {
 				let proyectileDamage = item.projectileDamage
 					? item.projectileDamage
 					: { ...projectileDamageTemplate };
 				proyectileDamage.vsSoft = jsonData[1]?.Properties?.DamageAgainstSoft
-					? parseInt(jsonData[1].Properties.DamageAgainstSoft * 100, 10)
+					? Number.parseInt(jsonData[1].Properties.DamageAgainstSoft * 100, 10)
 					: undefined;
 				proyectileDamage.vsMedium = jsonData[1]?.Properties?.DamageAgainstMedium
-					? parseInt(jsonData[1].Properties.DamageAgainstMedium * 100, 10)
+					? Number.parseInt(jsonData[1].Properties.DamageAgainstMedium * 100, 10)
 					: undefined;
 				proyectileDamage.vsHard = jsonData[1]?.Properties?.DamageAgainstHard
-					? parseInt(jsonData[1].Properties.DamageAgainstHard * 100, 10)
+					? Number.parseInt(jsonData[1].Properties.DamageAgainstHard * 100, 10)
 					: undefined;
 				proyectileDamage.vsReinforced = jsonData[1]?.Properties
 					?.DamageAgainstReinforced
-					? parseInt(jsonData[1].Properties.DamageAgainstReinforced * 100, 10)
+					? Number.parseInt(jsonData[1].Properties.DamageAgainstReinforced * 100, 10)
 					: undefined;
 				proyectileDamage.vsSolid = jsonData[1]?.Properties?.DamageAgainstSolid
-					? parseInt(jsonData[1].Properties.DamageAgainstSolid * 100, 10)
+					? Number.parseInt(jsonData[1].Properties.DamageAgainstSolid * 100, 10)
 					: undefined;
 
 				proyectileDamage = dataParser.cleanEmptyObject(proyectileDamage);
@@ -788,8 +788,8 @@ controller.parseDamage = (filePath) => {
 };
 
 controller.parseTranslations = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 	if (jsonData[0]?.StringTable?.KeysToMetaData) {
 		for (const key in jsonData[0].StringTable.KeysToMetaData) {
 			if (key.includes(".Name")) {
@@ -813,12 +813,12 @@ controller.getLootSiteNameFromObject = (objectData) =>
 	undefined;
 
 controller.parseLootSites = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
+	const rawdata = fs.readFileSync(filePath);
 	if (!rawdata) {
 		return;
 	}
 
-	let jsonData = JSON.parse(rawdata);
+	const jsonData = JSON.parse(rawdata);
 	if (!jsonData) {
 		return;
 	}
@@ -830,8 +830,8 @@ controller.parseLootSites = (filePath) => {
 			!o?.Type.includes("Component"),
 	);
 
-	let name = objectsFiltered?.[0]?.Type;
-	let translation = controller.getLootSiteNameFromObject(objectsFiltered?.[0]);
+	const name = objectsFiltered?.[0]?.Type;
+	const translation = controller.getLootSiteNameFromObject(objectsFiltered?.[0]);
 
 	if (!translation || !name) {
 		return;
@@ -857,11 +857,11 @@ controller.parseLootSites = (filePath) => {
 
 controller.parseOtherTranslations = (filePath) => {
 	if (/\/Game\/(.+)\/Game.json/.test(filePath)) {
-		let match = filePath.match("/Game/(.+)/Game.json");
+		const match = filePath.match("/Game/(.+)/Game.json");
 		if (match[1] != null) {
-			let languaje = match[1];
-			let rawdata = fs.readFileSync(filePath);
-			let jsonData = JSON.parse(rawdata);
+			const languaje = match[1];
+			const rawdata = fs.readFileSync(filePath);
+			const jsonData = JSON.parse(rawdata);
 
 			for (const translationGroup in jsonData) {
 				for (const key in jsonData[translationGroup]) {
@@ -885,14 +885,14 @@ controller.parseOtherTranslations = (filePath) => {
 };
 
 controller.parsePrices = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 	if (jsonData[1]?.Properties?.OrdersArray) {
-		let allOrders = jsonData[1].Properties.OrdersArray;
+		const allOrders = jsonData[1].Properties.OrdersArray;
 
 		allOrders.forEach((order) => {
 			if (order?.ItemClass?.ObjectName && order?.Price) {
-				let item = controller.extractItemByType(
+				const item = controller.extractItemByType(
 					dataParser.parseType(order.ItemClass.ObjectName),
 				);
 
@@ -911,19 +911,19 @@ controller.parsePrices = (filePath) => {
 };
 
 controller.parseUpgrades = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 
 	if (jsonData[0]?.Name) {
-		let profile = dataParser.parseName(translator, jsonData[0].Name);
-		let superUp = jsonData[0].Super
+		const profile = dataParser.parseName(translator, jsonData[0].Name);
+		const superUp = jsonData[0].Super
 			? dataParser.parseName(translator, jsonData[0].Super)
 			: undefined;
 
 		if (jsonData[1]?.Properties) {
 			for (const key in jsonData[1]?.Properties) {
 				if (key.includes("Upgrade")) {
-					let enabled = jsonData[1]?.Properties[key]?.bIsEnabled
+					const enabled = jsonData[1]?.Properties[key]?.bIsEnabled
 						? jsonData[1].Properties[key].bIsEnabled
 						: true;
 
@@ -931,8 +931,8 @@ controller.parseUpgrades = (filePath) => {
 						continue;
 					}
 
-					let upgrade = { ...upgradeTemplate };
-					let upgradeInfo = { ...upgradeInfoTemplate };
+					const upgrade = { ...upgradeTemplate };
+					const upgradeInfo = { ...upgradeInfoTemplate };
 					let upgradeInfoValid = false;
 
 					upgrade.profile = profile;
@@ -969,11 +969,11 @@ controller.parseUpgrades = (filePath) => {
 					}
 
 					if (jsonData[1]?.Properties[key]?.Inputs) {
-						let recipeData = jsonData[1]?.Properties[key]?.Inputs;
-						let recipe = { ...recipeTemplate };
-						let ingredients = [];
+						const recipeData = jsonData[1]?.Properties[key]?.Inputs;
+						const recipe = { ...recipeTemplate };
+						const ingredients = [];
 						for (const keyInput in recipeData) {
-							let ingredient = controller.getIngredientsFromItem(
+							const ingredient = controller.getIngredientsFromItem(
 								recipeData,
 								keyInput,
 							);
@@ -996,7 +996,7 @@ controller.parseUpgrades = (filePath) => {
 
 controller.parseUpgradesToItems = () => {
 	upgradesData.forEach((upgradePure) => {
-		let item = controller.getUpgradeItem(upgradePure);
+		const item = controller.getUpgradeItem(upgradePure);
 		if (item?.name) {
 			allItems.push(item);
 		}
@@ -1005,12 +1005,12 @@ controller.parseUpgradesToItems = () => {
 
 controller.getUpgradeItem = (upgradePure) => {
 	if (upgradePure?.super) {
-		let superUpgrade = upgradesData.find(
+		const superUpgrade = upgradesData.find(
 			(up) => up.profile == upgradePure.super && up.name == upgradePure.name,
 		);
-		let superUpgradeData = controller.getUpgradeItem(superUpgrade);
+		const superUpgradeData = controller.getUpgradeItem(superUpgrade);
 		if (superUpgradeData) {
-			let item = { ...itemTemplate };
+			const item = { ...itemTemplate };
 			item.category = "Upgrades";
 			item.name = dataParser.parseUpgradeName(
 				upgradePure?.name,
@@ -1021,7 +1021,7 @@ controller.getUpgradeItem = (upgradePure) => {
 				...upgradePure.upgradeInfo,
 			};
 			if (upgradePure.crafting && superUpgradeData.crafting) {
-				let recipe = { ...recipeTemplate };
+				const recipe = { ...recipeTemplate };
 				if (upgradePure.crafting[0].time) {
 					recipe.time = upgradePure.crafting[0].time;
 				} else if (superUpgradeData.crafting[0].time) {
@@ -1032,7 +1032,7 @@ controller.getUpgradeItem = (upgradePure) => {
 					upgradePure.crafting[0].ingredients &&
 					superUpgradeData.crafting[0].ingredients
 				) {
-					let ingredientsFiltered =
+					const ingredientsFiltered =
 						superUpgradeData.crafting[0].ingredients.filter(
 							(ingredient) =>
 								!upgradePure.crafting[0].ingredients.some(
@@ -1059,7 +1059,7 @@ controller.getUpgradeItem = (upgradePure) => {
 			return null;
 		}
 	} else {
-		let item = { ...itemTemplate };
+		const item = { ...itemTemplate };
 		item.category = "Upgrades";
 		item.name = dataParser.parseUpgradeName(
 			upgradePure?.name,
@@ -1149,7 +1149,7 @@ controller.getTranslator = () => {
 };
 
 controller.getIngredientsFromItem = (data, key) => {
-	let ingredient = { ...ingredienTemplate };
+	const ingredient = { ...ingredienTemplate };
 	ingredient.name = data[key]?.Key
 		? dataParser.parseName(translator, data[key]?.Key)
 		: dataParser.parseName(translator, Object.keys(data[key])[0]);

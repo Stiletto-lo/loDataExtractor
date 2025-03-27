@@ -16,11 +16,11 @@ const structureInfoTemplate = require("../../../templates/structureInfo");
  * @param {string} filePath - The file path to parse
  */
 const parsePlaceableData = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 
 	if (jsonData?.[1]?.Type) {
-		let item = utilityFunctions.extractItemByType(jsonData[1].Type);
+		const item = utilityFunctions.extractItemByType(jsonData[1].Type);
 		if (jsonData[1].Type.includes("Rig")) {
 			let rigName = null;
 			let wakerName = null;
@@ -60,10 +60,10 @@ const parsePlaceableData = (filePath) => {
 			}
 
 			if (jsonData[1].Properties?.FullCost) {
-				let recipeData = jsonData[1].Properties.FullCost;
+				const recipeData = jsonData[1].Properties.FullCost;
 				if (recipeData.Inputs) {
-					let recipe = { ...recipeTemplate };
-					let ingredients = [];
+					const recipe = { ...recipeTemplate };
+					const ingredients = [];
 					for (const key in recipeData.Inputs) {
 						ingredients.push(
 							utilityFunctions.getIngredientsFromItem(recipeData.Inputs, key),
@@ -86,7 +86,7 @@ const parsePlaceableData = (filePath) => {
 			}
 
 			if (jsonData[1].Properties?.CachedCraftingPartsInfo) {
-				let structureInfo = { ...structureInfoTemplate };
+				const structureInfo = { ...structureInfoTemplate };
 
 				if (jsonData[1].Properties?.CachedCraftingPartsInfo?.MaxHP) {
 					structureInfo.hp =

@@ -15,11 +15,11 @@ const parseTechData = (filePath) => {
 	const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
 	const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
 
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 
 	if (jsonData?.[1]?.Type) {
-		let item = utilityFunctions.extractItemByType(jsonData[1].Type);
+		const item = utilityFunctions.extractItemByType(jsonData[1].Type);
 
 		if (jsonData?.[1]?.Properties?.Requirements?.[0]?.ObjectName) {
 			item.parent = translator.translateName(
@@ -31,7 +31,7 @@ const parseTechData = (filePath) => {
 		}
 
 		if (EXTRACT_ALL_DATA && jsonData[1]?.Properties?.Cost != 1) {
-			let itemCost = { ...require("../../../templates/cost") };
+			const itemCost = { ...require("../../../templates/cost") };
 			if (
 				jsonData[1].Properties.TechTreeTier &&
 				(jsonData[1].Properties.TechTreeTier.includes("Tier4") ||

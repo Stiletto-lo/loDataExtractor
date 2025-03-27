@@ -1,4 +1,4 @@
-let lootSites = [];
+const lootSites = [];
 
 /* Loot Box */
 

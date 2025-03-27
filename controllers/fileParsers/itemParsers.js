@@ -33,11 +33,11 @@ const getItemFromItemData = (itemData, oldItem) => {
 		return oldItem ?? undefined;
 	}
 
-	let item = oldItem ?? utilityFunctions.extractItemByType(itemData.Type);
+	const item = oldItem ?? utilityFunctions.extractItemByType(itemData.Type);
 
 	if (itemData.Properties) {
 		if (itemData.Properties?.Category?.ObjectPath) {
-			let category = dataParser.parseCategory(
+			const category = dataParser.parseCategory(
 				itemData.Properties.Category.ObjectPath,
 			);
 			if (category.includes("Schematics")) {
@@ -57,7 +57,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 
 		if (itemData.Properties?.MaximumQuantity) {
 			if (item.moduleInfo == undefined) {
-				let moduleInfoBase = { ...moduleInfoTemplate };
+				const moduleInfoBase = { ...moduleInfoTemplate };
 				item.moduleInfo = moduleInfoBase;
 			}
 
@@ -69,7 +69,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 
 		if (itemData.Properties?.PercentageIncreasePerItem) {
 			if (item.moduleInfo == undefined) {
-				let moduleInfoBase = { ...moduleInfoTemplate };
+				const moduleInfoBase = { ...moduleInfoTemplate };
 				item.moduleInfo = moduleInfoBase;
 			}
 
@@ -80,7 +80,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (itemData.Properties?.ProjectileDamage) {
-			let projectileDamage = { ...projectileDamageTemplate };
+			const projectileDamage = { ...projectileDamageTemplate };
 
 			projectileDamage.damage = itemData.Properties?.ProjectileDamage?.Damage
 				? itemData.Properties?.ProjectileDamage?.Damage
@@ -104,7 +104,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (itemData.Properties?.DefenseProperties) {
-			let armorInfo = { ...armorInfoTemplate };
+			const armorInfo = { ...armorInfoTemplate };
 
 			armorInfo.absorbing = itemData.Properties?.DefenseProperties?.Soak
 				? itemData.Properties?.DefenseProperties?.Soak
@@ -136,7 +136,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 			item.durability = itemData.Properties.MaxDurability;
 		}
 
-		let weaponInfo = { ...weaponInfoTemplate };
+		const weaponInfo = { ...weaponInfoTemplate };
 
 		if (EXTRACT_ALL_DATA && itemData.Properties?.DurabilityDamage) {
 			weaponInfo.durabilityDamage = itemData.Properties.DurabilityDamage;
@@ -172,11 +172,11 @@ const getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (itemData.Properties?.ToolInfo) {
-			let toolInfosData = itemData.Properties.ToolInfo;
-			let toolInfos = item.toolInfo ? item.toolInfo : [];
+			const toolInfosData = itemData.Properties.ToolInfo;
+			const toolInfos = item.toolInfo ? item.toolInfo : [];
 
 			toolInfosData.forEach((toolInfoData) => {
-				let baseToolInfo = { ...toolInfoTemplate };
+				const baseToolInfo = { ...toolInfoTemplate };
 				baseToolInfo.tier = toolInfoData.Tier;
 				if (toolInfoData.ToolType.includes("TreeCutting")) {
 					baseToolInfo.toolType = "TreeCutting";
@@ -198,12 +198,12 @@ const getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (itemData.Properties?.Recipes) {
-			let recipesData = itemData.Properties.Recipes;
-			let crafting = [];
+			const recipesData = itemData.Properties.Recipes;
+			const crafting = [];
 			recipesData.forEach((recipeData) => {
-				let recipe = { ...recipeTemplate };
+				const recipe = { ...recipeTemplate };
 				if (recipeData.Inputs) {
-					let ingredients = [];
+					const ingredients = [];
 					for (const key in recipeData.Inputs) {
 						ingredients.push(
 							utilityFunctions.getIngredientsFromItem(recipeData.Inputs, key),
@@ -282,8 +282,8 @@ const parseItemData = (filePath) => {
 		return;
 	}
 
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 
 	if (jsonData[1]?.Type) {
 		let item = getItemFromItemData(jsonData[1]);
@@ -301,11 +301,11 @@ const parseItemData = (filePath) => {
  * @param {string} filePath - The file path to parse
  */
 const parseSchematicItemData = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 
 	if (jsonData?.[1]?.Type) {
-		let item = utilityFunctions.extractItemByType(jsonData[1].Type);
+		const item = utilityFunctions.extractItemByType(jsonData[1].Type);
 		let name;
 		if (jsonData[1].Properties?.Name?.Key) {
 			name = jsonData[1].Properties.Name.Key;
@@ -324,7 +324,7 @@ const parseSchematicItemData = (filePath) => {
 			} else {
 				name = dataParser.parseType(jsonData[1].Type);
 
-				let foundItem = utilityFunctions.getItemByType(name);
+				const foundItem = utilityFunctions.getItemByType(name);
 				if (foundItem?.name) {
 					name = foundItem.name;
 				}
@@ -340,22 +340,22 @@ const parseSchematicItemData = (filePath) => {
 		if (jsonData[1].Properties) {
 			item.category = "Schematics";
 
-			let itemsSchematic = [];
+			const itemsSchematic = [];
 
 			if (jsonData[1].Properties?.MaxStackSize) {
 				item.stackSize = jsonData[1].Properties.MaxStackSize;
 			}
 			if (jsonData[1].Properties?.Items) {
-				let allCraftingItems = jsonData[1].Properties.Items;
+				const allCraftingItems = jsonData[1].Properties.Items;
 				allCraftingItems.forEach((schematicItem) => {
 					if (schematicItem.AssetPathName) {
-						let itemFound = utilityFunctions.getItemByType(
+						const itemFound = utilityFunctions.getItemByType(
 							dataParser.parseType(schematicItem.AssetPathName),
 						);
 						if (itemFound) {
 							itemsSchematic.push(itemFound.name);
 						} else {
-							let schematicItemName = dataParser.parseName(
+							const schematicItemName = dataParser.parseName(
 								translator,
 								schematicItem.AssetPathName,
 							);
@@ -365,16 +365,16 @@ const parseSchematicItemData = (filePath) => {
 				});
 			}
 			if (jsonData[1].Properties?.Placeables) {
-				let allCraftingPlaceables = jsonData[1].Properties.Placeables;
+				const allCraftingPlaceables = jsonData[1].Properties.Placeables;
 				allCraftingPlaceables.forEach((schematicPlaceable) => {
 					if (schematicPlaceable.AssetPathName) {
-						let itemFound = utilityFunctions.getItemByType(
+						const itemFound = utilityFunctions.getItemByType(
 							dataParser.parseType(schematicPlaceable.AssetPathName),
 						);
 						if (itemFound) {
 							itemsSchematic.push(itemFound.name);
 						} else {
-							let schematicPlaceableName = dataParser.parseName(
+							const schematicPlaceableName = dataParser.parseName(
 								translator,
 								schematicPlaceable.AssetPathName,
 							);
@@ -396,11 +396,11 @@ const parseSchematicItemData = (filePath) => {
  * @param {string} filePath - The file path to parse
  */
 const parsePlaceableData = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 
 	if (jsonData?.[1]?.Type) {
-		let item = utilityFunctions.extractItemByType(jsonData[1].Type);
+		const item = utilityFunctions.extractItemByType(jsonData[1].Type);
 		if (jsonData[1].Type.includes("Rig")) {
 			let rigName = null;
 			let wakerName = null;
@@ -440,10 +440,10 @@ const parsePlaceableData = (filePath) => {
 			}
 
 			if (jsonData[1].Properties?.FullCost) {
-				let recipeData = jsonData[1].Properties.FullCost;
+				const recipeData = jsonData[1].Properties.FullCost;
 				if (recipeData.Inputs) {
-					let recipe = { ...recipeTemplate };
-					let ingredients = [];
+					const recipe = { ...recipeTemplate };
+					const ingredients = [];
 					for (const key in recipeData.Inputs) {
 						ingredients.push(
 							utilityFunctions.getIngredientsFromItem(recipeData.Inputs, key),
@@ -466,7 +466,7 @@ const parsePlaceableData = (filePath) => {
 			}
 
 			if (jsonData[1].Properties?.CachedCraftingPartsInfo) {
-				let structureInfo = { ...structureInfoTemplate };
+				const structureInfo = { ...structureInfoTemplate };
 
 				if (jsonData[1].Properties?.CachedCraftingPartsInfo?.MaxHP) {
 					structureInfo.hp =
@@ -530,11 +530,11 @@ const parseTechData = (filePath) => {
 	const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
 	const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
 
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 
 	if (jsonData?.[1]?.Type) {
-		let item = utilityFunctions.extractItemByType(jsonData[1].Type);
+		const item = utilityFunctions.extractItemByType(jsonData[1].Type);
 
 		if (jsonData?.[1]?.Properties?.Requirements?.[0]?.ObjectName) {
 			item.parent = translator.translateName(
@@ -546,7 +546,7 @@ const parseTechData = (filePath) => {
 		}
 
 		if (EXTRACT_ALL_DATA && jsonData[1]?.Properties?.Cost != 1) {
-			let itemCost = { ...require("../../templates/cost") };
+			const itemCost = { ...require("../../templates/cost") };
 			if (
 				jsonData[1].Properties.TechTreeTier &&
 				(jsonData[1].Properties.TechTreeTier.includes("Tier4") ||
@@ -586,34 +586,34 @@ const parseTechData = (filePath) => {
  * @param {string} filePath - The file path to parse
  */
 const parseDamage = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 	if (jsonData[1]?.Type) {
-		let damageTypeClass = jsonData[1].Type;
-		let allItemsWithThatDamage = utilityFunctions
+		const damageTypeClass = jsonData[1].Type;
+		const allItemsWithThatDamage = utilityFunctions
 			.getAllItems()
 			.filter((item) => item.damageType == damageTypeClass);
 		allItemsWithThatDamage.forEach((itemSearch) => {
-			let item = utilityFunctions.getItem(itemSearch.name);
+			const item = utilityFunctions.getItem(itemSearch.name);
 			if (item) {
 				let proyectileDamage = item.projectileDamage
 					? item.projectileDamage
 					: { ...projectileDamageTemplate };
 				proyectileDamage.vsSoft = jsonData[1]?.Properties?.DamageAgainstSoft
-					? parseInt(jsonData[1].Properties.DamageAgainstSoft * 100, 10)
+					? Number.parseInt(jsonData[1].Properties.DamageAgainstSoft * 100, 10)
 					: undefined;
 				proyectileDamage.vsMedium = jsonData[1]?.Properties?.DamageAgainstMedium
-					? parseInt(jsonData[1].Properties.DamageAgainstMedium * 100, 10)
+					? Number.parseInt(jsonData[1].Properties.DamageAgainstMedium * 100, 10)
 					: undefined;
 				proyectileDamage.vsHard = jsonData[1]?.Properties?.DamageAgainstHard
-					? parseInt(jsonData[1].Properties.DamageAgainstHard * 100, 10)
+					? Number.parseInt(jsonData[1].Properties.DamageAgainstHard * 100, 10)
 					: undefined;
 				proyectileDamage.vsReinforced = jsonData[1]?.Properties
 					?.DamageAgainstReinforced
-					? parseInt(jsonData[1].Properties.DamageAgainstReinforced * 100, 10)
+					? Number.parseInt(jsonData[1].Properties.DamageAgainstReinforced * 100, 10)
 					: undefined;
 				proyectileDamage.vsSolid = jsonData[1]?.Properties?.DamageAgainstSolid
-					? parseInt(jsonData[1].Properties.DamageAgainstSolid * 100, 10)
+					? Number.parseInt(jsonData[1].Properties.DamageAgainstSolid * 100, 10)
 					: undefined;
 
 				proyectileDamage = dataParser.cleanEmptyObject(proyectileDamage);
@@ -632,19 +632,19 @@ const parseDamage = (filePath) => {
  * @param {string} filePath - The file path to parse
  */
 const parseCachedItems = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 	if (jsonData[0]?.Properties?.CachedTotalCost) {
-		let cachedItems = jsonData[0].Properties.CachedTotalCost;
+		const cachedItems = jsonData[0].Properties.CachedTotalCost;
 		Object.keys(cachedItems).forEach((key) => {
 			if (cachedItems[key].Inputs) {
-				let recipe = { ...recipeTemplate };
-				let item = utilityFunctions.getItem(
+				const recipe = { ...recipeTemplate };
+				const item = utilityFunctions.getItem(
 					dataParser.parseName(translator, key),
 				);
-				let ingredients = [];
+				const ingredients = [];
 				for (const ingredientKey in cachedItems[key].Inputs) {
-					let ingredient = { ...ingredienTemplate };
+					const ingredient = { ...ingredienTemplate };
 					ingredient.name = dataParser.parseName(translator, ingredientKey);
 					ingredient.count = cachedItems[key].Inputs[ingredientKey];
 					ingredients.push(ingredient);
@@ -664,14 +664,14 @@ const parseCachedItems = (filePath) => {
  * @param {string} filePath - The file path to parse
  */
 const parsePrices = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 	if (jsonData[1]?.Properties?.OrdersArray) {
-		let allOrders = jsonData[1].Properties.OrdersArray;
+		const allOrders = jsonData[1].Properties.OrdersArray;
 
 		allOrders.forEach((order) => {
 			if (order?.ItemClass?.ObjectName && order?.Price) {
-				let item = utilityFunctions.extractItemByType(
+				const item = utilityFunctions.extractItemByType(
 					dataParser.parseType(order.ItemClass.ObjectName),
 				);
 

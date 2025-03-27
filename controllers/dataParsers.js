@@ -12,16 +12,16 @@ controller.parseName = (translator, name) => {
 	name = name.replaceAll("_C", "").trim();
 	name = name.replaceAll("_Q", "").trim();
 	name = name.replaceAll("DataTable", "").trim();
-	let translateName = translator.translateName(name);
+	const translateName = translator.translateName(name);
 	if (translateName != null) {
 		name = translateName;
 	}
 
 	if (!name.includes("Schematic")) {
 		if (/(.+)Legs/.test(name)) {
-			let match = name.match(/(.+)Legs/);
+			const match = name.match(/(.+)Legs/);
 			if (match[1] != null) {
-				let walkerName = translator.translateName(match[1].trim() + " Walker");
+				const walkerName = translator.translateName(match[1].trim() + " Walker");
 				let legType = "";
 				if (name.includes("_T2")) {
 					legType = "Armored";
@@ -31,9 +31,9 @@ controller.parseName = (translator, name) => {
 				name = (walkerName.trim() + " Legs " + legType).trim() + " (1 of 2)";
 			}
 		} else if (/(.+)Wings/.test(name)) {
-			let match = name.match(/(.+)Wings/);
+			const match = name.match(/(.+)Wings/);
 			if (match[1] != null) {
-				let walkerName = translator.translateName(match[1].trim() + " Walker");
+				const walkerName = translator.translateName(match[1].trim() + " Walker");
 				let wingsType = "Wings";
 				if (name.includes("_T2_Small")) {
 					wingsType = "Wings Small";
@@ -55,33 +55,33 @@ controller.parseName = (translator, name) => {
 			}
 		} else if (name.includes("Upgrades")) {
 			if (/(.+)BoneUpgrades/.test(name)) {
-				let match = name.match(/(.+)BoneUpgrades/);
+				const match = name.match(/(.+)BoneUpgrades/);
 				if (match[1] != null) {
-					let walkerName = translator.translateName(
+					const walkerName = translator.translateName(
 						match[1].trim() + " Walker",
 					);
 					name = walkerName + " Upgrades - Tier 2";
 				}
 			} else if (/(.+)CeramicUpgrades/.test(name)) {
-				let match = name.match(/(.+)CeramicUpgrades/);
+				const match = name.match(/(.+)CeramicUpgrades/);
 				if (match[1] != null) {
-					let walkerName = translator.translateName(
+					const walkerName = translator.translateName(
 						match[1].trim() + " Walker",
 					);
 					name = walkerName + " Upgrades - Tier 3";
 				}
 			} else if (/(.+)IronUpgrades/.test(name)) {
-				let match = name.match(/(.+)IronUpgrades/);
+				const match = name.match(/(.+)IronUpgrades/);
 				if (match[1] != null) {
-					let walkerName = translator.translateName(
+					const walkerName = translator.translateName(
 						match[1].trim() + " Walker",
 					);
 					name = walkerName + " Upgrades - Tier 4";
 				}
 			} else if (/(.+)WoodUpgrades/.test(name)) {
-				let match = name.match(/(.+)WoodUpgrades/);
+				const match = name.match(/(.+)WoodUpgrades/);
 				if (match[1] != null) {
-					let walkerName = translator.translateName(
+					const walkerName = translator.translateName(
 						match[1].trim() + " Walker",
 					);
 					name = walkerName;
@@ -102,7 +102,7 @@ controller.parseName = (translator, name) => {
 controller.parseType = (name) => {
 	name = name.replace("BlueprintGeneratedClass", "").trim();
 	name = name.replace(".0", "").trim();
-	let dot = name.indexOf(".");
+	const dot = name.indexOf(".");
 	if (dot > 0) {
 		name = name.slice(dot + 1);
 	}
@@ -142,9 +142,9 @@ controller.parseRigName = (translator, name) => {
 		if (name.includes("Default")) {
 			name = name.replaceAll("Default", "").trim();
 		}
-		let match = name.match(/(.+)Rig_/);
+		const match = name.match(/(.+)Rig_/);
 		if (match[1] != null) {
-			let walkerName = translator.translateName(match[1] + " Walker");
+			const walkerName = translator.translateName(match[1] + " Walker");
 			name = walkerName + " Rig " + rig;
 		}
 	}
@@ -185,7 +185,7 @@ controller.parseUpgradeName = (name, profile) => {
 		return profile;
 	}
 
-	let walkerName = profile.replaceAll("SparePartsProfile", "").trim();
+	const walkerName = profile.replaceAll("SparePartsProfile", "").trim();
 	let tier = 1;
 	let type = "Water";
 
@@ -221,20 +221,20 @@ controller.parseUpgradeName = (name, profile) => {
 };
 
 controller.itemMerger = (allItems = [], mainItemName, otherItemName) => {
-	let mainItem = allItems.find(
+	const mainItem = allItems.find(
 		(item) => item.name && item.name == mainItemName,
 	);
-	let otherItem = allItems.find(
+	const otherItem = allItems.find(
 		(item) => item.name && item.name == otherItemName,
 	);
 
-	let allItemsFiltered = allItems.filter(
+	const allItemsFiltered = allItems.filter(
 		(item) =>
 			item.name && item.name != otherItemName && item.name != mainItemName,
 	);
 
 	if (mainItem && otherItem) {
-		let newItem = { ...mainItem };
+		const newItem = { ...mainItem };
 
 		for (const key in otherItem) {
 			if (otherItem[key] && !mainItem[key]) {

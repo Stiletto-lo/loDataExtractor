@@ -17,8 +17,8 @@ const DATA_TO_COMPARE = {
 controller.compareItems = async (extractedItems, folderPatch) => {
 	console.log("Start of item comparison");
 	let githubItems = await controller.getAllItems();
-	let itemsNotFound = [];
-	let differentItems = [];
+	const itemsNotFound = [];
+	const differentItems = [];
 	let sameItems = 0;
 
 	console.log(`Extrated items: ${extractedItems.length}`);
@@ -26,7 +26,7 @@ controller.compareItems = async (extractedItems, folderPatch) => {
 
 	if (extractedItems != null && githubItems != null) {
 		extractedItems.forEach((extractedItem) => {
-			let itemFound = githubItems.find(
+			const itemFound = githubItems.find(
 				(githubItem) => githubItem.name == extractedItem.name,
 			);
 			githubItems = githubItems.filter(
@@ -50,7 +50,7 @@ controller.compareItems = async (extractedItems, folderPatch) => {
 		fs.writeFile(
 			folderPatch + "differentItems.json",
 			JSON.stringify(differentItems, null, 2),
-			function (err) {
+			(err) => {
 				if (err) {
 					console.error("Error creating the file");
 				}
@@ -62,7 +62,7 @@ controller.compareItems = async (extractedItems, folderPatch) => {
 		fs.writeFile(
 			folderPatch + "itemsNotFound.json",
 			JSON.stringify(itemsNotFound, null, 2),
-			function (err) {
+			(err) => {
 				if (err) {
 					console.error("Error creating the file");
 				}
@@ -74,7 +74,7 @@ controller.compareItems = async (extractedItems, folderPatch) => {
 		fs.writeFile(
 			folderPatch + "githubItems.json",
 			JSON.stringify(githubItems, null, 2),
-			function (err) {
+			(err) => {
 				if (err) {
 					console.error("Error creating the file");
 				}

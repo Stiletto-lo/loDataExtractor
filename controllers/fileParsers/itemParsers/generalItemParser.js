@@ -30,11 +30,11 @@ const getItemFromItemData = (itemData, oldItem) => {
 		return oldItem ?? undefined;
 	}
 
-	let item = oldItem ?? utilityFunctions.extractItemByType(itemData.Type);
+	const item = oldItem ?? utilityFunctions.extractItemByType(itemData.Type);
 
 	if (itemData.Properties) {
 		if (itemData.Properties?.Category?.ObjectPath) {
-			let category = dataParser.parseCategory(
+			const category = dataParser.parseCategory(
 				itemData.Properties.Category.ObjectPath,
 			);
 			if (category.includes("Schematics")) {
@@ -54,7 +54,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 
 		if (itemData.Properties?.MaximumQuantity) {
 			if (item.moduleInfo == undefined) {
-				let moduleInfoBase = { ...moduleInfoTemplate };
+				const moduleInfoBase = { ...moduleInfoTemplate };
 				item.moduleInfo = moduleInfoBase;
 			}
 
@@ -66,7 +66,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 
 		if (itemData.Properties?.PercentageIncreasePerItem) {
 			if (item.moduleInfo == undefined) {
-				let moduleInfoBase = { ...moduleInfoTemplate };
+				const moduleInfoBase = { ...moduleInfoTemplate };
 				item.moduleInfo = moduleInfoBase;
 			}
 
@@ -77,7 +77,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (itemData.Properties?.ProjectileDamage) {
-			let projectileDamage = { ...projectileDamageTemplate };
+			const projectileDamage = { ...projectileDamageTemplate };
 
 			projectileDamage.damage = itemData.Properties?.ProjectileDamage?.Damage
 				? itemData.Properties?.ProjectileDamage?.Damage
@@ -101,7 +101,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (itemData.Properties?.DefenseProperties) {
-			let armorInfo = { ...armorInfoTemplate };
+			const armorInfo = { ...armorInfoTemplate };
 
 			armorInfo.absorbing = itemData.Properties?.DefenseProperties?.Soak
 				? itemData.Properties?.DefenseProperties?.Soak
@@ -133,7 +133,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 			item.durability = itemData.Properties.MaxDurability;
 		}
 
-		let weaponInfo = { ...weaponInfoTemplate };
+		const weaponInfo = { ...weaponInfoTemplate };
 
 		if (EXTRACT_ALL_DATA && itemData.Properties?.DurabilityDamage) {
 			weaponInfo.durabilityDamage = itemData.Properties.DurabilityDamage;
@@ -169,11 +169,11 @@ const getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (itemData.Properties?.ToolInfo) {
-			let toolInfosData = itemData.Properties.ToolInfo;
-			let toolInfos = item.toolInfo ? item.toolInfo : [];
+			const toolInfosData = itemData.Properties.ToolInfo;
+			const toolInfos = item.toolInfo ? item.toolInfo : [];
 
 			toolInfosData.forEach((toolInfoData) => {
-				let baseToolInfo = { ...toolInfoTemplate };
+				const baseToolInfo = { ...toolInfoTemplate };
 				baseToolInfo.tier = toolInfoData.Tier;
 				if (toolInfoData.ToolType.includes("TreeCutting")) {
 					baseToolInfo.toolType = "TreeCutting";
@@ -195,12 +195,12 @@ const getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (itemData.Properties?.Recipes) {
-			let recipesData = itemData.Properties.Recipes;
-			let crafting = [];
+			const recipesData = itemData.Properties.Recipes;
+			const crafting = [];
 			recipesData.forEach((recipeData) => {
-				let recipe = { ...recipeTemplate };
+				const recipe = { ...recipeTemplate };
 				if (recipeData.Inputs) {
-					let ingredients = [];
+					const ingredients = [];
 					for (const key in recipeData.Inputs) {
 						ingredients.push(
 							utilityFunctions.getIngredientsFromItem(recipeData.Inputs, key),
@@ -279,8 +279,8 @@ const parseItemData = (filePath) => {
 		return;
 	}
 
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 
 	if (jsonData[1]?.Type) {
 		let item = getItemFromItemData(jsonData[1]);

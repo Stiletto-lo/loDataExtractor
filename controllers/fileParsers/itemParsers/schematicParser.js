@@ -12,11 +12,11 @@ const utilityFunctions = require("../utilityFunctions");
  * @param {string} filePath - The file path to parse
  */
 const parseSchematicItemData = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 
 	if (jsonData?.[1]?.Type) {
-		let item = utilityFunctions.extractItemByType(jsonData[1].Type);
+		const item = utilityFunctions.extractItemByType(jsonData[1].Type);
 		let name;
 		if (jsonData[1].Properties?.Name?.Key) {
 			name = jsonData[1].Properties.Name.Key;
@@ -35,7 +35,7 @@ const parseSchematicItemData = (filePath) => {
 			} else {
 				name = dataParser.parseType(jsonData[1].Type);
 
-				let foundItem = utilityFunctions.getItemByType(name);
+				const foundItem = utilityFunctions.getItemByType(name);
 				if (foundItem?.name) {
 					name = foundItem.name;
 				}
@@ -51,22 +51,22 @@ const parseSchematicItemData = (filePath) => {
 		if (jsonData[1].Properties) {
 			item.category = "Schematics";
 
-			let itemsSchematic = [];
+			const itemsSchematic = [];
 
 			if (jsonData[1].Properties?.MaxStackSize) {
 				item.stackSize = jsonData[1].Properties.MaxStackSize;
 			}
 			if (jsonData[1].Properties?.Items) {
-				let allCraftingItems = jsonData[1].Properties.Items;
+				const allCraftingItems = jsonData[1].Properties.Items;
 				allCraftingItems.forEach((schematicItem) => {
 					if (schematicItem.AssetPathName) {
-						let itemFound = utilityFunctions.getItemByType(
+						const itemFound = utilityFunctions.getItemByType(
 							dataParser.parseType(schematicItem.AssetPathName),
 						);
 						if (itemFound) {
 							itemsSchematic.push(itemFound.name);
 						} else {
-							let schematicItemName = dataParser.parseName(
+							const schematicItemName = dataParser.parseName(
 								translator,
 								schematicItem.AssetPathName,
 							);
@@ -76,16 +76,16 @@ const parseSchematicItemData = (filePath) => {
 				});
 			}
 			if (jsonData[1].Properties?.Placeables) {
-				let allCraftingPlaceables = jsonData[1].Properties.Placeables;
+				const allCraftingPlaceables = jsonData[1].Properties.Placeables;
 				allCraftingPlaceables.forEach((schematicPlaceable) => {
 					if (schematicPlaceable.AssetPathName) {
-						let itemFound = utilityFunctions.getItemByType(
+						const itemFound = utilityFunctions.getItemByType(
 							dataParser.parseType(schematicPlaceable.AssetPathName),
 						);
 						if (itemFound) {
 							itemsSchematic.push(itemFound.name);
 						} else {
-							let schematicPlaceableName = dataParser.parseName(
+							const schematicPlaceableName = dataParser.parseName(
 								translator,
 								schematicPlaceable.AssetPathName,
 							);

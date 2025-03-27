@@ -28,17 +28,17 @@ const parseLocation = (blueprint, location) => {
 			dataTableChance = dataTable.dataTableChance;
 		}
 
-		let maxChance = (dataTableChance * maxIterations) / 100;
+		const maxChance = (dataTableChance * maxIterations) / 100;
 
 		dataTable.dropItems.forEach((lootItemData) => {
-			let item = utilityFunctions.getItem(
+			const item = utilityFunctions.getItem(
 				dataParser.parseName(translator, lootItemData.name),
 			);
 			if (item?.name) {
-				let itemDrops = item.drops ? item.drops : [];
-				let hasDrop = itemDrops.some((d) => d.location === location);
+				const itemDrops = item.drops ? item.drops : [];
+				const hasDrop = itemDrops.some((d) => d.location === location);
 				if (!hasDrop && item.name != location) {
-					let drop = { ...require("../../templates/drop") };
+					const drop = { ...require("../../templates/drop") };
 					drop.location = location;
 					if (EXTRACT_ALL_DATA && lootItemData.chance) {
 						drop.chance = lootItemData.chance;
@@ -86,19 +86,19 @@ const parseBlueprintsToItems = () => {
  * @param {string} filePath - The file path to parse
  */
 const parseLootBlueprint = (filePath) => {
-	let rawdata = fs.readFileSync(filePath);
-	let jsonData = JSON.parse(rawdata);
+	const rawdata = fs.readFileSync(filePath);
+	const jsonData = JSON.parse(rawdata);
 	if (jsonData[0].Name && jsonData?.[0]?.Type == "BlueprintGeneratedClass") {
 		if (jsonData[1]?.Type) {
-			let blueprint = { ...blueprintTemplate };
+			const blueprint = { ...blueprintTemplate };
 			blueprint.name = dataParser.parseName(translator, jsonData[1].Type);
 			if (jsonData[1]?.Properties?.Loot?.Tables) {
-				let allBlueprintTables = [];
-				let tables = jsonData[1].Properties.Loot.Tables;
+				const allBlueprintTables = [];
+				const tables = jsonData[1].Properties.Loot.Tables;
 				tables.forEach((table) => {
 					if (table?.Table?.ObjectPath) {
-						let name = dataParser.parseName(translator, table.Table.ObjectName);
-						let dataTable = utilityFunctions
+						const name = dataParser.parseName(translator, table.Table.ObjectName);
+						const dataTable = utilityFunctions
 							.getAllDatatables()
 							.find((data) => data.name == name);
 						if (dataTable) {
