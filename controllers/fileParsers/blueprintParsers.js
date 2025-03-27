@@ -97,7 +97,10 @@ const parseLootBlueprint = (filePath) => {
 				const tables = jsonData[1].Properties.Loot.Tables;
 				tables.forEach((table) => {
 					if (table?.Table?.ObjectPath) {
-						const name = dataParser.parseName(translator, table.Table.ObjectName);
+						const name = dataParser.parseName(
+							translator,
+							table.Table.ObjectName,
+						);
 						const dataTable = utilityFunctions
 							.getAllDatatables()
 							.find((data) => data.name == name);

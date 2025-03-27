@@ -172,9 +172,11 @@ const getLootSiteNameFromObject = (objectData) => {
 		return undefined;
 	}
 
-	return objectData?.Properties?.MobName?.LocalizedString ||
+	return (
+		objectData?.Properties?.MobName?.LocalizedString ||
 		objectData?.Properties?.CampName?.LocalizedString ||
-		undefined;
+		undefined
+	);
 };
 
 /**

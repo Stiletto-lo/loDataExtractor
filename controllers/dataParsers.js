@@ -21,7 +21,9 @@ controller.parseName = (translator, name) => {
 		if (/(.+)Legs/.test(name)) {
 			const match = name.match(/(.+)Legs/);
 			if (match[1] != null) {
-				const walkerName = translator.translateName(match[1].trim() + " Walker");
+				const walkerName = translator.translateName(
+					match[1].trim() + " Walker",
+				);
 				let legType = "";
 				if (name.includes("_T2")) {
 					legType = "Armored";
@@ -33,7 +35,9 @@ controller.parseName = (translator, name) => {
 		} else if (/(.+)Wings/.test(name)) {
 			const match = name.match(/(.+)Wings/);
 			if (match[1] != null) {
-				const walkerName = translator.translateName(match[1].trim() + " Walker");
+				const walkerName = translator.translateName(
+					match[1].trim() + " Walker",
+				);
 				let wingsType = "Wings";
 				if (name.includes("_T2_Small")) {
 					wingsType = "Wings Small";
