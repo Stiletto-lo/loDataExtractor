@@ -111,7 +111,7 @@ if (process.env.EXTRACT_LOOT_TABLES === "true") {
 console.info("Parse Upgrades to Items");
 fileParser.parseUpgradesToItems();
 
-allItems = fileParser.getItems();
+allItems = fileParser.getAllItems();
 
 const translator = fileParser.getTranslator();
 

@@ -13,6 +13,7 @@ const upgradeTemplate = require("../../templates/upgrade");
 const upgradeInfoTemplate = require("../../templates/upgradeInfo");
 const recipeTemplate = require("../../templates/recipe");
 const utilityFunctions = require("./utilityFunctions");
+const itemTemplate = require("../../templates/item");
 
 // Property mapping from source data to our internal model
 const PROPERTY_MAPPING = {
@@ -210,8 +211,87 @@ const parseUpgrades = (filePath) => {
 	}
 };
 
+const getUpgradeItem = (upgradePure) => {
+	if (upgradePure?.super) {
+		let superUpgrade = utilityFunctions.getUpgradesData().find(
+			(up) => up.profile == upgradePure.super && up.name == upgradePure.name
+		);
+		let superUpgradeData = getUpgradeItem(superUpgrade);
+		if (superUpgradeData) {
+			let item = { ...itemTemplate };
+			item.category = "Upgrades";
+			item.name = dataParser.parseUpgradeName(
+				upgradePure?.name,
+				upgradePure?.profile
+			);
+			item.upgradeInfo = {
+				...superUpgradeData.upgradeInfo,
+				...upgradePure.upgradeInfo,
+			};
+			if (upgradePure.crafting && superUpgradeData.crafting) {
+				let recipe = { ...recipeTemplate };
+				if (upgradePure.crafting[0].time) {
+					recipe.time = upgradePure.crafting[0].time;
+				} else if (superUpgradeData.crafting[0].time) {
+					recipe.time = superUpgradeData.crafting[0].time;
+				}
+
+				if (
+					upgradePure.crafting[0].ingredients &&
+					superUpgradeData.crafting[0].ingredients
+				) {
+					let ingredientsFiltered =
+						superUpgradeData.crafting[0].ingredients.filter(
+							(ingredient) =>
+								!upgradePure.crafting[0].ingredients.some(
+									(i) => i.name == ingredient.name
+								)
+						);
+					recipe.ingredients = [].concat(
+						upgradePure.crafting[0].ingredients,
+						ingredientsFiltered
+					);
+				} else if (upgradePure.crafting[0].ingredients) {
+					recipe.ingredients = upgradePure.crafting[0].ingredients;
+				} else if (superUpgradeData.crafting[0].ingredients) {
+					recipe.ingredients = superUpgradeData.crafting[0].ingredients;
+				}
+				item.crafting = [recipe];
+			} else if (upgradePure.crafting) {
+				item.crafting = upgradePure.crafting;
+			} else if (superUpgradeData.crafting) {
+				item.crafting = superUpgradeData.crafting;
+			}
+			return item;
+		} else {
+			return null;
+		}
+	} else {
+		let item = { ...itemTemplate };
+		item.category = "Upgrades";
+		item.name = dataParser.parseUpgradeName(
+			upgradePure?.name,
+			upgradePure?.profile
+		);
+		item.upgradeInfo = upgradePure?.upgradeInfo;
+		item.crafting = upgradePure?.crafting;
+		return item;
+	}
+};
+
+const parseUpgradesToItems = () => {
+	utilityFunctions.getUpgradesData().forEach((upgradePure) => {
+		let item = getUpgradeItem(upgradePure);
+		if (item?.name) {
+			utilityFunctions.getAllItems().push(item);
+		}
+	});
+};
+
 module.exports = {
 	parseUpgrades,
+	parseUpgradesToItems,
+	getUpgradeItem,
 	// Export for testing purposes
 	_internal: {
 		extractUpgradeInfo,

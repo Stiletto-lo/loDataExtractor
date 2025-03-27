@@ -37,6 +37,7 @@ module.exports = {
 
 	// Upgrade related functions
 	parseUpgrades: upgradeParsers.parseUpgrades,
+	parseUpgradesToItems: upgradeParsers.parseUpgradesToItems,
 
 	// Utility functions
 	getItem: utilityFunctions.getItem,
