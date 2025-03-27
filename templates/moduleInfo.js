@@ -1,7 +1,7 @@
 const moduleInfo = {
-  max: undefined,
-  increase: undefined,
-  maxIncrease: undefined,
+	max: undefined,
+	increase: undefined,
+	maxIncrease: undefined,
 };
 
 Object.freeze(moduleInfo);

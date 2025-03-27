@@ -1,17 +1,17 @@
 /**
  * Loot parsers for handling loot-related data
- * 
+ *
  * This module provides functions for parsing loot tables and loot sites
  * from game data files.
  */
 
-const fs = require('node:fs');
-const dataParser = require('../dataParsers');
-const translator = require('../translator');
-const dataTableTemplate = require('../../templates/datatable');
-const dropDataTemplate = require('../../templates/dropData');
-const creatureTemplate = require('../../templates/creature');
-const utilityFunctions = require('./utilityFunctions');
+const fs = require("node:fs");
+const dataParser = require("../dataParsers");
+const translator = require("../translator");
+const dataTableTemplate = require("../../templates/datatable");
+const dropDataTemplate = require("../../templates/dropData");
+const creatureTemplate = require("../../templates/creature");
+const utilityFunctions = require("./utilityFunctions");
 
 // Environment configuration
 const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
@@ -22,13 +22,13 @@ const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
  * @returns {Object|null} - Parsed JSON data or null if error occurs
  */
 const readJsonFile = (filePath) => {
-  try {
-    const rawData = fs.readFileSync(filePath);
-    return JSON.parse(rawData);
-  } catch (error) {
-    console.error(`Error reading or parsing file ${filePath}:`, error.message);
-    return null;
-  }
+	try {
+		const rawData = fs.readFileSync(filePath);
+		return JSON.parse(rawData);
+	} catch (error) {
+		console.error(`Error reading or parsing file ${filePath}:`, error.message);
+		return null;
+	}
 };
 
 /**
@@ -38,17 +38,17 @@ const readJsonFile = (filePath) => {
  * @returns {Object} - A configured drop item
  */
 const createDropItem = (name, lootItemData) => {
-  const drop = { ...dropDataTemplate };
-  drop.name = name;
+	const drop = { ...dropDataTemplate };
+	drop.name = name;
 
-  // Only add these properties if EXTRACT_ALL_DATA is true and they exist
-  if (EXTRACT_ALL_DATA) {
-    if (lootItemData.Chance) drop.chance = lootItemData.Chance;
-    if (lootItemData.MinQuantity) drop.minQuantity = lootItemData.MinQuantity;
-    if (lootItemData.MaxQuantity) drop.maxQuantity = lootItemData.MaxQuantity;
-  }
+	// Only add these properties if EXTRACT_ALL_DATA is true and they exist
+	if (EXTRACT_ALL_DATA) {
+		if (lootItemData.Chance) drop.chance = lootItemData.Chance;
+		if (lootItemData.MinQuantity) drop.minQuantity = lootItemData.MinQuantity;
+		if (lootItemData.MaxQuantity) drop.maxQuantity = lootItemData.MaxQuantity;
+	}
 
-  return drop;
+	return drop;
 };
 
 /**
@@ -58,19 +58,19 @@ const createDropItem = (name, lootItemData) => {
  * @returns {string} - The resolved item name
  */
 const resolveItemName = (baseName, lootItem) => {
-  const completeItem = utilityFunctions.getItemByType(
-    dataParser.parseType(lootItem.Item.AssetPathName)
-  );
+	const completeItem = utilityFunctions.getItemByType(
+		dataParser.parseType(lootItem.Item.AssetPathName),
+	);
 
-  if (completeItem?.name) {
-    return completeItem.name;
-  }
+	if (completeItem?.name) {
+		return completeItem.name;
+	}
 
-  if (lootItem?.Item?.AssetPathName?.includes?.('Schematics')) {
-    return `${baseName} Schematic`;
-  }
+	if (lootItem?.Item?.AssetPathName?.includes?.("Schematics")) {
+		return `${baseName} Schematic`;
+	}
 
-  return baseName;
+	return baseName;
 };
 
 /**
@@ -79,42 +79,46 @@ const resolveItemName = (baseName, lootItem) => {
  * @returns {boolean} - Whether parsing was successful
  */
 const parseLootTable = (filePath) => {
-  const jsonData = readJsonFile(filePath);
-  if (!jsonData) return false;
+	const jsonData = readJsonFile(filePath);
+	if (!jsonData) return false;
 
-  const firstEntry = jsonData[0];
-  if (!firstEntry?.Name || !firstEntry?.Rows || firstEntry?.Type !== "DataTable") {
-    return false;
-  }
+	const firstEntry = jsonData[0];
+	if (
+		!firstEntry?.Name ||
+		!firstEntry?.Rows ||
+		firstEntry?.Type !== "DataTable"
+	) {
+		return false;
+	}
 
-  const dataTable = { ...dataTableTemplate };
-  dataTable.name = dataParser.parseName(translator, firstEntry.Name);
-  const lootItems = firstEntry.Rows;
-  const dataTableItems = [];
+	const dataTable = { ...dataTableTemplate };
+	dataTable.name = dataParser.parseName(translator, firstEntry.Name);
+	const lootItems = firstEntry.Rows;
+	const dataTableItems = [];
 
-  for (const key of Object.keys(lootItems)) {
-    const currentItem = lootItems[key];
-    if (!currentItem.Item) {
-      return;
-    }
+	for (const key of Object.keys(lootItems)) {
+		const currentItem = lootItems[key];
+		if (!currentItem.Item) {
+			return;
+		}
 
-    const baseName = dataParser.parseName(translator, key);
-    if (!baseName) {
-      return;
-    }
+		const baseName = dataParser.parseName(translator, key);
+		if (!baseName) {
+			return;
+		}
 
-    const resolvedName = resolveItemName(baseName, currentItem);
-    const hasDrop = dataTable.dropItems.some(d => d.name === resolvedName);
+		const resolvedName = resolveItemName(baseName, currentItem);
+		const hasDrop = dataTable.dropItems.some((d) => d.name === resolvedName);
 
-    if (!hasDrop && resolvedName !== dataTable.name) {
-      const drop = createDropItem(resolvedName, currentItem);
-      dataTableItems.push(drop);
-    }
-  }
+		if (!hasDrop && resolvedName !== dataTable.name) {
+			const drop = createDropItem(resolvedName, currentItem);
+			dataTableItems.push(drop);
+		}
+	}
 
-  dataTable.dropItems = dataTableItems;
-  utilityFunctions.getAllDatatables().push(dataTable);
-  return true;
+	dataTable.dropItems = dataTableItems;
+	utilityFunctions.getAllDatatables().push(dataTable);
+	return true;
 };
 
 /**
@@ -123,9 +127,9 @@ const parseLootTable = (filePath) => {
  * @returns {string|undefined} - The loot site name or undefined
  */
 const getLootSiteNameFromObject = (objectData) =>
-  objectData?.Properties?.MobName?.LocalizedString ||
-  objectData?.Properties?.CampName?.LocalizedString ||
-  undefined;
+	objectData?.Properties?.MobName?.LocalizedString ||
+	objectData?.Properties?.CampName?.LocalizedString ||
+	undefined;
 
 /**
  * Filter objects to exclude certain types
@@ -133,11 +137,12 @@ const getLootSiteNameFromObject = (objectData) =>
  * @returns {Array} - Filtered array of objects
  */
 const filterRelevantObjects = (objects) => {
-  return objects.filter(obj =>
-    obj?.Type !== "Function" &&
-    obj?.Type !== "BlueprintGeneratedClass" &&
-    !obj?.Type.includes("Component")
-  );
+	return objects.filter(
+		(obj) =>
+			obj?.Type !== "Function" &&
+			obj?.Type !== "BlueprintGeneratedClass" &&
+			!obj?.Type.includes("Component"),
+	);
 };
 
 /**
@@ -146,13 +151,15 @@ const filterRelevantObjects = (objects) => {
  * @returns {Object} - Extracted creature properties
  */
 const extractCreatureData = (additionalInfo) => {
-  if (!additionalInfo) return {};
+	if (!additionalInfo) return {};
 
-  return {
-    experiencie: additionalInfo?.Properties?.ExperienceAward,
-    health: additionalInfo?.Properties?.MaxHealth,
-    lootTable: dataParser.parseObjectPath(additionalInfo?.Properties?.Loot?.ObjectPath)
-  };
+	return {
+		experiencie: additionalInfo?.Properties?.ExperienceAward,
+		health: additionalInfo?.Properties?.MaxHealth,
+		lootTable: dataParser.parseObjectPath(
+			additionalInfo?.Properties?.Loot?.ObjectPath,
+		),
+	};
 };
 
 /**
@@ -161,34 +168,36 @@ const extractCreatureData = (additionalInfo) => {
  * @returns {boolean} - Whether parsing was successful
  */
 const parseLootSites = (filePath) => {
-  const jsonData = readJsonFile(filePath);
-  if (!jsonData) return false;
+	const jsonData = readJsonFile(filePath);
+	if (!jsonData) return false;
 
-  const objectsFiltered = filterRelevantObjects(jsonData);
-  const firstObject = objectsFiltered[0];
+	const objectsFiltered = filterRelevantObjects(jsonData);
+	const firstObject = objectsFiltered[0];
 
-  if (!firstObject) return false;
+	if (!firstObject) return false;
 
-  const name = firstObject.Type;
-  const translation = getLootSiteNameFromObject(firstObject);
+	const name = firstObject.Type;
+	const translation = getLootSiteNameFromObject(firstObject);
 
-  if (!translation || !name) return false;
+	if (!translation || !name) return false;
 
-  translator.addLootSiteTranslation(name, translation);
+	translator.addLootSiteTranslation(name, translation);
 
-  const creature = {
-    ...creatureTemplate,
-    type: name,
-    name: translation,
-    ...extractCreatureData(jsonData.find(o => o.Type === "MistHumanoidMobVariationComponent"))
-  };
+	const creature = {
+		...creatureTemplate,
+		type: name,
+		name: translation,
+		...extractCreatureData(
+			jsonData.find((o) => o.Type === "MistHumanoidMobVariationComponent"),
+		),
+	};
 
-  utilityFunctions.getCreatures().push(creature);
-  return true;
+	utilityFunctions.getCreatures().push(creature);
+	return true;
 };
 
 module.exports = {
-  parseLootTable,
-  getLootSiteNameFromObject,
-  parseLootSites
+	parseLootTable,
+	getLootSiteNameFromObject,
+	parseLootSites,
 };

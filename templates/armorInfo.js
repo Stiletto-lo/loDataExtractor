@@ -1,7 +1,7 @@
 const armorInfo = {
-  absorbing: undefined,
-  reduction: undefined,
-  speedReduction: undefined,
+	absorbing: undefined,
+	reduction: undefined,
+	speedReduction: undefined,
 };
 Object.freeze(armorInfo);
 

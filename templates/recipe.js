@@ -1,8 +1,8 @@
 const recipe = {
-  ingredients: [],
-  output: undefined,
-  station: undefined,
-  time: undefined,
+	ingredients: [],
+	output: undefined,
+	station: undefined,
+	time: undefined,
 };
 
 Object.freeze(recipe);

@@ -1,6 +1,6 @@
 const structureInfo = {
-  type: undefined,
-  hp: undefined,
+	type: undefined,
+	hp: undefined,
 };
 
 Object.freeze(structureInfo);

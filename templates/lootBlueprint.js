@@ -1,6 +1,6 @@
 const lootBlueprint = {
-  name: undefined,
-  tables: [],
+	name: undefined,
+	tables: [],
 };
 
 Object.freeze(lootBlueprint);

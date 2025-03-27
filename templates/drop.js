@@ -1,8 +1,8 @@
 const drop = {
-  location: undefined,
-  chance: undefined,
-  minQuantity: undefined,
-  maxQuantity: undefined,
+	location: undefined,
+	chance: undefined,
+	minQuantity: undefined,
+	maxQuantity: undefined,
 };
 
 Object.freeze(drop);

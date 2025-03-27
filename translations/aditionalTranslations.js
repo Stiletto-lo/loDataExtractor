@@ -134,9 +134,9 @@ allTranslations["TorqueConsumption"] = "Torque generation";
 allTranslations["HighTorqueConsumption"] = "Torque generation";
 
 allTranslations["TravelerDinghyRigSchematic"] =
-  "Dinghy Walker Rig Traveler Schematic";
+	"Dinghy Walker Rig Traveler Schematic";
 allTranslations["NimmoDinghyRigSchematic"] =
-  "Dinghy Walker Rig Nimmo Schematic";
+	"Dinghy Walker Rig Nimmo Schematic";
 
 allTranslations["Boots_Rain"] = "Swampwood Galoshes";
 
