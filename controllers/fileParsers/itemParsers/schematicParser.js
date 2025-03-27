@@ -43,7 +43,7 @@ const parseSchematicItemData = (filePath) => {
 		}
 		if (name) {
 			if (!name.includes("Schematic")) {
-				name = name + " Schematic";
+				name = `${name} Schematic`;
 			}
 			item.name = name;
 		}

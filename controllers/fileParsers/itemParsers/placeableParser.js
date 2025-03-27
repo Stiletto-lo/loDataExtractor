@@ -42,7 +42,7 @@ const parsePlaceableData = (filePath) => {
 				);
 			}
 			if (rigName != null && wakerName != null) {
-				item.name = wakerName + " " + rigName;
+				item.name = `${wakerName} ${rigName}`;
 			} else {
 				item.name = dataParser.parseRigName(translator, jsonData[1].Type);
 			}

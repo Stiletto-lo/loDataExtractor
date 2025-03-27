@@ -201,9 +201,6 @@ const parseUpgrades = (filePath) => {
 				processUpgradeEntry(jsonData, key, profile, superUp);
 			}
 			return true;
-		} else {
-			console.warn(`No Properties found in ${filePath}`);
-			return false;
 		}
 	} catch (error) {
 		console.error(`Error parsing upgrades from ${filePath}:`, error);
@@ -213,12 +210,12 @@ const parseUpgrades = (filePath) => {
 
 const getUpgradeItem = (upgradePure) => {
 	if (upgradePure?.super) {
-		let superUpgrade = utilityFunctions.getUpgradesData().find(
+		const superUpgrade = utilityFunctions.getUpgradesData().find(
 			(up) => up.profile == upgradePure.super && up.name == upgradePure.name
 		);
-		let superUpgradeData = getUpgradeItem(superUpgrade);
+		const superUpgradeData = getUpgradeItem(superUpgrade);
 		if (superUpgradeData) {
-			let item = { ...itemTemplate };
+			const item = { ...itemTemplate };
 			item.category = "Upgrades";
 			item.name = dataParser.parseUpgradeName(
 				upgradePure?.name,
@@ -229,7 +226,7 @@ const getUpgradeItem = (upgradePure) => {
 				...upgradePure.upgradeInfo,
 			};
 			if (upgradePure.crafting && superUpgradeData.crafting) {
-				let recipe = { ...recipeTemplate };
+				const recipe = { ...recipeTemplate };
 				if (upgradePure.crafting[0].time) {
 					recipe.time = upgradePure.crafting[0].time;
 				} else if (superUpgradeData.crafting[0].time) {
@@ -240,7 +237,7 @@ const getUpgradeItem = (upgradePure) => {
 					upgradePure.crafting[0].ingredients &&
 					superUpgradeData.crafting[0].ingredients
 				) {
-					let ingredientsFiltered =
+					const ingredientsFiltered =
 						superUpgradeData.crafting[0].ingredients.filter(
 							(ingredient) =>
 								!upgradePure.crafting[0].ingredients.some(
@@ -263,11 +260,9 @@ const getUpgradeItem = (upgradePure) => {
 				item.crafting = superUpgradeData.crafting;
 			}
 			return item;
-		} else {
-			return null;
 		}
 	} else {
-		let item = { ...itemTemplate };
+		const item = { ...itemTemplate };
 		item.category = "Upgrades";
 		item.name = dataParser.parseUpgradeName(
 			upgradePure?.name,
@@ -280,12 +275,12 @@ const getUpgradeItem = (upgradePure) => {
 };
 
 const parseUpgradesToItems = () => {
-	utilityFunctions.getUpgradesData().forEach((upgradePure) => {
-		let item = getUpgradeItem(upgradePure);
+	for (const upgradePure of utilityFunctions.getUpgradesData()) {
+		const item = getUpgradeItem(upgradePure);
 		if (item?.name) {
 			utilityFunctions.getAllItems().push(item);
 		}
-	});
+	}
 };
 
 module.exports = {

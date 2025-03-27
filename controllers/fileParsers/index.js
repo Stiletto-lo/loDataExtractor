@@ -8,6 +8,7 @@ const lootParsers = require("./lootParsers");
 const translationParsers = require("./translationParsers");
 const upgradeParsers = require("./upgradeParsers");
 const utilityFunctions = require("./utilityFunctions");
+const translator = require("../translator");
 
 // Re-export all functionality from the individual modules
 module.exports = {
@@ -54,4 +55,7 @@ module.exports = {
 	setCreatures: utilityFunctions.setCreatures,
 	setAllDatatables: utilityFunctions.setAllDatatables,
 	setAllBlueprints: utilityFunctions.setAllBlueprints,
+
+	// Translator
+	getTranslator: () => translator,
 };
