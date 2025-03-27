@@ -1,111 +1,181 @@
 /**
  * Utility functions for file parsers
+ * 
+ * This module provides utility functions for working with items, upgrades, creatures,
+ * datatables, and blueprints in the data extraction process.
  */
 
 const itemTemplate = require('../../templates/item');
-const ingredienTemplate = require('../../templates/cost');
-
-// Shared state variables
-let allItems = [];
-let upgradesData = [];
-let creatures = [];
-let allDatatables = [];
-let allBlueprints = [];
+const ingredientTemplate = require('../../templates/cost'); // Fixed typo: ingredienTemplate -> ingredientTemplate
 
 /**
- * Get an item by name
- * @param {string} name - The name of the item to find
- * @returns {Object|undefined} - The found item or undefined
+ * DataStore - Encapsulates shared state to avoid global variables
+ * and provides controlled access to data collections
  */
-const getItem = (name) => {
-  if (!name) return undefined;
-
-  return allItems.find((item) => item.name === name);
-};
-
-/**
- * Get an item by type
- * @param {string} type - The type of the item to find
- * @returns {Object|undefined} - The found item or undefined
- */
-const getItemByType = (type) => {
-  if (!type) return undefined;
-
-  return allItems.find((item) => item.type === type);
-};
-
-/**
- * Extract an item by type
- * @param {string} type - The type of the item to extract
- * @returns {Object} - A new item object with the type set
- */
-const extractItemByType = (type) => {
-  if (!type) return { ...itemTemplate };
-
-  let item = getItemByType(type);
-  if (item) {
-    return { ...item };
+class DataStore {
+  constructor() {
+    this.items = [];
+    this.upgradesData = [];
+    this.creatures = [];
+    this.datatables = [];
+    this.blueprints = [];
   }
 
-  let newItem = { ...itemTemplate };
-  newItem.type = type;
-  return newItem;
-};
+  // Item operations
+  getAllItems() {
+    return this.items;
+  }
 
-/**
- * Get ingredients from an item
- * @param {Object} inputs - The inputs object
- * @param {string} key - The key of the ingredient
- * @returns {Object} - The ingredient object
- */
-const getIngredientsFromItem = (inputs, key) => {
-  let ingredient = { ...ingredienTemplate };
-  ingredient.name = key;
-  ingredient.count = inputs[key];
-  return ingredient;
-};
+  setAllItems(items) {
+    if (!Array.isArray(items)) {
+      throw new TypeError('Items must be an array');
+    }
+    this.items = items;
+  }
 
-// Getter functions for shared state
-const getAllItems = () => allItems;
-const getUpgradesData = () => upgradesData;
-const getCreatures = () => creatures;
-const getAllDatatables = () => allDatatables;
-const getAllBlueprints = () => allBlueprints;
+  /**
+   * Get an item by name
+   * @param {string} name - The name of the item to find
+   * @returns {Object|undefined} - The found item or undefined
+   * @throws {TypeError} - If name is not a string when provided
+   */
+  getItem(name) {
+    if (name !== undefined && typeof name !== 'string') {
+      throw new TypeError('Item name must be a string');
+    }
+    if (!name) return undefined;
 
-// Setter functions for shared state
-const setAllItems = (items) => {
-  allItems = items;
-};
+    return this.items.find((item) => item.name === name);
+  }
 
-const setUpgradesData = (data) => {
-  upgradesData = data;
-};
+  /**
+   * Get an item by type
+   * @param {string} type - The type of the item to find
+   * @returns {Object|undefined} - The found item or undefined
+   * @throws {TypeError} - If type is not a string when provided
+   */
+  getItemByType(type) {
+    if (type !== undefined && typeof type !== 'string') {
+      throw new TypeError('Item type must be a string');
+    }
+    if (!type) return undefined;
 
-const setCreatures = (data) => {
-  creatures = data;
-};
+    return this.items.find((item) => item.type === type);
+  }
 
-const setAllDatatables = (data) => {
-  allDatatables = data;
-};
+  /**
+   * Extract an item by type
+   * @param {string} type - The type of the item to extract
+   * @returns {Object} - A new item object with the type set
+   * @throws {TypeError} - If type is not a string when provided
+   */
+  extractItemByType(type) {
+    if (type !== undefined && typeof type !== 'string') {
+      throw new TypeError('Item type must be a string');
+    }
+    if (!type) return { ...itemTemplate };
 
-const setAllBlueprints = (data) => {
-  allBlueprints = data;
-};
+    const item = this.getItemByType(type);
+    if (item) {
+      return { ...item };
+    }
+
+    const newItem = { ...itemTemplate };
+    newItem.type = type;
+    return newItem;
+  }
+
+  /**
+   * Get ingredients from an item
+   * @param {Object} inputs - The inputs object containing ingredient data
+   * @param {string} key - The key of the ingredient
+   * @returns {Object} - The ingredient object
+   * @throws {TypeError} - If inputs is not an object or key is not a string
+   */
+  getIngredientsFromItem(inputs, key) {
+    if (!inputs || typeof inputs !== 'object') {
+      throw new TypeError('Inputs must be an object');
+    }
+    if (typeof key !== 'string') {
+      throw new TypeError('Key must be a string');
+    }
+
+    const ingredient = { ...ingredientTemplate };
+    ingredient.name = key;
+    ingredient.count = inputs[key];
+    return ingredient;
+  }
+
+  // Upgrades operations
+  getUpgradesData() {
+    return this.upgradesData;
+  }
+
+  setUpgradesData(data) {
+    if (!Array.isArray(data)) {
+      throw new TypeError('Upgrades data must be an array');
+    }
+    this.upgradesData = data;
+  }
+
+  // Creatures operations
+  getCreatures() {
+    return this.creatures;
+  }
+
+  setCreatures(data) {
+    if (!Array.isArray(data)) {
+      throw new TypeError('Creatures data must be an array');
+    }
+    this.creatures = data;
+  }
+
+  // Datatables operations
+  getAllDatatables() {
+    return this.datatables;
+  }
+
+  setAllDatatables(data) {
+    if (!Array.isArray(data)) {
+      throw new TypeError('Datatables must be an array');
+    }
+    this.datatables = data;
+  }
+
+  // Blueprints operations
+  getAllBlueprints() {
+    return this.blueprints;
+  }
+
+  setAllBlueprints(data) {
+    if (!Array.isArray(data)) {
+      throw new TypeError('Blueprints must be an array');
+    }
+    this.blueprints = data;
+  }
+}
+
+// Create and export a singleton instance
+const dataStore = new DataStore();
 
 module.exports = {
-  getItem,
-  getItemByType,
-  extractItemByType,
-  getIngredientsFromItem,
-  getAllItems,
-  getUpgradesData,
-  getCreatures,
-  getAllDatatables,
-  getAllBlueprints,
-  setAllItems,
-  setUpgradesData,
-  setCreatures,
-  setAllDatatables,
-  setAllBlueprints
+  // Item operations
+  getItem: (name) => dataStore.getItem(name),
+  getItemByType: (type) => dataStore.getItemByType(type),
+  extractItemByType: (type) => dataStore.extractItemByType(type),
+  getIngredientsFromItem: (inputs, key) => dataStore.getIngredientsFromItem(inputs, key),
+
+  // Collection getters
+  getAllItems: () => dataStore.getAllItems(),
+  getUpgradesData: () => dataStore.getUpgradesData(),
+  getCreatures: () => dataStore.getCreatures(),
+  getAllDatatables: () => dataStore.getAllDatatables(),
+  getAllBlueprints: () => dataStore.getAllBlueprints(),
+
+  // Collection setters
+  setAllItems: (items) => dataStore.setAllItems(items),
+  setUpgradesData: (data) => dataStore.setUpgradesData(data),
+  setCreatures: (data) => dataStore.setCreatures(data),
+  setAllDatatables: (data) => dataStore.setAllDatatables(data),
+  setAllBlueprints: (data) => dataStore.setAllBlueprints(data)
 };
