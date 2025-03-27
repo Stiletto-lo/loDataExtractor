@@ -72,7 +72,7 @@ const resolveItemName = (baseName, lootItem) => {
 		return "Unknown Item";
 	}
 
-	if (!lootItem.Item || !lootItem.Item.AssetPathName) {
+	if (!lootItem?.Item?.AssetPathName) {
 		return baseName;
 	}
 

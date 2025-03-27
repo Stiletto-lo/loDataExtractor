@@ -72,7 +72,7 @@ const processTranslationData = (translationData, language = null) => {
 	}
 
 	for (const key in translationData) {
-		if (Object.prototype.hasOwnProperty.call(translationData, key)) {
+		if (Object.hasOwn(translationData, key)) {
 			processTranslationEntry(key, translationData[key], language);
 		}
 	}
@@ -138,7 +138,7 @@ const parseOtherTranslations = (filePath) => {
 	let success = false;
 
 	for (const translationGroup in jsonData) {
-		if (Object.prototype.hasOwnProperty.call(jsonData, translationGroup)) {
+		if (Object.hasOwn(jsonData, translationGroup)) {
 			const groupData = jsonData[translationGroup];
 
 			// Process each translation group
