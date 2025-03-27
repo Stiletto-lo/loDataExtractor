@@ -2,65 +2,106 @@
  * Translation parsers for handling translation-related data
  */
 
-const fs = require('fs');
-const dataParser = require('../dataParsers');
+const fs = require('node:fs');
 const translator = require('../translator');
+
+/**
+ * Extracts and processes key-value pairs from translation data
+ * @param {string} key - The translation key
+ * @param {string} value - The translation value
+ * @param {string|null} language - Optional language code
+ */
+const processTranslationEntry = (key, value, language = null) => {
+  const cleanKey = key.trim();
+
+  if (cleanKey.includes('.Description')) {
+    translator.addDescription(
+      cleanKey.replace('.Description', '').trim(),
+      value,
+      language
+    );
+  } else {
+    translator.addTranslation(
+      cleanKey.replace('.Name', '').trim(),
+      value,
+      language
+    );
+  }
+};
+
+/**
+ * Safely reads and parses a JSON file
+ * @param {string} filePath - The file path to read
+ * @returns {Object|null} - Parsed JSON data or null if error occurs
+ */
+const readJsonFile = (filePath) => {
+  try {
+    const rawData = fs.readFileSync(filePath, 'utf8');
+    return JSON.parse(rawData);
+  } catch (error) {
+    console.error(`Error reading or parsing file ${filePath}:`, error.message);
+    return null;
+  }
+};
 
 /**
  * Parse translations data from a file
  * @param {string} filePath - The file path to parse
+ * @returns {boolean} - Whether parsing was successful
  */
 const parseTranslations = (filePath) => {
-  let rawdata = fs.readFileSync(filePath);
-  let jsonData = JSON.parse(rawdata);
-  if (jsonData[0]?.StringTable?.KeysToMetaData) {
-    for (const key in jsonData[0].StringTable.KeysToMetaData) {
-      if (key.includes(".Name")) {
-        translator.addTranslation(
-          key.replace(".Name", "").trim(),
-          jsonData[0].StringTable.KeysToMetaData[key]
-        );
-      } else if (key.includes(".Description")) {
-        translator.addDescription(
-          key.replace(".Description", "").trim(),
-          jsonData[0].StringTable.KeysToMetaData[key]
-        );
-      }
-    }
+  const jsonData = readJsonFile(filePath);
+
+  if (!jsonData) {
+    return false;
   }
+
+  if (jsonData[0]?.StringTable?.KeysToMetaData) {
+    const translationData = jsonData[0].StringTable.KeysToMetaData;
+
+    for (const key in translationData) {
+      processTranslationEntry(key, translationData[key]);
+    }
+
+    return true;
+  }
+
+  return false;
 };
 
 /**
  * Parse other translations data from a file
  * @param {string} filePath - The file path to parse
+ * @returns {boolean} - Whether parsing was successful
  */
 const parseOtherTranslations = (filePath) => {
-  if (/\/Game\/(.+)\/Game.json/.test(filePath)) {
-    let match = filePath.match("/Game/(.+)/Game.json");
-    if (match[1] != null) {
-      let languaje = match[1];
-      let rawdata = fs.readFileSync(filePath);
-      let jsonData = JSON.parse(rawdata);
+  const GAME_PATH_REGEX = /\/Game\/(.+)\/Game\.json/;
 
-      for (const translationGroup in jsonData) {
-        for (const key in jsonData[translationGroup]) {
-          if (key.includes(".Description")) {
-            translator.addDescription(
-              key.replace(".Description", "").trim(),
-              jsonData[translationGroup][key],
-              languaje
-            );
-          } else {
-            translator.addTranslation(
-              key.replace(".Name", "").trim(),
-              jsonData[translationGroup][key],
-              languaje
-            );
-          }
-        }
-      }
+  if (!GAME_PATH_REGEX.test(filePath)) {
+    return false;
+  }
+
+  const match = filePath.match(GAME_PATH_REGEX);
+  if (!match || !match[1]) {
+    return false;
+  }
+
+  const language = match[1];
+  const jsonData = readJsonFile(filePath);
+
+  if (!jsonData) {
+    return false;
+  }
+
+  for (const translationGroup in jsonData) {
+    const groupData = jsonData[translationGroup];
+
+    for (const key in groupData) {
+      processTranslationEntry(key, groupData[key], language);
     }
   }
+
+  return true;
 };
 
 module.exports = {
