@@ -22,6 +22,11 @@ const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
  * @returns {Object|null} - Parsed JSON data or null if error occurs
  */
 const readJsonFile = (filePath) => {
+	if (!filePath || typeof filePath !== "string") {
+		console.error("Invalid file path provided to readJsonFile");
+		return null;
+	}
+
 	try {
 		const rawData = fs.readFileSync(filePath);
 		return JSON.parse(rawData);
@@ -38,6 +43,11 @@ const readJsonFile = (filePath) => {
  * @returns {Object} - A configured drop item
  */
 const createDropItem = (name, lootItemData) => {
+	if (!name || !lootItemData) {
+		console.warn("Missing required parameters for createDropItem");
+		return { ...dropDataTemplate, name: name || "Unknown" };
+	}
+
 	const drop = { ...dropDataTemplate };
 	drop.name = name;
 
@@ -58,6 +68,14 @@ const createDropItem = (name, lootItemData) => {
  * @returns {string} - The resolved item name
  */
 const resolveItemName = (baseName, lootItem) => {
+	if (!baseName || !lootItem) {
+		return "Unknown Item";
+	}
+
+	if (!lootItem.Item || !lootItem.Item.AssetPathName) {
+		return baseName;
+	}
+
 	const completeItem = utilityFunctions.getItemByType(
 		dataParser.parseType(lootItem.Item.AssetPathName),
 	);
@@ -66,11 +84,30 @@ const resolveItemName = (baseName, lootItem) => {
 		return completeItem.name;
 	}
 
-	if (lootItem?.Item?.AssetPathName?.includes?.("Schematics")) {
+	if (lootItem.Item.AssetPathName.includes("Schematics")) {
 		return `${baseName} Schematic`;
 	}
 
 	return baseName;
+};
+
+/**
+ * Validates loot table entry data
+ * @param {Object} currentItem - The current loot item to validate
+ * @param {string} key - The key of the current item
+ * @returns {Object} - Object containing validation result and error message
+ */
+const validateLootTableEntry = (currentItem, key) => {
+	if (!currentItem.Item) {
+		return { isValid: false, error: `Missing Item property for ${key}` };
+	}
+
+	const baseName = dataParser.parseName(translator, key);
+	if (!baseName) {
+		return { isValid: false, error: `Could not parse name for ${key}` };
+	}
+
+	return { isValid: true, baseName };
 };
 
 /**
@@ -79,6 +116,11 @@ const resolveItemName = (baseName, lootItem) => {
  * @returns {boolean} - Whether parsing was successful
  */
 const parseLootTable = (filePath) => {
+	if (!filePath || typeof filePath !== "string") {
+		console.error("Invalid file path provided to parseLootTable");
+		return false;
+	}
+
 	const jsonData = readJsonFile(filePath);
 	if (!jsonData) return false;
 
@@ -88,6 +130,7 @@ const parseLootTable = (filePath) => {
 		!firstEntry?.Rows ||
 		firstEntry?.Type !== "DataTable"
 	) {
+		console.warn(`Invalid data table format in ${filePath}`);
 		return false;
 	}
 
@@ -98,16 +141,14 @@ const parseLootTable = (filePath) => {
 
 	for (const key of Object.keys(lootItems)) {
 		const currentItem = lootItems[key];
-		if (!currentItem.Item) {
-			return;
+		const validation = validateLootTableEntry(currentItem, key);
+
+		if (!validation.isValid) {
+			console.warn(validation.error);
+			continue;
 		}
 
-		const baseName = dataParser.parseName(translator, key);
-		if (!baseName) {
-			return;
-		}
-
-		const resolvedName = resolveItemName(baseName, currentItem);
+		const resolvedName = resolveItemName(validation.baseName, currentItem);
 		const hasDrop = dataTable.dropItems.some((d) => d.name === resolvedName);
 
 		if (!hasDrop && resolvedName !== dataTable.name) {
@@ -126,10 +167,15 @@ const parseLootTable = (filePath) => {
  * @param {Object} objectData - The object data
  * @returns {string|undefined} - The loot site name or undefined
  */
-const getLootSiteNameFromObject = (objectData) =>
-	objectData?.Properties?.MobName?.LocalizedString ||
-	objectData?.Properties?.CampName?.LocalizedString ||
-	undefined;
+const getLootSiteNameFromObject = (objectData) => {
+	if (!objectData || typeof objectData !== "object") {
+		return undefined;
+	}
+
+	return objectData?.Properties?.MobName?.LocalizedString ||
+		objectData?.Properties?.CampName?.LocalizedString ||
+		undefined;
+};
 
 /**
  * Filter objects to exclude certain types
@@ -137,11 +183,16 @@ const getLootSiteNameFromObject = (objectData) =>
  * @returns {Array} - Filtered array of objects
  */
 const filterRelevantObjects = (objects) => {
+	if (!Array.isArray(objects)) {
+		console.warn("Invalid objects array provided to filterRelevantObjects");
+		return [];
+	}
+
 	return objects.filter(
 		(obj) =>
 			obj?.Type !== "Function" &&
 			obj?.Type !== "BlueprintGeneratedClass" &&
-			!obj?.Type.includes("Component"),
+			!obj?.Type?.includes("Component"),
 	);
 };
 
@@ -168,18 +219,29 @@ const extractCreatureData = (additionalInfo) => {
  * @returns {boolean} - Whether parsing was successful
  */
 const parseLootSites = (filePath) => {
+	if (!filePath || typeof filePath !== "string") {
+		console.error("Invalid file path provided to parseLootSites");
+		return false;
+	}
+
 	const jsonData = readJsonFile(filePath);
 	if (!jsonData) return false;
 
 	const objectsFiltered = filterRelevantObjects(jsonData);
 	const firstObject = objectsFiltered[0];
 
-	if (!firstObject) return false;
+	if (!firstObject) {
+		console.warn(`No relevant objects found in ${filePath}`);
+		return false;
+	}
 
 	const name = firstObject.Type;
 	const translation = getLootSiteNameFromObject(firstObject);
 
-	if (!translation || !name) return false;
+	if (!translation || !name) {
+		console.warn(`Missing name or translation for loot site in ${filePath}`);
+		return false;
+	}
 
 	translator.addLootSiteTranslation(name, translation);
 
