@@ -2,7 +2,7 @@
  * Item parsers for handling item-related data
  */
 
-const fs = require('fs');
+const fs = require('node:fs');
 const dataParser = require('../dataParsers');
 const translator = require('../translator');
 
