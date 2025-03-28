@@ -71,10 +71,9 @@ class DataStore {
 	 * @throws {TypeError} - If type is not a string when provided
 	 */
 	extractItemByType(type) {
-		if (type !== undefined && typeof type !== "string") {
-			throw new TypeError("Item type must be a string");
+		if (!type) {
+			return { ...itemTemplate };
 		}
-		if (!type) return { ...itemTemplate };
 
 		const item = this.getItemByType(type);
 		if (item) {

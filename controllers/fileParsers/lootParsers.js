@@ -233,7 +233,6 @@ const parseLootSites = (filePath) => {
 	const firstObject = objectsFiltered[0];
 
 	if (!firstObject) {
-		console.warn(`No relevant objects found in ${filePath}`);
 		return false;
 	}
 
@@ -241,7 +240,6 @@ const parseLootSites = (filePath) => {
 	const translation = getLootSiteNameFromObject(firstObject);
 
 	if (!translation || !name) {
-		console.warn(`Missing name or translation for loot site in ${filePath}`);
 		return false;
 	}
 

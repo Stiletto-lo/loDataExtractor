@@ -193,7 +193,6 @@ const parseUpgrades = (filePath) => {
 			);
 
 			if (upgradeKeys.length === 0) {
-				console.warn(`No upgrade entries found in ${filePath}`);
 				return false;
 			}
 
