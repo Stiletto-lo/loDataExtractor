@@ -58,7 +58,7 @@ const parseSchematicItemData = (filePath) => {
 			}
 			if (jsonData[1].Properties?.Items) {
 				const allCraftingItems = jsonData[1].Properties.Items;
-				allCraftingItems.forEach((schematicItem) => {
+				for (const schematicItem of allCraftingItems) {
 					if (schematicItem.AssetPathName) {
 						const itemFound = utilityFunctions.getItemByType(
 							dataParser.parseType(schematicItem.AssetPathName),
@@ -73,11 +73,11 @@ const parseSchematicItemData = (filePath) => {
 							itemsSchematic.push(schematicItemName);
 						}
 					}
-				});
+				}
 			}
 			if (jsonData[1].Properties?.Placeables) {
 				const allCraftingPlaceables = jsonData[1].Properties.Placeables;
-				allCraftingPlaceables.forEach((schematicPlaceable) => {
+				for (const schematicPlaceable of allCraftingPlaceables) {
 					if (schematicPlaceable.AssetPathName) {
 						const itemFound = utilityFunctions.getItemByType(
 							dataParser.parseType(schematicPlaceable.AssetPathName),
@@ -89,10 +89,12 @@ const parseSchematicItemData = (filePath) => {
 								translator,
 								schematicPlaceable.AssetPathName,
 							);
-							itemsSchematic.push(schematicPlaceableName);
+							if (schematicPlaceableName) {
+								itemsSchematic.push(schematicPlaceableName);
+							}
 						}
 					}
-				});
+				}
 			}
 			if (itemsSchematic.length > 0) {
 				item.learn = itemsSchematic;

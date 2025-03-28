@@ -111,8 +111,8 @@ controller.translateItem = (item) => {
 		}
 	}
 
-	if (item.learn) {
-		const newItemLearn = item.learn.map((value) =>
+	if (item.learn && item.learn.length > 0) {
+		const newItemLearn = item.learn.filter((value) => value).map((value) =>
 			controller.translateItemPart(value),
 		);
 
