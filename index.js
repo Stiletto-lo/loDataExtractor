@@ -43,70 +43,74 @@ const orderByName = (a, b) => {
 	return 0;
 };
 
-console.info("Loading StringTables");
-loadDirData(
-	`${CONTENT_FOLDER_PATH}Content/Mist/Data/StringTables`,
-	"stringtables",
-);
-console.info("Loading Localization");
-loadDirData(
-	`${CONTENT_FOLDER_PATH}Content/Localization/Game/en`,
-	"translation",
-);
-loadDirData(
-	`${CONTENT_FOLDER_PATH}Content/Localization/Game`,
-	"translationOthers",
-);
-console.info("Loading Loot sites");
-loadDirData(
-	`${CONTENT_FOLDER_PATH}Content/Mist/Characters/Creatures/Monkey`,
-	"lootsites",
-);
-loadDirData(
-	`${CONTENT_FOLDER_PATH}Content/Mist/Characters/Creatures/Okkam`,
-	"lootsites",
-);
-loadDirData(
-	`${CONTENT_FOLDER_PATH}Content/Mist/Characters/Creatures/Papak`,
-	"lootsites",
-);
-console.info("Loading TechTree");
-loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/TechTree`, "tech");
-console.info("Loading Items");
-loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Items`, "item");
-console.info("Loading Placeables");
-loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Placeables`, "placeables");
-console.info("Loading Recipes");
-loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Recipes`, "item");
-console.info("Loading Trade");
-loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Trade`, "trade");
-//console.info("Loading Placeables Cached");
-//loadDirData("./Content/Mist/Data/Placeables", "cached");
-console.info("Loading Walkers Upgrades");
-loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Walkers`, "upgrages");
-console.info("Loading Damages");
-loadDirData(
-	`${CONTENT_FOLDER_PATH}Content/Mist/Data/DamageTypes`,
-	"damagetypes",
-);
-console.info("Loading Schematics");
-loadDirData(
-	`${CONTENT_FOLDER_PATH}Content/Mist/Data/Items/Schematics`,
-	"schematics",
-);
+const loadFiles = () => {
+	console.info("Loading StringTables");
+	loadDirData(
+		`${CONTENT_FOLDER_PATH}Content/Mist/Data/StringTables`,
+		"stringtables",
+	);
+	console.info("Loading Localization");
+	loadDirData(
+		`${CONTENT_FOLDER_PATH}Content/Localization/Game/en`,
+		"translation",
+	);
+	loadDirData(
+		`${CONTENT_FOLDER_PATH}Content/Localization/Game`,
+		"translationOthers",
+	);
+	console.info("Loading Loot sites");
+	loadDirData(
+		`${CONTENT_FOLDER_PATH}Content/Mist/Characters/Creatures/Monkey`,
+		"lootsites",
+	);
+	loadDirData(
+		`${CONTENT_FOLDER_PATH}Content/Mist/Characters/Creatures/Okkam`,
+		"lootsites",
+	);
+	loadDirData(
+		`${CONTENT_FOLDER_PATH}Content/Mist/Characters/Creatures/Papak`,
+		"lootsites",
+	);
+	console.info("Loading TechTree");
+	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/TechTree`, "tech");
+	console.info("Loading Items");
+	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Items`, "item");
+	console.info("Loading Placeables");
+	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Placeables`, "placeables");
+	console.info("Loading Recipes");
+	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Recipes`, "item");
+	console.info("Loading Trade");
+	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Trade`, "trade");
+	//console.info("Loading Placeables Cached");
+	//loadDirData("./Content/Mist/Data/Placeables", "cached");
+	console.info("Loading Walkers Upgrades");
+	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Walkers`, "upgrages");
+	console.info("Loading Damages");
+	loadDirData(
+		`${CONTENT_FOLDER_PATH}Content/Mist/Data/DamageTypes`,
+		"damagetypes",
+	);
+	console.info("Loading Schematics");
+	loadDirData(
+		`${CONTENT_FOLDER_PATH}Content/Mist/Data/Items/Schematics`,
+		"schematics",
+	);
 
-if (process.env.EXTRACT_LOOT_TABLES === "true") {
-	console.info("Loading LootTables");
-	loadDirData(
-		`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables`,
-		"loottables",
-	);
-	loadDirData(
-		`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables`,
-		"blueprintsloot",
-	);
-	fileParser.parseBlueprintsToItems();
+	if (process.env.EXTRACT_LOOT_TABLES === "true") {
+		console.info("Loading LootTables");
+		loadDirData(
+			`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables`,
+			"loottables",
+		);
+		loadDirData(
+			`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables`,
+			"blueprintsloot",
+		);
+		fileParser.parseBlueprintsToItems();
+	}
 }
+
+loadFiles();
 
 console.info("Parse Upgrades to Items");
 fileParser.parseUpgradesToItems();

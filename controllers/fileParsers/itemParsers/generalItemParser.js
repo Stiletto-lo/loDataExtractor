@@ -8,13 +8,11 @@ const translator = require("../../translator");
 const utilityFunctions = require("../utilityFunctions");
 
 // Import templates
-const itemTemplate = require("../../../templates/item");
 const weaponInfoTemplate = require("../../../templates/weaponInfo");
 const toolInfoTemplate = require("../../../templates/toolInfo");
 const projectileDamageTemplate = require("../../../templates/projectileDamage");
 const recipeTemplate = require("../../../templates/recipe");
 const armorInfoTemplate = require("../../../templates/armorInfo");
-const structureInfoTemplate = require("../../../templates/structureInfo");
 const moduleInfoTemplate = require("../../../templates/moduleInfo");
 
 /**
@@ -53,7 +51,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (itemData.Properties?.MaximumQuantity) {
-			if (item.moduleInfo == undefined) {
+			if (!item.moduleInfo) {
 				const moduleInfoBase = { ...moduleInfoTemplate };
 				item.moduleInfo = moduleInfoBase;
 			}
@@ -65,7 +63,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (itemData.Properties?.PercentageIncreasePerItem) {
-			if (item.moduleInfo == undefined) {
+			if (!item.moduleInfo) {
 				const moduleInfoBase = { ...moduleInfoTemplate };
 				item.moduleInfo = moduleInfoBase;
 			}
@@ -233,7 +231,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 		if (itemData?.Properties?.Name?.Key) {
 			if (
 				itemData.Properties.Name.SourceString &&
-				itemData.Properties.Name.SourceString.trim() != ""
+				itemData.Properties.Name.SourceString.trim().length > 0
 			) {
 				item.name = itemData.Properties.Name.SourceString.trim();
 				item.translation = itemData.Properties.Name.SourceString.trim();
@@ -242,7 +240,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 					".Name",
 					"",
 				).trim();
-				if (item.name == undefined) {
+				if (!item.name) {
 					item.name = dataParser.parseName(translator, item.translation);
 				}
 			}
@@ -259,10 +257,10 @@ const getItemFromItemData = (itemData, oldItem) => {
 
 	if (
 		!item.category &&
-		(item.name == "Worm Scale" ||
-			item.name == "Proxy License" ||
-			item.name == "Flots" ||
-			item.name == "Fiery Concoction")
+		(item.name === "Worm Scale" ||
+			item.name === "Proxy License" ||
+			item.name === "Flots" ||
+			item.name === "Fiery Concoction")
 	) {
 		item.category = "Resources";
 	}

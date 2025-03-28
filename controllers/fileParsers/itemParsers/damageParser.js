@@ -11,8 +11,8 @@ const parseDamage = (filePath) => {
 		const damageTypeClass = jsonData[1].Type;
 		const allItemsWithThatDamage = utilityFunctions
 			.getAllItems()
-			.filter((item) => item.damageType == damageTypeClass);
-		allItemsWithThatDamage.forEach((itemSearch) => {
+			.filter((item) => item.damageType === damageTypeClass);
+		for (const itemSearch of allItemsWithThatDamage) {
 			const item = utilityFunctions.getItem(itemSearch.name);
 			if (item) {
 				let proyectileDamage = item.projectileDamage
@@ -23,9 +23,9 @@ const parseDamage = (filePath) => {
 					: undefined;
 				proyectileDamage.vsMedium = jsonData[1]?.Properties?.DamageAgainstMedium
 					? Number.parseInt(
-							jsonData[1].Properties.DamageAgainstMedium * 100,
-							10,
-						)
+						jsonData[1].Properties.DamageAgainstMedium * 100,
+						10,
+					)
 					: undefined;
 				proyectileDamage.vsHard = jsonData[1]?.Properties?.DamageAgainstHard
 					? Number.parseInt(jsonData[1].Properties.DamageAgainstHard * 100, 10)
@@ -33,9 +33,9 @@ const parseDamage = (filePath) => {
 				proyectileDamage.vsReinforced = jsonData[1]?.Properties
 					?.DamageAgainstReinforced
 					? Number.parseInt(
-							jsonData[1].Properties.DamageAgainstReinforced * 100,
-							10,
-						)
+						jsonData[1].Properties.DamageAgainstReinforced * 100,
+						10,
+					)
 					: undefined;
 				proyectileDamage.vsSolid = jsonData[1]?.Properties?.DamageAgainstSolid
 					? Number.parseInt(jsonData[1].Properties.DamageAgainstSolid * 100, 10)
@@ -48,7 +48,7 @@ const parseDamage = (filePath) => {
 
 				utilityFunctions.getAllItems().push(item);
 			}
-		});
+		}
 	}
 };
 
