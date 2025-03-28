@@ -1,232 +1,405 @@
+/**
+ * Translation Controller
+ * 
+ * This module provides translation functionality for the data extractor.
+ * It handles translation of names, descriptions, and other text elements.
+ */
 require("dotenv").config();
+
+/**
+ * Translation controller object
+ * @type {Object}
+ */
 const controller = {};
-const aditionalTranslations = require("../translations/aditionalTranslations");
+
+// Import translation dictionaries
+const additionalTranslations = require("../translations/aditionalTranslations");
 const lootSitesTranslations = require("../translations/lootSites");
 
-const allTranslations = [];
-const allDesriptions = [];
-const translationsFromOtherLanguajes = [];
-const descriptionsFromOtherLanguajes = [];
-const translationsInUse = [];
+// Translation storage objects
+const translationStore = {
+	allTranslations: {},
+	allDescriptions: {},
+	translationsFromOtherLanguages: {},
+	descriptionsFromOtherLanguages: {},
+	translationsInUse: {}
+};
 
+/**
+ * Trims a string if it exists
+ * @param {string} text - The text to trim
+ * @returns {string} - Trimmed text or empty string
+ */
+const trimIfExists = (text) => {
+	return text ? text.trim() : "";
+};
+
+/**
+ * Checks if a value is null or empty
+ * @param {*} value - The value to check
+ * @returns {boolean} - True if value is null or empty
+ */
+const isNullOrEmpty = (value) => {
+	return value === null || value === undefined || value === "";
+};
+
+/**
+ * Translates a loot site name
+ * @param {string} oldName - The original name to translate
+ * @returns {string} - The translated name
+ */
 controller.translateLootSite = (oldName) => {
-	let name = oldName;
-
-	if (name != null && lootSitesTranslations[name]) {
-		return lootSitesTranslations[name].trim();
+	if (isNullOrEmpty(oldName)) {
+		return "";
 	}
 
+	let name = oldName;
+
+	// Check if direct translation exists in loot sites dictionary
+	if (lootSitesTranslations[name]) {
+		return trimIfExists(lootSitesTranslations[name]);
+	}
+
+	// Try to find translation in other dictionaries
 	const anotherName = controller.searchName(name);
-	if (anotherName != null) {
+	if (anotherName) {
 		return anotherName;
 	}
 
+	// Try to translate each part of the name
 	name = controller.translateEachPart(name);
 
 	console.warn(`No translation for: ${name}`);
 
-	return name.trim();
+	return trimIfExists(name);
 };
 
+/**
+ * Translates each part of a name separated by underscores
+ * @param {string} name - The name to translate
+ * @returns {string} - The translated name
+ */
 controller.translateEachPart = (name) => {
+	if (isNullOrEmpty(name)) {
+		return "";
+	}
+
 	const words = name.split("_");
 
 	return words.reduce((accumulator, word) => {
-		const anotherName = controller.searchName(word);
-		if (anotherName != null) {
-			return `${accumulator} ${anotherName}`;
+		const translatedWord = controller.searchName(word);
+		if (translatedWord) {
+			return `${accumulator} ${translatedWord}`;
 		}
-
 		return `${accumulator} ${word}`;
-	}, "");
+	}, "").trim();
 };
 
+/**
+ * Translates a name
+ * @param {string} name - The name to translate
+ * @returns {string} - The translated name
+ */
 controller.translateName = (name) => {
-	const anotherName = controller.searchName(name);
-
-	if (anotherName != null) {
-		return anotherName;
+	if (isNullOrEmpty(name)) {
+		return "";
 	}
 
-	return name.trim();
+	const translatedName = controller.searchName(name);
+
+	if (translatedName) {
+		return translatedName;
+	}
+
+	return trimIfExists(name);
 };
 
+/**
+ * Searches for a translation in all available dictionaries
+ * @param {string} name - The name to search for
+ * @returns {string|null} - The translated name or null if not found
+ */
 controller.searchName = (name) => {
-	if (name == null || !name) {
+	if (isNullOrEmpty(name)) {
 		return null;
 	}
 
-	if (aditionalTranslations[name]) {
-		controller.addTranslationInUuse(name, aditionalTranslations[name].trim());
-		return aditionalTranslations[name].trim();
+	// Check in additional translations
+	if (additionalTranslations[name]) {
+		const translation = trimIfExists(additionalTranslations[name]);
+		controller.addTranslationInUse(name, translation);
+		return translation;
 	}
 
-	if (allTranslations[name]) {
-		controller.addTranslationInUuse(name, allTranslations[name].trim());
-		return allTranslations[name].trim();
+	// Check in all translations
+	if (translationStore.allTranslations[name]) {
+		const translation = trimIfExists(translationStore.allTranslations[name]);
+		controller.addTranslationInUse(name, translation);
+		return translation;
 	}
 
+	// Check in loot sites translations
 	if (lootSitesTranslations[name]) {
-		controller.addTranslationInUuse(name, lootSitesTranslations[name].trim());
-		return lootSitesTranslations[name].trim();
+		const translation = trimIfExists(lootSitesTranslations[name]);
+		controller.addTranslationInUse(name, translation);
+		return translation;
 	}
 
 	return null;
 };
 
-controller.translateItems = (allItems) =>
-	allItems.map((item) => controller.translateItem(item));
+/**
+ * Translates an array of items
+ * @param {Array} allItems - The items to translate
+ * @returns {Array} - The translated items
+ */
+controller.translateItems = (allItems) => {
+	if (!Array.isArray(allItems)) {
+		return [];
+	}
 
+	return allItems.map((item) => controller.translateItem(item));
+};
+
+/**
+ * Adds "(1 of 2)" suffix to item names that need it
+ * @param {string} name - The name to process
+ * @returns {string} - The processed name
+ */
+const processSpecialItemName = (name) => {
+	if (!name) return "";
+
+	if (
+		(name.includes(" Legs") || name.includes(" Wings")) &&
+		!name.includes("(1 of 2)") &&
+		!name.includes("Schematic")
+	) {
+		return `${name} (1 of 2)`;
+	}
+
+	return name;
+};
+
+/**
+ * Translates a single item
+ * @param {Object} item - The item to translate
+ * @returns {Object} - The translated item
+ */
 controller.translateItem = (item) => {
-	let name = item.name;
+	if (!item) {
+		return {};
+	}
 
+	let name = item.name || "";
+
+	// Use translation if available
 	if (item.translation) {
 		name = item.translation;
 	}
 
-	const translateName = controller.searchName(item.translation);
-	if (translateName) {
+	// Try to find translation
+	const translatedName = controller.searchName(item.translation);
+	if (translatedName) {
 		if (item.name) {
-			controller.addTranslation(item.name, translateName);
+			controller.addTranslation(item.name, translatedName);
 		}
-		name = translateName;
+		name = translatedName;
 	}
 
 	if (name) {
-		if (
-			(name.includes(" Legs") || name.includes(" Wings")) &&
-			!name.includes("(1 of 2)") &&
-			!name.includes("Schematic")
-		) {
-			name = `${name} (1 of 2)`;
-		}
-
-		item.name = name.trim();
+		name = processSpecialItemName(name);
+		item.name = trimIfExists(name);
 	}
 
+	// Translate category if available
 	if (item.category) {
-		const translateCategory = controller.searchName(item.category);
-		if (translateCategory) {
-			item.category = translateCategory.trim();
+		const translatedCategory = controller.searchName(item.category);
+		if (translatedCategory) {
+			item.category = trimIfExists(translatedCategory);
 		}
 	}
 
+	// Translate learn array if available
 	if (item.learn && item.learn.length > 0) {
-		const newItemLearn = item.learn.filter((value) => value).map((value) =>
-			controller.translateItemPart(value),
-		);
-
-		item.learn = newItemLearn;
+		item.learn = item.learn
+			.filter(Boolean)
+			.map((value) => controller.translateItemPart(value));
 	}
 
 	return item;
 };
 
+/**
+ * Translates a part of an item (used for learn array)
+ * @param {string} value - The value to translate
+ * @returns {string} - The translated value
+ */
 controller.translateItemPart = (value) => {
-	let newValue = value;
-	if (newValue) {
-		const translateValue = controller.searchName(newValue);
-		if (translateValue) {
-			newValue = translateValue;
-		}
-		if (
-			(newValue.includes(" Legs") || newValue.includes(" Wings")) &&
-			!newValue.includes("(1 of 2)") &&
-			!newValue.includes("Schematic")
-		) {
-			newValue = `${newValue} (1 of 2)`;
-		}
-
-		newValue = newValue.trim();
+	if (!value) {
+		return "";
 	}
 
-	return newValue;
+	let newValue = value;
+
+	const translatedValue = controller.searchName(newValue);
+	if (translatedValue) {
+		newValue = translatedValue;
+	}
+
+	newValue = processSpecialItemName(newValue);
+
+	return trimIfExists(newValue);
 };
 
-controller.addDescriptions = (allItems) =>
-	allItems.map((item) => {
-		let name = item.name;
+/**
+ * Adds descriptions to items
+ * @param {Array} allItems - The items to add descriptions to
+ * @returns {Array} - The items with descriptions
+ */
+controller.addDescriptions = (allItems) => {
+	if (!Array.isArray(allItems)) {
+		return [];
+	}
+
+	return allItems.map((item) => {
+		if (!item) return item;
+
+		let name = item.name || "";
 		if (item.translation) {
 			name = item.translation;
 		}
 
-		if (allDesriptions[name]) {
-			item.description = allDesriptions[name].trim();
+		if (translationStore.allDescriptions[name]) {
+			item.description = trimIfExists(translationStore.allDescriptions[name]);
 		}
 
 		return item;
 	});
+};
 
+/**
+ * Adds a loot site translation
+ * @param {string} key - The key to add
+ * @param {string} translation - The translation to add
+ */
 controller.addLootSiteTranslation = (key, translation) => {
-	if (!key || !translation) {
+	if (isNullOrEmpty(key) || isNullOrEmpty(translation)) {
 		return;
 	}
 
 	const keyCleaned = key.replaceAll("_C", "").trim();
 
 	if (!lootSitesTranslations[keyCleaned]) {
-		lootSitesTranslations[keyCleaned] = translation.trim();
+		lootSitesTranslations[keyCleaned] = trimIfExists(translation);
 	}
 };
 
-controller.addTranslation = (key, translation, languaje = null) => {
-	if (languaje == null) {
-		if (key && translation && !allTranslations[key]) {
-			allTranslations[key] = translation;
+/**
+ * Adds a translation
+ * @param {string} key - The key to add
+ * @param {string} translation - The translation to add
+ * @param {string|null} language - The language of the translation
+ */
+controller.addTranslation = (key, translation, language = null) => {
+	if (isNullOrEmpty(key) || isNullOrEmpty(translation)) {
+		return;
+	}
+
+	if (language === null) {
+		if (!translationStore.allTranslations[key]) {
+			translationStore.allTranslations[key] = translation;
 		}
-	} else if (translationsFromOtherLanguajes[languaje]) {
-		translationsFromOtherLanguajes[languaje][key] = translation;
+	} else if (translationStore.translationsFromOtherLanguages[language]) {
+		translationStore.translationsFromOtherLanguages[language][key] = translation;
 	} else {
-		const arrayL = [];
-		arrayL[key] = translation;
-		translationsFromOtherLanguajes[languaje] = arrayL;
+		translationStore.translationsFromOtherLanguages[language] = {};
+		translationStore.translationsFromOtherLanguages[language][key] = translation;
 	}
 };
 
-controller.addDescription = (key, description, languaje = null) => {
-	if (languaje == null) {
-		allDesriptions[key] = description;
-	} else if (descriptionsFromOtherLanguajes[languaje]) {
-		descriptionsFromOtherLanguajes[languaje][key] = description;
+/**
+ * Adds a description
+ * @param {string} key - The key to add
+ * @param {string} description - The description to add
+ * @param {string|null} language - The language of the description
+ */
+controller.addDescription = (key, description, language = null) => {
+	if (isNullOrEmpty(key) || isNullOrEmpty(description)) {
+		return;
+	}
+
+	if (language === null) {
+		translationStore.allDescriptions[key] = description;
+	} else if (translationStore.descriptionsFromOtherLanguages[language]) {
+		translationStore.descriptionsFromOtherLanguages[language][key] = description;
 	} else {
-		descriptionsFromOtherLanguajes[languaje] = [];
-		descriptionsFromOtherLanguajes[languaje][key] = description;
+		translationStore.descriptionsFromOtherLanguages[language] = {};
+		translationStore.descriptionsFromOtherLanguages[language][key] = description;
 	}
 };
 
-controller.addTranslationInUuse = (key, translation) => {
-	translationsInUse[key] = translation;
+/**
+ * Adds a translation to the in-use list
+ * @param {string} key - The key to add
+ * @param {string} translation - The translation to add
+ */
+controller.addTranslationInUse = (key, translation) => {
+	if (isNullOrEmpty(key) || isNullOrEmpty(translation)) {
+		return;
+	}
+
+	translationStore.translationsInUse[key] = translation;
 };
 
+/**
+ * Checks if a key translation is in use
+ * @param {string} key - The key to check
+ * @returns {boolean} - True if the key is in use
+ */
 controller.isKeyTranslationInUse = (key) => {
-	return translationsInUse[key] != null && translationsInUse[key] !== undefined;
+	return !isNullOrEmpty(translationStore.translationsInUse[key]);
 };
 
-controller.addTranslationIfTtDoesNotAlreadyExist = (key, translation) => {
-	if (!translationsInUse[key]) {
-		translationsInUse[key] = translation;
+/**
+ * Adds a translation if it does not already exist
+ * @param {string} key - The key to add
+ * @param {string} translation - The translation to add
+ */
+controller.addTranslationIfItDoesNotAlreadyExist = (key, translation) => {
+	if (isNullOrEmpty(key) || isNullOrEmpty(translation)) {
+		return;
+	}
+
+	if (!translationStore.translationsInUse[key]) {
+		translationStore.translationsInUse[key] = translation;
 	}
 };
 
+/**
+ * Gets the translation files
+ * @returns {Object} - The translation files
+ */
 controller.getTranslateFiles = () => {
 	const translationsFiltered = {};
 
-	for (const languaje in translationsFromOtherLanguajes) {
-		for (const key in translationsFromOtherLanguajes[languaje]) {
-			if (!translationsFiltered[languaje]) {
-				translationsFiltered[languaje] = {};
+	for (const language in translationStore.translationsFromOtherLanguages) {
+		for (const key in translationStore.translationsFromOtherLanguages[language]) {
+			if (!translationsFiltered[language]) {
+				translationsFiltered[language] = {};
 			}
+
 			if (
-				translationsFromOtherLanguajes[languaje][key] &&
+				translationStore.translationsFromOtherLanguages[language][key] &&
 				controller.isKeyTranslationInUse(key)
 			) {
-				const translation = translationsInUse[key];
+				const translation = translationStore.translationsInUse[key];
 
-				translationsFiltered[languaje][translation] =
-					translationsFromOtherLanguajes[languaje][key];
+				translationsFiltered[language][translation] =
+					translationStore.translationsFromOtherLanguages[language][key];
 			}
 		}
 	}
+
 	return translationsFiltered;
 };
 
