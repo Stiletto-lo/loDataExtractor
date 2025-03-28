@@ -30,7 +30,7 @@ const parseTechData = (filePath) => {
 			);
 		}
 
-		if (EXTRACT_ALL_DATA && jsonData[1]?.Properties?.Cost != 1) {
+		if (EXTRACT_ALL_DATA && jsonData[1]?.Properties?.Cost !== 1) {
 			const itemCost = { ...require("../../../templates/cost") };
 			if (
 				jsonData[1].Properties.TechTreeTier &&
