@@ -6,7 +6,9 @@
  */
 
 const itemTemplate = require("../../templates/item");
-const ingredientTemplate = require("../../templates/cost"); // Fixed typo: ingredienTemplate -> ingredientTemplate
+const costTemplate = require("../../templates/cost");
+const dataParser = require("../dataParsers");
+const translator = require("../translator");
 
 /**
  * DataStore - Encapsulates shared state to avoid global variables
@@ -87,22 +89,16 @@ class DataStore {
 
 	/**
 	 * Get ingredients from an item
-	 * @param {Object} inputs - The inputs object containing ingredient data
+	 * @param {Object} data - The inputs object containing ingredient data
 	 * @param {string} key - The key of the ingredient
 	 * @returns {Object} - The ingredient object
 	 * @throws {TypeError} - If inputs is not an object or key is not a string
 	 */
-	getIngredientsFromItem(inputs, key) {
-		if (!inputs || typeof inputs !== "object") {
-			throw new TypeError("Inputs must be an object");
-		}
-		if (typeof key !== "string") {
-			throw new TypeError("Key must be a string");
-		}
+	getIngredientsFromItem(data, key) {
+		const ingredient = { ...costTemplate };
+		ingredient.name = data[key]?.Key ? dataParser.parseName(translator, data[key]?.Key) : dataParser.parseName(translator, Object.keys(data[key])[0]);
+		ingredient.count = data[key]?.Key ? data[key]?.Value : Object.values(data[key])[0];
 
-		const ingredient = { ...ingredientTemplate };
-		ingredient.name = key;
-		ingredient.count = inputs[key];
 		return ingredient;
 	}
 

@@ -10,7 +10,7 @@ const parseCachedItems = (filePath) => {
 	const jsonData = JSON.parse(rawdata);
 	if (jsonData[0]?.Properties?.CachedTotalCost) {
 		const cachedItems = jsonData[0].Properties.CachedTotalCost;
-		Object.keys(cachedItems).forEach((key) => {
+		for (const key of Object.keys(cachedItems)) {
 			if (cachedItems[key].Inputs) {
 				const recipe = { ...recipeTemplate };
 				const item = utilityFunctions.getItem(
@@ -30,7 +30,7 @@ const parseCachedItems = (filePath) => {
 
 				utilityFunctions.getAllItems().push(item);
 			}
-		});
+		}
 	}
 };
 

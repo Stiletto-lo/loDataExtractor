@@ -88,12 +88,12 @@ const getItemFromItemData = (itemData, oldItem) => {
 					: undefined;
 			projectileDamage.effectivenessVsSoak =
 				EXTRACT_ALL_DATA &&
-				itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
+					itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
 					? itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
 					: undefined;
 			projectileDamage.effectivenessVsReduce =
 				EXTRACT_ALL_DATA &&
-				itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
+					itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
 					? itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
 					: undefined;
 
@@ -172,7 +172,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 			const toolInfosData = itemData.Properties.ToolInfo;
 			const toolInfos = item.toolInfo ? item.toolInfo : [];
 
-			toolInfosData.forEach((toolInfoData) => {
+			for (const toolInfoData of toolInfosData) {
 				const baseToolInfo = { ...toolInfoTemplate };
 				baseToolInfo.tier = toolInfoData.Tier;
 				if (toolInfoData.ToolType.includes("TreeCutting")) {
@@ -188,7 +188,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 					);
 				}
 				toolInfos.push(baseToolInfo);
-			});
+			}
 			if (toolInfos.length > 0) {
 				item.toolInfo = toolInfos;
 			}
@@ -197,7 +197,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 		if (itemData.Properties?.Recipes) {
 			const recipesData = itemData.Properties.Recipes;
 			const crafting = [];
-			recipesData.forEach((recipeData) => {
+			for (const recipeData of recipesData) {
 				const recipe = { ...recipeTemplate };
 				if (recipeData.Inputs) {
 					const ingredients = [];
@@ -225,7 +225,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 						.trim();
 				}
 				crafting.push(recipe);
-			});
+			}
 			if (crafting.length > 0) {
 				item.crafting = crafting;
 			}
