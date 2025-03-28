@@ -9,7 +9,7 @@ const parsePrices = (filePath) => {
 	if (jsonData[1]?.Properties?.OrdersArray) {
 		const allOrders = jsonData[1].Properties.OrdersArray;
 
-		allOrders.forEach((order) => {
+		for (const order of allOrders) {
 			if (order?.ItemClass?.ObjectName && order?.Price) {
 				const item = utilityFunctions.extractItemByType(
 					dataParser.parseType(order.ItemClass.ObjectName),
@@ -19,13 +19,13 @@ const parsePrices = (filePath) => {
 					item.trade_price = order.Price;
 				}
 
-				if (!item.category && item.name == "ProxyLicense") {
+				if (!item.category && item.name === "ProxyLicense") {
 					item.category = "Resources";
 				}
 
 				utilityFunctions.getAllItems().push(item);
 			}
-		});
+		}
 	}
 };
 
