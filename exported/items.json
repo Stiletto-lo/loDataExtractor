@@ -14,26 +14,7 @@
     "name": "Advanced Ammo Schematic",
     "type": "Ammo_T3Schematic_C",
     "stackSize": 100,
-    "learn": [
-      "Ceramic-Tipped Bolt",
-      "Hellfire Bolt",
-      "Ceramic-Tipped Harpoon",
-      "Explosive Bolt",
-      "Ceramic Scattershot Ammo",
-      "Obsidian Rok",
-      "Cluster Bomb",
-      "Fire Dart",
-      "Floating Mine",
-      "Ceramic Dart",
-      "Explosive Dart",
-      "Insect Bomb",
-      "Bombolt",
-      "Fire Bomb",
-      "Green Death Bomb",
-      "Catapult Boulder",
-      "Throwable Insect Bomb",
-      "Throwable Smoke Bomb"
-    ]
+    "learn": []
   },
   {
     "category": "Schematics",
@@ -58,23 +39,8 @@
     "type": "Constructions_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Trip Wire Trap",
-      "Large Chest",
-      "Obsidian Canister",
-      "Obsidian Pot",
-      "Large Water Bag",
-      "Crane",
-      "Exoskeleton",
-      "Maintenance Vault",
-      "Giant Wall",
       "Giant Wall Gate",
-      "Giant Wall Packer",
-      "Mountable Nurr",
-      "Bed",
-      "Barrier Base",
-      "Barrier Gate",
-      "Barrier Plank",
-      "Water Condenser"
+      "Giant Wall Packer"
     ]
   },
   {
@@ -83,15 +49,7 @@
     "type": "Stations_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Clay Pot",
-      "Furnace",
-      "Lathe",
-      "Obsidian Machine",
-      "Purification Station",
-      "Advanced Stomping Station",
-      "Artificer Woodworking Station",
-      "Advanced Windmill",
-      "Artisan Fiberworking Station"
+      "Advanced Windmill"
     ]
   },
   {
@@ -164,9 +122,7 @@
     "type": "Vitamins_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Bonebreaker",
-      "Fury Fumes",
-      "Sinus Destroyer"
+      "Bonebreaker"
     ]
   },
   {
@@ -211,21 +167,7 @@
     "type": "Tools_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Ceramic Flask",
-      "Ceramic Pickaxe",
-      "Ceramic Repair Hammer",
-      "Scythe",
-      "Chitin PickAxe",
-      "Chitin Repair Hammer",
-      "Chitin Sickle",
-      "Compacted Torque Battery",
-      "Infused Obsidian Bottle",
-      "Obsidian Flask",
-      "Long Grappling Hook",
-      "Firestone Axe",
-      "Ceramic Hatchet",
-      "Split Ceramic Flask",
-      "Firestone Battleaxe"
+      "Chitin PickAxe"
     ]
   },
   {
@@ -293,42 +235,13 @@
   },
   {
     "category": "Schematics",
-    "name": "Advanced Walker Weapons Schematic",
-    "type": "WalkerWeapons_T3Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Tool Pod",
-      "Gun Pod",
-      "Catapult",
-      "Hose Station",
-      "Rokker",
-      "Gun Pod Shell",
-      "Gunpod Stinger",
-      "Sawblade",
-      "Tall Stinger",
-      "Small Scattershot Gun"
-    ]
-  },
-  {
-    "category": "Schematics",
     "name": "Advanced Weapons Schematic",
     "type": "Weapons_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Short Malletblade",
-      "Singblade",
-      "Firestone Longblade",
-      "Short Ceramic Hoofmace",
-      "Firestone Bludgeon",
-      "Firestone Bozdogan",
-      "Long Ceramic Hoofmace",
       "Firestone Hammerstaff",
-      "Paddleblade Quarterstaff",
       "Firestone Bladestaff",
-      "Firestone Kopesh",
-      "Throwable Aloe Bomb",
-      "Firebomb",
-      "Bomb Javelin"
+      "Firebomb"
     ]
   },
   {
@@ -982,211 +895,6 @@
     }
   },
   {
-    "category": "Schematics",
-    "name": "Balang Walker Schematic",
-    "type": "BalangSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Balang Walker"
-    ]
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Cargo - Tier 1",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Cargo - Tier 2",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Cargo - Tier 3",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Cargo - Tier 4",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Durability - Tier 1",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Durability - Tier 2",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Durability - Tier 3",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Durability - Tier 4",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Gear - Tier 1",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Gear - Tier 2",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Gear - Tier 3",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Gear - Tier 4",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Mobility - Tier 1",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Mobility - Tier 2",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Mobility - Tier 3",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Balang Walker Upgrade - Mobility - Tier 4",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
     "category": "Upgrades",
     "crafting": [
       {
@@ -1830,14 +1538,7 @@
     "name": "Basic Ammo Schematic",
     "type": "Ammo_T1Schematic_C",
     "stackSize": 100,
-    "learn": [
-      "Throwstone",
-      "Flint Bolt",
-      "Flint Harpoon",
-      "Scattershot Ammo",
-      "Wooden Dart",
-      "Net"
-    ]
+    "learn": []
   },
   {
     "category": "Schematics",
@@ -1876,28 +1577,7 @@
       "Lamp Overhanging",
       "Table",
       "Clan Flag",
-      "Clan Flag Hanging",
-      "Sand Bed",
-      "Walker Climber",
-      "Maintenance Box",
-      "Small Chest",
-      "Ammo Chest",
-      "Scroll Rack",
-      "Small Water Bag",
-      "Small Base Walker Packer",
-      "Stone Humidifier"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Basic Crafting Stations Schematic",
-    "type": "Stations_T1Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Dyeing Station",
-      "Fiberworking Station",
-      "Woodworking Station",
-      "Camp Fire"
+      "Clan Flag Hanging"
     ]
   },
   {
@@ -1905,9 +1585,7 @@
     "name": "Basic Potions Schematic",
     "type": "Vitamins_T1Schematic_C",
     "stackSize": 100,
-    "learn": [
-      "Vision Powder"
-    ]
+    "learn": []
   },
   {
     "name": "Basic Protection",
@@ -1920,36 +1598,7 @@
     "type": "Tools_T1Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Crude Hatchet",
-      "Flare - white",
-      "Primitive Bandage",
-      "Nomad Grappling Hook",
-      "Flotillan Grappling Hook",
-      "Foraging Pouch",
-      "Torch",
-      "Improvised Bottle",
-      "Makeshift Bottle",
-      "Makeshift Grappling Hook",
-      "Simple Pickaxe",
-      "Simple Repair Hammer",
-      "Simple Sickle",
-      "Light Backpack",
-      "Tube Spade"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Basic Walker Weapons Schematic",
-    "type": "WalkerWeapons_T1Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Spinner",
-      "Stinger",
-      "Thumper",
-      "Ballista",
-      "Net Thrower",
-      "Repeater",
-      "Scattershot Gun"
+      "Flare - white"
     ]
   },
   {
@@ -1957,17 +1606,7 @@
     "name": "Basic Weapons Schematic",
     "type": "Weapons_T1Schematic_C",
     "stackSize": 100,
-    "learn": [
-      "Beat Stick",
-      "Blunt Quarterstaff",
-      "Light Javelin",
-      "Stone Axe",
-      "Jaggertooth Club",
-      "Traveller’s Staff",
-      "Jaggertooth Maul",
-      "Rawbone Sawsword",
-      "Jaggertooth Swordclub"
-    ]
+    "learn": []
   },
   {
     "category": "Furniture",
@@ -3727,15 +3366,6 @@
     ]
   },
   {
-    "category": "Schematics",
-    "name": "Buffalo Walker Schematic",
-    "type": "BuffaloSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Buffalo Walker"
-    ]
-  },
-  {
     "category": "Upgrades",
     "crafting": [
       {
@@ -4754,211 +4384,6 @@
     "category": "Rigs",
     "name": "Camelop Walker Rig",
     "type": "CamelopRig_T1_C"
-  },
-  {
-    "category": "Schematics",
-    "name": "Camelop Walker Schematic",
-    "type": "CamelopSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Camelop  Walker"
-    ]
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Cargo - Tier 1",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Cargo - Tier 2",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Cargo - Tier 3",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Cargo - Tier 4",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Durability - Tier 1",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Durability - Tier 2",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Durability - Tier 3",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Durability - Tier 4",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Gear - Tier 1",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Gear - Tier 2",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Gear - Tier 3",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Gear - Tier 4",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Mobility - Tier 1",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Mobility - Tier 2",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Mobility - Tier 3",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Camelop Walker Upgrade - Mobility - Tier 4",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
   },
   {
     "category": "Upgrades",
@@ -7207,15 +6632,6 @@
     }
   },
   {
-    "category": "Schematics",
-    "name": "Cobra Walker Schematic",
-    "type": "CobraSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Cobra Walker"
-    ]
-  },
-  {
     "category": "Upgrades",
     "name": "Cobra Walker Upgrade - Cargo - Tier 1",
     "upgradeInfo": {
@@ -7241,154 +6657,6 @@
     "name": "Cobra Walker Upgrade - Cargo - Tier 4",
     "upgradeInfo": {
       "containerSlots": 5
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Cobra Walker Upgrade - Durability - Tier 1",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Cobra Walker Upgrade - Durability - Tier 2",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Cobra Walker Upgrade - Durability - Tier 3",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Cobra Walker Upgrade - Durability - Tier 4",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Cobra Walker Upgrade - Gear - Tier 1",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Cobra Walker Upgrade - Gear - Tier 2",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Cobra Walker Upgrade - Gear - Tier 3",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Cobra Walker Upgrade - Gear - Tier 4",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Cobra Walker Upgrade - Mobility - Tier 1",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Cobra Walker Upgrade - Mobility - Tier 2",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Cobra Walker Upgrade - Mobility - Tier 3",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Cobra Walker Upgrade - Mobility - Tier 4",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
     }
   },
   {
@@ -8149,15 +7417,6 @@
     "stackSize": 100,
     "learn": [
       "Dinghy Walker Rig T3"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Dinghy Walker Schematic",
-    "type": "DinghySchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Dinghy Walker"
     ]
   },
   {
@@ -8977,15 +8236,6 @@
     "stackSize": 100,
     "learn": [
       "Domus Walker Rig T3"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Domus Walker Schematic",
-    "type": "DomusSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Domus Walker"
     ]
   },
   {
@@ -10196,6 +9446,10 @@
     "weight": 0.18
   },
   {
+    "name": "Exoskeleton",
+    "parent": "Constructions_T3",
+    "translation": "Exoskeleton",
+    "type": "Exoskeleton_C",
     "category": "Exoskeleton",
     "crafting": [
       {
@@ -10219,10 +9473,6 @@
         ]
       }
     ],
-    "name": "Exoskeleton",
-    "parent": "Constructions_T3",
-    "translation": "Exoskeleton",
-    "type": "Exoskeleton_C",
     "structureInfo": {
       "type": "Soft",
       "hp": 3500
@@ -10498,15 +9748,6 @@
     "stackSize": 100,
     "learn": [
       "Falco Walker Rig T3"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Falco Walker Schematic",
-    "type": "FalcoSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Falco Walker"
     ]
   },
   {
@@ -12382,15 +11623,6 @@
     ]
   },
   {
-    "category": "Schematics",
-    "name": "Firefly Walker Schematic",
-    "type": "FireflySchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Firefly Walker"
-    ]
-  },
-  {
     "category": "Upgrades",
     "crafting": [
       {
@@ -12731,98 +11963,6 @@
     ],
     "name": "Firefly Walker Upgrade - Mobility - Tier 4",
     "upgradeInfo": {}
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "RupuVine"
-          }
-        ]
-      }
-    ],
-    "name": "Firefly Walker Upgrade - Torque - Tier 1",
-    "upgradeInfo": {
-      "stackSizeOverride": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "RupuVine"
-          },
-          {
-            "count": 32,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "WoodenShaft"
-          }
-        ]
-      }
-    ],
-    "name": "Firefly Walker Upgrade - Torque - Tier 2",
-    "upgradeInfo": {
-      "stackSizeOverride": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "RupuVine"
-          },
-          {
-            "count": 8,
-            "name": "WoodenShaft"
-          },
-          {
-            "count": 32,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Firefly Walker Upgrade - Torque - Tier 3",
-    "upgradeInfo": {
-      "stackSizeOverride": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 12,
-            "name": "RupuVine"
-          },
-          {
-            "count": 8,
-            "name": "WoodenShaft"
-          },
-          {
-            "count": 32,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Firefly Walker Upgrade - Torque - Tier 4",
-    "upgradeInfo": {
-      "stackSizeOverride": 0
-    }
   },
   {
     "category": "Upgrades",
@@ -13809,17 +12949,7 @@
     "name": "Flotillian Ammo Schematic",
     "type": "Ammo_T4Schematic_C",
     "stackSize": 100,
-    "learn": [
-      "Iron-Tipped Bolt",
-      "Nibiran-tipped Bolt",
-      "Iron-Tipped Harpoon",
-      "Nibirian Harpoon",
-      "Hardened Hellfire Bolt",
-      "Hullbreaker Scattershot",
-      "Iron Rok",
-      "Iron Dart",
-      "Nibirian Dart"
-    ]
+    "learn": []
   },
   {
     "category": "Schematics",
@@ -13827,12 +12957,10 @@
     "type": "Armors_T4Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Feather Boots",
       "Iron Studded Boots",
       "Nibirian Boots",
       "Iron Studded Gauntlets",
       "Nibirian Gauntlets",
-      "Winged Helmet",
       "Iron Studded Armor",
       "Nibirian Armor",
       "Cloak"
@@ -13840,34 +12968,10 @@
   },
   {
     "category": "Schematics",
-    "name": "Flotillian Constructions Schematic",
-    "type": "Constructions_T4Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Gigantic Chest"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Flotillian Crafting Stations Schematic",
-    "type": "Stations_T4Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Advanced Furnace",
-      "Blacksmith Station",
-      "Flotillian Stomping Station",
-      "Quarry",
-      "Lumbermill"
-    ]
-  },
-  {
-    "category": "Schematics",
     "name": "Flotillian Potions Schematic",
     "type": "Vitamins_T4Schematic_C",
     "stackSize": 100,
-    "learn": [
-      "Worm Tincture"
-    ]
+    "learn": []
   },
   {
     "category": "Crafting",
@@ -13911,11 +13015,6 @@
     "type": "Tools_T4Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Fast Grappling Hook",
-      "Iron Pickaxe",
-      "Iron Repair Hammer",
-      "Iron Scythe",
-      "Heavy Backpack",
       "Infused Pickaxe",
       "Infused Repair Hammer",
       "Infused Scythe",
@@ -13925,17 +13024,6 @@
       "Water Circulator",
       "Wyndan Battle Axe",
       "Nibiran Battle Axe"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Flotillian Walker Weapons Schematic",
-    "type": "WalkerWeapons_T4Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Battle Fan",
-      "Gun Pod Plating",
-      "Long Sawblade"
     ]
   },
   {
@@ -15711,211 +14799,6 @@
     ]
   },
   {
-    "category": "Schematics",
-    "name": "Hercul Walker Schematic",
-    "type": "HerculSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Hercul Walker"
-    ]
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Cargo - Tier 1",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Cargo - Tier 2",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Cargo - Tier 3",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Cargo - Tier 4",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Durability - Tier 1",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Durability - Tier 2",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Durability - Tier 3",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Durability - Tier 4",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Gear - Tier 1",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Gear - Tier 2",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Gear - Tier 3",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Gear - Tier 4",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Mobility - Tier 1",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Mobility - Tier 2",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Mobility - Tier 3",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Hercul Walker Upgrade - Mobility - Tier 4",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
     "category": "Upgrades",
     "crafting": [
       {
@@ -16471,15 +15354,6 @@
     "stackSize": 100,
     "learn": [
       "Hornet Walker Rig T3"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Hornet Walker Schematic",
-    "type": "HornetSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Hornet Walker"
     ]
   },
   {
@@ -17446,20 +16320,7 @@
     "name": "Improved Ammo Schematic",
     "type": "Ammo_T2Schematic_C",
     "stackSize": 100,
-    "learn": [
-      "Bone Bolt",
-      "Fire Bolt",
-      "Bone Harpoon",
-      "Bone Scattershot Ammo",
-      "Bone Dart",
-      "Sulfur Bomb",
-      "Rupu Rock",
-      "Chalk Bomb",
-      "Aloe Goo Bomb",
-      "Charged Boulder",
-      "Small Boulder",
-      "Penetrating Dart"
-    ]
+    "learn": []
   },
   {
     "category": "Schematics",
@@ -17467,14 +16328,12 @@
     "type": "Armors_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Swampwood Galoshes",
       "Baskwood Boots",
       "Forester's Sandals",
       "Triple Stitch Boots",
       "Baskwood Bracers",
       "Forester's Sleeves",
       "Triple Stitch Bracers",
-      "Gas Mask",
       "Baskwood Armor",
       "Forester's Armor",
       "Triple Stitch Armor"
@@ -17486,43 +16345,7 @@
     "type": "Constructions_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Base Maintenance Chest",
-      "Walker Packing Compartment",
-      "Bomb Chest Trap",
-      "Sharp Spikes",
-      "Ammo Scroll Rack",
-      "Medium Chest",
-      "Medium Water Bag",
-      "Rangefinder",
-      "Steering Levers",
-      "Steering Levers Cage",
-      "Rupu Sling",
-      "Defensive Tower",
-      "Large Base Walker Packer",
-      "Hammock",
-      "Poaching Hut",
-      "Small Repair Hoist",
-      "Trap Door",
-      "Spring Spikes Trap"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Improved Crafting Stations Schematic",
-    "type": "Stations_T2Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Advanced Woodworking Station",
-      "Advanced Fiberworking Station",
-      "Stomping Station",
-      "Soil Excavator",
-      "Curing Station",
-      "Crafting Bench",
-      "Packing Station",
-      "Repair Station",
-      "Cauterizing Station",
-      "Grappling Belt Charging Station",
-      "Windmill"
+      "Rangefinder"
     ]
   },
   {
@@ -17530,11 +16353,7 @@
     "name": "Improved Potions Schematic",
     "type": "Vitamins_T2Schematic_C",
     "stackSize": 100,
-    "learn": [
-      "Desert Mule",
-      "Jojo Mojo",
-      "Race Dust"
-    ]
+    "learn": []
   },
   {
     "category": "Schematics",
@@ -17542,25 +16361,7 @@
     "type": "Tools_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Rawbone Hand Axe",
-      "Heavy Rawbone Hand Axe",
-      "Durable Water Sack",
-      "Bone Bottle",
-      "Bone Pickaxe",
-      "Bone Repair Hammer",
-      "Bone Sickle",
-      "Sterile Bandage",
-      "Drill Spade",
-      "Torque Backpack",
-      "Large Gathering Pouch",
-      "Medium Backpack",
-      "Net Pouch",
-      "Schematic Bag",
-      "Split Bone Bottle",
-      "Sturdy Grappling Hook",
-      "Torque Battery",
-      "Rawbone Battle Axe",
-      "Wingsuit"
+      "Rawbone Hand Axe"
     ]
   },
   {
@@ -17626,32 +16427,10 @@
   },
   {
     "category": "Schematics",
-    "name": "Improved Walker Weapons Schematic",
-    "type": "WalkerWeapons_T2Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Lobber",
-      "Slingshot",
-      "Anti-Personnel Turret",
-      "Automaton"
-    ]
-  },
-  {
-    "category": "Schematics",
     "name": "Improved Weapons Schematic",
     "type": "Weapons_T2Schematic_C",
     "stackSize": 100,
-    "learn": [
-      "Throwing Net",
-      "Bonespike Sword",
-      "Nurrfang Toothclub",
-      "Rawbone Maul",
-      "Rawbone Maul",
-      "Rawbone Quarterstaff",
-      "Rawbone Club",
-      "Heavy Javelin",
-      "Long Bonespike Swordstaff"
-    ]
+    "learn": []
   },
   {
     "category": "Equipment",
@@ -18804,11 +17583,11 @@
     }
   },
   {
-    "category": "Lava",
     "name": "Lava",
-    "trade_price": 3.5,
     "translation": "Lava",
     "type": "Lava_C",
+    "category": "Lava",
+    "trade_price": 3.5,
     "stackSize": 100,
     "weight": 0.58
   },
@@ -20132,15 +18911,6 @@
     "stackSize": 100,
     "learn": [
       "Mollusk Walker Rig T3"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Mollusk Walker Schematic",
-    "type": "MolluskSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Mollusk Walker"
     ]
   },
   {
@@ -22036,98 +20806,6 @@
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "RupuVine"
-          }
-        ]
-      }
-    ],
-    "name": "Nomad Walker Upgrade - Torque - Tier 1",
-    "upgradeInfo": {
-      "stackSizeOverride": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Fiber"
-          },
-          {
-            "count": 32,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "RupuVine"
-          }
-        ]
-      }
-    ],
-    "name": "Nomad Walker Upgrade - Torque - Tier 2",
-    "upgradeInfo": {
-      "stackSizeOverride": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "RupuVine"
-          },
-          {
-            "count": 35,
-            "name": "Fiber"
-          },
-          {
-            "count": 32,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Nomad Walker Upgrade - Torque - Tier 3",
-    "upgradeInfo": {
-      "stackSizeOverride": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "Fiber"
-          },
-          {
-            "count": 8,
-            "name": "RupuVine"
-          },
-          {
-            "count": 32,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Nomad Walker Upgrade - Torque - Tier 4",
-    "upgradeInfo": {
-      "stackSizeOverride": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
             "count": 25,
             "name": "PalmLeaves"
           }
@@ -22421,6 +21099,9 @@
     }
   },
   {
+    "name": "OkkamStatue",
+    "translation": "OkkamStatue",
+    "type": "OkkamStatue_C",
     "category": "OkkamStatue",
     "crafting": [
       {
@@ -22432,9 +21113,6 @@
         ]
       }
     ],
-    "name": "OkkamStatue",
-    "translation": "OkkamStatue",
-    "type": "OkkamStatue_C",
     "structureInfo": {
       "type": "Soft",
       "hp": 250
@@ -22885,15 +21563,6 @@
     "stackSize": 100,
     "learn": [
       "Panda Walker Rig T3"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Panda Walker Schematic",
-    "type": "PandaSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Panda Walker"
     ]
   },
   {
@@ -24221,15 +22890,6 @@
     ]
   },
   {
-    "category": "Schematics",
-    "name": "Proxy Walker Schematic",
-    "type": "ProxySchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Proxy Walker"
-    ]
-  },
-  {
     "category": "Upgrades",
     "name": "Proxy Walker Upgrade - Cargo - Tier 1",
     "upgradeInfo": {
@@ -24241,38 +22901,6 @@
     "name": "Proxy Walker Upgrade - Gear - Tier 1",
     "upgradeInfo": {
       "containerSlots": 20
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Proxy Walker Upgrade - Mobility - Tier 1",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 1.1,
-      "sprintingTorqueDiscount": 0.1
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Proxy Walker Upgrade - Mobility - Tier 2",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 1.2,
-      "sprintingTorqueDiscount": 0.2
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Proxy Walker Upgrade - Mobility - Tier 3",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 1.35,
-      "sprintingTorqueDiscount": 0.3
-    }
-  },
-  {
-    "category": "Upgrades",
-    "name": "Proxy Walker Upgrade - Mobility - Tier 4",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 1.5,
-      "sprintingTorqueDiscount": 0.4
     }
   },
   {
@@ -24584,15 +23212,6 @@
     "stackSize": 100,
     "learn": [
       "Raptor Sky Walker Rig T3"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Raptor Sky Walker Schematic",
-    "type": "RaptorSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Raptor Sky Walker"
     ]
   },
   {
@@ -24919,58 +23538,6 @@
     "name": "Raptor Walker Upgrade - Gear - Tier 4",
     "upgradeInfo": {
       "containerSlots": 20
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Raptor Walker Upgrade - Mobility - Tier 1",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Raptor Walker Upgrade - Mobility - Tier 2",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Raptor Walker Upgrade - Mobility - Tier 3",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Raptor Walker Upgrade - Mobility - Tier 4",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
     }
   },
   {
@@ -27371,15 +25938,6 @@
     ]
   },
   {
-    "category": "Schematics",
-    "name": "Schmetterling Walker Schematic",
-    "type": "SchmetterlingSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Schmetterling Walker"
-    ]
-  },
-  {
     "category": "Upgrades",
     "crafting": [
       {
@@ -28663,211 +27221,6 @@
     }
   },
   {
-    "category": "Schematics",
-    "name": "Silur Walker Schematic",
-    "type": "SilurSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Silur Walker"
-    ]
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Cargo - Tier 1",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Cargo - Tier 2",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Cargo - Tier 3",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Cargo - Tier 4",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Durability - Tier 1",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Durability - Tier 2",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Durability - Tier 3",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Durability - Tier 4",
-    "upgradeInfo": {
-      "bonusHp": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Gear - Tier 1",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Gear - Tier 2",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Gear - Tier 3",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Gear - Tier 4",
-    "upgradeInfo": {
-      "containerSlots": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Mobility - Tier 1",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Mobility - Tier 2",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Mobility - Tier 3",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": []
-      }
-    ],
-    "name": "Silur Walker Upgrade - Mobility - Tier 4",
-    "upgradeInfo": {
-      "engineTorqueMultiplier": 0,
-      "sprintingTorqueDiscount": 0
-    }
-  },
-  {
     "category": "Upgrades",
     "crafting": [
       {
@@ -29732,7 +28085,6 @@
     "type": "SpiderSchematic_C",
     "stackSize": 100,
     "learn": [
-      "Spider Walker With Ballista",
       "Nomad Spider Walker"
     ]
   },
@@ -30059,102 +28411,6 @@
     ],
     "name": "Spider Walker Upgrade - Mobility - Tier 4",
     "upgradeInfo": {}
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 35,
-            "name": "FiberCloth"
-          },
-          {
-            "count": 8,
-            "name": "RupuVine"
-          }
-        ]
-      }
-    ],
-    "name": "Spider Walker Upgrade - Torque - Tier 1",
-    "upgradeInfo": {
-      "stackSizeOverride": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "RupuVine"
-          },
-          {
-            "count": 32,
-            "name": "Wood"
-          },
-          {
-            "count": 35,
-            "name": "FiberCloth"
-          }
-        ]
-      }
-    ],
-    "name": "Spider Walker Upgrade - Torque - Tier 2",
-    "upgradeInfo": {
-      "stackSizeOverride": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 8,
-            "name": "RupuVine"
-          },
-          {
-            "count": 35,
-            "name": "FiberCloth"
-          },
-          {
-            "count": 32,
-            "name": "Wood"
-          }
-        ]
-      }
-    ],
-    "name": "Spider Walker Upgrade - Torque - Tier 3",
-    "upgradeInfo": {
-      "stackSizeOverride": 0
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 32,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "RupuVine"
-          },
-          {
-            "count": 35,
-            "name": "FiberCloth"
-          }
-        ]
-      }
-    ],
-    "name": "Spider Walker Upgrade - Torque - Tier 4",
-    "upgradeInfo": {
-      "stackSizeOverride": 0
-    }
   },
   {
     "category": "Upgrades",
@@ -30769,15 +29025,6 @@
     "stackSize": 100,
     "learn": [
       "Stiletto Walker Rig T3"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Stiletto Walker Schematic",
-    "type": "StilettoSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Stiletto Walker"
     ]
   },
   {
@@ -32779,15 +31026,6 @@
     ]
   },
   {
-    "category": "Schematics",
-    "name": "Titan Walker Schematic",
-    "type": "TitanSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Titan Walker"
-    ]
-  },
-  {
     "category": "Upgrades",
     "crafting": [
       {
@@ -33801,15 +32039,6 @@
     ]
   },
   {
-    "category": "Schematics",
-    "name": "Toboggan Walker Schematic",
-    "type": "TobogganSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Toboggan Walker"
-    ]
-  },
-  {
     "category": "Upgrades",
     "crafting": [
       {
@@ -34767,36 +32996,9 @@
     "damageType": "'TorchDamage_C'"
   },
   {
-    "category": "Resources",
     "name": "Torque",
-    "trade_price": 0.1,
     "translation": "Torque",
-    "type": "TorqueConsumptionStub_C",
-    "stackSize": 10000,
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 30,
-            "name": "Torque"
-          }
-        ],
-        "station": "Torque generation",
-        "time": 30
-      },
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Torque"
-          }
-        ],
-        "station": "Torque generation",
-        "time": 30
-      }
-    ],
-    "weight": 0.01,
-    "wikiVisibility": false
+    "type": "Torque_C"
   },
   {
     "category": "Equipment",
@@ -35047,7 +33249,7 @@
     "name": "Treasure Map",
     "trade_price": 500,
     "translation": "Treasure Map",
-    "type": "BlueprintGeneratedClass_C",
+    "type": "BlueprintGeneratedClass",
     "weight": 0.1
   },
   {
@@ -35478,15 +33680,6 @@
     "stackSize": 100,
     "learn": [
       "Tusker Walker Rig T3"
-    ]
-  },
-  {
-    "category": "Schematics",
-    "name": "Tusker Walker Schematic",
-    "type": "TuskerSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Tusker Walker"
     ]
   },
   {
