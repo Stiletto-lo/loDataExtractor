@@ -15,13 +15,13 @@ const folderPatch = "./gamefiles/";
   await provider.initialize();
   await provider.submitKey(FGuid.mainGuid, AES_KEY);
 
-  let techTreeFiles = provider.files.filter(
+  const techTreeFiles = provider.files.filter(
     (file) => file.path && file.path.includes("Content/Mist/Data/TechTree")
   );
 
   if (techTreeFiles) {
     techTreeFiles.each((file) => {
-      let package = provider.loadGameFile(file);
+      const package = provider.loadGameFile(file);
       console.log(package.toJson());
 
       /*
@@ -39,14 +39,14 @@ const folderPatch = "./gamefiles/";
     });
   }
 
-  let itemsFiles = provider.files.filter(
+  const itemsFiles = provider.files.filter(
     (file) => file.path && file.path.includes("Content/Mist/Data/Items")
   );
 
   const saveGameFiles = (files) => {
     if (files) {
       files.each((file) => {
-        let buffer = provider.saveGameFile(file);
+        const buffer = provider.saveGameFile(file);
         console.log(buffer.toString());
 
         /*

@@ -1,5 +1,5 @@
 const walker = {
-  category: undefined,
+	category: undefined,
 };
 
 Object.freeze(walker);

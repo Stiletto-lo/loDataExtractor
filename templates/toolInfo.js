@@ -1,6 +1,6 @@
 const toolInfo = {
-  toolType: undefined,
-  tier: undefined,
+	toolType: undefined,
+	tier: undefined,
 };
 
 Object.freeze(toolInfo);

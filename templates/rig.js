@@ -1,10 +1,10 @@
 const rig = {
-  medium: undefined,
-  small: undefined,
-  large: undefined,
-  edgeLarge: undefined,
-  edgeMedium: undefined,
-  edgeSmall: undefined,
+	medium: undefined,
+	small: undefined,
+	large: undefined,
+	edgeLarge: undefined,
+	edgeMedium: undefined,
+	edgeSmall: undefined,
 };
 
 Object.freeze(rig);

@@ -1,4 +1,4 @@
-let allTranslations = [];
+const allTranslations = [];
 
 allTranslations["IronOre2"] = "Iron Ore";
 allTranslations["IronIngot2"] = "Iron Ingot";
@@ -134,9 +134,9 @@ allTranslations["TorqueConsumption"] = "Torque generation";
 allTranslations["HighTorqueConsumption"] = "Torque generation";
 
 allTranslations["TravelerDinghyRigSchematic"] =
-  "Dinghy Walker Rig Traveler Schematic";
+	"Dinghy Walker Rig Traveler Schematic";
 allTranslations["NimmoDinghyRigSchematic"] =
-  "Dinghy Walker Rig Nimmo Schematic";
+	"Dinghy Walker Rig Nimmo Schematic";
 
 allTranslations["Boots_Rain"] = "Swampwood Galoshes";
 

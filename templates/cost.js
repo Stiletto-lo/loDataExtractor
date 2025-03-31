@@ -1,6 +1,6 @@
 const cost = {
-  count: undefined,
-  name: undefined,
+	count: undefined,
+	name: undefined,
 };
 
 Object.freeze(cost);
