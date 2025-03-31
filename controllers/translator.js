@@ -348,7 +348,9 @@ controller.addTranslationInUse = (key, translation) => {
 		return;
 	}
 
-	translationStore.translationsInUse[key] = translation;
+	// Clean up the translation by replacing multiple newlines with a single space
+	const cleanTranslation = translation.replace(/\r\n|\n\r|\n|\r/g, ' ').replace(/\s+/g, ' ').trim();
+	translationStore.translationsInUse[key] = cleanTranslation;
 };
 
 /**
@@ -382,20 +384,39 @@ controller.addTranslationIfItDoesNotAlreadyExist = (key, translation) => {
 controller.getTranslateFiles = () => {
 	const translationsFiltered = {};
 
+	// First, collect all the English item names that are actually in use
+	const usedItemNames = new Set();
+	for (const key in translationStore.translationsInUse) {
+		const englishName = translationStore.translationsInUse[key];
+		// Much less restrictive filtering to include more valid translations
+		// Only filter out completely empty strings or extremely long entries
+		if (englishName && englishName.trim() !== '' && englishName.length < 2000) {
+			// Clean up the text by replacing multiple newlines with a single space
+			const cleanedName = englishName.replace(/\r\n|\n\r|\n|\r/g, ' ')
+				.replace(/\s+/g, ' ')
+				.trim();
+			usedItemNames.add(cleanedName);
+		}
+	}
+
+	// Now process translations for each language
 	for (const language in translationStore.translationsFromOtherLanguages) {
+		if (!translationsFiltered[language]) {
+			translationsFiltered[language] = {};
+		}
+
+		// Process translations
 		for (const key in translationStore.translationsFromOtherLanguages[language]) {
-			if (!translationsFiltered[language]) {
-				translationsFiltered[language] = {};
-			}
+			if (controller.isKeyTranslationInUse(key)) {
+				// Get the English name which will be used as the key
+				const englishName = translationStore.translationsInUse[key];
+				// Get the translated text in the target language
+				const translatedText = translationStore.translationsFromOtherLanguages[language][key];
 
-			if (
-				translationStore.translationsFromOtherLanguages[language][key] &&
-				controller.isKeyTranslationInUse(key)
-			) {
-				const translation = translationStore.translationsInUse[key];
-
-				translationsFiltered[language][translation] =
-					translationStore.translationsFromOtherLanguages[language][key];
+				// Only include if this is an actual game item that's in use
+				if (englishName && usedItemNames.has(englishName)) {
+					translationsFiltered[language][englishName] = translatedText;
+				}
 			}
 		}
 	}

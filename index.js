@@ -271,12 +271,37 @@ if (creatures.length > 0) {
 }
 
 if (process.env.TRANSLATE_FILES === "true") {
-	// Add all item names to the translationsInUse store to ensure they get exported
+	// Add all item names and other translatable fields to the translationsInUse store
 	console.log("Adding all item translations to the translationsInUse store...");
 	let translationCount = 0;
 	for (const item of allItems) {
+		// Add item name
 		if (item.name) {
 			translator.addTranslationInUse(item.name, item.name);
+			translationCount++;
+		}
+		// Add item category
+		if (item.category) {
+			translator.addTranslationInUse(item.category, item.category);
+			translationCount++;
+		}
+		// Add item type
+		if (item.type) {
+			translator.addTranslationInUse(item.type, item.type);
+			translationCount++;
+		}
+		// Add learn array items
+		if (item.learn && Array.isArray(item.learn)) {
+			for (const learnItem of item.learn) {
+				if (learnItem) {
+					translator.addTranslationInUse(learnItem, learnItem);
+					translationCount++;
+				}
+			}
+		}
+		// Add description if available
+		if (item.description) {
+			translator.addTranslationInUse(item.description, item.description);
 			translationCount++;
 		}
 	}

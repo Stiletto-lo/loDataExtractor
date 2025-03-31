@@ -39,22 +39,34 @@ const readJsonFile = (filePath) => {
  * @returns {void}
  */
 const processTranslationEntry = (key, value, language = null) => {
-	if (!key || typeof key !== "string") {
+	if (!key || typeof key !== "string" || !value || typeof value !== "string") {
 		return;
 	}
 
 	const cleanKey = key.trim();
+	// Clean up the value by replacing multiple newlines with a single space
+	const cleanValue = value.replace(/\r\n|\n\r|\n|\r/g, ' ').replace(/\s+/g, ' ').trim();
 
+	// Handle different key patterns
 	if (cleanKey.includes(".Description")) {
+		// Process as a description
 		translator.addDescription(
 			cleanKey.replace(".Description", "").trim(),
-			value,
+			cleanValue,
+			language,
+		);
+	} else if (cleanKey.includes(".Name")) {
+		// Process as a name
+		translator.addTranslation(
+			cleanKey.replace(".Name", "").trim(),
+			cleanValue,
 			language,
 		);
 	} else {
+		// For other entries, add as a translation
 		translator.addTranslation(
-			cleanKey.replace(".Name", "").trim(),
-			value,
+			cleanKey,
+			cleanValue,
 			language,
 		);
 	}
@@ -137,13 +149,43 @@ const parseOtherTranslations = (filePath) => {
 
 	let success = false;
 
+	// Special handling for Game.json which has a different structure
+	// Game.json has an empty string as the first key and contains item descriptions
 	for (const translationGroup in jsonData) {
 		if (Object.hasOwn(jsonData, translationGroup)) {
 			const groupData = jsonData[translationGroup];
 
-			// Process each translation group
-			if (processTranslationData(groupData, language)) {
-				success = true;
+			// Handle the special case of empty string key in Game.json
+			if (translationGroup === "" && typeof groupData === "object") {
+				// Process each entry in the empty string group
+				for (const key in groupData) {
+					if (Object.hasOwn(groupData, key)) {
+						const value = groupData[key];
+						// Check if the value contains a description pattern
+						if (value && typeof value === "string") {
+							// If the key ends with .Description, process it as a description
+							if (key.endsWith(".Description")) {
+								const itemName = key.replace(".Description", "").trim();
+								translator.addDescription(itemName, value, language);
+								success = true;
+							} else if (key.endsWith(".Name")) {
+								// If the key ends with .Name, process it as a name
+								const itemName = key.replace(".Name", "").trim();
+								translator.addTranslation(itemName, value, language);
+								success = true;
+							} else {
+								// For other entries, try to determine if it's a name or description
+								translator.addTranslation(key, value, language);
+								success = true;
+							}
+						}
+					}
+				}
+			} else {
+				// Process regular translation groups
+				if (processTranslationData(groupData, language)) {
+					success = true;
+				}
 			}
 		}
 	}
