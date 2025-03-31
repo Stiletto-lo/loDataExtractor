@@ -235,6 +235,12 @@
   },
   {
     "category": "Schematics",
+    "name": "Advanced Walker Weapons Schematic",
+    "type": "WalkerWeapons_T3Schematic_C",
+    "stackSize": 100
+  },
+  {
+    "category": "Schematics",
     "name": "Advanced Weapons Schematic",
     "type": "Weapons_T3Schematic_C",
     "stackSize": 100,
@@ -893,6 +899,12 @@
       "type": "Medium",
       "hp": 5000
     }
+  },
+  {
+    "category": "Schematics",
+    "name": "Balang Walker Schematic",
+    "type": "BalangSchematic_C",
+    "stackSize": 100
   },
   {
     "category": "Upgrades",
@@ -1582,6 +1594,12 @@
   },
   {
     "category": "Schematics",
+    "name": "Basic Crafting Stations Schematic",
+    "type": "Stations_T1Schematic_C",
+    "stackSize": 100
+  },
+  {
+    "category": "Schematics",
     "name": "Basic Potions Schematic",
     "type": "Vitamins_T1Schematic_C",
     "stackSize": 100,
@@ -1600,6 +1618,12 @@
     "learn": [
       "Flare - white"
     ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Basic Walker Weapons Schematic",
+    "type": "WalkerWeapons_T1Schematic_C",
+    "stackSize": 100
   },
   {
     "category": "Schematics",
@@ -3366,6 +3390,12 @@
     ]
   },
   {
+    "category": "Schematics",
+    "name": "Buffalo Walker Schematic",
+    "type": "BuffaloSchematic_C",
+    "stackSize": 100
+  },
+  {
     "category": "Upgrades",
     "crafting": [
       {
@@ -4384,6 +4414,12 @@
     "category": "Rigs",
     "name": "Camelop Walker Rig",
     "type": "CamelopRig_T1_C"
+  },
+  {
+    "category": "Schematics",
+    "name": "Camelop Walker Schematic",
+    "type": "CamelopSchematic_C",
+    "stackSize": 100
   },
   {
     "category": "Upgrades",
@@ -6632,6 +6668,12 @@
     }
   },
   {
+    "category": "Schematics",
+    "name": "Cobra Walker Schematic",
+    "type": "CobraSchematic_C",
+    "stackSize": 100
+  },
+  {
     "category": "Upgrades",
     "name": "Cobra Walker Upgrade - Cargo - Tier 1",
     "upgradeInfo": {
@@ -7418,6 +7460,12 @@
     "learn": [
       "Dinghy Walker Rig T3"
     ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Dinghy Walker Schematic",
+    "type": "DinghySchematic_C",
+    "stackSize": 100
   },
   {
     "category": "Upgrades",
@@ -8237,6 +8285,12 @@
     "learn": [
       "Domus Walker Rig T3"
     ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Domus Walker Schematic",
+    "type": "DomusSchematic_C",
+    "stackSize": 100
   },
   {
     "category": "Upgrades",
@@ -9749,6 +9803,12 @@
     "learn": [
       "Falco Walker Rig T3"
     ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Falco Walker Schematic",
+    "type": "FalcoSchematic_C",
+    "stackSize": 100
   },
   {
     "category": "Upgrades",
@@ -11623,6 +11683,12 @@
     ]
   },
   {
+    "category": "Schematics",
+    "name": "Firefly Walker Schematic",
+    "type": "FireflySchematic_C",
+    "stackSize": 100
+  },
+  {
     "category": "Upgrades",
     "crafting": [
       {
@@ -12968,6 +13034,18 @@
   },
   {
     "category": "Schematics",
+    "name": "Flotillian Constructions Schematic",
+    "type": "Constructions_T4Schematic_C",
+    "stackSize": 100
+  },
+  {
+    "category": "Schematics",
+    "name": "Flotillian Crafting Stations Schematic",
+    "type": "Stations_T4Schematic_C",
+    "stackSize": 100
+  },
+  {
+    "category": "Schematics",
     "name": "Flotillian Potions Schematic",
     "type": "Vitamins_T4Schematic_C",
     "stackSize": 100,
@@ -13025,6 +13103,12 @@
       "Wyndan Battle Axe",
       "Nibiran Battle Axe"
     ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Flotillian Walker Weapons Schematic",
+    "type": "WalkerWeapons_T4Schematic_C",
+    "stackSize": 100
   },
   {
     "category": "Schematics",
@@ -14799,6 +14883,12 @@
     ]
   },
   {
+    "category": "Schematics",
+    "name": "Hercul Walker Schematic",
+    "type": "HerculSchematic_C",
+    "stackSize": 100
+  },
+  {
     "category": "Upgrades",
     "crafting": [
       {
@@ -15355,6 +15445,12 @@
     "learn": [
       "Hornet Walker Rig T3"
     ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Hornet Walker Schematic",
+    "type": "HornetSchematic_C",
+    "stackSize": 100
   },
   {
     "category": "Upgrades",
@@ -16350,6 +16446,12 @@
   },
   {
     "category": "Schematics",
+    "name": "Improved Crafting Stations Schematic",
+    "type": "Stations_T2Schematic_C",
+    "stackSize": 100
+  },
+  {
+    "category": "Schematics",
     "name": "Improved Potions Schematic",
     "type": "Vitamins_T2Schematic_C",
     "stackSize": 100,
@@ -16424,6 +16526,12 @@
       "Hercul Walker Wings Small (1 of 2)",
       "Balang Walker Wings Small (1 of 2)"
     ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Improved Walker Weapons Schematic",
+    "type": "WalkerWeapons_T2Schematic_C",
+    "stackSize": 100
   },
   {
     "category": "Schematics",
@@ -18912,6 +19020,12 @@
     "learn": [
       "Mollusk Walker Rig T3"
     ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Mollusk Walker Schematic",
+    "type": "MolluskSchematic_C",
+    "stackSize": 100
   },
   {
     "category": "Upgrades",
@@ -21566,6 +21680,12 @@
     ]
   },
   {
+    "category": "Schematics",
+    "name": "Panda Walker Schematic",
+    "type": "PandaSchematic_C",
+    "stackSize": 100
+  },
+  {
     "category": "Upgrades",
     "crafting": [
       {
@@ -22890,6 +23010,12 @@
     ]
   },
   {
+    "category": "Schematics",
+    "name": "Proxy Walker Schematic",
+    "type": "ProxySchematic_C",
+    "stackSize": 100
+  },
+  {
     "category": "Upgrades",
     "name": "Proxy Walker Upgrade - Cargo - Tier 1",
     "upgradeInfo": {
@@ -23213,6 +23339,12 @@
     "learn": [
       "Raptor Sky Walker Rig T3"
     ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Raptor Sky Walker Schematic",
+    "type": "RaptorSchematic_C",
+    "stackSize": 100
   },
   {
     "category": "WalkerParts",
@@ -25938,6 +26070,12 @@
     ]
   },
   {
+    "category": "Schematics",
+    "name": "Schmetterling Walker Schematic",
+    "type": "SchmetterlingSchematic_C",
+    "stackSize": 100
+  },
+  {
     "category": "Upgrades",
     "crafting": [
       {
@@ -27219,6 +27357,12 @@
       "type": "Reinforced",
       "hp": 31000
     }
+  },
+  {
+    "category": "Schematics",
+    "name": "Silur Walker Schematic",
+    "type": "SilurSchematic_C",
+    "stackSize": 100
   },
   {
     "category": "Upgrades",
@@ -29026,6 +29170,12 @@
     "learn": [
       "Stiletto Walker Rig T3"
     ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Stiletto Walker Schematic",
+    "type": "StilettoSchematic_C",
+    "stackSize": 100
   },
   {
     "category": "Upgrades",
@@ -31026,6 +31176,12 @@
     ]
   },
   {
+    "category": "Schematics",
+    "name": "Titan Walker Schematic",
+    "type": "TitanSchematic_C",
+    "stackSize": 100
+  },
+  {
     "category": "Upgrades",
     "crafting": [
       {
@@ -32037,6 +32193,12 @@
     "learn": [
       "Toboggan Walker Rig T3"
     ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Toboggan Walker Schematic",
+    "type": "TobogganSchematic_C",
+    "stackSize": 100
   },
   {
     "category": "Upgrades",
@@ -33681,6 +33843,12 @@
     "learn": [
       "Tusker Walker Rig T3"
     ]
+  },
+  {
+    "category": "Schematics",
+    "name": "Tusker Walker Schematic",
+    "type": "TuskerSchematic_C",
+    "stackSize": 100
   },
   {
     "category": "Upgrades",

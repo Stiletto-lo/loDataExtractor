@@ -101,8 +101,8 @@ const parseSchematicItemData = (filePath) => {
 			}
 			if (itemsSchematic.length > 0) {
 				item.learn = itemsSchematic;
-				utilityFunctions.getAllItems().push(item);
 			}
+			utilityFunctions.getAllItems().push(item);
 		}
 	}
 };

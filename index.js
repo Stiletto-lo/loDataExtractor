@@ -182,15 +182,22 @@ if (allItems.length > 0) {
 			if (item[key] === undefined) {
 				delete item[key];
 			}
-			if (item?.translation !== undefined) {
-				delete item.translation;
-			} else if (item?.type !== undefined) {
-				delete item.type;
-			} else if (item?.schematicName !== undefined) {
-				delete item.schematicName;
-			} else if (item?.damageType !== undefined) {
-				delete item.damageType;
-			}
+		}
+
+		if (item?.translation !== undefined) {
+			delete item.translation;
+		}
+		if (item?.type !== undefined) {
+			delete item.type;
+		}
+		if (item?.schematicName !== undefined) {
+			delete item.schematicName;
+		}
+		if (item?.damageType !== undefined) {
+			delete item.damageType;
+		}
+		if (item?.learn && item.learn.length === 0) {
+			delete item.learn;
 		}
 	}
 
@@ -264,7 +271,46 @@ if (creatures.length > 0) {
 }
 
 if (process.env.TRANSLATE_FILES === "true") {
+	// Add all item names and other translatable fields to the translationsInUse store
+	console.log("Adding all item translations to the translationsInUse store...");
+	let translationCount = 0;
+	for (const item of allItems) {
+		// Add item name
+		if (item.name) {
+			translator.addTranslationInUse(item.name, item.name);
+			translationCount++;
+		}
+		// Add item category
+		if (item.category) {
+			translator.addTranslationInUse(item.category, item.category);
+			translationCount++;
+		}
+		// Add item type
+		if (item.type) {
+			translator.addTranslationInUse(item.type, item.type);
+			translationCount++;
+		}
+		// Add learn array items
+		if (item.learn && Array.isArray(item.learn)) {
+			for (const learnItem of item.learn) {
+				if (learnItem) {
+					translator.addTranslationInUse(learnItem, learnItem);
+					translationCount++;
+				}
+			}
+		}
+		// Add description if available
+		if (item.description) {
+			translator.addTranslationInUse(item.description, item.description);
+			translationCount++;
+		}
+	}
+	console.log(`Added ${translationCount} item translations to the translationsInUse store`);
+
+	// Export the translations
 	const translateData = translator.getTranslateFiles();
+	console.log(`Found ${Object.keys(translateData).length} languages with translations`);
+
 	for (const languaje in translateData) {
 		const fileData = translateData[languaje];
 		const languajeArray = languaje.split("-");
@@ -275,7 +321,7 @@ if (process.env.TRANSLATE_FILES === "true") {
 				if (err) {
 					console.error(`Error creating the file: ${languaje}`, err);
 				} else {
-					console.log(`Translated files ${languaje} exported`);
+					console.log(`Translated files ${languaje} exported with ${Object.keys(fileData).length} translations`);
 				}
 			},
 		);
