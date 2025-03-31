@@ -271,7 +271,21 @@ if (creatures.length > 0) {
 }
 
 if (process.env.TRANSLATE_FILES === "true") {
+	// Add all item names to the translationsInUse store to ensure they get exported
+	console.log("Adding all item translations to the translationsInUse store...");
+	let translationCount = 0;
+	for (const item of allItems) {
+		if (item.name) {
+			translator.addTranslationInUse(item.name, item.name);
+			translationCount++;
+		}
+	}
+	console.log(`Added ${translationCount} item translations to the translationsInUse store`);
+
+	// Export the translations
 	const translateData = translator.getTranslateFiles();
+	console.log(`Found ${Object.keys(translateData).length} languages with translations`);
+
 	for (const languaje in translateData) {
 		const fileData = translateData[languaje];
 		const languajeArray = languaje.split("-");
@@ -282,7 +296,7 @@ if (process.env.TRANSLATE_FILES === "true") {
 				if (err) {
 					console.error(`Error creating the file: ${languaje}`, err);
 				} else {
-					console.log(`Translated files ${languaje} exported`);
+					console.log(`Translated files ${languaje} exported with ${Object.keys(fileData).length} translations`);
 				}
 			},
 		);
