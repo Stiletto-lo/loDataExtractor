@@ -182,15 +182,22 @@ if (allItems.length > 0) {
 			if (item[key] === undefined) {
 				delete item[key];
 			}
-			if (item?.translation !== undefined) {
-				delete item.translation;
-			} else if (item?.type !== undefined) {
-				delete item.type;
-			} else if (item?.schematicName !== undefined) {
-				delete item.schematicName;
-			} else if (item?.damageType !== undefined) {
-				delete item.damageType;
-			}
+		}
+
+		if (item?.translation !== undefined) {
+			delete item.translation;
+		}
+		if (item?.type !== undefined) {
+			delete item.type;
+		}
+		if (item?.schematicName !== undefined) {
+			delete item.schematicName;
+		}
+		if (item?.damageType !== undefined) {
+			delete item.damageType;
+		}
+		if (item?.learn && item.learn.length === 0) {
+			delete item.learn;
 		}
 	}
 
