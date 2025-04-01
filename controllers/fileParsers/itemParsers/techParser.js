@@ -12,7 +12,6 @@ const utilityFunctions = require("../utilityFunctions");
  * @param {string} filePath - The file path to parse
  */
 const parseTechData = (filePath) => {
-	const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
 	const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
 
 	const rawdata = fs.readFileSync(filePath);
@@ -21,6 +20,7 @@ const parseTechData = (filePath) => {
 	if (jsonData?.[1]?.Type) {
 		const item = utilityFunctions.extractItemByType(jsonData[1].Type);
 
+		// Extract parent data
 		if (jsonData?.[1]?.Properties?.Requirements?.[0]?.ObjectName) {
 			item.parent = translator.translateName(
 				dataParser.parseName(
@@ -30,7 +30,7 @@ const parseTechData = (filePath) => {
 			);
 		}
 
-		if (EXTRACT_ALL_DATA && jsonData[1]?.Properties?.Cost !== 1) {
+		if (jsonData[1]?.Properties?.Cost !== undefined) {
 			const itemCost = { ...require("../../../templates/cost") };
 			if (
 				jsonData[1].Properties.TechTreeTier &&
@@ -44,6 +44,7 @@ const parseTechData = (filePath) => {
 			}
 			itemCost.count = jsonData[1].Properties.Cost;
 
+			// Ensure cost data is properly set
 			item.cost = itemCost;
 		}
 

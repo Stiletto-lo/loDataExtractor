@@ -290,6 +290,16 @@ if (process.env.TRANSLATE_FILES === "true") {
 			translator.addTranslationInUse(item.type, item.type);
 			translationCount++;
 		}
+		// Add parent item if available
+		if (item.parent) {
+			translator.addTranslationInUse(item.parent, item.parent);
+			translationCount++;
+		}
+		// Add cost name if available
+		if (item.cost && item.cost.name) {
+			translator.addTranslationInUse(item.cost.name, item.cost.name);
+			translationCount++;
+		}
 		// Add learn array items
 		if (item.learn && Array.isArray(item.learn)) {
 			for (const learnItem of item.learn) {
