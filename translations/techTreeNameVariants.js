@@ -156,6 +156,7 @@ techTreeNameVariants.WormScale = "Worm Scale";
 techTreeNameVariants.PurificationStation = "Purification Station";
 techTreeNameVariants.FiberworkingStation = "Fiberworking Station";
 techTreeNameVariants.FiberworkingTier_03 = "Artisan Fiberworking Station";
+techTreeNameVariants.WoodworkingStation = "Woodworking Station";
 
 techTreeNameVariants.BasicCrafting = "Basic Crafting";
 techTreeNameVariants.BasicTools = "Basic Tools";
