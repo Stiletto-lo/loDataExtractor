@@ -34,13 +34,22 @@ const processItemFile = (filePath) => {
 
 		// Find the item data in the JSON
 		const itemData = jsonData.find(
-			(item) => item.Properties?.Name?.SourceString,
+			(item) =>
+				item.Properties?.Name?.SourceString ||
+				item.Properties?.TechtreeName?.SourceString,
 		);
 
 		if (!itemData) return null;
 
 		const internalName = extractInternalNameFromPath(filePath);
-		const displayName = itemData.Properties.Name.SourceString.trim();
+
+		// First try to get the display name from TechtreeName if available
+		let displayName = itemData.Properties?.TechtreeName?.SourceString?.trim();
+
+		// If TechtreeName is not available, fall back to Name
+		if (!displayName && itemData.Properties?.Name?.SourceString) {
+			displayName = itemData.Properties.Name.SourceString.trim();
+		}
 
 		if (internalName && displayName && internalName !== displayName) {
 			return { internalName, displayName };
@@ -76,9 +85,55 @@ const buildItemNameGlossary = (baseDir) => {
 			if (entry.isDirectory()) {
 				processDirectory(fullPath);
 			} else if (entry.isFile() && entry.name.endsWith(".json")) {
+				// Process the file to extract display name mapping
 				const mapping = processItemFile(fullPath);
 				if (mapping) {
 					itemNameGlossary[mapping.internalName] = mapping.displayName;
+				}
+
+				// Special handling for Crafting Categories which contain TechtreeName fields
+				if (
+					fullPath.includes("Crafting/Categories") ||
+					fullPath.includes("Crafting\\Categories")
+				) {
+					try {
+						const rawdata = fs.readFileSync(fullPath);
+						const jsonData = JSON.parse(rawdata);
+
+						// Find items with TechtreeName
+						const categoryData = jsonData.find(
+							(item) =>
+								item.Properties?.TechtreeName?.SourceString &&
+								item.Properties?.TechtreeName?.Key,
+						);
+
+						if (categoryData) {
+							// Extract the internal name from the Key field (e.g., "FiberworkingStation.Name" -> "FiberworkingStation")
+							const keyParts =
+								categoryData.Properties.TechtreeName.Key.split(".");
+							if (keyParts.length > 0) {
+								const internalName = keyParts[0];
+								const displayName =
+									categoryData.Properties.TechtreeName.SourceString.trim();
+
+								if (
+									internalName &&
+									displayName &&
+									internalName !== displayName
+								) {
+									itemNameGlossary[internalName] = displayName;
+									console.log(
+										`Added TechtreeName mapping: ${internalName} -> ${displayName}`,
+									);
+								}
+							}
+						}
+					} catch (error) {
+						console.warn(
+							`Error processing TechtreeName in file: ${fullPath}`,
+							error.message,
+						);
+					}
 				}
 			}
 		}

@@ -115,7 +115,12 @@ const parsePlaceableData = (filePath) => {
 			}
 
 			if (!jsonData[1].Type.includes("Rig")) {
-				if (jsonData[1].Properties?.Name?.SourceString) {
+				// First check for TechtreeName.SourceString
+				if (jsonData[1].Properties?.TechtreeName?.SourceString) {
+					item.name = jsonData[1].Properties.TechtreeName.SourceString.trim();
+				}
+				// Fall back to Name.SourceString if TechtreeName is not available
+				else if (jsonData[1].Properties?.Name?.SourceString) {
 					item.name = jsonData[1].Properties.Name.SourceString.trim();
 				} else if (jsonData[1].Properties?.Name?.Key) {
 					item.translation = jsonData[1].Properties.Name.Key.replace(

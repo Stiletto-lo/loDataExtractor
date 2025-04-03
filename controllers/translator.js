@@ -15,7 +15,6 @@ const controller = {};
 // Import translation dictionaries
 const additionalTranslations = require("../translations/aditionalTranslations");
 const lootSitesTranslations = require("../translations/lootSites");
-const techTreeTranslations = require("../translations/techTreeTranslations");
 const techTreeNameVariants = require("../translations/techTreeNameVariants");
 const techTreeNameNormalizer = require("../translations/techTreeNameNormalizer");
 const itemNameGlossary = require("./fileParsers/itemNameGlossary");
@@ -128,11 +127,6 @@ controller.translateName = (name) => {
 		return techTreeNameVariants[name];
 	}
 
-	// Check in tech tree translations
-	if (techTreeTranslations[name]) {
-		return techTreeTranslations[name];
-	}
-
 	const translatedName = controller.searchName(name);
 
 	if (translatedName) {
@@ -182,21 +176,12 @@ controller.translateTechTreeParent = (parentName) => {
 		return "";
 	}
 
-	// First check tech tree name variants
 	if (techTreeNameVariants[parentName]) {
 		const normalized = techTreeNameVariants[parentName];
 		controller.addTranslationInUse(parentName, normalized);
 		return normalized;
 	}
 
-	// Then check tech tree translations
-	if (techTreeTranslations[parentName]) {
-		const normalized = techTreeTranslations[parentName];
-		controller.addTranslationInUse(parentName, normalized);
-		return normalized;
-	}
-
-	// Fall back to regular translation
 	return controller.translateName(parentName);
 };
 

@@ -3,7 +3,7 @@
  *
  * This module provides additional mappings for tech tree item name variants
  * to ensure consistent parent-child relationships in the tech tree visualization.
- * It complements the existing techTreeTranslations.js by handling more edge cases.
+ * It complements the existing techTreeNameVariants.js by handling more edge cases.
  *
  * This file also handles cross-language naming inconsistencies to ensure proper
  * tech tree relationships regardless of the selected language.
@@ -137,12 +137,72 @@ techTreeNameVariants.MonkeySecretion = "Rupu Gel";
 techTreeNameVariants.MonkeySecretion_C = "Rupu Gel";
 techTreeNameVariants.Poppy = "Lava Poppy";
 techTreeNameVariants.EmptyGlassVial = "Glass";
+techTreeNameVariants.DesertMule = "Desert Mule";
 
 techTreeNameVariants.CraftingBench = "Crafting Bench";
 
 // Stations
 techTreeNameVariants.PurificationStation = "Purification Station";
 techTreeNameVariants.FiberworkingStation = "Fiberworking Station";
+
+techTreeNameVariants.BasicCrafting = "Basic Crafting";
+techTreeNameVariants.BasicTools = "Basic Tools";
+techTreeNameVariants.BasicWeapons = "Basic Weapons";
+techTreeNameVariants.BasicWalkerEquipment = "Steering Levers";
+techTreeNameVariants.BasicWalkerUpgrades = "Basic Walker Upgrades";
+techTreeNameVariants.BasicStructures = "Basic Structures";
+techTreeNameVariants.AdvancedCrafting = "Advanced Crafting";
+techTreeNameVariants.AdvancedTools = "Advanced Tools";
+techTreeNameVariants.AdvancedWeapons = "Advanced Weapons";
+techTreeNameVariants.AdvancedWalkerEquipment = "Advanced Walker Equipment";
+techTreeNameVariants.AdvancedWalkerUpgrades = "Advanced Walker Upgrades";
+techTreeNameVariants.AdvancedStructures = "Advanced Structures";
+techTreeNameVariants.SimpleBackpacks = "Light Backpack";
+techTreeNameVariants.ImprovedBackpacks = "Medium Backpack";
+techTreeNameVariants.AdvancedBackpacks = "Heavy Backpack";
+techTreeNameVariants.WaterFiltration = "Purification Station";
+techTreeNameVariants.SimpleWaterPurification = "Purified Water";
+techTreeNameVariants.SulfurWaterPurification = "Liquid Fuel";
+techTreeNameVariants.ClayExtraction = "Clay";
+techTreeNameVariants.BoneGlueProduction = "Bone Glue";
+techTreeNameVariants.Resin = "Earth Wax";
+
+// Add mappings for walker tech tree items
+techTreeNameVariants.SpiderWalker = "Spider Walker";
+techTreeNameVariants.FireflyWalker = "Firefly Walker";
+techTreeNameVariants.TobogganWalker = "Toboggan Walker";
+techTreeNameVariants.StilettWalker = "Stiletto Walker";
+techTreeNameVariants.FalcoWalker = "Falco Walker";
+techTreeNameVariants.SchmettWalker = "Schmetterling Walker";
+techTreeNameVariants.BirdWalker = "Raptor Sky Walker";
+techTreeNameVariants.HornetWalker = "Hornet Walker";
+techTreeNameVariants.TitanWalker = "Titan Walker";
+
+// Add mappings for weapon tech tree items
+techTreeNameVariants.BoneProjectiles = "Bone Bolt";
+techTreeNameVariants.CeramicProjectiles = "Ceramic-Tipped Bolt";
+techTreeNameVariants.MetalProjectiles = "Iron-Tipped Bolt";
+techTreeNameVariants.ExplosiveBolt = "Explosive Bolt";
+techTreeNameVariants.ExplosiveDart = "Explosive Dart";
+techTreeNameVariants.FloatingMine = "Floating Mine";
+techTreeNameVariants.Flare = "Flare - White";
+
+// Add mappings for structure tech tree items
+techTreeNameVariants.WoodenWallsLight = "Light Wood Structures";
+techTreeNameVariants.WoodenWallsMedium = "Medium Wood Structures";
+techTreeNameVariants.WoodenWallsHeavy = "Heavy Wood Structures";
+techTreeNameVariants.StoneStructures = "Stone Structures";
+techTreeNameVariants.ClayStructures = "Clay Structures";
+techTreeNameVariants.CementFoundation = "Cement Structures";
+
+// Add mappings for decoration tech tree items
+techTreeNameVariants.Flags = "Flag 1";
+techTreeNameVariants.Baskets = "Basket Tall";
+techTreeNameVariants.Carpets = "Carpet Light";
+techTreeNameVariants.LampsHanging = "Lamp Double Hanging";
+techTreeNameVariants.LampsOverhanging = "Lamp Overhanging";
+techTreeNameVariants.LampsStanding = "Lamp Standing";
+techTreeNameVariants.GiantWalls = "Giant Wall";
 
 // Handle lowercase variants
 for (const key of Object.keys(techTreeNameVariants)) {
