@@ -195,10 +195,10 @@ const parseOtherTranslations = (filePath) => {
 module.exports = {
 	parseTranslations,
 	parseOtherTranslations,
+	processTranslationEntry,
 	// Export for testing purposes
 	_internal: {
 		readJsonFile,
-		processTranslationEntry,
 		processTranslationData,
 		extractLanguageFromPath,
 	},
