@@ -181,6 +181,19 @@ if (allItems.length > 0) {
 				console.error("Error creating the file");
 			} else {
 				console.log("Items exported");
+
+				// Run the tech tree item unifier to fix inconsistencies
+				const { unifyTechTreeAndItems } = require('./utils/techTreeItemUnifier');
+				console.log("Running tech tree item unifier...");
+				const unifyResult = unifyTechTreeAndItems(`${folderPatch}items.json`);
+				if (unifyResult.success) {
+					console.log(`Tech tree unification complete. Fixed ${unifyResult.fixedCount} learn entries.`);
+				} else {
+					console.error(`Tech tree unification failed: ${unifyResult.error}`);
+				}
+
+				// Reload the items after unification
+				allItems = JSON.parse(fs.readFileSync(`${folderPatch}items.json`, 'utf8'));
 			}
 		},
 	);
