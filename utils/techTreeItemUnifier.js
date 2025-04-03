@@ -16,8 +16,10 @@ const path = require('node:path');
  * @param {string} itemsFilePath - Path to the items.json file
  * @param {string} outputFilePath - Path to save the updated items.json file
  */
-function unifyTechTreeAndItems(itemsFilePath, outputFilePath = null) {
+function unifyTechTreeAndItems(itemsFilePath, oldFilePath = null) {
   console.log('Loading items from:', itemsFilePath);
+
+  let outputFilePath = oldFilePath;
 
   // Default to overwriting the input file if no output file is specified
   if (!outputFilePath) {
@@ -33,8 +35,7 @@ function unifyTechTreeAndItems(itemsFilePath, outputFilePath = null) {
     const schematicsByType = new Map();
     const schematicsByName = new Map();
 
-    // First pass: index all items
-    itemsData.forEach(item => {
+    for (const item of itemsData) {
       if (item.name) {
         itemsByName.set(item.name, item);
       }
@@ -48,12 +49,13 @@ function unifyTechTreeAndItems(itemsFilePath, outputFilePath = null) {
           schematicsByName.set(item.name, item);
         }
       }
-    });
+    }
 
     // Second pass: fix schematic learn arrays
     let fixedCount = 0;
 
-    itemsData.forEach(item => {
+
+    for (const item of itemsData) {
       if (item.category === 'Schematics') {
         // Ensure the learn array exists
         if (!item.learn) {
@@ -66,17 +68,15 @@ function unifyTechTreeAndItems(itemsFilePath, outputFilePath = null) {
           // Look for items that should be learned from this schematic
           const learnableItems = findLearnableItems(schematicType, itemsData);
 
-          // Add missing learnable items to the learn array
-          learnableItems.forEach(learnableItem => {
+          for (const learnableItem of learnableItems) {
             if (!item.learn.includes(learnableItem)) {
               item.learn.push(learnableItem);
               fixedCount++;
-              console.log(`Added ${learnableItem} to ${item.name} learn array`);
             }
-          });
+          }
         }
       }
-    });
+    }
 
     console.log(`Fixed ${fixedCount} learn entries in schematics`);
 
@@ -154,14 +154,14 @@ function findLearnableItems(schematicType, allItems) {
   if (schematicTypeToItemMap[schematicType]) {
     const categories = schematicTypeToItemMap[schematicType];
 
-    allItems.forEach(item => {
+    for (const item of allItems) {
       if (item.category && categories.includes(item.category)) {
         // Check if this item is appropriate for this schematic tier
         if (isItemAppropriateForSchematicTier(item, schematicType)) {
           learnableItems.push(item.name);
         }
       }
-    });
+    }
   }
 
   return [...new Set(learnableItems)]; // Remove duplicates
@@ -178,14 +178,14 @@ function isItemAppropriateForSchematicTier(item, schematicType) {
   const tierMatch = schematicType.match(/T(\d)/);
   if (!tierMatch) return true; // If no tier in schematic type, assume all items are valid
 
-  const schematicTier = parseInt(tierMatch[1]);
+  const schematicTier = Number.parseInt(tierMatch[1]);
 
   // Logic to determine if an item belongs to a specific tier
   // This is a simplified example - you would need to expand this based on your game's logic
   if (item.type) {
     const itemTierMatch = item.type.match(/T(\d)/);
     if (itemTierMatch) {
-      const itemTier = parseInt(itemTierMatch[1]);
+      const itemTier = Number.parseInt(itemTierMatch[1]);
       return itemTier === schematicTier;
     }
   }
