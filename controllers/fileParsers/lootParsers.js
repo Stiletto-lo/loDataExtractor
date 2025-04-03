@@ -130,7 +130,6 @@ const parseLootTable = (filePath) => {
 		!firstEntry?.Rows ||
 		firstEntry?.Type !== "DataTable"
 	) {
-		console.warn(`Invalid data table format in ${filePath}`);
 		return false;
 	}
 
