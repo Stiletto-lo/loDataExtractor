@@ -9,6 +9,7 @@ const techParser = require("./techParser");
 const damageParser = require("./damageParser");
 const cachedItemsParser = require("./cachedItemsParser");
 const pricesParser = require("./pricesParser");
+const itemNameGlossary = require("../itemNameGlossary");
 
 // Re-export all functionality from the individual modules
 module.exports = {
@@ -33,4 +34,10 @@ module.exports = {
 
 	// Prices related functions
 	parsePrices: pricesParser.parsePrices,
+
+	// Item name glossary functions
+	buildItemNameGlossary: itemNameGlossary.buildItemNameGlossary,
+	getDisplayName: itemNameGlossary.getDisplayName,
+	getGlossary: itemNameGlossary.getGlossary,
+	saveGlossary: itemNameGlossary.saveGlossary,
 };

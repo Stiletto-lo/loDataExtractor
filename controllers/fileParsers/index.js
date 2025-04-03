@@ -9,6 +9,7 @@ const translationParsers = require("./translationParsers");
 const upgradeParsers = require("./upgradeParsers");
 const utilityFunctions = require("./utilityFunctions");
 const translator = require("../translator");
+const itemNameGlossary = require("./itemNameGlossary");
 
 // Re-export all functionality from the individual modules
 module.exports = {
@@ -58,4 +59,10 @@ module.exports = {
 
 	// Translator
 	getTranslator: () => translator,
+
+	// Item name glossary functions
+	buildItemNameGlossary: itemNameGlossary.buildItemNameGlossary,
+	getDisplayName: itemNameGlossary.getDisplayName,
+	getGlossary: itemNameGlossary.getGlossary,
+	saveGlossary: itemNameGlossary.saveGlossary,
 };

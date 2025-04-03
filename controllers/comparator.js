@@ -68,12 +68,12 @@ controller.compareItems = async (extractedItems, folderPath) => {
 
 	for (const extractedItem of extractedItems) {
 		const itemFound = remainingGithubItems.find(
-			(githubItem) => githubItem.name === extractedItem.name
+			(githubItem) => githubItem.name === extractedItem.name,
 		);
 
 		// Remove the found item from the remaining items
 		remainingGithubItems = remainingGithubItems.filter(
-			(githubItem) => githubItem.name !== extractedItem.name
+			(githubItem) => githubItem.name !== extractedItem.name,
 		);
 
 		if (itemFound) {
@@ -114,27 +114,45 @@ controller.compareItems = async (extractedItems, folderPath) => {
  */
 controller.isItemSame = (extractedItem, githubItem) => {
 	// Check each property based on configuration
-	if (DATA_TO_COMPARE.cost && !controller.compareCost(extractedItem, githubItem)) {
+	if (
+		DATA_TO_COMPARE.cost &&
+		!controller.compareCost(extractedItem, githubItem)
+	) {
 		return false;
 	}
 
-	if (DATA_TO_COMPARE.crafting && !controller.compareCrafting(extractedItem, githubItem)) {
+	if (
+		DATA_TO_COMPARE.crafting &&
+		!controller.compareCrafting(extractedItem, githubItem)
+	) {
 		return false;
 	}
 
-	if (DATA_TO_COMPARE.damage && !Object.is(githubItem.damage, extractedItem.damage)) {
+	if (
+		DATA_TO_COMPARE.damage &&
+		!Object.is(githubItem.damage, extractedItem.damage)
+	) {
 		return false;
 	}
 
-	if (DATA_TO_COMPARE.category && !Object.is(githubItem.category, extractedItem.category)) {
+	if (
+		DATA_TO_COMPARE.category &&
+		!Object.is(githubItem.category, extractedItem.category)
+	) {
 		return false;
 	}
 
-	if (DATA_TO_COMPARE.parent && !Object.is(githubItem.parent, extractedItem.parent)) {
+	if (
+		DATA_TO_COMPARE.parent &&
+		!Object.is(githubItem.parent, extractedItem.parent)
+	) {
 		return false;
 	}
 
-	if (DATA_TO_COMPARE.trade_price && !Object.is(githubItem.trade_price, extractedItem.trade_price)) {
+	if (
+		DATA_TO_COMPARE.trade_price &&
+		!Object.is(githubItem.trade_price, extractedItem.trade_price)
+	) {
 		return false;
 	}
 
@@ -164,7 +182,8 @@ controller.compareCrafting = (extractedItem, githubItem) => {
 	}
 
 	// Check if either item has ingredients
-	const hasIngredients = githubItem?.crafting?.[0]?.ingredients ||
+	const hasIngredients =
+		githubItem?.crafting?.[0]?.ingredients ||
 		extractedItem?.crafting?.[0]?.ingredients;
 
 	if (hasIngredients) {
@@ -172,14 +191,21 @@ controller.compareCrafting = (extractedItem, githubItem) => {
 		const githubIngredients = githubItem.crafting[0].ingredients;
 		const extractedIngredients = extractedItem.crafting[0].ingredients;
 
-		if (!githubIngredients || !extractedIngredients ||
-			githubIngredients.length !== extractedIngredients.length) {
+		if (
+			!githubIngredients ||
+			!extractedIngredients ||
+			githubIngredients.length !== extractedIngredients.length
+		) {
 			return false;
 		}
 
 		// Compare total ingredient counts
-		const githubItemTotalIngredients = calculateTotalIngredients(githubItem.crafting);
-		const extractedItemTotalIngredients = calculateTotalIngredients(extractedItem.crafting);
+		const githubItemTotalIngredients = calculateTotalIngredients(
+			githubItem.crafting,
+		);
+		const extractedItemTotalIngredients = calculateTotalIngredients(
+			extractedItem.crafting,
+		);
 
 		if (githubItemTotalIngredients !== extractedItemTotalIngredients) {
 			return false;
@@ -187,8 +213,12 @@ controller.compareCrafting = (extractedItem, githubItem) => {
 
 		// Compare crafting times if configured
 		if (DATA_TO_COMPARE.crafting_time) {
-			const githubItemTotalTime = calculateTotalCraftingTime(githubItem.crafting);
-			const extractedItemTotalTime = calculateTotalCraftingTime(extractedItem.crafting);
+			const githubItemTotalTime = calculateTotalCraftingTime(
+				githubItem.crafting,
+			);
+			const extractedItemTotalTime = calculateTotalCraftingTime(
+				extractedItem.crafting,
+			);
 
 			if (githubItemTotalTime !== extractedItemTotalTime) {
 				return false;
@@ -251,14 +281,20 @@ controller.compareCost = (extractedItem, githubItem) => {
 	}
 
 	// Compare cost count
-	if (!githubItem.cost.count || !extractedItem.cost.count ||
-		githubItem.cost.count !== extractedItem.cost.count) {
+	if (
+		!githubItem.cost.count ||
+		!extractedItem.cost.count ||
+		githubItem.cost.count !== extractedItem.cost.count
+	) {
 		return false;
 	}
 
 	// Compare cost name
-	if (!githubItem.cost.name || !extractedItem.cost.name ||
-		githubItem.cost.name !== extractedItem.cost.name) {
+	if (
+		!githubItem.cost.name ||
+		!extractedItem.cost.name ||
+		githubItem.cost.name !== extractedItem.cost.name
+	) {
 		return false;
 	}
 
@@ -272,7 +308,7 @@ controller.compareCost = (extractedItem, githubItem) => {
 controller.getAllItems = async () => {
 	try {
 		const response = await axios.get(
-			"https://raw.githubusercontent.com/dm94/stiletto-web/master/public/json/items_min.json"
+			"https://raw.githubusercontent.com/dm94/stiletto-web/master/public/json/items_min.json",
 		);
 		return response.data;
 	} catch (error) {

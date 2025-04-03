@@ -1627,7 +1627,7 @@
     "weight": 0.266
   },
   {
-    "category": "Drugs",
+    "category": "Vitamins",
     "name": "Apple Kambaro",
     "translation": "Apple Kambaro",
     "type": "AppleKambaro_C",
@@ -1764,7 +1764,7 @@
     "weight": 1
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "name": "Armored Legs (1 of 2)",
     "type": "ArmoredLegs_C"
   },
@@ -1933,7 +1933,7 @@
     "weight": 0.01
   },
   {
-    "category": "WalkerTools",
+    "category": "Walker Tools",
     "crafting": [
       {
         "ingredients": [
@@ -2038,7 +2038,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -2403,7 +2403,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -2426,7 +2426,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -2643,7 +2643,7 @@
     }
   },
   {
-    "category": "Traps",
+    "category": "Defenses",
     "crafting": [
       {
         "ingredients": [
@@ -2672,7 +2672,7 @@
     }
   },
   {
-    "category": "Traps",
+    "category": "Defenses",
     "crafting": [
       {
         "ingredients": [
@@ -2701,7 +2701,7 @@
     }
   },
   {
-    "category": "Traps",
+    "category": "Defenses",
     "crafting": [
       {
         "ingredients": [
@@ -2773,7 +2773,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "name": "Base Legs (1 of 2)",
     "type": "BasicLegs_C"
   },
@@ -3104,7 +3104,7 @@
     ]
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "name": "Base Wing",
     "type": "BasicWing_C"
   },
@@ -5950,7 +5950,7 @@
     "onlyDevs": true
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -5977,7 +5977,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -6004,7 +6004,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -6031,7 +6031,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -6053,7 +6053,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -6076,7 +6076,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -6099,7 +6099,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -6563,7 +6563,7 @@
     }
   },
   {
-    "category": "Traps",
+    "category": "Defenses",
     "crafting": [
       {
         "ingredients": [
@@ -6785,7 +6785,21 @@
     "experiencieReward": 50,
     "stackSize": 100,
     "weight": 1.7,
-    "durability": 100
+    "durability": 100,
+    "drops": [
+      {
+        "location": "Equipment Strongbox",
+        "chance": 0.2295082,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      },
+      {
+        "location": "Tools and Equipment Strongbox",
+        "chance": 0.224494608,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "crafting": [
@@ -7065,6 +7079,14 @@
         "toolType": "Mining",
         "tier": 10
       }
+    ],
+    "drops": [
+      {
+        "location": "Tools and Equipment Strongbox",
+        "chance": 0.44898921999999997,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
     ]
   },
   {
@@ -7186,6 +7208,14 @@
       {
         "toolType": "Scythe",
         "tier": 10
+      }
+    ],
+    "drops": [
+      {
+        "location": "Tools and Equipment Strongbox",
+        "chance": 0.44898921999999997,
+        "minQuantity": 1,
+        "maxQuantity": 1
       }
     ]
   },
@@ -7466,7 +7496,7 @@
     ]
   },
   {
-    "category": "Drugs",
+    "category": "Vitamins",
     "crafting": [
       {
         "ingredients": [
@@ -7564,6 +7594,14 @@
       {
         "toolType": "Scythe",
         "tier": 1
+      }
+    ],
+    "drops": [
+      {
+        "location": "Weapons Strongbox",
+        "chance": 0.04484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
       }
     ],
     "damageType": "'MeleeSwordDamage_C'"
@@ -8114,7 +8152,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -8141,7 +8179,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -8172,7 +8210,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -8961,7 +8999,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -8992,7 +9030,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -9022,7 +9060,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -9049,7 +9087,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -9076,7 +9114,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -9103,7 +9141,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -9130,7 +9168,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -9161,7 +9199,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -9419,7 +9457,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -10130,7 +10168,7 @@
     "type": "DefaultSchmetterlingRig_T1_C"
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Cargo Hold - Tier 1 Upgrade",
     "translation": "Cargo Hold - Tier 1 Upgrade",
     "type": "SparePartWoodCargo_C",
@@ -10139,7 +10177,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Cargo Hold - Tier 2 Upgrade",
     "translation": "Cargo Hold - Tier 2 Upgrade",
     "type": "SparePartBoneCargo_C",
@@ -10148,7 +10186,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Cargo Hold - Tier 3 Upgrade",
     "translation": "Cargo Hold - Tier 3 Upgrade",
     "type": "SparePartClayCargo_C",
@@ -10157,7 +10195,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Cargo Hold - Tier 4 Upgrade",
     "translation": "Cargo Hold - Tier 4 Upgrade",
     "type": "SparePartIronCargo_C",
@@ -10292,6 +10330,20 @@
       {
         "toolType": "CatapultRock",
         "tier": 2
+      }
+    ],
+    "drops": [
+      {
+        "location": "AmmoBox T3",
+        "chance": 0.16,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      },
+      {
+        "location": "BigHotspotLoot T3",
+        "chance": 0.16,
+        "minQuantity": 1,
+        "maxQuantity": 5
       }
     ],
     "damageType": "'BoulderDamage_C'"
@@ -10809,7 +10861,15 @@
     "experiencieReward": 65,
     "stackSize": 100,
     "weight": 2,
-    "durability": 150
+    "durability": 150,
+    "drops": [
+      {
+        "location": "Equipment Strongbox",
+        "chance": 0.08196721,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      }
+    ]
   },
   {
     "category": "Weapons",
@@ -10853,6 +10913,26 @@
       {
         "toolType": "TreeCutting",
         "tier": 15
+      }
+    ],
+    "drops": [
+      {
+        "location": "Tools Strongbox",
+        "chance": 0.03816794,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Tools and Equipment Strongbox",
+        "chance": 0.02244946,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Weapons Strongbox",
+        "chance": 0.026905830000000002,
+        "minQuantity": 1,
+        "maxQuantity": 8
       }
     ],
     "damageType": "'MeleeAxeDamage_C'"
@@ -11646,6 +11726,14 @@
         "toolType": "Scythe",
         "tier": 17
       }
+    ],
+    "drops": [
+      {
+        "location": "Tools and Equipment Strongbox",
+        "chance": 0.44898921999999997,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
     ]
   },
   {
@@ -12436,7 +12524,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -12849,7 +12937,7 @@
     "weight": 0.5
   },
   {
-    "category": "Drugs",
+    "category": "Vitamins",
     "name": "Cooked Corn",
     "translation": "Cooked Corn",
     "type": "CookedCorn_C",
@@ -12978,7 +13066,7 @@
     ]
   },
   {
-    "category": "WalkerTools",
+    "category": "Walker Tools",
     "crafting": [
       {
         "ingredients": [
@@ -13107,6 +13195,158 @@
         "tier": 2
       }
     ],
+    "drops": [
+      {
+        "location": "BigHotspotLoot T1",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "EasyRupuCamp T1",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Forerunner (Easy)",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Scavenger (Easy)",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Thug (Easy)",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Cowardly Rupu",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Green Rupu",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Yellow Rupu",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Hero",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Warrior",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Berserker",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Forerunner",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Oracle",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Overseer",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Priestess",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Prophet",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Tar Dweller",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Zharvakko",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HardRupuCamp T1",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Sentinel (Easy)",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLoot T1",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "MediumRupuCamp T1",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Harasser (Easy)",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Skirmisher (Easy)",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "TreasureChest T1",
+        "chance": 0.22580644,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "damageType": "'MeleeAxeDamage_C'"
   },
   {
@@ -13205,7 +13445,7 @@
     "type": "Traps_C"
   },
   {
-    "category": "Traps",
+    "category": "Defenses",
     "crafting": [
       {
         "ingredients": [
@@ -13255,7 +13495,7 @@
     "stackSize": 100
   },
   {
-    "category": "Drugs",
+    "category": "Vitamins",
     "crafting": [
       {
         "ingredients": [
@@ -13355,7 +13595,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -14295,7 +14535,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -14322,7 +14562,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -14426,7 +14666,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -14453,7 +14693,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -14484,7 +14724,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -15239,7 +15479,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -15266,7 +15506,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -15297,7 +15537,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -15324,7 +15564,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -15351,7 +15591,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -15382,7 +15622,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -15413,7 +15653,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -15444,7 +15684,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -15549,7 +15789,7 @@
     "durability": 350
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Durability - Tier 1 Upgrade",
     "translation": "Durability - Tier 1 Upgrade",
     "type": "SparePartWoodArmor_C",
@@ -15558,7 +15798,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Durability - Tier 2 Upgrade",
     "translation": "Durability - Tier 2 Upgrade",
     "type": "SparePartBoneArmor_C",
@@ -15567,7 +15807,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Durability - Tier 3 Upgrade",
     "translation": "Durability - Tier 3 Upgrade",
     "type": "SparePartClayArmor_C",
@@ -15576,7 +15816,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Durability - Tier 4 Upgrade",
     "translation": "Durability - Tier 4 Upgrade",
     "type": "SparePartIronArmor_C",
@@ -15803,7 +16043,147 @@
     "type": "EarthWax_C",
     "experiencieReward": 8,
     "stackSize": 100,
-    "weight": 0.44
+    "weight": 0.44,
+    "drops": [
+      {
+        "location": "AmmoBox T3",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "EasyRupuCamp T3",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "Rupu Ashdweller",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "Rupu Drudge",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "Rupu Hunter",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "Rupu Plainstrider (Hard)",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "Rupu Rabble",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "Rupu Scuttler",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "HardRupuCamp T3",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "Rupu Oracle",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "Rupu Overseer",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "HotspotLoot T3",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "MediumRupuCamp T3",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "Rupu Seeker",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "White Death (Medium)",
+        "chance": 0.10718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "AmmoBox T4",
+        "chance": 0.09090909,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "EasyRupuCamp T4",
+        "chance": 0.09090909,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "EasyRupu T4",
+        "chance": 0.09090909,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "HardRupuCamp T4",
+        "chance": 0.09090909,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "Rupu Firebrand",
+        "chance": 0.09090909,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "HotspotLoot T4",
+        "chance": 0.09090909,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "MediumRupuCamp T4",
+        "chance": 0.09090909,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "MediumRupu T4",
+        "chance": 0.09090909,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ]
   },
   {
     "name": "Elements Tablet",
@@ -16004,7 +16384,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -16035,7 +16415,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -16070,7 +16450,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -16859,7 +17239,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -16890,7 +17270,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -16921,7 +17301,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -16948,7 +17328,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -16975,7 +17355,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -17006,7 +17386,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -17033,7 +17413,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -17064,7 +17444,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -17095,7 +17475,7 @@
     }
   },
   {
-    "category": "Traps",
+    "category": "Defenses",
     "crafting": [
       {
         "ingredients": [
@@ -17171,7 +17551,15 @@
     "trade_price": 19.4,
     "translation": "Fast Grappling Hook",
     "type": "FastGrapplingHook_C",
-    "experiencieReward": 45
+    "experiencieReward": 45,
+    "drops": [
+      {
+        "location": "Tools and Equipment Strongbox",
+        "chance": 0.112247304,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Rigs",
@@ -19263,7 +19651,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -20093,7 +20481,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -20208,6 +20596,20 @@
         "tier": 15
       }
     ],
+    "drops": [
+      {
+        "location": "Tools Strongbox",
+        "chance": 0.03816794,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Weapons Strongbox",
+        "chance": 0.026905830000000002,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      }
+    ],
     "damageType": "'MeleeAxeDamage_C'"
   },
   {
@@ -20253,6 +20655,14 @@
       {
         "toolType": "TreeCutting",
         "tier": 15
+      }
+    ],
+    "drops": [
+      {
+        "location": "Weapons Strongbox",
+        "chance": 0.026905830000000002,
+        "minQuantity": 1,
+        "maxQuantity": 8
       }
     ],
     "damageType": "'MeleeAxeDamage_C'"
@@ -20706,6 +21116,14 @@
         "tier": 1
       }
     ],
+    "drops": [
+      {
+        "location": "Weapons Strongbox",
+        "chance": 0.026905830000000002,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      }
+    ],
     "damageType": "'MeleeSwordDamage_C'"
   },
   {
@@ -20751,6 +21169,14 @@
       {
         "toolType": "Scythe",
         "tier": 1
+      }
+    ],
+    "drops": [
+      {
+        "location": "Weapons Strongbox",
+        "chance": 0.026905830000000002,
+        "minQuantity": 1,
+        "maxQuantity": 8
       }
     ],
     "damageType": "'MeleeSwordDamage_C'"
@@ -21102,10 +21528,16 @@
     ],
     "drops": [
       {
+        "location": "AmmoBox T1",
+        "chance": 0.33333332,
+        "minQuantity": 3,
+        "maxQuantity": 15
+      },
+      {
         "location": "BigHotspotLoot T1",
-        "chance": 0.32258064,
-        "minQuantity": 1,
-        "maxQuantity": 1
+        "chance": 0.33333332,
+        "minQuantity": 3,
+        "maxQuantity": 15
       },
       {
         "location": "EasyRupuCamp T1",
@@ -21252,16 +21684,52 @@
         "maxQuantity": 1
       },
       {
+        "location": "AmmoBox T2",
+        "chance": 0.33333332,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      },
+      {
+        "location": "BigHotspotLoot T2",
+        "chance": 0.33333332,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      },
+      {
         "location": "HardRupuCamp T2",
         "chance": 1,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
+        "location": "AmmoBox T3",
+        "chance": 0.16,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      },
+      {
+        "location": "BigHotspotLoot T3",
+        "chance": 0.16,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      },
+      {
         "location": "HardRupuCamp T3",
         "chance": 1,
         "minQuantity": 1,
         "maxQuantity": 1
+      },
+      {
+        "location": "AmmoBox T4",
+        "chance": 0.28571428,
+        "minQuantity": 1,
+        "maxQuantity": 6
+      },
+      {
+        "location": "BigHotspotLoot T4",
+        "chance": 0.28571428,
+        "minQuantity": 1,
+        "maxQuantity": 6
       },
       {
         "location": "HardRupuCamp T4",
@@ -21887,7 +22355,15 @@
     "experiencieReward": 26,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 70
+    "durability": 70,
+    "drops": [
+      {
+        "location": "Tools and Equipment Strongbox",
+        "chance": 0.224494608,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Resources",
@@ -22133,7 +22609,7 @@
     "stackSize": 100,
     "drops": [
       {
-        "location": "Tablets Strongbox",
+        "location": "Fragment Strongbox",
         "chance": 1,
         "minQuantity": 5,
         "maxQuantity": 10
@@ -22354,68 +22830,6 @@
     "onlyDevs": true
   },
   {
-    "category": "Resources",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wood"
-          }
-        ],
-        "station": "FurnaceBurning",
-        "time": 2
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "CharcoalFuel"
-          }
-        ],
-        "station": "FurnaceBurning",
-        "time": 20
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Fuel"
-          }
-        ],
-        "station": "FurnaceBurning_Tier2",
-        "time": 60
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Rupu Gel"
-          }
-        ],
-        "station": "FurnaceBurning_Tier2",
-        "time": 100
-      },
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "LavaFuel"
-          }
-        ],
-        "station": "FurnaceBurning_Tier2",
-        "time": 80
-      }
-    ],
-    "name": "Fuel",
-    "trade_price": 1,
-    "translation": "Fuel",
-    "type": "FurnaceBurning_C",
-    "experiencieReward": 1,
-    "stackSize": 10000,
-    "weight": 0.01
-  },
-  {
     "category": "Crafting",
     "crafting": [
       {
@@ -22458,7 +22872,7 @@
     "type": "Furniture_C"
   },
   {
-    "category": "Drugs",
+    "category": "Vitamins",
     "crafting": [
       {
         "ingredients": [
@@ -22631,7 +23045,7 @@
     }
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Gear Storage - Tier 1 Upgrade",
     "translation": "Gear Storage - Tier 1 Upgrade",
     "type": "SparePartWoodHatch_C",
@@ -22640,7 +23054,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Gear Storage - Tier 2 Upgrade",
     "translation": "Gear Storage - Tier 2 Upgrade",
     "type": "SparePartBoneHatch_C",
@@ -22649,7 +23063,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Gear Storage - Tier 3 Upgrade",
     "translation": "Gear Storage - Tier 3 Upgrade",
     "type": "SparePartClayHatch_C",
@@ -22658,7 +23072,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Gear Storage - Tier 4 Upgrade",
     "translation": "Gear Storage - Tier 4 Upgrade",
     "type": "SparePartIronHatch_C",
@@ -22677,7 +23091,7 @@
     "weight": 0.17
   },
   {
-    "category": "Traps",
+    "category": "Defenses",
     "crafting": [
       {
         "ingredients": [
@@ -22706,7 +23120,7 @@
     }
   },
   {
-    "category": "Traps",
+    "category": "Defenses",
     "crafting": [
       {
         "ingredients": [
@@ -22734,7 +23148,7 @@
     }
   },
   {
-    "category": "Traps",
+    "category": "Defenses",
     "crafting": [
       {
         "ingredients": [
@@ -23310,7 +23724,7 @@
     }
   },
   {
-    "category": "Hangar",
+    "category": "Walker Hangar",
     "crafting": [
       {
         "ingredients": [
@@ -23337,7 +23751,7 @@
     }
   },
   {
-    "category": "Hangar",
+    "category": "Walker Hangar",
     "crafting": [
       {
         "ingredients": [
@@ -23360,7 +23774,7 @@
     }
   },
   {
-    "category": "Hangar",
+    "category": "Walker Hangar",
     "crafting": [
       {
         "ingredients": [
@@ -23387,7 +23801,7 @@
     }
   },
   {
-    "category": "Hangar",
+    "category": "Walker Hangar",
     "crafting": [
       {
         "ingredients": [
@@ -23640,7 +24054,15 @@
     "type": "LargeBackpack_C",
     "stackSize": 100,
     "weight": 7.5,
-    "durability": 500
+    "durability": 500,
+    "drops": [
+      {
+        "location": "Equipment Strongbox",
+        "chance": 0.016393442,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Weapons",
@@ -23658,7 +24080,7 @@
     "damageType": "'RupuJavelinDamage_C'"
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "name": "Heavy Legs (1 of 2)",
     "type": "HeavyLegs_C"
   },
@@ -23705,6 +24127,20 @@
       {
         "toolType": "TreeCutting",
         "tier": 12
+      }
+    ],
+    "drops": [
+      {
+        "location": "Tools and Equipment Strongbox",
+        "chance": 0.44898921999999997,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Weapons Strongbox",
+        "chance": 0.04484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
       }
     ],
     "damageType": "'MeleeAxeDamage_C'"
@@ -23808,7 +24244,7 @@
     ]
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "name": "Heavy Wings (1 of 2)",
     "type": "HeavyWings_C"
   },
@@ -24147,7 +24583,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -24174,7 +24610,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -24205,7 +24641,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -24520,7 +24956,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -24543,7 +24979,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -24570,7 +25006,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -24597,7 +25033,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -24624,7 +25060,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -24655,7 +25091,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -24686,7 +25122,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -24713,7 +25149,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -24967,7 +25403,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -24994,7 +25430,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -25025,7 +25461,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -25796,7 +26232,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -25819,7 +26255,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -25850,7 +26286,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -25877,7 +26313,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -25904,7 +26340,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -25935,7 +26371,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -25966,7 +26402,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -25997,7 +26433,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -29019,7 +29455,7 @@
     "damageType": "'MeleeSwordDamage_C'"
   },
   {
-    "category": "Drugs",
+    "category": "Vitamins",
     "crafting": [
       {
         "ingredients": [
@@ -29054,7 +29490,7 @@
     "weight": 0.5
   },
   {
-    "category": "WalkerTools",
+    "category": "Walker Tools",
     "crafting": [
       {
         "ingredients": [
@@ -29332,7 +29768,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "name": "Large Wing",
     "type": "LargeFastWing_C"
   },
@@ -29964,6 +30400,14 @@
         "tier": 1
       }
     ],
+    "drops": [
+      {
+        "location": "Weapons Strongbox",
+        "chance": 0.04484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
+      }
+    ],
     "damageType": "'MeleeSwordDamage_C'"
   },
   {
@@ -30044,7 +30488,7 @@
     "experiencieReward": 25
   },
   {
-    "category": "WalkerTools",
+    "category": "Walker Tools",
     "crafting": [
       {
         "ingredients": [
@@ -30432,7 +30876,21 @@
     "experiencieReward": 150,
     "stackSize": 100,
     "weight": 5.2,
-    "durability": 140
+    "durability": 140,
+    "drops": [
+      {
+        "location": "Equipment Strongbox",
+        "chance": 0.2295082,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      },
+      {
+        "location": "Tools and Equipment Strongbox",
+        "chance": 0.003996004,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Containers",
@@ -30538,7 +30996,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "name": "Medium Wing",
     "type": "MediumFastWing_C"
   },
@@ -30819,7 +31277,7 @@
     "weight": 0.3
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Mobility - Tier 1 Upgrade",
     "translation": "Mobility - Tier 1 Upgrade",
     "type": "SparePartWoodGears_C",
@@ -30828,7 +31286,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Mobility - Tier 2 Upgrade",
     "translation": "Mobility - Tier 2 Upgrade",
     "type": "SparePartBoneGears_C",
@@ -30837,7 +31295,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Mobility - Tier 3 Upgrade",
     "translation": "Mobility - Tier 3 Upgrade",
     "type": "SparePartClayGears_C",
@@ -30846,7 +31304,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Mobility - Tier 4 Upgrade",
     "translation": "Mobility - Tier 4 Upgrade",
     "type": "SparePartIronGears_C",
@@ -30906,7 +31364,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -30933,7 +31391,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -31784,7 +32242,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -31819,7 +32277,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -31854,7 +32312,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -31889,7 +32347,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -31924,7 +32382,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -31959,7 +32417,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -31994,7 +32452,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -33919,7 +34377,15 @@
     "experiencieReward": 50,
     "stackSize": 100,
     "weight": 1,
-    "durability": 200
+    "durability": 200,
+    "drops": [
+      {
+        "location": "Equipment Strongbox",
+        "chance": 0.08196721,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      }
+    ]
   },
   {
     "category": "Crafting",
@@ -34010,7 +34476,33 @@
     "type": "ObsidianRok_C",
     "projectileDamage": {
       "damage": 500
-    }
+    },
+    "drops": [
+      {
+        "location": "AmmoBox T3",
+        "chance": 0.12,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      },
+      {
+        "location": "BigHotspotLoot T3",
+        "chance": 0.12,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      },
+      {
+        "location": "AmmoBox T4",
+        "chance": 0.14285714,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      },
+      {
+        "location": "BigHotspotLoot T4",
+        "chance": 0.14285714,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ]
   },
   {
     "name": "OkkamStatue",
@@ -34284,6 +34776,14 @@
       "damage": 40,
       "penetration": 20
     },
+    "drops": [
+      {
+        "location": "Weapons Strongbox",
+        "chance": 0.026905830000000002,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      }
+    ],
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
@@ -34754,7 +35254,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -34781,7 +35281,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -34824,7 +35324,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -35542,7 +36042,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -35565,7 +36065,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -35596,7 +36096,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -35623,7 +36123,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -35650,7 +36150,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -35681,7 +36181,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -35712,7 +36212,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -35743,7 +36243,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -36187,7 +36687,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -36214,7 +36714,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -36245,7 +36745,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -36777,7 +37277,7 @@
     }
   },
   {
-    "category": "Drugs",
+    "category": "Vitamins",
     "crafting": [
       {
         "ingredients": [
@@ -36835,7 +37335,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "name": "Raider Wings (1 of 2)",
     "type": "SkirmishWings2_C"
   },
@@ -36932,7 +37432,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -37060,7 +37560,7 @@
     ]
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -37983,6 +38483,14 @@
       "damage": 32,
       "penetration": 20
     },
+    "drops": [
+      {
+        "location": "Weapons Strongbox",
+        "chance": 0.04484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
+      }
+    ],
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
@@ -38026,6 +38534,14 @@
       {
         "toolType": "Scythe",
         "tier": 1
+      }
+    ],
+    "drops": [
+      {
+        "location": "Weapons Strongbox",
+        "chance": 0.04484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
       }
     ],
     "damageType": "'MeleeSwordDamage_C'"
@@ -39226,7 +39742,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "name": "Rugged Wings (1 of 2)",
     "type": "HeavyWings2_C"
   },
@@ -40723,7 +41239,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "Drugs",
+    "category": "Vitamins",
     "name": "Rupu Repellent",
     "trade_price": 79.9,
     "translation": "Rupu Repellent",
@@ -41998,7 +42514,7 @@
     ]
   },
   {
-    "category": "WalkerTools",
+    "category": "Walker Tools",
     "crafting": [
       {
         "ingredients": [
@@ -42052,6 +42568,56 @@
       {
         "toolType": "Scattershot",
         "tier": 1
+      }
+    ],
+    "drops": [
+      {
+        "location": "AmmoBox T1",
+        "chance": 0.33333332,
+        "minQuantity": 2,
+        "maxQuantity": 18
+      },
+      {
+        "location": "BigHotspotLoot T1",
+        "chance": 0.33333332,
+        "minQuantity": 2,
+        "maxQuantity": 18
+      },
+      {
+        "location": "AmmoBox T2",
+        "chance": 0.33333332,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      },
+      {
+        "location": "BigHotspotLoot T2",
+        "chance": 0.33333332,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      },
+      {
+        "location": "AmmoBox T3",
+        "chance": 0.16,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      },
+      {
+        "location": "BigHotspotLoot T3",
+        "chance": 0.16,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      },
+      {
+        "location": "AmmoBox T4",
+        "chance": 0.28571428,
+        "minQuantity": 2,
+        "maxQuantity": 12
+      },
+      {
+        "location": "BigHotspotLoot T4",
+        "chance": 0.28571428,
+        "minQuantity": 2,
+        "maxQuantity": 12
       }
     ],
     "wikiVisibility": false,
@@ -42207,7 +42773,15 @@
     "experiencieReward": 26,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 70
+    "durability": 70,
+    "drops": [
+      {
+        "location": "Tools and Equipment Strongbox",
+        "chance": 0.44898921999999997,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Walkers",
@@ -42261,7 +42835,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -42288,7 +42862,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -42319,7 +42893,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -43044,7 +43618,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -43071,7 +43645,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -43102,7 +43676,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -43129,7 +43703,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -43156,7 +43730,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -43187,7 +43761,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -43218,7 +43792,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -43249,7 +43823,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -43540,7 +44114,7 @@
     "weight": 0.18
   },
   {
-    "category": "Traps",
+    "category": "Defenses",
     "crafting": [
       {
         "ingredients": [
@@ -43670,6 +44244,14 @@
         "tier": 1
       }
     ],
+    "drops": [
+      {
+        "location": "Weapons Strongbox",
+        "chance": 0.026905830000000002,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      }
+    ],
     "damageType": "'MeleeSwordDamage_C'"
   },
   {
@@ -43729,7 +44311,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -43756,7 +44338,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -43787,7 +44369,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -44127,6 +44709,14 @@
         "tier": 5
       }
     ],
+    "drops": [
+      {
+        "location": "Tools Strongbox",
+        "chance": 0.17811705,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      }
+    ],
     "damageType": "'MeleePickaxeDamage_C'"
   },
   {
@@ -44163,6 +44753,14 @@
       "damage": 20,
       "penetration": 5
     },
+    "drops": [
+      {
+        "location": "Tools Strongbox",
+        "chance": 0.17811705,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      }
+    ],
     "damageType": "'MeleeRepairHammerDamage_C'"
   },
   {
@@ -44207,6 +44805,14 @@
       {
         "toolType": "Scythe",
         "tier": 5
+      }
+    ],
+    "drops": [
+      {
+        "location": "Tools Strongbox",
+        "chance": 0.17811705,
+        "minQuantity": 1,
+        "maxQuantity": 5
       }
     ],
     "damageType": "'MeleeSwordDamage_C'"
@@ -44256,10 +44862,18 @@
         "tier": 1
       }
     ],
+    "drops": [
+      {
+        "location": "Weapons Strongbox",
+        "chance": 0.026905830000000002,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      }
+    ],
     "damageType": "'MeleeSwordDamage_C'"
   },
   {
-    "category": "Drugs",
+    "category": "Vitamins",
     "crafting": [
       {
         "ingredients": [
@@ -44293,7 +44907,7 @@
     "weight": 0.5
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "name": "Skirmish Wings (1 of 2)",
     "type": "SkirmishWings_C"
   },
@@ -44483,7 +45097,7 @@
     }
   },
   {
-    "category": "WalkerTools",
+    "category": "Walker Tools",
     "crafting": [
       {
         "ingredients": [
@@ -44608,7 +45222,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "name": "Small Wing",
     "type": "SmallFastWing_C"
   },
@@ -44735,7 +45349,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -44758,7 +45372,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -45570,7 +46184,21 @@
     "experiencieReward": 55,
     "stackSize": 100,
     "weight": 3.2,
-    "durability": 130
+    "durability": 130,
+    "drops": [
+      {
+        "location": "Equipment Strongbox",
+        "chance": 0.2295082,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      },
+      {
+        "location": "Tools and Equipment Strongbox",
+        "chance": 0.224494608,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Equipment",
@@ -45602,7 +46230,15 @@
     "experiencieReward": 70,
     "stackSize": 100,
     "weight": 3.4,
-    "durability": 160
+    "durability": 160,
+    "drops": [
+      {
+        "location": "Equipment Strongbox",
+        "chance": 0.08196721,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      }
+    ]
   },
   {
     "category": "Equipment",
@@ -45698,7 +46334,7 @@
     ]
   },
   {
-    "category": "Traps",
+    "category": "Defenses",
     "crafting": [
       {
         "ingredients": [
@@ -45940,7 +46576,7 @@
     "onlyDevs": true
   },
   {
-    "category": "WalkerTools",
+    "category": "Walker Tools",
     "crafting": [
       {
         "ingredients": [
@@ -45961,7 +46597,7 @@
     "experiencieReward": 208
   },
   {
-    "category": "WalkerTools",
+    "category": "Walker Tools",
     "crafting": [
       {
         "ingredients": [
@@ -46062,7 +46698,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -46085,7 +46721,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -46942,7 +47578,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -46981,7 +47617,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -47016,7 +47652,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -47051,7 +47687,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -47086,7 +47722,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -47121,7 +47757,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -47156,7 +47792,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -47725,6 +48361,164 @@
       {
         "toolType": "TreeCutting",
         "tier": 5
+      }
+    ],
+    "drops": [
+      {
+        "location": "Tools Strongbox",
+        "chance": 0.17811705,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      },
+      {
+        "location": "BigHotspotLoot T1",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "EasyRupuCamp T1",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Forerunner (Easy)",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Scavenger (Easy)",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Thug (Easy)",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Cowardly Rupu",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Green Rupu",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Yellow Rupu",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Hero",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Warrior",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Berserker",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Forerunner",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Oracle",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Overseer",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Priestess",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Prophet",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Tar Dweller",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Zharvakko",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HardRupuCamp T1",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Sentinel (Easy)",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLoot T1",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "MediumRupuCamp T1",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Harasser (Easy)",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Skirmisher (Easy)",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "TreasureChest T1",
+        "chance": 0.25806452,
+        "minQuantity": 1,
+        "maxQuantity": 1
       }
     ],
     "damageType": "'MeleeAxeDamage_C'"
@@ -48470,32 +49264,67 @@
     }
   },
   {
-    "category": "Liquids",
+    "category": "Resources",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Fat"
-          },
-          {
-            "count": 10,
-            "name": "Phosphorus"
+            "count": 1,
+            "name": "Wood"
           }
         ],
-        "output": 5,
-        "station": "Purification Station",
+        "station": "FurnaceBurning",
+        "time": 2
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "CharcoalFuel"
+          }
+        ],
+        "station": "FurnaceBurning",
+        "time": 20
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Fuel"
+          }
+        ],
+        "station": "FurnaceBurning_Tier2",
         "time": 60
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Rupu Gel"
+          }
+        ],
+        "station": "FurnaceBurning_Tier2",
+        "time": 100
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "LavaFuel"
+          }
+        ],
+        "station": "FurnaceBurning_Tier2",
+        "time": 80
       }
     ],
     "name": "Tallow",
-    "parent": "PurificationStation",
-    "trade_price": 3.7,
-    "translation": "Tallow",
-    "type": "Fuel_C",
-    "experiencieReward": 3,
-    "stackSize": 100,
-    "weight": 0.5
+    "parent": "Purification Station",
+    "trade_price": 1,
+    "translation": "Fuel",
+    "type": "FurnaceBurning_C",
+    "experiencieReward": 1,
+    "stackSize": 10000,
+    "weight": 0.01
   },
   {
     "category": "Liquids",
@@ -48747,6 +49576,158 @@
       {
         "toolType": "Net",
         "tier": 1
+      }
+    ],
+    "drops": [
+      {
+        "location": "BigHotspotLoot T1",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "EasyRupuCamp T1",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Forerunner (Easy)",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Scavenger (Easy)",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Thug (Easy)",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Cowardly Rupu",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Green Rupu",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Yellow Rupu",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Hero",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Warrior",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Berserker",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Forerunner",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Oracle",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Overseer",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Priestess",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Prophet",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Tar Dweller",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Zharvakko",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HardRupuCamp T1",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Sentinel (Easy)",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLoot T1",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "MediumRupuCamp T1",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Harasser (Easy)",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Skirmisher (Easy)",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "TreasureChest T1",
+        "chance": 0.16129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
       }
     ],
     "damageType": "'JavelinDamage_C'"
@@ -49202,7 +50183,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -49229,7 +50210,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -49260,7 +50241,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -49978,7 +50959,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -50005,7 +50986,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -50036,7 +51017,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -50063,7 +51044,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -50090,7 +51071,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -50121,7 +51102,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -50152,7 +51133,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -50183,7 +51164,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -50265,7 +51246,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -50292,7 +51273,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -50327,7 +51308,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -51166,7 +52147,7 @@
     "upgradeInfo": {}
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -51205,7 +52186,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -51240,7 +52221,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -51279,7 +52260,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -51314,7 +52295,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -51349,7 +52330,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -51384,7 +52365,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -51419,7 +52400,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -51454,7 +52435,7 @@
     }
   },
   {
-    "category": "WalkerTools",
+    "category": "Walker Tools",
     "crafting": [
       {
         "ingredients": [
@@ -51656,7 +52637,7 @@
     "durability": 120
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Torque Capacity - Tier 1 Upgrade",
     "translation": "Torque Capacity - Tier 1 Upgrade",
     "type": "SparePartWoodTorque_C",
@@ -51665,7 +52646,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Torque Capacity - Tier 2 Upgrade",
     "translation": "Torque Capacity - Tier 2 Upgrade",
     "type": "SparePartBoneTorque_C",
@@ -51674,7 +52655,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Torque Capacity - Tier 3 Upgrade",
     "translation": "Torque Capacity - Tier 3 Upgrade",
     "type": "SparePartClayTorque_C",
@@ -51683,7 +52664,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Torque Capacity - Tier 4 Upgrade",
     "translation": "Torque Capacity - Tier 4 Upgrade",
     "type": "SparePartIronTorque_C",
@@ -51752,7 +52733,7 @@
     "weight": 0.01
   },
   {
-    "category": "Traps",
+    "category": "Defenses",
     "crafting": [
       {
         "ingredients": [
@@ -51814,6 +52795,158 @@
       "damage": 28,
       "penetration": 20
     },
+    "drops": [
+      {
+        "location": "BigHotspotLoot T1",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "EasyRupuCamp T1",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Forerunner (Easy)",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Scavenger (Easy)",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Thug (Easy)",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Cowardly Rupu",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Green Rupu",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Yellow Rupu",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Hero",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Warrior",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Berserker",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Forerunner",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Oracle",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Overseer",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Priestess",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Prophet",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Tar Dweller",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Zharvakko",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HardRupuCamp T1",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Sentinel (Easy)",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLoot T1",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "MediumRupuCamp T1",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Harasser (Easy)",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Rupu Skirmisher (Easy)",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "TreasureChest T1",
+        "chance": 0.19354839999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
@@ -51834,7 +52967,7 @@
     "weight": 0.15
   },
   {
-    "category": "Traps",
+    "category": "Defenses",
     "crafting": [
       {
         "ingredients": [
@@ -52565,7 +53698,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -52592,7 +53725,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -52623,7 +53756,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -53400,7 +54533,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -53427,7 +54560,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -53458,7 +54591,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -53485,7 +54618,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -53512,7 +54645,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -53543,7 +54676,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -53574,7 +54707,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -53605,7 +54738,7 @@
     }
   },
   {
-    "category": "WalkerParts",
+    "category": "Walker Parts",
     "crafting": [
       {
         "ingredients": [
@@ -53666,7 +54799,7 @@
     }
   },
   {
-    "category": "Drugs",
+    "category": "Vitamins",
     "crafting": [
       {
         "ingredients": [
@@ -53698,7 +54831,7 @@
     "type": "Drugs_C"
   },
   {
-    "category": "WalkerTools",
+    "category": "Walker Tools",
     "crafting": [
       {
         "ingredients": [
@@ -53949,7 +55082,7 @@
     "damageType": "'WaterHoseDamage_C'"
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Water Storage - Tier 1 Upgrade",
     "translation": "Water Storage - Tier 1 Upgrade",
     "type": "SparePartWoodWater_C",
@@ -53958,7 +55091,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Water Storage - Tier 2 Upgrade",
     "translation": "Water Storage - Tier 2 Upgrade",
     "type": "SparePartBoneWater_C",
@@ -53967,7 +55100,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Water Storage - Tier 3 Upgrade",
     "translation": "Water Storage - Tier 3 Upgrade",
     "type": "SparePartClayWater_C",
@@ -53976,7 +55109,7 @@
     "wikiVisibility": false
   },
   {
-    "category": "SpareParts",
+    "category": "Spare Parts",
     "name": "Water Storage - Tier 4 Upgrade",
     "translation": "Water Storage - Tier 4 Upgrade",
     "type": "SparePartIronWater_C",
@@ -54282,7 +55415,15 @@
     "experiencieReward": 162,
     "stackSize": 100,
     "weight": 4,
-    "durability": 120
+    "durability": 120,
+    "drops": [
+      {
+        "location": "Equipment Strongbox",
+        "chance": 0.016393442,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Resources",
@@ -54903,6 +56044,56 @@
         "tier": 1
       }
     ],
+    "drops": [
+      {
+        "location": "AmmoBox T1",
+        "chance": 0.33333332,
+        "minQuantity": 5,
+        "maxQuantity": 25
+      },
+      {
+        "location": "BigHotspotLoot T1",
+        "chance": 0.33333332,
+        "minQuantity": 5,
+        "maxQuantity": 25
+      },
+      {
+        "location": "AmmoBox T2",
+        "chance": 0.33333332,
+        "minQuantity": 10,
+        "maxQuantity": 30
+      },
+      {
+        "location": "BigHotspotLoot T2",
+        "chance": 0.33333332,
+        "minQuantity": 10,
+        "maxQuantity": 30
+      },
+      {
+        "location": "AmmoBox T3",
+        "chance": 0.4,
+        "minQuantity": 5,
+        "maxQuantity": 30
+      },
+      {
+        "location": "BigHotspotLoot T3",
+        "chance": 0.4,
+        "minQuantity": 5,
+        "maxQuantity": 30
+      },
+      {
+        "location": "AmmoBox T4",
+        "chance": 0.28571428,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      },
+      {
+        "location": "BigHotspotLoot T4",
+        "chance": 0.28571428,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      }
+    ],
     "damageType": "'DartDamage_C'"
   },
   {
@@ -55450,7 +56641,7 @@
     "weight": 0.01
   },
   {
-    "category": "Drugs",
+    "category": "Vitamins",
     "crafting": [
       {
         "ingredients": [

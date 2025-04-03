@@ -1,6 +1,6 @@
 /**
  * Translation Controller
- * 
+ *
  * This module provides translation functionality for the data extractor.
  * It handles translation of names, descriptions, and other text elements.
  */
@@ -18,6 +18,7 @@ const lootSitesTranslations = require("../translations/lootSites");
 const techTreeTranslations = require("../translations/techTreeTranslations");
 const techTreeNameVariants = require("../translations/techTreeNameVariants");
 const techTreeNameNormalizer = require("../translations/techTreeNameNormalizer");
+const itemNameGlossary = require("./fileParsers/itemNameGlossary");
 
 // Translation storage objects
 const translationStore = {
@@ -25,7 +26,7 @@ const translationStore = {
 	allDescriptions: {},
 	translationsFromOtherLanguages: {},
 	descriptionsFromOtherLanguages: {},
-	translationsInUse: {}
+	translationsInUse: {},
 };
 
 /**
@@ -89,13 +90,15 @@ controller.translateEachPart = (name) => {
 
 	const words = name.split("_");
 
-	return words.reduce((accumulator, word) => {
-		const translatedWord = controller.searchName(word);
-		if (translatedWord) {
-			return `${accumulator} ${translatedWord}`;
-		}
-		return `${accumulator} ${word}`;
-	}, "").trim();
+	return words
+		.reduce((accumulator, word) => {
+			const translatedWord = controller.searchName(word);
+			if (translatedWord) {
+				return `${accumulator} ${translatedWord}`;
+			}
+			return `${accumulator} ${word}`;
+		}, "")
+		.trim();
 };
 
 /**
@@ -108,7 +111,13 @@ controller.translateName = (name) => {
 		return "";
 	}
 
-	// First check if this is a tech tree name that needs normalization
+	// First check if this name exists in the item name glossary
+	const glossaryName = itemNameGlossary.getDisplayName(name);
+	if (glossaryName) {
+		return glossaryName;
+	}
+
+	// Then check if this is a tech tree name that needs normalization
 	const normalizedName = techTreeNameNormalizer.normalize(name);
 	if (normalizedName !== name) {
 		return normalizedName;
@@ -196,6 +205,14 @@ controller.searchName = (name) => {
 		return null;
 	}
 
+	// First check in the item name glossary
+	const glossaryName = itemNameGlossary.getDisplayName(name);
+	if (glossaryName) {
+		const translation = trimIfExists(glossaryName);
+		controller.addTranslationInUse(name, translation);
+		return translation;
+	}
+
 	// Check in additional translations
 	if (additionalTranslations[name]) {
 		const translation = trimIfExists(additionalTranslations[name]);
@@ -269,13 +286,24 @@ controller.translateItem = (item) => {
 		name = item.translation;
 	}
 
-	// Try to find translation
-	const translatedName = controller.searchName(item.translation);
-	if (translatedName) {
+	// First check if this item has a name in the glossary
+	const glossaryName = item.translation
+		? itemNameGlossary.getDisplayName(item.translation)
+		: null;
+	if (glossaryName) {
 		if (item.name) {
-			controller.addTranslation(item.name, translatedName);
+			controller.addTranslation(item.name, glossaryName);
 		}
-		name = translatedName;
+		name = glossaryName;
+	} else {
+		// Fall back to regular translation if not in glossary
+		const translatedName = controller.searchName(item.translation);
+		if (translatedName) {
+			if (item.name) {
+				controller.addTranslation(item.name, translatedName);
+			}
+			name = translatedName;
+		}
 	}
 
 	if (name) {
@@ -382,10 +410,12 @@ controller.addTranslation = (key, translation, language = null) => {
 			translationStore.allTranslations[key] = translation;
 		}
 	} else if (translationStore.translationsFromOtherLanguages[language]) {
-		translationStore.translationsFromOtherLanguages[language][key] = translation;
+		translationStore.translationsFromOtherLanguages[language][key] =
+			translation;
 	} else {
 		translationStore.translationsFromOtherLanguages[language] = {};
-		translationStore.translationsFromOtherLanguages[language][key] = translation;
+		translationStore.translationsFromOtherLanguages[language][key] =
+			translation;
 	}
 };
 
@@ -403,10 +433,12 @@ controller.addDescription = (key, description, language = null) => {
 	if (language === null) {
 		translationStore.allDescriptions[key] = description;
 	} else if (translationStore.descriptionsFromOtherLanguages[language]) {
-		translationStore.descriptionsFromOtherLanguages[language][key] = description;
+		translationStore.descriptionsFromOtherLanguages[language][key] =
+			description;
 	} else {
 		translationStore.descriptionsFromOtherLanguages[language] = {};
-		translationStore.descriptionsFromOtherLanguages[language][key] = description;
+		translationStore.descriptionsFromOtherLanguages[language][key] =
+			description;
 	}
 };
 
@@ -421,7 +453,10 @@ controller.addTranslationInUse = (key, translation) => {
 	}
 
 	// Clean up the translation by replacing multiple newlines with a single space
-	const cleanTranslation = translation.replace(/\r\n|\n\r|\n|\r/g, ' ').replace(/\s+/g, ' ').trim();
+	const cleanTranslation = translation
+		.replace(/\r\n|\n\r|\n|\r/g, " ")
+		.replace(/\s+/g, " ")
+		.trim();
 	translationStore.translationsInUse[key] = cleanTranslation;
 };
 
@@ -462,10 +497,11 @@ controller.getTranslateFiles = () => {
 		const englishName = translationStore.translationsInUse[key];
 		// Much less restrictive filtering to include more valid translations
 		// Only filter out completely empty strings or extremely long entries
-		if (englishName && englishName.trim() !== '' && englishName.length < 2000) {
+		if (englishName && englishName.trim() !== "" && englishName.length < 2000) {
 			// Clean up the text by replacing multiple newlines with a single space
-			const cleanedName = englishName.replace(/\r\n|\n\r|\n|\r/g, ' ')
-				.replace(/\s+/g, ' ')
+			const cleanedName = englishName
+				.replace(/\r\n|\n\r|\n|\r/g, " ")
+				.replace(/\s+/g, " ")
 				.trim();
 			usedItemNames.add(cleanedName);
 		}
@@ -478,12 +514,15 @@ controller.getTranslateFiles = () => {
 		}
 
 		// Process translations
-		for (const key in translationStore.translationsFromOtherLanguages[language]) {
+		for (const key in translationStore.translationsFromOtherLanguages[
+			language
+		]) {
 			if (controller.isKeyTranslationInUse(key)) {
 				// Get the English name which will be used as the key
 				const englishName = translationStore.translationsInUse[key];
 				// Get the translated text in the target language
-				const translatedText = translationStore.translationsFromOtherLanguages[language][key];
+				const translatedText =
+					translationStore.translationsFromOtherLanguages[language][key];
 
 				// Only include if this is an actual game item that's in use
 				if (englishName && usedItemNames.has(englishName)) {

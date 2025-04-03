@@ -31,7 +31,11 @@ const getItemFromItemData = (itemData, oldItem) => {
 	const item = oldItem ?? utilityFunctions.extractItemByType(itemData.Type);
 
 	// Check if this is a walker part with a name pattern like "X Walker Legs Heavy (1 of 2)"
-	if (item.name && (item.name.includes("Walker Legs") || item.name.includes("Walker Wings")) && item.name.includes("(1 of 2)")) {
+	if (
+		item.name &&
+		(item.name.includes("Walker Legs") || item.name.includes("Walker Wings")) &&
+		item.name.includes("(1 of 2)")
+	) {
 		item.category = "WalkerParts";
 	}
 
@@ -91,12 +95,12 @@ const getItemFromItemData = (itemData, oldItem) => {
 					: undefined;
 			projectileDamage.effectivenessVsSoak =
 				EXTRACT_ALL_DATA &&
-					itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
+				itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
 					? itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
 					: undefined;
 			projectileDamage.effectivenessVsReduce =
 				EXTRACT_ALL_DATA &&
-					itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
+				itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
 					? itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
 					: undefined;
 

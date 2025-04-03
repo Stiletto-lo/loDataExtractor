@@ -45,7 +45,10 @@ const processTranslationEntry = (key, value, language = null) => {
 
 	const cleanKey = key.trim();
 	// Clean up the value by replacing multiple newlines with a single space
-	const cleanValue = value.replace(/\r\n|\n\r|\n|\r/g, ' ').replace(/\s+/g, ' ').trim();
+	const cleanValue = value
+		.replace(/\r\n|\n\r|\n|\r/g, " ")
+		.replace(/\s+/g, " ")
+		.trim();
 
 	// Handle different key patterns
 	if (cleanKey.includes(".Description")) {
@@ -64,11 +67,7 @@ const processTranslationEntry = (key, value, language = null) => {
 		);
 	} else {
 		// For other entries, add as a translation
-		translator.addTranslation(
-			cleanKey,
-			cleanValue,
-			language,
-		);
+		translator.addTranslation(cleanKey, cleanValue, language);
 	}
 };
 

@@ -76,7 +76,10 @@ const loadFiles = () => {
 	console.info("Loading Items");
 	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Items`, "item");
 	console.info("Loading Placeables");
-	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Placeables`, "placeables");
+	loadDirData(
+		`${CONTENT_FOLDER_PATH}Content/Mist/Data/Placeables`,
+		"placeables",
+	);
 	console.info("Loading Recipes");
 	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Recipes`, "item");
 	console.info("Loading Trade");
@@ -96,6 +99,11 @@ const loadFiles = () => {
 		"schematics",
 	);
 
+	console.info("Building Item Name Glossary");
+	fileParser.buildItemNameGlossary(
+		`${CONTENT_FOLDER_PATH}Content/Mist/Data/Items`,
+	);
+
 	if (process.env.EXTRACT_LOOT_TABLES === "true") {
 		console.info("Loading LootTables");
 		loadDirData(
@@ -108,7 +116,7 @@ const loadFiles = () => {
 		);
 		fileParser.parseBlueprintsToItems();
 	}
-}
+};
 
 loadFiles();
 
@@ -133,10 +141,10 @@ for (const item of allItems) {
 			delete item[key];
 		}
 		if (item?.drops !== undefined && item.drops.length <= 0) {
-			delete item.drops;
+			item.drops = undefined;
 		}
 		if (item?.toolInfo !== undefined && item.toolInfo.length <= 0) {
-			delete item.toolInfo;
+			item.toolInfo = undefined;
 		}
 	}
 }
@@ -177,6 +185,9 @@ if (allItems.length > 0) {
 		},
 	);
 
+	// Save the item name glossary
+	fileParser.saveGlossary(`${folderPatch}itemNameGlossary.json`);
+
 	for (const item of allItems) {
 		for (const key of Object.keys(item)) {
 			if (item[key] === undefined) {
@@ -185,19 +196,19 @@ if (allItems.length > 0) {
 		}
 
 		if (item?.translation !== undefined) {
-			delete item.translation;
+			item.translation = undefined;
 		}
 		if (item?.type !== undefined) {
-			delete item.type;
+			item.type = undefined;
 		}
 		if (item?.schematicName !== undefined) {
-			delete item.schematicName;
+			item.schematicName = undefined;
 		}
 		if (item?.damageType !== undefined) {
-			delete item.damageType;
+			item.damageType = undefined;
 		}
 		if (item?.learn && item.learn.length === 0) {
-			delete item.learn;
+			item.learn = undefined;
 		}
 	}
 
@@ -249,10 +260,10 @@ if (creatures.length > 0) {
 				delete creature[key];
 			}
 			if (creature?.lootTable !== undefined) {
-				delete creature.lootTable;
+				creature.lootTable = undefined;
 			}
 			if (creature?.type !== undefined) {
-				delete creature.type;
+				creature.type = undefined;
 			}
 		}
 	}
@@ -296,7 +307,7 @@ if (process.env.TRANSLATE_FILES === "true") {
 			translationCount++;
 		}
 		// Add cost name if available
-		if (item.cost && item.cost.name) {
+		if (item?.cost?.name) {
 			translator.addTranslationInUse(item.cost.name, item.cost.name);
 			translationCount++;
 		}
@@ -315,11 +326,15 @@ if (process.env.TRANSLATE_FILES === "true") {
 			translationCount++;
 		}
 	}
-	console.log(`Added ${translationCount} item translations to the translationsInUse store`);
+	console.log(
+		`Added ${translationCount} item translations to the translationsInUse store`,
+	);
 
 	// Export the translations
 	const translateData = translator.getTranslateFiles();
-	console.log(`Found ${Object.keys(translateData).length} languages with translations`);
+	console.log(
+		`Found ${Object.keys(translateData).length} languages with translations`,
+	);
 
 	for (const languaje in translateData) {
 		const fileData = translateData[languaje];
@@ -331,7 +346,9 @@ if (process.env.TRANSLATE_FILES === "true") {
 				if (err) {
 					console.error(`Error creating the file: ${languaje}`, err);
 				} else {
-					console.log(`Translated files ${languaje} exported with ${Object.keys(fileData).length} translations`);
+					console.log(
+						`Translated files ${languaje} exported with ${Object.keys(fileData).length} translations`,
+					);
 				}
 			},
 		);

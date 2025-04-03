@@ -94,8 +94,12 @@ class DataStore {
 	 */
 	getIngredientsFromItem(data, key) {
 		const ingredient = { ...costTemplate };
-		ingredient.name = data[key]?.Key ? dataParser.parseName(translator, data[key]?.Key) : dataParser.parseName(translator, Object.keys(data[key])[0]);
-		ingredient.count = data[key]?.Key ? data[key]?.Value : Object.values(data[key])[0];
+		ingredient.name = data[key]?.Key
+			? dataParser.parseName(translator, data[key]?.Key)
+			: dataParser.parseName(translator, Object.keys(data[key])[0]);
+		ingredient.count = data[key]?.Key
+			? data[key]?.Value
+			: Object.values(data[key])[0];
 
 		return ingredient;
 	}

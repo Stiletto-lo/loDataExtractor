@@ -23,9 +23,9 @@ const parseDamage = (filePath) => {
 					: undefined;
 				proyectileDamage.vsMedium = jsonData[1]?.Properties?.DamageAgainstMedium
 					? Number.parseInt(
-						jsonData[1].Properties.DamageAgainstMedium * 100,
-						10,
-					)
+							jsonData[1].Properties.DamageAgainstMedium * 100,
+							10,
+						)
 					: undefined;
 				proyectileDamage.vsHard = jsonData[1]?.Properties?.DamageAgainstHard
 					? Number.parseInt(jsonData[1].Properties.DamageAgainstHard * 100, 10)
@@ -33,9 +33,9 @@ const parseDamage = (filePath) => {
 				proyectileDamage.vsReinforced = jsonData[1]?.Properties
 					?.DamageAgainstReinforced
 					? Number.parseInt(
-						jsonData[1].Properties.DamageAgainstReinforced * 100,
-						10,
-					)
+							jsonData[1].Properties.DamageAgainstReinforced * 100,
+							10,
+						)
 					: undefined;
 				proyectileDamage.vsSolid = jsonData[1]?.Properties?.DamageAgainstSolid
 					? Number.parseInt(jsonData[1].Properties.DamageAgainstSolid * 100, 10)

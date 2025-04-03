@@ -209,16 +209,19 @@ const parseUpgrades = (filePath) => {
 
 const getUpgradeItem = (upgradePure) => {
 	if (upgradePure?.super) {
-		const superUpgrade = utilityFunctions.getUpgradesData().find(
-			(up) => up.profile == upgradePure.super && up.name == upgradePure.name
-		);
+		const superUpgrade = utilityFunctions
+			.getUpgradesData()
+			.find(
+				(up) =>
+					up.profile === upgradePure.super && up.name === upgradePure.name,
+			);
 		const superUpgradeData = getUpgradeItem(superUpgrade);
 		if (superUpgradeData) {
 			const item = { ...itemTemplate };
 			item.category = "Upgrades";
 			item.name = dataParser.parseUpgradeName(
 				upgradePure?.name,
-				upgradePure?.profile
+				upgradePure?.profile,
 			);
 			item.upgradeInfo = {
 				...superUpgradeData.upgradeInfo,
@@ -240,12 +243,12 @@ const getUpgradeItem = (upgradePure) => {
 						superUpgradeData.crafting[0].ingredients.filter(
 							(ingredient) =>
 								!upgradePure.crafting[0].ingredients.some(
-									(i) => i.name == ingredient.name
-								)
+									(i) => i.name === ingredient.name,
+								),
 						);
 					recipe.ingredients = [].concat(
 						upgradePure.crafting[0].ingredients,
-						ingredientsFiltered
+						ingredientsFiltered,
 					);
 				} else if (upgradePure.crafting[0].ingredients) {
 					recipe.ingredients = upgradePure.crafting[0].ingredients;
@@ -265,7 +268,7 @@ const getUpgradeItem = (upgradePure) => {
 		item.category = "Upgrades";
 		item.name = dataParser.parseUpgradeName(
 			upgradePure?.name,
-			upgradePure?.profile
+			upgradePure?.profile,
 		);
 		item.upgradeInfo = upgradePure?.upgradeInfo;
 		item.crafting = upgradePure?.crafting;

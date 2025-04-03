@@ -2,7 +2,7 @@
  * Blueprint parsers for handling blueprint-related data
  */
 
-const fs = require("fs");
+const fs = require("node:fs");
 const dataParser = require("../dataParsers");
 const translator = require("../translator");
 const blueprintTemplate = require("../../templates/lootBlueprint");
@@ -37,7 +37,7 @@ const parseLocation = (blueprint, location) => {
 			if (item?.name) {
 				const itemDrops = item.drops ? item.drops : [];
 				const hasDrop = itemDrops.some((d) => d.location === location);
-				if (!hasDrop && item.name != location) {
+				if (!hasDrop && item.name !== location) {
 					const drop = { ...require("../../templates/drop") };
 					drop.location = location;
 					if (EXTRACT_ALL_DATA && lootItemData.chance) {
@@ -88,7 +88,7 @@ const parseBlueprintsToItems = () => {
 const parseLootBlueprint = (filePath) => {
 	const rawdata = fs.readFileSync(filePath);
 	const jsonData = JSON.parse(rawdata);
-	if (jsonData[0].Name && jsonData?.[0]?.Type == "BlueprintGeneratedClass") {
+	if (jsonData[0].Name && jsonData?.[0]?.Type === "BlueprintGeneratedClass") {
 		if (jsonData[1]?.Type) {
 			const blueprint = { ...blueprintTemplate };
 			blueprint.name = dataParser.parseName(translator, jsonData[1].Type);
@@ -103,7 +103,7 @@ const parseLootBlueprint = (filePath) => {
 						);
 						const dataTable = utilityFunctions
 							.getAllDatatables()
-							.find((data) => data.name == name);
+							.find((data) => data.name === name);
 						if (dataTable) {
 							dataTable.chance = table.RunChance ? table.RunChance : undefined;
 							dataTable.minIterations = table.MinIterations

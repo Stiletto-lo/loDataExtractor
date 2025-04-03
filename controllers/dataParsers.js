@@ -2,7 +2,7 @@
  * Data Parser Module
  * Provides utility functions for parsing and transforming various data formats
  * related to game items, categories, and object paths.
- * 
+ *
  * @module dataParsers
  */
 
@@ -15,12 +15,12 @@ const PATTERNS = {
 	TRIM_CHARS: ["'", "_C", "_Q", ".Name", "DataTable", ".0"],
 	BLUEPRINT_CLASS: "BlueprintGeneratedClass",
 	CATEGORY_PREFIX: "Mist/Content/Mist/Data/Items/Categories/",
-	WALKER_CATEGORY: "EMistWalkerCategory::"
+	WALKER_CATEGORY: "EMistWalkerCategory::",
 };
 
 /**
  * Parses and formats a name string using translation services
- * 
+ *
  * @param {Object} translator - Translation service object
  * @param {string|null} name - The name to parse
  * @returns {string|undefined} - The parsed and formatted name or undefined if input is null
@@ -63,7 +63,7 @@ dataParser.parseName = (translator, name) => {
 
 /**
  * Parses special item names like legs, wings, and upgrades
- * 
+ *
  * @param {Object} translator - Translation service object
  * @param {string} name - The name to parse
  * @returns {string} - The parsed special item name
@@ -87,7 +87,7 @@ dataParser.parseSpecialItemName = (translator, name) => {
 
 /**
  * Parses legs item names
- * 
+ *
  * @param {Object} translator - Translation service object
  * @param {string} name - The name to parse
  * @returns {string} - The parsed legs name
@@ -96,9 +96,7 @@ dataParser.parseSpecialItemName = (translator, name) => {
 dataParser.parseLegsName = (translator, name) => {
 	const match = RegExp(/(.+)Legs/).exec(name);
 	if (match?.[1]) {
-		const walkerName = translator.translateName(
-			`${match[1].trim()} Walker`
-		);
+		const walkerName = translator.translateName(`${match[1].trim()} Walker`);
 		let legType = "";
 
 		if (name.includes("_T2")) {
@@ -116,7 +114,7 @@ dataParser.parseLegsName = (translator, name) => {
 
 /**
  * Parses wings item names
- * 
+ *
  * @param {Object} translator - Translation service object
  * @param {string} name - The name to parse
  * @returns {string} - The parsed wings name
@@ -125,9 +123,7 @@ dataParser.parseLegsName = (translator, name) => {
 dataParser.parseWingsName = (translator, name) => {
 	const match = RegExp(/(.+)Wings/).exec(name);
 	if (match?.[1]) {
-		const walkerName = translator.translateName(
-			`${match[1].trim()} Walker`
-		);
+		const walkerName = translator.translateName(`${match[1].trim()} Walker`);
 
 		const wingsType = dataParser.determineWingsType(name);
 		const wingsName = `${walkerName.trim()} ${wingsType}`.trim();
@@ -139,7 +135,7 @@ dataParser.parseWingsName = (translator, name) => {
 
 /**
  * Determines the type of wings based on name patterns
- * 
+ *
  * @param {string} name - The name containing wing type information
  * @returns {string} - The determined wings type
  * @private
@@ -171,7 +167,7 @@ dataParser.determineWingsType = (name) => {
 
 /**
  * Parses upgrades item names
- * 
+ *
  * @param {Object} translator - Translation service object
  * @param {string} name - The name to parse
  * @returns {string} - The parsed upgrades name
@@ -182,15 +178,13 @@ dataParser.parseUpgradesName = (translator, name) => {
 		{ pattern: /(.+)BoneUpgrades/, tier: "Tier 2" },
 		{ pattern: /(.+)CeramicUpgrades/, tier: "Tier 3" },
 		{ pattern: /(.+)IronUpgrades/, tier: "Tier 4" },
-		{ pattern: /(.+)WoodUpgrades/, tier: "" }
+		{ pattern: /(.+)WoodUpgrades/, tier: "" },
 	];
 
 	for (const { pattern, tier } of upgradePatterns) {
 		const match = RegExp(pattern).exec(name);
 		if (match?.[1]) {
-			const walkerName = translator.translateName(
-				`${match[1].trim()} Walker`
-			);
+			const walkerName = translator.translateName(`${match[1].trim()} Walker`);
 			return tier ? `${walkerName} Upgrades - ${tier}` : walkerName;
 		}
 	}
@@ -200,7 +194,7 @@ dataParser.parseUpgradesName = (translator, name) => {
 
 /**
  * Parses and cleans a type string
- * 
+ *
  * @param {string} name - The type string to parse
  * @returns {string} - The parsed type
  */
@@ -218,7 +212,7 @@ dataParser.parseType = (name) => {
 
 /**
  * Parses and formats a category string
- * 
+ *
  * @param {string|null} category - The category string to parse
  * @returns {string|null} - The parsed category or null if input is null
  */
@@ -227,9 +221,7 @@ dataParser.parseCategory = (category) => {
 		return category;
 	}
 
-	let categoryStr = category
-		.replace(PATTERNS.CATEGORY_PREFIX, "")
-		.trim();
+	let categoryStr = category.replace(PATTERNS.CATEGORY_PREFIX, "").trim();
 	categoryStr = categoryStr.replace(PATTERNS.WALKER_CATEGORY, "").trim();
 	categoryStr = categoryStr.replace(".0", "").trim();
 
@@ -238,7 +230,7 @@ dataParser.parseCategory = (category) => {
 
 /**
  * Extracts the last part of an object path
- * 
+ *
  * @param {string|null} objectName - The object path to parse
  * @returns {string|null} - The extracted object name or null if input is null
  */
@@ -254,7 +246,7 @@ dataParser.parseObjectPath = (objectName) => {
 
 /**
  * Parses and formats a rig name
- * 
+ *
  * @param {Object} translator - Translation service object
  * @param {string} name - The name to parse
  * @returns {string} - The parsed rig name
@@ -281,7 +273,7 @@ dataParser.parseRigName = (translator, name) => {
 
 /**
  * Determines the tier of a rig based on name patterns
- * 
+ *
  * @param {string} name - The name containing rig tier information
  * @returns {string} - The determined rig tier
  * @private
@@ -304,20 +296,20 @@ dataParser.determineRigTier = (name) => {
 
 /**
  * Parses and formats a structure name based on its category
- * 
+ *
  * @param {string} category - The structure category
  * @param {string} name - The structure name
  * @returns {string} - The parsed structure name
  */
 dataParser.parseStructureName = (category, name) => {
 	const structureTypes = {
-		"Concrete": "Cement",
-		"WoodLight": "Light Wood",
-		"Ceramic": "Clay",
-		"Clay": "Clay",
-		"StoneNew": "Stone",
-		"WoodHeavy": "Heavy Wood",
-		"WoodMedium": "Medium Wood"
+		Concrete: "Cement",
+		WoodLight: "Light Wood",
+		Ceramic: "Clay",
+		Clay: "Clay",
+		StoneNew: "Stone",
+		WoodHeavy: "Heavy Wood",
+		WoodMedium: "Medium Wood",
 	};
 
 	let type = "";
@@ -333,7 +325,7 @@ dataParser.parseStructureName = (category, name) => {
 
 /**
  * Parses and formats an upgrade name
- * 
+ *
  * @param {string|null} name - The upgrade name
  * @param {string|null} profile - The upgrade profile
  * @returns {string} - The parsed upgrade name
@@ -347,7 +339,7 @@ dataParser.parseUpgradeName = (name, profile) => {
 		"BaseSparePartsProfile",
 		"MediumSparePartsProfile",
 		"LargeSparePartsProfile",
-		"SmallSparePartsProfile"
+		"SmallSparePartsProfile",
 	];
 
 	// Return profile as is for special spare parts profiles
@@ -373,7 +365,7 @@ dataParser.parseUpgradeName = (name, profile) => {
 
 /**
  * Determines the tier of an upgrade based on name patterns
- * 
+ *
  * @param {string} name - The name containing upgrade tier information
  * @returns {number} - The determined upgrade tier
  * @private
@@ -396,20 +388,20 @@ dataParser.determineUpgradeTier = (name) => {
 
 /**
  * Determines the type of an upgrade based on name patterns
- * 
+ *
  * @param {string} name - The name containing upgrade type information
  * @returns {string} - The determined upgrade type
  * @private
  */
 dataParser.determineUpgradeType = (name) => {
 	const upgradeTypes = {
-		"Cargo": "Cargo",
-		"Hatch": "Gear",
-		"Water": "Water",
-		"Torque": "Torque",
-		"Gears": "Mobility",
-		"Armor": "Durability",
-		"Packing": "Packing"
+		Cargo: "Cargo",
+		Hatch: "Gear",
+		Water: "Water",
+		Torque: "Torque",
+		Gears: "Mobility",
+		Armor: "Durability",
+		Packing: "Packing",
 	};
 
 	for (const [key, value] of Object.entries(upgradeTypes)) {
@@ -423,7 +415,7 @@ dataParser.determineUpgradeType = (name) => {
 
 /**
  * Merges two items from an array based on their names
- * 
+ *
  * @param {Array} allItems - Array of items
  * @param {string} mainItemName - Name of the main item
  * @param {string} otherItemName - Name of the other item to merge
@@ -431,15 +423,15 @@ dataParser.determineUpgradeType = (name) => {
  */
 dataParser.itemMerger = (allItems, mainItemName, otherItemName) => {
 	const mainItem = allItems.find(
-		(item) => item.name && item.name === mainItemName
+		(item) => item.name && item.name === mainItemName,
 	);
 	const otherItem = allItems.find(
-		(item) => item.name && item.name === otherItemName
+		(item) => item.name && item.name === otherItemName,
 	);
 
 	const allItemsFiltered = allItems.filter(
 		(item) =>
-			item.name && item.name !== otherItemName && item.name !== mainItemName
+			item.name && item.name !== otherItemName && item.name !== mainItemName,
 	);
 
 	if (mainItem && otherItem) {
@@ -463,7 +455,7 @@ dataParser.itemMerger = (allItems, mainItemName, otherItemName) => {
 
 /**
  * Removes null and undefined properties from an object
- * 
+ *
  * @param {Object|null} obj - The object to clean
  * @returns {Object|null} - The cleaned object or null if empty
  */

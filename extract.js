@@ -16,7 +16,7 @@ const folderPatch = "./gamefiles/";
   await provider.submitKey(FGuid.mainGuid, AES_KEY);
 
   const techTreeFiles = provider.files.filter(
-    (file) => file.path && file.path.includes("Content/Mist/Data/TechTree")
+    (file) => file.path?.includes("Content/Mist/Data/TechTree")
   );
 
   if (techTreeFiles) {
@@ -40,7 +40,7 @@ const folderPatch = "./gamefiles/";
   }
 
   const itemsFiles = provider.files.filter(
-    (file) => file.path && file.path.includes("Content/Mist/Data/Items")
+    (file) => file.path?.includes("Content/Mist/Data/Items")
   );
 
   const saveGameFiles = (files) => {
