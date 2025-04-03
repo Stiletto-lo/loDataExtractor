@@ -203,6 +203,7 @@ techTreeNameVariants.LampsHanging = "Lamp Double Hanging";
 techTreeNameVariants.LampsOverhanging = "Lamp Overhanging";
 techTreeNameVariants.LampsStanding = "Lamp Standing";
 techTreeNameVariants.GiantWalls = "Giant Wall";
+techTreeNameVariants.VisionPowder = "Vision Powder";
 
 // Handle lowercase variants
 for (const key of Object.keys(techTreeNameVariants)) {
