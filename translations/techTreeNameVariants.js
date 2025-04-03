@@ -129,7 +129,7 @@ techTreeNameVariants.ThrowingLavaBomb = "Fire Bomb";
 
 // Resources
 techTreeNameVariants.AloeGel = "Aloe Gel";
-techTreeNameVariants.WoodenShaft = "Wooden Shaft";
+techTreeNameVariants.WoodenShaft = "Wood Shaft";
 techTreeNameVariants.BoneGlue = "Bone Glue";
 techTreeNameVariants.FiberCloth = "Fiber Weave";
 techTreeNameVariants.FiberCloth_C = "Fiber Weave";
@@ -142,6 +142,7 @@ techTreeNameVariants.CraftingBench = "Crafting Bench";
 
 // Stations
 techTreeNameVariants.PurificationStation = "Purification Station";
+techTreeNameVariants.FiberworkingStation = "Fiberworking Station";
 
 // Handle lowercase variants
 for (const key of Object.keys(techTreeNameVariants)) {
