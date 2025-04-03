@@ -22,7 +22,8 @@ const parseTechData = (filePath) => {
 
 		// Extract parent data
 		if (jsonData?.[1]?.Properties?.Requirements?.[0]?.ObjectName) {
-			item.parent = translator.translateName(
+			// Use specialized tech tree parent translation to ensure consistent parent-child relationships
+			item.parent = translator.translateTechTreeParent(
 				dataParser.parseName(
 					translator,
 					jsonData[1].Properties.Requirements[0].ObjectName,

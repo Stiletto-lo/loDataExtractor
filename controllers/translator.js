@@ -15,6 +15,9 @@ const controller = {};
 // Import translation dictionaries
 const additionalTranslations = require("../translations/aditionalTranslations");
 const lootSitesTranslations = require("../translations/lootSites");
+const techTreeTranslations = require("../translations/techTreeTranslations");
+const techTreeNameVariants = require("../translations/techTreeNameVariants");
+const techTreeNameNormalizer = require("../translations/techTreeNameNormalizer");
 
 // Translation storage objects
 const translationStore = {
@@ -105,6 +108,22 @@ controller.translateName = (name) => {
 		return "";
 	}
 
+	// First check if this is a tech tree name that needs normalization
+	const normalizedName = techTreeNameNormalizer.normalize(name);
+	if (normalizedName !== name) {
+		return normalizedName;
+	}
+
+	// Check if this is a tech tree name variant that needs normalization
+	if (techTreeNameVariants[name]) {
+		return techTreeNameVariants[name];
+	}
+
+	// Check in tech tree translations
+	if (techTreeTranslations[name]) {
+		return techTreeTranslations[name];
+	}
+
 	const translatedName = controller.searchName(name);
 
 	if (translatedName) {
@@ -115,10 +134,63 @@ controller.translateName = (name) => {
 };
 
 /**
+ * Translates a tech tree parent reference
+ * This specialized function ensures consistent parent-child relationships
+ * in the tech tree by normalizing parent references
+ * @param {string} parentName - The parent name to translate
+ * @returns {string} - The normalized and translated parent name
+ */
+controller.translateTechTreeParent = (parentName) => {
+	if (isNullOrEmpty(parentName)) {
+		return "";
+	}
+
+	// First try to normalize using the tech tree normalizer
+	const normalizedName = techTreeNameNormalizer.normalize(parentName);
+	if (normalizedName !== parentName) {
+		// Add to translations in use to ensure it's included in exports
+		controller.addTranslationInUse(parentName, normalizedName);
+		return normalizedName;
+	}
+
+	// If not found in normalizer, try regular translation
+	return controller.translateName(parentName);
+};
+
+/**
  * Searches for a translation in all available dictionaries
  * @param {string} name - The name to search for
  * @returns {string|null} - The translated name or null if not found
  */
+/**
+ * Specialized method for translating tech tree parent references
+ * This ensures consistent parent-child relationships in the tech tree
+ * @param {string} parentName - The parent name to translate
+ * @returns {string} - The normalized parent name
+ */
+controller.translateTechTreeParent = (parentName) => {
+	if (isNullOrEmpty(parentName)) {
+		return "";
+	}
+
+	// First check tech tree name variants
+	if (techTreeNameVariants[parentName]) {
+		const normalized = techTreeNameVariants[parentName];
+		controller.addTranslationInUse(parentName, normalized);
+		return normalized;
+	}
+
+	// Then check tech tree translations
+	if (techTreeTranslations[parentName]) {
+		const normalized = techTreeTranslations[parentName];
+		controller.addTranslationInUse(parentName, normalized);
+		return normalized;
+	}
+
+	// Fall back to regular translation
+	return controller.translateName(parentName);
+};
+
 controller.searchName = (name) => {
 	if (isNullOrEmpty(name)) {
 		return null;
