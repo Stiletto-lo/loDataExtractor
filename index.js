@@ -81,7 +81,7 @@ const loadFiles = () => {
 		"placeables",
 	);
 	console.info("Loading Recipes");
-	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Recipes`, "item");
+	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/TechTree`, "item");
 	console.info("Loading Trade");
 	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Trade`, "trade");
 	//console.info("Loading Placeables Cached");

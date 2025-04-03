@@ -12,6 +12,13 @@
     "wikiVisibility": false
   },
   {
+    "name": "Advanced Ammo",
+    "parent": "Crafting_T3",
+    "translation": "Advanced Ammo",
+    "type": "Ammo_T3_C",
+    "onlyDevs": true
+  },
+  {
     "category": "Schematics",
     "name": "Advanced Ammo Schematic",
     "type": "Ammo_T3Schematic_C",
@@ -97,6 +104,13 @@
       }
     ],
     "learn": []
+  },
+  {
+    "name": "Advanced Armors",
+    "parent": "Armors_T2",
+    "translation": "Advanced Armors",
+    "type": "Armors_T3_C",
+    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -196,6 +210,12 @@
     ]
   },
   {
+    "name": "Advanced Constructions",
+    "parent": "Constructions_T2",
+    "translation": "Advanced Constructions",
+    "type": "Constructions_T3_C"
+  },
+  {
     "category": "Schematics",
     "name": "Advanced Constructions Schematic",
     "type": "Constructions_T3Schematic_C",
@@ -284,6 +304,20 @@
       "Giant Wall Gate",
       "Giant Wall Packer"
     ]
+  },
+  {
+    "name": "Advanced Crafting",
+    "parent": "Crafting_T2",
+    "translation": "Advanced Crafting",
+    "type": "Crafting_T3_C",
+    "onlyDevs": true
+  },
+  {
+    "name": "Advanced Crafting Stations",
+    "parent": "Crafting_T3",
+    "translation": "Advanced Crafting Stations",
+    "type": "Stations_T3_C",
+    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -399,6 +433,13 @@
     ]
   },
   {
+    "name": "Advanced Equipment",
+    "parent": "Equipment_T2",
+    "translation": "Advanced Equipment",
+    "type": "Equipment_T3_C",
+    "onlyDevs": true
+  },
+  {
     "category": "Crafting",
     "crafting": [
       {
@@ -463,6 +504,13 @@
       "type": "Soft",
       "hp": 5000
     }
+  },
+  {
+    "name": "Advanced Potions",
+    "parent": "Vitamins_T2",
+    "translation": "Advanced Potions",
+    "type": "Vitamins_T3_C",
+    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -601,6 +649,13 @@
     }
   },
   {
+    "name": "Advanced Tools",
+    "parent": "Tools_T2",
+    "translation": "Advanced Tools",
+    "type": "Tools_T3_C",
+    "onlyDevs": true
+  },
+  {
     "category": "Schematics",
     "name": "Advanced Tools Schematic",
     "type": "Tools_T3Schematic_C",
@@ -696,6 +751,12 @@
       "Torch",
       "Tube Spade"
     ]
+  },
+  {
+    "name": "Advanced Walker Parts",
+    "parent": "WalkerPartsImproved_T3",
+    "translation": "Advanced Walker Parts",
+    "type": "WalkerPartsAdvanced_T3_C"
   },
   {
     "category": "Schematics",
@@ -1120,6 +1181,12 @@
     ]
   },
   {
+    "name": "Advanced Walker Weapons",
+    "parent": "Constructions_T3",
+    "translation": "Advanced Walker Weapons",
+    "type": "WalkerWeapons_T3_C"
+  },
+  {
     "category": "Schematics",
     "name": "Advanced Walker Weapons Schematic",
     "type": "WalkerWeapons_T3Schematic_C",
@@ -1205,6 +1272,19 @@
       }
     ],
     "learn": []
+  },
+  {
+    "name": "Advanced Walkers",
+    "parent": "Walkers_T2",
+    "translation": "Advanced Walkers",
+    "type": "Walkers_T3_C"
+  },
+  {
+    "name": "Advanced Weapons",
+    "parent": "Equipment_T3",
+    "translation": "Advanced Weapons",
+    "type": "Weapons_T3_C",
+    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -2966,6 +3046,12 @@
     }
   },
   {
+    "name": "Base Walker Parts",
+    "parent": "Walkers_T2",
+    "translation": "Base Walker Parts",
+    "type": "WalkerPartsBase_T2_C"
+  },
+  {
     "category": "Schematics",
     "name": "Base Walker Parts Schematic",
     "type": "WalkerPartsBaseSchematic_C",
@@ -3264,6 +3350,13 @@
     "type": "BasicWing_C"
   },
   {
+    "name": "Basic Ammo",
+    "parent": "Crafting_T1",
+    "translation": "Basic Ammo",
+    "type": "Ammo_T1_C",
+    "onlyDevs": true
+  },
+  {
     "category": "Schematics",
     "name": "Basic Ammo Schematic",
     "type": "Ammo_T1Schematic_C",
@@ -3517,6 +3610,13 @@
       }
     ],
     "learn": []
+  },
+  {
+    "name": "Basic Armors",
+    "parent": "Equipment",
+    "translation": "Basic Armors",
+    "type": "Armors_T1_C",
+    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -3781,6 +3881,12 @@
       "Rupu Fur Armor",
       "Cloaked Rupu Fur Armor"
     ]
+  },
+  {
+    "name": "Basic Constructions",
+    "parent": "Construction",
+    "translation": "Basic Constructions",
+    "type": "Constructions_T1_C"
   },
   {
     "category": "Schematics",
@@ -4055,6 +4161,20 @@
     ]
   },
   {
+    "name": "Basic Crafting",
+    "parent": "Crafting",
+    "translation": "Basic Crafting",
+    "type": "Crafting_T1_C",
+    "onlyDevs": true
+  },
+  {
+    "name": "Basic Crafting Stations",
+    "parent": "Crafting_T1",
+    "translation": "Basic Crafting Stations",
+    "type": "Stations_T1_C",
+    "onlyDevs": true
+  },
+  {
     "category": "Schematics",
     "name": "Basic Crafting Stations Schematic",
     "type": "Stations_T1Schematic_C",
@@ -4308,6 +4428,20 @@
       }
     ],
     "learn": []
+  },
+  {
+    "name": "Basic Equipment",
+    "parent": "Equipment",
+    "translation": "Basic Equipment",
+    "type": "Equipment_T1_C",
+    "onlyDevs": true
+  },
+  {
+    "name": "Basic Potions",
+    "parent": "Vitamins",
+    "translation": "Basic Potions",
+    "type": "Vitamins_T1_C",
+    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -4570,6 +4704,13 @@
     "type": "StructuralSand_C"
   },
   {
+    "name": "Basic Tools",
+    "parent": "Equipment",
+    "translation": "Basic Tools",
+    "type": "Tools_T1_C",
+    "onlyDevs": true
+  },
+  {
     "category": "Schematics",
     "name": "Basic Tools Schematic",
     "type": "Tools_T1Schematic_C",
@@ -4827,6 +4968,12 @@
     ]
   },
   {
+    "name": "Basic Walker Weapons",
+    "parent": "Constructions_T1",
+    "translation": "Basic Walker Weapons",
+    "type": "WalkerWeapons_T1_C"
+  },
+  {
     "category": "Schematics",
     "name": "Basic Walker Weapons Schematic",
     "type": "WalkerWeapons_T1Schematic_C",
@@ -5080,6 +5227,19 @@
       }
     ],
     "learn": []
+  },
+  {
+    "name": "Basic Walkers",
+    "parent": "Walkers",
+    "translation": "Basic Walkers",
+    "type": "Walkers_T1_C"
+  },
+  {
+    "name": "Basic Weapons",
+    "parent": "Equipment_T1",
+    "translation": "Basic Weapons",
+    "type": "Weapons_T1_C",
+    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -12250,6 +12410,12 @@
     }
   },
   {
+    "name": "Clay Walls",
+    "parent": "StoneWalls",
+    "translation": "Clay Walls",
+    "type": "ClayWalls_C"
+  },
+  {
     "category": "Schematics",
     "name": "Clay Walls Schematic",
     "type": "ClayWallsSchematic_C",
@@ -13053,6 +13219,12 @@
     "type": "StructuralConcrete_C"
   },
   {
+    "name": "Concrete Walls",
+    "parent": "ClayWalls",
+    "translation": "Concrete Walls",
+    "type": "ConcreteWalls_C"
+  },
+  {
     "category": "Schematics",
     "name": "Concrete Walls Schematic",
     "type": "ConcreteWallsSchematic_C",
@@ -13090,6 +13262,11 @@
       "Cement Wall 2",
       "Cement Wall 1"
     ]
+  },
+  {
+    "name": "Construction",
+    "translation": "Construction",
+    "type": "ConstructionRoot_C"
   },
   {
     "name": "Consumables",
@@ -13163,7 +13340,7 @@
   {
     "name": "Crafting",
     "translation": "Crafting",
-    "type": "Crafting_C"
+    "type": "CraftingRoot_C"
   },
   {
     "category": "Crafting",
@@ -13766,7 +13943,8 @@
     },
     "walkerinfo": {
       "category": "Small"
-    }
+    },
+    "translation": "Dinghy Walker"
   },
   {
     "category": "Walker Parts",
@@ -21628,6 +21806,12 @@
     "weight": 0.15
   },
   {
+    "name": "Flares",
+    "parent": "DyeingStation",
+    "translation": "Flares",
+    "type": "Flares_C"
+  },
+  {
     "category": "Resources",
     "name": "Flint",
     "trade_price": 0.1,
@@ -22100,6 +22284,13 @@
     "experiencieReward": 76
   },
   {
+    "name": "Flotillian Ammo",
+    "parent": "Crafting_T4",
+    "translation": "Flotillian Ammo",
+    "type": "Ammo_T4_C",
+    "onlyDevs": true
+  },
+  {
     "category": "Schematics",
     "name": "Flotillian Ammo Schematic",
     "type": "Ammo_T4Schematic_C",
@@ -22125,6 +22316,13 @@
       }
     ],
     "learn": []
+  },
+  {
+    "name": "Flotillian Armors",
+    "parent": "Armors_T3",
+    "translation": "Flotillian Armors",
+    "type": "Armors_T4_C",
+    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -22162,6 +22360,12 @@
     ]
   },
   {
+    "name": "Flotillian Constructions",
+    "parent": "Constructions_T3",
+    "translation": "Flotillian Constructions",
+    "type": "Constructions_T4_C"
+  },
+  {
     "category": "Schematics",
     "name": "Flotillian Constructions Schematic",
     "type": "Constructions_T4Schematic_C",
@@ -22189,6 +22393,20 @@
     "learn": []
   },
   {
+    "name": "Flotillian Crafting",
+    "parent": "Crafting_T3",
+    "translation": "Flotillian Crafting",
+    "type": "Crafting_T4_C",
+    "onlyDevs": true
+  },
+  {
+    "name": "Flotillian Crafting Stations",
+    "parent": "Crafting_T4",
+    "translation": "Flotillian Crafting Stations",
+    "type": "Stations_T4_C",
+    "onlyDevs": true
+  },
+  {
     "category": "Schematics",
     "name": "Flotillian Crafting Stations Schematic",
     "type": "Stations_T4Schematic_C",
@@ -22214,6 +22432,20 @@
       }
     ],
     "learn": []
+  },
+  {
+    "name": "Flotillian Equipment",
+    "parent": "Equipment_T3",
+    "translation": "Flotillian Equipment",
+    "type": "Equipment_T4_C",
+    "onlyDevs": true
+  },
+  {
+    "name": "Flotillian Potions",
+    "parent": "Vitamins_T3",
+    "translation": "Flotillian Potions",
+    "type": "Vitamins_T4_C",
+    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -22280,6 +22512,13 @@
     }
   },
   {
+    "name": "Flotillian Tools",
+    "parent": "Tools_T3",
+    "translation": "Flotillian Tools",
+    "type": "Tools_T4_C",
+    "onlyDevs": true
+  },
+  {
     "category": "Schematics",
     "name": "Flotillian Tools Schematic",
     "type": "Tools_T4Schematic_C",
@@ -22317,6 +22556,12 @@
     ]
   },
   {
+    "name": "Flotillian Walker Weapons",
+    "parent": "Constructions_T4",
+    "translation": "Flotillian Walker Weapons",
+    "type": "WalkerWeapons_T4_C"
+  },
+  {
     "category": "Schematics",
     "name": "Flotillian Walker Weapons Schematic",
     "type": "WalkerWeapons_T4Schematic_C",
@@ -22342,6 +22587,19 @@
       }
     ],
     "learn": []
+  },
+  {
+    "name": "Flotillian Walkers",
+    "parent": "Walkers_T3",
+    "translation": "Flotillian Walkers",
+    "type": "Walkers_T4_C"
+  },
+  {
+    "name": "Flotillian Weapons",
+    "parent": "Equipment_T4",
+    "translation": "Flotillian Weapons",
+    "type": "Weapons_T4_C",
+    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -24327,6 +24585,12 @@
     "damageType": "'MeleeAxeDamage_C'"
   },
   {
+    "name": "Heavy Walls",
+    "parent": "ReinforcedWalls",
+    "translation": "Heavy Walls",
+    "type": "HeavyWalls_C"
+  },
+  {
     "category": "Schematics",
     "name": "Heavy Walls Schematic",
     "type": "HeavyWallsSchematic_C",
@@ -24679,6 +24943,13 @@
       "type": "Reinforced",
       "hp": 40000
     }
+  },
+  {
+    "name": "Hellfire",
+    "parent": "ClayPot",
+    "translation": "Hellfire",
+    "type": "HellfireMixture_C",
+    "onlyDevs": true
   },
   {
     "crafting": [
@@ -26945,6 +27216,13 @@
     "damageType": "'BoulderDamage_C'"
   },
   {
+    "name": "Improved Ammo",
+    "parent": "Crafting_T2",
+    "translation": "Improved Ammo",
+    "type": "Ammo_T2_C",
+    "onlyDevs": true
+  },
+  {
     "category": "Schematics",
     "name": "Improved Ammo Schematic",
     "type": "Ammo_T2Schematic_C",
@@ -27096,6 +27374,13 @@
       }
     ],
     "learn": []
+  },
+  {
+    "name": "Improved Armors",
+    "parent": "Armors_T1",
+    "translation": "Improved Armors",
+    "type": "Armors_T2_C",
+    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -27261,6 +27546,12 @@
     ]
   },
   {
+    "name": "Improved Constructions",
+    "parent": "Constructions_T1",
+    "translation": "Improved Constructions",
+    "type": "Constructions_T2_C"
+  },
+  {
     "category": "Schematics",
     "name": "Improved Constructions Schematic",
     "type": "Constructions_T2Schematic_C",
@@ -27416,6 +27707,20 @@
     ]
   },
   {
+    "name": "Improved Crafting",
+    "parent": "Crafting_T1",
+    "translation": "Improved Crafting",
+    "type": "Crafting_T2_C",
+    "onlyDevs": true
+  },
+  {
+    "name": "Improved Crafting Stations",
+    "parent": "Crafting_T2",
+    "translation": "Improved Crafting Stations",
+    "type": "Stations_T2_C",
+    "onlyDevs": true
+  },
+  {
     "category": "Schematics",
     "name": "Improved Crafting Stations Schematic",
     "type": "Stations_T2Schematic_C",
@@ -27567,6 +27872,20 @@
       }
     ],
     "learn": []
+  },
+  {
+    "name": "Improved Equipment",
+    "parent": "Equipment_T1",
+    "translation": "Improved Equipment",
+    "type": "Equipment_T2_C",
+    "onlyDevs": true
+  },
+  {
+    "name": "Improved Potions",
+    "parent": "Vitamins_T1",
+    "translation": "Improved Potions",
+    "type": "Vitamins_T2_C",
+    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -27722,6 +28041,13 @@
     "learn": []
   },
   {
+    "name": "Improved Tools",
+    "parent": "Tools_T1",
+    "translation": "Improved Tools",
+    "type": "Tools_T2_C",
+    "onlyDevs": true
+  },
+  {
     "category": "Schematics",
     "name": "Improved Tools Schematic",
     "type": "Tools_T2Schematic_C",
@@ -27875,6 +28201,12 @@
     "learn": [
       "Rawbone Hand Axe"
     ]
+  },
+  {
+    "name": "Improved Walker Parts",
+    "parent": "WalkerPartsBase_T2",
+    "translation": "Improved Walker Parts",
+    "type": "WalkerPartsImproved_T2_C"
   },
   {
     "category": "Schematics",
@@ -28186,6 +28518,12 @@
     ]
   },
   {
+    "name": "Improved Walker Weapons",
+    "parent": "Constructions_T2",
+    "translation": "Improved Walker Weapons",
+    "type": "WalkerWeapons_T2_C"
+  },
+  {
     "category": "Schematics",
     "name": "Improved Walker Weapons Schematic",
     "type": "WalkerWeapons_T2Schematic_C",
@@ -28337,6 +28675,19 @@
       }
     ],
     "learn": []
+  },
+  {
+    "name": "Improved Walkers",
+    "parent": "Walkers_T1",
+    "translation": "Improved Walkers",
+    "type": "Walkers_T2_C"
+  },
+  {
+    "name": "Improved Weapons",
+    "parent": "Equipment_T2",
+    "translation": "Improved Weapons",
+    "type": "Weapons_T2_C",
+    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -31388,6 +31739,12 @@
       "type": "Reinforced",
       "hp": 20000
     }
+  },
+  {
+    "name": "Medium Wood Walls",
+    "parent": "WoodenWalls",
+    "translation": "Medium Wood Walls",
+    "type": "ReinforcedWalls_C"
   },
   {
     "category": "Upgrades",
@@ -42295,6 +42652,12 @@
     }
   },
   {
+    "name": "Sand Structures",
+    "parent": "ChestBaseMaintenance_T1",
+    "translation": "Sand Structures",
+    "type": "SandWalls_C"
+  },
+  {
     "category": "Schematics",
     "name": "Sand Structures Schematic",
     "type": "SandWallsSchematic_C",
@@ -45386,6 +45749,18 @@
     "parent": "Gun Pod",
     "type": "GunPodScattershotGun_C",
     "experiencieReward": 366
+  },
+  {
+    "name": "Small Walker Legs (1 of 2)",
+    "translation": "Small Walker Legs",
+    "type": "SmallWalkerLegs_UI_C",
+    "onlyDevs": true
+  },
+  {
+    "name": "Small Walker Wings (1 of 2)",
+    "translation": "Small Walker Wings",
+    "type": "SmallWalkerWings_UI_C",
+    "onlyDevs": true
   },
   {
     "category": "Containers",
@@ -48950,6 +49325,12 @@
       "type": "Solid",
       "hp": 10000
     }
+  },
+  {
+    "name": "Stone Walls",
+    "parent": "SandWalls",
+    "translation": "Stone Walls",
+    "type": "StoneWalls_C"
   },
   {
     "category": "Schematics",
@@ -55031,7 +55412,7 @@
   {
     "name": "Vitamins",
     "translation": "Vitamins",
-    "type": "Drugs_C"
+    "type": "VitaminsRoot_C"
   },
   {
     "category": "Walker Tools",
@@ -55110,7 +55491,7 @@
   {
     "name": "Walkers",
     "translation": "Walkers",
-    "type": "Walkers_C"
+    "type": "WalkersRoot_C"
   },
   {
     "crafting": [
@@ -56462,6 +56843,12 @@
     "type": "WoodenSlab_C",
     "stackSize": 100,
     "weight": 0.1
+  },
+  {
+    "name": "Wooden Walls",
+    "parent": "SandWalls",
+    "translation": "Wooden Walls",
+    "type": "WoodenWalls_C"
   },
   {
     "category": "Schematics",
