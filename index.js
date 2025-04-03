@@ -286,32 +286,26 @@ if (process.env.TRANSLATE_FILES === "true") {
 	console.log("Adding all item translations to the translationsInUse store...");
 	let translationCount = 0;
 	for (const item of allItems) {
-		// Add item name
 		if (item.name) {
 			translator.addTranslationInUse(item.name, item.name);
 			translationCount++;
 		}
-		// Add item category
 		if (item.category) {
 			translator.addTranslationInUse(item.category, item.category);
 			translationCount++;
 		}
-		// Add item type
 		if (item.type) {
 			translator.addTranslationInUse(item.type, item.type);
 			translationCount++;
 		}
-		// Add parent item if available
 		if (item.parent) {
 			translator.addTranslationInUse(item.parent, item.parent);
 			translationCount++;
 		}
-		// Add cost name if available
 		if (item?.cost?.name) {
 			translator.addTranslationInUse(item.cost.name, item.cost.name);
 			translationCount++;
 		}
-		// Add learn array items
 		if (item.learn && Array.isArray(item.learn)) {
 			for (const learnItem of item.learn) {
 				if (learnItem) {

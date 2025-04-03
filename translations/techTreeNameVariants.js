@@ -140,10 +140,22 @@ techTreeNameVariants.EmptyGlassVial = "Glass";
 techTreeNameVariants.DesertMule = "Desert Mule";
 
 techTreeNameVariants.CraftingBench = "Crafting Bench";
+techTreeNameVariants.BasicCloth = "Nomad Cloth";
+techTreeNameVariants.CeramicShard = "Ceramic Shard";
+techTreeNameVariants.BoneSplinter = "Bone Splinter";
+techTreeNameVariants.RedwoodWood = "Redwood Wood";
+techTreeNameVariants.ClayLump = "Clay";
+techTreeNameVariants.EarthWax = "Earth Wax";
+techTreeNameVariants.ReinforcedGear = "Reinforced Gear";
+techTreeNameVariants.TripleStitch = "Triple Stitch Fabric";
+techTreeNameVariants.WoodenGear = "Wooden Gear";
+techTreeNameVariants.WormSilk = "Worm Silk";
+techTreeNameVariants.WormScale = "Worm Scale";
 
 // Stations
 techTreeNameVariants.PurificationStation = "Purification Station";
 techTreeNameVariants.FiberworkingStation = "Fiberworking Station";
+techTreeNameVariants.FiberworkingTier_03 = "Artisan Fiberworking Station";
 
 techTreeNameVariants.BasicCrafting = "Basic Crafting";
 techTreeNameVariants.BasicTools = "Basic Tools";
@@ -204,6 +216,7 @@ techTreeNameVariants.LampsOverhanging = "Lamp Overhanging";
 techTreeNameVariants.LampsStanding = "Lamp Standing";
 techTreeNameVariants.GiantWalls = "Giant Wall";
 techTreeNameVariants.VisionPowder = "Vision Powder";
+techTreeNameVariants.CrudeHatchet = "Crude Hatchet";
 
 // Handle lowercase variants
 for (const key of Object.keys(techTreeNameVariants)) {

@@ -81,7 +81,7 @@ techTreeNameNormalizer.internalToCanonical = {
 	ConstructionRoot: "Construction",
 	VitaminsRoot: "Vitamins",
 	WalkerBarriers: "Barrier Base",
-	SpiderWalkerNomad: "Nomad Spider Walker",
+	SpiderWalkerNomad: "Spider Walker",
 	SpiderWalkerBallista: "Spider Walker With Ballista",
 };
 
