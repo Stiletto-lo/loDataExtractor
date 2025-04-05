@@ -303,31 +303,16 @@ if (process.env.TRANSLATE_FILES === "true") {
 			translator.addTranslationInUse(item.name, item.name);
 			translationCount++;
 		}
-		if (item.category) {
-			translator.addTranslationInUse(item.category, item.category);
+		if (item.name && item.translation) {
+			translator.addTranslationInUse(item.name, item.translation);
 			translationCount++;
 		}
-		if (item.type) {
-			translator.addTranslationInUse(item.type, item.type);
+
+		if (item.type && item.name) {
+			translator.addTranslationInUse(item.type, item.name);
 			translationCount++;
 		}
-		if (item.parent) {
-			translator.addTranslationInUse(item.parent, item.parent);
-			translationCount++;
-		}
-		if (item?.cost?.name) {
-			translator.addTranslationInUse(item.cost.name, item.cost.name);
-			translationCount++;
-		}
-		if (item.learn && Array.isArray(item.learn)) {
-			for (const learnItem of item.learn) {
-				if (learnItem) {
-					translator.addTranslationInUse(learnItem, learnItem);
-					translationCount++;
-				}
-			}
-		}
-		// Add description if available
+
 		if (item.description) {
 			translator.addTranslationInUse(item.description, item.description);
 			translationCount++;

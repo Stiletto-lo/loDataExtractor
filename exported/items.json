@@ -13,7 +13,7 @@
   },
   {
     "name": "Advanced Ammo",
-    "parent": "Crafting_T3",
+    "parent": "Advanced Crafting",
     "translation": "Advanced Ammo",
     "type": "Ammo_T3_C",
     "onlyDevs": true
@@ -314,7 +314,7 @@
   },
   {
     "name": "Advanced Crafting Stations",
-    "parent": "Crafting_T3",
+    "parent": "Advanced Crafting",
     "translation": "Advanced Crafting Stations",
     "type": "Stations_T3_C",
     "onlyDevs": true
@@ -1188,7 +1188,7 @@
   },
   {
     "name": "Advanced Walker Weapons",
-    "parent": "Constructions_T3",
+    "parent": "Advanced Constructions",
     "translation": "Advanced Walker Weapons",
     "type": "WalkerWeapons_T3_C"
   },
@@ -1281,13 +1281,13 @@
   },
   {
     "name": "Advanced Walkers",
-    "parent": "Walkers_T2",
+    "parent": "Improved Walkers",
     "translation": "Advanced Walkers",
     "type": "Walkers_T3_C"
   },
   {
     "name": "Advanced Weapons",
-    "parent": "Equipment_T3",
+    "parent": "Advanced Equipment",
     "translation": "Advanced Weapons",
     "type": "Weapons_T3_C",
     "onlyDevs": true
@@ -1856,7 +1856,7 @@
       }
     ],
     "name": "Anti-Personnel Turret",
-    "parent": "WalkerWeapons_T2",
+    "parent": "Improved Walker Weapons",
     "type": "AntiPersonnelTurret_C",
     "experiencieReward": 100,
     "structureInfo": {
@@ -2216,7 +2216,7 @@
       }
     ],
     "name": "Automaton",
-    "parent": "WalkerWeapons_T2",
+    "parent": "Improved Walker Weapons",
     "type": "Automaton_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -2743,7 +2743,7 @@
       }
     ],
     "name": "Ballista",
-    "parent": "WalkerWeapons_T1",
+    "parent": "Basic Walker Weapons",
     "type": "Ballista_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -2947,7 +2947,7 @@
       }
     ],
     "name": "Barrier Base",
-    "parent": "Constructions_T3",
+    "parent": "Advanced Constructions",
     "type": "WalkerBarrierBase_C",
     "experiencieReward": 34,
     "structureInfo": {
@@ -3106,7 +3106,7 @@
   },
   {
     "name": "Base Walker Parts",
-    "parent": "Walkers_T2",
+    "parent": "Improved Walkers",
     "translation": "Base Walker Parts",
     "type": "WalkerPartsBase_T2_C"
   },
@@ -13654,7 +13654,7 @@
       }
     ],
     "name": "Crane",
-    "parent": "Constructions_T3",
+    "parent": "Advanced Constructions",
     "type": "Crane_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -16844,7 +16844,7 @@
   },
   {
     "name": "Exoskeleton",
-    "parent": "Constructions_T3",
+    "parent": "Advanced Constructions",
     "translation": "Exoskeleton",
     "type": "Exoskeleton_C",
     "category": "Exoskeleton",
@@ -22626,7 +22626,7 @@
   },
   {
     "name": "Flotillian Ammo",
-    "parent": "Crafting_T4",
+    "parent": "Advanced Crafting",
     "translation": "Flotillian Ammo",
     "type": "Ammo_T4_C",
     "onlyDevs": true
@@ -22702,7 +22702,7 @@
   },
   {
     "name": "Flotillian Constructions",
-    "parent": "Constructions_T3",
+    "parent": "Advanced Constructions",
     "translation": "Flotillian Constructions",
     "type": "Constructions_T4_C"
   },
@@ -22735,14 +22735,14 @@
   },
   {
     "name": "Flotillian Crafting",
-    "parent": "Crafting_T3",
+    "parent": "Advanced Crafting",
     "translation": "Flotillian Crafting",
     "type": "Crafting_T4_C",
     "onlyDevs": true
   },
   {
     "name": "Flotillian Crafting Stations",
-    "parent": "Crafting_T4",
+    "parent": "Advanced Crafting",
     "translation": "Flotillian Crafting Stations",
     "type": "Stations_T4_C",
     "onlyDevs": true
@@ -22776,14 +22776,14 @@
   },
   {
     "name": "Flotillian Equipment",
-    "parent": "Equipment_T3",
+    "parent": "Advanced Equipment",
     "translation": "Flotillian Equipment",
     "type": "Equipment_T4_C",
     "onlyDevs": true
   },
   {
     "name": "Flotillian Potions",
-    "parent": "Vitamins_T3",
+    "parent": "Advanced Potions",
     "translation": "Flotillian Potions",
     "type": "Vitamins_T4_C",
     "onlyDevs": true
@@ -22933,7 +22933,7 @@
   },
   {
     "name": "Flotillian Walkers",
-    "parent": "Walkers_T3",
+    "parent": "Advanced Walkers",
     "translation": "Flotillian Walkers",
     "type": "Walkers_T4_C"
   },
@@ -23905,7 +23905,7 @@
       }
     ],
     "name": "Giant Wall",
-    "parent": "Constructions_T3",
+    "parent": "Advanced Constructions",
     "type": "WallGiant_C",
     "experiencieReward": 40,
     "structureInfo": {
@@ -31371,7 +31371,7 @@
       }
     ],
     "name": "Lobber",
-    "parent": "WalkerWeapons_T2",
+    "parent": "Improved Walker Weapons",
     "type": "Lobber_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -32010,7 +32010,7 @@
       }
     ],
     "name": "Medium Stinger",
-    "parent": "WalkerWeapons_T2",
+    "parent": "Improved Walker Weapons",
     "type": "Stinger_T2_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -33583,7 +33583,7 @@
       }
     ],
     "name": "Mountable Nurr",
-    "parent": "Constructions_T3",
+    "parent": "Advanced Constructions",
     "type": "MountableNurr_C",
     "experiencieReward": 300,
     "structureInfo": {
@@ -33853,7 +33853,7 @@
       }
     ],
     "name": "Net Thrower",
-    "parent": "WalkerWeapons_T1",
+    "parent": "Basic Walker Weapons",
     "type": "NetThrower_C",
     "experiencieReward": 249,
     "structureInfo": {
@@ -35536,7 +35536,7 @@
       }
     ],
     "name": "Obsidian Pot",
-    "parent": "Constructions_T3",
+    "parent": "Advanced Constructions",
     "type": "ObsidianContainerSmall_C",
     "experiencieReward": 60,
     "structureInfo": {
@@ -40511,7 +40511,7 @@
       }
     ],
     "name": "Repeater",
-    "parent": "WalkerWeapons_T1",
+    "parent": "Basic Walker Weapons",
     "type": "Repeater_C",
     "experiencieReward": 304,
     "structureInfo": {
@@ -43975,7 +43975,7 @@
       }
     ],
     "name": "Scattershot Gun",
-    "parent": "WalkerWeapons_T1",
+    "parent": "Basic Walker Weapons",
     "type": "ScattershotGun_C",
     "experiencieReward": 366,
     "structureInfo": {
@@ -46265,7 +46265,7 @@
       }
     ],
     "name": "Slingshot",
-    "parent": "WalkerWeapons_T2",
+    "parent": "Improved Walker Weapons",
     "type": "Slingshot_C",
     "experiencieReward": 242,
     "structureInfo": {
@@ -47450,7 +47450,7 @@
       }
     ],
     "name": "Spinner",
-    "parent": "WalkerWeapons_T1",
+    "parent": "Basic Walker Weapons",
     "type": "Spinner_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -49263,7 +49263,7 @@
       }
     ],
     "name": "Stinger",
-    "parent": "WalkerWeapons_T1",
+    "parent": "Basic Walker Weapons",
     "type": "Stinger_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -51526,7 +51526,7 @@
       }
     ],
     "name": "Thumper",
-    "parent": "WalkerWeapons_T1",
+    "parent": "Basic Walker Weapons",
     "type": "Thumper_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -54467,7 +54467,7 @@
       }
     ],
     "name": "Trip Wire Trap",
-    "parent": "Constructions_T3",
+    "parent": "Advanced Constructions",
     "type": "TrapTripWire_C",
     "experiencieReward": 97,
     "structureInfo": {

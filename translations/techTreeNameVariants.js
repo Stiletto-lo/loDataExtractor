@@ -87,7 +87,16 @@ techTreeNameVariants.SpiderWalkerNomad_C = "Nomad Spider Walker";
 techTreeNameVariants.SpiderWalkerBallista_C = "Spider Walker With Ballista";
 techTreeNameVariants.Constructions_T1 = "Basic Constructions";
 techTreeNameVariants.ChestBaseMaintenance_T1 = "Maintenance Box"
+techTreeNameVariants.WalkerWeapons_T1 = "Basic Walker Weapons";
 techTreeNameVariants.Constructions_T2 = "Improved Constructions";
+techTreeNameVariants.WalkerWeapons_T2 = "Improved Walker Weapons";
+techTreeNameVariants.Constructions_T3 = "Advanced Constructions";
+techTreeNameVariants.Walkers_T2 = "Improved Walkers";
+techTreeNameVariants.Equipment_T3 = "Advanced Equipment";
+techTreeNameVariants.Crafting_T3 = "Advanced Crafting";
+techTreeNameVariants.Vitamins_T3 = "Advanced Potions";
+techTreeNameVariants.Walkers_T3 = "Advanced Walkers";
+techTreeNameVariants.Crafting_T4 = "Advanced Crafting";
 
 // Cross-language item name variants
 // These mappings handle inconsistencies between different language translations
