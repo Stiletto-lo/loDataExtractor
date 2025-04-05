@@ -42,12 +42,11 @@ class DataStore {
 	 * @throws {TypeError} - If name is not a string when provided
 	 */
 	getItem(name) {
-		if (name !== undefined && typeof name !== "string") {
-			throw new TypeError("Item name must be a string");
+		if (!name) {
+			return undefined;
 		}
-		if (!name) return undefined;
 
-		return this.items.find((item) => item.name === name);
+		return this.items.find((item) => item.name === name || item?.translation === name);
 	}
 
 	/**
