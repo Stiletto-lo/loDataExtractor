@@ -215,6 +215,7 @@ unifiedTechTreeNames.nameMap = {
   "Stomping_T3": "Flotillian Stomping Station",
   "StompingStation": "Stomping Station",
   "StonePlank": "Stone Plank",
+  "ProxyLicense": "Proxy License",
 
   // Barriers and chests
   "WalkerBarriers": "Barrier Base",
