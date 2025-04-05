@@ -60,7 +60,7 @@ class DataStore {
 			return undefined;
 		}
 
-		return this.items.find((item) => item.type === type);
+		return this.items.find((item) => item.type === type || item.type === `${type}_C` || `${item.type}_C` === type);
 	}
 
 	/**
