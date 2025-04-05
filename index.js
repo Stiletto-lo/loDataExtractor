@@ -84,8 +84,8 @@ const loadFiles = () => {
 	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/TechTree`, "item");
 	console.info("Loading Trade");
 	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Trade`, "trade");
-	//console.info("Loading Placeables Cached");
-	//loadDirData("./Content/Mist/Data/Placeables", "cached");
+	console.info("Loading Placeables Cached");
+	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Placeables`, "item");
 	console.info("Loading Walkers Upgrades");
 	loadDirData(`${CONTENT_FOLDER_PATH}Content/Mist/Data/Walkers`, "upgrages");
 	console.info("Loading Damages");
