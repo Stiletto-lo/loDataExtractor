@@ -87,6 +87,7 @@ techTreeNameVariants.SpiderWalkerNomad_C = "Nomad Spider Walker";
 techTreeNameVariants.SpiderWalkerBallista_C = "Spider Walker With Ballista";
 techTreeNameVariants.Constructions_T1 = "Basic Constructions";
 techTreeNameVariants.ChestBaseMaintenance_T1 = "Maintenance Box"
+techTreeNameVariants.Constructions_T2 = "Improved Constructions";
 
 // Cross-language item name variants
 // These mappings handle inconsistencies between different language translations
