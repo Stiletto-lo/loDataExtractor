@@ -15,8 +15,7 @@ const controller = {};
 // Import translation dictionaries
 const additionalTranslations = require("../translations/aditionalTranslations");
 const lootSitesTranslations = require("../translations/lootSites");
-const techTreeNameVariants = require("../translations/techTreeNameVariants");
-const techTreeNameNormalizer = require("../translations/techTreeNameNormalizer");
+const unifiedTechTreeNames = require("../translations/unifiedTechTreeNames");
 const itemNameGlossary = require("./fileParsers/itemNameGlossary");
 
 // Translation storage objects
@@ -116,15 +115,10 @@ controller.translateName = (name) => {
 		return glossaryName;
 	}
 
-	// Then check if this is a tech tree name that needs normalization
-	const normalizedName = techTreeNameNormalizer.normalize(name);
+	// Check if this is a tech tree name that needs normalization using the unified module
+	const normalizedName = unifiedTechTreeNames.normalize(name);
 	if (normalizedName !== name) {
 		return normalizedName;
-	}
-
-	// Check if this is a tech tree name variant that needs normalization
-	if (techTreeNameVariants[name]) {
-		return techTreeNameVariants[name];
 	}
 
 	const translatedName = controller.searchName(name);
@@ -148,8 +142,8 @@ controller.translateTechTreeParent = (parentName) => {
 		return "";
 	}
 
-	// First try to normalize using the tech tree normalizer
-	const normalizedName = techTreeNameNormalizer.normalize(parentName);
+	// First try to normalize using the unified tech tree names module
+	const normalizedName = unifiedTechTreeNames.normalize(parentName);
 	if (normalizedName !== parentName) {
 		// Add to translations in use to ensure it's included in exports
 		controller.addTranslationInUse(parentName, normalizedName);
@@ -176,8 +170,8 @@ controller.translateTechTreeParent = (parentName) => {
 		return "";
 	}
 
-	if (techTreeNameVariants[parentName]) {
-		const normalized = techTreeNameVariants[parentName];
+	const normalized = unifiedTechTreeNames.normalize(parentName);
+	if (normalized !== parentName) {
 		controller.addTranslationInUse(parentName, normalized);
 		return normalized;
 	}
