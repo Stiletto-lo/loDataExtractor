@@ -87,6 +87,9 @@ techTreeNameVariants.SpiderWalkerNomad_C = "Nomad Spider Walker";
 techTreeNameVariants.SpiderWalkerBallista_C = "Spider Walker With Ballista";
 techTreeNameVariants.Constructions_T1 = "Basic Constructions";
 techTreeNameVariants.ChestBaseMaintenance_T1 = "Maintenance Box"
+techTreeNameVariants.Crafting_T1 = "Basic Crafting";
+techTreeNameVariants.Equipment_T1 = "Basic Equipment";
+techTreeNameVariants.Vitamins_T1 = "Basic Potions";
 techTreeNameVariants.WalkerWeapons_T1 = "Basic Walker Weapons";
 techTreeNameVariants.Constructions_T2 = "Improved Constructions";
 techTreeNameVariants.WalkerWeapons_T2 = "Improved Walker Weapons";
@@ -97,6 +100,27 @@ techTreeNameVariants.Crafting_T3 = "Advanced Crafting";
 techTreeNameVariants.Vitamins_T3 = "Advanced Potions";
 techTreeNameVariants.Walkers_T3 = "Advanced Walkers";
 techTreeNameVariants.Crafting_T4 = "Advanced Crafting";
+techTreeNameVariants.WalkerWeapons_T4 = "Flotillian Walker Weapons";
+techTreeNameVariants.Walkers_T4 = "Flotillian Walkers";
+
+
+techTreeNameVariants.ChestAmmo = "Ammo Chest";
+techTreeNameVariants.WalkerBarrierBase = "Barrier Base";
+techTreeNameVariants.ImprovisedBottle = "Improvised Bottle";
+techTreeNameVariants.Water_T1 = "Purified Water";
+techTreeNameVariants.SimplePickaxe = "Simple Pickaxe";
+techTreeNameVariants.BoneBolt = "Bone Bolt";
+techTreeNameVariants.CeramicBolt = "Ceramic Bolt";
+techTreeNameVariants.SimpleRepairHammer = "Simple Repair Hammer";
+techTreeNameVariants.ScattershotGun = "Scattershot Gun";
+techTreeNameVariants.SmallBackpack = "Light Backpack";
+techTreeNameVariants.BoneSickle = "Bone Sickle";
+techTreeNameVariants.TrapBombChest = "Bomb Chest Trap";
+techTreeNameVariants.OneHandedBoneSword = "Bonespike Sword";
+techTreeNameVariants.TwoHandedBoneSword = "Long Bonespike Swordstaff";
+techTreeNameVariants.SandWalls = "Sand Structures";
+techTreeNameVariants.ReinforcedWalls = "Medium Wood Walls";
+techTreeNameVariants.BoneBottle = "Bone Bottle";
 
 // Cross-language item name variants
 // These mappings handle inconsistencies between different language translations

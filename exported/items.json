@@ -1633,7 +1633,7 @@
       }
     ],
     "name": "Ammo Scroll Rack",
-    "parent": "ChestAmmo",
+    "parent": "Ammo Chest",
     "type": "AmmoScrollRack_C",
     "experiencieReward": 50,
     "structureInfo": {
@@ -2978,7 +2978,7 @@
       }
     ],
     "name": "Barrier Gate",
-    "parent": "WalkerBarrierBase",
+    "parent": "Barrier Base",
     "type": "WalkerBarrierGate_C",
     "experiencieReward": 34,
     "structureInfo": {
@@ -3009,7 +3009,7 @@
       }
     ],
     "name": "Barrier Plank",
-    "parent": "WalkerBarrierBase",
+    "parent": "Barrier Base",
     "type": "WalkerBarrierTopPlace_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -3411,7 +3411,7 @@
   },
   {
     "name": "Basic Ammo",
-    "parent": "Crafting_T1",
+    "parent": "Basic Crafting",
     "translation": "Basic Ammo",
     "type": "Ammo_T1_C",
     "onlyDevs": true
@@ -4229,7 +4229,7 @@
   },
   {
     "name": "Basic Crafting Stations",
-    "parent": "Crafting_T1",
+    "parent": "Basic Crafting",
     "translation": "Basic Crafting Stations",
     "type": "Stations_T1_C",
     "onlyDevs": true
@@ -5296,7 +5296,7 @@
   },
   {
     "name": "Basic Weapons",
-    "parent": "Equipment_T1",
+    "parent": "Basic Equipment",
     "translation": "Basic Weapons",
     "type": "Weapons_T1_C",
     "onlyDevs": true
@@ -6272,7 +6272,7 @@
       }
     ],
     "name": "Battle Fan",
-    "parent": "WalkerWeapons_T4",
+    "parent": "Flotillian Walker Weapons",
     "type": "BattleFan_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -6367,7 +6367,7 @@
       }
     ],
     "name": "Battleship Walker",
-    "parent": "Walkers_T4",
+    "parent": "Flotillian Walkers",
     "type": "Battleship_C",
     "structureInfo": {
       "type": "Hard",
@@ -7029,7 +7029,7 @@
       }
     ],
     "name": "Bomb Chest Trap",
-    "parent": "ChestAmmo",
+    "parent": "Ammo Chest",
     "type": "TrapBombChest_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -7230,7 +7230,7 @@
       }
     ],
     "name": "Bone Bottle",
-    "parent": "ImprovisedBottle",
+    "parent": "Improvised Bottle",
     "trade_price": 11.9,
     "translation": "Bone Bottle",
     "type": "BoneBottle_C",
@@ -7414,7 +7414,7 @@
       }
     ],
     "name": "Bone Glue",
-    "parent": "Water_T1",
+    "parent": "Purified Water",
     "trade_price": 1.9,
     "translation": "Bone Glue",
     "type": "BoneGlue_C",
@@ -7428,7 +7428,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "BoneBolt"
+            "name": "Bone Bolt"
           },
           {
             "count": 2,
@@ -7446,7 +7446,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "BoneBolt"
+            "name": "Bone Bolt"
           },
           {
             "count": 2,
@@ -7464,7 +7464,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "BoneBolt"
+            "name": "Bone Bolt"
           },
           {
             "count": 2,
@@ -7480,7 +7480,7 @@
       }
     ],
     "name": "Bone Harpoon",
-    "parent": "BoneBolt",
+    "parent": "Bone Bolt",
     "trade_price": 7.6,
     "translation": "Bone Harpoon",
     "type": "BoneHarpoon_C",
@@ -7518,7 +7518,7 @@
       }
     ],
     "name": "Bone Pickaxe",
-    "parent": "SimplePickaxe",
+    "parent": "Simple Pickaxe",
     "trade_price": 24,
     "translation": "Bone Pickaxe",
     "type": "BonePickaxe_C",
@@ -7561,7 +7561,7 @@
       }
     ],
     "name": "Bone Repair Hammer",
-    "parent": "SimpleRepairHammer",
+    "parent": "Simple Repair Hammer",
     "translation": "Bone Repair Hammer",
     "type": "BoneRepairHammer_C",
     "durability": 500
@@ -7615,7 +7615,7 @@
       }
     ],
     "name": "Bone Scattershot Ammo",
-    "parent": "ScattershotGun",
+    "parent": "Scattershot Gun",
     "translation": "Bone Scattershot Ammo",
     "type": "BoneScattershot_C",
     "projectileDamage": {
@@ -11360,7 +11360,7 @@
       }
     ],
     "name": "Ceramic Flask",
-    "parent": "BoneBottle",
+    "parent": "Bone Bottle",
     "trade_price": 71.6,
     "translation": "Ceramic Flask",
     "type": "CeramicBottle_C",
@@ -11710,7 +11710,7 @@
       }
     ],
     "name": "Ceramic-Tipped Bolt",
-    "parent": "BoneBolt",
+    "parent": "Bone Bolt",
     "trade_price": 11,
     "translation": "Ceramic-Tipped Bolt",
     "type": "CeramicBolt_C",
@@ -11730,7 +11730,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "CeramicBolt"
+            "name": "Ceramic Bolt"
           },
           {
             "count": 2,
@@ -11746,7 +11746,7 @@
       }
     ],
     "name": "Ceramic-Tipped Harpoon",
-    "parent": "CeramicBolt",
+    "parent": "Ceramic Bolt",
     "trade_price": 14.1,
     "translation": "Ceramic-Tipped Harpoon",
     "type": "CeramicHarpoon_C",
@@ -16479,7 +16479,7 @@
       }
     ],
     "name": "Durable Water Sack",
-    "parent": "ImprovisedBottle",
+    "parent": "Improvised Bottle",
     "trade_price": 7.9,
     "translation": "Durable Water Sack",
     "type": "Barrel_C",
@@ -24995,7 +24995,7 @@
   },
   {
     "name": "Heavy Walls",
-    "parent": "ReinforcedWalls",
+    "parent": "Medium Wood Walls",
     "translation": "Heavy Walls",
     "type": "HeavyWalls_C"
   },
@@ -28170,7 +28170,7 @@
   },
   {
     "name": "Improved Crafting",
-    "parent": "Crafting_T1",
+    "parent": "Basic Crafting",
     "translation": "Improved Crafting",
     "type": "Crafting_T2_C",
     "onlyDevs": true
@@ -28337,14 +28337,14 @@
   },
   {
     "name": "Improved Equipment",
-    "parent": "Equipment_T1",
+    "parent": "Basic Equipment",
     "translation": "Improved Equipment",
     "type": "Equipment_T2_C",
     "onlyDevs": true
   },
   {
     "name": "Improved Potions",
-    "parent": "Vitamins_T1",
+    "parent": "Basic Potions",
     "translation": "Improved Potions",
     "type": "Vitamins_T2_C",
     "onlyDevs": true
@@ -30047,7 +30047,7 @@
       }
     ],
     "name": "Iron-Tipped Bolt",
-    "parent": "CeramicBolt",
+    "parent": "Ceramic Bolt",
     "trade_price": 25,
     "translation": "Iron-Tipped Bolt",
     "type": "IronBolt_C",
@@ -31404,7 +31404,7 @@
       }
     ],
     "name": "Long Bonespike Swordstaff",
-    "parent": "OneHandedBoneSword",
+    "parent": "Bonespike Sword",
     "trade_price": 14.4,
     "translation": "Long Bonespike Swordstaff",
     "type": "TwoHandedBoneSword_C",
@@ -31923,7 +31923,7 @@
       }
     ],
     "name": "Medium Backpack",
-    "parent": "SmallBackpack",
+    "parent": "Light Backpack",
     "trade_price": 10.3,
     "translation": "Medium Backpack",
     "type": "MediumBackpack_C",
@@ -43947,7 +43947,7 @@
         "time": 3
       }
     ],
-    "parent": "ScattershotGun",
+    "parent": "Scattershot Gun",
     "experiencieReward": 1
   },
   {
@@ -44046,7 +44046,7 @@
       }
     ],
     "name": "Schematic Bag",
-    "parent": "SmallBackpack",
+    "parent": "Light Backpack",
     "trade_price": 5.6,
     "translation": "Schematic Bag",
     "type": "SchematicBag_C",
@@ -45214,7 +45214,7 @@
       }
     ],
     "name": "Scythe",
-    "parent": "BoneSickle",
+    "parent": "Bone Sickle",
     "trade_price": 17.4,
     "translation": "Scythe",
     "type": "CeramicScythe_C",
@@ -45451,7 +45451,7 @@
       }
     ],
     "name": "Sharp Spikes",
-    "parent": "TrapBombChest",
+    "parent": "Bomb Chest Trap",
     "type": "TrapSpikesSharp_C",
     "experiencieReward": 49,
     "structureInfo": {
@@ -45541,7 +45541,7 @@
       }
     ],
     "name": "Short Malletblade",
-    "parent": "OneHandedBoneSword",
+    "parent": "Bonespike Sword",
     "trade_price": 88.8,
     "translation": "Short Malletblade",
     "type": "OneHandedZirconiumSword_C",
@@ -46168,7 +46168,7 @@
       }
     ],
     "name": "Singblade",
-    "parent": "TwoHandedBoneSword",
+    "parent": "Long Bonespike Swordstaff",
     "trade_price": 165.8,
     "translation": "Singblade",
     "type": "TwoHandedZirconiumSword_C",
@@ -46330,7 +46330,7 @@
       }
     ],
     "name": "Small Base Walker Packer",
-    "parent": "SandWalls",
+    "parent": "Sand Structures",
     "type": "BaseWalkerPackerSmall_C",
     "experiencieReward": 32,
     "structureInfo": {
@@ -46467,7 +46467,7 @@
       }
     ],
     "name": "Small Repair Hoist",
-    "parent": "ReinforcedWalls",
+    "parent": "Medium Wood Walls",
     "type": "SmallRepairHoist_C",
     "structureInfo": {
       "type": "Soft",
@@ -47551,7 +47551,7 @@
       }
     ],
     "name": "Split Bone Bottle",
-    "parent": "BoneBottle",
+    "parent": "Bone Bottle",
     "trade_price": 13.3,
     "translation": "Split Bone Bottle",
     "type": "SplitBoneBottle_C",
@@ -47728,7 +47728,7 @@
       }
     ],
     "name": "Spring Spikes Trap",
-    "parent": "TrapBombChest",
+    "parent": "Bomb Chest Trap",
     "type": "TrapSpikesSpring_C",
     "experiencieReward": 60,
     "structureInfo": {
@@ -47974,7 +47974,7 @@
       }
     ],
     "name": "Steering Levers",
-    "parent": "ChestAmmo",
+    "parent": "Ammo Chest",
     "type": "SteeringLevers_C",
     "experiencieReward": 208,
     "translation": "Steering Levers",
@@ -50165,7 +50165,7 @@
   },
   {
     "name": "Stone Walls",
-    "parent": "SandWalls",
+    "parent": "Sand Structures",
     "translation": "Stone Walls",
     "type": "StoneWalls_C"
   },
@@ -54231,7 +54231,7 @@
       }
     ],
     "name": "Trap Door",
-    "parent": "TrapBombChest",
+    "parent": "Bomb Chest Trap",
     "type": "TrapDoor_C",
     "experiencieReward": 48,
     "structureInfo": {
@@ -56405,7 +56405,7 @@
   },
   {
     "name": "Walker Hangar",
-    "parent": "ReinforcedWalls",
+    "parent": "Medium Wood Walls",
     "translation": "Walker Hangar",
     "type": "Hangar_C",
     "onlyDevs": true
@@ -58053,7 +58053,7 @@
   },
   {
     "name": "Wooden Walls",
-    "parent": "SandWalls",
+    "parent": "Sand Structures",
     "translation": "Wooden Walls",
     "type": "WoodenWalls_C"
   },
