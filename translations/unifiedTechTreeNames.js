@@ -110,8 +110,8 @@ unifiedTechTreeNames.nameMap = {
   "Flare_C": "Flare - White",
   "Balista": "Ballista",
   "ScattershotGun": "Scattershot Gun",
+  "FiberHeadwrap": "Fiber Headwrap",
 
-  // Melee weapons - Clubs and Maces
   "WoodenClub": "Beat Stick",
   "OneHandedStoneClub": "Jaggertooth Club",
   "TwoHandedStoneMace": "Jaggertooth Maul",
@@ -210,6 +210,7 @@ unifiedTechTreeNames.nameMap = {
   "Crafting_T4": "Advanced Crafting",
   "WalkerWeapons_T4": "Flotillian Walker Weapons",
   "Walkers_T4": "Flotillian Walkers",
+  "WalkerPartsImproved_T3": "Advanced Walker Parts",
 
   // Barriers and chests
   "WalkerBarriers": "Barrier Base",
@@ -246,6 +247,10 @@ unifiedTechTreeNames.nameMap = {
   "BoneBottle": "Bone Bottle",
   "CrudeHatchet": "Crude Hatchet",
   "CeramicBottle": "Ceramic Bottle",
+  "BoneBreaker": "Bonebreaker",
+  "InsectBomb": "Insect Bomb",
+  "Camelop  Walker": "Camelop Walker",
+  "RupuFurBoots": "Rupu Fur Sandals",
 
   // Stations
   "FiberworkingStation": "Fiberworking Station",
