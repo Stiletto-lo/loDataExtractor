@@ -211,6 +211,9 @@ unifiedTechTreeNames.nameMap = {
   "WalkerWeapons_T4": "Flotillian Walker Weapons",
   "Walkers_T4": "Flotillian Walkers",
   "WalkerPartsImproved_T3": "Advanced Walker Parts",
+  "Stomping_T2": "Advanced Stomping Station",
+  "Stomping_T3": "Flotillian Stomping Station",
+  "StompingStation": "Stomping Station",
 
   // Barriers and chests
   "WalkerBarriers": "Barrier Base",
