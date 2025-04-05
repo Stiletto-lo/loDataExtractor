@@ -3037,7 +3037,7 @@
       }
     ],
     "name": "Base Maintenance Chest",
-    "parent": "ChestBaseMaintenance_T1",
+    "parent": "Maintenance Box",
     "type": "ChestBaseMaintenance_T2_C",
     "experiencieReward": 32,
     "structureInfo": {
@@ -4969,7 +4969,7 @@
   },
   {
     "name": "Basic Walker Weapons",
-    "parent": "Constructions_T1",
+    "parent": "Basic Constructions",
     "translation": "Basic Walker Weapons",
     "type": "WalkerWeapons_T1_C"
   },
@@ -27547,7 +27547,7 @@
   },
   {
     "name": "Improved Constructions",
-    "parent": "Constructions_T1",
+    "parent": "Basic Constructions",
     "translation": "Improved Constructions",
     "type": "Constructions_T2_C"
   },
@@ -31164,7 +31164,7 @@
       }
     ],
     "name": "Maintenance Box",
-    "parent": "Constructions_T1",
+    "parent": "Basic Constructions",
     "type": "ChestBaseMaintenance_T1_C",
     "structureInfo": {
       "type": "Medium",
@@ -42653,7 +42653,7 @@
   },
   {
     "name": "Sand Structures",
-    "parent": "ChestBaseMaintenance_T1",
+    "parent": "Maintenance Box",
     "translation": "Sand Structures",
     "type": "SandWalls_C"
   },
@@ -49215,7 +49215,7 @@
       }
     ],
     "name": "Stone Humidifier",
-    "parent": "ChestBaseMaintenance_T1",
+    "parent": "Maintenance Box",
     "type": "Humidifier_C",
     "structureInfo": {
       "type": "Soft",
