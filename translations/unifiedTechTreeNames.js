@@ -202,6 +202,7 @@ unifiedTechTreeNames.nameMap = {
   "Constructions_T2": "Improved Constructions",
   "WalkerWeapons_T2": "Improved Walker Weapons",
   "Constructions_T3": "Advanced Constructions",
+  "WalkerWeapons_T3": "Advanced Walker Weapons",
   "Walkers_T2": "Improved Walkers",
   "Equipment_T3": "Advanced Equipment",
   "Crafting_T3": "Advanced Crafting",
@@ -216,6 +217,7 @@ unifiedTechTreeNames.nameMap = {
   "StompingStation": "Stomping Station",
   "StonePlank": "Stone Plank",
   "ProxyLicense": "Proxy License",
+  "CuringStation": "Curing Station",
 
   // Barriers and chests
   "WalkerBarriers": "Barrier Base",
