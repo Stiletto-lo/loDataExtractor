@@ -266,7 +266,37 @@ unifiedTechTreeNames.nameMap = {
 
   // Misc
   "VisionPowder": "Vision Powder",
-  "FiberBandage": "Primitive Bandage"
+  "FiberBandage": "Primitive Bandage",
+
+  // Additional tech tree items
+  "Walkers_T4_C": "Flotillian Walkers",
+  "Equipment_T4": "Flotillian Equipment",
+  "Constructions_T4": "Flotillian Constructions",
+  "Constructions_T4_C": "Flotillian Constructions",
+  "Vitamins_T4": "Flotillian Potions",
+  "Vitamins_T4_C": "Flotillian Potions",
+
+  // Walker weapons
+
+  // Additional walkers
+  "MolluskWalker": "Mollusk Walker",
+  "MolluskWalker_C": "Mollusk Walker",
+  "TuskWalker": "Tusk Walker",
+  "TuskWalker_C": "Tusk Walker",
+  "CamelWalker": "Camelop Walker",
+  "CamelWalker_C": "Camelop Walker",
+  "Camelop Walker": "Camelop Walker",
+
+  // Additional weapons and tools
+  "CeramicSword": "Ceramic Sword",
+  "CeramicSword_C": "Ceramic Sword",
+  "IronSword": "Iron Sword",
+  "IronSword_C": "Iron Sword",
+  "ChitinPickaxe": "Chitin Pickaxe",
+  "ChitinPickaxe_C": "Chitin Pickaxe",
+
+  "WoodworkingTier_03": "Artisan Woodworking Station",
+  "StompingTier_03": "Flotillian Stomping Station",
 };
 
 // Build reverse mapping for internal lookups
