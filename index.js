@@ -407,6 +407,9 @@ function loadDirData(techTreeDir, folderType) {
 				case "schematics":
 					fileParser.parseSchematicItemData(path);
 					break;
+				case "translation":
+					fileParser.parseTranslations(path);
+					break;
 				case "translationOthers":
 					fileParser.parseOtherTranslations(path);
 					break;

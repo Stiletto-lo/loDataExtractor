@@ -1872,6 +1872,7 @@
     "trade_price": 0.2,
     "translation": "Apple",
     "type": "Apple_C",
+    "description": "Crisp and delicious. No worms guaranteed.",
     "experiencieReward": 8,
     "stackSize": 100,
     "weight": 0.266
@@ -2187,6 +2188,7 @@
     "trade_price": 0.1,
     "translation": "Ash",
     "type": "Ash_C",
+    "description": "A product of burning wood.",
     "experiencieReward": 1,
     "stackSize": 100,
     "weight": 0.01
@@ -6021,7 +6023,7 @@
         "ingredients": [
           {
             "count": 8,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           },
           {
             "count": 1,
@@ -6035,7 +6037,7 @@
         "ingredients": [
           {
             "count": 8,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           },
           {
             "count": 1,
@@ -6701,7 +6703,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Log"
+            "name": "Wood Log"
           }
         ],
         "station": "Lumbermill",
@@ -6811,7 +6813,7 @@
           },
           {
             "count": 2,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -7654,7 +7656,7 @@
       }
     ],
     "name": "Bone Sickle",
-    "parent": "SimpleSickle",
+    "parent": "Simple Sickle",
     "translation": "Bone Sickle",
     "type": "BoneSickle_C",
     "durability": 550,
@@ -7979,6 +7981,7 @@
     "trade_price": 151.4,
     "translation": "Bonebreaker",
     "type": "Bonebreaker_C",
+    "description": "A small injection that may cause balance loss and serious injury from falling off walkers. Short term effect grants Nomad double damage after a successful block. Long term effect grants less stamina drain on heavy attacks until death.",
     "stackSize": 100,
     "weight": 0.6
   },
@@ -8030,7 +8033,7 @@
       }
     ],
     "name": "Bonespike Sword",
-    "parent": "TwoHandedBoneSwordShort",
+    "parent": "Sawtooth Sword",
     "trade_price": 6.2,
     "translation": "Bonespike Sword",
     "type": "OneHandedBoneSword_C",
@@ -9188,7 +9191,7 @@
           },
           {
             "count": 24,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 56,
@@ -9211,7 +9214,7 @@
           },
           {
             "count": 24,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 56,
@@ -9234,7 +9237,7 @@
           },
           {
             "count": 24,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 56,
@@ -9257,7 +9260,7 @@
           },
           {
             "count": 24,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 56,
@@ -9599,7 +9602,7 @@
           },
           {
             "count": 14,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 25,
@@ -10228,7 +10231,7 @@
         "ingredients": [
           {
             "count": 15,
-            "name": "ChitinShell"
+            "name": "Chitin Plate"
           },
           {
             "count": 3,
@@ -10373,7 +10376,7 @@
         "ingredients": [
           {
             "count": 8,
-            "name": "ChitinShell"
+            "name": "Chitin Plate"
           },
           {
             "count": 3,
@@ -10519,7 +10522,7 @@
         "ingredients": [
           {
             "count": 12,
-            "name": "ChitinShell"
+            "name": "Chitin Plate"
           },
           {
             "count": 3,
@@ -10856,6 +10859,7 @@
     "trade_price": 0.2,
     "translation": "Cattail",
     "type": "Cattail_C",
+    "description": "An abundant marsh plant favoured by nomads for its medicinal properties.",
     "experiencieReward": 1,
     "stackSize": 100,
     "weight": 0.01
@@ -11503,20 +11507,6 @@
         "toolType": "Mining",
         "tier": 15
       }
-    ],
-    "drops": [
-      {
-        "location": "Tools Strongbox",
-        "chance": 0.063613234,
-        "minQuantity": 1,
-        "maxQuantity": 5
-      },
-      {
-        "location": "Tools and Equipment Strongbox",
-        "chance": 0.02244946,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
     ]
   },
   {
@@ -12019,7 +12009,7 @@
         "ingredients": [
           {
             "count": 65,
-            "name": "ChitinShell"
+            "name": "Chitin Plate"
           },
           {
             "count": 3,
@@ -12037,7 +12027,7 @@
         "ingredients": [
           {
             "count": 65,
-            "name": "ChitinShell"
+            "name": "Chitin Plate"
           },
           {
             "count": 3,
@@ -12106,7 +12096,7 @@
           },
           {
             "count": 4,
-            "name": "ChitinShell"
+            "name": "Chitin Plate"
           }
         ],
         "station": "Crafting Bench",
@@ -12184,7 +12174,7 @@
           },
           {
             "count": 10,
-            "name": "ChitinShell"
+            "name": "Chitin Plate"
           },
           {
             "count": 5,
@@ -12229,7 +12219,7 @@
           },
           {
             "count": 4,
-            "name": "ChitinShell"
+            "name": "Chitin Plate"
           }
         ],
         "station": "Crafting Bench",
@@ -12327,7 +12317,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Terrain: Clay"
+            "name": "Terrain: Clay Spots"
           },
           {
             "count": 10,
@@ -12759,7 +12749,7 @@
           },
           {
             "count": 9,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           },
           {
             "count": 4,
@@ -13408,7 +13398,7 @@
       }
     ],
     "name": "Compacted Torque Battery",
-    "parent": "GrapplingBelt",
+    "parent": "Torque Backpack",
     "trade_price": 8.4,
     "translation": "Compacted Torque Battery",
     "type": "HeavyTorqueContainer_C",
@@ -13505,6 +13495,7 @@
     "trade_price": 0.2,
     "translation": "Corn",
     "type": "Corn_C",
+    "description": "Corn is seeded by expeditionary planters on the fringe of the Ice Lands.",
     "experiencieReward": 7,
     "stackSize": 50,
     "weight": 0.33
@@ -13545,6 +13536,7 @@
     "trade_price": 2.1,
     "translation": "Cotton",
     "type": "Cotton_C",
+    "description": "Grows in open meadows.",
     "stackSize": 100,
     "weight": 0.01
   },
@@ -16525,7 +16517,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "EarthWax_GroundSource"
+            "name": "Terrain: Black Soil"
           },
           {
             "count": 2,
@@ -16633,7 +16625,7 @@
         "ingredients": [
           {
             "count": 10,
-            "name": "MushroomFlesh"
+            "name": "Mushroom Flesh"
           }
         ],
         "station": "Stomping Station",
@@ -16643,7 +16635,7 @@
         "ingredients": [
           {
             "count": 9,
-            "name": "MushroomFlesh"
+            "name": "Mushroom Flesh"
           }
         ],
         "station": "Advanced Stomping Station",
@@ -16653,7 +16645,7 @@
         "ingredients": [
           {
             "count": 8,
-            "name": "MushroomFlesh"
+            "name": "Mushroom Flesh"
           }
         ],
         "station": "Flotillian Stomping Station",
@@ -17057,7 +17049,7 @@
           },
           {
             "count": 14,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 11,
@@ -17811,7 +17803,7 @@
           },
           {
             "count": 20,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           }
         ]
       }
@@ -17836,7 +17828,7 @@
           },
           {
             "count": 20,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           }
         ]
       }
@@ -17861,7 +17853,7 @@
           },
           {
             "count": 20,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           }
         ]
       }
@@ -18006,7 +17998,7 @@
           },
           {
             "count": 36,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 38,
@@ -18200,7 +18192,7 @@
       }
     ],
     "name": "Fast Grappling Hook",
-    "parent": "FixedGrapplingHook",
+    "parent": "Repaired Grappling Hook",
     "trade_price": 19.4,
     "translation": "Fast Grappling Hook",
     "type": "FastGrapplingHook_C",
@@ -18230,6 +18222,7 @@
     "trade_price": 1.6,
     "translation": "Feather",
     "type": "Feather_C",
+    "description": "Migrating birds serve as one of the oldest compasses for lost nomads, like dark arrowheads sailing toward the next oasis.",
     "experiencieReward": 12,
     "stackSize": 100,
     "weight": 0.01
@@ -18472,7 +18465,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ],
         "output": 3,
@@ -18483,7 +18476,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ],
         "output": 3,
@@ -18494,7 +18487,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ],
         "output": 3,
@@ -18505,7 +18498,7 @@
         "ingredients": [
           {
             "count": 100,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ],
         "output": 300,
@@ -18516,7 +18509,7 @@
         "ingredients": [
           {
             "count": 100,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ],
         "output": 300,
@@ -18527,7 +18520,7 @@
         "ingredients": [
           {
             "count": 100,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ],
         "output": 300,
@@ -18582,7 +18575,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "PalmLeaves"
+            "name": "Palm Leaves"
           }
         ],
         "output": 3,
@@ -18593,7 +18586,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "PalmLeaves"
+            "name": "Palm Leaves"
           }
         ],
         "output": 3,
@@ -18604,7 +18597,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "PalmLeaves"
+            "name": "Palm Leaves"
           }
         ],
         "output": 3,
@@ -18615,7 +18608,7 @@
         "ingredients": [
           {
             "count": 100,
-            "name": "PalmLeaves"
+            "name": "Palm Leaves"
           }
         ],
         "output": 300,
@@ -18626,7 +18619,7 @@
         "ingredients": [
           {
             "count": 100,
-            "name": "PalmLeaves"
+            "name": "Palm Leaves"
           }
         ],
         "output": 300,
@@ -18637,7 +18630,7 @@
         "ingredients": [
           {
             "count": 100,
-            "name": "PalmLeaves"
+            "name": "Palm Leaves"
           }
         ],
         "output": 300,
@@ -18649,6 +18642,7 @@
     "trade_price": 0.2,
     "translation": "Fiber",
     "type": "Fiber_C",
+    "description": "Used to make everything from ropes, sails, to garments.",
     "experiencieReward": 2,
     "stackSize": 100,
     "weight": 0.02,
@@ -19074,7 +19068,7 @@
           },
           {
             "count": 2,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ]
       }
@@ -19442,7 +19436,7 @@
           },
           {
             "count": 3,
-            "name": "PalmLeaves"
+            "name": "Palm Leaves"
           }
         ]
       }
@@ -19627,7 +19621,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -20272,7 +20266,7 @@
           },
           {
             "count": 1,
-            "name": "Fuel"
+            "name": "Liquid Fuel"
           }
         ],
         "station": "Curing",
@@ -21251,7 +21245,7 @@
       }
     ],
     "name": "Firestone Axe",
-    "parent": "OneHandedZirconiumAxe",
+    "parent": "Advanced Hatchet",
     "trade_price": 80.8,
     "translation": "Firestone Axe",
     "type": "OneHandedLavaAxe_C",
@@ -21303,7 +21297,7 @@
           },
           {
             "count": 3,
-            "name": "ChitinShell"
+            "name": "Chitin Plate"
           }
         ],
         "station": "Lathe",
@@ -21770,7 +21764,7 @@
       }
     ],
     "name": "Firestone Kopesh",
-    "parent": "OneHandedZirconiumSword",
+    "parent": "Short Malletblade",
     "trade_price": 103,
     "translation": "Firestone Kopesh",
     "type": "OneHandedLavaSword_C",
@@ -21825,7 +21819,7 @@
       }
     ],
     "name": "Firestone Longblade",
-    "parent": "TwoHandedZirconiumSword",
+    "parent": "Singblade",
     "trade_price": 105.2,
     "translation": "Firestone Longblade",
     "type": "TwoHandedLavaSword_C",
@@ -21864,7 +21858,7 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           },
           {
             "count": 5,
@@ -22123,7 +22117,7 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           },
           {
             "count": 5,
@@ -22451,7 +22445,7 @@
           },
           {
             "count": 5,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           }
         ],
         "station": "Woodworking Station",
@@ -22469,7 +22463,7 @@
           },
           {
             "count": 5,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           }
         ],
         "station": "Advanced Woodworking Station",
@@ -22487,7 +22481,7 @@
           },
           {
             "count": 5,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           }
         ],
         "station": "Artificer Woodworking Station",
@@ -22612,13 +22606,13 @@
           },
           {
             "count": 20,
-            "name": "Fuel"
+            "name": "Liquid Fuel"
           }
         ]
       }
     ],
     "name": "Flotillan Grappling Hook",
-    "parent": "FixedGrapplingHook",
+    "parent": "Repaired Grappling Hook",
     "trade_price": 16,
     "translation": "Flotillan Grappling Hook",
     "type": "FlotillanGrapplingHook_C",
@@ -23395,6 +23389,7 @@
     "trade_price": 50,
     "translation": "Fragment",
     "type": "FragmentExp_C",
+    "description": "Faint images are etched on the translucent surface.",
     "experiencieReward": 10,
     "stackSize": 100,
     "drops": [
@@ -23486,7 +23481,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "BloodTurnip"
+            "name": "Blood Turnip"
           }
         ],
         "station": "Stomping Station",
@@ -23496,7 +23491,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "BloodTurnip"
+            "name": "Blood Turnip"
           }
         ],
         "output": 2,
@@ -23507,7 +23502,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "BloodTurnip"
+            "name": "Blood Turnip"
           }
         ],
         "output": 3,
@@ -23551,7 +23546,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "ThornBerry"
+            "name": "Thornberry"
           }
         ],
         "station": "Stomping Station",
@@ -23561,7 +23556,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "ThornBerry"
+            "name": "Thornberry"
           }
         ],
         "output": 2,
@@ -23572,7 +23567,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "ThornBerry"
+            "name": "Thornberry"
           }
         ],
         "output": 3,
@@ -23708,7 +23703,7 @@
           },
           {
             "count": 6,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           },
           {
             "count": 4,
@@ -23730,7 +23725,7 @@
           },
           {
             "count": 6,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           },
           {
             "count": 4,
@@ -24353,11 +24348,11 @@
           },
           {
             "count": 2,
-            "name": "Fuel"
+            "name": "Liquid Fuel"
           },
           {
             "count": 8,
-            "name": "MushroomFlesh"
+            "name": "Mushroom Flesh"
           }
         ],
         "station": "ClayPot",
@@ -24365,7 +24360,7 @@
       }
     ],
     "name": "Green Death Bomb",
-    "parent": "SulfurBomb",
+    "parent": "Sulfur Bomb",
     "trade_price": 36,
     "translation": "Green Death Bomb",
     "type": "RupuGasBomb_C",
@@ -24895,7 +24890,7 @@
       }
     ],
     "name": "Heavy Backpack",
-    "parent": "MediumBackpack",
+    "parent": "Medium Backpack",
     "trade_price": 131.5,
     "translation": "Heavy Backpack",
     "type": "LargeBackpack_C",
@@ -26068,6 +26063,7 @@
     "trade_price": 1.1,
     "translation": "Hide",
     "type": "Hide_C",
+    "description": "The raw skin of an animal.",
     "experiencieReward": 3,
     "stackSize": 100,
     "weight": 0.34,
@@ -26850,7 +26846,7 @@
         "ingredients": [
           {
             "count": 24,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 32,
@@ -26877,7 +26873,7 @@
           },
           {
             "count": 24,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 12,
@@ -26900,7 +26896,7 @@
           },
           {
             "count": 24,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 12,
@@ -26919,7 +26915,7 @@
         "ingredients": [
           {
             "count": 23,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 24,
@@ -27560,7 +27556,7 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "IronOre"
+            "name": "Iron Ore"
           },
           {
             "count": 8,
@@ -29311,7 +29307,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "CactusFruit"
+            "name": "Huge Cactus Fruit"
           },
           {
             "count": 20,
@@ -29325,7 +29321,7 @@
       }
     ],
     "name": "Improvised Bottle",
-    "parent": "MakeshiftBottle",
+    "parent": "Makeshift Bottle",
     "trade_price": 6.2,
     "translation": "Improvised Bottle",
     "type": "ImprovisedBottle_C",
@@ -29487,7 +29483,7 @@
       }
     ],
     "name": "Insect Bomb",
-    "parent": "SulfurBomb",
+    "parent": "Sulfur Bomb",
     "trade_price": 24.2,
     "translation": "Insect Bomb",
     "type": "RupuBallistaInsectBomb_C",
@@ -29505,6 +29501,7 @@
     "trade_price": 0.8,
     "translation": "Insects",
     "type": "Insects_C",
+    "description": "Its extremely hard carapace evolved to shield it from extreme weather.",
     "experiencieReward": 18,
     "stackSize": 100,
     "weight": 0.01
@@ -29676,14 +29673,6 @@
       {
         "toolType": "Mining",
         "tier": 20
-      }
-    ],
-    "drops": [
-      {
-        "location": "Tools Strongbox",
-        "chance": 0.012722645999999999,
-        "minQuantity": 1,
-        "maxQuantity": 5
       }
     ]
   },
@@ -30202,7 +30191,7 @@
           },
           {
             "count": 15,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ]
       }
@@ -30430,7 +30419,7 @@
           },
           {
             "count": 2,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -30745,7 +30734,7 @@
       }
     ],
     "name": "Large Gathering Pouch",
-    "parent": "ForagingPouch",
+    "parent": "Foraging Pouch",
     "trade_price": 10,
     "translation": "Large Gathering Pouch",
     "type": "LargePouch_C",
@@ -31043,7 +31032,7 @@
         "ingredients": [
           {
             "count": 4,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           },
           {
             "count": 12,
@@ -31053,7 +31042,7 @@
       }
     ],
     "name": "Light Backpack",
-    "parent": "ForagingPouch",
+    "parent": "Foraging Pouch",
     "trade_price": 5.6,
     "translation": "Light Backpack",
     "type": "SmallBackpack_C",
@@ -31507,7 +31496,7 @@
       }
     ],
     "name": "Long Grappling Hook",
-    "parent": "FixedGrapplingHook",
+    "parent": "Repaired Grappling Hook",
     "trade_price": 23.5,
     "translation": "Long Grappling Hook",
     "type": "LongGrapplingHook_C",
@@ -31721,7 +31710,7 @@
           },
           {
             "count": 3,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ]
       }
@@ -33712,7 +33701,7 @@
         "ingredients": [
           {
             "count": 35,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           },
           {
             "count": 10,
@@ -33720,7 +33709,7 @@
           },
           {
             "count": 3,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ],
         "station": "Woodworking Station",
@@ -33730,7 +33719,7 @@
         "ingredients": [
           {
             "count": 35,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           },
           {
             "count": 10,
@@ -33738,7 +33727,7 @@
           },
           {
             "count": 3,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ],
         "station": "Advanced Woodworking Station",
@@ -33748,7 +33737,7 @@
         "ingredients": [
           {
             "count": 35,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           },
           {
             "count": 10,
@@ -33756,7 +33745,7 @@
           },
           {
             "count": 3,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ],
         "station": "Artificer Woodworking Station",
@@ -33768,6 +33757,7 @@
     "trade_price": 10.4,
     "translation": "Net",
     "type": "Net_C",
+    "description": "Ammo for net thrower. Entangles small structures, mannable weapons, walker legs and wings.",
     "projectileDamage": {
       "damage": 5
     },
@@ -34827,7 +34817,7 @@
       }
     ],
     "name": "Nibirian Harpoon",
-    "parent": "NibirianBolt",
+    "parent": "Nibiran-tipped Bolt",
     "translation": "Nibirian Harpoon",
     "type": "NibirianHarpoon_C"
   },
@@ -35401,6 +35391,7 @@
     "trade_price": 0.8,
     "translation": "Obsidian",
     "type": "Obsidian_C",
+    "description": "Molten rock flowed across the world's surface, and the metropolises were buried.",
     "experiencieReward": 16,
     "stackSize": 100,
     "weight": 2.5
@@ -35868,7 +35859,7 @@
       }
     ],
     "name": "Paddleblade Quarterstaff",
-    "parent": "BoneQuarterstaff",
+    "parent": "Rawbone Quarterstaff",
     "trade_price": 124.2,
     "translation": "Paddleblade Quarterstaff",
     "type": "ZirconiumQuarterstaff_C",
@@ -37405,6 +37396,7 @@
     "trade_price": 1.1,
     "translation": "Pearl",
     "type": "Pearl_C",
+    "description": "In the dry southern valleys, the fossils of old sea creatures litter the ground, turning the hills white.",
     "experiencieReward": 6,
     "stackSize": 100,
     "weight": 0.01
@@ -39283,7 +39275,7 @@
       }
     ],
     "name": "Rawbone Battle Axe",
-    "parent": "StoneAxe",
+    "parent": "Woodcutter’s Hatchet",
     "trade_price": 18.4,
     "translation": "Rawbone Battle Axe",
     "type": "TwoHandedBoneAxe_C",
@@ -39678,13 +39670,13 @@
           },
           {
             "count": 8,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           }
         ]
       }
     ],
     "name": "Rawbone Sawsword",
-    "parent": "TwoHandedStoneSword",
+    "parent": "Sawtooth Sword",
     "trade_price": 15,
     "translation": "Rawbone Sawsword",
     "type": "TwoHandedBoneSwordShort_C",
@@ -40712,6 +40704,7 @@
     "trade_price": 0.5,
     "translation": "Rope",
     "type": "Rope_C",
+    "description": "A strong cord used for crafting and construction",
     "experiencieReward": 4,
     "stackSize": 100,
     "weight": 0.25,
@@ -41093,7 +41086,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -41121,7 +41114,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -41149,7 +41142,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -41177,7 +41170,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -41205,7 +41198,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -41233,7 +41226,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -41257,7 +41250,7 @@
         "ingredients": [
           {
             "count": 8,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           },
           {
             "count": 2,
@@ -41448,11 +41441,11 @@
         "ingredients": [
           {
             "count": 2,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           },
           {
             "count": 8,
-            "name": "PalmLeaves"
+            "name": "Palm Leaves"
           }
         ]
       }
@@ -41638,7 +41631,7 @@
           },
           {
             "count": 6,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           }
         ]
       }
@@ -41937,7 +41930,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -41965,7 +41958,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -42416,7 +42409,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -42444,7 +42437,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -42482,7 +42475,7 @@
           },
           {
             "count": 2,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ],
         "station": "Advanced Woodworking Station",
@@ -42496,7 +42489,7 @@
           },
           {
             "count": 2,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ],
         "station": "Artificer Woodworking Station",
@@ -42558,7 +42551,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -42586,7 +42579,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -42614,7 +42607,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -42734,7 +42727,7 @@
           },
           {
             "count": 1,
-            "name": "CharcoalFuel"
+            "name": "Charcoal"
           }
         ]
       }
@@ -43201,7 +43194,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Sand_GroundSource"
+            "name": "Terrain: Sand"
           }
         ],
         "output": 100,
@@ -43246,6 +43239,7 @@
     "parent": "Crafting",
     "translation": "Sand",
     "type": "Sand_C",
+    "description": "Tiny green mineral flecks dot the sand.",
     "stackSize": 100,
     "weight": 0.22
   },
@@ -43777,7 +43771,7 @@
           },
           {
             "count": 35,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 2,
@@ -45218,6 +45212,7 @@
     "trade_price": 17.4,
     "translation": "Scythe",
     "type": "CeramicScythe_C",
+    "description": "Returns a superior yield when used to harvest small plants.",
     "experiencieReward": 80,
     "weight": 6.3,
     "durability": 850,
@@ -45820,7 +45815,7 @@
           },
           {
             "count": 13,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 6,
@@ -45845,7 +45840,7 @@
           },
           {
             "count": 13,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 6,
@@ -45874,7 +45869,7 @@
           },
           {
             "count": 13,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           }
         ]
       }
@@ -45895,7 +45890,7 @@
           },
           {
             "count": 13,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 6,
@@ -46012,7 +46007,7 @@
           },
           {
             "count": 5,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           }
         ]
       }
@@ -46062,7 +46057,7 @@
           },
           {
             "count": 15,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           }
         ]
       }
@@ -46110,7 +46105,7 @@
           },
           {
             "count": 2,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           }
         ]
       }
@@ -47625,7 +47620,7 @@
           },
           {
             "count": 35,
-            "name": "PalmLeaves"
+            "name": "Palm Leaves"
           },
           {
             "count": 112,
@@ -50422,7 +50417,7 @@
       }
     ],
     "name": "Sturdy Grappling Hook",
-    "parent": "FixedGrapplingHook",
+    "parent": "Repaired Grappling Hook",
     "trade_price": 19.4,
     "translation": "Sturdy Grappling Hook",
     "type": "SturdyGrapplingHook_C",
@@ -50434,6 +50429,7 @@
     "trade_price": 1.4,
     "translation": "Sulfur",
     "type": "Sulfur_C",
+    "description": "A yellow mineral that typically forms in sulfur lakes.",
     "stackSize": 100,
     "weight": 0.03
   },
@@ -50444,7 +50440,7 @@
         "ingredients": [
           {
             "count": 12,
-            "name": "Salt"
+            "name": "Salt Rock"
           },
           {
             "count": 18,
@@ -50466,7 +50462,7 @@
         "ingredients": [
           {
             "count": 12,
-            "name": "Salt"
+            "name": "Salt Rock"
           },
           {
             "count": 18,
@@ -50712,7 +50708,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           }
         ],
         "station": "FurnaceBurning_Tier2",
@@ -50746,7 +50742,8 @@
     "type": "FurnaceBurning_C",
     "experiencieReward": 1,
     "stackSize": 10000,
-    "weight": 0.01
+    "weight": 0.01,
+    "description": "A hot-burning liquid, used in furnaces."
   },
   {
     "category": "Liquids",
@@ -50777,6 +50774,7 @@
     "trade_price": 3.2,
     "translation": "Tar",
     "type": "Tar_C",
+    "description": "Extracted from deep below volcanic soil.",
     "experiencieReward": 100,
     "stackSize": 100,
     "weight": 0.15
@@ -50953,7 +50951,7 @@
       }
     ],
     "name": "Throwable Smoke Bomb",
-    "parent": "ChalkCloudBomb",
+    "parent": "Choking Cloud",
     "trade_price": 16.9,
     "translation": "Throwable Smoke Bomb",
     "type": "ThrowableSmokeBomb_C",
@@ -50973,7 +50971,7 @@
         "ingredients": [
           {
             "count": 35,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           },
           {
             "count": 10,
@@ -50981,7 +50979,7 @@
           },
           {
             "count": 8,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           },
           {
             "count": 3,
@@ -54004,7 +54002,8 @@
   {
     "name": "Torque",
     "translation": "Torque",
-    "type": "Torque_C"
+    "type": "Torque_C",
+    "description": "Enables walker sprinting, powers advanced machines, and enables faster grappling."
   },
   {
     "category": "Equipment",
@@ -54013,7 +54012,7 @@
         "ingredients": [
           {
             "count": 22,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           },
           {
             "count": 4,
@@ -54035,7 +54034,7 @@
         "ingredients": [
           {
             "count": 22,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           },
           {
             "count": 4,
@@ -54055,7 +54054,7 @@
       }
     ],
     "name": "Torque Backpack",
-    "parent": "TorqueContainer",
+    "parent": "Torque Battery",
     "trade_price": 48.5,
     "translation": "Torque Backpack",
     "type": "GrapplingBelt_C",
@@ -54105,7 +54104,7 @@
       }
     ],
     "name": "Torque Battery",
-    "parent": "FixedGrapplingHook",
+    "parent": "Repaired Grappling Hook",
     "trade_price": 8.4,
     "translation": "Torque Battery",
     "type": "TorqueContainer_C",
@@ -54256,7 +54255,7 @@
           },
           {
             "count": 6,
-            "name": "RupuFur"
+            "name": "Rupu Pelt"
           }
         ]
       }
@@ -55838,7 +55837,7 @@
           },
           {
             "count": 25,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           }
         ]
       }
@@ -55863,7 +55862,7 @@
           },
           {
             "count": 25,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           }
         ]
       }
@@ -55888,7 +55887,7 @@
           },
           {
             "count": 25,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           }
         ]
       }
@@ -55913,7 +55912,7 @@
           },
           {
             "count": 25,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           }
         ]
       }
@@ -56964,7 +56963,7 @@
           },
           {
             "count": 10,
-            "name": "Rawbone Sawsword"
+            "name": "Sawtooth Sword"
           },
           {
             "count": 30,
@@ -56972,7 +56971,7 @@
           },
           {
             "count": 40,
-            "name": "Rawbone Maul"
+            "name": "Spikebone Maul"
           },
           {
             "count": 10,
@@ -56994,7 +56993,7 @@
           },
           {
             "count": 8,
-            "name": "Ceramic Hatchet"
+            "name": "Advanced Hatchet"
           },
           {
             "count": 15,
@@ -57199,7 +57198,7 @@
       }
     ],
     "name": "Wingsuit",
-    "parent": "FixedGrapplingHook",
+    "parent": "Repaired Grappling Hook",
     "trade_price": 29,
     "translation": "Wingsuit",
     "type": "WingSuit_C",
@@ -57223,7 +57222,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Log"
+            "name": "Wood Log"
           }
         ],
         "output": 300,
@@ -57235,6 +57234,7 @@
     "trade_price": 0.1,
     "translation": "Wood",
     "type": "Wood_C",
+    "description": "This versatile material is the focus of Flotillan engineering.",
     "experiencieReward": 1,
     "stackSize": 100,
     "weight": 0.19,
@@ -59072,7 +59072,7 @@
         "ingredients": [
           {
             "count": 7,
-            "name": "IronOre"
+            "name": "Iron Ore"
           },
           {
             "count": 12,
@@ -59080,7 +59080,7 @@
           },
           {
             "count": 12,
-            "name": "RupuVine"
+            "name": "Rupu Vine"
           }
         ],
         "station": "Smithing",

@@ -104,8 +104,8 @@ const parseTranslations = (filePath) => {
 	}
 
 	// Check for expected structure in the JSON data
-	if (jsonData[0]?.StringTable?.KeysToMetaData) {
-		return processTranslationData(jsonData[0].StringTable.KeysToMetaData);
+	if (jsonData?.Items) {
+		return processTranslationData(jsonData.Items);
 	}
 
 	return false;
