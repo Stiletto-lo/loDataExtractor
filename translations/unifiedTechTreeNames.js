@@ -269,12 +269,12 @@ unifiedTechTreeNames.nameMap = {
   "FiberBandage": "Primitive Bandage",
 
   // Additional tech tree items
-  "Walkers_T4_C": "Flotillian Walkers",
   "Equipment_T4": "Flotillian Equipment",
   "Constructions_T4": "Flotillian Constructions",
-  "Constructions_T4_C": "Flotillian Constructions",
   "Vitamins_T4": "Flotillian Potions",
-  "Vitamins_T4_C": "Flotillian Potions",
+  "GelatinousGoo": "Gelatinous Goo",
+  "LavaFuel": "Lava Fuel",
+  "Clay_GroundSource": "Terrain: Clay Spots",
 
   // Walker weapons
 
