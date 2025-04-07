@@ -111,6 +111,20 @@ const parseTranslations = (filePath) => {
 	return false;
 };
 
+const parseStringTables = (filePath) => {
+	const jsonData = readJsonFile(filePath);
+
+	if (!jsonData) {
+		return false;
+	}
+
+	if (jsonData?.[0]?.StringTable?.KeysToEntries) {
+		return processTranslationData(jsonData?.[0]?.StringTable?.KeysToEntries);
+	}
+
+	return false;
+};
+
 /**
  * Extract language code from file path
  * @param {string} filePath - The file path to extract language from
@@ -196,6 +210,7 @@ module.exports = {
 	parseTranslations,
 	parseOtherTranslations,
 	processTranslationEntry,
+	parseStringTables,
 	// Export for testing purposes
 	_internal: {
 		readJsonFile,

@@ -379,7 +379,7 @@ function loadDirData(techTreeDir, folderType) {
 					fileParser.parseItemData(path);
 					break;
 				case "stringtables":
-					fileParser.parseTranslations(path);
+					fileParser.parseStringTables(path);
 					break;
 				case "trade":
 					fileParser.parsePrices(path);

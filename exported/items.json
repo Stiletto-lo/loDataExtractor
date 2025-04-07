@@ -1536,7 +1536,7 @@
             "name": "Rope"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 50
       }
     ],
@@ -2220,6 +2220,7 @@
     "name": "Automaton",
     "parent": "Improved Walker Weapons",
     "type": "Automaton_C",
+    "description": "A remote-controlled mechanical tool that can handle mounted weapons.",
     "experiencieReward": 78,
     "structureInfo": {
       "type": "Soft",
@@ -2747,6 +2748,7 @@
     "name": "Ballista",
     "parent": "Basic Walker Weapons",
     "type": "Ballista_C",
+    "description": "Ballista shoots bolts or tethering harpoons that attach to walkers and the environment.",
     "experiencieReward": 78,
     "structureInfo": {
       "type": "Soft",
@@ -5640,7 +5642,7 @@
         "ingredients": [
           {
             "count": 20,
-            "name": "TreeSap"
+            "name": "Tree Sap"
           },
           {
             "count": 7,
@@ -5654,7 +5656,7 @@
         "ingredients": [
           {
             "count": 20,
-            "name": "TreeSap"
+            "name": "Tree Sap"
           },
           {
             "count": 7,
@@ -5831,7 +5833,7 @@
         "ingredients": [
           {
             "count": 10,
-            "name": "TreeSap"
+            "name": "Tree Sap"
           },
           {
             "count": 2,
@@ -5845,7 +5847,7 @@
         "ingredients": [
           {
             "count": 10,
-            "name": "TreeSap"
+            "name": "Tree Sap"
           },
           {
             "count": 2,
@@ -6467,6 +6469,11 @@
     "weight": 9.75
   },
   {
+    "category": "Rigs",
+    "name": "Battleship Walker Rig",
+    "type": "DefaultBattleshipRig_T1_C"
+  },
+  {
     "category": "Walker Parts",
     "crafting": [
       {
@@ -6564,11 +6571,6 @@
     },
     "translation": "Battleship Walker Wings Small",
     "weight": 9.75
-  },
-  {
-    "category": "Rigs",
-    "name": "BattleshipWalker Rig",
-    "type": "DefaultBattleshipRig_T1_C"
   },
   {
     "name": "Bearing",
@@ -6678,6 +6680,7 @@
     "name": "Bed",
     "parent": "Hammock",
     "type": "Bed_C",
+    "description": "Comfortable bed with a big water container to hold multiple respawns.",
     "experiencieReward": 155,
     "structureInfo": {
       "type": "Soft",
@@ -6711,7 +6714,7 @@
       }
     ],
     "name": "Bent Wooden Planks",
-    "parent": "LumberMill",
+    "parent": "Lumbermill",
     "trade_price": 0.1,
     "translation": "Bent Wooden Planks",
     "type": "BentPlanks_C",
@@ -6747,11 +6750,6 @@
     },
     "translation": "Big Roped Ladder",
     "weight": 73
-  },
-  {
-    "category": "Rigs",
-    "name": "BirdSkywalker Rig",
-    "type": "RaptorRig_T1_C"
   },
   {
     "category": "Crafting",
@@ -7397,7 +7395,7 @@
             "name": "Bone Splinter"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 45
       },
       {
@@ -7411,7 +7409,7 @@
             "name": "Purified Water"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 45
       }
     ],
@@ -8033,7 +8031,7 @@
       }
     ],
     "name": "Bonespike Sword",
-    "parent": "Sawtooth Sword",
+    "parent": "Rawbone Sawsword",
     "trade_price": 6.2,
     "translation": "Bonespike Sword",
     "type": "OneHandedBoneSword_C",
@@ -8711,6 +8709,11 @@
   },
   {
     "category": "Rigs",
+    "name": "Buffalo Walker Rig",
+    "type": "DefaultBuffaloRig_T1_C"
+  },
+  {
+    "category": "Rigs",
     "crafting": [
       {
         "ingredients": [
@@ -9191,7 +9194,7 @@
           },
           {
             "count": 24,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 56,
@@ -9214,7 +9217,7 @@
           },
           {
             "count": 24,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 56,
@@ -9237,7 +9240,7 @@
           },
           {
             "count": 24,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 56,
@@ -9260,7 +9263,7 @@
           },
           {
             "count": 24,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 56,
@@ -9602,7 +9605,7 @@
           },
           {
             "count": 14,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 25,
@@ -9712,11 +9715,6 @@
     "weight": 9.75
   },
   {
-    "category": "Rigs",
-    "name": "BuffaloWalker Rig",
-    "type": "DefaultBuffaloRig_T1_C"
-  },
-  {
     "category": "Resources",
     "crafting": [
       {
@@ -9756,11 +9754,6 @@
         "maxQuantity": 1
       }
     ]
-  },
-  {
-    "category": "Rigs",
-    "name": "CabinWalker Rig",
-    "type": "DefaultMolluskRig_T1_C"
   },
   {
     "category": "Resources",
@@ -10662,11 +10655,6 @@
     ]
   },
   {
-    "category": "Rigs",
-    "name": "CaravelaWalker Rig",
-    "type": "DefaultSchmetterlingRig_T1_C"
-  },
-  {
     "category": "Spare Parts",
     "name": "Cargo Hold - Tier 1 Upgrade",
     "translation": "Cargo Hold - Tier 1 Upgrade",
@@ -10701,11 +10689,6 @@
     "experiencieReward": 40,
     "durability": 100,
     "wikiVisibility": false
-  },
-  {
-    "category": "Rigs",
-    "name": "CargoWalker Rig",
-    "type": "DefaultTuskerRig_T1_C"
   },
   {
     "category": "Furniture",
@@ -10792,6 +10775,7 @@
     "name": "Catapult",
     "parent": "Advanced Walker Weapons",
     "type": "Catapult_C",
+    "description": "Launches boulders and bombs extremely far distances. Effective against fortified structures.",
     "experiencieReward": 188,
     "structureInfo": {
       "type": "Hard",
@@ -11491,7 +11475,7 @@
       }
     ],
     "name": "Ceramic Pickaxe",
-    "parent": "BonePickaxe",
+    "parent": "Bone Pickaxe",
     "trade_price": 98.2,
     "translation": "Ceramic Pickaxe",
     "type": "CeramicPickaxe_C",
@@ -11506,6 +11490,20 @@
       {
         "toolType": "Mining",
         "tier": 15
+      }
+    ],
+    "drops": [
+      {
+        "location": "Tools Strongbox",
+        "chance": 0.063613234,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      },
+      {
+        "location": "Tools and Equipment Strongbox",
+        "chance": 0.02244946,
+        "minQuantity": 1,
+        "maxQuantity": 1
       }
     ]
   },
@@ -11535,7 +11533,7 @@
       }
     ],
     "name": "Ceramic Repair Hammer",
-    "parent": "BoneRepairHammer",
+    "parent": "Bone Repair Hammer",
     "translation": "Ceramic Repair Hammer",
     "type": "CeramicRepairHammer_C",
     "durability": 1000
@@ -11866,7 +11864,7 @@
             "name": "Rope"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 60
       }
     ],
@@ -11929,7 +11927,7 @@
         "ingredients": [
           {
             "count": 2,
-            "name": "EnergizedCore"
+            "name": "Meteor Core"
           },
           {
             "count": 25,
@@ -11947,7 +11945,7 @@
         "ingredients": [
           {
             "count": 2,
-            "name": "EnergizedCore"
+            "name": "Meteor Core"
           },
           {
             "count": 25,
@@ -11965,7 +11963,7 @@
         "ingredients": [
           {
             "count": 2,
-            "name": "EnergizedCore"
+            "name": "Meteor Core"
           },
           {
             "count": 25,
@@ -12013,7 +12011,7 @@
           },
           {
             "count": 3,
-            "name": "EnergizedCore"
+            "name": "Meteor Core"
           },
           {
             "count": 22,
@@ -12031,7 +12029,7 @@
           },
           {
             "count": 3,
-            "name": "EnergizedCore"
+            "name": "Meteor Core"
           },
           {
             "count": 22,
@@ -12186,7 +12184,7 @@
       }
     ],
     "name": "Chitin Repair Hammer",
-    "parent": "BoneRepairHammer",
+    "parent": "Bone Repair Hammer",
     "translation": "Chitin Repair Hammer",
     "type": "ChitinRepairHammer_C",
     "durability": 1500
@@ -12251,11 +12249,6 @@
         "maxQuantity": 1
       }
     ]
-  },
-  {
-    "category": "Rigs",
-    "name": "ClaimingWalker Rig",
-    "type": "ProxyRig_T1_C"
   },
   {
     "category": "Furniture",
@@ -12714,7 +12707,7 @@
           },
           {
             "count": 4,
-            "name": "Rubber"
+            "name": "Rubber Block"
           }
         ],
         "station": "Artisan Fiberworking Station",
@@ -12984,7 +12977,7 @@
             "name": "Tar"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 75
       }
     ],
@@ -13082,6 +13075,11 @@
     },
     "translation": "Cobra Walker Legs",
     "weight": 9.75
+  },
+  {
+    "category": "Rigs",
+    "name": "Cobra Walker Rig",
+    "type": "CobraRig_T1_C"
   },
   {
     "category": "Schematics",
@@ -13648,6 +13646,7 @@
     "name": "Crane",
     "parent": "Advanced Constructions",
     "type": "Crane_C",
+    "description": "Pick up and move heavy objects like firefly walkers and tree logs.",
     "experiencieReward": 78,
     "structureInfo": {
       "type": "Soft",
@@ -14186,6 +14185,11 @@
     },
     "translation": "Dinghy Walker Legs",
     "weight": 9.75
+  },
+  {
+    "category": "Rigs",
+    "name": "Dinghy Walker Rig",
+    "type": "DinghyRig_T1_C"
   },
   {
     "category": "Rigs",
@@ -15172,11 +15176,6 @@
     "weight": 9.75
   },
   {
-    "category": "Rigs",
-    "name": "DinghyWalker Rig",
-    "type": "DinghyRig_T1_C"
-  },
-  {
     "category": "Liquids",
     "name": "Dirty Water",
     "trade_price": 0.1,
@@ -15336,6 +15335,11 @@
     },
     "translation": "Domus Walker Legs Heavy",
     "weight": 9.75
+  },
+  {
+    "category": "Rigs",
+    "name": "Domus Walker Rig",
+    "type": "DefaultDomusRig_T1_C"
   },
   {
     "category": "Rigs",
@@ -16397,7 +16401,7 @@
       }
     ],
     "name": "Drill Spade",
-    "parent": "TubeSpade",
+    "parent": "Tube Spade",
     "translation": "Drill Spade",
     "type": "DrillSpade_C",
     "durability": 350
@@ -16839,6 +16843,7 @@
     "parent": "Advanced Constructions",
     "translation": "Exoskeleton",
     "type": "Exoskeleton_C",
+    "description": "Using darts to shoot, this feat of engineering was created on the Flotilla and can be packed into Walker Packing Compartments. Protects nomads wearing them and allows to carry and operate heavy weapons and tools.",
     "category": "Exoskeleton",
     "crafting": [
       {
@@ -16927,7 +16932,7 @@
       }
     ],
     "name": "Explosive Dart",
-    "parent": "FireDart",
+    "parent": "Fire Dart",
     "trade_price": 49.8,
     "translation": "Explosive Dart",
     "type": "RupuBoulder_T2_C",
@@ -17049,7 +17054,7 @@
           },
           {
             "count": 14,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 11,
@@ -17103,6 +17108,11 @@
     },
     "translation": "Falco Walker Legs Heavy",
     "weight": 9.75
+  },
+  {
+    "category": "Rigs",
+    "name": "Falco Walker Rig",
+    "type": "DefaultFalcoRig_T1_C"
   },
   {
     "category": "Rigs",
@@ -17803,7 +17813,7 @@
           },
           {
             "count": 20,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           }
         ]
       }
@@ -17828,7 +17838,7 @@
           },
           {
             "count": 20,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           }
         ]
       }
@@ -17853,7 +17863,7 @@
           },
           {
             "count": 20,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           }
         ]
       }
@@ -17998,7 +18008,7 @@
           },
           {
             "count": 36,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 38,
@@ -18192,7 +18202,7 @@
       }
     ],
     "name": "Fast Grappling Hook",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "trade_price": 19.4,
     "translation": "Fast Grappling Hook",
     "type": "FastGrapplingHook_C",
@@ -18205,16 +18215,6 @@
         "maxQuantity": 1
       }
     ]
-  },
-  {
-    "category": "Rigs",
-    "name": "FastTransportWalker Rig",
-    "type": "DefaultTobogganRig_T1_C"
-  },
-  {
-    "category": "Rigs",
-    "name": "FastWalker Rig",
-    "type": "DefaultFalcoRig_T1_C"
   },
   {
     "category": "Resources",
@@ -19910,7 +19910,7 @@
   {
     "category": "Resources",
     "name": "Fiery Concoction",
-    "parent": "ClayPot",
+    "parent": "Clay Pot",
     "trade_price": 1,
     "translation": "Fiery Concoction",
     "type": "HellfireMixture_C",
@@ -20008,7 +20008,7 @@
             "name": "Phosphorus"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 60
       }
     ],
@@ -20266,7 +20266,7 @@
           },
           {
             "count": 1,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           }
         ],
         "station": "Curing",
@@ -21245,7 +21245,7 @@
       }
     ],
     "name": "Firestone Axe",
-    "parent": "Advanced Hatchet",
+    "parent": "Ceramic Hatchet",
     "trade_price": 80.8,
     "translation": "Firestone Axe",
     "type": "OneHandedLavaAxe_C",
@@ -22135,7 +22135,7 @@
   },
   {
     "name": "Flares",
-    "parent": "DyeingStation",
+    "parent": "Dyeing Station",
     "translation": "Flares",
     "type": "Flares_C"
   },
@@ -22145,6 +22145,7 @@
     "trade_price": 0.1,
     "translation": "Flint",
     "type": "Flint_C",
+    "description": "A sharp mineral, handy for the production of primitive blades and extra pointy sticks",
     "experiencieReward": 3,
     "stackSize": 100,
     "weight": 0.4
@@ -22546,7 +22547,7 @@
       }
     ],
     "name": "Floating Mine",
-    "parent": "FireDart",
+    "parent": "Fire Dart",
     "trade_price": 96.4,
     "translation": "Floating Mine",
     "type": "RupuAntiAirFloatingMine_C",
@@ -22606,13 +22607,13 @@
           },
           {
             "count": 20,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           }
         ]
       }
     ],
     "name": "Flotillan Grappling Hook",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "trade_price": 16,
     "translation": "Flotillan Grappling Hook",
     "type": "FlotillanGrapplingHook_C",
@@ -22983,6 +22984,7 @@
     "trade_price": 0.5,
     "translation": "Flots",
     "type": "Currency_C",
+    "description": "Used by nomads to trade with each other at trading stations located in most oases.",
     "stackSize": 999999,
     "drops": [
       {
@@ -23379,11 +23381,6 @@
     "weight": 5
   },
   {
-    "category": "Rigs",
-    "name": "FoundationTier2Walker Rig",
-    "type": "SilurRig_T1_C"
-  },
-  {
     "category": "Knowledge",
     "name": "Fragment",
     "trade_price": 50,
@@ -23645,6 +23642,7 @@
     "name": "Furnace",
     "parent": "Clay",
     "type": "Furnace_C",
+    "description": "Advanced crafting station smelts raw ore into refined metal.",
     "experiencieReward": 36,
     "structureInfo": {
       "type": "Soft",
@@ -24348,14 +24346,14 @@
           },
           {
             "count": 2,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 8,
             "name": "Mushroom Flesh"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 75
       }
     ],
@@ -24549,6 +24547,7 @@
     "name": "Hammock",
     "parent": "Sand Bed",
     "type": "BedHammock_C",
+    "description": "A simple bed with a small water container that, when filled, allows a couple respawns.",
     "experiencieReward": 21,
     "structureInfo": {
       "type": "Soft",
@@ -25351,7 +25350,7 @@
   },
   {
     "name": "Hellfire",
-    "parent": "ClayPot",
+    "parent": "Clay Pot",
     "translation": "Hellfire",
     "type": "HellfireMixture_C",
     "onlyDevs": true
@@ -25535,6 +25534,11 @@
     },
     "translation": "Hercul Walker Legs Heavy",
     "weight": 9.75
+  },
+  {
+    "category": "Rigs",
+    "name": "Hercul Walker Rig",
+    "type": "HerculRig_T1_C"
   },
   {
     "category": "Rigs",
@@ -26384,6 +26388,11 @@
   },
   {
     "category": "Rigs",
+    "name": "Hornet Walker Rig",
+    "type": "DefaultHornetRig_T1_C"
+  },
+  {
+    "category": "Rigs",
     "crafting": [
       {
         "ingredients": [
@@ -26846,7 +26855,7 @@
         "ingredients": [
           {
             "count": 24,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 32,
@@ -26873,7 +26882,7 @@
           },
           {
             "count": 24,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 12,
@@ -26896,7 +26905,7 @@
           },
           {
             "count": 24,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 12,
@@ -26915,7 +26924,7 @@
         "ingredients": [
           {
             "count": 23,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 24,
@@ -27401,11 +27410,6 @@
     },
     "translation": "Hose Station",
     "weight": 150
-  },
-  {
-    "category": "Rigs",
-    "name": "HouseWalker Rig",
-    "type": "DefaultDomusRig_T1_C"
   },
   {
     "category": "Resources",
@@ -29349,7 +29353,7 @@
       }
     ],
     "name": "Infused Obsidian Bottle",
-    "parent": "LavaBottleSmall",
+    "parent": "Obsidian Flask",
     "trade_price": 26,
     "translation": "Infused Obsidian Bottle",
     "type": "LavaBottleLarge_C",
@@ -29364,7 +29368,7 @@
         "ingredients": [
           {
             "count": 4,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           },
           {
             "count": 35,
@@ -29404,7 +29408,7 @@
           },
           {
             "count": 3,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           }
         ],
         "station": "Smithing",
@@ -29438,7 +29442,7 @@
           },
           {
             "count": 2,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           }
         ],
         "station": "Smithing",
@@ -29478,7 +29482,7 @@
             "name": "Rope"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 75
       }
     ],
@@ -29674,6 +29678,14 @@
         "toolType": "Mining",
         "tier": 20
       }
+    ],
+    "drops": [
+      {
+        "location": "Tools Strongbox",
+        "chance": 0.012722645999999999,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      }
     ]
   },
   {
@@ -29729,7 +29741,7 @@
       }
     ],
     "name": "Iron Rok",
-    "parent": "ObsidianRok",
+    "parent": "Obsidian Rok",
     "translation": "Iron Rok",
     "type": "IronRok_C",
     "projectileDamage": {
@@ -30096,7 +30108,7 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           },
           {
             "count": 3,
@@ -30502,6 +30514,7 @@
     ],
     "name": "Kite",
     "type": "Kite_C",
+    "description": "Fly a large kite above your walker and climb it for a better vantage point, or to launch wingsuits from. Walker must be moving for the kite to stay elevated.",
     "experiencieReward": 60,
     "structureInfo": {
       "type": "Soft",
@@ -30660,7 +30673,7 @@
       }
     ],
     "name": "Large Base Walker Packer",
-    "parent": "BaseWalkerPackerSmall",
+    "parent": "Small Base Walker Packer",
     "type": "BaseWalkerPackerLarge_C",
     "experiencieReward": 32,
     "structureInfo": {
@@ -30768,7 +30781,7 @@
       }
     ],
     "name": "Large Water Bag",
-    "parent": "WaterBagMedium",
+    "parent": "Medium Water Bag",
     "type": "WaterBagLarge_C",
     "experiencieReward": 98,
     "structureInfo": {
@@ -30844,6 +30857,7 @@
     "name": "Lathe",
     "parent": "Advanced Woodworking Station",
     "type": "Lathe_C",
+    "description": "A more sophisticated contraption that processes solid materials into various objects.",
     "experiencieReward": 40,
     "structureInfo": {
       "type": "Soft",
@@ -30855,6 +30869,7 @@
     "name": "Lava",
     "translation": "Lava",
     "type": "Lava_C",
+    "description": "Historically believed to be the remains of nomads who were burnt by the Sun, it's been recently discovered to be useful in various productions of fuels, bombs, and other items.",
     "category": "Lava",
     "trade_price": 3.5,
     "stackSize": 100,
@@ -30878,12 +30893,12 @@
             "name": "Purified Water"
           }
         ],
-        "station": "ObsidianMachine",
+        "station": "Obsidian Machine",
         "time": 90
       }
     ],
     "name": "Lava Fuel",
-    "parent": "ObsidianMachine",
+    "parent": "Obsidian Machine",
     "translation": "Lava Fuel",
     "type": "LavaFuel_C",
     "experiencieReward": 3,
@@ -30927,6 +30942,7 @@
     "trade_price": 1.1,
     "translation": "Leather",
     "type": "Leather_C",
+    "description": "Cured leather is one of the most universal materials available to Nomads, far superior to using crude, unprocessed animal hides.",
     "experiencieReward": 3,
     "stackSize": 100,
     "weight": 0.34
@@ -31326,6 +31342,7 @@
     "trade_price": 3.5,
     "translation": "Lightwood",
     "type": "Lightwood_C",
+    "description": "A type of very light wood with a porous structure and air trapped between the layers of the fiber.",
     "experiencieReward": 12,
     "stackSize": 100,
     "weight": 0.1
@@ -31362,6 +31379,7 @@
     "name": "Lobber",
     "parent": "Improved Walker Weapons",
     "type": "Lobber_C",
+    "description": "A small weapon for remote control while driving walkers. Launches bursts of solid projectiles.",
     "experiencieReward": 78,
     "structureInfo": {
       "type": "Medium",
@@ -31496,7 +31514,7 @@
       }
     ],
     "name": "Long Grappling Hook",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "trade_price": 23.5,
     "translation": "Long Grappling Hook",
     "type": "LongGrapplingHook_C",
@@ -32034,7 +32052,7 @@
       }
     ],
     "name": "Medium Water Bag",
-    "parent": "WaterBagSmall",
+    "parent": "Small Water Bag",
     "type": "WaterBagMedium_C",
     "experiencieReward": 65,
     "structureInfo": {
@@ -32482,6 +32500,11 @@
     },
     "translation": "Mollusk Walker Legs Armored",
     "weight": 9.75
+  },
+  {
+    "category": "Rigs",
+    "name": "Mollusk Walker Rig",
+    "type": "DefaultMolluskRig_T1_C"
   },
   {
     "category": "Rigs",
@@ -33753,7 +33776,7 @@
       }
     ],
     "name": "Net",
-    "parent": "NetThrower",
+    "parent": "Net Thrower",
     "trade_price": 10.4,
     "translation": "Net",
     "type": "Net_C",
@@ -33813,7 +33836,7 @@
       }
     ],
     "name": "Net Pouch",
-    "parent": "ThrowingNet",
+    "parent": "Throwing Net",
     "trade_price": 5.6,
     "translation": "Net Pouch",
     "type": "NetPouch_C",
@@ -33860,11 +33883,11 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           },
           {
             "count": 6,
-            "name": "Rubber"
+            "name": "Rubber Block"
           },
           {
             "count": 7,
@@ -33956,7 +33979,7 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           },
           {
             "count": 6,
@@ -34052,7 +34075,7 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           },
           {
             "count": 8,
@@ -34106,7 +34129,7 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           },
           {
             "count": 3,
@@ -34196,7 +34219,7 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           },
           {
             "count": 12,
@@ -34204,7 +34227,7 @@
           },
           {
             "count": 3,
-            "name": "Rubber"
+            "name": "Rubber Block"
           }
         ],
         "station": "Smithing",
@@ -34333,7 +34356,7 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           },
           {
             "count": 6,
@@ -34420,7 +34443,7 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           },
           {
             "count": 6,
@@ -34513,7 +34536,7 @@
           },
           {
             "count": 1,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           },
           {
             "count": 8,
@@ -34548,7 +34571,7 @@
         "ingredients": [
           {
             "count": 15,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           },
           {
             "count": 30,
@@ -34623,7 +34646,7 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           },
           {
             "count": 15,
@@ -34706,7 +34729,7 @@
           },
           {
             "count": 1,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           }
         ],
         "output": 15,
@@ -34734,7 +34757,7 @@
           },
           {
             "count": 5,
-            "name": "NibiranIngot"
+            "name": "Nibiran Ingot"
           }
         ],
         "station": "Artisan Fiberworking Station",
@@ -34915,6 +34938,11 @@
     "translation": "Nomad Grappling Hook",
     "type": "FixedGrapplingHook_C",
     "experiencieReward": 38
+  },
+  {
+    "category": "Rigs",
+    "name": "Nomad Spider Walker Rig",
+    "type": "DefaultSpiderRig_T1_C"
   },
   {
     "category": "Walkers",
@@ -35492,7 +35520,7 @@
       }
     ],
     "name": "Obsidian Machine",
-    "parent": "ClayPot",
+    "parent": "Clay Pot",
     "type": "ObsidianMachine_C",
     "experiencieReward": 36,
     "structureInfo": {
@@ -35559,7 +35587,7 @@
       }
     ],
     "name": "Obsidian Rok",
-    "parent": "CeramicRok",
+    "parent": "Ceramic Rok",
     "translation": "Obsidian Rok",
     "type": "ObsidianRok_C",
     "projectileDamage": {
@@ -36457,6 +36485,11 @@
     },
     "translation": "Panda Walker Legs Heavy",
     "weight": 9.75
+  },
+  {
+    "category": "Rigs",
+    "name": "Panda Walker Rig",
+    "type": "DefaultPandaRig_T1_C"
   },
   {
     "category": "Rigs",
@@ -37642,7 +37675,7 @@
       }
     ],
     "name": "Poaching Hut",
-    "parent": "DefensiveTower",
+    "parent": "Defensive Tower",
     "type": "PoachingHut_C",
     "experiencieReward": 1000,
     "structureInfo": {
@@ -37917,6 +37950,11 @@
     },
     "translation": "Proxy Walker Legs Heavy",
     "weight": 9.75
+  },
+  {
+    "category": "Rigs",
+    "name": "Proxy Walker Rig",
+    "type": "ProxyRig_T1_C"
   },
   {
     "category": "Rigs",
@@ -38217,7 +38255,7 @@
       }
     ],
     "name": "Purification Station",
-    "parent": "ClayPot",
+    "parent": "Clay Pot",
     "type": "PurificationStation_C",
     "experiencieReward": 125,
     "structureInfo": {
@@ -38413,6 +38451,7 @@
     "name": "Quarry",
     "parent": "Soil Excavator",
     "type": "Quarry_C",
+    "description": "A huge crafting station uses torque to automatically mine stone, iron and other minerals within a certain radius.",
     "structureInfo": {
       "type": "Soft",
       "hp": 20000
@@ -38523,6 +38562,7 @@
     ],
     "name": "Rangefinder",
     "type": "Rangefinder_C",
+    "description": "Measures distance to far-away targets.",
     "experiencieReward": 266,
     "structureInfo": {
       "type": "Soft",
@@ -38615,6 +38655,11 @@
     },
     "translation": "Raptor Sky Walker Legs",
     "weight": 9.75
+  },
+  {
+    "category": "Rigs",
+    "name": "Raptor Sky Walker Rig",
+    "type": "RaptorRig_T1_C"
   },
   {
     "category": "Rigs",
@@ -39263,7 +39308,7 @@
           },
           {
             "count": 6,
-            "name": "TreeSap"
+            "name": "Tree Sap"
           },
           {
             "count": 8,
@@ -39275,7 +39320,7 @@
       }
     ],
     "name": "Rawbone Battle Axe",
-    "parent": "Woodcutter’s Hatchet",
+    "parent": "Stone Axe",
     "trade_price": 18.4,
     "translation": "Rawbone Battle Axe",
     "type": "TwoHandedBoneAxe_C",
@@ -39676,7 +39721,7 @@
       }
     ],
     "name": "Rawbone Sawsword",
-    "parent": "Sawtooth Sword",
+    "parent": "Jaggertooth Swordclub",
     "trade_price": 15,
     "translation": "Rawbone Sawsword",
     "type": "TwoHandedBoneSwordShort_C",
@@ -40158,7 +40203,7 @@
           }
         ],
         "output": 5,
-        "station": "AncientStation",
+        "station": "Ancient Fabricator",
         "time": 250
       },
       {
@@ -40505,6 +40550,7 @@
     "name": "Repeater",
     "parent": "Basic Walker Weapons",
     "type": "Repeater_C",
+    "description": "Unload a rapid volley of darts that are deadly against lightly armored targets. Weak against walkers and structures.",
     "experiencieReward": 304,
     "structureInfo": {
       "type": "Soft",
@@ -42649,7 +42695,7 @@
       }
     ],
     "name": "Rupu Sling",
-    "parent": "DefensiveTower",
+    "parent": "Defensive Tower",
     "type": "RupuSling_C",
     "experiencieReward": 44,
     "structureInfo": {
@@ -43771,7 +43817,7 @@
           },
           {
             "count": 35,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 2,
@@ -43785,7 +43831,7 @@
       }
     ],
     "name": "Sawblade",
-    "parent": "ToolPod",
+    "parent": "Tool Pod",
     "type": "Sawblade_C",
     "experiencieReward": 366,
     "translation": "Sawblade",
@@ -43816,6 +43862,7 @@
     "name": "Scaffolding",
     "translation": "Scaffolding",
     "type": "Scaffolding_C",
+    "description": "A stackable, elevated platform that allows for easier access to high places. Useful in walker construction.",
     "experiencieReward": 56,
     "weight": 3,
     "structureInfo": {
@@ -44204,6 +44251,11 @@
     },
     "translation": "Schmetterling Walker Legs Heavy",
     "weight": 9.75
+  },
+  {
+    "category": "Rigs",
+    "name": "Schmetterling Walker Rig",
+    "type": "DefaultSchmetterlingRig_T1_C"
   },
   {
     "category": "Rigs",
@@ -45569,11 +45621,6 @@
     "damageType": "'MeleeSwordDamage_C'"
   },
   {
-    "category": "Rigs",
-    "name": "ShufflerWalker Rig",
-    "type": "DefaultTitanRig_T1_C"
-  },
-  {
     "category": "Walkers",
     "crafting": [
       {
@@ -45718,6 +45765,11 @@
     "weight": 9.75
   },
   {
+    "category": "Rigs",
+    "name": "Silur Walker Rig",
+    "type": "SilurRig_T1_C"
+  },
+  {
     "category": "Schematics",
     "name": "Silur Walker Schematic",
     "type": "SilurSchematic_C",
@@ -45815,7 +45867,7 @@
           },
           {
             "count": 13,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 6,
@@ -45840,7 +45892,7 @@
           },
           {
             "count": 13,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 6,
@@ -45869,7 +45921,7 @@
           },
           {
             "count": 13,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           }
         ]
       }
@@ -45890,7 +45942,7 @@
           },
           {
             "count": 13,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 6,
@@ -46262,6 +46314,7 @@
     "name": "Slingshot",
     "parent": "Improved Walker Weapons",
     "type": "Slingshot_C",
+    "description": "Launch small rocks and bombs moderate distances. Don't hit your own deck!",
     "experiencieReward": 242,
     "structureInfo": {
       "type": "Soft",
@@ -46614,11 +46667,6 @@
     }
   },
   {
-    "category": "Rigs",
-    "name": "SmallWalker Rig",
-    "type": "DefaultSpiderRig_T1_C"
-  },
-  {
     "category": "Crafting",
     "crafting": [
       {
@@ -46674,6 +46722,7 @@
     "trade_price": 1.9,
     "translation": "Spearmint",
     "type": "Spearmint_C",
+    "description": "This lush green plant has been used by nomads for many applications over the centuries. Many prize it's refreshing aroma against the dankness of the wasteland.",
     "experiencieReward": 12,
     "stackSize": 100,
     "weight": 0.25
@@ -48000,7 +48049,7 @@
       }
     ],
     "name": "Steering Levers Cage",
-    "parent": "SteeringLevers",
+    "parent": "Steering Levers",
     "type": "SteeringLeversCage_C",
     "experiencieReward": 208,
     "structureInfo": {
@@ -48137,6 +48186,11 @@
     },
     "translation": "Stiletto Walker Legs Armored",
     "weight": 9.75
+  },
+  {
+    "category": "Rigs",
+    "name": "Stiletto Walker Rig",
+    "type": "DefaultStilettoRig_T1_C"
   },
   {
     "category": "Rigs",
@@ -49227,11 +49281,6 @@
     },
     "translation": "Stiletto Walker Wings Small",
     "weight": 9.75
-  },
-  {
-    "category": "Rigs",
-    "name": "StilettoWalker Rig",
-    "type": "DefaultStilettoRig_T1_C"
   },
   {
     "category": "Weapons",
@@ -50405,7 +50454,7 @@
           },
           {
             "count": 12,
-            "name": "TreeSap"
+            "name": "Tree Sap"
           },
           {
             "count": 6,
@@ -50417,7 +50466,7 @@
       }
     ],
     "name": "Sturdy Grappling Hook",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "trade_price": 19.4,
     "translation": "Sturdy Grappling Hook",
     "type": "SturdyGrapplingHook_C",
@@ -50477,7 +50526,7 @@
             "name": "Fiber Weave"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 90
       }
     ],
@@ -50547,7 +50596,7 @@
           },
           {
             "count": 8,
-            "name": "TreeSap"
+            "name": "Tree Sap"
           },
           {
             "count": 3,
@@ -50565,7 +50614,7 @@
           },
           {
             "count": 8,
-            "name": "TreeSap"
+            "name": "Tree Sap"
           },
           {
             "count": 3,
@@ -50583,7 +50632,7 @@
           },
           {
             "count": 8,
-            "name": "TreeSap"
+            "name": "Tree Sap"
           },
           {
             "count": 3,
@@ -50629,6 +50678,7 @@
     ],
     "name": "Table",
     "type": "OkkamStatue_C",
+    "description": "Decorative furniture that also allows to place objects on it.",
     "experiencieReward": 6,
     "structureInfo": {
       "type": "Soft",
@@ -50708,7 +50758,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           }
         ],
         "station": "FurnaceBurning_Tier2",
@@ -50879,7 +50929,7 @@
       }
     ],
     "name": "Throwable Aloe Bomb",
-    "parent": "HealingBomb",
+    "parent": "Aloe Goo Bomb",
     "trade_price": 16.9,
     "translation": "Throwable Aloe Bomb",
     "type": "ThrowableAloeBomb_C",
@@ -50951,7 +51001,7 @@
       }
     ],
     "name": "Throwable Smoke Bomb",
-    "parent": "Choking Cloud",
+    "parent": "Chalk Bomb",
     "trade_price": 16.9,
     "translation": "Throwable Smoke Bomb",
     "type": "ThrowableSmokeBomb_C",
@@ -51160,6 +51210,7 @@
     "trade_price": 1.6,
     "translation": "Throwstone",
     "type": "Throwstone_C",
+    "description": "Either a fantastically aerodynamic stone, its form perfected for best throwing experience... Or just a sharp chip of rock that you can throw at someone in a pinch.",
     "projectileDamage": {
       "damage": 30,
       "penetration": 5,
@@ -51488,7 +51539,7 @@
             "name": "Stone"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 4
       }
     ],
@@ -51526,6 +51577,7 @@
     "name": "Thumper",
     "parent": "Basic Walker Weapons",
     "type": "Thumper_C",
+    "description": "At some point in their sunny life, every Nomad finds out that in some situations blasting a bunch of projectiles at the problem solves it faster than one could say \"cactus\". Uses Throwstones as ammo..",
     "experiencieReward": 78,
     "structureInfo": {
       "type": "Medium",
@@ -51702,6 +51754,11 @@
     },
     "translation": "Titan Walker Legs Heavy",
     "weight": 9.75
+  },
+  {
+    "category": "Rigs",
+    "name": "Titan Walker Rig",
+    "type": "DefaultTitanRig_T1_C"
   },
   {
     "category": "Rigs",
@@ -52794,6 +52851,11 @@
     },
     "translation": "Toboggan Walker Legs Heavy",
     "weight": 9.75
+  },
+  {
+    "category": "Rigs",
+    "name": "Toboggan Walker Rig",
+    "type": "DefaultTobogganRig_T1_C"
   },
   {
     "category": "Rigs",
@@ -54104,7 +54166,7 @@
       }
     ],
     "name": "Torque Battery",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "trade_price": 8.4,
     "translation": "Torque Battery",
     "type": "TorqueContainer_C",
@@ -54188,16 +54250,6 @@
         "maxQuantity": 5
       }
     ]
-  },
-  {
-    "category": "Rigs",
-    "name": "TorqueGeneratorWalker Rig",
-    "type": "HerculRig_T1_C"
-  },
-  {
-    "category": "Rigs",
-    "name": "TowerWalker Rig",
-    "type": "CobraRig_T1_C"
   },
   {
     "category": "Resources",
@@ -55277,6 +55329,11 @@
   },
   {
     "category": "Rigs",
+    "name": "Tusker Walker Rig",
+    "type": "DefaultTuskerRig_T1_C"
+  },
+  {
+    "category": "Rigs",
     "crafting": [
       {
         "ingredients": [
@@ -55837,7 +55894,7 @@
           },
           {
             "count": 25,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           }
         ]
       }
@@ -55862,7 +55919,7 @@
           },
           {
             "count": 25,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           }
         ]
       }
@@ -55887,7 +55944,7 @@
           },
           {
             "count": 25,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           }
         ]
       }
@@ -55912,7 +55969,7 @@
           },
           {
             "count": 25,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           }
         ]
       }
@@ -56841,7 +56898,7 @@
       }
     ],
     "name": "Water Condenser",
-    "parent": "Humidifier",
+    "parent": "Stone Humidifier",
     "type": "WaterCondenser_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -56963,7 +57020,7 @@
           },
           {
             "count": 10,
-            "name": "Sawtooth Sword"
+            "name": "Rawbone Sawsword"
           },
           {
             "count": 30,
@@ -56971,7 +57028,7 @@
           },
           {
             "count": 40,
-            "name": "Spikebone Maul"
+            "name": "Rawbone Maul"
           },
           {
             "count": 10,
@@ -56993,7 +57050,7 @@
           },
           {
             "count": 8,
-            "name": "Advanced Hatchet"
+            "name": "Ceramic Hatchet"
           },
           {
             "count": 15,
@@ -57198,7 +57255,7 @@
       }
     ],
     "name": "Wingsuit",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "trade_price": 29,
     "translation": "Wingsuit",
     "type": "WingSuit_C",
@@ -58402,7 +58459,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "WormSand_GroundSource"
+            "name": "Terrain: Worm Sand"
           }
         ],
         "output": 10,
@@ -58506,11 +58563,6 @@
     },
     "translation": "Worm Vivarium",
     "weight": 25
-  },
-  {
-    "category": "Rigs",
-    "name": "WormWalker Rig",
-    "type": "DefaultHornetRig_T1_C"
   },
   {
     "category": "Furniture",

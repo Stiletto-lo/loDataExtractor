@@ -36,6 +36,7 @@ module.exports = {
 	// Translation related functions
 	parseTranslations: translationParsers.parseTranslations,
 	parseOtherTranslations: translationParsers.parseOtherTranslations,
+	parseStringTables: translationParsers.parseStringTables,
 
 	// Upgrade related functions
 	parseUpgrades: upgradeParsers.parseUpgrades,
