@@ -1700,7 +1700,7 @@
       {
         "ingredients": [
           {
-            "count": 9,
+            "count": 5,
             "name": "Aloe Vera"
           }
         ],
@@ -1710,7 +1710,7 @@
       {
         "ingredients": [
           {
-            "count": 8,
+            "count": 5,
             "name": "Aloe Vera"
           }
         ],
@@ -1873,6 +1873,22 @@
   },
   {
     "category": "Tools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 50,
+            "name": "Hide"
+          }
+        ],
+        "station": "Empty",
+        "time": 2
+      }
+    ],
     "name": "Ancient Repair Hammer",
     "trade_price": 9.5,
     "translation": "Ancient Repair Hammer",
@@ -2117,19 +2133,17 @@
       {
         "ingredients": [
           {
-            "count": 100,
+            "count": 3,
             "name": "Apple"
           }
         ],
-        "output": 50,
         "station": "Clay Pot",
-        "time": 300
+        "time": 60
       }
     ],
     "name": "Apple Kambaro",
     "translation": "Apple Kambaro",
     "type": "AppleKambaro_C",
-    "experiencieReward": 800,
     "stackSize": 100,
     "weight": 1
   },
@@ -8217,7 +8231,7 @@
     "translation": "Bone Scattershot Ammo",
     "type": "BoneScattershot_C",
     "projectileDamage": {
-      "damage": 150
+      "damage": 250
     },
     "toolInfo": [
       {
@@ -8571,6 +8585,28 @@
         ],
         "station": "Camp Fire",
         "time": 135
+      },
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Spearmint"
+          },
+          {
+            "count": 6,
+            "name": "Lava Poppy"
+          },
+          {
+            "count": 3,
+            "name": "Tar"
+          },
+          {
+            "count": 1,
+            "name": "Glass"
+          }
+        ],
+        "station": "Clay Pot",
+        "time": 135
       }
     ],
     "name": "Bonebreaker",
@@ -8685,6 +8721,15 @@
     },
     "translation": "Brazier",
     "weight": 20
+  },
+  {
+    "category": "Liquids",
+    "name": "Brine",
+    "trade_price": 0.1,
+    "translation": "Brine",
+    "type": "BrineWater_C",
+    "stackSize": 100,
+    "weight": 0.5
   },
   {
     "category": "Armors",
@@ -12361,7 +12406,7 @@
     "translation": "Ceramic Scattershot Ammo",
     "type": "CeramicScattershot_C",
     "projectileDamage": {
-      "damage": 200
+      "damage": 350
     },
     "toolInfo": [
       {
@@ -14303,11 +14348,10 @@
       {
         "ingredients": [
           {
-            "count": 100,
+            "count": 20,
             "name": "Corn"
           }
         ],
-        "output": 5,
         "station": "Clay Pot",
         "time": 30
       }
@@ -14315,7 +14359,6 @@
     "name": "Cooked Corn",
     "translation": "Cooked Corn",
     "type": "CookedCorn_C",
-    "experiencieReward": 80,
     "stackSize": 100,
     "weight": 1
   },
@@ -14913,6 +14956,28 @@
           }
         ],
         "station": "Camp Fire",
+        "time": 135
+      },
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Thornberry"
+          },
+          {
+            "count": 6,
+            "name": "Aloe Gel"
+          },
+          {
+            "count": 6,
+            "name": "Mushroom Flesh"
+          },
+          {
+            "count": 1,
+            "name": "Glass"
+          }
+        ],
+        "station": "Clay Pot",
         "time": 135
       }
     ],
@@ -21304,7 +21369,7 @@
             "name": "Earth Wax"
           },
           {
-            "count": 2,
+            "count": 30,
             "name": "Phosphorus"
           }
         ],
@@ -25188,6 +25253,28 @@
           }
         ],
         "station": "Camp Fire",
+        "time": 60
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Gelatinous Goo"
+          },
+          {
+            "count": 6,
+            "name": "Aloe Gel"
+          },
+          {
+            "count": 3,
+            "name": "Blood Turnip"
+          },
+          {
+            "count": 1,
+            "name": "Glass"
+          }
+        ],
+        "station": "Clay Pot",
         "time": 60
       }
     ],
@@ -29371,7 +29458,7 @@
     "translation": "Hullbreaker Scattershot",
     "type": "HullbreakerScattershot_C",
     "projectileDamage": {
-      "damage": 250
+      "damage": 500
     },
     "toolInfo": [
       {
@@ -32594,6 +32681,28 @@
         ],
         "station": "Camp Fire",
         "time": 60
+      },
+      {
+        "ingredients": [
+          {
+            "count": 6,
+            "name": "Tree Sap"
+          },
+          {
+            "count": 6,
+            "name": "Aloe Gel"
+          },
+          {
+            "count": 6,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 1,
+            "name": "Glass"
+          }
+        ],
+        "station": "Clay Pot",
+        "time": 60
       }
     ],
     "name": "Jojo Mojo",
@@ -32601,7 +32710,6 @@
     "trade_price": 9,
     "translation": "Jojo Mojo",
     "type": "JojoMojo_C",
-    "experiencieReward": 246,
     "stackSize": 100,
     "weight": 0.5
   },
@@ -41316,6 +41424,28 @@
         ],
         "station": "Camp Fire",
         "time": 60
+      },
+      {
+        "ingredients": [
+          {
+            "count": 6,
+            "name": "Nurr Fang"
+          },
+          {
+            "count": 6,
+            "name": "Beeswax"
+          },
+          {
+            "count": 6,
+            "name": "Sulfur"
+          },
+          {
+            "count": 1,
+            "name": "Glass"
+          }
+        ],
+        "station": "Clay Pot",
+        "time": 60
       }
     ],
     "name": "Race Dust",
@@ -41323,7 +41453,6 @@
     "trade_price": 99.8,
     "translation": "Race Dust",
     "type": "RaceDust_C",
-    "experiencieReward": 246,
     "stackSize": 100,
     "weight": 0.5
   },
@@ -46178,11 +46307,24 @@
   },
   {
     "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "BrineWater"
+          }
+        ],
+        "output": 10,
+        "station": "Clay Pot",
+        "time": 20
+      }
+    ],
     "name": "Salt Rock",
     "trade_price": 0.1,
     "translation": "Salt Rock",
     "type": "Salt_C",
-    "experiencieReward": 12,
+    "experiencieReward": 3,
     "stackSize": 100,
     "weight": 0.23
   },
@@ -46865,7 +47007,7 @@
     "translation": "Scattershot Ammo",
     "type": "Scattershot_C",
     "projectileDamage": {
-      "damage": 120,
+      "damage": 150,
       "penetration": 30,
       "effectivenessVsSoak": 50,
       "effectivenessVsReduce": 50
@@ -49361,6 +49503,28 @@
           }
         ],
         "station": "Camp Fire",
+        "time": 60
+      },
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Rupu Gel"
+          },
+          {
+            "count": 6,
+            "name": "Lava Poppy"
+          },
+          {
+            "count": 2,
+            "name": "Spearmint"
+          },
+          {
+            "count": 1,
+            "name": "Glass"
+          }
+        ],
+        "station": "Clay Pot",
         "time": 60
       }
     ],
@@ -57847,7 +58011,8 @@
     "experiencieReward": 154,
     "stackSize": 100,
     "weight": 0.5,
-    "durability": 200
+    "durability": 200,
+    "onlyDevs": true
   },
   {
     "category": "Equipment",
@@ -58261,7 +58426,7 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 7,
+            "count": 12,
             "name": "Triple Stitch Fabric"
           }
         ],
@@ -58275,7 +58440,7 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 7,
+            "count": 12,
             "name": "Triple Stitch Fabric"
           }
         ],
@@ -58452,7 +58617,7 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 3,
+            "count": 6,
             "name": "Triple Stitch Fabric"
           }
         ],
@@ -58466,7 +58631,7 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 3,
+            "count": 6,
             "name": "Triple Stitch Fabric"
           }
         ],
@@ -58478,7 +58643,7 @@
     "trade_price": 61.1,
     "translation": "Triple Stitch Boots",
     "type": "T2_TripleStitchBoots_C",
-    "experiencieReward": 90,
+    "experiencieReward": 45,
     "stackSize": 100,
     "weight": 1.5,
     "durability": 250,
@@ -58642,7 +58807,7 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 2,
+            "count": 4,
             "name": "Triple Stitch Fabric"
           }
         ],
@@ -58656,7 +58821,7 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 2,
+            "count": 4,
             "name": "Triple Stitch Fabric"
           }
         ],
@@ -58668,7 +58833,7 @@
     "trade_price": 16.8,
     "translation": "Triple Stitch Bracers",
     "type": "T2_TripleStitchGloves_C",
-    "experiencieReward": 100,
+    "experiencieReward": 65,
     "stackSize": 100,
     "weight": 1.4,
     "durability": 250,
@@ -58847,7 +59012,7 @@
             "name": "Tree Sap"
           },
           {
-            "count": 8,
+            "count": 15,
             "name": "Cotton"
           }
         ],
@@ -58861,7 +59026,7 @@
     "trade_price": 28,
     "translation": "Triple Stitch Fabric",
     "type": "TripleStitch_C",
-    "experiencieReward": 65,
+    "experiencieReward": 6,
     "stackSize": 100,
     "weight": 0.24
   },
@@ -60227,6 +60392,20 @@
         ],
         "station": "Camp Fire",
         "time": 30
+      },
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Huge Cactus Fruit"
+          },
+          {
+            "count": 5,
+            "name": "Purified Water"
+          }
+        ],
+        "station": "Clay Pot",
+        "time": 30
       }
     ],
     "name": "Vision Powder",
@@ -60234,7 +60413,6 @@
     "trade_price": 34.8,
     "translation": "Vision Powder",
     "type": "VisionPowder_C",
-    "experiencieReward": 45,
     "stackSize": 100,
     "weight": 0.8
   },
@@ -62406,6 +62584,32 @@
             "name": "WormOil"
           }
         ],
+        "station": "Camp Fire",
+        "time": 100
+      },
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Worm Sand"
+          },
+          {
+            "count": 100,
+            "name": "Corn"
+          },
+          {
+            "count": 50,
+            "name": "Magma Seeds"
+          },
+          {
+            "count": 1,
+            "name": "Worm Fang"
+          },
+          {
+            "count": 1,
+            "name": "WormOil"
+          }
+        ],
         "station": "Clay Pot",
         "time": 100
       }
@@ -62415,7 +62619,7 @@
     "trade_price": 1200,
     "translation": "Worm Tincture",
     "type": "WormTincture_C",
-    "experiencieReward": 60,
+    "experiencieReward": 100,
     "stackSize": 100,
     "weight": 0.5
   },
