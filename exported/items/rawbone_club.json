@@ -1,4 +1,158 @@
 {
+  "name": "Rawbone Club",
+  "parent": "Nurrfang Toothclub",
+  "drops": [
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.04484305,
+      "minQuantity": 1,
+      "maxQuantity": 12
+    },
+    {
+      "location": "Weapon Strongbox",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "BasketLoot T2 AC",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "BigHotspotLoot T2",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "EasyRupuCamp T2",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Grave Digger (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Hermit (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Skirmisher (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HardRupuCamp T2",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Shaman (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Marshland Stalker",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Matriarch",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Priestess (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Zealot (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HotspotLoot T2",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HotspotLoot T2 AC",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "MediumRupuCamp T2",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Bounty Hunter",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Dunestalker (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Forager (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Harasser (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Hazraki (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Plainstrider (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "White Death (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "TreasureChest T2",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Weapons",
   "crafting": [
     {
@@ -16,8 +170,6 @@
       "time": 2
     }
   ],
-  "name": "Rawbone Club",
-  "parent": "Nurrfang Toothclub",
   "trade_price": 14,
   "experiencieReward": 55,
   "stackSize": 100,
@@ -29,13 +181,5 @@
     "weaponLength": 75,
     "damage": 45,
     "penetration": 10
-  },
-  "drops": [
-    {
-      "location": "Weapons Strongbox",
-      "chance": 0.04484305,
-      "minQuantity": 1,
-      "maxQuantity": 12
-    }
-  ]
+  }
 }

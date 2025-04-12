@@ -1,4 +1,6 @@
 {
+  "name": "Advanced Woodworking Station",
+  "parent": "Woodworking Station",
   "category": "Crafting",
   "crafting": [
     {
@@ -26,12 +28,9 @@
       ]
     }
   ],
-  "name": "Advanced Woodworking Station",
-  "parent": "Woodworking Station",
   "experiencieReward": 149,
   "structureInfo": {
     "type": "Soft",
     "hp": 3000
-  },
-  "weight": 12
+  }
 }

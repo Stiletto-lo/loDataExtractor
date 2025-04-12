@@ -1,4 +1,6 @@
 {
+  "name": "Obsidian Pot",
+  "parent": "Advanced Constructions",
   "category": "Containers",
   "crafting": [
     {
@@ -22,12 +24,9 @@
       ]
     }
   ],
-  "name": "Obsidian Pot",
-  "parent": "Advanced Constructions",
   "experiencieReward": 60,
   "structureInfo": {
     "type": "Soft",
     "hp": 3000
-  },
-  "weight": 35
+  }
 }

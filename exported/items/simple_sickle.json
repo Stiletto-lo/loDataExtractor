@@ -1,4 +1,14 @@
 {
+  "name": "Simple Sickle",
+  "parent": "Beat Stick",
+  "drops": [
+    {
+      "location": "Tools Strongbox",
+      "chance": 0.17811705,
+      "minQuantity": 1,
+      "maxQuantity": 5
+    }
+  ],
   "category": "Tools",
   "crafting": [
     {
@@ -22,8 +32,6 @@
       ]
     }
   ],
-  "name": "Simple Sickle",
-  "parent": "Beat Stick",
   "trade_price": 6.2,
   "experiencieReward": 25,
   "stackSize": 100,
@@ -38,14 +46,6 @@
     {
       "toolType": "Scythe",
       "tier": 5
-    }
-  ],
-  "drops": [
-    {
-      "location": "Tools Strongbox",
-      "chance": 0.17811705,
-      "minQuantity": 1,
-      "maxQuantity": 5
     }
   ]
 }

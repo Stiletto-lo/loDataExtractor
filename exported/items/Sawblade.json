@@ -1,4 +1,6 @@
 {
+  "name": "Sawblade",
+  "parent": "Tool Pod",
   "category": "Walker Tools",
   "crafting": [
     {
@@ -30,14 +32,5 @@
       ]
     }
   ],
-  "name": "Sawblade",
-  "parent": "Tool Pod",
-  "experiencieReward": 366,
-  "weight": 60,
-  "toolInfo": [
-    {
-      "toolType": "Sawblade",
-      "tier": 10
-    }
-  ]
+  "experiencieReward": 366
 }

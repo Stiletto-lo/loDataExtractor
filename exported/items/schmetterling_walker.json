@@ -1,4 +1,6 @@
 {
+  "name": "Schmetterling Walker",
+  "parent": "Falco Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -38,14 +40,11 @@
       ]
     }
   ],
-  "name": "Schmetterling Walker",
-  "parent": "Falco Walker",
   "structureInfo": {
     "type": "Hard",
     "hp": 25000
   },
   "walkerinfo": {
     "category": "Capital"
-  },
-  "weight": 34.02
+  }
 }

@@ -1,4 +1,6 @@
 {
+  "name": "Medium Chest",
+  "parent": "Small Chest",
   "category": "Containers",
   "crafting": [
     {
@@ -26,12 +28,9 @@
       ]
     }
   ],
-  "name": "Medium Chest",
-  "parent": "Small Chest",
   "experiencieReward": 32,
   "structureInfo": {
     "type": "Soft",
     "hp": 3750
-  },
-  "weight": 4.5
+  }
 }

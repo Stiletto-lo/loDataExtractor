@@ -1,4 +1,6 @@
 {
+  "name": "Bombolt",
+  "parent": "Cobra Walker",
   "category": "Ammo",
   "crafting": [
     {
@@ -21,8 +23,6 @@
       "time": 5
     }
   ],
-  "name": "Bombolt",
-  "parent": "Cobra Walker",
   "trade_price": 11.7,
   "projectileDamage": {
     "damage": 500

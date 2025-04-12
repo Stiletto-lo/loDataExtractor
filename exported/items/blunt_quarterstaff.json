@@ -1,34 +1,6 @@
 {
-  "category": "Weapons",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 1,
-          "name": "Wood Shaft"
-        },
-        {
-          "count": 2,
-          "name": "Fiber Weave"
-        },
-        {
-          "count": 2,
-          "name": "Charcoal"
-        }
-      ]
-    }
-  ],
   "name": "Blunt Quarterstaff",
   "parent": "Beat Stick",
-  "trade_price": 3.1,
-  "stackSize": 100,
-  "weight": 6.8,
-  "durability": 420,
-  "weaponInfo": {
-    "weaponLength": 124,
-    "damage": 27,
-    "penetration": 20
-  },
   "drops": [
     {
       "location": "BigHotspotLoot T1",
@@ -180,5 +152,33 @@
       "minQuantity": 1,
       "maxQuantity": 1
     }
-  ]
+  ],
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 2,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 2,
+          "name": "Charcoal"
+        }
+      ]
+    }
+  ],
+  "trade_price": 3.1,
+  "stackSize": 100,
+  "weight": 6.8,
+  "durability": 420,
+  "weaponInfo": {
+    "weaponLength": 124,
+    "damage": 27,
+    "penetration": 20
+  }
 }

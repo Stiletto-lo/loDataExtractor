@@ -1,4 +1,6 @@
 {
+  "name": "Raptor Sky Walker",
+  "parent": "Dinghy Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -42,14 +44,11 @@
       ]
     }
   ],
-  "name": "Raptor Sky Walker",
-  "parent": "Dinghy Walker",
   "structureInfo": {
     "type": "Hard",
     "hp": 14000
   },
   "walkerinfo": {
     "category": "Flying"
-  },
-  "weight": 29.44
+  }
 }

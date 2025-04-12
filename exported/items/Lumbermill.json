@@ -1,4 +1,6 @@
 {
+  "name": "Lumbermill",
+  "parent": "WoodworkingStation_T3",
   "category": "Crafting",
   "crafting": [
     {
@@ -22,18 +24,9 @@
       ]
     }
   ],
-  "name": "Lumbermill",
-  "parent": "WoodworkingStation_T3",
   "experiencieReward": 1500,
   "structureInfo": {
     "type": "Soft",
     "hp": 20000
-  },
-  "weight": 1000,
-  "toolInfo": [
-    {
-      "toolType": "Lumbermill",
-      "tier": 1
-    }
-  ]
+  }
 }

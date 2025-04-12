@@ -1,4 +1,6 @@
 {
+  "name": "Barrier Base",
+  "parent": "Advanced Constructions",
   "category": "Defenses",
   "crafting": [
     {
@@ -18,12 +20,9 @@
       ]
     }
   ],
-  "name": "Barrier Base",
-  "parent": "Advanced Constructions",
   "experiencieReward": 34,
   "structureInfo": {
     "type": "Soft",
     "hp": 10000
-  },
-  "weight": 1
+  }
 }

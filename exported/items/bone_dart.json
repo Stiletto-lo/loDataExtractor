@@ -1,4 +1,20 @@
 {
+  "name": "Bone Dart",
+  "parent": "Repeater",
+  "drops": [
+    {
+      "location": "AmmoBox T2",
+      "chance": 0.33333332,
+      "minQuantity": 10,
+      "maxQuantity": 30
+    },
+    {
+      "location": "BigHotspotLoot T2",
+      "chance": 0.33333332,
+      "minQuantity": 10,
+      "maxQuantity": 30
+    }
+  ],
   "crafting": [
     {
       "ingredients": [
@@ -58,8 +74,6 @@
       "time": 3
     }
   ],
-  "name": "Bone Dart",
-  "parent": "Repeater",
   "trade_price": 5,
   "projectileDamage": {
     "damage": 12.5

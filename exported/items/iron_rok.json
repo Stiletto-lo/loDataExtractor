@@ -1,4 +1,20 @@
 {
+  "name": "Iron Rok",
+  "parent": "Obsidian Rok",
+  "drops": [
+    {
+      "location": "AmmoBox T4",
+      "chance": 0.14285714,
+      "minQuantity": 1,
+      "maxQuantity": 3
+    },
+    {
+      "location": "BigHotspotLoot T4",
+      "chance": 0.14285714,
+      "minQuantity": 1,
+      "maxQuantity": 3
+    }
+  ],
   "crafting": [
     {
       "ingredients": [
@@ -23,8 +39,6 @@
       "time": 4
     }
   ],
-  "name": "Iron Rok",
-  "parent": "Obsidian Rok",
   "projectileDamage": {
     "damage": 700
   },

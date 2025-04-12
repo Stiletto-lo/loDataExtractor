@@ -1,35 +1,6 @@
 {
-  "category": "Armors",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 25,
-          "name": "Cattail"
-        },
-        {
-          "count": 12,
-          "name": "Bone Splinter"
-        },
-        {
-          "count": 2,
-          "name": "Ceramic Shard"
-        }
-      ],
-      "station": "Artisan Fiberworking Station",
-      "time": 2
-    }
-  ],
   "name": "Brittle Bone Boots",
-  "experiencieReward": 40,
-  "stackSize": 100,
-  "weight": 1.3,
-  "durability": 240,
-  "armorInfo": {
-    "absorbing": 5,
-    "reduction": 3,
-    "speedReduction": 3
-  },
+  "parent": "BrittleBoneTorso",
   "drops": [
     {
       "location": "BigHotspotLoot T3",
@@ -139,5 +110,35 @@
       "minQuantity": 1,
       "maxQuantity": 1
     }
-  ]
+  ],
+  "category": "Armors",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 25,
+          "name": "Cattail"
+        },
+        {
+          "count": 12,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 2,
+          "name": "Ceramic Shard"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 2
+    }
+  ],
+  "experiencieReward": 40,
+  "stackSize": 100,
+  "weight": 1.3,
+  "durability": 240,
+  "armorInfo": {
+    "absorbing": 5,
+    "reduction": 3,
+    "speedReduction": 3
+  }
 }

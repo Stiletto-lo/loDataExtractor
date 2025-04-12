@@ -1,4 +1,6 @@
 {
+  "name": "Fire Dart",
+  "parent": "Repeater",
   "category": "Ammo",
   "crafting": [
     {
@@ -48,8 +50,6 @@
       "time": 4
     }
   ],
-  "name": "Fire Dart",
-  "parent": "Repeater",
   "trade_price": 15.6,
   "projectileDamage": {
     "damage": 50

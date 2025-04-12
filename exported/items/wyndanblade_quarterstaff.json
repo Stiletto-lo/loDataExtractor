@@ -1,36 +1,6 @@
 {
-  "category": "Weapons",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 10,
-          "name": "Lightwood"
-        },
-        {
-          "count": 6,
-          "name": "Nomad Cloth"
-        },
-        {
-          "count": 3,
-          "name": "Iron Ingot"
-        }
-      ],
-      "station": "Smithing",
-      "time": 15
-    }
-  ],
   "name": "Wyndanblade Quarterstaff",
-  "trade_price": 152,
-  "experiencieReward": 1227,
-  "stackSize": 100,
-  "weight": 4.8,
-  "durability": 740,
-  "weaponInfo": {
-    "weaponLength": 107,
-    "damage": 48,
-    "penetration": 20
-  },
+  "parent": "Paddleblade Quarterstaff",
   "drops": [
     {
       "location": "Weapons Strongbox",
@@ -80,5 +50,36 @@
       "minQuantity": 1,
       "maxQuantity": 1
     }
-  ]
+  ],
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Lightwood"
+        },
+        {
+          "count": 6,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 3,
+          "name": "Iron Ingot"
+        }
+      ],
+      "station": "Smithing",
+      "time": 15
+    }
+  ],
+  "trade_price": 152,
+  "experiencieReward": 1227,
+  "stackSize": 100,
+  "weight": 4.8,
+  "durability": 740,
+  "weaponInfo": {
+    "weaponLength": 107,
+    "damage": 48,
+    "penetration": 20
+  }
 }

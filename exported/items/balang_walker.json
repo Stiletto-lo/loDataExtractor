@@ -1,4 +1,6 @@
 {
+  "name": "Balang Walker",
+  "parent": "Dinghy Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -34,14 +36,11 @@
       ]
     }
   ],
-  "name": "Balang Walker",
-  "parent": "Dinghy Walker",
   "structureInfo": {
     "type": "Solid",
     "hp": 60000
   },
   "walkerinfo": {
     "category": "Small"
-  },
-  "weight": 29.44
+  }
 }

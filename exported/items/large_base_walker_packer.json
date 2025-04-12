@@ -1,4 +1,6 @@
 {
+  "name": "Large Base Walker Packer",
+  "parent": "Small Base Walker Packer",
   "category": "Containers",
   "crafting": [
     {
@@ -22,12 +24,9 @@
       ]
     }
   ],
-  "name": "Large Base Walker Packer",
-  "parent": "Small Base Walker Packer",
   "experiencieReward": 32,
   "structureInfo": {
     "type": "Medium",
     "hp": 21000
-  },
-  "weight": 35
+  }
 }

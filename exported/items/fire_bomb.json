@@ -1,4 +1,6 @@
 {
+  "name": "Fire Bomb",
+  "parent": "Slingshot",
   "category": "Ammo",
   "crafting": [
     {
@@ -24,8 +26,6 @@
       "time": 60
     }
   ],
-  "name": "Fire Bomb",
-  "parent": "Slingshot",
   "trade_price": 38,
   "projectileDamage": {
     "damage": 10,

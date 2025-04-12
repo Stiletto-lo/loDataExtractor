@@ -1,4 +1,6 @@
 {
+  "name": "Rupu Rock",
+  "parent": "RupuSling",
   "category": "Ammo",
   "crafting": [
     {
@@ -30,8 +32,6 @@
       "time": 1
     }
   ],
-  "name": "Rupu Rock",
-  "parent": "RupuSling",
   "trade_price": 1.4,
   "projectileDamage": {
     "damage": 100,

@@ -1,73 +1,18 @@
 {
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 5,
-          "name": "Wood Shaft"
-        },
-        {
-          "count": 5,
-          "name": "Bone Splinter"
-        },
-        {
-          "count": 12,
-          "name": "Fiber"
-        }
-      ],
-      "output": 3,
-      "station": "Woodworking Station",
-      "time": 5
-    },
-    {
-      "ingredients": [
-        {
-          "count": 5,
-          "name": "Wood Shaft"
-        },
-        {
-          "count": 5,
-          "name": "Bone Splinter"
-        },
-        {
-          "count": 12,
-          "name": "Fiber"
-        }
-      ],
-      "output": 3,
-      "station": "Advanced Woodworking Station",
-      "time": 4
-    },
-    {
-      "ingredients": [
-        {
-          "count": 5,
-          "name": "Wood Shaft"
-        },
-        {
-          "count": 5,
-          "name": "Bone Splinter"
-        },
-        {
-          "count": 12,
-          "name": "Fiber"
-        }
-      ],
-      "output": 3,
-      "station": "Artificer Woodworking Station",
-      "time": 3
-    }
-  ],
   "name": "Bone Bolt",
-  "parent": "Ballista",
-  "trade_price": 5,
-  "projectileDamage": {
-    "damage": 50
-  },
-  "toolInfo": [
+  "parent": "Bone Bolt",
+  "drops": [
     {
-      "toolType": "BallistaHarpoon",
-      "tier": 2
+      "location": "AmmoBox T2",
+      "chance": 0.33333332,
+      "minQuantity": 5,
+      "maxQuantity": 15
+    },
+    {
+      "location": "BigHotspotLoot T2",
+      "chance": 0.33333332,
+      "minQuantity": 5,
+      "maxQuantity": 15
     }
   ]
 }

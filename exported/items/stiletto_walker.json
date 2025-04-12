@@ -1,4 +1,6 @@
 {
+  "name": "Stiletto Walker",
+  "parent": "Dinghy Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -30,14 +32,11 @@
       ]
     }
   ],
-  "name": "Stiletto Walker",
-  "parent": "Dinghy Walker",
   "structureInfo": {
     "type": "Hard",
     "hp": 9500
   },
   "walkerinfo": {
     "category": "Medium"
-  },
-  "weight": 29.44
+  }
 }

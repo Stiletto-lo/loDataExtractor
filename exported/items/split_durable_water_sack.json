@@ -1,4 +1,14 @@
 {
+  "name": "Split Durable Water Sack",
+  "parent": "Durable Water Sack",
+  "drops": [
+    {
+      "location": "Equipment Strongbox",
+      "chance": 0.016393442,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Equipment",
   "crafting": [
     {
@@ -24,18 +34,9 @@
       "time": 60
     }
   ],
-  "name": "Split Durable Water Sack",
   "trade_price": 143.4,
   "experiencieReward": 300,
   "stackSize": 100,
   "weight": 3,
-  "durability": 380,
-  "drops": [
-    {
-      "location": "Equipment Strongbox",
-      "chance": 0.016393442,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    }
-  ]
+  "durability": 380
 }

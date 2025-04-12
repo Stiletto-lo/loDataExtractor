@@ -1,4 +1,6 @@
 {
+  "name": "Ammo Chest",
+  "parent": "Small Chest",
   "category": "Containers",
   "crafting": [
     {
@@ -22,12 +24,9 @@
       ]
     }
   ],
-  "name": "Ammo Chest",
-  "parent": "Small Chest",
   "experiencieReward": 32,
   "structureInfo": {
     "type": "Soft",
     "hp": 3750
-  },
-  "weight": 5.8
+  }
 }

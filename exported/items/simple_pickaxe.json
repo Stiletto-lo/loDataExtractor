@@ -1,4 +1,14 @@
 {
+  "name": "Simple Pickaxe",
+  "parent": "Beat Stick",
+  "drops": [
+    {
+      "location": "Tools Strongbox",
+      "chance": 0.17811705,
+      "minQuantity": 1,
+      "maxQuantity": 5
+    }
+  ],
   "category": "Tools",
   "crafting": [
     {
@@ -22,8 +32,6 @@
       ]
     }
   ],
-  "name": "Simple Pickaxe",
-  "parent": "Beat Stick",
   "trade_price": 8.4,
   "experiencieReward": 55,
   "stackSize": 100,
@@ -38,14 +46,6 @@
     {
       "toolType": "Mining",
       "tier": 5
-    }
-  ],
-  "drops": [
-    {
-      "location": "Tools Strongbox",
-      "chance": 0.17811705,
-      "minQuantity": 1,
-      "maxQuantity": 5
     }
   ]
 }

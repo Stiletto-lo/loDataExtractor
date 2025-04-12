@@ -1,4 +1,14 @@
 {
+  "name": "Bone Pickaxe",
+  "parent": "Simple Pickaxe",
+  "drops": [
+    {
+      "location": "Tools and Equipment Strongbox",
+      "chance": 0.44898921999999997,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "crafting": [
     {
       "ingredients": [
@@ -19,8 +29,6 @@
       "time": 2
     }
   ],
-  "name": "Bone Pickaxe",
-  "parent": "Simple Pickaxe",
   "trade_price": 24,
   "experiencieReward": 70,
   "weight": 4,
@@ -32,14 +40,6 @@
     {
       "toolType": "Mining",
       "tier": 10
-    }
-  ],
-  "drops": [
-    {
-      "location": "Tools and Equipment Strongbox",
-      "chance": 0.44898921999999997,
-      "minQuantity": 1,
-      "maxQuantity": 1
     }
   ]
 }

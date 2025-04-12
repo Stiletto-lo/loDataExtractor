@@ -1,4 +1,7 @@
 {
+  "name": "Net",
+  "parent": "Net Thrower",
+  "description": "Ammo for net thrower. Entangles small structures, mannable weapons, walker legs and wings.",
   "category": "Ammo",
   "crafting": [
     {
@@ -56,10 +59,7 @@
       "time": 10
     }
   ],
-  "name": "Net",
-  "parent": "Net Thrower",
   "trade_price": 10.4,
-  "description": "Ammo for net thrower. Entangles small structures, mannable weapons, walker legs and wings.",
   "projectileDamage": {
     "damage": 5
   },

@@ -1,4 +1,6 @@
 {
+  "name": "Medium Water Bag",
+  "parent": "Small Water Bag",
   "category": "Containers",
   "crafting": [
     {
@@ -22,12 +24,9 @@
       ]
     }
   ],
-  "name": "Medium Water Bag",
-  "parent": "Small Water Bag",
   "experiencieReward": 65,
   "structureInfo": {
     "type": "Soft",
     "hp": 1500
-  },
-  "weight": 6
+  }
 }

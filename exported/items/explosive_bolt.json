@@ -1,4 +1,6 @@
 {
+  "name": "Explosive Bolt",
+  "parent": "FireBolt",
   "category": "Ammo",
   "crafting": [
     {
@@ -20,8 +22,6 @@
       "time": 3
     }
   ],
-  "name": "Explosive Bolt",
-  "parent": "FireBolt",
   "trade_price": 17.8,
   "projectileDamage": {
     "damage": 25

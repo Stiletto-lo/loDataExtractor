@@ -1,28 +1,6 @@
 {
-  "category": "Armors",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 2,
-          "name": "Rupu Pelt"
-        },
-        {
-          "count": 8,
-          "name": "Palm Leaves"
-        }
-      ]
-    }
-  ],
   "name": "Rupu Fur Sandals",
-  "trade_price": 2,
-  "stackSize": 100,
-  "weight": 1,
-  "durability": 150,
-  "armorInfo": {
-    "absorbing": 4,
-    "reduction": 1
-  },
+  "parent": "RupuFurTorso",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -180,5 +158,28 @@
       "minQuantity": 1,
       "maxQuantity": 1
     }
-  ]
+  ],
+  "category": "Armors",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 2,
+          "name": "Rupu Pelt"
+        },
+        {
+          "count": 8,
+          "name": "Palm Leaves"
+        }
+      ]
+    }
+  ],
+  "trade_price": 2,
+  "stackSize": 100,
+  "weight": 1,
+  "durability": 150,
+  "armorInfo": {
+    "absorbing": 4,
+    "reduction": 1
+  }
 }

@@ -1,4 +1,6 @@
 {
+  "name": "Tusker Walker",
+  "parent": "Toboggan Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -54,14 +56,11 @@
       ]
     }
   ],
-  "name": "Tusker Walker",
-  "parent": "Toboggan Walker",
   "structureInfo": {
     "type": "Hard",
     "hp": 20000
   },
   "walkerinfo": {
     "category": "Capital"
-  },
-  "weight": 34.02
+  }
 }

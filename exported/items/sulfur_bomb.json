@@ -1,4 +1,6 @@
 {
+  "name": "Sulfur Bomb",
+  "parent": "Slingshot",
   "category": "Ammo",
   "crafting": [
     {
@@ -46,8 +48,6 @@
       "time": 90
     }
   ],
-  "name": "Sulfur Bomb",
-  "parent": "Slingshot",
   "trade_price": 52.2,
   "projectileDamage": {
     "damage": 20

@@ -1,4 +1,7 @@
 {
+  "name": "Tall Stinger",
+  "parent": "Advanced Walker Weapons",
+  "onlyDevs": true,
   "category": "Weapons",
   "crafting": [
     {
@@ -22,13 +25,9 @@
       ]
     }
   ],
-  "name": "Tall Stinger",
-  "parent": "Advanced Walker Weapons",
   "experiencieReward": 78,
   "structureInfo": {
     "type": "Medium",
     "hp": 3000
-  },
-  "onlyDevs": true,
-  "weight": 2
+  }
 }

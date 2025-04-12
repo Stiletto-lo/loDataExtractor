@@ -1,4 +1,6 @@
 {
+  "name": "Silur Walker",
+  "parent": "Balang Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -38,14 +40,11 @@
       ]
     }
   ],
-  "name": "Silur Walker",
-  "parent": "Balang Walker",
   "structureInfo": {
     "type": "Solid",
     "hp": 75000
   },
   "walkerinfo": {
     "category": "Large"
-  },
-  "weight": 50
+  }
 }

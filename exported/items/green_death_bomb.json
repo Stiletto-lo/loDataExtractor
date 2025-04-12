@@ -1,4 +1,6 @@
 {
+  "name": "Green Death Bomb",
+  "parent": "Sulfur Bomb",
   "category": "Ammo",
   "crafting": [
     {
@@ -24,13 +26,10 @@
       "time": 75
     }
   ],
-  "name": "Green Death Bomb",
-  "parent": "Sulfur Bomb",
   "trade_price": 36,
   "projectileDamage": {
     "damage": 20
   },
-  "stackSize": 28,
-  "weight": 0.6,
-  "wikiVisibility": false
+  "stackSize": 10,
+  "weight": 3
 }

@@ -1,4 +1,6 @@
 {
+  "name": "Scattershot Gun",
+  "parent": "Basic Walker Weapons",
   "category": "Weapons",
   "crafting": [
     {
@@ -22,12 +24,9 @@
       ]
     }
   ],
-  "name": "Scattershot Gun",
-  "parent": "Basic Walker Weapons",
   "experiencieReward": 366,
   "structureInfo": {
     "type": "Soft",
     "hp": 1050
-  },
-  "weight": 70
+  }
 }

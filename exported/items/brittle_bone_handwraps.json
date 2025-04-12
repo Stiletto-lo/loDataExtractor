@@ -1,36 +1,6 @@
 {
-  "category": "Armors",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 12,
-          "name": "Bone Splinter"
-        },
-        {
-          "count": 7,
-          "name": "Rope"
-        },
-        {
-          "count": 2,
-          "name": "Ceramic Shard"
-        }
-      ],
-      "station": "Artisan Fiberworking Station",
-      "time": 2
-    }
-  ],
   "name": "Brittle Bone Handwraps",
-  "trade_price": 8.9,
-  "experiencieReward": 70,
-  "stackSize": 100,
-  "weight": 1,
-  "durability": 240,
-  "armorInfo": {
-    "absorbing": 12,
-    "reduction": 3,
-    "speedReduction": 3
-  },
+  "parent": "BrittleBoneTorso",
   "drops": [
     {
       "location": "BigHotspotLoot T3",
@@ -140,5 +110,36 @@
       "minQuantity": 1,
       "maxQuantity": 1
     }
-  ]
+  ],
+  "category": "Armors",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 12,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 7,
+          "name": "Rope"
+        },
+        {
+          "count": 2,
+          "name": "Ceramic Shard"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 2
+    }
+  ],
+  "trade_price": 8.9,
+  "experiencieReward": 70,
+  "stackSize": 100,
+  "weight": 1,
+  "durability": 240,
+  "armorInfo": {
+    "absorbing": 12,
+    "reduction": 3,
+    "speedReduction": 3
+  }
 }

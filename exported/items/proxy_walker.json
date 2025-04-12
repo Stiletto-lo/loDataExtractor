@@ -1,4 +1,6 @@
 {
+  "name": "Proxy Walker",
+  "parent": "Dinghy Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -34,14 +36,11 @@
       ]
     }
   ],
-  "name": "Proxy Walker",
-  "parent": "Dinghy Walker",
   "structureInfo": {
     "type": "Reinforced",
     "hp": 40000
   },
   "walkerinfo": {
     "category": "Large"
-  },
-  "weight": 34.02
+  }
 }

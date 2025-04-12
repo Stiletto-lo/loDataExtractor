@@ -1,4 +1,7 @@
 {
+  "name": "Lathe",
+  "parent": "Advanced Woodworking Station",
+  "description": "A more sophisticated contraption that processes solid materials into various objects.",
   "category": "Crafting",
   "crafting": [
     {
@@ -26,9 +29,6 @@
       ]
     }
   ],
-  "name": "Lathe",
-  "parent": "Advanced Woodworking Station",
-  "description": "A more sophisticated contraption that processes solid materials into various objects.",
   "experiencieReward": 40,
   "structureInfo": {
     "type": "Soft",

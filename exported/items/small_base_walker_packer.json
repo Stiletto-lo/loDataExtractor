@@ -1,4 +1,6 @@
 {
+  "name": "Small Base Walker Packer",
+  "parent": "Sand Structures",
   "category": "Containers",
   "crafting": [
     {
@@ -22,12 +24,9 @@
       ]
     }
   ],
-  "name": "Small Base Walker Packer",
-  "parent": "Sand Structures",
   "experiencieReward": 32,
   "structureInfo": {
     "type": "Medium",
     "hp": 8000
-  },
-  "weight": 15
+  }
 }

@@ -1,4 +1,6 @@
 {
+  "name": "Domus Walker",
+  "parent": "Mollusk Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -42,14 +44,11 @@
       ]
     }
   ],
-  "name": "Domus Walker",
-  "parent": "Mollusk Walker",
   "structureInfo": {
     "type": "Hard",
     "hp": 30000
   },
   "walkerinfo": {
     "category": "Capital"
-  },
-  "weight": 34.02
+  }
 }

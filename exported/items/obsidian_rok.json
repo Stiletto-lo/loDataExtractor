@@ -1,4 +1,20 @@
 {
+  "name": "Obsidian Rok",
+  "parent": "Ceramic Rok",
+  "drops": [
+    {
+      "location": "AmmoBox T3",
+      "chance": 0.12,
+      "minQuantity": 1,
+      "maxQuantity": 3
+    },
+    {
+      "location": "BigHotspotLoot T3",
+      "chance": 0.12,
+      "minQuantity": 1,
+      "maxQuantity": 3
+    }
+  ],
   "crafting": [
     {
       "ingredients": [
@@ -19,35 +35,7 @@
       "time": 2
     }
   ],
-  "name": "Obsidian Rok",
-  "parent": "Ceramic Rok",
   "projectileDamage": {
     "damage": 500
-  },
-  "drops": [
-    {
-      "location": "AmmoBox T3",
-      "chance": 0.12,
-      "minQuantity": 1,
-      "maxQuantity": 3
-    },
-    {
-      "location": "BigHotspotLoot T3",
-      "chance": 0.12,
-      "minQuantity": 1,
-      "maxQuantity": 3
-    },
-    {
-      "location": "AmmoBox T4",
-      "chance": 0.14285714,
-      "minQuantity": 1,
-      "maxQuantity": 3
-    },
-    {
-      "location": "BigHotspotLoot T4",
-      "chance": 0.14285714,
-      "minQuantity": 1,
-      "maxQuantity": 3
-    }
-  ]
+  }
 }

@@ -1,10 +1,10 @@
 {
-  "category": "Resources",
   "name": "Fiery Concoction",
   "parent": "Clay Pot",
+  "onlyDevs": true,
+  "category": "Resources",
   "trade_price": 1,
   "experiencieReward": 35,
   "stackSize": 5,
-  "weight": 0.2,
-  "onlyDevs": true
+  "weight": 0.2
 }

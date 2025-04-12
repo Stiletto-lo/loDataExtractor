@@ -1,4 +1,6 @@
 {
+  "name": "Scroll Rack",
+  "parent": "Small Chest",
   "category": "Containers",
   "crafting": [
     {
@@ -22,11 +24,8 @@
       ]
     }
   ],
-  "name": "Scroll Rack",
-  "parent": "Small Chest",
   "experiencieReward": 50,
   "structureInfo": {
     "hp": 750
-  },
-  "weight": 23
+  }
 }

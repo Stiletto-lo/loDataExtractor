@@ -18,17 +18,26 @@ const parseTechData = (filePath) => {
 	const jsonData = JSON.parse(rawdata);
 
 	if (jsonData?.[1]?.Type) {
+		// Create both tech and item entries
+		const tech = utilityFunctions.extractTechByType(jsonData[1].Type);
 		const item = utilityFunctions.extractItemByType(jsonData[1].Type);
+
+		// Set name for both
+		const name = dataParser.parseName(translator, jsonData[1].Type);
+		tech.name = name;
+		item.name = name;
 
 		// Extract parent data
 		if (jsonData?.[1]?.Properties?.Requirements?.[0]?.ObjectName) {
 			// Use specialized tech tree parent translation to ensure consistent parent-child relationships
-			item.parent = translator.translateTechTreeParent(
+			const parentName = translator.translateTechTreeParent(
 				dataParser.parseName(
 					translator,
 					jsonData[1].Properties.Requirements[0].ObjectName,
 				),
 			);
+			tech.parent = parentName;
+			item.parent = parentName;
 		}
 
 		if (jsonData[1]?.Properties?.Cost !== undefined) {
@@ -45,25 +54,33 @@ const parseTechData = (filePath) => {
 			}
 			itemCost.count = jsonData[1].Properties.Cost;
 
-			// Ensure cost data is properly set
+			// Ensure cost data is properly set for both
+			tech.cost = { ...itemCost };
 			item.cost = itemCost;
 		}
 
 		if (jsonData[1]?.Properties?.bHidden) {
+			tech.onlyDevs = true;
 			item.onlyDevs = true;
 		}
 
 		if (jsonData[1]?.Properties?.bHidden && !SHOW_DEV_ITEMS) {
+			tech.parent = undefined;
 			item.parent = undefined;
 		}
-		if (item.name) {
-			if (item.name.includes("Upgrades")) {
+
+		if (tech.name) {
+			if (tech.name.includes("Upgrades")) {
+				tech.category = "Upgrades";
 				item.category = "Upgrades";
-			} else if (item.name.includes("Hook")) {
+			} else if (tech.name.includes("Hook")) {
+				tech.category = "Grappling Hooks";
 				item.category = "Grappling Hooks";
 			}
 		}
 
+		// Store both tech and item data
+		utilityFunctions.getTechData().push(tech);
 		utilityFunctions.getAllItems().push(item);
 	}
 };

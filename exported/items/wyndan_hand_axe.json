@@ -1,45 +1,6 @@
 {
-  "category": "Weapons",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 6,
-          "name": "Wood Shaft"
-        },
-        {
-          "count": 3,
-          "name": "Iron Ingot"
-        },
-        {
-          "count": 5,
-          "name": "Rope"
-        }
-      ],
-      "station": "Smithing",
-      "time": 15
-    }
-  ],
   "name": "Wyndan Hand Axe",
-  "trade_price": 234.4,
-  "experiencieReward": 1203,
-  "stackSize": 100,
-  "weight": 4,
-  "durability": 1000,
-  "weaponInfo": {
-    "weaponSpeed": 95,
-    "impact": 55,
-    "stability": 45,
-    "weaponLength": 72,
-    "damage": 60,
-    "penetration": 10
-  },
-  "toolInfo": [
-    {
-      "toolType": "TreeCutting",
-      "tier": 20
-    }
-  ],
+  "parent": "Ceramic Hatchet",
   "drops": [
     {
       "location": "Tools Strongbox",
@@ -94,6 +55,46 @@
       "chance": 0.07142857,
       "minQuantity": 1,
       "maxQuantity": 1
+    }
+  ],
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 3,
+          "name": "Iron Ingot"
+        },
+        {
+          "count": 5,
+          "name": "Rope"
+        }
+      ],
+      "station": "Smithing",
+      "time": 15
+    }
+  ],
+  "trade_price": 234.4,
+  "experiencieReward": 1203,
+  "stackSize": 100,
+  "weight": 4,
+  "durability": 1000,
+  "weaponInfo": {
+    "weaponSpeed": 95,
+    "impact": 55,
+    "stability": 45,
+    "weaponLength": 72,
+    "damage": 60,
+    "penetration": 10
+  },
+  "toolInfo": [
+    {
+      "toolType": "TreeCutting",
+      "tier": 20
     }
   ]
 }

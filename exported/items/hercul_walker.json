@@ -1,4 +1,6 @@
 {
+  "name": "Hercul Walker",
+  "parent": "Buffalo Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -34,14 +36,11 @@
       ]
     }
   ],
-  "name": "Hercul Walker",
-  "parent": "Buffalo Walker",
   "structureInfo": {
     "type": "Hard",
     "hp": 21000
   },
   "walkerinfo": {
     "category": "Large"
-  },
-  "weight": 29.44
+  }
 }

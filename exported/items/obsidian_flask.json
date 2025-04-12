@@ -1,4 +1,14 @@
 {
+  "name": "Obsidian Flask",
+  "parent": "Ceramic Bottle",
+  "drops": [
+    {
+      "location": "Equipment Strongbox",
+      "chance": 0.08196721,
+      "minQuantity": 1,
+      "maxQuantity": 2
+    }
+  ],
   "category": "Equipment",
   "crafting": [
     {
@@ -20,19 +30,9 @@
       "time": 2
     }
   ],
-  "name": "Obsidian Flask",
-  "parent": "Ceramic Bottle",
   "trade_price": 23,
   "experiencieReward": 50,
   "stackSize": 100,
   "weight": 1,
-  "durability": 200,
-  "drops": [
-    {
-      "location": "Equipment Strongbox",
-      "chance": 0.08196721,
-      "minQuantity": 1,
-      "maxQuantity": 2
-    }
-  ]
+  "durability": 200
 }

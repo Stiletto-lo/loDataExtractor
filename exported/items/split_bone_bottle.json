@@ -1,4 +1,20 @@
 {
+  "name": "Split Bone Bottle",
+  "parent": "Bone Bottle",
+  "drops": [
+    {
+      "location": "Equipment Strongbox",
+      "chance": 0.2295082,
+      "minQuantity": 1,
+      "maxQuantity": 4
+    },
+    {
+      "location": "Tools and Equipment Strongbox",
+      "chance": 0.224494608,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Equipment",
   "crafting": [
     {
@@ -38,25 +54,9 @@
       "time": 2
     }
   ],
-  "name": "Split Bone Bottle",
-  "parent": "Bone Bottle",
   "trade_price": 13.3,
   "experiencieReward": 55,
   "stackSize": 100,
   "weight": 3.2,
-  "durability": 130,
-  "drops": [
-    {
-      "location": "Equipment Strongbox",
-      "chance": 0.2295082,
-      "minQuantity": 1,
-      "maxQuantity": 4
-    },
-    {
-      "location": "Tools and Equipment Strongbox",
-      "chance": 0.224494608,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    }
-  ]
+  "durability": 130
 }

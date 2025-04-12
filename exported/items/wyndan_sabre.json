@@ -1,45 +1,6 @@
 {
-  "category": "Weapons",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 10,
-          "name": "Lightwood"
-        },
-        {
-          "count": 6,
-          "name": "Leather"
-        },
-        {
-          "count": 3,
-          "name": "Iron Ingot"
-        }
-      ],
-      "station": "Smithing",
-      "time": 15
-    }
-  ],
   "name": "Wyndan Sabre",
-  "trade_price": 259.7,
-  "experiencieReward": 1242,
-  "stackSize": 100,
-  "weight": 2.5,
-  "durability": 770,
-  "weaponInfo": {
-    "weaponSpeed": 130,
-    "impact": 25,
-    "stability": 10,
-    "weaponLength": 55,
-    "damage": 60,
-    "penetration": 10
-  },
-  "toolInfo": [
-    {
-      "toolType": "Scythe",
-      "tier": 1
-    }
-  ],
+  "parent": "Short Malletblade",
   "drops": [
     {
       "location": "Weapons Strongbox",
@@ -88,6 +49,46 @@
       "chance": 0.07142857,
       "minQuantity": 1,
       "maxQuantity": 1
+    }
+  ],
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Lightwood"
+        },
+        {
+          "count": 6,
+          "name": "Leather"
+        },
+        {
+          "count": 3,
+          "name": "Iron Ingot"
+        }
+      ],
+      "station": "Smithing",
+      "time": 15
+    }
+  ],
+  "trade_price": 259.7,
+  "experiencieReward": 1242,
+  "stackSize": 100,
+  "weight": 2.5,
+  "durability": 770,
+  "weaponInfo": {
+    "weaponSpeed": 130,
+    "impact": 25,
+    "stability": 10,
+    "weaponLength": 55,
+    "damage": 60,
+    "penetration": 10
+  },
+  "toolInfo": [
+    {
+      "toolType": "Scythe",
+      "tier": 1
     }
   ]
 }

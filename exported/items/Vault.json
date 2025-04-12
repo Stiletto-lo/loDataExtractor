@@ -1,4 +1,6 @@
 {
+  "name": "Vault",
+  "parent": "Construction",
   "category": "Containers",
   "crafting": [
     {
@@ -18,12 +20,9 @@
       ]
     }
   ],
-  "name": "Vault",
-  "parent": "Construction",
   "experiencieReward": 32,
   "structureInfo": {
     "type": "Medium",
     "hp": 5000
-  },
-  "weight": 1000
+  }
 }

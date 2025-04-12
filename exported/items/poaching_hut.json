@@ -1,4 +1,6 @@
 {
+  "name": "Poaching Hut",
+  "parent": "Defensive Tower",
   "category": "Interactables",
   "crafting": [
     {
@@ -18,12 +20,9 @@
       ]
     }
   ],
-  "name": "Poaching Hut",
-  "parent": "Defensive Tower",
   "experiencieReward": 1000,
   "structureInfo": {
     "type": "Soft",
     "hp": 5000
-  },
-  "weight": 10
+  }
 }

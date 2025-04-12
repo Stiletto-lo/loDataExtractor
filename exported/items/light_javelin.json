@@ -1,12 +1,6 @@
 {
-  "category": "Weapons",
   "name": "Light Javelin",
-  "trade_price": 1.6,
-  "stackSize": 20,
-  "weight": 2,
-  "weaponInfo": {
-    "damage": 50
-  },
+  "parent": "Beat Stick",
   "drops": [
     {
       "location": "BigHotspotLoot T1",
@@ -159,21 +153,13 @@
       "maxQuantity": 3
     }
   ],
-  "wikiVisibility": false,
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 1,
-          "name": "Wood Shaft"
-        },
-        {
-          "count": 1,
-          "name": "Stone"
-        }
-      ],
-      "output": 3
-    }
-  ],
-  "parent": "Beat Stick"
+  "category": "Weapons",
+  "trade_price": 1.6,
+  "stackSize": 5,
+  "weight": 2,
+  "weaponInfo": {
+    "damage": 15,
+    "penetration": 15
+  },
+  "wikiVisibility": false
 }

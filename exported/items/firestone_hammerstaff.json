@@ -1,36 +1,6 @@
 {
-  "category": "Weapons",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 6,
-          "name": "Obsidian"
-        },
-        {
-          "count": 3,
-          "name": "Rope"
-        },
-        {
-          "count": 6,
-          "name": "Wood Shaft"
-        }
-      ],
-      "station": "Lathe",
-      "time": 2
-    }
-  ],
   "name": "Firestone Hammerstaff",
-  "trade_price": 100.7,
-  "experiencieReward": 220,
-  "stackSize": 100,
-  "weight": 5.5,
-  "durability": 735,
-  "weaponInfo": {
-    "weaponLength": 99,
-    "damage": 42,
-    "penetration": 20
-  },
+  "parent": "Paddleblade Quarterstaff",
   "drops": [
     {
       "location": "Weapons Strongbox",
@@ -146,5 +116,36 @@
       "minQuantity": 1,
       "maxQuantity": 1
     }
-  ]
+  ],
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Obsidian"
+        },
+        {
+          "count": 3,
+          "name": "Rope"
+        },
+        {
+          "count": 6,
+          "name": "Wood Shaft"
+        }
+      ],
+      "station": "Lathe",
+      "time": 2
+    }
+  ],
+  "trade_price": 100.7,
+  "experiencieReward": 220,
+  "stackSize": 100,
+  "weight": 5.5,
+  "durability": 735,
+  "weaponInfo": {
+    "weaponLength": 99,
+    "damage": 42,
+    "penetration": 20
+  }
 }

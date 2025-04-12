@@ -1,4 +1,14 @@
 {
+  "name": "Water Circulator",
+  "parent": "Ceramic Bottle",
+  "drops": [
+    {
+      "location": "Equipment Strongbox",
+      "chance": 0.016393442,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Equipment",
   "crafting": [
     {
@@ -20,18 +30,9 @@
       "time": 25
     }
   ],
-  "name": "Water Circulator",
   "trade_price": 679.5,
   "experiencieReward": 255,
   "stackSize": 100,
   "weight": 3,
-  "durability": 400,
-  "drops": [
-    {
-      "location": "Equipment Strongbox",
-      "chance": 0.016393442,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    }
-  ]
+  "durability": 400
 }

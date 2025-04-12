@@ -1,4 +1,6 @@
 {
+  "name": "Repair Station",
+  "parent": "Rope",
   "category": "Interactables",
   "crafting": [
     {
@@ -18,11 +20,8 @@
       ]
     }
   ],
-  "name": "Repair Station",
-  "parent": "Rope",
   "experiencieReward": 92,
   "structureInfo": {
     "hp": 1000
-  },
-  "weight": 5
+  }
 }

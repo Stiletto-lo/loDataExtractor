@@ -1,4 +1,6 @@
 {
+  "name": "Firefly Walker",
+  "parent": "Spider Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -26,14 +28,11 @@
       ]
     }
   ],
-  "name": "Firefly Walker",
-  "parent": "Spider Walker",
   "structureInfo": {
     "type": "Hard",
     "hp": 9750
   },
   "walkerinfo": {
     "category": "Small"
-  },
-  "weight": 6.42
+  }
 }

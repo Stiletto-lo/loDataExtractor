@@ -1,4 +1,6 @@
 {
+  "name": "Rokker",
+  "parent": "Advanced Walker Weapons",
   "category": "Weapons",
   "crafting": [
     {
@@ -34,12 +36,9 @@
       ]
     }
   ],
-  "name": "Rokker",
-  "parent": "Advanced Walker Weapons",
   "experiencieReward": 188,
   "structureInfo": {
     "type": "Medium",
     "hp": 1350
-  },
-  "weight": 100
+  }
 }

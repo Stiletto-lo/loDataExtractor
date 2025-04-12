@@ -1,37 +1,6 @@
 {
-  "category": "Weapons",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 16,
-          "name": "Stone"
-        },
-        {
-          "count": 2,
-          "name": "Wood Shaft"
-        },
-        {
-          "count": 15,
-          "name": "Rupu Pelt"
-        }
-      ]
-    }
-  ],
   "name": "Jaggertooth Club",
   "parent": "Beat Stick",
-  "trade_price": 2.5,
-  "stackSize": 100,
-  "weight": 7.5,
-  "durability": 320,
-  "weaponInfo": {
-    "weaponSpeed": 88,
-    "impact": 65,
-    "stability": 35,
-    "weaponLength": 66,
-    "damage": 30,
-    "penetration": 10
-  },
   "drops": [
     {
       "location": "BigHotspotLoot T1",
@@ -183,5 +152,36 @@
       "minQuantity": 1,
       "maxQuantity": 1
     }
-  ]
+  ],
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 16,
+          "name": "Stone"
+        },
+        {
+          "count": 2,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 15,
+          "name": "Rupu Pelt"
+        }
+      ]
+    }
+  ],
+  "trade_price": 2.5,
+  "stackSize": 100,
+  "weight": 7.5,
+  "durability": 320,
+  "weaponInfo": {
+    "weaponSpeed": 88,
+    "impact": 65,
+    "stability": 35,
+    "weaponLength": 66,
+    "damage": 30,
+    "penetration": 10
+  }
 }

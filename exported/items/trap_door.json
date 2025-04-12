@@ -1,4 +1,6 @@
 {
+  "name": "Trap Door",
+  "parent": "Bomb Chest Trap",
   "category": "Defenses",
   "crafting": [
     {
@@ -18,12 +20,9 @@
       ]
     }
   ],
-  "name": "Trap Door",
-  "parent": "Bomb Chest Trap",
   "experiencieReward": 48,
   "structureInfo": {
     "type": "Soft",
     "hp": 200
-  },
-  "weight": 7
+  }
 }

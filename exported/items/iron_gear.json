@@ -1,4 +1,6 @@
 {
+  "name": "Iron Gear",
+  "parent": "Reinforced Gear",
   "category": "Resources",
   "crafting": [
     {
@@ -20,8 +22,6 @@
       "time": 30
     }
   ],
-  "name": "Iron Gear",
-  "parent": "Reinforced Gear",
   "trade_price": 700,
   "experiencieReward": 25,
   "stackSize": 100,

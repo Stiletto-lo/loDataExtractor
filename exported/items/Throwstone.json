@@ -1,30 +1,8 @@
 {
-  "category": "Weapons",
   "name": "Throwstone",
-  "trade_price": 1.6,
+  "parent": "Equipment",
   "description": "Either a fantastically aerodynamic stone, its form perfected for best throwing experience... Or just a sharp chip of rock that you can throw at someone in a pinch.",
-  "projectileDamage": {
-    "damage": 20,
-    "penetration": 25,
-    "effectivenessVsSoak": 50,
-    "effectivenessVsReduce": 50
-  },
-  "experiencieReward": 1,
-  "stackSize": 50,
-  "weight": 0.3,
-  "toolInfo": [
-    {
-      "toolType": "Scattershot",
-      "tier": 1
-    }
-  ],
   "drops": [
-    {
-      "location": "Weapon Strongbox",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
     {
       "location": "BigHotspotLoot T1",
       "chance": 0.16129032,
@@ -174,159 +152,23 @@
       "chance": 0.16129032,
       "minQuantity": 3,
       "maxQuantity": 3
-    },
-    {
-      "location": "BasketLoot T2 AC",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "BigHotspotLoot T2",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "EasyRupuCamp T2",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Grave Digger (Medium)",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Rupu Hermit (Medium)",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Rupu Skirmisher (Medium)",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "HardRupuCamp T2",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Rupu Shaman (Medium)",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Marshland Stalker",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Matriarch",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Rupu Priestess (Medium)",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Rupu Zealot (Medium)",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "HotspotLoot T2",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "HotspotLoot T2 AC",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "MediumRupuCamp T2",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Bounty Hunter",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Rupu Dunestalker (Medium)",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Rupu Forager (Medium)",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Rupu Harasser (Medium)",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Rupu Hazraki (Medium)",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Rupu Plainstrider (Medium)",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "White Death (Medium)",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "TreasureChest T2",
-      "chance": 0.18181818,
-      "minQuantity": 1,
-      "maxQuantity": 1
     }
   ],
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 1,
-          "name": "Stone"
-        }
-      ]
-    }
-  ],
-  "parent": "Equipment",
-  "weaponInfo": {
+  "category": "Weapons",
+  "trade_price": 16.9,
+  "projectileDamage": {
     "damage": 20,
-    "penetration": 25
-  }
+    "penetration": 25,
+    "effectivenessVsSoak": 50,
+    "effectivenessVsReduce": 50
+  },
+  "experiencieReward": 1,
+  "stackSize": 10,
+  "weight": 0.3,
+  "toolInfo": [
+    {
+      "toolType": "Scattershot",
+      "tier": 1
+    }
+  ]
 }

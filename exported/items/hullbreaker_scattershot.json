@@ -1,4 +1,20 @@
 {
+  "name": "Hullbreaker Scattershot",
+  "parent": "CeramicScattershot",
+  "drops": [
+    {
+      "location": "AmmoBox T4",
+      "chance": 0.28571428,
+      "minQuantity": 2,
+      "maxQuantity": 12
+    },
+    {
+      "location": "BigHotspotLoot T4",
+      "chance": 0.28571428,
+      "minQuantity": 2,
+      "maxQuantity": 12
+    }
+  ],
   "crafting": [
     {
       "ingredients": [
@@ -24,8 +40,6 @@
       "time": 5
     }
   ],
-  "name": "Hullbreaker Scattershot",
-  "parent": "CeramicScattershot",
   "trade_price": 61.8,
   "projectileDamage": {
     "damage": 500

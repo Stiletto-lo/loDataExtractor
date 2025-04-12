@@ -1,4 +1,6 @@
 {
+  "name": "Grappling Belt Charging Station",
+  "parent": "Construction",
   "category": "Interactables",
   "crafting": [
     {
@@ -22,12 +24,9 @@
       ]
     }
   ],
-  "name": "Grappling Belt Charging Station",
-  "parent": "Construction",
   "experiencieReward": 304,
   "structureInfo": {
     "type": "Soft",
     "hp": 200
-  },
-  "weight": 60
+  }
 }

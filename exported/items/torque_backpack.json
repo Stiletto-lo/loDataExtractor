@@ -1,4 +1,7 @@
 {
+  "name": "Torque Backpack",
+  "parent": "Torque Battery",
+  "onlyDevs": true,
   "category": "Equipment",
   "crafting": [
     {
@@ -46,12 +49,9 @@
       "time": 1
     }
   ],
-  "name": "Torque Backpack",
-  "parent": "Torque Battery",
   "trade_price": 48.5,
   "experiencieReward": 154,
   "stackSize": 100,
   "weight": 0.5,
-  "durability": 200,
-  "onlyDevs": true
+  "durability": 200
 }

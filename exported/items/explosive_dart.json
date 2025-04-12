@@ -1,4 +1,6 @@
 {
+  "name": "Explosive Dart",
+  "parent": "Fire Dart",
   "category": "Ammo",
   "crafting": [
     {
@@ -21,22 +23,10 @@
       "time": 4
     }
   ],
-  "name": "Explosive Dart",
-  "parent": "Fire Dart",
   "trade_price": 49.8,
   "projectileDamage": {
-    "damage": 500,
-    "penetration": 50,
-    "effectivenessVsSoak": 25,
-    "effectivenessVsReduce": 25
+    "damage": 3
   },
-  "stackSize": 28,
-  "weight": 0.6,
-  "toolInfo": [
-    {
-      "toolType": "SlingshotRock",
-      "tier": 1
-    }
-  ],
-  "wikiVisibility": false
+  "stackSize": 200,
+  "weight": 0.6
 }

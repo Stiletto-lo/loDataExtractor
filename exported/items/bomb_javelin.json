@@ -1,4 +1,6 @@
 {
+  "name": "Bomb Javelin",
+  "parent": "Heavy Javelin",
   "category": "Weapons",
   "crafting": [
     {
@@ -24,8 +26,6 @@
       "time": 10
     }
   ],
-  "name": "Bomb Javelin",
-  "parent": "Heavy Javelin",
   "trade_price": 1.6,
   "stackSize": 5,
   "weight": 2,

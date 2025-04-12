@@ -1,4 +1,6 @@
 {
+  "name": "Bomb Chest Trap",
+  "parent": "Ammo Chest",
   "category": "Defenses",
   "crafting": [
     {
@@ -14,12 +16,9 @@
       ]
     }
   ],
-  "name": "Bomb Chest Trap",
-  "parent": "Ammo Chest",
   "experiencieReward": 78,
   "structureInfo": {
     "type": "Soft",
     "hp": 200
-  },
-  "weight": 10
+  }
 }

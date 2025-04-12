@@ -1,4 +1,6 @@
 {
+  "name": "Cobra Walker",
+  "parent": "Camelop Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -38,14 +40,11 @@
       ]
     }
   ],
-  "name": "Cobra Walker",
-  "parent": "Camelop Walker",
   "structureInfo": {
     "type": "Hard",
     "hp": 14950
   },
   "walkerinfo": {
     "category": "Medium"
-  },
-  "weight": 29.44
+  }
 }

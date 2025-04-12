@@ -1,11 +1,12 @@
 /**
  * Utility functions for file parsers
  *
- * This module provides utility functions for working with items, upgrades, creatures,
+ * This module provides utility functions for working with items, tech, upgrades, creatures,
  * datatables, and blueprints in the data extraction process.
  */
 
 const itemTemplate = require("../../templates/item");
+const techTemplate = require("../../templates/tech");
 const costTemplate = require("../../templates/cost");
 const dataParser = require("../dataParsers");
 const translator = require("../translator");
@@ -17,6 +18,7 @@ const translator = require("../translator");
 class DataStore {
 	constructor() {
 		this.items = [];
+		this.techData = [];
 		this.upgradesData = [];
 		this.creatures = [];
 		this.datatables = [];
@@ -103,6 +105,38 @@ class DataStore {
 		return ingredient;
 	}
 
+	// Tech operations
+	getTechData() {
+		return this.techData;
+	}
+
+	setTechData(data) {
+		if (!Array.isArray(data)) {
+			throw new TypeError("Tech data must be an array");
+		}
+		this.techData = data;
+	}
+
+	/**
+	 * Extract a tech entry by type
+	 * @param {string} type - The type of the tech to extract
+	 * @returns {Object} - A new tech object with the type set
+	 */
+	extractTechByType(type) {
+		if (!type) {
+			return { ...techTemplate };
+		}
+
+		const tech = this.techData.find(tech => tech.type === type || tech.type === `${type}_C` || `${tech.type}_C` === type);
+		if (tech) {
+			return { ...tech };
+		}
+
+		const newTech = { ...techTemplate };
+		newTech.type = type;
+		return newTech;
+	}
+
 	// Upgrades operations
 	getUpgradesData() {
 		return this.upgradesData;
@@ -162,6 +196,11 @@ module.exports = {
 	extractItemByType: (type) => dataStore.extractItemByType(type),
 	getIngredientsFromItem: (inputs, key) =>
 		dataStore.getIngredientsFromItem(inputs, key),
+
+	// Tech operations
+	getTechData: () => dataStore.getTechData(),
+	setTechData: (data) => dataStore.setTechData(data),
+	extractTechByType: (type) => dataStore.extractTechByType(type),
 
 	// Collection getters
 	getAllItems: () => dataStore.getAllItems(),

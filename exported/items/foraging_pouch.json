@@ -1,4 +1,14 @@
 {
+  "name": "Foraging Pouch",
+  "parent": "Equipment",
+  "drops": [
+    {
+      "location": "Tools and Equipment Strongbox",
+      "chance": 0.224494608,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Equipment",
   "crafting": [
     {
@@ -10,19 +20,9 @@
       ]
     }
   ],
-  "name": "Foraging Pouch",
-  "parent": "Equipment",
   "trade_price": 5.6,
   "experiencieReward": 26,
   "stackSize": 100,
   "weight": 0.2,
-  "durability": 70,
-  "drops": [
-    {
-      "location": "Tools and Equipment Strongbox",
-      "chance": 0.224494608,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    }
-  ]
+  "durability": 70
 }

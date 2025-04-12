@@ -1,4 +1,6 @@
 {
+  "name": "Obsidian Machine",
+  "parent": "Clay Pot",
   "category": "Crafting",
   "crafting": [
     {
@@ -18,12 +20,9 @@
       ]
     }
   ],
-  "name": "Obsidian Machine",
-  "parent": "Clay Pot",
   "experiencieReward": 36,
   "structureInfo": {
     "type": "Soft",
     "hp": 4000
-  },
-  "weight": 15
+  }
 }

@@ -56,5 +56,19 @@
       "toolType": "Scattershot",
       "tier": 2
     }
+  ],
+  "drops": [
+    {
+      "location": "AmmoBox T2",
+      "chance": 0.33333332,
+      "minQuantity": 5,
+      "maxQuantity": 15
+    },
+    {
+      "location": "BigHotspotLoot T2",
+      "chance": 0.33333332,
+      "minQuantity": 5,
+      "maxQuantity": 15
+    }
   ]
 }

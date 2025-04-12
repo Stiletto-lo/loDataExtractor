@@ -1,4 +1,7 @@
 {
+  "category": "Grappling Hooks",
+  "name": "Long Grappling Hook",
+  "parent": "Nomad Grappling Hook",
   "crafting": [
     {
       "ingredients": [
@@ -19,8 +22,6 @@
       "time": 2
     }
   ],
-  "name": "Long Grappling Hook",
-  "parent": "Nomad Grappling Hook",
   "trade_price": 23.5,
   "experiencieReward": 25
 }

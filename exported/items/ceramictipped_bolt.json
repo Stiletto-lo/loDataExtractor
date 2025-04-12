@@ -1,4 +1,6 @@
 {
+  "name": "Ceramic-Tipped Bolt",
+  "parent": "Bone Bolt",
   "crafting": [
     {
       "ingredients": [
@@ -39,8 +41,6 @@
       "time": 3
     }
   ],
-  "name": "Ceramic-Tipped Bolt",
-  "parent": "Bone Bolt",
   "trade_price": 11,
   "projectileDamage": {
     "damage": 64

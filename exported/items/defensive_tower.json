@@ -1,4 +1,6 @@
 {
+  "name": "Defensive Tower",
+  "parent": "WoodenWalls",
   "category": "Defenses",
   "crafting": [
     {
@@ -26,12 +28,9 @@
       ]
     }
   ],
-  "name": "Defensive Tower",
-  "parent": "WoodenWalls",
   "experiencieReward": 32,
   "structureInfo": {
     "type": "Soft",
     "hp": 7500
-  },
-  "weight": 145
+  }
 }

@@ -1,4 +1,6 @@
 {
+  "name": "Stomping Station",
+  "parent": "Camp Fire",
   "category": "Crafting",
   "crafting": [
     {
@@ -26,12 +28,9 @@
       ]
     }
   ],
-  "name": "Stomping Station",
-  "parent": "Camp Fire",
   "experiencieReward": 125,
   "structureInfo": {
     "type": "Soft",
     "hp": 3000
-  },
-  "weight": 4.83
+  }
 }

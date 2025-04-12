@@ -1,4 +1,6 @@
 {
+  "name": "Toboggan Walker",
+  "parent": "Dinghy Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -42,14 +44,11 @@
       ]
     }
   ],
-  "name": "Toboggan Walker",
-  "parent": "Dinghy Walker",
   "structureInfo": {
     "type": "Hard",
     "hp": 10000
   },
   "walkerinfo": {
     "category": "Medium"
-  },
-  "weight": 34.02
+  }
 }

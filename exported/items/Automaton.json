@@ -1,4 +1,7 @@
 {
+  "name": "Automaton",
+  "parent": "Improved Walker Weapons",
+  "description": "A remote-controlled mechanical tool that can handle mounted weapons.",
   "category": "Walker Tools",
   "crafting": [
     {
@@ -22,13 +25,9 @@
       ]
     }
   ],
-  "name": "Automaton",
-  "parent": "Improved Walker Weapons",
-  "description": "A remote-controlled mechanical tool that can handle mounted weapons.",
   "experiencieReward": 78,
   "structureInfo": {
     "type": "Soft",
     "hp": 100
-  },
-  "weight": 1500
+  }
 }

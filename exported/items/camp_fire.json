@@ -1,4 +1,6 @@
 {
+  "name": "Camp Fire",
+  "parent": "Crafting",
   "category": "Crafting",
   "crafting": [
     {
@@ -18,12 +20,9 @@
       ]
     }
   ],
-  "name": "Camp Fire",
-  "parent": "Crafting",
   "experiencieReward": 18,
   "structureInfo": {
     "type": "Soft",
     "hp": 500
-  },
-  "weight": 9.75
+  }
 }

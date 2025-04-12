@@ -1,4 +1,6 @@
 {
+  "name": "Nibiran-tipped Bolt",
+  "parent": "IronBolt",
   "crafting": [
     {
       "ingredients": [
@@ -20,8 +22,6 @@
       "time": 10
     }
   ],
-  "name": "Nibiran-tipped Bolt",
-  "parent": "IronBolt",
   "trade_price": 35,
   "projectileDamage": {
     "damage": 100

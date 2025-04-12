@@ -1,4 +1,14 @@
 {
+  "name": "Simple Repair Hammer",
+  "parent": "Beat Stick",
+  "drops": [
+    {
+      "location": "Tools Strongbox",
+      "chance": 0.17811705,
+      "minQuantity": 1,
+      "maxQuantity": 5
+    }
+  ],
   "category": "Tools",
   "crafting": [
     {
@@ -18,8 +28,6 @@
       ]
     }
   ],
-  "name": "Simple Repair Hammer",
-  "parent": "Beat Stick",
   "trade_price": 9.5,
   "experiencieReward": 50,
   "stackSize": 100,
@@ -29,13 +37,5 @@
     "weaponLength": 42,
     "damage": 20,
     "penetration": 5
-  },
-  "drops": [
-    {
-      "location": "Tools Strongbox",
-      "chance": 0.17811705,
-      "minQuantity": 1,
-      "maxQuantity": 5
-    }
-  ]
+  }
 }

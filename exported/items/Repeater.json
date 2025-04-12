@@ -1,4 +1,7 @@
 {
+  "name": "Repeater",
+  "parent": "Basic Walker Weapons",
+  "description": "Unload a rapid volley of darts that are deadly against lightly armored targets. Weak against walkers and structures.",
   "category": "Weapons",
   "crafting": [
     {
@@ -18,13 +21,9 @@
       ]
     }
   ],
-  "name": "Repeater",
-  "parent": "Basic Walker Weapons",
-  "description": "Unload a rapid volley of darts that are deadly against lightly armored targets. Weak against walkers and structures.",
   "experiencieReward": 304,
   "structureInfo": {
     "type": "Soft",
     "hp": 1150
-  },
-  "weight": 70
+  }
 }

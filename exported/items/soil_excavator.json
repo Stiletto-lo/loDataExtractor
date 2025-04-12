@@ -1,4 +1,6 @@
 {
+  "name": "Soil Excavator",
+  "parent": "Camp Fire",
   "category": "Crafting",
   "crafting": [
     {
@@ -26,18 +28,9 @@
       ]
     }
   ],
-  "name": "Soil Excavator",
-  "parent": "Camp Fire",
   "experiencieReward": 18,
   "structureInfo": {
     "type": "Soft",
     "hp": 3000
-  },
-  "weight": 109,
-  "toolInfo": [
-    {
-      "toolType": "Digging",
-      "tier": 5
-    }
-  ]
+  }
 }

@@ -1,4 +1,6 @@
 {
+  "name": "Barrier Gate",
+  "parent": "Barrier Base",
   "category": "Defenses",
   "crafting": [
     {
@@ -18,12 +20,9 @@
       ]
     }
   ],
-  "name": "Barrier Gate",
-  "parent": "Barrier Base",
   "experiencieReward": 34,
   "structureInfo": {
     "type": "Soft",
     "hp": 12000
-  },
-  "weight": 1
+  }
 }

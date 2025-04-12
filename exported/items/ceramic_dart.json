@@ -31,5 +31,19 @@
       "toolType": "RepeaterBolt",
       "tier": 3
     }
+  ],
+  "drops": [
+    {
+      "location": "AmmoBox T3",
+      "chance": 0.4,
+      "minQuantity": 5,
+      "maxQuantity": 30
+    },
+    {
+      "location": "BigHotspotLoot T3",
+      "chance": 0.4,
+      "minQuantity": 5,
+      "maxQuantity": 30
+    }
   ]
 }

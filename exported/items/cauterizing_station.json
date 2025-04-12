@@ -1,4 +1,6 @@
 {
+  "name": "Cauterizing Station",
+  "parent": "Camp Fire",
   "category": "Interactables",
   "crafting": [
     {
@@ -18,12 +20,9 @@
       ]
     }
   ],
-  "name": "Cauterizing Station",
-  "parent": "Camp Fire",
   "experiencieReward": 340,
   "structureInfo": {
     "type": "Soft",
     "hp": 500
-  },
-  "weight": 73
+  }
 }

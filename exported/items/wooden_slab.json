@@ -1,4 +1,6 @@
 {
+  "name": "Wooden Slab",
+  "parent": "Woodworking Station",
   "category": "Resources",
   "crafting": [
     {
@@ -89,8 +91,6 @@
       "time": 60
     }
   ],
-  "name": "Wooden Slab",
-  "parent": "Woodworking Station",
   "trade_price": 0.1,
   "stackSize": 100,
   "weight": 0.1

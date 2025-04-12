@@ -1,4 +1,6 @@
 {
+  "name": "Hornet Walker",
+  "parent": "Stiletto Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -50,14 +52,11 @@
       ]
     }
   ],
-  "name": "Hornet Walker",
-  "parent": "Stiletto Walker",
   "structureInfo": {
     "type": "Hard",
     "hp": 10000
   },
   "walkerinfo": {
     "category": "Large"
-  },
-  "weight": 29.44
+  }
 }

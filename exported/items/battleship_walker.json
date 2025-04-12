@@ -1,4 +1,7 @@
 {
+  "name": "Battleship Walker",
+  "parent": "Flotillian Walkers",
+  "onlyDevs": true,
   "category": "Walkers",
   "crafting": [
     {
@@ -18,12 +21,8 @@
       ]
     }
   ],
-  "name": "Battleship Walker",
-  "parent": "Flotillian Walkers",
   "structureInfo": {
     "type": "Hard",
     "hp": 80000
-  },
-  "onlyDevs": true,
-  "weight": 101.84
+  }
 }

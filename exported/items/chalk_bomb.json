@@ -1,4 +1,6 @@
 {
+  "name": "Chalk Bomb",
+  "parent": "Slingshot",
   "category": "Ammo",
   "crafting": [
     {
@@ -38,8 +40,6 @@
       "time": 60
     }
   ],
-  "name": "Chalk Bomb",
-  "parent": "Slingshot",
   "trade_price": 3.6,
   "projectileDamage": {},
   "stackSize": 10,

@@ -1,4 +1,6 @@
 {
+  "name": "Advanced Fiberworking Station",
+  "parent": "Fiberworking Station",
   "category": "Crafting",
   "crafting": [
     {
@@ -22,12 +24,9 @@
       ]
     }
   ],
-  "name": "Advanced Fiberworking Station",
-  "parent": "Fiberworking Station",
   "experiencieReward": 235,
   "structureInfo": {
     "type": "Soft",
     "hp": 3000
-  },
-  "weight": 8.5
+  }
 }

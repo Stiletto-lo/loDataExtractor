@@ -168,6 +168,57 @@ allItems = allItems
 		return acc;
 	}, []);
 
+// Extract tech data from fileParser
+let techData = fileParser.getTechData();
+
+// Process tech data similar to items
+techData = techData
+	.map((tech) => {
+		const countTech = techData.filter((tech2) => tech.name === tech2.name);
+		if (countTech.length > 1) {
+			return { ...countTech[0], ...countTech[1] };
+		}
+		return tech;
+	})
+	.filter((tech) => tech.name && Object.keys(tech).length > 2)
+	.reduce((acc, current) => {
+		const x = acc.find((tech) => tech.name === current.name);
+		if (!x) {
+			return acc.concat([current]);
+		}
+		return acc;
+	}, []);
+
+// Sort tech data by name
+techData.sort(orderByName);
+
+// Export tech data to tech.json
+if (techData.length > 0) {
+	fs.writeFile(
+		`${folderPatch}tech.json`,
+		JSON.stringify(techData, null, 2),
+		(err) => {
+			if (err) {
+				console.error("Error creating the tech.json file");
+			} else {
+				console.log("Tech data exported to tech.json");
+			}
+		},
+	);
+
+	fs.writeFile(
+		`${folderPatch}tech_min.json`,
+		JSON.stringify(techData),
+		(err) => {
+			if (err) {
+				console.error("Error creating the tech_min.json file");
+			} else {
+				console.log("Tech_min.json exported");
+			}
+		},
+	);
+}
+
 allItems = dataParser.itemMerger(allItems, "Long Sawblade", "Sawblade_Tier2");
 
 allItems.sort(orderByName);

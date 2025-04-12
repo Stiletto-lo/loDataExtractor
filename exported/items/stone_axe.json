@@ -1,43 +1,6 @@
 {
-  "category": "Weapons",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 8,
-          "name": "Stone"
-        },
-        {
-          "count": 10,
-          "name": "Wood"
-        },
-        {
-          "count": 1,
-          "name": "Wood Shaft"
-        }
-      ]
-    }
-  ],
   "name": "Stone Axe",
   "parent": "Crude Hatchet",
-  "trade_price": 1.2,
-  "stackSize": 100,
-  "weight": 1.8,
-  "durability": 315,
-  "weaponInfo": {
-    "weaponSpeed": 115,
-    "impact": 35,
-    "stability": 25,
-    "weaponLength": 53,
-    "damage": 30,
-    "penetration": 10
-  },
-  "toolInfo": [
-    {
-      "toolType": "TreeCutting",
-      "tier": 5
-    }
-  ],
   "drops": [
     {
       "location": "Tools Strongbox",
@@ -194,6 +157,43 @@
       "chance": 0.25806452,
       "minQuantity": 1,
       "maxQuantity": 1
+    }
+  ],
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 8,
+          "name": "Stone"
+        },
+        {
+          "count": 10,
+          "name": "Wood"
+        },
+        {
+          "count": 1,
+          "name": "Wood Shaft"
+        }
+      ]
+    }
+  ],
+  "trade_price": 1.2,
+  "stackSize": 100,
+  "weight": 1.8,
+  "durability": 315,
+  "weaponInfo": {
+    "weaponSpeed": 115,
+    "impact": 35,
+    "stability": 25,
+    "weaponLength": 53,
+    "damage": 30,
+    "penetration": 10
+  },
+  "toolInfo": [
+    {
+      "toolType": "TreeCutting",
+      "tier": 5
     }
   ]
 }

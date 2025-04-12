@@ -1,4 +1,6 @@
 {
+  "name": "Dyeing Station",
+  "parent": "Crafting",
   "category": "Crafting",
   "crafting": [
     {
@@ -18,11 +20,8 @@
       ]
     }
   ],
-  "name": "Dyeing Station",
-  "parent": "Crafting",
   "structureInfo": {
     "type": "Soft",
     "hp": 1500
-  },
-  "weight": 35
+  }
 }

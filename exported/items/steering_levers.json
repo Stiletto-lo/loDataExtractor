@@ -1,4 +1,6 @@
 {
+  "name": "Steering Levers",
+  "parent": "Ammo Chest",
   "category": "Walker Tools",
   "crafting": [
     {
@@ -14,8 +16,5 @@
       ]
     }
   ],
-  "name": "Steering Levers",
-  "parent": "Ammo Chest",
-  "experiencieReward": 208,
-  "weight": 10.8
+  "experiencieReward": 208
 }

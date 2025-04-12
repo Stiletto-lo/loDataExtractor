@@ -1,38 +1,6 @@
 {
-  "category": "Weapons",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 10,
-          "name": "Lightwood"
-        },
-        {
-          "count": 4,
-          "name": "Leather"
-        },
-        {
-          "count": 3,
-          "name": "Iron Ingot"
-        }
-      ],
-      "station": "Smithing",
-      "time": 15
-    }
-  ],
   "name": "Wyndan Hammer",
-  "trade_price": 316.4,
-  "experiencieReward": 1197,
-  "stackSize": 100,
-  "weight": 4.5,
-  "durability": 760,
-  "weaponInfo": {
-    "weaponSpeed": 90,
-    "impact": 70,
-    "weaponLength": 61,
-    "damage": 60,
-    "penetration": 10
-  },
+  "parent": "Short Ceramic Hoofmace",
   "drops": [
     {
       "location": "Weapons Strongbox",
@@ -82,5 +50,38 @@
       "minQuantity": 1,
       "maxQuantity": 1
     }
-  ]
+  ],
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Lightwood"
+        },
+        {
+          "count": 4,
+          "name": "Leather"
+        },
+        {
+          "count": 3,
+          "name": "Iron Ingot"
+        }
+      ],
+      "station": "Smithing",
+      "time": 15
+    }
+  ],
+  "trade_price": 316.4,
+  "experiencieReward": 1197,
+  "stackSize": 100,
+  "weight": 4.5,
+  "durability": 760,
+  "weaponInfo": {
+    "weaponSpeed": 90,
+    "impact": 70,
+    "weaponLength": 61,
+    "damage": 60,
+    "penetration": 10
+  }
 }

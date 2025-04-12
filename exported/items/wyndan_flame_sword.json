@@ -1,45 +1,6 @@
 {
-  "category": "Weapons",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 10,
-          "name": "Lightwood"
-        },
-        {
-          "count": 6,
-          "name": "Triple Stitch Fabric"
-        },
-        {
-          "count": 3,
-          "name": "Iron Ingot"
-        }
-      ],
-      "station": "Smithing",
-      "time": 15
-    }
-  ],
   "name": "Wyndan Flame Sword",
-  "trade_price": 336.6,
-  "experiencieReward": 1349,
-  "stackSize": 100,
-  "weight": 4.8,
-  "durability": 800,
-  "weaponInfo": {
-    "weaponSpeed": 130,
-    "impact": 45,
-    "stability": 55,
-    "weaponLength": 96,
-    "damage": 60,
-    "penetration": 10
-  },
-  "toolInfo": [
-    {
-      "toolType": "Scythe",
-      "tier": 1
-    }
-  ],
+  "parent": "Singblade",
   "drops": [
     {
       "location": "Weapons Strongbox",
@@ -88,6 +49,46 @@
       "chance": 0.07142857,
       "minQuantity": 1,
       "maxQuantity": 1
+    }
+  ],
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Lightwood"
+        },
+        {
+          "count": 6,
+          "name": "Triple Stitch Fabric"
+        },
+        {
+          "count": 3,
+          "name": "Iron Ingot"
+        }
+      ],
+      "station": "Smithing",
+      "time": 15
+    }
+  ],
+  "trade_price": 336.6,
+  "experiencieReward": 1349,
+  "stackSize": 100,
+  "weight": 4.8,
+  "durability": 800,
+  "weaponInfo": {
+    "weaponSpeed": 130,
+    "impact": 45,
+    "stability": 55,
+    "weaponLength": 96,
+    "damage": 60,
+    "penetration": 10
+  },
+  "toolInfo": [
+    {
+      "toolType": "Scythe",
+      "tier": 1
     }
   ]
 }

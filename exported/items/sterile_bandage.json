@@ -1,4 +1,6 @@
 {
+  "name": "Sterile Bandage",
+  "parent": "Primitive Bandage",
   "category": "Interactables",
   "crafting": [
     {
@@ -14,8 +16,6 @@
       ]
     }
   ],
-  "name": "Sterile Bandage",
-  "parent": "Primitive Bandage",
   "trade_price": 1.4,
   "experiencieReward": 55,
   "stackSize": 100,

@@ -1,62 +1,26 @@
 {
-  "category": "Resources",
+  "name": "Tallow",
+  "parent": "Purification Station",
+  "category": "Liquids",
   "crafting": [
     {
       "ingredients": [
         {
-          "count": 1,
-          "name": "Wood"
-        }
-      ],
-      "station": "Fuel",
-      "time": 2
-    },
-    {
-      "ingredients": [
+          "count": 5,
+          "name": "Animal Fat"
+        },
         {
-          "count": 1,
-          "name": "Charcoal"
+          "count": 10,
+          "name": "Phosphorus"
         }
       ],
-      "station": "Fuel",
-      "time": 20
-    },
-    {
-      "ingredients": [
-        {
-          "count": 1,
-          "name": "Tallow"
-        }
-      ],
-      "station": "FurnaceBurning_Tier2",
+      "output": 5,
+      "station": "Purification Station",
       "time": 60
-    },
-    {
-      "ingredients": [
-        {
-          "count": 1,
-          "name": "Rupu Gel"
-        }
-      ],
-      "station": "FurnaceBurning_Tier2",
-      "time": 100
-    },
-    {
-      "ingredients": [
-        {
-          "count": 1,
-          "name": "Lava Fuel"
-        }
-      ],
-      "station": "FurnaceBurning_Tier2",
-      "time": 80
     }
   ],
-  "name": "Tallow",
-  "parent": "Purification Station",
-  "trade_price": 1,
-  "experiencieReward": 1,
-  "stackSize": 10000,
-  "weight": 0.01,
-  "description": "A hot-burning liquid, used in furnaces."
+  "trade_price": 3.7,
+  "experiencieReward": 3,
+  "stackSize": 100,
+  "weight": 0.5
 }

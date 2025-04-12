@@ -1,4 +1,6 @@
 {
+  "name": "Makeshift Bottle",
+  "parent": "Equipment",
   "category": "Equipment",
   "crafting": [
     {
@@ -18,8 +20,6 @@
       ]
     }
   ],
-  "name": "Makeshift Bottle",
-  "parent": "Equipment",
   "trade_price": 1.5,
   "experiencieReward": 12,
   "stackSize": 100,

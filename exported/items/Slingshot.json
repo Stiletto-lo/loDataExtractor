@@ -1,4 +1,7 @@
 {
+  "name": "Slingshot",
+  "parent": "Improved Walker Weapons",
+  "description": "Launch small rocks and bombs moderate distances. Don't hit your own deck!",
   "category": "Weapons",
   "crafting": [
     {
@@ -22,13 +25,9 @@
       ]
     }
   ],
-  "name": "Slingshot",
-  "parent": "Improved Walker Weapons",
-  "description": "Launch small rocks and bombs moderate distances. Don't hit your own deck!",
   "experiencieReward": 242,
   "structureInfo": {
     "type": "Soft",
     "hp": 3000
-  },
-  "weight": 74
+  }
 }

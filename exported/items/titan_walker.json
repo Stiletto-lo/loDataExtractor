@@ -1,4 +1,6 @@
 {
+  "name": "Titan Walker",
+  "parent": "Buffalo Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -34,14 +36,11 @@
       ]
     }
   ],
-  "name": "Titan Walker",
-  "parent": "Buffalo Walker",
   "structureInfo": {
     "type": "Hard",
     "hp": 35000
   },
   "walkerinfo": {
     "category": "Capital"
-  },
-  "weight": 34.02
+  }
 }

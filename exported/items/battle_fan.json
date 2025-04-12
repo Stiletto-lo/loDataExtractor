@@ -1,4 +1,6 @@
 {
+  "name": "Battle Fan",
+  "parent": "Flotillian Walker Weapons",
   "category": "Weapons",
   "crafting": [
     {
@@ -22,12 +24,9 @@
       ]
     }
   ],
-  "name": "Battle Fan",
-  "parent": "Flotillian Walker Weapons",
   "experiencieReward": 78,
   "structureInfo": {
     "type": "Soft",
     "hp": 5000
-  },
-  "weight": 50
+  }
 }

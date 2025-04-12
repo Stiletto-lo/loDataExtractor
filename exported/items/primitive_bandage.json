@@ -1,4 +1,6 @@
 {
+  "name": "Primitive Bandage",
+  "parent": "Equipment",
   "category": "Interactables",
   "crafting": [
     {
@@ -15,8 +17,6 @@
       "output": 4
     }
   ],
-  "name": "Primitive Bandage",
-  "parent": "Equipment",
   "trade_price": 1.2,
   "experiencieReward": 2,
   "stackSize": 100,

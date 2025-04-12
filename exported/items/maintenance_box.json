@@ -1,4 +1,6 @@
 {
+  "name": "Maintenance Box",
+  "parent": "Basic Constructions",
   "category": "Containers",
   "crafting": [
     {
@@ -18,11 +20,8 @@
       ]
     }
   ],
-  "name": "Maintenance Box",
-  "parent": "Basic Constructions",
   "structureInfo": {
     "type": "Medium",
     "hp": 5000
-  },
-  "weight": 5
+  }
 }

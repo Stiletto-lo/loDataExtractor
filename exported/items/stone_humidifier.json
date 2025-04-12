@@ -1,4 +1,6 @@
 {
+  "name": "Stone Humidifier",
+  "parent": "Maintenance Box",
   "category": "Interactables",
   "crafting": [
     {
@@ -18,8 +20,6 @@
       ]
     }
   ],
-  "name": "Stone Humidifier",
-  "parent": "Maintenance Box",
   "structureInfo": {
     "type": "Soft",
     "hp": 500

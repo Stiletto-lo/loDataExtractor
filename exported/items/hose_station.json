@@ -1,4 +1,6 @@
 {
+  "name": "Hose Station",
+  "parent": "Advanced Walker Weapons",
   "category": "Weapons",
   "crafting": [
     {
@@ -22,12 +24,9 @@
       ]
     }
   ],
-  "name": "Hose Station",
-  "parent": "Advanced Walker Weapons",
   "experiencieReward": 203,
   "structureInfo": {
     "type": "Soft",
     "hp": 5000
-  },
-  "weight": 150
+  }
 }

@@ -1,4 +1,15 @@
 {
+  "category": "Grappling Hooks",
+  "name": "Fast Grappling Hook",
+  "parent": "Nomad Grappling Hook",
+  "drops": [
+    {
+      "location": "Tools and Equipment Strongbox",
+      "chance": 0.112247304,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "crafting": [
     {
       "ingredients": [
@@ -19,16 +30,6 @@
       "time": 2
     }
   ],
-  "name": "Fast Grappling Hook",
-  "parent": "Nomad Grappling Hook",
   "trade_price": 19.4,
-  "experiencieReward": 45,
-  "drops": [
-    {
-      "location": "Tools and Equipment Strongbox",
-      "chance": 0.112247304,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    }
-  ]
+  "experiencieReward": 45
 }

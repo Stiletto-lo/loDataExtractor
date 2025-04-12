@@ -1,4 +1,6 @@
 {
+  "name": "Buffalo Walker",
+  "parent": "Stiletto Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -46,14 +48,11 @@
       ]
     }
   ],
-  "name": "Buffalo Walker",
-  "parent": "Stiletto Walker",
   "structureInfo": {
     "type": "Hard",
     "hp": 15000
   },
   "walkerinfo": {
     "category": "Large"
-  },
-  "weight": 29.44
+  }
 }

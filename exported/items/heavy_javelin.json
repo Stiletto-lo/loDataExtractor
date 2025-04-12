@@ -1,11 +1,12 @@
 {
-  "category": "Weapons",
   "name": "Heavy Javelin",
+  "parent": "Light Javelin",
+  "category": "Weapons",
   "trade_price": 1.6,
   "stackSize": 5,
   "weight": 2,
   "weaponInfo": {
-    "damage": 105,
+    "damage": 40,
     "penetration": 25
   },
   "wikiVisibility": false

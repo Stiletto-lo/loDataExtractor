@@ -1,4 +1,7 @@
 {
+  "name": "Thumper",
+  "parent": "Basic Walker Weapons",
+  "description": "At some point in their sunny life, every Nomad finds out that in some situations blasting a bunch of projectiles at the problem solves it faster than one could say \"cactus\". Uses Throwstones as ammo..",
   "category": "Weapons",
   "crafting": [
     {
@@ -22,13 +25,9 @@
       ]
     }
   ],
-  "name": "Thumper",
-  "parent": "Basic Walker Weapons",
-  "description": "At some point in their sunny life, every Nomad finds out that in some situations blasting a bunch of projectiles at the problem solves it faster than one could say \"cactus\". Uses Throwstones as ammo..",
   "experiencieReward": 78,
   "structureInfo": {
     "type": "Medium",
     "hp": 600
-  },
-  "weight": 2
+  }
 }

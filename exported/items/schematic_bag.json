@@ -1,4 +1,14 @@
 {
+  "name": "Schematic Bag",
+  "parent": "Light Backpack",
+  "drops": [
+    {
+      "location": "Tools and Equipment Strongbox",
+      "chance": 0.44898921999999997,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Equipment",
   "crafting": [
     {
@@ -18,19 +28,9 @@
       ]
     }
   ],
-  "name": "Schematic Bag",
-  "parent": "Light Backpack",
   "trade_price": 5.6,
   "experiencieReward": 26,
   "stackSize": 100,
   "weight": 0.2,
-  "durability": 70,
-  "drops": [
-    {
-      "location": "Tools and Equipment Strongbox",
-      "chance": 0.44898921999999997,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    }
-  ]
+  "durability": 70
 }

@@ -1,4 +1,6 @@
 {
+  "name": "Gun Pod Shell",
+  "parent": "Gun Pod",
   "category": "Weapons",
   "crafting": [
     {
@@ -18,8 +20,5 @@
       ]
     }
   ],
-  "name": "Gun Pod Shell",
-  "parent": "Gun Pod",
-  "experiencieReward": 34,
-  "weight": 26
+  "experiencieReward": 34
 }

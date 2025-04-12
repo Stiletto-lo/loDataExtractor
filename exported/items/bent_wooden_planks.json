@@ -1,4 +1,6 @@
 {
+  "name": "Bent Wooden Planks",
+  "parent": "Lumbermill",
   "category": "Resources",
   "crafting": [
     {
@@ -12,8 +14,6 @@
       "time": 60
     }
   ],
-  "name": "Bent Wooden Planks",
-  "parent": "Lumbermill",
   "trade_price": 0.1,
   "experiencieReward": 1,
   "stackSize": 100,

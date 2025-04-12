@@ -1,21 +1,6 @@
 {
-  "category": "Ammo",
   "name": "Scattershot Ammo",
-  "trade_price": 5.2,
-  "projectileDamage": {
-    "damage": 150,
-    "penetration": 30,
-    "effectivenessVsSoak": 50,
-    "effectivenessVsReduce": 50
-  },
-  "stackSize": 24,
-  "weight": 0.3,
-  "toolInfo": [
-    {
-      "toolType": "Scattershot",
-      "tier": 1
-    }
-  ],
+  "parent": "Scattershot Gun",
   "drops": [
     {
       "location": "AmmoBox T1",
@@ -28,92 +13,23 @@
       "chance": 0.33333332,
       "minQuantity": 2,
       "maxQuantity": 18
-    },
-    {
-      "location": "AmmoBox T2",
-      "chance": 0.33333332,
-      "minQuantity": 5,
-      "maxQuantity": 15
-    },
-    {
-      "location": "BigHotspotLoot T2",
-      "chance": 0.33333332,
-      "minQuantity": 5,
-      "maxQuantity": 15
-    },
-    {
-      "location": "AmmoBox T3",
-      "chance": 0.16,
-      "minQuantity": 5,
-      "maxQuantity": 15
-    },
-    {
-      "location": "BigHotspotLoot T3",
-      "chance": 0.16,
-      "minQuantity": 5,
-      "maxQuantity": 15
-    },
-    {
-      "location": "AmmoBox T4",
-      "chance": 0.28571428,
-      "minQuantity": 2,
-      "maxQuantity": 12
-    },
-    {
-      "location": "BigHotspotLoot T4",
-      "chance": 0.28571428,
-      "minQuantity": 2,
-      "maxQuantity": 12
     }
   ],
-  "wikiVisibility": false,
-  "crafting": [
+  "category": "Ammo",
+  "trade_price": 5.2,
+  "projectileDamage": {
+    "damage": 50,
+    "penetration": 10,
+    "effectivenessVsSoak": 50,
+    "effectivenessVsReduce": 50
+  },
+  "stackSize": 24,
+  "weight": 0.3,
+  "toolInfo": [
     {
-      "ingredients": [
-        {
-          "count": 20,
-          "name": "Stone"
-        },
-        {
-          "count": 4,
-          "name": "Fiber Weave"
-        }
-      ],
-      "output": 8,
-      "station": "Woodworking Station",
-      "time": 5
-    },
-    {
-      "ingredients": [
-        {
-          "count": 20,
-          "name": "Stone"
-        },
-        {
-          "count": 4,
-          "name": "Fiber Weave"
-        }
-      ],
-      "output": 8,
-      "station": "Advanced Woodworking Station",
-      "time": 4
-    },
-    {
-      "ingredients": [
-        {
-          "count": 20,
-          "name": "Stone"
-        },
-        {
-          "count": 4,
-          "name": "Fiber Weave"
-        }
-      ],
-      "output": 8,
-      "station": "Artificer Woodworking Station",
-      "time": 3
+      "toolType": "Scattershot",
+      "tier": 1
     }
   ],
-  "parent": "Scattershot Gun",
-  "experiencieReward": 1
+  "wikiVisibility": false
 }

@@ -1,22 +1,6 @@
 {
-  "category": "Resources",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 5,
-          "name": "Purified Water"
-        }
-      ],
-      "station": "Camp Fire",
-      "time": 360
-    }
-  ],
   "name": "Purified Water",
-  "trade_price": 0.1,
-  "experiencieReward": 1,
-  "stackSize": 10000,
-  "weight": 0.01,
+  "parent": "Camp Fire",
   "drops": [
     {
       "location": "DesertClam",
@@ -157,5 +141,164 @@
       "maxQuantity": 6
     }
   ],
-  "wikiVisibility": false
+  "category": "Liquids",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Cactus Flesh"
+        }
+      ],
+      "station": "Camp Fire",
+      "time": 35
+    },
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Cactus Flesh"
+        }
+      ],
+      "station": "Clay Pot",
+      "time": 35
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Fruit Pulp"
+        }
+      ],
+      "station": "Camp Fire",
+      "time": 35
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Fruit Pulp"
+        }
+      ],
+      "station": "Clay Pot",
+      "time": 35
+    },
+    {
+      "ingredients": [
+        {
+          "count": 50,
+          "name": "Toxic Water"
+        },
+        {
+          "count": 6,
+          "name": "Charcoal"
+        },
+        {
+          "count": 25,
+          "name": "Sand"
+        }
+      ],
+      "output": 50,
+      "station": "Purification Station",
+      "time": 150
+    },
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Toxic Water"
+        },
+        {
+          "count": 1,
+          "name": "Charcoal"
+        }
+      ],
+      "output": 3,
+      "station": "Camp Fire",
+      "time": 35
+    },
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Toxic Water"
+        },
+        {
+          "count": 1,
+          "name": "Charcoal"
+        }
+      ],
+      "output": 5,
+      "station": "Clay Pot",
+      "time": 55
+    },
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Thornberry"
+        }
+      ],
+      "station": "Camp Fire",
+      "time": 35
+    },
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Thornberry"
+        }
+      ],
+      "station": "Clay Pot",
+      "time": 35
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Huge Cactus Fruit"
+        }
+      ],
+      "output": 3,
+      "station": "Camp Fire",
+      "time": 40
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Huge Cactus Fruit"
+        }
+      ],
+      "output": 3,
+      "station": "Clay Pot",
+      "time": 40
+    },
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Aloe Vera"
+        }
+      ],
+      "output": 3,
+      "station": "Camp Fire",
+      "time": 35
+    },
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Aloe Vera"
+        }
+      ],
+      "output": 3,
+      "station": "Clay Pot",
+      "time": 35
+    }
+  ],
+  "trade_price": 3,
+  "experiencieReward": 3,
+  "stackSize": 100,
+  "weight": 0.2
 }

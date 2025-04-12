@@ -1,4 +1,6 @@
 {
+  "name": "Panda Walker",
+  "parent": "Tusker Walker",
   "category": "Walkers",
   "crafting": [
     {
@@ -46,14 +48,11 @@
       ]
     }
   ],
-  "name": "Panda Walker",
-  "parent": "Tusker Walker",
   "structureInfo": {
     "type": "Hard",
     "hp": 22500
   },
   "walkerinfo": {
     "category": "Large"
-  },
-  "weight": 34.02
+  }
 }

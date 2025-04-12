@@ -1,4 +1,20 @@
 {
+  "name": "Medium Backpack",
+  "parent": "Light Backpack",
+  "drops": [
+    {
+      "location": "Equipment Strongbox",
+      "chance": 0.2295082,
+      "minQuantity": 1,
+      "maxQuantity": 2
+    },
+    {
+      "location": "Tools and Equipment Strongbox",
+      "chance": 0.003996004,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Equipment",
   "crafting": [
     {
@@ -38,25 +54,9 @@
       "time": 2
     }
   ],
-  "name": "Medium Backpack",
-  "parent": "Light Backpack",
   "trade_price": 10.3,
   "experiencieReward": 150,
   "stackSize": 100,
   "weight": 5.2,
-  "durability": 140,
-  "drops": [
-    {
-      "location": "Equipment Strongbox",
-      "chance": 0.2295082,
-      "minQuantity": 1,
-      "maxQuantity": 2
-    },
-    {
-      "location": "Tools and Equipment Strongbox",
-      "chance": 0.003996004,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    }
-  ]
+  "durability": 140
 }

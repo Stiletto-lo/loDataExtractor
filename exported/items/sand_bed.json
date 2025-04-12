@@ -1,4 +1,6 @@
 {
+  "name": "Sand Bed",
+  "parent": "Construction",
   "category": "Interactables",
   "crafting": [
     {
@@ -14,8 +16,5 @@
       ]
     }
   ],
-  "name": "Sand Bed",
-  "parent": "Construction",
-  "experiencieReward": 21,
-  "weight": 0.84
+  "experiencieReward": 21
 }

@@ -1,37 +1,6 @@
 {
-  "category": "Weapons",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 35,
-          "name": "Rupu Vine"
-        },
-        {
-          "count": 10,
-          "name": "Stone"
-        },
-        {
-          "count": 8,
-          "name": "Rupu Pelt"
-        },
-        {
-          "count": 3,
-          "name": "Rope"
-        }
-      ]
-    }
-  ],
   "name": "Throwing Net",
   "parent": "Beat Stick",
-  "trade_price": 8.4,
-  "weight": 3,
-  "toolInfo": [
-    {
-      "toolType": "Net",
-      "tier": 1
-    }
-  ],
   "drops": [
     {
       "location": "BigHotspotLoot T1",
@@ -182,6 +151,37 @@
       "chance": 0.16129032,
       "minQuantity": 1,
       "maxQuantity": 1
+    }
+  ],
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 35,
+          "name": "Rupu Vine"
+        },
+        {
+          "count": 10,
+          "name": "Stone"
+        },
+        {
+          "count": 8,
+          "name": "Rupu Pelt"
+        },
+        {
+          "count": 3,
+          "name": "Rope"
+        }
+      ]
+    }
+  ],
+  "trade_price": 8.4,
+  "weight": 3,
+  "toolInfo": [
+    {
+      "toolType": "Net",
+      "tier": 1
     }
   ]
 }

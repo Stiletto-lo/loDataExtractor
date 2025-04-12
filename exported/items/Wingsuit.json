@@ -1,4 +1,14 @@
 {
+  "name": "Wingsuit",
+  "parent": "Nomad Grappling Hook",
+  "drops": [
+    {
+      "location": "Equipment Strongbox",
+      "chance": 0.016393442,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Equipment",
   "crafting": [
     {
@@ -30,19 +40,9 @@
       "time": 3
     }
   ],
-  "name": "Wingsuit",
-  "parent": "Nomad Grappling Hook",
   "trade_price": 29,
   "experiencieReward": 162,
   "stackSize": 100,
   "weight": 4,
-  "durability": 120,
-  "drops": [
-    {
-      "location": "Equipment Strongbox",
-      "chance": 0.016393442,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    }
-  ]
+  "durability": 120
 }

@@ -1,45 +1,156 @@
 {
-  "category": "Weapons",
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 4,
-          "name": "Wood Shaft"
-        },
-        {
-          "count": 1,
-          "name": "Nurr Fang"
-        },
-        {
-          "count": 6,
-          "name": "Rope"
-        }
-      ],
-      "station": "Crafting Bench",
-      "time": 2
-    }
-  ],
   "name": "Rawbone Maul",
-  "parent": "Jaggertooth Maul",
-  "trade_price": 24.5,
-  "experiencieReward": 100,
-  "stackSize": 100,
-  "weight": 4.5,
-  "durability": 440,
-  "weaponInfo": {
-    "weaponSpeed": 120,
-    "stability": 65,
-    "weaponLength": 80,
-    "damage": 40,
-    "penetration": 10
-  },
+  "parent": "Rawbone Maul",
   "drops": [
     {
       "location": "Weapons Strongbox",
       "chance": 0.04484305,
       "minQuantity": 1,
       "maxQuantity": 12
+    },
+    {
+      "location": "Weapon Strongbox",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "BasketLoot T2 AC",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "BigHotspotLoot T2",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "EasyRupuCamp T2",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Grave Digger (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Hermit (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Skirmisher (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HardRupuCamp T2",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Shaman (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Marshland Stalker",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Matriarch",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Priestess (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Zealot (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HotspotLoot T2",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HotspotLoot T2 AC",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "MediumRupuCamp T2",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Bounty Hunter",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Dunestalker (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Forager (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Harasser (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Hazraki (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Plainstrider (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "White Death (Medium)",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "TreasureChest T2",
+      "chance": 0.18181818,
+      "minQuantity": 1,
+      "maxQuantity": 1
     }
   ]
 }
