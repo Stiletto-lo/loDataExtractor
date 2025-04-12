@@ -1,0 +1,51 @@
+{
+  "category": "Tools",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 2,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 22,
+          "name": "Fiber"
+        },
+        {
+          "count": 8,
+          "name": "Stone"
+        },
+        {
+          "count": 2,
+          "name": "Rupu Vine"
+        }
+      ]
+    }
+  ],
+  "name": "Simple Sickle",
+  "parent": "Beat Stick",
+  "trade_price": 6.2,
+  "experiencieReward": 25,
+  "stackSize": 100,
+  "weight": 2.2,
+  "durability": 420,
+  "weaponInfo": {
+    "weaponLength": 47,
+    "damage": 20,
+    "penetration": 20
+  },
+  "toolInfo": [
+    {
+      "toolType": "Scythe",
+      "tier": 5
+    }
+  ],
+  "drops": [
+    {
+      "location": "Tools Strongbox",
+      "chance": 0.17811705,
+      "minQuantity": 1,
+      "maxQuantity": 5
+    }
+  ]
+}

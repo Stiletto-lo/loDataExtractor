@@ -1,0 +1,29 @@
+{
+  "category": "OkkamStatue",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 45,
+          "name": "Wood"
+        },
+        {
+          "count": 6,
+          "name": "Rupu Pelt"
+        },
+        {
+          "count": 10,
+          "name": "Stone"
+        }
+      ]
+    }
+  ],
+  "name": "Table",
+  "description": "Decorative furniture that also allows to place objects on it.",
+  "experiencieReward": 6,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 250
+  },
+  "weight": 3
+}

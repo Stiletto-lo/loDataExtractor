@@ -1,0 +1,62 @@
+{
+  "category": "Equipment",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 5,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 32,
+          "name": "Fiber"
+        }
+      ],
+      "station": "Advanced Fiberworking Station",
+      "time": 1
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 5,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 32,
+          "name": "Fiber"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 1
+    }
+  ],
+  "name": "Bone Bottle",
+  "parent": "Improvised Bottle",
+  "trade_price": 11.9,
+  "experiencieReward": 50,
+  "stackSize": 100,
+  "weight": 1.7,
+  "durability": 100,
+  "drops": [
+    {
+      "location": "Equipment Strongbox",
+      "chance": 0.2295082,
+      "minQuantity": 1,
+      "maxQuantity": 4
+    },
+    {
+      "location": "Tools and Equipment Strongbox",
+      "chance": 0.224494608,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

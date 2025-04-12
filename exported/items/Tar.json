@@ -1,0 +1,32 @@
+{
+  "category": "Liquids",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Tree Sap"
+        }
+      ],
+      "station": "Furnace",
+      "time": 360
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Tree Sap"
+        }
+      ],
+      "station": "Advanced Furnace",
+      "time": 180
+    }
+  ],
+  "name": "Tar",
+  "parent": "Furnace",
+  "trade_price": 3.2,
+  "description": "Extracted from deep below volcanic soil.",
+  "experiencieReward": 100,
+  "stackSize": 100,
+  "weight": 0.15
+}

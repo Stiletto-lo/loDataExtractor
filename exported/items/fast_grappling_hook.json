@@ -1,0 +1,34 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 22,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 8,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 12,
+          "name": "Rope"
+        }
+      ],
+      "station": "Crafting Bench",
+      "time": 2
+    }
+  ],
+  "name": "Fast Grappling Hook",
+  "parent": "Nomad Grappling Hook",
+  "trade_price": 19.4,
+  "experiencieReward": 45,
+  "drops": [
+    {
+      "location": "Tools and Equipment Strongbox",
+      "chance": 0.112247304,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Tree Sap"
+        },
+        {
+          "count": 20,
+          "name": "Sulfur"
+        }
+      ],
+      "output": 5,
+      "station": "Curing",
+      "time": 15
+    }
+  ],
+  "name": "Rubber Block",
+  "parent": "Curing Station",
+  "trade_price": 1.1,
+  "experiencieReward": 3,
+  "stackSize": 100,
+  "weight": 0.34
+}

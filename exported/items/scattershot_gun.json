@@ -1,0 +1,33 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 24,
+          "name": "Wood"
+        },
+        {
+          "count": 12,
+          "name": "Stone"
+        },
+        {
+          "count": 4,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 7,
+          "name": "Fiber Weave"
+        }
+      ]
+    }
+  ],
+  "name": "Scattershot Gun",
+  "parent": "Basic Walker Weapons",
+  "experiencieReward": 366,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 1050
+  },
+  "weight": 70
+}

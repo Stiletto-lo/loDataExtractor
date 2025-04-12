@@ -1,0 +1,32 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 7,
+          "name": "Wood"
+        },
+        {
+          "count": 5,
+          "name": "Fiber"
+        }
+      ]
+    }
+  ],
+  "name": "Beat Stick",
+  "parent": "Equipment",
+  "trade_price": 1.7,
+  "experiencieReward": 1,
+  "stackSize": 100,
+  "weight": 3.2,
+  "durability": 150,
+  "weaponInfo": {
+    "weaponSpeed": 110,
+    "impact": 25,
+    "stability": 20,
+    "weaponLength": 72,
+    "damage": 25,
+    "penetration": 10
+  }
+}

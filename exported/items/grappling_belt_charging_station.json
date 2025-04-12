@@ -1,0 +1,33 @@
+{
+  "category": "Interactables",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 22,
+          "name": "Rupu Vine"
+        },
+        {
+          "count": 60,
+          "name": "Stone"
+        },
+        {
+          "count": 150,
+          "name": "Wood"
+        }
+      ]
+    }
+  ],
+  "name": "Grappling Belt Charging Station",
+  "parent": "Construction",
+  "experiencieReward": 304,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 200
+  },
+  "weight": 60
+}

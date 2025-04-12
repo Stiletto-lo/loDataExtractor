@@ -1,0 +1,46 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Obsidian"
+        },
+        {
+          "count": 3,
+          "name": "Triple Stitch Fabric"
+        },
+        {
+          "count": 8,
+          "name": "Rope"
+        }
+      ],
+      "station": "Lathe",
+      "time": 2
+    }
+  ],
+  "name": "Firestone Bozdogan",
+  "parent": "Short Ceramic Hoofmace",
+  "trade_price": 104,
+  "experiencieReward": 220,
+  "stackSize": 100,
+  "weight": 6.2,
+  "durability": 780,
+  "weaponInfo": {
+    "weaponSpeed": 95,
+    "impact": 80,
+    "stability": 65,
+    "weaponLength": 83,
+    "damage": 55,
+    "penetration": 10
+  },
+  "drops": [
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.026905830000000002,
+      "minQuantity": 1,
+      "maxQuantity": 8
+    }
+  ]
+}

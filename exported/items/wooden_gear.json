@@ -1,0 +1,39 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 50,
+          "name": "Wood"
+        },
+        {
+          "count": 10,
+          "name": "Tree Sap"
+        }
+      ],
+      "station": "Advanced Woodworking Station",
+      "time": 30
+    },
+    {
+      "ingredients": [
+        {
+          "count": 50,
+          "name": "Wood"
+        },
+        {
+          "count": 10,
+          "name": "Tree Sap"
+        }
+      ],
+      "station": "Artificer Woodworking Station",
+      "time": 30
+    }
+  ],
+  "name": "Wooden Gear",
+  "parent": "Advanced Woodworking Station",
+  "trade_price": 700,
+  "experiencieReward": 25,
+  "stackSize": 100,
+  "weight": 0.55
+}

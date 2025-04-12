@@ -1,0 +1,33 @@
+{
+  "category": "Containers",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 25,
+          "name": "Redwood Wood"
+        },
+        {
+          "count": 40,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 85,
+          "name": "Clay"
+        },
+        {
+          "count": 38,
+          "name": "Wood Shaft"
+        }
+      ]
+    }
+  ],
+  "name": "Maintenance Vault",
+  "parent": "ChestBaseMaintenance_T2",
+  "experiencieReward": 32,
+  "structureInfo": {
+    "type": "Medium",
+    "hp": 5000
+  },
+  "weight": 5
+}

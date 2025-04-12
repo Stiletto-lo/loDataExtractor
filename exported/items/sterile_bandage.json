@@ -1,0 +1,23 @@
+{
+  "category": "Interactables",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 1,
+          "name": "Aloe Gel"
+        }
+      ]
+    }
+  ],
+  "name": "Sterile Bandage",
+  "parent": "Primitive Bandage",
+  "trade_price": 1.4,
+  "experiencieReward": 55,
+  "stackSize": 100,
+  "weight": 0.05
+}

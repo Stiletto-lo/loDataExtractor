@@ -1,0 +1,36 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Ceramic Bolt"
+        },
+        {
+          "count": 2,
+          "name": "Hide"
+        },
+        {
+          "count": 5,
+          "name": "Rope"
+        }
+      ],
+      "station": "Artificer Woodworking Station",
+      "time": 5
+    }
+  ],
+  "name": "Ceramic-Tipped Harpoon",
+  "parent": "Ceramic Bolt",
+  "trade_price": 14.1,
+  "projectileDamage": {
+    "damage": 20
+  },
+  "experiencieReward": 12,
+  "weight": 0.3,
+  "toolInfo": [
+    {
+      "toolType": "BallistaHarpoon",
+      "tier": 3
+    }
+  ]
+}

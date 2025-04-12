@@ -1,0 +1,20 @@
+{
+  "category": "Ammo",
+  "name": "Rupu Dart",
+  "trade_price": 1.5,
+  "projectileDamage": {
+    "damage": 20,
+    "penetration": 1.5,
+    "effectivenessVsSoak": 20,
+    "effectivenessVsReduce": 20
+  },
+  "stackSize": 28,
+  "weight": 0.6,
+  "toolInfo": [
+    {
+      "toolType": "RepeaterBolt",
+      "tier": 1
+    }
+  ],
+  "wikiVisibility": false
+}

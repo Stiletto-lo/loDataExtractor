@@ -1,0 +1,42 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Aloe Vera"
+        }
+      ],
+      "station": "Stomping Station",
+      "time": 35
+    },
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Aloe Vera"
+        }
+      ],
+      "station": "Advanced Stomping Station",
+      "time": 32
+    },
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Aloe Vera"
+        }
+      ],
+      "station": "Flotillian Stomping Station",
+      "time": 29
+    }
+  ],
+  "name": "Aloe Gel",
+  "parent": "Stomping Station",
+  "trade_price": 1.4,
+  "experiencieReward": 8,
+  "stackSize": 100,
+  "weight": 0.44,
+  "onlyDevs": true
+}

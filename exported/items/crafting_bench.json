@@ -1,0 +1,33 @@
+{
+  "category": "Crafting",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 35,
+          "name": "Wood"
+        },
+        {
+          "count": 7,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 12,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 14,
+          "name": "Bone Splinter"
+        }
+      ]
+    }
+  ],
+  "name": "Crafting Bench",
+  "parent": "Woodworking Station",
+  "experiencieReward": 85,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 1000
+  },
+  "weight": 7
+}

@@ -1,0 +1,63 @@
+{
+  "category": "Walkers",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1285,
+          "name": "Wood"
+        },
+        {
+          "count": 400,
+          "name": "Stone"
+        },
+        {
+          "count": 550,
+          "name": "Fiber"
+        },
+        {
+          "count": 18,
+          "name": "Wooden Slab"
+        },
+        {
+          "count": 130,
+          "name": "Redwood Wood"
+        },
+        {
+          "count": 42,
+          "name": "Rope"
+        },
+        {
+          "count": 36,
+          "name": "Chitin Plate"
+        },
+        {
+          "count": 82,
+          "name": "Rupu Vine"
+        },
+        {
+          "count": 20,
+          "name": "Leather"
+        },
+        {
+          "count": 55,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 1,
+          "name": "Reinforced Gear"
+        }
+      ]
+    }
+  ],
+  "name": "Hornet Walker",
+  "parent": "Stiletto Walker",
+  "structureInfo": {
+    "type": "Hard",
+    "hp": 10000
+  },
+  "walkerinfo": {
+    "category": "Large"
+  },
+  "weight": 29.44
+}

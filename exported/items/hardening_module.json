@@ -1,0 +1,38 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Spline"
+        },
+        {
+          "count": 1,
+          "name": "Spring"
+        },
+        {
+          "count": 1,
+          "name": "Rotor"
+        }
+      ],
+      "station": "Module Fabricator",
+      "time": 30
+    }
+  ],
+  "name": "Hardening Module",
+  "weight": 0.24,
+  "moduleInfo": {
+    "max": 20,
+    "increase": 2.5,
+    "maxIncrease": 50
+  },
+  "drops": [
+    {
+      "location": "Modules Strongbox",
+      "chance": 0.10526316,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

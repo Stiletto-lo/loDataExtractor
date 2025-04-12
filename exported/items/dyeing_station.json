@@ -1,0 +1,28 @@
+{
+  "category": "Crafting",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 20,
+          "name": "Wood"
+        },
+        {
+          "count": 30,
+          "name": "Fiber"
+        },
+        {
+          "count": 10,
+          "name": "Stone"
+        }
+      ]
+    }
+  ],
+  "name": "Dyeing Station",
+  "parent": "Crafting",
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 1500
+  },
+  "weight": 35
+}

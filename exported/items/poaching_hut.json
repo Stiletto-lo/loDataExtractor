@@ -1,0 +1,29 @@
+{
+  "category": "Interactables",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1000,
+          "name": "Wood"
+        },
+        {
+          "count": 50,
+          "name": "Rope"
+        },
+        {
+          "count": 100,
+          "name": "Nomad Cloth"
+        }
+      ]
+    }
+  ],
+  "name": "Poaching Hut",
+  "parent": "Defensive Tower",
+  "experiencieReward": 1000,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 5000
+  },
+  "weight": 10
+}

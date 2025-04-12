@@ -1,0 +1,29 @@
+{
+  "category": "Defenses",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 250,
+          "name": "Redwood Wood"
+        },
+        {
+          "count": 100,
+          "name": "Stone"
+        },
+        {
+          "count": 20,
+          "name": "Rope"
+        }
+      ]
+    }
+  ],
+  "name": "Barrier Base",
+  "parent": "Advanced Constructions",
+  "experiencieReward": 34,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 10000
+  },
+  "weight": 1
+}

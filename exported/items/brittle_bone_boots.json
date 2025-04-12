@@ -1,0 +1,143 @@
+{
+  "category": "Armors",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 25,
+          "name": "Cattail"
+        },
+        {
+          "count": 12,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 2,
+          "name": "Ceramic Shard"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 2
+    }
+  ],
+  "name": "Brittle Bone Boots",
+  "experiencieReward": 40,
+  "stackSize": 100,
+  "weight": 1.3,
+  "durability": 240,
+  "armorInfo": {
+    "absorbing": 5,
+    "reduction": 3,
+    "speedReduction": 3
+  },
+  "drops": [
+    {
+      "location": "BigHotspotLoot T3",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "EasyRupuCamp T3",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Ashdweller",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Drudge",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Hunter",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Plainstrider (Hard)",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Rabble",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Scuttler",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HardRupuCamp T3",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Oracle",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Overseer",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HotspotLoot T3",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "MediumRupuCamp T3",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Seeker",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "White Death (Medium)",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "TreasureChest T3",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HotspotLoot T4",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "TreasureChest T4",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

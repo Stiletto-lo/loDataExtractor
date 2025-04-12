@@ -1,0 +1,38 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 10,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 4,
+          "name": "Chitin Plate"
+        }
+      ],
+      "station": "Crafting Bench",
+      "time": 2
+    }
+  ],
+  "name": "Chitin PickAxe",
+  "durability": 504,
+  "toolInfo": [
+    {
+      "toolType": "Mining",
+      "tier": 17
+    }
+  ],
+  "drops": [
+    {
+      "location": "Tools and Equipment Strongbox",
+      "chance": 0.44898921999999997,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

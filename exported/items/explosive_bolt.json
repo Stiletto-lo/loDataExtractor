@@ -1,0 +1,32 @@
+{
+  "category": "Ammo",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 2,
+          "name": "Lava"
+        },
+        {
+          "count": 1,
+          "name": "Phosphorus"
+        }
+      ],
+      "station": "Artificer Woodworking Station",
+      "time": 3
+    }
+  ],
+  "name": "Explosive Bolt",
+  "parent": "FireBolt",
+  "trade_price": 17.8,
+  "projectileDamage": {
+    "damage": 25
+  },
+  "experiencieReward": 15,
+  "stackSize": 20,
+  "weight": 0.3
+}

@@ -1,0 +1,28 @@
+{
+  "category": "Interactables",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 125,
+          "name": "Wood"
+        },
+        {
+          "count": 6,
+          "name": "Bone Glue"
+        },
+        {
+          "count": 15,
+          "name": "Rope"
+        }
+      ]
+    }
+  ],
+  "name": "Repair Station",
+  "parent": "Rope",
+  "experiencieReward": 92,
+  "structureInfo": {
+    "hp": 1000
+  },
+  "weight": 5
+}

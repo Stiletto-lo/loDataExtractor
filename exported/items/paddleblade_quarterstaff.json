@@ -1,0 +1,43 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Ceramic Shard"
+        },
+        {
+          "count": 4,
+          "name": "Leather"
+        },
+        {
+          "count": 6,
+          "name": "Redwood Wood"
+        }
+      ],
+      "station": "Lathe",
+      "time": 2
+    }
+  ],
+  "name": "Paddleblade Quarterstaff",
+  "parent": "Rawbone Quarterstaff",
+  "trade_price": 124.2,
+  "experiencieReward": 200,
+  "stackSize": 100,
+  "weight": 5,
+  "durability": 510,
+  "weaponInfo": {
+    "weaponLength": 142,
+    "damage": 40,
+    "penetration": 20
+  },
+  "drops": [
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.026905830000000002,
+      "minQuantity": 1,
+      "maxQuantity": 8
+    }
+  ]
+}

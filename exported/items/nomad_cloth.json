@@ -1,0 +1,67 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 50,
+          "name": "Cattail"
+        },
+        {
+          "count": 1,
+          "name": "Bone Glue"
+        }
+      ],
+      "station": "Advanced Fiberworking Station",
+      "time": 60
+    },
+    {
+      "ingredients": [
+        {
+          "count": 50,
+          "name": "Cattail"
+        },
+        {
+          "count": 1,
+          "name": "Bone Glue"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 60
+    },
+    {
+      "ingredients": [
+        {
+          "count": 12,
+          "name": "Cotton"
+        },
+        {
+          "count": 6,
+          "name": "Earth Wax"
+        }
+      ],
+      "station": "Advanced Fiberworking Station",
+      "time": 16
+    },
+    {
+      "ingredients": [
+        {
+          "count": 12,
+          "name": "Cotton"
+        },
+        {
+          "count": 6,
+          "name": "Earth Wax"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 16
+    }
+  ],
+  "name": "Nomad Cloth",
+  "parent": "Advanced Fiberworking Station",
+  "trade_price": 28,
+  "experiencieReward": 65,
+  "stackSize": 100,
+  "weight": 0.24
+}

@@ -1,0 +1,25 @@
+{
+  "category": "Walker Tools",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 200,
+          "name": "Wood"
+        },
+        {
+          "count": 40,
+          "name": "Nomad Cloth"
+        }
+      ]
+    }
+  ],
+  "name": "Kite",
+  "description": "Fly a large kite above your walker and climb it for a better vantage point, or to launch wingsuits from. Walker must be moving for the kite to stay elevated.",
+  "experiencieReward": 60,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 4500
+  },
+  "weight": 1
+}

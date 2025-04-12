@@ -1,0 +1,35 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 6,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 5,
+          "name": "Ceramic Shard"
+        }
+      ],
+      "output": 10,
+      "station": "Artificer Woodworking Station",
+      "time": 5
+    }
+  ],
+  "name": "Ceramic Dart",
+  "parent": "Bone Dart",
+  "trade_price": 1.5,
+  "projectileDamage": {
+    "damage": 15.5
+  },
+  "toolInfo": [
+    {
+      "toolType": "RepeaterBolt",
+      "tier": 3
+    }
+  ]
+}

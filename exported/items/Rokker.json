@@ -1,0 +1,45 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 140,
+          "name": "Wood"
+        },
+        {
+          "count": 60,
+          "name": "Stone"
+        },
+        {
+          "count": 35,
+          "name": "Rope"
+        },
+        {
+          "count": 35,
+          "name": "Earth Wax"
+        },
+        {
+          "count": 20,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 8,
+          "name": "Leather"
+        },
+        {
+          "count": 85,
+          "name": "Ceramic Shard"
+        }
+      ]
+    }
+  ],
+  "name": "Rokker",
+  "parent": "Advanced Walker Weapons",
+  "experiencieReward": 188,
+  "structureInfo": {
+    "type": "Medium",
+    "hp": 1350
+  },
+  "weight": 100
+}

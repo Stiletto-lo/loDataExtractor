@@ -1,0 +1,38 @@
+{
+  "category": "Crafting",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 12,
+          "name": "Rope"
+        },
+        {
+          "count": 25,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 120,
+          "name": "Clay"
+        },
+        {
+          "count": 14,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 40,
+          "name": "Leather"
+        }
+      ]
+    }
+  ],
+  "name": "Furnace",
+  "parent": "Clay",
+  "description": "Advanced crafting station smelts raw ore into refined metal.",
+  "experiencieReward": 36,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 5000
+  },
+  "weight": 9.5
+}

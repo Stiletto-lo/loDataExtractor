@@ -1,0 +1,36 @@
+{
+  "category": "Crafting",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Stone"
+        },
+        {
+          "count": 5,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 10,
+          "name": "Clay"
+        },
+        {
+          "count": 2,
+          "name": "Rope"
+        },
+        {
+          "count": 10,
+          "name": "Redwood Wood"
+        }
+      ]
+    }
+  ],
+  "name": "Clay Pot",
+  "parent": "Clay",
+  "experiencieReward": 40,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 500
+  }
+}

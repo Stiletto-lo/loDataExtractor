@@ -1,0 +1,189 @@
+{
+  "category": "Armors",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 12,
+          "name": "Triple Stitch Fabric"
+        }
+      ],
+      "station": "Advanced Fiberworking Station",
+      "time": 3
+    },
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 12,
+          "name": "Triple Stitch Fabric"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 2
+    }
+  ],
+  "name": "Triple Stitch Armor",
+  "trade_price": 32,
+  "experiencieReward": 80,
+  "stackSize": 100,
+  "weight": 3.8,
+  "durability": 250,
+  "armorInfo": {
+    "reduction": 6,
+    "speedReduction": 1
+  },
+  "drops": [
+    {
+      "location": "Armor Strongbox",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "BasketLoot T2 AC",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "BigHotspotLoot T2",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "EasyRupuCamp T2",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Grave Digger (Medium)",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Hermit (Medium)",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Skirmisher (Medium)",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HardRupuCamp T2",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Shaman (Medium)",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Marshland Stalker",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Matriarch",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Priestess (Medium)",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Zealot (Medium)",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HotspotLoot T2",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HotspotLoot T2 AC",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "MediumRupuCamp T2",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Bounty Hunter",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Dunestalker (Medium)",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Forager (Medium)",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Harasser (Medium)",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Hazraki (Medium)",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Plainstrider (Medium)",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "White Death (Medium)",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "TreasureChest T2",
+      "chance": 0.22222222,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

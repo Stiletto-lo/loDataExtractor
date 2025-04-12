@@ -1,0 +1,26 @@
+{
+  "name": "Clay",
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Terrain: Clay Spots"
+        },
+        {
+          "count": 10,
+          "name": "Ash"
+        }
+      ],
+      "output": 5,
+      "station": "Soil Excavator",
+      "time": 2
+    }
+  ],
+  "parent": "Soil Excavator",
+  "trade_price": 0.1,
+  "experiencieReward": 1,
+  "stackSize": 100,
+  "weight": 0.35
+}

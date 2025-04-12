@@ -1,0 +1,29 @@
+{
+  "category": "Armors",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 2,
+          "name": "Worm Silk"
+        },
+        {
+          "count": 2,
+          "name": "Rope"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 2
+    }
+  ],
+  "name": "Feather Boots",
+  "parent": "RainBoots",
+  "trade_price": 34,
+  "experiencieReward": 413,
+  "stackSize": 100,
+  "weight": 0.4,
+  "durability": 1000,
+  "armorInfo": {
+    "reduction": 2
+  }
+}

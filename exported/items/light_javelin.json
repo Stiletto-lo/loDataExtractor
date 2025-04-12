@@ -1,0 +1,179 @@
+{
+  "category": "Weapons",
+  "name": "Light Javelin",
+  "trade_price": 1.6,
+  "stackSize": 20,
+  "weight": 2,
+  "weaponInfo": {
+    "damage": 50
+  },
+  "drops": [
+    {
+      "location": "BigHotspotLoot T1",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "EasyRupuCamp T1",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Rupu Forerunner (Easy)",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Rupu Scavenger (Easy)",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Rupu Thug (Easy)",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Cowardly Rupu",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Green Rupu",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Yellow Rupu",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Rupu Hero",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Rupu Warrior",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Rupu Berserker",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Rupu Forerunner",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Rupu Oracle",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Rupu Overseer",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Rupu Priestess",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Prophet",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Tar Dweller",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Zharvakko",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "HardRupuCamp T1",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Rupu Sentinel (Easy)",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "HotspotLoot T1",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "MediumRupuCamp T1",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Rupu Harasser (Easy)",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Rupu Skirmisher (Easy)",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "TreasureChest T1",
+      "chance": 0.16129032,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    }
+  ],
+  "wikiVisibility": false,
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 1,
+          "name": "Stone"
+        }
+      ],
+      "output": 3
+    }
+  ],
+  "parent": "Beat Stick"
+}

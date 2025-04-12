@@ -1,0 +1,29 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Aloe Gel"
+        },
+        {
+          "count": 6,
+          "name": "Cotton"
+        },
+        {
+          "count": 2,
+          "name": "Rope"
+        }
+      ],
+      "station": "Curing",
+      "time": 2
+    }
+  ],
+  "name": "Throwable Aloe Bomb",
+  "parent": "Aloe Goo Bomb",
+  "trade_price": 16.9,
+  "experiencieReward": 20,
+  "stackSize": 5,
+  "weight": 0.3
+}

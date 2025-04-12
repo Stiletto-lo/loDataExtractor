@@ -1,0 +1,43 @@
+{
+  "category": "Walkers",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 295,
+          "name": "Wood"
+        },
+        {
+          "count": 23,
+          "name": "Rope"
+        },
+        {
+          "count": 87,
+          "name": "Fiber"
+        },
+        {
+          "count": 2,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 50,
+          "name": "Stone"
+        },
+        {
+          "count": 1,
+          "name": "Wooden Gear"
+        }
+      ]
+    }
+  ],
+  "name": "Stiletto Walker",
+  "parent": "Dinghy Walker",
+  "structureInfo": {
+    "type": "Hard",
+    "hp": 9500
+  },
+  "walkerinfo": {
+    "category": "Medium"
+  },
+  "weight": 29.44
+}

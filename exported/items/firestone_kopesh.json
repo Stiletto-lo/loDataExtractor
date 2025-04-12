@@ -1,0 +1,52 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Rope"
+        },
+        {
+          "count": 3,
+          "name": "Obsidian"
+        },
+        {
+          "count": 12,
+          "name": "Bone Splinter"
+        }
+      ],
+      "station": "Lathe",
+      "time": 2
+    }
+  ],
+  "name": "Firestone Kopesh",
+  "parent": "Short Malletblade",
+  "trade_price": 103,
+  "experiencieReward": 210,
+  "stackSize": 100,
+  "weight": 4.2,
+  "durability": 685,
+  "weaponInfo": {
+    "weaponSpeed": 105,
+    "impact": 45,
+    "stability": 40,
+    "weaponLength": 69,
+    "damage": 55,
+    "penetration": 10
+  },
+  "toolInfo": [
+    {
+      "toolType": "Scythe",
+      "tier": 1
+    }
+  ],
+  "drops": [
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.026905830000000002,
+      "minQuantity": 1,
+      "maxQuantity": 8
+    }
+  ]
+}

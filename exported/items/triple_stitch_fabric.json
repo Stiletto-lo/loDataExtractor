@@ -1,0 +1,41 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 10,
+          "name": "Tree Sap"
+        }
+      ],
+      "output": 10,
+      "station": "Curing",
+      "time": 30
+    },
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Tree Sap"
+        },
+        {
+          "count": 15,
+          "name": "Cotton"
+        }
+      ],
+      "output": 15,
+      "station": "Curing",
+      "time": 20
+    }
+  ],
+  "name": "Triple Stitch Fabric",
+  "parent": "Curing Station",
+  "trade_price": 28,
+  "experiencieReward": 6,
+  "stackSize": 100,
+  "weight": 0.24
+}

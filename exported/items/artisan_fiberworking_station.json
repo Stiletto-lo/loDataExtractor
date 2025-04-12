@@ -1,0 +1,33 @@
+{
+  "category": "Crafting",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 35,
+          "name": "Wood"
+        },
+        {
+          "count": 65,
+          "name": "Chitin Plate"
+        },
+        {
+          "count": 35,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 12,
+          "name": "Wood Shaft"
+        }
+      ]
+    }
+  ],
+  "name": "Artisan Fiberworking Station",
+  "parent": "Advanced Fiberworking Station",
+  "experiencieReward": 235,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 3000
+  },
+  "weight": 8.5
+}

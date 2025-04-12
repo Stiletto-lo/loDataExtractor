@@ -1,0 +1,46 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 3,
+          "name": "Ceramic Shard"
+        },
+        {
+          "count": 4,
+          "name": "Nomad Cloth"
+        }
+      ],
+      "station": "Lathe",
+      "time": 2
+    }
+  ],
+  "name": "Short Ceramic Hoofmace",
+  "parent": "Rawbone Club",
+  "trade_price": 75.8,
+  "experiencieReward": 200,
+  "stackSize": 100,
+  "weight": 4.1,
+  "durability": 520,
+  "weaponInfo": {
+    "weaponSpeed": 110,
+    "impact": 45,
+    "stability": 45,
+    "weaponLength": 50,
+    "damage": 50,
+    "penetration": 10
+  },
+  "drops": [
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.026905830000000002,
+      "minQuantity": 1,
+      "maxQuantity": 8
+    }
+  ]
+}

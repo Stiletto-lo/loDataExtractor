@@ -1,0 +1,57 @@
+{
+  "category": "Equipment",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 22,
+          "name": "Rupu Vine"
+        },
+        {
+          "count": 4,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 30,
+          "name": "Earth Wax"
+        },
+        {
+          "count": 85,
+          "name": "Wood"
+        }
+      ],
+      "station": "Advanced Fiberworking Station",
+      "time": 1
+    },
+    {
+      "ingredients": [
+        {
+          "count": 22,
+          "name": "Rupu Vine"
+        },
+        {
+          "count": 4,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 30,
+          "name": "Earth Wax"
+        },
+        {
+          "count": 85,
+          "name": "Wood"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 1
+    }
+  ],
+  "name": "Torque Backpack",
+  "parent": "Torque Battery",
+  "trade_price": 48.5,
+  "experiencieReward": 154,
+  "stackSize": 100,
+  "weight": 0.5,
+  "durability": 200,
+  "onlyDevs": true
+}

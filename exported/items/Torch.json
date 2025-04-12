@@ -1,0 +1,32 @@
+{
+  "category": "Tools",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 12,
+          "name": "Wood"
+        },
+        {
+          "count": 9,
+          "name": "Fiber"
+        },
+        {
+          "count": 2,
+          "name": "Stone"
+        }
+      ]
+    }
+  ],
+  "name": "Torch",
+  "parent": "Beat Stick",
+  "trade_price": 3.2,
+  "stackSize": 100,
+  "weight": 0.8,
+  "durability": 100,
+  "weaponInfo": {
+    "weaponLength": 31,
+    "damage": 25,
+    "penetration": 5
+  }
+}

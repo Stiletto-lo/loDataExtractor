@@ -1,0 +1,38 @@
+{
+  "category": "Equipment",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Obsidian"
+        },
+        {
+          "count": 50,
+          "name": "Ash"
+        },
+        {
+          "count": 50,
+          "name": "Fiber"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 2
+    }
+  ],
+  "name": "Obsidian Flask",
+  "parent": "Ceramic Bottle",
+  "trade_price": 23,
+  "experiencieReward": 50,
+  "stackSize": 100,
+  "weight": 1,
+  "durability": 200,
+  "drops": [
+    {
+      "location": "Equipment Strongbox",
+      "chance": 0.08196721,
+      "minQuantity": 1,
+      "maxQuantity": 2
+    }
+  ]
+}

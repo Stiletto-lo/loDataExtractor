@@ -1,0 +1,48 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Insects"
+        }
+      ],
+      "station": "Stomping Station",
+      "time": 25
+    },
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Insects"
+        }
+      ],
+      "station": "Advanced Stomping Station",
+      "time": 15
+    },
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Insects"
+        }
+      ],
+      "station": "Flotillian Stomping Station",
+      "time": 5
+    }
+  ],
+  "name": "Chitin Plate",
+  "trade_price": 6.6,
+  "experiencieReward": 15,
+  "stackSize": 100,
+  "weight": 0.01,
+  "drops": [
+    {
+      "location": "Okkam T3",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

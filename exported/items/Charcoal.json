@@ -1,0 +1,51 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Wood"
+        }
+      ],
+      "station": "FuelBurning",
+      "time": 21
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Wood"
+        }
+      ],
+      "station": "Furnace",
+      "time": 300
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Wood"
+        }
+      ],
+      "station": "FuelLightSource",
+      "time": 72
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Wooden Slab"
+        }
+      ],
+      "station": "FuelBurning",
+      "time": 600
+    }
+  ],
+  "name": "Charcoal",
+  "parent": "Camp Fire",
+  "trade_price": 0.1,
+  "experiencieReward": 1,
+  "stackSize": 100,
+  "weight": 0.15
+}

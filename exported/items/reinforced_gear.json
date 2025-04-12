@@ -1,0 +1,29 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 50,
+          "name": "Wood"
+        },
+        {
+          "count": 10,
+          "name": "Tree Sap"
+        },
+        {
+          "count": 10,
+          "name": "Ceramic Shard"
+        }
+      ],
+      "station": "Artificer Woodworking Station",
+      "time": 30
+    }
+  ],
+  "name": "Reinforced Gear",
+  "parent": "Wooden Gear",
+  "trade_price": 700,
+  "experiencieReward": 25,
+  "stackSize": 100,
+  "weight": 0.55
+}

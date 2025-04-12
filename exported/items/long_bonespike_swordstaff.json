@@ -1,0 +1,52 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Nurr Fang"
+        },
+        {
+          "count": 4,
+          "name": "Rope"
+        },
+        {
+          "count": 6,
+          "name": "Wood Shaft"
+        }
+      ],
+      "station": "Crafting Bench",
+      "time": 2
+    }
+  ],
+  "name": "Long Bonespike Swordstaff",
+  "parent": "Bonespike Sword",
+  "trade_price": 14.4,
+  "experiencieReward": 100,
+  "stackSize": 100,
+  "weight": 4.6,
+  "durability": 500,
+  "weaponInfo": {
+    "weaponSpeed": 105,
+    "impact": 60,
+    "stability": 65,
+    "weaponLength": 124,
+    "damage": 45,
+    "penetration": 10
+  },
+  "toolInfo": [
+    {
+      "toolType": "Scythe",
+      "tier": 1
+    }
+  ],
+  "drops": [
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.04484305,
+      "minQuantity": 1,
+      "maxQuantity": 12
+    }
+  ]
+}

@@ -225,18 +225,63 @@ if (allItems.length > 0) {
 		}
 	}
 
-	allItems.sort(orderByCategoryAndName);
+	// Create items_min.json with only category, name, crafting and projectileDamage
+	const minItems = allItems.map(item => {
+		const minItem = {};
+		// Only include the required fields
+		if (item.category) {
+			minItem.category = item.category;
+		}
+		if (item.name) {
+			minItem.name = item.name;
+		}
+		if (item.crafting) {
+			minItem.crafting = item.crafting;
+		}
+		if (item.projectileDamage) {
+			minItem.projectileDamage = item.projectileDamage;
+		}
+		return minItem;
+	});
+
+	minItems.sort(orderByCategoryAndName);
 	fs.writeFile(
 		`${folderPatch}items_min.json`,
-		JSON.stringify(allItems),
+		JSON.stringify(minItems),
 		(err) => {
 			if (err) {
-				console.error("Error creating the file");
+				console.error("Error creating the items_min.json file");
 			} else {
-				console.log("Items.min exported");
+				console.log("Items_min.json exported");
 			}
 		},
 	);
+
+	// Create individual JSON files for each item
+	const itemsFolder = `${folderPatch}items`;
+	fs.ensureDirSync(itemsFolder);
+
+	for (const item of allItems) {
+		if (item.name) {
+			// Convert item name to snake_case and make it safe for filenames
+			const snakeCaseName = item.name
+				.toLowerCase()
+				.replace(/\s+/g, '_')     // Replace spaces with underscores
+				.replace(/[^a-z0-9_]/g, '') // Remove any non-alphanumeric characters except underscores
+				.replace(/_+/g, '_');       // Replace multiple underscores with a single one
+
+			fs.writeFile(
+				`${itemsFolder}/${snakeCaseName}.json`,
+				JSON.stringify(item, null, 2),
+				(err) => {
+					if (err) {
+						console.error(`Error creating individual file for ${item.name}`);
+					}
+				},
+			);
+		}
+	}
+	console.log("Individual item JSON files exported");
 }
 
 let creatures = fileParser.getCreatures();

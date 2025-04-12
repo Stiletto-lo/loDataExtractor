@@ -1,0 +1,35 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 8,
+          "name": "Stone"
+        },
+        {
+          "count": 4,
+          "name": "Hide"
+        },
+        {
+          "count": 6,
+          "name": "Fiber Weave"
+        }
+      ]
+    }
+  ],
+  "name": "Jaggertooth Maul",
+  "parent": "Jaggertooth Club",
+  "trade_price": 5.4,
+  "experiencieReward": 10,
+  "stackSize": 100,
+  "weight": 10.8,
+  "durability": 340,
+  "weaponInfo": {
+    "weaponSpeed": 110,
+    "stability": 60,
+    "weaponLength": 77,
+    "damage": 35,
+    "penetration": 10
+  }
+}

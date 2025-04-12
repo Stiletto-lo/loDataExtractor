@@ -1,0 +1,33 @@
+{
+  "category": "Crafting",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 25,
+          "name": "Iron Gear"
+        },
+        {
+          "count": 10,
+          "name": "Hollowbone"
+        },
+        {
+          "count": 12,
+          "name": "Gelatinous Goo"
+        },
+        {
+          "count": 100,
+          "name": "Lightwood"
+        }
+      ]
+    }
+  ],
+  "name": "Advanced Furnace",
+  "parent": "Furnace",
+  "experiencieReward": 36,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 5000
+  },
+  "weight": 15
+}

@@ -1,0 +1,41 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 3,
+          "name": "Wood Shaft"
+        }
+      ],
+      "station": "Crafting Bench",
+      "time": 2
+    }
+  ],
+  "name": "Rawbone Club",
+  "parent": "Nurrfang Toothclub",
+  "trade_price": 14,
+  "experiencieReward": 55,
+  "stackSize": 100,
+  "weight": 2.8,
+  "durability": 430,
+  "weaponInfo": {
+    "impact": 50,
+    "stability": 40,
+    "weaponLength": 75,
+    "damage": 45,
+    "penetration": 10
+  },
+  "drops": [
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.04484305,
+      "minQuantity": 1,
+      "maxQuantity": 12
+    }
+  ]
+}

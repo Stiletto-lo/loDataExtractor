@@ -1,0 +1,33 @@
+{
+  "category": "Containers",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 2,
+          "name": "Rupu Pelt"
+        },
+        {
+          "count": 15,
+          "name": "Fiber"
+        },
+        {
+          "count": 4,
+          "name": "Hide"
+        }
+      ]
+    }
+  ],
+  "name": "Small Water Bag",
+  "parent": "Construction",
+  "experiencieReward": 38,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 1000
+  },
+  "weight": 3
+}

@@ -1,0 +1,37 @@
+{
+  "category": "Containers",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 12,
+          "name": "Wood"
+        },
+        {
+          "count": 2,
+          "name": "Bone Glue"
+        },
+        {
+          "count": 16,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 12,
+          "name": "Stone"
+        },
+        {
+          "count": 4,
+          "name": "Rope"
+        }
+      ]
+    }
+  ],
+  "name": "Ammo Scroll Rack",
+  "parent": "Ammo Chest",
+  "experiencieReward": 50,
+  "structureInfo": {
+    "hp": 750
+  },
+  "onlyDevs": true,
+  "weight": 23
+}

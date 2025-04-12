@@ -1,0 +1,43 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 8,
+          "name": "Rope"
+        },
+        {
+          "count": 2,
+          "name": "Bone Glue"
+        },
+        {
+          "count": 7,
+          "name": "Wood Shaft"
+        }
+      ],
+      "station": "Crafting Bench",
+      "time": 2
+    }
+  ],
+  "name": "Rawbone Quarterstaff",
+  "parent": "Blunt Quarterstaff",
+  "trade_price": 8,
+  "experiencieReward": 55,
+  "stackSize": 100,
+  "weight": 3.48,
+  "durability": 1000,
+  "weaponInfo": {
+    "weaponLength": 145,
+    "damage": 32,
+    "penetration": 20
+  },
+  "drops": [
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.04484305,
+      "minQuantity": 1,
+      "maxQuantity": 12
+    }
+  ]
+}

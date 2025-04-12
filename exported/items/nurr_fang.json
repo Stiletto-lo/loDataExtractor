@@ -1,0 +1,22 @@
+{
+  "category": "Resources",
+  "name": "Nurr Fang",
+  "trade_price": 0.4,
+  "experiencieReward": 8,
+  "stackSize": 100,
+  "weight": 0.28,
+  "drops": [
+    {
+      "location": "LargeNurr T2",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Nurr T2",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

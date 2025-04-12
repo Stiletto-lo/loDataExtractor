@@ -1,0 +1,28 @@
+{
+  "category": "Containers",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 15,
+          "name": "Wood"
+        },
+        {
+          "count": 25,
+          "name": "Fiber"
+        },
+        {
+          "count": 8,
+          "name": "Stone"
+        }
+      ]
+    }
+  ],
+  "name": "Maintenance Box",
+  "parent": "Basic Constructions",
+  "structureInfo": {
+    "type": "Medium",
+    "hp": 5000
+  },
+  "weight": 5
+}

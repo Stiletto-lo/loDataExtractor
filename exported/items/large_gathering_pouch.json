@@ -1,0 +1,40 @@
+{
+  "category": "Equipment",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 8,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 3,
+          "name": "Beeswax"
+        }
+      ],
+      "station": "Advanced Fiberworking Station",
+      "time": 1
+    },
+    {
+      "ingredients": [
+        {
+          "count": 8,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 3,
+          "name": "Beeswax"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 1
+    }
+  ],
+  "name": "Large Gathering Pouch",
+  "parent": "Foraging Pouch",
+  "trade_price": 10,
+  "experiencieReward": 83,
+  "stackSize": 100,
+  "weight": 0.5,
+  "durability": 100
+}

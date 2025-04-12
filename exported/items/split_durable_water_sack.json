@@ -1,0 +1,41 @@
+{
+  "category": "Equipment",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 12,
+          "name": "Iron Ingot"
+        },
+        {
+          "count": 35,
+          "name": "Palm Leaves"
+        },
+        {
+          "count": 112,
+          "name": "Fiber"
+        },
+        {
+          "count": 15,
+          "name": "Beeswax"
+        }
+      ],
+      "station": "Smithing",
+      "time": 60
+    }
+  ],
+  "name": "Split Durable Water Sack",
+  "trade_price": 143.4,
+  "experiencieReward": 300,
+  "stackSize": 100,
+  "weight": 3,
+  "durability": 380,
+  "drops": [
+    {
+      "location": "Equipment Strongbox",
+      "chance": 0.016393442,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

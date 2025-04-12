@@ -1,0 +1,51 @@
+{
+  "category": "Walkers",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1615,
+          "name": "Wood"
+        },
+        {
+          "count": 950,
+          "name": "Fiber"
+        },
+        {
+          "count": 190,
+          "name": "Stone"
+        },
+        {
+          "count": 39,
+          "name": "Rope"
+        },
+        {
+          "count": 42,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 200,
+          "name": "Obsidian"
+        },
+        {
+          "count": 12,
+          "name": "Tar"
+        },
+        {
+          "count": 1,
+          "name": "Reinforced Gear"
+        }
+      ]
+    }
+  ],
+  "name": "Silur Walker",
+  "parent": "Balang Walker",
+  "structureInfo": {
+    "type": "Solid",
+    "hp": 75000
+  },
+  "walkerinfo": {
+    "category": "Large"
+  },
+  "weight": 50
+}

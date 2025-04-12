@@ -1,0 +1,33 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 4,
+          "name": "Wood"
+        },
+        {
+          "count": 2,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 8,
+          "name": "Fiber"
+        },
+        {
+          "count": 1,
+          "name": "Wood Shaft"
+        }
+      ]
+    }
+  ],
+  "name": "Stinger",
+  "parent": "Basic Walker Weapons",
+  "experiencieReward": 78,
+  "structureInfo": {
+    "type": "Medium",
+    "hp": 500
+  },
+  "weight": 2
+}

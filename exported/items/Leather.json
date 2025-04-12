@@ -1,0 +1,26 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 2,
+          "name": "Hide"
+        },
+        {
+          "count": 10,
+          "name": "Salt Rock"
+        }
+      ],
+      "station": "Curing",
+      "time": 5
+    }
+  ],
+  "name": "Leather",
+  "parent": "Curing Station",
+  "trade_price": 1.1,
+  "description": "Cured leather is one of the most universal materials available to Nomads, far superior to using crude, unprocessed animal hides.",
+  "experiencieReward": 3,
+  "stackSize": 100,
+  "weight": 0.34
+}

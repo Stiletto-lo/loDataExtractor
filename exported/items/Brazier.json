@@ -1,0 +1,23 @@
+{
+  "category": "Furniture",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Wood"
+        },
+        {
+          "count": 20,
+          "name": "Fiber"
+        }
+      ]
+    }
+  ],
+  "name": "Brazier",
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 300
+  },
+  "weight": 20
+}

@@ -1,0 +1,74 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Fiber"
+        }
+      ],
+      "station": "Fiberworking Station",
+      "time": 5
+    },
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Fiber"
+        }
+      ],
+      "station": "Advanced Fiberworking Station",
+      "time": 2
+    },
+    {
+      "ingredients": [
+        {
+          "count": 600,
+          "name": "Fiber"
+        }
+      ],
+      "output": 100,
+      "station": "Fiberworking Station",
+      "time": 500
+    },
+    {
+      "ingredients": [
+        {
+          "count": 600,
+          "name": "Fiber"
+        }
+      ],
+      "output": 100,
+      "station": "Advanced Fiberworking Station",
+      "time": 200
+    },
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Fiber"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 1
+    },
+    {
+      "ingredients": [
+        {
+          "count": 600,
+          "name": "Fiber"
+        }
+      ],
+      "output": 100,
+      "station": "Artisan Fiberworking Station",
+      "time": 100
+    }
+  ],
+  "name": "Fiber Weave",
+  "parent": "Fiberworking Station",
+  "trade_price": 0.8,
+  "experiencieReward": 1,
+  "stackSize": 100,
+  "weight": 0.11
+}

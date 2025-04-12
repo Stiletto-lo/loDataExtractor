@@ -1,0 +1,44 @@
+{
+  "category": "Schematics",
+  "name": "Concrete Walls Schematic",
+  "stackSize": 100,
+  "drops": [
+    {
+      "location": "EasyRupu T4",
+      "chance": 0.05882353,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "Rupu Firebrand",
+      "chance": 0.05882353,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "Koa T4",
+      "chance": 0.05882353,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "MediumRupu T4",
+      "chance": 0.05882353,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    }
+  ],
+  "learn": [
+    "Cement Wall With Windows 2",
+    "Cement Wall With Windows 1",
+    "Cement Wall With Window 2",
+    "Cement Wall With Window 1",
+    "Cement Floor / Roof",
+    "Cement Foundation",
+    "Cement Door",
+    "Cement Corner",
+    "Cement Battlements",
+    "Cement Wall 2",
+    "Cement Wall 1"
+  ]
+}

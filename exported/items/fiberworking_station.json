@@ -1,0 +1,33 @@
+{
+  "category": "Crafting",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 30,
+          "name": "Wood"
+        },
+        {
+          "count": 25,
+          "name": "Fiber"
+        },
+        {
+          "count": 8,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 4,
+          "name": "Rupu Vine"
+        }
+      ]
+    }
+  ],
+  "name": "Fiberworking Station",
+  "parent": "Crafting",
+  "experiencieReward": 36,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 900
+  },
+  "weight": 5
+}

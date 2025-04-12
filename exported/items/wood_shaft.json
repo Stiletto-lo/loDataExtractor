@@ -1,0 +1,73 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 2,
+          "name": "Wood"
+        }
+      ],
+      "station": "Woodworking Station",
+      "time": 5
+    },
+    {
+      "ingredients": [
+        {
+          "count": 2,
+          "name": "Wood"
+        }
+      ],
+      "station": "Advanced Woodworking Station",
+      "time": 4
+    },
+    {
+      "ingredients": [
+        {
+          "count": 2,
+          "name": "Wood"
+        }
+      ],
+      "station": "Artificer Woodworking Station",
+      "time": 3
+    },
+    {
+      "ingredients": [
+        {
+          "count": 800,
+          "name": "Wood"
+        }
+      ],
+      "output": 400,
+      "station": "Woodworking Station",
+      "time": 2000
+    },
+    {
+      "ingredients": [
+        {
+          "count": 800,
+          "name": "Wood"
+        }
+      ],
+      "output": 400,
+      "station": "Advanced Woodworking Station",
+      "time": 2000
+    },
+    {
+      "ingredients": [
+        {
+          "count": 800,
+          "name": "Wood"
+        }
+      ],
+      "output": 400,
+      "station": "Artificer Woodworking Station",
+      "time": 2000
+    }
+  ],
+  "name": "Wood Shaft",
+  "parent": "Woodworking Station",
+  "trade_price": 0.4,
+  "stackSize": 100,
+  "weight": 0.21
+}

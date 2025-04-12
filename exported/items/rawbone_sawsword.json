@@ -1,0 +1,50 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 4,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 2,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 8,
+          "name": "Rupu Vine"
+        }
+      ]
+    }
+  ],
+  "name": "Rawbone Sawsword",
+  "parent": "Jaggertooth Swordclub",
+  "trade_price": 15,
+  "experiencieReward": 100,
+  "stackSize": 100,
+  "weight": 3.8,
+  "durability": 500,
+  "weaponInfo": {
+    "weaponSpeed": 110,
+    "impact": 50,
+    "stability": 60,
+    "weaponLength": 122,
+    "damage": 35,
+    "penetration": 10
+  },
+  "toolInfo": [
+    {
+      "toolType": "Scythe",
+      "tier": 1
+    }
+  ],
+  "drops": [
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.04484305,
+      "minQuantity": 1,
+      "maxQuantity": 12
+    }
+  ]
+}

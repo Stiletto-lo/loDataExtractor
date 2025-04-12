@@ -1,0 +1,33 @@
+{
+  "category": "Equipment",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Worm Silk"
+        },
+        {
+          "count": 14,
+          "name": "Nomad Cloth"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 2
+    }
+  ],
+  "name": "Heavy Backpack",
+  "parent": "Medium Backpack",
+  "trade_price": 131.5,
+  "stackSize": 100,
+  "weight": 7.5,
+  "durability": 500,
+  "drops": [
+    {
+      "location": "Equipment Strongbox",
+      "chance": 0.016393442,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

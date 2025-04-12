@@ -1,0 +1,43 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 2,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 22,
+          "name": "Fiber"
+        },
+        {
+          "count": 10,
+          "name": "Stone"
+        },
+        {
+          "count": 10,
+          "name": "Bone Splinter"
+        }
+      ],
+      "station": "Crafting Bench",
+      "time": 2
+    }
+  ],
+  "name": "Bone Sickle",
+  "parent": "Simple Sickle",
+  "durability": 550,
+  "toolInfo": [
+    {
+      "toolType": "Scythe",
+      "tier": 10
+    }
+  ],
+  "drops": [
+    {
+      "location": "Tools and Equipment Strongbox",
+      "chance": 0.44898921999999997,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

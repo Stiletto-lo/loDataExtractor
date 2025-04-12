@@ -1,0 +1,34 @@
+{
+  "category": "Equipment",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 8,
+          "name": "Ceramic Shard"
+        },
+        {
+          "count": 1,
+          "name": "Rope"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 1
+    }
+  ],
+  "name": "Ceramic Flask",
+  "parent": "Bone Bottle",
+  "trade_price": 71.6,
+  "experiencieReward": 65,
+  "stackSize": 100,
+  "weight": 2,
+  "durability": 150,
+  "drops": [
+    {
+      "location": "Equipment Strongbox",
+      "chance": 0.08196721,
+      "minQuantity": 1,
+      "maxQuantity": 2
+    }
+  ]
+}

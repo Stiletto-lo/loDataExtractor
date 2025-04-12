@@ -1,0 +1,28 @@
+{
+  "category": "Clay",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 20,
+          "name": "Cattail"
+        },
+        {
+          "count": 3,
+          "name": "Wooden Slab"
+        },
+        {
+          "count": 15,
+          "name": "Clay"
+        }
+      ]
+    }
+  ],
+  "name": "Wall with Windows",
+  "experiencieReward": 32,
+  "weight": 7,
+  "structureInfo": {
+    "type": "Solid",
+    "hp": 20000
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "category": "Ammo",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 8,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 6,
+          "name": "Lava"
+        },
+        {
+          "count": 3,
+          "name": "Phosphorus"
+        }
+      ],
+      "output": 8,
+      "station": "Artificer Woodworking Station",
+      "time": 4
+    }
+  ],
+  "name": "Explosive Dart",
+  "parent": "Fire Dart",
+  "trade_price": 49.8,
+  "projectileDamage": {
+    "damage": 500,
+    "penetration": 50,
+    "effectivenessVsSoak": 25,
+    "effectivenessVsReduce": 25
+  },
+  "stackSize": 28,
+  "weight": 0.6,
+  "toolInfo": [
+    {
+      "toolType": "SlingshotRock",
+      "tier": 1
+    }
+  ],
+  "wikiVisibility": false
+}

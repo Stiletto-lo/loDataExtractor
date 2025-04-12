@@ -1,0 +1,54 @@
+{
+  "category": "Vitamins",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Nurr Fang"
+        },
+        {
+          "count": 6,
+          "name": "Beeswax"
+        },
+        {
+          "count": 6,
+          "name": "Sulfur"
+        },
+        {
+          "count": 1,
+          "name": "Glass"
+        }
+      ],
+      "station": "Camp Fire",
+      "time": 60
+    },
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Nurr Fang"
+        },
+        {
+          "count": 6,
+          "name": "Beeswax"
+        },
+        {
+          "count": 6,
+          "name": "Sulfur"
+        },
+        {
+          "count": 1,
+          "name": "Glass"
+        }
+      ],
+      "station": "Clay Pot",
+      "time": 60
+    }
+  ],
+  "name": "Race Dust",
+  "parent": "Vision Powder",
+  "trade_price": 99.8,
+  "stackSize": 100,
+  "weight": 0.5
+}

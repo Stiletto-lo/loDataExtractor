@@ -1,0 +1,39 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Spline"
+        },
+        {
+          "count": 1,
+          "name": "Level"
+        },
+        {
+          "count": 1,
+          "name": "Gasket"
+        }
+      ],
+      "station": "Module Fabricator",
+      "time": 30
+    }
+  ],
+  "name": "Bullrush Module",
+  "experiencieReward": 65,
+  "weight": 0.24,
+  "moduleInfo": {
+    "max": 20,
+    "increase": 4,
+    "maxIncrease": 80
+  },
+  "drops": [
+    {
+      "location": "Modules Strongbox",
+      "chance": 0.10526316,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

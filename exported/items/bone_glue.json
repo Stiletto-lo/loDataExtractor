@@ -1,0 +1,67 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Purified Water"
+        },
+        {
+          "count": 3,
+          "name": "Bone Splinter"
+        }
+      ],
+      "station": "Camp Fire",
+      "time": 45
+    },
+    {
+      "ingredients": [
+        {
+          "count": 4,
+          "name": "Purified Water"
+        },
+        {
+          "count": 1,
+          "name": "Nurr Fang"
+        }
+      ],
+      "station": "Camp Fire",
+      "time": 50
+    },
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Purified Water"
+        },
+        {
+          "count": 3,
+          "name": "Bone Splinter"
+        }
+      ],
+      "station": "Clay Pot",
+      "time": 45
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Nurr Fang"
+        },
+        {
+          "count": 4,
+          "name": "Purified Water"
+        }
+      ],
+      "station": "Clay Pot",
+      "time": 45
+    }
+  ],
+  "name": "Bone Glue",
+  "parent": "Purified Water",
+  "trade_price": 1.9,
+  "experiencieReward": 12,
+  "stackSize": 100,
+  "weight": 0.17
+}

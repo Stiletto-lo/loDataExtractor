@@ -1,0 +1,52 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 2,
+          "name": "Bone Glue"
+        },
+        {
+          "count": 4,
+          "name": "Rope"
+        }
+      ],
+      "station": "Crafting Bench",
+      "time": 2
+    }
+  ],
+  "name": "Bonespike Sword",
+  "parent": "Rawbone Sawsword",
+  "trade_price": 6.2,
+  "experiencieReward": 55,
+  "stackSize": 100,
+  "weight": 2.5,
+  "durability": 450,
+  "weaponInfo": {
+    "weaponSpeed": 110,
+    "impact": 35,
+    "stability": 25,
+    "weaponLength": 88,
+    "damage": 40,
+    "penetration": 10
+  },
+  "toolInfo": [
+    {
+      "toolType": "Scythe",
+      "tier": 1
+    }
+  ],
+  "drops": [
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.04484305,
+      "minQuantity": 1,
+      "maxQuantity": 12
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "category": "Wood: light",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Wooden Slab"
+        },
+        {
+          "count": 45,
+          "name": "Fiber"
+        }
+      ]
+    }
+  ],
+  "name": "Scaffolding",
+  "description": "A stackable, elevated platform that allows for easier access to high places. Useful in walker construction.",
+  "experiencieReward": 56,
+  "weight": 3,
+  "structureInfo": {
+    "hp": 75
+  }
+}

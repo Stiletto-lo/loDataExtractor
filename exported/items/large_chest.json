@@ -1,0 +1,29 @@
+{
+  "category": "Containers",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 12,
+          "name": "Rope"
+        },
+        {
+          "count": 50,
+          "name": "Wood"
+        },
+        {
+          "count": 10,
+          "name": "Ceramic Shard"
+        }
+      ]
+    }
+  ],
+  "name": "Large Chest",
+  "parent": "Medium Chest",
+  "experiencieReward": 32,
+  "structureInfo": {
+    "type": "Medium",
+    "hp": 9375
+  },
+  "weight": 6.2
+}

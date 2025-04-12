@@ -1,0 +1,126 @@
+{
+  "category": "Ammo",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 2,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 3,
+          "name": "Fiber"
+        },
+        {
+          "count": 6,
+          "name": "Stone"
+        }
+      ],
+      "output": 10,
+      "station": "Woodworking Station",
+      "time": 4
+    },
+    {
+      "ingredients": [
+        {
+          "count": 2,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 3,
+          "name": "Fiber"
+        },
+        {
+          "count": 6,
+          "name": "Stone"
+        }
+      ],
+      "output": 10,
+      "station": "Advanced Woodworking Station",
+      "time": 4
+    },
+    {
+      "ingredients": [
+        {
+          "count": 2,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 3,
+          "name": "Fiber"
+        },
+        {
+          "count": 6,
+          "name": "Stone"
+        }
+      ],
+      "output": 10,
+      "station": "Artificer Woodworking Station",
+      "time": 4
+    }
+  ],
+  "name": "Wooden Dart",
+  "parent": "Repeater",
+  "trade_price": 1.5,
+  "projectileDamage": {
+    "damage": 10
+  },
+  "stackSize": 500,
+  "weight": 0.1,
+  "toolInfo": [
+    {
+      "toolType": "RepeaterBolt",
+      "tier": 1
+    }
+  ],
+  "drops": [
+    {
+      "location": "AmmoBox T1",
+      "chance": 0.33333332,
+      "minQuantity": 5,
+      "maxQuantity": 25
+    },
+    {
+      "location": "BigHotspotLoot T1",
+      "chance": 0.33333332,
+      "minQuantity": 5,
+      "maxQuantity": 25
+    },
+    {
+      "location": "AmmoBox T2",
+      "chance": 0.33333332,
+      "minQuantity": 10,
+      "maxQuantity": 30
+    },
+    {
+      "location": "BigHotspotLoot T2",
+      "chance": 0.33333332,
+      "minQuantity": 10,
+      "maxQuantity": 30
+    },
+    {
+      "location": "AmmoBox T3",
+      "chance": 0.4,
+      "minQuantity": 5,
+      "maxQuantity": 30
+    },
+    {
+      "location": "BigHotspotLoot T3",
+      "chance": 0.4,
+      "minQuantity": 5,
+      "maxQuantity": 30
+    },
+    {
+      "location": "AmmoBox T4",
+      "chance": 0.28571428,
+      "minQuantity": 5,
+      "maxQuantity": 15
+    },
+    {
+      "location": "BigHotspotLoot T4",
+      "chance": 0.28571428,
+      "minQuantity": 5,
+      "maxQuantity": 15
+    }
+  ]
+}

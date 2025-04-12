@@ -1,0 +1,52 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 4,
+          "name": "Rope"
+        },
+        {
+          "count": 6,
+          "name": "Tree Sap"
+        },
+        {
+          "count": 8,
+          "name": "Bone Splinter"
+        }
+      ],
+      "station": "Crafting Bench",
+      "time": 2
+    }
+  ],
+  "name": "Rawbone Battle Axe",
+  "parent": "Stone Axe",
+  "trade_price": 18.4,
+  "experiencieReward": 100,
+  "stackSize": 100,
+  "weight": 4.66,
+  "durability": 440,
+  "weaponInfo": {
+    "weaponSpeed": 80,
+    "impact": 80,
+    "stability": 60,
+    "weaponLength": 120,
+    "damage": 45,
+    "penetration": 10
+  },
+  "toolInfo": [
+    {
+      "toolType": "TreeCutting",
+      "tier": 12
+    }
+  ],
+  "drops": [
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.04484305,
+      "minQuantity": 1,
+      "maxQuantity": 12
+    }
+  ]
+}

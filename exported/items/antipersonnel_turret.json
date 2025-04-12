@@ -1,0 +1,29 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 60,
+          "name": "Wood"
+        },
+        {
+          "count": 7,
+          "name": "Rope"
+        },
+        {
+          "count": 5,
+          "name": "Fiber Weave"
+        }
+      ]
+    }
+  ],
+  "name": "Anti-Personnel Turret",
+  "parent": "Improved Walker Weapons",
+  "experiencieReward": 100,
+  "structureInfo": {
+    "type": "Medium",
+    "hp": 500
+  },
+  "weight": 30
+}

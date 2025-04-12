@@ -1,0 +1,46 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 8,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 4,
+          "name": "Ceramic Shard"
+        },
+        {
+          "count": 6,
+          "name": "Nomad Cloth"
+        }
+      ],
+      "station": "Lathe",
+      "time": 2
+    }
+  ],
+  "name": "Long Ceramic Hoofmace",
+  "parent": "Rawbone Maul",
+  "trade_price": 118.9,
+  "experiencieReward": 200,
+  "stackSize": 100,
+  "weight": 6.5,
+  "durability": 540,
+  "weaponInfo": {
+    "weaponSpeed": 95,
+    "impact": 80,
+    "stability": 65,
+    "weaponLength": 115,
+    "damage": 50,
+    "penetration": 10
+  },
+  "drops": [
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.026905830000000002,
+      "minQuantity": 1,
+      "maxQuantity": 8
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 100,
+          "name": "Stone"
+        },
+        {
+          "count": 8,
+          "name": "Tar"
+        },
+        {
+          "count": 1,
+          "name": "Iron Ingot"
+        },
+        {
+          "count": 12,
+          "name": "Lightwood"
+        }
+      ],
+      "station": "Artificer Woodworking Station",
+      "time": 4
+    }
+  ],
+  "name": "Iron Rok",
+  "parent": "Obsidian Rok",
+  "projectileDamage": {
+    "damage": 700
+  },
+  "experiencieReward": 5
+}

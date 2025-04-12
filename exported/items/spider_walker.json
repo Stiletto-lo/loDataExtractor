@@ -1,0 +1,31 @@
+{
+  "category": "Walkers",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 49,
+          "name": "Wood"
+        },
+        {
+          "count": 53,
+          "name": "Fiber"
+        },
+        {
+          "count": 15,
+          "name": "Stone"
+        }
+      ]
+    }
+  ],
+  "name": "Spider Walker",
+  "parent": "Walkers",
+  "structureInfo": {
+    "type": "Hard",
+    "hp": 1500
+  },
+  "walkerinfo": {
+    "category": "Small"
+  },
+  "weight": 6.42
+}

@@ -1,0 +1,40 @@
+{
+  "category": "Resources",
+  "name": "Red Banana",
+  "trade_price": 0.1,
+  "experiencieReward": 1,
+  "stackSize": 100,
+  "weight": 0.18,
+  "drops": [
+    {
+      "location": "EasyRupuCamp T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HardRupuCamp T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HotspotLoot T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "MediumRupuCamp T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "TreasureChest T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

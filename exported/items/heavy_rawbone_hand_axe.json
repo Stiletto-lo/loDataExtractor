@@ -1,0 +1,58 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 4,
+          "name": "Rope"
+        },
+        {
+          "count": 1,
+          "name": "Nurr Fang"
+        }
+      ],
+      "station": "Crafting Bench",
+      "time": 2
+    }
+  ],
+  "name": "Heavy Rawbone Hand Axe",
+  "parent": "OneHandedBoneAxe",
+  "trade_price": 10.7,
+  "experiencieReward": 100,
+  "stackSize": 100,
+  "weight": 2.9,
+  "durability": 550,
+  "weaponInfo": {
+    "weaponSpeed": 80,
+    "impact": 70,
+    "stability": 60,
+    "weaponLength": 87,
+    "damage": 45,
+    "penetration": 10
+  },
+  "toolInfo": [
+    {
+      "toolType": "TreeCutting",
+      "tier": 12
+    }
+  ],
+  "drops": [
+    {
+      "location": "Tools and Equipment Strongbox",
+      "chance": 0.44898921999999997,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.04484305,
+      "minQuantity": 1,
+      "maxQuantity": 12
+    }
+  ]
+}

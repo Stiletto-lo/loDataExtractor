@@ -1,0 +1,54 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 4,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 8,
+          "name": "Ceramic Shard"
+        },
+        {
+          "count": 20,
+          "name": "Fiber Weave"
+        }
+      ],
+      "output": 3,
+      "station": "Advanced Woodworking Station",
+      "time": 5
+    },
+    {
+      "ingredients": [
+        {
+          "count": 4,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 8,
+          "name": "Ceramic Shard"
+        },
+        {
+          "count": 20,
+          "name": "Fiber Weave"
+        }
+      ],
+      "output": 3,
+      "station": "Artificer Woodworking Station",
+      "time": 3
+    }
+  ],
+  "name": "Ceramic-Tipped Bolt",
+  "parent": "Bone Bolt",
+  "trade_price": 11,
+  "projectileDamage": {
+    "damage": 64
+  },
+  "toolInfo": [
+    {
+      "toolType": "BallistaHarpoon",
+      "tier": 3
+    }
+  ]
+}

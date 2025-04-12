@@ -1,0 +1,60 @@
+{
+  "category": "Armors",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 6,
+          "name": "Charcoal"
+        },
+        {
+          "count": 4,
+          "name": "Hide"
+        },
+        {
+          "count": 8,
+          "name": "Aloe Gel"
+        }
+      ],
+      "station": "Advanced Fiberworking Station",
+      "time": 10
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 6,
+          "name": "Charcoal"
+        },
+        {
+          "count": 4,
+          "name": "Hide"
+        },
+        {
+          "count": 8,
+          "name": "Aloe Gel"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 9
+    }
+  ],
+  "name": "Gas Mask",
+  "parent": "Fiber Headwrap",
+  "trade_price": 13.2,
+  "experiencieReward": 10,
+  "stackSize": 100,
+  "weight": 0.4,
+  "durability": 240,
+  "armorInfo": {
+    "absorbing": 5,
+    "reduction": 1
+  }
+}

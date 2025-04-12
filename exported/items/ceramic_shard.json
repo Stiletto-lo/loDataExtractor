@@ -1,0 +1,30 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Clay"
+        }
+      ],
+      "station": "Furnace",
+      "time": 720
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Clay"
+        }
+      ],
+      "station": "Advanced Furnace",
+      "time": 480
+    }
+  ],
+  "name": "Ceramic Shard",
+  "parent": "Furnace",
+  "trade_price": 7.2,
+  "stackSize": 100,
+  "weight": 0.22
+}

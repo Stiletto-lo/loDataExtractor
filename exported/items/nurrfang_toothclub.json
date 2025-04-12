@@ -1,0 +1,46 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Nurr Fang"
+        },
+        {
+          "count": 4,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 3,
+          "name": "Rope"
+        }
+      ],
+      "station": "Crafting Bench",
+      "time": 2
+    }
+  ],
+  "name": "Nurrfang Toothclub",
+  "parent": "Jaggertooth Club",
+  "trade_price": 7.1,
+  "experiencieReward": 10,
+  "stackSize": 100,
+  "weight": 2.5,
+  "durability": 415,
+  "weaponInfo": {
+    "weaponSpeed": 110,
+    "impact": 40,
+    "stability": 35,
+    "weaponLength": 73,
+    "damage": 40,
+    "penetration": 10
+  },
+  "drops": [
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.04484305,
+      "minQuantity": 1,
+      "maxQuantity": 12
+    }
+  ]
+}

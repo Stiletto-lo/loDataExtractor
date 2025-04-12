@@ -1,0 +1,54 @@
+{
+  "category": "Liquids",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Terrain: Sand"
+        }
+      ],
+      "output": 100,
+      "station": "Soil Excavator",
+      "time": 29
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Stone"
+        }
+      ],
+      "output": 10,
+      "station": "Stomping Station",
+      "time": 5
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Stone"
+        }
+      ],
+      "output": 11,
+      "station": "Advanced Stomping Station",
+      "time": 4.5
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Stone"
+        }
+      ],
+      "output": 12,
+      "station": "Flotillian Stomping Station",
+      "time": 4
+    }
+  ],
+  "name": "Sand",
+  "parent": "Crafting",
+  "description": "Tiny green mineral flecks dot the sand.",
+  "stackSize": 100,
+  "weight": 0.22
+}

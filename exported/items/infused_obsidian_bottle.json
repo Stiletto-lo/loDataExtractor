@@ -1,0 +1,26 @@
+{
+  "category": "Equipment",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 28,
+          "name": "Obsidian"
+        },
+        {
+          "count": 4,
+          "name": "Bone Glue"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 2
+    }
+  ],
+  "name": "Infused Obsidian Bottle",
+  "parent": "Obsidian Flask",
+  "trade_price": 26,
+  "experiencieReward": 50,
+  "stackSize": 100,
+  "weight": 1.5,
+  "durability": 220
+}

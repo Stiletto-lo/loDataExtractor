@@ -1,0 +1,161 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Purified Water"
+        }
+      ],
+      "station": "Camp Fire",
+      "time": 360
+    }
+  ],
+  "name": "Purified Water",
+  "trade_price": 0.1,
+  "experiencieReward": 1,
+  "stackSize": 10000,
+  "weight": 0.01,
+  "drops": [
+    {
+      "location": "DesertClam",
+      "chance": 0.9,
+      "minQuantity": 4,
+      "maxQuantity": 8
+    },
+    {
+      "location": "EasyRupuCamp T1",
+      "chance": 0.22222222,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "HardRupuCamp T1",
+      "chance": 0.22222222,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "HotspotLoot T1",
+      "chance": 0.22222222,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "MediumRupuCamp T1",
+      "chance": 0.22222222,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "TreasureChest T1",
+      "chance": 0.22222222,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "BasketLoot T2 AC",
+      "chance": 0.18181818,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "EasyRupuCamp T2",
+      "chance": 0.18181818,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "HardRupuCamp T2",
+      "chance": 0.18181818,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "HotspotLoot T2",
+      "chance": 0.18181818,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "HotspotLoot T2 AC",
+      "chance": 0.18181818,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "MediumRupuCamp T2",
+      "chance": 0.18181818,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "TreasureChest T2",
+      "chance": 0.18181818,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "EasyRupuCamp T3",
+      "chance": 0.16666666,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "HardRupuCamp T3",
+      "chance": 0.16666666,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "HotspotLoot T3",
+      "chance": 0.16666666,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "MediumRupuCamp T3",
+      "chance": 0.16666666,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "TreasureChest T3",
+      "chance": 0.16666666,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "EasyRupuCamp T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "HardRupuCamp T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "HotspotLoot T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "MediumRupuCamp T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "TreasureChest T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    }
+  ],
+  "wikiVisibility": false
+}
