@@ -427,15 +427,48 @@ if (process.env.TRANSLATE_FILES === "true") {
 	for (const languaje in translateData) {
 		const fileData = translateData[languaje];
 		const languajeArray = languaje.split("-");
+		
+		// The translator module now handles validation internally, but we'll do a final check
+		// to ensure the JSON will be valid before writing to file
+		const validatedData = {};
+		let skippedEntries = 0;
+		
+		// Process each key-value pair to ensure valid JSON
+		for (const [key, value] of Object.entries(fileData)) {
+			// Skip entries with invalid keys or values
+			if (!key || typeof key !== 'string' || !value || typeof value !== 'string') {
+				skippedEntries++;
+				continue;
+			}
+			
+			try {
+				// Test if the key and value can be properly serialized in JSON
+				JSON.parse(JSON.stringify({ [key]: value }));
+				validatedData[key] = value;
+			} catch (error) {
+				// If JSON serialization fails, skip this entry
+				console.warn(`Skipping invalid translation entry for key: ${key.substring(0, 30)}...`);
+				skippedEntries++;
+			}
+		}
+		
+		if (skippedEntries > 0) {
+			console.warn(`Skipped ${skippedEntries} invalid entries for language ${languaje}`);
+		}
+		
+		// Ensure the directory exists before writing
+		const outputDir = `${folderPatch}locales/${languajeArray[0].toLowerCase()}`;
+		fs.ensureDirSync(outputDir);
+		
 		fs.outputFile(
 			`${folderPatch}locales/${languajeArray[0].toLowerCase()}/items.json`,
-			JSON.stringify(fileData, null, 2),
+			JSON.stringify(validatedData, null, 2),
 			(err) => {
 				if (err) {
 					console.error(`Error creating the file: ${languaje}`, err);
 				} else {
 					console.log(
-						`Translated files ${languaje} exported with ${Object.keys(fileData).length} translations`,
+						`Translated files ${languaje} exported with ${Object.keys(validatedData).length} translations`,
 					);
 				}
 			},
