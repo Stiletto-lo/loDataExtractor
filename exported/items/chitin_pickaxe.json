@@ -1,7 +1,9 @@
 {
-  "name": "Chitin Pickaxe",
-  "parent": "CeramicPickaxe"
-}       "count": 6,
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
           "name": "Fiber Weave"
         },
         {
