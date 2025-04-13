@@ -8,7 +8,8 @@ const tech = {
   cost: undefined,
   category: undefined,
   type: undefined,
-  onlyDevs: undefined
+  onlyDevs: undefined,
+  unlocks: undefined  // Array of items that this tech unlocks
 };
 
 Object.freeze(tech);
