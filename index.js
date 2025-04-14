@@ -1,8 +1,6 @@
 require("dotenv").config();
 const fs = require("fs-extra");
-const comparator = require("./controllers/comparator");
 const fileParser = require("./controllers/fileParsers");
-const dataParser = require("./controllers/dataParsers");
 
 let allItems = [];
 const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
@@ -219,8 +217,6 @@ if (techData.length > 0) {
 	);
 }
 
-allItems = dataParser.itemMerger(allItems, "Long Sawblade", "Sawblade_Tier2");
-
 allItems.sort(orderByName);
 
 if (allItems.length > 0) {
@@ -427,12 +423,12 @@ if (process.env.TRANSLATE_FILES === "true") {
 	for (const languaje in translateData) {
 		const fileData = translateData[languaje];
 		const languajeArray = languaje.split("-");
-		
+
 		// The translator module now handles validation internally, but we'll do a final check
 		// to ensure the JSON will be valid before writing to file
 		const validatedData = {};
 		let skippedEntries = 0;
-		
+
 		// Process each key-value pair to ensure valid JSON
 		for (const [key, value] of Object.entries(fileData)) {
 			// Skip entries with invalid keys or values
@@ -440,7 +436,7 @@ if (process.env.TRANSLATE_FILES === "true") {
 				skippedEntries++;
 				continue;
 			}
-			
+
 			try {
 				// Test if the key and value can be properly serialized in JSON
 				JSON.parse(JSON.stringify({ [key]: value }));
@@ -451,15 +447,15 @@ if (process.env.TRANSLATE_FILES === "true") {
 				skippedEntries++;
 			}
 		}
-		
+
 		if (skippedEntries > 0) {
 			console.warn(`Skipped ${skippedEntries} invalid entries for language ${languaje}`);
 		}
-		
+
 		// Ensure the directory exists before writing
 		const outputDir = `${folderPatch}locales/${languajeArray[0].toLowerCase()}`;
 		fs.ensureDirSync(outputDir);
-		
+
 		fs.outputFile(
 			`${folderPatch}locales/${languajeArray[0].toLowerCase()}/items.json`,
 			JSON.stringify(validatedData, null, 2),
@@ -474,10 +470,6 @@ if (process.env.TRANSLATE_FILES === "true") {
 			},
 		);
 	}
-}
-
-if (process.env.COMPARE === "true") {
-	comparator.compareItems(allItems, folderPatch);
 }
 
 function loadDirData(techTreeDir, folderType) {
