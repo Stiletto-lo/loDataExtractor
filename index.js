@@ -116,361 +116,364 @@ const loadFiles = () => {
 	}
 };
 
-loadFiles();
+const saveFiles = async () => {
+	console.info("Parse Upgrades to Items");
+	fileParser.parseUpgradesToItems();
 
-console.info("Parse Upgrades to Items");
-fileParser.parseUpgradesToItems();
+	allItems = fileParser.getAllItems();
 
-allItems = fileParser.getAllItems();
+	const translator = fileParser.getTranslator();
 
-const translator = fileParser.getTranslator();
-
-if (!SHOW_DEV_ITEMS) {
-	allItems = allItems.filter((item) => !item.onlyDevs);
-}
-
-console.info("Translating the items");
-allItems = translator.addDescriptions(allItems);
-allItems = translator.translateItems(allItems);
-
-for (const item of allItems) {
-	for (const key of Object.keys(item)) {
-		if (item[key] === undefined) {
-			delete item[key];
-		}
-		if (item?.drops !== undefined && item.drops.length <= 0) {
-			item.drops = undefined;
-		}
-		if (item?.toolInfo !== undefined && item.toolInfo.length <= 0) {
-			item.toolInfo = undefined;
-		}
+	if (!SHOW_DEV_ITEMS) {
+		allItems = allItems.filter((item) => !item.onlyDevs);
 	}
-}
 
-allItems = allItems
-	.map((item) => {
-		const countItems = allItems.filter((item2) => item.name === item2.name);
-		if (countItems.length > 1) {
-			return { ...countItems[0], ...countItems[1] };
-		}
-		return item;
-	})
-	.filter((item) => item.name && Object.keys(item).length > 2)
-	.filter((item) => !item.name.includes("Packing"))
-	.reduce((acc, current) => {
-		const x = acc.find((item) => item.name === current.name);
-		if (!x) {
-			return acc.concat([current]);
-		}
-
-		return acc;
-	}, []);
-
-// Extract tech data from fileParser
-let techData = fileParser.getTechData();
-
-// Process tech data similar to items
-techData = techData
-	.map((tech) => {
-		const countTech = techData.filter((tech2) => tech.name === tech2.name);
-		if (countTech.length > 1) {
-			return { ...countTech[0], ...countTech[1] };
-		}
-		return tech;
-	})
-	.filter((tech) => tech.name && Object.keys(tech).length > 2)
-	.reduce((acc, current) => {
-		const x = acc.find((tech) => tech.name === current.name);
-		if (!x) {
-			return acc.concat([current]);
-		}
-		return acc;
-	}, []);
-
-// Sort tech data by name
-techData.sort(orderByName);
-
-// Export tech data to tech.json
-if (techData.length > 0) {
-	fs.writeFile(
-		`${folderPatch}tech.json`,
-		JSON.stringify(techData, null, 2),
-		(err) => {
-			if (err) {
-				console.error("Error creating the tech.json file");
-			} else {
-				console.log("Tech data exported to tech.json");
-			}
-		},
-	);
-
-	fs.writeFile(
-		`${folderPatch}tech_min.json`,
-		JSON.stringify(techData),
-		(err) => {
-			if (err) {
-				console.error("Error creating the tech_min.json file");
-			} else {
-				console.log("Tech_min.json exported");
-			}
-		},
-	);
-}
-
-allItems.sort(orderByName);
-
-if (allItems.length > 0) {
-	fs.writeFile(
-		`${folderPatch}items.json`,
-		JSON.stringify(allItems, null, 2),
-		(err) => {
-			if (err) {
-				console.error("Error creating the file");
-			} else {
-				console.log("Items exported");
-
-				// Run the tech tree item unifier to fix inconsistencies
-				const { unifyTechTreeAndItems } = require('./utils/techTreeItemUnifier');
-				console.log("Running tech tree item unifier...");
-				const unifyResult = unifyTechTreeAndItems(`${folderPatch}items.json`);
-				if (unifyResult.success) {
-					console.log(`Tech tree unification complete. Fixed ${unifyResult.fixedCount} learn entries.`);
-				} else {
-					console.error(`Tech tree unification failed: ${unifyResult.error}`);
-				}
-
-				// Reload the items after unification
-				allItems = JSON.parse(fs.readFileSync(`${folderPatch}items.json`, 'utf8'));
-			}
-		},
-	);
-
-	// Save the item name glossary
-	fileParser.saveGlossary(`${folderPatch}itemNameGlossary.json`);
+	console.info("Translating the items");
+	allItems = translator.addDescriptions(allItems);
+	allItems = translator.translateItems(allItems);
 
 	for (const item of allItems) {
 		for (const key of Object.keys(item)) {
 			if (item[key] === undefined) {
 				delete item[key];
 			}
-		}
-
-		if (item?.translation !== undefined) {
-			item.translation = undefined;
-		}
-		if (item?.type !== undefined) {
-			item.type = undefined;
-		}
-		if (item?.schematicName !== undefined) {
-			item.schematicName = undefined;
-		}
-		if (item?.damageType !== undefined) {
-			item.damageType = undefined;
-		}
-		if (item?.learn && item.learn.length === 0) {
-			item.learn = undefined;
+			if (item?.drops !== undefined && item.drops.length <= 0) {
+				item.drops = undefined;
+			}
+			if (item?.toolInfo !== undefined && item.toolInfo.length <= 0) {
+				item.toolInfo = undefined;
+			}
 		}
 	}
 
-	// Create items_min.json with only category, name, crafting and projectileDamage
-	const minItems = allItems.map(item => {
-		const minItem = {};
-		// Only include the required fields
-		if (item.category) {
-			minItem.category = item.category;
-		}
-		if (item.name) {
-			minItem.name = item.name;
-		}
-		if (item.crafting) {
-			minItem.crafting = item.crafting;
-		}
-		if (item.projectileDamage) {
-			minItem.projectileDamage = item.projectileDamage;
-		}
-		return minItem;
-	});
-
-	minItems.sort(orderByCategoryAndName);
-	fs.writeFile(
-		`${folderPatch}items_min.json`,
-		JSON.stringify(minItems),
-		(err) => {
-			if (err) {
-				console.error("Error creating the items_min.json file");
-			} else {
-				console.log("Items_min.json exported");
+	allItems = allItems
+		.map((item) => {
+			const countItems = allItems.filter((item2) => item.name === item2.name);
+			if (countItems.length > 1) {
+				return { ...countItems[0], ...countItems[1] };
 			}
-		},
-	);
+			return item;
+		})
+		.filter((item) => item.name && Object.keys(item).length > 2)
+		.filter((item) => !item.name.includes("Packing"))
+		.reduce((acc, current) => {
+			const x = acc.find((item) => item.name === current.name);
+			if (!x) {
+				return acc.concat([current]);
+			}
 
-	// Create individual JSON files for each item
-	const itemsFolder = `${folderPatch}items`;
-	fs.ensureDirSync(itemsFolder);
+			return acc;
+		}, []);
 
-	for (const item of allItems) {
-		if (item.name) {
-			// Convert item name to snake_case and make it safe for filenames
-			const snakeCaseName = item.name
-				.toLowerCase()
-				.replace(/\s+/g, '_')     // Replace spaces with underscores
-				.replace(/[^a-z0-9_]/g, '') // Remove any non-alphanumeric characters except underscores
-				.replace(/_+/g, '_');       // Replace multiple underscores with a single one
+	// Extract tech data from fileParser
+	let techData = fileParser.getTechData();
 
-			fs.writeFile(
-				`${itemsFolder}/${snakeCaseName}.json`,
-				JSON.stringify(item, null, 2),
-				(err) => {
-					if (err) {
-						console.error(`Error creating individual file for ${item.name}`);
+	// Process tech data similar to items
+	techData = techData
+		.map((tech) => {
+			const countTech = techData.filter((tech2) => tech.name === tech2.name);
+			if (countTech.length > 1) {
+				return { ...countTech[0], ...countTech[1] };
+			}
+			return tech;
+		})
+		.filter((tech) => tech.name && Object.keys(tech).length > 2)
+		.reduce((acc, current) => {
+			const x = acc.find((tech) => tech.name === current.name);
+			if (!x) {
+				return acc.concat([current]);
+			}
+			return acc;
+		}, []);
+
+	// Sort tech data by name
+	techData.sort(orderByName);
+
+
+	if (techData.length > 0) {
+		await fs.writeFile(
+			`${folderPatch}tech.json`,
+			JSON.stringify(techData, null, 2),
+			(err) => {
+				if (err) {
+					console.error("Error creating the tech.json file");
+				} else {
+					console.log("Tech data exported to tech.json");
+				}
+			},
+		);
+
+		await fs.writeFile(
+			`${folderPatch}tech_min.json`,
+			JSON.stringify(techData),
+			(err) => {
+				if (err) {
+					console.error("Error creating the tech_min.json file");
+				} else {
+					console.log("Tech_min.json exported");
+				}
+			},
+		);
+	}
+
+	allItems.sort(orderByName);
+
+	if (allItems.length > 0) {
+		await fs.writeFile(
+			`${folderPatch}items.json`,
+			JSON.stringify(allItems, null, 2),
+			(err) => {
+				if (err) {
+					console.error("Error creating the file");
+				} else {
+					console.log("Items exported");
+
+					// Run the tech tree item unifier to fix inconsistencies
+					const { unifyTechTreeAndItems } = require('./utils/techTreeItemUnifier');
+					console.log("Running tech tree item unifier...");
+					const unifyResult = unifyTechTreeAndItems(`${folderPatch}items.json`);
+					if (unifyResult.success) {
+						console.log(`Tech tree unification complete. Fixed ${unifyResult.fixedCount} learn entries.`);
+					} else {
+						console.error(`Tech tree unification failed: ${unifyResult.error}`);
 					}
-				},
-			);
-		}
-	}
-	console.log("Individual item JSON files exported");
-}
 
-let creatures = fileParser.getCreatures();
+					// Reload the items after unification
+					allItems = JSON.parse(fs.readFileSync(`${folderPatch}items.json`, 'utf8'));
+				}
+			},
+		);
 
-for (const creature of creatures) {
-	for (const key of Object.keys(creature)) {
-		if (creature[key] === undefined) {
-			delete creature[key];
-		}
-	}
-}
+		// Save the item name glossary
+		fileParser.saveGlossary(`${folderPatch}itemNameGlossary.json`);
 
-creatures = creatures.filter(
-	(item) => item.name && Object.keys(item).length > 2,
-);
-
-creatures.sort(orderByName);
-if (creatures.length > 0) {
-	fs.writeFile(
-		`${folderPatch}creatures.json`,
-		JSON.stringify(creatures, null, 2),
-		(err) => {
-			if (err) {
-				console.error("Error creating the file");
-			} else {
-				console.log("Creatures exported");
+		for (const item of allItems) {
+			for (const key of Object.keys(item)) {
+				if (item[key] === undefined) {
+					delete item[key];
+				}
 			}
-		},
-	);
+
+			if (item?.translation !== undefined) {
+				item.translation = undefined;
+			}
+			if (item?.type !== undefined) {
+				item.type = undefined;
+			}
+			if (item?.schematicName !== undefined) {
+				item.schematicName = undefined;
+			}
+			if (item?.damageType !== undefined) {
+				item.damageType = undefined;
+			}
+			if (item?.learn && item.learn.length === 0) {
+				item.learn = undefined;
+			}
+		}
+
+		// Create items_min.json with only category, name, crafting and projectileDamage
+		const minItems = allItems.map(item => {
+			const minItem = {};
+			// Only include the required fields
+			if (item.category) {
+				minItem.category = item.category;
+			}
+			if (item.name) {
+				minItem.name = item.name;
+			}
+			if (item.crafting) {
+				minItem.crafting = item.crafting;
+			}
+			if (item.projectileDamage) {
+				minItem.projectileDamage = item.projectileDamage;
+			}
+			return minItem;
+		});
+
+		minItems.sort(orderByCategoryAndName);
+		await fs.writeFile(
+			`${folderPatch}items_min.json`,
+			JSON.stringify(minItems),
+			(err) => {
+				if (err) {
+					console.error("Error creating the items_min.json file");
+				} else {
+					console.log("Items_min.json exported");
+				}
+			},
+		);
+
+		// Create individual JSON files for each item
+		const itemsFolder = `${folderPatch}items`;
+		fs.ensureDirSync(itemsFolder);
+
+		for (const item of allItems) {
+			if (item.name) {
+				// Convert item name to snake_case and make it safe for filenames
+				const snakeCaseName = item.name
+					.toLowerCase()
+					.replace(/\s+/g, '_')     // Replace spaces with underscores
+					.replace(/[^a-z0-9_]/g, '') // Remove any non-alphanumeric characters except underscores
+					.replace(/_+/g, '_');       // Replace multiple underscores with a single one
+
+				await fs.writeFile(
+					`${itemsFolder}/${snakeCaseName}.json`,
+					JSON.stringify(item, null, 2),
+					(err) => {
+						if (err) {
+							console.error(`Error creating individual file for ${item.name}`);
+						}
+					},
+				);
+			}
+		}
+		console.log("Individual item JSON files exported");
+	}
+
+	let creatures = fileParser.getCreatures();
 
 	for (const creature of creatures) {
 		for (const key of Object.keys(creature)) {
 			if (creature[key] === undefined) {
 				delete creature[key];
 			}
-			if (creature?.lootTable !== undefined) {
-				creature.lootTable = undefined;
-			}
-			if (creature?.type !== undefined) {
-				creature.type = undefined;
-			}
 		}
 	}
 
-	fs.writeFile(
-		`${folderPatch}creatures_min.json`,
-		JSON.stringify(creatures),
-		(err) => {
-			if (err) {
-				console.error("Error creating the file");
-			} else {
-				console.log("Creatures.min exported");
-			}
-		},
-	);
-}
-
-if (process.env.TRANSLATE_FILES === "true") {
-	// Add all item names and other translatable fields to the translationsInUse store
-	console.log("Adding all item translations to the translationsInUse store...");
-	let translationCount = 0;
-	for (const item of allItems) {
-		if (item.name) {
-			translator.addTranslationInUse(item.name, item.name);
-			translationCount++;
-		}
-		if (item.name && item.translation) {
-			translator.addTranslationInUse(item.name, item.translation);
-			translationCount++;
-		}
-
-		if (item.type && item.name) {
-			translator.addTranslationInUse(item.type, item.name);
-			translationCount++;
-		}
-
-		if (item.description) {
-			translator.addTranslationInUse(item.description, item.description);
-			translationCount++;
-		}
-	}
-	console.log(
-		`Added ${translationCount} item translations to the translationsInUse store`,
+	creatures = creatures.filter(
+		(item) => item.name && Object.keys(item).length > 2,
 	);
 
-	// Export the translations
-	const translateData = translator.getTranslateFiles();
-	console.log(
-		`Found ${Object.keys(translateData).length} languages with translations`,
-	);
-
-	for (const languaje in translateData) {
-		const fileData = translateData[languaje];
-		const languajeArray = languaje.split("-");
-
-		// The translator module now handles validation internally, but we'll do a final check
-		// to ensure the JSON will be valid before writing to file
-		const validatedData = {};
-		let skippedEntries = 0;
-
-		// Process each key-value pair to ensure valid JSON
-		for (const [key, value] of Object.entries(fileData)) {
-			// Skip entries with invalid keys or values
-			if (!key || typeof key !== 'string' || !value || typeof value !== 'string') {
-				skippedEntries++;
-				continue;
-			}
-
-			try {
-				// Test if the key and value can be properly serialized in JSON
-				JSON.parse(JSON.stringify({ [key]: value }));
-				validatedData[key] = value;
-			} catch (error) {
-				// If JSON serialization fails, skip this entry
-				console.warn(`Skipping invalid translation entry for key: ${key.substring(0, 30)}...`);
-				skippedEntries++;
-			}
-		}
-
-		if (skippedEntries > 0) {
-			console.warn(`Skipped ${skippedEntries} invalid entries for language ${languaje}`);
-		}
-
-		// Ensure the directory exists before writing
-		const outputDir = `${folderPatch}locales/${languajeArray[0].toLowerCase()}`;
-		fs.ensureDirSync(outputDir);
-
-		fs.outputFile(
-			`${folderPatch}locales/${languajeArray[0].toLowerCase()}/items.json`,
-			JSON.stringify(validatedData, null, 2),
+	creatures.sort(orderByName);
+	if (creatures.length > 0) {
+		await fs.writeFile(
+			`${folderPatch}creatures.json`,
+			JSON.stringify(creatures, null, 2),
 			(err) => {
 				if (err) {
-					console.error(`Error creating the file: ${languaje}`, err);
+					console.error("Error creating the file");
 				} else {
-					console.log(
-						`Translated files ${languaje} exported with ${Object.keys(validatedData).length} translations`,
-					);
+					console.log("Creatures exported");
+				}
+			},
+		);
+
+		for (const creature of creatures) {
+			for (const key of Object.keys(creature)) {
+				if (creature[key] === undefined) {
+					delete creature[key];
+				}
+				if (creature?.lootTable !== undefined) {
+					creature.lootTable = undefined;
+				}
+				if (creature?.type !== undefined) {
+					creature.type = undefined;
+				}
+			}
+		}
+
+		await fs.writeFile(
+			`${folderPatch}creatures_min.json`,
+			JSON.stringify(creatures),
+			(err) => {
+				if (err) {
+					console.error("Error creating the file");
+				} else {
+					console.log("Creatures.min exported");
 				}
 			},
 		);
 	}
+
+	if (process.env.TRANSLATE_FILES === "true") {
+		// Add all item names and other translatable fields to the translationsInUse store
+		console.log("Adding all item translations to the translationsInUse store...");
+		let translationCount = 0;
+		for (const item of allItems) {
+			if (item.name) {
+				translator.addTranslationInUse(item.name, item.name);
+				translationCount++;
+			}
+			if (item.name && item.translation) {
+				translator.addTranslationInUse(item.name, item.translation);
+				translationCount++;
+			}
+
+			if (item.type && item.name) {
+				translator.addTranslationInUse(item.type, item.name);
+				translationCount++;
+			}
+
+			if (item.description) {
+				translator.addTranslationInUse(item.description, item.description);
+				translationCount++;
+			}
+		}
+		console.log(
+			`Added ${translationCount} item translations to the translationsInUse store`,
+		);
+
+		// Export the translations
+		const translateData = translator.getTranslateFiles();
+		console.log(
+			`Found ${Object.keys(translateData).length} languages with translations`,
+		);
+
+		for (const languaje in translateData) {
+			const fileData = translateData[languaje];
+			const languajeArray = languaje.split("-");
+
+			// The translator module now handles validation internally, but we'll do a final check
+			// to ensure the JSON will be valid before writing to file
+			const validatedData = {};
+			let skippedEntries = 0;
+
+			// Process each key-value pair to ensure valid JSON
+			for (const [key, value] of Object.entries(fileData)) {
+				// Skip entries with invalid keys or values
+				if (!key || typeof key !== 'string' || !value || typeof value !== 'string') {
+					skippedEntries++;
+					continue;
+				}
+
+				try {
+					// Test if the key and value can be properly serialized in JSON
+					JSON.parse(JSON.stringify({ [key]: value }));
+					validatedData[key] = value;
+				} catch (error) {
+					// If JSON serialization fails, skip this entry
+					console.warn(`Skipping invalid translation entry for key: ${key.substring(0, 30)}...`);
+					skippedEntries++;
+				}
+			}
+
+			if (skippedEntries > 0) {
+				console.warn(`Skipped ${skippedEntries} invalid entries for language ${languaje}`);
+			}
+
+			// Ensure the directory exists before writing
+			const outputDir = `${folderPatch}locales/${languajeArray[0].toLowerCase()}`;
+			fs.ensureDirSync(outputDir);
+
+			fs.outputFile(
+				`${folderPatch}locales/${languajeArray[0].toLowerCase()}/items.json`,
+				JSON.stringify(validatedData, null, 2),
+				(err) => {
+					if (err) {
+						console.error(`Error creating the file: ${languaje}`, err);
+					} else {
+						console.log(
+							`Translated files ${languaje} exported with ${Object.keys(validatedData).length} translations`,
+						);
+					}
+				},
+			);
+		}
+	}
 }
+
+loadFiles();
+saveFiles();
 
 function loadDirData(techTreeDir, folderType) {
 	if (!fs.exists(techTreeDir)) {
