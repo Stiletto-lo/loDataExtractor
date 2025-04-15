@@ -193,31 +193,43 @@
   {
     "name": "Reinforced Rupu Outpost",
     "type": "T1_HardRupuCamp_01_C",
+    "category": "Hard",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Reinforced Rupu Outpost",
     "type": "T1_HardRupuCamp_02_C",
+    "category": "Hard",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Reinforced Rupu Outpost",
     "type": "T1_HardRupuCamp_03_C",
+    "category": "Hard",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Reinforced Rupu Outpost",
     "type": "T1_HardRupuCamp_04_C",
+    "category": "Hard",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Reinforced Rupu Outpost",
     "type": "T1_SingleBallistaRupuCamp_01_C",
+    "category": "Single",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Reinforced Rupu Outpost",
     "type": "T1_SingleScattershotRupuCamp_01_C",
+    "category": "Single",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
@@ -262,11 +274,15 @@
   {
     "name": "Rupu Campfire Site",
     "type": "T1_TinyRupuCamp_03_C",
+    "category": "Tiny",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Rupu Campfire Site",
     "type": "T1_TinyRupuCamp_04_C",
+    "category": "Tiny",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
@@ -351,11 +367,15 @@
   {
     "name": "Rupu Gifting Altar",
     "type": "T1_TinyRupuCamp_01_C",
+    "category": "Tiny",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Rupu Gifting Altar",
     "type": "T1_TinyRupuCamp_05_C",
+    "category": "Tiny",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
@@ -511,6 +531,8 @@
   {
     "name": "Rupu Prayer Site",
     "type": "T1_TinyRupuCamp_02_C",
+    "category": "Tiny",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
@@ -688,51 +710,71 @@
   {
     "name": "Small Rupu Hut",
     "type": "T1_SingleRupuCamp_01_C",
+    "category": "Single",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Small Rupu Hut",
     "type": "T1_SingleRupuCamp_02_C",
+    "category": "Single",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Small Rupu Hut",
     "type": "T1_SingleRupuCamp_03_C",
+    "category": "Single",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Small Rupu Hut",
     "type": "T1_SingleRupuCamp_04_C",
+    "category": "Single",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Small Rupu Hut",
     "type": "T1_SingleRupuCamp_05_C",
+    "category": "Single",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Small Rupu Outpost",
     "type": "T1_MediumRupuCamp_01_C",
+    "category": "Medium",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Small Rupu Outpost",
     "type": "T1_MediumRupuCamp_02_C",
+    "category": "Medium",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Small Rupu Outpost",
     "type": "T1_MediumRupuCamp_03_C",
+    "category": "Medium",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Small Rupu Outpost",
     "type": "T1_MediumRupuCamp_04_C",
+    "category": "Medium",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
     "name": "Small Rupu Outpost",
     "type": "T1_MediumRupuCamp_05_C",
+    "category": "Medium",
+    "tier": "T1",
     "dropQuantity": {}
   },
   {
@@ -800,6 +842,7 @@
     "health": 105,
     "experiencie": 600,
     "lootTable": "MediumRupu_T2",
+    "category": "Rupu",
     "tier": "T2",
     "dropQuantity": {}
   },
@@ -809,6 +852,7 @@
     "health": 120,
     "experiencie": 2200,
     "lootTable": "MediumRupu_T3",
+    "category": "Rupu",
     "tier": "T3",
     "dropQuantity": {}
   },
@@ -827,6 +871,7 @@
     "health": 250,
     "experiencie": 210,
     "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
     "dropQuantity": {}
   }
 ]

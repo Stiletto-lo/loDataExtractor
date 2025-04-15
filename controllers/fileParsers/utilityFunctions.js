@@ -23,6 +23,7 @@ class DataStore {
 		this.creatures = [];
 		this.datatables = [];
 		this.blueprints = [];
+		this.lootTables = {};
 	}
 
 	// Item operations
@@ -108,6 +109,18 @@ class DataStore {
 	// Tech operations
 	getTechData() {
 		return this.techData;
+	}
+
+	// Loot tables operations
+	getAllLootTables() {
+		return this.lootTables;
+	}
+
+	setLootTables(lootTables) {
+		if (typeof lootTables !== 'object') {
+			throw new TypeError('Loot tables must be an object');
+		}
+		this.lootTables = lootTables;
 	}
 
 	setTechData(data) {
@@ -208,6 +221,7 @@ module.exports = {
 	getCreatures: () => dataStore.getCreatures(),
 	getAllDatatables: () => dataStore.getAllDatatables(),
 	getAllBlueprints: () => dataStore.getAllBlueprints(),
+	getAllLootTables: () => dataStore.getAllLootTables(),
 
 	// Collection setters
 	setAllItems: (items) => dataStore.setAllItems(items),
@@ -215,4 +229,5 @@ module.exports = {
 	setCreatures: (data) => dataStore.setCreatures(data),
 	setAllDatatables: (data) => dataStore.setAllDatatables(data),
 	setAllBlueprints: (data) => dataStore.setAllBlueprints(data),
+	setLootTables: (data) => dataStore.setLootTables(data),
 };
