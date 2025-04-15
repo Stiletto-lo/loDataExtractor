@@ -1,321 +1,832 @@
 [
   {
+    "name": "Altar of the Dawn",
+    "type": "AC_RelicPOI1_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Altar of the Dusk",
+    "type": "AC_RelicPOI2_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Ancient Pyramid",
+    "type": "AC_Pyramid_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Ash Hills Watchtower",
+    "type": "SG_AshWastesRimWatchtower_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Ash Oracle Fortress",
+    "type": "SG_AshWastesFortress_C",
+    "dropQuantity": {}
+  },
+  {
     "name": "Bounty Hunter",
     "type": "T2_RupuBountyHunter_C",
     "health": 55,
     "experiencie": 600,
-    "lootTable": "MediumRupu_T2"
+    "lootTable": "MediumRupu_T2",
+    "category": "Rupu",
+    "tier": "T2",
+    "dropQuantity": {}
   },
   {
     "name": "Cowardly Rupu",
     "type": "FearfulRupu_C",
     "health": 60,
     "experiencie": 55,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Excavation Site",
+    "type": "AC_RupuCaveCamp_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Excavation Site",
+    "type": "AC_WorkersGrave_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Fire Fortress",
+    "type": "KS_LargeRupuCamp_3_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Foragers Outpost",
+    "type": "CanyonForagersOutpost1_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Foragers Outpost",
+    "type": "CanyonForagersOutpost2_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Foragers Outpost",
+    "type": "CanyonForagersOutpost3_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Foragers Outpost",
+    "type": "SG_ClaySpotTinyCamp_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Foragers Outpost",
+    "type": "SG_RockyHillsTinyCamp_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Foragers Outpost",
+    "type": "SG_TinyRupuCamp_1_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Foragers Outpost",
+    "type": "SG_TinyRupuCamp_2_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Foragers Outpost",
+    "type": "SG_TinyRupuCamp_3_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Fortified Rupu Town",
+    "type": "MediumLargeRupuCamp_01_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Fortified Rupu Village",
+    "type": "CanyonSavannahMediumRupuCamp_01_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Fortified Rupu Village",
+    "type": "SG_FlatlandsForagingCamp_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Gas Thrower",
+    "type": "AC_StarTowerGas_C",
+    "dropQuantity": {}
   },
   {
     "name": "Grave Digger (Medium)",
     "type": "T2_RupuGraveDigger_C",
     "health": 60,
     "experiencie": 240,
-    "lootTable": "EasyRupu_T2"
+    "lootTable": "EasyRupu_T2",
+    "category": "Rupu",
+    "tier": "T2",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Great Rupu Wall",
+    "type": "AC_RupuGate_C",
+    "dropQuantity": {}
   },
   {
     "name": "Green Rupu",
     "type": "FlyingRupu_C",
     "health": 150,
     "experiencie": 194,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Lava Papak",
+    "type": "LavaPapakMob_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Leaning Fortress",
+    "type": "KS_LargeRupuCamp_2_C",
+    "dropQuantity": {}
   },
   {
     "name": "Marshland Stalker",
     "type": "RupuStalker_C",
     "health": 400,
     "experiencie": 150,
-    "lootTable": "HardRupu_T2"
+    "lootTable": "HardRupu_T2",
+    "category": "Rupu",
+    "dropQuantity": {}
   },
   {
     "name": "Matriarch",
     "type": "T2_RupuMatriarch_C",
     "health": 500,
     "experiencie": 4000,
-    "lootTable": "HardRupu_T2_AC"
+    "lootTable": "HardRupu_T2_AC",
+    "category": "Rupu",
+    "tier": "T2",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Okkam",
+    "type": "OkkamMob_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Papak",
+    "type": "PapakMob_C",
+    "dropQuantity": {}
   },
   {
     "name": "Prophet",
     "type": "RupuProphet_C",
     "health": 1500,
     "experiencie": 1200,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Reinforced Rupu Outpost",
+    "type": "T1_HardRupuCamp_01_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Reinforced Rupu Outpost",
+    "type": "T1_HardRupuCamp_02_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Reinforced Rupu Outpost",
+    "type": "T1_HardRupuCamp_03_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Reinforced Rupu Outpost",
+    "type": "T1_HardRupuCamp_04_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Reinforced Rupu Outpost",
+    "type": "T1_SingleBallistaRupuCamp_01_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Reinforced Rupu Outpost",
+    "type": "T1_SingleScattershotRupuCamp_01_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Reinforced Rupu Outpost",
+    "type": "MediumMediumRupuCamp_01_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rock Thrower",
+    "type": "AC_StarTowerCommon_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Ruined Fortress",
+    "type": "SG_FlatlandsRuinsFortress_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Artillery Camp",
+    "type": "SG_AshWastesArtilleryCamp_C",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Ashdweller",
     "type": "T3_RupuAshdweller_C",
     "health": 150,
     "experiencie": 560,
-    "lootTable": "EasyRupu_T3"
+    "lootTable": "EasyRupu_T3",
+    "category": "Rupu",
+    "tier": "T3",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Berserker",
     "type": "RagingRupu_C",
     "health": 300,
     "experiencie": 1681,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Campfire Site",
+    "type": "T1_TinyRupuCamp_03_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Campfire Site",
+    "type": "T1_TinyRupuCamp_04_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Cave",
+    "type": "TestRupuCave_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Defensive Storage",
+    "type": "CanyonDragableChest_C",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Drudge",
     "type": "T3_RupuDrudge_C",
     "health": 125,
     "experiencie": 1200,
-    "lootTable": "EasyRupu_T3"
+    "lootTable": "EasyRupu_T3",
+    "category": "Rupu",
+    "tier": "T3",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Drudge",
+    "type": "RupuDrudge_T0_C",
+    "category": "Rupu",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Dunestalker (Medium)",
     "type": "T2_RupuDunestalker_C",
     "health": 150,
     "experiencie": 300,
-    "lootTable": "MediumRupu_T2"
+    "lootTable": "MediumRupu_T2",
+    "category": "Rupu",
+    "tier": "T2",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Firebrand",
     "type": "T4_RupuFirebrand_C",
     "health": 350,
-    "lootTable": "HardRupu_T4"
+    "lootTable": "HardRupu_T4",
+    "category": "Rupu",
+    "tier": "T4",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Forager (Medium)",
     "type": "T2_RupuForager_C",
     "health": 135,
     "experiencie": 140,
-    "lootTable": "MediumRupu_T2"
+    "lootTable": "MediumRupu_T2",
+    "category": "Rupu",
+    "tier": "T2",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Forerunner",
     "type": "RupuForerunner_C",
     "health": 135,
     "experiencie": 35,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Forerunner (Easy)",
     "type": "T1_RupuForerunner_C",
     "health": 135,
     "experiencie": 75,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "tier": "T1",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Fortress",
+    "type": "HardLargeRupuCampFortified1_03_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Gifting Altar",
+    "type": "T1_TinyRupuCamp_01_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Gifting Altar",
+    "type": "T1_TinyRupuCamp_05_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Gifting Altar",
+    "type": "RupuCaveCamp_01_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Gifting Altar",
+    "type": "Canyon_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Habitat",
+    "type": "EasySmallRupuCamp_01_C",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Harasser (Easy)",
     "type": "T1_RupuHarasser_C",
     "health": 120,
     "experiencie": 150,
-    "lootTable": "MediumRupu_T1"
+    "lootTable": "MediumRupu_T1",
+    "category": "Rupu",
+    "tier": "T1",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Harasser (Medium)",
     "type": "T2_RupuHarasser_C",
     "health": 120,
     "experiencie": 300,
-    "lootTable": "MediumRupu_T2"
+    "lootTable": "MediumRupu_T2",
+    "category": "Rupu",
+    "tier": "T2",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Hazraki (Medium)",
     "type": "T2_RupuHazraki_C",
     "health": 180,
     "experiencie": 800,
-    "lootTable": "MediumRupu_T2"
+    "lootTable": "MediumRupu_T2",
+    "category": "Rupu",
+    "tier": "T2",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Hermit (Medium)",
     "type": "T2_RupuHermit_C",
     "health": 60,
     "experiencie": 432,
-    "lootTable": "EasyRupu_T2"
+    "lootTable": "EasyRupu_T2",
+    "category": "Rupu",
+    "tier": "T2",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Hero",
     "type": "ImpossibleRupu_C",
     "health": 60,
     "experiencie": 983,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Hero",
     "type": "PyramidGuardRupu_C",
     "health": 60,
     "experiencie": 983,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Hunter",
     "type": "T3_RupuHunter_C",
     "health": 150,
     "experiencie": 1200,
-    "lootTable": "EasyRupu_T3"
+    "lootTable": "EasyRupu_T3",
+    "category": "Rupu",
+    "tier": "T3",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Moisture Collector",
+    "type": "CanyonMountainTopSmallRupuCamp_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Observation Point",
+    "type": "KS_LargeRupuCamp_C",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Oracle",
     "type": "T3_RupuOracleFireBomb_C",
     "health": 350,
     "experiencie": 2600,
-    "lootTable": "HardRupu_T3"
+    "lootTable": "HardRupu_T3",
+    "category": "Rupu",
+    "tier": "T3",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Oracle",
     "type": "RupuOracle_C",
     "health": 175,
     "experiencie": 55,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Overseer",
     "type": "T3_RupuOverseerFireBomb_C",
     "health": 300,
     "experiencie": 1600,
-    "lootTable": "HardRupu_T3"
+    "lootTable": "HardRupu_T3",
+    "category": "Rupu",
+    "tier": "T3",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Overseer",
     "type": "RupuOverseer_C",
     "health": 180,
     "experiencie": 200,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Plainstrider (Hard)",
     "type": "T3_RupuPlainstrider_C",
     "health": 160,
-    "lootTable": "EasyRupu_T3"
+    "lootTable": "EasyRupu_T3",
+    "category": "Rupu",
+    "tier": "T3",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Plainstrider (Medium)",
     "type": "T2_RupuPlainstrider_C",
     "health": 135,
     "experiencie": 300,
-    "lootTable": "MediumRupu_T2"
+    "lootTable": "MediumRupu_T2",
+    "category": "Rupu",
+    "tier": "T2",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Prayer Site",
+    "type": "T1_TinyRupuCamp_02_C",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Priestess",
     "type": "RupuPriestessFireBomb_C",
     "health": 800,
     "experiencie": 600,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Priestess (Medium)",
     "type": "T2_RupuPriestess_C",
     "health": 500,
     "experiencie": 800,
-    "lootTable": "HardRupu_T2_AC"
+    "lootTable": "HardRupu_T2_AC",
+    "category": "Rupu",
+    "tier": "T2",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Rabble",
     "type": "T3_RupuRabble_C",
     "health": 40,
     "experiencie": 400,
-    "lootTable": "EasyRupu_T3"
+    "lootTable": "EasyRupu_T3",
+    "category": "Rupu",
+    "tier": "T3",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Raiding Checkpoint",
+    "type": "CanyonBurnableChest_C",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Scavenger (Easy)",
     "type": "T1_RupuScavenger_C",
     "experiencie": 75,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "tier": "T1",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Scuttler",
     "type": "T3_RupuScuttler_C",
     "health": 160,
     "experiencie": 900,
-    "lootTable": "EasyRupu_T3"
+    "lootTable": "EasyRupu_T3",
+    "category": "Rupu",
+    "tier": "T3",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Seeker",
     "type": "T3_RupuSeeker_C",
     "health": 200,
     "experiencie": 1200,
-    "lootTable": "MediumRupu_T3"
+    "lootTable": "MediumRupu_T3",
+    "category": "Rupu",
+    "tier": "T3",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Sentinel (Easy)",
     "type": "T1_RupuSentinel_C",
     "health": 145,
     "experiencie": 150,
-    "lootTable": "HardRupu_T1"
+    "lootTable": "HardRupu_T1",
+    "category": "Rupu",
+    "tier": "T1",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Shaman (Medium)",
     "type": "T2_RupuShaman_C",
     "health": 250,
     "experiencie": 800,
-    "lootTable": "HardRupu_T2"
+    "lootTable": "HardRupu_T2",
+    "category": "Rupu",
+    "tier": "T2",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Shelter",
+    "type": "CanyonIslandShelter_C",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Skirmisher (Easy)",
     "type": "T1_RupuSkirmisher_C",
     "health": 135,
     "experiencie": 150,
-    "lootTable": "MediumRupu_T1"
+    "lootTable": "MediumRupu_T1",
+    "category": "Rupu",
+    "tier": "T1",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Skirmisher (Medium)",
     "type": "T2_RupuSkirmisher_C",
     "health": 135,
     "experiencie": 300,
-    "lootTable": "EasyRupu_T2"
+    "lootTable": "EasyRupu_T2",
+    "category": "Rupu",
+    "tier": "T2",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Thug (Easy)",
     "type": "T1_RupuThug_C",
     "health": 120,
     "experiencie": 75,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "tier": "T1",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Warrior",
     "type": "ProtectorRupu_C",
     "health": 200,
     "experiencie": 627,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Watch Tower",
+    "type": "SG_RoadWatchtower_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Watch Tower",
+    "type": "KS_EasyRupuCamp_2_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Watch Tower",
+    "type": "KS_MediumRupuCamp_1_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Watch Tower",
+    "type": "AC_MatriarchCampUnedited_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Watch Tower",
+    "type": "EasySingleRupuCampFortified_01_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Rupu Watch Tower",
+    "type": "SG_AshWastesFortress2_C",
+    "dropQuantity": {}
   },
   {
     "name": "Rupu Zealot (Medium)",
     "type": "T2_RupuZealot_C",
     "health": 250,
     "experiencie": 600,
-    "lootTable": "HardRupu_T2_AC"
+    "lootTable": "HardRupu_T2_AC",
+    "category": "Rupu",
+    "tier": "T2",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Sarcophagus of the Ancient",
+    "type": "AC_Sarcophagus_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Rupu Hut",
+    "type": "T1_SingleRupuCamp_01_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Rupu Hut",
+    "type": "T1_SingleRupuCamp_02_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Rupu Hut",
+    "type": "T1_SingleRupuCamp_03_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Rupu Hut",
+    "type": "T1_SingleRupuCamp_04_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Rupu Hut",
+    "type": "T1_SingleRupuCamp_05_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Rupu Outpost",
+    "type": "T1_MediumRupuCamp_01_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Rupu Outpost",
+    "type": "T1_MediumRupuCamp_02_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Rupu Outpost",
+    "type": "T1_MediumRupuCamp_03_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Rupu Outpost",
+    "type": "T1_MediumRupuCamp_04_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Rupu Outpost",
+    "type": "T1_MediumRupuCamp_05_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Rupu Outpost",
+    "type": "KS_EasyRupuCamp_3_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Rupu Outpost",
+    "type": "EasyMediumRupuCamp_01_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Rupu Village",
+    "type": "MediumSmallRupuCamp_01_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Rupu Village",
+    "type": "MediumSmallRupuCamp_02_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Sunken Temple",
+    "type": "SG_LakeCamp_C",
+    "dropQuantity": {}
   },
   {
     "name": "Tar Dweller",
     "type": "TarDwellerRupu_C",
     "health": 45,
     "experiencie": 68,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Temple of Stars",
+    "type": "AC_MatriarchCamp_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Tower of The Holly Fire",
+    "type": "AC_StarTowerFire_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Toxic Papak",
+    "type": "SwampPapakMob_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Toxic War Papak",
+    "type": "SwampPapakMob_Q_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "War Okkam",
+    "type": "OkkamMob_Q_C",
+    "dropQuantity": {}
   },
   {
     "name": "White Death (Medium)",
     "type": "T2_WhiteDeath_C",
     "health": 105,
     "experiencie": 600,
-    "lootTable": "MediumRupu_T2"
+    "lootTable": "MediumRupu_T2",
+    "tier": "T2",
+    "dropQuantity": {}
   },
   {
     "name": "White Death (Medium)",
     "type": "T3_WhiteDeath_C",
     "health": 120,
     "experiencie": 2200,
-    "lootTable": "MediumRupu_T3"
+    "lootTable": "MediumRupu_T3",
+    "tier": "T3",
+    "dropQuantity": {}
   },
   {
     "name": "Yellow Rupu",
     "type": "IllusiveGiantRupu_C",
     "health": 600,
     "experiencie": 2227,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "category": "Rupu",
+    "dropQuantity": {}
   },
   {
     "name": "Zharvakko",
     "type": "ZharvakkoShaman_C",
     "health": 250,
     "experiencie": 210,
-    "lootTable": "EasyRupu_T1"
+    "lootTable": "EasyRupu_T1",
+    "dropQuantity": {}
   }
 ]

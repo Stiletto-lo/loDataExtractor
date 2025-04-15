@@ -202,16 +202,69 @@ const filterRelevantObjects = (objects) => {
  * @param {Object} additionalInfo - The additional info object
  * @returns {Object} - Extracted creature properties
  */
-const extractCreatureData = (additionalInfo) => {
+const extractCreatureData = (additionalInfo, objectData) => {
 	if (!additionalInfo) return {};
 
-	return {
+	// Extract basic creature data
+	const result = {
 		experiencie: additionalInfo?.Properties?.ExperienceAward,
 		health: additionalInfo?.Properties?.MaxHealth,
 		lootTable: dataParser.parseObjectPath(
 			additionalInfo?.Properties?.Loot?.ObjectPath,
 		),
 	};
+
+	// Extract additional data if available
+	if (objectData) {
+		// Extract tier information from type name or path
+		const typeStr = objectData.Type || "";
+		if (typeStr.includes("T1_") || typeStr.includes("Tier1")) {
+			result.tier = "T1";
+		} else if (typeStr.includes("T2_") || typeStr.includes("Tier2")) {
+			result.tier = "T2";
+		} else if (typeStr.includes("T3_") || typeStr.includes("Tier3")) {
+			result.tier = "T3";
+		} else if (typeStr.includes("T4_") || typeStr.includes("Tier4")) {
+			result.tier = "T4";
+		}
+
+		// Extract category based on creature type
+		if (typeStr.includes("Rupu")) {
+			result.category = "Rupu";
+		} else if (typeStr.includes("Nurr")) {
+			result.category = "Nurr";
+		} else if (typeStr.includes("Killin")) {
+			result.category = "Killin";
+		} else if (typeStr.includes("Okkam")) {
+			result.category = "Okkam";
+		} else if (typeStr.includes("Papak")) {
+			result.category = "Papak";
+		} else if (typeStr.includes("Phemke")) {
+			result.category = "Phemke";
+		}
+
+		// Extract description if available
+		if (objectData?.Properties?.Description?.LocalizedString) {
+			result.description = objectData.Properties.Description.LocalizedString;
+		}
+
+		// Extract behavior information if available
+		if (objectData?.Properties?.BehaviorType) {
+			result.behavior = objectData.Properties.BehaviorType;
+		}
+	}
+
+	// Extract drop chance and quantity if available
+	if (additionalInfo?.Properties?.Loot?.Tables && additionalInfo.Properties.Loot.Tables.length > 0) {
+		const lootTable = additionalInfo.Properties.Loot.Tables[0];
+		result.dropChance = lootTable.RunChance || 1.0;
+		result.dropQuantity = {
+			min: lootTable.MinIterations || 1,
+			max: lootTable.MaxIterations || 1
+		};
+	}
+
+	return result;
 };
 
 /**
@@ -244,13 +297,41 @@ const parseLootSites = (filePath) => {
 
 	translator.addLootSiteTranslation(name, translation);
 
+	// Find additional components that might contain useful information
+	const mobVariationComponent = jsonData.find((o) => o.Type === "MistHumanoidMobVariationComponent");
+	const attackComponent = jsonData.find((o) => o.Type?.includes("AttackComponent"));
+	const resistanceComponent = jsonData.find((o) => o.Type?.includes("ResistanceComponent"));
+
+	// Extract creature data with enhanced information
+	const creatureData = extractCreatureData(mobVariationComponent, firstObject);
+
+	// Add attack information if available
+	if (attackComponent?.Properties) {
+		creatureData.attacks = {
+			damage: attackComponent.Properties.Damage || undefined,
+			range: attackComponent.Properties.Range || undefined,
+			attackSpeed: attackComponent.Properties.AttackSpeed || undefined
+		};
+	}
+
+	// Add resistance information if available
+	if (resistanceComponent?.Properties) {
+		creatureData.resistances = resistanceComponent.Properties.Resistances || undefined;
+		creatureData.weaknesses = resistanceComponent.Properties.Weaknesses || undefined;
+	}
+
+	// Extract equipment information if available
+	const equipmentComponent = jsonData.find((o) => o.Type?.includes("EquipmentComponent"));
+	if (equipmentComponent?.Properties?.Equipment) {
+		creatureData.equipment = equipmentComponent.Properties.Equipment;
+	}
+
+	// Create the creature object with all available information
 	const creature = {
 		...creatureTemplate,
 		type: name,
 		name: translation,
-		...extractCreatureData(
-			jsonData.find((o) => o.Type === "MistHumanoidMobVariationComponent"),
-		),
+		...creatureData
 	};
 
 	utilityFunctions.getCreatures().push(creature);
