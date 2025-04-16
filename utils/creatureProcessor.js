@@ -3,7 +3,7 @@
  *
  * This module enhances creature data processing by adding more detailed information
  * to creature exports, including descriptions, spawn locations, behavior patterns,
- * attacks, resistances, and weaknesses.
+ * attacks, resistances, weaknesses, and drop information.
  */
 
 const fs = require('fs-extra');
@@ -15,9 +15,10 @@ const creatureTemplate = require('../templates/creature');
  * @param {Array} creatures - The array of creature objects to process
  * @param {Object} translator - The translator object for localization
  * @param {Object} lootTables - The loot tables data for drop information
+ * @param {Array} items - The array of item objects for drop information
  * @returns {Array} - Enhanced creature data
  */
-function processCreatures(creatures, translator, lootTables = {}) {
+function processCreatures(creatures, translator, lootTables = {}, items = []) {
   if (!Array.isArray(creatures) || creatures.length === 0) {
     console.warn('No creatures to process');
     return [];
@@ -25,12 +26,22 @@ function processCreatures(creatures, translator, lootTables = {}) {
 
   console.info(`Processing ${creatures.length} creatures with enhanced data`);
 
+  // Create a map of items by name for faster lookup
+  const itemMap = new Map();
+  if (Array.isArray(items)) {
+    for (const item of items) {
+      if (item.name) {
+        itemMap.set(item.name, item);
+      }
+    }
+  }
+
   return creatures.map(creature => {
     // Create a new creature object based on the template
     const enhancedCreature = { ...creatureTemplate };
 
     // Copy existing properties
-    for (const key in Object.keys(creature)) {
+    for (const key in creature) {
       if (creature[key] !== undefined) {
         enhancedCreature[key] = creature[key];
       }
@@ -59,17 +70,31 @@ function processCreatures(creatures, translator, lootTables = {}) {
     if (enhancedCreature.lootTable && lootTables[enhancedCreature.lootTable]) {
       const lootTable = lootTables[enhancedCreature.lootTable];
 
-      // Initialize dropQuantity if not already present
-      if (!enhancedCreature.dropQuantity || Object.keys(enhancedCreature.dropQuantity).length === 0) {
-        enhancedCreature.dropQuantity = {
-          min: lootTable.minQuantity || 0,
-          max: lootTable.maxQuantity || 0
-        };
+      // Add loot array with items that can be obtained from this creature
+      enhancedCreature.loot = [];
+
+      // Use the drops directly from the parsed loot table data
+      if (lootTable.drops && Array.isArray(lootTable.drops)) {
+        for (const dropInfo of lootTable.drops) {
+          // Create a new loot entry matching the desired structure
+          const lootItem = {
+            name: dropInfo.name,
+            baseChance: dropInfo.chance,
+            // effectiveChance: calculatedValue, // TODO: Add calculation if needed
+            quantity: {
+              min: dropInfo.minQuantity,
+              max: dropInfo.maxQuantity
+            }
+          };
+
+          // Add the loot item to the creature's loot array
+          enhancedCreature.loot.push(lootItem);
+        }
       }
 
-      // Add drop chance if available
-      if (lootTable.chance) {
-        enhancedCreature.dropChance = lootTable.chance;
+      // Sort loot by name for consistency
+      if (enhancedCreature.loot.length > 0) {
+        enhancedCreature.loot.sort((a, b) => a.name.localeCompare(b.name));
       }
     }
 
