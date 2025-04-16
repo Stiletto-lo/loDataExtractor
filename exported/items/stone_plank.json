@@ -1,0 +1,22 @@
+{
+  "category": "Resources",
+  "name": "Stone Plank",
+  "trade_price": 0.4,
+  "experiencieReward": 25,
+  "stackSize": 100,
+  "weight": 1,
+  "drops": [
+    {
+      "location": "BasketLoot T2 AC",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HotspotLoot T2 AC",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

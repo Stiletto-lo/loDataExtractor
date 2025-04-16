@@ -1,0 +1,18 @@
+{
+  "category": "Knowledge",
+  "name": "Fragment",
+  "trade_price": 50,
+  "description": "Faint images are etched on the translucent surface.",
+  "experiencieReward": 10,
+  "stackSize": 100,
+  "drops": [
+    {
+      "location": "Fragment Strongbox",
+      "chance": 1,
+      "minQuantity": 5,
+      "maxQuantity": 10
+    }
+  ],
+  "wikiVisibility": false,
+  "weight": 0.2
+}

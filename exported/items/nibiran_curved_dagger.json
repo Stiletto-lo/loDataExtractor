@@ -1,0 +1,93 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Nibiran Ingot"
+        },
+        {
+          "count": 6,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 3,
+          "name": "Leather"
+        }
+      ],
+      "station": "Smithing",
+      "time": 100
+    }
+  ],
+  "name": "Nibiran Curved Dagger",
+  "trade_price": 1900.2,
+  "experiencieReward": 1489,
+  "stackSize": 100,
+  "weight": 1.7,
+  "durability": 770,
+  "weaponInfo": {
+    "weaponSpeed": 135,
+    "impact": 15,
+    "stability": 5,
+    "weaponLength": 55,
+    "damage": 70,
+    "penetration": 10
+  },
+  "toolInfo": [
+    {
+      "toolType": "Scythe",
+      "tier": 1
+    }
+  ],
+  "drops": [
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.0044843048,
+      "minQuantity": 1,
+      "maxQuantity": 4
+    },
+    {
+      "location": "BigHotspotLoot T4",
+      "chance": 0.07142857,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "EasyRupuCamp T4",
+      "chance": 0.07142857,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "EasyRupu T4",
+      "chance": 0.07142857,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HardRupuCamp T4",
+      "chance": 0.07142857,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Firebrand",
+      "chance": 0.07142857,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "MediumRupuCamp T4",
+      "chance": 0.07142857,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "MediumRupu T4",
+      "chance": 0.07142857,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

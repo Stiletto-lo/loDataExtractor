@@ -1,0 +1,20 @@
+{
+  "name": "Sand Bed",
+  "parent": "Construction",
+  "category": "Interactables",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 35,
+          "name": "Fiber"
+        },
+        {
+          "count": 8,
+          "name": "Wood"
+        }
+      ]
+    }
+  ],
+  "experiencieReward": 21
+}

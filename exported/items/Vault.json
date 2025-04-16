@@ -1,0 +1,28 @@
+{
+  "name": "Vault",
+  "parent": "Construction",
+  "category": "Containers",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 25,
+          "name": "Rupu Vine"
+        },
+        {
+          "count": 10,
+          "name": "Wooden Slab"
+        },
+        {
+          "count": 40,
+          "name": "Fiber Weave"
+        }
+      ]
+    }
+  ],
+  "experiencieReward": 32,
+  "structureInfo": {
+    "type": "Medium",
+    "hp": 5000
+  }
+}

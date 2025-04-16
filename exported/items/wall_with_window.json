@@ -1,0 +1,32 @@
+{
+  "category": "Stone",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Wooden Slab"
+        },
+        {
+          "count": 10,
+          "name": "Stone"
+        },
+        {
+          "count": 1,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 3,
+          "name": "Tree Sap"
+        }
+      ]
+    }
+  ],
+  "name": "Wall with Window",
+  "experiencieReward": 32,
+  "weight": 7,
+  "structureInfo": {
+    "type": "Solid",
+    "hp": 10000
+  }
+}

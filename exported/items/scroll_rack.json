@@ -1,0 +1,31 @@
+{
+  "name": "Scroll Rack",
+  "parent": "Small Chest",
+  "category": "Containers",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 40,
+          "name": "Wood"
+        },
+        {
+          "count": 40,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 24,
+          "name": "Fiber"
+        },
+        {
+          "count": 12,
+          "name": "Stone"
+        }
+      ]
+    }
+  ],
+  "experiencieReward": 50,
+  "structureInfo": {
+    "hp": 750
+  }
+}

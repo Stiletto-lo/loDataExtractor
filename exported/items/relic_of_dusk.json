@@ -1,0 +1,41 @@
+{
+  "category": "Resources",
+  "name": "Relic of Dusk",
+  "trade_price": 1000,
+  "experiencieReward": 3,
+  "stackSize": 100,
+  "weight": 0.5,
+  "drops": [
+    {
+      "location": "AC Relic 2",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "BasketLoot T2 AC",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Matriarch",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Priestess (Medium)",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Zealot (Medium)",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
+  "wikiVisibility": false
+}

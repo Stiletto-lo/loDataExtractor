@@ -1,0 +1,44 @@
+{
+  "category": "Armors",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 18,
+          "name": "Cattail"
+        },
+        {
+          "count": 5,
+          "name": "Earth Wax"
+        }
+      ],
+      "station": "Advanced Fiberworking Station",
+      "time": 3
+    },
+    {
+      "ingredients": [
+        {
+          "count": 18,
+          "name": "Cattail"
+        },
+        {
+          "count": 5,
+          "name": "Earth Wax"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 2
+    }
+  ],
+  "name": "Forester's Sleeves",
+  "trade_price": 8.9,
+  "experiencieReward": 70,
+  "stackSize": 100,
+  "weight": 1,
+  "durability": 200,
+  "armorInfo": {
+    "absorbing": 8,
+    "reduction": 2,
+    "speedReduction": 3
+  }
+}

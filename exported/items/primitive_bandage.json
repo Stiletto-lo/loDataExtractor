@@ -1,0 +1,24 @@
+{
+  "name": "Primitive Bandage",
+  "parent": "Equipment",
+  "category": "Interactables",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 16,
+          "name": "Fiber"
+        },
+        {
+          "count": 1,
+          "name": "Ash"
+        }
+      ],
+      "output": 4
+    }
+  ],
+  "trade_price": 1.2,
+  "experiencieReward": 2,
+  "stackSize": 100,
+  "weight": 0.03
+}

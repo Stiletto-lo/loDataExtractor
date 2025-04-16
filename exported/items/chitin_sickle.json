@@ -1,0 +1,49 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 2,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 22,
+          "name": "Fiber"
+        },
+        {
+          "count": 10,
+          "name": "Stone"
+        },
+        {
+          "count": 4,
+          "name": "Chitin Plate"
+        }
+      ],
+      "station": "Crafting Bench",
+      "time": 2
+    }
+  ],
+  "name": "Chitin Sickle",
+  "parent": "CeramicScythe",
+  "trade_price": 6.2,
+  "experiencieReward": 25,
+  "weight": 2.2,
+  "durability": 900,
+  "weaponInfo": {
+    "weaponLength": 47
+  },
+  "toolInfo": [
+    {
+      "toolType": "Scythe",
+      "tier": 17
+    }
+  ],
+  "drops": [
+    {
+      "location": "Tools and Equipment Strongbox",
+      "chance": 0.44898921999999997,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

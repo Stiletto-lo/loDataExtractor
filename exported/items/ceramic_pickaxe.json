@@ -1,0 +1,52 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 12,
+          "name": "Ceramic Shard"
+        },
+        {
+          "count": 20,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 2,
+          "name": "Bone Glue"
+        }
+      ],
+      "station": "Crafting Bench",
+      "time": 2
+    }
+  ],
+  "name": "Ceramic Pickaxe",
+  "parent": "Bone Pickaxe",
+  "trade_price": 98.2,
+  "experiencieReward": 120,
+  "weight": 5,
+  "durability": 550,
+  "weaponInfo": {
+    "weaponLength": 66,
+    "damage": 30
+  },
+  "toolInfo": [
+    {
+      "toolType": "Mining",
+      "tier": 15
+    }
+  ],
+  "drops": [
+    {
+      "location": "Tools Strongbox",
+      "chance": 0.063613234,
+      "minQuantity": 1,
+      "maxQuantity": 5
+    },
+    {
+      "location": "Tools and Equipment Strongbox",
+      "chance": 0.02244946,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

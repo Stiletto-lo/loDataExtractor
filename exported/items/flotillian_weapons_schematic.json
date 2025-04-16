@@ -1,0 +1,44 @@
+{
+  "category": "Schematics",
+  "name": "Flotillian Weapons Schematic",
+  "stackSize": 100,
+  "drops": [
+    {
+      "location": "EasyRupu T4",
+      "chance": 0.05882353,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Firebrand",
+      "chance": 0.05882353,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Koa T4",
+      "chance": 0.05882353,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "MediumRupu T4",
+      "chance": 0.05882353,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
+  "learn": [
+    "Wyndanblade Quarterstaff",
+    "Nibiran Curved Dagger",
+    "Nibiran Decapitator",
+    "Wyndan Flame Sword",
+    "Wyndan Hammer",
+    "Wyndan Sabre",
+    "Nibiran Hammer",
+    "Ironblade Quarterstaff",
+    "Nibiran Quarterstaff",
+    "Wyndan Warhammer",
+    "Nibiran Warhammer"
+  ]
+}

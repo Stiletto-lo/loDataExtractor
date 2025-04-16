@@ -1,0 +1,70 @@
+{
+  "category": "Resources",
+  "name": "Redwood Wood",
+  "trade_price": 2.6,
+  "experiencieReward": 12,
+  "stackSize": 100,
+  "weight": 0.73,
+  "drops": [
+    {
+      "location": "EasyRupuCamp T3",
+      "chance": 0.16666666,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HardRupuCamp T3",
+      "chance": 0.16666666,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "HotspotLoot T3",
+      "chance": 0.16666666,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "MediumRupuCamp T3",
+      "chance": 0.16666666,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "TreasureChest T3",
+      "chance": 0.16666666,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "EasyRupuCamp T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 8,
+      "maxQuantity": 8
+    },
+    {
+      "location": "HardRupuCamp T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 8,
+      "maxQuantity": 8
+    },
+    {
+      "location": "HotspotLoot T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 8,
+      "maxQuantity": 8
+    },
+    {
+      "location": "MediumRupuCamp T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 8,
+      "maxQuantity": 8
+    },
+    {
+      "location": "TreasureChest T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 8,
+      "maxQuantity": 8
+    }
+  ]
+}

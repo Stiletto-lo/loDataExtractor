@@ -1,0 +1,48 @@
+{
+  "name": "Wingsuit",
+  "parent": "Nomad Grappling Hook",
+  "drops": [
+    {
+      "location": "Equipment Strongbox",
+      "chance": 0.016393442,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
+  "category": "Equipment",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 20,
+          "name": "Wood Shaft"
+        }
+      ],
+      "station": "Advanced Fiberworking Station",
+      "time": 3
+    },
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 20,
+          "name": "Wood Shaft"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 3
+    }
+  ],
+  "trade_price": 29,
+  "experiencieReward": 162,
+  "stackSize": 100,
+  "weight": 4,
+  "durability": 120
+}

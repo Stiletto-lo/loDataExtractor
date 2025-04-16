@@ -481,6 +481,7 @@ controller.getTranslateFiles = () => {
 			const cleanedName = englishName
 				.replace(/\r\n|\n\r|\n|\r/g, " ")
 				.replace(/\s+/g, " ")
+				.replace(/[\u0000-\u001F\u007F-\u009F]/g, "") // Remove control characters
 				.trim();
 			usedItemNames.add(cleanedName);
 		}
@@ -492,23 +493,61 @@ controller.getTranslateFiles = () => {
 			translationsFiltered[language] = {};
 		}
 
+		// Create a map to track duplicate keys and their values
+		const processedKeys = new Map();
+
 		// Process translations
-		for (const key in translationStore.translationsFromOtherLanguages[
-			language
-		]) {
+		for (const key in translationStore.translationsFromOtherLanguages[language]) {
 			if (controller.isKeyTranslationInUse(key)) {
 				// Get the English name which will be used as the key
-				const englishName = translationStore.translationsInUse[key];
+				let englishName = translationStore.translationsInUse[key];
 				// Get the translated text in the target language
-				const translatedText =
-					translationStore.translationsFromOtherLanguages[language][key];
+				const translatedText = translationStore.translationsFromOtherLanguages[language][key];
 
-				// Only include if this is an actual game item that's in use
-				if (englishName && usedItemNames.has(englishName)) {
-					translationsFiltered[language][englishName] = translatedText;
+				// Skip invalid entries
+				if (!englishName || !translatedText || typeof translatedText !== 'string' ||
+					!usedItemNames.has(englishName)) {
+					continue;
+				}
+
+				// Clean up the English name to use as a key
+				englishName = englishName
+					.replace(/\r\n|\n\r|\n|\r/g, " ")
+					.replace(/\s+/g, " ")
+					.replace(/[\u0000-\u001F\u007F-\u009F]/g, "") // Remove control characters
+					.trim();
+
+				// Clean up the translated text to prevent JSON corruption
+				const cleanedTranslation = translatedText
+					.replace(/\r\n|\n\r|\n|\r/g, " ")
+					.replace(/\s+/g, " ")
+					.replace(/[\u0000-\u001F\u007F-\u009F]/g, "") // Remove control characters
+					.replace(/\\(?!["\\bfnrt\/])/g, "\\\\") // Escape backslashes that aren't part of escape sequences
+					.replace(/"/g, "\\\"") // Escape double quotes
+					.trim();
+
+				// Skip if the cleaned translation is empty
+				if (!cleanedTranslation) {
+					continue;
+				}
+
+				// Handle duplicate keys - keep the longer translation as it's likely more complete
+				if (processedKeys.has(englishName)) {
+					const existingTranslation = processedKeys.get(englishName);
+					// Only replace if the new translation is longer (potentially more complete)
+					if (cleanedTranslation.length > existingTranslation.length) {
+						processedKeys.set(englishName, cleanedTranslation);
+					}
+				} else {
+					processedKeys.set(englishName, cleanedTranslation);
 				}
 			}
 		}
+
+		// Add all processed translations to the filtered result
+		processedKeys.forEach((value, key) => {
+			translationsFiltered[language][key] = value;
+		});
 	}
 
 	return translationsFiltered;

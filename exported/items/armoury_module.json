@@ -1,0 +1,38 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Strut"
+        },
+        {
+          "count": 1,
+          "name": "Gasket"
+        },
+        {
+          "count": 1,
+          "name": "Level"
+        }
+      ],
+      "station": "Module Fabricator",
+      "time": 30
+    }
+  ],
+  "name": "Armoury Module",
+  "experiencieReward": 65,
+  "weight": 0.24,
+  "moduleInfo": {
+    "max": 20,
+    "increase": 1
+  },
+  "drops": [
+    {
+      "location": "Modules Strongbox",
+      "chance": 0.10526316,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

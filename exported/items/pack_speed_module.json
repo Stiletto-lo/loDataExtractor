@@ -1,0 +1,38 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Rotor"
+        },
+        {
+          "count": 1,
+          "name": "Strut"
+        },
+        {
+          "count": 1,
+          "name": "Pinion"
+        }
+      ],
+      "station": "Module Fabricator",
+      "time": 30
+    }
+  ],
+  "name": "Pack Speed Module",
+  "weight": 0.24,
+  "moduleInfo": {
+    "max": 20,
+    "increase": 4.5,
+    "maxIncrease": 90
+  },
+  "drops": [
+    {
+      "location": "Modules Strongbox",
+      "chance": 0.10526316,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

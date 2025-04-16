@@ -1,0 +1,45 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Iron Ingot"
+        },
+        {
+          "count": 28,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 1,
+          "name": "Nomad Cloth"
+        }
+      ],
+      "station": "Smithing",
+      "time": 15
+    }
+  ],
+  "name": "Iron Pickaxe",
+  "parent": "CeramicPickaxe",
+  "trade_price": 38.7,
+  "experiencieReward": 160,
+  "weight": 6,
+  "durability": 950,
+  "weaponInfo": {
+    "damage": 35
+  },
+  "toolInfo": [
+    {
+      "toolType": "Mining",
+      "tier": 20
+    }
+  ],
+  "drops": [
+    {
+      "location": "Tools Strongbox",
+      "chance": 0.012722645999999999,
+      "minQuantity": 1,
+      "maxQuantity": 5
+    }
+  ]
+}

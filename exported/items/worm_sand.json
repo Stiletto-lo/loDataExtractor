@@ -1,0 +1,22 @@
+{
+  "name": "Worm Sand",
+  "parent": "Soil Excavator",
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Terrain: Worm Sand"
+        }
+      ],
+      "output": 10,
+      "station": "Soil Excavator",
+      "time": 29
+    }
+  ],
+  "trade_price": 5,
+  "experiencieReward": 22,
+  "stackSize": 100,
+  "weight": 0.1
+}

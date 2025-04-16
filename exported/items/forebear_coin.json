@@ -1,0 +1,33 @@
+{
+  "category": "Resources",
+  "name": "Forebear Coin",
+  "trade_price": 1,
+  "experiencieReward": 3,
+  "stackSize": 999999,
+  "drops": [
+    {
+      "location": "BasketLoot T2 AC",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Matriarch",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Priestess (Medium)",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Zealot (Medium)",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "name": "Fruit Pulp",
+  "parent": "Stomping Station",
+  "drops": [
+    {
+      "location": "EasyRupuCamp T1",
+      "chance": 0.22222222,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "HardRupuCamp T1",
+      "chance": 0.22222222,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "HotspotLoot T1",
+      "chance": 0.22222222,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "MediumRupuCamp T1",
+      "chance": 0.22222222,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "TreasureChest T1",
+      "chance": 0.22222222,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "BasketLoot T2 AC",
+      "chance": 0.18181818,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "EasyRupuCamp T2",
+      "chance": 0.18181818,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "HardRupuCamp T2",
+      "chance": 0.18181818,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "HotspotLoot T2",
+      "chance": 0.18181818,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "HotspotLoot T2 AC",
+      "chance": 0.18181818,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "MediumRupuCamp T2",
+      "chance": 0.18181818,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "TreasureChest T2",
+      "chance": 0.18181818,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "EasyRupuCamp T3",
+      "chance": 0.16666666,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "HardRupuCamp T3",
+      "chance": 0.16666666,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "HotspotLoot T3",
+      "chance": 0.16666666,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "MediumRupuCamp T3",
+      "chance": 0.16666666,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "TreasureChest T3",
+      "chance": 0.16666666,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "EasyRupuCamp T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "HardRupuCamp T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "HotspotLoot T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "MediumRupuCamp T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "TreasureChest T4",
+      "chance": 0.15384615000000001,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    }
+  ],
+  "onlyDevs": true,
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Apple"
+        }
+      ],
+      "output": 7,
+      "station": "Stomping Station",
+      "time": 24
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Apple"
+        }
+      ],
+      "output": 9,
+      "station": "Advanced Stomping Station",
+      "time": 22
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Apple"
+        }
+      ],
+      "output": 11,
+      "station": "Flotillian Stomping Station",
+      "time": 20
+    },
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Corn"
+        }
+      ],
+      "station": "Stomping Station",
+      "time": 24
+    },
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Corn"
+        }
+      ],
+      "station": "Advanced Stomping Station",
+      "time": 22
+    },
+    {
+      "ingredients": [
+        {
+          "count": 4,
+          "name": "Corn"
+        }
+      ],
+      "station": "Flotillian Stomping Station",
+      "time": 20
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Blood Turnip"
+        }
+      ],
+      "station": "Stomping Station",
+      "time": 24
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Blood Turnip"
+        }
+      ],
+      "output": 2,
+      "station": "Advanced Stomping Station",
+      "time": 22
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Blood Turnip"
+        }
+      ],
+      "output": 3,
+      "station": "Flotillian Stomping Station",
+      "time": 20
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Huge Cactus Fruit"
+        }
+      ],
+      "output": 6,
+      "station": "Stomping Station",
+      "time": 32
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Huge Cactus Fruit"
+        }
+      ],
+      "output": 7,
+      "station": "Advanced Stomping Station",
+      "time": 29
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Huge Cactus Fruit"
+        }
+      ],
+      "output": 8,
+      "station": "Flotillian Stomping Station",
+      "time": 26
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Thornberry"
+        }
+      ],
+      "station": "Stomping Station",
+      "time": 24
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Thornberry"
+        }
+      ],
+      "output": 2,
+      "station": "Advanced Stomping Station",
+      "time": 22
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Thornberry"
+        }
+      ],
+      "output": 3,
+      "station": "Flotillian Stomping Station",
+      "time": 20
+    },
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Cactus Flesh"
+        }
+      ],
+      "station": "Stomping Station",
+      "time": 18
+    },
+    {
+      "ingredients": [
+        {
+          "count": 4,
+          "name": "Cactus Flesh"
+        }
+      ],
+      "station": "Advanced Stomping Station",
+      "time": 16
+    },
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Cactus Flesh"
+        }
+      ],
+      "station": "Flotillian Stomping Station",
+      "time": 15
+    }
+  ],
+  "experiencieReward": 3,
+  "stackSize": 100,
+  "weight": 0.34
+}

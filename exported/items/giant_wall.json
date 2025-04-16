@@ -1,0 +1,29 @@
+{
+  "category": "Defenses",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 9,
+          "name": "Bent Wooden Planks"
+        },
+        {
+          "count": 50,
+          "name": "Stone"
+        },
+        {
+          "count": 12,
+          "name": "Wood Shaft"
+        }
+      ]
+    }
+  ],
+  "name": "Giant Wall",
+  "parent": "Advanced Constructions",
+  "experiencieReward": 40,
+  "structureInfo": {
+    "type": "Reinforced",
+    "hp": 100000
+  },
+  "weight": 20
+}

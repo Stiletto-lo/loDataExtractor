@@ -1,0 +1,23 @@
+{
+  "category": "Furniture",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 50,
+          "name": "Wood"
+        },
+        {
+          "count": 30,
+          "name": "Fiber"
+        }
+      ]
+    }
+  ],
+  "name": "Cage",
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 200
+  },
+  "weight": 10
+}

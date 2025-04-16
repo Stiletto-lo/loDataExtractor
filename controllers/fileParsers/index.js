@@ -32,6 +32,8 @@ module.exports = {
 	parseLootTable: lootParsers.parseLootTable,
 	parseLootSites: lootParsers.parseLootSites,
 	getLootSiteNameFromObject: lootParsers.getLootSiteNameFromObject,
+	getAllLootTables: utilityFunctions.getAllLootTables,
+	setLootTables: utilityFunctions.setLootTables,
 
 	// Translation related functions
 	parseTranslations: translationParsers.parseTranslations,
@@ -48,6 +50,9 @@ module.exports = {
 	extractItemByType: utilityFunctions.extractItemByType,
 	getIngredientsFromItem: utilityFunctions.getIngredientsFromItem,
 	getAllItems: utilityFunctions.getAllItems,
+	getTechData: utilityFunctions.getTechData,
+	setTechData: utilityFunctions.setTechData,
+	extractTechByType: utilityFunctions.extractTechByType,
 	getUpgradesData: utilityFunctions.getUpgradesData,
 	getCreatures: utilityFunctions.getCreatures,
 	getAllDatatables: utilityFunctions.getAllDatatables,

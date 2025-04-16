@@ -1,0 +1,22 @@
+{
+  "category": "Liquids",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "WormEgg"
+        }
+      ],
+      "output": 10,
+      "station": "Flotillian Stomping Station",
+      "time": 15
+    }
+  ],
+  "name": "Worm Oil",
+  "parent": "StompingStation_T3",
+  "trade_price": 300,
+  "experiencieReward": 30,
+  "stackSize": 100,
+  "weight": 0.1
+}

@@ -1,0 +1,50 @@
+{
+  "category": "Tools",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 100,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 50,
+          "name": "Hide"
+        }
+      ],
+      "station": "Empty",
+      "time": 2
+    }
+  ],
+  "name": "Ancient Repair Hammer",
+  "trade_price": 9.5,
+  "experiencieReward": 50,
+  "stackSize": 100,
+  "weight": 3.12,
+  "durability": 50,
+  "weaponInfo": {
+    "weaponLength": 42,
+    "damage": 20,
+    "penetration": 5
+  },
+  "drops": [
+    {
+      "location": "Matriarch",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Priestess (Medium)",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "Rupu Zealot (Medium)",
+      "chance": 1,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
+}
