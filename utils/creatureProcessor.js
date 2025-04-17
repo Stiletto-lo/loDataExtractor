@@ -14,11 +14,11 @@ const creatureTemplate = require('../templates/creature');
  * Processes creature data to enhance it with additional information
  * @param {Array} creatures - The array of creature objects to process
  * @param {Object} translator - The translator object for localization
- * @param {Object} lootTables - The loot tables data for drop information
+ * @param {Object} dataTables - The loot tables data for drop information
  * @param {Array} items - The array of item objects for drop information
  * @returns {Array} - Enhanced creature data
  */
-function processCreatures(creatures, translator, lootTables = {}, items = []) {
+function processCreatures(creatures, translator, dataTables = {}, items = []) {
   if (!Array.isArray(creatures) || creatures.length === 0) {
     console.warn('No creatures to process');
     return [];
@@ -67,25 +67,38 @@ function processCreatures(creatures, translator, lootTables = {}, items = []) {
     }
 
     // Process loot table to extract drop information
-    if (enhancedCreature.lootTable && lootTables[enhancedCreature.lootTable]) {
-      const lootTable = lootTables[enhancedCreature.lootTable];
+    if (enhancedCreature.lootTable && dataTables[enhancedCreature.lootTable]) {
+
+      const dataTable = dataTables[enhancedCreature.lootTable];
 
       // Add loot array with items that can be obtained from this creature
       enhancedCreature.loot = [];
 
       // Use the drops directly from the parsed loot table data
-      if (lootTable.drops && Array.isArray(lootTable.drops)) {
-        for (const dropInfo of lootTable.drops) {
+      if (dataTable.drops && Array.isArray(dataTable.drops)) {
+        for (const dropInfo of dataTable.drops) {
           // Create a new loot entry matching the desired structure
           const lootItem = {
             name: dropInfo.name,
             baseChance: dropInfo.chance,
-            // effectiveChance: calculatedValue, // TODO: Add calculation if needed
+            // Calculate effective chance if needed
+            effectiveChance: dropInfo.chance ? (100 - (100 - dropInfo.chance) * (100 - dropInfo.chance) / 100).toFixed(4) : undefined,
             quantity: {
-              min: dropInfo.minQuantity,
-              max: dropInfo.maxQuantity
+              min: dropInfo.minQuantity || 0,
+              max: dropInfo.maxQuantity || 0
             }
           };
+
+          if (lootItem.quantity.min === 0 && lootItem.quantity.max === 0) {
+            if (enhancedCreature.dropQuantity &&
+              enhancedCreature.dropQuantity.min !== undefined &&
+              enhancedCreature.dropQuantity.max !== undefined) {
+              lootItem.quantity = {
+                min: enhancedCreature.dropQuantity.min,
+                max: enhancedCreature.dropQuantity.max
+              };
+            }
+          }
 
           // Add the loot item to the creature's loot array
           enhancedCreature.loot.push(lootItem);
