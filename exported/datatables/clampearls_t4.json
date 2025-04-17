@@ -5,16 +5,22 @@
   "objectPath": "",
   "tables": [
     {
-      "name": "Animal Fat",
-      "chance": 10,
+      "name": "Pearl",
+      "chance": 6.6666665,
       "minQuantity": 1,
       "maxQuantity": 3
     },
     {
       "name": "Purified Water",
-      "chance": 90,
-      "minQuantity": 4,
-      "maxQuantity": 8
+      "chance": 60,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "name": "Animal Fat",
+      "chance": 33.333332,
+      "minQuantity": 5,
+      "maxQuantity": 50
     },
     {
       "name": "ClamPearls_T4",
@@ -2660,16 +2666,22 @@
           "maxQuantity": 5
         },
         {
-          "name": "Animal Fat",
-          "chance": 10,
+          "name": "Pearl",
+          "chance": 6.6666665,
           "minQuantity": 1,
           "maxQuantity": 3
         },
         {
           "name": "Purified Water",
-          "chance": 90,
-          "minQuantity": 4,
-          "maxQuantity": 8
+          "chance": 60,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Animal Fat",
+          "chance": 33.333332,
+          "minQuantity": 5,
+          "maxQuantity": 50
         }
       ]
     }
