@@ -1,0 +1,33 @@
+{
+  "type": "DataTable",
+  "name": "LootboxArmorsCanyonTable",
+  "objectName": "LootboxArmorsCanyonTable",
+  "objectPath": "",
+  "tables": [
+    {
+      "name": "Brittle Bone Handwraps",
+      "chance": 100,
+      "minQuantity": 1,
+      "maxQuantity": 3
+    },
+    {
+      "name": "LootboxArmorsCanyonTable",
+      "objectName": "LootboxArmorsCanyonTable",
+      "objectPath": "",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1,
+      "drops": [
+        {
+          "name": "Brittle Bone Handwraps",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        }
+      ]
+    }
+  ]
+}

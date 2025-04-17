@@ -1,0 +1,1292 @@
+{
+  "type": "DataTable",
+  "name": "Sand_T1",
+  "objectName": "Sand_T1",
+  "objectPath": "",
+  "tables": [
+    {
+      "name": "Sand",
+      "chance": 100,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "name": "Sand_T1",
+      "objectName": "Sand_T1",
+      "objectPath": "",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1,
+      "drops": [
+        {
+          "name": "Brittle Bone Handwraps",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        },
+        {
+          "name": "Fiber Shirt and Trousers",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Medium Backpack",
+          "chance": 22.95082,
+          "minQuantity": 1,
+          "maxQuantity": 2
+        },
+        {
+          "name": "Heavy Backpack",
+          "chance": 1.6393442,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Split Durable Water Sack",
+          "chance": 1.6393442,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Water Circulator",
+          "chance": 1.6393442,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Bone Bottle",
+          "chance": 22.95082,
+          "minQuantity": 1,
+          "maxQuantity": 4
+        },
+        {
+          "name": "Split Bone Bottle",
+          "chance": 22.95082,
+          "minQuantity": 1,
+          "maxQuantity": 4
+        },
+        {
+          "name": "Obsidian Flask",
+          "chance": 8.196721,
+          "minQuantity": 1,
+          "maxQuantity": 2
+        },
+        {
+          "name": "Ceramic Bottle",
+          "chance": 8.196721,
+          "minQuantity": 1,
+          "maxQuantity": 2
+        },
+        {
+          "name": "Split Ceramic Flask",
+          "chance": 8.196721,
+          "minQuantity": 1,
+          "maxQuantity": 2
+        },
+        {
+          "name": "Wingsuit",
+          "chance": 1.6393442,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Medium Backpack",
+          "chance": 22.95082,
+          "minQuantity": 1,
+          "maxQuantity": 2
+        },
+        {
+          "name": "Heavy Backpack",
+          "chance": 1.6393442,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Split Durable Water Sack",
+          "chance": 1.6393442,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Water Circulator",
+          "chance": 1.6393442,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Bone Bottle",
+          "chance": 22.95082,
+          "minQuantity": 1,
+          "maxQuantity": 4
+        },
+        {
+          "name": "Split Bone Bottle",
+          "chance": 22.95082,
+          "minQuantity": 1,
+          "maxQuantity": 4
+        },
+        {
+          "name": "Obsidian Flask",
+          "chance": 8.196721,
+          "minQuantity": 1,
+          "maxQuantity": 2
+        },
+        {
+          "name": "Ceramic Bottle",
+          "chance": 8.196721,
+          "minQuantity": 1,
+          "maxQuantity": 2
+        },
+        {
+          "name": "Split Ceramic Flask",
+          "chance": 8.196721,
+          "minQuantity": 1,
+          "maxQuantity": 2
+        },
+        {
+          "name": "Wingsuit",
+          "chance": 1.6393442,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Weightless Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Merchant Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Craftsman Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Fireproof Module",
+          "chance": 2.857143,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Armoury Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Forager Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Scavenger Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Lumberjack Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Pack Speed Module",
+          "chance": 2.857143,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Hearth Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Lifeforce Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Bullrush Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Sandy Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Fortress Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Harpoon Protection Module",
+          "chance": 2.857143,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Battery Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Torque Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Watery Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Pack Mule Module",
+          "chance": 5.714286,
+          "minQuantity": 5,
+          "maxQuantity": 20
+        },
+        {
+          "name": "Fragment",
+          "chance": 100,
+          "minQuantity": 5,
+          "maxQuantity": 10
+        },
+        {
+          "name": "Bone Sickle",
+          "chance": 11.2247305,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Bone Pickaxe",
+          "chance": 11.2247305,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "ChitinSickle",
+          "chance": 11.2247305,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Chitin PickAxe",
+          "chance": 11.2247305,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Heavy Rawbone Hand Axe",
+          "chance": 11.2247305,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Rawbone Hand Axe",
+          "chance": 11.2247305,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Bone Bottle",
+          "chance": 5.6123652,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Split Bone Bottle",
+          "chance": 5.6123652,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Foraging Pouch",
+          "chance": 5.6123652,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Fast Grappling Hook",
+          "chance": 2.8061826,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Schematic Bag",
+          "chance": 11.2247305,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Ceramic Hatchet",
+          "chance": 0.5612365,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "CeramicPickaxe",
+          "chance": 0.5612365,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "CeramicScythe",
+          "chance": 0.5612365,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Medium Backpack",
+          "chance": 0.0999001,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "CeramicPickaxe",
+          "chance": 6.3613234,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "IronPickaxe",
+          "chance": 1.2722646,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "CeramicScythe",
+          "chance": 6.3613234,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "Simple Pickaxe",
+          "chance": 17.811705,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "Simple Repair Hammer",
+          "chance": 17.811705,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "Simple Sickle",
+          "chance": 17.811705,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "Stone Axe",
+          "chance": 17.811705,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "Ceramic Hatchet",
+          "chance": 3.816794,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Nibiran Hand Axe",
+          "chance": 0.12722646,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Firestone Axe",
+          "chance": 3.816794,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Wyndan Hand Axe",
+          "chance": 0.6361323,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Rawbone Hand Axe",
+          "chance": 6.3613234,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "CeramicPickaxe",
+          "chance": 6.3613234,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "IronPickaxe",
+          "chance": 1.2722646,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "CeramicScythe",
+          "chance": 6.3613234,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "Simple Pickaxe",
+          "chance": 17.811705,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "Simple Repair Hammer",
+          "chance": 17.811705,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "Simple Sickle",
+          "chance": 17.811705,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "Stone Axe",
+          "chance": 17.811705,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "Ceramic Hatchet",
+          "chance": 3.816794,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Nibiran Hand Axe",
+          "chance": 0.12722646,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Firestone Axe",
+          "chance": 3.816794,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Wyndan Hand Axe",
+          "chance": 0.6361323,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Rawbone Hand Axe",
+          "chance": 6.3613234,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Nurrfang Toothclub",
+          "chance": 8.849558,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        },
+        {
+          "name": "Rawbone Club",
+          "chance": 8.849558,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        },
+        {
+          "name": "Rawbone Quarterstaff",
+          "chance": 8.849558,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        },
+        {
+          "name": "Bonespike Sword",
+          "chance": 8.849558,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        },
+        {
+          "name": "Rawbone Maul",
+          "chance": 8.849558,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        },
+        {
+          "name": "Long Bonespike Swordstaff",
+          "chance": 8.849558,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        },
+        {
+          "name": "Rawbone Sawsword",
+          "chance": 8.849558,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        },
+        {
+          "name": "Jaggertooth Maul",
+          "chance": 8.849558,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        },
+        {
+          "name": "Jaggertooth Club",
+          "chance": 8.849558,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        },
+        {
+          "name": "Jaggertooth Swordclub",
+          "chance": 8.849558,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Short Ceramic Hoofmace",
+          "chance": 0.88495576,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Short Malletblade",
+          "chance": 0.88495576,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Paddleblade Quarterstaff",
+          "chance": 0.88495576,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Nurrfang Toothclub",
+          "chance": 4.484305,
+          "minQuantity": 1,
+          "maxQuantity": 12
+        },
+        {
+          "name": "Rawbone Club",
+          "chance": 4.484305,
+          "minQuantity": 1,
+          "maxQuantity": 12
+        },
+        {
+          "name": "Rawbone Quarterstaff",
+          "chance": 4.484305,
+          "minQuantity": 1,
+          "maxQuantity": 12
+        },
+        {
+          "name": "Rawbone Hand Axe",
+          "chance": 4.484305,
+          "minQuantity": 1,
+          "maxQuantity": 12
+        },
+        {
+          "name": "Wyndanblade Quarterstaff",
+          "chance": 1.3452915,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Heavy Rawbone Hand Axe",
+          "chance": 4.484305,
+          "minQuantity": 1,
+          "maxQuantity": 12
+        },
+        {
+          "name": "Firestone Hammerstaff",
+          "chance": 2.690583,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Firestone Bladestaff",
+          "chance": 2.690583,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Bonespike Sword",
+          "chance": 4.484305,
+          "minQuantity": 1,
+          "maxQuantity": 12
+        },
+        {
+          "name": "Wyndan Hand Axe",
+          "chance": 1.3452915,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Wyndan Hammer",
+          "chance": 1.3452915,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Wyndan Sabre",
+          "chance": 1.3452915,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Firestone Axe",
+          "chance": 2.690583,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Firestone Bludgeon",
+          "chance": 2.690583,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Firestone Kopesh",
+          "chance": 2.690583,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Nibiran Hand Axe",
+          "chance": 0.44843048,
+          "minQuantity": 1,
+          "maxQuantity": 4
+        },
+        {
+          "name": "Nibiran Hammer",
+          "chance": 0.44843048,
+          "minQuantity": 1,
+          "maxQuantity": 4
+        },
+        {
+          "name": "Nibiran Curved Dagger",
+          "chance": 0.44843048,
+          "minQuantity": 1,
+          "maxQuantity": 4
+        },
+        {
+          "name": "Ceramic Hatchet",
+          "chance": 2.690583,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Short Ceramic Hoofmace",
+          "chance": 2.690583,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Short Malletblade",
+          "chance": 2.690583,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Ironblade Quarterstaff",
+          "chance": 0.44843048,
+          "minQuantity": 1,
+          "maxQuantity": 4
+        },
+        {
+          "name": "Nibiran Quarterstaff",
+          "chance": 0.44843048,
+          "minQuantity": 1,
+          "maxQuantity": 4
+        },
+        {
+          "name": "Rawbone Battle Axe",
+          "chance": 4.484305,
+          "minQuantity": 1,
+          "maxQuantity": 12
+        },
+        {
+          "name": "Rawbone Maul",
+          "chance": 4.484305,
+          "minQuantity": 1,
+          "maxQuantity": 12
+        },
+        {
+          "name": "Long Bonespike Swordstaff",
+          "chance": 4.484305,
+          "minQuantity": 1,
+          "maxQuantity": 12
+        },
+        {
+          "name": "Rawbone Sawsword",
+          "chance": 4.484305,
+          "minQuantity": 1,
+          "maxQuantity": 12
+        },
+        {
+          "name": "Wyndan Battle Axe",
+          "chance": 1.3452915,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Wyndan Warhammer",
+          "chance": 1.3452915,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Wyndan Flame Sword",
+          "chance": 1.3452915,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Firestone Battle Axe",
+          "chance": 2.690583,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Firestone Bozdogan",
+          "chance": 2.690583,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Firestone Longblade",
+          "chance": 2.690583,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Nibiran Battle Axe",
+          "chance": 0.44843048,
+          "minQuantity": 1,
+          "maxQuantity": 4
+        },
+        {
+          "name": "Nibiran Warhammer",
+          "chance": 0.44843048,
+          "minQuantity": 1,
+          "maxQuantity": 4
+        },
+        {
+          "name": "Nibiran Decapitator",
+          "chance": 0.44843048,
+          "minQuantity": 1,
+          "maxQuantity": 4
+        },
+        {
+          "name": "Long Ceramic Hoofmace",
+          "chance": 2.690583,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Singblade",
+          "chance": 2.690583,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Paddleblade Quarterstaff",
+          "chance": 2.690583,
+          "minQuantity": 1,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Fiber",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "FlintBolt",
+          "chance": 33.333332,
+          "minQuantity": 3,
+          "maxQuantity": 15
+        },
+        {
+          "name": "Scattershot Ammo",
+          "chance": 33.333332,
+          "minQuantity": 2,
+          "maxQuantity": 18
+        },
+        {
+          "name": "WoodenDart",
+          "chance": 33.333332,
+          "minQuantity": 5,
+          "maxQuantity": 25
+        },
+        {
+          "name": "Animal Fat",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Fiber Shirt and Trousers",
+          "chance": 19.801981,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Rupu Fur Armor",
+          "chance": 5.940594,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Cloaked Rupu Fur Armor",
+          "chance": 2.970297,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Fiber Sandals",
+          "chance": 19.801981,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Rupu Fur Sandals",
+          "chance": 5.940594,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Fiber Arm Wraps",
+          "chance": 19.801981,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Rupu Fur Sleeves",
+          "chance": 5.940594,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Fiber Headwrap",
+          "chance": 19.801981,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Ash",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Fiber",
+          "chance": 26.31579,
+          "minQuantity": 12,
+          "maxQuantity": 12
+        },
+        {
+          "name": "Stone",
+          "chance": 26.31579,
+          "minQuantity": 8,
+          "maxQuantity": 8
+        },
+        {
+          "name": "Wood",
+          "chance": 26.31579,
+          "minQuantity": 10,
+          "maxQuantity": 10
+        },
+        {
+          "name": "Rupu Vine",
+          "chance": 10.526316,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Palm Leaves",
+          "chance": 10.526316,
+          "minQuantity": 2,
+          "maxQuantity": 2
+        },
+        {
+          "name": "Huge Cactus Fruit",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Cactus Flesh",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Charcoal",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Bearing",
+          "chance": 8.333333,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Cam",
+          "chance": 8.333333,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Cog",
+          "chance": 8.333333,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Gasket",
+          "chance": 8.333333,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Lever",
+          "chance": 8.333333,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Pinion",
+          "chance": 8.333333,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Rotor",
+          "chance": 8.333333,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Shackle",
+          "chance": 8.333333,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Spline",
+          "chance": 8.333333,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Spring",
+          "chance": 8.333333,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Sprocket",
+          "chance": 8.333333,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Strut",
+          "chance": 8.333333,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Animal Fat",
+          "chance": 11.111111,
+          "minQuantity": 2,
+          "maxQuantity": 2
+        },
+        {
+          "name": "Ash",
+          "chance": 11.111111,
+          "minQuantity": 10,
+          "maxQuantity": 10
+        },
+        {
+          "name": "Charcoal",
+          "chance": 11.111111,
+          "minQuantity": 3,
+          "maxQuantity": 3
+        },
+        {
+          "name": "Huge Cactus Fruit",
+          "chance": 11.111111,
+          "minQuantity": 2,
+          "maxQuantity": 2
+        },
+        {
+          "name": "Fruit Pulp",
+          "chance": 11.111111,
+          "minQuantity": 4,
+          "maxQuantity": 4
+        },
+        {
+          "name": "Rupu Pelt",
+          "chance": 11.111111,
+          "minQuantity": 2,
+          "maxQuantity": 2
+        },
+        {
+          "name": "Hide",
+          "chance": 11.111111,
+          "minQuantity": 2,
+          "maxQuantity": 2
+        },
+        {
+          "name": "Sand",
+          "chance": 11.111111,
+          "minQuantity": 10,
+          "maxQuantity": 10
+        },
+        {
+          "name": "Purified Water",
+          "chance": 11.111111,
+          "minQuantity": 4,
+          "maxQuantity": 4
+        },
+        {
+          "name": "Fiber Weave",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Fiber",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Flots",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Fruit Pulp",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Hide",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Weightless Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Merchant Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Craftsman Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Fireproof Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Armoury Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Hardening Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Forager Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Scavenger Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Lumberjack Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Pack Speed Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Hearth Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Lifeforce Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Bullrush Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Sandy Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Fortress Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Harpoon Protection Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Battery Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "Torque Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 5
+        },
+        {
+          "name": "Watery Module",
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Pack Mule Module",
+          "chance": 5.263158,
+          "minQuantity": 1,
+          "maxQuantity": 2
+        },
+        {
+          "name": "Palm Leaves",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Wood Shaft",
+          "chance": 50,
+          "minQuantity": 10,
+          "maxQuantity": 10
+        },
+        {
+          "name": "Fiber Weave",
+          "chance": 50,
+          "minQuantity": 10,
+          "maxQuantity": 10
+        },
+        {
+          "name": "Firefly Walker Rig T2 Schematic",
+          "chance": 41.666668,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Dinghy Walker Rig T2 Schematic",
+          "chance": 41.666668,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Firefly Walker Rig T3 Schematic",
+          "chance": 8.333333,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Dinghy Walker Rig T3 Schematic",
+          "chance": 8.333333,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Rupu Pelt",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Rupu Vine",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        },
+        {
+          "name": "Sand",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        }
+      ]
+    }
+  ]
+}
