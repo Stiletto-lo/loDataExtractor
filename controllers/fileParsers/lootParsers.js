@@ -10,6 +10,7 @@ const path = require("node:path");
 const dataParser = require("../dataParsers");
 const translator = require("../translator");
 const dataTableTemplate = require("../../templates/datatable");
+const lootTableTemplate = require("../../templates/lootTable");
 const dropDataTemplate = require("../../templates/dropData");
 const creatureTemplate = require("../../templates/creature");
 const utilityFunctions = require("./utilityFunctions");
@@ -68,12 +69,9 @@ const createDropItem = (name, lootItemData) => {
 	const drop = { ...dropDataTemplate };
 	drop.name = name;
 
-	// Only add these properties if EXTRACT_ALL_DATA is true and they exist
-	if (EXTRACT_ALL_DATA) {
-		if (lootItemData.Chance) drop.chance = lootItemData.Chance;
-		if (lootItemData.MinQuantity) drop.minQuantity = lootItemData.MinQuantity;
-		if (lootItemData.MaxQuantity) drop.maxQuantity = lootItemData.MaxQuantity;
-	}
+	if (lootItemData.Chance) { drop.chance = lootItemData.Chance; }
+	if (lootItemData.MinQuantity) { drop.minQuantity = lootItemData.MinQuantity; }
+	if (lootItemData.MaxQuantity) { drop.maxQuantity = lootItemData.MaxQuantity; }
 
 	return drop;
 };
@@ -152,8 +150,22 @@ const parseLootTable = (filePath) => {
 
 	const dataTable = { ...dataTableTemplate };
 	dataTable.name = dataParser.parseName(translator, firstEntry.Name);
+	dataTable.objectName = firstEntry.Name;
+	dataTable.objectPath = firstEntry.ObjectPath || "";
 	const lootItems = firstEntry.Rows;
-	const dataTableItems = [];
+	const tableItems = [];
+
+	// Create a loot table for this data table
+	const lootTable = { ...lootTableTemplate };
+	lootTable.name = dataTable.name;
+	lootTable.objectName = firstEntry.Name;
+	lootTable.objectPath = firstEntry.ObjectPath || "";
+	lootTable.runChance = 1.0; // Default values
+	lootTable.minIterations = 1;
+	lootTable.maxIterations = 1;
+	lootTable.perIterationRunChance = 1.0;
+	lootTable.minQuantityMultiplier = 1.0;
+	lootTable.maxQuantityMultiplier = 1.0;
 
 	// Store loot table information for creature processing
 	const lootTables = utilityFunctions.getAllLootTables ? utilityFunctions.getAllLootTables() : {};
@@ -172,11 +184,15 @@ const parseLootTable = (filePath) => {
 		}
 
 		const resolvedName = resolveItemName(validation.baseName, currentItem);
-		const hasDrop = dataTable.dropItems.some((d) => d.name === resolvedName);
+		// Check if this item already exists in the tables array
+		const hasDrop = tableItems.some((d) => d.name === resolvedName);
 
 		if (!hasDrop && resolvedName !== dataTable.name) {
 			const drop = createDropItem(resolvedName, currentItem);
-			dataTableItems.push(drop);
+			tableItems.push(drop);
+
+			// Add to the loot table drops array
+			lootTable.drops.push(drop);
 
 			// Add to the loot tables collection for creature processing
 			lootTables[firstEntry.Name].drops.push({
@@ -188,12 +204,15 @@ const parseLootTable = (filePath) => {
 		}
 	}
 
-	dataTable.dropItems = dataTableItems;
+	dataTable.tables = tableItems; // Use tables property instead of dropItems
 
 	// Update loot tables in the utility functions if the function exists
 	if (utilityFunctions.setLootTables) {
 		utilityFunctions.setLootTables(lootTables);
 	}
+
+	// Add the loot table to the data table's tables array
+	dataTable.tables.push(lootTable);
 
 	// Add to the datatables collection
 	utilityFunctions.getAllDatatables().push(dataTable);
