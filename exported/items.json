@@ -97,12 +97,6 @@
         "maxQuantity": 5
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.047619047,
-        "minQuantity": 5,
-        "maxQuantity": 5
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.047619047,
         "minQuantity": 5,
@@ -210,12 +204,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.047619047,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -342,12 +330,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.047619047,
         "minQuantity": 1,
@@ -465,12 +447,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.047619047,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -691,12 +667,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.047619047,
         "minQuantity": 1,
@@ -855,12 +825,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.047619047,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -1156,7 +1120,7 @@
       },
       {
         "location": "Okkam T3",
-        "chance": 0.0625,
+        "chance": 0.047619047,
         "minQuantity": 1,
         "maxQuantity": 1
       },
@@ -1167,14 +1131,14 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
+        "location": "EasyRupu T4",
         "chance": 0.0625,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
-        "location": "EasyRupu T4",
-        "chance": 0.0625,
+        "location": "GoGo T4",
+        "chance": 0.05882353,
         "minQuantity": 1,
         "maxQuantity": 1
       },
@@ -1451,12 +1415,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.047619047,
         "minQuantity": 1,
@@ -1570,12 +1528,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.047619047,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -1936,9 +1888,9 @@
     "drops": [
       {
         "location": "DesertClam",
-        "chance": 0.1,
-        "minQuantity": 1,
-        "maxQuantity": 3
+        "chance": 0.33333332,
+        "minQuantity": 5,
+        "maxQuantity": 50
       },
       {
         "location": "EasyRupuCamp T1",
@@ -1990,6 +1942,12 @@
       },
       {
         "location": "HardRupuCamp T2",
+        "chance": 0.18181818,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.18181818,
         "minQuantity": 3,
         "maxQuantity": 3
@@ -2053,6 +2011,12 @@
         "chance": 0.15384615000000001,
         "minQuantity": 4,
         "maxQuantity": 4
+      },
+      {
+        "location": "GoGo T4",
+        "chance": 0.33333332,
+        "minQuantity": 5,
+        "maxQuantity": 50
       },
       {
         "location": "HardRupuCamp T4",
@@ -2402,6 +2366,50 @@
     "weight": 8.5
   },
   {
+    "category": "Walker Tools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 6,
+            "name": "Wooden Gear"
+          },
+          {
+            "count": 35,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 60,
+            "name": "Rope"
+          },
+          {
+            "count": 16,
+            "name": "Nurr Fang"
+          },
+          {
+            "count": 10,
+            "name": "Leather"
+          }
+        ]
+      }
+    ],
+    "name": "Artisan Soil Auger",
+    "type": "ArtisanSoilAuger_C",
+    "experiencieReward": 125,
+    "structureInfo": {
+      "type": "Medium",
+      "hp": 7000
+    },
+    "translation": "Artisan Soil Auger",
+    "weight": 300,
+    "toolInfo": [
+      {
+        "toolType": "Digging",
+        "tier": 5
+      }
+    ]
+  },
+  {
     "category": "Resources",
     "crafting": [
       {
@@ -2732,12 +2740,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.055555553,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.055555553,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -3650,7 +3652,7 @@
       },
       {
         "location": "Okkam T3",
-        "chance": 0.0625,
+        "chance": 0.047619047,
         "minQuantity": 1,
         "maxQuantity": 1
       },
@@ -3661,14 +3663,14 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
+        "location": "EasyRupu T4",
         "chance": 0.0625,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
-        "location": "EasyRupu T4",
-        "chance": 0.0625,
+        "location": "GoGo T4",
+        "chance": 0.05882353,
         "minQuantity": 1,
         "maxQuantity": 1
       },
@@ -4003,12 +4005,6 @@
         "maxQuantity": 5
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.0625,
-        "minQuantity": 5,
-        "maxQuantity": 5
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.0625,
         "minQuantity": 5,
@@ -4296,12 +4292,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.0625,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.0625,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -4602,12 +4592,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.0625,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.0625,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -4929,12 +4913,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.0625,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.0625,
         "minQuantity": 1,
@@ -5229,12 +5207,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.0625,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.0625,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -5537,12 +5509,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.0625,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.0625,
         "minQuantity": 1,
@@ -5831,12 +5797,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.0625,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.0625,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -6140,12 +6100,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.0625,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.0625,
         "minQuantity": 1,
@@ -6371,6 +6325,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.22222222,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.22222222,
         "minQuantity": 1,
@@ -6558,6 +6518,12 @@
       },
       {
         "location": "Rupu Zealot (Medium)",
+        "chance": 0.22222222,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.22222222,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -6755,6 +6721,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.22222222,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.22222222,
         "minQuantity": 1,
@@ -6851,8 +6823,7 @@
     "weight": 0.24,
     "moduleInfo": {
       "max": 20,
-      "increase": 2.5,
-      "maxIncrease": 50
+      "increase": 100
     },
     "drops": [
       {
@@ -7204,6 +7175,12 @@
       },
       {
         "location": "BasketLoot T2 AC",
+        "chance": 0.08333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.08333333,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -8368,6 +8345,12 @@
         "maxQuantity": 3
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.125,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.125,
         "minQuantity": 3,
@@ -8510,6 +8493,12 @@
         "chance": 0.10718528,
         "minQuantity": 4,
         "maxQuantity": 4
+      },
+      {
+        "location": "Papak T3",
+        "chance": 1,
+        "minQuantity": 1,
+        "maxQuantity": 1
       },
       {
         "location": "AmmoBox T4",
@@ -9251,7 +9240,7 @@
     "type": "Buffalo_C",
     "structureInfo": {
       "type": "Hard",
-      "hp": 15000
+      "hp": 40000
     },
     "walkerinfo": {
       "category": "Large"
@@ -9283,7 +9272,7 @@
     "type": "BuffaloLegs_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 5500
+      "hp": 4800
     },
     "translation": "Buffalo Walker Legs",
     "weight": 9.75
@@ -9316,7 +9305,7 @@
     "type": "BuffaloLegs_T2_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 6500
+      "hp": 5760
     },
     "translation": "Buffalo Walker Legs Armored",
     "weight": 9.75
@@ -9348,8 +9337,8 @@
     "name": "Buffalo Walker Legs Heavy (1 of 2)",
     "type": "BuffaloLegs_T3_C",
     "structureInfo": {
-      "type": "Hard",
-      "hp": 14800
+      "type": "Medium",
+      "hp": 6912
     },
     "translation": "Buffalo Walker Legs Heavy",
     "weight": 9.75
@@ -9382,67 +9371,79 @@
     "drops": [
       {
         "location": "BigHotspotLoot T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "EasyRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HardRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Oracle",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Overseer",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HotspotLoot T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "MediumRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Seeker",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "White Death (Medium)",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Okkam T3",
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "TreasureChest T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "BigHotspotLoot T4",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -9474,67 +9475,79 @@
     "drops": [
       {
         "location": "BigHotspotLoot T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "EasyRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HardRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Oracle",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Overseer",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HotspotLoot T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "MediumRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Seeker",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "White Death (Medium)",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Okkam T3",
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "TreasureChest T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "BigHotspotLoot T4",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -9622,12 +9635,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.047619047,
         "minQuantity": 1,
@@ -9660,12 +9667,12 @@
       {
         "ingredients": [
           {
-            "count": 10,
-            "name": "Chitin Plate"
-          },
-          {
             "count": 14,
             "name": "Redwood Wood"
+          },
+          {
+            "count": 10,
+            "name": "Chitin Plate"
           },
           {
             "count": 22,
@@ -9683,12 +9690,12 @@
       {
         "ingredients": [
           {
-            "count": 10,
-            "name": "Chitin Plate"
-          },
-          {
             "count": 14,
             "name": "Redwood Wood"
+          },
+          {
+            "count": 10,
+            "name": "Chitin Plate"
           },
           {
             "count": 22,
@@ -9708,12 +9715,12 @@
       {
         "ingredients": [
           {
-            "count": 10,
-            "name": "Chitin Plate"
-          },
-          {
             "count": 14,
             "name": "Redwood Wood"
+          },
+          {
+            "count": 10,
+            "name": "Chitin Plate"
           },
           {
             "count": 22,
@@ -9733,16 +9740,16 @@
       {
         "ingredients": [
           {
-            "count": 22,
-            "name": "Stone"
+            "count": 14,
+            "name": "Ceramic Shard"
           },
           {
             "count": 10,
             "name": "Chitin Plate"
           },
           {
-            "count": 14,
-            "name": "Ceramic Shard"
+            "count": 22,
+            "name": "Stone"
           }
         ]
       }
@@ -9758,16 +9765,16 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Tar"
+            "count": 40,
+            "name": "Chitin Plate"
           },
           {
             "count": 40,
             "name": "Obsidian"
           },
           {
-            "count": 40,
-            "name": "Chitin Plate"
+            "count": 24,
+            "name": "Tar"
           }
         ]
       }
@@ -9781,12 +9788,12 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Tar"
-          },
-          {
             "count": 40,
             "name": "Obsidian"
+          },
+          {
+            "count": 24,
+            "name": "Tar"
           },
           {
             "count": 40,
@@ -9806,12 +9813,12 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Tar"
-          },
-          {
             "count": 40,
             "name": "Obsidian"
+          },
+          {
+            "count": 24,
+            "name": "Tar"
           },
           {
             "count": 40,
@@ -9856,16 +9863,16 @@
       {
         "ingredients": [
           {
-            "count": 9,
-            "name": "Triple Stitch Fabric"
+            "count": 27,
+            "name": "Bone Splinter"
           },
           {
             "count": 15,
             "name": "Tar"
           },
           {
-            "count": 27,
-            "name": "Bone Splinter"
+            "count": 9,
+            "name": "Triple Stitch Fabric"
           }
         ]
       }
@@ -9885,12 +9892,12 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 9,
-            "name": "Triple Stitch Fabric"
-          },
-          {
             "count": 15,
             "name": "Tar"
+          },
+          {
+            "count": 9,
+            "name": "Triple Stitch Fabric"
           }
         ]
       }
@@ -9906,16 +9913,16 @@
       {
         "ingredients": [
           {
-            "count": 9,
-            "name": "Triple Stitch Fabric"
+            "count": 27,
+            "name": "Bone Splinter"
           },
           {
             "count": 15,
             "name": "Tar"
           },
           {
-            "count": 27,
-            "name": "Bone Splinter"
+            "count": 9,
+            "name": "Triple Stitch Fabric"
           }
         ]
       }
@@ -9931,16 +9938,16 @@
       {
         "ingredients": [
           {
-            "count": 9,
-            "name": "Triple Stitch Fabric"
+            "count": 27,
+            "name": "Bone Splinter"
           },
           {
             "count": 15,
             "name": "Tar"
           },
           {
-            "count": 27,
-            "name": "Bone Splinter"
+            "count": 9,
+            "name": "Triple Stitch Fabric"
           }
         ]
       }
@@ -9956,16 +9963,16 @@
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Reinforced Gear"
+            "count": 56,
+            "name": "Chitin Plate"
           },
           {
             "count": 24,
             "name": "Tallow"
           },
           {
-            "count": 56,
-            "name": "Chitin Plate"
+            "count": 5,
+            "name": "Reinforced Gear"
           }
         ]
       }
@@ -9979,16 +9986,16 @@
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Reinforced Gear"
+            "count": 56,
+            "name": "Chitin Plate"
           },
           {
             "count": 24,
             "name": "Tallow"
           },
           {
-            "count": 56,
-            "name": "Chitin Plate"
+            "count": 5,
+            "name": "Reinforced Gear"
           }
         ]
       }
@@ -10002,16 +10009,16 @@
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Reinforced Gear"
+            "count": 56,
+            "name": "Chitin Plate"
           },
           {
             "count": 24,
             "name": "Tallow"
           },
           {
-            "count": 56,
-            "name": "Chitin Plate"
+            "count": 5,
+            "name": "Reinforced Gear"
           }
         ]
       }
@@ -10025,16 +10032,16 @@
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Reinforced Gear"
+            "count": 56,
+            "name": "Chitin Plate"
           },
           {
             "count": 24,
             "name": "Tallow"
           },
           {
-            "count": 56,
-            "name": "Chitin Plate"
+            "count": 5,
+            "name": "Reinforced Gear"
           }
         ]
       }
@@ -10048,12 +10055,12 @@
       {
         "ingredients": [
           {
-            "count": 36,
-            "name": "Redwood Wood"
+            "count": 17,
+            "name": "Earth Wax"
           },
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 36,
+            "name": "Redwood Wood"
           }
         ]
       }
@@ -10069,16 +10076,16 @@
       {
         "ingredients": [
           {
-            "count": 36,
-            "name": "Redwood Wood"
+            "count": 17,
+            "name": "Earth Wax"
           },
           {
             "count": 13,
             "name": "Wood Shaft"
           },
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 36,
+            "name": "Redwood Wood"
           }
         ]
       }
@@ -10094,16 +10101,16 @@
       {
         "ingredients": [
           {
-            "count": 36,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 1,
-            "name": "Compacted Torque Battery"
-          },
-          {
             "count": 13,
             "name": "Wood Shaft"
+          },
+          {
+            "count": 17,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 36,
+            "name": "Redwood Wood"
           }
         ]
       }
@@ -10119,12 +10126,12 @@
       {
         "ingredients": [
           {
-            "count": 13,
-            "name": "Wood Shaft"
+            "count": 17,
+            "name": "Earth Wax"
           },
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 13,
+            "name": "Wood Shaft"
           },
           {
             "count": 36,
@@ -10144,16 +10151,16 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Charcoal"
+            "count": 17,
+            "name": "Leather"
           },
           {
             "count": 40,
             "name": "Spearmint"
           },
           {
-            "count": 17,
-            "name": "Leather"
+            "count": 25,
+            "name": "Charcoal"
           }
         ]
       }
@@ -10169,16 +10176,16 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Charcoal"
+            "count": 17,
+            "name": "Leather"
           },
           {
             "count": 40,
             "name": "Spearmint"
           },
           {
-            "count": 17,
-            "name": "Leather"
+            "count": 25,
+            "name": "Charcoal"
           }
         ]
       }
@@ -10194,16 +10201,16 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Charcoal"
+            "count": 17,
+            "name": "Leather"
           },
           {
             "count": 40,
             "name": "Spearmint"
           },
           {
-            "count": 17,
-            "name": "Leather"
+            "count": 25,
+            "name": "Charcoal"
           }
         ]
       }
@@ -10219,16 +10226,16 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Charcoal"
+            "count": 17,
+            "name": "Leather"
           },
           {
             "count": 40,
             "name": "Spearmint"
           },
           {
-            "count": 17,
-            "name": "Leather"
+            "count": 25,
+            "name": "Charcoal"
           }
         ]
       }
@@ -10632,6 +10639,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.08333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.08333333,
         "minQuantity": 1,
@@ -10818,12 +10831,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.047619047,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -12452,7 +12459,7 @@
       {
         "ingredients": [
           {
-            "count": 4,
+            "count": 5,
             "name": "Wood Shaft"
           },
           {
@@ -12464,14 +12471,14 @@
             "name": "Fiber Weave"
           }
         ],
-        "output": 3,
+        "output": 5,
         "station": "Advanced Woodworking Station",
         "time": 5
       },
       {
         "ingredients": [
           {
-            "count": 4,
+            "count": 5,
             "name": "Wood Shaft"
           },
           {
@@ -12483,7 +12490,7 @@
             "name": "Fiber Weave"
           }
         ],
-        "output": 3,
+        "output": 5,
         "station": "Artificer Woodworking Station",
         "time": 3
       }
@@ -12727,8 +12734,8 @@
       {
         "ingredients": [
           {
-            "count": 2,
-            "name": "Meteor Core"
+            "count": 3,
+            "name": "MeteorCore"
           },
           {
             "count": 25,
@@ -12745,8 +12752,8 @@
       {
         "ingredients": [
           {
-            "count": 2,
-            "name": "Meteor Core"
+            "count": 3,
+            "name": "MeteorCore"
           },
           {
             "count": 25,
@@ -12763,8 +12770,8 @@
       {
         "ingredients": [
           {
-            "count": 2,
-            "name": "Meteor Core"
+            "count": 3,
+            "name": "MeteorCore"
           },
           {
             "count": 25,
@@ -12812,7 +12819,7 @@
           },
           {
             "count": 3,
-            "name": "Meteor Core"
+            "name": "MeteorCore"
           },
           {
             "count": 22,
@@ -12830,7 +12837,7 @@
           },
           {
             "count": 3,
-            "name": "Meteor Core"
+            "name": "MeteorCore"
           },
           {
             "count": 22,
@@ -13128,6 +13135,21 @@
         ],
         "output": 5,
         "station": "Soil Excavator",
+        "time": 2
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Terrain: Clay Spots"
+          },
+          {
+            "count": 10,
+            "name": "Ash"
+          }
+        ],
+        "output": 10,
+        "station": "ArtisanSoilAuger",
         "time": 2
       }
     ],
@@ -13479,12 +13501,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.047619047,
-        "minQuantity": 5,
-        "maxQuantity": 5
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.047619047,
         "minQuantity": 5,
         "maxQuantity": 5
@@ -13993,12 +14009,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.047619047,
         "minQuantity": 1,
@@ -14200,6 +14210,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.08333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.08333333,
         "minQuantity": 1,
@@ -14253,7 +14269,7 @@
       }
     ],
     "name": "Compacted Torque Battery",
-    "parent": "Torque Backpack",
+    "parent": "Torque Battery",
     "trade_price": 8.4,
     "translation": "Compacted Torque Battery",
     "type": "HeavyTorqueContainer_C",
@@ -14281,6 +14297,12 @@
     "drops": [
       {
         "location": "EasyRupu T4",
+        "chance": 0.05882353,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.05882353,
         "minQuantity": 5,
         "maxQuantity": 5
@@ -15627,12 +15649,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.0625,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.0625,
         "minQuantity": 1,
@@ -16334,7 +16350,7 @@
     "type": "Domus_C",
     "structureInfo": {
       "type": "Hard",
-      "hp": 30000
+      "hp": 65000
     },
     "walkerinfo": {
       "category": "Capital"
@@ -16366,7 +16382,7 @@
     "type": "DomusLegs_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 20000
+      "hp": 8000
     },
     "translation": "Domus Walker Legs",
     "weight": 9.75
@@ -16399,7 +16415,7 @@
     "type": "DomusLegs_T2_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 24000
+      "hp": 9600
     },
     "translation": "Domus Walker Legs Armored",
     "weight": 9.75
@@ -16431,8 +16447,8 @@
     "name": "Domus Walker Legs Heavy (1 of 2)",
     "type": "DomusLegs_T3_C",
     "structureInfo": {
-      "type": "Hard",
-      "hp": 37000
+      "type": "Medium",
+      "hp": 11520
     },
     "translation": "Domus Walker Legs Heavy",
     "weight": 9.75
@@ -16471,6 +16487,12 @@
       },
       {
         "location": "EasyRupuCamp T4",
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -16550,6 +16572,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "GoGo T4",
+        "chance": 0.033333335,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HardRupuCamp T4",
         "chance": 0.033333335,
         "minQuantity": 1,
@@ -16603,6 +16631,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "GoGo T4",
+        "chance": 0.05882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "Rupu Firebrand",
         "chance": 0.05882353,
         "minQuantity": 1,
@@ -16629,16 +16663,16 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Iron Ore"
+            "count": 75,
+            "name": "Lightwood"
           },
           {
             "count": 50,
             "name": "Rubber Block"
           },
           {
-            "count": 75,
-            "name": "Lightwood"
+            "count": 25,
+            "name": "Iron Ore"
           }
         ]
       }
@@ -16654,16 +16688,16 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Iron Ore"
+            "count": 75,
+            "name": "Lightwood"
           },
           {
             "count": 50,
             "name": "Rubber Block"
           },
           {
-            "count": 75,
-            "name": "Lightwood"
+            "count": 25,
+            "name": "Iron Ore"
           }
         ],
         "time": 63
@@ -16680,16 +16714,16 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Iron Ore"
+            "count": 75,
+            "name": "Lightwood"
           },
           {
             "count": 50,
             "name": "Rubber Block"
           },
           {
-            "count": 75,
-            "name": "Lightwood"
+            "count": 25,
+            "name": "Iron Ore"
           }
         ]
       }
@@ -16705,16 +16739,16 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Iron Ore"
+            "count": 75,
+            "name": "Lightwood"
           },
           {
             "count": 50,
             "name": "Rubber Block"
           },
           {
-            "count": 75,
-            "name": "Lightwood"
+            "count": 25,
+            "name": "Iron Ore"
           }
         ]
       }
@@ -16730,16 +16764,16 @@
       {
         "ingredients": [
           {
-            "count": 38,
-            "name": "Rubber Block"
+            "count": 55,
+            "name": "Iron Ore"
           },
           {
             "count": 34,
             "name": "Shardrock"
           },
           {
-            "count": 55,
-            "name": "Iron Ore"
+            "count": 38,
+            "name": "Rubber Block"
           },
           {
             "count": 24,
@@ -16759,20 +16793,20 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Worm Scale"
-          },
-          {
-            "count": 38,
-            "name": "Rubber Block"
+            "count": 55,
+            "name": "Iron Ore"
           },
           {
             "count": 34,
             "name": "Shardrock"
           },
           {
-            "count": 55,
-            "name": "Iron Ore"
+            "count": 38,
+            "name": "Rubber Block"
+          },
+          {
+            "count": 24,
+            "name": "Worm Scale"
           }
         ]
       }
@@ -16788,20 +16822,20 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Worm Scale"
-          },
-          {
-            "count": 38,
-            "name": "Rubber Block"
+            "count": 55,
+            "name": "Iron Ore"
           },
           {
             "count": 34,
             "name": "Shardrock"
           },
           {
-            "count": 55,
-            "name": "Iron Ore"
+            "count": 38,
+            "name": "Rubber Block"
+          },
+          {
+            "count": 24,
+            "name": "Worm Scale"
           }
         ]
       }
@@ -16815,20 +16849,20 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Worm Scale"
-          },
-          {
-            "count": 38,
-            "name": "Rubber Block"
+            "count": 55,
+            "name": "Iron Ore"
           },
           {
             "count": 34,
             "name": "Shardrock"
           },
           {
-            "count": 55,
-            "name": "Iron Ore"
+            "count": 38,
+            "name": "Rubber Block"
+          },
+          {
+            "count": 24,
+            "name": "Worm Scale"
           }
         ]
       }
@@ -16842,16 +16876,16 @@
       {
         "ingredients": [
           {
-            "count": 45,
-            "name": "Nomad Cloth"
+            "count": 14,
+            "name": "Reinforced Plank"
           },
           {
             "count": 45,
             "name": "Lightwood"
           },
           {
-            "count": 14,
-            "name": "Reinforced Plank"
+            "count": 45,
+            "name": "Nomad Cloth"
           }
         ]
       }
@@ -16867,16 +16901,16 @@
       {
         "ingredients": [
           {
-            "count": 45,
-            "name": "Nomad Cloth"
+            "count": 14,
+            "name": "Reinforced Plank"
           },
           {
             "count": 45,
             "name": "Lightwood"
           },
           {
-            "count": 14,
-            "name": "Reinforced Plank"
+            "count": 45,
+            "name": "Nomad Cloth"
           }
         ]
       }
@@ -16896,12 +16930,12 @@
             "name": "Nomad Cloth"
           },
           {
-            "count": 45,
-            "name": "Lightwood"
-          },
-          {
             "count": 14,
             "name": "Reinforced Plank"
+          },
+          {
+            "count": 45,
+            "name": "Lightwood"
           }
         ]
       }
@@ -16942,16 +16976,16 @@
       {
         "ingredients": [
           {
-            "count": 23,
-            "name": "Shardrock"
+            "count": 6,
+            "name": "Iron Gear"
           },
           {
             "count": 38,
             "name": "Rubber Block"
           },
           {
-            "count": 6,
-            "name": "Iron Gear"
+            "count": 23,
+            "name": "Shardrock"
           }
         ]
       }
@@ -16965,16 +16999,16 @@
       {
         "ingredients": [
           {
-            "count": 23,
-            "name": "Shardrock"
+            "count": 6,
+            "name": "Iron Gear"
           },
           {
             "count": 38,
             "name": "Rubber Block"
           },
           {
-            "count": 6,
-            "name": "Iron Gear"
+            "count": 23,
+            "name": "Shardrock"
           }
         ]
       }
@@ -16988,16 +17022,16 @@
       {
         "ingredients": [
           {
-            "count": 23,
-            "name": "Shardrock"
+            "count": 6,
+            "name": "Iron Gear"
           },
           {
             "count": 38,
             "name": "Rubber Block"
           },
           {
-            "count": 6,
-            "name": "Iron Gear"
+            "count": 23,
+            "name": "Shardrock"
           }
         ]
       }
@@ -17011,16 +17045,16 @@
       {
         "ingredients": [
           {
-            "count": 23,
-            "name": "Shardrock"
+            "count": 6,
+            "name": "Iron Gear"
           },
           {
             "count": 38,
             "name": "Rubber Block"
           },
           {
-            "count": 6,
-            "name": "Iron Gear"
+            "count": 23,
+            "name": "Shardrock"
           }
         ]
       }
@@ -17034,16 +17068,16 @@
       {
         "ingredients": [
           {
-            "count": 9,
-            "name": "Rope"
+            "count": 12,
+            "name": "Tar"
           },
           {
             "count": 45,
             "name": "Lightwood"
           },
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 9,
+            "name": "Rope"
           }
         ]
       }
@@ -17059,12 +17093,12 @@
       {
         "ingredients": [
           {
-            "count": 45,
-            "name": "Lightwood"
+            "count": 12,
+            "name": "Tar"
           },
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 45,
+            "name": "Lightwood"
           },
           {
             "count": 9,
@@ -17084,16 +17118,16 @@
       {
         "ingredients": [
           {
-            "count": 45,
-            "name": "Lightwood"
+            "count": 12,
+            "name": "Tar"
           },
           {
             "count": 9,
             "name": "Rope"
           },
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 45,
+            "name": "Lightwood"
           }
         ]
       }
@@ -17109,16 +17143,16 @@
       {
         "ingredients": [
           {
-            "count": 9,
-            "name": "Rope"
+            "count": 12,
+            "name": "Tar"
           },
           {
             "count": 45,
             "name": "Lightwood"
           },
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 9,
+            "name": "Rope"
           }
         ]
       }
@@ -17134,16 +17168,16 @@
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "Reinforced Plank"
+            "count": 15,
+            "name": "Rubber Block"
           },
           {
             "count": 12,
             "name": "EucalyptusLeaf"
           },
           {
-            "count": 15,
-            "name": "Rubber Block"
+            "count": 8,
+            "name": "Reinforced Plank"
           },
           {
             "count": 45,
@@ -17163,20 +17197,20 @@
       {
         "ingredients": [
           {
-            "count": 45,
-            "name": "IronNails"
-          },
-          {
-            "count": 8,
-            "name": "Reinforced Plank"
+            "count": 15,
+            "name": "Rubber Block"
           },
           {
             "count": 12,
             "name": "EucalyptusLeaf"
           },
           {
-            "count": 15,
-            "name": "Rubber Block"
+            "count": 8,
+            "name": "Reinforced Plank"
+          },
+          {
+            "count": 45,
+            "name": "IronNails"
           }
         ]
       }
@@ -17192,20 +17226,20 @@
       {
         "ingredients": [
           {
-            "count": 45,
-            "name": "IronNails"
-          },
-          {
-            "count": 8,
-            "name": "Reinforced Plank"
+            "count": 15,
+            "name": "Rubber Block"
           },
           {
             "count": 12,
             "name": "EucalyptusLeaf"
           },
           {
-            "count": 15,
-            "name": "Rubber Block"
+            "count": 8,
+            "name": "Reinforced Plank"
+          },
+          {
+            "count": 45,
+            "name": "IronNails"
           }
         ],
         "time": 500
@@ -17222,20 +17256,20 @@
       {
         "ingredients": [
           {
-            "count": 45,
-            "name": "IronNails"
-          },
-          {
-            "count": 8,
-            "name": "Reinforced Plank"
+            "count": 15,
+            "name": "Rubber Block"
           },
           {
             "count": 12,
             "name": "EucalyptusLeaf"
           },
           {
-            "count": 15,
-            "name": "Rubber Block"
+            "count": 8,
+            "name": "Reinforced Plank"
+          },
+          {
+            "count": 45,
+            "name": "IronNails"
           }
         ]
       }
@@ -17714,6 +17748,21 @@
       {
         "ingredients": [
           {
+            "count": 1,
+            "name": "Terrain: Black Soil"
+          },
+          {
+            "count": 2,
+            "name": "Purified Water"
+          }
+        ],
+        "output": 10,
+        "station": "ArtisanSoilAuger",
+        "time": 16
+      },
+      {
+        "ingredients": [
+          {
             "count": 15,
             "name": "Palm Leaves"
           }
@@ -18181,7 +18230,7 @@
     "type": "Falco_C",
     "structureInfo": {
       "type": "Hard",
-      "hp": 16000
+      "hp": 38000
     },
     "walkerinfo": {
       "category": "Large"
@@ -18217,7 +18266,7 @@
     "type": "FalcoLegs_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 4800
+      "hp": 5000
     },
     "translation": "Falco Walker Legs",
     "weight": 9.75
@@ -18286,8 +18335,8 @@
     "name": "Falco Walker Legs Heavy (1 of 2)",
     "type": "FalcoLegs_T3_C",
     "structureInfo": {
-      "type": "Hard",
-      "hp": 12500
+      "type": "Medium",
+      "hp": 7200
     },
     "translation": "Falco Walker Legs Heavy",
     "weight": 9.75
@@ -18320,67 +18369,79 @@
     "drops": [
       {
         "location": "BigHotspotLoot T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "EasyRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HardRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Oracle",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Overseer",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HotspotLoot T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "MediumRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Seeker",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "White Death (Medium)",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Okkam T3",
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "TreasureChest T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "BigHotspotLoot T4",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -18412,67 +18473,79 @@
     "drops": [
       {
         "location": "BigHotspotLoot T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "EasyRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HardRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Oracle",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Overseer",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HotspotLoot T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "MediumRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Seeker",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "White Death (Medium)",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Okkam T3",
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "TreasureChest T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "BigHotspotLoot T4",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -18560,12 +18633,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.047619047,
         "minQuantity": 1,
@@ -18598,16 +18665,16 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Chitin Plate"
+            "count": 31,
+            "name": "Wood Shaft"
           },
           {
             "count": 20,
             "name": "Clay"
           },
           {
-            "count": 31,
-            "name": "Wood Shaft"
+            "count": 15,
+            "name": "Chitin Plate"
           }
         ]
       }
@@ -18621,16 +18688,16 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Chitin Plate"
+            "count": 31,
+            "name": "Wood Shaft"
           },
           {
             "count": 20,
             "name": "Clay"
           },
           {
-            "count": 31,
-            "name": "Wood Shaft"
+            "count": 15,
+            "name": "Chitin Plate"
           }
         ]
       }
@@ -18646,16 +18713,16 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Chitin Plate"
+            "count": 20,
+            "name": "Clay"
           },
           {
             "count": 31,
             "name": "Wood Shaft"
           },
           {
-            "count": 20,
-            "name": "Clay"
+            "count": 15,
+            "name": "Chitin Plate"
           }
         ]
       }
@@ -18671,16 +18738,16 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Chitin Plate"
+            "count": 20,
+            "name": "Clay"
           },
           {
             "count": 31,
             "name": "Wood Shaft"
           },
           {
-            "count": 20,
-            "name": "Clay"
+            "count": 15,
+            "name": "Chitin Plate"
           }
         ]
       }
@@ -18696,16 +18763,16 @@
       {
         "ingredients": [
           {
-            "count": 45,
-            "name": "Obsidian"
+            "count": 40,
+            "name": "Redwood Wood"
           },
           {
             "count": 25,
             "name": "Ceramic Shard"
           },
           {
-            "count": 40,
-            "name": "Redwood Wood"
+            "count": 45,
+            "name": "Obsidian"
           }
         ]
       }
@@ -18719,16 +18786,16 @@
       {
         "ingredients": [
           {
-            "count": 45,
-            "name": "Obsidian"
+            "count": 40,
+            "name": "Redwood Wood"
           },
           {
             "count": 25,
             "name": "Ceramic Shard"
           },
           {
-            "count": 40,
-            "name": "Redwood Wood"
+            "count": 45,
+            "name": "Obsidian"
           }
         ]
       }
@@ -18794,16 +18861,16 @@
       {
         "ingredients": [
           {
-            "count": 22,
-            "name": "Fiber Weave"
+            "count": 15,
+            "name": "Bone Splinter"
           },
           {
             "count": 45,
             "name": "Redwood Wood"
           },
           {
-            "count": 15,
-            "name": "Bone Splinter"
+            "count": 22,
+            "name": "Fiber Weave"
           }
         ]
       }
@@ -18823,12 +18890,12 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 45,
-            "name": "Redwood Wood"
-          },
-          {
             "count": 22,
             "name": "Fiber Weave"
+          },
+          {
+            "count": 45,
+            "name": "Redwood Wood"
           }
         ]
       }
@@ -18844,16 +18911,16 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Bone Splinter"
+            "count": 22,
+            "name": "Fiber Weave"
           },
           {
             "count": 45,
             "name": "Redwood Wood"
           },
           {
-            "count": 22,
-            "name": "Fiber Weave"
+            "count": 15,
+            "name": "Bone Splinter"
           }
         ]
       }
@@ -18869,16 +18936,16 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Bone Splinter"
+            "count": 22,
+            "name": "Fiber Weave"
           },
           {
             "count": 45,
             "name": "Redwood Wood"
           },
           {
-            "count": 22,
-            "name": "Fiber Weave"
+            "count": 15,
+            "name": "Bone Splinter"
           }
         ]
       }
@@ -18895,7 +18962,7 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "Reinforced Gear"
+            "name": "Gelatinous Goo"
           },
           {
             "count": 32,
@@ -18903,7 +18970,7 @@
           },
           {
             "count": 5,
-            "name": "Gelatinous Goo"
+            "name": "Reinforced Gear"
           }
         ]
       }
@@ -18918,7 +18985,7 @@
         "ingredients": [
           {
             "count": 5,
-            "name": "Reinforced Gear"
+            "name": "Gelatinous Goo"
           },
           {
             "count": 32,
@@ -18926,7 +18993,7 @@
           },
           {
             "count": 5,
-            "name": "Gelatinous Goo"
+            "name": "Reinforced Gear"
           }
         ]
       }
@@ -18940,16 +19007,16 @@
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Reinforced Gear"
+            "count": 32,
+            "name": "Clay"
           },
           {
             "count": 5,
             "name": "Gelatinous Goo"
           },
           {
-            "count": 32,
-            "name": "Clay"
+            "count": 5,
+            "name": "Reinforced Gear"
           }
         ]
       }
@@ -18963,16 +19030,16 @@
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Reinforced Gear"
+            "count": 32,
+            "name": "Clay"
           },
           {
             "count": 5,
             "name": "Gelatinous Goo"
           },
           {
-            "count": 32,
-            "name": "Clay"
+            "count": 5,
+            "name": "Reinforced Gear"
           }
         ]
       }
@@ -18986,12 +19053,12 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
-          },
-          {
             "count": 17,
             "name": "Chitin Plate"
+          },
+          {
+            "count": 10,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -19007,16 +19074,16 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 17,
+            "name": "Chitin Plate"
           },
           {
             "count": 13,
             "name": "Wood Shaft"
           },
           {
-            "count": 17,
-            "name": "Chitin Plate"
+            "count": 10,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -19032,16 +19099,16 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 17,
+            "name": "Chitin Plate"
           },
           {
             "count": 13,
             "name": "Wood Shaft"
           },
           {
-            "count": 17,
-            "name": "Chitin Plate"
+            "count": 10,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -19061,12 +19128,12 @@
             "name": "Chitin Plate"
           },
           {
-            "count": 1,
-            "name": "Torque Battery"
-          },
-          {
             "count": 13,
             "name": "Wood Shaft"
+          },
+          {
+            "count": 10,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -19082,16 +19149,16 @@
       {
         "ingredients": [
           {
-            "count": 40,
-            "name": "Spearmint"
+            "count": 20,
+            "name": "Charcoal"
           },
           {
             "count": 25,
             "name": "Triple Stitch Fabric"
           },
           {
-            "count": 20,
-            "name": "Charcoal"
+            "count": 40,
+            "name": "Spearmint"
           }
         ]
       }
@@ -19107,16 +19174,16 @@
       {
         "ingredients": [
           {
-            "count": 40,
-            "name": "Spearmint"
+            "count": 20,
+            "name": "Tallow"
           },
           {
             "count": 25,
             "name": "Triple Stitch Fabric"
           },
           {
-            "count": 20,
-            "name": "Tallow"
+            "count": 40,
+            "name": "Spearmint"
           }
         ]
       }
@@ -19132,16 +19199,16 @@
       {
         "ingredients": [
           {
-            "count": 40,
-            "name": "Spearmint"
+            "count": 20,
+            "name": "Tallow"
           },
           {
             "count": 25,
             "name": "Triple Stitch Fabric"
           },
           {
-            "count": 20,
-            "name": "Tallow"
+            "count": 40,
+            "name": "Spearmint"
           }
         ]
       }
@@ -19157,16 +19224,16 @@
       {
         "ingredients": [
           {
-            "count": 40,
-            "name": "Spearmint"
+            "count": 20,
+            "name": "Tallow"
           },
           {
             "count": 25,
             "name": "Triple Stitch Fabric"
           },
           {
-            "count": 20,
-            "name": "Tallow"
+            "count": 40,
+            "name": "Spearmint"
           }
         ]
       }
@@ -20174,6 +20241,12 @@
       },
       {
         "location": "Rupu Zealot (Medium)",
+        "chance": 0.125,
+        "minQuantity": 14,
+        "maxQuantity": 14
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.125,
         "minQuantity": 14,
         "maxQuantity": 14
@@ -21276,7 +21349,7 @@
     "translation": "Fire Bolt",
     "type": "FireBolt_C",
     "projectileDamage": {
-      "damage": 1000
+      "damage": 2500
     },
     "experiencieReward": 75,
     "stackSize": 20,
@@ -22182,12 +22255,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.0625,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.0625,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -23918,6 +23985,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "Papak T3",
+        "chance": 1,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "AmmoBox T4",
         "chance": 0.28571428,
         "minQuantity": 1,
@@ -24146,6 +24219,12 @@
         "maxQuantity": 5
       },
       {
+        "location": "GoGo T4",
+        "chance": 0.05882353,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
         "location": "Rupu Firebrand",
         "chance": 0.05882353,
         "minQuantity": 5,
@@ -24181,6 +24260,12 @@
     "drops": [
       {
         "location": "EasyRupu T4",
+        "chance": 0.05882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.05882353,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -24233,6 +24318,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "GoGo T4",
+        "chance": 0.05882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "Rupu Firebrand",
         "chance": 0.05882353,
         "minQuantity": 1,
@@ -24280,6 +24371,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "GoGo T4",
+        "chance": 0.05882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "Rupu Firebrand",
         "chance": 0.05882353,
         "minQuantity": 1,
@@ -24322,6 +24419,12 @@
     "drops": [
       {
         "location": "EasyRupu T4",
+        "chance": 0.05882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.05882353,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -24406,6 +24509,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "GoGo T4",
+        "chance": 0.05882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "Rupu Firebrand",
         "chance": 0.05882353,
         "minQuantity": 1,
@@ -24455,6 +24564,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "GoGo T4",
+        "chance": 0.05882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "Rupu Firebrand",
         "chance": 0.05882353,
         "minQuantity": 1,
@@ -24496,6 +24611,12 @@
     "drops": [
       {
         "location": "EasyRupu T4",
+        "chance": 0.05882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.05882353,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -24568,6 +24689,12 @@
       },
       {
         "location": "BigHotspotLoot T2",
+        "chance": 1,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 1,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -25373,6 +25500,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.08333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.08333333,
         "minQuantity": 1,
@@ -25702,6 +25835,12 @@
       },
       {
         "location": "Rupu Zealot (Medium)",
+        "chance": 0.11111111,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.11111111,
         "minQuantity": 1,
         "maxQuantity": 2
@@ -26294,7 +26433,7 @@
     "translation": "Hardened Hellfire Bolt",
     "type": "HardenedHellfireBolt_C",
     "projectileDamage": {
-      "damage": 1500
+      "damage": 5000
     },
     "experiencieReward": 115,
     "toolInfo": [
@@ -26676,12 +26815,6 @@
         "maxQuantity": 5
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.047619047,
-        "minQuantity": 5,
-        "maxQuantity": 5
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.047619047,
         "minQuantity": 5,
@@ -27010,7 +27143,7 @@
     "translation": "Hellfire Bolt",
     "type": "HellfireBolt_C",
     "projectileDamage": {
-      "damage": 1250
+      "damage": 3200
     },
     "toolInfo": [
       {
@@ -27157,7 +27290,7 @@
     "name": "Hercul Walker Legs Heavy (1 of 2)",
     "type": "HerculLegs_T3_C",
     "structureInfo": {
-      "type": "Hard",
+      "type": "Medium",
       "hp": 13300
     },
     "translation": "Hercul Walker Legs Heavy",
@@ -27191,67 +27324,79 @@
     "drops": [
       {
         "location": "BigHotspotLoot T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "EasyRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HardRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Oracle",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Overseer",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HotspotLoot T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "MediumRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Seeker",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "White Death (Medium)",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Okkam T3",
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "TreasureChest T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "BigHotspotLoot T4",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -27283,67 +27428,79 @@
     "drops": [
       {
         "location": "BigHotspotLoot T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "EasyRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HardRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Oracle",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Overseer",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HotspotLoot T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "MediumRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Seeker",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "White Death (Medium)",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Okkam T3",
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "TreasureChest T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "BigHotspotLoot T4",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -27426,12 +27583,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.047619047,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -27869,6 +28020,12 @@
         "maxQuantity": 4
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.18181818,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.18181818,
         "minQuantity": 4,
@@ -27924,6 +28081,12 @@
       },
       {
         "location": "EasyRupuCamp T4",
+        "chance": 0.15384615000000001,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.15384615000000001,
         "minQuantity": 5,
         "maxQuantity": 5
@@ -28035,7 +28198,7 @@
     "type": "Hornet_C",
     "structureInfo": {
       "type": "Hard",
-      "hp": 10000
+      "hp": 35000
     },
     "walkerinfo": {
       "category": "Large"
@@ -28100,7 +28263,7 @@
     "type": "HornetLegs_T2_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 5200
+      "hp": 5400
     },
     "translation": "Hornet Walker Legs Armored",
     "weight": 9.75
@@ -28132,8 +28295,8 @@
     "name": "Hornet Walker Legs Heavy (1 of 2)",
     "type": "HornetLegs_T3_C",
     "structureInfo": {
-      "type": "Hard",
-      "hp": 19000
+      "type": "Medium",
+      "hp": 6480
     },
     "translation": "Hornet Walker Legs Heavy",
     "weight": 9.75
@@ -28166,67 +28329,79 @@
     "drops": [
       {
         "location": "BigHotspotLoot T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "EasyRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HardRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Oracle",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Overseer",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HotspotLoot T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "MediumRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Seeker",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "White Death (Medium)",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Okkam T3",
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "TreasureChest T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "BigHotspotLoot T4",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -28258,67 +28433,79 @@
     "drops": [
       {
         "location": "BigHotspotLoot T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "EasyRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HardRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Oracle",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Overseer",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HotspotLoot T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "MediumRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Seeker",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "White Death (Medium)",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Okkam T3",
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "TreasureChest T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "BigHotspotLoot T4",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -28406,12 +28593,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.047619047,
         "minQuantity": 1,
@@ -28444,12 +28625,12 @@
       {
         "ingredients": [
           {
-            "count": 48,
-            "name": "Redwood Wood"
-          },
-          {
             "count": 32,
             "name": "Fiber Weave"
+          },
+          {
+            "count": 48,
+            "name": "Redwood Wood"
           }
         ]
       }
@@ -28465,12 +28646,12 @@
       {
         "ingredients": [
           {
-            "count": 48,
-            "name": "Redwood Wood"
-          },
-          {
             "count": 32,
             "name": "Fiber Weave"
+          },
+          {
+            "count": 48,
+            "name": "Redwood Wood"
           }
         ]
       }
@@ -28486,12 +28667,12 @@
       {
         "ingredients": [
           {
-            "count": 48,
-            "name": "Redwood Wood"
-          },
-          {
             "count": 32,
             "name": "Fiber Weave"
+          },
+          {
+            "count": 48,
+            "name": "Redwood Wood"
           }
         ]
       }
@@ -28528,12 +28709,12 @@
       {
         "ingredients": [
           {
-            "count": 17,
-            "name": "Tar"
-          },
-          {
             "count": 22,
             "name": "Ceramic Shard"
+          },
+          {
+            "count": 17,
+            "name": "Tar"
           },
           {
             "count": 38,
@@ -28553,16 +28734,16 @@
       {
         "ingredients": [
           {
-            "count": 17,
-            "name": "Tar"
+            "count": 22,
+            "name": "Ceramic Shard"
           },
           {
             "count": 38,
             "name": "Rupu Pelt"
           },
           {
-            "count": 22,
-            "name": "Ceramic Shard"
+            "count": 17,
+            "name": "Tar"
           }
         ]
       }
@@ -28582,12 +28763,12 @@
             "name": "Ceramic Shard"
           },
           {
-            "count": 38,
-            "name": "Rupu Pelt"
-          },
-          {
             "count": 17,
             "name": "Tar"
+          },
+          {
+            "count": 38,
+            "name": "Rupu Pelt"
           }
         ]
       }
@@ -28607,12 +28788,12 @@
             "name": "Ceramic Shard"
           },
           {
-            "count": 38,
-            "name": "Rupu Pelt"
-          },
-          {
             "count": 17,
             "name": "Tar"
+          },
+          {
+            "count": 38,
+            "name": "Rupu Pelt"
           }
         ]
       }
@@ -28626,16 +28807,16 @@
       {
         "ingredients": [
           {
-            "count": 36,
-            "name": "Wood Shaft"
+            "count": 17,
+            "name": "Triple Stitch Fabric"
           },
           {
             "count": 32,
             "name": "Cotton"
           },
           {
-            "count": 17,
-            "name": "Triple Stitch Fabric"
+            "count": 36,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -28651,16 +28832,16 @@
       {
         "ingredients": [
           {
-            "count": 36,
-            "name": "Wood Shaft"
+            "count": 17,
+            "name": "Triple Stitch Fabric"
           },
           {
             "count": 32,
             "name": "Cotton"
           },
           {
-            "count": 17,
-            "name": "Triple Stitch Fabric"
+            "count": 36,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -28676,16 +28857,16 @@
       {
         "ingredients": [
           {
-            "count": 36,
-            "name": "Wood Shaft"
+            "count": 17,
+            "name": "Triple Stitch Fabric"
           },
           {
             "count": 32,
             "name": "Cotton"
           },
           {
-            "count": 17,
-            "name": "Triple Stitch Fabric"
+            "count": 36,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -28701,16 +28882,16 @@
       {
         "ingredients": [
           {
-            "count": 36,
-            "name": "Wood Shaft"
+            "count": 17,
+            "name": "Triple Stitch Fabric"
           },
           {
             "count": 32,
             "name": "Cotton"
           },
           {
-            "count": 17,
-            "name": "Triple Stitch Fabric"
+            "count": 36,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -28726,16 +28907,16 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Tallow"
+            "count": 12,
+            "name": "Reinforced Gear"
           },
           {
             "count": 32,
             "name": "Wood Shaft"
           },
           {
-            "count": 12,
-            "name": "Reinforced Gear"
+            "count": 24,
+            "name": "Tallow"
           }
         ]
       }
@@ -28749,16 +28930,16 @@
       {
         "ingredients": [
           {
-            "count": 32,
-            "name": "Wood Shaft"
+            "count": 12,
+            "name": "Reinforced Gear"
           },
           {
             "count": 24,
             "name": "Tallow"
           },
           {
-            "count": 12,
-            "name": "Reinforced Gear"
+            "count": 32,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -28772,16 +28953,16 @@
       {
         "ingredients": [
           {
-            "count": 32,
-            "name": "Wood Shaft"
+            "count": 12,
+            "name": "Reinforced Gear"
           },
           {
             "count": 24,
             "name": "Tallow"
           },
           {
-            "count": 12,
-            "name": "Reinforced Gear"
+            "count": 32,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -28795,12 +28976,12 @@
       {
         "ingredients": [
           {
-            "count": 23,
-            "name": "Tallow"
-          },
-          {
             "count": 24,
             "name": "Reinforced Gear"
+          },
+          {
+            "count": 23,
+            "name": "Tallow"
           }
         ]
       }
@@ -28814,12 +28995,12 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Torque Battery"
-          },
-          {
             "count": 5,
             "name": "Rope"
+          },
+          {
+            "count": 8,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -28835,12 +29016,12 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Torque Battery"
-          },
-          {
             "count": 13,
             "name": "Wood Shaft"
+          },
+          {
+            "count": 8,
+            "name": "Earth Wax"
           },
           {
             "count": 5,
@@ -28860,16 +29041,16 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Torque Battery"
+            "count": 13,
+            "name": "Wood Shaft"
           },
           {
             "count": 5,
             "name": "Rope"
           },
           {
-            "count": 13,
-            "name": "Wood Shaft"
+            "count": 8,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -28885,16 +29066,16 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Torque Battery"
+            "count": 5,
+            "name": "Rope"
           },
           {
             "count": 13,
             "name": "Wood Shaft"
           },
           {
-            "count": 5,
-            "name": "Rope"
+            "count": 8,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -28910,16 +29091,16 @@
       {
         "ingredients": [
           {
-            "count": 3,
-            "name": "Gelatinous Goo"
+            "count": 8,
+            "name": "Leather"
           },
           {
             "count": 40,
             "name": "Clay"
           },
           {
-            "count": 8,
-            "name": "Leather"
+            "count": 3,
+            "name": "Gelatinous Goo"
           }
         ]
       }
@@ -28935,16 +29116,16 @@
       {
         "ingredients": [
           {
-            "count": 3,
-            "name": "Gelatinous Goo"
+            "count": 8,
+            "name": "Leather"
           },
           {
             "count": 40,
             "name": "Clay"
           },
           {
-            "count": 8,
-            "name": "Leather"
+            "count": 3,
+            "name": "Gelatinous Goo"
           }
         ]
       }
@@ -28960,16 +29141,16 @@
       {
         "ingredients": [
           {
-            "count": 3,
-            "name": "Gelatinous Goo"
+            "count": 40,
+            "name": "Clay"
           },
           {
             "count": 8,
             "name": "Wood"
           },
           {
-            "count": 40,
-            "name": "Clay"
+            "count": 3,
+            "name": "Gelatinous Goo"
           }
         ]
       }
@@ -28985,16 +29166,16 @@
       {
         "ingredients": [
           {
-            "count": 3,
-            "name": "Gelatinous Goo"
+            "count": 8,
+            "name": "Wood"
           },
           {
             "count": 40,
             "name": "Clay"
           },
           {
-            "count": 8,
-            "name": "Wood"
+            "count": 3,
+            "name": "Gelatinous Goo"
           }
         ]
       }
@@ -29341,6 +29522,12 @@
         "maxQuantity": 2
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.18181818,
+        "minQuantity": 2,
+        "maxQuantity": 2
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.18181818,
         "minQuantity": 2,
@@ -29396,6 +29583,12 @@
       },
       {
         "location": "EasyRupuCamp T4",
+        "chance": 0.15384615000000001,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.15384615000000001,
         "minQuantity": 4,
         "maxQuantity": 4
@@ -29713,12 +29906,6 @@
         "maxQuantity": 5
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.055555553,
-        "minQuantity": 5,
-        "maxQuantity": 5
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.055555553,
         "minQuantity": 5,
@@ -29904,12 +30091,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.055555553,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.055555553,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -30114,12 +30295,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.055555553,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.055555553,
         "minQuantity": 1,
@@ -30314,12 +30489,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.055555553,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.055555553,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -30522,12 +30691,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.055555553,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.055555553,
         "minQuantity": 1,
@@ -30713,12 +30876,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.055555553,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.055555553,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -31006,7 +31163,7 @@
       },
       {
         "location": "Okkam T3",
-        "chance": 0.0625,
+        "chance": 0.047619047,
         "minQuantity": 1,
         "maxQuantity": 1
       },
@@ -31017,14 +31174,14 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
+        "location": "EasyRupu T4",
         "chance": 0.0625,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
-        "location": "EasyRupu T4",
-        "chance": 0.0625,
+        "location": "GoGo T4",
+        "chance": 0.05882353,
         "minQuantity": 1,
         "maxQuantity": 1
       },
@@ -31266,12 +31423,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.055555553,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.055555553,
         "minQuantity": 1,
@@ -31463,12 +31614,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.055555553,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.055555553,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -32238,7 +32383,7 @@
             "name": "Lightwood"
           }
         ],
-        "output": 3,
+        "output": 10,
         "station": "Artificer Woodworking Station",
         "time": 3
       }
@@ -33189,6 +33334,12 @@
       },
       {
         "location": "BasketLoot T2 AC",
+        "chance": 0.08333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.08333333,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -34563,7 +34714,7 @@
     "name": "Meteor Core",
     "trade_price": 600,
     "translation": "Meteor Core",
-    "type": "EnergizedCore_C",
+    "type": "MeteorCore_C",
     "experiencieReward": 50,
     "stackSize": 100,
     "weight": 0.3
@@ -34645,11 +34796,11 @@
       }
     ],
     "name": "Mollusk Walker",
-    "parent": "Dinghy Walker",
+    "parent": "Steering Levers",
     "type": "Mollusk_C",
     "structureInfo": {
       "type": "Hard",
-      "hp": 12000
+      "hp": 26000
     },
     "walkerinfo": {
       "category": "Medium"
@@ -34681,7 +34832,7 @@
     "type": "MolluskLegs_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 2700
+      "hp": 3000
     },
     "translation": "Mollusk Walker Legs",
     "weight": 9.75
@@ -34714,7 +34865,7 @@
     "type": "MolluskLegs_T2_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 3500
+      "hp": 3600
     },
     "translation": "Mollusk Walker Legs Armored",
     "weight": 9.75
@@ -34795,6 +34946,12 @@
       },
       {
         "location": "Rupu Zealot (Medium)",
+        "chance": 0.7894737000000001,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.7894737000000001,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -34983,6 +35140,12 @@
       },
       {
         "location": "Rupu Zealot (Medium)",
+        "chance": 0.15789473999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.15789473999999998,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -35257,12 +35420,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.055555553,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.055555553,
         "minQuantity": 1,
@@ -35295,16 +35452,16 @@
       {
         "ingredients": [
           {
-            "count": 40,
-            "name": "Wood Shaft"
+            "count": 24,
+            "name": "Bone Splinter"
           },
           {
             "count": 22,
             "name": "Triple Stitch Fabric"
           },
           {
-            "count": 24,
-            "name": "Bone Splinter"
+            "count": 40,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -35320,12 +35477,12 @@
       {
         "ingredients": [
           {
-            "count": 40,
-            "name": "Wood Shaft"
-          },
-          {
             "count": 22,
             "name": "Triple Stitch Fabric"
+          },
+          {
+            "count": 40,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -35341,16 +35498,16 @@
       {
         "ingredients": [
           {
-            "count": 22,
-            "name": "Triple Stitch Fabric"
+            "count": 24,
+            "name": "Bone Splinter"
           },
           {
             "count": 40,
             "name": "Wood Shaft"
           },
           {
-            "count": 24,
-            "name": "Bone Splinter"
+            "count": 22,
+            "name": "Triple Stitch Fabric"
           }
         ]
       }
@@ -35366,16 +35523,16 @@
       {
         "ingredients": [
           {
-            "count": 40,
-            "name": "Wood Shaft"
+            "count": 24,
+            "name": "Bone Splinter"
           },
           {
             "count": 22,
             "name": "Triple Stitch Fabric"
           },
           {
-            "count": 24,
-            "name": "Bone Splinter"
+            "count": 40,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -35391,12 +35548,12 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Fiber Weave"
-          },
-          {
             "count": 28,
             "name": "Bone Splinter"
+          },
+          {
+            "count": 24,
+            "name": "Fiber Weave"
           },
           {
             "count": 42,
@@ -35431,16 +35588,16 @@
       {
         "ingredients": [
           {
-            "count": 42,
-            "name": "Rupu Pelt"
+            "count": 28,
+            "name": "Bone Splinter"
           },
           {
             "count": 24,
             "name": "Fiber Weave"
           },
           {
-            "count": 28,
-            "name": "Bone Splinter"
+            "count": 42,
+            "name": "Rupu Pelt"
           }
         ]
       }
@@ -35456,16 +35613,16 @@
       {
         "ingredients": [
           {
-            "count": 42,
-            "name": "Rupu Pelt"
+            "count": 28,
+            "name": "Bone Splinter"
           },
           {
             "count": 24,
             "name": "Fiber Weave"
           },
           {
-            "count": 28,
-            "name": "Bone Splinter"
+            "count": 42,
+            "name": "Rupu Pelt"
           }
         ]
       }
@@ -35481,16 +35638,16 @@
       {
         "ingredients": [
           {
-            "count": 13,
-            "name": "Bone Splinter"
+            "count": 16,
+            "name": "Fiber Weave"
           },
           {
             "count": 38,
             "name": "Wood Shaft"
           },
           {
-            "count": 16,
-            "name": "Fiber Weave"
+            "count": 13,
+            "name": "Bone Splinter"
           }
         ]
       }
@@ -35506,12 +35663,12 @@
       {
         "ingredients": [
           {
-            "count": 38,
-            "name": "Wood Shaft"
-          },
-          {
             "count": 16,
             "name": "Fiber Weave"
+          },
+          {
+            "count": 38,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -35527,16 +35684,16 @@
       {
         "ingredients": [
           {
-            "count": 13,
-            "name": "Bone Splinter"
+            "count": 16,
+            "name": "Fiber Weave"
           },
           {
             "count": 38,
             "name": "Wood Shaft"
           },
           {
-            "count": 16,
-            "name": "Fiber Weave"
+            "count": 13,
+            "name": "Bone Splinter"
           }
         ]
       }
@@ -35552,16 +35709,16 @@
       {
         "ingredients": [
           {
-            "count": 13,
-            "name": "Bone Splinter"
+            "count": 16,
+            "name": "Fiber Weave"
           },
           {
             "count": 38,
             "name": "Wood Shaft"
           },
           {
-            "count": 16,
-            "name": "Fiber Weave"
+            "count": 13,
+            "name": "Bone Splinter"
           }
         ]
       }
@@ -35577,16 +35734,16 @@
       {
         "ingredients": [
           {
-            "count": 28,
-            "name": "Earth Wax"
+            "count": 14,
+            "name": "Bone Splinter"
           },
           {
             "count": 8,
             "name": "Wood Shaft"
           },
           {
-            "count": 14,
-            "name": "Bone Splinter"
+            "count": 28,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -35623,16 +35780,16 @@
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "Wood Shaft"
+            "count": 14,
+            "name": "Bone Splinter"
           },
           {
             "count": 28,
             "name": "Earth Wax"
           },
           {
-            "count": 14,
-            "name": "Bone Splinter"
+            "count": 8,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -35646,16 +35803,16 @@
       {
         "ingredients": [
           {
-            "count": 28,
-            "name": "Earth Wax"
+            "count": 14,
+            "name": "Bone Splinter"
           },
           {
             "count": 8,
             "name": "Wood Shaft"
           },
           {
-            "count": 14,
-            "name": "Bone Splinter"
+            "count": 28,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -35669,12 +35826,12 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Torque Battery"
-          },
-          {
             "count": 25,
             "name": "Rope"
+          },
+          {
+            "count": 5,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -35690,12 +35847,12 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Torque Battery"
-          },
-          {
             "count": 13,
             "name": "Wood Shaft"
+          },
+          {
+            "count": 5,
+            "name": "Earth Wax"
           },
           {
             "count": 25,
@@ -35715,16 +35872,16 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Torque Battery"
+            "count": 13,
+            "name": "Wood Shaft"
           },
           {
             "count": 25,
             "name": "Rope"
           },
           {
-            "count": 13,
-            "name": "Wood Shaft"
+            "count": 5,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -35740,16 +35897,16 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Torque Battery"
+            "count": 25,
+            "name": "Rope"
           },
           {
             "count": 13,
             "name": "Wood Shaft"
           },
           {
-            "count": 25,
-            "name": "Rope"
+            "count": 1,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -35765,16 +35922,16 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Wood Shaft"
+            "count": 8,
+            "name": "Rupu Pelt"
           },
           {
             "count": 6,
             "name": "Nomad Cloth"
           },
           {
-            "count": 8,
-            "name": "Rupu Pelt"
+            "count": 12,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -35790,16 +35947,16 @@
       {
         "ingredients": [
           {
-            "count": 48,
-            "name": "Wood Shaft"
+            "count": 8,
+            "name": "Rupu Pelt"
           },
           {
             "count": 15,
             "name": "Nomad Cloth"
           },
           {
-            "count": 8,
-            "name": "Rupu Pelt"
+            "count": 48,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -35813,16 +35970,16 @@
       {
         "ingredients": [
           {
-            "count": 48,
-            "name": "Wood Shaft"
+            "count": 8,
+            "name": "Rupu Pelt"
           },
           {
             "count": 15,
             "name": "Nomad Cloth"
           },
           {
-            "count": 8,
-            "name": "Rupu Pelt"
+            "count": 48,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -35842,12 +35999,12 @@
             "name": "Nomad Cloth"
           },
           {
-            "count": 48,
-            "name": "Wood Shaft"
-          },
-          {
             "count": 8,
             "name": "Rupu Pelt"
+          },
+          {
+            "count": 48,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -36162,6 +36319,12 @@
         "maxQuantity": 5
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.18181818,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.18181818,
         "minQuantity": 5,
@@ -36217,6 +36380,12 @@
       },
       {
         "location": "EasyRupuCamp T4",
+        "chance": 0.15384615000000001,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.15384615000000001,
         "minQuantity": 5,
         "maxQuantity": 5
@@ -37073,7 +37242,7 @@
             "name": "Lightwood"
           }
         ],
-        "output": 3,
+        "output": 10,
         "station": "Artificer Woodworking Station",
         "time": 10
       }
@@ -38681,6 +38850,12 @@
         "maxQuantity": 3
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.125,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.125,
         "minQuantity": 3,
@@ -38915,7 +39090,7 @@
     "type": "Panda_C",
     "structureInfo": {
       "type": "Hard",
-      "hp": 22500
+      "hp": 65000
     },
     "walkerinfo": {
       "category": "Large"
@@ -38947,7 +39122,7 @@
     "type": "PandaLegs_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 18000
+      "hp": 8200
     },
     "translation": "Panda Walker Legs",
     "weight": 9.75
@@ -38992,7 +39167,7 @@
     "type": "PandaLegs_T2_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 27000
+      "hp": 9840
     },
     "translation": "Panda Walker Legs Armored",
     "weight": 9.75
@@ -39024,8 +39199,8 @@
     "name": "Panda Walker Legs Heavy (1 of 2)",
     "type": "PandaLegs_T3_C",
     "structureInfo": {
-      "type": "Hard",
-      "hp": 34200
+      "type": "Medium",
+      "hp": 11808
     },
     "translation": "Panda Walker Legs Heavy",
     "weight": 9.75
@@ -39064,6 +39239,12 @@
       },
       {
         "location": "EasyRupuCamp T4",
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -39143,6 +39324,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "GoGo T4",
+        "chance": 0.03333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HardRupuCamp T4",
         "chance": 0.03333333,
         "minQuantity": 1,
@@ -39191,6 +39378,12 @@
     "drops": [
       {
         "location": "EasyRupu T4",
+        "chance": 0.05882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.05882353,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -39607,8 +39800,8 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 22,
+            "name": "Tar"
           },
           {
             "count": 34,
@@ -39632,8 +39825,8 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 22,
+            "name": "Tar"
           },
           {
             "count": 34,
@@ -39657,8 +39850,8 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 22,
+            "name": "Tar"
           },
           {
             "count": 34,
@@ -39682,8 +39875,8 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 22,
+            "name": "Tar"
           },
           {
             "count": 34,
@@ -40054,7 +40247,21 @@
     "description": "In the dry southern valleys, the fossils of old sea creatures litter the ground, turning the hills white.",
     "experiencieReward": 6,
     "stackSize": 100,
-    "weight": 0.01
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "DesertClam",
+        "chance": 0.066666665,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      },
+      {
+        "location": "GoGo T4",
+        "chance": 0.066666665,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ]
   },
   {
     "category": "Containers",
@@ -40246,6 +40453,12 @@
       },
       {
         "location": "BasketLoot T2 AC",
+        "chance": 0.08333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.08333333,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -40463,11 +40676,11 @@
       }
     ],
     "name": "Proxy Walker",
-    "parent": "Dinghy Walker",
+    "parent": "Steering Levers",
     "type": "Proxy_C",
     "structureInfo": {
       "type": "Reinforced",
-      "hp": 40000
+      "hp": 100000
     },
     "walkerinfo": {
       "category": "Large"
@@ -40568,7 +40781,7 @@
     "name": "Proxy Walker Legs Heavy (1 of 2)",
     "type": "ProxyLegs_T3_C",
     "structureInfo": {
-      "type": "Hard",
+      "type": "Medium",
       "hp": 19000
     },
     "translation": "Proxy Walker Legs Heavy",
@@ -40654,6 +40867,12 @@
       },
       {
         "location": "Rupu Zealot (Medium)",
+        "chance": 0.7894737000000001,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.7894737000000001,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -40842,6 +41061,12 @@
       },
       {
         "location": "Rupu Zealot (Medium)",
+        "chance": 0.15789473999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.15789473999999998,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -41116,12 +41341,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.055555553,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.055555553,
         "minQuantity": 1,
@@ -41224,9 +41443,9 @@
     "drops": [
       {
         "location": "DesertClam",
-        "chance": 0.9,
-        "minQuantity": 4,
-        "maxQuantity": 8
+        "chance": 0.6,
+        "minQuantity": 1,
+        "maxQuantity": 1
       },
       {
         "location": "EasyRupuCamp T1",
@@ -41272,6 +41491,12 @@
       },
       {
         "location": "HardRupuCamp T2",
+        "chance": 0.18181818,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.18181818,
         "minQuantity": 5,
         "maxQuantity": 5
@@ -41335,6 +41560,12 @@
         "chance": 0.15384615000000001,
         "minQuantity": 6,
         "maxQuantity": 6
+      },
+      {
+        "location": "GoGo T4",
+        "chance": 0.6,
+        "minQuantity": 1,
+        "maxQuantity": 1
       },
       {
         "location": "HardRupuCamp T4",
@@ -41651,6 +41882,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "GoGo T4",
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HardRupuCamp T4",
         "chance": 0.16666666,
         "minQuantity": 1,
@@ -41725,6 +41962,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "GoGo T4",
+        "chance": 0.033333335,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HardRupuCamp T4",
         "chance": 0.033333335,
         "minQuantity": 1,
@@ -41773,6 +42016,12 @@
     "drops": [
       {
         "location": "EasyRupu T4",
+        "chance": 0.05882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.05882353,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -41832,16 +42081,16 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Lightwood"
+            "count": 15,
+            "name": "Hollowbone"
           },
           {
             "count": 32,
             "name": "IronNails"
           },
           {
-            "count": 15,
-            "name": "Hollowbone"
+            "count": 12,
+            "name": "Lightwood"
           }
         ]
       }
@@ -41857,16 +42106,16 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Lightwood"
+            "count": 15,
+            "name": "Hollowbone"
           },
           {
             "count": 32,
             "name": "IronNails"
           },
           {
-            "count": 15,
-            "name": "Hollowbone"
+            "count": 12,
+            "name": "Lightwood"
           }
         ]
       }
@@ -41882,16 +42131,16 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Lightwood"
+            "count": 15,
+            "name": "Hollowbone"
           },
           {
             "count": 32,
             "name": "IronNails"
           },
           {
-            "count": 15,
-            "name": "Hollowbone"
+            "count": 12,
+            "name": "Lightwood"
           }
         ]
       }
@@ -41907,16 +42156,16 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Lightwood"
+            "count": 15,
+            "name": "Hollowbone"
           },
           {
             "count": 32,
             "name": "IronNails"
           },
           {
-            "count": 15,
-            "name": "Hollowbone"
+            "count": 12,
+            "name": "Lightwood"
           }
         ]
       }
@@ -41932,16 +42181,16 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Hollowbone"
+            "count": 32,
+            "name": "Rubber Block"
           },
           {
             "count": 12,
             "name": "Lightwood"
           },
           {
-            "count": 32,
-            "name": "Rubber Block"
+            "count": 15,
+            "name": "Hollowbone"
           }
         ]
       }
@@ -41957,16 +42206,16 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Hollowbone"
+            "count": 32,
+            "name": "Rubber Block"
           },
           {
             "count": 12,
             "name": "Lightwood"
           },
           {
-            "count": 32,
-            "name": "Rubber Block"
+            "count": 15,
+            "name": "Hollowbone"
           }
         ]
       }
@@ -41982,16 +42231,16 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Hollowbone"
+            "count": 32,
+            "name": "Rubber Block"
           },
           {
             "count": 12,
             "name": "Lightwood"
           },
           {
-            "count": 32,
-            "name": "Rubber Block"
+            "count": 15,
+            "name": "Hollowbone"
           }
         ]
       }
@@ -42007,16 +42256,16 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Hollowbone"
+            "count": 32,
+            "name": "Rubber Block"
           },
           {
             "count": 12,
             "name": "Lightwood"
           },
           {
-            "count": 32,
-            "name": "Rubber Block"
+            "count": 15,
+            "name": "Hollowbone"
           }
         ]
       }
@@ -42032,16 +42281,16 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Lightwood"
+            "count": 15,
+            "name": "Shardrock"
           },
           {
             "count": 32,
             "name": "IronNails"
           },
           {
-            "count": 15,
-            "name": "Shardrock"
+            "count": 12,
+            "name": "Lightwood"
           }
         ]
       }
@@ -42057,16 +42306,16 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Lightwood"
+            "count": 15,
+            "name": "Shardrock"
           },
           {
             "count": 32,
             "name": "IronNails"
           },
           {
-            "count": 15,
-            "name": "Shardrock"
+            "count": 12,
+            "name": "Lightwood"
           }
         ]
       }
@@ -42082,16 +42331,16 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Lightwood"
+            "count": 15,
+            "name": "Shardrock"
           },
           {
             "count": 32,
             "name": "IronNails"
           },
           {
-            "count": 15,
-            "name": "Shardrock"
+            "count": 12,
+            "name": "Lightwood"
           }
         ]
       }
@@ -42107,16 +42356,16 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Lightwood"
+            "count": 15,
+            "name": "Shardrock"
           },
           {
             "count": 32,
             "name": "IronNails"
           },
           {
-            "count": 15,
-            "name": "Shardrock"
+            "count": 12,
+            "name": "Lightwood"
           }
         ]
       }
@@ -42132,16 +42381,16 @@
       {
         "ingredients": [
           {
-            "count": 32,
-            "name": "Torque Battery"
+            "count": 7,
+            "name": "Rope"
           },
           {
             "count": 12,
             "name": "Lightwood"
           },
           {
-            "count": 7,
-            "name": "Rope"
+            "count": 32,
+            "name": "Iron Ore"
           }
         ]
       }
@@ -42157,12 +42406,12 @@
       {
         "ingredients": [
           {
-            "count": 32,
-            "name": "Torque Battery"
-          },
-          {
             "count": 12,
             "name": "Lightwood"
+          },
+          {
+            "count": 32,
+            "name": "Iron Ore"
           },
           {
             "count": 7,
@@ -42182,16 +42431,16 @@
       {
         "ingredients": [
           {
-            "count": 32,
-            "name": "Torque Battery"
+            "count": 12,
+            "name": "Lightwood"
           },
           {
             "count": 7,
             "name": "Rope"
           },
           {
-            "count": 12,
-            "name": "Lightwood"
+            "count": 32,
+            "name": "Iron Ore"
           }
         ]
       }
@@ -42207,16 +42456,16 @@
       {
         "ingredients": [
           {
-            "count": 32,
-            "name": "Torque Battery"
+            "count": 7,
+            "name": "Rope"
           },
           {
             "count": 12,
             "name": "Lightwood"
           },
           {
-            "count": 7,
-            "name": "Rope"
+            "count": 32,
+            "name": "Iron Ore"
           }
         ]
       }
@@ -42232,16 +42481,16 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Lightwood"
+            "count": 15,
+            "name": "Rubber Block"
           },
           {
             "count": 32,
             "name": "Iron Ore"
           },
           {
-            "count": 15,
-            "name": "Rubber Block"
+            "count": 12,
+            "name": "Lightwood"
           }
         ]
       }
@@ -42257,16 +42506,16 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Lightwood"
+            "count": 15,
+            "name": "Rubber Block"
           },
           {
             "count": 32,
             "name": "Iron Ore"
           },
           {
-            "count": 15,
-            "name": "Rubber Block"
+            "count": 12,
+            "name": "Lightwood"
           }
         ]
       }
@@ -42282,16 +42531,16 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Lightwood"
+            "count": 15,
+            "name": "Rubber Block"
           },
           {
             "count": 32,
             "name": "Iron Ore"
           },
           {
-            "count": 15,
-            "name": "Rubber Block"
+            "count": 12,
+            "name": "Lightwood"
           }
         ]
       }
@@ -42307,16 +42556,16 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Lightwood"
+            "count": 15,
+            "name": "Rubber Block"
           },
           {
             "count": 32,
             "name": "Iron Ore"
           },
           {
-            "count": 15,
-            "name": "Rubber Block"
+            "count": 12,
+            "name": "Lightwood"
           }
         ]
       }
@@ -42572,6 +42821,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.18181818,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.18181818,
         "minQuantity": 1,
@@ -42799,6 +43054,12 @@
     "drops": [
       {
         "location": "EasyRupuCamp T4",
+        "chance": 0.15384615000000001,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.15384615000000001,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -43166,6 +43427,12 @@
         "maxQuantity": 8
       },
       {
+        "location": "GoGo T4",
+        "chance": 0.15384615000000001,
+        "minQuantity": 8,
+        "maxQuantity": 8
+      },
+      {
         "location": "HardRupuCamp T4",
         "chance": 0.15384615000000001,
         "minQuantity": 8,
@@ -43430,12 +43697,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.055555553,
-        "minQuantity": 5,
-        "maxQuantity": 5
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.055555553,
         "minQuantity": 5,
         "maxQuantity": 5
@@ -43997,6 +44258,12 @@
       },
       {
         "location": "BasketLoot T2 AC",
+        "chance": 0.08333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.08333333,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -44962,6 +45229,12 @@
         "maxQuantity": 4
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.18181818,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.18181818,
         "minQuantity": 4,
@@ -45017,6 +45290,12 @@
       },
       {
         "location": "EasyRupuCamp T4",
+        "chance": 0.15384615000000001,
+        "minQuantity": 6,
+        "maxQuantity": 6
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.15384615000000001,
         "minQuantity": 6,
         "maxQuantity": 6
@@ -45339,6 +45618,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.18181818,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.18181818,
         "minQuantity": 3,
@@ -45487,6 +45772,12 @@
         "chance": 1,
         "minQuantity": 1,
         "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
+        "chance": 0.15384615000000001,
+        "minQuantity": 5,
+        "maxQuantity": 5
       },
       {
         "location": "HardRupuCamp T4",
@@ -46099,6 +46390,12 @@
         "maxQuantity": 2
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.125,
+        "minQuantity": 2,
+        "maxQuantity": 2
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.125,
         "minQuantity": 2,
@@ -46315,9 +46612,20 @@
             "name": "BrineWater"
           }
         ],
-        "output": 10,
+        "output": 3,
         "station": "Clay Pot",
         "time": 20
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "SaltRock_GroundSource"
+          }
+        ],
+        "output": 30,
+        "station": "ArtisanSoilAuger",
+        "time": 60
       }
     ],
     "name": "Salt Rock",
@@ -46340,7 +46648,18 @@
         ],
         "output": 100,
         "station": "Soil Excavator",
-        "time": 29
+        "time": 60
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Terrain: Sand"
+          }
+        ],
+        "output": 100,
+        "station": "ArtisanSoilAuger",
+        "time": 30
       },
       {
         "ingredients": [
@@ -46723,12 +47042,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.0625,
-        "minQuantity": 5,
-        "maxQuantity": 5
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.0625,
         "minQuantity": 5,
         "maxQuantity": 5
@@ -47280,7 +47593,7 @@
     "type": "Schmetterling_C",
     "structureInfo": {
       "type": "Hard",
-      "hp": 25000
+      "hp": 62000
     },
     "walkerinfo": {
       "category": "Capital"
@@ -47312,7 +47625,7 @@
     "type": "SchmetterlingLegs_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 18000
+      "hp": 10000
     },
     "translation": "Schmetterling Walker Legs",
     "weight": 9.75
@@ -47345,7 +47658,7 @@
     "type": "SchmetterlingLegs_T2_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 27000
+      "hp": 12000
     },
     "translation": "Schmetterling Walker Legs Armored",
     "weight": 9.75
@@ -47377,8 +47690,8 @@
     "name": "Schmetterling Walker Legs Heavy (1 of 2)",
     "type": "SchmetterlingLegs_T3_C",
     "structureInfo": {
-      "type": "Hard",
-      "hp": 34200
+      "type": "Medium",
+      "hp": 14400
     },
     "translation": "Schmetterling Walker Legs Heavy",
     "weight": 9.75
@@ -47417,6 +47730,12 @@
       },
       {
         "location": "EasyRupuCamp T4",
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -47496,6 +47815,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "GoGo T4",
+        "chance": 0.03333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HardRupuCamp T4",
         "chance": 0.03333333,
         "minQuantity": 1,
@@ -47549,6 +47874,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "GoGo T4",
+        "chance": 0.05882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "Rupu Firebrand",
         "chance": 0.05882353,
         "minQuantity": 1,
@@ -47575,16 +47906,16 @@
       {
         "ingredients": [
           {
-            "count": 75,
-            "name": "Lightwood"
+            "count": 25,
+            "name": "Iron Ore"
           },
           {
             "count": 50,
             "name": "Hollowbone"
           },
           {
-            "count": 25,
-            "name": "Iron Ore"
+            "count": 75,
+            "name": "Lightwood"
           }
         ]
       }
@@ -47598,16 +47929,16 @@
       {
         "ingredients": [
           {
-            "count": 75,
-            "name": "Lightwood"
+            "count": 25,
+            "name": "Iron Ore"
           },
           {
             "count": 50,
             "name": "Hollowbone"
           },
           {
-            "count": 25,
-            "name": "Iron Ore"
+            "count": 75,
+            "name": "Lightwood"
           }
         ]
       }
@@ -47621,16 +47952,16 @@
       {
         "ingredients": [
           {
-            "count": 75,
-            "name": "Lightwood"
+            "count": 25,
+            "name": "Iron Ore"
           },
           {
             "count": 50,
             "name": "Hollowbone"
           },
           {
-            "count": 25,
-            "name": "Iron Ore"
+            "count": 75,
+            "name": "Lightwood"
           }
         ]
       }
@@ -47644,16 +47975,16 @@
       {
         "ingredients": [
           {
-            "count": 75,
-            "name": "Lightwood"
+            "count": 25,
+            "name": "Iron Ore"
           },
           {
             "count": 50,
             "name": "Hollowbone"
           },
           {
-            "count": 25,
-            "name": "Iron Ore"
+            "count": 75,
+            "name": "Lightwood"
           }
         ]
       }
@@ -47667,16 +47998,16 @@
       {
         "ingredients": [
           {
-            "count": 63,
-            "name": "Iron Ingot"
+            "count": 38,
+            "name": "Rubber Block"
           },
           {
             "count": 45,
             "name": "Shardrock"
           },
           {
-            "count": 38,
-            "name": "Rubber Block"
+            "count": 63,
+            "name": "Iron Ingot"
           }
         ]
       }
@@ -47692,16 +48023,16 @@
       {
         "ingredients": [
           {
-            "count": 63,
-            "name": "Iron Ingot"
+            "count": 38,
+            "name": "Rubber Block"
           },
           {
             "count": 45,
             "name": "Shardrock"
           },
           {
-            "count": 38,
-            "name": "Rubber Block"
+            "count": 63,
+            "name": "Iron Ingot"
           }
         ]
       }
@@ -47717,16 +48048,16 @@
       {
         "ingredients": [
           {
-            "count": 63,
-            "name": "Iron Ingot"
+            "count": 38,
+            "name": "Rubber Block"
           },
           {
             "count": 45,
             "name": "Shardrock"
           },
           {
-            "count": 38,
-            "name": "Rubber Block"
+            "count": 63,
+            "name": "Iron Ingot"
           }
         ]
       }
@@ -47746,12 +48077,12 @@
             "name": "Iron Ingot"
           },
           {
-            "count": 45,
-            "name": "Shardrock"
-          },
-          {
             "count": 38,
             "name": "Rubber Block"
+          },
+          {
+            "count": 45,
+            "name": "Shardrock"
           }
         ]
       }
@@ -47765,16 +48096,16 @@
       {
         "ingredients": [
           {
-            "count": 55,
-            "name": "Lightwood"
+            "count": 20,
+            "name": "Nomad Cloth"
           },
           {
             "count": 45,
             "name": "IronNails"
           },
           {
-            "count": 20,
-            "name": "Nomad Cloth"
+            "count": 55,
+            "name": "Lightwood"
           }
         ]
       }
@@ -47790,16 +48121,16 @@
       {
         "ingredients": [
           {
-            "count": 55,
-            "name": "Lightwood"
+            "count": 20,
+            "name": "Nomad Cloth"
           },
           {
             "count": 45,
             "name": "IronNails"
           },
           {
-            "count": 20,
-            "name": "Nomad Cloth"
+            "count": 55,
+            "name": "Lightwood"
           }
         ]
       }
@@ -47817,12 +48148,12 @@
             "name": "Nomad Cloth"
           },
           {
-            "count": 55,
-            "name": "Lightwood"
-          },
-          {
             "count": 45,
             "name": "IronNails"
+          },
+          {
+            "count": 55,
+            "name": "Lightwood"
           }
         ]
       }
@@ -47840,12 +48171,12 @@
             "name": "Nomad Cloth"
           },
           {
-            "count": 55,
-            "name": "Lightwood"
-          },
-          {
             "count": 45,
             "name": "IronNails"
+          },
+          {
+            "count": 55,
+            "name": "Lightwood"
           }
         ]
       }
@@ -47859,16 +48190,16 @@
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Iron Gear"
+            "count": 24,
+            "name": "Reinforced Plank"
           },
           {
             "count": 38,
             "name": "Rubber Block"
           },
           {
-            "count": 24,
-            "name": "Reinforced Plank"
+            "count": 5,
+            "name": "Iron Gear"
           }
         ]
       }
@@ -47882,16 +48213,16 @@
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Iron Gear"
+            "count": 24,
+            "name": "Reinforced Plank"
           },
           {
             "count": 38,
             "name": "Rubber Block"
           },
           {
-            "count": 24,
-            "name": "Reinforced Plank"
+            "count": 5,
+            "name": "Iron Gear"
           }
         ]
       }
@@ -47909,12 +48240,12 @@
             "name": "Reinforced Plank"
           },
           {
-            "count": 5,
-            "name": "Iron Gear"
-          },
-          {
             "count": 38,
             "name": "Rubber Block"
+          },
+          {
+            "count": 5,
+            "name": "Iron Gear"
           }
         ]
       }
@@ -47932,12 +48263,12 @@
             "name": "Reinforced Plank"
           },
           {
-            "count": 5,
-            "name": "Iron Gear"
-          },
-          {
             "count": 38,
             "name": "Rubber Block"
+          },
+          {
+            "count": 5,
+            "name": "Iron Gear"
           }
         ]
       }
@@ -47951,16 +48282,16 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 24,
+            "name": "Shardrock"
           },
           {
             "count": 20,
             "name": "Reinforced Plank"
           },
           {
-            "count": 24,
-            "name": "Shardrock"
+            "count": 25,
+            "name": "Tar"
           }
         ]
       }
@@ -47976,16 +48307,16 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 24,
+            "name": "Shardrock"
           },
           {
             "count": 20,
             "name": "Reinforced Plank"
           },
           {
-            "count": 24,
-            "name": "Shardrock"
+            "count": 25,
+            "name": "Tar"
           }
         ]
       }
@@ -48001,16 +48332,16 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 24,
+            "name": "Shardrock"
           },
           {
             "count": 20,
             "name": "Reinforced Plank"
           },
           {
-            "count": 24,
-            "name": "Shardrock"
+            "count": 25,
+            "name": "Tar"
           }
         ]
       }
@@ -48030,12 +48361,12 @@
             "name": "Reinforced Plank"
           },
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
-          },
-          {
             "count": 24,
             "name": "Shardrock"
+          },
+          {
+            "count": 25,
+            "name": "Tar"
           }
         ]
       }
@@ -48051,16 +48382,16 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Rubber Block"
+            "count": 25,
+            "name": "Shardrock"
           },
           {
             "count": 12,
             "name": "EucalyptusLeaf"
           },
           {
-            "count": 25,
-            "name": "Shardrock"
+            "count": 15,
+            "name": "Rubber Block"
           },
           {
             "count": 8,
@@ -48080,20 +48411,20 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Rubber Block"
-          },
-          {
-            "count": 12,
-            "name": "EucalyptusLeaf"
+            "count": 8,
+            "name": "Charcoal"
           },
           {
             "count": 25,
             "name": "Shardrock"
           },
           {
-            "count": 8,
-            "name": "Charcoal"
+            "count": 12,
+            "name": "EucalyptusLeaf"
+          },
+          {
+            "count": 15,
+            "name": "Rubber Block"
           }
         ]
       }
@@ -48109,20 +48440,20 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Rubber Block"
-          },
-          {
-            "count": 12,
-            "name": "EucalyptusLeaf"
+            "count": 8,
+            "name": "Charcoal"
           },
           {
             "count": 25,
             "name": "Shardrock"
           },
           {
-            "count": 8,
-            "name": "Charcoal"
+            "count": 12,
+            "name": "EucalyptusLeaf"
+          },
+          {
+            "count": 15,
+            "name": "Rubber Block"
           }
         ]
       }
@@ -48138,20 +48469,20 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Rubber Block"
-          },
-          {
-            "count": 12,
-            "name": "EucalyptusLeaf"
+            "count": 8,
+            "name": "Charcoal"
           },
           {
             "count": 25,
             "name": "Shardrock"
           },
           {
-            "count": 8,
-            "name": "Charcoal"
+            "count": 12,
+            "name": "EucalyptusLeaf"
+          },
+          {
+            "count": 15,
+            "name": "Rubber Block"
           }
         ]
       }
@@ -48652,6 +48983,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.08333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.08333333,
         "minQuantity": 1,
@@ -48967,7 +49304,7 @@
     "name": "Silur Walker Legs Heavy (1 of 2)",
     "type": "SilurLegs_T3_C",
     "structureInfo": {
-      "type": "Hard",
+      "type": "Medium",
       "hp": 31000
     },
     "translation": "Silur Walker Legs Heavy",
@@ -49052,12 +49389,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.047619047,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -49983,6 +50314,12 @@
     "weight": 0.25,
     "drops": [
       {
+        "location": "Okkam T3",
+        "chance": 1,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "Koa T4",
         "chance": 1,
         "minQuantity": 1,
@@ -50327,12 +50664,6 @@
       },
       {
         "location": "Papak T3",
-        "chance": 0.0625,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "War Okkam T3",
         "chance": 0.0625,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -50828,6 +51159,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.08333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.08333333,
         "minQuantity": 1,
@@ -51025,6 +51362,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.08333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.08333333,
         "minQuantity": 1,
@@ -51101,6 +51444,12 @@
       },
       {
         "location": "BasketLoot T2 AC",
+        "chance": 0.08333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.08333333,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -51317,7 +51666,7 @@
       }
     ],
     "name": "Steering Levers",
-    "parent": "Ammo Chest",
+    "parent": "Dinghy Walker",
     "type": "SteeringLevers_C",
     "experiencieReward": 208,
     "translation": "Steering Levers",
@@ -51416,11 +51765,11 @@
       }
     ],
     "name": "Stiletto Walker",
-    "parent": "Dinghy Walker",
+    "parent": "Steering Levers",
     "type": "Stiletto_C",
     "structureInfo": {
       "type": "Hard",
-      "hp": 9500
+      "hp": 22000
     },
     "walkerinfo": {
       "category": "Medium"
@@ -51448,7 +51797,7 @@
     "type": "StilettoLegs_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 2600
+      "hp": 2800
     },
     "translation": "Stiletto Walker Legs",
     "weight": 9.75
@@ -51481,7 +51830,7 @@
     "type": "StilettoLegs_T2_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 4500
+      "hp": 3360
     },
     "translation": "Stiletto Walker Legs Armored",
     "weight": 9.75
@@ -51562,6 +51911,12 @@
       },
       {
         "location": "Rupu Zealot (Medium)",
+        "chance": 0.7894737000000001,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.7894737000000001,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -51750,6 +52105,12 @@
       },
       {
         "location": "Rupu Zealot (Medium)",
+        "chance": 0.15789473999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.15789473999999998,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -52024,12 +52385,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.055555553,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.055555553,
         "minQuantity": 1,
@@ -52104,16 +52459,16 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Bone Splinter"
+            "count": 40,
+            "name": "Wood"
           },
           {
             "count": 6,
             "name": "Fiber Weave"
           },
           {
-            "count": 40,
-            "name": "Wood"
+            "count": 24,
+            "name": "Bone Splinter"
           }
         ]
       }
@@ -52127,16 +52482,16 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Bone Splinter"
+            "count": 40,
+            "name": "Wood"
           },
           {
             "count": 6,
             "name": "Fiber Weave"
           },
           {
-            "count": 40,
-            "name": "Wood"
+            "count": 24,
+            "name": "Bone Splinter"
           }
         ]
       }
@@ -52157,11 +52512,11 @@
           },
           {
             "count": 18,
-            "name": "Bone Glue"
+            "name": "Triple Stitch Fabric"
           },
           {
             "count": 18,
-            "name": "Triple Stitch Fabric"
+            "name": "Bone Glue"
           }
         ]
       }
@@ -52177,16 +52532,16 @@
       {
         "ingredients": [
           {
-            "count": 18,
-            "name": "Bone Glue"
+            "count": 56,
+            "name": "Wood"
           },
           {
             "count": 18,
             "name": "Triple Stitch Fabric"
           },
           {
-            "count": 56,
-            "name": "Wood"
+            "count": 18,
+            "name": "Bone Glue"
           }
         ]
       }
@@ -52202,16 +52557,16 @@
       {
         "ingredients": [
           {
-            "count": 18,
-            "name": "Triple Stitch Fabric"
+            "count": 56,
+            "name": "Wood"
           },
           {
             "count": 18,
             "name": "Bone Glue"
           },
           {
-            "count": 56,
-            "name": "Wood"
+            "count": 18,
+            "name": "Triple Stitch Fabric"
           }
         ]
       }
@@ -52227,16 +52582,16 @@
       {
         "ingredients": [
           {
-            "count": 18,
-            "name": "Bone Glue"
+            "count": 56,
+            "name": "Wood"
           },
           {
             "count": 18,
             "name": "Triple Stitch Fabric"
           },
           {
-            "count": 56,
-            "name": "Wood"
+            "count": 18,
+            "name": "Bone Glue"
           }
         ]
       }
@@ -52252,16 +52607,16 @@
       {
         "ingredients": [
           {
-            "count": 16,
-            "name": "Fiber Weave"
+            "count": 10,
+            "name": "Wood Shaft"
           },
           {
             "count": 13,
             "name": "Bone Splinter"
           },
           {
-            "count": 10,
-            "name": "Wood Shaft"
+            "count": 16,
+            "name": "Fiber Weave"
           }
         ]
       }
@@ -52277,12 +52632,12 @@
       {
         "ingredients": [
           {
-            "count": 16,
-            "name": "Fiber Weave"
-          },
-          {
             "count": 10,
             "name": "Wood Shaft"
+          },
+          {
+            "count": 16,
+            "name": "Fiber Weave"
           }
         ]
       }
@@ -52298,16 +52653,16 @@
       {
         "ingredients": [
           {
-            "count": 10,
-            "name": "Wood Shaft"
+            "count": 13,
+            "name": "Bone Splinter"
           },
           {
             "count": 16,
             "name": "Fiber Weave"
           },
           {
-            "count": 13,
-            "name": "Bone Splinter"
+            "count": 10,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -52323,16 +52678,16 @@
       {
         "ingredients": [
           {
-            "count": 16,
-            "name": "Fiber Weave"
+            "count": 13,
+            "name": "Bone Splinter"
           },
           {
             "count": 10,
             "name": "Wood Shaft"
           },
           {
-            "count": 13,
-            "name": "Bone Splinter"
+            "count": 16,
+            "name": "Fiber Weave"
           }
         ]
       }
@@ -52375,12 +52730,12 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 28,
-            "name": "Palm Leaves"
-          },
-          {
             "count": 8,
             "name": "Wood Shaft"
+          },
+          {
+            "count": 28,
+            "name": "Palm Leaves"
           }
         ]
       }
@@ -52394,16 +52749,16 @@
       {
         "ingredients": [
           {
-            "count": 28,
-            "name": "Palm Leaves"
+            "count": 14,
+            "name": "Bone Splinter"
           },
           {
             "count": 8,
             "name": "Wood Shaft"
           },
           {
-            "count": 14,
-            "name": "Bone Splinter"
+            "count": 28,
+            "name": "Palm Leaves"
           }
         ]
       }
@@ -52419,16 +52774,16 @@
       {
         "ingredients": [
           {
-            "count": 28,
-            "name": "Palm Leaves"
+            "count": 14,
+            "name": "Bone Splinter"
           },
           {
             "count": 8,
             "name": "Wood Shaft"
           },
           {
-            "count": 14,
-            "name": "Bone Splinter"
+            "count": 28,
+            "name": "Palm Leaves"
           }
         ]
       }
@@ -52444,12 +52799,12 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Rope"
+            "count": 7,
+            "name": "Earth Wax"
           },
           {
-            "count": 1,
-            "name": "Torque Battery"
+            "count": 25,
+            "name": "Rope"
           }
         ]
       }
@@ -52465,12 +52820,12 @@
       {
         "ingredients": [
           {
-            "count": 13,
-            "name": "Wood Shaft"
+            "count": 7,
+            "name": "Earth Wax"
           },
           {
-            "count": 1,
-            "name": "Torque Battery"
+            "count": 13,
+            "name": "Wood Shaft"
           },
           {
             "count": 25,
@@ -52490,16 +52845,16 @@
       {
         "ingredients": [
           {
-            "count": 13,
-            "name": "Wood Shaft"
+            "count": 7,
+            "name": "Earth Wax"
           },
           {
             "count": 25,
             "name": "Rope"
           },
           {
-            "count": 1,
-            "name": "Torque Battery"
+            "count": 13,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -52515,16 +52870,16 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Rope"
+            "count": 7,
+            "name": "Earth Wax"
           },
           {
             "count": 13,
             "name": "Wood Shaft"
           },
           {
-            "count": 1,
-            "name": "Torque Battery"
+            "count": 25,
+            "name": "Rope"
           }
         ]
       }
@@ -52540,12 +52895,12 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Earth Wax"
-          },
-          {
             "count": 28,
             "name": "Fiber Weave"
+          },
+          {
+            "count": 12,
+            "name": "Earth Wax"
           },
           {
             "count": 24,
@@ -52565,12 +52920,12 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Earth Wax"
-          },
-          {
             "count": 28,
             "name": "Fiber Weave"
+          },
+          {
+            "count": 12,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -52611,16 +52966,16 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Earth Wax"
+            "count": 28,
+            "name": "Fiber Weave"
           },
           {
             "count": 24,
             "name": "Hide"
           },
           {
-            "count": 28,
-            "name": "Fiber Weave"
+            "count": 12,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -53201,6 +53556,12 @@
         "maxQuantity": 10
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.125,
+        "minQuantity": 10,
+        "maxQuantity": 10
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.125,
         "minQuantity": 10,
@@ -53747,6 +54108,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 1,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HotspotLoot T2 AC",
         "chance": 1,
         "minQuantity": 1,
@@ -53981,12 +54348,6 @@
         "maxQuantity": 5
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.055555553,
-        "minQuantity": 5,
-        "maxQuantity": 5
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.055555553,
         "minQuantity": 5,
@@ -54039,6 +54400,12 @@
       },
       {
         "location": "BasketLoot T2 AC",
+        "chance": 0.08333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.08333333,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -54500,6 +54867,14 @@
     "name": "Terrain: Excavatable",
     "translation": "Terrain: Excavatable",
     "type": "SoilExcavator_GroundSource_C",
+    "weight": 1,
+    "wikiVisibility": false
+  },
+  {
+    "category": "Resources",
+    "name": "Terrain: Salt Flats",
+    "translation": "Terrain: Salt Flats",
+    "type": "SaltRock_GroundSource_C",
     "weight": 1,
     "wikiVisibility": false
   },
@@ -55103,6 +55478,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.18181818,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.18181818,
         "minQuantity": 1,
@@ -55288,7 +55669,7 @@
     "type": "Titan_C",
     "structureInfo": {
       "type": "Hard",
-      "hp": 35000
+      "hp": 80000
     },
     "walkerinfo": {
       "category": "Capital"
@@ -55320,7 +55701,7 @@
     "type": "TitanLegs_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 18000
+      "hp": 8200
     },
     "translation": "Titan Walker Legs",
     "weight": 9.75
@@ -55353,7 +55734,7 @@
     "type": "TitanLegs_T2_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 27000
+      "hp": 9840
     },
     "translation": "Titan Walker Legs Armored",
     "weight": 9.75
@@ -55385,8 +55766,8 @@
     "name": "Titan Walker Legs Heavy (1 of 2)",
     "type": "TitanLegs_T3_C",
     "structureInfo": {
-      "type": "Hard",
-      "hp": 34200
+      "type": "Medium",
+      "hp": 11808
     },
     "translation": "Titan Walker Legs Heavy",
     "weight": 9.75
@@ -55425,6 +55806,12 @@
       },
       {
         "location": "EasyRupuCamp T4",
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -55504,6 +55891,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "GoGo T4",
+        "chance": 0.03333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HardRupuCamp T4",
         "chance": 0.03333333,
         "minQuantity": 1,
@@ -55552,6 +55945,12 @@
     "drops": [
       {
         "location": "EasyRupu T4",
+        "chance": 0.05882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
         "chance": 0.05882353,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -55968,8 +56367,8 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 25,
+            "name": "Tar"
           },
           {
             "count": 20,
@@ -55993,8 +56392,8 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 25,
+            "name": "Tar"
           },
           {
             "count": 20,
@@ -56018,8 +56417,8 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 25,
+            "name": "Tar"
           },
           {
             "count": 20,
@@ -56047,8 +56446,8 @@
             "name": "Reinforced Plank"
           },
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 25,
+            "name": "Tar"
           },
           {
             "count": 12,
@@ -56455,11 +56854,11 @@
       }
     ],
     "name": "Toboggan Walker",
-    "parent": "Dinghy Walker",
+    "parent": "Steering Levers",
     "type": "Toboggan_C",
     "structureInfo": {
       "type": "Hard",
-      "hp": 10000
+      "hp": 27000
     },
     "walkerinfo": {
       "category": "Medium"
@@ -56491,7 +56890,7 @@
     "type": "TobogganLegs_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 2200
+      "hp": 2750
     },
     "translation": "Toboggan Walker Legs",
     "weight": 9.75
@@ -56528,7 +56927,7 @@
     "type": "TobogganLegs_T2_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 3000
+      "hp": 3300
     },
     "translation": "Toboggan Walker Legs Armored",
     "weight": 9.75
@@ -56560,8 +56959,8 @@
     "name": "Toboggan Walker Legs Heavy (1 of 2)",
     "type": "TobogganLegs_T3_C",
     "structureInfo": {
-      "type": "Hard",
-      "hp": 4500
+      "type": "Medium",
+      "hp": 3960
     },
     "translation": "Toboggan Walker Legs Heavy",
     "weight": 9.75
@@ -56666,6 +57065,12 @@
       },
       {
         "location": "Rupu Zealot (Medium)",
+        "chance": 0.15789473999999998,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.15789473999999998,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -56940,12 +57345,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.055555553,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.055555553,
         "minQuantity": 1,
@@ -56978,16 +57377,16 @@
       {
         "ingredients": [
           {
-            "count": 30,
-            "name": "Bone Splinter"
+            "count": 8,
+            "name": "Wooden Slab"
           },
           {
             "count": 22,
             "name": "Fiber"
           },
           {
-            "count": 8,
-            "name": "Wooden Slab"
+            "count": 30,
+            "name": "Bone Splinter"
           }
         ]
       }
@@ -57028,16 +57427,16 @@
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "Wooden Slab"
+            "count": 30,
+            "name": "Bone Splinter"
           },
           {
             "count": 22,
             "name": "Fiber"
           },
           {
-            "count": 30,
-            "name": "Bone Splinter"
+            "count": 8,
+            "name": "Wooden Slab"
           }
         ]
       }
@@ -57051,16 +57450,16 @@
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "Wooden Slab"
+            "count": 30,
+            "name": "Bone Splinter"
           },
           {
             "count": 22,
             "name": "Fiber"
           },
           {
-            "count": 30,
-            "name": "Bone Splinter"
+            "count": 8,
+            "name": "Wooden Slab"
           }
         ]
       }
@@ -57074,16 +57473,16 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Triple Stitch Fabric"
+            "count": 47,
+            "name": "Tree Sap"
           },
           {
             "count": 28,
             "name": "Bone Splinter"
           },
           {
-            "count": 47,
-            "name": "Tree Sap"
+            "count": 24,
+            "name": "Triple Stitch Fabric"
           }
         ]
       }
@@ -57103,12 +57502,12 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 47,
-            "name": "Tree Sap"
-          },
-          {
             "count": 24,
             "name": "Triple Stitch Fabric"
+          },
+          {
+            "count": 47,
+            "name": "Tree Sap"
           }
         ]
       }
@@ -57124,16 +57523,16 @@
       {
         "ingredients": [
           {
-            "count": 47,
-            "name": "Tree Sap"
+            "count": 28,
+            "name": "Bone Splinter"
           },
           {
             "count": 24,
             "name": "Triple Stitch Fabric"
           },
           {
-            "count": 28,
-            "name": "Bone Splinter"
+            "count": 47,
+            "name": "Tree Sap"
           }
         ]
       }
@@ -57149,16 +57548,16 @@
       {
         "ingredients": [
           {
-            "count": 47,
-            "name": "Tree Sap"
+            "count": 28,
+            "name": "Bone Splinter"
           },
           {
             "count": 24,
             "name": "Triple Stitch Fabric"
           },
           {
-            "count": 28,
-            "name": "Bone Splinter"
+            "count": 47,
+            "name": "Tree Sap"
           }
         ]
       }
@@ -57178,12 +57577,12 @@
             "name": "Wood"
           },
           {
-            "count": 16,
-            "name": "Fiber Weave"
-          },
-          {
             "count": 18,
             "name": "Bone Splinter"
+          },
+          {
+            "count": 16,
+            "name": "Fiber Weave"
           }
         ]
       }
@@ -57224,12 +57623,12 @@
       {
         "ingredients": [
           {
-            "count": 16,
-            "name": "Fiber Weave"
-          },
-          {
             "count": 18,
             "name": "Bone Splinter"
+          },
+          {
+            "count": 16,
+            "name": "Fiber Weave"
           },
           {
             "count": 45,
@@ -57249,16 +57648,16 @@
       {
         "ingredients": [
           {
-            "count": 16,
-            "name": "Fiber Weave"
+            "count": 18,
+            "name": "Bone Splinter"
           },
           {
             "count": 45,
             "name": "Wood"
           },
           {
-            "count": 18,
-            "name": "Bone Splinter"
+            "count": 16,
+            "name": "Fiber Weave"
           }
         ]
       }
@@ -57274,16 +57673,16 @@
       {
         "ingredients": [
           {
-            "count": 3,
-            "name": "Wooden Gear"
+            "count": 40,
+            "name": "Bone Splinter"
           },
           {
             "count": 48,
             "name": "Rupu Vine"
           },
           {
-            "count": 40,
-            "name": "Bone Splinter"
+            "count": 3,
+            "name": "Wooden Gear"
           }
         ]
       }
@@ -57316,16 +57715,16 @@
       {
         "ingredients": [
           {
-            "count": 48,
-            "name": "Rupu Vine"
+            "count": 40,
+            "name": "Bone Splinter"
           },
           {
             "count": 3,
             "name": "Wooden Gear"
           },
           {
-            "count": 40,
-            "name": "Bone Splinter"
+            "count": 48,
+            "name": "Rupu Vine"
           }
         ]
       }
@@ -57339,16 +57738,16 @@
       {
         "ingredients": [
           {
-            "count": 3,
-            "name": "Wooden Gear"
+            "count": 40,
+            "name": "Bone Splinter"
           },
           {
             "count": 48,
             "name": "Rupu Vine"
           },
           {
-            "count": 40,
-            "name": "Bone Splinter"
+            "count": 3,
+            "name": "Wooden Gear"
           }
         ]
       }
@@ -57362,16 +57761,16 @@
       {
         "ingredients": [
           {
-            "count": 13,
-            "name": "Rope"
+            "count": 1,
+            "name": "Wooden Gear"
           },
           {
             "count": 16,
             "name": "Earth Wax"
           },
           {
-            "count": 1,
-            "name": "Torque Battery"
+            "count": 13,
+            "name": "Rope"
           }
         ]
       }
@@ -57387,12 +57786,12 @@
       {
         "ingredients": [
           {
-            "count": 16,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Wooden Gear"
           },
           {
-            "count": 1,
-            "name": "Torque Battery"
+            "count": 16,
+            "name": "Earth Wax"
           },
           {
             "count": 13,
@@ -57412,16 +57811,16 @@
       {
         "ingredients": [
           {
-            "count": 16,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Wooden Gear"
           },
           {
             "count": 13,
             "name": "Rope"
           },
           {
-            "count": 1,
-            "name": "Torque Battery"
+            "count": 16,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -57437,16 +57836,16 @@
       {
         "ingredients": [
           {
-            "count": 13,
-            "name": "Rope"
+            "count": 1,
+            "name": "Wooden Gear"
           },
           {
             "count": 16,
             "name": "Earth Wax"
           },
           {
-            "count": 1,
-            "name": "Torque Battery"
+            "count": 13,
+            "name": "Rope"
           }
         ]
       }
@@ -57462,16 +57861,16 @@
       {
         "ingredients": [
           {
-            "count": 30,
-            "name": "Leather"
+            "count": 16,
+            "name": "Salt Rock"
           },
           {
             "count": 28,
             "name": "Earth Wax"
           },
           {
-            "count": 16,
-            "name": "Salt Rock"
+            "count": 30,
+            "name": "Leather"
           }
         ]
       }
@@ -57487,16 +57886,16 @@
       {
         "ingredients": [
           {
-            "count": 28,
-            "name": "Earth Wax"
+            "count": 16,
+            "name": "Salt Rock"
           },
           {
             "count": 30,
             "name": "Leather"
           },
           {
-            "count": 16,
-            "name": "Salt Rock"
+            "count": 28,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -57512,16 +57911,16 @@
       {
         "ingredients": [
           {
-            "count": 28,
-            "name": "Earth Wax"
+            "count": 30,
+            "name": "Leather"
           },
           {
             "count": 16,
             "name": "Salt Rock"
           },
           {
-            "count": 30,
-            "name": "Leather"
+            "count": 28,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -57537,16 +57936,16 @@
       {
         "ingredients": [
           {
-            "count": 28,
-            "name": "Earth Wax"
+            "count": 16,
+            "name": "Salt Rock"
           },
           {
             "count": 30,
             "name": "Leather"
           },
           {
-            "count": 16,
-            "name": "Salt Rock"
+            "count": 28,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -58540,6 +58939,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.22222222,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.22222222,
         "minQuantity": 1,
@@ -58730,6 +59135,12 @@
         "maxQuantity": 1
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.22222222,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.22222222,
         "minQuantity": 1,
@@ -58915,6 +59326,12 @@
       },
       {
         "location": "Rupu Zealot (Medium)",
+        "chance": 0.22222222,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "HotspotLootWindmill T2 AC",
         "chance": 0.22222222,
         "minQuantity": 1,
         "maxQuantity": 1
@@ -59117,7 +59534,7 @@
     "type": "Tusker_C",
     "structureInfo": {
       "type": "Hard",
-      "hp": 20000
+      "hp": 55000
     },
     "walkerinfo": {
       "category": "Capital"
@@ -59149,7 +59566,7 @@
     "type": "TuskerLegs_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 15000
+      "hp": 5200
     },
     "translation": "Tusker Walker Legs",
     "weight": 9.75
@@ -59182,7 +59599,7 @@
     "type": "TuskerLegs_T2_C",
     "structureInfo": {
       "type": "Medium",
-      "hp": 22500
+      "hp": 6240
     },
     "translation": "Tusker Walker Legs Armored",
     "weight": 9.75
@@ -59214,8 +59631,8 @@
     "name": "Tusker Walker Legs Heavy (1 of 2)",
     "type": "TuskerLegs_T3_C",
     "structureInfo": {
-      "type": "Hard",
-      "hp": 28500
+      "type": "Medium",
+      "hp": 7488
     },
     "translation": "Tusker Walker Legs Heavy",
     "weight": 9.75
@@ -59248,67 +59665,79 @@
     "drops": [
       {
         "location": "BigHotspotLoot T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "EasyRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HardRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Oracle",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Overseer",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HotspotLoot T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "MediumRupuCamp T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Seeker",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "White Death (Medium)",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Okkam T3",
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "TreasureChest T3",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "BigHotspotLoot T4",
-        "chance": 0.33333332,
+        "chance": 0.16666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
+        "chance": 0.16666666,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -59340,67 +59769,79 @@
     "drops": [
       {
         "location": "BigHotspotLoot T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "EasyRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HardRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Oracle",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Overseer",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "HotspotLoot T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "MediumRupuCamp T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "Rupu Seeker",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "White Death (Medium)",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Okkam T3",
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "TreasureChest T3",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       },
       {
         "location": "BigHotspotLoot T4",
-        "chance": 0.066666666,
+        "chance": 0.033333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "GoGo T4",
+        "chance": 0.033333333,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -59488,12 +59929,6 @@
         "maxQuantity": 1
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.047619047,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.047619047,
         "minQuantity": 1,
@@ -59526,12 +59961,12 @@
       {
         "ingredients": [
           {
-            "count": 75,
-            "name": "Redwood Wood"
-          },
-          {
             "count": 50,
             "name": "Chitin Plate"
+          },
+          {
+            "count": 75,
+            "name": "Redwood Wood"
           }
         ]
       }
@@ -59547,12 +59982,12 @@
       {
         "ingredients": [
           {
-            "count": 75,
-            "name": "Redwood Wood"
-          },
-          {
             "count": 50,
             "name": "Chitin Plate"
+          },
+          {
+            "count": 75,
+            "name": "Redwood Wood"
           }
         ]
       }
@@ -59568,12 +60003,12 @@
       {
         "ingredients": [
           {
-            "count": 75,
-            "name": "Redwood Wood"
-          },
-          {
             "count": 50,
             "name": "Chitin Plate"
+          },
+          {
+            "count": 75,
+            "name": "Redwood Wood"
           },
           {
             "count": 25,
@@ -59593,16 +60028,16 @@
       {
         "ingredients": [
           {
-            "count": 50,
-            "name": "Chitin Plate"
+            "count": 25,
+            "name": "Stone"
           },
           {
             "count": 75,
             "name": "Redwood Wood"
           },
           {
-            "count": 25,
-            "name": "Stone"
+            "count": 50,
+            "name": "Chitin Plate"
           }
         ]
       }
@@ -59618,16 +60053,16 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Tar"
+            "count": 65,
+            "name": "Obsidian"
           },
           {
             "count": 70,
             "name": "Chitin Plate"
           },
           {
-            "count": 65,
-            "name": "Obsidian"
+            "count": 24,
+            "name": "Tar"
           }
         ]
       }
@@ -59644,11 +60079,11 @@
         "ingredients": [
           {
             "count": 65,
-            "name": "Tar"
+            "name": "Obsidian"
           },
           {
             "count": 65,
-            "name": "Obsidian"
+            "name": "Tar"
           },
           {
             "count": 70,
@@ -59667,11 +60102,11 @@
         "ingredients": [
           {
             "count": 65,
-            "name": "Tar"
+            "name": "Obsidian"
           },
           {
             "count": 65,
-            "name": "Obsidian"
+            "name": "Tar"
           },
           {
             "count": 70,
@@ -59712,16 +60147,16 @@
       {
         "ingredients": [
           {
-            "count": 55,
-            "name": "Cotton"
+            "count": 20,
+            "name": "Tar"
           },
           {
             "count": 22,
             "name": "Wooden Slab"
           },
           {
-            "count": 20,
-            "name": "Tar"
+            "count": 55,
+            "name": "Cotton"
           }
         ]
       }
@@ -59737,16 +60172,16 @@
       {
         "ingredients": [
           {
-            "count": 55,
-            "name": "Cotton"
+            "count": 20,
+            "name": "Tar"
           },
           {
             "count": 22,
             "name": "Wooden Slab"
           },
           {
-            "count": 20,
-            "name": "Tar"
+            "count": 55,
+            "name": "Cotton"
           }
         ]
       }
@@ -59760,16 +60195,16 @@
       {
         "ingredients": [
           {
-            "count": 55,
-            "name": "Cotton"
+            "count": 20,
+            "name": "Tar"
           },
           {
             "count": 22,
             "name": "Wooden Slab"
           },
           {
-            "count": 20,
-            "name": "Tar"
+            "count": 55,
+            "name": "Cotton"
           }
         ]
       }
@@ -59783,16 +60218,16 @@
       {
         "ingredients": [
           {
-            "count": 55,
-            "name": "Cotton"
+            "count": 20,
+            "name": "Tar"
           },
           {
             "count": 22,
             "name": "Wooden Slab"
           },
           {
-            "count": 20,
-            "name": "Tar"
+            "count": 55,
+            "name": "Cotton"
           }
         ]
       }
@@ -59806,16 +60241,16 @@
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Reinforced Gear"
+            "count": 50,
+            "name": "Tar"
           },
           {
             "count": 38,
             "name": "Obsidian"
           },
           {
-            "count": 50,
-            "name": "Tar"
+            "count": 5,
+            "name": "Reinforced Gear"
           }
         ]
       }
@@ -59829,16 +60264,16 @@
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Reinforced Gear"
+            "count": 50,
+            "name": "Tar"
           },
           {
             "count": 38,
             "name": "Obsidian"
           },
           {
-            "count": 50,
-            "name": "Tar"
+            "count": 5,
+            "name": "Reinforced Gear"
           }
         ]
       }
@@ -59852,16 +60287,16 @@
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Reinforced Gear"
+            "count": 50,
+            "name": "Tar"
           },
           {
             "count": 38,
             "name": "Obsidian"
           },
           {
-            "count": 50,
-            "name": "Tar"
+            "count": 5,
+            "name": "Reinforced Gear"
           }
         ]
       }
@@ -59875,12 +60310,12 @@
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Reinforced Gear"
-          },
-          {
             "count": 38,
             "name": "Obsidian"
+          },
+          {
+            "count": 5,
+            "name": "Reinforced Gear"
           },
           {
             "count": 50,
@@ -59898,16 +60333,16 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 25,
+            "name": "Tallow"
+          },
+          {
+            "count": 22,
+            "name": "Wood Shaft"
           },
           {
             "count": 45,
             "name": "Clay"
-          },
-          {
-            "count": 25,
-            "name": "Tallow"
           }
         ]
       }
@@ -59923,16 +60358,16 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 25,
+            "name": "Tallow"
           },
           {
             "count": 45,
             "name": "Clay"
           },
           {
-            "count": 25,
-            "name": "Tallow"
+            "count": 22,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -59948,16 +60383,16 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 25,
+            "name": "Tallow"
           },
           {
             "count": 45,
             "name": "Clay"
           },
           {
-            "count": 25,
-            "name": "Tallow"
+            "count": 22,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -59973,16 +60408,16 @@
       {
         "ingredients": [
           {
-            "count": 1,
-            "name": "Compacted Torque Battery"
+            "count": 25,
+            "name": "Tallow"
           },
           {
             "count": 45,
             "name": "Clay"
           },
           {
-            "count": 25,
-            "name": "Tallow"
+            "count": 22,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -59998,16 +60433,16 @@
       {
         "ingredients": [
           {
-            "count": 23,
-            "name": "Leather"
+            "count": 13,
+            "name": "Charcoal"
           },
           {
             "count": 63,
             "name": "Cotton"
           },
           {
-            "count": 13,
-            "name": "Charcoal"
+            "count": 23,
+            "name": "Leather"
           }
         ]
       }
@@ -60023,16 +60458,16 @@
       {
         "ingredients": [
           {
-            "count": 23,
-            "name": "Leather"
+            "count": 13,
+            "name": "Charcoal"
           },
           {
             "count": 63,
             "name": "Cotton"
           },
           {
-            "count": 13,
-            "name": "Charcoal"
+            "count": 23,
+            "name": "Leather"
           }
         ]
       }
@@ -60048,16 +60483,16 @@
       {
         "ingredients": [
           {
-            "count": 23,
-            "name": "Leather"
+            "count": 13,
+            "name": "Charcoal"
           },
           {
             "count": 63,
             "name": "Cotton"
           },
           {
-            "count": 13,
-            "name": "Charcoal"
+            "count": 23,
+            "name": "Leather"
           }
         ]
       }
@@ -60073,16 +60508,16 @@
       {
         "ingredients": [
           {
-            "count": 23,
-            "name": "Leather"
+            "count": 13,
+            "name": "Charcoal"
           },
           {
             "count": 63,
             "name": "Cotton"
           },
           {
-            "count": 13,
-            "name": "Charcoal"
+            "count": 23,
+            "name": "Leather"
           }
         ]
       }
@@ -61545,6 +61980,12 @@
         "maxQuantity": 12
       },
       {
+        "location": "HotspotLootWindmill T2 AC",
+        "chance": 0.125,
+        "minQuantity": 12,
+        "maxQuantity": 12
+      },
+      {
         "location": "HotspotLoot T2",
         "chance": 0.125,
         "minQuantity": 12,
@@ -62399,12 +62840,6 @@
         "maxQuantity": 5
       },
       {
-        "location": "War Okkam T3",
-        "chance": 0.0625,
-        "minQuantity": 5,
-        "maxQuantity": 5
-      },
-      {
         "location": "EasyRupu T4",
         "chance": 0.0625,
         "minQuantity": 5,
@@ -62526,7 +62961,18 @@
         ],
         "output": 10,
         "station": "Soil Excavator",
-        "time": 29
+        "time": 60
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Terrain: Worm Sand"
+          }
+        ],
+        "output": 10,
+        "station": "ArtisanSoilAuger",
+        "time": 30
       }
     ],
     "name": "Worm Sand",
