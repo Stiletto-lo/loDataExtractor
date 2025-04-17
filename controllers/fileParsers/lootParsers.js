@@ -224,7 +224,9 @@ const filterRelevantObjects = (objects) => {
  * @returns {Object} - Extracted creature properties
  */
 const extractCreatureData = (additionalInfo, objectData) => {
-	if (!additionalInfo) return {};
+	if (!additionalInfo) {
+		return {};
+	}
 
 	// Extract basic creature data
 	const result = {
@@ -267,11 +269,6 @@ const extractCreatureData = (additionalInfo, objectData) => {
 		// Extract description if available
 		if (objectData?.Properties?.Description?.LocalizedString) {
 			result.description = objectData.Properties.Description.LocalizedString;
-		}
-
-		// Extract behavior information if available
-		if (objectData?.Properties?.BehaviorType) {
-			result.behavior = objectData.Properties.BehaviorType;
 		}
 	}
 
