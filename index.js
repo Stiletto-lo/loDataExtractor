@@ -132,6 +132,8 @@ const saveFiles = async () => {
 	allItems = translator.addDescriptions(allItems);
 	allItems = translator.translateItems(allItems);
 
+	console.info("Cleaning up the items");
+
 	for (const item of allItems) {
 		for (const key of Object.keys(item)) {
 			if (item[key] === undefined) {
@@ -165,7 +167,7 @@ const saveFiles = async () => {
 			return acc;
 		}, []);
 
-	// Extract tech data from fileParser
+	console.info("Extracting tech data from fileParser");
 	let techData = fileParser.getTechData();
 
 	// Process tech data similar to items
@@ -218,6 +220,7 @@ const saveFiles = async () => {
 
 	allItems.sort(orderByName);
 
+	console.info("Exporting items.json");
 	if (allItems.length > 0) {
 		await fs.writeFile(
 			`${folderPatch}items.json`,
@@ -245,8 +248,11 @@ const saveFiles = async () => {
 		);
 
 		// Save the item name glossary
+		console.log("Saving item name glossary...");
 		fileParser.saveGlossary(`${folderPatch}itemNameGlossary.json`);
 
+
+		console.info("Cleaning up the items");
 		for (const item of allItems) {
 			for (const key of Object.keys(item)) {
 				if (item[key] === undefined) {
@@ -317,6 +323,7 @@ const saveFiles = async () => {
 
 		minItems.sort(orderByCategoryAndName);
 
+		console.info("Exporting items_min.json");
 		await fs.writeFile(
 			`${folderPatch}items_min.json`,
 			JSON.stringify(minItems),
