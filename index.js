@@ -271,30 +271,55 @@ const saveFiles = async () => {
 			}
 		}
 
-		/*const minItems = allItems.map(item => {
+		const minItems = allItems.map(item => {
+			const essentialFields = [
+				"category",
+				"name",
+				"trade_price",
+				"experiencieReward",
+				"stackSize",
+				"weight",
+				"durability",
+				"wikiVisibility",
+				"parent",
+				"onlyDevs",
+				"drops",
+				"learn",
+				"crafting",
+				"station",
+				"time",
+				"ingredients",
+				"projectileDamage",
+				"damage",
+				"effectivenessVsSoak",
+				"effectivenessVsReduce",
+				"structureInfo",
+				"type",
+				"hp",
+				"moduleInfo",
+				"max",
+				"increase",
+				"weaponInfo",
+				"weaponLength",
+				"penetration",
+				"description"
+			];
 			const minItem = {};
-			// Only include the required fields
-			if (item.category) {
-				minItem.category = item.category;
+
+			for (const key in essentialFields) {
+				if (item[key]) {
+					minItem[key] = item[key];
+				}
 			}
-			if (item.name) {
-				minItem.name = item.name;
-			}
-			if (item.crafting) {
-				minItem.crafting = item.crafting;
-			}
-			if (item.projectileDamage) {
-				minItem.projectileDamage = item.projectileDamage;
-			}
+
 			return minItem;
 		});
 
 		minItems.sort(orderByCategoryAndName);
-		*/
 
 		await fs.writeFile(
 			`${folderPatch}items_min.json`,
-			JSON.stringify(allItems),
+			JSON.stringify(minItems),
 			(err) => {
 				if (err) {
 					console.error("Error creating the items_min.json file");
