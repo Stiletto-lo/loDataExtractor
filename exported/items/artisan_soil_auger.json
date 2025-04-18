@@ -1,0 +1,42 @@
+{
+  "category": "Walker Tools",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Wooden Gear"
+        },
+        {
+          "count": 35,
+          "name": "Wooden Slab"
+        },
+        {
+          "count": 60,
+          "name": "Rope"
+        },
+        {
+          "count": 16,
+          "name": "Nurr Fang"
+        },
+        {
+          "count": 10,
+          "name": "Leather"
+        }
+      ]
+    }
+  ],
+  "name": "Artisan Soil Auger",
+  "experiencieReward": 125,
+  "structureInfo": {
+    "type": "Medium",
+    "hp": 7000
+  },
+  "weight": 300,
+  "toolInfo": [
+    {
+      "toolType": "Digging",
+      "tier": 5
+    }
+  ]
+}

@@ -12,7 +12,18 @@
       ],
       "output": 10,
       "station": "Soil Excavator",
-      "time": 29
+      "time": 60
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Terrain: Worm Sand"
+        }
+      ],
+      "output": 10,
+      "station": "ArtisanSoilAuger",
+      "time": 30
     }
   ],
   "trade_price": 5,

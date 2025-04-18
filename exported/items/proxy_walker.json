@@ -1,6 +1,6 @@
 {
   "name": "Proxy Walker",
-  "parent": "Dinghy Walker",
+  "parent": "Steering Levers",
   "category": "Walkers",
   "crafting": [
     {
@@ -38,7 +38,7 @@
   ],
   "structureInfo": {
     "type": "Reinforced",
-    "hp": 40000
+    "hp": 100000
   },
   "walkerinfo": {
     "category": "Large"

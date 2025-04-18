@@ -8,9 +8,20 @@
           "name": "BrineWater"
         }
       ],
-      "output": 10,
+      "output": 3,
       "station": "Clay Pot",
       "time": 20
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "SaltRock_GroundSource"
+        }
+      ],
+      "output": 30,
+      "station": "ArtisanSoilAuger",
+      "time": 60
     }
   ],
   "name": "Salt Rock",

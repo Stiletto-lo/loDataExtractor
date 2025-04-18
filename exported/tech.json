@@ -1015,7 +1015,7 @@
   },
   {
     "name": "Compacted Torque Battery",
-    "parent": "Torque Backpack",
+    "parent": "Torque Battery",
     "type": "HeavyTorqueContainer_C",
     "unlocks": [
       "Torque Backpack",
@@ -2206,7 +2206,7 @@
   },
   {
     "name": "Mollusk Walker",
-    "parent": "Dinghy Walker",
+    "parent": "Steering Levers",
     "type": "Mollusk_C",
     "unlocks": [
       "Small Base Walker Packer",
@@ -2492,7 +2492,7 @@
   },
   {
     "name": "Proxy Walker",
-    "parent": "Dinghy Walker",
+    "parent": "Steering Levers",
     "type": "Proxy_C",
     "unlocks": [
       "Small Base Walker Packer",
@@ -3179,7 +3179,7 @@
   },
   {
     "name": "Steering Levers",
-    "parent": "Ammo Chest",
+    "parent": "Dinghy Walker",
     "type": "SteeringLevers_C"
   },
   {
@@ -3200,7 +3200,7 @@
   },
   {
     "name": "Stiletto Walker",
-    "parent": "Dinghy Walker",
+    "parent": "Steering Levers",
     "type": "Stiletto_C",
     "unlocks": [
       "Small Base Walker Packer",
@@ -3448,7 +3448,7 @@
   },
   {
     "name": "Toboggan Walker",
-    "parent": "Dinghy Walker",
+    "parent": "Steering Levers",
     "type": "Toboggan_C",
     "unlocks": [
       "Small Base Walker Packer",
