@@ -271,8 +271,7 @@ const saveFiles = async () => {
 			}
 		}
 
-		// Create items_min.json with only category, name, crafting and projectileDamage
-		const minItems = allItems.map(item => {
+		/*const minItems = allItems.map(item => {
 			const minItem = {};
 			// Only include the required fields
 			if (item.category) {
@@ -291,9 +290,11 @@ const saveFiles = async () => {
 		});
 
 		minItems.sort(orderByCategoryAndName);
+		*/
+
 		await fs.writeFile(
 			`${folderPatch}items_min.json`,
-			JSON.stringify(minItems),
+			JSON.stringify(allItems),
 			(err) => {
 				if (err) {
 					console.error("Error creating the items_min.json file");
