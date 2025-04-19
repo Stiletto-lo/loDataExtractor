@@ -1,6 +1,7 @@
 {
   "name": "Ceramic Rok",
   "parent": "Rokker",
+  "type": "CeramicRok_C",
   "category": "Ammo",
   "crafting": [
     {
@@ -33,6 +34,7 @@
     }
   ],
   "trade_price": 5.2,
+  "translation": "Ceramic Rok",
   "projectileDamage": {
     "damage": 400,
     "penetration": 10,
@@ -47,5 +49,6 @@
       "toolType": "Scattershot",
       "tier": 1
     }
-  ]
+  ],
+  "damageType": "'RokDamage_C'"
 }

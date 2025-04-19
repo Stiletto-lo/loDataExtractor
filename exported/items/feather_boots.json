@@ -1,6 +1,7 @@
 {
   "name": "Feather Boots",
   "parent": "RainBoots",
+  "type": "FeatherBoots_C",
   "category": "Armors",
   "crafting": [
     {
@@ -19,6 +20,7 @@
     }
   ],
   "trade_price": 34,
+  "translation": "Feather Boots",
   "experiencieReward": 413,
   "stackSize": 100,
   "weight": 0.4,

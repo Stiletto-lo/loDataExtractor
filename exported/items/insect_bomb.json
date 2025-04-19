@@ -1,6 +1,7 @@
 {
   "name": "Insect Bomb",
   "parent": "Sulfur Bomb",
+  "type": "InsectBomb_C",
   "category": "Ammo",
   "crafting": [
     {
@@ -27,9 +28,11 @@
     }
   ],
   "trade_price": 24.2,
+  "translation": "Insect Bomb",
   "projectileDamage": {
     "damage": 20
   },
   "stackSize": 10,
-  "weight": 2.6
+  "weight": 2.6,
+  "damageType": "'BluntDamage_C'"
 }

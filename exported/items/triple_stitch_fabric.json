@@ -1,6 +1,7 @@
 {
   "name": "Triple Stitch Fabric",
   "parent": "Curing Station",
+  "type": "TripleStitch_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -595,6 +596,7 @@
     }
   ],
   "trade_price": 28,
+  "translation": "Triple Stitch Fabric",
   "experiencieReward": 6,
   "stackSize": 100,
   "weight": 0.24

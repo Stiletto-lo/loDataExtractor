@@ -1,6 +1,7 @@
 {
   "name": "Green Death Bomb",
   "parent": "Sulfur Bomb",
+  "type": "GasBomb_C",
   "category": "Ammo",
   "crafting": [
     {
@@ -27,9 +28,11 @@
     }
   ],
   "trade_price": 36,
+  "translation": "Green Death Bomb",
   "projectileDamage": {
     "damage": 20
   },
   "stackSize": 10,
-  "weight": 3
+  "weight": 3,
+  "damageType": "'BluntDamage_C'"
 }

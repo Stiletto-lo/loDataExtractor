@@ -1,6 +1,7 @@
 {
   "name": "Wyndan Battle Axe",
   "parent": "Firestone Battle Axe",
+  "type": "TwoHandedIronAxe2_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 320.4,
+  "translation": "Wyndan Battle Axe",
   "experiencieReward": 1622,
   "stackSize": 100,
   "weight": 5.8,
@@ -599,5 +601,6 @@
       "toolType": "TreeCutting",
       "tier": 0
     }
-  ]
+  ],
+  "damageType": "'MeleeAxeDamage_C'"
 }

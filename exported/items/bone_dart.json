@@ -1,6 +1,7 @@
 {
   "name": "Bone Dart",
   "parent": "Repeater",
+  "type": "BoneDart_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -621,6 +622,7 @@
     }
   ],
   "trade_price": 5,
+  "translation": "Bone Dart",
   "projectileDamage": {
     "damage": 12.5
   },

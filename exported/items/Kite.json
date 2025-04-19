@@ -15,11 +15,13 @@
     }
   ],
   "name": "Kite",
+  "type": "Kite_C",
   "description": "Fly a large kite above your walker and climb it for a better vantage point, or to launch wingsuits from. Walker must be moving for the kite to stay elevated.",
   "experiencieReward": 60,
   "structureInfo": {
     "type": "Soft",
     "hp": 4500
   },
+  "translation": "Kite",
   "weight": 1
 }

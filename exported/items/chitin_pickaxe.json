@@ -1,8 +1,8 @@
 {
   "name": "Chitin Pickaxe",
-  "parent": "CeramicPickaxe"
-}       "count": 6,
-          "name": "Fiber Weave"
+  "parent": "CeramicPickaxe",
+  "type": "ChitinPickaxe_C"
+}"name": "Fiber Weave"
         },
         {
           "count": 10,
@@ -18,6 +18,8 @@
     }
   ],
   "name": "Chitin PickAxe",
+  "translation": "Chitin PickAxe",
+  "type": "ChitinPickAxe_C",
   "durability": 504,
   "toolInfo": [
     {

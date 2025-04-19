@@ -1,6 +1,7 @@
 {
   "name": "Aloe Goo Bomb",
   "parent": "Slingshot",
+  "type": "HealingBomb_C",
   "category": "Ammo",
   "crafting": [
     {
@@ -41,11 +42,13 @@
     }
   ],
   "trade_price": 40.5,
+  "translation": "Aloe Goo Bomb",
   "projectileDamage": {
     "damage": -5,
     "effectivenessVsSoak": 40,
     "effectivenessVsReduce": 90
   },
   "stackSize": 10,
-  "weight": 3.2
+  "weight": 3.2,
+  "damageType": "'BluntDamage_C'"
 }

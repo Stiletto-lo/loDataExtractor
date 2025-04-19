@@ -1,6 +1,7 @@
 {
   "name": "Vision Powder",
   "parent": "Vitamins",
+  "type": "VisionPowder_C",
   "category": "Vitamins",
   "crafting": [
     {
@@ -33,6 +34,7 @@
     }
   ],
   "trade_price": 34.8,
+  "translation": "Vision Powder",
   "stackSize": 100,
   "weight": 0.8
 }

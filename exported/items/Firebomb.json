@@ -2,6 +2,8 @@
   "category": "Weapons",
   "name": "Firebomb",
   "trade_price": 16.9,
+  "translation": "Firebomb",
+  "type": "ThrowingLavaBomb_C",
   "experiencieReward": 20,
   "stackSize": 5,
   "weight": 0.3,
@@ -570,6 +572,7 @@
     }
   ],
   "wikiVisibility": false,
+  "damageType": "Class'MistFireDamageType'",
   "crafting": [
     {
       "ingredients": [

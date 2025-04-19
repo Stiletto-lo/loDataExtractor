@@ -1,6 +1,7 @@
 {
   "name": "Nomad Cloth",
   "parent": "Advanced Fiberworking Station",
+  "type": "BasicCloth_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -621,6 +622,7 @@
     }
   ],
   "trade_price": 28,
+  "translation": "Nomad Cloth",
   "experiencieReward": 65,
   "stackSize": 100,
   "weight": 0.24

@@ -2,6 +2,8 @@
   "category": "Ammo",
   "name": "Wooden Rod",
   "trade_price": 1.3,
+  "translation": "Wooden Rod",
+  "type": "RupuBolt_T1_C",
   "projectileDamage": {
     "damage": 80,
     "penetration": 5,
@@ -17,5 +19,6 @@
       "tier": 1
     }
   ],
-  "wikiVisibility": false
+  "wikiVisibility": false,
+  "damageType": "'BoltDamage_C'"
 }

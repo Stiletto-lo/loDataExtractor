@@ -1,6 +1,7 @@
 {
   "name": "Wingsuit",
   "parent": "Nomad Grappling Hook",
+  "type": "WingSuit_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -593,6 +594,7 @@
     }
   ],
   "trade_price": 29,
+  "translation": "Wingsuit",
   "experiencieReward": 162,
   "stackSize": 100,
   "weight": 4,

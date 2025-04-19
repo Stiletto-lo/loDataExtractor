@@ -1,6 +1,7 @@
 {
   "name": "Torch",
   "parent": "Beat Stick",
+  "type": "HandTorch_C",
   "category": "Tools",
   "crafting": [
     {
@@ -21,6 +22,7 @@
     }
   ],
   "trade_price": 3.2,
+  "translation": "Torch",
   "stackSize": 100,
   "weight": 0.8,
   "durability": 100,
@@ -28,5 +30,6 @@
     "weaponLength": 31,
     "damage": 25,
     "penetration": 5
-  }
+  },
+  "damageType": "'TorchDamage_C'"
 }

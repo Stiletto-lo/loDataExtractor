@@ -1,6 +1,7 @@
 {
   "name": "Heavy Backpack",
   "parent": "Medium Backpack",
+  "type": "LargeBackpack_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -579,6 +580,7 @@
     }
   ],
   "trade_price": 131.5,
+  "translation": "Heavy Backpack",
   "stackSize": 100,
   "weight": 7.5,
   "durability": 500

@@ -2,6 +2,7 @@
   "category": "Grappling Hooks",
   "name": "Long Grappling Hook",
   "parent": "Nomad Grappling Hook",
+  "type": "LongGrapplingHook_C",
   "crafting": [
     {
       "ingredients": [
@@ -23,5 +24,6 @@
     }
   ],
   "trade_price": 23.5,
+  "translation": "Long Grappling Hook",
   "experiencieReward": 25
 }

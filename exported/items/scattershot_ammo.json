@@ -1,6 +1,7 @@
 {
   "name": "Scattershot Ammo",
   "parent": "Scattershot Gun",
+  "type": "RupuScattershot_T1_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -563,6 +564,7 @@
   ],
   "category": "Ammo",
   "trade_price": 5.2,
+  "translation": "Scattershot Ammo",
   "projectileDamage": {
     "damage": 50,
     "penetration": 10,
@@ -577,5 +579,6 @@
       "tier": 1
     }
   ],
-  "wikiVisibility": false
+  "wikiVisibility": false,
+  "damageType": "'ScattershotDamage_C'"
 }

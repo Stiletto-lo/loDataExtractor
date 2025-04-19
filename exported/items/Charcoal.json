@@ -1,6 +1,7 @@
 {
   "name": "Charcoal",
   "parent": "Camp Fire",
+  "type": "CharcoalFuel_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -605,6 +606,7 @@
     }
   ],
   "trade_price": 0.1,
+  "translation": "Charcoal",
   "experiencieReward": 1,
   "stackSize": 100,
   "weight": 0.15

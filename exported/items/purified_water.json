@@ -1,6 +1,7 @@
 {
   "name": "Purified Water",
   "parent": "Camp Fire",
+  "type": "NormalWater_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -718,6 +719,7 @@
     }
   ],
   "trade_price": 3,
+  "translation": "Purified Water",
   "experiencieReward": 3,
   "stackSize": 100,
   "weight": 0.2

@@ -1,6 +1,7 @@
 {
   "name": "Reinforced Gear",
   "parent": "Wooden Gear",
+  "type": "ReinforcedGear_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 700,
+  "translation": "Reinforced Gear",
   "experiencieReward": 25,
   "stackSize": 100,
   "weight": 0.55

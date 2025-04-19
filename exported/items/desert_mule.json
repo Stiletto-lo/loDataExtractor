@@ -1,6 +1,7 @@
 {
   "name": "Desert Mule",
   "parent": "Vision Powder",
+  "type": "DesertMule_C",
   "category": "Vitamins",
   "crafting": [
     {
@@ -49,6 +50,7 @@
     }
   ],
   "trade_price": 34.5,
+  "translation": "Desert Mule",
   "stackSize": 100,
   "weight": 0.6
 }

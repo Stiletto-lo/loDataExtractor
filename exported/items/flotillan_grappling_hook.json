@@ -2,6 +2,7 @@
   "category": "Grappling Hooks",
   "name": "Flotillan Grappling Hook",
   "parent": "Nomad Grappling Hook",
+  "type": "FlotillanGrapplingHook_C",
   "crafting": [
     {
       "ingredients": [
@@ -25,5 +26,6 @@
     }
   ],
   "trade_price": 16,
+  "translation": "Flotillan Grappling Hook",
   "experiencieReward": 76
 }

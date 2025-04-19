@@ -1,6 +1,8 @@
 {
   "category": "Weapons",
   "name": "Stone Monkey Sword",
+  "translation": "Stone Monkey Sword",
+  "type": "HazrakiAxe02_C",
   "stackSize": 100,
   "weight": 1,
   "durability": 280,
@@ -9,5 +11,6 @@
     "damage": 40,
     "penetration": 22
   },
-  "wikiVisibility": false
+  "wikiVisibility": false,
+  "damageType": "'RupuMeleeBluntDamage_C'"
 }

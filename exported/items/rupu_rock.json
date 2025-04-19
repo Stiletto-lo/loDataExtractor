@@ -1,6 +1,7 @@
 {
   "name": "Rupu Rock",
   "parent": "RupuSling",
+  "type": "RupuRock_C",
   "category": "Ammo",
   "crafting": [
     {
@@ -33,6 +34,7 @@
     }
   ],
   "trade_price": 1.4,
+  "translation": "Rupu Rock",
   "projectileDamage": {
     "damage": 100,
     "penetration": 42,
@@ -46,5 +48,6 @@
       "toolType": "Scattershot",
       "tier": 1
     }
-  ]
+  ],
+  "damageType": "'BluntDamage_C'"
 }

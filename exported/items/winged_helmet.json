@@ -1,6 +1,7 @@
 {
   "name": "Winged Helmet",
   "parent": "Cloak",
+  "type": "WingedHelmet_C",
   "category": "Armors",
   "crafting": [
     {
@@ -27,6 +28,7 @@
     }
   ],
   "trade_price": 2.4,
+  "translation": "Winged Helmet",
   "experiencieReward": 10,
   "stackSize": 100,
   "weight": 0.2,

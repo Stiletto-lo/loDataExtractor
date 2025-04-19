@@ -1,6 +1,7 @@
 {
   "name": "Ash",
   "parent": "Camp Fire",
+  "type": "Ash_C",
   "description": "A product of burning wood.",
   "drops": [
     {
@@ -596,6 +597,7 @@
     }
   ],
   "trade_price": 0.1,
+  "translation": "Ash",
   "experiencieReward": 1,
   "stackSize": 100,
   "weight": 0.01

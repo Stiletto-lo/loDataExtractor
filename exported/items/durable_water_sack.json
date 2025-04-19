@@ -1,6 +1,7 @@
 {
   "name": "Durable Water Sack",
   "parent": "Improvised Bottle",
+  "type": "Barrel_C",
   "category": "Equipment",
   "crafting": [
     {
@@ -33,6 +34,7 @@
     }
   ],
   "trade_price": 7.9,
+  "translation": "Durable Water Sack",
   "experiencieReward": 35,
   "stackSize": 100,
   "weight": 3,

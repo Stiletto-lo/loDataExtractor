@@ -20,10 +20,12 @@
   ],
   "name": "Spring Spikes Trap",
   "parent": "Bomb Chest Trap",
+  "type": "TrapSpikesSpring_C",
   "experiencieReward": 60,
   "structureInfo": {
     "type": "Soft",
     "hp": 200
   },
+  "translation": "Spring Spikes Trap",
   "weight": 230
 }

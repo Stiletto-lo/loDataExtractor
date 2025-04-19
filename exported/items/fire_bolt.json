@@ -49,6 +49,8 @@
   "name": "Fire Bolt",
   "parent": "Ballista",
   "trade_price": 15.6,
+  "translation": "Fire Bolt",
+  "type": "FireBolt_C",
   "projectileDamage": {
     "damage": 2500
   },
@@ -60,5 +62,6 @@
       "toolType": "BallistaHarpoon",
       "tier": 1
     }
-  ]
+  ],
+  "damageType": "'FireBoltDamage_C'"
 }

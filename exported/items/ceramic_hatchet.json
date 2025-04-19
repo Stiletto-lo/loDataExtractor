@@ -1,6 +1,7 @@
 {
   "name": "Ceramic Hatchet",
   "parent": "OneHandedBoneAxe",
+  "type": "OneHandedZirconiumAxe_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 56.2,
+  "translation": "Ceramic Hatchet",
   "experiencieReward": 200,
   "stackSize": 100,
   "weight": 4.5,
@@ -599,5 +601,6 @@
       "toolType": "TreeCutting",
       "tier": 15
     }
-  ]
+  ],
+  "damageType": "'MeleeAxeDamage_C'"
 }

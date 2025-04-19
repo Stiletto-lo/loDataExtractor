@@ -1,6 +1,7 @@
 {
   "name": "Starch Cement",
   "parent": "Curing Station",
+  "type": "StarchCement_C",
   "onlyDevs": true,
   "category": "Resources",
   "crafting": [
@@ -25,6 +26,7 @@
     }
   ],
   "trade_price": 1.1,
+  "translation": "Starch Cement",
   "experiencieReward": 3,
   "stackSize": 100,
   "weight": 0.34

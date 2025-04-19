@@ -1,6 +1,7 @@
 {
   "name": "Rawbone Sawsword",
   "parent": "Jaggertooth Swordclub",
+  "type": "TwoHandedBoneSwordShort_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -581,6 +582,7 @@
     }
   ],
   "trade_price": 15,
+  "translation": "Rawbone Sawsword",
   "experiencieReward": 100,
   "stackSize": 100,
   "weight": 3.8,
@@ -598,5 +600,6 @@
       "toolType": "Scythe",
       "tier": 1
     }
-  ]
+  ],
+  "damageType": "'MeleeSwordDamage_C'"
 }

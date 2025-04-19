@@ -22,6 +22,8 @@
   ],
   "name": "Wyndan Warhammer",
   "trade_price": 367.8,
+  "translation": "Wyndan Warhammer",
+  "type": "TwoHandedIronMaul2_C",
   "experiencieReward": 1257,
   "stackSize": 100,
   "weight": 6,
@@ -593,5 +595,6 @@
       "minQuantity": 1,
       "maxQuantity": 8
     }
-  ]
+  ],
+  "damageType": "'MeleeBluntDamage_C'"
 }

@@ -1,6 +1,7 @@
 {
   "name": "Hullbreaker Scattershot",
   "parent": "CeramicScattershot",
+  "type": "HullbreakerScattershot_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -587,6 +588,7 @@
     }
   ],
   "trade_price": 61.8,
+  "translation": "Hullbreaker Scattershot",
   "projectileDamage": {
     "damage": 500
   },

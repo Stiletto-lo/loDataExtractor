@@ -1,6 +1,7 @@
 {
   "name": "Crude Hatchet",
   "parent": "Beat Stick",
+  "type": "CrudeHatchet_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -577,6 +578,7 @@
     }
   ],
   "trade_price": 1.2,
+  "translation": "Crude Hatchet",
   "experiencieReward": 25,
   "stackSize": 100,
   "weight": 1.8,
@@ -593,5 +595,6 @@
       "toolType": "TreeCutting",
       "tier": 2
     }
-  ]
+  ],
+  "damageType": "'MeleeAxeDamage_C'"
 }

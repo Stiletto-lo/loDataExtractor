@@ -1,6 +1,7 @@
 {
   "name": "Schematic Bag",
   "parent": "Light Backpack",
+  "type": "SchematicBag_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -581,6 +582,7 @@
     }
   ],
   "trade_price": 5.6,
+  "translation": "Schematic Bag",
   "experiencieReward": 26,
   "stackSize": 100,
   "weight": 0.2,

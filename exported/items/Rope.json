@@ -1,6 +1,7 @@
 {
   "name": "Rope",
   "parent": "Advanced Fiberworking Station",
+  "type": "Rope_C",
   "description": "A strong cord used for crafting and construction",
   "drops": [
     {
@@ -608,6 +609,7 @@
     }
   ],
   "trade_price": 0.5,
+  "translation": "Rope",
   "experiencieReward": 4,
   "stackSize": 100,
   "weight": 0.25

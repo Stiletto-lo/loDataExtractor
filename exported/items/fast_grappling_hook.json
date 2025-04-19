@@ -2,6 +2,7 @@
   "category": "Grappling Hooks",
   "name": "Fast Grappling Hook",
   "parent": "Nomad Grappling Hook",
+  "type": "FastGrapplingHook_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,5 +584,6 @@
     }
   ],
   "trade_price": 19.4,
+  "translation": "Fast Grappling Hook",
   "experiencieReward": 45
 }

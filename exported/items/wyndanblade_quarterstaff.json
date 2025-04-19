@@ -1,6 +1,7 @@
 {
   "name": "Wyndanblade Quarterstaff",
   "parent": "Paddleblade Quarterstaff",
+  "type": "IronQuarterstaff2_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 152,
+  "translation": "Wyndanblade Quarterstaff",
   "experiencieReward": 1227,
   "stackSize": 100,
   "weight": 4.8,
@@ -591,5 +593,6 @@
     "weaponLength": 107,
     "damage": 48,
     "penetration": 20
-  }
+  },
+  "damageType": "'MeleeBluntDamage_C'"
 }

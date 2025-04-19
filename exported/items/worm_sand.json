@@ -1,6 +1,7 @@
 {
   "name": "Worm Sand",
   "parent": "Soil Excavator",
+  "type": "WormSand_C",
   "category": "Resources",
   "crafting": [
     {
@@ -27,6 +28,7 @@
     }
   ],
   "trade_price": 5,
+  "translation": "Worm Sand",
   "experiencieReward": 22,
   "stackSize": 100,
   "weight": 0.1

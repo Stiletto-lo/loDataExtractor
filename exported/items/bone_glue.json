@@ -1,6 +1,7 @@
 {
   "name": "Bone Glue",
   "parent": "Purified Water",
+  "type": "BoneGlue_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -621,6 +622,7 @@
     }
   ],
   "trade_price": 1.9,
+  "translation": "Bone Glue",
   "experiencieReward": 12,
   "stackSize": 100,
   "weight": 0.17

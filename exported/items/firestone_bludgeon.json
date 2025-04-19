@@ -1,6 +1,7 @@
 {
   "name": "Firestone Bludgeon",
   "parent": "Short Ceramic Hoofmace",
+  "type": "OneHandedLavaMace_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 81,
+  "translation": "Firestone Bludgeon",
   "experiencieReward": 210,
   "stackSize": 100,
   "weight": 4.9,
@@ -594,5 +596,6 @@
     "weaponLength": 65,
     "damage": 55,
     "penetration": 10
-  }
+  },
+  "damageType": "'MeleeBluntDamage_C'"
 }

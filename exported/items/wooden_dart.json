@@ -62,6 +62,8 @@
   "name": "Wooden Dart",
   "parent": "Repeater",
   "trade_price": 1.5,
+  "translation": "Wooden Dart",
+  "type": "WoodenDart_C",
   "projectileDamage": {
     "damage": 10
   },
@@ -632,5 +634,6 @@
       "minQuantity": 5,
       "maxQuantity": 25
     }
-  ]
+  ],
+  "damageType": "'DartDamage_C'"
 }

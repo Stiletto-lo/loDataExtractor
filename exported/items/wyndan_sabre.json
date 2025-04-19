@@ -1,6 +1,7 @@
 {
   "name": "Wyndan Sabre",
   "parent": "Short Malletblade",
+  "type": "OneHandedIronSword2_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 259.7,
+  "translation": "Wyndan Sabre",
   "experiencieReward": 1242,
   "stackSize": 100,
   "weight": 2.5,
@@ -600,5 +602,6 @@
       "toolType": "Scythe",
       "tier": 1
     }
-  ]
+  ],
+  "damageType": "'MeleeSwordDamage_C'"
 }

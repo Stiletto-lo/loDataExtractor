@@ -1,6 +1,7 @@
 {
   "name": "Iron Ingot",
   "parent": "Advanced Furnace",
+  "type": "IronIngot2_C",
   "category": "Resources",
   "crafting": [
     {
@@ -15,6 +16,7 @@
     }
   ],
   "trade_price": 12,
+  "translation": "Iron Ingot",
   "stackSize": 100,
   "weight": 0.65
 }

@@ -1,6 +1,7 @@
 {
   "name": "Throwing Net",
   "parent": "Beat Stick",
+  "type": "ThrowingNet_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -585,11 +586,13 @@
     }
   ],
   "trade_price": 8.4,
+  "translation": "Throwing Net",
   "weight": 3,
   "toolInfo": [
     {
       "toolType": "Net",
       "tier": 1
     }
-  ]
+  ],
+  "damageType": "'JavelinDamage_C'"
 }

@@ -1,6 +1,7 @@
 {
   "name": "Lava Fuel",
   "parent": "Obsidian Machine",
+  "type": "LavaFuel_C",
   "category": "Liquids",
   "crafting": [
     {
@@ -22,6 +23,7 @@
       "time": 90
     }
   ],
+  "translation": "Lava Fuel",
   "experiencieReward": 3,
   "stackSize": 100,
   "weight": 0.5

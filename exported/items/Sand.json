@@ -1,6 +1,7 @@
 {
   "name": "Sand",
   "parent": "Crafting",
+  "type": "Sand_C",
   "description": "Tiny green mineral flecks dot the sand.",
   "drops": [
     {
@@ -620,6 +621,7 @@
       "time": 4
     }
   ],
+  "translation": "Sand",
   "stackSize": 100,
   "weight": 0.22
 }

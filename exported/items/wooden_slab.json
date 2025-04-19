@@ -1,6 +1,7 @@
 {
   "name": "Wooden Slab",
   "parent": "Woodworking Station",
+  "type": "WoodenSlab_C",
   "category": "Resources",
   "crafting": [
     {
@@ -92,6 +93,7 @@
     }
   ],
   "trade_price": 0.1,
+  "translation": "Wooden Slab",
   "stackSize": 100,
   "weight": 0.1
 }

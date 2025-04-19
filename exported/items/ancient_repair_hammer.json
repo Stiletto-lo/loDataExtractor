@@ -18,6 +18,8 @@
   ],
   "name": "Ancient Repair Hammer",
   "trade_price": 9.5,
+  "translation": "Ancient Repair Hammer",
+  "type": "AncientRepairHammer_C",
   "experiencieReward": 50,
   "stackSize": 100,
   "weight": 3.12,
@@ -586,5 +588,6 @@
       "minQuantity": 1,
       "maxQuantity": 1
     }
-  ]
+  ],
+  "damageType": "'AncientMeleeRepairHammerDamage_C'"
 }

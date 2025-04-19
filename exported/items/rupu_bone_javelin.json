@@ -2,6 +2,8 @@
   "category": "Ammo",
   "name": "Rupu Bone Javelin",
   "trade_price": 5,
+  "translation": "Rupu Bone Javelin",
+  "type": "RupuBoneJavelin_C",
   "projectileDamage": {
     "damage": 50
   },
@@ -14,5 +16,6 @@
       "tier": 2
     }
   ],
-  "wikiVisibility": false
+  "wikiVisibility": false,
+  "damageType": "'RupuJavelinDamage_C'"
 }

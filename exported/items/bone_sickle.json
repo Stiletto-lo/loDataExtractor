@@ -1,6 +1,7 @@
 {
   "name": "Bone Sickle",
   "parent": "Simple Sickle",
+  "type": "BoneSickle_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -585,6 +586,7 @@
       "time": 2
     }
   ],
+  "translation": "Bone Sickle",
   "durability": 550,
   "toolInfo": [
     {

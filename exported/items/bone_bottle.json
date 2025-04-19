@@ -1,6 +1,7 @@
 {
   "name": "Bone Bottle",
   "parent": "Improvised Bottle",
+  "type": "BoneBottle_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -601,6 +602,7 @@
     }
   ],
   "trade_price": 11.9,
+  "translation": "Bone Bottle",
   "experiencieReward": 50,
   "stackSize": 100,
   "weight": 1.7,

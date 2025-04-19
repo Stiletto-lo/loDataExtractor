@@ -22,6 +22,8 @@
   ],
   "name": "Nibiran Decapitator",
   "trade_price": 2756.6,
+  "translation": "Nibiran Decapitator",
+  "type": "TwoHandedTitaniumSword2_C",
   "experiencieReward": 1602,
   "stackSize": 100,
   "weight": 3.6,
@@ -599,5 +601,6 @@
       "minQuantity": 1,
       "maxQuantity": 4
     }
-  ]
+  ],
+  "damageType": "'MeleeSwordDamage_C'"
 }

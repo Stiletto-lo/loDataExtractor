@@ -1,6 +1,7 @@
 {
   "name": "Jaggertooth Club",
   "parent": "Beat Stick",
+  "type": "OneHandedStoneClub_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -581,6 +582,7 @@
     }
   ],
   "trade_price": 2.5,
+  "translation": "Jaggertooth Club",
   "stackSize": 100,
   "weight": 7.5,
   "durability": 320,
@@ -591,5 +593,6 @@
     "weaponLength": 66,
     "damage": 30,
     "penetration": 10
-  }
+  },
+  "damageType": "'MeleeBluntDamage_C'"
 }

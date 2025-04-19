@@ -1,6 +1,7 @@
 {
   "name": "Rawbone Club",
   "parent": "Nurrfang Toothclub",
+  "type": "BoneMace_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -579,6 +580,7 @@
     }
   ],
   "trade_price": 14,
+  "translation": "Rawbone Club",
   "experiencieReward": 55,
   "stackSize": 100,
   "weight": 2.8,
@@ -589,5 +591,6 @@
     "weaponLength": 75,
     "damage": 45,
     "penetration": 10
-  }
+  },
+  "damageType": "'MeleeBluntDamage_C'"
 }

@@ -1,6 +1,7 @@
 {
   "name": "Charged Rok",
   "parent": "Rokker",
+  "type": "ChargedRok_C",
   "category": "Ammo",
   "crafting": [
     {
@@ -41,6 +42,7 @@
     }
   ],
   "trade_price": 5.2,
+  "translation": "Charged Rok",
   "projectileDamage": {
     "damage": 1250,
     "penetration": 10,
@@ -55,5 +57,6 @@
       "toolType": "Scattershot",
       "tier": 1
     }
-  ]
+  ],
+  "damageType": "'HardenedRokDamage_C'"
 }

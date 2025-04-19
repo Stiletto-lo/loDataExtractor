@@ -1,6 +1,7 @@
 {
   "name": "Jaggertooth Maul",
   "parent": "Jaggertooth Club",
+  "type": "TwoHandedStoneMace_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -581,6 +582,7 @@
     }
   ],
   "trade_price": 5.4,
+  "translation": "Jaggertooth Maul",
   "experiencieReward": 10,
   "stackSize": 100,
   "weight": 10.8,
@@ -591,5 +593,6 @@
     "weaponLength": 77,
     "damage": 35,
     "penetration": 10
-  }
+  },
+  "damageType": "'MeleeBluntDamage_C'"
 }

@@ -1,6 +1,7 @@
 {
   "name": "Aloe Gel",
   "parent": "Stomping Station",
+  "type": "AloeGel_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -596,6 +597,7 @@
     }
   ],
   "trade_price": 1.4,
+  "translation": "Aloe Gel",
   "experiencieReward": 8,
   "stackSize": 100,
   "weight": 0.44

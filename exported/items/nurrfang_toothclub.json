@@ -1,6 +1,7 @@
 {
   "name": "Nurrfang Toothclub",
   "parent": "Jaggertooth Club",
+  "type": "BoneClub_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 7.1,
+  "translation": "Nurrfang Toothclub",
   "experiencieReward": 10,
   "stackSize": 100,
   "weight": 2.5,
@@ -594,5 +596,6 @@
     "weaponLength": 73,
     "damage": 40,
     "penetration": 10
-  }
+  },
+  "damageType": "'MeleeBluntDamage_C'"
 }

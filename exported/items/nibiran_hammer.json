@@ -22,6 +22,8 @@
   ],
   "name": "Nibiran Hammer",
   "trade_price": 1486.5,
+  "translation": "Nibiran Hammer",
+  "type": "OneHandedTitaniumMace2_C",
   "experiencieReward": 1500,
   "stackSize": 100,
   "weight": 3.2,
@@ -593,5 +595,6 @@
       "minQuantity": 1,
       "maxQuantity": 4
     }
-  ]
+  ],
+  "damageType": "'MeleeBluntDamage_C'"
 }

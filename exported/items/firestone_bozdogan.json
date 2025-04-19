@@ -1,6 +1,7 @@
 {
   "name": "Firestone Bozdogan",
   "parent": "Short Ceramic Hoofmace",
+  "type": "TwoHandedLavaMace_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 104,
+  "translation": "Firestone Bozdogan",
   "experiencieReward": 220,
   "stackSize": 100,
   "weight": 6.2,
@@ -594,5 +596,6 @@
     "weaponLength": 83,
     "damage": 55,
     "penetration": 10
-  }
+  },
+  "damageType": "'MeleeBluntDamage_C'"
 }

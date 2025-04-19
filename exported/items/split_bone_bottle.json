@@ -1,6 +1,7 @@
 {
   "name": "Split Bone Bottle",
   "parent": "Bone Bottle",
+  "type": "SplitBoneBottle_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -601,6 +602,7 @@
     }
   ],
   "trade_price": 13.3,
+  "translation": "Split Bone Bottle",
   "experiencieReward": 55,
   "stackSize": 100,
   "weight": 3.2,

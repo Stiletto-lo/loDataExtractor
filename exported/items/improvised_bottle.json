@@ -1,6 +1,7 @@
 {
   "name": "Improvised Bottle",
   "parent": "Makeshift Bottle",
+  "type": "ImprovisedBottle_C",
   "category": "Equipment",
   "crafting": [
     {
@@ -21,6 +22,7 @@
     }
   ],
   "trade_price": 6.2,
+  "translation": "Improvised Bottle",
   "experiencieReward": 25,
   "stackSize": 100,
   "weight": 0.5,

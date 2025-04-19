@@ -20,10 +20,12 @@
   ],
   "name": "Giant Wall",
   "parent": "Advanced Constructions",
+  "type": "WallGiant_C",
   "experiencieReward": 40,
   "structureInfo": {
     "type": "Reinforced",
     "hp": 100000
   },
+  "translation": "Giant Wall",
   "weight": 20
 }

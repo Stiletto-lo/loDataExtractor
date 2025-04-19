@@ -22,6 +22,8 @@
   ],
   "name": "Nibiran Battle Axe",
   "trade_price": 2116.6,
+  "translation": "Nibiran Battle Axe",
+  "type": "TwoHandedRareMetalAxe2_C",
   "experiencieReward": 1544,
   "stackSize": 100,
   "weight": 4.8,
@@ -599,5 +601,6 @@
       "minQuantity": 1,
       "maxQuantity": 4
     }
-  ]
+  ],
+  "damageType": "'MeleeAxeDamage_C'"
 }

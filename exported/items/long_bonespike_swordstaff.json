@@ -1,6 +1,7 @@
 {
   "name": "Long Bonespike Swordstaff",
   "parent": "Bonespike Sword",
+  "type": "TwoHandedBoneSword_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 14.4,
+  "translation": "Long Bonespike Swordstaff",
   "experiencieReward": 100,
   "stackSize": 100,
   "weight": 4.6,
@@ -600,5 +602,6 @@
       "toolType": "Scythe",
       "tier": 1
     }
-  ]
+  ],
+  "damageType": "'MeleeSwordDamage_C'"
 }

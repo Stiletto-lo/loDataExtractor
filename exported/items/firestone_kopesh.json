@@ -1,6 +1,7 @@
 {
   "name": "Firestone Kopesh",
   "parent": "Short Malletblade",
+  "type": "OneHandedLavaSword_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 103,
+  "translation": "Firestone Kopesh",
   "experiencieReward": 210,
   "stackSize": 100,
   "weight": 4.2,
@@ -600,5 +602,6 @@
       "toolType": "Scythe",
       "tier": 1
     }
-  ]
+  ],
+  "damageType": "'MeleeSwordDamage_C'"
 }

@@ -1,6 +1,7 @@
 {
   "name": "Fire Dart",
   "parent": "Repeater",
+  "type": "FireDart_C",
   "category": "Ammo",
   "crafting": [
     {
@@ -51,6 +52,7 @@
     }
   ],
   "trade_price": 15.6,
+  "translation": "Fire Dart",
   "projectileDamage": {
     "damage": 50
   },
@@ -62,5 +64,6 @@
       "toolType": "BallistaHarpoon",
       "tier": 1
     }
-  ]
+  ],
+  "damageType": "'FireDartDamage_C'"
 }

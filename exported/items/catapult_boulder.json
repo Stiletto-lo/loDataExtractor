@@ -19,6 +19,8 @@
   "name": "Catapult Boulder",
   "parent": "Catapult",
   "trade_price": 8,
+  "translation": "Catapult Boulder",
+  "type": "CatapultBoulder_C",
   "projectileDamage": {
     "damage": 200,
     "penetration": 10,
@@ -592,5 +594,6 @@
       "minQuantity": 1,
       "maxQuantity": 5
     }
-  ]
+  ],
+  "damageType": "'BoulderDamage_C'"
 }

@@ -1,6 +1,7 @@
 {
   "name": "Throwable Aloe Bomb",
   "parent": "Aloe Goo Bomb",
+  "type": "ThrowableAloeBomb_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 16.9,
+  "translation": "Throwable Aloe Bomb",
   "experiencieReward": 20,
   "stackSize": 5,
   "weight": 0.3

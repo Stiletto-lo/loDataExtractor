@@ -2,10 +2,13 @@
   "category": "Ammo",
   "name": "Crude Orb",
   "trade_price": 5.2,
+  "translation": "Crude Orb",
+  "type": "RupuOrb_C",
   "projectileDamage": {
     "damage": 50
   },
   "stackSize": 100,
   "weight": 5,
-  "wikiVisibility": false
+  "wikiVisibility": false,
+  "damageType": "'RupuOrbDamage_C'"
 }

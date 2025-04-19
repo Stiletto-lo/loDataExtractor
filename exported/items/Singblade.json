@@ -1,6 +1,7 @@
 {
   "name": "Singblade",
   "parent": "Long Bonespike Swordstaff",
+  "type": "TwoHandedZirconiumSword_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 165.8,
+  "translation": "Singblade",
   "experiencieReward": 200,
   "stackSize": 100,
   "weight": 5.8,
@@ -600,5 +602,6 @@
       "toolType": "Scythe",
       "tier": 1
     }
-  ]
+  ],
+  "damageType": "'MeleeSwordDamage_C'"
 }

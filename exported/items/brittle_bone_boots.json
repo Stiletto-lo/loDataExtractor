@@ -1,6 +1,7 @@
 {
   "name": "Brittle Bone Boots",
   "parent": "BrittleBoneTorso",
+  "type": "T3_BrittleBoneBoots_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -582,6 +583,7 @@
       "time": 2
     }
   ],
+  "translation": "Brittle Bone Boots",
   "experiencieReward": 40,
   "stackSize": 100,
   "weight": 1.3,

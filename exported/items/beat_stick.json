@@ -1,6 +1,7 @@
 {
   "name": "Beat Stick",
   "parent": "Equipment",
+  "type": "WoodenClub_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -577,6 +578,7 @@
     }
   ],
   "trade_price": 1.7,
+  "translation": "Beat Stick",
   "experiencieReward": 1,
   "stackSize": 100,
   "weight": 3.2,
@@ -588,5 +590,6 @@
     "weaponLength": 72,
     "damage": 25,
     "penetration": 10
-  }
+  },
+  "damageType": "'MeleeBluntWeakDamage_C'"
 }

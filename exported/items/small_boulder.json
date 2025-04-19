@@ -47,6 +47,8 @@
   "name": "Small Boulder",
   "parent": "Slingshot",
   "trade_price": 3.1,
+  "translation": "Small Boulder",
+  "type": "SmallBoulder_C",
   "projectileDamage": {
     "damage": 150,
     "penetration": 10,
@@ -60,5 +62,6 @@
       "toolType": "SlingshotRock",
       "tier": 1
     }
-  ]
+  ],
+  "damageType": "'BoulderDamage_C'"
 }

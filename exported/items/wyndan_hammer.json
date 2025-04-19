@@ -1,6 +1,7 @@
 {
   "name": "Wyndan Hammer",
   "parent": "Short Ceramic Hoofmace",
+  "type": "OneHandedIronMace2_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 316.4,
+  "translation": "Wyndan Hammer",
   "experiencieReward": 1197,
   "stackSize": 100,
   "weight": 4.5,
@@ -593,5 +595,6 @@
     "weaponLength": 61,
     "damage": 60,
     "penetration": 10
-  }
+  },
+  "damageType": "'MeleeBluntDamage_C'"
 }

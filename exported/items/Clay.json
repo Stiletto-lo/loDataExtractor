@@ -1,6 +1,7 @@
 {
   "name": "Clay",
   "parent": "Soil Excavator",
+  "type": "StructuralClay_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -560,5 +561,6 @@
       "minQuantity": 4,
       "maxQuantity": 4
     }
-  ]
+  ],
+  "translation": "Clay"
 }

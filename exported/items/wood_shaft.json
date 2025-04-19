@@ -1,6 +1,7 @@
 {
   "name": "Wood Shaft",
   "parent": "Woodworking Station",
+  "type": "WoodenShaft_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -628,6 +629,7 @@
     }
   ],
   "trade_price": 0.4,
+  "translation": "Wood Shaft",
   "stackSize": 100,
   "weight": 0.21
 }

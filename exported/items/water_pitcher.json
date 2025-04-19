@@ -2,6 +2,8 @@
   "category": "Ammo",
   "name": "Water Pitcher",
   "trade_price": 1,
+  "translation": "Water Pitcher",
+  "type": "WaterPitcher_C",
   "projectileDamage": {
     "damage": 2
   },
@@ -11,5 +13,6 @@
       "tier": 1
     }
   ],
-  "wikiVisibility": false
+  "wikiVisibility": false,
+  "damageType": "'WaterHoseDamage_C'"
 }

@@ -1,6 +1,7 @@
 {
   "name": "Large Gathering Pouch",
   "parent": "Foraging Pouch",
+  "type": "LargePouch_C",
   "category": "Equipment",
   "crafting": [
     {
@@ -33,6 +34,7 @@
     }
   ],
   "trade_price": 10,
+  "translation": "Large Gathering Pouch",
   "experiencieReward": 83,
   "stackSize": 100,
   "weight": 0.5,

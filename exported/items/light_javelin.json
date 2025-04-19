@@ -1,6 +1,7 @@
 {
   "name": "Light Javelin",
   "parent": "Beat Stick",
+  "type": "JavelinRupu_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -563,11 +564,13 @@
   ],
   "category": "Weapons",
   "trade_price": 1.6,
+  "translation": "Light Javelin",
   "stackSize": 5,
   "weight": 2,
   "weaponInfo": {
     "damage": 15,
     "penetration": 15
   },
-  "wikiVisibility": false
+  "wikiVisibility": false,
+  "damageType": "'RupuJavelinDamage_C'"
 }

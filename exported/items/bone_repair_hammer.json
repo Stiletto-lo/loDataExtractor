@@ -1,6 +1,7 @@
 {
   "name": "Bone Repair Hammer",
   "parent": "Simple Repair Hammer",
+  "type": "BoneRepairHammer_C",
   "crafting": [
     {
       "ingredients": [
@@ -17,5 +18,6 @@
       "time": 2
     }
   ],
+  "translation": "Bone Repair Hammer",
   "durability": 500
 }

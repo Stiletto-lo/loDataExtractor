@@ -1,6 +1,8 @@
 {
   "category": "Weapons",
   "name": "Wooden Club",
+  "translation": "Wooden Club",
+  "type": "StoneClubRupu_C",
   "experiencieReward": 22,
   "stackSize": 100,
   "weight": 8.4,
@@ -9,5 +11,6 @@
     "weaponLength": 77,
     "penetration": 10
   },
-  "wikiVisibility": false
+  "wikiVisibility": false,
+  "damageType": "'RupuMeleeBluntDamage_C'"
 }

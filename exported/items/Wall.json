@@ -18,11 +18,13 @@
     }
   ],
   "name": "Wall",
+  "type": "WallClay_C",
   "experiencieReward": 30,
   "structureInfo": {
     "type": "Solid",
     "hp": 20000
   },
   "category": "Clay",
+  "translation": "Wall",
   "weight": 7
 }

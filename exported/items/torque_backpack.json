@@ -1,6 +1,7 @@
 {
   "name": "Torque Backpack",
   "parent": "Torque Battery",
+  "type": "GrapplingBelt_C",
   "onlyDevs": true,
   "category": "Equipment",
   "crafting": [
@@ -50,6 +51,7 @@
     }
   ],
   "trade_price": 48.5,
+  "translation": "Torque Backpack",
   "experiencieReward": 154,
   "stackSize": 100,
   "weight": 0.5,

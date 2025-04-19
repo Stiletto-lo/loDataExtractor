@@ -2,6 +2,8 @@
   "category": "Ammo",
   "name": "Super Cluster Bomb",
   "trade_price": 84.7,
+  "translation": "Super Cluster Bomb",
+  "type": "SuperClusterBomb_C",
   "projectileDamage": {
     "damage": 20,
     "penetration": 55,
@@ -10,5 +12,6 @@
   },
   "stackSize": 10,
   "weight": 30,
-  "wikiVisibility": false
+  "wikiVisibility": false,
+  "damageType": "'ExplosionDamage_C'"
 }

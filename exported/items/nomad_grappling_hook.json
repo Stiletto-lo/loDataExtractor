@@ -2,6 +2,7 @@
   "category": "Grappling Hooks",
   "name": "Nomad Grappling Hook",
   "parent": "MakeshiftGrapplingHook",
+  "type": "FixedGrapplingHook_C",
   "crafting": [
     {
       "ingredients": [
@@ -21,5 +22,6 @@
     }
   ],
   "trade_price": 10,
+  "translation": "Nomad Grappling Hook",
   "experiencieReward": 38
 }

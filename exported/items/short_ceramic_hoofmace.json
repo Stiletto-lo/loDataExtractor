@@ -1,6 +1,7 @@
 {
   "name": "Short Ceramic Hoofmace",
   "parent": "Rawbone Club",
+  "type": "OneHandedZirconiumMace_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 75.8,
+  "translation": "Short Ceramic Hoofmace",
   "experiencieReward": 200,
   "stackSize": 100,
   "weight": 4.1,
@@ -594,5 +596,6 @@
     "weaponLength": 50,
     "damage": 50,
     "penetration": 10
-  }
+  },
+  "damageType": "'MeleeBluntDamage_C'"
 }

@@ -1,6 +1,7 @@
 {
   "name": "Wyndan Hand Axe",
   "parent": "Ceramic Hatchet",
+  "type": "OneHandedIronAxe2_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 234.4,
+  "translation": "Wyndan Hand Axe",
   "experiencieReward": 1203,
   "stackSize": 100,
   "weight": 4,
@@ -600,5 +602,6 @@
       "toolType": "TreeCutting",
       "tier": 20
     }
-  ]
+  ],
+  "damageType": "'MeleeAxeDamage_C'"
 }

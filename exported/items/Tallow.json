@@ -1,6 +1,7 @@
 {
   "name": "Tallow",
   "parent": "Purification Station",
+  "type": "Fuel_C",
   "category": "Liquids",
   "crafting": [
     {
@@ -20,6 +21,7 @@
     }
   ],
   "trade_price": 3.7,
+  "translation": "Tallow",
   "experiencieReward": 3,
   "stackSize": 100,
   "weight": 0.5

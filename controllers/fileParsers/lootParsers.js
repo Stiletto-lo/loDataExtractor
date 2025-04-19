@@ -197,9 +197,9 @@ const parseLootTable = (filePath) => {
 			// Add to the loot tables collection for creature processing
 			lootTables[firstEntry.Name].drops.push({
 				name: resolvedName,
-				chance: currentItem.Chance || 0,
-				minQuantity: currentItem.MinQuantity || 0,
-				maxQuantity: currentItem.MaxQuantity || 0
+				chance: currentItem.Chance,
+				minQuantity: currentItem.MinQuantity,
+				maxQuantity: currentItem.MaxQuantity,
 			});
 		}
 	}

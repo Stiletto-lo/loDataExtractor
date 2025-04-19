@@ -1,6 +1,7 @@
 {
   "name": "Iron Gear",
   "parent": "Reinforced Gear",
+  "type": "IronGear_C",
   "category": "Resources",
   "crafting": [
     {
@@ -23,6 +24,7 @@
     }
   ],
   "trade_price": 700,
+  "translation": "Iron Gear",
   "experiencieReward": 25,
   "stackSize": 100,
   "weight": 0.55

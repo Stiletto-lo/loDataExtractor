@@ -22,6 +22,8 @@
   ],
   "name": "Ironblade Quarterstaff",
   "trade_price": 1504.8,
+  "translation": "Ironblade Quarterstaff",
+  "type": "TitaniumQuarterstaffBlade2_C",
   "experiencieReward": 1521,
   "stackSize": 100,
   "weight": 5.3,
@@ -590,5 +592,6 @@
       "minQuantity": 1,
       "maxQuantity": 4
     }
-  ]
+  ],
+  "damageType": "'MeleeBluntDamage_C'"
 }

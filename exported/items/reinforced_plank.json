@@ -1,6 +1,7 @@
 {
   "name": "Reinforced Plank",
   "parent": "WoodworkingStation_T3",
+  "type": "ReinforcedPlank2_C",
   "category": "Resources",
   "crafting": [
     {
@@ -49,6 +50,7 @@
     }
   ],
   "trade_price": 15.5,
+  "translation": "Reinforced Plank",
   "experiencieReward": 25,
   "stackSize": 100,
   "weight": 0.45

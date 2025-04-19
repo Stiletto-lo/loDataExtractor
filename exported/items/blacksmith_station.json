@@ -24,10 +24,12 @@
   ],
   "name": "Blacksmith Station",
   "parent": "Crafting Bench",
+  "type": "SmithingStation_C",
   "experiencieReward": 125,
   "structureInfo": {
     "type": "Soft",
     "hp": 1500
   },
+  "translation": "Blacksmith Station",
   "weight": 25
 }

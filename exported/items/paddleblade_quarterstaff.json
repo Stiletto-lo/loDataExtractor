@@ -1,6 +1,7 @@
 {
   "name": "Paddleblade Quarterstaff",
   "parent": "Rawbone Quarterstaff",
+  "type": "ZirconiumQuarterstaff_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 124.2,
+  "translation": "Paddleblade Quarterstaff",
   "experiencieReward": 200,
   "stackSize": 100,
   "weight": 5,
@@ -591,5 +593,6 @@
     "weaponLength": 142,
     "damage": 40,
     "penetration": 20
-  }
+  },
+  "damageType": "'MeleeBluntDamage_C'"
 }

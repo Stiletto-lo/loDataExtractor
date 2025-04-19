@@ -21,6 +21,8 @@
   "name": "Traveller’s Staff",
   "parent": "Blunt Quarterstaff",
   "trade_price": 2.6,
+  "translation": "Traveller’s Staff",
+  "type": "TravellersStaff_C",
   "experiencieReward": 10,
   "stackSize": 100,
   "weight": 4.1,
@@ -29,5 +31,6 @@
     "weaponLength": 116,
     "damage": 28,
     "penetration": 20
-  }
+  },
+  "damageType": "'MeleeBluntDamage_C'"
 }

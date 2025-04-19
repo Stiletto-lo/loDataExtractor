@@ -23,6 +23,8 @@
   "name": "Firestone Battleaxe",
   "parent": "Rawbone Battle Axe",
   "trade_price": 81,
+  "translation": "Firestone Battleaxe",
+  "type": "TwoHandedLavaAxe_C",
   "experiencieReward": 220,
   "stackSize": 100,
   "weight": 5.2,
@@ -40,5 +42,6 @@
       "toolType": "TreeCutting",
       "tier": 15
     }
-  ]
+  ],
+  "damageType": "'MeleeAxeDamage_C'"
 }

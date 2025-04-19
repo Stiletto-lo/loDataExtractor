@@ -1,6 +1,7 @@
 {
   "name": "Rubber Block",
   "parent": "Curing Station",
+  "type": "Rubber_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -580,6 +581,7 @@
     }
   ],
   "trade_price": 1.1,
+  "translation": "Rubber Block",
   "experiencieReward": 3,
   "stackSize": 100,
   "weight": 0.34

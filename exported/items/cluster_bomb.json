@@ -31,10 +31,13 @@
   "name": "Cluster Bomb",
   "parent": "Slingshot",
   "trade_price": 84.7,
+  "translation": "Cluster Bomb",
+  "type": "RupuCarpetBomb_C",
   "projectileDamage": {
     "damage": 20
   },
   "stackSize": 10,
   "weight": 30,
+  "damageType": "'ExplosionDamage_C'",
   "wikiVisibility": false
 }

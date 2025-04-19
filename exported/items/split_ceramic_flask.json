@@ -1,6 +1,7 @@
 {
   "name": "Split Ceramic Flask",
   "parent": "Ceramic Bottle",
+  "type": "SplitCeramicBottle_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 51.6,
+  "translation": "Split Ceramic Flask",
   "experiencieReward": 70,
   "stackSize": 100,
   "weight": 3.4,

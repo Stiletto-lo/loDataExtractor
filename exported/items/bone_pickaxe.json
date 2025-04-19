@@ -1,6 +1,7 @@
 {
   "name": "Bone Pickaxe",
   "parent": "Simple Pickaxe",
+  "type": "BonePickaxe_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -582,6 +583,7 @@
     }
   ],
   "trade_price": 24,
+  "translation": "Bone Pickaxe",
   "experiencieReward": 70,
   "weight": 4,
   "durability": 410,

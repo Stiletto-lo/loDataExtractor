@@ -1,6 +1,7 @@
 {
   "name": "Glass",
   "parent": "Furnace",
+  "type": "EmptyGlassVial_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -585,6 +586,7 @@
     }
   ],
   "trade_price": 1.4,
+  "translation": "Glass",
   "stackSize": 100,
   "weight": 0.05
 }

@@ -1,6 +1,7 @@
 {
   "name": "Fruit Pulp",
   "parent": "Stomping Station",
+  "type": "FruitPulp_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -755,6 +756,7 @@
       "time": 15
     }
   ],
+  "translation": "Fruit Pulp",
   "experiencieReward": 3,
   "stackSize": 100,
   "weight": 0.34

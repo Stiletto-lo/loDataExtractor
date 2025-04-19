@@ -1,6 +1,7 @@
 {
   "name": "Iron Rok",
   "parent": "Obsidian Rok",
+  "type": "IronRok_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -585,6 +586,7 @@
       "time": 4
     }
   ],
+  "translation": "Iron Rok",
   "projectileDamage": {
     "damage": 700
   },

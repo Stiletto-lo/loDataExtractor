@@ -24,10 +24,12 @@
   ],
   "name": "Base Maintenance Chest",
   "parent": "Maintenance Box",
+  "type": "ChestBaseMaintenance_T2_C",
   "experiencieReward": 32,
   "structureInfo": {
     "type": "Medium",
     "hp": 5000
   },
+  "translation": "Base Maintenance Chest",
   "weight": 5
 }

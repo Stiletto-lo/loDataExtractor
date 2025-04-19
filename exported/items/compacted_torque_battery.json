@@ -1,6 +1,7 @@
 {
   "name": "Compacted Torque Battery",
   "parent": "Torque Battery",
+  "type": "HeavyTorqueContainer_C",
   "category": "Equipment",
   "crafting": [
     {
@@ -23,6 +24,7 @@
     }
   ],
   "trade_price": 8.4,
+  "translation": "Compacted Torque Battery",
   "experiencieReward": 26,
   "stackSize": 100,
   "weight": 150,

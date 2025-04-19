@@ -62,6 +62,8 @@
   "name": "Penetrating Dart",
   "parent": "AntiPersonnelTurret",
   "trade_price": 1.5,
+  "translation": "Penetrating Dart",
+  "type": "PenetratingDart_C",
   "projectileDamage": {
     "damage": 3,
     "penetration": 100
@@ -73,5 +75,6 @@
       "toolType": "RepeaterBolt",
       "tier": 1
     }
-  ]
+  ],
+  "damageType": "'DartDamage_C'"
 }

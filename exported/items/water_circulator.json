@@ -1,6 +1,7 @@
 {
   "name": "Water Circulator",
   "parent": "Ceramic Bottle",
+  "type": "Stillsuit2_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -583,6 +584,7 @@
     }
   ],
   "trade_price": 679.5,
+  "translation": "Water Circulator",
   "experiencieReward": 255,
   "stackSize": 100,
   "weight": 3,

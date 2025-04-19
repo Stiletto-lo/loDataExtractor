@@ -59,6 +59,8 @@
   "name": "Charged Boulder",
   "parent": "Slingshot",
   "trade_price": 150,
+  "translation": "Charged Boulder",
+  "type": "ChargedBoulder_C",
   "projectileDamage": {
     "damage": 250,
     "penetration": 10,
@@ -73,5 +75,6 @@
       "toolType": "CatapultRock",
       "tier": 3
     }
-  ]
+  ],
+  "damageType": "'HardenedBoulderDamage_C'"
 }

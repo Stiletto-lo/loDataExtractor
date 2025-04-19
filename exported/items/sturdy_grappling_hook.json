@@ -2,6 +2,7 @@
   "category": "Grappling Hooks",
   "name": "Sturdy Grappling Hook",
   "parent": "Nomad Grappling Hook",
+  "type": "SturdyGrapplingHook_C",
   "crafting": [
     {
       "ingredients": [
@@ -45,5 +46,6 @@
     }
   ],
   "trade_price": 19.4,
+  "translation": "Sturdy Grappling Hook",
   "experiencieReward": 45
 }

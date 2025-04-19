@@ -2,6 +2,8 @@
   "category": "Ammo",
   "name": "Hurler Firebomb",
   "trade_price": 49.8,
+  "translation": "Hurler Firebomb",
+  "type": "RupuTurretBoulder_T3_C",
   "projectileDamage": {
     "damage": 150
   },
@@ -13,5 +15,6 @@
       "tier": 1
     }
   ],
-  "wikiVisibility": false
+  "wikiVisibility": false,
+  "damageType": "'BoulderDamage_C'"
 }

@@ -1,6 +1,7 @@
 {
   "name": "Fiber Weave",
   "parent": "Fiberworking Station",
+  "type": "FiberCloth_C",
   "drops": [
     {
       "location": "Armor Strongbox",
@@ -628,6 +629,7 @@
     }
   ],
   "trade_price": 0.8,
+  "translation": "Fiber Weave",
   "experiencieReward": 1,
   "stackSize": 100,
   "weight": 0.11
