@@ -281,6 +281,32 @@
     "onlyDevs": true
   },
   {
+    "name": "Artisan Woodworking Station",
+    "parent": "Advanced Woodworking Station",
+    "type": "WoodworkingStation_T3_C",
+    "unlocks": [
+      "Grappling Belt Charging Station",
+      "Hose Station",
+      "Stations_T1",
+      "Stations_T2",
+      "Stations_T3",
+      "Stations_T4",
+      "Dyeing Station",
+      "Fiberworking Station",
+      "Woodworking Station",
+      "Cauterizing Station",
+      "Curing Station",
+      "Advanced Fiberworking Station",
+      "Packing Station",
+      "Repair Station",
+      "Stomping Station",
+      "Advanced Woodworking Station",
+      "FiberworkingStation_T3",
+      "Purification Station",
+      "StompingStation_T2"
+    ]
+  },
+  {
     "name": "Ash",
     "parent": "Camp Fire",
     "type": "Ash_C"
@@ -1910,6 +1936,19 @@
     ]
   },
   {
+    "name": "Iron Nails",
+    "parent": "Lathe",
+    "type": "IronNails_C",
+    "unlocks": [
+      "CeramicNails",
+      "IronBolt",
+      "IronDart",
+      "Iron Gear",
+      "IronHarpoon",
+      "Iron Ingot"
+    ]
+  },
+  {
     "name": "Iron Rok",
     "parent": "Obsidian Rok",
     "type": "IronRok_C",
@@ -1919,7 +1958,7 @@
       "Iron Gear",
       "IronHarpoon",
       "Iron Ingot",
-      "IronNails"
+      "Iron Nails"
     ]
   },
   {
@@ -1946,11 +1985,6 @@
     "name": "IronHarpoon",
     "parent": "IronBolt",
     "type": "IronHarpoon_C"
-  },
-  {
-    "name": "IronNails",
-    "parent": "Lathe",
-    "type": "IronNails_C"
   },
   {
     "name": "IronPickaxe",
@@ -2141,7 +2175,7 @@
   },
   {
     "name": "Lumbermill",
-    "parent": "WoodworkingStation_T3",
+    "parent": "Artisan Woodworking Station",
     "type": "LumberMill_C"
   },
   {
@@ -2685,7 +2719,7 @@
   },
   {
     "name": "Reinforced Plank",
-    "parent": "WoodworkingStation_T3",
+    "parent": "Artisan Woodworking Station",
     "type": "ReinforcedPlank_C",
     "unlocks": [
       "Barrier Plank",
@@ -3880,11 +3914,6 @@
       "Dyeing Station",
       "Fiberworking Station"
     ]
-  },
-  {
-    "name": "WoodworkingStation_T3",
-    "parent": "Advanced Woodworking Station",
-    "type": "WoodworkingStation_T3_C"
   },
   {
     "name": "Worm Sand",

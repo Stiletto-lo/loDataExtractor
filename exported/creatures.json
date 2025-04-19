@@ -59,6 +59,11 @@
     "dropQuantity": {}
   },
   {
+    "name": "FireElemental",
+    "type": "FireElementalMob_C",
+    "dropQuantity": {}
+  },
+  {
     "name": "Foragers Outpost",
     "type": "CanyonForagersOutpost1_C",
     "dropQuantity": {}
@@ -119,6 +124,11 @@
     "dropQuantity": {}
   },
   {
+    "name": "Gogo",
+    "type": "GogoMob_C",
+    "dropQuantity": {}
+  },
+  {
     "name": "Grave Digger (Medium)",
     "type": "T2_RupuGraveDigger_C",
     "health": 60,
@@ -143,8 +153,18 @@
     "dropQuantity": {}
   },
   {
+    "name": "Koa",
+    "type": "KoaMob_C",
+    "dropQuantity": {}
+  },
+  {
     "name": "Lava Papak",
     "type": "LavaPapakMob_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Lazaward",
+    "type": "NurrMobLarge_C",
     "dropQuantity": {}
   },
   {
@@ -172,6 +192,40 @@
     "dropQuantity": {}
   },
   {
+    "name": "Mountable Nurr",
+    "type": "MountableNurrMob_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Nurr",
+    "type": "KillinMob_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Nurr",
+    "type": "NurrMob_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Nurr Lair",
+    "type": "NurrLair_T2_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Nurr Raider",
+    "type": "T2_NurrRaiderMob_C",
+    "category": "Nurr",
+    "tier": "T2",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Nurr Raiding Camp",
+    "type": "T2_RaiderOutpost_C",
+    "category": "Raider",
+    "tier": "T2",
+    "dropQuantity": {}
+  },
+  {
     "name": "Okkam",
     "type": "OkkamMob_C",
     "dropQuantity": {}
@@ -179,6 +233,11 @@
   {
     "name": "Papak",
     "type": "PapakMob_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Phemke Nest",
+    "type": "EasyPhemkeNest_01_C",
     "dropQuantity": {}
   },
   {
@@ -565,6 +624,16 @@
     "dropQuantity": {}
   },
   {
+    "name": "Rupu Raider",
+    "type": "T2_RupuRaider_C",
+    "health": 145,
+    "experiencie": 50,
+    "lootTable": "HardRupu_T2",
+    "category": "Rupu",
+    "tier": "T2",
+    "dropQuantity": {}
+  },
+  {
     "name": "Rupu Raiding Checkpoint",
     "type": "CanyonBurnableChest_C",
     "dropQuantity": {}
@@ -795,6 +864,13 @@
   {
     "name": "Small Rupu Village",
     "type": "MediumSmallRupuCamp_02_C",
+    "dropQuantity": {}
+  },
+  {
+    "name": "Small Worm",
+    "type": "SmallWormMob_C",
+    "health": 150,
+    "experiencie": 144,
     "dropQuantity": {}
   },
   {

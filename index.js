@@ -58,15 +58,7 @@ const loadFiles = () => {
 	);
 	console.info("Loading Loot sites");
 	loadDirData(
-		`${CONTENT_FOLDER_PATH}Content/Mist/Characters/Creatures/Monkey`,
-		"lootsites",
-	);
-	loadDirData(
-		`${CONTENT_FOLDER_PATH}Content/Mist/Characters/Creatures/Okkam`,
-		"lootsites",
-	);
-	loadDirData(
-		`${CONTENT_FOLDER_PATH}Content/Mist/Characters/Creatures/Papak`,
+		`${CONTENT_FOLDER_PATH}Content/Mist/Characters/Creatures`,
 		"lootsites",
 	);
 	console.info("Loading TechTree");
@@ -265,10 +257,7 @@ const saveFiles = async () => {
 				"stackSize",
 				"weight",
 				"durability",
-				"wikiVisibility",
 				"parent",
-				"onlyDevs",
-				"drops",
 				"learn",
 				"crafting",
 				"station",
@@ -295,6 +284,14 @@ const saveFiles = async () => {
 				if (item[key]) {
 					minItem[key] = item[key];
 				}
+			}
+
+			if (item?.drops?.length > 0) {
+				minItem.drops = item.drops.map(drop => {
+					return {
+						name: drop.name,
+					};
+				});
 			}
 
 			return minItem;
