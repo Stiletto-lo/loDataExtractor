@@ -1,0 +1,16 @@
+{
+  "name": "Heavy Javelin",
+  "parent": "Light Javelin",
+  "type": "HeavyJavelinRupu_C",
+  "category": "Weapons",
+  "trade_price": 1.6,
+  "translation": "Heavy Javelin",
+  "stackSize": 5,
+  "weight": 2,
+  "weaponInfo": {
+    "damage": 40,
+    "penetration": 25
+  },
+  "wikiVisibility": false,
+  "damageType": "'RupuJavelinDamage_C'"
+}

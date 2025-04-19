@@ -1,0 +1,31 @@
+{
+  "category": "Defenses",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 150,
+          "name": "Wood"
+        },
+        {
+          "count": 8,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 6,
+          "name": "Bone Glue"
+        }
+      ]
+    }
+  ],
+  "name": "Spring Spikes Trap",
+  "parent": "Bomb Chest Trap",
+  "type": "TrapSpikesSpring_C",
+  "experiencieReward": 60,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 200
+  },
+  "translation": "Spring Spikes Trap",
+  "weight": 230
+}

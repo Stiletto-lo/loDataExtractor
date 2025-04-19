@@ -1,0 +1,35 @@
+{
+  "name": "Explosive Bolt",
+  "parent": "FireBolt",
+  "type": "ExplosiveBolt_C",
+  "category": "Ammo",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 2,
+          "name": "Lava"
+        },
+        {
+          "count": 1,
+          "name": "Phosphorus"
+        }
+      ],
+      "station": "Artificer Woodworking Station",
+      "time": 3
+    }
+  ],
+  "trade_price": 17.8,
+  "translation": "Explosive Bolt",
+  "projectileDamage": {
+    "damage": 25
+  },
+  "experiencieReward": 15,
+  "stackSize": 20,
+  "weight": 0.3,
+  "damageType": "'ExplosionDamage_C'"
+}

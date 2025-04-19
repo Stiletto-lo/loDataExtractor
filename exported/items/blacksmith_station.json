@@ -1,0 +1,35 @@
+{
+  "category": "Crafting",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 15,
+          "name": "Nibiran Ingot"
+        },
+        {
+          "count": 10,
+          "name": "Worm Scale"
+        },
+        {
+          "count": 115,
+          "name": "Lightwood"
+        },
+        {
+          "count": 12,
+          "name": "Shardrock"
+        }
+      ]
+    }
+  ],
+  "name": "Blacksmith Station",
+  "parent": "Crafting Bench",
+  "type": "SmithingStation_C",
+  "experiencieReward": 125,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 1500
+  },
+  "translation": "Blacksmith Station",
+  "weight": 25
+}

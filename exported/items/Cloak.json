@@ -1,0 +1,36 @@
+{
+  "name": "Cloak",
+  "parent": "Fiber Headwrap",
+  "type": "T4_Cloak_C",
+  "category": "Armors",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 10,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 5,
+          "name": "Lightwood"
+        },
+        {
+          "count": 4,
+          "name": "Rubber Block"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 2
+    }
+  ],
+  "trade_price": 342.4,
+  "translation": "Cloak",
+  "experiencieReward": 100,
+  "stackSize": 100,
+  "weight": 1,
+  "durability": 420,
+  "armorInfo": {
+    "absorbing": 12,
+    "reduction": 5
+  }
+}

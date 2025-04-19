@@ -1,0 +1,46 @@
+{
+  "category": "Armors",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 6,
+          "name": "Rope"
+        }
+      ],
+      "station": "Advanced Fiberworking Station",
+      "time": 3
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 6,
+          "name": "Rope"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 2
+    }
+  ],
+  "name": "Forester's Armor",
+  "trade_price": 66.5,
+  "translation": "Forester's Armor",
+  "type": "T2_ForesterTorso_C",
+  "experiencieReward": 75,
+  "stackSize": 100,
+  "weight": 4.5,
+  "durability": 200,
+  "armorInfo": {
+    "absorbing": 8,
+    "reduction": 3,
+    "speedReduction": 9
+  }
+}

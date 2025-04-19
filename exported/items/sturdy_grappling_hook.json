@@ -1,0 +1,51 @@
+{
+  "category": "Grappling Hooks",
+  "name": "Sturdy Grappling Hook",
+  "parent": "Nomad Grappling Hook",
+  "type": "SturdyGrapplingHook_C",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 23,
+          "name": "Rope"
+        },
+        {
+          "count": 15,
+          "name": "Beeswax"
+        },
+        {
+          "count": 11,
+          "name": "Triple Stitch Fabric"
+        }
+      ],
+      "station": "Advanced Woodworking Station",
+      "time": 2
+    },
+    {
+      "ingredients": [
+        {
+          "count": 15,
+          "name": "Rope"
+        },
+        {
+          "count": 8,
+          "name": "Beeswax"
+        },
+        {
+          "count": 12,
+          "name": "Tree Sap"
+        },
+        {
+          "count": 6,
+          "name": "Triple Stitch Fabric"
+        }
+      ],
+      "station": "Artificer Woodworking Station",
+      "time": 2
+    }
+  ],
+  "trade_price": 19.4,
+  "translation": "Sturdy Grappling Hook",
+  "experiencieReward": 45
+}

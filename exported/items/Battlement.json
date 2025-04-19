@@ -1,0 +1,30 @@
+{
+  "category": "Clay",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 8,
+          "name": "Cattail"
+        },
+        {
+          "count": 3,
+          "name": "Wooden Slab"
+        },
+        {
+          "count": 10,
+          "name": "Clay"
+        }
+      ]
+    }
+  ],
+  "name": "Battlement",
+  "translation": "Battlement",
+  "type": "WallClayBattlement_C",
+  "experiencieReward": 30,
+  "weight": 7,
+  "structureInfo": {
+    "type": "Solid",
+    "hp": 20000
+  }
+}

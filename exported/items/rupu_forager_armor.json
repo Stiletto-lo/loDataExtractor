@@ -1,0 +1,28 @@
+{
+  "category": "Armors",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 25,
+          "name": "Fiber"
+        },
+        {
+          "count": 1,
+          "name": "Charcoal"
+        }
+      ]
+    }
+  ],
+  "name": "Rupu Forager Armor",
+  "translation": "Rupu Forager Armor",
+  "type": "RupuForagerArmor_C",
+  "stackSize": 100,
+  "weight": 1,
+  "durability": 1000,
+  "armorInfo": {
+    "reduction": 3,
+    "speedReduction": 2
+  },
+  "wikiVisibility": false
+}

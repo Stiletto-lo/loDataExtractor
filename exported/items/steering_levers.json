@@ -1,0 +1,21 @@
+{
+  "name": "Steering Levers",
+  "parent": "Dinghy Walker",
+  "type": "SteeringLevers_C",
+  "category": "Walker Tools",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 2,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 2,
+          "name": "Rope"
+        }
+      ]
+    }
+  ],
+  "experiencieReward": 208
+}

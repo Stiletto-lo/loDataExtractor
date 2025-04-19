@@ -1,0 +1,20 @@
+{
+  "category": "Ammo",
+  "name": "Hurler Firebomb",
+  "trade_price": 49.8,
+  "translation": "Hurler Firebomb",
+  "type": "RupuTurretBoulder_T3_C",
+  "projectileDamage": {
+    "damage": 150
+  },
+  "stackSize": 5,
+  "weight": 8,
+  "toolInfo": [
+    {
+      "toolType": "SlingshotRock",
+      "tier": 1
+    }
+  ],
+  "wikiVisibility": false,
+  "damageType": "'BoulderDamage_C'"
+}

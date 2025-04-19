@@ -1,0 +1,35 @@
+{
+  "name": "Worm Sand",
+  "parent": "Soil Excavator",
+  "type": "WormSand_C",
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Terrain: Worm Sand"
+        }
+      ],
+      "output": 10,
+      "station": "Soil Excavator",
+      "time": 60
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Terrain: Worm Sand"
+        }
+      ],
+      "output": 10,
+      "station": "Artisan Soil Auger",
+      "time": 30
+    }
+  ],
+  "trade_price": 5,
+  "translation": "Worm Sand",
+  "experiencieReward": 22,
+  "stackSize": 100,
+  "weight": 0.1
+}

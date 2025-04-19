@@ -1,0 +1,30 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 20,
+          "name": "Cattail"
+        },
+        {
+          "count": 3,
+          "name": "Wooden Slab"
+        },
+        {
+          "count": 40,
+          "name": "Clay"
+        }
+      ]
+    }
+  ],
+  "name": "Corner",
+  "type": "WallClayCorner_C",
+  "experiencieReward": 30,
+  "structureInfo": {
+    "type": "Solid",
+    "hp": 20000
+  },
+  "category": "Clay",
+  "translation": "Corner",
+  "weight": 5
+}

@@ -1,0 +1,33 @@
+{
+  "type": "DataTable",
+  "name": "LootBoxArmorsTable",
+  "objectName": "LootBoxArmorsTable",
+  "objectPath": "",
+  "tables": [
+    {
+      "name": "Fiber Shirt and Trousers",
+      "chance": 100,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "name": "LootBoxArmorsTable",
+      "objectName": "LootBoxArmorsTable",
+      "objectPath": "",
+      "drops": [
+        {
+          "name": "Brittle Bone Handwraps",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 3
+        },
+        {
+          "name": "Fiber Shirt and Trousers",
+          "chance": 100,
+          "minQuantity": 1,
+          "maxQuantity": 1
+        }
+      ]
+    }
+  ]
+}

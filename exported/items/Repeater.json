@@ -1,0 +1,30 @@
+{
+  "name": "Repeater",
+  "parent": "Basic Walker Weapons",
+  "type": "Repeater_C",
+  "description": "Unload a rapid volley of darts that are deadly against lightly armored targets. Weak against walkers and structures.",
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 5,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 25,
+          "name": "Wood"
+        }
+      ]
+    }
+  ],
+  "experiencieReward": 304,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 1150
+  }
+}

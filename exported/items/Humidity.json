@@ -1,0 +1,33 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Charcoal"
+        }
+      ],
+      "station": "HumidificationFuelConsumption",
+      "time": 14400
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Purified Water"
+        }
+      ],
+      "station": "HumidificationWaterConsumption",
+      "time": 43200
+    }
+  ],
+  "name": "Humidity",
+  "trade_price": 0.1,
+  "translation": "Humidity",
+  "type": "HumidifierConsumptionStub_C",
+  "experiencieReward": 1,
+  "stackSize": 10000,
+  "weight": 0.01,
+  "wikiVisibility": false
+}

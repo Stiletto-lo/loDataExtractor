@@ -1,0 +1,31 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 30,
+          "name": "Wood"
+        },
+        {
+          "count": 45,
+          "name": "Stone"
+        },
+        {
+          "count": 30,
+          "name": "Fiber"
+        },
+        {
+          "count": 6,
+          "name": "Earth Wax"
+        }
+      ]
+    }
+  ],
+  "name": "Small Scattershot Gun",
+  "parent": "Gun Pod",
+  "type": "GunPodScattershotGun_C",
+  "experiencieReward": 366,
+  "translation": "Small Scattershot Gun",
+  "weight": 45
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Obsidian Pot",
+  "parent": "Advanced Constructions",
+  "type": "ObsidianContainerSmall_C",
+  "category": "Containers",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 38,
+          "name": "Obsidian"
+        },
+        {
+          "count": 10,
+          "name": "Nomad Cloth"
+        },
+        {
+          "count": 30,
+          "name": "Redwood Wood"
+        },
+        {
+          "count": 20,
+          "name": "Rupu Vine"
+        }
+      ]
+    }
+  ],
+  "experiencieReward": 60,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 3000
+  }
+}

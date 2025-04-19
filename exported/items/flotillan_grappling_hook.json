@@ -1,0 +1,31 @@
+{
+  "category": "Grappling Hooks",
+  "name": "Flotillan Grappling Hook",
+  "parent": "Nomad Grappling Hook",
+  "type": "FlotillanGrapplingHook_C",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 30,
+          "name": "Lightwood"
+        },
+        {
+          "count": 17,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 5,
+          "name": "Leather"
+        },
+        {
+          "count": 20,
+          "name": "Tallow"
+        }
+      ]
+    }
+  ],
+  "trade_price": 16,
+  "translation": "Flotillan Grappling Hook",
+  "experiencieReward": 76
+}

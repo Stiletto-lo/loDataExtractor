@@ -1,0 +1,22 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Nibiran-tipped Bolt"
+        },
+        {
+          "count": 10,
+          "name": "Rope"
+        }
+      ],
+      "station": "Artificer Woodworking Station",
+      "time": 5
+    }
+  ],
+  "name": "Nibirian Harpoon",
+  "parent": "Nibiran-tipped Bolt",
+  "translation": "Nibirian Harpoon",
+  "type": "NibirianHarpoon_C"
+}

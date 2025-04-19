@@ -1,0 +1,78 @@
+{
+  "name": "Net",
+  "parent": "Net Thrower",
+  "type": "Net_C",
+  "description": "Ammo for net thrower. Entangles small structures, mannable weapons, walker legs and wings.",
+  "category": "Ammo",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 35,
+          "name": "Rupu Vine"
+        },
+        {
+          "count": 10,
+          "name": "Stone"
+        },
+        {
+          "count": 3,
+          "name": "Rupu Pelt"
+        }
+      ],
+      "station": "Woodworking Station",
+      "time": 10
+    },
+    {
+      "ingredients": [
+        {
+          "count": 35,
+          "name": "Rupu Vine"
+        },
+        {
+          "count": 10,
+          "name": "Stone"
+        },
+        {
+          "count": 3,
+          "name": "Rupu Pelt"
+        }
+      ],
+      "station": "Advanced Woodworking Station",
+      "time": 10
+    },
+    {
+      "ingredients": [
+        {
+          "count": 35,
+          "name": "Rupu Vine"
+        },
+        {
+          "count": 10,
+          "name": "Stone"
+        },
+        {
+          "count": 3,
+          "name": "Rupu Pelt"
+        }
+      ],
+      "station": "Artificer Woodworking Station",
+      "time": 10
+    }
+  ],
+  "trade_price": 10.4,
+  "translation": "Net",
+  "projectileDamage": {
+    "damage": 5
+  },
+  "experiencieReward": 1,
+  "stackSize": 50,
+  "weight": 1.2,
+  "toolInfo": [
+    {
+      "toolType": "Net",
+      "tier": 0
+    }
+  ],
+  "damageType": "'NetDamage_C'"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Hose Station",
+  "parent": "Advanced Walker Weapons",
+  "type": "HoseStation_C",
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 134,
+          "name": "Wood"
+        },
+        {
+          "count": 38,
+          "name": "Stone"
+        },
+        {
+          "count": 80,
+          "name": "Fiber"
+        },
+        {
+          "count": 40,
+          "name": "Purified Water"
+        }
+      ]
+    }
+  ],
+  "experiencieReward": 203,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 5000
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Light Backpack",
+  "parent": "Foraging Pouch",
+  "type": "SmallBackpack_C",
+  "category": "Equipment",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 4,
+          "name": "Rupu Vine"
+        },
+        {
+          "count": 12,
+          "name": "Hide"
+        }
+      ]
+    }
+  ],
+  "trade_price": 5.6,
+  "translation": "Light Backpack",
+  "experiencieReward": 55,
+  "stackSize": 100,
+  "weight": 2.8,
+  "durability": 120
+}

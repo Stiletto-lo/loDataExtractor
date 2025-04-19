@@ -1,0 +1,45 @@
+{
+  "category": "Armors",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 18,
+          "name": "Cattail"
+        },
+        {
+          "count": 8,
+          "name": "Fiber Weave"
+        }
+      ],
+      "station": "Advanced Fiberworking Station",
+      "time": 3
+    },
+    {
+      "ingredients": [
+        {
+          "count": 18,
+          "name": "Cattail"
+        },
+        {
+          "count": 8,
+          "name": "Fiber Weave"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 2
+    }
+  ],
+  "name": "Forester's Sandals",
+  "translation": "Forester's Sandals",
+  "type": "T2_ForesterBoots_C",
+  "experiencieReward": 40,
+  "stackSize": 100,
+  "weight": 1.3,
+  "durability": 200,
+  "armorInfo": {
+    "absorbing": 6,
+    "reduction": 1,
+    "speedReduction": 3
+  }
+}

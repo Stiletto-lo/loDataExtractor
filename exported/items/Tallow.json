@@ -1,0 +1,28 @@
+{
+  "name": "Tallow",
+  "parent": "Purification Station",
+  "type": "Fuel_C",
+  "category": "Liquids",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Animal Fat"
+        },
+        {
+          "count": 10,
+          "name": "Phosphorus"
+        }
+      ],
+      "output": 5,
+      "station": "Purification Station",
+      "time": 60
+    }
+  ],
+  "trade_price": 3.7,
+  "translation": "Tallow",
+  "experiencieReward": 3,
+  "stackSize": 100,
+  "weight": 0.5
+}

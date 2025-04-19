@@ -1,0 +1,29 @@
+{
+  "category": "Furniture",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 12,
+          "name": "Wood"
+        },
+        {
+          "count": 15,
+          "name": "Fiber"
+        },
+        {
+          "count": 4,
+          "name": "Wood Shaft"
+        }
+      ]
+    }
+  ],
+  "name": "Stairs 2",
+  "type": "Arena_Stairs_2_C",
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 1500
+  },
+  "translation": "Stairs 2",
+  "weight": 20
+}

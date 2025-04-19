@@ -1,0 +1,27 @@
+{
+  "category": "Grappling Hooks",
+  "name": "Nomad Grappling Hook",
+  "parent": "MakeshiftGrapplingHook",
+  "type": "FixedGrapplingHook_C",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 35,
+          "name": "Fiber"
+        },
+        {
+          "count": 22,
+          "name": "Wood"
+        },
+        {
+          "count": 4,
+          "name": "Wood Shaft"
+        }
+      ]
+    }
+  ],
+  "trade_price": 10,
+  "translation": "Nomad Grappling Hook",
+  "experiencieReward": 38
+}

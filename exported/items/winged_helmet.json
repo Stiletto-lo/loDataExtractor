@@ -1,0 +1,40 @@
+{
+  "name": "Winged Helmet",
+  "parent": "Cloak",
+  "type": "WingedHelmet_C",
+  "category": "Armors",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 2,
+          "name": "Iron Ingot"
+        },
+        {
+          "count": 2,
+          "name": "EucalyptusLeaf"
+        },
+        {
+          "count": 6,
+          "name": "Leather"
+        },
+        {
+          "count": 22,
+          "name": "Lightwood"
+        }
+      ],
+      "station": "Artisan Fiberworking Station",
+      "time": 120
+    }
+  ],
+  "trade_price": 2.4,
+  "translation": "Winged Helmet",
+  "experiencieReward": 10,
+  "stackSize": 100,
+  "weight": 0.2,
+  "durability": 120,
+  "armorInfo": {
+    "absorbing": 16,
+    "reduction": 8
+  }
+}

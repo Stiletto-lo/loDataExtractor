@@ -1,0 +1,598 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Gasket"
+        },
+        {
+          "count": 1,
+          "name": "Spring"
+        },
+        {
+          "count": 1,
+          "name": "Spline"
+        }
+      ],
+      "station": "Module Fabricator",
+      "time": 30
+    }
+  ],
+  "name": "Lumberjack Module",
+  "translation": "Lumberjack Module",
+  "type": "LegLoggingBoost_C",
+  "experiencieReward": 65,
+  "weight": 0.24,
+  "moduleInfo": {
+    "max": 20,
+    "increase": 0.1
+  },
+  "drops": [
+    {
+      "location": "Armor Strongbox",
+      "chance": 0.11428572000000001,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Equipment Strongbox",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Modules Strongbox",
+      "chance": 0.11428572000000001,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Fragment Strongbox",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Tools Strongbox",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Tools and Equipment Strongbox",
+      "chance": 0.22857144000000001,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Weapons Strongbox",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Weapon Strongbox",
+      "chance": 0.11428572000000001,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "AC Relic 1",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "AC Relic 2",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "DesertClam",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "AmmoBox T1",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "BigHotspotLoot T1",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "EasyRupuCamp T1",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Forerunner (Easy)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Scavenger (Easy)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Thug (Easy)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Cowardly Rupu",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Green Rupu",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Yellow Rupu",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Hero",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Warrior",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Berserker",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Forerunner",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Oracle",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Overseer",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Priestess",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Prophet",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Tar Dweller",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Zharvakko",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "HardRupuCamp T1",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Sentinel (Easy)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "HotspotLoot T1",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "MediumRupuCamp T1",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Harasser (Easy)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Skirmisher (Easy)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Phemke T1",
+      "chance": 0.17142858,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "TreasureChest T1",
+      "chance": 0.11428572000000001,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "AmmoBox T2",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "BasketLoot T2 AC",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "BigHotspotLoot T2",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "EasyRupuCamp T2",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Grave Digger (Medium)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Hermit (Medium)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Skirmisher (Medium)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "HardRupuCamp T2",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Shaman (Medium)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Marshland Stalker",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Raider",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Matriarch",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Priestess (Medium)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Zealot (Medium)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "HotspotLootWindmill T2 AC",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "HotspotLoot T2",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "HotspotLoot T2 AC",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "LargeNurr T2",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "MediumRupuCamp T2",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Bounty Hunter",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Dunestalker (Medium)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Forager (Medium)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Harasser (Medium)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Hazraki (Medium)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Plainstrider (Medium)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "White Death (Medium)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Nurr T2",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "TreasureChest T2",
+      "chance": 0.11428572000000001,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "AmmoBox T3",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "BigHotspotLoot T3",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "EasyRupuCamp T3",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Ashdweller",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Drudge",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Hunter",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Plainstrider (Hard)",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Rabble",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Scuttler",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "HardRupuCamp T3",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "HotspotLoot T3",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "MediumRupuCamp T3",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Seeker",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Okkam T3",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Papak T3",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "TreasureChest T3",
+      "chance": 0.11428572000000001,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "AmmoBox T4",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "BigHotspotLoot T4",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "EasyRupuCamp T4",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "EasyRupu T4",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "GoGo T4",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "HardRupuCamp T4",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Rupu Firebrand",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "HotspotLoot T4",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Koa T4",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "MediumRupuCamp T4",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "MediumRupu T4",
+      "chance": 0.057142860000000004,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "TreasureChest T4",
+      "chance": 0.11428572000000001,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "category": "Weapons",
+  "name": "Rupu Stone Mace",
+  "translation": "Rupu Stone Mace",
+  "type": "RupuStoneMace_C",
+  "stackSize": 100,
+  "weight": 4.58,
+  "durability": 300,
+  "weaponInfo": {
+    "weaponLength": 92,
+    "damage": 38,
+    "penetration": 10
+  },
+  "wikiVisibility": false,
+  "damageType": "'RupuMeleeBluntDamage_C'"
+}

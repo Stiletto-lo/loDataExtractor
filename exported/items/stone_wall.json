@@ -1,0 +1,32 @@
+{
+  "category": "Stone Structures",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Wooden Slab"
+        },
+        {
+          "count": 10,
+          "name": "Stone"
+        },
+        {
+          "count": 1,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 3,
+          "name": "Tree Sap"
+        }
+      ]
+    }
+  ],
+  "name": "Stone Wall",
+  "type": "WallStone_C",
+  "experiencieReward": 30,
+  "structureInfo": {
+    "type": "Solid",
+    "hp": 10000
+  }
+}

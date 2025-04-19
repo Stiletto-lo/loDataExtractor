@@ -1,0 +1,39 @@
+{
+  "name": "Fire Bomb",
+  "parent": "Slingshot",
+  "type": "FireBomb_C",
+  "category": "Ammo",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 4,
+          "name": "Lava"
+        },
+        {
+          "count": 3,
+          "name": "Cotton"
+        },
+        {
+          "count": 1,
+          "name": "Gelatinous Goo"
+        },
+        {
+          "count": 1,
+          "name": "Phosphorus"
+        }
+      ],
+      "station": "Clay Pot",
+      "time": 60
+    }
+  ],
+  "trade_price": 38,
+  "translation": "Fire Bomb",
+  "projectileDamage": {
+    "damage": 10,
+    "penetration": 1
+  },
+  "stackSize": 10,
+  "weight": 3,
+  "damageType": "'FireDamage_C'"
+}

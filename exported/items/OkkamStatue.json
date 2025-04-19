@@ -1,0 +1,21 @@
+{
+  "name": "OkkamStatue",
+  "translation": "OkkamStatue",
+  "type": "OkkamStatue_C",
+  "category": "OkkamStatue",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 300,
+          "name": "Stone"
+        }
+      ]
+    }
+  ],
+  "experiencieReward": 6,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 250
+  }
+}

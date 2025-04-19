@@ -1,0 +1,28 @@
+{
+  "category": "Heavy Wood Structures",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 35,
+          "name": "Redwood Wood"
+        },
+        {
+          "count": 5,
+          "name": "Iron Ingot"
+        },
+        {
+          "count": 1,
+          "name": "Bone Glue"
+        }
+      ]
+    }
+  ],
+  "name": "Heavy Wood Door",
+  "type": "WallWoodHeavyDoor_C",
+  "experiencieReward": 44,
+  "structureInfo": {
+    "type": "Reinforced",
+    "hp": 40000
+  }
+}

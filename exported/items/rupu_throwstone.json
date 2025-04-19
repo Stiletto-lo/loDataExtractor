@@ -1,0 +1,21 @@
+{
+  "category": "Weapons",
+  "name": "Rupu Throwstone",
+  "trade_price": 16.9,
+  "translation": "Rupu Throwstone",
+  "type": "RupuThrowstone_C",
+  "projectileDamage": {
+    "damage": 32
+  },
+  "experiencieReward": 3,
+  "stackSize": 5,
+  "weight": 0.3,
+  "toolInfo": [
+    {
+      "toolType": "Scattershot",
+      "tier": 1
+    }
+  ],
+  "wikiVisibility": false,
+  "damageType": "'RupuJavelinDamage_C'"
+}

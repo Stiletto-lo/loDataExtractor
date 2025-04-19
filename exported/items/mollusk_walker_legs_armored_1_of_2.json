@@ -1,0 +1,33 @@
+{
+  "category": "Walker Parts",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 42,
+          "name": "Wood"
+        },
+        {
+          "count": 50,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 25,
+          "name": "Chitin Plate"
+        },
+        {
+          "count": 4,
+          "name": "Bone Glue"
+        }
+      ]
+    }
+  ],
+  "name": "Mollusk Walker Legs Armored (1 of 2)",
+  "type": "MolluskLegs_T2_C",
+  "structureInfo": {
+    "type": "Medium",
+    "hp": 3600
+  },
+  "translation": "Mollusk Walker Legs Armored",
+  "weight": 9.75
+}

@@ -1,0 +1,29 @@
+{
+  "category": "Furniture",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Wood"
+        },
+        {
+          "count": 8,
+          "name": "Fiber"
+        },
+        {
+          "count": 2,
+          "name": "Wood Shaft"
+        }
+      ]
+    }
+  ],
+  "name": "Stairs 3",
+  "type": "Arena_Stairs_3_C",
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 1500
+  },
+  "translation": "Stairs 3",
+  "weight": 20
+}

@@ -1,0 +1,30 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 35,
+          "name": "Redwood Wood"
+        },
+        {
+          "count": 5,
+          "name": "Iron Ingot"
+        },
+        {
+          "count": 1,
+          "name": "Bone Glue"
+        }
+      ]
+    }
+  ],
+  "name": "Double Slit Wall",
+  "type": "WallWoodHeavyWindow2_C",
+  "experiencieReward": 46,
+  "structureInfo": {
+    "type": "Reinforced",
+    "hp": 40000
+  },
+  "category": "Wood: heavy",
+  "translation": "Double Slit Wall",
+  "weight": 3
+}

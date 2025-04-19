@@ -1,0 +1,34 @@
+{
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "BrineWater"
+        }
+      ],
+      "output": 3,
+      "station": "Clay Pot",
+      "time": 20
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "SaltRock_GroundSource"
+        }
+      ],
+      "output": 3,
+      "station": "Artisan Soil Auger",
+      "time": 30
+    }
+  ],
+  "name": "Salt Rock",
+  "trade_price": 0.1,
+  "translation": "Salt Rock",
+  "type": "Salt_C",
+  "experiencieReward": 3,
+  "stackSize": 100,
+  "weight": 0.23
+}

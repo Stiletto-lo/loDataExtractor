@@ -1,0 +1,56 @@
+{
+  "name": "Desert Mule",
+  "parent": "Vision Powder",
+  "type": "DesertMule_C",
+  "category": "Vitamins",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Thornberry"
+        },
+        {
+          "count": 6,
+          "name": "Aloe Gel"
+        },
+        {
+          "count": 6,
+          "name": "Mushroom Flesh"
+        },
+        {
+          "count": 1,
+          "name": "Glass"
+        }
+      ],
+      "station": "Camp Fire",
+      "time": 135
+    },
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Thornberry"
+        },
+        {
+          "count": 6,
+          "name": "Aloe Gel"
+        },
+        {
+          "count": 6,
+          "name": "Mushroom Flesh"
+        },
+        {
+          "count": 1,
+          "name": "Glass"
+        }
+      ],
+      "station": "Clay Pot",
+      "time": 135
+    }
+  ],
+  "trade_price": 34.5,
+  "translation": "Desert Mule",
+  "stackSize": 100,
+  "weight": 0.6
+}

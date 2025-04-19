@@ -1,0 +1,25 @@
+{
+  "category": "Furniture",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 20,
+          "name": "Wood"
+        },
+        {
+          "count": 20,
+          "name": "Fiber"
+        }
+      ]
+    }
+  ],
+  "name": "Crate 1",
+  "type": "Throne_Crates_01_C",
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 200
+  },
+  "translation": "Crate 1",
+  "weight": 20
+}

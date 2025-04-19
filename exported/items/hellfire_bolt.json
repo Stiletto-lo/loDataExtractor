@@ -1,0 +1,36 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "FireBolt"
+        },
+        {
+          "count": 5,
+          "name": "Tar"
+        },
+        {
+          "count": 5,
+          "name": "Lava Fuel"
+        }
+      ],
+      "station": "Artificer Woodworking Station",
+      "time": 5
+    }
+  ],
+  "name": "Hellfire Bolt",
+  "parent": "FireBolt",
+  "trade_price": 175.3,
+  "translation": "Hellfire Bolt",
+  "type": "HellfireBolt_C",
+  "projectileDamage": {
+    "damage": 3200
+  },
+  "toolInfo": [
+    {
+      "toolType": "BallistaHarpoon",
+      "tier": 2
+    }
+  ]
+}

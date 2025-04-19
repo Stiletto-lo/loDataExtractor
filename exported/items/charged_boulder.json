@@ -1,0 +1,80 @@
+{
+  "category": "Ammo",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "MeteorCore"
+        },
+        {
+          "count": 25,
+          "name": "Stone"
+        },
+        {
+          "count": 5,
+          "name": "Fiber Weave"
+        }
+      ],
+      "station": "Woodworking Station",
+      "time": 15
+    },
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "MeteorCore"
+        },
+        {
+          "count": 25,
+          "name": "Stone"
+        },
+        {
+          "count": 5,
+          "name": "Fiber Weave"
+        }
+      ],
+      "station": "Advanced Woodworking Station",
+      "time": 10
+    },
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "MeteorCore"
+        },
+        {
+          "count": 25,
+          "name": "Stone"
+        },
+        {
+          "count": 5,
+          "name": "Fiber Weave"
+        }
+      ],
+      "station": "Artificer Woodworking Station",
+      "time": 5
+    }
+  ],
+  "name": "Charged Boulder",
+  "parent": "Slingshot",
+  "trade_price": 150,
+  "translation": "Charged Boulder",
+  "type": "ChargedBoulder_C",
+  "projectileDamage": {
+    "damage": 250,
+    "penetration": 10,
+    "effectivenessVsSoak": 70,
+    "effectivenessVsReduce": 70
+  },
+  "experiencieReward": 300,
+  "stackSize": 5,
+  "weight": 10,
+  "toolInfo": [
+    {
+      "toolType": "CatapultRock",
+      "tier": 3
+    }
+  ],
+  "damageType": "'HardenedBoulderDamage_C'"
+}

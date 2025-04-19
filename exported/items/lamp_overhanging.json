@@ -1,0 +1,30 @@
+{
+  "category": "Furniture",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 25,
+          "name": "Wood"
+        },
+        {
+          "count": 4,
+          "name": "Stone"
+        },
+        {
+          "count": 12,
+          "name": "Animal Fat"
+        }
+      ]
+    }
+  ],
+  "name": "Lamp Overhanging",
+  "type": "Lamp4_C",
+  "experiencieReward": 6,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 150
+  },
+  "translation": "Lamp Overhanging",
+  "weight": 1
+}

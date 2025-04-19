@@ -1,0 +1,29 @@
+{
+  "name": "Water Condenser",
+  "parent": "Stone Humidifier",
+  "type": "WaterCondenser_C",
+  "category": "Crafting",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Ceramic Shard"
+        },
+        {
+          "count": 5,
+          "name": "Tar"
+        },
+        {
+          "count": 12,
+          "name": "Redwood Wood"
+        }
+      ]
+    }
+  ],
+  "experiencieReward": 78,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 3000
+  }
+}

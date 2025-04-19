@@ -6,15 +6,33 @@
  */
 
 const fs = require("node:fs");
+const path = require("node:path");
 const dataParser = require("../dataParsers");
 const translator = require("../translator");
 const dataTableTemplate = require("../../templates/datatable");
+const lootTableTemplate = require("../../templates/lootTable");
 const dropDataTemplate = require("../../templates/dropData");
 const creatureTemplate = require("../../templates/creature");
 const utilityFunctions = require("./utilityFunctions");
 
 // Environment configuration
 const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
+
+// Output directories
+const OUTPUT_DIR = path.join(__dirname, "../../exported");
+const DATATABLES_DIR = path.join(OUTPUT_DIR, "datatables");
+const LOOTTABLES_DIR = path.join(OUTPUT_DIR, "loot_tables");
+
+// Ensure output directories exist
+if (!fs.existsSync(OUTPUT_DIR)) {
+	fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+}
+if (!fs.existsSync(DATATABLES_DIR)) {
+	fs.mkdirSync(DATATABLES_DIR, { recursive: true });
+}
+if (!fs.existsSync(LOOTTABLES_DIR)) {
+	fs.mkdirSync(LOOTTABLES_DIR, { recursive: true });
+}
 
 /**
  * Safely reads and parses a JSON file
@@ -51,12 +69,9 @@ const createDropItem = (name, lootItemData) => {
 	const drop = { ...dropDataTemplate };
 	drop.name = name;
 
-	// Only add these properties if EXTRACT_ALL_DATA is true and they exist
-	if (EXTRACT_ALL_DATA) {
-		if (lootItemData.Chance) drop.chance = lootItemData.Chance;
-		if (lootItemData.MinQuantity) drop.minQuantity = lootItemData.MinQuantity;
-		if (lootItemData.MaxQuantity) drop.maxQuantity = lootItemData.MaxQuantity;
-	}
+	if (lootItemData.Chance) { drop.chance = lootItemData.Chance; }
+	if (lootItemData.MinQuantity) { drop.minQuantity = lootItemData.MinQuantity; }
+	if (lootItemData.MaxQuantity) { drop.maxQuantity = lootItemData.MaxQuantity; }
 
 	return drop;
 };
@@ -135,8 +150,23 @@ const parseLootTable = (filePath) => {
 
 	const dataTable = { ...dataTableTemplate };
 	dataTable.name = dataParser.parseName(translator, firstEntry.Name);
+	dataTable.objectName = firstEntry.Name;
+	dataTable.objectPath = firstEntry.ObjectPath || "";
 	const lootItems = firstEntry.Rows;
-	const dataTableItems = [];
+	const tableItems = [];
+
+	// Create a loot table for this data table
+	const lootTable = { ...lootTableTemplate };
+	lootTable.name = dataTable.name;
+	lootTable.objectName = firstEntry.Name;
+	lootTable.objectPath = firstEntry.ObjectPath || "";
+
+	// Store loot table information for creature processing
+	const lootTables = utilityFunctions.getAllLootTables ? utilityFunctions.getAllLootTables() : {};
+	lootTables[firstEntry.Name] = {
+		name: dataTable.name,
+		drops: []
+	};
 
 	for (const key of Object.keys(lootItems)) {
 		const currentItem = lootItems[key];
@@ -148,16 +178,50 @@ const parseLootTable = (filePath) => {
 		}
 
 		const resolvedName = resolveItemName(validation.baseName, currentItem);
-		const hasDrop = dataTable.dropItems.some((d) => d.name === resolvedName);
+		// Check if this item already exists in the tables array
+		const hasDrop = tableItems.some((d) => d.name === resolvedName);
 
 		if (!hasDrop && resolvedName !== dataTable.name) {
 			const drop = createDropItem(resolvedName, currentItem);
-			dataTableItems.push(drop);
+			tableItems.push(drop);
+
+			// Add to the loot table drops array
+			lootTable.drops.push(drop);
+
+			// Add to the loot tables collection for creature processing
+			lootTables[firstEntry.Name].drops.push({
+				name: resolvedName,
+				chance: currentItem.Chance,
+				minQuantity: currentItem.MinQuantity,
+				maxQuantity: currentItem.MaxQuantity,
+			});
 		}
 	}
 
-	dataTable.dropItems = dataTableItems;
+	dataTable.tables = tableItems; // Use tables property instead of dropItems
+
+	// Update loot tables in the utility functions if the function exists
+	if (utilityFunctions.setLootTables) {
+		utilityFunctions.setLootTables(lootTables);
+	}
+
+	// Add the loot table to the data table's tables array
+	dataTable.tables.push(lootTable);
+
+	// Add to the datatables collection
 	utilityFunctions.getAllDatatables().push(dataTable);
+
+	// Export to the datatables directory
+	const fileName = dataTable.name.replace(/\s+/g, '_').toLowerCase();
+	const outputFilePath = path.join(DATATABLES_DIR, `${fileName}.json`);
+	fs.writeFileSync(outputFilePath, JSON.stringify(dataTable, null, 2));
+
+	// Export loot table information to the loot_tables directory
+	if (lootTables[firstEntry.Name]) {
+		const lootTablePath = path.join(LOOTTABLES_DIR, `${fileName}.json`);
+		fs.writeFileSync(lootTablePath, JSON.stringify(lootTables[firstEntry.Name], null, 2));
+	}
+
 	return true;
 };
 
@@ -202,16 +266,66 @@ const filterRelevantObjects = (objects) => {
  * @param {Object} additionalInfo - The additional info object
  * @returns {Object} - Extracted creature properties
  */
-const extractCreatureData = (additionalInfo) => {
-	if (!additionalInfo) return {};
+const extractCreatureData = (additionalInfo, objectData) => {
+	if (!additionalInfo) {
+		return {};
+	}
 
-	return {
+	// Extract basic creature data
+	const result = {
 		experiencie: additionalInfo?.Properties?.ExperienceAward,
 		health: additionalInfo?.Properties?.MaxHealth,
 		lootTable: dataParser.parseObjectPath(
 			additionalInfo?.Properties?.Loot?.ObjectPath,
 		),
 	};
+
+	// Extract additional data if available
+	if (objectData) {
+		// Extract tier information from type name or path
+		const typeStr = objectData.Type || "";
+		if (typeStr.includes("T1_") || typeStr.includes("Tier1")) {
+			result.tier = "T1";
+		} else if (typeStr.includes("T2_") || typeStr.includes("Tier2")) {
+			result.tier = "T2";
+		} else if (typeStr.includes("T3_") || typeStr.includes("Tier3")) {
+			result.tier = "T3";
+		} else if (typeStr.includes("T4_") || typeStr.includes("Tier4")) {
+			result.tier = "T4";
+		}
+
+		// Extract category based on creature type
+		if (typeStr.includes("Rupu")) {
+			result.category = "Rupu";
+		} else if (typeStr.includes("Nurr")) {
+			result.category = "Nurr";
+		} else if (typeStr.includes("Killin")) {
+			result.category = "Killin";
+		} else if (typeStr.includes("Okkam")) {
+			result.category = "Okkam";
+		} else if (typeStr.includes("Papak")) {
+			result.category = "Papak";
+		} else if (typeStr.includes("Phemke")) {
+			result.category = "Phemke";
+		}
+
+		// Extract description if available
+		if (objectData?.Properties?.Description?.LocalizedString) {
+			result.description = objectData.Properties.Description.LocalizedString;
+		}
+	}
+
+	// Extract drop chance and quantity if available
+	if (additionalInfo?.Properties?.Loot?.Tables && additionalInfo.Properties.Loot.Tables.length > 0) {
+		const lootTable = additionalInfo.Properties.Loot.Tables[0];
+		result.dropChance = lootTable.RunChance || 1.0;
+		result.dropQuantity = {
+			min: lootTable.MinIterations || 1,
+			max: lootTable.MaxIterations || 1
+		};
+	}
+
+	return result;
 };
 
 /**
@@ -244,16 +358,59 @@ const parseLootSites = (filePath) => {
 
 	translator.addLootSiteTranslation(name, translation);
 
+	// Find additional components that might contain useful information
+	const mobVariationComponent = jsonData.find((o) => o.Type === "MistHumanoidMobVariationComponent");
+	const attackComponent = jsonData.find((o) => o.Type?.includes("AttackComponent"));
+	const resistanceComponent = jsonData.find((o) => o.Type?.includes("ResistanceComponent"));
+
+	// Extract creature data with enhanced information
+	const creatureData = extractCreatureData(mobVariationComponent, firstObject);
+
+	// Add attack information if available
+	if (attackComponent?.Properties) {
+		creatureData.attacks = {
+			damage: attackComponent.Properties.Damage || undefined,
+			range: attackComponent.Properties.Range || undefined,
+			attackSpeed: attackComponent.Properties.AttackSpeed || undefined
+		};
+	}
+
+	// Add resistance information if available
+	if (resistanceComponent?.Properties) {
+		creatureData.resistances = resistanceComponent.Properties.Resistances || undefined;
+		creatureData.weaknesses = resistanceComponent.Properties.Weaknesses || undefined;
+	}
+
+	// Extract equipment information if available
+	const equipmentComponent = jsonData.find((o) => o.Type?.includes("EquipmentComponent"));
+	if (equipmentComponent?.Properties?.Equipment) {
+		creatureData.equipment = equipmentComponent.Properties.Equipment;
+	}
+
+	// Create the creature object with all available information
 	const creature = {
 		...creatureTemplate,
 		type: name,
 		name: translation,
-		...extractCreatureData(
-			jsonData.find((o) => o.Type === "MistHumanoidMobVariationComponent"),
-		),
+		...creatureData
 	};
 
+	// Add to the creatures collection
 	utilityFunctions.getCreatures().push(creature);
+
+	// Export creature data with loot information
+	if (creature.lootTable) {
+		const fileName = creature.name.replace(/\s+/g, '_').toLowerCase();
+		const filePath = path.join(OUTPUT_DIR, "creatures", `${fileName}.json`);
+
+		// Ensure creatures directory exists
+		if (!fs.existsSync(path.join(OUTPUT_DIR, "creatures"))) {
+			fs.mkdirSync(path.join(OUTPUT_DIR, "creatures"), { recursive: true });
+		}
+
+		fs.writeFileSync(filePath, JSON.stringify(creature, null, 2));
+	}
+
 	return true;
 };
 

@@ -1,0 +1,29 @@
+{
+  "category": "Grappling Hooks",
+  "name": "Long Grappling Hook",
+  "parent": "Nomad Grappling Hook",
+  "type": "LongGrapplingHook_C",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 18,
+          "name": "Rope"
+        },
+        {
+          "count": 29,
+          "name": "Earth Wax"
+        },
+        {
+          "count": 15,
+          "name": "Wood Shaft"
+        }
+      ],
+      "station": "Artificer Woodworking Station",
+      "time": 2
+    }
+  ],
+  "trade_price": 23.5,
+  "translation": "Long Grappling Hook",
+  "experiencieReward": 25
+}

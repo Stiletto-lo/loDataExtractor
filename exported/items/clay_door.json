@@ -1,0 +1,28 @@
+{
+  "category": "Clay Structures",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 20,
+          "name": "Cattail"
+        },
+        {
+          "count": 3,
+          "name": "Wooden Slab"
+        },
+        {
+          "count": 20,
+          "name": "Clay"
+        }
+      ]
+    }
+  ],
+  "name": "Clay Door",
+  "type": "WallClayDoor_C",
+  "experiencieReward": 22,
+  "structureInfo": {
+    "type": "Solid",
+    "hp": 20000
+  }
+}

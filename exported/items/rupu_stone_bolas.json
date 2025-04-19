@@ -1,0 +1,21 @@
+{
+  "category": "Ammo",
+  "name": "Rupu Stone Bolas",
+  "trade_price": 5,
+  "translation": "Rupu Stone Bolas",
+  "type": "RupuStoneBolas_T2_C",
+  "projectileDamage": {
+    "damage": 60
+  },
+  "experiencieReward": 15,
+  "stackSize": 20,
+  "weight": 0.3,
+  "toolInfo": [
+    {
+      "toolType": "BallistaHarpoon",
+      "tier": 2
+    }
+  ],
+  "wikiVisibility": false,
+  "damageType": "'OrbDamage_C'"
+}

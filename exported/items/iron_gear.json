@@ -1,0 +1,31 @@
+{
+  "name": "Iron Gear",
+  "parent": "Reinforced Gear",
+  "type": "IronGear_C",
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 50,
+          "name": "Redwood Wood"
+        },
+        {
+          "count": 10,
+          "name": "Tree Sap"
+        },
+        {
+          "count": 10,
+          "name": "Iron Ore"
+        }
+      ],
+      "station": "Artificer Woodworking Station",
+      "time": 30
+    }
+  ],
+  "trade_price": 700,
+  "translation": "Iron Gear",
+  "experiencieReward": 25,
+  "stackSize": 100,
+  "weight": 0.55
+}

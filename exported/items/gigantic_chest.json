@@ -1,0 +1,31 @@
+{
+  "category": "Containers",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 25,
+          "name": "Iron Ingot"
+        },
+        {
+          "count": 85,
+          "name": "Stone"
+        },
+        {
+          "count": 110,
+          "name": "Fiber"
+        }
+      ]
+    }
+  ],
+  "name": "Gigantic Chest",
+  "parent": "Large Chest",
+  "type": "ChestGigantic_C",
+  "experiencieReward": 32,
+  "structureInfo": {
+    "type": "Medium",
+    "hp": 23437.5
+  },
+  "translation": "Gigantic Chest",
+  "weight": 12
+}

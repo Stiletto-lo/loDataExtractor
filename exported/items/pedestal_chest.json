@@ -1,0 +1,29 @@
+{
+  "category": "Containers",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 24,
+          "name": "Fiber"
+        },
+        {
+          "count": 2,
+          "name": "Bone Glue"
+        },
+        {
+          "count": 40,
+          "name": "Wood Shaft"
+        }
+      ]
+    }
+  ],
+  "name": "Pedestal Chest",
+  "type": "ChestPedestal_C",
+  "experiencieReward": 50,
+  "structureInfo": {
+    "hp": 5000
+  },
+  "translation": "Pedestal Chest",
+  "weight": 23
+}

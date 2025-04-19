@@ -1,0 +1,30 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 20,
+          "name": "Redwood Wood"
+        },
+        {
+          "count": 10,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 20,
+          "name": "Rope"
+        }
+      ]
+    }
+  ],
+  "name": "Ballista - Tier 4",
+  "type": "Ballista_T4_C",
+  "experiencieReward": 78,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 5000
+  },
+  "translation": "Ballista - Tier 4",
+  "weight": 50
+}

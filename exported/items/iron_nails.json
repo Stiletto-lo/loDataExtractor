@@ -1,0 +1,24 @@
+{
+  "name": "Iron Nails",
+  "parent": "Lathe",
+  "type": "IronNails_C",
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Iron Ingot"
+        }
+      ],
+      "output": 25,
+      "station": "Lathe",
+      "time": 15
+    }
+  ],
+  "trade_price": 0.4,
+  "translation": "Iron Nails",
+  "experiencieReward": 8,
+  "stackSize": 100,
+  "weight": 0.28
+}

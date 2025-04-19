@@ -1,0 +1,34 @@
+{
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 3,
+          "name": "Earth Wax"
+        },
+        {
+          "count": 15,
+          "name": "Rupu Pelt"
+        },
+        {
+          "count": 15,
+          "name": "Rope"
+        },
+        {
+          "count": 45,
+          "name": "Wood"
+        }
+      ]
+    }
+  ],
+  "name": "Rupu Sling",
+  "parent": "Defensive Tower",
+  "type": "RupuSling_C",
+  "experiencieReward": 44,
+  "structureInfo": {
+    "hp": 3520
+  },
+  "translation": "Rupu Sling",
+  "weight": 12.71
+}

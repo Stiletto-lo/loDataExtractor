@@ -1,0 +1,31 @@
+{
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 2,
+          "name": "Fiber Weave"
+        },
+        {
+          "count": 1,
+          "name": "Nibiran Ingot"
+        }
+      ],
+      "output": 15,
+      "station": "Artificer Woodworking Station",
+      "time": 5
+    }
+  ],
+  "name": "Nibirian Dart",
+  "parent": "IronDart",
+  "translation": "Nibirian Dart",
+  "type": "NibirianDart_C",
+  "projectileDamage": {
+    "damage": 25
+  },
+  "stackSize": 999
+}

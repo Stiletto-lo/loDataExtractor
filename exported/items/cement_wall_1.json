@@ -1,0 +1,32 @@
+{
+  "category": "Cement Structures",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 25,
+          "name": "Lightwood"
+        },
+        {
+          "count": 6,
+          "name": "Iron Ingot"
+        },
+        {
+          "count": 4,
+          "name": "Iron Nails"
+        },
+        {
+          "count": 6,
+          "name": "Tar"
+        }
+      ]
+    }
+  ],
+  "name": "Cement Wall 1",
+  "type": "WallConcrete_C",
+  "experiencieReward": 30,
+  "structureInfo": {
+    "type": "Solid",
+    "hp": 40000
+  }
+}

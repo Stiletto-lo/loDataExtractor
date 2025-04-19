@@ -6,6 +6,7 @@ const fs = require("node:fs");
 const dataParser = require("../dataParsers");
 const translator = require("../translator");
 const blueprintTemplate = require("../../templates/lootBlueprint");
+const dropTemplate = require("../../templates/drop");
 
 // Import utility functions
 const utilityFunctions = require("./utilityFunctions");
@@ -18,7 +19,7 @@ const utilityFunctions = require("./utilityFunctions");
 const parseLocation = (blueprint, location) => {
 	const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
 
-	blueprint.tables.forEach((dataTable) => {
+	for (const dataTable of blueprint.tables) {
 		let dataTableChance = 100;
 		let maxIterations = 1;
 		if (dataTable.maxIterations) {
@@ -30,7 +31,16 @@ const parseLocation = (blueprint, location) => {
 
 		const maxChance = (dataTableChance * maxIterations) / 100;
 
-		dataTable.dropItems.forEach((lootItemData) => {
+		// Access the drops array from the lootTable in the dataTable's tables array
+		// Find the lootTable in the dataTable's tables array
+		const lootTable = dataTable.tables.find(table => table.drops && Array.isArray(table.drops));
+
+		if (!lootTable?.drops) {
+			console.warn(`No drops found in lootTable for ${dataTable.name}`);
+			return;
+		}
+
+		for (const lootItemData of lootTable.drops) {
 			const item = utilityFunctions.getItem(
 				dataParser.parseName(translator, lootItemData.name),
 			);
@@ -38,7 +48,7 @@ const parseLocation = (blueprint, location) => {
 				const itemDrops = item.drops ? item.drops : [];
 				const hasDrop = itemDrops.some((d) => d.location === location);
 				if (!hasDrop && item.name !== location) {
-					const drop = { ...require("../../templates/drop") };
+					const drop = { ...dropTemplate };
 					drop.location = location;
 					if (EXTRACT_ALL_DATA && lootItemData.chance) {
 						drop.chance = lootItemData.chance;
@@ -57,8 +67,8 @@ const parseLocation = (blueprint, location) => {
 				}
 				utilityFunctions.getAllItems().push(item);
 			}
-		});
-	});
+		}
+	}
 };
 
 /**
@@ -68,17 +78,17 @@ const parseBlueprintsToItems = () => {
 	const allBlueprints = utilityFunctions.getAllBlueprints();
 	const creatures = utilityFunctions.getCreatures();
 
-	allBlueprints.forEach((blueprint) => {
+	for (const blueprint of allBlueprints) {
 		const locations = creatures.filter((c) => c.lootTable === blueprint.name);
 		if (locations.length > 0) {
-			locations.forEach((location) => {
+			for (const location of locations) {
 				parseLocation(blueprint, location.name);
-			});
+			}
 		} else {
 			const location = translator.translateLootSite(blueprint.name);
 			parseLocation(blueprint, location);
 		}
-	});
+	}
 };
 
 /**
@@ -95,7 +105,8 @@ const parseLootBlueprint = (filePath) => {
 			if (jsonData[1]?.Properties?.Loot?.Tables) {
 				const allBlueprintTables = [];
 				const tables = jsonData[1].Properties.Loot.Tables;
-				tables.forEach((table) => {
+
+				for (const table of tables) {
 					if (table?.Table?.ObjectPath) {
 						const name = dataParser.parseName(
 							translator,
@@ -128,7 +139,7 @@ const parseLootBlueprint = (filePath) => {
 							allBlueprintTables.push(dataTable);
 						}
 					}
-				});
+				}
 				blueprint.tables = allBlueprintTables;
 				utilityFunctions.getAllBlueprints().push(blueprint);
 			}

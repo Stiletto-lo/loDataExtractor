@@ -1,0 +1,29 @@
+{
+  "name": "Net Thrower",
+  "parent": "Basic Walker Weapons",
+  "type": "NetThrower_C",
+  "category": "Weapons",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 60,
+          "name": "Wood"
+        },
+        {
+          "count": 30,
+          "name": "Stone"
+        },
+        {
+          "count": 65,
+          "name": "Fiber"
+        }
+      ]
+    }
+  ],
+  "experiencieReward": 249,
+  "structureInfo": {
+    "type": "Soft",
+    "hp": 3000
+  }
+}

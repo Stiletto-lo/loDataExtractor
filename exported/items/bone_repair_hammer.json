@@ -1,0 +1,23 @@
+{
+  "name": "Bone Repair Hammer",
+  "parent": "Simple Repair Hammer",
+  "type": "BoneRepairHammer_C",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 26,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 11,
+          "name": "Hide"
+        }
+      ],
+      "station": "Crafting Bench",
+      "time": 2
+    }
+  ],
+  "translation": "Bone Repair Hammer",
+  "durability": 500
+}

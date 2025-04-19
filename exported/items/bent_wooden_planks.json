@@ -1,0 +1,23 @@
+{
+  "name": "Bent Wooden Planks",
+  "parent": "Lumbermill",
+  "type": "BentPlanks_C",
+  "category": "Resources",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Wood Log"
+        }
+      ],
+      "station": "Lumbermill",
+      "time": 60
+    }
+  ],
+  "trade_price": 0.1,
+  "translation": "Bent Wooden Planks",
+  "experiencieReward": 1,
+  "stackSize": 100,
+  "weight": 0.21
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Tube Spade",
+  "parent": "Beat Stick",
+  "type": "TubeSpade_C",
+  "category": "Tools",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 18,
+          "name": "Wood"
+        },
+        {
+          "count": 12,
+          "name": "Fiber"
+        },
+        {
+          "count": 7,
+          "name": "Stone"
+        }
+      ]
+    }
+  ],
+  "translation": "Tube Spade",
+  "durability": 100
+}
