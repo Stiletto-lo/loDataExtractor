@@ -301,6 +301,7 @@ unifiedTechTreeNames.nameMap = {
   "WoodworkingTier_03": "Artisan Woodworking Station",
   "StompingTier_03": "Flotillian Stomping Station",
   "IronGear": "Iron Gear",
+  "ArtisanSoilAuger": "Artisan Soil Auger"
 };
 
 // Build reverse mapping for internal lookups
