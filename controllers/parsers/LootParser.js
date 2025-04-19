@@ -62,7 +62,7 @@ class LootParser extends BaseParser {
     const dataTable = { ...this.templates.dataTable };
     dataTable.name = this.dataParser.parseName(this.translator, firstEntry.Name);
     dataTable.objectName = firstEntry.Name;
-    dataTable.objectPath = firstEntry.ObjectPath || "";
+    dataTable.objectPath = firstEntry.ObjectPath ?? "";
     const lootItems = firstEntry.Rows;
     const tableItems = [];
 
@@ -70,13 +70,7 @@ class LootParser extends BaseParser {
     const lootTable = { ...this.templates.lootTable };
     lootTable.name = dataTable.name;
     lootTable.objectName = firstEntry.Name;
-    lootTable.objectPath = firstEntry.ObjectPath || "";
-    lootTable.runChance = 1.0; // Default values
-    lootTable.minIterations = 1;
-    lootTable.maxIterations = 1;
-    lootTable.perIterationRunChance = 1.0;
-    lootTable.minQuantityMultiplier = 1.0;
-    lootTable.maxQuantityMultiplier = 1.0;
+    lootTable.objectPath = firstEntry.ObjectPath ?? "";
 
     // Store loot table information
     this.lootTables[firstEntry.Name] = {

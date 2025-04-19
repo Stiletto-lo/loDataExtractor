@@ -84,8 +84,8 @@ function processCreatures(creatures, translator, dataTables = {}, items = []) {
             // Calculate effective chance if needed
             effectiveChance: dropInfo.chance ? (100 - (100 - dropInfo.chance) * (100 - dropInfo.chance) / 100).toFixed(4) : undefined,
             quantity: {
-              min: dropInfo.minQuantity || 0,
-              max: dropInfo.maxQuantity || 0
+              min: dropInfo.minQuantity,
+              max: dropInfo.maxQuantity
             }
           };
 

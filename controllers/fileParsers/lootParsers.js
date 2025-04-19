@@ -160,12 +160,6 @@ const parseLootTable = (filePath) => {
 	lootTable.name = dataTable.name;
 	lootTable.objectName = firstEntry.Name;
 	lootTable.objectPath = firstEntry.ObjectPath || "";
-	lootTable.runChance = 1.0; // Default values
-	lootTable.minIterations = 1;
-	lootTable.maxIterations = 1;
-	lootTable.perIterationRunChance = 1.0;
-	lootTable.minQuantityMultiplier = 1.0;
-	lootTable.maxQuantityMultiplier = 1.0;
 
 	// Store loot table information for creature processing
 	const lootTables = utilityFunctions.getAllLootTables ? utilityFunctions.getAllLootTables() : {};
