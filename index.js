@@ -133,21 +133,26 @@ const saveFiles = async () => {
 	allItems = translator.translateItems(allItems);
 
 	console.info("Cleaning up the items");
-
 	for (const item of allItems) {
 		for (const key of Object.keys(item)) {
 			if (item[key] === undefined) {
 				delete item[key];
 			}
-			if (item?.drops !== undefined && item.drops.length <= 0) {
-				item.drops = undefined;
-			}
-			if (item?.toolInfo !== undefined && item.toolInfo.length <= 0) {
-				item.toolInfo = undefined;
-			}
+		}
+
+		if (item?.drops !== undefined && item.drops.length <= 0) {
+			item.drops = undefined;
+		}
+		if (item?.toolInfo !== undefined && item.toolInfo.length <= 0) {
+			item.toolInfo = undefined;
+		}
+
+		if (item?.learn && item.learn.length === 0) {
+			item.learn = undefined;
 		}
 	}
 
+	console.info("Items: Removing duplicates");
 	allItems = allItems
 		.map((item) => {
 			const countItems = allItems.filter((item2) => item.name === item2.name);
@@ -170,7 +175,7 @@ const saveFiles = async () => {
 	console.info("Extracting tech data from fileParser");
 	let techData = fileParser.getTechData();
 
-	// Process tech data similar to items
+	console.info("Tech: Removing duplicates");
 	techData = techData
 		.map((tech) => {
 			const countTech = techData.filter((tech2) => tech.name === tech2.name);
@@ -251,32 +256,6 @@ const saveFiles = async () => {
 		console.log("Saving item name glossary...");
 		fileParser.saveGlossary(`${folderPatch}itemNameGlossary.json`);
 
-
-		console.info("Cleaning up the items");
-		for (const item of allItems) {
-			for (const key of Object.keys(item)) {
-				if (item[key] === undefined) {
-					delete item[key];
-				}
-			}
-
-			if (item?.translation !== undefined) {
-				item.translation = undefined;
-			}
-			if (item?.type !== undefined) {
-				item.type = undefined;
-			}
-			if (item?.schematicName !== undefined) {
-				item.schematicName = undefined;
-			}
-			if (item?.damageType !== undefined) {
-				item.damageType = undefined;
-			}
-			if (item?.learn && item.learn.length === 0) {
-				item.learn = undefined;
-			}
-		}
-
 		const minItems = allItems.map(item => {
 			const essentialFields = [
 				"category",
@@ -312,7 +291,7 @@ const saveFiles = async () => {
 			];
 			const minItem = {};
 
-			for (const key in essentialFields) {
+			for (const key of essentialFields) {
 				if (item[key]) {
 					minItem[key] = item[key];
 				}
