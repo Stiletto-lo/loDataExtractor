@@ -49,7 +49,9 @@ class DataStore {
 			return undefined;
 		}
 
-		return this.items.find((item) => item.name === name || item?.translation === name);
+		return this.items.find(
+			(item) => item.name === name || item?.translation === name,
+		);
 	}
 
 	/**
@@ -63,7 +65,12 @@ class DataStore {
 			return undefined;
 		}
 
-		return this.items.find((item) => item.type === type || item.type === `${type}_C` || `${item.type}_C` === type);
+		return this.items.find(
+			(item) =>
+				item.type === type ||
+				item.type === `${type}_C` ||
+				`${item.type}_C` === type,
+		);
 	}
 
 	/**
@@ -117,8 +124,8 @@ class DataStore {
 	}
 
 	setLootTables(lootTables) {
-		if (typeof lootTables !== 'object') {
-			throw new TypeError('Loot tables must be an object');
+		if (typeof lootTables !== "object") {
+			throw new TypeError("Loot tables must be an object");
 		}
 		this.lootTables = lootTables;
 	}
@@ -140,7 +147,12 @@ class DataStore {
 			return { ...techTemplate };
 		}
 
-		const tech = this.techData.find(tech => tech.type === type || tech.type === `${type}_C` || `${tech.type}_C` === type);
+		const tech = this.techData.find(
+			(tech) =>
+				tech.type === type ||
+				tech.type === `${type}_C` ||
+				`${tech.type}_C` === type,
+		);
 		if (tech) {
 			return { ...tech };
 		}

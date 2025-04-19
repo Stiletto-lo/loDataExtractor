@@ -107,20 +107,26 @@ const findUnlockedItems = (techType, techName) => {
 	const allItems = utilityFunctions.getAllItems();
 
 	// Find schematic items that might be related to this tech
-	const relatedSchematics = allItems.filter(item => {
+	const relatedSchematics = allItems.filter((item) => {
 		// Match by type (removing _C suffix if present)
-		const baseType = techType.endsWith('_C') ? techType.slice(0, -2) : techType;
-		const itemType = item.type?.endsWith('_C') ? item.type.slice(0, -2) : item.type;
+		const baseType = techType.endsWith("_C") ? techType.slice(0, -2) : techType;
+		const itemType = item.type?.endsWith("_C")
+			? item.type.slice(0, -2)
+			: item.type;
 
 		// Check if the schematic type is related to the tech type
-		const typeMatch = itemType && baseType &&
+		const typeMatch =
+			itemType &&
+			baseType &&
 			(itemType.includes(baseType) || baseType.includes(itemType));
 
 		// Check if the schematic name is related to the tech name
-		const nameMatch = item.name && techName &&
+		const nameMatch =
+			item.name &&
+			techName &&
 			(item.name.includes(techName) || techName.includes(item.name));
 
-		return (typeMatch || nameMatch) && item.category === 'Schematics';
+		return (typeMatch || nameMatch) && item.category === "Schematics";
 	});
 
 	// Extract the items that these schematics unlock (from their 'learn' arrays)
@@ -134,16 +140,16 @@ const findUnlockedItems = (techType, techName) => {
 	// If we couldn't find any related schematics, try to infer from tech name
 	if (unlockedItems.length === 0) {
 		// Look for items with similar names or categories
-		const similarItems = allItems.filter(item => {
+		const similarItems = allItems.filter((item) => {
 			// Skip schematics and tech items themselves
-			if (item.category === 'Schematics' || item.type === techType) {
+			if (item.category === "Schematics" || item.type === techType) {
 				return false;
 			}
 
 			// Check for name similarity
 			if (item.name && techName) {
 				// Extract key terms from tech name
-				const techTerms = techName.toLowerCase().split(' ');
+				const techTerms = techName.toLowerCase().split(" ");
 				const itemNameLower = item.name.toLowerCase();
 
 				// Check if any significant term from tech name appears in item name
@@ -157,7 +163,7 @@ const findUnlockedItems = (techType, techName) => {
 			return false;
 		});
 
-		unlockedItems = similarItems.map(item => item.name);
+		unlockedItems = similarItems.map((item) => item.name);
 	}
 
 	// Remove duplicates

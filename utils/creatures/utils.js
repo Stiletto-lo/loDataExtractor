@@ -11,15 +11,15 @@
  * @returns {Map} - Map of items with name as key
  */
 function createItemMap(items = []) {
-  const itemMap = new Map();
-  if (Array.isArray(items)) {
-    for (const item of items) {
-      if (item.name) {
-        itemMap.set(item.name, item);
-      }
-    }
-  }
-  return itemMap;
+	const itemMap = new Map();
+	if (Array.isArray(items)) {
+		for (const item of items) {
+			if (item.name) {
+				itemMap.set(item.name, item);
+			}
+		}
+	}
+	return itemMap;
 }
 
 /**
@@ -28,8 +28,7 @@ function createItemMap(items = []) {
  * @returns {boolean} - Whether the creature is valid
  */
 function isValidCreature(creature) {
-  return creature?.name &&
-    Object.keys(creature).length > 2;
+	return creature?.name && Object.keys(creature).length > 2;
 }
 
 /**
@@ -37,22 +36,22 @@ function isValidCreature(creature) {
  * @param {string} message - The message to log
  * @param {string} level - The log level (info, warn, error)
  */
-function logCreatureProcessing(message, level = 'info') {
-  switch (level) {
-    case 'warn':
-      console.warn(message);
-      break;
-    case 'error':
-      console.error(message);
-      break;
-    default:
-      console.info(message);
-      break;
-  }
+function logCreatureProcessing(message, level = "info") {
+	switch (level) {
+		case "warn":
+			console.warn(message);
+			break;
+		case "error":
+			console.error(message);
+			break;
+		default:
+			console.info(message);
+			break;
+	}
 }
 
 module.exports = {
-  createItemMap,
-  isValidCreature,
-  logCreatureProcessing
+	createItemMap,
+	isValidCreature,
+	logCreatureProcessing,
 };

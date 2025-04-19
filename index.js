@@ -188,7 +188,6 @@ const saveFiles = async () => {
 	// Sort tech data by name
 	techData.sort(orderByName);
 
-
 	if (techData.length > 0) {
 		await fs.writeFile(
 			`${folderPatch}tech.json`,
@@ -229,17 +228,23 @@ const saveFiles = async () => {
 					console.log("Items exported");
 
 					// Run the tech tree item unifier to fix inconsistencies
-					const { unifyTechTreeAndItems } = require('./utils/techTreeItemUnifier');
+					const {
+						unifyTechTreeAndItems,
+					} = require("./utils/techTreeItemUnifier");
 					console.log("Running tech tree item unifier...");
 					const unifyResult = unifyTechTreeAndItems(`${folderPatch}items.json`);
 					if (unifyResult.success) {
-						console.log(`Tech tree unification complete. Fixed ${unifyResult.fixedCount} learn entries.`);
+						console.log(
+							`Tech tree unification complete. Fixed ${unifyResult.fixedCount} learn entries.`,
+						);
 					} else {
 						console.error(`Tech tree unification failed: ${unifyResult.error}`);
 					}
 
 					// Reload the items after unification
-					allItems = JSON.parse(fs.readFileSync(`${folderPatch}items.json`, 'utf8'));
+					allItems = JSON.parse(
+						fs.readFileSync(`${folderPatch}items.json`, "utf8"),
+					);
 				}
 			},
 		);
@@ -248,7 +253,7 @@ const saveFiles = async () => {
 		console.log("Saving item name glossary...");
 		fileParser.saveGlossary(`${folderPatch}itemNameGlossary.json`);
 
-		const minItems = allItems.map(item => {
+		const minItems = allItems.map((item) => {
 			const essentialFields = [
 				"category",
 				"name",
@@ -276,7 +281,7 @@ const saveFiles = async () => {
 				"weaponInfo",
 				"weaponLength",
 				"penetration",
-				"description"
+				"description",
 			];
 			const minItem = {};
 
@@ -287,7 +292,7 @@ const saveFiles = async () => {
 			}
 
 			if (item?.drops?.length > 0) {
-				minItem.drops = item.drops.map(drop => {
+				minItem.drops = item.drops.map((drop) => {
 					return {
 						name: drop.name,
 					};
@@ -321,9 +326,9 @@ const saveFiles = async () => {
 				// Convert item name to snake_case and make it safe for filenames
 				const snakeCaseName = item.name
 					.toLowerCase()
-					.replace(/\s+/g, '_')     // Replace spaces with underscores
-					.replace(/[^a-z0-9_]/g, '') // Remove any non-alphanumeric characters except underscores
-					.replace(/_+/g, '_');       // Replace multiple underscores with a single one
+					.replace(/\s+/g, "_") // Replace spaces with underscores
+					.replace(/[^a-z0-9_]/g, "") // Remove any non-alphanumeric characters except underscores
+					.replace(/_+/g, "_"); // Replace multiple underscores with a single one
 
 				await fs.writeFile(
 					`${itemsFolder}/${snakeCaseName}.json`,
@@ -341,12 +346,19 @@ const saveFiles = async () => {
 
 	// Get creatures and process them with enhanced data
 	console.info("Processing creatures with enhanced data");
-	const creatureProcessor = require('./utils/creatureProcessor');
+	const creatureProcessor = require("./utils/creatureProcessor");
 	let creatures = fileParser.getCreatures();
-	const lootTables = process.env.EXTRACT_LOOT_TABLES === "true" ? fileParser.getAllLootTables() : {};
+	const lootTables =
+		process.env.EXTRACT_LOOT_TABLES === "true"
+			? fileParser.getAllLootTables()
+			: {};
 
 	// Process creatures with enhanced data
-	creatures = creatureProcessor.processCreatures(creatures, translator, lootTables);
+	creatures = creatureProcessor.processCreatures(
+		creatures,
+		translator,
+		lootTables,
+	);
 
 	// Sort creatures by name
 	creatures.sort(orderByName);
@@ -366,7 +378,7 @@ const saveFiles = async () => {
 		);
 
 		// Create a minimal version for creatures_min.json
-		const minCreatures = creatures.map(creature => {
+		const minCreatures = creatures.map((creature) => {
 			const minCreature = {};
 			// Only include essential fields
 			if (creature.name) minCreature.name = creature.name;
@@ -374,7 +386,8 @@ const saveFiles = async () => {
 			if (creature.tier) minCreature.tier = creature.tier;
 			if (creature.health) minCreature.health = creature.health;
 			if (creature.experiencie) minCreature.experiencie = creature.experiencie;
-			if (creature.dropQuantity) minCreature.dropQuantity = creature.dropQuantity;
+			if (creature.dropQuantity)
+				minCreature.dropQuantity = creature.dropQuantity;
 			return minCreature;
 		});
 
@@ -391,12 +404,14 @@ const saveFiles = async () => {
 		);
 
 		// Export individual creature files
-		await creatureProcessor.exportIndividualCreatureFiles(creatures, folderPatch);
+		await creatureProcessor.exportIndividualCreatureFiles(
+			creatures,
+			folderPatch,
+		);
 	}
-}
+};
 
 if (process.env.TRANSLATE_FILES === "true") {
-
 	// Get the translator instance from fileParser
 	const translator = fileParser.getTranslator();
 
@@ -445,7 +460,12 @@ if (process.env.TRANSLATE_FILES === "true") {
 		// Process each key-value pair to ensure valid JSON
 		for (const [key, value] of Object.entries(fileData)) {
 			// Skip entries with invalid keys or values
-			if (!key || typeof key !== 'string' || !value || typeof value !== 'string') {
+			if (
+				!key ||
+				typeof key !== "string" ||
+				!value ||
+				typeof value !== "string"
+			) {
 				skippedEntries++;
 				continue;
 			}
@@ -456,13 +476,17 @@ if (process.env.TRANSLATE_FILES === "true") {
 				validatedData[key] = value;
 			} catch (error) {
 				// If JSON serialization fails, skip this entry
-				console.warn(`Skipping invalid translation entry for key: ${key.substring(0, 30)}...`);
+				console.warn(
+					`Skipping invalid translation entry for key: ${key.substring(0, 30)}...`,
+				);
 				skippedEntries++;
 			}
 		}
 
 		if (skippedEntries > 0) {
-			console.warn(`Skipped ${skippedEntries} invalid entries for language ${languaje}`);
+			console.warn(
+				`Skipped ${skippedEntries} invalid entries for language ${languaje}`,
+			);
 		}
 
 		// Ensure the directory exists before writing

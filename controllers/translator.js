@@ -497,16 +497,23 @@ controller.getTranslateFiles = () => {
 		const processedKeys = new Map();
 
 		// Process translations
-		for (const key in translationStore.translationsFromOtherLanguages[language]) {
+		for (const key in translationStore.translationsFromOtherLanguages[
+			language
+		]) {
 			if (controller.isKeyTranslationInUse(key)) {
 				// Get the English name which will be used as the key
 				let englishName = translationStore.translationsInUse[key];
 				// Get the translated text in the target language
-				const translatedText = translationStore.translationsFromOtherLanguages[language][key];
+				const translatedText =
+					translationStore.translationsFromOtherLanguages[language][key];
 
 				// Skip invalid entries
-				if (!englishName || !translatedText || typeof translatedText !== 'string' ||
-					!usedItemNames.has(englishName)) {
+				if (
+					!englishName ||
+					!translatedText ||
+					typeof translatedText !== "string" ||
+					!usedItemNames.has(englishName)
+				) {
 					continue;
 				}
 
@@ -523,7 +530,7 @@ controller.getTranslateFiles = () => {
 					.replace(/\s+/g, " ")
 					.replace(/[\u0000-\u001F\u007F-\u009F]/g, "") // Remove control characters
 					.replace(/\\(?!["\\bfnrt\/])/g, "\\\\") // Escape backslashes that aren't part of escape sequences
-					.replace(/"/g, "\\\"") // Escape double quotes
+					.replace(/"/g, '\\"') // Escape double quotes
 					.trim();
 
 				// Skip if the cleaned translation is empty

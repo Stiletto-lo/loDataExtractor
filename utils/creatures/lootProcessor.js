@@ -13,41 +13,41 @@
  * @returns {Object} - The creature object with processed loot information
  */
 function processCreatureLoot(creature, dataTables = {}, items = []) {
-  // Create a map of items by name for faster lookup
-  const itemMap = new Map();
-  if (Array.isArray(items)) {
-    for (const item of items) {
-      if (item.name) {
-        itemMap.set(item.name, item);
-      }
-    }
-  }
+	// Create a map of items by name for faster lookup
+	const itemMap = new Map();
+	if (Array.isArray(items)) {
+		for (const item of items) {
+			if (item.name) {
+				itemMap.set(item.name, item);
+			}
+		}
+	}
 
-  // Process loot table to extract drop information
-  if (creature.lootTable && dataTables[creature.lootTable]) {
-    const dataTable = dataTables[creature.lootTable];
+	// Process loot table to extract drop information
+	if (creature.lootTable && dataTables[creature.lootTable]) {
+		const dataTable = dataTables[creature.lootTable];
 
-    // Add loot array with items that can be obtained from this creature
-    creature.loot = [];
+		// Add loot array with items that can be obtained from this creature
+		creature.loot = [];
 
-    // Use the drops directly from the parsed loot table data
-    if (dataTable.drops && Array.isArray(dataTable.drops)) {
-      for (const dropInfo of dataTable.drops) {
-        // Create a new loot entry matching the desired structure
-        const lootItem = createLootItem(dropInfo, creature);
+		// Use the drops directly from the parsed loot table data
+		if (dataTable.drops && Array.isArray(dataTable.drops)) {
+			for (const dropInfo of dataTable.drops) {
+				// Create a new loot entry matching the desired structure
+				const lootItem = createLootItem(dropInfo, creature);
 
-        // Add the loot item to the creature's loot array
-        creature.loot.push(lootItem);
-      }
-    }
+				// Add the loot item to the creature's loot array
+				creature.loot.push(lootItem);
+			}
+		}
 
-    // Sort loot by name for consistency
-    if (creature.loot.length > 0) {
-      creature.loot.sort((a, b) => a.name.localeCompare(b.name));
-    }
-  }
+		// Sort loot by name for consistency
+		if (creature.loot.length > 0) {
+			creature.loot.sort((a, b) => a.name.localeCompare(b.name));
+		}
+	}
 
-  return creature;
+	return creature;
 }
 
 /**
@@ -57,35 +57,40 @@ function processCreatureLoot(creature, dataTables = {}, items = []) {
  * @returns {Object} - The loot item object
  */
 function createLootItem(dropInfo, creature) {
-  const lootItem = {
-    name: dropInfo.name,
-    baseChance: dropInfo.chance,
-    // Calculate effective chance if needed
-    effectiveChance: dropInfo.chance ?
-      (100 - (100 - dropInfo.chance) * (100 - dropInfo.chance) / 100).toFixed(4) :
-      undefined,
-    quantity: {
-      min: dropInfo.minQuantity,
-      max: dropInfo.maxQuantity
-    }
-  };
+	const lootItem = {
+		name: dropInfo.name,
+		baseChance: dropInfo.chance,
+		// Calculate effective chance if needed
+		effectiveChance: dropInfo.chance
+			? (
+					100 -
+					((100 - dropInfo.chance) * (100 - dropInfo.chance)) / 100
+				).toFixed(4)
+			: undefined,
+		quantity: {
+			min: dropInfo.minQuantity,
+			max: dropInfo.maxQuantity,
+		},
+	};
 
-  // Use creature's default drop quantity if the loot item's quantity is zero
-  if (lootItem.quantity.min === 0 && lootItem.quantity.max === 0) {
-    if (creature.dropQuantity &&
-      creature.dropQuantity.min !== undefined &&
-      creature.dropQuantity.max !== undefined) {
-      lootItem.quantity = {
-        min: creature.dropQuantity.min,
-        max: creature.dropQuantity.max
-      };
-    }
-  }
+	// Use creature's default drop quantity if the loot item's quantity is zero
+	if (lootItem.quantity.min === 0 && lootItem.quantity.max === 0) {
+		if (
+			creature.dropQuantity &&
+			creature.dropQuantity.min !== undefined &&
+			creature.dropQuantity.max !== undefined
+		) {
+			lootItem.quantity = {
+				min: creature.dropQuantity.min,
+				max: creature.dropQuantity.max,
+			};
+		}
+	}
 
-  return lootItem;
+	return lootItem;
 }
 
 module.exports = {
-  processCreatureLoot,
-  createLootItem
+	processCreatureLoot,
+	createLootItem,
 };

@@ -33,7 +33,9 @@ const parseLocation = (blueprint, location) => {
 
 		// Access the drops array from the lootTable in the dataTable's tables array
 		// Find the lootTable in the dataTable's tables array
-		const lootTable = dataTable.tables.find(table => table.drops && Array.isArray(table.drops));
+		const lootTable = dataTable.tables.find(
+			(table) => table.drops && Array.isArray(table.drops),
+		);
 
 		if (!lootTable?.drops) {
 			console.warn(`No drops found in lootTable for ${dataTable.name}`);

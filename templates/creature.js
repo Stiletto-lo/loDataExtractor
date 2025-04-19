@@ -12,13 +12,13 @@ const creature = {
 	dropChance: undefined,
 	dropQuantity: {
 		min: undefined,
-		max: undefined
+		max: undefined,
 	},
 	spawnLocations: undefined,
 	behavior: undefined,
 	attacks: undefined,
 	resistances: undefined,
-	weaknesses: undefined
+	weaknesses: undefined,
 };
 
 Object.freeze(creature);

@@ -53,7 +53,10 @@ const getItemFromItemData = (itemData, oldItem) => {
 			}
 		}
 
-		if (itemData.Properties?.Name?.SourceString || itemData.Properties?.Name?.LocalizedString) {
+		if (
+			itemData.Properties?.Name?.SourceString ||
+			itemData.Properties?.Name?.LocalizedString
+		) {
 			const name = itemData.Properties.Name.SourceString
 				? itemData.Properties.Name.SourceString.trim()
 				: itemData.Properties.Name.LocalizedString.trim();
@@ -69,7 +72,10 @@ const getItemFromItemData = (itemData, oldItem) => {
 			}
 		}
 
-		if (itemData.Properties?.TechtreeName?.SourceString || itemData.Properties?.TechtreeName?.LocalizedString) {
+		if (
+			itemData.Properties?.TechtreeName?.SourceString ||
+			itemData.Properties?.TechtreeName?.LocalizedString
+		) {
 			const name = itemData.Properties?.TechtreeName?.SourceString
 				? itemData.Properties?.TechtreeName?.SourceString.trim()
 				: itemData.Properties?.TechtreeName?.LocalizedString.trim();
@@ -128,12 +134,12 @@ const getItemFromItemData = (itemData, oldItem) => {
 					: undefined;
 			projectileDamage.effectivenessVsSoak =
 				EXTRACT_ALL_DATA &&
-					itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
+				itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
 					? itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
 					: undefined;
 			projectileDamage.effectivenessVsReduce =
 				EXTRACT_ALL_DATA &&
-					itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
+				itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
 					? itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
 					: undefined;
 

@@ -11,11 +11,11 @@
 
 // Re-export from the new modular structure
 const {
-  processCreatures,
-  exportIndividualCreatureFiles
-} = require('./creatures');
+	processCreatures,
+	exportIndividualCreatureFiles,
+} = require("./creatures");
 
 module.exports = {
-  processCreatures,
-  exportIndividualCreatureFiles
+	processCreatures,
+	exportIndividualCreatureFiles,
 };
