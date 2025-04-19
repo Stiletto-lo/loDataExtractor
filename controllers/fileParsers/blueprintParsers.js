@@ -6,6 +6,7 @@ const fs = require("node:fs");
 const dataParser = require("../dataParsers");
 const translator = require("../translator");
 const blueprintTemplate = require("../../templates/lootBlueprint");
+const dropTemplate = require("../../templates/drop");
 
 // Import utility functions
 const utilityFunctions = require("./utilityFunctions");
@@ -47,7 +48,7 @@ const parseLocation = (blueprint, location) => {
 				const itemDrops = item.drops ? item.drops : [];
 				const hasDrop = itemDrops.some((d) => d.location === location);
 				if (!hasDrop && item.name !== location) {
-					const drop = { ...require("../../templates/drop") };
+					const drop = { ...dropTemplate };
 					drop.location = location;
 					if (EXTRACT_ALL_DATA && lootItemData.chance) {
 						drop.chance = lootItemData.chance;
