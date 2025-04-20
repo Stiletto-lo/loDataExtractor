@@ -253,7 +253,7 @@ const saveFiles = async () => {
 		console.log("Saving item name glossary...");
 		fileParser.saveGlossary(`${folderPatch}itemNameGlossary.json`);
 
-		const minItems = allItems.map((item) => {
+		let minItems = allItems.map((item) => {
 			const essentialFields = [
 				"category",
 				"name",
@@ -273,7 +273,6 @@ const saveFiles = async () => {
 				"effectivenessVsSoak",
 				"effectivenessVsReduce",
 				"structureInfo",
-				"type",
 				"hp",
 				"moduleInfo",
 				"max",
@@ -301,6 +300,8 @@ const saveFiles = async () => {
 
 			return minItem;
 		});
+
+		minItems = minItems.filter((item) => item.name && Object.keys(item).length > 2);
 
 		minItems.sort(orderByCategoryAndName);
 
