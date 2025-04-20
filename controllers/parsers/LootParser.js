@@ -99,6 +99,11 @@ class LootParser extends BaseParser {
 
 			if (!hasDrop && resolvedName !== dataTable.name) {
 				const drop = this.createDropItem(resolvedName, currentItem);
+
+				if (!drop) {
+					continue;
+				}
+
 				tableItems.push(drop);
 
 				// Add to the loot table drops array
@@ -173,8 +178,7 @@ class LootParser extends BaseParser {
 	 */
 	createDropItem(name, lootItemData) {
 		if (!name || !lootItemData) {
-			console.warn("Missing required parameters for createDropItem");
-			return { ...this.templates.dropData, name: name || "Unknown" };
+			return undefined;
 		}
 
 		const drop = { ...this.templates.dropData };

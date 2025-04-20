@@ -59,8 +59,7 @@ const readJsonFile = (filePath) => {
  */
 const createDropItem = (name, lootItemData) => {
 	if (!name || !lootItemData) {
-		console.warn("Missing required parameters for createDropItem");
-		return { ...dropDataTemplate, name: name || "Unknown" };
+		return undefined;
 	}
 
 	const drop = { ...dropDataTemplate };
@@ -188,6 +187,11 @@ const parseLootTable = (filePath) => {
 
 		if (!hasDrop && resolvedName !== dataTable.name) {
 			const drop = createDropItem(resolvedName, currentItem);
+
+			if (!drop) {
+				continue;
+			}
+
 			tableItems.push(drop);
 
 			// Add to the loot table drops array
