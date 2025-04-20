@@ -293,7 +293,7 @@ const saveFiles = async () => {
 			if (item?.drops?.length > 0) {
 				minItem.drops = item.drops.map((drop) => {
 					return {
-						name: drop.name,
+						location: drop.location,
 					};
 				});
 			}
