@@ -347,7 +347,7 @@ if (allItems.length > 0) {
 		if (item?.drops?.length > 0) {
 			minItem.drops = item.drops.map((drop) => {
 				return {
-					name: drop.name,
+					location: drop.location,
 				};
 			});
 		}
