@@ -6,8 +6,6 @@
  */
 
 const BaseParser = require("./BaseParser");
-const fs = require("node:fs");
-const path = require("node:path");
 
 class LootParser extends BaseParser {
 	/**
