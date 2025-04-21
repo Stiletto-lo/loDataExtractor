@@ -17,15 +17,11 @@ const utilityFunctions = require("./utilityFunctions");
 
 // Output directories
 const OUTPUT_DIR = path.join(__dirname, "../../exported");
-const DATATABLES_DIR = path.join(OUTPUT_DIR, "datatables");
 const LOOTTABLES_DIR = path.join(OUTPUT_DIR, "loot_tables");
 
 // Ensure output directories exist
 if (!fs.existsSync(OUTPUT_DIR)) {
 	fs.mkdirSync(OUTPUT_DIR, { recursive: true });
-}
-if (!fs.existsSync(DATATABLES_DIR)) {
-	fs.mkdirSync(DATATABLES_DIR, { recursive: true });
 }
 if (!fs.existsSync(LOOTTABLES_DIR)) {
 	fs.mkdirSync(LOOTTABLES_DIR, { recursive: true });
@@ -222,9 +218,6 @@ const parseLootTable = (filePath) => {
 
 	// Export to the datatables directory
 	const fileName = dataTable.name.replace(/\s+/g, "_").toLowerCase();
-	const outputFilePath = path.join(DATATABLES_DIR, `${fileName}.json`);
-	fs.writeFileSync(outputFilePath, JSON.stringify(dataTable, null, 2));
-
 	// Export loot table information to the loot_tables directory
 	if (lootTables[firstEntry.Name]) {
 		const lootTablePath = path.join(LOOTTABLES_DIR, `${fileName}.json`);

@@ -5,6 +5,9 @@
  * including drop chances, quantities, and related item information.
  */
 
+const fs = require("fs-extra");
+const path = require("node:path");
+
 /**
  * Processes loot information for a creature
  * @param {Object} creature - The creature object to process loot for
@@ -32,9 +35,6 @@ function processCreatureLoot(creature, dataTables = {}, items = []) {
 		if (!dataTable) {
 			// Look for the loot template file in the exported directory
 			try {
-				// Try to find the loot template file by name pattern
-				const fs = require("fs-extra");
-				const path = require("path");
 				const exportDir = path.join(
 					process.cwd(),
 					"exported",
@@ -75,9 +75,7 @@ function processCreatureLoot(creature, dataTables = {}, items = []) {
 
 					// Add drops information to the creature
 					if (
-						lootTemplateData &&
-						lootTemplateData.tables &&
-						lootTemplateData.tables.length > 0
+						lootTemplateData?.tables?.length > 0
 					) {
 						// Add drops array to store all possible drops
 						creature.drops = [];
@@ -192,9 +190,9 @@ function createLootItem(dropInfo, creature) {
 		// Calculate effective chance if needed
 		effectiveChance: dropInfo.chance
 			? (
-					100 -
-					((100 - dropInfo.chance) * (100 - dropInfo.chance)) / 100
-				).toFixed(4)
+				100 -
+				((100 - dropInfo.chance) * (100 - dropInfo.chance)) / 100
+			).toFixed(4)
 			: undefined,
 		quantity: {
 			min: dropInfo.minQuantity,
