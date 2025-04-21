@@ -207,15 +207,13 @@ const parseLootTable = (filePath) => {
 		}
 	}
 
-	dataTable.tables = tableItems; // Use tables property instead of dropItems
+	// Use tables property to store only the unique items, not the lootTable itself
+	dataTable.tables = tableItems;
 
 	// Update loot tables in the utility functions if the function exists
 	if (utilityFunctions.setLootTables) {
 		utilityFunctions.setLootTables(lootTables);
 	}
-
-	// Add the loot table to the data table's tables array
-	dataTable.tables.push(lootTable);
 
 	// Add to the datatables collection
 	utilityFunctions.getAllDatatables().push(dataTable);
