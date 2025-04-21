@@ -8,7 +8,6 @@
 
 const fs = require("fs-extra");
 const path = require("node:path");
-const { enhanceCreatureData } = require("./creatureEnhancer");
 
 /**
  * Processes creature data to enhance it with additional information
@@ -18,7 +17,7 @@ const { enhanceCreatureData } = require("./creatureEnhancer");
  * @param {Array} items - The array of item objects for drop information
  * @returns {Array} - Enhanced creature data
  */
-function processCreatures(creatures, translator, dataTables = {}, items = []) {
+function processCreatures(creatures, translator, dataTables = {}) {
 	if (!Array.isArray(creatures) || creatures.length === 0) {
 		console.warn("No creatures to process");
 		return [];
@@ -27,9 +26,7 @@ function processCreatures(creatures, translator, dataTables = {}, items = []) {
 	console.info(`Processing ${creatures.length} creatures with enhanced data`);
 
 	return creatures
-		.map((creature) => {
-			return enhanceCreatureData(creature, translator);
-		})
+		.map((creature) => extractCategoryAndTier(creature))
 		.filter((creature) => creature.name && Object.keys(creature).length > 2);
 }
 
@@ -83,6 +80,38 @@ function convertToSnakeCase(str) {
 		.replace(/\s+/g, "_") // Replace spaces with underscores
 		.replace(/[^a-z0-9_]/g, "") // Remove any non-alphanumeric characters except underscores
 		.replace(/_+/g, "_"); // Replace multiple underscores with a single one
+}
+
+/**
+ * Extracts category and tier information from creature type
+ * @param {Object} creature - The creature object to process
+ * @returns {Object} - The creature object with category and tier information
+ */
+function extractCategoryAndTier(creature) {
+	if (creature.type && !creature.category) {
+		const typeMatch = creature.type.match(/T(\d)_(\w+)_C/);
+		if (typeMatch) {
+			// If not already set, extract from type
+			if (!creature.tier) {
+				creature.tier = `T${typeMatch[1]}`;
+			}
+
+			// If category not set and we can extract it from type
+			if (!creature.category && typeMatch[2]) {
+				// Convert from camelCase to readable format (e.g., RupuWarrior -> Rupu)
+				const categoryName = typeMatch[2].replace(/([a-z])([A-Z])/g, "$1 $2");
+				// Usually the first word is the category (e.g., "Rupu" from "Rupu Warrior")
+				creature.category = categoryName.split(" ")[0];
+			}
+		}
+	}
+
+	// Set category based on loot table for specific cases - this takes precedence over type-based category
+	if (creature.lootTable?.includes("Rupu")) {
+		creature.category = "Rupu";
+	}
+
+	return creature;
 }
 
 module.exports = {

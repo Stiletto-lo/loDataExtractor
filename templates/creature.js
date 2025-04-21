@@ -4,7 +4,6 @@ const creature = {
 	health: undefined,
 	experiencie: undefined,
 	lootTable: undefined,
-	description: undefined,
 	category: undefined,
 	tier: undefined,
 	drops: undefined,

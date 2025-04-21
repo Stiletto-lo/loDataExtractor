@@ -1,8 +1,10 @@
 {
-  "name": "Chitin Pickaxe",
-  "parent": "CeramicPickaxe",
-  "type": "ChitinPickaxe_C"
-}"name": "Fiber Weave"
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Fiber Weave"
         },
         {
           "count": 10,
