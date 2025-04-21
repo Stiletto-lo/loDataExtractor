@@ -17,14 +17,13 @@ const extractData = async () => {
 
 	await fileExporter.saveAllFiles(EXPORT_FOLDER_PATH);
 
-	console.log("\nExtracción de datos completada con éxito.");
+	console.log("Data extraction successfully completed.");
 };
 
 fs.ensureDirSync(EXPORT_FOLDER_PATH);
 
-// Iniciar el proceso de extracción
 extractData().catch(error => {
-	console.error("Error durante la extracción de datos:", error);
+	console.error("Error during data extraction:", error);
 	process.exit(1);
 });
 
