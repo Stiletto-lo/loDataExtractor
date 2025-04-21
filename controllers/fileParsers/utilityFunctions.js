@@ -21,7 +21,6 @@ class DataStore {
 		this.techData = [];
 		this.upgradesData = [];
 		this.creatures = [];
-		this.datatables = [];
 		this.blueprints = [];
 		this.lootTables = {};
 	}
@@ -186,18 +185,6 @@ class DataStore {
 		this.creatures = data;
 	}
 
-	// Datatables operations
-	getAllDatatables() {
-		return this.datatables;
-	}
-
-	setAllDatatables(data) {
-		if (!Array.isArray(data)) {
-			throw new TypeError("Datatables must be an array");
-		}
-		this.datatables = data;
-	}
-
 	// Blueprints operations
 	getAllBlueprints() {
 		return this.blueprints;
@@ -231,7 +218,6 @@ module.exports = {
 	getAllItems: () => dataStore.getAllItems(),
 	getUpgradesData: () => dataStore.getUpgradesData(),
 	getCreatures: () => dataStore.getCreatures(),
-	getAllDatatables: () => dataStore.getAllDatatables(),
 	getAllBlueprints: () => dataStore.getAllBlueprints(),
 	getAllLootTables: () => dataStore.getAllLootTables(),
 
@@ -239,7 +225,6 @@ module.exports = {
 	setAllItems: (items) => dataStore.setAllItems(items),
 	setUpgradesData: (data) => dataStore.setUpgradesData(data),
 	setCreatures: (data) => dataStore.setCreatures(data),
-	setAllDatatables: (data) => dataStore.setAllDatatables(data),
 	setAllBlueprints: (data) => dataStore.setAllBlueprints(data),
 	setLootTables: (data) => dataStore.setLootTables(data),
 };

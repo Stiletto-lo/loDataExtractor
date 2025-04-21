@@ -57,12 +57,10 @@ module.exports = {
 	extractTechByType: utilityFunctions.extractTechByType,
 	getUpgradesData: utilityFunctions.getUpgradesData,
 	getCreatures: utilityFunctions.getCreatures,
-	getAllDatatables: utilityFunctions.getAllDatatables,
 	getAllBlueprints: utilityFunctions.getAllBlueprints,
 	setAllItems: utilityFunctions.setAllItems,
 	setUpgradesData: utilityFunctions.setUpgradesData,
 	setCreatures: utilityFunctions.setCreatures,
-	setAllDatatables: utilityFunctions.setAllDatatables,
 	setAllBlueprints: utilityFunctions.setAllBlueprints,
 
 	// Translator

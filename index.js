@@ -14,7 +14,6 @@ const extractData = async () => {
 	dataAccess.initialize();
 
 	fileLoader.loadAllFiles(CONTENT_FOLDER_PATH);
-
 	await fileExporter.saveAllFiles(EXPORT_FOLDER_PATH);
 
 	console.log("Data extraction successfully completed.");
@@ -37,6 +36,5 @@ module.exports = {
 	getTranslator: () => dataAccess.getTranslator(),
 	getAllUpgradesData: () => dataAccess.getAllUpgradesData(),
 	getAllBlueprints: () => dataAccess.getAllBlueprints(),
-	getAllDatatables: () => dataAccess.getAllDatatables(),
 };
 

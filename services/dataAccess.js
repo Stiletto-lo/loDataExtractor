@@ -49,10 +49,6 @@ class DataAccess {
   getAllBlueprints() {
     return fileParser.getAllBlueprints();
   }
-
-  getAllDatatables() {
-    return fileParser.getAllDatatables();
-  }
 }
 
 const dataAccess = new DataAccess();

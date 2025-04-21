@@ -213,9 +213,6 @@ const parseLootTable = (filePath) => {
 		utilityFunctions.setLootTables(lootTables);
 	}
 
-	// Add to the datatables collection
-	utilityFunctions.getAllDatatables().push(dataTable);
-
 	// Export to the datatables directory
 	const fileName = dataTable.name.replace(/\s+/g, "_").toLowerCase();
 	// Export loot table information to the loot_tables directory
