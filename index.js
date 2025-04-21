@@ -371,7 +371,9 @@ const saveFiles = async () => {
 			return minItem;
 		});
 
-		minItems = minItems.filter((item) => item.name && Object.keys(item).length > 2);
+		minItems = minItems.filter(
+			(item) => item.name && Object.keys(item).length > 2,
+		);
 
 		minItems.sort(orderByCategoryAndName);
 
@@ -451,14 +453,10 @@ const saveFiles = async () => {
 		// Create a minimal version for creatures_min.json
 		const minCreatures = creatures.map((creature) => {
 			const minCreature = {};
-			// Only include essential fields
-			if (creature.name) minCreature.name = creature.name;
-			if (creature.category) minCreature.category = creature.category;
-			if (creature.tier) minCreature.tier = creature.tier;
-			if (creature.health) minCreature.health = creature.health;
-			if (creature.experiencie) minCreature.experiencie = creature.experiencie;
-			if (creature.dropQuantity)
-				minCreature.dropQuantity = creature.dropQuantity;
+			if (creature.name) { minCreature.name = creature.name; }
+			if (creature.category) { minCreature.category = creature.category; }
+			if (creature.tier) { minCreature.tier = creature.tier; }
+
 			return minCreature;
 		});
 

@@ -333,10 +333,10 @@ const extractCreatureData = (additionalInfo, objectData) => {
 		additionalInfo.Properties.Loot.Tables.length > 0
 	) {
 		const lootTable = additionalInfo.Properties.Loot.Tables[0];
-		result.dropChance = lootTable.RunChance || 1.0;
+		result.dropChance = lootTable.RunChance;
 		result.dropQuantity = {
-			min: lootTable.MinIterations || 1,
-			max: lootTable.MaxIterations || 1,
+			min: lootTable.MinIterations,
+			max: lootTable.MaxIterations,
 		};
 	}
 

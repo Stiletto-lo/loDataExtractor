@@ -151,11 +151,22 @@ const parseLootBlueprint = (filePath) => {
 						const simplifiedTable = {
 							name: name,
 							runChance: table.RunChance !== undefined ? table.RunChance : 1.0,
-							minIterations: table.MinIterations !== undefined ? table.MinIterations : 1,
-							maxIterations: table.MaxIterations !== undefined ? table.MaxIterations : 1,
-							perIterationRunChance: table.PerIterationRunChance !== undefined ? table.PerIterationRunChance : 1.0,
-							minQuantityMultiplier: table.MinQuantityMultiplier !== undefined ? table.MinQuantityMultiplier : 1.0,
-							maxQuantityMultiplier: table.MaxQuantityMultiplier !== undefined ? table.MaxQuantityMultiplier : 1.0
+							minIterations:
+								table.MinIterations !== undefined ? table.MinIterations : 1,
+							maxIterations:
+								table.MaxIterations !== undefined ? table.MaxIterations : 1,
+							perIterationRunChance:
+								table.PerIterationRunChance !== undefined
+									? table.PerIterationRunChance
+									: 1.0,
+							minQuantityMultiplier:
+								table.MinQuantityMultiplier !== undefined
+									? table.MinQuantityMultiplier
+									: 1.0,
+							maxQuantityMultiplier:
+								table.MaxQuantityMultiplier !== undefined
+									? table.MaxQuantityMultiplier
+									: 1.0,
 						};
 
 						simplifiedTables.push(simplifiedTable);
