@@ -5,7 +5,6 @@
  */
 
 const fs = require("node:fs");
-const path = require("node:path");
 const translator = require("../translator");
 
 // Constants

@@ -188,6 +188,8 @@ const parseLootTable = (filePath) => {
 		if (!hasDrop && resolvedName !== dataTable.name) {
 			const drop = createDropItem(resolvedName, currentItem);
 
+			const itemName = translator.translateName(resolvedName);
+
 			if (!drop) {
 				continue;
 			}
@@ -199,7 +201,7 @@ const parseLootTable = (filePath) => {
 
 			// Add to the loot tables collection for creature processing
 			lootTables[firstEntry.Name].drops.push({
-				name: resolvedName,
+				name: itemName,
 				chance: currentItem.Chance,
 				minQuantity: currentItem.MinQuantity,
 				maxQuantity: currentItem.MaxQuantity,
