@@ -13,11 +13,11 @@ const path = require("node:path");
  * Processes creature data to enhance it with additional information
  * @param {Array} creatures - The array of creature objects to process
  * @param {Object} translator - The translator object for localization
- * @param {Object} dataTables - The loot tables data for drop information
+ * @param {Object} lootTables - The loot tables data for drop information
  * @param {Array} items - The array of item objects for drop information
  * @returns {Array} - Enhanced creature data
  */
-function processCreatures(creatures, translator, dataTables = {}) {
+function processCreatures(creatures, lootTables = {}) {
 	if (!Array.isArray(creatures) || creatures.length === 0) {
 		console.warn("No creatures to process");
 		return [];

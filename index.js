@@ -420,7 +420,6 @@ const saveFiles = async () => {
 	// Process creatures with enhanced data
 	creatures = creatureProcessor.processCreatures(
 		creatures,
-		translator,
 		lootTables,
 	);
 
