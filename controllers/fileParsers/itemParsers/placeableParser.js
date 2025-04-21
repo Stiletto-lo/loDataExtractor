@@ -78,7 +78,6 @@ const parsePlaceableData = (filePath) => {
 			}
 
 			if (
-				process.env.EXTRACT_ALL_DATA === "true" &&
 				jsonData[1].Properties?.Requirements?.ExperienceRewardCrafting
 			) {
 				item.experiencieReward =

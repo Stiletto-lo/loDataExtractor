@@ -22,8 +22,6 @@ const moduleInfoTemplate = require("../../../templates/moduleInfo");
  * @returns {Object|undefined} - The item object or undefined
  */
 const getItemFromItemData = (itemData, oldItem) => {
-	const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
-
 	if (!itemData) {
 		return oldItem ?? undefined;
 	}
@@ -129,16 +127,16 @@ const getItemFromItemData = (itemData, oldItem) => {
 				? itemData.Properties?.ProjectileDamage?.Damage
 				: undefined;
 			projectileDamage.penetration =
-				EXTRACT_ALL_DATA && itemData.Properties?.ProjectileDamage?.Penetration
+				itemData.Properties?.ProjectileDamage?.Penetration
 					? itemData.Properties?.ProjectileDamage?.Penetration
 					: undefined;
 			projectileDamage.effectivenessVsSoak =
-				EXTRACT_ALL_DATA &&
+
 				itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
 					? itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
 					: undefined;
 			projectileDamage.effectivenessVsReduce =
-				EXTRACT_ALL_DATA &&
+
 				itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
 					? itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
 					: undefined;
@@ -163,7 +161,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 			item.armorInfo = armorInfo;
 		}
 
-		if (EXTRACT_ALL_DATA && itemData.Properties?.ExperienceRewardCrafting) {
+		if (itemData.Properties?.ExperienceRewardCrafting) {
 			item.experiencieReward = itemData.Properties.ExperienceRewardCrafting;
 		}
 
@@ -175,13 +173,13 @@ const getItemFromItemData = (itemData, oldItem) => {
 			item.weight = itemData.Properties.Weight;
 		}
 
-		if (EXTRACT_ALL_DATA && itemData.Properties?.MaxDurability) {
+		if (itemData.Properties?.MaxDurability) {
 			item.durability = itemData.Properties.MaxDurability;
 		}
 
 		const weaponInfo = { ...weaponInfoTemplate };
 
-		if (EXTRACT_ALL_DATA && itemData.Properties?.DurabilityDamage) {
+		if (itemData.Properties?.DurabilityDamage) {
 			weaponInfo.durabilityDamage = itemData.Properties.DurabilityDamage;
 			item.weaponInfo = weaponInfo;
 		}
@@ -189,11 +187,11 @@ const getItemFromItemData = (itemData, oldItem) => {
 			weaponInfo.weaponSpeed = itemData.Properties.WeaponSpeed;
 			item.weaponInfo = weaponInfo;
 		}
-		if (EXTRACT_ALL_DATA && itemData.Properties?.Impact) {
+		if (itemData.Properties?.Impact) {
 			weaponInfo.impact = itemData.Properties.Impact;
 			item.weaponInfo = weaponInfo;
 		}
-		if (EXTRACT_ALL_DATA && itemData.Properties?.Stability) {
+		if (itemData.Properties?.Stability) {
 			weaponInfo.stability = itemData.Properties.Stability;
 			item.weaponInfo = weaponInfo;
 		}

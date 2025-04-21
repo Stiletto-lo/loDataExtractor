@@ -7,11 +7,7 @@
 
 const fs = require("node:fs");
 const path = require("node:path");
-const dataParser = require("../dataParsers");
-const translator = require("../translator");
-const lootTableTemplate = require("../../templates/lootTable");
 const lootTemplateTemplate = require("../../templates/lootTemplate");
-const utilityFunctions = require("./utilityFunctions");
 
 // Output directories
 const OUTPUT_DIR = path.join(__dirname, "../../exported");
@@ -64,15 +60,20 @@ const readJsonFile = (filePath) => {
  * @returns {string|null} - The tier (T1, T2, T3, T4) or null if not found
  */
 const extractTier = (pathOrType) => {
-	if (!pathOrType) return null;
+	if (!pathOrType) {
+		return null;
+	}
 
 	if (pathOrType.includes("T1_") || pathOrType.includes("Tier1")) {
 		return "T1";
-	} else if (pathOrType.includes("T2_") || pathOrType.includes("Tier2")) {
+	}
+	if (pathOrType.includes("T2_") || pathOrType.includes("Tier2")) {
 		return "T2";
-	} else if (pathOrType.includes("T3_") || pathOrType.includes("Tier3")) {
+	}
+	if (pathOrType.includes("T3_") || pathOrType.includes("Tier3")) {
 		return "T3";
-	} else if (pathOrType.includes("T4_") || pathOrType.includes("Tier4")) {
+	}
+	if (pathOrType.includes("T4_") || pathOrType.includes("Tier4")) {
 		return "T4";
 	}
 
@@ -85,7 +86,7 @@ const extractTier = (pathOrType) => {
  * @returns {Object} - Parsed loot table object with only essential information
  */
 const parseLootTableRef = (tableRef) => {
-	if (!tableRef || !tableRef.Table) {
+	if (!tableRef?.Table) {
 		return null;
 	}
 
@@ -96,7 +97,7 @@ const parseLootTableRef = (tableRef) => {
 	if (tableRef.Table.ObjectName) {
 		// Extract the name from the ObjectName (e.g., "DataTable'BaseResources_T2'")
 		const match = tableRef.Table.ObjectName.match(/DataTable'([^']+)'/);
-		if (match && match[1]) {
+		if (match?.[1]) {
 			simplifiedTable.name = match[1];
 		}
 	}
@@ -148,9 +149,7 @@ const parseLootTemplate = (filePath) => {
 
 	if (
 		!classInfo ||
-		!templateData ||
-		!templateData.Properties ||
-		!templateData.Properties.Loot
+		!templateData?.Properties?.Loot
 	) {
 		console.error(`Missing required properties in ${filePath}`);
 		return false;
@@ -159,13 +158,11 @@ const parseLootTemplate = (filePath) => {
 	// Create a new loot template
 	const lootTemplate = { ...lootTemplateTemplate };
 
-	// Set basic template information
 	lootTemplate.name = classInfo.Name || "Unknown";
 	lootTemplate.type = templateData.Type || "Unknown";
 	lootTemplate.class = templateData.Class || "Unknown";
 
-	// Set super class if available
-	if (classInfo.Super && classInfo.Super.ObjectName) {
+	if (classInfo?.Super?.ObjectName) {
 		lootTemplate.super = classInfo.Super.ObjectName;
 	}
 
@@ -202,7 +199,6 @@ const parseLootTemplate = (filePath) => {
 	// Write the loot template to file
 	fs.writeFileSync(outputFilePath, JSON.stringify(lootTemplate, null, 2));
 
-	console.log(`Successfully exported loot template: ${outputFilePath}`);
 	return true;
 };
 

@@ -3,7 +3,6 @@ const fs = require("fs-extra");
 const fileParser = require("./controllers/fileParsers");
 
 let allItems = [];
-const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
 const CONTENT_FOLDER_PATH = process.env.CONTENT_FOLDER_PATH
 	? process.env.CONTENT_FOLDER_PATH
 	: "./";
@@ -159,23 +158,22 @@ const loadFiles = () => {
 		`${CONTENT_FOLDER_PATH}Content/Mist/Data/Items`,
 	);
 
-	if (process.env.EXTRACT_LOOT_TABLES === "true") {
-		console.info("Loading LootTables");
-		loadDirData(
-			`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables/LootTables`,
-			"loottables",
-		);
-		loadDirData(
-			`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables`,
-			"blueprintsloot",
-		);
-		console.info("Loading LootTemplates");
-		loadDirData(
-			`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables/LootTemplates`,
-			"loottemplates",
-		);
-		fileParser.parseBlueprintsToItems();
-	}
+	console.info("Loading LootTables");
+	loadDirData(
+		`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables/LootTables`,
+		"loottables",
+	);
+	loadDirData(
+		`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables`,
+		"blueprintsloot",
+	);
+	console.info("Loading LootTemplates");
+	loadDirData(
+		`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables/LootTemplates`,
+		"loottemplates",
+	);
+	fileParser.parseBlueprintsToItems();
+
 };
 
 const saveFiles = async () => {
@@ -185,10 +183,6 @@ const saveFiles = async () => {
 	allItems = fileParser.getAllItems();
 
 	const translator = fileParser.getTranslator();
-
-	if (!SHOW_DEV_ITEMS) {
-		allItems = allItems.filter((item) => !item.onlyDevs);
-	}
 
 	console.info("Translating the items");
 	allItems = translator.addDescriptions(allItems);
@@ -421,10 +415,7 @@ const saveFiles = async () => {
 	console.info("Processing creatures with enhanced data");
 	const creatureProcessor = require("./utils/creatureProcessor");
 	let creatures = fileParser.getCreatures();
-	const lootTables =
-		process.env.EXTRACT_LOOT_TABLES === "true"
-			? fileParser.getAllLootTables()
-			: {};
+	const lootTables = fileParser.getAllLootTables();
 
 	// Process creatures with enhanced data
 	creatures = creatureProcessor.processCreatures(
@@ -483,100 +474,99 @@ const saveFiles = async () => {
 loadFiles();
 saveFiles();
 
-if (process.env.TRANSLATE_FILES === "true") {
-	// Get the translator instance from fileParser
-	const translator = fileParser.getTranslator();
+// Get the translator instance from fileParser
+const translator = fileParser.getTranslator();
 
-	// Add all item names and other translatable fields to the translationsInUse store
-	console.log("Adding all item translations to the translationsInUse store...");
-	let translationCount = 0;
-	for (const item of allItems) {
-		if (item.name) {
-			translator.addTranslationInUse(item.name, item.name);
-			translationCount++;
-		}
-		if (item.name && item.translation) {
-			translator.addTranslationInUse(item.name, item.translation);
-			translationCount++;
-		}
-
-		if (item.type && item.name) {
-			translator.addTranslationInUse(item.type, item.name);
-			translationCount++;
-		}
-
-		if (item.description) {
-			translator.addTranslationInUse(item.description, item.description);
-			translationCount++;
-		}
+// Add all item names and other translatable fields to the translationsInUse store
+console.log("Adding all item translations to the translationsInUse store...");
+let translationCount = 0;
+for (const item of allItems) {
+	if (item.name) {
+		translator.addTranslationInUse(item.name, item.name);
+		translationCount++;
 	}
-	console.log(
-		`Added ${translationCount} item translations to the translationsInUse store`,
-	);
+	if (item.name && item.translation) {
+		translator.addTranslationInUse(item.name, item.translation);
+		translationCount++;
+	}
 
-	// Export the translations
-	const translateData = translator.getTranslateFiles();
-	console.log(
-		`Found ${Object.keys(translateData).length} languages with translations`,
-	);
+	if (item.type && item.name) {
+		translator.addTranslationInUse(item.type, item.name);
+		translationCount++;
+	}
 
-	for (const languaje in translateData) {
-		const fileData = translateData[languaje];
-		const languajeArray = languaje.split("-");
-
-		// The translator module now handles validation internally, but we'll do a final check
-		// to ensure the JSON will be valid before writing to file
-		const validatedData = {};
-		let skippedEntries = 0;
-
-		// Process each key-value pair to ensure valid JSON
-		for (const [key, value] of Object.entries(fileData)) {
-			// Skip entries with invalid keys or values
-			if (
-				!key ||
-				typeof key !== "string" ||
-				!value ||
-				typeof value !== "string"
-			) {
-				skippedEntries++;
-				continue;
-			}
-
-			try {
-				// Test if the key and value can be properly serialized in JSON
-				JSON.parse(JSON.stringify({ [key]: value }));
-				validatedData[key] = value;
-			} catch (error) {
-				// If JSON serialization fails, skip this entry
-				console.warn(
-					`Skipping invalid translation entry for key: ${key.substring(0, 30)}...`,
-				);
-				skippedEntries++;
-			}
-		}
-
-		if (skippedEntries > 0) {
-			console.warn(
-				`Skipped ${skippedEntries} invalid entries for language ${languaje}`,
-			);
-		}
-
-		// Ensure the directory exists before writing
-		const outputDir = `${folderPatch}locales/${languajeArray[0].toLowerCase()}`;
-		fs.ensureDirSync(outputDir);
-
-		fs.outputFile(
-			`${folderPatch}locales/${languajeArray[0].toLowerCase()}/items.json`,
-			JSON.stringify(validatedData, null, 2),
-			(err) => {
-				if (err) {
-					console.error(`Error creating the file: ${languaje}`, err);
-				} else {
-					console.log(
-						`Translated files ${languaje} exported with ${Object.keys(validatedData).length} translations`,
-					);
-				}
-			},
-		);
+	if (item.description) {
+		translator.addTranslationInUse(item.description, item.description);
+		translationCount++;
 	}
 }
+console.log(
+	`Added ${translationCount} item translations to the translationsInUse store`,
+);
+
+// Export the translations
+const translateData = translator.getTranslateFiles();
+console.log(
+	`Found ${Object.keys(translateData).length} languages with translations`,
+);
+
+for (const languaje in translateData) {
+	const fileData = translateData[languaje];
+	const languajeArray = languaje.split("-");
+
+	// The translator module now handles validation internally, but we'll do a final check
+	// to ensure the JSON will be valid before writing to file
+	const validatedData = {};
+	let skippedEntries = 0;
+
+	// Process each key-value pair to ensure valid JSON
+	for (const [key, value] of Object.entries(fileData)) {
+		// Skip entries with invalid keys or values
+		if (
+			!key ||
+			typeof key !== "string" ||
+			!value ||
+			typeof value !== "string"
+		) {
+			skippedEntries++;
+			continue;
+		}
+
+		try {
+			// Test if the key and value can be properly serialized in JSON
+			JSON.parse(JSON.stringify({ [key]: value }));
+			validatedData[key] = value;
+		} catch (error) {
+			// If JSON serialization fails, skip this entry
+			console.warn(
+				`Skipping invalid translation entry for key: ${key.substring(0, 30)}...`,
+			);
+			skippedEntries++;
+		}
+	}
+
+	if (skippedEntries > 0) {
+		console.warn(
+			`Skipped ${skippedEntries} invalid entries for language ${languaje}`,
+		);
+	}
+
+	// Ensure the directory exists before writing
+	const outputDir = `${folderPatch}locales/${languajeArray[0].toLowerCase()}`;
+	fs.ensureDirSync(outputDir);
+
+	fs.outputFile(
+		`${folderPatch}locales/${languajeArray[0].toLowerCase()}/items.json`,
+		JSON.stringify(validatedData, null, 2),
+		(err) => {
+			if (err) {
+				console.error(`Error creating the file: ${languaje}`, err);
+			} else {
+				console.log(
+					`Translated files ${languaje} exported with ${Object.keys(validatedData).length} translations`,
+				);
+			}
+		},
+	);
+}
+

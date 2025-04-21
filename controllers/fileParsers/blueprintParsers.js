@@ -17,8 +17,6 @@ const utilityFunctions = require("./utilityFunctions");
  * @param {string} location - The location name
  */
 const parseLocation = (blueprint, location) => {
-	const EXTRACT_ALL_DATA = process.env.EXTRACT_ALL_DATA === "true";
-
 	for (const dataTable of blueprint.tables) {
 		let dataTableChance = 100;
 		let maxIterations = 1;
@@ -52,13 +50,13 @@ const parseLocation = (blueprint, location) => {
 				if (!hasDrop && item.name !== location) {
 					const drop = { ...dropTemplate };
 					drop.location = location;
-					if (EXTRACT_ALL_DATA && lootItemData.chance) {
+					if (lootItemData.chance) {
 						drop.chance = lootItemData.chance;
 					}
-					if (EXTRACT_ALL_DATA && lootItemData.minQuantity) {
+					if (lootItemData.minQuantity) {
 						drop.minQuantity = lootItemData.minQuantity;
 					}
-					if (EXTRACT_ALL_DATA && lootItemData.maxQuantity) {
+					if (lootItemData.maxQuantity) {
 						drop.maxQuantity = lootItemData.maxQuantity;
 					}
 					if (drop.chance) {

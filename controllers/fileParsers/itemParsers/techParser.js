@@ -12,8 +12,6 @@ const utilityFunctions = require("../utilityFunctions");
  * @param {string} filePath - The file path to parse
  */
 const parseTechData = (filePath) => {
-	const SHOW_DEV_ITEMS = process.env.SHOW_DEV_ITEMS === "true";
-
 	const rawdata = fs.readFileSync(filePath);
 	const jsonData = JSON.parse(rawdata);
 
@@ -62,11 +60,6 @@ const parseTechData = (filePath) => {
 		if (jsonData[1]?.Properties?.bHidden) {
 			tech.onlyDevs = true;
 			item.onlyDevs = true;
-		}
-
-		if (jsonData[1]?.Properties?.bHidden && !SHOW_DEV_ITEMS) {
-			tech.parent = undefined;
-			item.parent = undefined;
 		}
 
 		if (tech.name) {
