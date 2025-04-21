@@ -1,0 +1,324 @@
+
+
+const fileParser = require("../controllers/fileParsers");
+
+const orderByCategoryAndName = (a, b) => {
+  if (a.category < b.category) {
+    return -1;
+  }
+
+  if (a.category > b.category) {
+    return 1;
+  }
+
+  if (a.name < b.name) {
+    return -1;
+  }
+
+  if (a.name > b.name) {
+    return 1;
+  }
+
+  return 0;
+};
+
+const orderByName = (a, b) => {
+  if (a.name < b.name) {
+    return -1;
+  }
+
+  if (a.name > b.name) {
+    return 1;
+  }
+  return 0;
+};
+
+const processItems = () => {
+  console.info("Parse Upgrades to Items");
+  fileParser.parseUpgradesToItems();
+
+  let allItems = fileParser.getAllItems();
+  const translator = fileParser.getTranslator();
+
+  console.info("Translating the items");
+  allItems = translator.addDescriptions(allItems);
+  allItems = translator.translateItems(allItems);
+
+  console.info("Cleaning up the items");
+  for (const item of allItems) {
+    for (const key of Object.keys(item)) {
+      if (item[key] === undefined) {
+        delete item[key];
+      }
+    }
+
+    if (item?.drops !== undefined && item.drops.length <= 0) {
+      item.drops = undefined;
+    }
+    if (item?.toolInfo !== undefined && item.toolInfo.length <= 0) {
+      item.toolInfo = undefined;
+    }
+
+    if (item?.learn && item.learn.length === 0) {
+      item.learn = undefined;
+    }
+  }
+
+  console.info("Items: Removing duplicates");
+  allItems = allItems
+    .map((item) => {
+      const countItems = allItems.filter((item2) => item.name === item2.name);
+      if (countItems.length > 1) {
+        return { ...countItems[0], ...countItems[1] };
+      }
+      return item;
+    })
+    .filter((item) => item.name && Object.keys(item).length > 2)
+    .filter((item) => !item.name.includes("Packing"))
+    .reduce((acc, current) => {
+      const x = acc.find((item) => item.name === current.name);
+      if (!x) {
+        return acc.concat([current]);
+      }
+
+      return acc;
+    }, []);
+
+  // Sort items by name
+  allItems.sort(orderByName);
+
+  return allItems;
+};
+
+const processTechData = () => {
+  console.info("Extracting tech data from fileParser");
+  let techData = fileParser.getTechData();
+
+  console.info("Tech: Removing duplicates");
+  techData = techData
+    .map((tech) => {
+      const countTech = techData.filter((tech2) => tech.name === tech2.name);
+      if (countTech.length > 1) {
+        return { ...countTech[0], ...countTech[1] };
+      }
+      return tech;
+    })
+    .filter((tech) => tech.name && Object.keys(tech).length > 2)
+    .reduce((acc, current) => {
+      const x = acc.find((tech) => tech.name === current.name);
+      if (!x) {
+        return acc.concat([current]);
+      }
+      return acc;
+    }, []);
+
+  // Sort technology data by name
+  techData.sort(orderByName);
+
+  return techData;
+};
+
+/**
+ * Creates a minimal version of the items
+ * @param {Array} allItems - Array of complete items
+ * @returns {Array} - Array of items in minimal version
+ */
+const createMinItems = (allItems) => {
+  let minItems = allItems.map((item) => {
+    const essentialFields = [
+      "category",
+      "name",
+      "trade_price",
+      "experiencieReward",
+      "stackSize",
+      "weight",
+      "durability",
+      "parent",
+      "learn",
+      "crafting",
+      "station",
+      "time",
+      "ingredients",
+      "projectileDamage",
+      "damage",
+      "effectivenessVsSoak",
+      "effectivenessVsReduce",
+      "structureInfo",
+      "hp",
+      "moduleInfo",
+      "max",
+      "increase",
+      "weaponInfo",
+      "weaponLength",
+      "penetration",
+      "description",
+    ];
+    const minItem = {};
+
+    for (const key of essentialFields) {
+      if (item[key]) {
+        minItem[key] = item[key];
+      }
+    }
+
+    if (item?.drops?.length > 0) {
+      minItem.drops = item.drops.map((drop) => {
+        return {
+          location: drop.location,
+        };
+      });
+    }
+
+    return minItem;
+  });
+
+  minItems = minItems.filter(
+    (item) => item.name && Object.keys(item).length > 2,
+  );
+
+  minItems.sort(orderByCategoryAndName);
+
+  return minItems;
+};
+
+/**
+ * Processes creature data
+ * @returns {Array} - Array of processed creatures
+ */
+const processCreatures = () => {
+  console.info("Processing creatures with enhanced data");
+  const creatureProcessor = require("../utils/creatureProcessor");
+  let creatures = fileParser.getCreatures();
+  const lootTables = fileParser.getAllLootTables();
+
+  // Process creatures with enhanced data
+  creatures = creatureProcessor.processCreatures(
+    creatures,
+    lootTables,
+  );
+
+  // Sort creatures by name
+  creatures.sort(orderByName);
+
+  return creatures;
+};
+
+/**
+ * Creates a minimal version of the creatures
+ * @param {Array} creatures - Array of complete creatures
+ * @returns {Array} - Array of creatures in minimal version
+ */
+const createMinCreatures = (creatures) => {
+  const minCreatures = creatures.map((creature) => {
+    const minCreature = {};
+    if (creature.name) { minCreature.name = creature.name; }
+    if (creature.category) { minCreature.category = creature.category; }
+    if (creature.tier) { minCreature.tier = creature.tier; }
+
+    return minCreature;
+  });
+
+  return minCreatures;
+};
+
+/**
+ * Processes and prepares translations for export
+ */
+const processTranslations = () => {
+  // Get translator instance from fileParser
+  const translator = fileParser.getTranslator();
+  const allItems = fileParser.getAllItems();
+
+  // Add all item names and other translatable fields to the translationsInUse store
+  console.log("Adding all item translations to the translationsInUse store...");
+  let translationCount = 0;
+  for (const item of allItems) {
+    if (item.name) {
+      translator.addTranslationInUse(item.name, item.name);
+      translationCount++;
+    }
+    if (item.name && item.translation) {
+      translator.addTranslationInUse(item.name, item.translation);
+      translationCount++;
+    }
+
+    if (item.type && item.name) {
+      translator.addTranslationInUse(item.type, item.name);
+      translationCount++;
+    }
+
+    if (item.description) {
+      translator.addTranslationInUse(item.description, item.description);
+      translationCount++;
+    }
+  }
+  console.log(
+    `Added ${translationCount} item translations to the translationsInUse store`,
+  );
+
+  // Get translation data
+  const translateData = translator.getTranslateFiles();
+  console.log(
+    `Found ${Object.keys(translateData).length} languages with translations`,
+  );
+
+  return translateData;
+};
+
+/**
+ * Validates and prepares translation data for export
+ * @param {Object} fileData - Translation data to validate
+ * @returns {Object} - Validated translation data
+ */
+const validateTranslationData = (fileData) => {
+  // The translator module now handles validation internally, but we'll do a final check
+  // to ensure the JSON will be valid before writing to the file
+  const validatedData = {};
+  let skippedEntries = 0;
+
+  // Process each key-value pair to ensure valid JSON
+  for (const [key, value] of Object.entries(fileData)) {
+    // Skip entries with invalid keys or values
+    if (
+      !key ||
+      typeof key !== "string" ||
+      !value ||
+      typeof value !== "string"
+    ) {
+      skippedEntries++;
+      continue;
+    }
+
+    try {
+      // Test if the key and value can be correctly serialized to JSON
+      JSON.parse(JSON.stringify({ [key]: value }));
+      validatedData[key] = value;
+    } catch (error) {
+      // If JSON serialization fails, skip this entry
+      console.warn(
+        `Skipping invalid translation entry for key: ${key.substring(0, 30)}...`,
+      );
+      skippedEntries++;
+    }
+  }
+
+  if (skippedEntries > 0) {
+    console.warn(
+      `Skipped ${skippedEntries} invalid entries for language`,
+    );
+  }
+
+  return validatedData;
+};
+
+module.exports = {
+  orderByCategoryAndName,
+  orderByName,
+  processItems,
+  processTechData,
+  createMinItems,
+  processCreatures,
+  createMinCreatures,
+  processTranslations,
+  validateTranslationData,
+};
