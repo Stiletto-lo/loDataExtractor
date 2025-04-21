@@ -1309,12 +1309,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -2934,12 +2928,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -3647,26 +3635,6 @@
     "name": "Bone Bottle",
     "parent": "Improvised Bottle",
     "type": "BoneBottle_C",
-    "drops": [
-      {
-        "location": "LootboxEquipmentCanyonTable",
-        "chance": 22.95082,
-        "minQuantity": 1,
-        "maxQuantity": 4
-      },
-      {
-        "location": "LootBoxEquipmentTable",
-        "chance": 22.95082,
-        "minQuantity": 1,
-        "maxQuantity": 4
-      },
-      {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 5.6123652,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -3994,14 +3962,6 @@
     "name": "Bone Pickaxe",
     "parent": "Simple Pickaxe",
     "type": "BonePickaxe_C",
-    "drops": [
-      {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 11.2247305,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "crafting": [
       {
         "ingredients": [
@@ -4134,14 +4094,6 @@
     "name": "Bone Sickle",
     "parent": "Simple Sickle",
     "type": "BoneSickle_C",
-    "drops": [
-      {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 11.2247305,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "crafting": [
       {
         "ingredients": [
@@ -4303,18 +4255,6 @@
     "parent": "Rawbone Sawsword",
     "type": "OneHandedBoneSword_C",
     "drops": [
-      {
-        "location": "LootboxWeaponsCanyonTable",
-        "chance": 8.849558,
-        "minQuantity": 1,
-        "maxQuantity": 3
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 4.484305,
-        "minQuantity": 1,
-        "maxQuantity": 12
-      },
       {
         "location": "Weapons_T2",
         "chance": 9.090909,
@@ -4492,12 +4432,6 @@
     "parent": "BrittleBoneTorso",
     "type": "T3_BrittleBoneGloves_C",
     "drops": [
-      {
-        "location": "LootboxArmorsCanyonTable",
-        "chance": 100,
-        "minQuantity": 1,
-        "maxQuantity": 3
-      },
       {
         "location": "Armors_T3",
         "chance": 11.111111,
@@ -5674,12 +5608,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -6849,21 +6777,7 @@
   {
     "name": "Ceramic Bottle",
     "parent": "Bone Bottle",
-    "type": "CeramicBottle_C",
-    "drops": [
-      {
-        "location": "LootboxEquipmentCanyonTable",
-        "chance": 8.196721,
-        "minQuantity": 1,
-        "maxQuantity": 2
-      },
-      {
-        "location": "LootBoxEquipmentTable",
-        "chance": 8.196721,
-        "minQuantity": 1,
-        "maxQuantity": 2
-      }
-    ]
+    "type": "CeramicBottle_C"
   },
   {
     "crafting": [
@@ -6943,30 +6857,6 @@
     "parent": "OneHandedBoneAxe",
     "type": "OneHandedZirconiumAxe_C",
     "drops": [
-      {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 0.5612365,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootboxToolsCanyonTable",
-        "chance": 3.816794,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxToolsTable",
-        "chance": 3.816794,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 2.690583,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
       {
         "location": "Weapons_T3",
         "chance": 6.25,
@@ -7075,26 +6965,6 @@
       {
         "toolType": "Mining",
         "tier": 15
-      }
-    ],
-    "drops": [
-      {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 0.5612365,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootboxToolsCanyonTable",
-        "chance": 6.3613234,
-        "minQuantity": 1,
-        "maxQuantity": 5
-      },
-      {
-        "location": "LootBoxToolsTable",
-        "chance": 6.3613234,
-        "minQuantity": 1,
-        "maxQuantity": 5
       }
     ]
   },
@@ -7822,14 +7692,6 @@
         "toolType": "Mining",
         "tier": 17
       }
-    ],
-    "drops": [
-      {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 11.2247305,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
     ]
   },
   {
@@ -7964,14 +7826,6 @@
       {
         "toolType": "Scythe",
         "tier": 17
-      }
-    ],
-    "drops": [
-      {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 11.2247305,
-        "minQuantity": 1,
-        "maxQuantity": 1
       }
     ]
   },
@@ -9021,12 +8875,6 @@
       "maxIncrease": 90
     },
     "drops": [
-      {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
       {
         "location": "Modules_T1",
         "chance": 5.263158,
@@ -12937,14 +12785,6 @@
     "name": "Fast Grappling Hook",
     "parent": "Nomad Grappling Hook",
     "type": "FastGrapplingHook_C",
-    "drops": [
-      {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 2.8061826,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "crafting": [
       {
         "ingredients": [
@@ -13570,12 +13410,6 @@
       "speedReduction": 2
     },
     "drops": [
-      {
-        "location": "LootBoxArmorsTable",
-        "chance": 100,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
       {
         "location": "Armors_T1",
         "chance": 19.801981,
@@ -14664,12 +14498,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 2.857143,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -14682,24 +14510,6 @@
     "parent": "Ceramic Hatchet",
     "type": "OneHandedLavaAxe_C",
     "drops": [
-      {
-        "location": "LootboxToolsCanyonTable",
-        "chance": 3.816794,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxToolsTable",
-        "chance": 3.816794,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 2.690583,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
       {
         "location": "Weapons_T3",
         "chance": 6.25,
@@ -14758,12 +14568,6 @@
     "parent": "Rawbone Battle Axe",
     "type": "TwoHandedLavaAxe_C",
     "drops": [
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 2.690583,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
       {
         "location": "Weapons_T3",
         "chance": 6.25,
@@ -14856,12 +14660,6 @@
     },
     "drops": [
       {
-        "location": "LootBoxWeaponsTable",
-        "chance": 2.690583,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
-      {
         "location": "Weapons_T3",
         "chance": 6.25,
         "minQuantity": 1,
@@ -14875,12 +14673,6 @@
     "parent": "Short Ceramic Hoofmace",
     "type": "OneHandedLavaMace_C",
     "drops": [
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 2.690583,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
       {
         "location": "Weapons_T3",
         "chance": 6.25,
@@ -14931,12 +14723,6 @@
     "type": "TwoHandedLavaMace_C",
     "drops": [
       {
-        "location": "LootBoxWeaponsTable",
-        "chance": 2.690583,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
-      {
         "location": "Weapons_T3",
         "chance": 6.25,
         "minQuantity": 1,
@@ -14986,12 +14772,6 @@
     "type": "LavaQuarterstaffBlunt_C",
     "drops": [
       {
-        "location": "LootBoxWeaponsTable",
-        "chance": 2.690583,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
-      {
         "location": "Weapons_T3",
         "chance": 6.25,
         "minQuantity": 1,
@@ -15037,12 +14817,6 @@
     "parent": "Short Malletblade",
     "type": "OneHandedLavaSword_C",
     "drops": [
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 2.690583,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
       {
         "location": "Weapons_T3",
         "chance": 6.25,
@@ -15098,12 +14872,6 @@
     "parent": "Singblade",
     "type": "TwoHandedLavaSword_C",
     "drops": [
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 2.690583,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
       {
         "location": "Weapons_T3",
         "chance": 6.25,
@@ -16078,12 +15846,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -16095,14 +15857,6 @@
     "name": "Foraging Pouch",
     "parent": "Equipment",
     "type": "ForagingPouch_C",
-    "drops": [
-      {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 5.6123652,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -16361,12 +16115,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -16413,14 +16161,6 @@
     "description": "Faint images are etched on the translucent surface.",
     "experiencieReward": 10,
     "stackSize": 100,
-    "drops": [
-      {
-        "location": "LootBoxTabletsTable",
-        "chance": 100,
-        "minQuantity": 5,
-        "maxQuantity": 10
-      }
-    ],
     "wikiVisibility": false,
     "weight": 0.2
   },
@@ -17597,12 +17337,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 2.857143,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -17694,12 +17428,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -17711,20 +17439,6 @@
     "name": "Heavy Backpack",
     "parent": "Medium Backpack",
     "type": "LargeBackpack_C",
-    "drops": [
-      {
-        "location": "LootboxEquipmentCanyonTable",
-        "chance": 1.6393442,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxEquipmentTable",
-        "chance": 1.6393442,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -17775,18 +17489,6 @@
     "parent": "OneHandedBoneAxe",
     "type": "LargeBoneAxe_C",
     "drops": [
-      {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 11.2247305,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 4.484305,
-        "minQuantity": 1,
-        "maxQuantity": 12
-      },
       {
         "location": "Weapons_T2",
         "chance": 9.090909,
@@ -20842,20 +20544,6 @@
         "toolType": "Mining",
         "tier": 20
       }
-    ],
-    "drops": [
-      {
-        "location": "LootboxToolsCanyonTable",
-        "chance": 1.2722646,
-        "minQuantity": 1,
-        "maxQuantity": 5
-      },
-      {
-        "location": "LootBoxToolsTable",
-        "chance": 1.2722646,
-        "minQuantity": 1,
-        "maxQuantity": 5
-      }
     ]
   },
   {
@@ -21261,12 +20949,6 @@
     },
     "drops": [
       {
-        "location": "LootBoxWeaponsTable",
-        "chance": 0.44843048,
-        "minQuantity": 1,
-        "maxQuantity": 4
-      },
-      {
         "location": "Weapons_T4",
         "chance": 7.142857,
         "minQuantity": 1,
@@ -21280,12 +20962,6 @@
     "parent": "Beat Stick",
     "type": "OneHandedStoneClub_C",
     "drops": [
-      {
-        "location": "LootboxWeaponsCanyonTable",
-        "chance": 8.849558,
-        "minQuantity": 1,
-        "maxQuantity": 3
-      },
       {
         "location": "Weapons_T1",
         "chance": 9.67742,
@@ -21331,14 +21007,6 @@
     "name": "Jaggertooth Maul",
     "parent": "Jaggertooth Club",
     "type": "TwoHandedStoneMace_C",
-    "drops": [
-      {
-        "location": "LootboxWeaponsCanyonTable",
-        "chance": 8.849558,
-        "minQuantity": 1,
-        "maxQuantity": 3
-      }
-    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -21377,14 +21045,6 @@
     "name": "Jaggertooth Swordclub",
     "parent": "Beat Stick",
     "type": "TwoHandedStoneSword_C",
-    "drops": [
-      {
-        "location": "LootboxWeaponsCanyonTable",
-        "chance": 8.849558,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -22007,12 +21667,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -22213,18 +21867,6 @@
     "type": "TwoHandedBoneSword_C",
     "drops": [
       {
-        "location": "LootboxWeaponsCanyonTable",
-        "chance": 8.849558,
-        "minQuantity": 1,
-        "maxQuantity": 3
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 4.484305,
-        "minQuantity": 1,
-        "maxQuantity": 12
-      },
-      {
         "location": "Weapons_T2",
         "chance": 9.090909,
         "minQuantity": 1,
@@ -22279,12 +21921,6 @@
     "parent": "Rawbone Maul",
     "type": "TwoHandedZirconiumMace_C",
     "drops": [
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 2.690583,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
       {
         "location": "Weapons_T3",
         "chance": 6.25,
@@ -22427,12 +22063,6 @@
       "increase": 0.1
     },
     "drops": [
-      {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
       {
         "location": "Modules_T1",
         "chance": 5.263158,
@@ -22734,26 +22364,6 @@
     "name": "Medium Backpack",
     "parent": "Light Backpack",
     "type": "MediumBackpack_C",
-    "drops": [
-      {
-        "location": "LootboxEquipmentCanyonTable",
-        "chance": 22.95082,
-        "minQuantity": 1,
-        "maxQuantity": 2
-      },
-      {
-        "location": "LootBoxEquipmentTable",
-        "chance": 22.95082,
-        "minQuantity": 1,
-        "maxQuantity": 2
-      },
-      {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 0.0999001,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -23176,12 +22786,6 @@
       "increase": 1
     },
     "drops": [
-      {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
       {
         "location": "Modules_T1",
         "chance": 5.263158,
@@ -24522,12 +24126,6 @@
     ],
     "drops": [
       {
-        "location": "LootBoxWeaponsTable",
-        "chance": 0.44843048,
-        "minQuantity": 1,
-        "maxQuantity": 4
-      },
-      {
         "location": "Weapons_T4",
         "chance": 7.142857,
         "minQuantity": 1,
@@ -24582,12 +24180,6 @@
     ],
     "drops": [
       {
-        "location": "LootBoxWeaponsTable",
-        "chance": 0.44843048,
-        "minQuantity": 1,
-        "maxQuantity": 4
-      },
-      {
         "location": "Weapons_T4",
         "chance": 7.142857,
         "minQuantity": 1,
@@ -24640,14 +24232,6 @@
         "tier": 1
       }
     ],
-    "drops": [
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 0.44843048,
-        "minQuantity": 1,
-        "maxQuantity": 4
-      }
-    ],
     "damageType": "'MeleeSwordDamage_C'"
   },
   {
@@ -24689,12 +24273,6 @@
       "penetration": 10
     },
     "drops": [
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 0.44843048,
-        "minQuantity": 1,
-        "maxQuantity": 4
-      },
       {
         "location": "Weapons_T4",
         "chance": 7.142857,
@@ -24748,24 +24326,6 @@
       }
     ],
     "drops": [
-      {
-        "location": "LootboxToolsCanyonTable",
-        "chance": 0.12722646,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxToolsTable",
-        "chance": 0.12722646,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 0.44843048,
-        "minQuantity": 1,
-        "maxQuantity": 4
-      },
       {
         "location": "Weapons_T4",
         "chance": 7.142857,
@@ -24848,12 +24408,6 @@
     },
     "drops": [
       {
-        "location": "LootBoxWeaponsTable",
-        "chance": 0.44843048,
-        "minQuantity": 1,
-        "maxQuantity": 4
-      },
-      {
         "location": "Weapons_T4",
         "chance": 7.142857,
         "minQuantity": 1,
@@ -24901,12 +24455,6 @@
       "penetration": 10
     },
     "drops": [
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 0.44843048,
-        "minQuantity": 1,
-        "maxQuantity": 4
-      },
       {
         "location": "Weapons_T4",
         "chance": 7.142857,
@@ -25731,18 +25279,6 @@
     "type": "BoneClub_C",
     "drops": [
       {
-        "location": "LootboxWeaponsCanyonTable",
-        "chance": 8.849558,
-        "minQuantity": 1,
-        "maxQuantity": 3
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 4.484305,
-        "minQuantity": 1,
-        "maxQuantity": 12
-      },
-      {
         "location": "Weapons_T2",
         "chance": 9.090909,
         "minQuantity": 1,
@@ -25836,20 +25372,6 @@
     "name": "Obsidian Flask",
     "parent": "Ceramic Bottle",
     "type": "LavaBottleSmall_C",
-    "drops": [
-      {
-        "location": "LootboxEquipmentCanyonTable",
-        "chance": 8.196721,
-        "minQuantity": 1,
-        "maxQuantity": 2
-      },
-      {
-        "location": "LootBoxEquipmentTable",
-        "chance": 8.196721,
-        "minQuantity": 1,
-        "maxQuantity": 2
-      }
-    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -26199,12 +25721,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -26245,12 +25761,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 2.857143,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -26263,18 +25773,6 @@
     "parent": "Rawbone Quarterstaff",
     "type": "ZirconiumQuarterstaff_C",
     "drops": [
-      {
-        "location": "LootboxWeaponsCanyonTable",
-        "chance": 0.88495576,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 2.690583,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
       {
         "location": "Weapons_T3",
         "chance": 6.25,
@@ -29153,12 +28651,6 @@
     "type": "TwoHandedBoneAxe_C",
     "drops": [
       {
-        "location": "LootBoxWeaponsTable",
-        "chance": 4.484305,
-        "minQuantity": 1,
-        "maxQuantity": 12
-      },
-      {
         "location": "Weapons_T2",
         "chance": 9.090909,
         "minQuantity": 1,
@@ -29213,18 +28705,6 @@
     "parent": "Nurrfang Toothclub",
     "type": "BoneMace_C",
     "drops": [
-      {
-        "location": "LootboxWeaponsCanyonTable",
-        "chance": 8.849558,
-        "minQuantity": 1,
-        "maxQuantity": 3
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 4.484305,
-        "minQuantity": 1,
-        "maxQuantity": 12
-      },
       {
         "location": "Weapons_T2",
         "chance": 9.090909,
@@ -29310,30 +28790,6 @@
     ],
     "drops": [
       {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 11.2247305,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootboxToolsCanyonTable",
-        "chance": 6.3613234,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxToolsTable",
-        "chance": 6.3613234,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 4.484305,
-        "minQuantity": 1,
-        "maxQuantity": 12
-      },
-      {
         "location": "Weapons_T2",
         "chance": 9.090909,
         "minQuantity": 1,
@@ -29348,18 +28804,6 @@
     "type": "TwoHandedBoneSpikedClub_C",
     "drops": [
       {
-        "location": "LootboxWeaponsCanyonTable",
-        "chance": 8.849558,
-        "minQuantity": 1,
-        "maxQuantity": 3
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 4.484305,
-        "minQuantity": 1,
-        "maxQuantity": 12
-      },
-      {
         "location": "Weapons_T2",
         "chance": 9.090909,
         "minQuantity": 1,
@@ -29372,18 +28816,6 @@
     "parent": "Blunt Quarterstaff",
     "type": "BoneQuarterstaff_C",
     "drops": [
-      {
-        "location": "LootboxWeaponsCanyonTable",
-        "chance": 8.849558,
-        "minQuantity": 1,
-        "maxQuantity": 3
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 4.484305,
-        "minQuantity": 1,
-        "maxQuantity": 12
-      },
       {
         "location": "Weapons_T2",
         "chance": 9.090909,
@@ -29430,18 +28862,6 @@
     "parent": "Jaggertooth Swordclub",
     "type": "TwoHandedBoneSwordShort_C",
     "drops": [
-      {
-        "location": "LootboxWeaponsCanyonTable",
-        "chance": 8.849558,
-        "minQuantity": 1,
-        "maxQuantity": 3
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 4.484305,
-        "minQuantity": 1,
-        "maxQuantity": 12
-      },
       {
         "location": "Weapons_T2",
         "chance": 9.090909,
@@ -31529,12 +30949,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -31708,12 +31122,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -31725,14 +31133,6 @@
     "name": "Schematic Bag",
     "parent": "Light Backpack",
     "type": "SchematicBag_C",
-    "drops": [
-      {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 11.2247305,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -32906,26 +32306,6 @@
         "toolType": "Scythe",
         "tier": 15
       }
-    ],
-    "drops": [
-      {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 0.5612365,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootboxToolsCanyonTable",
-        "chance": 6.3613234,
-        "minQuantity": 1,
-        "maxQuantity": 5
-      },
-      {
-        "location": "LootBoxToolsTable",
-        "chance": 6.3613234,
-        "minQuantity": 1,
-        "maxQuantity": 5
-      }
     ]
   },
   {
@@ -33119,18 +32499,6 @@
     "type": "OneHandedZirconiumMace_C",
     "drops": [
       {
-        "location": "LootboxWeaponsCanyonTable",
-        "chance": 0.88495576,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 2.690583,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
-      {
         "location": "Weapons_T3",
         "chance": 6.25,
         "minQuantity": 1,
@@ -33179,18 +32547,6 @@
     "parent": "Bonespike Sword",
     "type": "OneHandedZirconiumSword_C",
     "drops": [
-      {
-        "location": "LootboxWeaponsCanyonTable",
-        "chance": 0.88495576,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 2.690583,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
       {
         "location": "Weapons_T3",
         "chance": 6.25,
@@ -33593,20 +32949,6 @@
     "name": "Simple Pickaxe",
     "parent": "Beat Stick",
     "type": "SimplePickaxe_C",
-    "drops": [
-      {
-        "location": "LootboxToolsCanyonTable",
-        "chance": 17.811705,
-        "minQuantity": 1,
-        "maxQuantity": 5
-      },
-      {
-        "location": "LootBoxToolsTable",
-        "chance": 17.811705,
-        "minQuantity": 1,
-        "maxQuantity": 5
-      }
-    ],
     "category": "Tools",
     "crafting": [
       {
@@ -33653,20 +32995,6 @@
     "name": "Simple Repair Hammer",
     "parent": "Beat Stick",
     "type": "SimpleRepairHammer_C",
-    "drops": [
-      {
-        "location": "LootboxToolsCanyonTable",
-        "chance": 17.811705,
-        "minQuantity": 1,
-        "maxQuantity": 5
-      },
-      {
-        "location": "LootBoxToolsTable",
-        "chance": 17.811705,
-        "minQuantity": 1,
-        "maxQuantity": 5
-      }
-    ],
     "category": "Tools",
     "crafting": [
       {
@@ -33703,20 +33031,6 @@
     "name": "Simple Sickle",
     "parent": "Beat Stick",
     "type": "SimpleSickle_C",
-    "drops": [
-      {
-        "location": "LootboxToolsCanyonTable",
-        "chance": 17.811705,
-        "minQuantity": 1,
-        "maxQuantity": 5
-      },
-      {
-        "location": "LootBoxToolsTable",
-        "chance": 17.811705,
-        "minQuantity": 1,
-        "maxQuantity": 5
-      }
-    ],
     "category": "Tools",
     "crafting": [
       {
@@ -33764,12 +33078,6 @@
     "parent": "Long Bonespike Swordstaff",
     "type": "TwoHandedZirconiumSword_C",
     "drops": [
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 2.690583,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
       {
         "location": "Weapons_T3",
         "chance": 6.25,
@@ -34902,26 +34210,6 @@
     "name": "Split Bone Bottle",
     "parent": "Bone Bottle",
     "type": "SplitBoneBottle_C",
-    "drops": [
-      {
-        "location": "LootboxEquipmentCanyonTable",
-        "chance": 22.95082,
-        "minQuantity": 1,
-        "maxQuantity": 4
-      },
-      {
-        "location": "LootBoxEquipmentTable",
-        "chance": 22.95082,
-        "minQuantity": 1,
-        "maxQuantity": 4
-      },
-      {
-        "location": "LootboxToolsandEquipmentCanyonTable",
-        "chance": 5.6123652,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -34972,20 +34260,6 @@
     "name": "Split Ceramic Flask",
     "parent": "Ceramic Bottle",
     "type": "SplitCeramicBottle_C",
-    "drops": [
-      {
-        "location": "LootboxEquipmentCanyonTable",
-        "chance": 8.196721,
-        "minQuantity": 1,
-        "maxQuantity": 2
-      },
-      {
-        "location": "LootBoxEquipmentTable",
-        "chance": 8.196721,
-        "minQuantity": 1,
-        "maxQuantity": 2
-      }
-    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -35018,20 +34292,6 @@
     "name": "Split Durable Water Sack",
     "parent": "Durable Water Sack",
     "type": "SplitBarrel2_C",
-    "drops": [
-      {
-        "location": "LootboxEquipmentCanyonTable",
-        "chance": 1.6393442,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxEquipmentTable",
-        "chance": 1.6393442,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -36552,18 +35812,6 @@
     "parent": "Crude Hatchet",
     "type": "StoneAxe_C",
     "drops": [
-      {
-        "location": "LootboxToolsCanyonTable",
-        "chance": 17.811705,
-        "minQuantity": 1,
-        "maxQuantity": 5
-      },
-      {
-        "location": "LootBoxToolsTable",
-        "chance": 17.811705,
-        "minQuantity": 1,
-        "maxQuantity": 5
-      },
       {
         "location": "Weapons_T1",
         "chance": 12.903226,
@@ -40064,12 +39312,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -42149,20 +41391,6 @@
     "name": "Water Circulator",
     "parent": "Ceramic Bottle",
     "type": "Stillsuit2_C",
-    "drops": [
-      {
-        "location": "LootboxEquipmentCanyonTable",
-        "chance": 1.6393442,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxEquipmentTable",
-        "chance": 1.6393442,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -42307,12 +41535,6 @@
       "maxIncrease": 90
     },
     "drops": [
-      {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
       {
         "location": "Modules_T1",
         "minQuantity": 1,
@@ -42482,12 +41704,6 @@
     },
     "drops": [
       {
-        "location": "Modules Strongbox",
-        "chance": 5.714286,
-        "minQuantity": 5,
-        "maxQuantity": 20
-      },
-      {
         "location": "Modules_T1",
         "chance": 5.263158,
         "minQuantity": 1,
@@ -42577,20 +41793,6 @@
     "name": "Wingsuit",
     "parent": "Nomad Grappling Hook",
     "type": "WingSuit_C",
-    "drops": [
-      {
-        "location": "LootboxEquipmentCanyonTable",
-        "chance": 1.6393442,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxEquipmentTable",
-        "chance": 1.6393442,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -43451,12 +42653,6 @@
     "type": "TwoHandedIronAxe2_C",
     "drops": [
       {
-        "location": "LootBoxWeaponsTable",
-        "chance": 1.3452915,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
-      {
         "location": "Weapons_T4",
         "chance": 7.142857,
         "minQuantity": 1,
@@ -43510,12 +42706,6 @@
     "parent": "Singblade",
     "type": "TwoHandedIronSword2_C",
     "drops": [
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 1.3452915,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
       {
         "location": "Weapons_T4",
         "chance": 7.142857,
@@ -43572,12 +42762,6 @@
     "type": "OneHandedIronMace2_C",
     "drops": [
       {
-        "location": "LootBoxWeaponsTable",
-        "chance": 1.3452915,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
-      {
         "location": "Weapons_T4",
         "chance": 7.142857,
         "minQuantity": 1,
@@ -43625,24 +42809,6 @@
     "parent": "Ceramic Hatchet",
     "type": "OneHandedIronAxe2_C",
     "drops": [
-      {
-        "location": "LootboxToolsCanyonTable",
-        "chance": 0.6361323,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxToolsTable",
-        "chance": 0.6361323,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      },
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 1.3452915,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
       {
         "location": "Weapons_T4",
         "chance": 7.142857,
@@ -43698,12 +42864,6 @@
     "parent": "Short Malletblade",
     "type": "OneHandedIronSword2_C",
     "drops": [
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 1.3452915,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
       {
         "location": "Weapons_T4",
         "chance": 7.142857,
@@ -43794,12 +42954,6 @@
     },
     "drops": [
       {
-        "location": "LootBoxWeaponsTable",
-        "chance": 1.3452915,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
-      {
         "location": "Weapons_T4",
         "chance": 7.142857,
         "minQuantity": 1,
@@ -43813,12 +42967,6 @@
     "parent": "Paddleblade Quarterstaff",
     "type": "IronQuarterstaff2_C",
     "drops": [
-      {
-        "location": "LootBoxWeaponsTable",
-        "chance": 1.3452915,
-        "minQuantity": 1,
-        "maxQuantity": 8
-      },
       {
         "location": "Weapons_T4",
         "chance": 7.142857,

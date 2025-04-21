@@ -41,6 +41,71 @@ const orderByName = (a, b) => {
 	return 0;
 };
 
+const loadDirData = (dir, type) => {
+	if (!fs.existsSync(dir)) {
+		console.error(`Directory ${dir} does not exist`);
+		return;
+	}
+
+	const files = fs.readdirSync(dir);
+
+	for (const file of files) {
+		const filePath = `${dir}/${file}`;
+		const stats = fs.statSync(filePath);
+
+		if (stats.isDirectory()) {
+			loadDirData(filePath, type);
+		} else if (file.endsWith(".json")) {
+			switch (type) {
+				case "item":
+					fileParser.parseItemData(filePath);
+					break;
+				case "placeables":
+					fileParser.parsePlaceableData(filePath);
+					break;
+				case "tech":
+					fileParser.parseTechData(filePath);
+					break;
+				case "upgrages":
+					fileParser.parseUpgrades(filePath);
+					break;
+				case "translation":
+					fileParser.parseTranslations(filePath);
+					break;
+				case "translationOthers":
+					fileParser.parseOtherTranslations(filePath);
+					break;
+				case "stringtables":
+					fileParser.parseStringTables(filePath);
+					break;
+				case "lootsites":
+					fileParser.parseLootSites(filePath);
+					break;
+				case "loottables":
+					fileParser.parseLootTable(filePath);
+					break;
+				case "loottemplates":
+					fileParser.parseLootTemplate(filePath);
+					break;
+				case "blueprintsloot":
+					fileParser.parseLootBlueprint(filePath);
+					break;
+				case "damagetypes":
+					fileParser.parseDamage(filePath);
+					break;
+				case "trade":
+					fileParser.parsePrices(filePath);
+					break;
+				case "schematics":
+					fileParser.parseSchematicItemData(filePath);
+					break;
+				default:
+					break;
+			}
+		}
+	}
+};
+
 const loadFiles = () => {
 	console.info("Loading StringTables");
 	loadDirData(
@@ -97,12 +162,17 @@ const loadFiles = () => {
 	if (process.env.EXTRACT_LOOT_TABLES === "true") {
 		console.info("Loading LootTables");
 		loadDirData(
-			`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables`,
+			`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables/LootTables`,
 			"loottables",
 		);
 		loadDirData(
 			`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables`,
 			"blueprintsloot",
+		);
+		console.info("Loading LootTemplates");
+		loadDirData(
+			`${CONTENT_FOLDER_PATH}Content/Mist/Data/LootTables/LootTemplates`,
+			"loottemplates",
 		);
 		fileParser.parseBlueprintsToItems();
 	}
@@ -412,6 +482,9 @@ const saveFiles = async () => {
 	}
 };
 
+loadFiles();
+saveFiles();
+
 if (process.env.TRANSLATE_FILES === "true") {
 	// Get the translator instance from fileParser
 	const translator = fileParser.getTranslator();
@@ -507,78 +580,5 @@ if (process.env.TRANSLATE_FILES === "true") {
 				}
 			},
 		);
-	}
-}
-
-loadFiles();
-saveFiles();
-
-function loadDirData(techTreeDir, folderType) {
-	if (!fs.exists(techTreeDir)) {
-		return;
-	}
-
-	let files = [];
-
-	try {
-		files = fs.readdirSync(techTreeDir);
-	} catch (error) {
-		console.error(`The folder ${techTreeDir} not exists`);
-	}
-
-	for (const file of files) {
-		const path = `${techTreeDir}/${file}`;
-
-		const fileData = fs.statSync(path);
-		if (fileData.isDirectory()) {
-			loadDirData(path, folderType);
-		} else if (file.includes(".json")) {
-			switch (folderType) {
-				case "tech":
-					fileParser.parseTechData(path);
-					break;
-				case "item":
-					fileParser.parseItemData(path);
-					break;
-				case "stringtables":
-					fileParser.parseStringTables(path);
-					break;
-				case "trade":
-					fileParser.parsePrices(path);
-					break;
-				case "placeables":
-					fileParser.parsePlaceableData(path);
-					break;
-				case "cached":
-					if (file.includes("CachedPlaceablesCosts.json")) {
-						fileParser.parseCachedItems(path);
-					}
-					break;
-				case "loottables":
-					fileParser.parseLootTable(path);
-					break;
-				case "upgrages":
-					fileParser.parseUpgrades(path);
-					break;
-				case "blueprintsloot":
-					fileParser.parseLootBlueprint(path);
-					break;
-				case "damagetypes":
-					fileParser.parseDamage(path);
-					break;
-				case "schematics":
-					fileParser.parseSchematicItemData(path);
-					break;
-				case "translation":
-					fileParser.parseTranslations(path);
-					break;
-				case "translationOthers":
-					fileParser.parseOtherTranslations(path);
-					break;
-				case "lootsites":
-					fileParser.parseLootSites(path);
-					break;
-			}
-		}
 	}
 }
