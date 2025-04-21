@@ -57,25 +57,23 @@ class LootParser extends BaseParser {
 			return false;
 		}
 
-		const dataTable = { ...this.templates.dataTable };
-		dataTable.name = this.dataParser.parseName(
+		// Obtener el nombre de la tabla
+		const tableName = this.dataParser.parseName(
 			this.translator,
 			firstEntry.Name,
 		);
-		dataTable.objectName = firstEntry.Name;
-		dataTable.objectPath = firstEntry.ObjectPath ?? "";
 		const lootItems = firstEntry.Rows;
 		const tableItems = [];
 
-		// Create a loot table for this data table
+		// Crear la tabla de loot
 		const lootTable = { ...this.templates.lootTable };
-		lootTable.name = dataTable.name;
+		lootTable.name = tableName;
 		lootTable.objectName = firstEntry.Name;
 		lootTable.objectPath = firstEntry.ObjectPath ?? "";
 
-		// Store loot table information
+		// Inicializar la entrada en lootTables
 		this.lootTables[firstEntry.Name] = {
-			name: dataTable.name,
+			name: tableName,
 			drops: [],
 		};
 
@@ -95,7 +93,7 @@ class LootParser extends BaseParser {
 			// Check if this item already exists in the tables array
 			const hasDrop = tableItems.some((d) => d.name === resolvedName);
 
-			if (!hasDrop && resolvedName !== dataTable.name) {
+			if (!hasDrop && resolvedName !== tableName) {
 				const drop = this.createDropItem(resolvedName, currentItem);
 
 				if (!drop) {
