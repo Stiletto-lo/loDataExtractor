@@ -2,6 +2,14 @@
   "name": "Jaggertooth Maul",
   "parent": "Jaggertooth Club",
   "type": "TwoHandedStoneMace_C",
+  "drops": [
+    {
+      "location": "LootboxWeaponsCanyonTable",
+      "chance": 8.849558,
+      "minQuantity": 1,
+      "maxQuantity": 3
+    }
+  ],
   "category": "Weapons",
   "crafting": [
     {

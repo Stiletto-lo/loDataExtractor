@@ -6,5 +6,25 @@
   "type": "MushroomFlesh_C",
   "experiencieReward": 2,
   "stackSize": 100,
-  "weight": 0.01
+  "weight": 0.01,
+  "drops": [
+    {
+      "location": "ExtraResources_T2",
+      "chance": 9.090909,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "ExtraResources_T3",
+      "chance": 8.333333,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "ExtraResources_T4",
+      "chance": 7.6923075,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    }
+  ]
 }

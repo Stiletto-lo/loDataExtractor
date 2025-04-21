@@ -35,5 +35,13 @@
       "tier": 2
     }
   ],
+  "drops": [
+    {
+      "location": "Ammo_T3",
+      "chance": 16,
+      "minQuantity": 1,
+      "maxQuantity": 5
+    }
+  ],
   "damageType": "'BoulderDamage_C'"
 }

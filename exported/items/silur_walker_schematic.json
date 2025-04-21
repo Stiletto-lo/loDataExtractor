@@ -3,6 +3,14 @@
   "name": "Silur Walker Schematic",
   "type": "SilurSchematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Schematics_T3",
+      "chance": 4.7619047,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "learn": [
     "Silur Walker"
   ]

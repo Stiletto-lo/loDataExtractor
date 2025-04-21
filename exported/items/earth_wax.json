@@ -2,6 +2,26 @@
   "name": "Earth Wax",
   "parent": "Soil Excavator",
   "type": "EarthWax_C",
+  "drops": [
+    {
+      "location": "ProcessedResources_T2",
+      "chance": 11.111111,
+      "minQuantity": 6,
+      "maxQuantity": 6
+    },
+    {
+      "location": "BaseResources_T3",
+      "chance": 10.718528,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "BaseResources_T4",
+      "chance": 9.090909,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    }
+  ],
   "category": "Resources",
   "crafting": [
     {

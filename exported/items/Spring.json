@@ -2,5 +2,13 @@
   "name": "Spring",
   "translation": "Spring",
   "type": "Spring_C",
-  "stackSize": 10
+  "stackSize": 10,
+  "drops": [
+    {
+      "location": "Components_T1",
+      "chance": 8.333333,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
 }

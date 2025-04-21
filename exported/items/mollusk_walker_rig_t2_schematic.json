@@ -3,6 +3,14 @@
   "name": "Mollusk Walker Rig T2 Schematic",
   "type": "MolluskRig_T2Schematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Rigs_T2",
+      "chance": 26.31579,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "learn": [
     "Mollusk Walker Rig T2"
   ]

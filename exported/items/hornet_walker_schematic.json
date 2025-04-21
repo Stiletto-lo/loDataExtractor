@@ -3,6 +3,14 @@
   "name": "Hornet Walker Schematic",
   "type": "HornetSchematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Schematics_T3",
+      "chance": 4.7619047,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "learn": [
     "Hornet Walker"
   ]

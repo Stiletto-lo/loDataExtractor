@@ -2,6 +2,14 @@
   "name": "Scattershot Ammo",
   "parent": "Scattershot Gun",
   "type": "RupuScattershot_T1_C",
+  "drops": [
+    {
+      "location": "Ammo_T1",
+      "chance": 33.333332,
+      "minQuantity": 2,
+      "maxQuantity": 18
+    }
+  ],
   "category": "Ammo",
   "trade_price": 5.2,
   "translation": "Scattershot Ammo",

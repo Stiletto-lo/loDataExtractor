@@ -3,6 +3,14 @@
   "name": "Reinforced Walls Schematic",
   "type": "ReinforcedWallsSchematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Schematics_T2",
+      "chance": 5.5555553,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    }
+  ],
   "learn": [
     "Medium Wood Double Slit Wall",
     "Medium Wood Slit Wall",

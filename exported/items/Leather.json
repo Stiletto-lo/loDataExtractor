@@ -3,6 +3,26 @@
   "parent": "Curing Station",
   "type": "Leather_C",
   "description": "Cured leather is one of the most universal materials available to Nomads, far superior to using crude, unprocessed animal hides.",
+  "drops": [
+    {
+      "location": "ProcessedResources_T2",
+      "chance": 11.111111,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "ProcessedResources_T3",
+      "chance": 11.764706,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "ProcessedResources_T4",
+      "chance": 8.333333,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    }
+  ],
   "category": "Resources",
   "crafting": [
     {

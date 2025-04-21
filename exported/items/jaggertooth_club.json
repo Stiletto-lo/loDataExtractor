@@ -2,6 +2,20 @@
   "name": "Jaggertooth Club",
   "parent": "Beat Stick",
   "type": "OneHandedStoneClub_C",
+  "drops": [
+    {
+      "location": "LootboxWeaponsCanyonTable",
+      "chance": 8.849558,
+      "minQuantity": 1,
+      "maxQuantity": 3
+    },
+    {
+      "location": "Weapons_T1",
+      "chance": 9.67742,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Weapons",
   "crafting": [
     {

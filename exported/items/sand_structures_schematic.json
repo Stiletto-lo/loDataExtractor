@@ -3,6 +3,14 @@
   "name": "Sand Structures Schematic",
   "type": "SandWallsSchematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Schematics_T1",
+      "chance": 6.25,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    }
+  ],
   "learn": [
     "Sandbag Wall",
     "Cloth Door",

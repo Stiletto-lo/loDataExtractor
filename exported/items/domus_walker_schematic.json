@@ -3,6 +3,14 @@
   "name": "Domus Walker Schematic",
   "type": "DomusSchematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Schematics_T4",
+      "chance": 5.882353,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "learn": [
     "Domus Walker"
   ]

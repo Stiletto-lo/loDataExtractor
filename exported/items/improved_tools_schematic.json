@@ -3,6 +3,14 @@
   "name": "Improved Tools Schematic",
   "type": "Tools_T2Schematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Schematics_T2",
+      "chance": 5.5555553,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "learn": [
     "Rawbone Hand Axe",
     "Heavy Rawbone Hand Axe",

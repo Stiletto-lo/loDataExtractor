@@ -2,6 +2,14 @@
   "name": "Brittle Bone Boots",
   "parent": "BrittleBoneTorso",
   "type": "T3_BrittleBoneBoots_C",
+  "drops": [
+    {
+      "location": "Armors_T3",
+      "chance": 11.111111,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Armors",
   "crafting": [
     {

@@ -2,6 +2,14 @@
   "name": "Bone Pickaxe",
   "parent": "Simple Pickaxe",
   "type": "BonePickaxe_C",
+  "drops": [
+    {
+      "location": "LootboxToolsandEquipmentCanyonTable",
+      "chance": 11.2247305,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "crafting": [
     {
       "ingredients": [

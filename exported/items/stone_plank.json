@@ -6,5 +6,13 @@
   "type": "StonePlank_C",
   "experiencieReward": 25,
   "stackSize": 100,
-  "weight": 1
+  "weight": 1,
+  "drops": [
+    {
+      "location": "StonePlank_T2",
+      "chance": 100,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
 }

@@ -2,6 +2,14 @@
   "name": "Bone Sickle",
   "parent": "Simple Sickle",
   "type": "BoneSickle_C",
+  "drops": [
+    {
+      "location": "LootboxToolsandEquipmentCanyonTable",
+      "chance": 11.2247305,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "crafting": [
     {
       "ingredients": [

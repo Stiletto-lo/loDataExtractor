@@ -2,6 +2,14 @@
   "name": "Schematic Bag",
   "parent": "Light Backpack",
   "type": "SchematicBag_C",
+  "drops": [
+    {
+      "location": "LootboxToolsandEquipmentCanyonTable",
+      "chance": 11.2247305,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Equipment",
   "crafting": [
     {

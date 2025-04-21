@@ -6,5 +6,12 @@
   "type": "ZirconiumMetal_C",
   "experiencieReward": 25,
   "stackSize": 100,
-  "weight": 1
+  "weight": 1,
+  "drops": [
+    {
+      "location": "Zirconium_T2",
+      "chance": 100,
+      "maxQuantity": 1
+    }
+  ]
 }

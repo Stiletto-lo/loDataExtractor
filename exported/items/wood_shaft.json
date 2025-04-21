@@ -2,6 +2,38 @@
   "name": "Wood Shaft",
   "parent": "Woodworking Station",
   "type": "WoodenShaft_C",
+  "drops": [
+    {
+      "location": "ProcessedResources_T1",
+      "chance": 50,
+      "minQuantity": 10,
+      "maxQuantity": 10
+    },
+    {
+      "location": "WoodenShaft_T1",
+      "chance": 100,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "BaseResources_T2",
+      "chance": 12.5,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "BaseResources_T3",
+      "chance": 10.718528,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "BaseResources_T4",
+      "chance": 9.090909,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    }
+  ],
   "category": "Resources",
   "crafting": [
     {

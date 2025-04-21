@@ -2,6 +2,20 @@
   "name": "Simple Sickle",
   "parent": "Beat Stick",
   "type": "SimpleSickle_C",
+  "drops": [
+    {
+      "location": "LootboxToolsCanyonTable",
+      "chance": 17.811705,
+      "minQuantity": 1,
+      "maxQuantity": 5
+    },
+    {
+      "location": "LootBoxToolsTable",
+      "chance": 17.811705,
+      "minQuantity": 1,
+      "maxQuantity": 5
+    }
+  ],
   "category": "Tools",
   "crafting": [
     {

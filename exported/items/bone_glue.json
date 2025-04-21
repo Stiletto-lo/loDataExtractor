@@ -2,6 +2,32 @@
   "name": "Bone Glue",
   "parent": "Purified Water",
   "type": "BoneGlue_C",
+  "drops": [
+    {
+      "location": "ProcessedResources_T2",
+      "chance": 11.111111,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "ProcessedResources_T3",
+      "chance": 11.764706,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "BaseResources_T4",
+      "chance": 9.090909,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    },
+    {
+      "location": "ProcessedResources_T4",
+      "chance": 8.333333,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    }
+  ],
   "category": "Resources",
   "crafting": [
     {

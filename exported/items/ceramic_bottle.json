@@ -1,5 +1,19 @@
 {
   "name": "Ceramic Bottle",
   "parent": "Bone Bottle",
-  "type": "CeramicBottle_C"
+  "type": "CeramicBottle_C",
+  "drops": [
+    {
+      "location": "LootboxEquipmentCanyonTable",
+      "chance": 8.196721,
+      "minQuantity": 1,
+      "maxQuantity": 2
+    },
+    {
+      "location": "LootBoxEquipmentTable",
+      "chance": 8.196721,
+      "minQuantity": 1,
+      "maxQuantity": 2
+    }
+  ]
 }

@@ -3,6 +3,14 @@
   "name": "Basic Ammo Schematic",
   "type": "Ammo_T1Schematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Schematics_T1",
+      "chance": 6.25,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    }
+  ],
   "learn": [
     "Throwstone",
     "Flint Bolt",

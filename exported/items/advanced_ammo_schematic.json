@@ -3,6 +3,14 @@
   "name": "Advanced Ammo Schematic",
   "type": "Ammo_T3Schematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Schematics_T3",
+      "chance": 4.7619047,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    }
+  ],
   "learn": [
     "Ceramic Bolt",
     "Hellfire Bolt",

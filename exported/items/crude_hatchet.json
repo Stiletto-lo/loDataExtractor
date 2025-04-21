@@ -2,6 +2,14 @@
   "name": "Crude Hatchet",
   "parent": "Beat Stick",
   "type": "CrudeHatchet_C",
+  "drops": [
+    {
+      "location": "Weapons_T1",
+      "chance": 11.290322,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Weapons",
   "crafting": [
     {

@@ -2,6 +2,20 @@
   "name": "Firestone Kopesh",
   "parent": "Short Malletblade",
   "type": "OneHandedLavaSword_C",
+  "drops": [
+    {
+      "location": "LootBoxWeaponsTable",
+      "chance": 2.690583,
+      "minQuantity": 1,
+      "maxQuantity": 8
+    },
+    {
+      "location": "Weapons_T3",
+      "chance": 6.25,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Weapons",
   "crafting": [
     {

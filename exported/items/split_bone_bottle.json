@@ -2,6 +2,26 @@
   "name": "Split Bone Bottle",
   "parent": "Bone Bottle",
   "type": "SplitBoneBottle_C",
+  "drops": [
+    {
+      "location": "LootboxEquipmentCanyonTable",
+      "chance": 22.95082,
+      "minQuantity": 1,
+      "maxQuantity": 4
+    },
+    {
+      "location": "LootBoxEquipmentTable",
+      "chance": 22.95082,
+      "minQuantity": 1,
+      "maxQuantity": 4
+    },
+    {
+      "location": "LootboxToolsandEquipmentCanyonTable",
+      "chance": 5.6123652,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Equipment",
   "crafting": [
     {

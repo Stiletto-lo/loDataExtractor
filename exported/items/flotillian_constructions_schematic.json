@@ -3,6 +3,14 @@
   "name": "Flotillian Constructions Schematic",
   "type": "Constructions_T4Schematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Schematics_T4",
+      "chance": 5.882353,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "learn": [
     "ChestGigantic"
   ]

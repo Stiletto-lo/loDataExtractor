@@ -1,5 +1,13 @@
 {
   "name": "Traveller's Quarterstaff",
   "parent": "Blunt Quarterstaff",
-  "type": "TravellersStaff_C"
+  "type": "TravellersStaff_C",
+  "drops": [
+    {
+      "location": "Weapons_T1",
+      "chance": 9.67742,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
 }

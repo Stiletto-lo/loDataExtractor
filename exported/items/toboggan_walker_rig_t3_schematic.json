@@ -3,6 +3,14 @@
   "name": "Toboggan Walker Rig T3 Schematic",
   "type": "TobogganRig_T3Schematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Rigs_T2",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "learn": [
     "Toboggan Walker Rig T3"
   ]

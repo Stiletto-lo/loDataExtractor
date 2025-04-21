@@ -3,6 +3,38 @@
   "parent": "Crafting",
   "type": "Sand_C",
   "description": "Tiny green mineral flecks dot the sand.",
+  "drops": [
+    {
+      "location": "ExtraResources_T1",
+      "chance": 11.111111,
+      "minQuantity": 10,
+      "maxQuantity": 10
+    },
+    {
+      "location": "Sand_T1",
+      "chance": 100,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "ExtraResources_T2",
+      "chance": 9.090909,
+      "minQuantity": 12,
+      "maxQuantity": 12
+    },
+    {
+      "location": "ExtraResources_T3",
+      "chance": 8.333333,
+      "minQuantity": 14,
+      "maxQuantity": 14
+    },
+    {
+      "location": "ExtraResources_T4",
+      "chance": 7.6923075,
+      "minQuantity": 14,
+      "maxQuantity": 14
+    }
+  ],
   "category": "Liquids",
   "crafting": [
     {

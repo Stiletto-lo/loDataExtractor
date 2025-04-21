@@ -5,5 +5,13 @@
   "translation": "Flots",
   "type": "Currency_C",
   "description": "Used by nomads to trade with each other at trading stations located in most oases.",
-  "stackSize": 999999
+  "stackSize": 999999,
+  "drops": [
+    {
+      "location": "Flots_T1",
+      "chance": 100,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
 }

@@ -38,5 +38,13 @@
   "type": "ChitinShell_C",
   "experiencieReward": 15,
   "stackSize": 100,
-  "weight": 0.01
+  "weight": 0.01,
+  "drops": [
+    {
+      "location": "Chitin_T3",
+      "chance": 100,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
 }

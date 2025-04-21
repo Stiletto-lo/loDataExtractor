@@ -3,6 +3,14 @@
   "name": "Improved Ammo Schematic",
   "type": "Ammo_T2Schematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Schematics_T2",
+      "chance": 5.5555553,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    }
+  ],
   "learn": [
     "Bone Bolt",
     "Fire Bolt",

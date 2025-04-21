@@ -6,5 +6,43 @@
   "type": "Fat_C",
   "experiencieReward": 3,
   "stackSize": 100,
-  "weight": 0.34
+  "weight": 0.34,
+  "drops": [
+    {
+      "location": "AnimalFat_T1",
+      "chance": 100,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "ExtraResources_T1",
+      "chance": 11.111111,
+      "minQuantity": 2,
+      "maxQuantity": 2
+    },
+    {
+      "location": "ExtraResources_T2",
+      "chance": 9.090909,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "location": "ExtraResources_T3",
+      "chance": 8.333333,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    },
+    {
+      "location": "ClamPearls_T4",
+      "chance": 33.333332,
+      "minQuantity": 5,
+      "maxQuantity": 50
+    },
+    {
+      "location": "ExtraResources_T4",
+      "chance": 7.6923075,
+      "minQuantity": 4,
+      "maxQuantity": 4
+    }
+  ]
 }

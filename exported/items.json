@@ -23,6 +23,14 @@
     "name": "Advanced Ammo Schematic",
     "type": "Ammo_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "learn": [
       "Ceramic Bolt",
       "Hellfire Bolt",
@@ -56,6 +64,14 @@
     "name": "Advanced Armors Schematic",
     "type": "Armors_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Brittle Bone Boots",
       "Carapace Boots",
@@ -79,6 +95,14 @@
     "name": "Advanced Constructions Schematic",
     "type": "Constructions_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Trip Wire Trap",
       "Large Chest",
@@ -117,6 +141,14 @@
     "name": "Advanced Crafting Stations Schematic",
     "type": "Stations_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Clay Pot",
       "Furnace",
@@ -233,6 +265,14 @@
     "name": "Advanced Potions Schematic",
     "type": "Vitamins_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Bonebreaker",
       "Jojo Mojo",
@@ -298,6 +338,14 @@
     "name": "Advanced Tools Schematic",
     "type": "Tools_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Ceramic Bottle",
       "Ceramic Pickaxe",
@@ -335,6 +383,32 @@
     "name": "Advanced Walker Parts Schematic",
     "type": "WalkerPartsAdvancedSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Schmetterling Walker Legs Heavy (1 of 2)",
       "Tusker Walker Legs Heavy (1 of 2)",
@@ -517,6 +591,14 @@
     "name": "Advanced Walker Weapons Schematic",
     "type": "WalkerWeapons_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Tool Pod",
       "Gun Pod",
@@ -548,6 +630,14 @@
     "name": "Advanced Weapons Schematic",
     "type": "Weapons_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Short Malletblade",
       "Singblade",
@@ -640,6 +730,26 @@
     "name": "Aloe Gel",
     "parent": "Stomping Station",
     "type": "AloeGel_C",
+    "drops": [
+      {
+        "location": "ProcessedResources_T2",
+        "chance": 11.111111,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "ProcessedResources_T3",
+        "chance": 11.764706,
+        "minQuantity": 7,
+        "maxQuantity": 7
+      },
+      {
+        "location": "ProcessedResources_T4",
+        "chance": 8.333333,
+        "minQuantity": 7,
+        "maxQuantity": 7
+      }
+    ],
     "onlyDevs": true,
     "category": "Resources",
     "crafting": [
@@ -874,6 +984,14 @@
       "damage": 20,
       "penetration": 5
     },
+    "drops": [
+      {
+        "location": "AncientHammer_T2",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "damageType": "'AncientMeleeRepairHammerDamage_C'"
   },
   {
@@ -884,7 +1002,45 @@
     "type": "Fat_C",
     "experiencieReward": 3,
     "stackSize": 100,
-    "weight": 0.34
+    "weight": 0.34,
+    "drops": [
+      {
+        "location": "AnimalFat_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "ExtraResources_T1",
+        "chance": 11.111111,
+        "minQuantity": 2,
+        "maxQuantity": 2
+      },
+      {
+        "location": "ExtraResources_T2",
+        "chance": 9.090909,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
+        "location": "ExtraResources_T3",
+        "chance": 8.333333,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "ClamPearls_T4",
+        "chance": 33.333332,
+        "minQuantity": 5,
+        "maxQuantity": 50
+      },
+      {
+        "location": "ExtraResources_T4",
+        "chance": 7.6923075,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      }
+    ]
   },
   {
     "name": "Animals Tablet",
@@ -1150,7 +1306,21 @@
     "moduleInfo": {
       "max": 20,
       "increase": 1
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Crafting",
@@ -1276,6 +1446,38 @@
     "parent": "Camp Fire",
     "type": "Ash_C",
     "description": "A product of burning wood.",
+    "drops": [
+      {
+        "location": "Ash_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "ExtraResources_T1",
+        "chance": 11.111111,
+        "minQuantity": 10,
+        "maxQuantity": 10
+      },
+      {
+        "location": "ExtraResources_T2",
+        "chance": 9.090909,
+        "minQuantity": 12,
+        "maxQuantity": 12
+      },
+      {
+        "location": "ExtraResources_T3",
+        "chance": 8.333333,
+        "minQuantity": 14,
+        "maxQuantity": 14
+      },
+      {
+        "location": "ExtraResources_T4",
+        "chance": 7.6923075,
+        "minQuantity": 14,
+        "maxQuantity": 14
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -1451,6 +1653,14 @@
     "name": "Balang Walker Schematic",
     "type": "BalangSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Balang Walker"
     ]
@@ -2086,6 +2296,32 @@
     "name": "Base Walker Parts Schematic",
     "type": "WalkerPartsBaseSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Buffalo Walker Legs (1 of 2)",
       "Mollusk Walker Legs (1 of 2)",
@@ -2144,6 +2380,14 @@
     "name": "Basic Ammo Schematic",
     "type": "Ammo_T1Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "learn": [
       "Throwstone",
       "Flint Bolt",
@@ -2165,6 +2409,14 @@
     "name": "Basic Armors Schematic",
     "type": "Armors_T1Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Fiber Sandals",
       "Rupu Fur Sandals",
@@ -2187,6 +2439,14 @@
     "name": "Basic Constructions Schematic",
     "type": "Constructions_T1Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Basket Tall",
       "Basket Wide",
@@ -2234,6 +2494,14 @@
     "name": "Basic Crafting Stations Schematic",
     "type": "Stations_T1Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Dyeing Station",
       "Fiberworking Station",
@@ -2260,6 +2528,14 @@
     "name": "Basic Potions Schematic",
     "type": "Vitamins_T1Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Vision Powder"
     ]
@@ -2281,6 +2557,14 @@
     "name": "Basic Tools Schematic",
     "type": "Tools_T1Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Crude Hatchet",
       "Flare - white",
@@ -2310,6 +2594,14 @@
     "name": "Basic Walker Weapons Schematic",
     "type": "WalkerWeapons_T1Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Spinner",
       "Stinger",
@@ -2338,6 +2630,14 @@
     "name": "Basic Weapons Schematic",
     "type": "Weapons_T1Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Beat Stick",
       "Blunt Quarterstaff",
@@ -2468,7 +2768,15 @@
     "armorInfo": {
       "absorbing": 12,
       "speedReduction": 13
-    }
+    },
+    "drops": [
+      {
+        "location": "Improved Armors",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -2514,7 +2822,15 @@
       "absorbing": 10,
       "reduction": 1,
       "speedReduction": 4
-    }
+    },
+    "drops": [
+      {
+        "location": "Improved Armors",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -2560,7 +2876,15 @@
       "absorbing": 10,
       "reduction": 2,
       "speedReduction": 4
-    }
+    },
+    "drops": [
+      {
+        "location": "Improved Armors",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "BaskwoodBoots",
@@ -2607,7 +2931,21 @@
     "moduleInfo": {
       "max": 20,
       "increase": 100
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      }
+    ]
   },
   {
     "name": "Battle Fan",
@@ -2930,12 +3268,28 @@
     "name": "Bearing",
     "translation": "Bearing",
     "type": "Bearing_C",
-    "stackSize": 10
+    "stackSize": 10,
+    "drops": [
+      {
+        "location": "Components_T1",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Beat Stick",
     "parent": "Equipment",
     "type": "WoodenClub_C",
+    "drops": [
+      {
+        "location": "Weapons_T1",
+        "chance": 16.129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -3108,6 +3462,14 @@
     "name": "Blunt Quarterstaff",
     "parent": "Beat Stick",
     "type": "ShortQuarterstaff_C",
+    "drops": [
+      {
+        "location": "Weapons_T1",
+        "chance": 16.129032,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -3271,12 +3633,40 @@
   {
     "name": "Bone Bolt",
     "parent": "Bone Bolt",
-    "type": "BoneHarpoon_C"
+    "type": "BoneHarpoon_C",
+    "drops": [
+      {
+        "location": "Ammo_T2",
+        "chance": 33.333332,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      }
+    ]
   },
   {
     "name": "Bone Bottle",
     "parent": "Improvised Bottle",
     "type": "BoneBottle_C",
+    "drops": [
+      {
+        "location": "LootboxEquipmentCanyonTable",
+        "chance": 22.95082,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      },
+      {
+        "location": "LootBoxEquipmentTable",
+        "chance": 22.95082,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      },
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 5.6123652,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -3327,6 +3717,14 @@
     "name": "Bone Dart",
     "parent": "Repeater",
     "type": "BoneDart_C",
+    "drops": [
+      {
+        "location": "Ammo_T2",
+        "chance": 33.333332,
+        "minQuantity": 10,
+        "maxQuantity": 30
+      }
+    ],
     "crafting": [
       {
         "ingredients": [
@@ -3427,6 +3825,32 @@
     "name": "Bone Glue",
     "parent": "Purified Water",
     "type": "BoneGlue_C",
+    "drops": [
+      {
+        "location": "ProcessedResources_T2",
+        "chance": 11.111111,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "ProcessedResources_T3",
+        "chance": 11.764706,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "BaseResources_T4",
+        "chance": 9.090909,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "ProcessedResources_T4",
+        "chance": 8.333333,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -3570,6 +3994,14 @@
     "name": "Bone Pickaxe",
     "parent": "Simple Pickaxe",
     "type": "BonePickaxe_C",
+    "drops": [
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 11.2247305,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "crafting": [
       {
         "ingredients": [
@@ -3688,12 +4120,28 @@
         "toolType": "Scattershot",
         "tier": 2
       }
+    ],
+    "drops": [
+      {
+        "location": "Ammo_T2",
+        "chance": 33.333332,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      }
     ]
   },
   {
     "name": "Bone Sickle",
     "parent": "Simple Sickle",
     "type": "BoneSickle_C",
+    "drops": [
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 11.2247305,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "crafting": [
       {
         "ingredients": [
@@ -3735,7 +4183,33 @@
     "type": "BoneSplinter_C",
     "experiencieReward": 8,
     "stackSize": 100,
-    "weight": 0.28
+    "weight": 0.28,
+    "drops": [
+      {
+        "location": "BaseResources_T2",
+        "chance": 12.5,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
+        "location": "Bone_T2",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "BaseResources_T3",
+        "chance": 10.718528,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "BaseResources_T4",
+        "chance": 9.090909,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      }
+    ]
   },
   {
     "name": "BoneScattershot",
@@ -3828,6 +4302,26 @@
     "name": "Bonespike Sword",
     "parent": "Rawbone Sawsword",
     "type": "OneHandedBoneSword_C",
+    "drops": [
+      {
+        "location": "LootboxWeaponsCanyonTable",
+        "chance": 8.849558,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 4.484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
+      },
+      {
+        "location": "Weapons_T2",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -3939,12 +4433,28 @@
       "absorbing": 12,
       "reduction": 4,
       "speedReduction": 10
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T3",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Brittle Bone Boots",
     "parent": "BrittleBoneTorso",
     "type": "T3_BrittleBoneBoots_C",
+    "drops": [
+      {
+        "location": "Armors_T3",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Armors",
     "crafting": [
       {
@@ -3981,6 +4491,20 @@
     "name": "Brittle Bone Handwraps",
     "parent": "BrittleBoneTorso",
     "type": "T3_BrittleBoneGloves_C",
+    "drops": [
+      {
+        "location": "LootboxArmorsCanyonTable",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      },
+      {
+        "location": "Armors_T3",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Armors",
     "crafting": [
       {
@@ -4228,6 +4752,14 @@
     "name": "Buffalo Walker Rig T2 Schematic",
     "type": "BuffaloRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T3",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Buffalo Walker Rig T2"
     ]
@@ -4252,6 +4784,14 @@
     "name": "Buffalo Walker Rig T3 Schematic",
     "type": "BuffaloRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T3",
+        "chance": 3.3333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Buffalo Walker Rig T3"
     ]
@@ -4261,6 +4801,14 @@
     "name": "Buffalo Walker Schematic",
     "type": "BuffaloSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Buffalo Walker"
     ]
@@ -5123,7 +5671,21 @@
       "max": 20,
       "increase": 4,
       "maxIncrease": 80
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Resources",
@@ -5133,7 +5695,15 @@
     "type": "CactusFlesh_C",
     "experiencieReward": 2,
     "stackSize": 100,
-    "weight": 0.12
+    "weight": 0.12,
+    "drops": [
+      {
+        "location": "Cactus_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Furniture",
@@ -5214,7 +5784,15 @@
     "name": "Cam",
     "translation": "Cam",
     "type": "Cam_C",
-    "stackSize": 10
+    "stackSize": 10,
+    "drops": [
+      {
+        "location": "Components_T1",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Walkers",
@@ -5313,6 +5891,14 @@
     "name": "Camelop Walker Schematic",
     "type": "CamelopSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Camelop Walker"
     ]
@@ -5501,7 +6087,15 @@
     "armorInfo": {
       "absorbing": 18,
       "speedReduction": 15
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T3",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -5537,7 +6131,15 @@
       "absorbing": 15,
       "reduction": 2,
       "speedReduction": 5
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T3",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -5573,7 +6175,15 @@
       "absorbing": 15,
       "reduction": 3,
       "speedReduction": 5
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T3",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "CarapaceBoots",
@@ -5753,6 +6363,14 @@
       {
         "toolType": "CatapultRock",
         "tier": 2
+      }
+    ],
+    "drops": [
+      {
+        "location": "Ammo_T3",
+        "chance": 16,
+        "minQuantity": 1,
+        "maxQuantity": 5
       }
     ],
     "damageType": "'BoulderDamage_C'"
@@ -6218,12 +6836,34 @@
   {
     "name": "Ceramic Bolt",
     "parent": "Bone Bolt",
-    "type": "CeramicBolt_C"
+    "type": "CeramicBolt_C",
+    "drops": [
+      {
+        "location": "Ammo_T3",
+        "chance": 16,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      }
+    ]
   },
   {
     "name": "Ceramic Bottle",
     "parent": "Bone Bottle",
-    "type": "CeramicBottle_C"
+    "type": "CeramicBottle_C",
+    "drops": [
+      {
+        "location": "LootboxEquipmentCanyonTable",
+        "chance": 8.196721,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      },
+      {
+        "location": "LootBoxEquipmentTable",
+        "chance": 8.196721,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      }
+    ]
   },
   {
     "crafting": [
@@ -6260,6 +6900,14 @@
         "toolType": "RepeaterBolt",
         "tier": 3
       }
+    ],
+    "drops": [
+      {
+        "location": "Ammo_T3",
+        "chance": 40,
+        "minQuantity": 5,
+        "maxQuantity": 30
+      }
     ]
   },
   {
@@ -6294,6 +6942,38 @@
     "name": "Ceramic Hatchet",
     "parent": "OneHandedBoneAxe",
     "type": "OneHandedZirconiumAxe_C",
+    "drops": [
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 0.5612365,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootboxToolsCanyonTable",
+        "chance": 3.816794,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxToolsTable",
+        "chance": 3.816794,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 2.690583,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -6395,6 +7075,26 @@
       {
         "toolType": "Mining",
         "tier": 15
+      }
+    ],
+    "drops": [
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 0.5612365,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootboxToolsCanyonTable",
+        "chance": 6.3613234,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      },
+      {
+        "location": "LootBoxToolsTable",
+        "chance": 6.3613234,
+        "minQuantity": 1,
+        "maxQuantity": 5
       }
     ]
   },
@@ -6513,12 +7213,34 @@
         "toolType": "Scattershot",
         "tier": 3
       }
+    ],
+    "drops": [
+      {
+        "location": "Ammo_T3",
+        "chance": 16,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      }
     ]
   },
   {
     "name": "Ceramic Shard",
     "parent": "Furnace",
     "type": "CeramicShard_C",
+    "drops": [
+      {
+        "location": "ProcessedResources_T3",
+        "chance": 5.882353,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
+        "location": "ProcessedResources_T4",
+        "chance": 8.333333,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -6809,6 +7531,38 @@
     "name": "Charcoal",
     "parent": "Camp Fire",
     "type": "CharcoalFuel_C",
+    "drops": [
+      {
+        "location": "Charcoal_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "ExtraResources_T1",
+        "chance": 11.111111,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
+        "location": "ExtraResources_T2",
+        "chance": 9.090909,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "ExtraResources_T3",
+        "chance": 8.333333,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "ExtraResources_T4",
+        "chance": 7.6923075,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -7068,6 +7822,14 @@
         "toolType": "Mining",
         "tier": 17
       }
+    ],
+    "drops": [
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 11.2247305,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
     ]
   },
   {
@@ -7115,7 +7877,15 @@
     "type": "ChitinShell_C",
     "experiencieReward": 15,
     "stackSize": 100,
-    "weight": 0.01
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "Chitin_T3",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Chitin Repair Hammer",
@@ -7195,6 +7965,14 @@
         "toolType": "Scythe",
         "tier": 17
       }
+    ],
+    "drops": [
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 11.2247305,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
     ]
   },
   {
@@ -7256,6 +8034,20 @@
     "name": "Clay",
     "parent": "Soil Excavator",
     "type": "StructuralClay_C",
+    "drops": [
+      {
+        "location": "ProcessedResources_T3",
+        "chance": 5.882353,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "ProcessedResources_T4",
+        "chance": 8.333333,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      }
+    ],
     "translation": "Clay"
   },
   {
@@ -7530,6 +8322,14 @@
     "name": "Clay Walls Schematic",
     "type": "ClayWallsSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "learn": [
       "Clay Wall with Windows",
       "Clay Wall with Window",
@@ -7616,7 +8416,15 @@
     "armorInfo": {
       "absorbing": 6,
       "speedReduction": 2
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T1",
+        "chance": 2.970297,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "CloakedRupuFurTorso",
@@ -7791,6 +8599,14 @@
     "name": "Cobra Walker Schematic",
     "type": "CobraSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Cobra Walker"
     ]
@@ -7949,7 +8765,15 @@
     "name": "Cog",
     "translation": "Cog",
     "type": "Cog_C",
-    "stackSize": 10
+    "stackSize": 10,
+    "drops": [
+      {
+        "location": "Components_T1",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Common",
@@ -8004,6 +8828,14 @@
     "name": "Concrete Walls Schematic",
     "type": "ConcreteWallsSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "learn": [
       "Cement Wall With Windows 2",
       "Cement Wall With Windows 1",
@@ -8187,7 +9019,21 @@
       "max": 20,
       "increase": 4.5,
       "maxIncrease": 90
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Crane",
@@ -8290,6 +9136,14 @@
     "name": "Crude Hatchet",
     "parent": "Beat Stick",
     "type": "CrudeHatchet_C",
+    "drops": [
+      {
+        "location": "Weapons_T1",
+        "chance": 11.290322,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -8650,6 +9504,14 @@
     "name": "Dinghy Walker Rig T2 Schematic",
     "type": "DinghyRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T1",
+        "chance": 41.666668,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Dinghy Walker Rig T2"
     ]
@@ -8674,6 +9536,14 @@
     "name": "Dinghy Walker Rig T3 Schematic",
     "type": "DinghyRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T1",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Dinghy Walker Rig T3"
     ]
@@ -8683,6 +9553,14 @@
     "name": "Dinghy Walker Schematic",
     "type": "DinghySchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Dinghy Walker"
     ]
@@ -9488,6 +10366,14 @@
     "name": "Domus Walker Rig T2 Schematic",
     "type": "DomusRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T4",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Domus Walker Rig T2"
     ]
@@ -9512,6 +10398,14 @@
     "name": "Domus Walker Rig T3 Schematic",
     "type": "DomusRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T4",
+        "chance": 3.3333335,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Domus Walker Rig T3"
     ]
@@ -9521,6 +10415,14 @@
     "name": "Domus Walker Schematic",
     "type": "DomusSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Domus Walker"
     ]
@@ -10597,6 +11499,26 @@
     "name": "Earth Wax",
     "parent": "Soil Excavator",
     "type": "EarthWax_C",
+    "drops": [
+      {
+        "location": "ProcessedResources_T2",
+        "chance": 11.111111,
+        "minQuantity": 6,
+        "maxQuantity": 6
+      },
+      {
+        "location": "BaseResources_T3",
+        "chance": 10.718528,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
+        "location": "BaseResources_T4",
+        "chance": 9.090909,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -11058,6 +11980,14 @@
     "name": "Falco Walker Rig T2 Schematic",
     "type": "FalcoRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T3",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Falco Walker Rig T2"
     ]
@@ -11082,6 +12012,14 @@
     "name": "Falco Walker Rig T3 Schematic",
     "type": "FalcoRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T3",
+        "chance": 3.3333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Falco Walker Rig T3"
     ]
@@ -11091,6 +12029,14 @@
     "name": "Falco Walker Schematic",
     "type": "FalcoSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Falco Walker"
     ]
@@ -11991,6 +12937,14 @@
     "name": "Fast Grappling Hook",
     "parent": "Nomad Grappling Hook",
     "type": "FastGrapplingHook_C",
+    "drops": [
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 2.8061826,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "crafting": [
       {
         "ingredients": [
@@ -12444,7 +13398,45 @@
     "description": "Used to make everything from ropes, sails, to garments.",
     "experiencieReward": 2,
     "stackSize": 100,
-    "weight": 0.02
+    "weight": 0.02,
+    "drops": [
+      {
+        "location": "FallbackDefaultLoot",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "BaseResources_T1",
+        "chance": 26.31579,
+        "minQuantity": 12,
+        "maxQuantity": 12
+      },
+      {
+        "location": "Fiber_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "BaseResources_T2",
+        "chance": 12.5,
+        "minQuantity": 14,
+        "maxQuantity": 14
+      },
+      {
+        "location": "BaseResources_T3",
+        "chance": 10.718528,
+        "minQuantity": 16,
+        "maxQuantity": 16
+      },
+      {
+        "location": "BaseResources_T4",
+        "chance": 9.090909,
+        "minQuantity": 16,
+        "maxQuantity": 16
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -12471,12 +13463,28 @@
     "durability": 120,
     "armorInfo": {
       "reduction": 2.2
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T1",
+        "chance": 19.801981,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Fiber Headwrap",
     "parent": "FiberTorso",
     "type": "T1_FiberHeadwrap_C",
+    "drops": [
+      {
+        "location": "Armors_T1",
+        "chance": 19.801981,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Armors",
     "crafting": [
       {
@@ -12524,7 +13532,15 @@
     "durability": 120,
     "armorInfo": {
       "reduction": 2
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T1",
+        "chance": 19.801981,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -12552,12 +13568,58 @@
     "armorInfo": {
       "reduction": 3,
       "speedReduction": 2
-    }
+    },
+    "drops": [
+      {
+        "location": "LootBoxArmorsTable",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Armors_T1",
+        "chance": 19.801981,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Fiber Weave",
     "parent": "Fiberworking Station",
     "type": "FiberCloth_C",
+    "drops": [
+      {
+        "location": "FiberCloth_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "ProcessedResources_T1",
+        "chance": 50,
+        "minQuantity": 10,
+        "maxQuantity": 10
+      },
+      {
+        "location": "BaseResources_T2",
+        "chance": 12.5,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "BaseResources_T3",
+        "chance": 10.718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "BaseResources_T4",
+        "chance": 9.090909,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -12918,6 +13980,14 @@
       "damage": 20,
       "penetration": 50
     },
+    "drops": [
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      }
+    ],
     "wikiVisibility": false,
     "damageType": "Class'MistFireDamageType'",
     "crafting": [
@@ -13034,6 +14104,14 @@
     "name": "Firefly Walker Rig T2 Schematic",
     "type": "FireflyRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T1",
+        "chance": 41.666668,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Firefly Walker Rig T2"
     ]
@@ -13058,6 +14136,14 @@
     "name": "Firefly Walker Rig T3 Schematic",
     "type": "FireflyRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T1",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Firefly Walker Rig T3"
     ]
@@ -13067,6 +14153,14 @@
     "name": "Firefly Walker Schematic",
     "type": "FireflySchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Firefly Walker"
     ]
@@ -13567,12 +14661,52 @@
       "max": 20,
       "increase": 4.5,
       "maxIncrease": 90
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 2.857143,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Firestone Axe",
     "parent": "Ceramic Hatchet",
     "type": "OneHandedLavaAxe_C",
+    "drops": [
+      {
+        "location": "LootboxToolsCanyonTable",
+        "chance": 3.816794,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxToolsTable",
+        "chance": 3.816794,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 2.690583,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -13622,7 +14756,21 @@
   {
     "name": "Firestone Battle Axe",
     "parent": "Rawbone Battle Axe",
-    "type": "TwoHandedLavaAxe_C"
+    "type": "TwoHandedLavaAxe_C",
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 2.690583,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Weapons",
@@ -13706,12 +14854,40 @@
       "damage": 42,
       "penetration": 20
     },
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 2.690583,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "damageType": "'MeleeSwordDamage_C'"
   },
   {
     "name": "Firestone Bludgeon",
     "parent": "Short Ceramic Hoofmace",
     "type": "OneHandedLavaMace_C",
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 2.690583,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -13753,6 +14929,20 @@
     "name": "Firestone Bozdogan",
     "parent": "Short Ceramic Hoofmace",
     "type": "TwoHandedLavaMace_C",
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 2.690583,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -13794,6 +14984,20 @@
     "name": "Firestone Hammerstaff",
     "parent": "Paddleblade Quarterstaff",
     "type": "LavaQuarterstaffBlunt_C",
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 2.690583,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -13832,6 +15036,20 @@
     "name": "Firestone Kopesh",
     "parent": "Short Malletblade",
     "type": "OneHandedLavaSword_C",
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 2.690583,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -13879,6 +15097,20 @@
     "name": "Firestone Longblade",
     "parent": "Singblade",
     "type": "TwoHandedLavaSword_C",
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 2.690583,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -14288,6 +15520,20 @@
         "tier": 1
       }
     ],
+    "drops": [
+      {
+        "location": "Ammo_T1",
+        "chance": 33.333332,
+        "minQuantity": 3,
+        "maxQuantity": 15
+      },
+      {
+        "location": "TreasureMap_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "damageType": "'BoltDamage_C'"
   },
   {
@@ -14500,6 +15746,14 @@
     "name": "Flotillian Ammo Schematic",
     "type": "Ammo_T4Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "learn": [
       "Iron-Tipped Bolt",
       "Nibiran-tipped Bolt",
@@ -14524,6 +15778,14 @@
     "name": "Flotillian Armors Schematic",
     "type": "Armors_T4Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Feather Boots",
       "Iron Studded Boots",
@@ -14547,6 +15809,14 @@
     "name": "Flotillian Constructions Schematic",
     "type": "Constructions_T4Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "ChestGigantic"
     ]
@@ -14570,6 +15840,14 @@
     "name": "Flotillian Crafting Stations Schematic",
     "type": "Stations_T4Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Advanced Furnace",
       "SmithingStation",
@@ -14597,6 +15875,14 @@
     "name": "Flotillian Potions Schematic",
     "type": "Vitamins_T4Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Worm Tincture"
     ]
@@ -14652,6 +15938,14 @@
     "name": "Flotillian Tools Schematic",
     "type": "Tools_T4Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Fast Grappling Hook",
       "Iron Pickaxe",
@@ -14680,6 +15974,14 @@
     "name": "Flotillian Walker Weapons Schematic",
     "type": "WalkerWeapons_T4Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Battle Fan",
       "GunPodShell_T2",
@@ -14704,6 +16006,14 @@
     "name": "Flotillian Weapons Schematic",
     "type": "Weapons_T4Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Wyndanblade Quarterstaff",
       "Nibiran Curved Dagger",
@@ -14725,7 +16035,15 @@
     "translation": "Flots",
     "type": "Currency_C",
     "description": "Used by nomads to trade with each other at trading stations located in most oases.",
-    "stackSize": 999999
+    "stackSize": 999999,
+    "drops": [
+      {
+        "location": "Flots_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Resources",
@@ -14757,12 +16075,34 @@
     "moduleInfo": {
       "max": 20,
       "increase": 0.1
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Foraging Pouch",
     "parent": "Equipment",
     "type": "ForagingPouch_C",
+    "drops": [
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 5.6123652,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -14801,7 +16141,15 @@
     "translation": "Forebear Coin",
     "type": "ForebearCoin_C",
     "experiencieReward": 3,
-    "stackSize": 999999
+    "stackSize": 999999,
+    "drops": [
+      {
+        "location": "AC_ForeBearCoins",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -14847,7 +16195,15 @@
       "absorbing": 8,
       "reduction": 3,
       "speedReduction": 9
-    }
+    },
+    "drops": [
+      {
+        "location": "Improved Armors",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -14892,7 +16248,15 @@
       "absorbing": 6,
       "reduction": 1,
       "speedReduction": 3
-    }
+    },
+    "drops": [
+      {
+        "location": "Improved Armors",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -14938,7 +16302,15 @@
       "absorbing": 8,
       "reduction": 2,
       "speedReduction": 3
-    }
+    },
+    "drops": [
+      {
+        "location": "Improved Armors",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "ForesterBoots",
@@ -14986,7 +16358,21 @@
       "max": 20,
       "increase": 2.5,
       "maxIncrease": 50
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "crafting": [
@@ -15027,6 +16413,14 @@
     "description": "Faint images are etched on the translucent surface.",
     "experiencieReward": 10,
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "LootBoxTabletsTable",
+        "chance": 100,
+        "minQuantity": 5,
+        "maxQuantity": 10
+      }
+    ],
     "wikiVisibility": false,
     "weight": 0.2
   },
@@ -15042,6 +16436,38 @@
     "name": "Fruit Pulp",
     "parent": "Stomping Station",
     "type": "FruitPulp_C",
+    "drops": [
+      {
+        "location": "ExtraResources_T1",
+        "chance": 11.111111,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "FruitPulp_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "ExtraResources_T2",
+        "chance": 9.090909,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "ExtraResources_T3",
+        "chance": 8.333333,
+        "minQuantity": 6,
+        "maxQuantity": 6
+      },
+      {
+        "location": "ExtraResources_T4",
+        "chance": 7.6923075,
+        "minQuantity": 6,
+        "maxQuantity": 6
+      }
+    ],
     "onlyDevs": true,
     "category": "Resources",
     "crafting": [
@@ -15411,7 +16837,15 @@
     "name": "Gasket",
     "translation": "Gasket",
     "type": "Gasket_C",
-    "stackSize": 10
+    "stackSize": 10,
+    "drops": [
+      {
+        "location": "Components_T1",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Furniture",
@@ -15486,7 +16920,15 @@
     "type": "GelatinousGoo_C",
     "experiencieReward": 12,
     "stackSize": 100,
-    "weight": 0.17
+    "weight": 0.17,
+    "drops": [
+      {
+        "location": "GelatinousGoo_T3",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Defenses",
@@ -15614,6 +17056,26 @@
     "name": "Glass",
     "parent": "Furnace",
     "type": "EmptyGlassVial_C",
+    "drops": [
+      {
+        "location": "ProcessedResources_T2",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      },
+      {
+        "location": "ProcessedResources_T3",
+        "chance": 5.882353,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
+        "location": "ProcessedResources_T4",
+        "chance": 8.333333,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -16093,7 +17555,15 @@
       "max": 20,
       "increase": 2.5,
       "maxIncrease": 50
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Resources",
@@ -16124,7 +17594,21 @@
       "max": 20,
       "increase": 4.5,
       "maxIncrease": 90
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 2.857143,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Furniture",
@@ -16207,12 +17691,40 @@
       "max": 20,
       "increase": 4,
       "maxIncrease": 80
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Heavy Backpack",
     "parent": "Medium Backpack",
     "type": "LargeBackpack_C",
+    "drops": [
+      {
+        "location": "LootboxEquipmentCanyonTable",
+        "chance": 1.6393442,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxEquipmentTable",
+        "chance": 1.6393442,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -16262,6 +17774,26 @@
     "name": "Heavy Rawbone Hand Axe",
     "parent": "OneHandedBoneAxe",
     "type": "LargeBoneAxe_C",
+    "drops": [
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 11.2247305,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 4.484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
+      },
+      {
+        "location": "Weapons_T2",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -16316,6 +17848,14 @@
     "name": "Heavy Walls Schematic",
     "type": "HeavyWallsSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "learn": [
       "Heavy Wood Double Slit Wall",
       "Heavy Wood Slit Wall",
@@ -16806,6 +18346,14 @@
     "name": "Hercul Walker Rig T2 Schematic",
     "type": "HerculRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T3",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Hercul Walker Rig T2"
     ]
@@ -16830,6 +18378,14 @@
     "name": "Hercul Walker Rig T3 Schematic",
     "type": "HerculRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T3",
+        "chance": 3.3333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Hercul Walker Rig T3"
     ]
@@ -16839,6 +18395,14 @@
     "name": "Hercul Walker Schematic",
     "type": "HerculSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Hercul Walker"
     ]
@@ -17198,7 +18762,39 @@
     "description": "The raw skin of an animal.",
     "experiencieReward": 3,
     "stackSize": 100,
-    "weight": 0.34
+    "weight": 0.34,
+    "drops": [
+      {
+        "location": "ExtraResources_T1",
+        "chance": 11.111111,
+        "minQuantity": 2,
+        "maxQuantity": 2
+      },
+      {
+        "location": "Hide_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "ExtraResources_T2",
+        "chance": 9.090909,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "ExtraResources_T3",
+        "chance": 8.333333,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "ExtraResources_T4",
+        "chance": 7.6923075,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ]
   },
   {
     "category": "Resources",
@@ -17407,6 +19003,14 @@
     "name": "Hornet Walker Rig T2 Schematic",
     "type": "HornetRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T3",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Hornet Walker Rig T2"
     ]
@@ -17431,6 +19035,14 @@
     "name": "Hornet Walker Rig T3 Schematic",
     "type": "HornetRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T3",
+        "chance": 3.3333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Hornet Walker Rig T3"
     ]
@@ -17440,6 +19052,14 @@
     "name": "Hornet Walker Schematic",
     "type": "HornetSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Hornet Walker"
     ]
@@ -18294,12 +19914,52 @@
     "translation": "Huge Cactus Fruit",
     "type": "CactusFruit_C",
     "stackSize": 100,
-    "weight": 1.2
+    "weight": 1.2,
+    "drops": [
+      {
+        "location": "CactusFruit_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "ExtraResources_T1",
+        "chance": 11.111111,
+        "minQuantity": 2,
+        "maxQuantity": 2
+      },
+      {
+        "location": "ExtraResources_T2",
+        "chance": 9.090909,
+        "minQuantity": 2,
+        "maxQuantity": 2
+      },
+      {
+        "location": "ExtraResources_T3",
+        "chance": 8.333333,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "ExtraResources_T4",
+        "chance": 7.6923075,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      }
+    ]
   },
   {
     "name": "Hullbreaker Scattershot",
     "parent": "CeramicScattershot",
     "type": "HullbreakerScattershot_C",
+    "drops": [
+      {
+        "location": "Ammo_T4",
+        "chance": 28.571428,
+        "minQuantity": 2,
+        "maxQuantity": 12
+      }
+    ],
     "crafting": [
       {
         "ingredients": [
@@ -18431,6 +20091,14 @@
     "name": "Improved Ammo Schematic",
     "type": "Ammo_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "learn": [
       "Bone Bolt",
       "Fire Bolt",
@@ -18458,6 +20126,14 @@
     "name": "Improved Armors Schematic",
     "type": "Armors_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Swampwood Galoshes",
       "Baskwood Boots",
@@ -18483,6 +20159,14 @@
     "name": "Improved Constructions Schematic",
     "type": "Constructions_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "ChestBaseMaintenance_T2",
       "Walker Packing Compartment",
@@ -18523,6 +20207,14 @@
     "name": "Improved Crafting Stations Schematic",
     "type": "Stations_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Advanced Woodworking Station",
       "Advanced Fiberworking Station",
@@ -18556,6 +20248,14 @@
     "name": "Improved Potions Schematic",
     "type": "Vitamins_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Desert Mule",
       "Jojo Mojo",
@@ -18574,6 +20274,14 @@
     "name": "Improved Tools Schematic",
     "type": "Tools_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Rawbone Hand Axe",
       "Heavy Rawbone Hand Axe",
@@ -18606,6 +20314,32 @@
     "name": "Improved Walker Parts Schematic",
     "type": "WalkerPartsImprovedSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Buffalo Walker Legs Armored (1 of 2)",
       "Mollusk Walker Legs Armored (1 of 2)",
@@ -18673,6 +20407,14 @@
     "name": "Improved Walker Weapons Schematic",
     "type": "WalkerWeapons_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Lobber",
       "Slingshot",
@@ -18698,6 +20440,14 @@
     "name": "Improved Weapons Schematic",
     "type": "Weapons_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Throwing Net",
       "Bonespike Sword",
@@ -18958,6 +20708,14 @@
         "toolType": "RepeaterBolt",
         "tier": 4
       }
+    ],
+    "drops": [
+      {
+        "location": "Ammo_T4",
+        "chance": 28.571428,
+        "minQuantity": 5,
+        "maxQuantity": 15
+      }
     ]
   },
   {
@@ -19084,6 +20842,20 @@
         "toolType": "Mining",
         "tier": 20
       }
+    ],
+    "drops": [
+      {
+        "location": "LootboxToolsCanyonTable",
+        "chance": 1.2722646,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      },
+      {
+        "location": "LootBoxToolsTable",
+        "chance": 1.2722646,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      }
     ]
   },
   {
@@ -19117,6 +20889,14 @@
     "name": "Iron Rok",
     "parent": "Obsidian Rok",
     "type": "IronRok_C",
+    "drops": [
+      {
+        "location": "Ammo_T4",
+        "chance": 14.285714,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ],
     "crafting": [
       {
         "ingredients": [
@@ -19217,7 +20997,15 @@
     "armorInfo": {
       "absorbing": 22,
       "speedReduction": 15
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T4",
+        "chance": 26.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -19253,7 +21041,15 @@
       "absorbing": 20,
       "reduction": 3,
       "speedReduction": 5
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T4",
+        "chance": 26.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -19289,7 +21085,15 @@
       "absorbing": 20,
       "reduction": 4,
       "speedReduction": 5
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T4",
+        "chance": 26.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "crafting": [
@@ -19326,6 +21130,14 @@
       {
         "toolType": "BallistaHarpoon",
         "tier": 4
+      }
+    ],
+    "drops": [
+      {
+        "location": "Ammo_T4",
+        "chance": 28.571428,
+        "minQuantity": 1,
+        "maxQuantity": 6
       }
     ]
   },
@@ -19447,12 +21259,40 @@
       "damage": 55,
       "penetration": 20
     },
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 0.44843048,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      },
+      {
+        "location": "Weapons_T4",
+        "chance": 7.142857,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
     "name": "Jaggertooth Club",
     "parent": "Beat Stick",
     "type": "OneHandedStoneClub_C",
+    "drops": [
+      {
+        "location": "LootboxWeaponsCanyonTable",
+        "chance": 8.849558,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      },
+      {
+        "location": "Weapons_T1",
+        "chance": 9.67742,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -19491,6 +21331,14 @@
     "name": "Jaggertooth Maul",
     "parent": "Jaggertooth Club",
     "type": "TwoHandedStoneMace_C",
+    "drops": [
+      {
+        "location": "LootboxWeaponsCanyonTable",
+        "chance": 8.849558,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -19529,6 +21377,14 @@
     "name": "Jaggertooth Swordclub",
     "parent": "Beat Stick",
     "type": "TwoHandedStoneSword_C",
+    "drops": [
+      {
+        "location": "LootboxWeaponsCanyonTable",
+        "chance": 8.849558,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -20057,6 +21913,26 @@
     "parent": "Curing Station",
     "type": "Leather_C",
     "description": "Cured leather is one of the most universal materials available to Nomads, far superior to using crude, unprocessed animal hides.",
+    "drops": [
+      {
+        "location": "ProcessedResources_T2",
+        "chance": 11.111111,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "ProcessedResources_T3",
+        "chance": 11.764706,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "ProcessedResources_T4",
+        "chance": 8.333333,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -20089,7 +21965,15 @@
     "name": "Lever",
     "translation": "Lever",
     "type": "Level_C",
-    "stackSize": 10
+    "stackSize": 10,
+    "drops": [
+      {
+        "location": "Components_T1",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Resources",
@@ -20120,7 +22004,21 @@
     "weight": 0.24,
     "moduleInfo": {
       "max": 20
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Light Backpack",
@@ -20152,6 +22050,14 @@
     "name": "Light Javelin",
     "parent": "Beat Stick",
     "type": "JavelinRupu_C",
+    "drops": [
+      {
+        "location": "Weapons_T1",
+        "chance": 8.064516,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      }
+    ],
     "category": "Weapons",
     "trade_price": 1.6,
     "translation": "Light Javelin",
@@ -20305,6 +22211,26 @@
     "name": "Long Bonespike Swordstaff",
     "parent": "Bonespike Sword",
     "type": "TwoHandedBoneSword_C",
+    "drops": [
+      {
+        "location": "LootboxWeaponsCanyonTable",
+        "chance": 8.849558,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 4.484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
+      },
+      {
+        "location": "Weapons_T2",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -20352,6 +22278,20 @@
     "name": "Long Ceramic Hoofmace",
     "parent": "Rawbone Maul",
     "type": "TwoHandedZirconiumMace_C",
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 2.690583,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -20485,7 +22425,21 @@
     "moduleInfo": {
       "max": 20,
       "increase": 0.1
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Lumbermill",
@@ -20780,6 +22734,26 @@
     "name": "Medium Backpack",
     "parent": "Light Backpack",
     "type": "MediumBackpack_C",
+    "drops": [
+      {
+        "location": "LootboxEquipmentCanyonTable",
+        "chance": 22.95082,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      },
+      {
+        "location": "LootBoxEquipmentTable",
+        "chance": 22.95082,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      },
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 0.0999001,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -21200,7 +23174,21 @@
     "moduleInfo": {
       "max": 20,
       "increase": 1
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Resources",
@@ -21386,6 +23374,14 @@
     "name": "Mollusk Walker Rig T2 Schematic",
     "type": "MolluskRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T2",
+        "chance": 26.31579,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Mollusk Walker Rig T2"
     ]
@@ -21410,6 +23406,14 @@
     "name": "Mollusk Walker Rig T3 Schematic",
     "type": "MolluskRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T2",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Mollusk Walker Rig T3"
     ]
@@ -21419,6 +23423,14 @@
     "name": "Mollusk Walker Schematic",
     "type": "MolluskSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Mollusk Walker"
     ]
@@ -22285,7 +24297,27 @@
     "type": "MushroomFlesh_C",
     "experiencieReward": 2,
     "stackSize": 100,
-    "weight": 0.01
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "ExtraResources_T2",
+        "chance": 9.090909,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "ExtraResources_T3",
+        "chance": 8.333333,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "ExtraResources_T4",
+        "chance": 7.6923075,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ]
   },
   {
     "name": "Net",
@@ -22488,6 +24520,20 @@
         "tier": 25
       }
     ],
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 0.44843048,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      },
+      {
+        "location": "Weapons_T4",
+        "chance": 7.142857,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "damageType": "'MeleeAxeDamage_C'"
   },
   {
@@ -22532,6 +24578,20 @@
       {
         "toolType": "Scythe",
         "tier": 1
+      }
+    ],
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 0.44843048,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      },
+      {
+        "location": "Weapons_T4",
+        "chance": 7.142857,
+        "minQuantity": 1,
+        "maxQuantity": 1
       }
     ],
     "damageType": "'MeleeSwordDamage_C'"
@@ -22580,6 +24640,14 @@
         "tier": 1
       }
     ],
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 0.44843048,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      }
+    ],
     "damageType": "'MeleeSwordDamage_C'"
   },
   {
@@ -22620,6 +24688,20 @@
       "damage": 70,
       "penetration": 10
     },
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 0.44843048,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      },
+      {
+        "location": "Weapons_T4",
+        "chance": 7.142857,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
@@ -22663,6 +24745,32 @@
       {
         "toolType": "TreeCutting",
         "tier": 25
+      }
+    ],
+    "drops": [
+      {
+        "location": "LootboxToolsCanyonTable",
+        "chance": 0.12722646,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxToolsTable",
+        "chance": 0.12722646,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 0.44843048,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      },
+      {
+        "location": "Weapons_T4",
+        "chance": 7.142857,
+        "minQuantity": 1,
+        "maxQuantity": 1
       }
     ],
     "damageType": "'MeleeAxeDamage_C'"
@@ -22738,6 +24846,20 @@
       "damage": 58,
       "penetration": 20
     },
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 0.44843048,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      },
+      {
+        "location": "Weapons_T4",
+        "chance": 7.142857,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
@@ -22778,6 +24900,20 @@
       "damage": 70,
       "penetration": 10
     },
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 0.44843048,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      },
+      {
+        "location": "Weapons_T4",
+        "chance": 7.142857,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
@@ -22847,7 +24983,15 @@
     "armorInfo": {
       "absorbing": 25,
       "speedReduction": 15
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T4",
+        "chance": 6.6666665,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -22879,7 +25023,15 @@
       "absorbing": 23,
       "reduction": 4,
       "speedReduction": 5
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T4",
+        "chance": 6.6666665,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "crafting": [
@@ -22942,7 +25094,15 @@
       "absorbing": 23,
       "reduction": 5,
       "speedReduction": 5
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T4",
+        "chance": 6.6666665,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "crafting": [
@@ -23020,6 +25180,26 @@
     "name": "Nomad Cloth",
     "parent": "Advanced Fiberworking Station",
     "type": "BasicCloth_C",
+    "drops": [
+      {
+        "location": "ProcessedResources_T2",
+        "chance": 11.111111,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
+        "location": "ProcessedResources_T3",
+        "chance": 11.764706,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "ProcessedResources_T4",
+        "chance": 8.333333,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -23535,12 +25715,40 @@
     "type": "NurrFang_C",
     "experiencieReward": 8,
     "stackSize": 100,
-    "weight": 0.28
+    "weight": 0.28,
+    "drops": [
+      {
+        "location": "NurrFang_T2",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Nurrfang Toothclub",
     "parent": "Jaggertooth Club",
     "type": "BoneClub_C",
+    "drops": [
+      {
+        "location": "LootboxWeaponsCanyonTable",
+        "chance": 8.849558,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 4.484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
+      },
+      {
+        "location": "Weapons_T2",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -23628,6 +25836,20 @@
     "name": "Obsidian Flask",
     "parent": "Ceramic Bottle",
     "type": "LavaBottleSmall_C",
+    "drops": [
+      {
+        "location": "LootboxEquipmentCanyonTable",
+        "chance": 8.196721,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      },
+      {
+        "location": "LootBoxEquipmentTable",
+        "chance": 8.196721,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      }
+    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -23722,6 +25944,14 @@
     "name": "Obsidian Rok",
     "parent": "Ceramic Rok",
     "type": "ObsidianRok_C",
+    "drops": [
+      {
+        "location": "Ammo_T3",
+        "chance": 12,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ],
     "crafting": [
       {
         "ingredients": [
@@ -23966,7 +26196,21 @@
       "max": 20,
       "increase": 2.5,
       "maxIncrease": 50
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      }
+    ]
   },
   {
     "category": "Resources",
@@ -23998,12 +26242,46 @@
       "max": 20,
       "increase": 4.5,
       "maxIncrease": 90
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 2.857143,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Paddleblade Quarterstaff",
     "parent": "Rawbone Quarterstaff",
     "type": "ZirconiumQuarterstaff_C",
+    "drops": [
+      {
+        "location": "LootboxWeaponsCanyonTable",
+        "chance": 0.88495576,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 2.690583,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -24046,7 +26324,39 @@
     "type": "PalmLeaves_C",
     "experiencieReward": 4,
     "stackSize": 100,
-    "weight": 0.1
+    "weight": 0.1,
+    "drops": [
+      {
+        "location": "BaseResources_T1",
+        "chance": 10.526316,
+        "minQuantity": 2,
+        "maxQuantity": 2
+      },
+      {
+        "location": "PalmLeaves_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "BaseResources_T2",
+        "chance": 12.5,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
+        "location": "BaseResources_T3",
+        "chance": 7.4821854,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "BaseResources_T4",
+        "chance": 9.090909,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      }
+    ]
   },
   {
     "name": "Panda Walker",
@@ -24239,6 +26549,14 @@
     "name": "Panda Walker Rig T2 Schematic",
     "type": "PandaRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T4",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Panda Walker Rig T2"
     ]
@@ -24263,6 +26581,14 @@
     "name": "Panda Walker Rig T3 Schematic",
     "type": "PandaRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T4",
+        "chance": 3.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Panda Walker Rig T3"
     ]
@@ -24272,6 +26598,14 @@
     "name": "Panda Walker Schematic",
     "type": "PandaSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Panda Walker"
     ]
@@ -25114,7 +27448,15 @@
     "description": "In the dry southern valleys, the fossils of old sea creatures litter the ground, turning the hills white.",
     "experiencieReward": 6,
     "stackSize": 100,
-    "weight": 0.01
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "ClamPearls_T4",
+        "chance": 6.6666665,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      }
+    ]
   },
   {
     "category": "Containers",
@@ -25295,7 +27637,15 @@
     "name": "Pinion",
     "translation": "Pinion",
     "type": "Pinion_C",
-    "stackSize": 10
+    "stackSize": 10,
+    "drops": [
+      {
+        "location": "Components_T1",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Poaching Hut",
@@ -25620,6 +27970,14 @@
     "name": "Proxy Walker Rig T2 Schematic",
     "type": "ProxyRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T2",
+        "chance": 26.31579,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Proxy Walker Rig T2"
     ]
@@ -25644,6 +28002,14 @@
     "name": "Proxy Walker Rig T3 Schematic",
     "type": "ProxyRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T2",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Proxy Walker Rig T3"
     ]
@@ -25653,6 +28019,14 @@
     "name": "Proxy Walker Schematic",
     "type": "ProxySchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Proxy Walker"
     ]
@@ -25711,6 +28085,38 @@
     "name": "Purified Water",
     "parent": "Camp Fire",
     "type": "NormalWater_C",
+    "drops": [
+      {
+        "location": "ExtraResources_T1",
+        "chance": 11.111111,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "ExtraResources_T2",
+        "chance": 9.090909,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "ExtraResources_T3",
+        "chance": 8.333333,
+        "minQuantity": 6,
+        "maxQuantity": 6
+      },
+      {
+        "location": "ClamPearls_T4",
+        "chance": 60,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "ExtraResources_T4",
+        "chance": 7.6923075,
+        "minQuantity": 6,
+        "maxQuantity": 6
+      }
+    ],
     "category": "Liquids",
     "crafting": [
       {
@@ -26147,6 +28553,14 @@
     "name": "Raptor Sky Walker Rig T2 Schematic",
     "type": "RaptorRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T4",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Raptor Sky Walker Rig T2"
     ]
@@ -26171,6 +28585,14 @@
     "name": "Raptor Sky Walker Rig T3 Schematic",
     "type": "RaptorRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T4",
+        "chance": 3.3333335,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Raptor Sky Walker Rig T3"
     ]
@@ -26180,6 +28602,14 @@
     "name": "Raptor Sky Walker Schematic",
     "type": "RaptorSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Raptor Sky Walker"
     ]
@@ -26721,6 +29151,20 @@
     "name": "Rawbone Battle Axe",
     "parent": "Stone Axe",
     "type": "TwoHandedBoneAxe_C",
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 4.484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
+      },
+      {
+        "location": "Weapons_T2",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -26768,6 +29212,26 @@
     "name": "Rawbone Club",
     "parent": "Nurrfang Toothclub",
     "type": "BoneMace_C",
+    "drops": [
+      {
+        "location": "LootboxWeaponsCanyonTable",
+        "chance": 8.849558,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 4.484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
+      },
+      {
+        "location": "Weapons_T2",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -26844,17 +29308,89 @@
         "tier": 10
       }
     ],
+    "drops": [
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 11.2247305,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootboxToolsCanyonTable",
+        "chance": 6.3613234,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxToolsTable",
+        "chance": 6.3613234,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 4.484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
+      },
+      {
+        "location": "Weapons_T2",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "damageType": "'MeleeAxeDamage_C'"
   },
   {
     "name": "Rawbone Maul",
     "parent": "Rawbone Maul",
-    "type": "TwoHandedBoneSpikedClub_C"
+    "type": "TwoHandedBoneSpikedClub_C",
+    "drops": [
+      {
+        "location": "LootboxWeaponsCanyonTable",
+        "chance": 8.849558,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 4.484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
+      },
+      {
+        "location": "Weapons_T2",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Rawbone Quarterstaff",
     "parent": "Blunt Quarterstaff",
     "type": "BoneQuarterstaff_C",
+    "drops": [
+      {
+        "location": "LootboxWeaponsCanyonTable",
+        "chance": 8.849558,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 4.484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
+      },
+      {
+        "location": "Weapons_T2",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -26893,6 +29429,26 @@
     "name": "Rawbone Sawsword",
     "parent": "Jaggertooth Swordclub",
     "type": "TwoHandedBoneSwordShort_C",
+    "drops": [
+      {
+        "location": "LootboxWeaponsCanyonTable",
+        "chance": 8.849558,
+        "minQuantity": 1,
+        "maxQuantity": 3
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 4.484305,
+        "minQuantity": 1,
+        "maxQuantity": 12
+      },
+      {
+        "location": "Weapons_T2",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -26942,7 +29498,15 @@
     "type": "RedBanana_C",
     "experiencieReward": 1,
     "stackSize": 100,
-    "weight": 0.18
+    "weight": 0.18,
+    "drops": [
+      {
+        "location": "ExtraResources_T4",
+        "chance": 7.6923075,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -26977,7 +29541,15 @@
     "armorInfo": {
       "reduction": 9,
       "speedReduction": 3
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T3",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -27012,7 +29584,15 @@
     "armorInfo": {
       "reduction": 5,
       "speedReduction": 1
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T3",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Resources",
@@ -27022,7 +29602,21 @@
     "type": "RedwoodWood_C",
     "experiencieReward": 12,
     "stackSize": 100,
-    "weight": 0.73
+    "weight": 0.73,
+    "drops": [
+      {
+        "location": "ExtraResources_T3",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "ExtraResources_T4",
+        "chance": 7.6923075,
+        "minQuantity": 8,
+        "maxQuantity": 8
+      }
+    ]
   },
   {
     "name": "RedwoodWoodBoots",
@@ -27043,6 +29637,20 @@
     "name": "Reinforced Gear",
     "parent": "Wooden Gear",
     "type": "ReinforcedGear_C",
+    "drops": [
+      {
+        "location": "ProcessedResources_T3",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "ProcessedResources_T4",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -27132,6 +29740,14 @@
     "name": "Reinforced Walls Schematic",
     "type": "ReinforcedWallsSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "learn": [
       "Medium Wood Double Slit Wall",
       "Medium Wood Slit Wall",
@@ -27151,6 +29767,14 @@
     "experiencieReward": 3,
     "stackSize": 100,
     "weight": 0.4,
+    "drops": [
+      {
+        "location": "AC_Relic_1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "wikiVisibility": false
   },
   {
@@ -27162,6 +29786,14 @@
     "experiencieReward": 3,
     "stackSize": 100,
     "weight": 0.5,
+    "drops": [
+      {
+        "location": "AC_Relic_2",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "wikiVisibility": false
   },
   {
@@ -27383,6 +30015,26 @@
     "parent": "Advanced Fiberworking Station",
     "type": "Rope_C",
     "description": "A strong cord used for crafting and construction",
+    "drops": [
+      {
+        "location": "ProcessedResources_T2",
+        "chance": 11.111111,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "BaseResources_T3",
+        "chance": 10.718528,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
+        "location": "BaseResources_T4",
+        "chance": 9.090909,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -27438,12 +30090,28 @@
     "name": "Rotor",
     "translation": "Rotor",
     "type": "Rotor_C",
-    "stackSize": 10
+    "stackSize": 10,
+    "drops": [
+      {
+        "location": "Components_T1",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Rubber Block",
     "parent": "Curing Station",
     "type": "Rubber_C",
+    "drops": [
+      {
+        "location": "ProcessedResources_T4",
+        "chance": 8.333333,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -27815,12 +30483,28 @@
       "absorbing": 4,
       "reduction": 2,
       "speedReduction": 1
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T1",
+        "chance": 5.940594,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Rupu Fur Sandals",
     "parent": "RupuFurTorso",
     "type": "T1_RupuFurBoots_C",
+    "drops": [
+      {
+        "location": "Armors_T1",
+        "chance": 5.940594,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Armors",
     "crafting": [
       {
@@ -27872,7 +30556,15 @@
     "armorInfo": {
       "absorbing": 4,
       "reduction": 1
-    }
+    },
+    "drops": [
+      {
+        "location": "Armors_T1",
+        "chance": 5.940594,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Resources",
@@ -27881,7 +30573,27 @@
     "translation": "Rupu Gel",
     "type": "MonkeySecretion_C",
     "stackSize": 100,
-    "weight": 0.2
+    "weight": 0.2,
+    "drops": [
+      {
+        "location": "ExtraResources_T2",
+        "chance": 9.090909,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "ExtraResources_T3",
+        "chance": 8.333333,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "ExtraResources_T4",
+        "chance": 7.6923075,
+        "minQuantity": 6,
+        "maxQuantity": 6
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -27962,7 +30674,39 @@
     "translation": "Rupu Pelt",
     "type": "RupuFur_C",
     "stackSize": 100,
-    "weight": 0.55
+    "weight": 0.55,
+    "drops": [
+      {
+        "location": "ExtraResources_T1",
+        "chance": 11.111111,
+        "minQuantity": 2,
+        "maxQuantity": 2
+      },
+      {
+        "location": "RupuFur_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "ExtraResources_T2",
+        "chance": 9.090909,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
+        "location": "ExtraResources_T3",
+        "chance": 8.333333,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "ExtraResources_T4",
+        "chance": 7.6923075,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -28318,7 +31062,39 @@
     "type": "RupuVine_C",
     "experiencieReward": 18,
     "stackSize": 100,
-    "weight": 0.01
+    "weight": 0.01,
+    "drops": [
+      {
+        "location": "BaseResources_T1",
+        "chance": 10.526316,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "RupuVines_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "BaseResources_T2",
+        "chance": 12.5,
+        "minQuantity": 2,
+        "maxQuantity": 2
+      },
+      {
+        "location": "BaseResources_T3",
+        "chance": 6.769596,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
+        "location": "BaseResources_T4",
+        "chance": 9.090909,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -28399,6 +31175,38 @@
     "parent": "Crafting",
     "type": "Sand_C",
     "description": "Tiny green mineral flecks dot the sand.",
+    "drops": [
+      {
+        "location": "ExtraResources_T1",
+        "chance": 11.111111,
+        "minQuantity": 10,
+        "maxQuantity": 10
+      },
+      {
+        "location": "Sand_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "ExtraResources_T2",
+        "chance": 9.090909,
+        "minQuantity": 12,
+        "maxQuantity": 12
+      },
+      {
+        "location": "ExtraResources_T3",
+        "chance": 8.333333,
+        "minQuantity": 14,
+        "maxQuantity": 14
+      },
+      {
+        "location": "ExtraResources_T4",
+        "chance": 7.6923075,
+        "minQuantity": 14,
+        "maxQuantity": 14
+      }
+    ],
     "category": "Liquids",
     "crafting": [
       {
@@ -28549,6 +31357,14 @@
     "name": "Sand Structures Schematic",
     "type": "SandWallsSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "learn": [
       "Sandbag Wall",
       "Cloth Door",
@@ -28710,7 +31526,21 @@
       "max": 20,
       "increase": 4.5,
       "maxIncrease": 90
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Sawblade",
@@ -28784,6 +31614,14 @@
     "name": "Scattershot Ammo",
     "parent": "Scattershot Gun",
     "type": "RupuScattershot_T1_C",
+    "drops": [
+      {
+        "location": "Ammo_T1",
+        "chance": 33.333332,
+        "minQuantity": 2,
+        "maxQuantity": 18
+      }
+    ],
     "category": "Ammo",
     "trade_price": 5.2,
     "translation": "Scattershot Ammo",
@@ -28867,12 +31705,34 @@
     "moduleInfo": {
       "max": 20,
       "increase": 5
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Schematic Bag",
     "parent": "Light Backpack",
     "type": "SchematicBag_C",
+    "drops": [
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 11.2247305,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -29070,6 +31930,14 @@
     "name": "Schmetterling Walker Rig T2 Schematic",
     "type": "SchmetterlingRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T4",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Schmetterling Walker Rig T2"
     ]
@@ -29094,6 +31962,14 @@
     "name": "Schmetterling Walker Rig T3 Schematic",
     "type": "SchmetterlingRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T4",
+        "chance": 3.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Schmetterling Walker Rig T3"
     ]
@@ -29103,6 +31979,14 @@
     "name": "Schmetterling Walker Schematic",
     "type": "SchmetterlingSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Schmetterling Walker"
     ]
@@ -30022,6 +32906,26 @@
         "toolType": "Scythe",
         "tier": 15
       }
+    ],
+    "drops": [
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 0.5612365,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootboxToolsCanyonTable",
+        "chance": 6.3613234,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      },
+      {
+        "location": "LootBoxToolsTable",
+        "chance": 6.3613234,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      }
     ]
   },
   {
@@ -30153,7 +33057,15 @@
     "name": "Shackle",
     "translation": "Shackle",
     "type": "Shackle_C",
-    "stackSize": 10
+    "stackSize": 10,
+    "drops": [
+      {
+        "location": "Components_T1",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Resources",
@@ -30205,6 +33117,26 @@
     "name": "Short Ceramic Hoofmace",
     "parent": "Rawbone Club",
     "type": "OneHandedZirconiumMace_C",
+    "drops": [
+      {
+        "location": "LootboxWeaponsCanyonTable",
+        "chance": 0.88495576,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 2.690583,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -30246,6 +33178,26 @@
     "name": "Short Malletblade",
     "parent": "Bonespike Sword",
     "type": "OneHandedZirconiumSword_C",
+    "drops": [
+      {
+        "location": "LootboxWeaponsCanyonTable",
+        "chance": 0.88495576,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 2.690583,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -30441,6 +33393,14 @@
     "name": "Silur Walker Schematic",
     "type": "SilurSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Silur Walker"
     ]
@@ -30633,6 +33593,20 @@
     "name": "Simple Pickaxe",
     "parent": "Beat Stick",
     "type": "SimplePickaxe_C",
+    "drops": [
+      {
+        "location": "LootboxToolsCanyonTable",
+        "chance": 17.811705,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      },
+      {
+        "location": "LootBoxToolsTable",
+        "chance": 17.811705,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      }
+    ],
     "category": "Tools",
     "crafting": [
       {
@@ -30679,6 +33653,20 @@
     "name": "Simple Repair Hammer",
     "parent": "Beat Stick",
     "type": "SimpleRepairHammer_C",
+    "drops": [
+      {
+        "location": "LootboxToolsCanyonTable",
+        "chance": 17.811705,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      },
+      {
+        "location": "LootBoxToolsTable",
+        "chance": 17.811705,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      }
+    ],
     "category": "Tools",
     "crafting": [
       {
@@ -30715,6 +33703,20 @@
     "name": "Simple Sickle",
     "parent": "Beat Stick",
     "type": "SimpleSickle_C",
+    "drops": [
+      {
+        "location": "LootboxToolsCanyonTable",
+        "chance": 17.811705,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      },
+      {
+        "location": "LootBoxToolsTable",
+        "chance": 17.811705,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      }
+    ],
     "category": "Tools",
     "crafting": [
       {
@@ -30761,6 +33763,20 @@
     "name": "Singblade",
     "parent": "Long Bonespike Swordstaff",
     "type": "TwoHandedZirconiumSword_C",
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 2.690583,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -31314,7 +34330,21 @@
     "description": "This lush green plant has been used by nomads for many applications over the centuries. Many prize it's refreshing aroma against the dankness of the wasteland.",
     "experiencieReward": 12,
     "stackSize": 100,
-    "weight": 0.25
+    "weight": 0.25,
+    "drops": [
+      {
+        "location": "Obsidian_T4",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "Spearmint_T4",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Spider Walker",
@@ -31406,6 +34436,14 @@
     "name": "Spider Walker Schematic",
     "type": "SpiderSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Spider Walker",
       "Spider Walker"
@@ -31850,12 +34888,40 @@
     "name": "Spline",
     "translation": "Spline",
     "type": "Spline_C",
-    "stackSize": 10
+    "stackSize": 10,
+    "drops": [
+      {
+        "location": "Components_T1",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Split Bone Bottle",
     "parent": "Bone Bottle",
     "type": "SplitBoneBottle_C",
+    "drops": [
+      {
+        "location": "LootboxEquipmentCanyonTable",
+        "chance": 22.95082,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      },
+      {
+        "location": "LootBoxEquipmentTable",
+        "chance": 22.95082,
+        "minQuantity": 1,
+        "maxQuantity": 4
+      },
+      {
+        "location": "LootboxToolsandEquipmentCanyonTable",
+        "chance": 5.6123652,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -31906,6 +34972,20 @@
     "name": "Split Ceramic Flask",
     "parent": "Ceramic Bottle",
     "type": "SplitCeramicBottle_C",
+    "drops": [
+      {
+        "location": "LootboxEquipmentCanyonTable",
+        "chance": 8.196721,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      },
+      {
+        "location": "LootBoxEquipmentTable",
+        "chance": 8.196721,
+        "minQuantity": 1,
+        "maxQuantity": 2
+      }
+    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -31938,6 +35018,20 @@
     "name": "Split Durable Water Sack",
     "parent": "Durable Water Sack",
     "type": "SplitBarrel2_C",
+    "drops": [
+      {
+        "location": "LootboxEquipmentCanyonTable",
+        "chance": 1.6393442,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxEquipmentTable",
+        "chance": 1.6393442,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -31974,7 +35068,15 @@
     "name": "Spring",
     "translation": "Spring",
     "type": "Spring_C",
-    "stackSize": 10
+    "stackSize": 10,
+    "drops": [
+      {
+        "location": "Components_T1",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Defenses",
@@ -32011,7 +35113,15 @@
     "name": "Sprocket",
     "translation": "Sprocket",
     "type": "Sprocket_C",
-    "stackSize": 10
+    "stackSize": 10,
+    "drops": [
+      {
+        "location": "Components_T1",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -32411,6 +35521,14 @@
     "name": "Stiletto Walker Rig T2 Schematic",
     "type": "StilettoRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T2",
+        "chance": 26.31579,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Stiletto Walker Rig T2"
     ]
@@ -32435,6 +35553,14 @@
     "name": "Stiletto Walker Rig T3 Schematic",
     "type": "StilettoRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T2",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Stiletto Walker Rig T3"
     ]
@@ -32444,6 +35570,14 @@
     "name": "Stiletto Walker Schematic",
     "type": "StilettoSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Stiletto Walker"
     ]
@@ -33375,6 +36509,38 @@
     "name": "Stone",
     "translation": "Stone",
     "type": "Stone_C",
+    "drops": [
+      {
+        "location": "BaseResources_T1",
+        "chance": 26.31579,
+        "minQuantity": 8,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Stone_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "BaseResources_T2",
+        "chance": 12.5,
+        "minQuantity": 10,
+        "maxQuantity": 10
+      },
+      {
+        "location": "BaseResources_T3",
+        "chance": 10.718528,
+        "minQuantity": 12,
+        "maxQuantity": 12
+      },
+      {
+        "location": "BaseResources_T4",
+        "chance": 9.090909,
+        "minQuantity": 12,
+        "maxQuantity": 12
+      }
+    ],
     "category": "Resources",
     "trade_price": 0.1,
     "experiencieReward": 3,
@@ -33385,6 +36551,26 @@
     "name": "Stone Axe",
     "parent": "Crude Hatchet",
     "type": "StoneAxe_C",
+    "drops": [
+      {
+        "location": "LootboxToolsCanyonTable",
+        "chance": 17.811705,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      },
+      {
+        "location": "LootBoxToolsTable",
+        "chance": 17.811705,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      },
+      {
+        "location": "Weapons_T1",
+        "chance": 12.903226,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -33573,7 +36759,15 @@
     "type": "StonePlank_C",
     "experiencieReward": 25,
     "stackSize": 100,
-    "weight": 1
+    "weight": 1,
+    "drops": [
+      {
+        "location": "StonePlank_T2",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Stone Structures",
@@ -33650,6 +36844,14 @@
     "name": "Stone Walls Schematic",
     "type": "StoneWallsSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "learn": [
       "Stone Wall with Window",
       "Stone Floor / Roof",
@@ -33667,7 +36869,15 @@
     "name": "Strut",
     "translation": "Strut",
     "type": "Strut_C",
-    "stackSize": 10
+    "stackSize": 10,
+    "drops": [
+      {
+        "location": "Components_T1",
+        "chance": 8.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Grappling Hooks",
@@ -34011,6 +37221,20 @@
     "parent": "Furnace",
     "type": "Tar_C",
     "description": "Extracted from deep below volcanic soil.",
+    "drops": [
+      {
+        "location": "ProcessedResources_T3",
+        "chance": 5.882353,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      },
+      {
+        "location": "ProcessedResources_T4",
+        "chance": 8.333333,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      }
+    ],
     "category": "Liquids",
     "crafting": [
       {
@@ -34129,6 +37353,14 @@
     "name": "Throwable Aloe Bomb",
     "parent": "Aloe Goo Bomb",
     "type": "ThrowableAloeBomb_C",
+    "drops": [
+      {
+        "location": "Weapons_T3",
+        "chance": 6.25,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -34222,6 +37454,14 @@
     "name": "Throwing Net",
     "parent": "Beat Stick",
     "type": "ThrowingNet_C",
+    "drops": [
+      {
+        "location": "Weapons_T1",
+        "chance": 8.064516,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -34261,6 +37501,14 @@
     "parent": "Equipment",
     "type": "PlayerThrowstoneAmmo_C",
     "description": "Either a fantastically aerodynamic stone, its form perfected for best throwing experience... Or just a sharp chip of rock that you can throw at someone in a pinch.",
+    "drops": [
+      {
+        "location": "Weapons_T1",
+        "chance": 8.064516,
+        "minQuantity": 3,
+        "maxQuantity": 3
+      }
+    ],
     "category": "Weapons",
     "trade_price": 16.9,
     "translation": "Throwstone",
@@ -34507,6 +37755,14 @@
     "name": "Titan Walker Rig T2 Schematic",
     "type": "TitanRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T4",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Titan Walker Rig T2"
     ]
@@ -34531,6 +37787,14 @@
     "name": "Titan Walker Rig T3 Schematic",
     "type": "TitanRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T4",
+        "chance": 3.333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Titan Walker Rig T3"
     ]
@@ -34540,6 +37804,14 @@
     "name": "Titan Walker Schematic",
     "type": "TitanSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T4",
+        "chance": 5.882353,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Titan Walker"
     ]
@@ -35580,6 +38852,14 @@
     "name": "Toboggan Walker Rig T3 Schematic",
     "type": "TobogganRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T2",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Toboggan Walker Rig T3"
     ]
@@ -35589,6 +38869,14 @@
     "name": "Toboggan Walker Schematic",
     "type": "TobogganSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T2",
+        "chance": 5.5555553,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Toboggan Walker"
     ]
@@ -36773,7 +40061,21 @@
     "moduleInfo": {
       "max": 20,
       "increase": 0.25
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 5
+      }
+    ]
   },
   {
     "category": "Resources",
@@ -36822,7 +40124,15 @@
   {
     "name": "Traveller's Quarterstaff",
     "parent": "Blunt Quarterstaff",
-    "type": "TravellersStaff_C"
+    "type": "TravellersStaff_C",
+    "drops": [
+      {
+        "location": "Weapons_T1",
+        "chance": 9.67742,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Weapons",
@@ -36948,7 +40258,15 @@
     "armorInfo": {
       "reduction": 6,
       "speedReduction": 1
-    }
+    },
+    "drops": [
+      {
+        "location": "Improved Armors",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -36992,7 +40310,15 @@
     "durability": 250,
     "armorInfo": {
       "reduction": 4
-    }
+    },
+    "drops": [
+      {
+        "location": "Improved Armors",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "category": "Armors",
@@ -37036,12 +40362,40 @@
     "durability": 250,
     "armorInfo": {
       "reduction": 4.4
-    }
+    },
+    "drops": [
+      {
+        "location": "Improved Armors",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Triple Stitch Fabric",
     "parent": "Curing Station",
     "type": "TripleStitch_C",
+    "drops": [
+      {
+        "location": "ProcessedResources_T2",
+        "chance": 11.111111,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "ProcessedResources_T3",
+        "chance": 11.764706,
+        "minQuantity": 6,
+        "maxQuantity": 6
+      },
+      {
+        "location": "ProcessedResources_T4",
+        "chance": 8.333333,
+        "minQuantity": 6,
+        "maxQuantity": 6
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -37309,6 +40663,14 @@
     "name": "Tusker Walker Rig T2 Schematic",
     "type": "TuskerRig_T2Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T3",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Tusker Walker Rig T2"
     ]
@@ -37333,6 +40695,14 @@
     "name": "Tusker Walker Rig T3 Schematic",
     "type": "TuskerRig_T3Schematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Rigs_T3",
+        "chance": 3.3333333,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Tusker Walker Rig T3"
     ]
@@ -37342,6 +40712,14 @@
     "name": "Tusker Walker Schematic",
     "type": "TuskerSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T3",
+        "chance": 4.7619047,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "learn": [
       "Tusker Walker"
     ]
@@ -38771,6 +42149,20 @@
     "name": "Water Circulator",
     "parent": "Ceramic Bottle",
     "type": "Stillsuit2_C",
+    "drops": [
+      {
+        "location": "LootboxEquipmentCanyonTable",
+        "chance": 1.6393442,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxEquipmentTable",
+        "chance": 1.6393442,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -38913,7 +42305,20 @@
       "max": 20,
       "increase": 4.5,
       "maxIncrease": 90
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "crafting": [
@@ -39074,7 +42479,21 @@
       "max": 20,
       "increase": 4.5,
       "maxIncrease": 90
-    }
+    },
+    "drops": [
+      {
+        "location": "Modules Strongbox",
+        "chance": 5.714286,
+        "minQuantity": 5,
+        "maxQuantity": 20
+      },
+      {
+        "location": "Modules_T1",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ]
   },
   {
     "name": "Windmill",
@@ -39158,6 +42577,20 @@
     "name": "Wingsuit",
     "parent": "Nomad Grappling Hook",
     "type": "WingSuit_C",
+    "drops": [
+      {
+        "location": "LootboxEquipmentCanyonTable",
+        "chance": 1.6393442,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxEquipmentTable",
+        "chance": 1.6393442,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Equipment",
     "crafting": [
       {
@@ -39218,7 +42651,39 @@
     "description": "This versatile material is the focus of Flotillan engineering.",
     "experiencieReward": 1,
     "stackSize": 100,
-    "weight": 0.19
+    "weight": 0.19,
+    "drops": [
+      {
+        "location": "BaseResources_T1",
+        "chance": 26.31579,
+        "minQuantity": 10,
+        "maxQuantity": 10
+      },
+      {
+        "location": "Wood_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "BaseResources_T2",
+        "chance": 12.5,
+        "minQuantity": 12,
+        "maxQuantity": 12
+      },
+      {
+        "location": "BaseResources_T3",
+        "chance": 10.718528,
+        "minQuantity": 14,
+        "maxQuantity": 14
+      },
+      {
+        "location": "BaseResources_T4",
+        "chance": 9.090909,
+        "minQuantity": 14,
+        "maxQuantity": 14
+      }
+    ]
   },
   {
     "category": "Resources",
@@ -39233,6 +42698,38 @@
     "name": "Wood Shaft",
     "parent": "Woodworking Station",
     "type": "WoodenShaft_C",
+    "drops": [
+      {
+        "location": "ProcessedResources_T1",
+        "chance": 50,
+        "minQuantity": 10,
+        "maxQuantity": 10
+      },
+      {
+        "location": "WoodenShaft_T1",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "BaseResources_T2",
+        "chance": 12.5,
+        "minQuantity": 4,
+        "maxQuantity": 4
+      },
+      {
+        "location": "BaseResources_T3",
+        "chance": 10.718528,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      },
+      {
+        "location": "BaseResources_T4",
+        "chance": 9.090909,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -39417,12 +42914,40 @@
         "tier": 1
       }
     ],
+    "drops": [
+      {
+        "location": "Ammo_T1",
+        "chance": 33.333332,
+        "minQuantity": 5,
+        "maxQuantity": 25
+      }
+    ],
     "damageType": "'DartDamage_C'"
   },
   {
     "name": "Wooden Gear",
     "parent": "Advanced Woodworking Station",
     "type": "WoodenGear_C",
+    "drops": [
+      {
+        "location": "ProcessedResources_T2",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "ProcessedResources_T3",
+        "chance": 11.764706,
+        "minQuantity": 2,
+        "maxQuantity": 2
+      },
+      {
+        "location": "ProcessedResources_T4",
+        "chance": 8.333333,
+        "minQuantity": 2,
+        "maxQuantity": 2
+      }
+    ],
     "category": "Resources",
     "crafting": [
       {
@@ -39594,6 +43119,14 @@
     "name": "Wooden Walls Schematic",
     "type": "WoodenWallsSchematic_C",
     "stackSize": 100,
+    "drops": [
+      {
+        "location": "Schematics_T1",
+        "chance": 6.25,
+        "minQuantity": 5,
+        "maxQuantity": 5
+      }
+    ],
     "learn": [
       "Light Wood Walker Gate",
       "Light Wood Guard Rail",
@@ -39916,6 +43449,20 @@
     "name": "Wyndan Battle Axe",
     "parent": "Firestone Battle Axe",
     "type": "TwoHandedIronAxe2_C",
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 1.3452915,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T4",
+        "chance": 7.142857,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -39962,6 +43509,20 @@
     "name": "Wyndan Flame Sword",
     "parent": "Singblade",
     "type": "TwoHandedIronSword2_C",
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 1.3452915,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T4",
+        "chance": 7.142857,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -40009,6 +43570,20 @@
     "name": "Wyndan Hammer",
     "parent": "Short Ceramic Hoofmace",
     "type": "OneHandedIronMace2_C",
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 1.3452915,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T4",
+        "chance": 7.142857,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -40049,6 +43624,32 @@
     "name": "Wyndan Hand Axe",
     "parent": "Ceramic Hatchet",
     "type": "OneHandedIronAxe2_C",
+    "drops": [
+      {
+        "location": "LootboxToolsCanyonTable",
+        "chance": 0.6361323,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxToolsTable",
+        "chance": 0.6361323,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      },
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 1.3452915,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T4",
+        "chance": 7.142857,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -40096,6 +43697,20 @@
     "name": "Wyndan Sabre",
     "parent": "Short Malletblade",
     "type": "OneHandedIronSword2_C",
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 1.3452915,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T4",
+        "chance": 7.142857,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -40177,12 +43792,40 @@
       "damage": 60,
       "penetration": 10
     },
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 1.3452915,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T4",
+        "chance": 7.142857,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
     "name": "Wyndanblade Quarterstaff",
     "parent": "Paddleblade Quarterstaff",
     "type": "IronQuarterstaff2_C",
+    "drops": [
+      {
+        "location": "LootBoxWeaponsTable",
+        "chance": 1.3452915,
+        "minQuantity": 1,
+        "maxQuantity": 8
+      },
+      {
+        "location": "Weapons_T4",
+        "chance": 7.142857,
+        "minQuantity": 1,
+        "maxQuantity": 1
+      }
+    ],
     "category": "Weapons",
     "crafting": [
       {
@@ -40225,6 +43868,13 @@
     "type": "ZirconiumMetal_C",
     "experiencieReward": 25,
     "stackSize": 100,
-    "weight": 1
+    "weight": 1,
+    "drops": [
+      {
+        "location": "Zirconium_T2",
+        "chance": 100,
+        "maxQuantity": 1
+      }
+    ]
   }
 ]

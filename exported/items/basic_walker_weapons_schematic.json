@@ -3,6 +3,14 @@
   "name": "Basic Walker Weapons Schematic",
   "type": "WalkerWeapons_T1Schematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Schematics_T1",
+      "chance": 6.25,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "learn": [
     "Spinner",
     "Stinger",

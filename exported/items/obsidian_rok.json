@@ -2,6 +2,14 @@
   "name": "Obsidian Rok",
   "parent": "Ceramic Rok",
   "type": "ObsidianRok_C",
+  "drops": [
+    {
+      "location": "Ammo_T3",
+      "chance": 12,
+      "minQuantity": 1,
+      "maxQuantity": 3
+    }
+  ],
   "crafting": [
     {
       "ingredients": [

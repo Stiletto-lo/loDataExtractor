@@ -2,6 +2,14 @@
   "name": "Hullbreaker Scattershot",
   "parent": "CeramicScattershot",
   "type": "HullbreakerScattershot_C",
+  "drops": [
+    {
+      "location": "Ammo_T4",
+      "chance": 28.571428,
+      "minQuantity": 2,
+      "maxQuantity": 12
+    }
+  ],
   "crafting": [
     {
       "ingredients": [

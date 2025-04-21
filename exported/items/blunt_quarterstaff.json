@@ -2,6 +2,14 @@
   "name": "Blunt Quarterstaff",
   "parent": "Beat Stick",
   "type": "ShortQuarterstaff_C",
+  "drops": [
+    {
+      "location": "Weapons_T1",
+      "chance": 16.129032,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Weapons",
   "crafting": [
     {

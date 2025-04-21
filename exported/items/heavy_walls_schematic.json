@@ -3,6 +3,14 @@
   "name": "Heavy Walls Schematic",
   "type": "HeavyWallsSchematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Schematics_T3",
+      "chance": 4.7619047,
+      "minQuantity": 5,
+      "maxQuantity": 5
+    }
+  ],
   "learn": [
     "Heavy Wood Double Slit Wall",
     "Heavy Wood Slit Wall",

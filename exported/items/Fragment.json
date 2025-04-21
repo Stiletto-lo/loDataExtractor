@@ -7,6 +7,14 @@
   "description": "Faint images are etched on the translucent surface.",
   "experiencieReward": 10,
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "LootBoxTabletsTable",
+      "chance": 100,
+      "minQuantity": 5,
+      "maxQuantity": 10
+    }
+  ],
   "wikiVisibility": false,
   "weight": 0.2
 }

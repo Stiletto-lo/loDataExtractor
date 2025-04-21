@@ -28,5 +28,19 @@
     "max": 20,
     "increase": 4.5,
     "maxIncrease": 90
-  }
+  },
+  "drops": [
+    {
+      "location": "Modules Strongbox",
+      "chance": 2.857143,
+      "minQuantity": 5,
+      "maxQuantity": 20
+    },
+    {
+      "location": "Modules_T1",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ]
 }

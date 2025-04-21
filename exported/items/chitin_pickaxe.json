@@ -1,10 +1,8 @@
 {
-  "crafting": [
-    {
-      "ingredients": [
-        {
-          "count": 6,
-          "name": "Fiber Weave"
+  "name": "Chitin Pickaxe",
+  "parent": "CeramicPickaxe",
+  "type": "ChitinPickaxe_C"
+}"name": "Fiber Weave"
         },
         {
           "count": 10,
@@ -27,6 +25,14 @@
     {
       "toolType": "Mining",
       "tier": 17
+    }
+  ],
+  "drops": [
+    {
+      "location": "LootboxToolsandEquipmentCanyonTable",
+      "chance": 11.2247305,
+      "minQuantity": 1,
+      "maxQuantity": 1
     }
   ]
 }

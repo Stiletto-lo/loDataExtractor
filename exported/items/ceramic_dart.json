@@ -33,5 +33,13 @@
       "toolType": "RepeaterBolt",
       "tier": 3
     }
+  ],
+  "drops": [
+    {
+      "location": "Ammo_T3",
+      "chance": 40,
+      "minQuantity": 5,
+      "maxQuantity": 30
+    }
   ]
 }

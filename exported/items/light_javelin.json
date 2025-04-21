@@ -2,6 +2,14 @@
   "name": "Light Javelin",
   "parent": "Beat Stick",
   "type": "JavelinRupu_C",
+  "drops": [
+    {
+      "location": "Weapons_T1",
+      "chance": 8.064516,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    }
+  ],
   "category": "Weapons",
   "trade_price": 1.6,
   "translation": "Light Javelin",

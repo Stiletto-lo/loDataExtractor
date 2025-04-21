@@ -3,6 +3,14 @@
   "name": "Firefly Walker Schematic",
   "type": "FireflySchematic_C",
   "stackSize": 100,
+  "drops": [
+    {
+      "location": "Schematics_T1",
+      "chance": 6.25,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "learn": [
     "Firefly Walker"
   ]

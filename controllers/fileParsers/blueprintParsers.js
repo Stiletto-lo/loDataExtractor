@@ -79,6 +79,7 @@ const parseLocation = (blueprint, location) => {
 const parseBlueprintsToItems = () => {
 	const allBlueprints = utilityFunctions.getAllBlueprints();
 	const creatures = utilityFunctions.getCreatures();
+	const lootTables = utilityFunctions.getAllLootTables();
 
 	for (const blueprint of allBlueprints) {
 		const locations = creatures.filter((c) => c.lootTable === blueprint.name);
@@ -89,6 +90,37 @@ const parseBlueprintsToItems = () => {
 		} else {
 			const location = translator.translateLootSite(blueprint.name);
 			parseLocation(blueprint, location);
+		}
+	}
+
+	for (const lootTableName in lootTables) {
+		const lootTable = lootTables[lootTableName];
+		if (lootTable?.drops && Array.isArray(lootTable.drops)) {
+			const location = lootTable.name;
+
+			for (const lootItemData of lootTable.drops) {
+				const item = utilityFunctions.getItem(lootItemData.name);
+				if (item?.name) {
+					const itemDrops = item.drops ? item.drops : [];
+					const hasDrop = itemDrops.some((d) => d.location === location);
+					if (!hasDrop && item.name !== location) {
+						const drop = { ...dropTemplate };
+						drop.location = location;
+						if (lootItemData.chance) {
+							drop.chance = lootItemData.chance;
+						}
+						if (lootItemData.minQuantity) {
+							drop.minQuantity = lootItemData.minQuantity;
+						}
+						if (lootItemData.maxQuantity) {
+							drop.maxQuantity = lootItemData.maxQuantity;
+						}
+						itemDrops.push(drop);
+						item.drops = itemDrops;
+						utilityFunctions.getAllItems().push(item);
+					}
+				}
+			}
 		}
 	}
 };

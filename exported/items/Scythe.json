@@ -41,5 +41,25 @@
       "toolType": "Scythe",
       "tier": 15
     }
+  ],
+  "drops": [
+    {
+      "location": "LootboxToolsandEquipmentCanyonTable",
+      "chance": 0.5612365,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "LootboxToolsCanyonTable",
+      "chance": 6.3613234,
+      "minQuantity": 1,
+      "maxQuantity": 5
+    },
+    {
+      "location": "LootBoxToolsTable",
+      "chance": 6.3613234,
+      "minQuantity": 1,
+      "maxQuantity": 5
+    }
   ]
 }

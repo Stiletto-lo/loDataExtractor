@@ -11,6 +11,14 @@
     "damage": 20,
     "penetration": 50
   },
+  "drops": [
+    {
+      "location": "Weapons_T3",
+      "chance": 6.25,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    }
+  ],
   "wikiVisibility": false,
   "damageType": "Class'MistFireDamageType'",
   "crafting": [

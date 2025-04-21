@@ -2,6 +2,26 @@
   "name": "Heavy Rawbone Hand Axe",
   "parent": "OneHandedBoneAxe",
   "type": "LargeBoneAxe_C",
+  "drops": [
+    {
+      "location": "LootboxToolsandEquipmentCanyonTable",
+      "chance": 11.2247305,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "location": "LootBoxWeaponsTable",
+      "chance": 4.484305,
+      "minQuantity": 1,
+      "maxQuantity": 12
+    },
+    {
+      "location": "Weapons_T2",
+      "chance": 9.090909,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    }
+  ],
   "category": "Weapons",
   "crafting": [
     {
