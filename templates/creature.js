@@ -13,6 +13,8 @@ const creature = {
 		min: undefined,
 		max: undefined,
 	},
+	// Array of possible drops with their chances and quantities
+	drops: undefined,
 };
 
 Object.freeze(creature);

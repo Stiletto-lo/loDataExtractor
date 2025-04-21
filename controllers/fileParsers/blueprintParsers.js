@@ -33,7 +33,7 @@ const parseLocation = (blueprint, location) => {
 
 		// Access the drops array from the lootTable in the dataTable's tables array
 		// Find the lootTable in the dataTable's tables array
-		const lootTable = dataTable.tables.find(
+		const lootTable = dataTable.tables?.find(
 			(table) => table.drops && Array.isArray(table.drops),
 		);
 
@@ -137,7 +137,7 @@ const parseLootBlueprint = (filePath) => {
 			const blueprint = { ...blueprintTemplate };
 			blueprint.name = dataParser.parseName(translator, jsonData[1].Type);
 			if (jsonData[1]?.Properties?.Loot?.Tables) {
-				const allBlueprintTables = [];
+				const simplifiedTables = [];
 				const tables = jsonData[1].Properties.Loot.Tables;
 
 				for (const table of tables) {
@@ -146,35 +146,22 @@ const parseLootBlueprint = (filePath) => {
 							translator,
 							table.Table.ObjectName,
 						);
-						const dataTable = utilityFunctions
-							.getAllDatatables()
-							.find((data) => data.name === name);
-						if (dataTable) {
-							dataTable.chance = table.RunChance ? table.RunChance : undefined;
-							dataTable.minIterations = table.MinIterations
-								? table.MinIterations
-								: undefined;
-							dataTable.maxIterations = table.MaxIterations
-								? table.MaxIterations
-								: undefined;
-							dataTable.iterationRunChance = table.PerIterationRunChance
-								? table.PerIterationRunChance
-								: undefined;
-							dataTable.minQuantityMultiplier = table.MinQuantityMultiplier
-								? table.MinQuantityMultiplier
-								: undefined;
-							dataTable.maxQuantityMultiplier = table.MaxQuantityMultiplier
-								? table.MaxQuantityMultiplier
-								: undefined;
-							dataTable.onlyOne = table.bGiveItemOnlyOnce
-								? table.bGiveItemOnlyOnce
-								: undefined;
 
-							allBlueprintTables.push(dataTable);
-						}
+						// Crear una tabla simplificada con solo la información esencial
+						const simplifiedTable = {
+							name: name,
+							runChance: table.RunChance !== undefined ? table.RunChance : 1.0,
+							minIterations: table.MinIterations !== undefined ? table.MinIterations : 1,
+							maxIterations: table.MaxIterations !== undefined ? table.MaxIterations : 1,
+							perIterationRunChance: table.PerIterationRunChance !== undefined ? table.PerIterationRunChance : 1.0,
+							minQuantityMultiplier: table.MinQuantityMultiplier !== undefined ? table.MinQuantityMultiplier : 1.0,
+							maxQuantityMultiplier: table.MaxQuantityMultiplier !== undefined ? table.MaxQuantityMultiplier : 1.0
+						};
+
+						simplifiedTables.push(simplifiedTable);
 					}
 				}
-				blueprint.tables = allBlueprintTables;
+				blueprint.tables = simplifiedTables;
 				utilityFunctions.getAllBlueprints().push(blueprint);
 			}
 		}

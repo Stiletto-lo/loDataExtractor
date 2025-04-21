@@ -82,38 +82,34 @@ const extractTier = (pathOrType) => {
 /**
  * Parse a loot table reference from the Properties.Loot.Tables array
  * @param {Object} tableRef - The table reference object
- * @returns {Object} - Parsed loot table object
+ * @returns {Object} - Parsed loot table object with only essential information
  */
 const parseLootTableRef = (tableRef) => {
   if (!tableRef || !tableRef.Table) {
     return null;
   }
 
-  const lootTable = { ...lootTableTemplate };
+  // Crear una tabla simplificada con solo la información esencial
+  const simplifiedTable = {};
 
   // Extract table reference information
   if (tableRef.Table.ObjectName) {
     // Extract the name from the ObjectName (e.g., "DataTable'BaseResources_T2'")
     const match = tableRef.Table.ObjectName.match(/DataTable'([^']+)'/);
     if (match && match[1]) {
-      lootTable.name = match[1];
-      lootTable.objectName = tableRef.Table.ObjectName;
+      simplifiedTable.name = match[1];
     }
   }
 
-  if (tableRef.Table.ObjectPath) {
-    lootTable.objectPath = tableRef.Table.ObjectPath;
-  }
+  // Add only essential table properties
+  simplifiedTable.runChance = tableRef.RunChance !== undefined ? tableRef.RunChance : 1.0;
+  simplifiedTable.minIterations = tableRef.MinIterations !== undefined ? tableRef.MinIterations : 1;
+  simplifiedTable.maxIterations = tableRef.MaxIterations !== undefined ? tableRef.MaxIterations : 1;
+  simplifiedTable.perIterationRunChance = tableRef.PerIterationRunChance !== undefined ? tableRef.PerIterationRunChance : 1.0;
+  simplifiedTable.minQuantityMultiplier = tableRef.MinQuantityMultiplier !== undefined ? tableRef.MinQuantityMultiplier : 1.0;
+  simplifiedTable.maxQuantityMultiplier = tableRef.MaxQuantityMultiplier !== undefined ? tableRef.MaxQuantityMultiplier : 1.0;
 
-  // Add table properties
-  lootTable.runChance = tableRef.RunChance !== undefined ? tableRef.RunChance : 1.0;
-  lootTable.minIterations = tableRef.MinIterations !== undefined ? tableRef.MinIterations : 1;
-  lootTable.maxIterations = tableRef.MaxIterations !== undefined ? tableRef.MaxIterations : 1;
-  lootTable.perIterationRunChance = tableRef.PerIterationRunChance !== undefined ? tableRef.PerIterationRunChance : 1.0;
-  lootTable.minQuantityMultiplier = tableRef.MinQuantityMultiplier !== undefined ? tableRef.MinQuantityMultiplier : 1.0;
-  lootTable.maxQuantityMultiplier = tableRef.MaxQuantityMultiplier !== undefined ? tableRef.MaxQuantityMultiplier : 1.0;
-
-  return lootTable;
+  return simplifiedTable;
 };
 
 /**
