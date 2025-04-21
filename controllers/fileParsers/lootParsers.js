@@ -377,40 +377,9 @@ const parseLootSites = (filePath) => {
 	const mobVariationComponent = jsonData.find(
 		(o) => o.Type === "MistHumanoidMobVariationComponent",
 	);
-	const attackComponent = jsonData.find((o) =>
-		o.Type?.includes("AttackComponent"),
-	);
-	const resistanceComponent = jsonData.find((o) =>
-		o.Type?.includes("ResistanceComponent"),
-	);
 
 	// Extract creature data with enhanced information
 	const creatureData = extractCreatureData(mobVariationComponent, firstObject);
-
-	// Add attack information if available
-	if (attackComponent?.Properties) {
-		creatureData.attacks = {
-			damage: attackComponent.Properties.Damage || undefined,
-			range: attackComponent.Properties.Range || undefined,
-			attackSpeed: attackComponent.Properties.AttackSpeed || undefined,
-		};
-	}
-
-	// Add resistance information if available
-	if (resistanceComponent?.Properties) {
-		creatureData.resistances =
-			resistanceComponent.Properties.Resistances || undefined;
-		creatureData.weaknesses =
-			resistanceComponent.Properties.Weaknesses || undefined;
-	}
-
-	// Extract equipment information if available
-	const equipmentComponent = jsonData.find((o) =>
-		o.Type?.includes("EquipmentComponent"),
-	);
-	if (equipmentComponent?.Properties?.Equipment) {
-		creatureData.equipment = equipmentComponent.Properties.Equipment;
-	}
 
 	// Create the creature object with all available information
 	const creature = {
