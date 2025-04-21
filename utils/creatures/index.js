@@ -9,7 +9,6 @@
 const fs = require("fs-extra");
 const path = require("node:path");
 const { enhanceCreatureData } = require("./creatureEnhancer");
-const { processCreatureLoot } = require("./lootProcessor");
 
 /**
  * Processes creature data to enhance it with additional information
@@ -29,17 +28,7 @@ function processCreatures(creatures, translator, dataTables = {}, items = []) {
 
 	return creatures
 		.map((creature) => {
-			// First enhance the creature with basic metadata
-			let enhancedCreature = enhanceCreatureData(creature, translator);
-
-			// Then process loot information
-			enhancedCreature = processCreatureLoot(
-				enhancedCreature,
-				dataTables,
-				items,
-			);
-
-			return enhancedCreature;
+			return enhanceCreatureData(creature, translator);
 		})
 		.filter((creature) => creature.name && Object.keys(creature).length > 2);
 }
