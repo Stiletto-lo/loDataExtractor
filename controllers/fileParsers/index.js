@@ -35,6 +35,8 @@ module.exports = {
 	parseLootTemplate: lootParsers.parseLootTemplate,
 	getAllLootTables: utilityFunctions.getAllLootTables,
 	setLootTables: utilityFunctions.setLootTables,
+	getAllLootTemplates: utilityFunctions.getAllLootTemplates,
+	setLootTemplates: utilityFunctions.setLootTemplates,
 
 	// Translation related functions
 	parseTranslations: translationParsers.parseTranslations,

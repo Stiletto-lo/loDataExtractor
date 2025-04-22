@@ -23,6 +23,7 @@ class DataStore {
 		this.creatures = [];
 		this.blueprints = [];
 		this.lootTables = {};
+		this.lootTemplates = [];
 	}
 
 	// Item operations
@@ -129,6 +130,18 @@ class DataStore {
 		this.lootTables = lootTables;
 	}
 
+	// Loot templates operations
+	getAllLootTemplates() {
+		return this.lootTemplates;
+	}
+
+	setLootTemplates(lootTemplates) {
+		if (!Array.isArray(lootTemplates)) {
+			throw new TypeError("Loot templates must be an array");
+		}
+		this.lootTemplates = lootTemplates;
+	}
+
 	setTechData(data) {
 		if (!Array.isArray(data)) {
 			throw new TypeError("Tech data must be an array");
@@ -220,6 +233,7 @@ module.exports = {
 	getCreatures: () => dataStore.getCreatures(),
 	getAllBlueprints: () => dataStore.getAllBlueprints(),
 	getAllLootTables: () => dataStore.getAllLootTables(),
+	getAllLootTemplates: () => dataStore.getAllLootTemplates(),
 
 	// Collection setters
 	setAllItems: (items) => dataStore.setAllItems(items),
@@ -227,4 +241,5 @@ module.exports = {
 	setCreatures: (data) => dataStore.setCreatures(data),
 	setAllBlueprints: (data) => dataStore.setAllBlueprints(data),
 	setLootTables: (data) => dataStore.setLootTables(data),
+	setLootTemplates: (data) => dataStore.setLootTemplates(data),
 };

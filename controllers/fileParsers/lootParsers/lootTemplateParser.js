@@ -199,6 +199,12 @@ const parseLootTemplate = (filePath) => {
   // Write the loot template to file
   fs.writeFileSync(outputFilePath, JSON.stringify(lootTemplate, null, 2));
 
+  // Add the loot template to the DataStore
+  const utilityFunctions = require("../utilityFunctions");
+  const lootTemplates = utilityFunctions.getAllLootTemplates();
+  lootTemplates.push(lootTemplate);
+  utilityFunctions.setLootTemplates(lootTemplates);
+
   return true;
 };
 

@@ -34,6 +34,10 @@ class DataAccess {
     return fileParser.getAllLootTables();
   }
 
+  getAllLootTemplates() {
+    return fileParser.getAllLootTemplates();
+  }
+
   getAllCreatures() {
     return fileParser.getCreatures();
   }
