@@ -110,7 +110,12 @@ const processTechData = () => {
         return acc.concat([current]);
       }
       return acc;
-    }, []);
+    }, [])
+    .map((tech) => ({
+      name: tech.name,
+      parent: tech.parent,
+      unlocks: tech.unlocks,
+    }));
 
   // Sort technology data by name
   techData.sort(orderByName);

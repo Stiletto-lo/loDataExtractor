@@ -2,7 +2,6 @@
   {
     "name": "Advanced Constructions",
     "parent": "Improved Constructions",
-    "type": "Constructions_T3_C",
     "unlocks": [
       "Basic Constructions",
       "Improved Constructions"
@@ -11,8 +10,6 @@
   {
     "name": "Advanced Crafting",
     "parent": "Advanced Crafting",
-    "type": "Crafting_T4_C",
-    "onlyDevs": true,
     "unlocks": [
       "Advanced Constructions",
       "Advanced Walker Weapons",
@@ -24,8 +21,6 @@
   {
     "name": "Advanced Equipment",
     "parent": "Equipment_T2",
-    "type": "Equipment_T3_C",
-    "onlyDevs": true,
     "unlocks": [
       "Advanced Constructions",
       "Advanced Walker Weapons",
@@ -40,7 +35,6 @@
   {
     "name": "Advanced Fiberworking Station",
     "parent": "Fiberworking Station",
-    "type": "FiberworkingStation_T2_C",
     "unlocks": [
       "Advanced Constructions",
       "Grappling Belt Charging Station",
@@ -61,7 +55,6 @@
   {
     "name": "Advanced Furnace",
     "parent": "Furnace",
-    "type": "Furnace_T2_C",
     "unlocks": [
       "Advanced Constructions",
       "Advanced Walker Weapons",
@@ -74,8 +67,6 @@
   {
     "name": "Advanced Potions",
     "parent": "Vitamins_T2",
-    "type": "Vitamins_T3_C",
-    "onlyDevs": true,
     "unlocks": [
       "Advanced Constructions",
       "Advanced Walker Weapons",
@@ -90,7 +81,6 @@
   {
     "name": "Advanced Walker Parts",
     "parent": "WalkerPartsBase_T3",
-    "type": "WalkerPartsImproved_T3_C",
     "unlocks": [
       "Advanced Constructions",
       "Small Base Walker Packer",
@@ -145,7 +135,6 @@
   {
     "name": "Advanced Walker Weapons",
     "parent": "Advanced Constructions",
-    "type": "WalkerWeapons_T3_C",
     "unlocks": [
       "Advanced Constructions",
       "Small Base Walker Packer",
@@ -159,7 +148,6 @@
   {
     "name": "Advanced Walkers",
     "parent": "Improved Walkers",
-    "type": "Walkers_T3_C",
     "unlocks": [
       "Advanced Constructions",
       "Advanced Walker Weapons",
@@ -180,7 +168,6 @@
   {
     "name": "Advanced Woodworking Station",
     "parent": "Woodworking Station",
-    "type": "WoodworkingStation_T2_C",
     "unlocks": [
       "Advanced Constructions",
       "Grappling Belt Charging Station",
@@ -204,14 +191,11 @@
   },
   {
     "name": "Aloe Gel",
-    "parent": "Stomping Station",
-    "type": "AloeGel_C",
-    "onlyDevs": true
+    "parent": "Stomping Station"
   },
   {
     "name": "Aloe Goo Bomb",
     "parent": "Slingshot",
-    "type": "HealingBomb_C",
     "unlocks": [
       "Bomb Chest Trap",
       "Aloe Gel",
@@ -220,14 +204,11 @@
   },
   {
     "name": "Ammo Chest",
-    "parent": "Small Chest",
-    "type": "ChestAmmo_C"
+    "parent": "Small Chest"
   },
   {
     "name": "Ammo Scroll Rack",
     "parent": "Ammo Chest",
-    "type": "AmmoScrollRack_C",
-    "onlyDevs": true,
     "unlocks": [
       "Ammo Chest",
       "Scroll Rack"
@@ -235,55 +216,39 @@
   },
   {
     "name": "Ammo_T1",
-    "parent": "Basic Crafting",
-    "type": "Ammo_T1_C",
-    "onlyDevs": true
+    "parent": "Basic Crafting"
   },
   {
     "name": "Ammo_T2",
-    "parent": "Improved Crafting",
-    "type": "Ammo_T2_C",
-    "onlyDevs": true
+    "parent": "Improved Crafting"
   },
   {
     "name": "Ammo_T3",
-    "parent": "Advanced Crafting",
-    "type": "Ammo_T3_C",
-    "onlyDevs": true
+    "parent": "Advanced Crafting"
   },
   {
     "name": "Ammo_T4",
-    "parent": "Advanced Crafting",
-    "type": "Ammo_T4_C",
-    "onlyDevs": true
+    "parent": "Advanced Crafting"
   },
   {
     "name": "AntiPersonnelTurret",
-    "parent": "Improved Walker Weapons",
-    "type": "AntiPersonnelTurret_C"
+    "parent": "Improved Walker Weapons"
   },
   {
     "name": "Armors_T1",
-    "parent": "Equipment",
-    "type": "Armors_T1_C",
-    "onlyDevs": true
+    "parent": "Equipment"
   },
   {
     "name": "Armors_T3",
-    "parent": "Improved Armors",
-    "type": "Armors_T3_C",
-    "onlyDevs": true
+    "parent": "Improved Armors"
   },
   {
     "name": "Armors_T4",
-    "parent": "Armors_T3",
-    "type": "Armors_T4_C",
-    "onlyDevs": true
+    "parent": "Armors_T3"
   },
   {
     "name": "Artisan Woodworking Station",
     "parent": "Advanced Woodworking Station",
-    "type": "WoodworkingStation_T3_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Hose Station",
@@ -308,18 +273,15 @@
   },
   {
     "name": "Ash",
-    "parent": "Camp Fire",
-    "type": "Ash_C"
+    "parent": "Camp Fire"
   },
   {
     "name": "Automaton",
-    "parent": "Improved Walker Weapons",
-    "type": "Automaton_C"
+    "parent": "Improved Walker Weapons"
   },
   {
     "name": "Balang Walker",
     "parent": "Dinghy Walker",
-    "type": "Balang_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -335,13 +297,11 @@
   },
   {
     "name": "Ballista",
-    "parent": "Basic Walker Weapons",
-    "type": "Ballista_C"
+    "parent": "Basic Walker Weapons"
   },
   {
     "name": "Barrier Base",
     "parent": "Advanced Constructions",
-    "type": "WalkerBarrierBase_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Large Base Walker Packer",
@@ -352,7 +312,6 @@
   {
     "name": "Barrier Gate",
     "parent": "Barrier Base",
-    "type": "WalkerBarrierGate_C",
     "unlocks": [
       "Barrier Base"
     ]
@@ -360,7 +319,6 @@
   {
     "name": "Barrier Plank",
     "parent": "Barrier Base",
-    "type": "WalkerBarrierTopPlace_C",
     "unlocks": [
       "Barrier Base",
       "Barrier Gate"
@@ -368,14 +326,11 @@
   },
   {
     "name": "Basic Constructions",
-    "parent": "Construction",
-    "type": "Constructions_T1_C"
+    "parent": "Construction"
   },
   {
     "name": "Basic Crafting",
     "parent": "Crafting",
-    "type": "Crafting_T1_C",
-    "onlyDevs": true,
     "unlocks": [
       "Basic Constructions",
       "Basic Walker Weapons"
@@ -384,8 +339,6 @@
   {
     "name": "Basic Equipment",
     "parent": "Equipment",
-    "type": "Equipment_T1_C",
-    "onlyDevs": true,
     "unlocks": [
       "Basic Constructions",
       "Basic Walker Weapons",
@@ -395,8 +348,6 @@
   {
     "name": "Basic Potions",
     "parent": "Vitamins",
-    "type": "Vitamins_T1_C",
-    "onlyDevs": true,
     "unlocks": [
       "Basic Constructions",
       "Basic Walker Weapons",
@@ -407,7 +358,6 @@
   {
     "name": "Basic Walker Weapons",
     "parent": "Basic Constructions",
-    "type": "WalkerWeapons_T1_C",
     "unlocks": [
       "Basic Constructions",
       "Small Base Walker Packer",
@@ -419,7 +369,6 @@
   {
     "name": "Basic Walkers",
     "parent": "Walkers",
-    "type": "Walkers_T1_C",
     "unlocks": [
       "Basic Constructions",
       "Basic Walker Weapons",
@@ -430,29 +379,23 @@
   },
   {
     "name": "BaskwoodBoots",
-    "parent": "BaskwoodTorso",
-    "type": "BaskwoodBoots_C"
+    "parent": "BaskwoodTorso"
   },
   {
     "name": "BaskwoodGloves",
-    "parent": "BaskwoodTorso",
-    "type": "BaskwoodGloves_C"
+    "parent": "BaskwoodTorso"
   },
   {
     "name": "BaskwoodTorso",
-    "parent": "RupuFurTorso",
-    "type": "BaskwoodTorso_C"
+    "parent": "RupuFurTorso"
   },
   {
     "name": "Battle Fan",
-    "parent": "Flotillian Walker Weapons",
-    "type": "BattleFan_C"
+    "parent": "Flotillian Walker Weapons"
   },
   {
     "name": "Battleship Walker",
     "parent": "Flotillian Walkers",
-    "type": "Battleship_C",
-    "onlyDevs": true,
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -469,18 +412,15 @@
   },
   {
     "name": "Beat Stick",
-    "parent": "Equipment",
-    "type": "WoodenClub_C"
+    "parent": "Equipment"
   },
   {
     "name": "Bed",
-    "parent": "Hammock",
-    "type": "Bed_C"
+    "parent": "Hammock"
   },
   {
     "name": "Bent Wooden Planks",
     "parent": "Lumbermill",
-    "type": "BentPlanks_C",
     "unlocks": [
       "WoodenWalls",
       "WoodenDart",
@@ -490,13 +430,11 @@
   },
   {
     "name": "Blunt Quarterstaff",
-    "parent": "Beat Stick",
-    "type": "ShortQuarterstaff_C"
+    "parent": "Beat Stick"
   },
   {
     "name": "Bomb Chest Trap",
     "parent": "Ammo Chest",
-    "type": "TrapBombChest_C",
     "unlocks": [
       "Ammo Chest",
       "Small Chest",
@@ -507,7 +445,6 @@
   {
     "name": "Bomb Javelin",
     "parent": "Heavy Javelin",
-    "type": "BombJavelin_C",
     "unlocks": [
       "Bomb Chest Trap",
       "Chalk Bomb",
@@ -523,13 +460,11 @@
   },
   {
     "name": "Bombolt",
-    "parent": "Cobra Walker",
-    "type": "Bombolt_C"
+    "parent": "Cobra Walker"
   },
   {
     "name": "Bone Bolt",
     "parent": "Bone Bolt",
-    "type": "BoneHarpoon_C",
     "unlocks": [
       "FlintBolt",
       "Bone Bolt",
@@ -540,7 +475,6 @@
   {
     "name": "Bone Bottle",
     "parent": "Improvised Bottle",
-    "type": "BoneBottle_C",
     "unlocks": [
       "Bone Bolt",
       "Bone Dart",
@@ -554,7 +488,6 @@
   {
     "name": "Bone Dart",
     "parent": "Repeater",
-    "type": "BoneDart_C",
     "unlocks": [
       "WoodenDart",
       "Bone Bolt"
@@ -563,7 +496,6 @@
   {
     "name": "Bone Glue",
     "parent": "Purified Water",
-    "type": "BoneGlue_C",
     "unlocks": [
       "Bone Bolt",
       "Bone Dart"
@@ -572,7 +504,6 @@
   {
     "name": "Bone Pickaxe",
     "parent": "Simple Pickaxe",
-    "type": "BonePickaxe_C",
     "unlocks": [
       "Bone Bolt",
       "Bone Dart",
@@ -587,7 +518,6 @@
   {
     "name": "Bone Repair Hammer",
     "parent": "Simple Repair Hammer",
-    "type": "BoneRepairHammer_C",
     "unlocks": [
       "Small Repair Hoist",
       "Bone Bolt",
@@ -606,7 +536,6 @@
   {
     "name": "Bone Sickle",
     "parent": "Simple Sickle",
-    "type": "BoneSickle_C",
     "unlocks": [
       "Bone Bolt",
       "Bone Dart",
@@ -623,18 +552,15 @@
   },
   {
     "name": "BoneScattershot",
-    "parent": "Scattershot Gun",
-    "type": "BoneScattershot_C"
+    "parent": "Scattershot Gun"
   },
   {
     "name": "Bonebreaker",
-    "parent": "Desert Mule",
-    "type": "BoneBreaker_C"
+    "parent": "Desert Mule"
   },
   {
     "name": "Bonespike Sword",
     "parent": "Rawbone Sawsword",
-    "type": "OneHandedBoneSword_C",
     "unlocks": [
       "Rawbone Sawsword",
       "Jaggertooth Swordclub"
@@ -643,7 +569,6 @@
   {
     "name": "Brittle Bone Boots",
     "parent": "BrittleBoneTorso",
-    "type": "BrittleBoneBoots_C",
     "unlocks": [
       "Bone Bolt",
       "Bone Dart",
@@ -673,7 +598,6 @@
   {
     "name": "Brittle Bone Handwraps",
     "parent": "BrittleBoneTorso",
-    "type": "BrittleBoneGloves_C",
     "unlocks": [
       "Bone Bolt",
       "Bone Dart",
@@ -698,13 +622,11 @@
   },
   {
     "name": "BrittleBoneTorso",
-    "parent": "ForesterTorso",
-    "type": "BrittleBoneTorso_C"
+    "parent": "ForesterTorso"
   },
   {
     "name": "Buffalo Walker",
     "parent": "Stiletto Walker",
-    "type": "Buffalo_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -723,7 +645,6 @@
   {
     "name": "Camelop Walker",
     "parent": "Hercul Walker",
-    "type": "Camelop_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -742,38 +663,31 @@
   },
   {
     "name": "Camp Fire",
-    "parent": "Crafting",
-    "type": "CampFire_C"
+    "parent": "Crafting"
   },
   {
     "name": "CarapaceBoots",
-    "parent": "CarapaceTorso",
-    "type": "CarapaceBoots_C"
+    "parent": "CarapaceTorso"
   },
   {
     "name": "CarapaceGloves",
-    "parent": "CarapaceTorso",
-    "type": "CarapaceGloves_C"
+    "parent": "CarapaceTorso"
   },
   {
     "name": "CarapaceTorso",
-    "parent": "BaskwoodTorso",
-    "type": "CarapaceTorso_C"
+    "parent": "BaskwoodTorso"
   },
   {
     "name": "Catapult",
-    "parent": "Advanced Walker Weapons",
-    "type": "Catapult_C"
+    "parent": "Advanced Walker Weapons"
   },
   {
     "name": "CatapultBoulder",
-    "parent": "Catapult",
-    "type": "CatapultBoulder_C"
+    "parent": "Catapult"
   },
   {
     "name": "Cauterizing Station",
     "parent": "Camp Fire",
-    "type": "CauterizingStation_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Hose Station",
@@ -789,7 +703,6 @@
   {
     "name": "Ceramic Bolt",
     "parent": "Bone Bolt",
-    "type": "CeramicBolt_C",
     "unlocks": [
       "FlintBolt",
       "Bone Bolt",
@@ -799,7 +712,6 @@
   {
     "name": "Ceramic Bottle",
     "parent": "Bone Bottle",
-    "type": "CeramicBottle_C",
     "unlocks": [
       "Ceramic Bolt",
       "CeramicDart",
@@ -818,7 +730,6 @@
   {
     "name": "Ceramic Hatchet",
     "parent": "OneHandedBoneAxe",
-    "type": "OneHandedZirconiumAxe_C",
     "unlocks": [
       "Ceramic Bolt",
       "CeramicDart",
@@ -838,7 +749,6 @@
   {
     "name": "Ceramic Rok",
     "parent": "Rokker",
-    "type": "CeramicRok_C",
     "unlocks": [
       "Ceramic Bolt",
       "CeramicDart",
@@ -850,7 +760,6 @@
   {
     "name": "Ceramic Shard",
     "parent": "Furnace",
-    "type": "CeramicShard_C",
     "unlocks": [
       "Ceramic Bolt",
       "CeramicDart",
@@ -864,7 +773,6 @@
   {
     "name": "Ceramic-Tipped Bolt",
     "parent": "Ceramic Bolt",
-    "type": "CeramicHarpoon_C",
     "unlocks": [
       "FlintBolt",
       "Bone Bolt",
@@ -874,86 +782,69 @@
   },
   {
     "name": "CeramicDart",
-    "parent": "Bone Dart",
-    "type": "CeramicDart_C"
+    "parent": "Bone Dart"
   },
   {
     "name": "CeramicNails",
-    "parent": "Lathe",
-    "type": "CeramicNails_C",
-    "onlyDevs": true
+    "parent": "Lathe"
   },
   {
     "name": "CeramicOrb",
-    "parent": "Lobber",
-    "type": "CeramicOrb_C",
-    "onlyDevs": true
+    "parent": "Lobber"
   },
   {
     "name": "CeramicPickaxe",
-    "parent": "Bone Pickaxe",
-    "type": "CeramicPickaxe_C"
+    "parent": "Bone Pickaxe"
   },
   {
     "name": "CeramicRepairHammer",
-    "parent": "Bone Repair Hammer",
-    "type": "CeramicRepairHammer_C"
+    "parent": "Bone Repair Hammer"
   },
   {
     "name": "CeramicScattershot",
-    "parent": "BoneScattershot",
-    "type": "CeramicScattershot_C"
+    "parent": "BoneScattershot"
   },
   {
     "name": "CeramicScythe",
-    "parent": "Bone Sickle",
-    "type": "CeramicScythe_C"
+    "parent": "Bone Sickle"
   },
   {
     "name": "Chalk Bomb",
     "parent": "Slingshot",
-    "type": "ChalkCloudBomb_C",
     "unlocks": [
       "Bomb Chest Trap"
     ]
   },
   {
     "name": "Charcoal",
-    "parent": "Camp Fire",
-    "type": "CharcoalFuel_C"
+    "parent": "Camp Fire"
   },
   {
     "name": "Charged Rok",
     "parent": "Rokker",
-    "type": "ChargedRok_C",
     "unlocks": [
       "ChargedBoulder"
     ]
   },
   {
     "name": "ChargedBoulder",
-    "parent": "Slingshot",
-    "type": "ChargedBoulder_C"
+    "parent": "Slingshot"
   },
   {
     "name": "ChestBaseMaintenance_T2",
-    "parent": "Maintenance Box",
-    "type": "ChestBaseMaintenance_T2_C"
+    "parent": "Maintenance Box"
   },
   {
     "name": "ChestBaseMaintenance_T3",
-    "parent": "ChestBaseMaintenance_T2",
-    "type": "ChestBaseMaintenance_T3_C"
+    "parent": "ChestBaseMaintenance_T2"
   },
   {
     "name": "ChestGigantic",
-    "parent": "Large Chest",
-    "type": "ChestGigantic_C"
+    "parent": "Large Chest"
   },
   {
     "name": "Chitin Pickaxe",
     "parent": "CeramicPickaxe",
-    "type": "ChitinPickaxe_C",
     "unlocks": [
       "Simple Pickaxe",
       "Bone Pickaxe",
@@ -963,7 +854,6 @@
   {
     "name": "Chitin Repair Hammer",
     "parent": "Bone Repair Hammer",
-    "type": "ChitinRepairHammer_C",
     "unlocks": [
       "Small Repair Hoist",
       "Repair Station",
@@ -975,13 +865,11 @@
   },
   {
     "name": "ChitinSickle",
-    "parent": "CeramicScythe",
-    "type": "ChitinSickle_C"
+    "parent": "CeramicScythe"
   },
   {
     "name": "Clay",
     "parent": "Soil Excavator",
-    "type": "ClayLump_C",
     "unlocks": [
       "ClayWalls"
     ]
@@ -989,7 +877,6 @@
   {
     "name": "Clay Pot",
     "parent": "Clay",
-    "type": "ClayPot_C",
     "unlocks": [
       "ClayWalls",
       "Clay"
@@ -997,31 +884,26 @@
   },
   {
     "name": "ClayWalls",
-    "parent": "StoneWalls",
-    "type": "ClayWalls_C"
+    "parent": "StoneWalls"
   },
   {
     "name": "Cloak",
     "parent": "Fiber Headwrap",
-    "type": "Cloak_C",
     "unlocks": [
       "CloakedRupuFurTorso"
     ]
   },
   {
     "name": "CloakedRupuFurTorso",
-    "parent": "RupuFurTorso",
-    "type": "CloakedRupuFurTorso_C"
+    "parent": "RupuFurTorso"
   },
   {
     "name": "ClusterBomb",
-    "parent": "Slingshot",
-    "type": "ClusterBomb_C"
+    "parent": "Slingshot"
   },
   {
     "name": "Cobra Walker",
     "parent": "Camelop Walker",
-    "type": "Cobra_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -1042,7 +924,6 @@
   {
     "name": "Compacted Torque Battery",
     "parent": "Torque Battery",
-    "type": "HeavyTorqueContainer_C",
     "unlocks": [
       "Torque Backpack",
       "Torque Battery"
@@ -1050,12 +931,10 @@
   },
   {
     "name": "ConcreteWalls",
-    "parent": "ClayWalls",
-    "type": "ConcreteWalls_C"
+    "parent": "ClayWalls"
   },
   {
     "name": "Construction",
-    "type": "ConstructionRoot_C",
     "unlocks": [
       "Basic Constructions",
       "Improved Constructions",
@@ -1065,7 +944,6 @@
   },
   {
     "name": "Crafting",
-    "type": "CraftingRoot_C",
     "unlocks": [
       "Basic Crafting",
       "Improved Crafting",
@@ -1076,7 +954,6 @@
   {
     "name": "Crafting Bench",
     "parent": "Woodworking Station",
-    "type": "CraftingBench_C",
     "unlocks": [
       "Basic Crafting",
       "Improved Crafting",
@@ -1085,18 +962,15 @@
   },
   {
     "name": "Crane",
-    "parent": "Advanced Constructions",
-    "type": "Crane_C"
+    "parent": "Advanced Constructions"
   },
   {
     "name": "Crude Hatchet",
-    "parent": "Beat Stick",
-    "type": "CrudeHatchet_C"
+    "parent": "Beat Stick"
   },
   {
     "name": "Curing Station",
     "parent": "Fiberworking Station",
-    "type": "CuringStation_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Hose Station",
@@ -1112,23 +986,18 @@
   },
   {
     "name": "Defensive Tower",
-    "parent": "WoodenWalls",
-    "type": "DefensiveTower_C"
+    "parent": "WoodenWalls"
   },
   {
     "name": "Desert Mule",
-    "parent": "Vision Powder",
-    "type": "DesertMule_C"
+    "parent": "Vision Powder"
   },
   {
-    "name": "DevOnly",
-    "type": "DevOnly_C",
-    "onlyDevs": true
+    "name": "DevOnly"
   },
   {
     "name": "Dinghy Walker",
     "parent": "Firefly Walker",
-    "type": "Dinghy_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -1150,7 +1019,6 @@
   {
     "name": "Domus Walker",
     "parent": "Mollusk Walker",
-    "type": "Domus_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -1173,7 +1041,6 @@
   {
     "name": "Drill Spade",
     "parent": "Tube Spade",
-    "type": "DrillSpade_C",
     "unlocks": [
       "Tube Spade"
     ]
@@ -1181,7 +1048,6 @@
   {
     "name": "Durable Water Sack",
     "parent": "Improvised Bottle",
-    "type": "Barrel_C",
     "unlocks": [
       "Small Water Bag",
       "Medium Water Bag",
@@ -1193,7 +1059,6 @@
   {
     "name": "Dyeing Station",
     "parent": "Crafting",
-    "type": "DyeingStation_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Hose Station",
@@ -1205,12 +1070,10 @@
   },
   {
     "name": "Earth Wax",
-    "parent": "Soil Excavator",
-    "type": "EarthWax_C"
+    "parent": "Soil Excavator"
   },
   {
     "name": "Equipment",
-    "type": "EquipmentRoot_C",
     "unlocks": [
       "Basic Equipment",
       "Equipment_T2",
@@ -1220,19 +1083,15 @@
   },
   {
     "name": "Equipment_T2",
-    "parent": "Basic Equipment",
-    "type": "Equipment_T2_C",
-    "onlyDevs": true
+    "parent": "Basic Equipment"
   },
   {
     "name": "Exoskeleton",
-    "parent": "Advanced Constructions",
-    "type": "Exoskeleton_C"
+    "parent": "Advanced Constructions"
   },
   {
     "name": "Explosive Bolt",
     "parent": "FireBolt",
-    "type": "ExplosiveBolt_C",
     "unlocks": [
       "FlintBolt",
       "Bone Bolt",
@@ -1244,7 +1103,6 @@
   {
     "name": "Explosive Dart",
     "parent": "Fire Dart",
-    "type": "ExplosiveDart_C",
     "unlocks": [
       "WoodenDart",
       "Bone Dart",
@@ -1256,7 +1114,6 @@
   {
     "name": "Falco Walker",
     "parent": "Stiletto Walker",
-    "type": "Falco_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -1280,8 +1137,6 @@
   {
     "name": "Fast Grappling Hook",
     "parent": "Nomad Grappling Hook",
-    "category": "Grappling Hooks",
-    "type": "FastGrapplingHook_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Nomad Grappling Hook",
@@ -1294,7 +1149,6 @@
   {
     "name": "Feather Boots",
     "parent": "RainBoots",
-    "type": "FeatherBoots_C",
     "unlocks": [
       "FiberBoots",
       "BaskwoodBoots",
@@ -1309,7 +1163,6 @@
   {
     "name": "Fiber Headwrap",
     "parent": "FiberTorso",
-    "type": "FiberHeadwrap_C",
     "unlocks": [
       "Fiber Weave",
       "Fiberworking Station",
@@ -1321,28 +1174,23 @@
   },
   {
     "name": "Fiber Weave",
-    "parent": "Fiberworking Station",
-    "type": "FiberCloth_C"
+    "parent": "Fiberworking Station"
   },
   {
     "name": "FiberBoots",
-    "parent": "FiberTorso",
-    "type": "FiberBoots_C"
+    "parent": "FiberTorso"
   },
   {
     "name": "FiberGloves",
-    "parent": "FiberTorso",
-    "type": "FiberGloves_C"
+    "parent": "FiberTorso"
   },
   {
     "name": "FiberTorso",
-    "parent": "Equipment",
-    "type": "FiberTorso_C"
+    "parent": "Equipment"
   },
   {
     "name": "Fiberworking Station",
     "parent": "Crafting",
-    "type": "FiberworkingStation_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Hose Station",
@@ -1355,19 +1203,15 @@
   },
   {
     "name": "FiberworkingStation_T3",
-    "parent": "Advanced Fiberworking Station",
-    "type": "FiberworkingStation_T3_C"
+    "parent": "Advanced Fiberworking Station"
   },
   {
     "name": "Fiery Concoction",
-    "parent": "Clay Pot",
-    "type": "HellfireMixture_C",
-    "onlyDevs": true
+    "parent": "Clay Pot"
   },
   {
     "name": "Fire Bomb",
     "parent": "Slingshot",
-    "type": "FireBomb_C",
     "unlocks": [
       "Bomb Chest Trap",
       "Camp Fire",
@@ -1381,7 +1225,6 @@
   {
     "name": "Fire Dart",
     "parent": "Repeater",
-    "type": "FireDart_C",
     "unlocks": [
       "Camp Fire",
       "WoodenDart",
@@ -1395,13 +1238,11 @@
   },
   {
     "name": "FireBolt",
-    "parent": "Ballista",
-    "type": "FireBolt_C"
+    "parent": "Ballista"
   },
   {
     "name": "Firefly Walker",
     "parent": "Spider Walker",
-    "type": "Firefly_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -1426,7 +1267,6 @@
   {
     "name": "Firestone Axe",
     "parent": "Ceramic Hatchet",
-    "type": "OneHandedLavaAxe_C",
     "unlocks": [
       "Firestone Hammerstaff"
     ]
@@ -1434,7 +1274,6 @@
   {
     "name": "Firestone Battle Axe",
     "parent": "Rawbone Battle Axe",
-    "type": "TwoHandedLavaAxe_C",
     "unlocks": [
       "Battle Fan",
       "Rawbone Battle Axe",
@@ -1447,7 +1286,6 @@
   {
     "name": "Firestone Bludgeon",
     "parent": "Short Ceramic Hoofmace",
-    "type": "OneHandedLavaMace_C",
     "unlocks": [
       "Firestone Hammerstaff",
       "Firestone Axe"
@@ -1456,7 +1294,6 @@
   {
     "name": "Firestone Bozdogan",
     "parent": "Short Ceramic Hoofmace",
-    "type": "TwoHandedLavaMace_C",
     "unlocks": [
       "Firestone Hammerstaff",
       "Firestone Axe",
@@ -1467,13 +1304,11 @@
   },
   {
     "name": "Firestone Hammerstaff",
-    "parent": "Paddleblade Quarterstaff",
-    "type": "LavaQuarterstaff_C"
+    "parent": "Paddleblade Quarterstaff"
   },
   {
     "name": "Firestone Kopesh",
     "parent": "Short Malletblade",
-    "type": "OneHandedLavaSword_C",
     "unlocks": [
       "Firestone Hammerstaff",
       "Firestone Axe",
@@ -1483,7 +1318,6 @@
   {
     "name": "Firestone Longblade",
     "parent": "Singblade",
-    "type": "TwoHandedLavaSword_C",
     "unlocks": [
       "Firestone Hammerstaff",
       "Firestone Axe",
@@ -1495,35 +1329,27 @@
   },
   {
     "name": "Flares",
-    "parent": "Dyeing Station",
-    "type": "Flares_C"
+    "parent": "Dyeing Station"
   },
   {
     "name": "Flint Orb",
-    "parent": "Lobber",
-    "type": "FlintOrb_C",
-    "onlyDevs": true
+    "parent": "Lobber"
   },
   {
     "name": "FlintBolt",
-    "parent": "Ballista",
-    "type": "FlintBolt_C"
+    "parent": "Ballista"
   },
   {
     "name": "FlintHarpoon",
-    "parent": "Ballista",
-    "type": "FlintHarpoon_C"
+    "parent": "Ballista"
   },
   {
     "name": "Floating Mine",
-    "parent": "Fire Dart",
-    "type": "FloatingMine_C"
+    "parent": "Fire Dart"
   },
   {
     "name": "Flotillan Grappling Hook",
     "parent": "Nomad Grappling Hook",
-    "category": "Grappling Hooks",
-    "type": "FlotillanGrapplingHook_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Nomad Grappling Hook"
@@ -1532,7 +1358,6 @@
   {
     "name": "Flotillian Constructions",
     "parent": "Advanced Constructions",
-    "type": "Constructions_T4_C",
     "unlocks": [
       "Basic Constructions",
       "Improved Constructions",
@@ -1542,8 +1367,6 @@
   {
     "name": "Flotillian Equipment",
     "parent": "Advanced Equipment",
-    "type": "Equipment_T4_C",
-    "onlyDevs": true,
     "unlocks": [
       "Flotillian Constructions",
       "Flotillian Walker Weapons",
@@ -1555,8 +1378,6 @@
   {
     "name": "Flotillian Potions",
     "parent": "Advanced Potions",
-    "type": "Vitamins_T4_C",
-    "onlyDevs": true,
     "unlocks": [
       "Flotillian Constructions",
       "Flotillian Walker Weapons",
@@ -1568,7 +1389,6 @@
   {
     "name": "Flotillian Walker Weapons",
     "parent": "Flotillian Constructions",
-    "type": "WalkerWeapons_T4_C",
     "unlocks": [
       "Flotillian Constructions",
       "Small Base Walker Packer",
@@ -1583,7 +1403,6 @@
   {
     "name": "Flotillian Walkers",
     "parent": "Advanced Walkers",
-    "type": "Walkers_T4_C",
     "unlocks": [
       "Flotillian Constructions",
       "Flotillian Walker Weapons",
@@ -1596,62 +1415,50 @@
   },
   {
     "name": "Foraging Pouch",
-    "parent": "Equipment",
-    "type": "ForagingPouch_C"
+    "parent": "Equipment"
   },
   {
     "name": "ForesterBoots",
-    "parent": "ForesterTorso",
-    "type": "ForesterBoots_C"
+    "parent": "ForesterTorso"
   },
   {
     "name": "ForesterGloves",
-    "parent": "ForesterTorso",
-    "type": "ForesterGloves_C"
+    "parent": "ForesterTorso"
   },
   {
     "name": "ForesterTorso",
-    "parent": "RupuFurTorso",
-    "type": "ForesterTorso_C"
+    "parent": "RupuFurTorso"
   },
   {
     "name": "Fruit Pulp",
-    "parent": "Stomping Station",
-    "type": "FruitPulp_C",
-    "onlyDevs": true
+    "parent": "Stomping Station"
   },
   {
     "name": "Furnace",
-    "parent": "Clay",
-    "type": "Furnace_C"
+    "parent": "Clay"
   },
   {
     "name": "Furnitures",
-    "parent": "Sand Structures",
-    "type": "Furnitures_C"
+    "parent": "Sand Structures"
   },
   {
     "name": "Gas Mask",
     "parent": "Fiber Headwrap",
-    "type": "GasMask_C",
     "unlocks": [
       "MtxMasks"
     ]
   },
   {
     "name": "Glass",
-    "parent": "Furnace",
-    "type": "Glass_C"
+    "parent": "Furnace"
   },
   {
     "name": "Grappling Belt Charging Station",
-    "parent": "Construction",
-    "type": "GrapplingBeltChargingStation_C"
+    "parent": "Construction"
   },
   {
     "name": "Green Death Bomb",
     "parent": "Sulfur Bomb",
-    "type": "GasBomb_C",
     "unlocks": [
       "Bomb Chest Trap",
       "Chalk Bomb",
@@ -1663,49 +1470,39 @@
   },
   {
     "name": "Gun Pod",
-    "parent": "Advanced Walker Weapons",
-    "type": "GunPod_C"
+    "parent": "Advanced Walker Weapons"
   },
   {
     "name": "Gun Pod Shell",
-    "parent": "Gun Pod",
-    "type": "GunPodShell_C"
+    "parent": "Gun Pod"
   },
   {
     "name": "GunPodScattershotGun",
-    "parent": "Gun Pod",
-    "type": "GunPodScattershotGun_C"
+    "parent": "Gun Pod"
   },
   {
     "name": "GunPodShell_T2",
-    "parent": "Gun Pod Shell",
-    "type": "GunPodShell_T2_C"
+    "parent": "Gun Pod Shell"
   },
   {
     "name": "GunpodStinger",
-    "parent": "Gun Pod",
-    "type": "GunpodStinger_C"
+    "parent": "Gun Pod"
   },
   {
     "name": "Hammock",
-    "parent": "Sand Bed",
-    "type": "BedHammock_C"
+    "parent": "Sand Bed"
   },
   {
     "name": "Hangar",
-    "parent": "Medium Wood Walls",
-    "type": "Hangar_C",
-    "onlyDevs": true
+    "parent": "Medium Wood Walls"
   },
   {
     "name": "HardenedHellfireBolt",
-    "parent": "HellfireBolt",
-    "type": "HardenedHellfireBolt_C"
+    "parent": "HellfireBolt"
   },
   {
     "name": "Heavy Backpack",
     "parent": "Medium Backpack",
-    "type": "LargeBackpack_C",
     "unlocks": [
       "HeavyWalls",
       "Light Backpack",
@@ -1718,7 +1515,6 @@
   {
     "name": "Heavy Javelin",
     "parent": "Light Javelin",
-    "type": "HeavyJavelin_C",
     "unlocks": [
       "HeavyWalls",
       "Light Javelin"
@@ -1727,7 +1523,6 @@
   {
     "name": "Heavy Rawbone Hand Axe",
     "parent": "OneHandedBoneAxe",
-    "type": "LargeBoneAxe_C",
     "unlocks": [
       "HeavyWalls",
       "Rawbone Sawsword",
@@ -1738,18 +1533,15 @@
   },
   {
     "name": "HeavyWalls",
-    "parent": "Medium Wood Walls",
-    "type": "HeavyWalls_C"
+    "parent": "Medium Wood Walls"
   },
   {
     "name": "HellfireBolt",
-    "parent": "FireBolt",
-    "type": "HellfireBolt_C"
+    "parent": "FireBolt"
   },
   {
     "name": "Hercul Walker",
     "parent": "Buffalo Walker",
-    "type": "Hercul_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -1775,7 +1567,6 @@
   {
     "name": "Hornet Walker",
     "parent": "Stiletto Walker",
-    "type": "Hornet_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -1802,7 +1593,6 @@
   {
     "name": "Hose Station",
     "parent": "Advanced Walker Weapons",
-    "type": "HoseStation_C",
     "unlocks": [
       "Grappling Belt Charging Station"
     ]
@@ -1810,7 +1600,6 @@
   {
     "name": "Hullbreaker Scattershot",
     "parent": "CeramicScattershot",
-    "type": "HullbreakerScattershot_C",
     "unlocks": [
       "Scattershot Gun",
       "GunPodScattershotGun",
@@ -1822,8 +1611,6 @@
   {
     "name": "Improved Armors",
     "parent": "Armors_T1",
-    "type": "Armors_T2_C",
-    "onlyDevs": true,
     "unlocks": [
       "Improved Constructions",
       "Improved Walker Weapons",
@@ -1834,7 +1621,6 @@
   {
     "name": "Improved Constructions",
     "parent": "Basic Constructions",
-    "type": "Constructions_T2_C",
     "unlocks": [
       "Basic Constructions"
     ]
@@ -1842,8 +1628,6 @@
   {
     "name": "Improved Crafting",
     "parent": "Basic Crafting",
-    "type": "Crafting_T2_C",
-    "onlyDevs": true,
     "unlocks": [
       "Improved Constructions",
       "Improved Walker Weapons",
@@ -1853,7 +1637,6 @@
   {
     "name": "Improved Walker Weapons",
     "parent": "Improved Constructions",
-    "type": "WalkerWeapons_T2_C",
     "unlocks": [
       "Improved Constructions",
       "Small Base Walker Packer",
@@ -1866,7 +1649,6 @@
   {
     "name": "Improved Walkers",
     "parent": "Basic Walkers",
-    "type": "Walkers_T2_C",
     "unlocks": [
       "Improved Constructions",
       "Improved Walker Weapons",
@@ -1880,13 +1662,11 @@
   },
   {
     "name": "Improvised Bottle",
-    "parent": "Makeshift Bottle",
-    "type": "ImprovisedBottle_C"
+    "parent": "Makeshift Bottle"
   },
   {
     "name": "Infused Obsidian Bottle",
     "parent": "Obsidian Flask",
-    "type": "LavaBottleLarge_C",
     "unlocks": [
       "ObsidianContainerLarge",
       "Obsidian Pot",
@@ -1902,7 +1682,6 @@
   {
     "name": "Insect Bomb",
     "parent": "Sulfur Bomb",
-    "type": "InsectBomb_C",
     "unlocks": [
       "Bomb Chest Trap",
       "Chalk Bomb",
@@ -1916,7 +1695,6 @@
   {
     "name": "Iron Gear",
     "parent": "Reinforced Gear",
-    "type": "IronGear_C",
     "unlocks": [
       "Wooden Gear",
       "Reinforced Gear",
@@ -1927,7 +1705,6 @@
   {
     "name": "Iron Ingot",
     "parent": "Advanced Furnace",
-    "type": "IronIngot_C",
     "unlocks": [
       "IronBolt",
       "IronDart",
@@ -1938,7 +1715,6 @@
   {
     "name": "Iron Nails",
     "parent": "Lathe",
-    "type": "IronNails_C",
     "unlocks": [
       "CeramicNails",
       "IronBolt",
@@ -1951,7 +1727,6 @@
   {
     "name": "Iron Rok",
     "parent": "Obsidian Rok",
-    "type": "IronRok_C",
     "unlocks": [
       "IronBolt",
       "IronDart",
@@ -1963,58 +1738,47 @@
   },
   {
     "name": "IronBolt",
-    "parent": "Ceramic Bolt",
-    "type": "IronBolt_C"
+    "parent": "Ceramic Bolt"
   },
   {
     "name": "IronBoots",
-    "parent": "IronTorso",
-    "type": "IronBoots_C"
+    "parent": "IronTorso"
   },
   {
     "name": "IronDart",
-    "parent": "CeramicDart",
-    "type": "IronDart_C"
+    "parent": "CeramicDart"
   },
   {
     "name": "IronGloves",
-    "parent": "IronTorso",
-    "type": "IronGloves_C"
+    "parent": "IronTorso"
   },
   {
     "name": "IronHarpoon",
-    "parent": "IronBolt",
-    "type": "IronHarpoon_C"
+    "parent": "IronBolt"
   },
   {
     "name": "IronPickaxe",
-    "parent": "CeramicPickaxe",
-    "type": "IronPickaxe_C"
+    "parent": "CeramicPickaxe"
   },
   {
     "name": "IronRepairHammer",
-    "parent": "CeramicRepairHammer",
-    "type": "IronRepairHammer_C"
+    "parent": "CeramicRepairHammer"
   },
   {
     "name": "IronScythe",
-    "parent": "CeramicScythe",
-    "type": "IronScythe_C"
+    "parent": "CeramicScythe"
   },
   {
     "name": "IronTorso",
-    "parent": "CarapaceTorso",
-    "type": "IronTorso_C"
+    "parent": "CarapaceTorso"
   },
   {
     "name": "Jaggertooth Club",
-    "parent": "Beat Stick",
-    "type": "OneHandedStoneClub_C"
+    "parent": "Beat Stick"
   },
   {
     "name": "Jaggertooth Maul",
     "parent": "Jaggertooth Club",
-    "type": "TwoHandedStoneMace_C",
     "unlocks": [
       "Jaggertooth Club"
     ]
@@ -2022,7 +1786,6 @@
   {
     "name": "Jaggertooth Swordclub",
     "parent": "Beat Stick",
-    "type": "TwoHandedStoneSword_C",
     "unlocks": [
       "Jaggertooth Club",
       "Jaggertooth Maul"
@@ -2031,20 +1794,17 @@
   {
     "name": "Jojo Mojo",
     "parent": "Desert Mule",
-    "type": "FuryFumes_C",
     "unlocks": [
       "JojoMojo"
     ]
   },
   {
     "name": "JojoMojo",
-    "parent": "Vision Powder",
-    "type": "JojoMojo_C"
+    "parent": "Vision Powder"
   },
   {
     "name": "Large Base Walker Packer",
     "parent": "Small Base Walker Packer",
-    "type": "BaseWalkerPackerLarge_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber"
@@ -2053,7 +1813,6 @@
   {
     "name": "Large Chest",
     "parent": "Medium Chest",
-    "type": "ChestLarge_C",
     "unlocks": [
       "Ammo Chest",
       "Small Chest",
@@ -2067,7 +1826,6 @@
   {
     "name": "Large Gathering Pouch",
     "parent": "Foraging Pouch",
-    "type": "LargePouch_C",
     "unlocks": [
       "Large Base Walker Packer",
       "Large Chest",
@@ -2079,7 +1837,6 @@
   {
     "name": "Large Water Bag",
     "parent": "Medium Water Bag",
-    "type": "WaterBagLarge_C",
     "unlocks": [
       "Small Water Bag",
       "Large Base Walker Packer",
@@ -2090,46 +1847,38 @@
   },
   {
     "name": "Lathe",
-    "parent": "Advanced Woodworking Station",
-    "type": "Lathe_C"
+    "parent": "Advanced Woodworking Station"
   },
   {
     "name": "Lava Fuel",
-    "parent": "Obsidian Machine",
-    "type": "LavaFuel_C"
+    "parent": "Obsidian Machine"
   },
   {
     "name": "LavaMace",
-    "parent": "Short Ceramic Hoofmace",
-    "type": "LavaMace_C"
+    "parent": "Short Ceramic Hoofmace"
   },
   {
     "name": "Leather",
-    "parent": "Curing Station",
-    "type": "Leather_C"
+    "parent": "Curing Station"
   },
   {
     "name": "Light Backpack",
     "parent": "Foraging Pouch",
-    "type": "SmallBackpack_C",
     "unlocks": [
       "Light Javelin"
     ]
   },
   {
     "name": "Light Javelin",
-    "parent": "Beat Stick",
-    "type": "Javelin_C"
+    "parent": "Beat Stick"
   },
   {
     "name": "Lobber",
-    "parent": "Improved Walker Weapons",
-    "type": "Lobber_C"
+    "parent": "Improved Walker Weapons"
   },
   {
     "name": "Long Bonespike Swordstaff",
     "parent": "Bonespike Sword",
-    "type": "TwoHandedBoneSword_C",
     "unlocks": [
       "Bonespike Sword"
     ]
@@ -2137,7 +1886,6 @@
   {
     "name": "Long Ceramic Hoofmace",
     "parent": "Rawbone Maul",
-    "type": "TwoHandedZirconiumMace_C",
     "unlocks": [
       "Ceramic Bolt",
       "CeramicDart",
@@ -2162,8 +1910,6 @@
   {
     "name": "Long Grappling Hook",
     "parent": "Nomad Grappling Hook",
-    "category": "Grappling Hooks",
-    "type": "LongGrapplingHook_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Nomad Grappling Hook",
@@ -2175,32 +1921,26 @@
   },
   {
     "name": "Lumbermill",
-    "parent": "Artisan Woodworking Station",
-    "type": "LumberMill_C"
+    "parent": "Artisan Woodworking Station"
   },
   {
     "name": "Maintenance Box",
-    "parent": "Basic Constructions",
-    "type": "ChestBaseMaintenance_T1_C"
+    "parent": "Basic Constructions"
   },
   {
     "name": "Makeshift Bottle",
     "parent": "Equipment",
-    "type": "MakeshiftBottle_C",
     "unlocks": [
       "Improvised Bottle"
     ]
   },
   {
     "name": "MakeshiftGrapplingHook",
-    "parent": "Equipment",
-    "category": "Grappling Hooks",
-    "type": "MakeshiftGrapplingHook_C"
+    "parent": "Equipment"
   },
   {
     "name": "Medium Backpack",
     "parent": "Light Backpack",
-    "type": "MediumBackpack_C",
     "unlocks": [
       "Medium Chest",
       "Medium Wood Walls",
@@ -2212,7 +1952,6 @@
   {
     "name": "Medium Chest",
     "parent": "Small Chest",
-    "type": "ChestMedium_C",
     "unlocks": [
       "Ammo Chest",
       "Small Chest",
@@ -2222,7 +1961,6 @@
   {
     "name": "Medium Water Bag",
     "parent": "Small Water Bag",
-    "type": "WaterBagMedium_C",
     "unlocks": [
       "Small Water Bag",
       "Medium Chest",
@@ -2232,7 +1970,6 @@
   {
     "name": "Medium Wood Walls",
     "parent": "WoodenWalls",
-    "type": "ReinforcedWalls_C",
     "unlocks": [
       "WoodenWalls",
       "Medium Chest"
@@ -2241,7 +1978,6 @@
   {
     "name": "Mollusk Walker",
     "parent": "Steering Levers",
-    "type": "Mollusk_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -2268,23 +2004,19 @@
   },
   {
     "name": "MountableNurr",
-    "parent": "Advanced Constructions",
-    "type": "MountableNurr_C"
+    "parent": "Advanced Constructions"
   },
   {
     "name": "MtxMasks",
-    "parent": "Fiber Headwrap",
-    "type": "MtxMasks_C"
+    "parent": "Fiber Headwrap"
   },
   {
     "name": "Net",
-    "parent": "Net Thrower",
-    "type": "Net_C"
+    "parent": "Net Thrower"
   },
   {
     "name": "Net Pouch",
     "parent": "Throwing Net",
-    "type": "NetPouch_C",
     "unlocks": [
       "Foraging Pouch",
       "Large Gathering Pouch"
@@ -2292,13 +2024,11 @@
   },
   {
     "name": "Net Thrower",
-    "parent": "Basic Walker Weapons",
-    "type": "NetThrower_C"
+    "parent": "Basic Walker Weapons"
   },
   {
     "name": "Nibiran-tipped Bolt",
     "parent": "IronBolt",
-    "type": "NibirianBolt_C",
     "unlocks": [
       "FlintBolt",
       "Bone Bolt",
@@ -2313,64 +2043,51 @@
   },
   {
     "name": "NibirianBoots",
-    "parent": "NibirianTorso",
-    "type": "NibirianBoots_C"
+    "parent": "NibirianTorso"
   },
   {
     "name": "NibirianDart",
-    "parent": "IronDart",
-    "type": "NibirianDart_C"
+    "parent": "IronDart"
   },
   {
     "name": "NibirianGloves",
-    "parent": "NibirianTorso",
-    "type": "NibirianGloves_C"
+    "parent": "NibirianTorso"
   },
   {
     "name": "NibirianHarpoon",
-    "parent": "Nibiran-tipped Bolt",
-    "type": "NibirianHarpoon_C"
+    "parent": "Nibiran-tipped Bolt"
   },
   {
     "name": "NibirianPickaxe",
-    "parent": "IronPickaxe",
-    "type": "NibirianPickaxe_C"
+    "parent": "IronPickaxe"
   },
   {
     "name": "NibirianQuarterstaffBlade",
-    "parent": "Wyndanblade Quarterstaff",
-    "type": "NibirianQuarterstaffBlade_C"
+    "parent": "Wyndanblade Quarterstaff"
   },
   {
     "name": "NibirianQuarterstaffBlunt",
-    "parent": "Wyndanblade Quarterstaff",
-    "type": "NibirianQuarterstaffBlunt_C"
+    "parent": "Wyndanblade Quarterstaff"
   },
   {
     "name": "NibirianRepairHammer",
-    "parent": "IronRepairHammer",
-    "type": "NibirianRepairHammer_C"
+    "parent": "IronRepairHammer"
   },
   {
     "name": "NibirianScythe",
-    "parent": "IronScythe",
-    "type": "NibirianScythe_C"
+    "parent": "IronScythe"
   },
   {
     "name": "NibirianTorso",
-    "parent": "IronTorso",
-    "type": "NibirianTorso_C"
+    "parent": "IronTorso"
   },
   {
     "name": "Nomad Cloth",
-    "parent": "Advanced Fiberworking Station",
-    "type": "BasicCloth_C"
+    "parent": "Advanced Fiberworking Station"
   },
   {
     "name": "Nomad Grappling Hook",
     "parent": "MakeshiftGrapplingHook",
-    "category": "Grappling Hooks",
-    "type": "FixedGrapplingHook_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Nomad Cloth"
@@ -2378,13 +2095,11 @@
   },
   {
     "name": "Nurrfang Toothclub",
-    "parent": "Jaggertooth Club",
-    "type": "BoneClub_C"
+    "parent": "Jaggertooth Club"
   },
   {
     "name": "Obsidian Flask",
     "parent": "Ceramic Bottle",
-    "type": "LavaBottleSmall_C",
     "unlocks": [
       "ObsidianContainerLarge",
       "Obsidian Pot",
@@ -2396,7 +2111,6 @@
   {
     "name": "Obsidian Machine",
     "parent": "Clay Pot",
-    "type": "ObsidianMachine_C",
     "unlocks": [
       "ObsidianContainerLarge",
       "Obsidian Pot"
@@ -2405,7 +2119,6 @@
   {
     "name": "Obsidian Pot",
     "parent": "Advanced Constructions",
-    "type": "ObsidianContainerSmall_C",
     "unlocks": [
       "ObsidianContainerLarge"
     ]
@@ -2413,7 +2126,6 @@
   {
     "name": "Obsidian Rok",
     "parent": "Ceramic Rok",
-    "type": "ObsidianRok_C",
     "unlocks": [
       "ObsidianContainerLarge",
       "Obsidian Pot",
@@ -2422,33 +2134,27 @@
   },
   {
     "name": "ObsidianContainerLarge",
-    "parent": "Obsidian Pot",
-    "type": "ObsidianContainerLarge_C"
+    "parent": "Obsidian Pot"
   },
   {
     "name": "OneHandedBoneAxe",
-    "parent": "Stone Axe",
-    "type": "OneHandedBoneAxe_C"
+    "parent": "Stone Axe"
   },
   {
     "name": "OneHandedNibirianAxe",
-    "parent": "Wyndan Hand Axe",
-    "type": "OneHandedNibirianAxe_C"
+    "parent": "Wyndan Hand Axe"
   },
   {
     "name": "OneHandedNibirianMace",
-    "parent": "Wyndan Hammer",
-    "type": "OneHandedNibirianMace_C"
+    "parent": "Wyndan Hammer"
   },
   {
     "name": "OneHandedNibirianSword",
-    "parent": "Wyndan Sabre",
-    "type": "OneHandedNibirianSword_C"
+    "parent": "Wyndan Sabre"
   },
   {
     "name": "Packing Station",
     "parent": "Camp Fire",
-    "type": "PackingStation_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Walker Packing Compartment",
@@ -2468,7 +2174,6 @@
   {
     "name": "Paddleblade Quarterstaff",
     "parent": "Rawbone Quarterstaff",
-    "type": "ZirconiumQuarterstaff_C",
     "unlocks": [
       "Blunt Quarterstaff",
       "Traveller's Quarterstaff",
@@ -2478,7 +2183,6 @@
   {
     "name": "Panda Walker",
     "parent": "Tusker Walker",
-    "type": "Panda_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -2506,28 +2210,23 @@
   },
   {
     "name": "PenetratingDart",
-    "parent": "AntiPersonnelTurret",
-    "type": "PenetratingDart_C"
+    "parent": "AntiPersonnelTurret"
   },
   {
     "name": "Poaching Hut",
-    "parent": "Defensive Tower",
-    "type": "PoachingHut_C"
+    "parent": "Defensive Tower"
   },
   {
     "name": "Primitive Bandage",
-    "parent": "Equipment",
-    "type": "FiberBandage_C"
+    "parent": "Equipment"
   },
   {
     "name": "Proxy License",
-    "parent": "Woodworking Station",
-    "type": "ProxyLicense_C"
+    "parent": "Woodworking Station"
   },
   {
     "name": "Proxy Walker",
     "parent": "Steering Levers",
-    "type": "Proxy_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -2558,7 +2257,6 @@
   {
     "name": "Purification Station",
     "parent": "Clay Pot",
-    "type": "PurificationStation_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Hose Station",
@@ -2582,7 +2280,6 @@
   {
     "name": "Purified Water",
     "parent": "Camp Fire",
-    "type": "Water_T1_C",
     "unlocks": [
       "Small Water Bag",
       "Medium Water Bag",
@@ -2592,28 +2289,23 @@
   },
   {
     "name": "Quarry",
-    "parent": "Soil Excavator",
-    "type": "Quarry_C"
+    "parent": "Soil Excavator"
   },
   {
     "name": "Race Dust",
-    "parent": "Vision Powder",
-    "type": "RaceDust_C"
+    "parent": "Vision Powder"
   },
   {
     "name": "RainBoots",
-    "parent": "Rupu Fur Sandals",
-    "type": "RainBoots_C"
+    "parent": "Rupu Fur Sandals"
   },
   {
     "name": "RangeFinder",
-    "parent": "Maintenance Box",
-    "type": "RangeFinder_C"
+    "parent": "Maintenance Box"
   },
   {
     "name": "Raptor Sky Walker",
     "parent": "Dinghy Walker",
-    "type": "Raptor_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -2644,7 +2336,6 @@
   {
     "name": "Rawbone Battle Axe",
     "parent": "Stone Axe",
-    "type": "TwoHandedBoneAxe_C",
     "unlocks": [
       "Battle Fan",
       "Rawbone Sawsword",
@@ -2656,7 +2347,6 @@
   {
     "name": "Rawbone Club",
     "parent": "Nurrfang Toothclub",
-    "type": "BoneMace_C",
     "unlocks": [
       "Jaggertooth Club",
       "Rawbone Sawsword",
@@ -2667,7 +2357,6 @@
   {
     "name": "Rawbone Maul",
     "parent": "Rawbone Maul",
-    "type": "TwoHandedBoneSpikedClub_C",
     "unlocks": [
       "Rawbone Sawsword",
       "Jaggertooth Maul",
@@ -2681,7 +2370,6 @@
   {
     "name": "Rawbone Quarterstaff",
     "parent": "Blunt Quarterstaff",
-    "type": "BoneQuarterstaff_C",
     "unlocks": [
       "Blunt Quarterstaff",
       "Traveller's Quarterstaff",
@@ -2691,28 +2379,23 @@
   },
   {
     "name": "Rawbone Sawsword",
-    "parent": "Jaggertooth Swordclub",
-    "type": "TwoHandedBoneSwordShort_C"
+    "parent": "Jaggertooth Swordclub"
   },
   {
     "name": "RedwoodWoodBoots",
-    "parent": "RedwoodWoodTorso",
-    "type": "RedwoodWoodBoots_C"
+    "parent": "RedwoodWoodTorso"
   },
   {
     "name": "RedwoodWoodGloves",
-    "parent": "RedwoodWoodTorso",
-    "type": "RedwoodWoodGloves_C"
+    "parent": "RedwoodWoodTorso"
   },
   {
     "name": "RedwoodWoodTorso",
-    "parent": "TripleStitchTorso",
-    "type": "RedwoodWoodTorso_C"
+    "parent": "TripleStitchTorso"
   },
   {
     "name": "Reinforced Gear",
     "parent": "Wooden Gear",
-    "type": "ReinforcedGear_C",
     "unlocks": [
       "Wooden Gear"
     ]
@@ -2720,7 +2403,6 @@
   {
     "name": "Reinforced Plank",
     "parent": "Artisan Woodworking Station",
-    "type": "ReinforcedPlank_C",
     "unlocks": [
       "Barrier Plank",
       "Reinforced Gear",
@@ -2730,7 +2412,6 @@
   {
     "name": "Repair Station",
     "parent": "Rope",
-    "type": "RepairStation_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Small Repair Hoist",
@@ -2750,28 +2431,23 @@
   },
   {
     "name": "Repeater",
-    "parent": "Basic Walker Weapons",
-    "type": "Repeater_C"
+    "parent": "Basic Walker Weapons"
   },
   {
     "name": "Rokker",
-    "parent": "Advanced Walker Weapons",
-    "type": "Rokker_C"
+    "parent": "Advanced Walker Weapons"
   },
   {
     "name": "Rope",
-    "parent": "Advanced Fiberworking Station",
-    "type": "Rope_C"
+    "parent": "Advanced Fiberworking Station"
   },
   {
     "name": "Rubber Block",
-    "parent": "Curing Station",
-    "type": "Rubber_C"
+    "parent": "Curing Station"
   },
   {
     "name": "Rupu Fur Sandals",
     "parent": "RupuFurTorso",
-    "type": "RupuFurBoots_C",
     "unlocks": [
       "Rupu Rock",
       "RupuSling",
@@ -2780,31 +2456,26 @@
   },
   {
     "name": "Rupu Rock",
-    "parent": "RupuSling",
-    "type": "RupuRock_C"
+    "parent": "RupuSling"
   },
   {
     "name": "RupuFurGloves",
-    "parent": "RupuFurTorso",
-    "type": "RupuFurGloves_C"
+    "parent": "RupuFurTorso"
   },
   {
     "name": "RupuFurTorso",
     "parent": "FiberTorso",
-    "type": "RupuFurTorso_C",
     "unlocks": [
       "CloakedRupuFurTorso"
     ]
   },
   {
     "name": "RupuSling",
-    "parent": "Defensive Tower",
-    "type": "RupuSling_C"
+    "parent": "Defensive Tower"
   },
   {
     "name": "Sand",
     "parent": "Crafting",
-    "type": "Sand_C",
     "unlocks": [
       "Sand Bed",
       "Sand Structures"
@@ -2812,31 +2483,26 @@
   },
   {
     "name": "Sand Bed",
-    "parent": "Construction",
-    "type": "BedSand_C"
+    "parent": "Construction"
   },
   {
     "name": "Sand Structures",
     "parent": "Maintenance Box",
-    "type": "SandWalls_C",
     "unlocks": [
       "Sand Bed"
     ]
   },
   {
     "name": "Sawblade",
-    "parent": "Tool Pod",
-    "type": "Sawblade_C"
+    "parent": "Tool Pod"
   },
   {
     "name": "Sawblade_T2",
-    "parent": "Sawblade",
-    "type": "Sawblade_T2_C"
+    "parent": "Sawblade"
   },
   {
     "name": "Scattershot Ammo",
     "parent": "Scattershot Gun",
-    "type": "Scattershot_C",
     "unlocks": [
       "Ammo Chest",
       "Scattershot Gun",
@@ -2851,18 +2517,15 @@
   },
   {
     "name": "Scattershot Gun",
-    "parent": "Basic Walker Weapons",
-    "type": "ScattershotGun_C"
+    "parent": "Basic Walker Weapons"
   },
   {
     "name": "Schematic Bag",
-    "parent": "Light Backpack",
-    "type": "SchematicBag_C"
+    "parent": "Light Backpack"
   },
   {
     "name": "Schmetterling Walker",
     "parent": "Falco Walker",
-    "type": "Schmetterling_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -2893,18 +2556,15 @@
   },
   {
     "name": "Scroll Rack",
-    "parent": "Small Chest",
-    "type": "ScrollRack_C"
+    "parent": "Small Chest"
   },
   {
     "name": "Sharp Spikes",
-    "parent": "Bomb Chest Trap",
-    "type": "TrapSpikesSharp_C"
+    "parent": "Bomb Chest Trap"
   },
   {
     "name": "Short Ceramic Hoofmace",
     "parent": "Rawbone Club",
-    "type": "OneHandedZirconiumMace_C",
     "unlocks": [
       "Ceramic Bolt",
       "CeramicDart",
@@ -2924,7 +2584,6 @@
   {
     "name": "Short Malletblade",
     "parent": "Bonespike Sword",
-    "type": "OneHandedZirconiumSword_C",
     "unlocks": [
       "Short Ceramic Hoofmace"
     ]
@@ -2932,7 +2591,6 @@
   {
     "name": "Silur Walker",
     "parent": "Balang Walker",
-    "type": "Silur_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -2964,13 +2622,11 @@
   },
   {
     "name": "Simple Pickaxe",
-    "parent": "Beat Stick",
-    "type": "SimplePickaxe_C"
+    "parent": "Beat Stick"
   },
   {
     "name": "Simple Repair Hammer",
     "parent": "Beat Stick",
-    "type": "SimpleRepairHammer_C",
     "unlocks": [
       "Small Repair Hoist",
       "Repair Station",
@@ -2980,7 +2636,6 @@
   {
     "name": "Simple Sickle",
     "parent": "Beat Stick",
-    "type": "SimpleSickle_C",
     "unlocks": [
       "Simple Pickaxe",
       "Simple Repair Hammer"
@@ -2988,28 +2643,23 @@
   },
   {
     "name": "Singblade",
-    "parent": "Long Bonespike Swordstaff",
-    "type": "TwoHandedZirconiumSword_C"
+    "parent": "Long Bonespike Swordstaff"
   },
   {
     "name": "SinusDestroyer",
-    "parent": "Desert Mule",
-    "type": "SinusDestroyer_C"
+    "parent": "Desert Mule"
   },
   {
     "name": "Slingshot",
-    "parent": "Improved Walker Weapons",
-    "type": "Slingshot_C"
+    "parent": "Improved Walker Weapons"
   },
   {
     "name": "Small Base Walker Packer",
-    "parent": "Sand Structures",
-    "type": "BaseWalkerPackerSmall_C"
+    "parent": "Sand Structures"
   },
   {
     "name": "Small Chest",
     "parent": "Construction",
-    "type": "ChestSmall_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Ammo Chest"
@@ -3018,7 +2668,6 @@
   {
     "name": "Small Repair Hoist",
     "parent": "Medium Wood Walls",
-    "type": "SmallRepairHoist_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Small Chest",
@@ -3028,7 +2677,6 @@
   {
     "name": "Small Water Bag",
     "parent": "Construction",
-    "type": "WaterBagSmall_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Small Chest"
@@ -3036,13 +2684,10 @@
   },
   {
     "name": "SmallBoulder",
-    "parent": "Slingshot",
-    "type": "SmallBoulder_C"
+    "parent": "Slingshot"
   },
   {
     "name": "SmallWalker Walker Legs (1 of 2)",
-    "type": "SmallWalkerLegs_UI_C",
-    "onlyDevs": true,
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -3056,8 +2701,6 @@
   },
   {
     "name": "SmallWalker Walker Wings (1 of 2)",
-    "type": "SmallWalkerWings_UI_C",
-    "onlyDevs": true,
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -3073,18 +2716,15 @@
   },
   {
     "name": "SmithingStation",
-    "parent": "Crafting Bench",
-    "type": "SmithingStation_C"
+    "parent": "Crafting Bench"
   },
   {
     "name": "Soil Excavator",
-    "parent": "Camp Fire",
-    "type": "SoilExcavator_C"
+    "parent": "Camp Fire"
   },
   {
     "name": "Spider Walker",
     "parent": "Walkers",
-    "type": "Spider_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -3117,13 +2757,11 @@
   },
   {
     "name": "Spinner",
-    "parent": "Basic Walker Weapons",
-    "type": "Spinner_C"
+    "parent": "Basic Walker Weapons"
   },
   {
     "name": "Split Bone Bottle",
     "parent": "Bone Bottle",
-    "type": "SplitBoneBottle_C",
     "unlocks": [
       "Bone Bolt",
       "Bone Dart",
@@ -3146,7 +2784,6 @@
   {
     "name": "Split Ceramic Flask",
     "parent": "Ceramic Bottle",
-    "type": "SplitCeramicBottle_C",
     "unlocks": [
       "Ceramic Bolt",
       "CeramicDart",
@@ -3169,7 +2806,6 @@
   {
     "name": "Split Durable Water Sack",
     "parent": "Durable Water Sack",
-    "type": "SplitBarrel_C",
     "unlocks": [
       "Small Water Bag",
       "Medium Water Bag",
@@ -3183,43 +2819,31 @@
   },
   {
     "name": "Starch Cement",
-    "parent": "Curing Station",
-    "type": "StarchCement_C",
-    "onlyDevs": true
+    "parent": "Curing Station"
   },
   {
     "name": "Stations_T1",
-    "parent": "Basic Crafting",
-    "type": "Stations_T1_C",
-    "onlyDevs": true
+    "parent": "Basic Crafting"
   },
   {
     "name": "Stations_T2",
-    "parent": "Improved Crafting",
-    "type": "Stations_T2_C",
-    "onlyDevs": true
+    "parent": "Improved Crafting"
   },
   {
     "name": "Stations_T3",
-    "parent": "Advanced Crafting",
-    "type": "Stations_T3_C",
-    "onlyDevs": true
+    "parent": "Advanced Crafting"
   },
   {
     "name": "Stations_T4",
-    "parent": "Advanced Crafting",
-    "type": "Stations_T4_C",
-    "onlyDevs": true
+    "parent": "Advanced Crafting"
   },
   {
     "name": "Steering Levers",
-    "parent": "Dinghy Walker",
-    "type": "SteeringLevers_C"
+    "parent": "Dinghy Walker"
   },
   {
     "name": "Steering Levers Cage",
     "parent": "Steering Levers",
-    "type": "SteeringLeversCage_C",
     "unlocks": [
       "Steering Levers"
     ]
@@ -3227,7 +2851,6 @@
   {
     "name": "Sterile Bandage",
     "parent": "Primitive Bandage",
-    "type": "ClothBandage_C",
     "unlocks": [
       "Primitive Bandage"
     ]
@@ -3235,7 +2858,6 @@
   {
     "name": "Stiletto Walker",
     "parent": "Steering Levers",
-    "type": "Stiletto_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -3269,19 +2891,15 @@
   },
   {
     "name": "Stinger",
-    "parent": "Basic Walker Weapons",
-    "type": "Stinger_C"
+    "parent": "Basic Walker Weapons"
   },
   {
     "name": "Stinger_T2",
-    "parent": "Improved Walker Weapons",
-    "type": "Stinger_T2_C",
-    "onlyDevs": true
+    "parent": "Improved Walker Weapons"
   },
   {
     "name": "Stomping Station",
     "parent": "Camp Fire",
-    "type": "StompingStation_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Hose Station",
@@ -3301,18 +2919,15 @@
   },
   {
     "name": "StompingStation_T2",
-    "parent": "Stomping Station",
-    "type": "StompingStation_T2_C"
+    "parent": "Stomping Station"
   },
   {
     "name": "StompingStation_T3",
-    "parent": "StompingStation_T2",
-    "type": "StompingStation_T3_C"
+    "parent": "StompingStation_T2"
   },
   {
     "name": "Stone Axe",
     "parent": "Crude Hatchet",
-    "type": "StoneAxe_C",
     "unlocks": [
       "Stone Humidifier",
       "StoneWalls"
@@ -3320,19 +2935,15 @@
   },
   {
     "name": "Stone Humidifier",
-    "parent": "Maintenance Box",
-    "type": "Humidifier_C"
+    "parent": "Maintenance Box"
   },
   {
     "name": "StoneWalls",
-    "parent": "Sand Structures",
-    "type": "StoneWalls_C"
+    "parent": "Sand Structures"
   },
   {
     "name": "Sturdy Grappling Hook",
     "parent": "Nomad Grappling Hook",
-    "category": "Grappling Hooks",
-    "type": "SturdyGrapplingHook_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Nomad Grappling Hook",
@@ -3343,7 +2954,6 @@
   {
     "name": "Sulfur Bomb",
     "parent": "Slingshot",
-    "type": "SulfurBomb_C",
     "unlocks": [
       "Bomb Chest Trap",
       "Chalk Bomb",
@@ -3353,8 +2963,6 @@
   {
     "name": "Tall Stinger",
     "parent": "Advanced Walker Weapons",
-    "type": "Stinger_T3_C",
-    "onlyDevs": true,
     "unlocks": [
       "Stinger",
       "Stinger_T2",
@@ -3363,18 +2971,15 @@
   },
   {
     "name": "Tallow",
-    "parent": "Purification Station",
-    "type": "Fuel_C"
+    "parent": "Purification Station"
   },
   {
     "name": "Tar",
-    "parent": "Furnace",
-    "type": "Tar_C"
+    "parent": "Furnace"
   },
   {
     "name": "Throwable Aloe Bomb",
     "parent": "Aloe Goo Bomb",
-    "type": "ThrowableAloeBomb_C",
     "unlocks": [
       "Bomb Chest Trap",
       "Aloe Gel",
@@ -3391,7 +2996,6 @@
   {
     "name": "Throwable Insect Bomb",
     "parent": "Insect Bomb",
-    "type": "ThrowableInsectBomb_C",
     "unlocks": [
       "Bomb Chest Trap",
       "Chalk Bomb",
@@ -3408,7 +3012,6 @@
   {
     "name": "Throwable Smoke Bomb (Gas)",
     "parent": "Chalk Bomb",
-    "type": "ThrowableSmokeBomb_C",
     "unlocks": [
       "Bomb Chest Trap",
       "Chalk Bomb",
@@ -3426,28 +3029,23 @@
   },
   {
     "name": "ThrowableLavaBomb",
-    "parent": "Fire Bomb",
-    "type": "ThrowableLavaBomb_C"
+    "parent": "Fire Bomb"
   },
   {
     "name": "Throwing Net",
-    "parent": "Beat Stick",
-    "type": "ThrowingNet_C"
+    "parent": "Beat Stick"
   },
   {
     "name": "Throwstone",
-    "parent": "Equipment",
-    "type": "Throwstone_C"
+    "parent": "Equipment"
   },
   {
     "name": "Thumper",
-    "parent": "Basic Walker Weapons",
-    "type": "Thumper_C"
+    "parent": "Basic Walker Weapons"
   },
   {
     "name": "Titan Walker",
     "parent": "Buffalo Walker",
-    "type": "Titan_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -3483,7 +3081,6 @@
   {
     "name": "Toboggan Walker",
     "parent": "Steering Levers",
-    "type": "Toboggan_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -3519,43 +3116,31 @@
   },
   {
     "name": "Tool Pod",
-    "parent": "Advanced Walker Weapons",
-    "type": "ToolPod_C"
+    "parent": "Advanced Walker Weapons"
   },
   {
     "name": "Tools_T1",
-    "parent": "Equipment",
-    "type": "Tools_T1_C",
-    "onlyDevs": true
+    "parent": "Equipment"
   },
   {
     "name": "Tools_T2",
-    "parent": "Tools_T1",
-    "type": "Tools_T2_C",
-    "onlyDevs": true
+    "parent": "Tools_T1"
   },
   {
     "name": "Tools_T3",
-    "parent": "Tools_T2",
-    "type": "Tools_T3_C",
-    "onlyDevs": true
+    "parent": "Tools_T2"
   },
   {
     "name": "Tools_T4",
-    "parent": "Tools_T3",
-    "type": "Tools_T4_C",
-    "onlyDevs": true
+    "parent": "Tools_T3"
   },
   {
     "name": "Torch",
-    "parent": "Beat Stick",
-    "type": "HandTorch_C"
+    "parent": "Beat Stick"
   },
   {
     "name": "Torque Backpack",
     "parent": "Torque Battery",
-    "type": "GrapplingBelt_C",
-    "onlyDevs": true,
     "unlocks": [
       "Light Backpack"
     ]
@@ -3563,7 +3148,6 @@
   {
     "name": "Torque Battery",
     "parent": "Nomad Grappling Hook",
-    "type": "TorqueContainer_C",
     "unlocks": [
       "Torque Backpack"
     ]
@@ -3571,20 +3155,17 @@
   {
     "name": "Trap Door",
     "parent": "Bomb Chest Trap",
-    "type": "TrapDoor_C",
     "unlocks": [
       "Bomb Chest Trap"
     ]
   },
   {
     "name": "TrapSpikesSpring",
-    "parent": "Bomb Chest Trap",
-    "type": "TrapSpikesSpring_C"
+    "parent": "Bomb Chest Trap"
   },
   {
     "name": "Traveller's Quarterstaff",
     "parent": "Blunt Quarterstaff",
-    "type": "TravellersStaff_C",
     "unlocks": [
       "Blunt Quarterstaff"
     ]
@@ -3592,7 +3173,6 @@
   {
     "name": "Trip Wire Trap",
     "parent": "Advanced Constructions",
-    "type": "TrapTripWire_C",
     "unlocks": [
       "Bomb Chest Trap",
       "Trap Door",
@@ -3601,33 +3181,27 @@
   },
   {
     "name": "Triple Stitch Fabric",
-    "parent": "Curing Station",
-    "type": "TripleStitch_C"
+    "parent": "Curing Station"
   },
   {
     "name": "TripleStitchBoots",
-    "parent": "TripleStitchTorso",
-    "type": "TripleStitchBoots_C"
+    "parent": "TripleStitchTorso"
   },
   {
     "name": "TripleStitchGloves",
-    "parent": "TripleStitchTorso",
-    "type": "TripleStitchGloves_C"
+    "parent": "TripleStitchTorso"
   },
   {
     "name": "TripleStitchTorso",
-    "parent": "RupuFurTorso",
-    "type": "TripleStitchTorso_C"
+    "parent": "RupuFurTorso"
   },
   {
     "name": "Tube Spade",
-    "parent": "Beat Stick",
-    "type": "TubeSpade_C"
+    "parent": "Beat Stick"
   },
   {
     "name": "Tusker Walker",
     "parent": "Toboggan Walker",
-    "type": "Tusker_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -3664,51 +3238,41 @@
   },
   {
     "name": "TwoHandedIronMace",
-    "parent": "Long Ceramic Hoofmace",
-    "type": "TwoHandedIronMace_C"
+    "parent": "Long Ceramic Hoofmace"
   },
   {
     "name": "TwoHandedNibirianAxe",
-    "parent": "Wyndan Battle Axe",
-    "type": "TwoHandedNibirianAxe_C"
+    "parent": "Wyndan Battle Axe"
   },
   {
     "name": "TwoHandedNibirianMace",
-    "parent": "TwoHandedIronMace",
-    "type": "TwoHandedNibirianMace_C"
+    "parent": "TwoHandedIronMace"
   },
   {
     "name": "TwoHandedNibirianSword",
-    "parent": "Wyndan Flame Sword",
-    "type": "TwoHandedNibirianSword_C"
+    "parent": "Wyndan Flame Sword"
   },
   {
     "name": "Vault",
-    "parent": "Construction",
-    "type": "Vault_C"
+    "parent": "Construction"
   },
   {
     "name": "Vision Powder",
-    "parent": "Vitamins",
-    "type": "VisionPowder_C"
+    "parent": "Vitamins"
   },
   {
     "name": "Vitamins",
-    "type": "VitaminsRoot_C",
     "unlocks": [
       "Vitamins_T2"
     ]
   },
   {
     "name": "Vitamins_T2",
-    "parent": "Basic Potions",
-    "type": "Vitamins_T2_C",
-    "onlyDevs": true
+    "parent": "Basic Potions"
   },
   {
     "name": "Walker Climber",
     "parent": "Construction",
-    "type": "WalkerClimber_C",
     "unlocks": [
       "Small Base Walker Packer"
     ]
@@ -3716,7 +3280,6 @@
   {
     "name": "Walker Packing Compartment",
     "parent": "ChestBaseMaintenance_T2",
-    "type": "SmallWalkerPacker_C",
     "unlocks": [
       "Small Base Walker Packer",
       "Walker Climber",
@@ -3725,57 +3288,46 @@
   },
   {
     "name": "WalkerPartsAdvanced_T2",
-    "parent": "WalkerPartsImproved_T2",
-    "type": "WalkerPartsAdvanced_T2_C"
+    "parent": "WalkerPartsImproved_T2"
   },
   {
     "name": "WalkerPartsAdvanced_T3",
-    "parent": "Advanced Walker Parts",
-    "type": "WalkerPartsAdvanced_T3_C"
+    "parent": "Advanced Walker Parts"
   },
   {
     "name": "WalkerPartsAdvanced_T4",
-    "parent": "WalkerPartsImproved_T4",
-    "type": "WalkerPartsAdvanced_T4_C"
+    "parent": "WalkerPartsImproved_T4"
   },
   {
     "name": "WalkerPartsBase_T1",
-    "parent": "Basic Walkers",
-    "type": "WalkerPartsBase_T1_C"
+    "parent": "Basic Walkers"
   },
   {
     "name": "WalkerPartsBase_T2",
-    "parent": "Improved Walkers",
-    "type": "WalkerPartsBase_T2_C"
+    "parent": "Improved Walkers"
   },
   {
     "name": "WalkerPartsBase_T3",
-    "parent": "Advanced Walkers",
-    "type": "WalkerPartsBase_T3_C"
+    "parent": "Advanced Walkers"
   },
   {
     "name": "WalkerPartsBase_T4",
-    "parent": "Flotillian Walkers",
-    "type": "WalkerPartsBase_T4_C"
+    "parent": "Flotillian Walkers"
   },
   {
     "name": "WalkerPartsImproved_T1",
-    "parent": "WalkerPartsBase_T1",
-    "type": "WalkerPartsImproved_T1_C"
+    "parent": "WalkerPartsBase_T1"
   },
   {
     "name": "WalkerPartsImproved_T2",
-    "parent": "WalkerPartsBase_T2",
-    "type": "WalkerPartsImproved_T2_C"
+    "parent": "WalkerPartsBase_T2"
   },
   {
     "name": "WalkerPartsImproved_T4",
-    "parent": "WalkerPartsBase_T4",
-    "type": "WalkerPartsImproved_T4_C"
+    "parent": "WalkerPartsBase_T4"
   },
   {
     "name": "Walkers",
-    "type": "WalkersRoot_C",
     "unlocks": [
       "Basic Walkers",
       "Improved Walkers",
@@ -3785,13 +3337,11 @@
   },
   {
     "name": "WallGiant",
-    "parent": "Advanced Constructions",
-    "type": "WallGiant_C"
+    "parent": "Advanced Constructions"
   },
   {
     "name": "Water Circulator",
     "parent": "Ceramic Bottle",
-    "type": "Stillsuit_C",
     "unlocks": [
       "Small Water Bag",
       "Medium Water Bag",
@@ -3805,7 +3355,6 @@
   {
     "name": "Water Condenser",
     "parent": "Stone Humidifier",
-    "type": "WaterCondenser_C",
     "unlocks": [
       "Small Water Bag",
       "Medium Water Bag",
@@ -3814,52 +3363,39 @@
   },
   {
     "name": "Weapons_T1",
-    "parent": "Basic Equipment",
-    "type": "Weapons_T1_C",
-    "onlyDevs": true
+    "parent": "Basic Equipment"
   },
   {
     "name": "Weapons_T2",
-    "parent": "Equipment_T2",
-    "type": "Weapons_T2_C",
-    "onlyDevs": true
+    "parent": "Equipment_T2"
   },
   {
     "name": "Weapons_T3",
-    "parent": "Advanced Equipment",
-    "type": "Weapons_T3_C",
-    "onlyDevs": true
+    "parent": "Advanced Equipment"
   },
   {
     "name": "Weapons_T4",
-    "parent": "Flotillian Equipment",
-    "type": "Weapons_T4_C",
-    "onlyDevs": true
+    "parent": "Flotillian Equipment"
   },
   {
     "name": "Windmill",
-    "parent": "Camp Fire",
-    "type": "Windmill_C"
+    "parent": "Camp Fire"
   },
   {
     "name": "Windmill_T2",
-    "parent": "Windmill",
-    "type": "Windmill_T2_C"
+    "parent": "Windmill"
   },
   {
     "name": "Winged Helmet",
-    "parent": "Cloak",
-    "type": "WingedHelmet_C"
+    "parent": "Cloak"
   },
   {
     "name": "Wingsuit",
-    "parent": "Nomad Grappling Hook",
-    "type": "WingSuit_C"
+    "parent": "Nomad Grappling Hook"
   },
   {
     "name": "Wood Shaft",
     "parent": "Woodworking Station",
-    "type": "WoodenShaft_C",
     "unlocks": [
       "WoodenWalls",
       "Medium Wood Walls",
@@ -3868,13 +3404,11 @@
   },
   {
     "name": "Wood_T4",
-    "parent": "Lumbermill",
-    "type": "Wood_T4_C"
+    "parent": "Lumbermill"
   },
   {
     "name": "Wooden Gear",
     "parent": "Advanced Woodworking Station",
-    "type": "WoodenGear_C",
     "unlocks": [
       "WoodenWalls",
       "WoodenDart",
@@ -3884,7 +3418,6 @@
   {
     "name": "Wooden Slab",
     "parent": "Woodworking Station",
-    "type": "WoodenSlab_C",
     "unlocks": [
       "WoodenWalls",
       "WoodenDart"
@@ -3892,18 +3425,15 @@
   },
   {
     "name": "WoodenDart",
-    "parent": "Repeater",
-    "type": "WoodenDart_C"
+    "parent": "Repeater"
   },
   {
     "name": "WoodenWalls",
-    "parent": "Sand Structures",
-    "type": "WoodenWalls_C"
+    "parent": "Sand Structures"
   },
   {
     "name": "Woodworking Station",
     "parent": "Crafting",
-    "type": "WoodworkingStation_C",
     "unlocks": [
       "Grappling Belt Charging Station",
       "Hose Station",
@@ -3918,7 +3448,6 @@
   {
     "name": "Worm Sand",
     "parent": "Soil Excavator",
-    "type": "WormSand_C",
     "unlocks": [
       "Sand Bed",
       "Sand Structures",
@@ -3929,7 +3458,6 @@
   {
     "name": "Worm Tincture",
     "parent": "Bonebreaker",
-    "type": "WormTincture_C",
     "unlocks": [
       "WormOil",
       "Worm Sand"
@@ -3937,13 +3465,11 @@
   },
   {
     "name": "WormOil",
-    "parent": "StompingStation_T3",
-    "type": "WormOil_C"
+    "parent": "StompingStation_T3"
   },
   {
     "name": "Wyndan Battle Axe",
     "parent": "Firestone Battle Axe",
-    "type": "TwoHandedIronAxe_C",
     "unlocks": [
       "Battle Fan",
       "Rawbone Battle Axe",
@@ -3957,7 +3483,6 @@
   {
     "name": "Wyndan Flame Sword",
     "parent": "Singblade",
-    "type": "TwoHandedIronSword_C",
     "unlocks": [
       "Rawbone Sawsword",
       "Jaggertooth Swordclub",
@@ -3974,7 +3499,6 @@
   {
     "name": "Wyndan Hammer",
     "parent": "Short Ceramic Hoofmace",
-    "type": "OneHandedIronMace_C",
     "unlocks": [
       "Simple Repair Hammer",
       "Bone Repair Hammer",
@@ -3990,7 +3514,6 @@
   {
     "name": "Wyndan Hand Axe",
     "parent": "Ceramic Hatchet",
-    "type": "OneHandedIronAxe_C",
     "unlocks": [
       "Heavy Rawbone Hand Axe",
       "OneHandedBoneAxe",
@@ -4001,7 +3524,6 @@
   {
     "name": "Wyndan Sabre",
     "parent": "Short Malletblade",
-    "type": "OneHandedIronSword_C",
     "unlocks": [
       "Wyndanblade Quarterstaff",
       "Wyndan Hand Axe",
@@ -4011,7 +3533,6 @@
   {
     "name": "Wyndanblade Quarterstaff",
     "parent": "Paddleblade Quarterstaff",
-    "type": "IronQuarterstaff_C",
     "unlocks": [
       "Blunt Quarterstaff",
       "Traveller's Quarterstaff",
