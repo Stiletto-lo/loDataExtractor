@@ -17,7 +17,7 @@ const path = require("node:path");
  * @param {Array} items - The array of item objects for drop information
  * @returns {Array} - Enhanced creature data
  */
-function processCreatures(creatures, lootTables = {}) {
+function processCreatures(creatures) {
 	if (!Array.isArray(creatures) || creatures.length === 0) {
 		console.warn("No creatures to process");
 		return [];

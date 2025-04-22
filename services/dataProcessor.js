@@ -194,12 +194,10 @@ const processCreatures = () => {
   console.info("Processing creatures with enhanced data");
   const creatureProcessor = require("../utils/creatureProcessor");
   let creatures = fileParser.getCreatures();
-  const lootTables = fileParser.getAllLootTables();
 
   // Process creatures with enhanced data
   creatures = creatureProcessor.processCreatures(
     creatures,
-    lootTables,
   );
 
   // Sort creatures by name

@@ -251,7 +251,7 @@ const parseLootSites = (filePath) => {
 
   // Extract the loot table name from the reference
   const match = lootTableRef.match(/DataTable'([^']+)'/);
-  if (!match || !match[1]) {
+  if (!match?.[1]) {
     return false;
   }
 
@@ -270,17 +270,17 @@ const parseLootSites = (filePath) => {
   if (!creature) {
     creature = { ...creatureTemplate };
     creature.name = creatureName;
-    creature.lootTables = [];
+    creature.lootTemplates = [];
     creatures[creatureName] = creature;
   }
 
   // Add the loot table to the creature if not already present
-  const hasLootTable = creature.lootTables.some(
+  const hasLootTable = creature.lootTemplates.some(
     (lt) => lt.name === lootTable.name
   );
 
   if (!hasLootTable) {
-    creature.lootTables.push({
+    creature.lootTemplates.push({
       name: lootTable.name,
       drops: lootTable.drops,
     });
@@ -304,7 +304,7 @@ const getLootSiteNameFromObject = (objectName) => {
 
   // Extract the creature name from the object name
   const match = objectName.match(/BP_([^_]+)/);
-  if (!match || !match[1]) {
+  if (!match?.[1]) {
     return null;
   }
 
