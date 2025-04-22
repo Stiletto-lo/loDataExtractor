@@ -14,6 +14,7 @@ const lootTableTemplate = require("../../templates/lootTable");
 const dropDataTemplate = require("../../templates/dropData");
 const creatureTemplate = require("../../templates/creature");
 const utilityFunctions = require("./utilityFunctions");
+const lootTemplateParser = require("./lootParsers/lootTemplateParser");
 
 // Output directories
 const OUTPUT_DIR = path.join(__dirname, "../../exported");
@@ -402,4 +403,5 @@ module.exports = {
 	parseLootTable,
 	getLootSiteNameFromObject,
 	parseLootSites,
+	parseLootTemplate: lootTemplateParser.parseLootTemplate,
 };

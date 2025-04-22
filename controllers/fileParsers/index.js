@@ -5,7 +5,6 @@
 const blueprintParsers = require("./blueprintParsers");
 const itemParsers = require("./itemParsers");
 const lootParsers = require("./lootParsers");
-const lootTemplateParsers = require("./lootTemplateParsers");
 const translationParsers = require("./translationParsers");
 const upgradeParsers = require("./upgradeParsers");
 const utilityFunctions = require("./utilityFunctions");
@@ -33,7 +32,7 @@ module.exports = {
 	parseLootTable: lootParsers.parseLootTable,
 	parseLootSites: lootParsers.parseLootSites,
 	getLootSiteNameFromObject: lootParsers.getLootSiteNameFromObject,
-	parseLootTemplate: lootTemplateParsers.parseLootTemplate,
+	parseLootTemplate: lootParsers.parseLootTemplate,
 	getAllLootTables: utilityFunctions.getAllLootTables,
 	setLootTables: utilityFunctions.setLootTables,
 
