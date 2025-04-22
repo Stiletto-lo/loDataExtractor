@@ -6,37 +6,5 @@
   "type": "RupuVine_C",
   "experiencieReward": 18,
   "stackSize": 100,
-  "weight": 0.01,
-  "drops": [
-    {
-      "location": "BaseResources_T1",
-      "chance": 10.526316,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "RupuVines_T1",
-      "chance": 100,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "BaseResources_T2",
-      "chance": 12.5,
-      "minQuantity": 2,
-      "maxQuantity": 2
-    },
-    {
-      "location": "BaseResources_T3",
-      "chance": 6.769596,
-      "minQuantity": 3,
-      "maxQuantity": 3
-    },
-    {
-      "location": "BaseResources_T4",
-      "chance": 9.090909,
-      "minQuantity": 3,
-      "maxQuantity": 3
-    }
-  ]
+  "weight": 0.01
 }

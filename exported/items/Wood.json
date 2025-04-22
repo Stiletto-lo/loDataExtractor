@@ -20,37 +20,5 @@
   "description": "This versatile material is the focus of Flotillan engineering.",
   "experiencieReward": 1,
   "stackSize": 100,
-  "weight": 0.19,
-  "drops": [
-    {
-      "location": "BaseResources_T1",
-      "chance": 26.31579,
-      "minQuantity": 10,
-      "maxQuantity": 10
-    },
-    {
-      "location": "Wood_T1",
-      "chance": 100,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "BaseResources_T2",
-      "chance": 12.5,
-      "minQuantity": 12,
-      "maxQuantity": 12
-    },
-    {
-      "location": "BaseResources_T3",
-      "chance": 10.718528,
-      "minQuantity": 14,
-      "maxQuantity": 14
-    },
-    {
-      "location": "BaseResources_T4",
-      "chance": 9.090909,
-      "minQuantity": 14,
-      "maxQuantity": 14
-    }
-  ]
+  "weight": 0.19
 }

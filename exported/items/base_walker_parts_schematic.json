@@ -3,32 +3,6 @@
   "name": "Base Walker Parts Schematic",
   "type": "WalkerPartsBaseSchematic_C",
   "stackSize": 100,
-  "drops": [
-    {
-      "location": "Schematics_T1",
-      "chance": 6.25,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Schematics_T2",
-      "chance": 5.5555553,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Schematics_T3",
-      "chance": 4.7619047,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "Schematics_T4",
-      "chance": 5.882353,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    }
-  ],
   "learn": [
     "Buffalo Walker Legs (1 of 2)",
     "Mollusk Walker Legs (1 of 2)",

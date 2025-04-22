@@ -2,7 +2,6 @@
  * Index file that exports all file parser functionality
  */
 
-const blueprintParsers = require("./blueprintParsers");
 const itemParsers = require("./itemParsers");
 const lootParsers = require("./lootParsers");
 const translationParsers = require("./translationParsers");
@@ -13,10 +12,6 @@ const itemNameGlossary = require("./itemNameGlossary");
 
 // Re-export all functionality from the individual modules
 module.exports = {
-	// Blueprint related functions
-	parseLocation: blueprintParsers.parseLocation,
-	parseBlueprintsToItems: blueprintParsers.parseBlueprintsToItems,
-	parseLootBlueprint: blueprintParsers.parseLootBlueprint,
 
 	// Item related functions
 	getItemFromItemData: itemParsers.getItemFromItemData,

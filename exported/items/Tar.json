@@ -3,20 +3,6 @@
   "parent": "Furnace",
   "type": "Tar_C",
   "description": "Extracted from deep below volcanic soil.",
-  "drops": [
-    {
-      "location": "ProcessedResources_T3",
-      "chance": 5.882353,
-      "minQuantity": 3,
-      "maxQuantity": 3
-    },
-    {
-      "location": "ProcessedResources_T4",
-      "chance": 8.333333,
-      "minQuantity": 3,
-      "maxQuantity": 3
-    }
-  ],
   "category": "Liquids",
   "crafting": [
     {

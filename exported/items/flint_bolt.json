@@ -65,19 +65,5 @@
       "tier": 1
     }
   ],
-  "drops": [
-    {
-      "location": "Ammo_T1",
-      "chance": 33.333332,
-      "minQuantity": 3,
-      "maxQuantity": 15
-    },
-    {
-      "location": "TreasureMap_T1",
-      "chance": 100,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    }
-  ],
   "damageType": "'BoltDamage_C'"
 }

@@ -185,43 +185,5 @@
   "description": "Used to make everything from ropes, sails, to garments.",
   "experiencieReward": 2,
   "stackSize": 100,
-  "weight": 0.02,
-  "drops": [
-    {
-      "location": "FallbackDefaultLoot",
-      "chance": 100,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "BaseResources_T1",
-      "chance": 26.31579,
-      "minQuantity": 12,
-      "maxQuantity": 12
-    },
-    {
-      "location": "Fiber_T1",
-      "chance": 100,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "location": "BaseResources_T2",
-      "chance": 12.5,
-      "minQuantity": 14,
-      "maxQuantity": 14
-    },
-    {
-      "location": "BaseResources_T3",
-      "chance": 10.718528,
-      "minQuantity": 16,
-      "maxQuantity": 16
-    },
-    {
-      "location": "BaseResources_T4",
-      "chance": 9.090909,
-      "minQuantity": 16,
-      "maxQuantity": 16
-    }
-  ]
+  "weight": 0.02
 }

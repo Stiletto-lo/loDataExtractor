@@ -59,9 +59,6 @@ const loadDirData = (dir, type) => {
         case "loottemplates":
           fileParser.parseLootTemplate(filePath);
           break;
-        case "blueprintsloot":
-          fileParser.parseLootBlueprint(filePath);
-          break;
         case "damagetypes":
           fileParser.parseDamage(filePath);
           break;
@@ -140,16 +137,11 @@ const loadAllFiles = (contentFolderPath) => {
     `${contentFolderPath}Content/Mist/Data/LootTables/LootTables`,
     "loottables",
   );
-  loadDirData(
-    `${contentFolderPath}Content/Mist/Data/LootTables`,
-    "blueprintsloot",
-  );
   console.info("Loading LootTemplates");
   loadDirData(
     `${contentFolderPath}Content/Mist/Data/LootTables/LootTemplates`,
     "loottemplates",
   );
-  fileParser.parseBlueprintsToItems();
 };
 
 module.exports = {

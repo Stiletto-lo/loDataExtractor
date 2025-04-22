@@ -1,13 +1,5 @@
 {
   "name": "Ceramic Bolt",
   "parent": "Bone Bolt",
-  "type": "CeramicBolt_C",
-  "drops": [
-    {
-      "location": "Ammo_T3",
-      "chance": 16,
-      "minQuantity": 5,
-      "maxQuantity": 15
-    }
-  ]
+  "type": "CeramicBolt_C"
 }

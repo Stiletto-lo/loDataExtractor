@@ -37,6 +37,5 @@ module.exports = {
 	getAllCreatures: () => dataAccess.getAllCreatures(),
 	getTranslator: () => dataAccess.getTranslator(),
 	getAllUpgradesData: () => dataAccess.getAllUpgradesData(),
-	getAllBlueprints: () => dataAccess.getAllBlueprints(),
 };
 

@@ -49,10 +49,6 @@ class DataAccess {
   getAllUpgradesData() {
     return fileParser.getUpgradesData();
   }
-
-  getAllBlueprints() {
-    return fileParser.getAllBlueprints();
-  }
 }
 
 const dataAccess = new DataAccess();

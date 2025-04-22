@@ -2,26 +2,6 @@
   "name": "Glass",
   "parent": "Furnace",
   "type": "EmptyGlassVial_C",
-  "drops": [
-    {
-      "location": "ProcessedResources_T2",
-      "chance": 11.111111,
-      "minQuantity": 1,
-      "maxQuantity": 2
-    },
-    {
-      "location": "ProcessedResources_T3",
-      "chance": 5.882353,
-      "minQuantity": 3,
-      "maxQuantity": 3
-    },
-    {
-      "location": "ProcessedResources_T4",
-      "chance": 8.333333,
-      "minQuantity": 3,
-      "maxQuantity": 3
-    }
-  ],
   "category": "Resources",
   "crafting": [
     {

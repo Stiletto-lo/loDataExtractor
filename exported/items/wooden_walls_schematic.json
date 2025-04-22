@@ -3,14 +3,6 @@
   "name": "Wooden Walls Schematic",
   "type": "WoodenWallsSchematic_C",
   "stackSize": 100,
-  "drops": [
-    {
-      "location": "Schematics_T1",
-      "chance": 6.25,
-      "minQuantity": 5,
-      "maxQuantity": 5
-    }
-  ],
   "learn": [
     "Light Wood Walker Gate",
     "Light Wood Guard Rail",
