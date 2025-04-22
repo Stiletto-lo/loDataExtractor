@@ -74,12 +74,21 @@ async function exportIndividualCreatureFiles(creatures, exportFolder) {
 
 	for (const creature of creatures) {
 		if (creature.name) {
+			const dataToExport = {
+				name: creature?.name,
+				category: creature?.category,
+				tier: creature?.tier,
+				health: creature?.health,
+				experiencie: creature?.experiencie,
+				drops: creature?.drops,
+			}
+
 			const snakeCaseName = convertToSnakeCase(creature.name);
 
 			try {
 				await fs.writeFile(
 					path.join(creaturesFolder, `${snakeCaseName}.json`),
-					JSON.stringify(creature, null, 2),
+					JSON.stringify(dataToExport, null, 2),
 				);
 			} catch (err) {
 				console.error(

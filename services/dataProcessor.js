@@ -217,18 +217,6 @@ const createMinCreatures = (creatures) => {
     if (creature.name) { minCreature.name = creature.name; }
     if (creature.category) { minCreature.category = creature.category; }
     if (creature.tier) { minCreature.tier = creature.tier; }
-    if (creature.lootTemplate) { minCreature.lootTemplate = creature.lootTemplate; }
-
-    // Include drops information
-    if (creature.drops && creature.drops.length > 0) {
-      minCreature.drops = creature.drops.map((drop) => ({
-        item: drop.item,
-        chance: drop.chance,
-        min: drop.min,
-        max: drop.max,
-        source: drop.source
-      }));
-    }
 
     return minCreature;
   });
