@@ -75,6 +75,27 @@
       ],
       "station": "FuelBurning",
       "time": 600
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Redwood Wood"
+        }
+      ],
+      "station": "Furnace",
+      "time": 12
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Redwood Wood"
+        }
+      ],
+      "output": 2,
+      "station": "Furnace",
+      "time": 8
     }
   ],
   "trade_price": 0.1,

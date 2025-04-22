@@ -2,74 +2,38 @@
   "name": "Components_T1",
   "drops": [
     {
-      "name": "Bearing",
-      "chance": 8.333333,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "name": "Cam",
-      "chance": 8.333333,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "name": "Cog",
-      "chance": 8.333333,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "name": "Gasket",
-      "chance": 8.333333,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "name": "Lever",
-      "chance": 8.333333,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "name": "Pinion",
-      "chance": 8.333333,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "name": "Rotor",
-      "chance": 8.333333,
+      "name": "Spring",
+      "chance": 16.666666,
       "minQuantity": 1,
       "maxQuantity": 1
     },
     {
       "name": "Shackle",
-      "chance": 8.333333,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "name": "Spline",
-      "chance": 8.333333,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "name": "Spring",
-      "chance": 8.333333,
-      "minQuantity": 1,
-      "maxQuantity": 1
-    },
-    {
-      "name": "Sprocket",
-      "chance": 8.333333,
+      "chance": 16.666666,
       "minQuantity": 1,
       "maxQuantity": 1
     },
     {
       "name": "Strut",
-      "chance": 8.333333,
+      "chance": 16.666666,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "name": "Cog",
+      "chance": 16.666666,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "name": "Lever",
+      "chance": 16.666666,
+      "minQuantity": 1,
+      "maxQuantity": 1
+    },
+    {
+      "name": "Spline",
+      "chance": 16.666666,
       "minQuantity": 1,
       "maxQuantity": 1
     }

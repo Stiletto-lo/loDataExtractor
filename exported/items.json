@@ -1503,6 +1503,28 @@
         ],
         "station": "FuelBurning",
         "time": 600
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Lightwood"
+          }
+        ],
+        "output": 15,
+        "station": "Furnace",
+        "time": 15
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Lightwood"
+          }
+        ],
+        "output": 15,
+        "station": "Advanced Furnace",
+        "time": 12
       }
     ],
     "trade_price": 0.1,
@@ -1611,7 +1633,7 @@
     ],
     "structureInfo": {
       "type": "Solid",
-      "hp": 60000
+      "hp": 150000
     },
     "walkerinfo": {
       "category": "Small"
@@ -2906,7 +2928,7 @@
           },
           {
             "count": 1,
-            "name": "Cog"
+            "name": "Cg"
           },
           {
             "count": 1,
@@ -3255,16 +3277,8 @@
   {
     "name": "Bearing",
     "translation": "Bearing",
-    "type": "Bearing_C",
-    "stackSize": 10,
-    "drops": [
-      {
-        "location": "Components_T1",
-        "chance": 8.333333,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ]
+    "type": "Unused_Bearing_C",
+    "stackSize": 10
   },
   {
     "name": "Beat Stick",
@@ -5711,16 +5725,8 @@
   {
     "name": "Cam",
     "translation": "Cam",
-    "type": "Cam_C",
-    "stackSize": 10,
-    "drops": [
-      {
-        "location": "Components_T1",
-        "chance": 8.333333,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ]
+    "type": "Unused_Cam_C",
+    "stackSize": 10
   },
   {
     "category": "Walkers",
@@ -7474,6 +7480,27 @@
         ],
         "station": "FuelBurning",
         "time": 600
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Redwood Wood"
+          }
+        ],
+        "station": "Furnace",
+        "time": 12
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Redwood Wood"
+          }
+        ],
+        "output": 2,
+        "station": "Furnace",
+        "time": 8
       }
     ],
     "trade_price": 0.1,
@@ -8623,7 +8650,7 @@
     "drops": [
       {
         "location": "Components_T1",
-        "chance": 8.333333,
+        "chance": 16.666666,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -8849,15 +8876,15 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Spring"
+            "name": "Spline"
           },
           {
             "count": 1,
-            "name": "Rotor"
+            "name": "Unusedam"
           },
           {
             "count": 1,
-            "name": "Pinion"
+            "name": "Shackle"
           }
         ],
         "station": "Module Fabricator",
@@ -15480,8 +15507,8 @@
       {
         "ingredients": [
           {
-            "count": 30,
-            "name": "Lightwood"
+            "count": 8,
+            "name": "Ceramic Shard"
           },
           {
             "count": 17,
@@ -15490,12 +15517,10 @@
           {
             "count": 5,
             "name": "Leather"
-          },
-          {
-            "count": 20,
-            "name": "Tallow"
           }
-        ]
+        ],
+        "station": "Artificer Woodworking Station",
+        "time": 6
       }
     ],
     "trade_price": 16,
@@ -15842,7 +15867,7 @@
     "weight": 0.24,
     "moduleInfo": {
       "max": 20,
-      "increase": 0.1
+      "increase": 1
     },
     "drops": [
       {
@@ -16576,16 +16601,8 @@
   {
     "name": "Gasket",
     "translation": "Gasket",
-    "type": "Gasket_C",
-    "stackSize": 10,
-    "drops": [
-      {
-        "location": "Components_T1",
-        "chance": 8.333333,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ]
+    "type": "Unused_Gasket_C",
+    "stackSize": 10
   },
   {
     "category": "Furniture",
@@ -20499,6 +20516,23 @@
   },
   {
     "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "IronOre_GroundSource"
+          },
+          {
+            "count": 5,
+            "name": "Animal Fat"
+          }
+        ],
+        "output": 10,
+        "station": "Artisan Soil Auger",
+        "time": 30
+      }
+    ],
     "name": "Iron Ore",
     "trade_price": 8,
     "translation": "Iron Ore",
@@ -20689,7 +20723,7 @@
     "drops": [
       {
         "location": "Armors_T4",
-        "chance": 26.666666,
+        "chance": 33.333332,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -20733,7 +20767,7 @@
     "drops": [
       {
         "location": "Armors_T4",
-        "chance": 26.666666,
+        "chance": 33.333332,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -20777,7 +20811,7 @@
     "drops": [
       {
         "location": "Armors_T4",
-        "chance": 26.666666,
+        "chance": 33.333332,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -20947,14 +20981,6 @@
       "damage": 55,
       "penetration": 20
     },
-    "drops": [
-      {
-        "location": "Weapons_T4",
-        "chance": 7.142857,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
@@ -21358,7 +21384,7 @@
     "experiencieReward": 32,
     "structureInfo": {
       "type": "Medium",
-      "hp": 9375
+      "hp": 4500
     }
   },
   {
@@ -21629,7 +21655,7 @@
     "drops": [
       {
         "location": "Components_T1",
-        "chance": 8.333333,
+        "chance": 16.666666,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -21646,7 +21672,7 @@
           },
           {
             "count": 1,
-            "name": "Cog"
+            "name": "Cg"
           },
           {
             "count": 1,
@@ -22060,7 +22086,7 @@
     "weight": 0.24,
     "moduleInfo": {
       "max": 20,
-      "increase": 0.1
+      "increase": 1
     },
     "drops": [
       {
@@ -22761,15 +22787,15 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Gasket"
+            "name": "Spline"
           },
           {
             "count": 1,
-            "name": "Cog"
+            "name": "Spring"
           },
           {
             "count": 1,
-            "name": "Sprocket"
+            "name": "Level"
           }
         ],
         "station": "Module Fabricator",
@@ -24124,14 +24150,6 @@
         "tier": 25
       }
     ],
-    "drops": [
-      {
-        "location": "Weapons_T4",
-        "chance": 7.142857,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "damageType": "'MeleeAxeDamage_C'"
   },
   {
@@ -24176,14 +24194,6 @@
       {
         "toolType": "Scythe",
         "tier": 1
-      }
-    ],
-    "drops": [
-      {
-        "location": "Weapons_T4",
-        "chance": 7.142857,
-        "minQuantity": 1,
-        "maxQuantity": 1
       }
     ],
     "damageType": "'MeleeSwordDamage_C'"
@@ -24272,14 +24282,6 @@
       "damage": 70,
       "penetration": 10
     },
-    "drops": [
-      {
-        "location": "Weapons_T4",
-        "chance": 7.142857,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
@@ -24323,14 +24325,6 @@
       {
         "toolType": "TreeCutting",
         "tier": 25
-      }
-    ],
-    "drops": [
-      {
-        "location": "Weapons_T4",
-        "chance": 7.142857,
-        "minQuantity": 1,
-        "maxQuantity": 1
       }
     ],
     "damageType": "'MeleeAxeDamage_C'"
@@ -24406,14 +24400,6 @@
       "damage": 58,
       "penetration": 20
     },
-    "drops": [
-      {
-        "location": "Weapons_T4",
-        "chance": 7.142857,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
@@ -24454,14 +24440,6 @@
       "damage": 70,
       "penetration": 10
     },
-    "drops": [
-      {
-        "location": "Weapons_T4",
-        "chance": 7.142857,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ],
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
@@ -24531,15 +24509,7 @@
     "armorInfo": {
       "absorbing": 25,
       "speedReduction": 15
-    },
-    "drops": [
-      {
-        "location": "Armors_T4",
-        "chance": 6.6666665,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ]
+    }
   },
   {
     "category": "Armors",
@@ -24571,15 +24541,7 @@
       "absorbing": 23,
       "reduction": 4,
       "speedReduction": 5
-    },
-    "drops": [
-      {
-        "location": "Armors_T4",
-        "chance": 6.6666665,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ]
+    }
   },
   {
     "crafting": [
@@ -24642,15 +24604,7 @@
       "absorbing": 23,
       "reduction": 5,
       "speedReduction": 5
-    },
-    "drops": [
-      {
-        "location": "Armors_T4",
-        "chance": 6.6666665,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ]
+    }
   },
   {
     "crafting": [
@@ -27134,16 +27088,8 @@
   {
     "name": "Pinion",
     "translation": "Pinion",
-    "type": "Pinion_C",
-    "stackSize": 10,
-    "drops": [
-      {
-        "location": "Components_T1",
-        "chance": 8.333333,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ]
+    "type": "Unused_Pinion_C",
+    "stackSize": 10
   },
   {
     "name": "Poaching Hut",
@@ -29509,16 +29455,8 @@
   {
     "name": "Rotor",
     "translation": "Rotor",
-    "type": "Rotor_C",
-    "stackSize": 10,
-    "drops": [
-      {
-        "location": "Components_T1",
-        "chance": 8.333333,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ]
+    "type": "Unused_Rotor_C",
+    "stackSize": 10
   },
   {
     "name": "Rubber Block",
@@ -30577,9 +30515,9 @@
             "name": "SaltRock_GroundSource"
           }
         ],
-        "output": 3,
+        "output": 10,
         "station": "Artisan Soil Auger",
-        "time": 30
+        "time": 20
       }
     ],
     "name": "Salt Rock",
@@ -31096,7 +31034,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Cog"
+            "name": "Cg"
           },
           {
             "count": 1,
@@ -32441,7 +32379,7 @@
     "drops": [
       {
         "location": "Components_T1",
-        "chance": 8.333333,
+        "chance": 16.666666,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -32642,7 +32580,7 @@
     ],
     "structureInfo": {
       "type": "Solid",
-      "hp": 75000
+      "hp": 400000
     },
     "walkerinfo": {
       "category": "Large"
@@ -34200,7 +34138,7 @@
     "drops": [
       {
         "location": "Components_T1",
-        "chance": 8.333333,
+        "chance": 16.666666,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -34332,7 +34270,7 @@
     "drops": [
       {
         "location": "Components_T1",
-        "chance": 8.333333,
+        "chance": 16.666666,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -34372,16 +34310,8 @@
   {
     "name": "Sprocket",
     "translation": "Sprocket",
-    "type": "Sprocket_C",
-    "stackSize": 10,
-    "drops": [
-      {
-        "location": "Components_T1",
-        "chance": 8.333333,
-        "minQuantity": 1,
-        "maxQuantity": 1
-      }
-    ]
+    "type": "Unused_Sprocket_C",
+    "stackSize": 10
   },
   {
     "category": "Armors",
@@ -36121,7 +36051,7 @@
     "drops": [
       {
         "location": "Components_T1",
-        "chance": 8.333333,
+        "chance": 16.666666,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -41677,15 +41607,15 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Strut"
-          },
-          {
-            "count": 1,
             "name": "Spline"
           },
           {
             "count": 1,
-            "name": "Shackle"
+            "name": "Spring"
+          },
+          {
+            "count": 1,
+            "name": "Strut"
           }
         ],
         "station": "Module Fabricator",
@@ -42654,7 +42584,7 @@
     "drops": [
       {
         "location": "Weapons_T4",
-        "chance": 7.142857,
+        "chance": 14.285714,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -42708,7 +42638,7 @@
     "drops": [
       {
         "location": "Weapons_T4",
-        "chance": 7.142857,
+        "chance": 14.285714,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -42763,7 +42693,7 @@
     "drops": [
       {
         "location": "Weapons_T4",
-        "chance": 7.142857,
+        "chance": 14.285714,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -42811,7 +42741,7 @@
     "drops": [
       {
         "location": "Weapons_T4",
-        "chance": 7.142857,
+        "chance": 14.285714,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -42866,7 +42796,7 @@
     "drops": [
       {
         "location": "Weapons_T4",
-        "chance": 7.142857,
+        "chance": 14.285714,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -42955,7 +42885,7 @@
     "drops": [
       {
         "location": "Weapons_T4",
-        "chance": 7.142857,
+        "chance": 14.285714,
         "minQuantity": 1,
         "maxQuantity": 1
       }
@@ -42969,7 +42899,7 @@
     "drops": [
       {
         "location": "Weapons_T4",
-        "chance": 7.142857,
+        "chance": 14.285714,
         "minQuantity": 1,
         "maxQuantity": 1
       }

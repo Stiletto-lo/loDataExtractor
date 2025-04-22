@@ -2770,28 +2770,28 @@
       "name": "Ammo_T4",
       "runChance": 1,
       "minIterations": 1,
-      "maxIterations": 1,
+      "maxIterations": 2,
       "perIterationRunChance": 1,
       "minQuantityMultiplier": 6,
       "maxQuantityMultiplier": 8
     },
     {
       "name": "Armors_T4",
-      "runChance": 1,
-      "minIterations": 3,
-      "maxIterations": 3,
-      "perIterationRunChance": 0.4,
-      "minQuantityMultiplier": 7,
-      "maxQuantityMultiplier": 14
+      "runChance": 0.25,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.1,
+      "minQuantityMultiplier": 0,
+      "maxQuantityMultiplier": 1
     },
     {
       "name": "Weapons_T4",
-      "runChance": 1,
-      "minIterations": 3,
-      "maxIterations": 3,
-      "perIterationRunChance": 0.4,
-      "minQuantityMultiplier": 8,
-      "maxQuantityMultiplier": 16
+      "runChance": 0.2,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.1,
+      "minQuantityMultiplier": 0,
+      "maxQuantityMultiplier": 1
     },
     {
       "name": "Flots_T1",
@@ -2813,37 +2813,37 @@
     },
     {
       "name": "Rigs_T1",
-      "runChance": 1,
-      "minIterations": 4,
-      "maxIterations": 8,
-      "perIterationRunChance": 0.4,
+      "runChance": 0.5,
+      "minIterations": 1,
+      "maxIterations": 3,
+      "perIterationRunChance": 0.2,
       "minQuantityMultiplier": 1,
       "maxQuantityMultiplier": 1
     },
     {
       "name": "Rigs_T2",
-      "runChance": 1,
-      "minIterations": 3,
-      "maxIterations": 6,
-      "perIterationRunChance": 0.4,
-      "minQuantityMultiplier": 1,
+      "runChance": 0.5,
+      "minIterations": 1,
+      "maxIterations": 3,
+      "perIterationRunChance": 0.2,
+      "minQuantityMultiplier": 0,
       "maxQuantityMultiplier": 1
     },
     {
       "name": "Rigs_T3",
-      "runChance": 1,
-      "minIterations": 2,
-      "maxIterations": 4,
-      "perIterationRunChance": 0.4,
-      "minQuantityMultiplier": 1,
+      "runChance": 0.3,
+      "minIterations": 1,
+      "maxIterations": 3,
+      "perIterationRunChance": 0.1,
+      "minQuantityMultiplier": 0,
       "maxQuantityMultiplier": 1
     },
     {
       "name": "Rigs_T4",
-      "runChance": 1,
+      "runChance": 0.3,
       "minIterations": 1,
       "maxIterations": 3,
-      "perIterationRunChance": 0.4,
+      "perIterationRunChance": 0.1,
       "minQuantityMultiplier": 1,
       "maxQuantityMultiplier": 1
     },
@@ -2873,24 +2873,6 @@
       "perIterationRunChance": 1,
       "minQuantityMultiplier": 0.3,
       "maxQuantityMultiplier": 0.6
-    },
-    {
-      "name": "Armors_T4",
-      "runChance": 0.003,
-      "minIterations": 1,
-      "maxIterations": 1,
-      "perIterationRunChance": 1,
-      "minQuantityMultiplier": 1,
-      "maxQuantityMultiplier": 1
-    },
-    {
-      "name": "Weapons_T4",
-      "runChance": 0.003,
-      "minIterations": 1,
-      "maxIterations": 1,
-      "perIterationRunChance": 1,
-      "minQuantityMultiplier": 1,
-      "maxQuantityMultiplier": 1
     },
     {
       "name": "Rigs_T4",
@@ -2993,25 +2975,25 @@
     },
     {
       "name": "Schematics_T1",
-      "runChance": 0.3,
+      "runChance": 0.5,
       "minIterations": 1,
-      "maxIterations": 1,
-      "perIterationRunChance": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.2,
       "minQuantityMultiplier": 1,
       "maxQuantityMultiplier": 1
     },
     {
       "name": "Schematics_T2",
-      "runChance": 0.3,
+      "runChance": 0.5,
       "minIterations": 1,
-      "maxIterations": 1,
-      "perIterationRunChance": 1,
+      "maxIterations": 2,
+      "perIterationRunChance": 0.2,
       "minQuantityMultiplier": 1,
       "maxQuantityMultiplier": 1
     },
     {
       "name": "Schematics_T3",
-      "runChance": 0.3,
+      "runChance": 0.5,
       "minIterations": 1,
       "maxIterations": 1,
       "perIterationRunChance": 1,

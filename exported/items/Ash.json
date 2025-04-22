@@ -66,6 +66,28 @@
       ],
       "station": "FuelBurning",
       "time": 600
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Lightwood"
+        }
+      ],
+      "output": 15,
+      "station": "Furnace",
+      "time": 15
+    },
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Lightwood"
+        }
+      ],
+      "output": 15,
+      "station": "Advanced Furnace",
+      "time": 12
     }
   ],
   "trade_price": 0.1,
