@@ -1,5 +1,10 @@
 {
+  "name": "Catapult Boulder",
+  "parent": "Catapult",
   "category": "Ammo",
+  "trade_price": 8,
+  "stackSize": 10,
+  "weight": 2,
   "crafting": [
     {
       "ingredients": [
@@ -16,24 +21,16 @@
       "time": 8
     }
   ],
-  "name": "Catapult Boulder",
-  "parent": "Catapult",
-  "trade_price": 8,
-  "translation": "Catapult Boulder",
-  "type": "CatapultBoulder_C",
   "projectileDamage": {
     "damage": 200,
     "penetration": 10,
     "effectivenessVsSoak": 70,
     "effectivenessVsReduce": 70
   },
-  "stackSize": 10,
-  "weight": 2,
   "toolInfo": [
     {
       "toolType": "CatapultRock",
       "tier": 2
     }
-  ],
-  "damageType": "'BoulderDamage_C'"
+  ]
 }

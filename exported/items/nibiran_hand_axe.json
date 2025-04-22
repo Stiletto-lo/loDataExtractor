@@ -1,5 +1,11 @@
 {
+  "name": "Nibiran Hand Axe",
   "category": "Weapons",
+  "trade_price": 1681.3,
+  "stackSize": 100,
+  "weight": 3,
+  "experiencieReward": 1583,
+  "durability": 700,
   "crafting": [
     {
       "ingredients": [
@@ -20,14 +26,6 @@
       "time": 100
     }
   ],
-  "name": "Nibiran Hand Axe",
-  "trade_price": 1681.3,
-  "translation": "Nibiran Hand Axe",
-  "type": "OneHandedRareMetalAxe2_C",
-  "experiencieReward": 1583,
-  "stackSize": 100,
-  "weight": 3,
-  "durability": 700,
   "weaponInfo": {
     "impact": 50,
     "stability": 40,
@@ -40,6 +38,5 @@
       "toolType": "TreeCutting",
       "tier": 25
     }
-  ],
-  "damageType": "'MeleeAxeDamage_C'"
+  ]
 }

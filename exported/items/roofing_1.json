@@ -1,5 +1,7 @@
 {
+  "name": "Roofing 1",
   "category": "Furniture",
+  "weight": 20,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +16,8 @@
       ]
     }
   ],
-  "name": "Roofing 1",
-  "type": "Arena_Roofing_1_C",
   "structureInfo": {
     "type": "Soft",
     "hp": 1800
-  },
-  "translation": "Roofing 1",
-  "weight": 20
+  }
 }

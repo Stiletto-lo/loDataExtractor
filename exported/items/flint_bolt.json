@@ -1,5 +1,11 @@
 {
+  "name": "Flint Bolt",
+  "parent": "Ballista",
   "category": "Ammo",
+  "trade_price": 1.3,
+  "stackSize": 20,
+  "weight": 0.3,
+  "experiencieReward": 1,
   "crafting": [
     {
       "ingredients": [
@@ -47,23 +53,14 @@
       "time": 4
     }
   ],
-  "name": "Flint Bolt",
-  "parent": "Ballista",
-  "trade_price": 1.3,
-  "translation": "Flint Bolt",
-  "type": "FlintBolt_C",
   "projectileDamage": {
     "damage": 40,
     "penetration": 10
   },
-  "experiencieReward": 1,
-  "stackSize": 20,
-  "weight": 0.3,
   "toolInfo": [
     {
       "toolType": "BallistaHarpoon",
       "tier": 1
     }
-  ],
-  "damageType": "'BoltDamage_C'"
+  ]
 }

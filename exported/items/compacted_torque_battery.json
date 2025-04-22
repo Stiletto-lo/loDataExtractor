@@ -1,8 +1,12 @@
 {
   "name": "Compacted Torque Battery",
   "parent": "Torque Battery",
-  "type": "HeavyTorqueContainer_C",
   "category": "Equipment",
+  "trade_price": 8.4,
+  "stackSize": 100,
+  "weight": 150,
+  "experiencieReward": 26,
+  "durability": 210,
   "crafting": [
     {
       "ingredients": [
@@ -22,11 +26,5 @@
       "station": "Artisan Fiberworking Station",
       "time": 3
     }
-  ],
-  "trade_price": 8.4,
-  "translation": "Compacted Torque Battery",
-  "experiencieReward": 26,
-  "stackSize": 100,
-  "weight": 150,
-  "durability": 210
+  ]
 }

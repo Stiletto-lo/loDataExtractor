@@ -1,23 +1,20 @@
 {
-  "category": "Ammo",
   "name": "Rupu Rok",
+  "category": "Ammo",
   "trade_price": 5.2,
-  "translation": "Rupu Rok",
-  "type": "RupuRok_T1_C",
+  "stackSize": 10,
+  "weight": 5,
+  "wikiVisibility": false,
   "projectileDamage": {
     "damage": 100,
     "penetration": 15,
     "effectivenessVsSoak": 20,
     "effectivenessVsReduce": 20
   },
-  "stackSize": 10,
-  "weight": 5,
   "toolInfo": [
     {
       "toolType": "Scattershot",
       "tier": 1
     }
-  ],
-  "wikiVisibility": false,
-  "damageType": "'RokDamage_C'"
+  ]
 }

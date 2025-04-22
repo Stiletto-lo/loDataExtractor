@@ -1,7 +1,7 @@
 {
   "name": "Chitin Repair Hammer",
   "parent": "Bone Repair Hammer",
-  "type": "ChitinRepairHammer_C",
+  "durability": 1500,
   "crafting": [
     {
       "ingredients": [
@@ -21,7 +21,5 @@
       "station": "Crafting Bench",
       "time": 2
     }
-  ],
-  "translation": "Chitin Repair Hammer",
-  "durability": 1500
+  ]
 }

@@ -1,10 +1,8 @@
 {
   "name": "Ceramic Orb",
   "parent": "Lobber",
-  "translation": "Ceramic Orb",
-  "type": "CeramicOrb_C",
+  "onlyDevs": true,
   "projectileDamage": {
     "damage": 200
-  },
-  "onlyDevs": true
+  }
 }

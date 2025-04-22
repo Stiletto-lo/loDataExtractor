@@ -1,9 +1,9 @@
 {
   "name": "Bed",
   "parent": "Hammock",
-  "type": "Bed_C",
-  "description": "Comfortable bed with a big water container to hold multiple respawns.",
   "category": "Interactables",
+  "description": "Comfortable bed with a big water container to hold multiple respawns.",
+  "experiencieReward": 155,
   "crafting": [
     {
       "ingredients": [
@@ -22,7 +22,6 @@
       ]
     }
   ],
-  "experiencieReward": 155,
   "structureInfo": {
     "type": "Soft",
     "hp": 800

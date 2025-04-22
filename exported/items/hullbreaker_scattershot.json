@@ -1,7 +1,7 @@
 {
   "name": "Hullbreaker Scattershot",
   "parent": "CeramicScattershot",
-  "type": "HullbreakerScattershot_C",
+  "trade_price": 61.8,
   "crafting": [
     {
       "ingredients": [
@@ -27,8 +27,6 @@
       "time": 5
     }
   ],
-  "trade_price": 61.8,
-  "translation": "Hullbreaker Scattershot",
   "projectileDamage": {
     "damage": 500
   },

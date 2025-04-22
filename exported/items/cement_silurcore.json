@@ -1,5 +1,7 @@
 {
+  "name": "Cement SilurCore",
   "category": "Concrete",
+  "weight": 10,
   "crafting": [
     {
       "ingredients": [
@@ -18,11 +20,8 @@
       ]
     }
   ],
-  "name": "Cement SilurCore",
-  "type": "SilurCore_C",
   "structureInfo": {
     "type": "Solid",
     "hp": 400000
-  },
-  "weight": 10
+  }
 }

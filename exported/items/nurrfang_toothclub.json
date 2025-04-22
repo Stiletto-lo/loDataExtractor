@@ -1,8 +1,12 @@
 {
   "name": "Nurrfang Toothclub",
   "parent": "Jaggertooth Club",
-  "type": "BoneClub_C",
   "category": "Weapons",
+  "trade_price": 7.1,
+  "stackSize": 100,
+  "weight": 2.5,
+  "experiencieReward": 10,
+  "durability": 415,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +27,6 @@
       "time": 2
     }
   ],
-  "trade_price": 7.1,
-  "translation": "Nurrfang Toothclub",
-  "experiencieReward": 10,
-  "stackSize": 100,
-  "weight": 2.5,
-  "durability": 415,
   "weaponInfo": {
     "weaponSpeed": 110,
     "impact": 40,
@@ -36,6 +34,5 @@
     "weaponLength": 73,
     "damage": 40,
     "penetration": 10
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

@@ -1,8 +1,11 @@
 {
   "name": "Sulfur Bomb",
   "parent": "Slingshot",
-  "type": "SulfurBomb_C",
   "category": "Ammo",
+  "trade_price": 52.2,
+  "stackSize": 10,
+  "weight": 4,
+  "experiencieReward": 200,
   "crafting": [
     {
       "ingredients": [
@@ -49,13 +52,7 @@
       "time": 90
     }
   ],
-  "trade_price": 52.2,
-  "translation": "Sulfur Bomb",
   "projectileDamage": {
     "damage": 20
-  },
-  "experiencieReward": 200,
-  "stackSize": 10,
-  "weight": 4,
-  "damageType": "'BluntDamage_C'"
+  }
 }

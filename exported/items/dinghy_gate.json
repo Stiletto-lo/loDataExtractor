@@ -1,4 +1,7 @@
 {
+  "name": "Dinghy Gate",
+  "weight": 30,
+  "experiencieReward": 22,
   "crafting": [
     {
       "ingredients": [
@@ -17,13 +20,8 @@
       ]
     }
   ],
-  "name": "Dinghy Gate",
-  "type": "LightWoodGate_C",
-  "experiencieReward": 22,
   "structureInfo": {
     "type": "Reinforced",
     "hp": 10000
-  },
-  "translation": "Dinghy Gate",
-  "weight": 30
+  }
 }

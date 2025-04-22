@@ -1,5 +1,7 @@
 {
+  "name": "Throne",
   "category": "Furniture",
+  "weight": 20,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +16,8 @@
       ]
     }
   ],
-  "name": "Throne",
-  "type": "Throne_Chair_01_C",
   "structureInfo": {
     "type": "Soft",
     "hp": 250
-  },
-  "translation": "Throne",
-  "weight": 20
+  }
 }

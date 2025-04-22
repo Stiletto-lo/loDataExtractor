@@ -1,5 +1,9 @@
 {
+  "name": "Artisan Fiberworking Station",
+  "parent": "Advanced Fiberworking Station",
   "category": "Crafting",
+  "weight": 8.5,
+  "experiencieReward": 235,
   "crafting": [
     {
       "ingredients": [
@@ -22,14 +26,8 @@
       ]
     }
   ],
-  "name": "Artisan Fiberworking Station",
-  "parent": "Advanced Fiberworking Station",
-  "type": "FiberworkingStation_T3_C",
-  "experiencieReward": 235,
   "structureInfo": {
     "type": "Soft",
     "hp": 3000
-  },
-  "translation": "Artisan Fiberworking Station",
-  "weight": 8.5
+  }
 }

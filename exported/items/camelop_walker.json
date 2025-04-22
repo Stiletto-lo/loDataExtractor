@@ -1,8 +1,14 @@
 {
   "name": "Camelop Walker",
-  "parent": "Hercul Walker",
-  "type": "Camelop_C"
-}          "count": 650,
+  "parent": "Hercul Walker"
+}
+  "category": "Walkers",
+  "weight": 29.44,
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 650,
           "name": "Wood"
         },
         {
@@ -36,16 +42,11 @@
       ]
     }
   ],
-  "name": "Camelop  Walker",
-  "parent": "Hercul Walker",
-  "type": "Camelop_C",
   "structureInfo": {
     "type": "BlueprintGeneratedClassCamelopLegsDamageOverride_C'",
     "hp": 13000
   },
   "walkerinfo": {
     "category": "Large"
-  },
-  "translation": "Camelop  Walker",
-  "weight": 29.44
+  }
 }

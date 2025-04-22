@@ -1,9 +1,12 @@
 {
   "name": "Aloe Gel",
   "parent": "Stomping Station",
-  "type": "AloeGel_C",
-  "onlyDevs": true,
   "category": "Resources",
+  "trade_price": 1.4,
+  "stackSize": 100,
+  "weight": 0.44,
+  "experiencieReward": 8,
+  "onlyDevs": true,
   "crafting": [
     {
       "ingredients": [
@@ -35,10 +38,5 @@
       "station": "Flotillian Stomping Station",
       "time": 29
     }
-  ],
-  "trade_price": 1.4,
-  "translation": "Aloe Gel",
-  "experiencieReward": 8,
-  "stackSize": 100,
-  "weight": 0.44
+  ]
 }

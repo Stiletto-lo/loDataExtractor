@@ -1,5 +1,9 @@
 {
+  "name": "Rangefinder",
   "category": "Interactables",
+  "weight": 20,
+  "description": "Measures distance to far-away targets.",
+  "experiencieReward": 266,
   "crafting": [
     {
       "ingredients": [
@@ -18,14 +22,8 @@
       ]
     }
   ],
-  "name": "Rangefinder",
-  "type": "Rangefinder_C",
-  "description": "Measures distance to far-away targets.",
-  "experiencieReward": 266,
   "structureInfo": {
     "type": "Soft",
     "hp": 800
-  },
-  "translation": "Rangefinder",
-  "weight": 20
+  }
 }

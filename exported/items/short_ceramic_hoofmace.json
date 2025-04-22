@@ -1,8 +1,12 @@
 {
   "name": "Short Ceramic Hoofmace",
   "parent": "Rawbone Club",
-  "type": "OneHandedZirconiumMace_C",
   "category": "Weapons",
+  "trade_price": 75.8,
+  "stackSize": 100,
+  "weight": 4.1,
+  "experiencieReward": 200,
+  "durability": 520,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +27,6 @@
       "time": 2
     }
   ],
-  "trade_price": 75.8,
-  "translation": "Short Ceramic Hoofmace",
-  "experiencieReward": 200,
-  "stackSize": 100,
-  "weight": 4.1,
-  "durability": 520,
   "weaponInfo": {
     "weaponSpeed": 110,
     "impact": 45,
@@ -36,6 +34,5 @@
     "weaponLength": 50,
     "damage": 50,
     "penetration": 10
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

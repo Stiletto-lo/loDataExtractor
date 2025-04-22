@@ -1,9 +1,12 @@
 {
   "name": "Ash",
   "parent": "Camp Fire",
-  "type": "Ash_C",
-  "description": "A product of burning wood.",
   "category": "Resources",
+  "trade_price": 0.1,
+  "stackSize": 100,
+  "weight": 0.01,
+  "description": "A product of burning wood.",
+  "experiencieReward": 1,
   "crafting": [
     {
       "ingredients": [
@@ -57,10 +60,5 @@
       "station": "Advanced Furnace",
       "time": 12
     }
-  ],
-  "trade_price": 0.1,
-  "translation": "Ash",
-  "experiencieReward": 1,
-  "stackSize": 100,
-  "weight": 0.01
+  ]
 }

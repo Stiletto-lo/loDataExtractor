@@ -1,5 +1,11 @@
 {
+  "name": "Triple Stitch Boots",
   "category": "Armors",
+  "trade_price": 61.1,
+  "stackSize": 100,
+  "weight": 1.5,
+  "experiencieReward": 45,
+  "durability": 250,
   "crafting": [
     {
       "ingredients": [
@@ -30,14 +36,6 @@
       "time": 2
     }
   ],
-  "name": "Triple Stitch Boots",
-  "trade_price": 61.1,
-  "translation": "Triple Stitch Boots",
-  "type": "T2_TripleStitchBoots_C",
-  "experiencieReward": 45,
-  "stackSize": 100,
-  "weight": 1.5,
-  "durability": 250,
   "armorInfo": {
     "reduction": 4
   }

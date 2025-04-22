@@ -1,4 +1,8 @@
 {
+  "name": "Door",
+  "category": "Clay",
+  "weight": 8.5,
+  "experiencieReward": 22,
   "crafting": [
     {
       "ingredients": [
@@ -17,14 +21,8 @@
       ]
     }
   ],
-  "name": "Door",
-  "type": "WallClayDoor_C",
-  "experiencieReward": 22,
   "structureInfo": {
     "type": "Solid",
     "hp": 20000
-  },
-  "category": "Clay",
-  "translation": "Door",
-  "weight": 8.5
+  }
 }

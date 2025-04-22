@@ -1,8 +1,9 @@
 {
-  "category": "Grappling Hooks",
   "name": "Flotillan Grappling Hook",
   "parent": "Nomad Grappling Hook",
-  "type": "FlotillanGrapplingHook_C",
+  "category": "Grappling Hooks",
+  "trade_price": 16,
+  "experiencieReward": 76,
   "crafting": [
     {
       "ingredients": [
@@ -22,8 +23,5 @@
       "station": "Artificer Woodworking Station",
       "time": 6
     }
-  ],
-  "trade_price": 16,
-  "translation": "Flotillan Grappling Hook",
-  "experiencieReward": 76
+  ]
 }

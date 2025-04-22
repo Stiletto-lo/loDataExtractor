@@ -1,8 +1,8 @@
 {
   "name": "Clay Pot",
   "parent": "Clay",
-  "type": "ClayPot_C",
   "category": "Crafting",
+  "experiencieReward": 40,
   "crafting": [
     {
       "ingredients": [
@@ -29,7 +29,6 @@
       ]
     }
   ],
-  "experiencieReward": 40,
   "structureInfo": {
     "type": "Soft",
     "hp": 500

@@ -1,5 +1,8 @@
 {
+  "name": "Farmable Area",
   "category": "Crafting",
+  "weight": 1000,
+  "experiencieReward": 100,
   "crafting": [
     {
       "ingredients": [
@@ -13,10 +16,5 @@
         }
       ]
     }
-  ],
-  "name": "Farmable Area",
-  "type": "FarmableArea_C",
-  "experiencieReward": 100,
-  "translation": "Farmable Area",
-  "weight": 1000
+  ]
 }

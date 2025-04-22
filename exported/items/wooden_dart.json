@@ -1,5 +1,10 @@
 {
+  "name": "Wooden Dart",
+  "parent": "Repeater",
   "category": "Ammo",
+  "trade_price": 1.5,
+  "stackSize": 500,
+  "weight": 0.1,
   "crafting": [
     {
       "ingredients": [
@@ -59,21 +64,13 @@
       "time": 4
     }
   ],
-  "name": "Wooden Dart",
-  "parent": "Repeater",
-  "trade_price": 1.5,
-  "translation": "Wooden Dart",
-  "type": "WoodenDart_C",
   "projectileDamage": {
     "damage": 10
   },
-  "stackSize": 500,
-  "weight": 0.1,
   "toolInfo": [
     {
       "toolType": "RepeaterBolt",
       "tier": 1
     }
-  ],
-  "damageType": "'DartDamage_C'"
+  ]
 }

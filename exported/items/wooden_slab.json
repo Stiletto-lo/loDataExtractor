@@ -1,8 +1,10 @@
 {
   "name": "Wooden Slab",
   "parent": "Woodworking Station",
-  "type": "WoodenSlab_C",
   "category": "Resources",
+  "trade_price": 0.1,
+  "stackSize": 100,
+  "weight": 0.1,
   "crafting": [
     {
       "ingredients": [
@@ -91,9 +93,5 @@
       "station": "Artificer Woodworking Station",
       "time": 60
     }
-  ],
-  "trade_price": 0.1,
-  "translation": "Wooden Slab",
-  "stackSize": 100,
-  "weight": 0.1
+  ]
 }

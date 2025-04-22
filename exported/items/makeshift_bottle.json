@@ -1,8 +1,11 @@
 {
   "name": "Makeshift Bottle",
   "parent": "Equipment",
-  "type": "MakeshiftBottle_C",
   "category": "Equipment",
+  "trade_price": 1.5,
+  "stackSize": 100,
+  "weight": 0.1,
+  "experiencieReward": 12,
   "crafting": [
     {
       "ingredients": [
@@ -20,10 +23,5 @@
         }
       ]
     }
-  ],
-  "trade_price": 1.5,
-  "translation": "Makeshift Bottle",
-  "experiencieReward": 12,
-  "stackSize": 100,
-  "weight": 0.1
+  ]
 }

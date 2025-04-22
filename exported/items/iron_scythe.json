@@ -1,4 +1,7 @@
 {
+  "name": "Iron Scythe",
+  "parent": "CeramicScythe",
+  "durability": 1200,
   "crafting": [
     {
       "ingredients": [
@@ -23,11 +26,6 @@
       "time": 20
     }
   ],
-  "name": "Iron Scythe",
-  "parent": "CeramicScythe",
-  "translation": "Iron Scythe",
-  "type": "IronScythe_C",
-  "durability": 1200,
   "toolInfo": [
     {
       "toolType": "Scythe",

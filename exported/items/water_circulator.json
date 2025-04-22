@@ -1,8 +1,12 @@
 {
   "name": "Water Circulator",
   "parent": "Ceramic Bottle",
-  "type": "Stillsuit2_C",
   "category": "Equipment",
+  "trade_price": 679.5,
+  "stackSize": 100,
+  "weight": 3,
+  "experiencieReward": 255,
+  "durability": 400,
   "crafting": [
     {
       "ingredients": [
@@ -22,11 +26,5 @@
       "station": "Smithing",
       "time": 25
     }
-  ],
-  "trade_price": 679.5,
-  "translation": "Water Circulator",
-  "experiencieReward": 255,
-  "stackSize": 100,
-  "weight": 3,
-  "durability": 400
+  ]
 }

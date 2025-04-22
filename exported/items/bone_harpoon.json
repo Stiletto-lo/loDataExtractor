@@ -1,4 +1,9 @@
 {
+  "name": "Bone Harpoon",
+  "parent": "Bone Bolt",
+  "trade_price": 7.6,
+  "weight": 0.4,
+  "experiencieReward": 10,
   "crafting": [
     {
       "ingredients": [
@@ -55,16 +60,9 @@
       "time": 3
     }
   ],
-  "name": "Bone Harpoon",
-  "parent": "Bone Bolt",
-  "trade_price": 7.6,
-  "translation": "Bone Harpoon",
-  "type": "BoneHarpoon_C",
   "projectileDamage": {
     "damage": 15
   },
-  "experiencieReward": 10,
-  "weight": 0.4,
   "toolInfo": [
     {
       "toolType": "BallistaHarpoon",

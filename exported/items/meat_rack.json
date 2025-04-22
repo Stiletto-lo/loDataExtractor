@@ -1,5 +1,7 @@
 {
+  "name": "Meat Rack",
   "category": "Furniture",
+  "weight": 5,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +16,8 @@
       ]
     }
   ],
-  "name": "Meat Rack",
-  "type": "MeatRack_01_C",
   "structureInfo": {
     "type": "Soft",
     "hp": 50
-  },
-  "translation": "Meat Rack",
-  "weight": 5
+  }
 }

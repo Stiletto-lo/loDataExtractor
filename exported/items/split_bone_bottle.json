@@ -1,8 +1,12 @@
 {
   "name": "Split Bone Bottle",
   "parent": "Bone Bottle",
-  "type": "SplitBoneBottle_C",
   "category": "Equipment",
+  "trade_price": 13.3,
+  "stackSize": 100,
+  "weight": 3.2,
+  "experiencieReward": 55,
+  "durability": 130,
   "crafting": [
     {
       "ingredients": [
@@ -40,11 +44,5 @@
       "station": "Artisan Fiberworking Station",
       "time": 2
     }
-  ],
-  "trade_price": 13.3,
-  "translation": "Split Bone Bottle",
-  "experiencieReward": 55,
-  "stackSize": 100,
-  "weight": 3.2,
-  "durability": 130
+  ]
 }

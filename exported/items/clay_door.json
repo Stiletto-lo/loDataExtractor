@@ -1,5 +1,7 @@
 {
+  "name": "Clay Door",
   "category": "Clay Structures",
+  "experiencieReward": 22,
   "crafting": [
     {
       "ingredients": [
@@ -18,9 +20,6 @@
       ]
     }
   ],
-  "name": "Clay Door",
-  "type": "WallClayDoor_C",
-  "experiencieReward": 22,
   "structureInfo": {
     "type": "Solid",
     "hp": 20000

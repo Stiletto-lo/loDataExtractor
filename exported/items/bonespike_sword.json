@@ -1,8 +1,12 @@
 {
   "name": "Bonespike Sword",
   "parent": "Rawbone Sawsword",
-  "type": "OneHandedBoneSword_C",
   "category": "Weapons",
+  "trade_price": 6.2,
+  "stackSize": 100,
+  "weight": 2.5,
+  "experiencieReward": 55,
+  "durability": 450,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +27,6 @@
       "time": 2
     }
   ],
-  "trade_price": 6.2,
-  "translation": "Bonespike Sword",
-  "experiencieReward": 55,
-  "stackSize": 100,
-  "weight": 2.5,
-  "durability": 450,
   "weaponInfo": {
     "weaponSpeed": 110,
     "impact": 35,
@@ -42,6 +40,5 @@
       "toolType": "Scythe",
       "tier": 1
     }
-  ],
-  "damageType": "'MeleeSwordDamage_C'"
+  ]
 }

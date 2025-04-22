@@ -1,4 +1,7 @@
 {
+  "name": "Ceramic Repair Hammer",
+  "parent": "Bone Repair Hammer",
+  "durability": 1000,
   "crafting": [
     {
       "ingredients": [
@@ -22,10 +25,5 @@
       "station": "Crafting Bench",
       "time": 2
     }
-  ],
-  "name": "Ceramic Repair Hammer",
-  "parent": "Bone Repair Hammer",
-  "translation": "Ceramic Repair Hammer",
-  "type": "CeramicRepairHammer_C",
-  "durability": 1000
+  ]
 }

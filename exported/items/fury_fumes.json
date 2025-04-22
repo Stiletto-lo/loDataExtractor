@@ -1,5 +1,10 @@
 {
+  "name": "Fury Fumes",
+  "parent": "Desert Mule",
   "category": "Vitamins",
+  "trade_price": 39.4,
+  "stackSize": 100,
+  "weight": 0.5,
   "crafting": [
     {
       "ingredients": [
@@ -45,12 +50,5 @@
       "station": "Clay Pot",
       "time": 60
     }
-  ],
-  "name": "Fury Fumes",
-  "parent": "Desert Mule",
-  "trade_price": 39.4,
-  "translation": "Fury Fumes",
-  "type": "FuryFumes_C",
-  "stackSize": 100,
-  "weight": 0.5
+  ]
 }

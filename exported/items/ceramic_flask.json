@@ -1,5 +1,12 @@
 {
+  "name": "Ceramic Flask",
+  "parent": "Bone Bottle",
   "category": "Equipment",
+  "trade_price": 71.6,
+  "stackSize": 100,
+  "weight": 2,
+  "experiencieReward": 65,
+  "durability": 150,
   "crafting": [
     {
       "ingredients": [
@@ -15,14 +22,5 @@
       "station": "Artisan Fiberworking Station",
       "time": 1
     }
-  ],
-  "name": "Ceramic Flask",
-  "parent": "Bone Bottle",
-  "trade_price": 71.6,
-  "translation": "Ceramic Flask",
-  "type": "CeramicBottle_C",
-  "experiencieReward": 65,
-  "stackSize": 100,
-  "weight": 2,
-  "durability": 150
+  ]
 }

@@ -1,4 +1,7 @@
 {
+  "name": "Iron Repair Hammer",
+  "parent": "CeramicRepairHammer",
+  "durability": 3000,
   "crafting": [
     {
       "ingredients": [
@@ -18,10 +21,5 @@
       "station": "Smithing",
       "time": 25
     }
-  ],
-  "name": "Iron Repair Hammer",
-  "parent": "CeramicRepairHammer",
-  "translation": "Iron Repair Hammer",
-  "type": "IronRepairHammer_C",
-  "durability": 3000
+  ]
 }

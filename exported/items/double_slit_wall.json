@@ -1,4 +1,8 @@
 {
+  "name": "Double Slit Wall",
+  "category": "Wood: heavy",
+  "weight": 3,
+  "experiencieReward": 46,
   "crafting": [
     {
       "ingredients": [
@@ -17,14 +21,8 @@
       ]
     }
   ],
-  "name": "Double Slit Wall",
-  "type": "WallWoodHeavyWindow2_C",
-  "experiencieReward": 46,
   "structureInfo": {
     "type": "Reinforced",
     "hp": 40000
-  },
-  "category": "Wood: heavy",
-  "translation": "Double Slit Wall",
-  "weight": 3
+  }
 }

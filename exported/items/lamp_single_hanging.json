@@ -1,5 +1,8 @@
 {
+  "name": "Lamp Single Hanging",
   "category": "Furniture",
+  "weight": 1,
+  "experiencieReward": 6,
   "crafting": [
     {
       "ingredients": [
@@ -18,13 +21,8 @@
       ]
     }
   ],
-  "name": "Lamp Single Hanging",
-  "type": "Lamp3_C",
-  "experiencieReward": 6,
   "structureInfo": {
     "type": "Soft",
     "hp": 150
-  },
-  "translation": "Lamp Single Hanging",
-  "weight": 1
+  }
 }

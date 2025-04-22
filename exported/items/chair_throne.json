@@ -1,5 +1,8 @@
 {
+  "name": "Chair throne",
   "category": "Furniture",
+  "weight": 3.5,
+  "experiencieReward": 6,
   "crafting": [
     {
       "ingredients": [
@@ -14,13 +17,8 @@
       ]
     }
   ],
-  "name": "Chair throne",
-  "type": "Chair1_C",
-  "experiencieReward": 6,
   "structureInfo": {
     "type": "Soft",
     "hp": 250
-  },
-  "translation": "Chair throne",
-  "weight": 3.5
+  }
 }

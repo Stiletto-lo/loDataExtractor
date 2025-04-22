@@ -1,8 +1,10 @@
 {
   "name": "Wood Shaft",
   "parent": "Woodworking Station",
-  "type": "WoodenShaft_C",
   "category": "Resources",
+  "trade_price": 0.4,
+  "stackSize": 100,
+  "weight": 0.21,
   "crafting": [
     {
       "ingredients": [
@@ -67,9 +69,5 @@
       "station": "Artificer Woodworking Station",
       "time": 2000
     }
-  ],
-  "trade_price": 0.4,
-  "translation": "Wood Shaft",
-  "stackSize": 100,
-  "weight": 0.21
+  ]
 }

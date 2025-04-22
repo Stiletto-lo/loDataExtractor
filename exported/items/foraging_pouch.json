@@ -1,8 +1,12 @@
 {
   "name": "Foraging Pouch",
   "parent": "Equipment",
-  "type": "ForagingPouch_C",
   "category": "Equipment",
+  "trade_price": 5.6,
+  "stackSize": 100,
+  "weight": 0.2,
+  "experiencieReward": 26,
+  "durability": 70,
   "crafting": [
     {
       "ingredients": [
@@ -12,11 +16,5 @@
         }
       ]
     }
-  ],
-  "trade_price": 5.6,
-  "translation": "Foraging Pouch",
-  "experiencieReward": 26,
-  "stackSize": 100,
-  "weight": 0.2,
-  "durability": 70
+  ]
 }

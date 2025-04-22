@@ -1,8 +1,12 @@
 {
   "name": "Wyndan Hammer",
   "parent": "Short Ceramic Hoofmace",
-  "type": "OneHandedIronMace2_C",
   "category": "Weapons",
+  "trade_price": 316.4,
+  "stackSize": 100,
+  "weight": 4.5,
+  "experiencieReward": 1197,
+  "durability": 760,
   "crafting": [
     {
       "ingredients": [
@@ -23,18 +27,11 @@
       "time": 15
     }
   ],
-  "trade_price": 316.4,
-  "translation": "Wyndan Hammer",
-  "experiencieReward": 1197,
-  "stackSize": 100,
-  "weight": 4.5,
-  "durability": 760,
   "weaponInfo": {
     "weaponSpeed": 90,
     "impact": 70,
     "weaponLength": 61,
     "damage": 60,
     "penetration": 10
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

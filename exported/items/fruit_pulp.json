@@ -1,9 +1,11 @@
 {
   "name": "Fruit Pulp",
   "parent": "Stomping Station",
-  "type": "FruitPulp_C",
-  "onlyDevs": true,
   "category": "Resources",
+  "stackSize": 100,
+  "weight": 0.34,
+  "experiencieReward": 3,
+  "onlyDevs": true,
   "crafting": [
     {
       "ingredients": [
@@ -195,9 +197,5 @@
       "station": "Flotillian Stomping Station",
       "time": 15
     }
-  ],
-  "translation": "Fruit Pulp",
-  "experiencieReward": 3,
-  "stackSize": 100,
-  "weight": 0.34
+  ]
 }

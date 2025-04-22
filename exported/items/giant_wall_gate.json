@@ -1,5 +1,8 @@
 {
+  "name": "Giant Wall Gate",
   "category": "Defenses",
+  "weight": 20,
+  "experiencieReward": 40,
   "crafting": [
     {
       "ingredients": [
@@ -18,13 +21,8 @@
       ]
     }
   ],
-  "name": "Giant Wall Gate",
-  "type": "WallGiantGate_C",
-  "experiencieReward": 40,
   "structureInfo": {
     "type": "Reinforced",
     "hp": 80000
-  },
-  "translation": "Giant Wall Gate",
-  "weight": 20
+  }
 }

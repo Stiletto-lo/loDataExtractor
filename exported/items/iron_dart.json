@@ -1,4 +1,6 @@
 {
+  "name": "Iron Dart",
+  "parent": "CeramicDart",
   "crafting": [
     {
       "ingredients": [
@@ -24,10 +26,6 @@
       "time": 5
     }
   ],
-  "name": "Iron Dart",
-  "parent": "CeramicDart",
-  "translation": "Iron Dart",
-  "type": "IronDart_C",
   "projectileDamage": {
     "damage": 20
   },

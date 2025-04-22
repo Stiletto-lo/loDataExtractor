@@ -1,4 +1,9 @@
 {
+  "name": "Ceramic-Tipped Harpoon",
+  "parent": "Ceramic Bolt",
+  "trade_price": 14.1,
+  "weight": 0.3,
+  "experiencieReward": 12,
   "crafting": [
     {
       "ingredients": [
@@ -19,16 +24,9 @@
       "time": 5
     }
   ],
-  "name": "Ceramic-Tipped Harpoon",
-  "parent": "Ceramic Bolt",
-  "trade_price": 14.1,
-  "translation": "Ceramic-Tipped Harpoon",
-  "type": "CeramicHarpoon_C",
   "projectileDamage": {
     "damage": 20
   },
-  "experiencieReward": 12,
-  "weight": 0.3,
   "toolInfo": [
     {
       "toolType": "BallistaHarpoon",

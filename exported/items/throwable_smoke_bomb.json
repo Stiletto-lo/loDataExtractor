@@ -1,5 +1,11 @@
 {
+  "name": "Throwable Smoke Bomb",
+  "parent": "Chalk Bomb",
   "category": "Weapons",
+  "trade_price": 16.9,
+  "stackSize": 5,
+  "weight": 0.3,
+  "experiencieReward": 20,
   "crafting": [
     {
       "ingredients": [
@@ -20,14 +26,6 @@
       "time": 2
     }
   ],
-  "name": "Throwable Smoke Bomb",
-  "parent": "Chalk Bomb",
-  "trade_price": 16.9,
-  "translation": "Throwable Smoke Bomb",
-  "type": "ThrowableSmokeBomb_C",
-  "experiencieReward": 20,
-  "stackSize": 5,
-  "weight": 0.3,
   "weaponInfo": {
     "damage": 20,
     "penetration": 50

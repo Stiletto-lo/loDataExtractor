@@ -1,5 +1,11 @@
 {
+  "name": "Nibiran Decapitator",
   "category": "Weapons",
+  "trade_price": 2756.6,
+  "stackSize": 100,
+  "weight": 3.6,
+  "experiencieReward": 1602,
+  "durability": 800,
   "crafting": [
     {
       "ingredients": [
@@ -20,14 +26,6 @@
       "time": 100
     }
   ],
-  "name": "Nibiran Decapitator",
-  "trade_price": 2756.6,
-  "translation": "Nibiran Decapitator",
-  "type": "TwoHandedTitaniumSword2_C",
-  "experiencieReward": 1602,
-  "stackSize": 100,
-  "weight": 3.6,
-  "durability": 800,
   "weaponInfo": {
     "weaponSpeed": 120,
     "impact": 40,
@@ -41,6 +39,5 @@
       "toolType": "Scythe",
       "tier": 1
     }
-  ],
-  "damageType": "'MeleeSwordDamage_C'"
+  ]
 }

@@ -1,8 +1,11 @@
 {
   "name": "Bombolt",
   "parent": "Cobra Walker",
-  "type": "Bombolt_C",
   "category": "Ammo",
+  "trade_price": 11.7,
+  "stackSize": 20,
+  "weight": 0.3,
+  "experiencieReward": 15,
   "crafting": [
     {
       "ingredients": [
@@ -24,13 +27,7 @@
       "time": 5
     }
   ],
-  "trade_price": 11.7,
-  "translation": "Bombolt",
   "projectileDamage": {
     "damage": 500
-  },
-  "experiencieReward": 15,
-  "stackSize": 20,
-  "weight": 0.3,
-  "damageType": "'FirelessExplosionDamage_C'"
+  }
 }

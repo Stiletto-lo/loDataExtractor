@@ -1,8 +1,12 @@
 {
   "name": "Simple Repair Hammer",
   "parent": "Beat Stick",
-  "type": "SimpleRepairHammer_C",
   "category": "Tools",
+  "trade_price": 9.5,
+  "stackSize": 100,
+  "weight": 3.12,
+  "experiencieReward": 50,
+  "durability": 200,
   "crafting": [
     {
       "ingredients": [
@@ -21,16 +25,9 @@
       ]
     }
   ],
-  "trade_price": 9.5,
-  "translation": "Simple Repair Hammer",
-  "experiencieReward": 50,
-  "stackSize": 100,
-  "weight": 3.12,
-  "durability": 200,
   "weaponInfo": {
     "weaponLength": 42,
     "damage": 20,
     "penetration": 5
-  },
-  "damageType": "'MeleeRepairHammerDamage_C'"
+  }
 }

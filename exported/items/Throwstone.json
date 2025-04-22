@@ -1,25 +1,22 @@
 {
   "name": "Throwstone",
   "parent": "Equipment",
-  "type": "PlayerThrowstoneAmmo_C",
-  "description": "Either a fantastically aerodynamic stone, its form perfected for best throwing experience... Or just a sharp chip of rock that you can throw at someone in a pinch.",
   "category": "Weapons",
   "trade_price": 16.9,
-  "translation": "Throwstone",
+  "stackSize": 10,
+  "weight": 0.3,
+  "description": "Either a fantastically aerodynamic stone, its form perfected for best throwing experience... Or just a sharp chip of rock that you can throw at someone in a pinch.",
+  "experiencieReward": 1,
   "projectileDamage": {
     "damage": 20,
     "penetration": 25,
     "effectivenessVsSoak": 50,
     "effectivenessVsReduce": 50
   },
-  "experiencieReward": 1,
-  "stackSize": 10,
-  "weight": 0.3,
   "toolInfo": [
     {
       "toolType": "Scattershot",
       "tier": 1
     }
-  ],
-  "damageType": "'ThrowstoneDamage_C'"
+  ]
 }

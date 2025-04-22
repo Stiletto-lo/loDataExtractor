@@ -1,5 +1,8 @@
 {
+  "name": "Ballista - Tier 2",
   "category": "Weapons",
+  "weight": 5.8,
+  "experiencieReward": 78,
   "crafting": [
     {
       "ingredients": [
@@ -22,13 +25,8 @@
       ]
     }
   ],
-  "name": "Ballista - Tier 2",
-  "type": "Ballista_T2_C",
-  "experiencieReward": 78,
   "structureInfo": {
     "type": "Soft",
     "hp": 2500
-  },
-  "translation": "Ballista - Tier 2",
-  "weight": 5.8
+  }
 }

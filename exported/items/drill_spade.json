@@ -1,8 +1,8 @@
 {
   "name": "Drill Spade",
   "parent": "Tube Spade",
-  "type": "DrillSpade_C",
   "category": "Tools",
+  "durability": 350,
   "crafting": [
     {
       "ingredients": [
@@ -26,7 +26,5 @@
       "station": "Crafting Bench",
       "time": 2
     }
-  ],
-  "translation": "Drill Spade",
-  "durability": 350
+  ]
 }

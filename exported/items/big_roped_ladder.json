@@ -1,5 +1,8 @@
 {
+  "name": "Big Roped Ladder",
   "category": "Interactables",
+  "weight": 73,
+  "experiencieReward": 276,
   "crafting": [
     {
       "ingredients": [
@@ -18,12 +21,7 @@
       ]
     }
   ],
-  "name": "Big Roped Ladder",
-  "type": "LadderBig_C",
-  "experiencieReward": 276,
   "structureInfo": {
     "hp": 600
-  },
-  "translation": "Big Roped Ladder",
-  "weight": 73
+  }
 }

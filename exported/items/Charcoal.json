@@ -1,8 +1,11 @@
 {
   "name": "Charcoal",
   "parent": "Camp Fire",
-  "type": "CharcoalFuel_C",
   "category": "Resources",
+  "trade_price": 0.1,
+  "stackSize": 100,
+  "weight": 0.15,
+  "experiencieReward": 1,
   "crafting": [
     {
       "ingredients": [
@@ -65,10 +68,5 @@
       "station": "Furnace",
       "time": 8
     }
-  ],
-  "trade_price": 0.1,
-  "translation": "Charcoal",
-  "experiencieReward": 1,
-  "stackSize": 100,
-  "weight": 0.15
+  ]
 }

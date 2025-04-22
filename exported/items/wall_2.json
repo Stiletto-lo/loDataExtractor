@@ -1,5 +1,8 @@
 {
+  "name": "Wall 2",
   "category": "Wood: heavy",
+  "weight": 3,
+  "experiencieReward": 40,
   "crafting": [
     {
       "ingredients": [
@@ -18,11 +21,6 @@
       ]
     }
   ],
-  "name": "Wall 2",
-  "translation": "Wall 2",
-  "type": "WallWoodHeavy2_C",
-  "experiencieReward": 40,
-  "weight": 3,
   "structureInfo": {
     "type": "Reinforced",
     "hp": 40000

@@ -1,5 +1,10 @@
 {
+  "name": "Rupu Dunestalker Armor",
   "category": "Armors",
+  "stackSize": 100,
+  "weight": 1,
+  "durability": 1000,
+  "wikiVisibility": false,
   "crafting": [
     {
       "ingredients": [
@@ -14,15 +19,8 @@
       ]
     }
   ],
-  "name": "Rupu Dunestalker Armor",
-  "translation": "Rupu Dunestalker Armor",
-  "type": "RupuDunestalkerArmor_C",
-  "stackSize": 100,
-  "weight": 1,
-  "durability": 1000,
   "armorInfo": {
     "reduction": 3,
     "speedReduction": 2
-  },
-  "wikiVisibility": false
+  }
 }

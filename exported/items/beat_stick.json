@@ -1,8 +1,12 @@
 {
   "name": "Beat Stick",
   "parent": "Equipment",
-  "type": "WoodenClub_C",
   "category": "Weapons",
+  "trade_price": 1.7,
+  "stackSize": 100,
+  "weight": 3.2,
+  "experiencieReward": 1,
+  "durability": 150,
   "crafting": [
     {
       "ingredients": [
@@ -17,12 +21,6 @@
       ]
     }
   ],
-  "trade_price": 1.7,
-  "translation": "Beat Stick",
-  "experiencieReward": 1,
-  "stackSize": 100,
-  "weight": 3.2,
-  "durability": 150,
   "weaponInfo": {
     "weaponSpeed": 110,
     "impact": 25,
@@ -30,6 +28,5 @@
     "weaponLength": 72,
     "damage": 25,
     "penetration": 10
-  },
-  "damageType": "'MeleeBluntWeakDamage_C'"
+  }
 }

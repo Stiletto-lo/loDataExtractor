@@ -1,5 +1,8 @@
 {
+  "name": "Clan Flag Hanging",
   "category": "Furniture",
+  "weight": 1,
+  "experiencieReward": 8,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +17,7 @@
       ]
     }
   ],
-  "name": "Clan Flag Hanging",
-  "type": "ClanFlagHanging_C",
-  "experiencieReward": 8,
   "structureInfo": {
     "hp": 100
-  },
-  "translation": "Clan Flag Hanging",
-  "weight": 1
+  }
 }

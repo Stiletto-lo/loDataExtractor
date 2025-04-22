@@ -1,5 +1,9 @@
 {
+  "name": "Base Maintenance Chest",
+  "parent": "Maintenance Box",
   "category": "Containers",
+  "weight": 5,
+  "experiencieReward": 32,
   "crafting": [
     {
       "ingredients": [
@@ -22,14 +26,8 @@
       ]
     }
   ],
-  "name": "Base Maintenance Chest",
-  "parent": "Maintenance Box",
-  "type": "ChestBaseMaintenance_T2_C",
-  "experiencieReward": 32,
   "structureInfo": {
     "type": "Medium",
     "hp": 5000
-  },
-  "translation": "Base Maintenance Chest",
-  "weight": 5
+  }
 }

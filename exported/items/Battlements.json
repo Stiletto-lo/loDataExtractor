@@ -1,4 +1,8 @@
 {
+  "name": "Battlements",
+  "category": "Concrete",
+  "weight": 12,
+  "experiencieReward": 30,
   "crafting": [
     {
       "ingredients": [
@@ -21,14 +25,8 @@
       ]
     }
   ],
-  "name": "Battlements",
-  "type": "WallConcreteBattlement_C",
-  "experiencieReward": 30,
   "structureInfo": {
     "type": "Solid",
     "hp": 40000
-  },
-  "category": "Concrete",
-  "translation": "Battlements",
-  "weight": 12
+  }
 }

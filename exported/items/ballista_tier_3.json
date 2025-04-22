@@ -1,5 +1,8 @@
 {
+  "name": "Ballista - Tier 3",
   "category": "Weapons",
+  "weight": 22.5,
+  "experiencieReward": 78,
   "crafting": [
     {
       "ingredients": [
@@ -22,13 +25,8 @@
       ]
     }
   ],
-  "name": "Ballista - Tier 3",
-  "type": "Ballista_T3_C",
-  "experiencieReward": 78,
   "structureInfo": {
     "type": "Soft",
     "hp": 3500
-  },
-  "translation": "Ballista - Tier 3",
-  "weight": 22.5
+  }
 }

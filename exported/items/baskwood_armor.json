@@ -1,5 +1,11 @@
 {
+  "name": "Baskwood Armor",
   "category": "Armors",
+  "trade_price": 21.2,
+  "stackSize": 100,
+  "weight": 7,
+  "experiencieReward": 75,
+  "durability": 200,
   "crafting": [
     {
       "ingredients": [
@@ -30,14 +36,6 @@
       "time": 2
     }
   ],
-  "name": "Baskwood Armor",
-  "trade_price": 21.2,
-  "translation": "Baskwood Armor",
-  "type": "T2_BaskwoodTorso_C",
-  "experiencieReward": 75,
-  "stackSize": 100,
-  "weight": 7,
-  "durability": 200,
   "armorInfo": {
     "absorbing": 12,
     "speedReduction": 13

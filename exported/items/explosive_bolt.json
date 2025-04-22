@@ -1,8 +1,11 @@
 {
   "name": "Explosive Bolt",
   "parent": "FireBolt",
-  "type": "ExplosiveBolt_C",
   "category": "Ammo",
+  "trade_price": 17.8,
+  "stackSize": 20,
+  "weight": 0.3,
+  "experiencieReward": 15,
   "crafting": [
     {
       "ingredients": [
@@ -23,13 +26,7 @@
       "time": 3
     }
   ],
-  "trade_price": 17.8,
-  "translation": "Explosive Bolt",
   "projectileDamage": {
     "damage": 25
-  },
-  "experiencieReward": 15,
-  "stackSize": 20,
-  "weight": 0.3,
-  "damageType": "'ExplosionDamage_C'"
+  }
 }

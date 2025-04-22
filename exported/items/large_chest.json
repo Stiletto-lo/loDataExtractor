@@ -1,8 +1,8 @@
 {
   "name": "Large Chest",
   "parent": "Medium Chest",
-  "type": "ChestLarge_C",
   "category": "Containers",
+  "experiencieReward": 32,
   "crafting": [
     {
       "ingredients": [
@@ -21,7 +21,6 @@
       ]
     }
   ],
-  "experiencieReward": 32,
   "structureInfo": {
     "type": "Medium",
     "hp": 4500

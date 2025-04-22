@@ -1,4 +1,6 @@
 {
+  "name": "Ceramic Scattershot Ammo",
+  "parent": "BoneScattershot",
   "crafting": [
     {
       "ingredients": [
@@ -16,10 +18,6 @@
       "time": 5
     }
   ],
-  "name": "Ceramic Scattershot Ammo",
-  "parent": "BoneScattershot",
-  "translation": "Ceramic Scattershot Ammo",
-  "type": "CeramicScattershot_C",
   "projectileDamage": {
     "damage": 350
   },

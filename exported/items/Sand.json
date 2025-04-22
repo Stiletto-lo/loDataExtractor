@@ -1,9 +1,10 @@
 {
   "name": "Sand",
   "parent": "Crafting",
-  "type": "Sand_C",
-  "description": "Tiny green mineral flecks dot the sand.",
   "category": "Liquids",
+  "stackSize": 100,
+  "weight": 0.22,
+  "description": "Tiny green mineral flecks dot the sand.",
   "crafting": [
     {
       "ingredients": [
@@ -60,8 +61,5 @@
       "station": "Flotillian Stomping Station",
       "time": 4
     }
-  ],
-  "translation": "Sand",
-  "stackSize": 100,
-  "weight": 0.22
+  ]
 }

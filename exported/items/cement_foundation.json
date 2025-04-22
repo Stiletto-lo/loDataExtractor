@@ -1,5 +1,7 @@
 {
+  "name": "Cement Foundation",
   "category": "Cement Structures",
+  "experiencieReward": 22,
   "crafting": [
     {
       "ingredients": [
@@ -22,9 +24,6 @@
       ]
     }
   ],
-  "name": "Cement Foundation",
-  "type": "WallConcreteFoundation_C",
-  "experiencieReward": 22,
   "structureInfo": {
     "type": "Solid",
     "hp": 40000

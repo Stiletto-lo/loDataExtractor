@@ -1,9 +1,12 @@
 {
   "name": "Net",
   "parent": "Net Thrower",
-  "type": "Net_C",
-  "description": "Ammo for net thrower. Entangles small structures, mannable weapons, walker legs and wings.",
   "category": "Ammo",
+  "trade_price": 10.4,
+  "stackSize": 50,
+  "weight": 1.2,
+  "description": "Ammo for net thrower. Entangles small structures, mannable weapons, walker legs and wings.",
+  "experiencieReward": 1,
   "crafting": [
     {
       "ingredients": [
@@ -60,19 +63,13 @@
       "time": 10
     }
   ],
-  "trade_price": 10.4,
-  "translation": "Net",
   "projectileDamage": {
     "damage": 5
   },
-  "experiencieReward": 1,
-  "stackSize": 50,
-  "weight": 1.2,
   "toolInfo": [
     {
       "toolType": "Net",
       "tier": 0
     }
-  ],
-  "damageType": "'NetDamage_C'"
+  ]
 }

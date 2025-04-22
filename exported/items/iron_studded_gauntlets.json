@@ -1,5 +1,11 @@
 {
+  "name": "Iron Studded Gauntlets",
   "category": "Armors",
+  "trade_price": 41.1,
+  "stackSize": 100,
+  "weight": 5,
+  "experiencieReward": 140,
+  "durability": 330,
   "crafting": [
     {
       "ingredients": [
@@ -20,14 +26,6 @@
       "time": 15
     }
   ],
-  "name": "Iron Studded Gauntlets",
-  "trade_price": 41.1,
-  "translation": "Iron Studded Gauntlets",
-  "type": "T4_IronGloves_C",
-  "experiencieReward": 140,
-  "stackSize": 100,
-  "weight": 5,
-  "durability": 330,
   "armorInfo": {
     "absorbing": 20,
     "reduction": 4,

@@ -1,8 +1,12 @@
 {
   "name": "Rawbone Club",
   "parent": "Nurrfang Toothclub",
-  "type": "BoneMace_C",
   "category": "Weapons",
+  "trade_price": 14,
+  "stackSize": 100,
+  "weight": 2.8,
+  "experiencieReward": 55,
+  "durability": 430,
   "crafting": [
     {
       "ingredients": [
@@ -19,18 +23,11 @@
       "time": 2
     }
   ],
-  "trade_price": 14,
-  "translation": "Rawbone Club",
-  "experiencieReward": 55,
-  "stackSize": 100,
-  "weight": 2.8,
-  "durability": 430,
   "weaponInfo": {
     "impact": 50,
     "stability": 40,
     "weaponLength": 75,
     "damage": 45,
     "penetration": 10
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

@@ -1,8 +1,12 @@
 {
   "name": "Bone Bottle",
   "parent": "Improvised Bottle",
-  "type": "BoneBottle_C",
   "category": "Equipment",
+  "trade_price": 11.9,
+  "stackSize": 100,
+  "weight": 1.7,
+  "experiencieReward": 50,
+  "durability": 100,
   "crafting": [
     {
       "ingredients": [
@@ -40,11 +44,5 @@
       "station": "Artisan Fiberworking Station",
       "time": 1
     }
-  ],
-  "trade_price": 11.9,
-  "translation": "Bone Bottle",
-  "experiencieReward": 50,
-  "stackSize": 100,
-  "weight": 1.7,
-  "durability": 100
+  ]
 }

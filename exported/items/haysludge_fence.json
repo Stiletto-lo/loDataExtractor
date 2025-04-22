@@ -1,5 +1,7 @@
 {
+  "name": "Haysludge Fence",
   "category": "Furniture",
+  "weight": 5,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +16,8 @@
       ]
     }
   ],
-  "name": "Haysludge Fence",
-  "type": "RupuFence_01_C",
   "structureInfo": {
     "type": "Soft",
     "hp": 150
-  },
-  "translation": "Haysludge Fence",
-  "weight": 5
+  }
 }

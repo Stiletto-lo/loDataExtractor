@@ -1,5 +1,9 @@
 {
+  "name": "Scaffolding",
   "category": "Wood: light",
+  "weight": 3,
+  "description": "A stackable, elevated platform that allows for easier access to high places. Useful in walker construction.",
+  "experiencieReward": 56,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +18,6 @@
       ]
     }
   ],
-  "name": "Scaffolding",
-  "translation": "Scaffolding",
-  "type": "Scaffolding_C",
-  "description": "A stackable, elevated platform that allows for easier access to high places. Useful in walker construction.",
-  "experiencieReward": 56,
-  "weight": 3,
   "structureInfo": {
     "hp": 75
   }

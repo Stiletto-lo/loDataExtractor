@@ -1,8 +1,12 @@
 {
   "name": "Wyndan Sabre",
   "parent": "Short Malletblade",
-  "type": "OneHandedIronSword2_C",
   "category": "Weapons",
+  "trade_price": 259.7,
+  "stackSize": 100,
+  "weight": 2.5,
+  "experiencieReward": 1242,
+  "durability": 770,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +27,6 @@
       "time": 15
     }
   ],
-  "trade_price": 259.7,
-  "translation": "Wyndan Sabre",
-  "experiencieReward": 1242,
-  "stackSize": 100,
-  "weight": 2.5,
-  "durability": 770,
   "weaponInfo": {
     "weaponSpeed": 130,
     "impact": 25,
@@ -42,6 +40,5 @@
       "toolType": "Scythe",
       "tier": 1
     }
-  ],
-  "damageType": "'MeleeSwordDamage_C'"
+  ]
 }

@@ -1,8 +1,8 @@
 {
   "name": "Repair Station",
   "parent": "Rope",
-  "type": "RepairStation_C",
   "category": "Interactables",
+  "experiencieReward": 92,
   "crafting": [
     {
       "ingredients": [
@@ -21,7 +21,6 @@
       ]
     }
   ],
-  "experiencieReward": 92,
   "structureInfo": {
     "hp": 1000
   }

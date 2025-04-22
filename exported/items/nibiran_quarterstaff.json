@@ -1,5 +1,11 @@
 {
+  "name": "Nibiran Quarterstaff",
   "category": "Weapons",
+  "trade_price": 1504.8,
+  "stackSize": 100,
+  "weight": 5.6,
+  "experiencieReward": 1498,
+  "durability": 740,
   "crafting": [
     {
       "ingredients": [
@@ -20,18 +26,9 @@
       "time": 100
     }
   ],
-  "name": "Nibiran Quarterstaff",
-  "trade_price": 1504.8,
-  "translation": "Nibiran Quarterstaff",
-  "type": "TitaniumQuarterstaffBlunt2_C",
-  "experiencieReward": 1498,
-  "stackSize": 100,
-  "weight": 5.6,
-  "durability": 740,
   "weaponInfo": {
     "weaponLength": 93,
     "damage": 58,
     "penetration": 20
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

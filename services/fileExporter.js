@@ -113,6 +113,30 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
 
   for (const item of allItems) {
     if (item.name) {
+      const dataToExport = {
+        name: item?.name,
+        parent: item?.parent,
+        category: item?.category,
+        trade_price: item?.trade_price,
+        stackSize: item?.stackSize,
+        weight: item?.weight,
+        description: item?.description,
+        experiencieReward: item?.experiencieReward,
+        durability: item?.durability,
+        wikiVisibility: item?.wikiVisibility,
+        onlyDevs: item?.onlyDevs,
+        learn: item?.learn,
+        crafting: item?.crafting,
+        structureInfo: item?.structureInfo,
+        projectileDamage: item?.projectileDamage,
+        weaponInfo: item?.weaponInfo,
+        moduleInfo: item?.moduleInfo,
+        toolInfo: item?.toolInfo,
+        armorInfo: item?.armorInfo,
+        walkerinfo: item?.walkerinfo,
+        upgradeInfo: item?.upgradeInfo,
+      }
+
       // Convert item name to snake_case and make it safe for filenames
       const snakeCaseName = item.name
         .toLowerCase()
@@ -122,7 +146,7 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
 
       await fs.writeFile(
         `${itemsFolder}/${snakeCaseName}.json`,
-        JSON.stringify(item, null, 2),
+        JSON.stringify(dataToExport, null, 2),
         (err) => {
           if (err) {
             console.error(`Error creating individual file for ${item.name}`);

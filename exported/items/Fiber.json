@@ -1,5 +1,11 @@
 {
+  "name": "Fiber",
   "category": "Resources",
+  "trade_price": 0.2,
+  "stackSize": 100,
+  "weight": 0.02,
+  "description": "Used to make everything from ropes, sails, to garments.",
+  "experiencieReward": 2,
   "crafting": [
     {
       "ingredients": [
@@ -177,13 +183,5 @@
       "station": "Artificer Woodworking Station",
       "time": 800
     }
-  ],
-  "name": "Fiber",
-  "trade_price": 0.2,
-  "translation": "Fiber",
-  "type": "Fiber_C",
-  "description": "Used to make everything from ropes, sails, to garments.",
-  "experiencieReward": 2,
-  "stackSize": 100,
-  "weight": 0.02
+  ]
 }

@@ -1,8 +1,9 @@
 {
   "name": "Throwing Net",
   "parent": "Beat Stick",
-  "type": "ThrowingNet_C",
   "category": "Weapons",
+  "trade_price": 8.4,
+  "weight": 3,
   "crafting": [
     {
       "ingredients": [
@@ -25,14 +26,10 @@
       ]
     }
   ],
-  "trade_price": 8.4,
-  "translation": "Throwing Net",
-  "weight": 3,
   "toolInfo": [
     {
       "toolType": "Net",
       "tier": 1
     }
-  ],
-  "damageType": "'JavelinDamage_C'"
+  ]
 }

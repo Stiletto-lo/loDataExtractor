@@ -1,8 +1,11 @@
 {
   "name": "Fiber Weave",
   "parent": "Fiberworking Station",
-  "type": "FiberCloth_C",
   "category": "Resources",
+  "trade_price": 0.8,
+  "stackSize": 100,
+  "weight": 0.11,
+  "experiencieReward": 1,
   "crafting": [
     {
       "ingredients": [
@@ -67,10 +70,5 @@
       "station": "Artisan Fiberworking Station",
       "time": 100
     }
-  ],
-  "trade_price": 0.8,
-  "translation": "Fiber Weave",
-  "experiencieReward": 1,
-  "stackSize": 100,
-  "weight": 0.11
+  ]
 }

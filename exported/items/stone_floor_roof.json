@@ -1,5 +1,7 @@
 {
+  "name": "Stone Floor / Roof",
   "category": "Stone Structures",
+  "experiencieReward": 22,
   "crafting": [
     {
       "ingredients": [
@@ -22,9 +24,6 @@
       ]
     }
   ],
-  "name": "Stone Floor / Roof",
-  "type": "WallStoneRoof_C",
-  "experiencieReward": 22,
   "structureInfo": {
     "type": "Solid",
     "hp": 10000

@@ -1,8 +1,12 @@
 {
   "name": "Wyndan Battle Axe",
   "parent": "Firestone Battle Axe",
-  "type": "TwoHandedIronAxe2_C",
   "category": "Weapons",
+  "trade_price": 320.4,
+  "stackSize": 100,
+  "weight": 5.8,
+  "experiencieReward": 1622,
+  "durability": 780,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +27,6 @@
       "time": 15
     }
   ],
-  "trade_price": 320.4,
-  "translation": "Wyndan Battle Axe",
-  "experiencieReward": 1622,
-  "stackSize": 100,
-  "weight": 5.8,
-  "durability": 780,
   "weaponInfo": {
     "weaponSpeed": 115,
     "stability": 65,
@@ -41,6 +39,5 @@
       "toolType": "TreeCutting",
       "tier": 0
     }
-  ],
-  "damageType": "'MeleeAxeDamage_C'"
+  ]
 }

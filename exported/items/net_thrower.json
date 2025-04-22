@@ -1,8 +1,8 @@
 {
   "name": "Net Thrower",
   "parent": "Basic Walker Weapons",
-  "type": "NetThrower_C",
   "category": "Weapons",
+  "experiencieReward": 249,
   "crafting": [
     {
       "ingredients": [
@@ -21,7 +21,6 @@
       ]
     }
   ],
-  "experiencieReward": 249,
   "structureInfo": {
     "type": "Soft",
     "hp": 3000

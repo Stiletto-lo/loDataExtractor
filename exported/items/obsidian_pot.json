@@ -1,8 +1,8 @@
 {
   "name": "Obsidian Pot",
   "parent": "Advanced Constructions",
-  "type": "ObsidianContainerSmall_C",
   "category": "Containers",
+  "experiencieReward": 60,
   "crafting": [
     {
       "ingredients": [
@@ -25,7 +25,6 @@
       ]
     }
   ],
-  "experiencieReward": 60,
   "structureInfo": {
     "type": "Soft",
     "hp": 3000

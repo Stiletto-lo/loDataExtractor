@@ -1,8 +1,12 @@
 {
   "name": "Short Malletblade",
   "parent": "Bonespike Sword",
-  "type": "OneHandedZirconiumSword_C",
   "category": "Weapons",
+  "trade_price": 88.8,
+  "stackSize": 100,
+  "weight": 4,
+  "experiencieReward": 200,
+  "durability": 500,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +27,6 @@
       "time": 2
     }
   ],
-  "trade_price": 88.8,
-  "translation": "Short Malletblade",
-  "experiencieReward": 200,
-  "stackSize": 100,
-  "weight": 4,
-  "durability": 500,
   "weaponInfo": {
     "weaponSpeed": 105,
     "impact": 45,
@@ -42,6 +40,5 @@
       "toolType": "Scythe",
       "tier": 1
     }
-  ],
-  "damageType": "'MeleeSwordDamage_C'"
+  ]
 }

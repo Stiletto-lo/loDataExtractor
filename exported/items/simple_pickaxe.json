@@ -1,8 +1,12 @@
 {
   "name": "Simple Pickaxe",
   "parent": "Beat Stick",
-  "type": "SimplePickaxe_C",
   "category": "Tools",
+  "trade_price": 8.4,
+  "stackSize": 100,
+  "weight": 3,
+  "experiencieReward": 55,
+  "durability": 315,
   "crafting": [
     {
       "ingredients": [
@@ -25,12 +29,6 @@
       ]
     }
   ],
-  "trade_price": 8.4,
-  "translation": "Simple Pickaxe",
-  "experiencieReward": 55,
-  "stackSize": 100,
-  "weight": 3,
-  "durability": 315,
   "weaponInfo": {
     "weaponLength": 54,
     "damage": 20,
@@ -41,6 +39,5 @@
       "toolType": "Mining",
       "tier": 5
     }
-  ],
-  "damageType": "'MeleePickaxeDamage_C'"
+  ]
 }

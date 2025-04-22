@@ -1,5 +1,7 @@
 {
+  "name": "Haysludge Arch",
   "category": "Furniture",
+  "weight": 20,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +16,8 @@
       ]
     }
   ],
-  "name": "Haysludge Arch",
-  "type": "RupuArch_01_C",
   "structureInfo": {
     "type": "Soft",
     "hp": 150
-  },
-  "translation": "Haysludge Arch",
-  "weight": 20
+  }
 }

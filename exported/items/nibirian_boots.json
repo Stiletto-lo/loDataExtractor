@@ -1,5 +1,11 @@
 {
+  "name": "Nibirian Boots",
   "category": "Armors",
+  "trade_price": 75.8,
+  "stackSize": 100,
+  "weight": 4,
+  "experiencieReward": 170,
+  "durability": 330,
   "crafting": [
     {
       "ingredients": [
@@ -16,14 +22,6 @@
       "time": 30
     }
   ],
-  "name": "Nibirian Boots",
-  "trade_price": 75.8,
-  "translation": "Nibirian Boots",
-  "type": "T4_NibirianBoots_C",
-  "experiencieReward": 170,
-  "stackSize": 100,
-  "weight": 4,
-  "durability": 330,
   "armorInfo": {
     "absorbing": 23,
     "reduction": 4,

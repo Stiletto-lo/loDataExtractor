@@ -1,8 +1,10 @@
 {
   "name": "Jojo Mojo",
   "parent": "Vision Powder",
-  "type": "JojoMojo_C",
   "category": "Vitamins",
+  "trade_price": 9,
+  "stackSize": 100,
+  "weight": 0.5,
   "crafting": [
     {
       "ingredients": [
@@ -48,9 +50,5 @@
       "station": "Clay Pot",
       "time": 60
     }
-  ],
-  "trade_price": 9,
-  "translation": "Jojo Mojo",
-  "stackSize": 100,
-  "weight": 0.5
+  ]
 }

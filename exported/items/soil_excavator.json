@@ -1,8 +1,8 @@
 {
   "name": "Soil Excavator",
   "parent": "Camp Fire",
-  "type": "SoilExcavator_C",
   "category": "Crafting",
+  "experiencieReward": 18,
   "crafting": [
     {
       "ingredients": [
@@ -29,7 +29,6 @@
       ]
     }
   ],
-  "experiencieReward": 18,
   "structureInfo": {
     "type": "Soft",
     "hp": 3000

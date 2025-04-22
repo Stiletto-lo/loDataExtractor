@@ -1,5 +1,8 @@
 {
+  "name": "Base Container",
   "category": "Containers",
+  "weight": 146.1,
+  "experiencieReward": 32,
   "crafting": [
     {
       "ingredients": [
@@ -34,12 +37,7 @@
       ]
     }
   ],
-  "name": "Base Container",
-  "type": "BaseContainer_C",
-  "experiencieReward": 32,
   "structureInfo": {
     "hp": 1500
-  },
-  "translation": "Base Container",
-  "weight": 146.1
+  }
 }

@@ -1,5 +1,7 @@
 {
+  "name": "Cement BalangCore",
   "category": "Concrete",
+  "weight": 10,
   "crafting": [
     {
       "ingredients": [
@@ -18,11 +20,8 @@
       ]
     }
   ],
-  "name": "Cement BalangCore",
-  "type": "BalangCore_C",
   "structureInfo": {
     "type": "Solid",
     "hp": 150000
-  },
-  "weight": 10
+  }
 }

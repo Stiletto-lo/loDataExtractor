@@ -1,8 +1,10 @@
 {
   "name": "Glass",
   "parent": "Furnace",
-  "type": "EmptyGlassVial_C",
   "category": "Resources",
+  "trade_price": 1.4,
+  "stackSize": 100,
+  "weight": 0.05,
   "crafting": [
     {
       "ingredients": [
@@ -24,9 +26,5 @@
       "station": "Advanced Furnace",
       "time": 900
     }
-  ],
-  "trade_price": 1.4,
-  "translation": "Glass",
-  "stackSize": 100,
-  "weight": 0.05
+  ]
 }

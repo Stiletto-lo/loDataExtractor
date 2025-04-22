@@ -1,8 +1,10 @@
 {
   "name": "Ceramic Shard",
   "parent": "Furnace",
-  "type": "CeramicShard_C",
   "category": "Resources",
+  "trade_price": 7.2,
+  "stackSize": 100,
+  "weight": 0.22,
   "crafting": [
     {
       "ingredients": [
@@ -24,9 +26,5 @@
       "station": "Advanced Furnace",
       "time": 480
     }
-  ],
-  "trade_price": 7.2,
-  "translation": "Ceramic Shard",
-  "stackSize": 100,
-  "weight": 0.22
+  ]
 }

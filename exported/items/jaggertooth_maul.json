@@ -1,8 +1,12 @@
 {
   "name": "Jaggertooth Maul",
   "parent": "Jaggertooth Club",
-  "type": "TwoHandedStoneMace_C",
   "category": "Weapons",
+  "trade_price": 5.4,
+  "stackSize": 100,
+  "weight": 10.8,
+  "experiencieReward": 10,
+  "durability": 340,
   "crafting": [
     {
       "ingredients": [
@@ -21,18 +25,11 @@
       ]
     }
   ],
-  "trade_price": 5.4,
-  "translation": "Jaggertooth Maul",
-  "experiencieReward": 10,
-  "stackSize": 100,
-  "weight": 10.8,
-  "durability": 340,
   "weaponInfo": {
     "weaponSpeed": 110,
     "stability": 60,
     "weaponLength": 77,
     "damage": 35,
     "penetration": 10
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

@@ -1,4 +1,8 @@
 {
+  "name": "Iron-Tipped Bolt",
+  "parent": "Ceramic Bolt",
+  "trade_price": 25,
+  "experiencieReward": 50,
   "crafting": [
     {
       "ingredients": [
@@ -20,15 +24,9 @@
       "time": 3
     }
   ],
-  "name": "Iron-Tipped Bolt",
-  "parent": "Ceramic Bolt",
-  "trade_price": 25,
-  "translation": "Iron-Tipped Bolt",
-  "type": "IronBolt_C",
   "projectileDamage": {
     "damage": 80
   },
-  "experiencieReward": 50,
   "toolInfo": [
     {
       "toolType": "BallistaHarpoon",

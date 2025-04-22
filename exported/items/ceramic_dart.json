@@ -1,4 +1,7 @@
 {
+  "name": "Ceramic Dart",
+  "parent": "Bone Dart",
+  "trade_price": 1.5,
   "crafting": [
     {
       "ingredients": [
@@ -20,11 +23,6 @@
       "time": 5
     }
   ],
-  "name": "Ceramic Dart",
-  "parent": "Bone Dart",
-  "trade_price": 1.5,
-  "translation": "Ceramic Dart",
-  "type": "CeramicDart_C",
   "projectileDamage": {
     "damage": 15.5
   },

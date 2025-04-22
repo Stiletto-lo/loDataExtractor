@@ -1,5 +1,7 @@
 {
+  "name": "Buffalo Walker Wings (1 of 2)",
   "category": "Walker Parts",
+  "weight": 9.75,
   "crafting": [
     {
       "ingredients": [
@@ -22,12 +24,8 @@
       ]
     }
   ],
-  "name": "Buffalo Walker Wings (1 of 2)",
-  "type": "BuffaloWings_C",
   "structureInfo": {
     "type": "Soft",
     "hp": 8600
-  },
-  "translation": "Buffalo Walker Wings",
-  "weight": 9.75
+  }
 }

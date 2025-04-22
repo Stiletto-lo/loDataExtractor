@@ -1,8 +1,12 @@
 {
   "name": "Durable Water Sack",
   "parent": "Improvised Bottle",
-  "type": "Barrel_C",
   "category": "Equipment",
+  "trade_price": 7.9,
+  "stackSize": 100,
+  "weight": 3,
+  "experiencieReward": 35,
+  "durability": 80,
   "crafting": [
     {
       "ingredients": [
@@ -32,11 +36,5 @@
       "station": "Artisan Fiberworking Station",
       "time": 1
     }
-  ],
-  "trade_price": 7.9,
-  "translation": "Durable Water Sack",
-  "experiencieReward": 35,
-  "stackSize": 100,
-  "weight": 3,
-  "durability": 80
+  ]
 }

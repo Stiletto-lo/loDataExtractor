@@ -1,5 +1,8 @@
 {
+  "name": "Rag",
   "category": "Furniture",
+  "weight": 0.2,
+  "experiencieReward": 6,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +17,7 @@
       ]
     }
   ],
-  "name": "Rag",
-  "type": "Throne_Scrap_01_C",
-  "experiencieReward": 6,
   "structureInfo": {
     "hp": 30
-  },
-  "translation": "Rag",
-  "weight": 0.2
+  }
 }

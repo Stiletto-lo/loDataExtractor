@@ -1,7 +1,8 @@
 {
   "name": "Nibiran-tipped Bolt",
   "parent": "IronBolt",
-  "type": "NibirianBolt_C",
+  "trade_price": 35,
+  "experiencieReward": 100,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +24,9 @@
       "time": 10
     }
   ],
-  "trade_price": 35,
-  "translation": "Nibiran-tipped Bolt",
   "projectileDamage": {
     "damage": 100
   },
-  "experiencieReward": 100,
   "toolInfo": [
     {
       "toolType": "BallistaHarpoon",

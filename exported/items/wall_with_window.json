@@ -1,5 +1,8 @@
 {
+  "name": "Wall with Window",
   "category": "Stone",
+  "weight": 7,
+  "experiencieReward": 32,
   "crafting": [
     {
       "ingredients": [
@@ -22,11 +25,6 @@
       ]
     }
   ],
-  "name": "Wall with Window",
-  "translation": "Wall with Window",
-  "type": "WallStoneWindow_C",
-  "experiencieReward": 32,
-  "weight": 7,
   "structureInfo": {
     "type": "Solid",
     "hp": 10000

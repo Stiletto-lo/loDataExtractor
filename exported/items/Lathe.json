@@ -1,9 +1,9 @@
 {
   "name": "Lathe",
   "parent": "Advanced Woodworking Station",
-  "type": "Lathe_C",
-  "description": "A more sophisticated contraption that processes solid materials into various objects.",
   "category": "Crafting",
+  "description": "A more sophisticated contraption that processes solid materials into various objects.",
+  "experiencieReward": 40,
   "crafting": [
     {
       "ingredients": [
@@ -30,7 +30,6 @@
       ]
     }
   ],
-  "experiencieReward": 40,
   "structureInfo": {
     "type": "Soft",
     "hp": 500

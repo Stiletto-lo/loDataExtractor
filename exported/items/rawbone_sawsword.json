@@ -1,8 +1,12 @@
 {
   "name": "Rawbone Sawsword",
   "parent": "Jaggertooth Swordclub",
-  "type": "TwoHandedBoneSwordShort_C",
   "category": "Weapons",
+  "trade_price": 15,
+  "stackSize": 100,
+  "weight": 3.8,
+  "experiencieReward": 100,
+  "durability": 500,
   "crafting": [
     {
       "ingredients": [
@@ -21,12 +25,6 @@
       ]
     }
   ],
-  "trade_price": 15,
-  "translation": "Rawbone Sawsword",
-  "experiencieReward": 100,
-  "stackSize": 100,
-  "weight": 3.8,
-  "durability": 500,
   "weaponInfo": {
     "weaponSpeed": 110,
     "impact": 50,
@@ -40,6 +38,5 @@
       "toolType": "Scythe",
       "tier": 1
     }
-  ],
-  "damageType": "'MeleeSwordDamage_C'"
+  ]
 }

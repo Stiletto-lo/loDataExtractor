@@ -1,5 +1,11 @@
 {
+  "name": "Firestone Bladestaff",
   "category": "Weapons",
+  "trade_price": 100.7,
+  "stackSize": 100,
+  "weight": 5.5,
+  "experiencieReward": 220,
+  "durability": 735,
   "crafting": [
     {
       "ingredients": [
@@ -20,18 +26,9 @@
       "time": 2
     }
   ],
-  "name": "Firestone Bladestaff",
-  "trade_price": 100.7,
-  "translation": "Firestone Bladestaff",
-  "type": "LavaQuarterstaffSword_C",
-  "experiencieReward": 220,
-  "stackSize": 100,
-  "weight": 5.5,
-  "durability": 735,
   "weaponInfo": {
     "weaponLength": 123,
     "damage": 42,
     "penetration": 20
-  },
-  "damageType": "'MeleeSwordDamage_C'"
+  }
 }

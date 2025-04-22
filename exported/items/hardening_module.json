@@ -1,5 +1,7 @@
 {
+  "name": "Hardening Module",
   "category": "Resources",
+  "weight": 0.24,
   "crafting": [
     {
       "ingredients": [
@@ -20,10 +22,6 @@
       "time": 30
     }
   ],
-  "name": "Hardening Module",
-  "translation": "Hardening Module",
-  "type": "HullHardeningBoost_C",
-  "weight": 0.24,
   "moduleInfo": {
     "max": 20,
     "increase": 2.5,

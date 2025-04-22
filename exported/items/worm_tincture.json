@@ -1,8 +1,11 @@
 {
   "name": "Worm Tincture",
   "parent": "Bonebreaker",
-  "type": "WormTincture_C",
   "category": "Vitamins",
+  "trade_price": 1200,
+  "stackSize": 100,
+  "weight": 0.5,
+  "experiencieReward": 100,
   "crafting": [
     {
       "ingredients": [
@@ -56,10 +59,5 @@
       "station": "Clay Pot",
       "time": 100
     }
-  ],
-  "trade_price": 1200,
-  "translation": "Worm Tincture",
-  "experiencieReward": 100,
-  "stackSize": 100,
-  "weight": 0.5
+  ]
 }

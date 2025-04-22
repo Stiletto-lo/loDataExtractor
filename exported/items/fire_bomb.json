@@ -1,8 +1,10 @@
 {
   "name": "Fire Bomb",
   "parent": "Slingshot",
-  "type": "FireBomb_C",
   "category": "Ammo",
+  "trade_price": 38,
+  "stackSize": 10,
+  "weight": 3,
   "crafting": [
     {
       "ingredients": [
@@ -27,13 +29,8 @@
       "time": 60
     }
   ],
-  "trade_price": 38,
-  "translation": "Fire Bomb",
   "projectileDamage": {
     "damage": 10,
     "penetration": 1
-  },
-  "stackSize": 10,
-  "weight": 3,
-  "damageType": "'FireDamage_C'"
+  }
 }

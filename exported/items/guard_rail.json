@@ -1,5 +1,8 @@
 {
+  "name": "Guard Rail",
   "category": "Wood: light",
+  "weight": 1,
+  "experiencieReward": 28,
   "crafting": [
     {
       "ingredients": [
@@ -14,11 +17,6 @@
       ]
     }
   ],
-  "name": "Guard Rail",
-  "translation": "Guard Rail",
-  "type": "GuardRail_C",
-  "experiencieReward": 28,
-  "weight": 1,
   "structureInfo": {
     "hp": 400
   }

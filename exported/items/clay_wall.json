@@ -1,5 +1,7 @@
 {
+  "name": "Clay Wall",
   "category": "Clay Structures",
+  "experiencieReward": 30,
   "crafting": [
     {
       "ingredients": [
@@ -18,9 +20,6 @@
       ]
     }
   ],
-  "name": "Clay Wall",
-  "type": "WallClay_C",
-  "experiencieReward": 30,
   "structureInfo": {
     "type": "Solid",
     "hp": 20000

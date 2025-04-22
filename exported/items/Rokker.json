@@ -1,8 +1,8 @@
 {
   "name": "Rokker",
   "parent": "Advanced Walker Weapons",
-  "type": "Rokker_C",
   "category": "Weapons",
+  "experiencieReward": 188,
   "crafting": [
     {
       "ingredients": [
@@ -37,7 +37,6 @@
       ]
     }
   ],
-  "experiencieReward": 188,
   "structureInfo": {
     "type": "Medium",
     "hp": 1350

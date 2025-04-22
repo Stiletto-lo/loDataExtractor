@@ -1,4 +1,5 @@
 {
+  "name": "Hangar Roof",
   "category": "Walker Hangar",
   "crafting": [
     {
@@ -14,11 +15,8 @@
       ]
     }
   ],
-  "name": "Hangar Roof",
-  "type": "HangarRoof_C",
   "structureInfo": {
     "type": "Reinforced",
     "hp": 40000
-  },
-  "translation": "Hangar Roof"
+  }
 }

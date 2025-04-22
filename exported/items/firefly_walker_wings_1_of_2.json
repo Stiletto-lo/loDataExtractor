@@ -1,5 +1,8 @@
 {
+  "name": "Firefly Walker Wings (1 of 2)",
   "category": "Walker Parts",
+  "weight": 9.75,
+  "experiencieReward": 100,
   "crafting": [
     {
       "ingredients": [
@@ -18,13 +21,8 @@
       ]
     }
   ],
-  "name": "Firefly Walker Wings (1 of 2)",
-  "type": "FireflyWings_C",
-  "experiencieReward": 100,
   "structureInfo": {
     "type": "Soft",
     "hp": 1500
-  },
-  "translation": "Firefly Walker Wings",
-  "weight": 9.75
+  }
 }

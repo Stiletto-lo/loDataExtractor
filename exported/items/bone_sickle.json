@@ -1,7 +1,7 @@
 {
   "name": "Bone Sickle",
   "parent": "Simple Sickle",
-  "type": "BoneSickle_C",
+  "durability": 550,
   "crafting": [
     {
       "ingredients": [
@@ -26,8 +26,6 @@
       "time": 2
     }
   ],
-  "translation": "Bone Sickle",
-  "durability": 550,
   "toolInfo": [
     {
       "toolType": "Scythe",

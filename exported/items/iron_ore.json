@@ -1,5 +1,10 @@
 {
+  "name": "Iron Ore",
   "category": "Resources",
+  "trade_price": 8,
+  "stackSize": 100,
+  "weight": 0.78,
+  "experiencieReward": 9,
   "crafting": [
     {
       "ingredients": [
@@ -16,12 +21,5 @@
       "station": "Artisan Soil Auger",
       "time": 30
     }
-  ],
-  "name": "Iron Ore",
-  "trade_price": 8,
-  "translation": "Iron Ore",
-  "type": "IronOre_C",
-  "experiencieReward": 9,
-  "stackSize": 100,
-  "weight": 0.78
+  ]
 }

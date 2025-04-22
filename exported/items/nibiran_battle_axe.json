@@ -1,5 +1,11 @@
 {
+  "name": "Nibiran Battle Axe",
   "category": "Weapons",
+  "trade_price": 2116.6,
+  "stackSize": 100,
+  "weight": 4.8,
+  "experiencieReward": 1544,
+  "durability": 1200,
   "crafting": [
     {
       "ingredients": [
@@ -20,14 +26,6 @@
       "time": 100
     }
   ],
-  "name": "Nibiran Battle Axe",
-  "trade_price": 2116.6,
-  "translation": "Nibiran Battle Axe",
-  "type": "TwoHandedRareMetalAxe2_C",
-  "experiencieReward": 1544,
-  "stackSize": 100,
-  "weight": 4.8,
-  "durability": 1200,
   "weaponInfo": {
     "weaponSpeed": 120,
     "impact": 70,
@@ -41,6 +39,5 @@
       "toolType": "TreeCutting",
       "tier": 25
     }
-  ],
-  "damageType": "'MeleeAxeDamage_C'"
+  ]
 }

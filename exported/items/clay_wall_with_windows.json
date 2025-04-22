@@ -1,5 +1,7 @@
 {
+  "name": "Clay Wall with Windows",
   "category": "Clay Structures",
+  "experiencieReward": 32,
   "crafting": [
     {
       "ingredients": [
@@ -18,9 +20,6 @@
       ]
     }
   ],
-  "name": "Clay Wall with Windows",
-  "type": "WallClayWindow2_C",
-  "experiencieReward": 32,
   "structureInfo": {
     "type": "Solid",
     "hp": 20000

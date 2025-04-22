@@ -1,5 +1,8 @@
 {
+  "name": "Sandbag Wall",
   "category": "Basic Protection",
+  "weight": 10,
+  "experiencieReward": 30,
   "crafting": [
     {
       "ingredients": [
@@ -18,13 +21,8 @@
       ]
     }
   ],
-  "name": "Sandbag Wall",
-  "type": "WallSand_C",
-  "experiencieReward": 30,
   "structureInfo": {
     "type": "Solid",
     "hp": 500
-  },
-  "translation": "Sandbag Wall",
-  "weight": 10
+  }
 }

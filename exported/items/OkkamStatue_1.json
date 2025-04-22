@@ -1,5 +1,8 @@
 {
+  "name": "OkkamStatue_1",
   "category": "OkkamStatue",
+  "weight": 3,
+  "experiencieReward": 6,
   "crafting": [
     {
       "ingredients": [
@@ -10,12 +13,8 @@
       ]
     }
   ],
-  "name": "OkkamStatue_1",
-  "type": "OkkamStatue_1_C",
-  "experiencieReward": 6,
   "structureInfo": {
     "type": "Soft",
     "hp": 250
-  },
-  "weight": 3
+  }
 }

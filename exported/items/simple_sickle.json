@@ -1,8 +1,12 @@
 {
   "name": "Simple Sickle",
   "parent": "Beat Stick",
-  "type": "SimpleSickle_C",
   "category": "Tools",
+  "trade_price": 6.2,
+  "stackSize": 100,
+  "weight": 2.2,
+  "experiencieReward": 25,
+  "durability": 420,
   "crafting": [
     {
       "ingredients": [
@@ -25,12 +29,6 @@
       ]
     }
   ],
-  "trade_price": 6.2,
-  "translation": "Simple Sickle",
-  "experiencieReward": 25,
-  "stackSize": 100,
-  "weight": 2.2,
-  "durability": 420,
   "weaponInfo": {
     "weaponLength": 47,
     "damage": 20,
@@ -41,6 +39,5 @@
       "toolType": "Scythe",
       "tier": 5
     }
-  ],
-  "damageType": "'MeleeSwordDamage_C'"
+  ]
 }

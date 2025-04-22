@@ -1,8 +1,8 @@
 {
   "name": "Hose Station",
   "parent": "Advanced Walker Weapons",
-  "type": "HoseStation_C",
   "category": "Weapons",
+  "experiencieReward": 203,
   "crafting": [
     {
       "ingredients": [
@@ -25,7 +25,6 @@
       ]
     }
   ],
-  "experiencieReward": 203,
   "structureInfo": {
     "type": "Soft",
     "hp": 5000

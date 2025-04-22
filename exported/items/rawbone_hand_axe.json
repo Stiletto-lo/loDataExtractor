@@ -1,5 +1,11 @@
 {
+  "name": "Rawbone Hand Axe",
   "category": "Weapons",
+  "trade_price": 4.8,
+  "stackSize": 100,
+  "weight": 2.2,
+  "experiencieReward": 50,
+  "durability": 400,
   "crafting": [
     {
       "ingredients": [
@@ -20,14 +26,6 @@
       "time": 2
     }
   ],
-  "name": "Rawbone Hand Axe",
-  "trade_price": 4.8,
-  "translation": "Rawbone Hand Axe",
-  "type": "BrittleBoneAxe_C",
-  "experiencieReward": 50,
-  "stackSize": 100,
-  "weight": 2.2,
-  "durability": 400,
   "weaponInfo": {
     "weaponSpeed": 120,
     "impact": 55,
@@ -41,6 +39,5 @@
       "toolType": "TreeCutting",
       "tier": 10
     }
-  ],
-  "damageType": "'MeleeAxeDamage_C'"
+  ]
 }

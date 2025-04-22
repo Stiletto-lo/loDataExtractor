@@ -1,5 +1,8 @@
 {
+  "name": "Water Bed",
   "category": "Interactables",
+  "weight": 77,
+  "experiencieReward": 83,
   "crafting": [
     {
       "ingredients": [
@@ -22,12 +25,7 @@
       ]
     }
   ],
-  "name": "Water Bed",
-  "type": "BedWater_C",
-  "experiencieReward": 83,
   "structureInfo": {
     "hp": 100
-  },
-  "translation": "Water Bed",
-  "weight": 77
+  }
 }

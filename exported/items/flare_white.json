@@ -1,5 +1,9 @@
 {
+  "name": "Flare - white",
   "category": "Interactables",
+  "trade_price": 3,
+  "stackSize": 100,
+  "weight": 0.15,
   "crafting": [
     {
       "ingredients": [
@@ -13,11 +17,5 @@
         }
       ]
     }
-  ],
-  "name": "Flare - white",
-  "trade_price": 3,
-  "translation": "Flare - white",
-  "type": "Flare_00_C",
-  "stackSize": 100,
-  "weight": 0.15
+  ]
 }

@@ -1,4 +1,10 @@
 {
+  "name": "Iron Pickaxe",
+  "parent": "CeramicPickaxe",
+  "trade_price": 38.7,
+  "weight": 6,
+  "experiencieReward": 160,
+  "durability": 950,
   "crafting": [
     {
       "ingredients": [
@@ -19,14 +25,6 @@
       "time": 15
     }
   ],
-  "name": "Iron Pickaxe",
-  "parent": "CeramicPickaxe",
-  "trade_price": 38.7,
-  "translation": "Iron Pickaxe",
-  "type": "IronPickaxe_C",
-  "experiencieReward": 160,
-  "weight": 6,
-  "durability": 950,
   "weaponInfo": {
     "damage": 35
   },

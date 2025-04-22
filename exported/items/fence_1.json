@@ -1,5 +1,7 @@
 {
+  "name": "Fence 1",
   "category": "Furniture",
+  "weight": 20,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +16,8 @@
       ]
     }
   ],
-  "name": "Fence 1",
-  "type": "Throne_Fence_01_C",
   "structureInfo": {
     "type": "Soft",
     "hp": 100
-  },
-  "translation": "Fence 1",
-  "weight": 20
+  }
 }

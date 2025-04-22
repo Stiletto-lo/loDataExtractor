@@ -1,8 +1,11 @@
 {
   "name": "Purified Water",
   "parent": "Camp Fire",
-  "type": "NormalWater_C",
   "category": "Liquids",
+  "trade_price": 3,
+  "stackSize": 100,
+  "weight": 0.2,
+  "experiencieReward": 3,
   "crafting": [
     {
       "ingredients": [
@@ -157,10 +160,5 @@
       "station": "Clay Pot",
       "time": 35
     }
-  ],
-  "trade_price": 3,
-  "translation": "Purified Water",
-  "experiencieReward": 3,
-  "stackSize": 100,
-  "weight": 0.2
+  ]
 }

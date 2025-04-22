@@ -1,7 +1,7 @@
 {
   "name": "Bone Dart",
   "parent": "Repeater",
-  "type": "BoneDart_C",
+  "trade_price": 5,
   "crafting": [
     {
       "ingredients": [
@@ -61,8 +61,6 @@
       "time": 3
     }
   ],
-  "trade_price": 5,
-  "translation": "Bone Dart",
   "projectileDamage": {
     "damage": 12.5
   },

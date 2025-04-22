@@ -1,4 +1,10 @@
 {
+  "name": "Ceramic Pickaxe",
+  "parent": "Bone Pickaxe",
+  "trade_price": 98.2,
+  "weight": 5,
+  "experiencieReward": 120,
+  "durability": 550,
   "crafting": [
     {
       "ingredients": [
@@ -19,14 +25,6 @@
       "time": 2
     }
   ],
-  "name": "Ceramic Pickaxe",
-  "parent": "Bone Pickaxe",
-  "trade_price": 98.2,
-  "translation": "Ceramic Pickaxe",
-  "type": "CeramicPickaxe_C",
-  "experiencieReward": 120,
-  "weight": 5,
-  "durability": 550,
   "weaponInfo": {
     "weaponLength": 66,
     "damage": 30

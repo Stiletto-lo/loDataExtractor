@@ -1,5 +1,7 @@
 {
+  "name": "Crate 1",
   "category": "Furniture",
+  "weight": 20,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +16,8 @@
       ]
     }
   ],
-  "name": "Crate 1",
-  "type": "Throne_Crates_01_C",
   "structureInfo": {
     "type": "Soft",
     "hp": 200
-  },
-  "translation": "Crate 1",
-  "weight": 20
+  }
 }

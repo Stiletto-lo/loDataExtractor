@@ -1,8 +1,8 @@
 {
   "name": "Crafting Bench",
   "parent": "Woodworking Station",
-  "type": "CraftingBench_C",
   "category": "Crafting",
+  "experiencieReward": 85,
   "crafting": [
     {
       "ingredients": [
@@ -25,7 +25,6 @@
       ]
     }
   ],
-  "experiencieReward": 85,
   "structureInfo": {
     "type": "Soft",
     "hp": 1000

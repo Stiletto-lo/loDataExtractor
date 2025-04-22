@@ -1,5 +1,10 @@
 {
+  "name": "Penetrating Dart",
+  "parent": "AntiPersonnelTurret",
   "category": "Ammo",
+  "trade_price": 1.5,
+  "stackSize": 500,
+  "weight": 0.2,
   "crafting": [
     {
       "ingredients": [
@@ -59,22 +64,14 @@
       "time": 6
     }
   ],
-  "name": "Penetrating Dart",
-  "parent": "AntiPersonnelTurret",
-  "trade_price": 1.5,
-  "translation": "Penetrating Dart",
-  "type": "PenetratingDart_C",
   "projectileDamage": {
     "damage": 3,
     "penetration": 100
   },
-  "stackSize": 500,
-  "weight": 0.2,
   "toolInfo": [
     {
       "toolType": "RepeaterBolt",
       "tier": 1
     }
-  ],
-  "damageType": "'DartDamage_C'"
+  ]
 }

@@ -1,5 +1,11 @@
 {
+  "name": "Nibiran Hammer",
   "category": "Weapons",
+  "trade_price": 1486.5,
+  "stackSize": 100,
+  "weight": 3.2,
+  "experiencieReward": 1500,
+  "durability": 760,
   "crafting": [
     {
       "ingredients": [
@@ -20,14 +26,6 @@
       "time": 100
     }
   ],
-  "name": "Nibiran Hammer",
-  "trade_price": 1486.5,
-  "translation": "Nibiran Hammer",
-  "type": "OneHandedTitaniumMace2_C",
-  "experiencieReward": 1500,
-  "stackSize": 100,
-  "weight": 3.2,
-  "durability": 760,
   "weaponInfo": {
     "weaponSpeed": 90,
     "impact": 66,
@@ -35,6 +33,5 @@
     "weaponLength": 62,
     "damage": 70,
     "penetration": 10
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

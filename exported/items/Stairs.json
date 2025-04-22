@@ -1,5 +1,7 @@
 {
+  "name": "Stairs",
   "category": "Furniture",
+  "experiencieReward": 40,
   "crafting": [
     {
       "ingredients": [
@@ -14,11 +16,8 @@
       ]
     }
   ],
-  "name": "Stairs",
-  "type": "WallWoodHeavyStairs_C",
   "structureInfo": {
     "type": "Reinforced",
     "hp": 40000
-  },
-  "experiencieReward": 40
+  }
 }

@@ -1,8 +1,8 @@
 {
   "name": "Lumbermill",
   "parent": "Artisan Woodworking Station",
-  "type": "LumberMill_C",
   "category": "Crafting",
+  "experiencieReward": 1500,
   "crafting": [
     {
       "ingredients": [
@@ -25,7 +25,6 @@
       ]
     }
   ],
-  "experiencieReward": 1500,
   "structureInfo": {
     "type": "Soft",
     "hp": 20000

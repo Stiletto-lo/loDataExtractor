@@ -1,4 +1,5 @@
 {
+  "name": "Hangar Gate",
   "category": "Walker Hangar",
   "crafting": [
     {
@@ -18,11 +19,8 @@
       ]
     }
   ],
-  "name": "Hangar Gate",
-  "type": "HangarGate_C",
   "structureInfo": {
     "type": "Reinforced",
     "hp": 40000
-  },
-  "translation": "Hangar Gate"
+  }
 }

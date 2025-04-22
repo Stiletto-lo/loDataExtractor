@@ -1,9 +1,12 @@
 {
   "name": "Rope",
   "parent": "Advanced Fiberworking Station",
-  "type": "Rope_C",
-  "description": "A strong cord used for crafting and construction",
   "category": "Resources",
+  "trade_price": 0.5,
+  "stackSize": 100,
+  "weight": 0.25,
+  "description": "A strong cord used for crafting and construction",
+  "experiencieReward": 4,
   "crafting": [
     {
       "ingredients": [
@@ -47,10 +50,5 @@
       "station": "Artisan Fiberworking Station",
       "time": 1700
     }
-  ],
-  "trade_price": 0.5,
-  "translation": "Rope",
-  "experiencieReward": 4,
-  "stackSize": 100,
-  "weight": 0.25
+  ]
 }

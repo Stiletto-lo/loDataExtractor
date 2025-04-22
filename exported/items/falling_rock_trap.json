@@ -1,5 +1,8 @@
 {
+  "name": "Falling Rock Trap",
   "category": "Defenses",
+  "weight": 10,
+  "experiencieReward": 61,
   "crafting": [
     {
       "ingredients": [
@@ -22,12 +25,7 @@
       ]
     }
   ],
-  "name": "Falling Rock Trap",
-  "type": "TrapRockFalling_C",
-  "experiencieReward": 61,
   "structureInfo": {
     "hp": 35
-  },
-  "translation": "Falling Rock Trap",
-  "weight": 10
+  }
 }

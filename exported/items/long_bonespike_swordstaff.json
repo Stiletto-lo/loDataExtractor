@@ -1,8 +1,12 @@
 {
   "name": "Long Bonespike Swordstaff",
   "parent": "Bonespike Sword",
-  "type": "TwoHandedBoneSword_C",
   "category": "Weapons",
+  "trade_price": 14.4,
+  "stackSize": 100,
+  "weight": 4.6,
+  "experiencieReward": 100,
+  "durability": 500,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +27,6 @@
       "time": 2
     }
   ],
-  "trade_price": 14.4,
-  "translation": "Long Bonespike Swordstaff",
-  "experiencieReward": 100,
-  "stackSize": 100,
-  "weight": 4.6,
-  "durability": 500,
   "weaponInfo": {
     "weaponSpeed": 105,
     "impact": 60,
@@ -42,6 +40,5 @@
       "toolType": "Scythe",
       "tier": 1
     }
-  ],
-  "damageType": "'MeleeSwordDamage_C'"
+  ]
 }

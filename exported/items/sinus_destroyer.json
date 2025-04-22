@@ -1,5 +1,10 @@
 {
+  "name": "Sinus Destroyer",
+  "parent": "Desert Mule",
   "category": "Vitamins",
+  "trade_price": 87.6,
+  "stackSize": 100,
+  "weight": 0.5,
   "crafting": [
     {
       "ingredients": [
@@ -45,12 +50,5 @@
       "station": "Clay Pot",
       "time": 60
     }
-  ],
-  "name": "Sinus Destroyer",
-  "parent": "Desert Mule",
-  "trade_price": 87.6,
-  "translation": "Sinus Destroyer",
-  "type": "SinusDestroyer_C",
-  "stackSize": 100,
-  "weight": 0.5
+  ]
 }

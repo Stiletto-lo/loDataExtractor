@@ -1,18 +1,11 @@
 {
-  "category": "Weapons",
   "name": "Firebomb",
+  "category": "Weapons",
   "trade_price": 16.9,
-  "translation": "Firebomb",
-  "type": "ThrowingLavaBomb_C",
-  "experiencieReward": 20,
   "stackSize": 5,
   "weight": 0.3,
-  "weaponInfo": {
-    "damage": 20,
-    "penetration": 50
-  },
+  "experiencieReward": 20,
   "wikiVisibility": false,
-  "damageType": "Class'MistFireDamageType'",
   "crafting": [
     {
       "ingredients": [
@@ -36,5 +29,9 @@
       "station": "Curing",
       "time": 2
     }
-  ]
+  ],
+  "weaponInfo": {
+    "damage": 20,
+    "penetration": 50
+  }
 }

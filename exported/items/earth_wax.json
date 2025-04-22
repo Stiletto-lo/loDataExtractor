@@ -1,8 +1,11 @@
 {
   "name": "Earth Wax",
   "parent": "Soil Excavator",
-  "type": "EarthWax_C",
   "category": "Resources",
+  "trade_price": 1.4,
+  "stackSize": 100,
+  "weight": 0.44,
+  "experiencieReward": 8,
   "crafting": [
     {
       "ingredients": [
@@ -157,10 +160,5 @@
       "station": "Flotillian Stomping Station",
       "time": 20
     }
-  ],
-  "trade_price": 1.4,
-  "translation": "Earth Wax",
-  "experiencieReward": 8,
-  "stackSize": 100,
-  "weight": 0.44
+  ]
 }

@@ -1,8 +1,12 @@
 {
   "name": "Heavy Rawbone Hand Axe",
   "parent": "OneHandedBoneAxe",
-  "type": "LargeBoneAxe_C",
   "category": "Weapons",
+  "trade_price": 10.7,
+  "stackSize": 100,
+  "weight": 2.9,
+  "experiencieReward": 100,
+  "durability": 550,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +27,6 @@
       "time": 2
     }
   ],
-  "trade_price": 10.7,
-  "translation": "Heavy Rawbone Hand Axe",
-  "experiencieReward": 100,
-  "stackSize": 100,
-  "weight": 2.9,
-  "durability": 550,
   "weaponInfo": {
     "weaponSpeed": 80,
     "impact": 70,
@@ -42,6 +40,5 @@
       "toolType": "TreeCutting",
       "tier": 12
     }
-  ],
-  "damageType": "'MeleeAxeDamage_C'"
+  ]
 }

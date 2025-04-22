@@ -1,8 +1,8 @@
 {
   "name": "Medium Chest",
   "parent": "Small Chest",
-  "type": "ChestMedium_C",
   "category": "Containers",
+  "experiencieReward": 32,
   "crafting": [
     {
       "ingredients": [
@@ -29,7 +29,6 @@
       ]
     }
   ],
-  "experiencieReward": 32,
   "structureInfo": {
     "type": "Soft",
     "hp": 3750

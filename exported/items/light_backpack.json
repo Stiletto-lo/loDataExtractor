@@ -1,8 +1,12 @@
 {
   "name": "Light Backpack",
   "parent": "Foraging Pouch",
-  "type": "SmallBackpack_C",
   "category": "Equipment",
+  "trade_price": 5.6,
+  "stackSize": 100,
+  "weight": 2.8,
+  "experiencieReward": 55,
+  "durability": 120,
   "crafting": [
     {
       "ingredients": [
@@ -16,11 +20,5 @@
         }
       ]
     }
-  ],
-  "trade_price": 5.6,
-  "translation": "Light Backpack",
-  "experiencieReward": 55,
-  "stackSize": 100,
-  "weight": 2.8,
-  "durability": 120
+  ]
 }

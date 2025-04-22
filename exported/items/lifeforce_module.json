@@ -1,5 +1,8 @@
 {
+  "name": "Lifeforce Module",
   "category": "Resources",
+  "weight": 0.24,
+  "experiencieReward": 65,
   "crafting": [
     {
       "ingredients": [
@@ -20,11 +23,6 @@
       "time": 30
     }
   ],
-  "name": "Lifeforce Module",
-  "translation": "Lifeforce Module",
-  "type": "RespawnEffectBoost_C",
-  "experiencieReward": 65,
-  "weight": 0.24,
   "moduleInfo": {
     "max": 20
   }

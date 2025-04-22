@@ -1,8 +1,12 @@
 {
   "name": "Wyndan Flame Sword",
   "parent": "Singblade",
-  "type": "TwoHandedIronSword2_C",
   "category": "Weapons",
+  "trade_price": 336.6,
+  "stackSize": 100,
+  "weight": 4.8,
+  "experiencieReward": 1349,
+  "durability": 800,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +27,6 @@
       "time": 15
     }
   ],
-  "trade_price": 336.6,
-  "translation": "Wyndan Flame Sword",
-  "experiencieReward": 1349,
-  "stackSize": 100,
-  "weight": 4.8,
-  "durability": 800,
   "weaponInfo": {
     "weaponSpeed": 130,
     "impact": 45,
@@ -42,6 +40,5 @@
       "toolType": "Scythe",
       "tier": 1
     }
-  ],
-  "damageType": "'MeleeSwordDamage_C'"
+  ]
 }

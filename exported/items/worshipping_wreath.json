@@ -1,5 +1,7 @@
 {
+  "name": "Worshipping Wreath",
   "category": "Furniture",
+  "weight": 6,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +16,8 @@
       ]
     }
   ],
-  "name": "Worshipping Wreath",
-  "type": "RupuWorshippingWreath_01_C",
   "structureInfo": {
     "type": "Soft",
     "hp": 150
-  },
-  "translation": "Worshipping Wreath",
-  "weight": 6
+  }
 }

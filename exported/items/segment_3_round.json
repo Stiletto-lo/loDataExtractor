@@ -1,5 +1,7 @@
 {
+  "name": "Segment 3 (round)",
   "category": "Furniture",
+  "weight": 20,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +16,8 @@
       ]
     }
   ],
-  "name": "Segment 3 (round)",
-  "type": "Arena_Segment_3_C",
   "structureInfo": {
     "type": "Soft",
     "hp": 2000
-  },
-  "translation": "Segment 3 (round)",
-  "weight": 20
+  }
 }

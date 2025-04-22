@@ -1,8 +1,12 @@
 {
   "name": "Schematic Bag",
   "parent": "Light Backpack",
-  "type": "SchematicBag_C",
   "category": "Equipment",
+  "trade_price": 5.6,
+  "stackSize": 100,
+  "weight": 0.2,
+  "experiencieReward": 26,
+  "durability": 70,
   "crafting": [
     {
       "ingredients": [
@@ -20,11 +24,5 @@
         }
       ]
     }
-  ],
-  "trade_price": 5.6,
-  "translation": "Schematic Bag",
-  "experiencieReward": 26,
-  "stackSize": 100,
-  "weight": 0.2,
-  "durability": 70
+  ]
 }

@@ -1,5 +1,7 @@
 {
+  "name": "Walker Totem",
   "category": "Furniture",
+  "weight": 10,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +16,8 @@
       ]
     }
   ],
-  "name": "Walker Totem",
-  "type": "RupuWalkerTotem_01_C",
   "structureInfo": {
     "type": "Soft",
     "hp": 150
-  },
-  "translation": "Walker Totem",
-  "weight": 10
+  }
 }

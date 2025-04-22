@@ -1,8 +1,12 @@
 {
   "name": "Jaggertooth Swordclub",
   "parent": "Beat Stick",
-  "type": "TwoHandedStoneSword_C",
   "category": "Weapons",
+  "trade_price": 3.7,
+  "stackSize": 100,
+  "weight": 8.5,
+  "experiencieReward": 10,
+  "durability": 350,
   "crafting": [
     {
       "ingredients": [
@@ -21,12 +25,6 @@
       ]
     }
   ],
-  "trade_price": 3.7,
-  "translation": "Jaggertooth Swordclub",
-  "experiencieReward": 10,
-  "stackSize": 100,
-  "weight": 8.5,
-  "durability": 350,
   "weaponInfo": {
     "weaponSpeed": 110,
     "impact": 40,
@@ -40,6 +38,5 @@
       "toolType": "Scythe",
       "tier": 1
     }
-  ],
-  "damageType": "'MeleeSwordDamage_C'"
+  ]
 }

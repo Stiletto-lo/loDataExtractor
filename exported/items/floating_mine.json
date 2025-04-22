@@ -1,8 +1,10 @@
 {
   "name": "Floating Mine",
   "parent": "Fire Dart",
-  "type": "FloatingMine_C",
   "category": "Ammo",
+  "trade_price": 96.4,
+  "stackSize": 28,
+  "weight": 0.8,
   "crafting": [
     {
       "ingredients": [
@@ -20,12 +22,7 @@
       "time": 4
     }
   ],
-  "trade_price": 96.4,
-  "translation": "Floating Mine",
   "projectileDamage": {
     "damage": 150
-  },
-  "stackSize": 28,
-  "weight": 0.8,
-  "damageType": "'ExplosionDamage_C'"
+  }
 }

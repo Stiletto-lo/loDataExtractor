@@ -1,8 +1,12 @@
 {
   "name": "Crude Hatchet",
   "parent": "Beat Stick",
-  "type": "CrudeHatchet_C",
   "category": "Weapons",
+  "trade_price": 1.2,
+  "stackSize": 100,
+  "weight": 1.8,
+  "experiencieReward": 25,
+  "durability": 123,
   "crafting": [
     {
       "ingredients": [
@@ -17,12 +21,6 @@
       ]
     }
   ],
-  "trade_price": 1.2,
-  "translation": "Crude Hatchet",
-  "experiencieReward": 25,
-  "stackSize": 100,
-  "weight": 1.8,
-  "durability": 123,
   "weaponInfo": {
     "weaponSpeed": 115,
     "impact": 35,
@@ -35,6 +33,5 @@
       "toolType": "TreeCutting",
       "tier": 2
     }
-  ],
-  "damageType": "'MeleeAxeDamage_C'"
+  ]
 }

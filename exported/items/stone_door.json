@@ -1,5 +1,7 @@
 {
+  "name": "Stone Door",
   "category": "Stone Structures",
+  "experiencieReward": 4,
   "crafting": [
     {
       "ingredients": [
@@ -22,9 +24,6 @@
       ]
     }
   ],
-  "name": "Stone Door",
-  "type": "WallStoneDoor_C",
-  "experiencieReward": 4,
   "structureInfo": {
     "type": "Solid",
     "hp": 10000

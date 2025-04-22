@@ -1,8 +1,11 @@
 {
   "name": "Wooden Gear",
   "parent": "Advanced Woodworking Station",
-  "type": "WoodenGear_C",
   "category": "Resources",
+  "trade_price": 700,
+  "stackSize": 100,
+  "weight": 0.55,
+  "experiencieReward": 25,
   "crafting": [
     {
       "ingredients": [
@@ -32,10 +35,5 @@
       "station": "Artificer Woodworking Station",
       "time": 30
     }
-  ],
-  "trade_price": 700,
-  "translation": "Wooden Gear",
-  "experiencieReward": 25,
-  "stackSize": 100,
-  "weight": 0.55
+  ]
 }

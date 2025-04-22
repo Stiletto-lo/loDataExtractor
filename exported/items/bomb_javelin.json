@@ -1,8 +1,10 @@
 {
   "name": "Bomb Javelin",
   "parent": "Heavy Javelin",
-  "type": "BombJavelin_C",
   "category": "Weapons",
+  "trade_price": 1.6,
+  "stackSize": 5,
+  "weight": 2,
   "crafting": [
     {
       "ingredients": [
@@ -27,13 +29,8 @@
       "time": 10
     }
   ],
-  "trade_price": 1.6,
-  "translation": "Bomb Javelin",
-  "stackSize": 5,
-  "weight": 2,
   "weaponInfo": {
     "damage": 20,
     "penetration": 30
-  },
-  "damageType": "'FirelessExplosionDamage_C'"
+  }
 }

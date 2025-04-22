@@ -1,5 +1,8 @@
 {
+  "name": "Worm Vivarium",
   "category": "Crafting",
+  "weight": 25,
+  "experiencieReward": 92,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +17,7 @@
       ]
     }
   ],
-  "name": "Worm Vivarium",
-  "type": "WormVivarium_C",
-  "experiencieReward": 92,
   "structureInfo": {
     "hp": 100
-  },
-  "translation": "Worm Vivarium",
-  "weight": 25
+  }
 }

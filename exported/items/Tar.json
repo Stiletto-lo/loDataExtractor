@@ -1,9 +1,12 @@
 {
   "name": "Tar",
   "parent": "Furnace",
-  "type": "Tar_C",
-  "description": "Extracted from deep below volcanic soil.",
   "category": "Liquids",
+  "trade_price": 3.2,
+  "stackSize": 100,
+  "weight": 0.15,
+  "description": "Extracted from deep below volcanic soil.",
+  "experiencieReward": 100,
   "crafting": [
     {
       "ingredients": [
@@ -25,10 +28,5 @@
       "station": "Advanced Furnace",
       "time": 180
     }
-  ],
-  "trade_price": 3.2,
-  "translation": "Tar",
-  "experiencieReward": 100,
-  "stackSize": 100,
-  "weight": 0.15
+  ]
 }

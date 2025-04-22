@@ -1,5 +1,11 @@
 {
+  "name": "Ironblade Quarterstaff",
   "category": "Weapons",
+  "trade_price": 1504.8,
+  "stackSize": 100,
+  "weight": 5.3,
+  "experiencieReward": 1521,
+  "durability": 740,
   "crafting": [
     {
       "ingredients": [
@@ -20,18 +26,9 @@
       "time": 100
     }
   ],
-  "name": "Ironblade Quarterstaff",
-  "trade_price": 1504.8,
-  "translation": "Ironblade Quarterstaff",
-  "type": "TitaniumQuarterstaffBlade2_C",
-  "experiencieReward": 1521,
-  "stackSize": 100,
-  "weight": 5.3,
-  "durability": 740,
   "weaponInfo": {
     "weaponLength": 106,
     "damage": 55,
     "penetration": 20
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

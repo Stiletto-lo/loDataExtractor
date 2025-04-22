@@ -1,8 +1,12 @@
 {
   "name": "Firestone Kopesh",
   "parent": "Short Malletblade",
-  "type": "OneHandedLavaSword_C",
   "category": "Weapons",
+  "trade_price": 103,
+  "stackSize": 100,
+  "weight": 4.2,
+  "experiencieReward": 210,
+  "durability": 685,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +27,6 @@
       "time": 2
     }
   ],
-  "trade_price": 103,
-  "translation": "Firestone Kopesh",
-  "experiencieReward": 210,
-  "stackSize": 100,
-  "weight": 4.2,
-  "durability": 685,
   "weaponInfo": {
     "weaponSpeed": 105,
     "impact": 45,
@@ -42,6 +40,5 @@
       "toolType": "Scythe",
       "tier": 1
     }
-  ],
-  "damageType": "'MeleeSwordDamage_C'"
+  ]
 }

@@ -1,5 +1,7 @@
 {
+  "name": "Fireproof Module",
   "category": "Resources",
+  "weight": 0.24,
   "crafting": [
     {
       "ingredients": [
@@ -20,10 +22,6 @@
       "time": 30
     }
   ],
-  "name": "Fireproof Module",
-  "translation": "Fireproof Module",
-  "type": "FireproofBoost_C",
-  "weight": 0.24,
   "moduleInfo": {
     "max": 20,
     "increase": 4.5,

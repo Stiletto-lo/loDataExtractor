@@ -1,4 +1,6 @@
 {
+  "name": "Bone Scattershot Ammo",
+  "parent": "Scattershot Gun",
   "crafting": [
     {
       "ingredients": [
@@ -46,10 +48,6 @@
       "time": 3
     }
   ],
-  "name": "Bone Scattershot Ammo",
-  "parent": "Scattershot Gun",
-  "translation": "Bone Scattershot Ammo",
-  "type": "BoneScattershot_C",
   "projectileDamage": {
     "damage": 250
   },

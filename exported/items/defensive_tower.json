@@ -1,8 +1,8 @@
 {
   "name": "Defensive Tower",
   "parent": "WoodenWalls",
-  "type": "DefensiveTower_C",
   "category": "Defenses",
+  "experiencieReward": 32,
   "crafting": [
     {
       "ingredients": [
@@ -29,7 +29,6 @@
       ]
     }
   ],
-  "experiencieReward": 32,
   "structureInfo": {
     "type": "Soft",
     "hp": 7500

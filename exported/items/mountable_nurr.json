@@ -1,5 +1,8 @@
 {
+  "name": "Mountable Nurr",
+  "parent": "Advanced Constructions",
   "category": "Interactables",
+  "experiencieReward": 300,
   "crafting": [
     {
       "ingredients": [
@@ -10,12 +13,7 @@
       ]
     }
   ],
-  "name": "Mountable Nurr",
-  "parent": "Advanced Constructions",
-  "type": "MountableNurr_C",
-  "experiencieReward": 300,
   "structureInfo": {
     "hp": 100
-  },
-  "translation": "Mountable Nurr"
+  }
 }

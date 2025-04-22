@@ -1,5 +1,11 @@
 {
+  "name": "Triple Stitch Bracers",
   "category": "Armors",
+  "trade_price": 16.8,
+  "stackSize": 100,
+  "weight": 1.4,
+  "experiencieReward": 65,
+  "durability": 250,
   "crafting": [
     {
       "ingredients": [
@@ -30,14 +36,6 @@
       "time": 2
     }
   ],
-  "name": "Triple Stitch Bracers",
-  "trade_price": 16.8,
-  "translation": "Triple Stitch Bracers",
-  "type": "T2_TripleStitchGloves_C",
-  "experiencieReward": 65,
-  "stackSize": 100,
-  "weight": 1.4,
-  "durability": 250,
   "armorInfo": {
     "reduction": 4.4
   }

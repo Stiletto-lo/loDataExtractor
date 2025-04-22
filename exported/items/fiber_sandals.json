@@ -1,5 +1,10 @@
 {
+  "name": "Fiber Sandals",
   "category": "Armors",
+  "trade_price": 1.8,
+  "stackSize": 100,
+  "weight": 1,
+  "durability": 120,
   "crafting": [
     {
       "ingredients": [
@@ -14,13 +19,6 @@
       ]
     }
   ],
-  "name": "Fiber Sandals",
-  "trade_price": 1.8,
-  "translation": "Fiber Sandals",
-  "type": "T1_FiberBoots_C",
-  "stackSize": 100,
-  "weight": 1,
-  "durability": 120,
   "armorInfo": {
     "reduction": 2
   }

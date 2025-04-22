@@ -1,8 +1,12 @@
 {
   "name": "Infused Obsidian Bottle",
   "parent": "Obsidian Flask",
-  "type": "LavaBottleLarge_C",
   "category": "Equipment",
+  "trade_price": 26,
+  "stackSize": 100,
+  "weight": 1.5,
+  "experiencieReward": 50,
+  "durability": 220,
   "crafting": [
     {
       "ingredients": [
@@ -18,11 +22,5 @@
       "station": "Artisan Fiberworking Station",
       "time": 2
     }
-  ],
-  "trade_price": 26,
-  "translation": "Infused Obsidian Bottle",
-  "experiencieReward": 50,
-  "stackSize": 100,
-  "weight": 1.5,
-  "durability": 220
+  ]
 }

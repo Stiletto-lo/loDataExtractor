@@ -1,8 +1,10 @@
 {
   "name": "Explosive Dart",
   "parent": "Fire Dart",
-  "type": "ExplosiveDart_C",
   "category": "Ammo",
+  "trade_price": 49.8,
+  "stackSize": 200,
+  "weight": 0.6,
   "crafting": [
     {
       "ingredients": [
@@ -24,12 +26,7 @@
       "time": 4
     }
   ],
-  "trade_price": 49.8,
-  "translation": "Explosive Dart",
   "projectileDamage": {
     "damage": 3
-  },
-  "stackSize": 200,
-  "weight": 0.6,
-  "damageType": "'ExplosionDamage_C'"
+  }
 }

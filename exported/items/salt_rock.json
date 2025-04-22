@@ -1,5 +1,10 @@
 {
+  "name": "Salt Rock",
   "category": "Resources",
+  "trade_price": 0.1,
+  "stackSize": 100,
+  "weight": 0.23,
+  "experiencieReward": 3,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +28,5 @@
       "station": "Artisan Soil Auger",
       "time": 20
     }
-  ],
-  "name": "Salt Rock",
-  "trade_price": 0.1,
-  "translation": "Salt Rock",
-  "type": "Salt_C",
-  "experiencieReward": 3,
-  "stackSize": 100,
-  "weight": 0.23
+  ]
 }

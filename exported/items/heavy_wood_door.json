@@ -1,5 +1,7 @@
 {
+  "name": "Heavy Wood Door",
   "category": "Heavy Wood Structures",
+  "experiencieReward": 44,
   "crafting": [
     {
       "ingredients": [
@@ -18,9 +20,6 @@
       ]
     }
   ],
-  "name": "Heavy Wood Door",
-  "type": "WallWoodHeavyDoor_C",
-  "experiencieReward": 44,
   "structureInfo": {
     "type": "Reinforced",
     "hp": 40000

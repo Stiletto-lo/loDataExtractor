@@ -1,5 +1,8 @@
 {
+  "name": "Bullrush Module",
   "category": "Resources",
+  "weight": 0.24,
+  "experiencieReward": 65,
   "crafting": [
     {
       "ingredients": [
@@ -20,11 +23,6 @@
       "time": 30
     }
   ],
-  "name": "Bullrush Module",
-  "translation": "Bullrush Module",
-  "type": "RespawnTimeBoost_C",
-  "experiencieReward": 65,
-  "weight": 0.24,
   "moduleInfo": {
     "max": 20,
     "increase": 4,

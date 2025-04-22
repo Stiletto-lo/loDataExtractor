@@ -1,20 +1,17 @@
 {
   "name": "Flint Orb",
   "parent": "Lobber",
-  "type": "FlintOrb_C",
-  "onlyDevs": true,
   "category": "Ammo",
   "trade_price": 5.2,
-  "translation": "Flint Orb",
+  "stackSize": 100,
+  "weight": 1.5,
+  "experiencieReward": 1,
+  "wikiVisibility": false,
+  "onlyDevs": true,
   "projectileDamage": {
     "damage": 100,
     "penetration": 10,
     "effectivenessVsSoak": 25,
     "effectivenessVsReduce": 25
-  },
-  "experiencieReward": 1,
-  "stackSize": 100,
-  "weight": 1.5,
-  "wikiVisibility": false,
-  "damageType": "'OrbDamage_C'"
+  }
 }

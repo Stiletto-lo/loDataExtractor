@@ -1,8 +1,11 @@
 {
   "name": "Proxy License",
   "parent": "Woodworking Station",
-  "type": "ProxyLicense_C",
   "category": "Interactables",
+  "trade_price": 1,
+  "stackSize": 5,
+  "weight": 0.2,
+  "experiencieReward": 500,
   "crafting": [
     {
       "ingredients": [
@@ -34,10 +37,5 @@
       "station": "Artificer Woodworking Station",
       "time": 600
     }
-  ],
-  "trade_price": 1,
-  "translation": "Proxy License",
-  "experiencieReward": 500,
-  "stackSize": 5,
-  "weight": 0.2
+  ]
 }

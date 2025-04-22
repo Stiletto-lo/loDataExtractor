@@ -1,5 +1,7 @@
 {
+  "name": "Cement Wall 2",
   "category": "Cement Structures",
+  "experiencieReward": 30,
   "crafting": [
     {
       "ingredients": [
@@ -22,9 +24,6 @@
       ]
     }
   ],
-  "name": "Cement Wall 2",
-  "type": "WallConcrete2_C",
-  "experiencieReward": 30,
   "structureInfo": {
     "type": "Solid",
     "hp": 40000

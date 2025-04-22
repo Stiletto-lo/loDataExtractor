@@ -1,8 +1,12 @@
 {
   "name": "Firestone Hammerstaff",
   "parent": "Paddleblade Quarterstaff",
-  "type": "LavaQuarterstaffBlunt_C",
   "category": "Weapons",
+  "trade_price": 100.7,
+  "stackSize": 100,
+  "weight": 5.5,
+  "experiencieReward": 220,
+  "durability": 735,
   "crafting": [
     {
       "ingredients": [
@@ -23,16 +27,9 @@
       "time": 2
     }
   ],
-  "trade_price": 100.7,
-  "translation": "Firestone Hammerstaff",
-  "experiencieReward": 220,
-  "stackSize": 100,
-  "weight": 5.5,
-  "durability": 735,
   "weaponInfo": {
     "weaponLength": 99,
     "damage": 42,
     "penetration": 20
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

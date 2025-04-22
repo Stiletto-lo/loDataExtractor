@@ -1,8 +1,11 @@
 {
   "name": "Throwable Aloe Bomb",
   "parent": "Aloe Goo Bomb",
-  "type": "ThrowableAloeBomb_C",
   "category": "Weapons",
+  "trade_price": 16.9,
+  "stackSize": 5,
+  "weight": 0.3,
+  "experiencieReward": 20,
   "crafting": [
     {
       "ingredients": [
@@ -22,10 +25,5 @@
       "station": "Curing",
       "time": 2
     }
-  ],
-  "trade_price": 16.9,
-  "translation": "Throwable Aloe Bomb",
-  "experiencieReward": 20,
-  "stackSize": 5,
-  "weight": 0.3
+  ]
 }

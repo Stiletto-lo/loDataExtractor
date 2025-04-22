@@ -1,8 +1,8 @@
 {
   "name": "Camp Fire",
   "parent": "Crafting",
-  "type": "CampFire_C",
   "category": "Crafting",
+  "experiencieReward": 18,
   "crafting": [
     {
       "ingredients": [
@@ -21,7 +21,6 @@
       ]
     }
   ],
-  "experiencieReward": 18,
   "structureInfo": {
     "type": "Soft",
     "hp": 500

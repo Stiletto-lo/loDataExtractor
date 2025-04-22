@@ -1,5 +1,8 @@
 {
+  "name": "Walker Gate",
   "category": "Wood: light",
+  "weight": 18.5,
+  "experiencieReward": 98,
   "crafting": [
     {
       "ingredients": [
@@ -22,11 +25,6 @@
       ]
     }
   ],
-  "name": "Walker Gate",
-  "translation": "Walker Gate",
-  "type": "WalkerGate_C",
-  "experiencieReward": 98,
-  "weight": 18.5,
   "structureInfo": {
     "hp": 1000
   }

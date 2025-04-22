@@ -1,8 +1,12 @@
 {
   "name": "Firestone Bludgeon",
   "parent": "Short Ceramic Hoofmace",
-  "type": "OneHandedLavaMace_C",
   "category": "Weapons",
+  "trade_price": 81,
+  "stackSize": 100,
+  "weight": 4.9,
+  "experiencieReward": 210,
+  "durability": 775,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +27,6 @@
       "time": 2
     }
   ],
-  "trade_price": 81,
-  "translation": "Firestone Bludgeon",
-  "experiencieReward": 210,
-  "stackSize": 100,
-  "weight": 4.9,
-  "durability": 775,
   "weaponInfo": {
     "weaponSpeed": 110,
     "impact": 45,
@@ -36,6 +34,5 @@
     "weaponLength": 65,
     "damage": 55,
     "penetration": 10
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

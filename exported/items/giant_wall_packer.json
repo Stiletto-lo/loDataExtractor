@@ -1,5 +1,8 @@
 {
+  "name": "Giant Wall Packer",
   "category": "Defenses",
+  "weight": 150,
+  "experiencieReward": 40,
   "crafting": [
     {
       "ingredients": [
@@ -18,13 +21,8 @@
       ]
     }
   ],
-  "name": "Giant Wall Packer",
-  "type": "WallGiantPacker_C",
-  "experiencieReward": 40,
   "structureInfo": {
     "type": "Reinforced",
     "hp": 25000
-  },
-  "translation": "Giant Wall Packer",
-  "weight": 150
+  }
 }

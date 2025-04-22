@@ -1,8 +1,10 @@
 {
   "name": "Rupu Rock",
   "parent": "RupuSling",
-  "type": "RupuRock_C",
   "category": "Ammo",
+  "trade_price": 1.4,
+  "stackSize": 24,
+  "weight": 0.3,
   "crafting": [
     {
       "ingredients": [
@@ -33,21 +35,16 @@
       "time": 1
     }
   ],
-  "trade_price": 1.4,
-  "translation": "Rupu Rock",
   "projectileDamage": {
     "damage": 100,
     "penetration": 42,
     "effectivenessVsSoak": 80,
     "effectivenessVsReduce": 80
   },
-  "stackSize": 24,
-  "weight": 0.3,
   "toolInfo": [
     {
       "toolType": "Scattershot",
       "tier": 1
     }
-  ],
-  "damageType": "'BluntDamage_C'"
+  ]
 }

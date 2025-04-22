@@ -1,8 +1,11 @@
 {
   "name": "Heavy Backpack",
   "parent": "Medium Backpack",
-  "type": "LargeBackpack_C",
   "category": "Equipment",
+  "trade_price": 131.5,
+  "stackSize": 100,
+  "weight": 7.5,
+  "durability": 500,
   "crafting": [
     {
       "ingredients": [
@@ -18,10 +21,5 @@
       "station": "Artisan Fiberworking Station",
       "time": 2
     }
-  ],
-  "trade_price": 131.5,
-  "translation": "Heavy Backpack",
-  "stackSize": 100,
-  "weight": 7.5,
-  "durability": 500
+  ]
 }

@@ -1,5 +1,8 @@
 {
+  "name": "Fire Goblet",
   "category": "Furniture",
+  "weight": 2.5,
+  "experiencieReward": 6,
   "crafting": [
     {
       "ingredients": [
@@ -18,13 +21,8 @@
       ]
     }
   ],
-  "name": "Fire Goblet",
-  "type": "FireGoblet_C",
-  "experiencieReward": 6,
   "structureInfo": {
     "type": "Soft",
     "hp": 300
-  },
-  "translation": "Fire Goblet",
-  "weight": 2.5
+  }
 }

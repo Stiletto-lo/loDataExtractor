@@ -1,4 +1,5 @@
 {
+  "name": "Hangar Wall with Door",
   "category": "Walker Hangar",
   "crafting": [
     {
@@ -18,11 +19,8 @@
       ]
     }
   ],
-  "name": "Hangar Wall with Door",
-  "type": "HangarWallWithDoor_C",
   "structureInfo": {
     "type": "Reinforced",
     "hp": 40000
-  },
-  "translation": "Hangar Wall with Door"
+  }
 }

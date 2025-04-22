@@ -1,5 +1,11 @@
 {
+  "name": "Charged Boulder",
+  "parent": "Slingshot",
   "category": "Ammo",
+  "trade_price": 150,
+  "stackSize": 5,
+  "weight": 10,
+  "experiencieReward": 300,
   "crafting": [
     {
       "ingredients": [
@@ -56,25 +62,16 @@
       "time": 5
     }
   ],
-  "name": "Charged Boulder",
-  "parent": "Slingshot",
-  "trade_price": 150,
-  "translation": "Charged Boulder",
-  "type": "ChargedBoulder_C",
   "projectileDamage": {
     "damage": 250,
     "penetration": 10,
     "effectivenessVsSoak": 70,
     "effectivenessVsReduce": 70
   },
-  "experiencieReward": 300,
-  "stackSize": 5,
-  "weight": 10,
   "toolInfo": [
     {
       "toolType": "CatapultRock",
       "tier": 3
     }
-  ],
-  "damageType": "'HardenedBoulderDamage_C'"
+  ]
 }

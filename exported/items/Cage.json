@@ -1,5 +1,7 @@
 {
+  "name": "Cage",
   "category": "Furniture",
+  "weight": 10,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +16,8 @@
       ]
     }
   ],
-  "name": "Cage",
-  "type": "RupuCage_01_C",
   "structureInfo": {
     "type": "Soft",
     "hp": 200
-  },
-  "translation": "Cage",
-  "weight": 10
+  }
 }

@@ -1,4 +1,7 @@
 {
+  "name": "Nibirian Dart",
+  "parent": "IronDart",
+  "stackSize": 999,
   "crafting": [
     {
       "ingredients": [
@@ -20,12 +23,7 @@
       "time": 5
     }
   ],
-  "name": "Nibirian Dart",
-  "parent": "IronDart",
-  "translation": "Nibirian Dart",
-  "type": "NibirianDart_C",
   "projectileDamage": {
     "damage": 25
-  },
-  "stackSize": 999
+  }
 }

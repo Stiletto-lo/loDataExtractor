@@ -1,5 +1,8 @@
 {
+  "name": "Basket Wide",
   "category": "Furniture",
+  "weight": 1,
+  "experiencieReward": 6,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +17,7 @@
       ]
     }
   ],
-  "name": "Basket Wide",
-  "type": "Basket2_C",
-  "experiencieReward": 6,
   "structureInfo": {
     "hp": 50
-  },
-  "translation": "Basket Wide",
-  "weight": 1
+  }
 }

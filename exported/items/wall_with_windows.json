@@ -1,5 +1,8 @@
 {
+  "name": "Wall with Windows",
   "category": "Clay",
+  "weight": 7,
+  "experiencieReward": 32,
   "crafting": [
     {
       "ingredients": [
@@ -18,11 +21,6 @@
       ]
     }
   ],
-  "name": "Wall with Windows",
-  "translation": "Wall with Windows",
-  "type": "WallClayWindow2_C",
-  "experiencieReward": 32,
-  "weight": 7,
   "structureInfo": {
     "type": "Solid",
     "hp": 20000

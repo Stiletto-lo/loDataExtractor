@@ -1,8 +1,8 @@
 {
   "name": "Gun Pod",
   "parent": "Advanced Walker Weapons",
-  "type": "GunPod_C",
   "category": "Weapons",
+  "experiencieReward": 34,
   "crafting": [
     {
       "ingredients": [
@@ -25,7 +25,6 @@
       ]
     }
   ],
-  "experiencieReward": 34,
   "structureInfo": {
     "type": "Soft",
     "hp": 3500

@@ -1,8 +1,12 @@
 {
   "name": "Chitin Pickaxe",
-  "parent": "CeramicPickaxe",
-  "type": "ChitinPickaxe_C"
-}"name": "Fiber Weave"
+  "parent": "CeramicPickaxe"
+}ng": [
+    {
+      "ingredients": [
+        {
+          "count": 6,
+          "name": "Fiber Weave"
         },
         {
           "count": 10,
@@ -17,10 +21,6 @@
       "time": 2
     }
   ],
-  "name": "Chitin PickAxe",
-  "translation": "Chitin PickAxe",
-  "type": "ChitinPickAxe_C",
-  "durability": 504,
   "toolInfo": [
     {
       "toolType": "Mining",

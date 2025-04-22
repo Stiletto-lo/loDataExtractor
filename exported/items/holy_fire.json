@@ -1,15 +1,12 @@
 {
-  "category": "Weapons",
   "name": "Holy Fire",
+  "category": "Weapons",
   "trade_price": 16.9,
-  "translation": "Holy Fire",
-  "type": "HolyFire_C",
-  "experiencieReward": 20,
   "stackSize": 5,
   "weight": 0.3,
+  "experiencieReward": 20,
   "weaponInfo": {
     "damage": 20,
     "penetration": 50
-  },
-  "damageType": "'HolyFireDamage_C'"
+  }
 }

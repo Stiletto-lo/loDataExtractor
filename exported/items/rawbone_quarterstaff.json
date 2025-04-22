@@ -1,8 +1,12 @@
 {
   "name": "Rawbone Quarterstaff",
   "parent": "Blunt Quarterstaff",
-  "type": "BoneQuarterstaff_C",
   "category": "Weapons",
+  "trade_price": 8,
+  "stackSize": 100,
+  "weight": 3.48,
+  "experiencieReward": 55,
+  "durability": 1000,
   "crafting": [
     {
       "ingredients": [
@@ -23,16 +27,9 @@
       "time": 2
     }
   ],
-  "trade_price": 8,
-  "translation": "Rawbone Quarterstaff",
-  "experiencieReward": 55,
-  "stackSize": 100,
-  "weight": 3.48,
-  "durability": 1000,
   "weaponInfo": {
     "weaponLength": 145,
     "damage": 32,
     "penetration": 20
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

@@ -1,8 +1,12 @@
 {
   "name": "Split Ceramic Flask",
   "parent": "Ceramic Bottle",
-  "type": "SplitCeramicBottle_C",
   "category": "Equipment",
+  "trade_price": 51.6,
+  "stackSize": 100,
+  "weight": 3.4,
+  "experiencieReward": 70,
+  "durability": 160,
   "crafting": [
     {
       "ingredients": [
@@ -22,11 +26,5 @@
       "station": "Artisan Fiberworking Station",
       "time": 2
     }
-  ],
-  "trade_price": 51.6,
-  "translation": "Split Ceramic Flask",
-  "experiencieReward": 70,
-  "stackSize": 100,
-  "weight": 3.4,
-  "durability": 160
+  ]
 }

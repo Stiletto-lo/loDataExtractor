@@ -1,8 +1,12 @@
 {
   "name": "Torque Battery",
   "parent": "Nomad Grappling Hook",
-  "type": "TorqueContainer_C",
   "category": "Equipment",
+  "trade_price": 8.4,
+  "stackSize": 100,
+  "weight": 0.1,
+  "experiencieReward": 26,
+  "durability": 120,
   "crafting": [
     {
       "ingredients": [
@@ -40,11 +44,5 @@
       "station": "Artisan Fiberworking Station",
       "time": 2
     }
-  ],
-  "trade_price": 8.4,
-  "translation": "Torque Battery",
-  "experiencieReward": 26,
-  "stackSize": 100,
-  "weight": 0.1,
-  "durability": 120
+  ]
 }

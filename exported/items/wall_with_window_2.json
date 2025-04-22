@@ -1,5 +1,8 @@
 {
+  "name": "Wall With Window 2",
   "category": "Concrete",
+  "weight": 8,
+  "experiencieReward": 32,
   "crafting": [
     {
       "ingredients": [
@@ -22,11 +25,6 @@
       ]
     }
   ],
-  "name": "Wall With Window 2",
-  "translation": "Wall With Window 2",
-  "type": "WallConcreteWindow2_C",
-  "experiencieReward": 32,
-  "weight": 8,
   "structureInfo": {
     "type": "Solid",
     "hp": 40000

@@ -1,5 +1,8 @@
 {
+  "name": "Basket Tall",
   "category": "Furniture",
+  "weight": 1,
+  "experiencieReward": 6,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +17,7 @@
       ]
     }
   ],
-  "name": "Basket Tall",
-  "type": "Basket1_C",
-  "experiencieReward": 6,
   "structureInfo": {
     "hp": 50
-  },
-  "translation": "Basket Tall",
-  "weight": 1
+  }
 }

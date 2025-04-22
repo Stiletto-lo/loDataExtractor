@@ -1,8 +1,11 @@
 {
   "name": "Nomad Cloth",
   "parent": "Advanced Fiberworking Station",
-  "type": "BasicCloth_C",
   "category": "Resources",
+  "trade_price": 28,
+  "stackSize": 100,
+  "weight": 0.24,
+  "experiencieReward": 65,
   "crafting": [
     {
       "ingredients": [
@@ -60,10 +63,5 @@
       "station": "Artisan Fiberworking Station",
       "time": 16
     }
-  ],
-  "trade_price": 28,
-  "translation": "Nomad Cloth",
-  "experiencieReward": 65,
-  "stackSize": 100,
-  "weight": 0.24
+  ]
 }

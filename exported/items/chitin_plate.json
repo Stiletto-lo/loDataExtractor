@@ -1,5 +1,10 @@
 {
+  "name": "Chitin Plate",
   "category": "Resources",
+  "trade_price": 6.6,
+  "stackSize": 100,
+  "weight": 0.01,
+  "experiencieReward": 15,
   "crafting": [
     {
       "ingredients": [
@@ -31,12 +36,5 @@
       "station": "Flotillian Stomping Station",
       "time": 5
     }
-  ],
-  "name": "Chitin Plate",
-  "trade_price": 6.6,
-  "translation": "Chitin Plate",
-  "type": "ChitinShell_C",
-  "experiencieReward": 15,
-  "stackSize": 100,
-  "weight": 0.01
+  ]
 }

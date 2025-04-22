@@ -1,5 +1,7 @@
 {
+  "name": "Podium",
   "category": "Furniture",
+  "weight": 20,
   "crafting": [
     {
       "ingredients": [
@@ -14,12 +16,8 @@
       ]
     }
   ],
-  "name": "Podium",
-  "type": "Throne_Podium_01_C",
   "structureInfo": {
     "type": "Soft",
     "hp": 500
-  },
-  "translation": "Podium",
-  "weight": 20
+  }
 }

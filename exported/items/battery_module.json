@@ -1,5 +1,8 @@
 {
+  "name": "Battery Module",
   "category": "Resources",
+  "weight": 0.24,
+  "experiencieReward": 65,
   "crafting": [
     {
       "ingredients": [
@@ -20,11 +23,6 @@
       "time": 30
     }
   ],
-  "name": "Battery Module",
-  "translation": "Battery Module",
-  "type": "TorqueBatteryBoost_C",
-  "experiencieReward": 65,
-  "weight": 0.24,
   "moduleInfo": {
     "max": 20,
     "increase": 100

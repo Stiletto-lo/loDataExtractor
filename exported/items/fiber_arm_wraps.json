@@ -1,5 +1,10 @@
 {
+  "name": "Fiber Arm Wraps",
   "category": "Armors",
+  "trade_price": 3,
+  "stackSize": 100,
+  "weight": 0.4,
+  "durability": 120,
   "crafting": [
     {
       "ingredients": [
@@ -14,13 +19,6 @@
       ]
     }
   ],
-  "name": "Fiber Arm Wraps",
-  "trade_price": 3,
-  "translation": "Fiber Arm Wraps",
-  "type": "T1_FiberGloves_C",
-  "stackSize": 100,
-  "weight": 0.4,
-  "durability": 120,
   "armorInfo": {
     "reduction": 2.2
   }

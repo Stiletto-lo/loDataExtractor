@@ -1,8 +1,12 @@
 {
   "name": "Firestone Bozdogan",
   "parent": "Short Ceramic Hoofmace",
-  "type": "TwoHandedLavaMace_C",
   "category": "Weapons",
+  "trade_price": 104,
+  "stackSize": 100,
+  "weight": 6.2,
+  "experiencieReward": 220,
+  "durability": 780,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +27,6 @@
       "time": 2
     }
   ],
-  "trade_price": 104,
-  "translation": "Firestone Bozdogan",
-  "experiencieReward": 220,
-  "stackSize": 100,
-  "weight": 6.2,
-  "durability": 780,
   "weaponInfo": {
     "weaponSpeed": 95,
     "impact": 80,
@@ -36,6 +34,5 @@
     "weaponLength": 83,
     "damage": 55,
     "penetration": 10
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

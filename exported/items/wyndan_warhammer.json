@@ -1,5 +1,11 @@
 {
+  "name": "Wyndan Warhammer",
   "category": "Weapons",
+  "trade_price": 367.8,
+  "stackSize": 100,
+  "weight": 6,
+  "experiencieReward": 1257,
+  "durability": 780,
   "crafting": [
     {
       "ingredients": [
@@ -20,14 +26,6 @@
       "time": 21
     }
   ],
-  "name": "Wyndan Warhammer",
-  "trade_price": 367.8,
-  "translation": "Wyndan Warhammer",
-  "type": "TwoHandedIronMaul2_C",
-  "experiencieReward": 1257,
-  "stackSize": 100,
-  "weight": 6,
-  "durability": 780,
   "weaponInfo": {
     "weaponSpeed": 110,
     "impact": 85,
@@ -35,6 +33,5 @@
     "weaponLength": 73,
     "damage": 60,
     "penetration": 10
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

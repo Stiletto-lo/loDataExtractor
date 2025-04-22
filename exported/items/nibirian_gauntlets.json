@@ -1,5 +1,11 @@
 {
+  "name": "Nibirian Gauntlets",
   "category": "Armors",
+  "trade_price": 41.1,
+  "stackSize": 100,
+  "weight": 5,
+  "experiencieReward": 140,
+  "durability": 330,
   "crafting": [
     {
       "ingredients": [
@@ -16,14 +22,6 @@
       "time": 30
     }
   ],
-  "name": "Nibirian Gauntlets",
-  "trade_price": 41.1,
-  "translation": "Nibirian Gauntlets",
-  "type": "T4_NibirianGloves_C",
-  "experiencieReward": 140,
-  "stackSize": 100,
-  "weight": 5,
-  "durability": 330,
   "armorInfo": {
     "absorbing": 23,
     "reduction": 5,

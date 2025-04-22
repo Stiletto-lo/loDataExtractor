@@ -1,16 +1,13 @@
 {
   "name": "Light Javelin",
   "parent": "Beat Stick",
-  "type": "JavelinRupu_C",
   "category": "Weapons",
   "trade_price": 1.6,
-  "translation": "Light Javelin",
   "stackSize": 5,
   "weight": 2,
+  "wikiVisibility": false,
   "weaponInfo": {
     "damage": 15,
     "penetration": 15
-  },
-  "wikiVisibility": false,
-  "damageType": "'RupuJavelinDamage_C'"
+  }
 }

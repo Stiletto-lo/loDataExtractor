@@ -1,8 +1,8 @@
 {
   "name": "Small Water Bag",
   "parent": "Construction",
-  "type": "WaterBagSmall_C",
   "category": "Containers",
+  "experiencieReward": 38,
   "crafting": [
     {
       "ingredients": [
@@ -25,7 +25,6 @@
       ]
     }
   ],
-  "experiencieReward": 38,
   "structureInfo": {
     "type": "Soft",
     "hp": 1000

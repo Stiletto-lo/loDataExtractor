@@ -1,7 +1,10 @@
 {
   "name": "Bone Pickaxe",
   "parent": "Simple Pickaxe",
-  "type": "BonePickaxe_C",
+  "trade_price": 24,
+  "weight": 4,
+  "experiencieReward": 70,
+  "durability": 410,
   "crafting": [
     {
       "ingredients": [
@@ -22,11 +25,6 @@
       "time": 2
     }
   ],
-  "trade_price": 24,
-  "translation": "Bone Pickaxe",
-  "experiencieReward": 70,
-  "weight": 4,
-  "durability": 410,
   "weaponInfo": {
     "damage": 25
   },

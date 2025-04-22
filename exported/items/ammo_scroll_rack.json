@@ -1,9 +1,9 @@
 {
   "name": "Ammo Scroll Rack",
   "parent": "Ammo Chest",
-  "type": "AmmoScrollRack_C",
-  "onlyDevs": true,
   "category": "Containers",
+  "experiencieReward": 50,
+  "onlyDevs": true,
   "crafting": [
     {
       "ingredients": [
@@ -30,7 +30,6 @@
       ]
     }
   ],
-  "experiencieReward": 50,
   "structureInfo": {
     "hp": 750
   }

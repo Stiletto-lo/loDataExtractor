@@ -1,8 +1,8 @@
 {
   "name": "Medium Water Bag",
   "parent": "Small Water Bag",
-  "type": "WaterBagMedium_C",
   "category": "Containers",
+  "experiencieReward": 65,
   "crafting": [
     {
       "ingredients": [
@@ -25,7 +25,6 @@
       ]
     }
   ],
-  "experiencieReward": 65,
   "structureInfo": {
     "type": "Soft",
     "hp": 1500

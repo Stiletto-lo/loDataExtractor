@@ -1,8 +1,11 @@
 {
   "name": "Blunt Quarterstaff",
   "parent": "Beat Stick",
-  "type": "ShortQuarterstaff_C",
   "category": "Weapons",
+  "trade_price": 3.1,
+  "stackSize": 100,
+  "weight": 6.8,
+  "durability": 420,
   "crafting": [
     {
       "ingredients": [
@@ -21,15 +24,9 @@
       ]
     }
   ],
-  "trade_price": 3.1,
-  "translation": "Blunt Quarterstaff",
-  "stackSize": 100,
-  "weight": 6.8,
-  "durability": 420,
   "weaponInfo": {
     "weaponLength": 124,
     "damage": 27,
     "penetration": 20
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

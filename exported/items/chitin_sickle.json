@@ -1,4 +1,10 @@
 {
+  "name": "Chitin Sickle",
+  "parent": "CeramicScythe",
+  "trade_price": 6.2,
+  "weight": 2.2,
+  "experiencieReward": 25,
+  "durability": 900,
   "crafting": [
     {
       "ingredients": [
@@ -23,14 +29,6 @@
       "time": 2
     }
   ],
-  "name": "Chitin Sickle",
-  "parent": "CeramicScythe",
-  "trade_price": 6.2,
-  "translation": "Chitin Sickle",
-  "type": "ChitinSickle_C",
-  "experiencieReward": 25,
-  "weight": 2.2,
-  "durability": 900,
   "weaponInfo": {
     "weaponLength": 47
   },

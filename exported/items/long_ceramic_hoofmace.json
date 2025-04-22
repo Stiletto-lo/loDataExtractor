@@ -1,8 +1,12 @@
 {
   "name": "Long Ceramic Hoofmace",
   "parent": "Rawbone Maul",
-  "type": "TwoHandedZirconiumMace_C",
   "category": "Weapons",
+  "trade_price": 118.9,
+  "stackSize": 100,
+  "weight": 6.5,
+  "experiencieReward": 200,
+  "durability": 540,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +27,6 @@
       "time": 2
     }
   ],
-  "trade_price": 118.9,
-  "translation": "Long Ceramic Hoofmace",
-  "experiencieReward": 200,
-  "stackSize": 100,
-  "weight": 6.5,
-  "durability": 540,
   "weaponInfo": {
     "weaponSpeed": 95,
     "impact": 80,
@@ -36,6 +34,5 @@
     "weaponLength": 115,
     "damage": 50,
     "penetration": 10
-  },
-  "damageType": "'MeleeBluntDamage_C'"
+  }
 }

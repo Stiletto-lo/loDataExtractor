@@ -1,8 +1,12 @@
 {
   "name": "Rawbone Battle Axe",
   "parent": "Stone Axe",
-  "type": "TwoHandedBoneAxe_C",
   "category": "Weapons",
+  "trade_price": 18.4,
+  "stackSize": 100,
+  "weight": 4.66,
+  "experiencieReward": 100,
+  "durability": 440,
   "crafting": [
     {
       "ingredients": [
@@ -23,12 +27,6 @@
       "time": 2
     }
   ],
-  "trade_price": 18.4,
-  "translation": "Rawbone Battle Axe",
-  "experiencieReward": 100,
-  "stackSize": 100,
-  "weight": 4.66,
-  "durability": 440,
   "weaponInfo": {
     "weaponSpeed": 80,
     "impact": 80,
@@ -42,6 +40,5 @@
       "toolType": "TreeCutting",
       "tier": 12
     }
-  ],
-  "damageType": "'MeleeAxeDamage_C'"
+  ]
 }

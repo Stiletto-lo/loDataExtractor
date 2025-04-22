@@ -1,9 +1,13 @@
 {
   "name": "Torque Backpack",
   "parent": "Torque Battery",
-  "type": "GrapplingBelt_C",
-  "onlyDevs": true,
   "category": "Equipment",
+  "trade_price": 48.5,
+  "stackSize": 100,
+  "weight": 0.5,
+  "experiencieReward": 154,
+  "durability": 200,
+  "onlyDevs": true,
   "crafting": [
     {
       "ingredients": [
@@ -49,11 +53,5 @@
       "station": "Artisan Fiberworking Station",
       "time": 1
     }
-  ],
-  "trade_price": 48.5,
-  "translation": "Torque Backpack",
-  "experiencieReward": 154,
-  "stackSize": 100,
-  "weight": 0.5,
-  "durability": 200
+  ]
 }

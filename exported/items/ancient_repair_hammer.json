@@ -1,5 +1,11 @@
 {
+  "name": "Ancient Repair Hammer",
   "category": "Tools",
+  "trade_price": 9.5,
+  "stackSize": 100,
+  "weight": 3.12,
+  "experiencieReward": 50,
+  "durability": 50,
   "crafting": [
     {
       "ingredients": [
@@ -16,18 +22,9 @@
       "time": 2
     }
   ],
-  "name": "Ancient Repair Hammer",
-  "trade_price": 9.5,
-  "translation": "Ancient Repair Hammer",
-  "type": "AncientRepairHammer_C",
-  "experiencieReward": 50,
-  "stackSize": 100,
-  "weight": 3.12,
-  "durability": 50,
   "weaponInfo": {
     "weaponLength": 42,
     "damage": 20,
     "penetration": 5
-  },
-  "damageType": "'AncientMeleeRepairHammerDamage_C'"
+  }
 }

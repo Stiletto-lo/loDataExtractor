@@ -1,13 +1,11 @@
 {
-  "category": "Armors",
   "name": "Force Field",
+  "category": "Armors",
   "trade_price": 500,
-  "translation": "Force Field",
-  "type": "ForceField_C",
   "durability": 50,
+  "wikiVisibility": false,
   "armorInfo": {
     "absorbing": 100,
     "reduction": 1000
-  },
-  "wikiVisibility": false
+  }
 }

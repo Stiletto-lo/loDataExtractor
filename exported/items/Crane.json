@@ -1,9 +1,9 @@
 {
   "name": "Crane",
   "parent": "Advanced Constructions",
-  "type": "Crane_C",
-  "description": "Pick up and move heavy objects like firefly walkers and tree logs.",
   "category": "Walker Tools",
+  "description": "Pick up and move heavy objects like firefly walkers and tree logs.",
+  "experiencieReward": 78,
   "crafting": [
     {
       "ingredients": [
@@ -26,7 +26,6 @@
       ]
     }
   ],
-  "experiencieReward": 78,
   "structureInfo": {
     "type": "Soft",
     "hp": 9000
