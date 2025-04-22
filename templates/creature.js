@@ -3,7 +3,7 @@ const creature = {
 	type: undefined,
 	health: undefined,
 	experiencie: undefined,
-	lootTable: undefined,
+	lootTemplate: undefined,
 	category: undefined,
 	tier: undefined,
 	drops: undefined,

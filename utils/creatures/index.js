@@ -107,7 +107,7 @@ function extractCategoryAndTier(creature) {
 	}
 
 	// Set category based on loot table for specific cases - this takes precedence over type-based category
-	if (creature.lootTable?.includes("Rupu")) {
+	if (creature.lootTemplate?.includes("Rupu")) {
 		creature.category = "Rupu";
 	}
 

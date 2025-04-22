@@ -278,7 +278,7 @@ const extractCreatureData = (additionalInfo, objectData) => {
 	const result = {
 		experiencie: additionalInfo?.Properties?.ExperienceAward,
 		health: additionalInfo?.Properties?.MaxHealth,
-		lootTable: dataParser.parseObjectPath(
+		lootTemplate: dataParser.parseObjectPath(
 			additionalInfo?.Properties?.Loot?.ObjectPath,
 		),
 	};
@@ -384,7 +384,7 @@ const parseLootSites = (filePath) => {
 	utilityFunctions.getCreatures().push(creature);
 
 	// Export creature data with loot information
-	if (creature.lootTable) {
+	if (creature.lootTemplate) {
 		const fileName = creature.name.replace(/\s+/g, "_").toLowerCase();
 		const filePath = path.join(OUTPUT_DIR, "creatures", `${fileName}.json`);
 

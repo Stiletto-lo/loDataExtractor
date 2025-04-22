@@ -80,7 +80,7 @@ const parseBlueprintsToItems = () => {
 	const lootTables = utilityFunctions.getAllLootTables();
 
 	for (const blueprint of allBlueprints) {
-		const locations = creatures.filter((c) => c.lootTable === blueprint.name);
+		const locations = creatures.filter((c) => c.lootTemplate === blueprint.name);
 		if (locations.length > 0) {
 			for (const location of locations) {
 				parseLocation(blueprint, location.name);
