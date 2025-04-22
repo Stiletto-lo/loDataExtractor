@@ -17,6 +17,8 @@ const path = require("node:path");
  * @param {Array} items - The array of item objects for drop information
  * @returns {Array} - Enhanced creature data
  */
+const dropProcessor = require('./dropProcessor');
+
 function processCreatures(creatures) {
 	if (!Array.isArray(creatures) || creatures.length === 0) {
 		console.warn("No creatures to process");
@@ -25,9 +27,31 @@ function processCreatures(creatures) {
 
 	console.info(`Processing ${creatures.length} creatures with enhanced data`);
 
-	return creatures
+	// First extract category and tier information
+	let processedCreatures = creatures
 		.map((creature) => extractCategoryAndTier(creature))
 		.filter((creature) => creature.name && Object.keys(creature).length > 2);
+
+	// Get loot data from fileParser
+	const fileParser = require('../../controllers/fileParsers');
+	const lootTemplates = fileParser.getAllLootTemplates();
+	const lootTables = fileParser.getAllLootTables();
+
+	// Then add drop information if loot data is available
+	if (lootTemplates && lootTables) {
+		console.info(`Found ${lootTemplates.length} loot templates and ${Object.keys(lootTables).length} loot tables`);
+		processedCreatures = dropProcessor.addDropInformation(processedCreatures, lootTemplates, lootTables);
+
+		// Log some debug information about drops
+		const creaturesWithDrops = processedCreatures.filter(c => c.drops && c.drops.length > 0);
+		console.info(`Added drops to ${creaturesWithDrops.length} creatures out of ${processedCreatures.length}`);
+		if (creaturesWithDrops.length > 0) {
+			const sampleCreature = creaturesWithDrops[0];
+			console.info(`Sample creature with drops: ${sampleCreature.name} has ${sampleCreature.drops.length} drops`);
+		}
+	}
+
+	return processedCreatures;
 }
 
 /**
