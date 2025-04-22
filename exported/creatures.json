@@ -785,7 +785,7 @@
     "health": 105,
     "experiencie": 600,
     "lootTemplate": "MediumRupu_T2",
-    "category": "White",
+    "category": "Rupu",
     "tier": "T2"
   },
   {
@@ -794,7 +794,7 @@
     "health": 120,
     "experiencie": 2200,
     "lootTemplate": "MediumRupu_T3",
-    "category": "White",
+    "category": "Rupu",
     "tier": "T3"
   },
   {
@@ -810,6 +810,7 @@
     "type": "ZharvakkoShaman_C",
     "health": 250,
     "experiencie": 210,
-    "lootTemplate": "EasyRupu_T1"
+    "lootTemplate": "EasyRupu_T1",
+    "category": "Rupu"
   }
 ]
