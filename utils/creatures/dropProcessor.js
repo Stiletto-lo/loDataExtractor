@@ -160,9 +160,6 @@ function addDropInformation(creatures, lootTemplates, lootTables) {
   const normalizedTemplates = normalizeTemplates(lootTemplates);
   const lootTablesMap = normalizeLootTables(lootTables);
 
-  // Debug log for available templates
-  console.debug(`Available normalized templates: ${Object.keys(normalizedTemplates).join(', ')}`);
-
   // Process each creature
   return creatures.map(creature => {
     // Skip if creature has no lootTemplate

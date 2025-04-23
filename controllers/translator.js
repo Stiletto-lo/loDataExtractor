@@ -14,7 +14,6 @@ const controller = {};
 
 // Import translation dictionaries
 const additionalTranslations = require("../translations/aditionalTranslations");
-const lootSitesTranslations = require("../translations/lootSites");
 const unifiedTechTreeNames = require("../translations/unifiedTechTreeNames");
 const itemNameGlossary = require("./fileParsers/itemNameGlossary");
 
@@ -43,37 +42,6 @@ const trimIfExists = (text) => {
  */
 const isNullOrEmpty = (value) => {
 	return value === null || value === undefined || value === "";
-};
-
-/**
- * Translates a loot site name
- * @param {string} oldName - The original name to translate
- * @returns {string} - The translated name
- */
-controller.translateLootSite = (oldName) => {
-	if (isNullOrEmpty(oldName)) {
-		return "";
-	}
-
-	let name = oldName;
-
-	// Check if direct translation exists in loot sites dictionary
-	if (lootSitesTranslations[name]) {
-		return trimIfExists(lootSitesTranslations[name]);
-	}
-
-	// Try to find translation in other dictionaries
-	const anotherName = controller.searchName(name);
-	if (anotherName) {
-		return anotherName;
-	}
-
-	// Try to translate each part of the name
-	name = controller.translateEachPart(name);
-
-	console.warn(`No translation for: ${name}`);
-
-	return trimIfExists(name);
 };
 
 /**
@@ -202,13 +170,6 @@ controller.searchName = (name) => {
 	// Check in all translations
 	if (translationStore.allTranslations[name]) {
 		const translation = trimIfExists(translationStore.allTranslations[name]);
-		controller.addTranslationInUse(name, translation);
-		return translation;
-	}
-
-	// Check in loot sites translations
-	if (lootSitesTranslations[name]) {
-		const translation = trimIfExists(lootSitesTranslations[name]);
 		controller.addTranslationInUse(name, translation);
 		return translation;
 	}
@@ -354,23 +315,6 @@ controller.addDescriptions = (allItems) => {
 
 		return item;
 	});
-};
-
-/**
- * Adds a loot site translation
- * @param {string} key - The key to add
- * @param {string} translation - The translation to add
- */
-controller.addLootSiteTranslation = (key, translation) => {
-	if (isNullOrEmpty(key) || isNullOrEmpty(translation)) {
-		return;
-	}
-
-	const keyCleaned = key.replaceAll("_C", "").trim();
-
-	if (!lootSitesTranslations[keyCleaned]) {
-		lootSitesTranslations[keyCleaned] = trimIfExists(translation);
-	}
 };
 
 /**
