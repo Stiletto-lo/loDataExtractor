@@ -892,6 +892,9 @@
     "type": "KnowledgeTabletAnimal_C"
   },
   {
+    "name": "Anti Personnel Turret",
+    "parent": "Improved Walker Weapons",
+    "type": "AntiPersonnelTurret_C",
     "category": "Weapons",
     "crafting": [
       {
@@ -911,21 +914,11 @@
         ]
       }
     ],
-    "name": "Anti-Personnel Turret",
-    "parent": "Improved Walker Weapons",
-    "type": "AntiPersonnelTurret_C",
     "experiencieReward": 100,
     "structureInfo": {
       "type": "Medium",
       "hp": 500
-    },
-    "translation": "Anti-Personnel Turret",
-    "weight": 30
-  },
-  {
-    "name": "AntiPersonnelTurret",
-    "parent": "Improved Walker Weapons",
-    "type": "AntiPersonnelTurret_C"
+    }
   },
   {
     "category": "Resources",
@@ -1501,14 +1494,14 @@
         ]
       }
     ],
-    "name": "Balang Walker Upgrade - Torque - Tier 1",
+    "name": "Balang Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 600
     }
   },
   {
     "category": "Upgrades",
-    "name": "Balang Walker Upgrade - Torque - Tier 2",
+    "name": "Balang Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 1200
     }
@@ -1537,7 +1530,7 @@
         ]
       }
     ],
-    "name": "Balang Walker Upgrade - Torque - Tier 3",
+    "name": "Balang Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 1800
     }
@@ -1566,7 +1559,7 @@
         ]
       }
     ],
-    "name": "Balang Walker Upgrade - Torque - Tier 4",
+    "name": "Balang Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 3000
     }
@@ -1591,7 +1584,7 @@
         ]
       }
     ],
-    "name": "Balang Walker Upgrade - Water - Tier 1",
+    "name": "Balang Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 50
     }
@@ -1612,7 +1605,7 @@
         ]
       }
     ],
-    "name": "Balang Walker Upgrade - Water - Tier 2",
+    "name": "Balang Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 125
     }
@@ -1637,7 +1630,7 @@
         ]
       }
     ],
-    "name": "Balang Walker Upgrade - Water - Tier 3",
+    "name": "Balang Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 200
     }
@@ -1662,7 +1655,7 @@
         ]
       }
     ],
-    "name": "Balang Walker Upgrade - Water - Tier 4",
+    "name": "Balang Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 300
     }
@@ -1775,7 +1768,7 @@
         ]
       }
     ],
-    "name": "Ballista - Tier 2",
+    "name": "Ballista Tier 2",
     "type": "Ballista_T2_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -1809,7 +1802,7 @@
         ]
       }
     ],
-    "name": "Ballista - Tier 3",
+    "name": "Ballista Tier 3",
     "type": "Ballista_T3_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -1839,7 +1832,7 @@
         ]
       }
     ],
-    "name": "Ballista - Tier 4",
+    "name": "Ballista Tier 4",
     "type": "Ballista_T4_C",
     "experiencieReward": 78,
     "structureInfo": {
@@ -2493,6 +2486,9 @@
     }
   },
   {
+    "name": "Baskwood Boots",
+    "parent": "BaskwoodTorso",
+    "type": "T2_BaskwoodBoots_C",
     "category": "Armors",
     "crafting": [
       {
@@ -2524,10 +2520,8 @@
         "time": 2
       }
     ],
-    "name": "Baskwood Boots",
     "trade_price": 19.8,
     "translation": "Baskwood Boots",
-    "type": "T2_BaskwoodBoots_C",
     "experiencieReward": 75,
     "stackSize": 100,
     "weight": 4.3,
@@ -2585,17 +2579,12 @@
     }
   },
   {
-    "name": "BaskwoodBoots",
-    "parent": "BaskwoodTorso",
-    "type": "BaskwoodBoots_C"
-  },
-  {
-    "name": "BaskwoodGloves",
+    "name": "Baskwood Gloves",
     "parent": "BaskwoodTorso",
     "type": "BaskwoodGloves_C"
   },
   {
-    "name": "BaskwoodTorso",
+    "name": "Baskwood Torso",
     "parent": "RupuFurTorso",
     "type": "BaskwoodTorso_C"
   },
@@ -3651,6 +3640,11 @@
     "durability": 500
   },
   {
+    "name": "Bone Scattershot",
+    "parent": "Scattershot Gun",
+    "type": "BoneScattershot_C"
+  },
+  {
     "crafting": [
       {
         "ingredients": [
@@ -3758,11 +3752,6 @@
     "experiencieReward": 8,
     "stackSize": 100,
     "weight": 0.28
-  },
-  {
-    "name": "BoneScattershot",
-    "parent": "Scattershot Gun",
-    "type": "BoneScattershot_C"
   },
   {
     "name": "Bonebreaker",
@@ -4037,7 +4026,7 @@
     }
   },
   {
-    "name": "BrittleBoneTorso",
+    "name": "Brittle Bone Torso",
     "parent": "ForesterTorso",
     "type": "BrittleBoneTorso_C"
   },
@@ -4307,7 +4296,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Cargo - Tier 1",
+    "name": "Buffalo Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -4330,7 +4319,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Cargo - Tier 2",
+    "name": "Buffalo Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
       "containerSlots": 13
     }
@@ -4355,7 +4344,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Cargo - Tier 3",
+    "name": "Buffalo Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
       "containerSlots": 16
     }
@@ -4380,7 +4369,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Cargo - Tier 4",
+    "name": "Buffalo Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 19
     }
@@ -4405,7 +4394,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Durability - Tier 1",
+    "name": "Buffalo Walker Upgrade Durability Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -4428,7 +4417,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Durability - Tier 2",
+    "name": "Buffalo Walker Upgrade Durability Tier 2",
     "upgradeInfo": {
       "bonusHp": 10000
     }
@@ -4453,7 +4442,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Durability - Tier 3",
+    "name": "Buffalo Walker Upgrade Durability Tier 3",
     "upgradeInfo": {
       "bonusHp": 20000
     }
@@ -4478,7 +4467,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Durability - Tier 4",
+    "name": "Buffalo Walker Upgrade Durability Tier 4",
     "upgradeInfo": {
       "bonusHp": 30000
     }
@@ -4503,7 +4492,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Gear - Tier 1",
+    "name": "Buffalo Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 10
     }
@@ -4528,7 +4517,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Gear - Tier 2",
+    "name": "Buffalo Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
       "containerSlots": 15
     }
@@ -4553,7 +4542,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Gear - Tier 3",
+    "name": "Buffalo Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -4578,7 +4567,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Gear - Tier 4",
+    "name": "Buffalo Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
       "containerSlots": 25
     }
@@ -4603,7 +4592,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Mobility - Tier 1",
+    "name": "Buffalo Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -4626,7 +4615,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Mobility - Tier 2",
+    "name": "Buffalo Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -4649,7 +4638,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Mobility - Tier 3",
+    "name": "Buffalo Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -4672,7 +4661,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Mobility - Tier 4",
+    "name": "Buffalo Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -4691,7 +4680,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Torque - Tier 1",
+    "name": "Buffalo Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 1000
     }
@@ -4716,7 +4705,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Torque - Tier 2",
+    "name": "Buffalo Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 1800
     }
@@ -4741,7 +4730,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Torque - Tier 3",
+    "name": "Buffalo Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 3000
     }
@@ -4766,7 +4755,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Torque - Tier 4",
+    "name": "Buffalo Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 5000
     }
@@ -4791,7 +4780,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Water - Tier 1",
+    "name": "Buffalo Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 180
     }
@@ -4816,7 +4805,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Water - Tier 2",
+    "name": "Buffalo Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 230
     }
@@ -4841,7 +4830,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Water - Tier 3",
+    "name": "Buffalo Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 290
     }
@@ -4866,7 +4855,7 @@
         ]
       }
     ],
-    "name": "Buffalo Walker Upgrade - Water - Tier 4",
+    "name": "Buffalo Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 350
     }
@@ -5239,6 +5228,9 @@
     "stackSize": 10
   },
   {
+    "name": "Camelop Walker",
+    "parent": "Hercul Walker",
+    "type": "Camelop_C",
     "category": "Walkers",
     "crafting": [
       {
@@ -5278,23 +5270,13 @@
         ]
       }
     ],
-    "name": "Camelop  Walker",
-    "parent": "Hercul Walker",
-    "type": "Camelop_C",
     "structureInfo": {
       "type": "BlueprintGeneratedClassCamelopLegsDamageOverride_C'",
       "hp": 13000
     },
     "walkerinfo": {
       "category": "Large"
-    },
-    "translation": "Camelop  Walker",
-    "weight": 29.44
-  },
-  {
-    "name": "Camelop Walker",
-    "parent": "Hercul Walker",
-    "type": "Camelop_C"
+    }
   },
   {
     "category": "Walker Parts",
@@ -5351,28 +5333,28 @@
         ]
       }
     ],
-    "name": "Camelop Walker Upgrade - Torque - Tier 1",
+    "name": "Camelop Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 1600
     }
   },
   {
     "category": "Upgrades",
-    "name": "Camelop Walker Upgrade - Torque - Tier 2",
+    "name": "Camelop Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 2400
     }
   },
   {
     "category": "Upgrades",
-    "name": "Camelop Walker Upgrade - Torque - Tier 3",
+    "name": "Camelop Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 4000
     }
   },
   {
     "category": "Upgrades",
-    "name": "Camelop Walker Upgrade - Torque - Tier 4",
+    "name": "Camelop Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 6000
     }
@@ -5393,7 +5375,7 @@
         ]
       }
     ],
-    "name": "Camelop Walker Upgrade - Water - Tier 1",
+    "name": "Camelop Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 400
     }
@@ -5414,7 +5396,7 @@
         ]
       }
     ],
-    "name": "Camelop Walker Upgrade - Water - Tier 2",
+    "name": "Camelop Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 600
     }
@@ -5435,7 +5417,7 @@
         ]
       }
     ],
-    "name": "Camelop Walker Upgrade - Water - Tier 3",
+    "name": "Camelop Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 800
     }
@@ -5456,7 +5438,7 @@
         ]
       }
     ],
-    "name": "Camelop Walker Upgrade - Water - Tier 4",
+    "name": "Camelop Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 16000
     }
@@ -5526,6 +5508,9 @@
     }
   },
   {
+    "name": "Carapace Boots",
+    "parent": "CarapaceTorso",
+    "type": "T3_CarapaceBoots_C",
     "category": "Armors",
     "crafting": [
       {
@@ -5547,10 +5532,8 @@
         "time": 2
       }
     ],
-    "name": "Carapace Boots",
     "trade_price": 190.5,
     "translation": "Carapace Boots",
-    "type": "T3_CarapaceBoots_C",
     "experiencieReward": 100,
     "stackSize": 100,
     "weight": 3.3,
@@ -5598,23 +5581,18 @@
     }
   },
   {
-    "name": "CarapaceBoots",
-    "parent": "CarapaceTorso",
-    "type": "CarapaceBoots_C"
-  },
-  {
-    "name": "CarapaceGloves",
+    "name": "Carapace Gloves",
     "parent": "CarapaceTorso",
     "type": "CarapaceGloves_C"
   },
   {
-    "name": "CarapaceTorso",
+    "name": "Carapace Torso",
     "parent": "BaskwoodTorso",
     "type": "CarapaceTorso_C"
   },
   {
     "category": "Spare Parts",
-    "name": "Cargo Hold - Tier 1 Upgrade",
+    "name": "Cargo Hold Tier 1 Upgrade",
     "translation": "Cargo Hold - Tier 1 Upgrade",
     "type": "SparePartWoodCargo_C",
     "experiencieReward": 10,
@@ -5623,7 +5601,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Cargo Hold - Tier 2 Upgrade",
+    "name": "Cargo Hold Tier 2 Upgrade",
     "translation": "Cargo Hold - Tier 2 Upgrade",
     "type": "SparePartBoneCargo_C",
     "experiencieReward": 20,
@@ -5632,7 +5610,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Cargo Hold - Tier 3 Upgrade",
+    "name": "Cargo Hold Tier 3 Upgrade",
     "translation": "Cargo Hold - Tier 3 Upgrade",
     "type": "SparePartClayCargo_C",
     "experiencieReward": 30,
@@ -5641,7 +5619,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Cargo Hold - Tier 4 Upgrade",
+    "name": "Cargo Hold Tier 4 Upgrade",
     "translation": "Cargo Hold - Tier 4 Upgrade",
     "type": "SparePartIronCargo_C",
     "experiencieReward": 40,
@@ -5741,6 +5719,9 @@
     }
   },
   {
+    "name": "Catapult Boulder",
+    "parent": "Catapult",
+    "type": "CatapultBoulder_C",
     "category": "Ammo",
     "crafting": [
       {
@@ -5758,11 +5739,8 @@
         "time": 8
       }
     ],
-    "name": "Catapult Boulder",
-    "parent": "Catapult",
     "trade_price": 8,
     "translation": "Catapult Boulder",
-    "type": "CatapultBoulder_C",
     "projectileDamage": {
       "damage": 200,
       "penetration": 10,
@@ -5778,11 +5756,6 @@
       }
     ],
     "damageType": "'BoulderDamage_C'"
-  },
-  {
-    "name": "CatapultBoulder",
-    "parent": "Catapult",
-    "type": "CatapultBoulder_C"
   },
   {
     "category": "Resources",
@@ -5849,7 +5822,7 @@
         ]
       }
     ],
-    "name": "Cement BalangCore",
+    "name": "Cement Balang Core",
     "type": "BalangCore_C",
     "structureInfo": {
       "type": "Solid",
@@ -6037,7 +6010,7 @@
         ]
       }
     ],
-    "name": "Cement SilurCore",
+    "name": "Cement Silur Core",
     "type": "SilurCore_C",
     "structureInfo": {
       "type": "Solid",
@@ -6248,6 +6221,9 @@
     "type": "CeramicBottle_C"
   },
   {
+    "name": "Ceramic Dart",
+    "parent": "Bone Dart",
+    "type": "CeramicDart_C",
     "crafting": [
       {
         "ingredients": [
@@ -6269,11 +6245,8 @@
         "time": 5
       }
     ],
-    "name": "Ceramic Dart",
-    "parent": "Bone Dart",
     "trade_price": 1.5,
     "translation": "Ceramic Dart",
-    "type": "CeramicDart_C",
     "projectileDamage": {
       "damage": 15.5
     },
@@ -6359,28 +6332,31 @@
     "damageType": "'MeleeAxeDamage_C'"
   },
   {
-    "category": "Resources",
     "name": "Ceramic Nails",
     "parent": "Lathe",
+    "type": "CeramicNails_C",
+    "onlyDevs": true,
+    "category": "Resources",
     "trade_price": 0.4,
     "translation": "Ceramic Nails",
-    "type": "CeramicNails_C",
     "experiencieReward": 8,
     "stackSize": 100,
-    "weight": 0.28,
-    "onlyDevs": true
+    "weight": 0.28
   },
   {
     "name": "Ceramic Orb",
     "parent": "Lobber",
-    "translation": "Ceramic Orb",
     "type": "CeramicOrb_C",
+    "onlyDevs": true,
+    "translation": "Ceramic Orb",
     "projectileDamage": {
       "damage": 200
-    },
-    "onlyDevs": true
+    }
   },
   {
+    "name": "Ceramic Pickaxe",
+    "parent": "Bone Pickaxe",
+    "type": "CeramicPickaxe_C",
     "crafting": [
       {
         "ingredients": [
@@ -6401,11 +6377,8 @@
         "time": 2
       }
     ],
-    "name": "Ceramic Pickaxe",
-    "parent": "Bone Pickaxe",
     "trade_price": 98.2,
     "translation": "Ceramic Pickaxe",
-    "type": "CeramicPickaxe_C",
     "experiencieReward": 120,
     "weight": 5,
     "durability": 550,
@@ -6421,6 +6394,9 @@
     ]
   },
   {
+    "name": "Ceramic Repair Hammer",
+    "parent": "Bone Repair Hammer",
+    "type": "CeramicRepairHammer_C",
     "crafting": [
       {
         "ingredients": [
@@ -6445,10 +6421,7 @@
         "time": 2
       }
     ],
-    "name": "Ceramic Repair Hammer",
-    "parent": "Bone Repair Hammer",
     "translation": "Ceramic Repair Hammer",
-    "type": "CeramicRepairHammer_C",
     "durability": 1000
   },
   {
@@ -6506,6 +6479,11 @@
     "damageType": "'RokDamage_C'"
   },
   {
+    "name": "Ceramic Scattershot",
+    "parent": "BoneScattershot",
+    "type": "CeramicScattershot_C"
+  },
+  {
     "crafting": [
       {
         "ingredients": [
@@ -6536,6 +6514,11 @@
         "tier": 3
       }
     ]
+  },
+  {
+    "name": "Ceramic Scythe",
+    "parent": "Bone Sickle",
+    "type": "CeramicScythe_C"
   },
   {
     "name": "Ceramic Shard",
@@ -6570,7 +6553,7 @@
     "weight": 0.22
   },
   {
-    "name": "Ceramic-Tipped Bolt",
+    "name": "Ceramic Tipped Bolt",
     "parent": "Bone Bolt",
     "type": "CeramicBolt_C",
     "crafting": [
@@ -6646,7 +6629,7 @@
         "time": 5
       }
     ],
-    "name": "Ceramic-Tipped Harpoon",
+    "name": "Ceramic Tipped Harpoon",
     "parent": "Ceramic Bolt",
     "trade_price": 14.1,
     "translation": "Ceramic-Tipped Harpoon",
@@ -6662,43 +6645,6 @@
         "tier": 3
       }
     ]
-  },
-  {
-    "name": "CeramicDart",
-    "parent": "Bone Dart",
-    "type": "CeramicDart_C"
-  },
-  {
-    "name": "CeramicNails",
-    "parent": "Lathe",
-    "type": "CeramicNails_C",
-    "onlyDevs": true
-  },
-  {
-    "name": "CeramicOrb",
-    "parent": "Lobber",
-    "type": "CeramicOrb_C",
-    "onlyDevs": true
-  },
-  {
-    "name": "CeramicPickaxe",
-    "parent": "Bone Pickaxe",
-    "type": "CeramicPickaxe_C"
-  },
-  {
-    "name": "CeramicRepairHammer",
-    "parent": "Bone Repair Hammer",
-    "type": "CeramicRepairHammer_C"
-  },
-  {
-    "name": "CeramicScattershot",
-    "parent": "BoneScattershot",
-    "type": "CeramicScattershot_C"
-  },
-  {
-    "name": "CeramicScythe",
-    "parent": "Bone Sickle",
-    "type": "CeramicScythe_C"
   },
   {
     "category": "Furniture",
@@ -6902,6 +6848,9 @@
     "weight": 0.15
   },
   {
+    "name": "Charged Boulder",
+    "parent": "Slingshot",
+    "type": "ChargedBoulder_C",
     "category": "Ammo",
     "crafting": [
       {
@@ -6959,11 +6908,8 @@
         "time": 5
       }
     ],
-    "name": "Charged Boulder",
-    "parent": "Slingshot",
     "trade_price": 150,
     "translation": "Charged Boulder",
-    "type": "ChargedBoulder_C",
     "projectileDamage": {
       "damage": 250,
       "penetration": 10,
@@ -7044,22 +6990,17 @@
     "damageType": "'HardenedRokDamage_C'"
   },
   {
-    "name": "ChargedBoulder",
-    "parent": "Slingshot",
-    "type": "ChargedBoulder_C"
-  },
-  {
-    "name": "ChestBaseMaintenance_T2",
+    "name": "Chest Base Maintenance_T2",
     "parent": "Maintenance Box",
     "type": "ChestBaseMaintenance_T2_C"
   },
   {
-    "name": "ChestBaseMaintenance_T3",
+    "name": "Chest Base Maintenance_T3",
     "parent": "ChestBaseMaintenance_T2",
     "type": "ChestBaseMaintenance_T3_C"
   },
   {
-    "name": "ChestGigantic",
+    "name": "Chest Gigantic",
     "parent": "Large Chest",
     "type": "ChestGigantic_C"
   },
@@ -7102,7 +7043,7 @@
         "time": 2
       }
     ],
-    "name": "Chitin PickAxe",
+    "name": "Chitin Pick Axe",
     "translation": "Chitin PickAxe",
     "type": "ChitinPickAxe_C",
     "durability": 504,
@@ -7198,6 +7139,9 @@
     "wikiVisibility": false
   },
   {
+    "name": "Chitin Sickle",
+    "parent": "CeramicScythe",
+    "type": "ChitinSickle_C",
     "crafting": [
       {
         "ingredients": [
@@ -7222,11 +7166,8 @@
         "time": 2
       }
     ],
-    "name": "Chitin Sickle",
-    "parent": "CeramicScythe",
     "trade_price": 6.2,
     "translation": "Chitin Sickle",
-    "type": "ChitinSickle_C",
     "experiencieReward": 25,
     "weight": 2.2,
     "durability": 900,
@@ -7239,11 +7180,6 @@
         "tier": 17
       }
     ]
-  },
-  {
-    "name": "ChitinSickle",
-    "parent": "CeramicScythe",
-    "type": "ChitinSickle_C"
   },
   {
     "category": "Furniture",
@@ -7565,8 +7501,8 @@
   {
     "name": "Clay Walls",
     "parent": "StoneWalls",
-    "translation": "Clay Walls",
-    "type": "ClayWalls_C"
+    "type": "ClayWalls_C",
+    "translation": "Clay Walls"
   },
   {
     "category": "Schematics",
@@ -7583,11 +7519,6 @@
       "Clay Battlement",
       "Clay Wall"
     ]
-  },
-  {
-    "name": "ClayWalls",
-    "parent": "StoneWalls",
-    "type": "ClayWalls_C"
   },
   {
     "name": "Cloak",
@@ -7662,7 +7593,7 @@
     }
   },
   {
-    "name": "CloakedRupuFurTorso",
+    "name": "Cloaked Rupu Fur Torso",
     "parent": "RupuFurTorso",
     "type": "CloakedRupuFurTorso_C"
   },
@@ -7697,6 +7628,9 @@
     "weight": 13
   },
   {
+    "name": "Cluster Bomb",
+    "parent": "Slingshot",
+    "type": "ClusterBomb_C",
     "category": "Ammo",
     "crafting": [
       {
@@ -7726,23 +7660,17 @@
         "time": 75
       }
     ],
-    "name": "Cluster Bomb",
-    "parent": "Slingshot",
     "trade_price": 84.7,
     "translation": "Cluster Bomb",
-    "type": "RupuCarpetBomb_C",
     "projectileDamage": {
-      "damage": 20
+      "damage": 20,
+      "penetration": 55,
+      "effectivenessVsSoak": 95,
+      "effectivenessVsReduce": 85
     },
     "stackSize": 10,
     "weight": 30,
-    "damageType": "'ExplosionDamage_C'",
-    "wikiVisibility": false
-  },
-  {
-    "name": "ClusterBomb",
-    "parent": "Slingshot",
-    "type": "ClusterBomb_C"
+    "damageType": "'ClusterBombDamage_C'"
   },
   {
     "name": "Cobra Walker",
@@ -7840,28 +7768,28 @@
   },
   {
     "category": "Upgrades",
-    "name": "Cobra Walker Upgrade - Cargo - Tier 1",
+    "name": "Cobra Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
       "containerSlots": 2
     }
   },
   {
     "category": "Upgrades",
-    "name": "Cobra Walker Upgrade - Cargo - Tier 2",
+    "name": "Cobra Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
       "containerSlots": 3
     }
   },
   {
     "category": "Upgrades",
-    "name": "Cobra Walker Upgrade - Cargo - Tier 3",
+    "name": "Cobra Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
       "containerSlots": 4
     }
   },
   {
     "category": "Upgrades",
-    "name": "Cobra Walker Upgrade - Cargo - Tier 4",
+    "name": "Cobra Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 5
     }
@@ -7878,28 +7806,28 @@
         ]
       }
     ],
-    "name": "Cobra Walker Upgrade - Torque - Tier 1",
+    "name": "Cobra Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 800
     }
   },
   {
     "category": "Upgrades",
-    "name": "Cobra Walker Upgrade - Torque - Tier 2",
+    "name": "Cobra Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 1200
     }
   },
   {
     "category": "Upgrades",
-    "name": "Cobra Walker Upgrade - Torque - Tier 3",
+    "name": "Cobra Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 2000
     }
   },
   {
     "category": "Upgrades",
-    "name": "Cobra Walker Upgrade - Torque - Tier 4",
+    "name": "Cobra Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 4000
     }
@@ -7920,7 +7848,7 @@
         ]
       }
     ],
-    "name": "Cobra Walker Upgrade - Water - Tier 1",
+    "name": "Cobra Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 160
     }
@@ -7941,7 +7869,7 @@
         ]
       }
     ],
-    "name": "Cobra Walker Upgrade - Water - Tier 2",
+    "name": "Cobra Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 300
     }
@@ -7962,7 +7890,7 @@
         ]
       }
     ],
-    "name": "Cobra Walker Upgrade - Water - Tier 3",
+    "name": "Cobra Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 540
     }
@@ -7983,7 +7911,7 @@
         ]
       }
     ],
-    "name": "Cobra Walker Upgrade - Water - Tier 4",
+    "name": "Cobra Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 1000
     }
@@ -8039,8 +7967,8 @@
   {
     "name": "Concrete Walls",
     "parent": "ClayWalls",
-    "translation": "Concrete Walls",
-    "type": "ConcreteWalls_C"
+    "type": "ConcreteWalls_C",
+    "translation": "Concrete Walls"
   },
   {
     "category": "Schematics",
@@ -8060,11 +7988,6 @@
       "Cement Wall 2",
       "Cement Wall 1"
     ]
-  },
-  {
-    "name": "ConcreteWalls",
-    "parent": "ClayWalls",
-    "type": "ConcreteWalls_C"
   },
   {
     "name": "Construction",
@@ -8571,7 +8494,7 @@
     "weight": 0.6
   },
   {
-    "name": "DevOnly",
+    "name": "Dev Only",
     "type": "DevOnly_C",
     "onlyDevs": true
   },
@@ -8746,7 +8669,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Cargo - Tier 1",
+    "name": "Dinghy Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
       "containerSlots": 8
     }
@@ -8767,7 +8690,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Cargo - Tier 2",
+    "name": "Dinghy Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
       "containerSlots": 12
     }
@@ -8792,7 +8715,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Cargo - Tier 3",
+    "name": "Dinghy Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -8817,7 +8740,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Cargo - Tier 4",
+    "name": "Dinghy Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 30
     }
@@ -8838,7 +8761,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Durability - Tier 1",
+    "name": "Dinghy Walker Upgrade Durability Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -8865,7 +8788,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Durability - Tier 2",
+    "name": "Dinghy Walker Upgrade Durability Tier 2",
     "upgradeInfo": {
       "bonusHp": 4000
     }
@@ -8894,7 +8817,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Durability - Tier 3",
+    "name": "Dinghy Walker Upgrade Durability Tier 3",
     "upgradeInfo": {
       "bonusHp": 9000
     }
@@ -8923,7 +8846,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Durability - Tier 4",
+    "name": "Dinghy Walker Upgrade Durability Tier 4",
     "upgradeInfo": {
       "bonusHp": 12000
     }
@@ -8944,7 +8867,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Gear - Tier 1",
+    "name": "Dinghy Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 8
     }
@@ -8965,7 +8888,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Gear - Tier 2",
+    "name": "Dinghy Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
       "containerSlots": 10
     }
@@ -8990,7 +8913,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Gear - Tier 3",
+    "name": "Dinghy Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
       "containerSlots": 13
     }
@@ -9015,14 +8938,14 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Gear - Tier 4",
+    "name": "Dinghy Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
       "containerSlots": 14
     }
   },
   {
     "category": "Upgrades",
-    "name": "Dinghy Walker Upgrade - Mobility - Tier 1",
+    "name": "Dinghy Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -9045,7 +8968,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Mobility - Tier 2",
+    "name": "Dinghy Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -9068,7 +8991,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Mobility - Tier 3",
+    "name": "Dinghy Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -9091,7 +9014,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Mobility - Tier 4",
+    "name": "Dinghy Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -9106,7 +9029,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Torque - Tier 1",
+    "name": "Dinghy Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 600
     }
@@ -9131,7 +9054,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Torque - Tier 2",
+    "name": "Dinghy Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 1000
     }
@@ -9156,7 +9079,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Torque - Tier 3",
+    "name": "Dinghy Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 1600
     }
@@ -9181,7 +9104,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Torque - Tier 4",
+    "name": "Dinghy Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 2000
     }
@@ -9202,7 +9125,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Water - Tier 1",
+    "name": "Dinghy Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 60
     }
@@ -9228,7 +9151,7 @@
         "time": 10
       }
     ],
-    "name": "Dinghy Walker Upgrade - Water - Tier 2",
+    "name": "Dinghy Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 80
     }
@@ -9253,7 +9176,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Water - Tier 3",
+    "name": "Dinghy Walker Upgrade Water Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -9276,7 +9199,7 @@
         ]
       }
     ],
-    "name": "Dinghy Walker Upgrade - Water - Tier 4",
+    "name": "Dinghy Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 120
     }
@@ -9588,7 +9511,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Cargo - Tier 1",
+    "name": "Domus Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
       "containerSlots": 10
     }
@@ -9614,7 +9537,7 @@
         "time": 63
       }
     ],
-    "name": "Domus Walker Upgrade - Cargo - Tier 2",
+    "name": "Domus Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
       "containerSlots": 14
     }
@@ -9639,7 +9562,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Cargo - Tier 3",
+    "name": "Domus Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
       "containerSlots": 18
     }
@@ -9664,7 +9587,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Cargo - Tier 4",
+    "name": "Domus Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 23
     }
@@ -9693,7 +9616,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Durability - Tier 1",
+    "name": "Domus Walker Upgrade Durability Tier 1",
     "upgradeInfo": {
       "bonusHp": 6000
     }
@@ -9722,7 +9645,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Durability - Tier 2",
+    "name": "Domus Walker Upgrade Durability Tier 2",
     "upgradeInfo": {
       "bonusHp": 12000
     }
@@ -9751,7 +9674,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Durability - Tier 3",
+    "name": "Domus Walker Upgrade Durability Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -9778,7 +9701,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Durability - Tier 4",
+    "name": "Domus Walker Upgrade Durability Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -9801,7 +9724,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Gear - Tier 1",
+    "name": "Domus Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 10
     }
@@ -9826,7 +9749,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Gear - Tier 2",
+    "name": "Domus Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
       "containerSlots": 15
     }
@@ -9851,7 +9774,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Gear - Tier 3",
+    "name": "Domus Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -9876,7 +9799,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Gear - Tier 4",
+    "name": "Domus Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
       "containerSlots": 30
     }
@@ -9901,7 +9824,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Mobility - Tier 1",
+    "name": "Domus Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -9924,7 +9847,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Mobility - Tier 2",
+    "name": "Domus Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -9947,7 +9870,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Mobility - Tier 3",
+    "name": "Domus Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -9970,7 +9893,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Mobility - Tier 4",
+    "name": "Domus Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -9993,7 +9916,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Torque - Tier 1",
+    "name": "Domus Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 500
     }
@@ -10018,7 +9941,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Torque - Tier 2",
+    "name": "Domus Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 1000
     }
@@ -10043,7 +9966,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Torque - Tier 3",
+    "name": "Domus Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 2000
     }
@@ -10068,7 +9991,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Torque - Tier 4",
+    "name": "Domus Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 3000
     }
@@ -10097,7 +10020,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Water - Tier 1",
+    "name": "Domus Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 210
     }
@@ -10126,7 +10049,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Water - Tier 2",
+    "name": "Domus Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 360
     }
@@ -10156,7 +10079,7 @@
         "time": 500
       }
     ],
-    "name": "Domus Walker Upgrade - Water - Tier 3",
+    "name": "Domus Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 420
     }
@@ -10185,7 +10108,7 @@
         ]
       }
     ],
-    "name": "Domus Walker Upgrade - Water - Tier 4",
+    "name": "Domus Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 2100
     }
@@ -10532,7 +10455,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Durability - Tier 1 Upgrade",
+    "name": "Durability Tier 1 Upgrade",
     "translation": "Durability - Tier 1 Upgrade",
     "type": "SparePartWoodArmor_C",
     "experiencieReward": 10,
@@ -10541,7 +10464,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Durability - Tier 2 Upgrade",
+    "name": "Durability Tier 2 Upgrade",
     "translation": "Durability - Tier 2 Upgrade",
     "type": "SparePartBoneArmor_C",
     "experiencieReward": 20,
@@ -10550,7 +10473,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Durability - Tier 3 Upgrade",
+    "name": "Durability Tier 3 Upgrade",
     "translation": "Durability - Tier 3 Upgrade",
     "type": "SparePartClayArmor_C",
     "experiencieReward": 30,
@@ -10559,7 +10482,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Durability - Tier 4 Upgrade",
+    "name": "Durability Tier 4 Upgrade",
     "translation": "Durability - Tier 4 Upgrade",
     "type": "SparePartIronArmor_C",
     "experiencieReward": 40,
@@ -11158,7 +11081,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Cargo - Tier 1",
+    "name": "Falco Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -11181,7 +11104,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Cargo - Tier 2",
+    "name": "Falco Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
       "containerSlots": 15
     }
@@ -11206,7 +11129,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Cargo - Tier 3",
+    "name": "Falco Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -11231,7 +11154,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Cargo - Tier 4",
+    "name": "Falco Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 26
     }
@@ -11256,7 +11179,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Durability - Tier 1",
+    "name": "Falco Walker Upgrade Durability Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -11279,7 +11202,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Durability - Tier 2",
+    "name": "Falco Walker Upgrade Durability Tier 2",
     "upgradeInfo": {
       "bonusHp": 10000
     }
@@ -11304,7 +11227,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Durability - Tier 3",
+    "name": "Falco Walker Upgrade Durability Tier 3",
     "upgradeInfo": {
       "bonusHp": 20000
     }
@@ -11329,7 +11252,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Durability - Tier 4",
+    "name": "Falco Walker Upgrade Durability Tier 4",
     "upgradeInfo": {
       "bonusHp": 30000
     }
@@ -11354,7 +11277,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Gear - Tier 1",
+    "name": "Falco Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 5
     }
@@ -11379,7 +11302,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Gear - Tier 2",
+    "name": "Falco Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
       "containerSlots": 10
     }
@@ -11404,7 +11327,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Gear - Tier 3",
+    "name": "Falco Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
       "containerSlots": 15
     }
@@ -11429,7 +11352,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Gear - Tier 4",
+    "name": "Falco Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -11454,7 +11377,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Mobility - Tier 1",
+    "name": "Falco Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -11477,7 +11400,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Mobility - Tier 2",
+    "name": "Falco Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -11500,7 +11423,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Mobility - Tier 3",
+    "name": "Falco Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -11523,7 +11446,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Mobility - Tier 4",
+    "name": "Falco Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -11542,7 +11465,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Torque - Tier 1",
+    "name": "Falco Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 1500
     }
@@ -11567,7 +11490,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Torque - Tier 2",
+    "name": "Falco Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 2200
     }
@@ -11592,7 +11515,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Torque - Tier 3",
+    "name": "Falco Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 3500
     }
@@ -11617,7 +11540,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Torque - Tier 4",
+    "name": "Falco Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 5000
     }
@@ -11642,7 +11565,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Water - Tier 1",
+    "name": "Falco Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 240
     }
@@ -11667,7 +11590,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Water - Tier 2",
+    "name": "Falco Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 300
     }
@@ -11692,7 +11615,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Water - Tier 3",
+    "name": "Falco Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 360
     }
@@ -11717,7 +11640,7 @@
         ]
       }
     ],
-    "name": "Falco Walker Upgrade - Water - Tier 4",
+    "name": "Falco Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 420
     }
@@ -12517,6 +12440,16 @@
     }
   },
   {
+    "name": "Fiber Boots",
+    "parent": "FiberTorso",
+    "type": "FiberBoots_C"
+  },
+  {
+    "name": "Fiber Gloves",
+    "parent": "FiberTorso",
+    "type": "FiberGloves_C"
+  },
+  {
     "name": "Fiber Headwrap",
     "parent": "FiberTorso",
     "type": "T1_FiberHeadwrap_C",
@@ -12598,6 +12531,11 @@
     }
   },
   {
+    "name": "Fiber Torso",
+    "parent": "Equipment",
+    "type": "FiberTorso_C"
+  },
+  {
     "name": "Fiber Weave",
     "parent": "Fiberworking Station",
     "type": "FiberCloth_C",
@@ -12674,21 +12612,6 @@
     "weight": 0.11
   },
   {
-    "name": "FiberBoots",
-    "parent": "FiberTorso",
-    "type": "FiberBoots_C"
-  },
-  {
-    "name": "FiberGloves",
-    "parent": "FiberTorso",
-    "type": "FiberGloves_C"
-  },
-  {
-    "name": "FiberTorso",
-    "parent": "Equipment",
-    "type": "FiberTorso_C"
-  },
-  {
     "name": "Fiberworking Station",
     "parent": "Crafting",
     "type": "FiberworkingStation_C",
@@ -12722,7 +12645,7 @@
     }
   },
   {
-    "name": "FiberworkingStation_T3",
+    "name": "Fiberworking Station_T3",
     "parent": "Advanced Fiberworking Station",
     "type": "FiberworkingStation_T3_C"
   },
@@ -12739,6 +12662,9 @@
     "weight": 0.2
   },
   {
+    "name": "Fire Bolt",
+    "parent": "Ballista",
+    "type": "FireBolt_C",
     "category": "Ammo",
     "crafting": [
       {
@@ -12786,11 +12712,8 @@
         "time": 3
       }
     ],
-    "name": "Fire Bolt",
-    "parent": "Ballista",
     "trade_price": 15.6,
     "translation": "Fire Bolt",
-    "type": "FireBolt_C",
     "projectileDamage": {
       "damage": 2500
     },
@@ -12942,11 +12865,6 @@
     },
     "translation": "Fire Goblet",
     "weight": 2.5
-  },
-  {
-    "name": "FireBolt",
-    "parent": "Ballista",
-    "type": "FireBolt_C"
   },
   {
     "category": "Weapons",
@@ -13130,7 +13048,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Cargo - Tier 1",
+    "name": "Firefly Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
       "containerSlots": 8
     }
@@ -13151,7 +13069,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Cargo - Tier 2",
+    "name": "Firefly Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -13174,7 +13092,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Cargo - Tier 3",
+    "name": "Firefly Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
       "containerSlots": 14
     }
@@ -13199,7 +13117,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Cargo - Tier 4",
+    "name": "Firefly Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -13220,7 +13138,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Durability - Tier 1",
+    "name": "Firefly Walker Upgrade Durability Tier 1",
     "upgradeInfo": {
       "bonusHp": 200
     }
@@ -13245,7 +13163,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Durability - Tier 2",
+    "name": "Firefly Walker Upgrade Durability Tier 2",
     "upgradeInfo": {
       "bonusHp": 400
     }
@@ -13270,7 +13188,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Durability - Tier 3",
+    "name": "Firefly Walker Upgrade Durability Tier 3",
     "upgradeInfo": {
       "bonusHp": 800
     }
@@ -13295,7 +13213,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Durability - Tier 4",
+    "name": "Firefly Walker Upgrade Durability Tier 4",
     "upgradeInfo": {
       "bonusHp": 1600
     }
@@ -13316,7 +13234,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Gear - Tier 1",
+    "name": "Firefly Walker Upgrade Gear Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -13335,7 +13253,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Gear - Tier 2",
+    "name": "Firefly Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
       "containerSlots": 6
     }
@@ -13356,7 +13274,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Gear - Tier 3",
+    "name": "Firefly Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
       "containerSlots": 10
     }
@@ -13377,14 +13295,14 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Gear - Tier 4",
+    "name": "Firefly Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
       "containerSlots": 18
     }
   },
   {
     "category": "Upgrades",
-    "name": "Firefly Walker Upgrade - Mobility - Tier 1",
+    "name": "Firefly Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -13407,7 +13325,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Mobility - Tier 2",
+    "name": "Firefly Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -13430,7 +13348,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Mobility - Tier 3",
+    "name": "Firefly Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -13453,7 +13371,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Mobility - Tier 4",
+    "name": "Firefly Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -13472,7 +13390,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Water - Tier 1",
+    "name": "Firefly Walker Upgrade Water Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -13495,7 +13413,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Water - Tier 2",
+    "name": "Firefly Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 50
     }
@@ -13520,7 +13438,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Water - Tier 3",
+    "name": "Firefly Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 60
     }
@@ -13545,7 +13463,7 @@
         ]
       }
     ],
-    "name": "Firefly Walker Upgrade - Water - Tier 4",
+    "name": "Firefly Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 80
     }
@@ -14194,33 +14112,33 @@
     "weight": 5
   },
   {
-    "name": "Flare - blue",
+    "name": "Flare blue",
     "translation": "Flare - blue",
     "type": "Flare_03_C"
   },
   {
-    "name": "Flare - green",
+    "name": "Flare green",
     "translation": "Flare - green",
     "type": "Flare_02_C"
   },
   {
-    "name": "Flare - orange",
+    "name": "Flare orange",
     "trade_price": 15.6,
     "translation": "Flare - orange",
     "type": "Flare_04_C"
   },
   {
-    "name": "Flare - purple",
+    "name": "Flare purple",
     "translation": "Flare - purple",
     "type": "Flare_05_C"
   },
   {
-    "name": "Flare - red",
+    "name": "Flare red",
     "translation": "Flare - red",
     "type": "Flare_01_C"
   },
   {
-    "name": "Flare - teal",
+    "name": "Flare teal",
     "translation": "Flare - teal",
     "type": "Flare_06_C"
   },
@@ -14240,7 +14158,7 @@
         ]
       }
     ],
-    "name": "Flare - white",
+    "name": "Flare white",
     "trade_price": 3,
     "translation": "Flare - white",
     "type": "Flare_00_C",
@@ -14265,6 +14183,9 @@
     "weight": 0.4
   },
   {
+    "name": "Flint Bolt",
+    "parent": "Ballista",
+    "type": "FlintBolt_C",
     "category": "Ammo",
     "crafting": [
       {
@@ -14313,11 +14234,8 @@
         "time": 4
       }
     ],
-    "name": "Flint Bolt",
-    "parent": "Ballista",
     "trade_price": 1.3,
     "translation": "Flint Bolt",
-    "type": "FlintBolt_C",
     "projectileDamage": {
       "damage": 40,
       "penetration": 10
@@ -14334,6 +14252,9 @@
     "damageType": "'BoltDamage_C'"
   },
   {
+    "name": "Flint Harpoon",
+    "parent": "Ballista",
+    "type": "FlintHarpoon_C",
     "category": "Ammo",
     "crafting": [
       {
@@ -14391,11 +14312,8 @@
         "time": 4
       }
     ],
-    "name": "Flint Harpoon",
-    "parent": "Ballista",
     "trade_price": 4.4,
     "translation": "Flint Harpoon",
-    "type": "FlintHarpoon_C",
     "projectileDamage": {
       "damage": 10
     },
@@ -14428,16 +14346,6 @@
     "weight": 1.5,
     "wikiVisibility": false,
     "damageType": "'OrbDamage_C'"
-  },
-  {
-    "name": "FlintBolt",
-    "parent": "Ballista",
-    "type": "FlintBolt_C"
-  },
-  {
-    "name": "FlintHarpoon",
-    "parent": "Ballista",
-    "type": "FlintHarpoon_C"
   },
   {
     "name": "Floating Mine",
@@ -14845,6 +14753,21 @@
     "stackSize": 999999
   },
   {
+    "name": "Forester Boots",
+    "parent": "ForesterTorso",
+    "type": "ForesterBoots_C"
+  },
+  {
+    "name": "Forester Gloves",
+    "parent": "ForesterTorso",
+    "type": "ForesterGloves_C"
+  },
+  {
+    "name": "Forester Torso",
+    "parent": "RupuFurTorso",
+    "type": "ForesterTorso_C"
+  },
+  {
     "category": "Armors",
     "crafting": [
       {
@@ -14980,21 +14903,6 @@
       "reduction": 2,
       "speedReduction": 3
     }
-  },
-  {
-    "name": "ForesterBoots",
-    "parent": "ForesterTorso",
-    "type": "ForesterBoots_C"
-  },
-  {
-    "name": "ForesterGloves",
-    "parent": "ForesterTorso",
-    "type": "ForesterGloves_C"
-  },
-  {
-    "name": "ForesterTorso",
-    "parent": "RupuFurTorso",
-    "type": "ForesterTorso_C"
   },
   {
     "category": "Resources",
@@ -15485,7 +15393,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Gear Storage - Tier 1 Upgrade",
+    "name": "Gear Storage Tier 1 Upgrade",
     "translation": "Gear Storage - Tier 1 Upgrade",
     "type": "SparePartWoodHatch_C",
     "experiencieReward": 10,
@@ -15494,7 +15402,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Gear Storage - Tier 2 Upgrade",
+    "name": "Gear Storage Tier 2 Upgrade",
     "translation": "Gear Storage - Tier 2 Upgrade",
     "type": "SparePartBoneHatch_C",
     "experiencieReward": 20,
@@ -15503,7 +15411,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Gear Storage - Tier 3 Upgrade",
+    "name": "Gear Storage Tier 3 Upgrade",
     "translation": "Gear Storage - Tier 3 Upgrade",
     "type": "SparePartClayHatch_C",
     "experiencieReward": 30,
@@ -15512,7 +15420,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Gear Storage - Tier 4 Upgrade",
+    "name": "Gear Storage Tier 4 Upgrade",
     "translation": "Gear Storage - Tier 4 Upgrade",
     "type": "SparePartIronHatch_C",
     "experiencieReward": 40,
@@ -15840,6 +15748,11 @@
     "weight": 38
   },
   {
+    "name": "Gun Pod Scattershot Gun",
+    "parent": "Gun Pod",
+    "type": "GunPodScattershotGun_C"
+  },
+  {
     "name": "Gun Pod Shell",
     "parent": "Gun Pod",
     "type": "GunPodShell_C",
@@ -15865,21 +15778,19 @@
     "experiencieReward": 34
   },
   {
+    "name": "Gun Pod Shell_T2",
+    "parent": "Gun Pod Shell",
+    "type": "GunPodShell_T2_C"
+  },
+  {
     "name": "Gun Pods",
     "translation": "Gun Pods",
     "type": "SiegePods_C"
   },
   {
-    "name": "GunPodScattershotGun",
+    "name": "Gunpod Stinger",
     "parent": "Gun Pod",
-    "type": "GunPodScattershotGun_C"
-  },
-  {
-    "name": "GunPodShell_T2",
-    "parent": "Gun Pod Shell",
-    "type": "GunPodShell_T2_C"
-  },
-  {
+    "type": "GunpodStinger_C",
     "category": "Weapons",
     "crafting": [
       {
@@ -15903,17 +15814,7 @@
         ]
       }
     ],
-    "name": "Gunpod Stinger",
-    "parent": "Gun Pod",
-    "type": "GunpodStinger_C",
-    "experiencieReward": 78,
-    "translation": "Gunpod Stinger",
-    "weight": 11.41
-  },
-  {
-    "name": "GunpodStinger",
-    "parent": "Gun Pod",
-    "type": "GunpodStinger_C"
+    "experiencieReward": 78
   },
   {
     "name": "Hammock",
@@ -16064,6 +15965,9 @@
     "translation": "Hangar Wall with Door"
   },
   {
+    "name": "Hardened Hellfire Bolt",
+    "parent": "HellfireBolt",
+    "type": "HardenedHellfireBolt_C",
     "crafting": [
       {
         "ingredients": [
@@ -16084,10 +15988,7 @@
         "time": 5
       }
     ],
-    "name": "Hardened Hellfire Bolt",
-    "parent": "HellfireBolt",
     "translation": "Hardened Hellfire Bolt",
-    "type": "HardenedHellfireBolt_C",
     "projectileDamage": {
       "damage": 5000
     },
@@ -16098,11 +15999,6 @@
         "tier": 3
       }
     ]
-  },
-  {
-    "name": "HardenedHellfireBolt",
-    "parent": "HellfireBolt",
-    "type": "HardenedHellfireBolt_C"
   },
   {
     "category": "Resources",
@@ -16349,8 +16245,8 @@
   {
     "name": "Heavy Walls",
     "parent": "Medium Wood Walls",
-    "translation": "Heavy Walls",
-    "type": "HeavyWalls_C"
+    "type": "HeavyWalls_C",
+    "translation": "Heavy Walls"
   },
   {
     "category": "Schematics",
@@ -16628,11 +16524,6 @@
     }
   },
   {
-    "name": "HeavyWalls",
-    "parent": "Medium Wood Walls",
-    "type": "HeavyWalls_C"
-  },
-  {
     "name": "Hellfire",
     "parent": "Clay Pot",
     "translation": "Hellfire",
@@ -16640,6 +16531,9 @@
     "onlyDevs": true
   },
   {
+    "name": "Hellfire Bolt",
+    "parent": "FireBolt",
+    "type": "HellfireBolt_C",
     "crafting": [
       {
         "ingredients": [
@@ -16660,11 +16554,8 @@
         "time": 5
       }
     ],
-    "name": "Hellfire Bolt",
-    "parent": "FireBolt",
     "trade_price": 175.3,
     "translation": "Hellfire Bolt",
-    "type": "HellfireBolt_C",
     "projectileDamage": {
       "damage": 3200
     },
@@ -16674,11 +16565,6 @@
         "tier": 2
       }
     ]
-  },
-  {
-    "name": "HellfireBolt",
-    "parent": "FireBolt",
-    "type": "HellfireBolt_C"
   },
   {
     "name": "Hercul Walker",
@@ -16896,42 +16782,42 @@
         ]
       }
     ],
-    "name": "Hercul Walker Upgrade - Torque - Tier 1",
+    "name": "Hercul Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 7000
     }
   },
   {
     "category": "Upgrades",
-    "name": "Hercul Walker Upgrade - Torque - Tier 2",
+    "name": "Hercul Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 12000
     }
   },
   {
     "category": "Upgrades",
-    "name": "Hercul Walker Upgrade - Torque - Tier 3",
+    "name": "Hercul Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 18000
     }
   },
   {
     "category": "Upgrades",
-    "name": "Hercul Walker Upgrade - Torque - Tier 4",
+    "name": "Hercul Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 25000
     }
   },
   {
     "category": "Upgrades",
-    "name": "Hercul Walker Upgrade - Water - Tier 1",
+    "name": "Hercul Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 200
     }
   },
   {
     "category": "Upgrades",
-    "name": "Hercul Walker Upgrade - Water - Tier 2",
+    "name": "Hercul Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 350
     }
@@ -16960,7 +16846,7 @@
         ]
       }
     ],
-    "name": "Hercul Walker Upgrade - Water - Tier 3",
+    "name": "Hercul Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 650
     }
@@ -16989,7 +16875,7 @@
         ]
       }
     ],
-    "name": "Hercul Walker Upgrade - Water - Tier 4",
+    "name": "Hercul Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 1300
     }
@@ -17501,7 +17387,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Cargo - Tier 1",
+    "name": "Hornet Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
       "containerSlots": 14
     }
@@ -17522,7 +17408,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Cargo - Tier 2",
+    "name": "Hornet Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -17543,7 +17429,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Cargo - Tier 3",
+    "name": "Hornet Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
       "containerSlots": 27
     }
@@ -17564,7 +17450,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Cargo - Tier 4",
+    "name": "Hornet Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 35
     }
@@ -17589,7 +17475,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Durability - Tier 1",
+    "name": "Hornet Walker Upgrade Durability Tier 1",
     "upgradeInfo": {
       "bonusHp": 1500
     }
@@ -17614,7 +17500,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Durability - Tier 2",
+    "name": "Hornet Walker Upgrade Durability Tier 2",
     "upgradeInfo": {
       "bonusHp": 4000
     }
@@ -17639,7 +17525,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Durability - Tier 3",
+    "name": "Hornet Walker Upgrade Durability Tier 3",
     "upgradeInfo": {
       "bonusHp": 8000
     }
@@ -17664,7 +17550,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Durability - Tier 4",
+    "name": "Hornet Walker Upgrade Durability Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -17687,7 +17573,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Gear - Tier 1",
+    "name": "Hornet Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 5
     }
@@ -17712,7 +17598,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Gear - Tier 2",
+    "name": "Hornet Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
       "containerSlots": 10
     }
@@ -17737,7 +17623,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Gear - Tier 3",
+    "name": "Hornet Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
       "containerSlots": 15
     }
@@ -17762,7 +17648,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Gear - Tier 4",
+    "name": "Hornet Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -17787,7 +17673,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Mobility - Tier 1",
+    "name": "Hornet Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -17810,7 +17696,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Mobility - Tier 2",
+    "name": "Hornet Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -17833,7 +17719,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Mobility - Tier 3",
+    "name": "Hornet Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -17852,7 +17738,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Mobility - Tier 4",
+    "name": "Hornet Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -17871,7 +17757,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Torque - Tier 1",
+    "name": "Hornet Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 1000
     }
@@ -17896,7 +17782,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Torque - Tier 2",
+    "name": "Hornet Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 1800
     }
@@ -17921,7 +17807,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Torque - Tier 3",
+    "name": "Hornet Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 3000
     }
@@ -17946,7 +17832,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Torque - Tier 4",
+    "name": "Hornet Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 5000
     }
@@ -17971,7 +17857,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Water - Tier 1",
+    "name": "Hornet Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 200
     }
@@ -17996,7 +17882,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Water - Tier 2",
+    "name": "Hornet Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 260
     }
@@ -18021,7 +17907,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Water - Tier 3",
+    "name": "Hornet Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 320
     }
@@ -18046,7 +17932,7 @@
         ]
       }
     ],
-    "name": "Hornet Walker Upgrade - Water - Tier 4",
+    "name": "Hornet Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 400
     }
@@ -18962,6 +18848,19 @@
     "type": "Interactables_C"
   },
   {
+    "name": "Iron Bolt",
+    "parent": "Ceramic Bolt",
+    "type": "IronBolt_C"
+  },
+  {
+    "name": "Iron Boots",
+    "parent": "IronTorso",
+    "type": "IronBoots_C"
+  },
+  {
+    "name": "Iron Dart",
+    "parent": "CeramicDart",
+    "type": "IronDart_C",
     "crafting": [
       {
         "ingredients": [
@@ -18987,10 +18886,7 @@
         "time": 5
       }
     ],
-    "name": "Iron Dart",
-    "parent": "CeramicDart",
     "translation": "Iron Dart",
-    "type": "IronDart_C",
     "projectileDamage": {
       "damage": 20
     },
@@ -19031,6 +18927,16 @@
     "experiencieReward": 25,
     "stackSize": 100,
     "weight": 0.55
+  },
+  {
+    "name": "Iron Gloves",
+    "parent": "IronTorso",
+    "type": "IronGloves_C"
+  },
+  {
+    "name": "Iron Harpoon",
+    "parent": "IronBolt",
+    "type": "IronHarpoon_C"
   },
   {
     "name": "Iron Ingot",
@@ -19106,6 +19012,9 @@
     "weight": 0.78
   },
   {
+    "name": "Iron Pickaxe",
+    "parent": "CeramicPickaxe",
+    "type": "IronPickaxe_C",
     "crafting": [
       {
         "ingredients": [
@@ -19126,11 +19035,8 @@
         "time": 15
       }
     ],
-    "name": "Iron Pickaxe",
-    "parent": "CeramicPickaxe",
     "trade_price": 38.7,
     "translation": "Iron Pickaxe",
-    "type": "IronPickaxe_C",
     "experiencieReward": 160,
     "weight": 6,
     "durability": 950,
@@ -19145,6 +19051,9 @@
     ]
   },
   {
+    "name": "Iron Repair Hammer",
+    "parent": "CeramicRepairHammer",
+    "type": "IronRepairHammer_C",
     "crafting": [
       {
         "ingredients": [
@@ -19165,10 +19074,7 @@
         "time": 25
       }
     ],
-    "name": "Iron Repair Hammer",
-    "parent": "CeramicRepairHammer",
     "translation": "Iron Repair Hammer",
-    "type": "IronRepairHammer_C",
     "durability": 3000
   },
   {
@@ -19206,6 +19112,9 @@
     "experiencieReward": 5
   },
   {
+    "name": "Iron Scythe",
+    "parent": "CeramicScythe",
+    "type": "IronScythe_C",
     "crafting": [
       {
         "ingredients": [
@@ -19230,10 +19139,7 @@
         "time": 20
       }
     ],
-    "name": "Iron Scythe",
-    "parent": "CeramicScythe",
     "translation": "Iron Scythe",
-    "type": "IronScythe_C",
     "durability": 1200,
     "toolInfo": [
       {
@@ -19371,7 +19277,7 @@
         "time": 3
       }
     ],
-    "name": "Iron-Tipped Bolt",
+    "name": "Iron Tipped Bolt",
     "parent": "Ceramic Bolt",
     "trade_price": 25,
     "translation": "Iron-Tipped Bolt",
@@ -19408,7 +19314,7 @@
         "time": 5
       }
     ],
-    "name": "Iron-Tipped Harpoon",
+    "name": "Iron Tipped Harpoon",
     "parent": "IronBolt",
     "trade_price": 30.6,
     "translation": "Iron-Tipped Harpoon",
@@ -19426,47 +19332,7 @@
     ]
   },
   {
-    "name": "IronBolt",
-    "parent": "Ceramic Bolt",
-    "type": "IronBolt_C"
-  },
-  {
-    "name": "IronBoots",
-    "parent": "IronTorso",
-    "type": "IronBoots_C"
-  },
-  {
-    "name": "IronDart",
-    "parent": "CeramicDart",
-    "type": "IronDart_C"
-  },
-  {
-    "name": "IronGloves",
-    "parent": "IronTorso",
-    "type": "IronGloves_C"
-  },
-  {
-    "name": "IronHarpoon",
-    "parent": "IronBolt",
-    "type": "IronHarpoon_C"
-  },
-  {
-    "name": "IronPickaxe",
-    "parent": "CeramicPickaxe",
-    "type": "IronPickaxe_C"
-  },
-  {
-    "name": "IronRepairHammer",
-    "parent": "CeramicRepairHammer",
-    "type": "IronRepairHammer_C"
-  },
-  {
-    "name": "IronScythe",
-    "parent": "CeramicScythe",
-    "type": "IronScythe_C"
-  },
-  {
-    "name": "IronTorso",
+    "name": "Iron Torso",
     "parent": "CarapaceTorso",
     "type": "IronTorso_C"
   },
@@ -19630,64 +19496,8 @@
   },
   {
     "name": "Jojo Mojo",
-    "parent": "Vision Powder",
-    "type": "JojoMojo_C",
-    "category": "Vitamins",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 6,
-            "name": "Tree Sap"
-          },
-          {
-            "count": 6,
-            "name": "Aloe Gel"
-          },
-          {
-            "count": 6,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 1,
-            "name": "Glass"
-          }
-        ],
-        "station": "Camp Fire",
-        "time": 60
-      },
-      {
-        "ingredients": [
-          {
-            "count": 6,
-            "name": "Tree Sap"
-          },
-          {
-            "count": 6,
-            "name": "Aloe Gel"
-          },
-          {
-            "count": 6,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 1,
-            "name": "Glass"
-          }
-        ],
-        "station": "Clay Pot",
-        "time": 60
-      }
-    ],
-    "trade_price": 9,
-    "translation": "Jojo Mojo",
-    "stackSize": 100,
-    "weight": 0.5
-  },
-  {
-    "name": "JojoMojo",
-    "parent": "Vision Powder",
-    "type": "JojoMojo_C"
+    "parent": "Desert Mule",
+    "type": "FuryFumes_C"
   },
   {
     "category": "Walker Tools",
@@ -19946,6 +19756,35 @@
     "durability": 100
   },
   {
+    "category": "Upgrades",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 38,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 250,
+            "name": "Fiber"
+          },
+          {
+            "count": 188,
+            "name": "Wood"
+          },
+          {
+            "count": 25,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Large Spare Parts Profile",
+    "upgradeInfo": {
+      "containerSlots": 20
+    }
+  },
+  {
     "name": "Large Water Bag",
     "parent": "Medium Water Bag",
     "type": "WaterBagLarge_C",
@@ -19983,35 +19822,6 @@
     "name": "Large Wing",
     "type": "LargeFastWing_C",
     "translation": "Large Wing"
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 38,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 250,
-            "name": "Fiber"
-          },
-          {
-            "count": 188,
-            "name": "Wood"
-          },
-          {
-            "count": 25,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "LargeSparePartsProfile",
-    "upgradeInfo": {
-      "containerSlots": 20
-    }
   },
   {
     "name": "Lathe",
@@ -20092,6 +19902,16 @@
     "weight": 0.5
   },
   {
+    "name": "Lava Liquids",
+    "translation": "LavaLiquids",
+    "type": "LavaLiquids_C"
+  },
+  {
+    "name": "Lava Mace",
+    "parent": "Short Ceramic Hoofmace",
+    "type": "LavaMace_C"
+  },
+  {
     "category": "Resources",
     "name": "Lava Poppy",
     "trade_price": 0.1,
@@ -20099,16 +19919,6 @@
     "type": "Poppy_C",
     "stackSize": 100,
     "weight": 0.01
-  },
-  {
-    "name": "LavaLiquids",
-    "translation": "LavaLiquids",
-    "type": "LavaLiquids_C"
-  },
-  {
-    "name": "LavaMace",
-    "parent": "Short Ceramic Hoofmace",
-    "type": "LavaMace_C"
   },
   {
     "name": "Leather",
@@ -20224,12 +20034,12 @@
   },
   {
     "category": "Wood: light",
-    "name": "Light Wood AbstractFoundation",
+    "name": "Light Wood Abstract Foundation",
     "type": "AbstractFoundation_C"
   },
   {
     "category": "Wood: light",
-    "name": "Light Wood AbstractWall",
+    "name": "Light Wood Abstract Wall",
     "type": "AbstractWall_C"
   },
   {
@@ -20682,6 +20492,9 @@
   },
   {
     "category": "Grappling Hooks",
+    "name": "Makeshift Grappling Hook",
+    "parent": "Equipment",
+    "type": "MakeshiftGrapplingHook_C",
     "crafting": [
       {
         "ingredients": [
@@ -20696,18 +20509,9 @@
         ]
       }
     ],
-    "name": "Makeshift Grappling Hook",
-    "parent": "Equipment",
     "trade_price": 10,
     "translation": "Makeshift Grappling Hook",
-    "type": "MakeshiftGrapplingHook_C",
     "experiencieReward": 1
-  },
-  {
-    "category": "Grappling Hooks",
-    "name": "MakeshiftGrapplingHook",
-    "parent": "Equipment",
-    "type": "MakeshiftGrapplingHook_C"
   },
   {
     "category": "Armors",
@@ -20919,6 +20723,36 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3750
+    }
+  },
+  {
+    "category": "Upgrades",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 24,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 160,
+            "name": "Fiber"
+          },
+          {
+            "count": 120,
+            "name": "Wood"
+          },
+          {
+            "count": 16,
+            "name": "Stone"
+          }
+        ],
+        "time": 40
+      }
+    ],
+    "name": "Medium Spare Parts Profile",
+    "upgradeInfo": {
+      "containerSlots": 16
     }
   },
   {
@@ -21199,36 +21033,6 @@
     "translation": "Medium Wood Walls"
   },
   {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 24,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 160,
-            "name": "Fiber"
-          },
-          {
-            "count": 120,
-            "name": "Wood"
-          },
-          {
-            "count": 16,
-            "name": "Stone"
-          }
-        ],
-        "time": 40
-      }
-    ],
-    "name": "MediumSparePartsProfile",
-    "upgradeInfo": {
-      "containerSlots": 16
-    }
-  },
-  {
     "category": "Resources",
     "crafting": [
       {
@@ -21272,7 +21076,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Mobility - Tier 1 Upgrade",
+    "name": "Mobility Tier 1 Upgrade",
     "translation": "Mobility - Tier 1 Upgrade",
     "type": "SparePartWoodGears_C",
     "experiencieReward": 10,
@@ -21281,7 +21085,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Mobility - Tier 2 Upgrade",
+    "name": "Mobility Tier 2 Upgrade",
     "translation": "Mobility - Tier 2 Upgrade",
     "type": "SparePartBoneGears_C",
     "experiencieReward": 20,
@@ -21290,7 +21094,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Mobility - Tier 3 Upgrade",
+    "name": "Mobility Tier 3 Upgrade",
     "translation": "Mobility - Tier 3 Upgrade",
     "type": "SparePartClayGears_C",
     "experiencieReward": 30,
@@ -21299,7 +21103,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Mobility - Tier 4 Upgrade",
+    "name": "Mobility Tier 4 Upgrade",
     "translation": "Mobility - Tier 4 Upgrade",
     "type": "SparePartIronGears_C",
     "experiencieReward": 40,
@@ -21501,7 +21305,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Cargo - Tier 1",
+    "name": "Mollusk Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
       "containerSlots": 12
     }
@@ -21522,7 +21326,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Cargo - Tier 2",
+    "name": "Mollusk Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
       "containerSlots": 18
     }
@@ -21547,7 +21351,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Cargo - Tier 3",
+    "name": "Mollusk Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
       "containerSlots": 28
     }
@@ -21572,7 +21376,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Cargo - Tier 4",
+    "name": "Mollusk Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 36
     }
@@ -21597,7 +21401,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Durability - Tier 1",
+    "name": "Mollusk Walker Upgrade Durability Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -21612,7 +21416,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Durability - Tier 2",
+    "name": "Mollusk Walker Upgrade Durability Tier 2",
     "upgradeInfo": {
       "bonusHp": 10000
     }
@@ -21637,7 +21441,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Durability - Tier 3",
+    "name": "Mollusk Walker Upgrade Durability Tier 3",
     "upgradeInfo": {
       "bonusHp": 18000
     }
@@ -21662,7 +21466,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Durability - Tier 4",
+    "name": "Mollusk Walker Upgrade Durability Tier 4",
     "upgradeInfo": {
       "bonusHp": 25000
     }
@@ -21687,7 +21491,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Gear - Tier 1",
+    "name": "Mollusk Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 15
     }
@@ -21708,7 +21512,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Gear - Tier 2",
+    "name": "Mollusk Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -21733,7 +21537,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Gear - Tier 3",
+    "name": "Mollusk Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
       "containerSlots": 26
     }
@@ -21758,7 +21562,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Gear - Tier 4",
+    "name": "Mollusk Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
       "containerSlots": 33
     }
@@ -21783,7 +21587,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Mobility - Tier 1",
+    "name": "Mollusk Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -21806,7 +21610,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Mobility - Tier 2",
+    "name": "Mollusk Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -21829,7 +21633,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Mobility - Tier 3",
+    "name": "Mollusk Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -21852,7 +21656,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Mobility - Tier 4",
+    "name": "Mollusk Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -21871,7 +21675,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Torque - Tier 1",
+    "name": "Mollusk Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 800
     }
@@ -21896,7 +21700,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Torque - Tier 2",
+    "name": "Mollusk Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 1500
     }
@@ -21921,7 +21725,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Torque - Tier 3",
+    "name": "Mollusk Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 2500
     }
@@ -21946,7 +21750,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Torque - Tier 4",
+    "name": "Mollusk Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 4000
     }
@@ -21971,7 +21775,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Water - Tier 1",
+    "name": "Mollusk Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 70
     }
@@ -21996,7 +21800,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Water - Tier 2",
+    "name": "Mollusk Walker Upgrade Water Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -22019,7 +21823,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Water - Tier 3",
+    "name": "Mollusk Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 130
     }
@@ -22044,7 +21848,7 @@
         ]
       }
     ],
-    "name": "Mollusk Walker Upgrade - Water - Tier 4",
+    "name": "Mollusk Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 160
     }
@@ -22305,6 +22109,9 @@
     "weight": 9.75
   },
   {
+    "name": "Mountable Nurr",
+    "parent": "Advanced Constructions",
+    "type": "MountableNurr_C",
     "category": "Interactables",
     "crafting": [
       {
@@ -22316,22 +22123,13 @@
         ]
       }
     ],
-    "name": "Mountable Nurr",
-    "parent": "Advanced Constructions",
-    "type": "MountableNurr_C",
     "experiencieReward": 300,
     "structureInfo": {
       "hp": 100
-    },
-    "translation": "Mountable Nurr"
+    }
   },
   {
-    "name": "MountableNurr",
-    "parent": "Advanced Constructions",
-    "type": "MountableNurr_C"
-  },
-  {
-    "name": "MtxMasks",
+    "name": "Mtx Masks",
     "parent": "Fiber Headwrap",
     "type": "MtxMasks_C"
   },
@@ -22839,7 +22637,7 @@
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
-    "name": "Nibiran-tipped Bolt",
+    "name": "Nibiran tipped Bolt",
     "parent": "IronBolt",
     "type": "NibirianBolt_C",
     "crafting": [
@@ -22908,6 +22706,9 @@
     }
   },
   {
+    "name": "Nibirian Boots",
+    "parent": "NibirianTorso",
+    "type": "T4_NibirianBoots_C",
     "category": "Armors",
     "crafting": [
       {
@@ -22925,10 +22726,8 @@
         "time": 30
       }
     ],
-    "name": "Nibirian Boots",
     "trade_price": 75.8,
     "translation": "Nibirian Boots",
-    "type": "T4_NibirianBoots_C",
     "experiencieReward": 170,
     "stackSize": 100,
     "weight": 4,
@@ -22940,6 +22739,9 @@
     }
   },
   {
+    "name": "Nibirian Dart",
+    "parent": "IronDart",
+    "type": "NibirianDart_C",
     "crafting": [
       {
         "ingredients": [
@@ -22961,10 +22763,7 @@
         "time": 5
       }
     ],
-    "name": "Nibirian Dart",
-    "parent": "IronDart",
     "translation": "Nibirian Dart",
-    "type": "NibirianDart_C",
     "projectileDamage": {
       "damage": 25
     },
@@ -23003,6 +22802,14 @@
     }
   },
   {
+    "name": "Nibirian Gloves",
+    "parent": "NibirianTorso",
+    "type": "NibirianGloves_C"
+  },
+  {
+    "name": "Nibirian Harpoon",
+    "parent": "Nibiran-tipped Bolt",
+    "type": "NibirianHarpoon_C",
     "crafting": [
       {
         "ingredients": [
@@ -23019,58 +22826,35 @@
         "time": 5
       }
     ],
-    "name": "Nibirian Harpoon",
-    "parent": "Nibiran-tipped Bolt",
-    "translation": "Nibirian Harpoon",
-    "type": "NibirianHarpoon_C"
+    "translation": "Nibirian Harpoon"
   },
   {
-    "name": "NibirianBoots",
-    "parent": "NibirianTorso",
-    "type": "NibirianBoots_C"
-  },
-  {
-    "name": "NibirianDart",
-    "parent": "IronDart",
-    "type": "NibirianDart_C"
-  },
-  {
-    "name": "NibirianGloves",
-    "parent": "NibirianTorso",
-    "type": "NibirianGloves_C"
-  },
-  {
-    "name": "NibirianHarpoon",
-    "parent": "Nibiran-tipped Bolt",
-    "type": "NibirianHarpoon_C"
-  },
-  {
-    "name": "NibirianPickaxe",
+    "name": "Nibirian Pickaxe",
     "parent": "IronPickaxe",
     "type": "NibirianPickaxe_C"
   },
   {
-    "name": "NibirianQuarterstaffBlade",
+    "name": "Nibirian Quarterstaff Blade",
     "parent": "Wyndanblade Quarterstaff",
     "type": "NibirianQuarterstaffBlade_C"
   },
   {
-    "name": "NibirianQuarterstaffBlunt",
+    "name": "Nibirian Quarterstaff Blunt",
     "parent": "Wyndanblade Quarterstaff",
     "type": "NibirianQuarterstaffBlunt_C"
   },
   {
-    "name": "NibirianRepairHammer",
+    "name": "Nibirian Repair Hammer",
     "parent": "IronRepairHammer",
     "type": "NibirianRepairHammer_C"
   },
   {
-    "name": "NibirianScythe",
+    "name": "Nibirian Scythe",
     "parent": "IronScythe",
     "type": "NibirianScythe_C"
   },
   {
-    "name": "NibirianTorso",
+    "name": "Nibirian Torso",
     "parent": "IronTorso",
     "type": "NibirianTorso_C"
   },
@@ -23212,7 +22996,7 @@
         "ingredients": []
       }
     ],
-    "name": "Nomad Walker Upgrade - Cargo - Tier 1",
+    "name": "Nomad Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
       "containerSlots": 9
     }
@@ -23229,7 +23013,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Cargo - Tier 2",
+    "name": "Nomad Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
       "containerSlots": 14
     }
@@ -23250,7 +23034,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Cargo - Tier 3",
+    "name": "Nomad Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
       "containerSlots": 18
     }
@@ -23271,14 +23055,14 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Cargo - Tier 4",
+    "name": "Nomad Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 22
     }
   },
   {
     "category": "Upgrades",
-    "name": "Nomad Walker Upgrade - Durability - Tier 1",
+    "name": "Nomad Walker Upgrade Durability Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -23301,7 +23085,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Durability - Tier 2",
+    "name": "Nomad Walker Upgrade Durability Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -23324,7 +23108,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Durability - Tier 3",
+    "name": "Nomad Walker Upgrade Durability Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -23347,7 +23131,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Durability - Tier 4",
+    "name": "Nomad Walker Upgrade Durability Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -23357,7 +23141,7 @@
         "ingredients": []
       }
     ],
-    "name": "Nomad Walker Upgrade - Gear - Tier 1",
+    "name": "Nomad Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 5
     }
@@ -23374,7 +23158,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Gear - Tier 2",
+    "name": "Nomad Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
       "containerSlots": 10
     }
@@ -23395,7 +23179,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Gear - Tier 3",
+    "name": "Nomad Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
       "containerSlots": 15
     }
@@ -23416,7 +23200,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Gear - Tier 4",
+    "name": "Nomad Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -23433,7 +23217,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Mobility - Tier 1",
+    "name": "Nomad Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -23452,7 +23236,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Mobility - Tier 2",
+    "name": "Nomad Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -23471,7 +23255,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Mobility - Tier 3",
+    "name": "Nomad Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -23490,7 +23274,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Mobility - Tier 4",
+    "name": "Nomad Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -23505,7 +23289,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Water - Tier 1",
+    "name": "Nomad Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 30
     }
@@ -23530,7 +23314,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Water - Tier 2",
+    "name": "Nomad Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 40
     }
@@ -23555,7 +23339,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Water - Tier 3",
+    "name": "Nomad Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 50
     }
@@ -23580,7 +23364,7 @@
         ]
       }
     ],
-    "name": "Nomad Walker Upgrade - Water - Tier 4",
+    "name": "Nomad Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 60
     }
@@ -23681,6 +23465,11 @@
     },
     "translation": "Obsidian Canister",
     "weight": 90
+  },
+  {
+    "name": "Obsidian Container Large",
+    "parent": "Obsidian Pot",
+    "type": "ObsidianContainerLarge_C"
   },
   {
     "name": "Obsidian Flask",
@@ -23806,12 +23595,7 @@
     }
   },
   {
-    "name": "ObsidianContainerLarge",
-    "parent": "Obsidian Pot",
-    "type": "ObsidianContainerLarge_C"
-  },
-  {
-    "name": "OkkamStatue",
+    "name": "Okkam Statue",
     "translation": "OkkamStatue",
     "type": "OkkamStatue_C",
     "category": "OkkamStatue",
@@ -23843,7 +23627,7 @@
         ]
       }
     ],
-    "name": "OkkamStatue_1",
+    "name": "Okkam Statue_1",
     "type": "OkkamStatue_1_C",
     "experiencieReward": 6,
     "structureInfo": {
@@ -23864,7 +23648,7 @@
         ]
       }
     ],
-    "name": "OkkamStatue_2",
+    "name": "Okkam Statue_2",
     "type": "OkkamStatue_2_C",
     "experiencieReward": 6,
     "structureInfo": {
@@ -23874,22 +23658,22 @@
     "weight": 3
   },
   {
-    "name": "OneHandedBoneAxe",
+    "name": "One Handed Bone Axe",
     "parent": "Stone Axe",
     "type": "OneHandedBoneAxe_C"
   },
   {
-    "name": "OneHandedNibirianAxe",
+    "name": "One Handed Nibirian Axe",
     "parent": "Wyndan Hand Axe",
     "type": "OneHandedNibirianAxe_C"
   },
   {
-    "name": "OneHandedNibirianMace",
+    "name": "One Handed Nibirian Mace",
     "parent": "Wyndan Hammer",
     "type": "OneHandedNibirianMace_C"
   },
   {
-    "name": "OneHandedNibirianSword",
+    "name": "One Handed Nibirian Sword",
     "parent": "Wyndan Sabre",
     "type": "OneHandedNibirianSword_C"
   },
@@ -24354,7 +24138,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Cargo - Tier 1",
+    "name": "Panda Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
       "containerSlots": 8
     }
@@ -24380,7 +24164,7 @@
         "time": 63
       }
     ],
-    "name": "Panda Walker Upgrade - Cargo - Tier 2",
+    "name": "Panda Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
       "containerSlots": 14
     }
@@ -24405,7 +24189,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Cargo - Tier 3",
+    "name": "Panda Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
       "containerSlots": 18
     }
@@ -24430,7 +24214,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Cargo - Tier 4",
+    "name": "Panda Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 24
     }
@@ -24455,7 +24239,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Durability - Tier 1",
+    "name": "Panda Walker Upgrade Durability Tier 1",
     "upgradeInfo": {
       "bonusHp": 3000
     }
@@ -24480,7 +24264,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Durability - Tier 2",
+    "name": "Panda Walker Upgrade Durability Tier 2",
     "upgradeInfo": {
       "bonusHp": 15000
     }
@@ -24505,7 +24289,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Durability - Tier 3",
+    "name": "Panda Walker Upgrade Durability Tier 3",
     "upgradeInfo": {
       "bonusHp": 30000
     }
@@ -24530,7 +24314,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Durability - Tier 4",
+    "name": "Panda Walker Upgrade Durability Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -24553,7 +24337,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Gear - Tier 1",
+    "name": "Panda Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 5
     }
@@ -24578,7 +24362,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Gear - Tier 2",
+    "name": "Panda Walker Upgrade Gear Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -24601,7 +24385,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Gear - Tier 3",
+    "name": "Panda Walker Upgrade Gear Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -24624,7 +24408,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Gear - Tier 4",
+    "name": "Panda Walker Upgrade Gear Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -24647,7 +24431,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Mobility - Tier 1",
+    "name": "Panda Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -24670,7 +24454,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Mobility - Tier 2",
+    "name": "Panda Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -24693,7 +24477,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Mobility - Tier 3",
+    "name": "Panda Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -24716,7 +24500,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Mobility - Tier 4",
+    "name": "Panda Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -24739,7 +24523,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Torque - Tier 1",
+    "name": "Panda Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 500
     }
@@ -24764,7 +24548,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Torque - Tier 2",
+    "name": "Panda Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 1000
     }
@@ -24789,7 +24573,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Torque - Tier 3",
+    "name": "Panda Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 2000
     }
@@ -24814,7 +24598,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Torque - Tier 4",
+    "name": "Panda Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 3000
     }
@@ -24839,7 +24623,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Water - Tier 1",
+    "name": "Panda Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 260
     }
@@ -24864,7 +24648,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Water - Tier 2",
+    "name": "Panda Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 320
     }
@@ -24889,7 +24673,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Water - Tier 3",
+    "name": "Panda Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 400
     }
@@ -24914,7 +24698,7 @@
         ]
       }
     ],
-    "name": "Panda Walker Upgrade - Water - Tier 4",
+    "name": "Panda Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 480
     }
@@ -25204,6 +24988,9 @@
     "weight": 23
   },
   {
+    "name": "Penetrating Dart",
+    "parent": "AntiPersonnelTurret",
+    "type": "PenetratingDart_C",
     "category": "Ammo",
     "crafting": [
       {
@@ -25264,11 +25051,8 @@
         "time": 6
       }
     ],
-    "name": "Penetrating Dart",
-    "parent": "AntiPersonnelTurret",
     "trade_price": 1.5,
     "translation": "Penetrating Dart",
-    "type": "PenetratingDart_C",
     "projectileDamage": {
       "damage": 3,
       "penetration": 100
@@ -25282,11 +25066,6 @@
       }
     ],
     "damageType": "'DartDamage_C'"
-  },
-  {
-    "name": "PenetratingDart",
-    "parent": "AntiPersonnelTurret",
-    "type": "PenetratingDart_C"
   },
   {
     "category": "Resources",
@@ -25717,21 +25496,21 @@
   },
   {
     "category": "Upgrades",
-    "name": "Proxy Walker Upgrade - Cargo - Tier 1",
+    "name": "Proxy Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
       "containerSlots": 15
     }
   },
   {
     "category": "Upgrades",
-    "name": "Proxy Walker Upgrade - Gear - Tier 1",
+    "name": "Proxy Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 20
     }
   },
   {
     "category": "Upgrades",
-    "name": "Proxy Walker Upgrade - Water - Tier 1",
+    "name": "Proxy Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 600
     }
@@ -26048,7 +25827,7 @@
     "translation": "Raider Wings"
   },
   {
-    "name": "RainBoots",
+    "name": "Rain Boots",
     "parent": "Rupu Fur Sandals",
     "type": "RainBoots_C"
   },
@@ -26062,7 +25841,7 @@
     "wikiVisibility": false
   },
   {
-    "name": "RangeFinder",
+    "name": "Range Finder",
     "parent": "Maintenance Box",
     "type": "RangeFinder_C"
   },
@@ -26290,7 +26069,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Cargo - Tier 1",
+    "name": "Raptor Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
       "containerSlots": 9
     }
@@ -26315,7 +26094,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Cargo - Tier 2",
+    "name": "Raptor Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
       "containerSlots": 14
     }
@@ -26340,7 +26119,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Cargo - Tier 3",
+    "name": "Raptor Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
       "containerSlots": 18
     }
@@ -26365,7 +26144,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Cargo - Tier 4",
+    "name": "Raptor Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 22
     }
@@ -26390,7 +26169,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Durability - Tier 1",
+    "name": "Raptor Walker Upgrade Durability Tier 1",
     "upgradeInfo": {
       "bonusHp": 1000
     }
@@ -26415,7 +26194,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Durability - Tier 2",
+    "name": "Raptor Walker Upgrade Durability Tier 2",
     "upgradeInfo": {
       "bonusHp": 2000
     }
@@ -26440,7 +26219,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Durability - Tier 3",
+    "name": "Raptor Walker Upgrade Durability Tier 3",
     "upgradeInfo": {
       "bonusHp": 3000
     }
@@ -26465,7 +26244,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Durability - Tier 4",
+    "name": "Raptor Walker Upgrade Durability Tier 4",
     "upgradeInfo": {
       "bonusHp": 4000
     }
@@ -26490,7 +26269,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Gear - Tier 1",
+    "name": "Raptor Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 5
     }
@@ -26515,7 +26294,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Gear - Tier 2",
+    "name": "Raptor Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
       "containerSlots": 10
     }
@@ -26540,7 +26319,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Gear - Tier 3",
+    "name": "Raptor Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
       "containerSlots": 15
     }
@@ -26565,7 +26344,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Gear - Tier 4",
+    "name": "Raptor Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -26590,7 +26369,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Torque - Tier 1",
+    "name": "Raptor Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 5500
     }
@@ -26615,7 +26394,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Torque - Tier 2",
+    "name": "Raptor Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 10500
     }
@@ -26640,7 +26419,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Torque - Tier 3",
+    "name": "Raptor Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 25500
     }
@@ -26665,7 +26444,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Torque - Tier 4",
+    "name": "Raptor Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 37500
     }
@@ -26690,7 +26469,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Water - Tier 1",
+    "name": "Raptor Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 15
     }
@@ -26715,7 +26494,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Water - Tier 2",
+    "name": "Raptor Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 25
     }
@@ -26740,7 +26519,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Water - Tier 3",
+    "name": "Raptor Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 35
     }
@@ -26765,7 +26544,7 @@
         ]
       }
     ],
-    "name": "Raptor Walker Upgrade - Water - Tier 4",
+    "name": "Raptor Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 45
     }
@@ -27083,17 +26862,17 @@
     "weight": 0.73
   },
   {
-    "name": "RedwoodWoodBoots",
+    "name": "Redwood Wood Boots",
     "parent": "RedwoodWoodTorso",
     "type": "RedwoodWoodBoots_C"
   },
   {
-    "name": "RedwoodWoodGloves",
+    "name": "Redwood Wood Gloves",
     "parent": "RedwoodWoodTorso",
     "type": "RedwoodWoodGloves_C"
   },
   {
-    "name": "RedwoodWoodTorso",
+    "name": "Redwood Wood Torso",
     "parent": "TripleStitchTorso",
     "type": "RedwoodWoodTorso_C"
   },
@@ -27876,6 +27655,11 @@
     }
   },
   {
+    "name": "Rupu Fur Gloves",
+    "parent": "RupuFurTorso",
+    "type": "RupuFurGloves_C"
+  },
+  {
     "name": "Rupu Fur Sandals",
     "parent": "RupuFurTorso",
     "type": "T1_RupuFurBoots_C",
@@ -27931,6 +27715,11 @@
       "absorbing": 4,
       "reduction": 1
     }
+  },
+  {
+    "name": "Rupu Fur Torso",
+    "parent": "FiberTorso",
+    "type": "RupuFurTorso_C"
   },
   {
     "category": "Resources",
@@ -28249,6 +28038,9 @@
     "wikiVisibility": false
   },
   {
+    "name": "Rupu Sling",
+    "parent": "Defensive Tower",
+    "type": "RupuSling_C",
     "category": "Weapons",
     "crafting": [
       {
@@ -28272,15 +28064,10 @@
         ]
       }
     ],
-    "name": "Rupu Sling",
-    "parent": "Defensive Tower",
-    "type": "RupuSling_C",
     "experiencieReward": 44,
     "structureInfo": {
       "hp": 3520
-    },
-    "translation": "Rupu Sling",
-    "weight": 12.71
+    }
   },
   {
     "category": "Ammo",
@@ -28402,21 +28189,6 @@
       "absorbing": 6,
       "reduction": 1
     }
-  },
-  {
-    "name": "RupuFurGloves",
-    "parent": "RupuFurTorso",
-    "type": "RupuFurGloves_C"
-  },
-  {
-    "name": "RupuFurTorso",
-    "parent": "FiberTorso",
-    "type": "RupuFurTorso_C"
-  },
-  {
-    "name": "RupuSling",
-    "parent": "Defensive Tower",
-    "type": "RupuSling_C"
   },
   {
     "category": "Resources",
@@ -29185,7 +28957,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Cargo - Tier 1",
+    "name": "Schmetterling Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -29208,7 +28980,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Cargo - Tier 2",
+    "name": "Schmetterling Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -29231,7 +29003,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Cargo - Tier 3",
+    "name": "Schmetterling Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -29254,7 +29026,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Cargo - Tier 4",
+    "name": "Schmetterling Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -29277,7 +29049,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Durability - Tier 1",
+    "name": "Schmetterling Walker Upgrade Durability Tier 1",
     "upgradeInfo": {
       "bonusHp": 3000
     }
@@ -29302,7 +29074,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Durability - Tier 2",
+    "name": "Schmetterling Walker Upgrade Durability Tier 2",
     "upgradeInfo": {
       "bonusHp": 15000
     }
@@ -29327,7 +29099,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Durability - Tier 3",
+    "name": "Schmetterling Walker Upgrade Durability Tier 3",
     "upgradeInfo": {
       "bonusHp": 25000
     }
@@ -29352,7 +29124,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Durability - Tier 4",
+    "name": "Schmetterling Walker Upgrade Durability Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -29375,7 +29147,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Gear - Tier 1",
+    "name": "Schmetterling Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 5
     }
@@ -29400,7 +29172,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Gear - Tier 2",
+    "name": "Schmetterling Walker Upgrade Gear Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -29423,7 +29195,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Gear - Tier 3",
+    "name": "Schmetterling Walker Upgrade Gear Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -29446,7 +29218,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Gear - Tier 4",
+    "name": "Schmetterling Walker Upgrade Gear Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -29469,7 +29241,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Mobility - Tier 1",
+    "name": "Schmetterling Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -29492,7 +29264,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Mobility - Tier 2",
+    "name": "Schmetterling Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -29515,7 +29287,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Mobility - Tier 3",
+    "name": "Schmetterling Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -29538,7 +29310,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Mobility - Tier 4",
+    "name": "Schmetterling Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -29561,7 +29333,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Torque - Tier 1",
+    "name": "Schmetterling Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 800
     }
@@ -29586,7 +29358,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Torque - Tier 2",
+    "name": "Schmetterling Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 1500
     }
@@ -29611,7 +29383,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Torque - Tier 3",
+    "name": "Schmetterling Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 2500
     }
@@ -29636,7 +29408,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Torque - Tier 4",
+    "name": "Schmetterling Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 4000
     }
@@ -29665,7 +29437,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Water - Tier 1",
+    "name": "Schmetterling Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 320
     }
@@ -29694,7 +29466,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Water - Tier 2",
+    "name": "Schmetterling Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 450
     }
@@ -29723,7 +29495,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Water - Tier 3",
+    "name": "Schmetterling Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 600
     }
@@ -29752,7 +29524,7 @@
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade - Water - Tier 4",
+    "name": "Schmetterling Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 800
     }
@@ -30523,7 +30295,7 @@
         ]
       }
     ],
-    "name": "Silur Walker Upgrade - Torque - Tier 1",
+    "name": "Silur Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 1600
     }
@@ -30548,7 +30320,7 @@
         ]
       }
     ],
-    "name": "Silur Walker Upgrade - Torque - Tier 2",
+    "name": "Silur Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 2400
     }
@@ -30573,7 +30345,7 @@
         ]
       }
     ],
-    "name": "Silur Walker Upgrade - Torque - Tier 3",
+    "name": "Silur Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 4000
     }
@@ -30598,7 +30370,7 @@
         ]
       }
     ],
-    "name": "Silur Walker Upgrade - Torque - Tier 4",
+    "name": "Silur Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 6000
     }
@@ -30619,7 +30391,7 @@
         ]
       }
     ],
-    "name": "Silur Walker Upgrade - Water - Tier 1",
+    "name": "Silur Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 200
     }
@@ -30640,7 +30412,7 @@
         ]
       }
     ],
-    "name": "Silur Walker Upgrade - Water - Tier 2",
+    "name": "Silur Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 240
     }
@@ -30661,7 +30433,7 @@
         ]
       }
     ],
-    "name": "Silur Walker Upgrade - Water - Tier 3",
+    "name": "Silur Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 280
     }
@@ -30682,7 +30454,7 @@
         ]
       }
     ],
-    "name": "Silur Walker Upgrade - Water - Tier 4",
+    "name": "Silur Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 320
     }
@@ -30863,6 +30635,9 @@
     "damageType": "'MeleeSwordDamage_C'"
   },
   {
+    "name": "Sinus Destroyer",
+    "parent": "Desert Mule",
+    "type": "SinusDestroyer_C",
     "category": "Vitamins",
     "crafting": [
       {
@@ -30910,18 +30685,10 @@
         "time": 60
       }
     ],
-    "name": "Sinus Destroyer",
-    "parent": "Desert Mule",
     "trade_price": 87.6,
     "translation": "Sinus Destroyer",
-    "type": "SinusDestroyer_C",
     "stackSize": 100,
     "weight": 0.5
-  },
-  {
-    "name": "SinusDestroyer",
-    "parent": "Desert Mule",
-    "type": "SinusDestroyer_C"
   },
   {
     "category": "Walker Parts",
@@ -31027,6 +30794,9 @@
     }
   },
   {
+    "name": "Small Boulder",
+    "parent": "Slingshot",
+    "type": "SmallBoulder_C",
     "category": "Ammo",
     "crafting": [
       {
@@ -31072,11 +30842,8 @@
         "time": 5
       }
     ],
-    "name": "Small Boulder",
-    "parent": "Slingshot",
     "trade_price": 3.1,
     "translation": "Small Boulder",
-    "type": "SmallBoulder_C",
     "projectileDamage": {
       "damage": 150,
       "penetration": 10,
@@ -31219,10 +30986,50 @@
     "weight": 45
   },
   {
+    "category": "Upgrades",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 100,
+            "name": "Fiber"
+          },
+          {
+            "count": 75,
+            "name": "Wood"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          }
+        ],
+        "time": 25
+      }
+    ],
+    "name": "Small Spare Parts Profile",
+    "upgradeInfo": {
+      "containerSlots": 10
+    }
+  },
+  {
     "category": "Walker Parts",
     "name": "Small Walker Legs (1 of 2)",
     "translation": "Small Walker Legs",
     "type": "SmallWalkerLegs_UI_C",
+    "onlyDevs": true
+  },
+  {
+    "name": "Small Walker Walker Legs (1 of 2)",
+    "type": "SmallWalkerLegs_UI_C",
+    "onlyDevs": true
+  },
+  {
+    "name": "Small Walker Walker Wings (1 of 2)",
+    "type": "SmallWalkerWings_UI_C",
     "onlyDevs": true
   },
   {
@@ -31272,52 +31079,7 @@
     "translation": "Small Wing"
   },
   {
-    "name": "SmallBoulder",
-    "parent": "Slingshot",
-    "type": "SmallBoulder_C"
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 15,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 100,
-            "name": "Fiber"
-          },
-          {
-            "count": 75,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Stone"
-          }
-        ],
-        "time": 25
-      }
-    ],
-    "name": "SmallSparePartsProfile",
-    "upgradeInfo": {
-      "containerSlots": 10
-    }
-  },
-  {
-    "name": "SmallWalker Walker Legs (1 of 2)",
-    "type": "SmallWalkerLegs_UI_C",
-    "onlyDevs": true
-  },
-  {
-    "name": "SmallWalker Walker Wings (1 of 2)",
-    "type": "SmallWalkerWings_UI_C",
-    "onlyDevs": true
-  },
-  {
-    "name": "SmithingStation",
+    "name": "Smithing Station",
     "parent": "Crafting Bench",
     "type": "SmithingStation_C"
   },
@@ -31481,7 +31243,7 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Cargo - Tier 1",
+    "name": "Spider Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
       "containerSlots": 9
     }
@@ -31502,7 +31264,7 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Cargo - Tier 2",
+    "name": "Spider Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
       "containerSlots": 14
     }
@@ -31527,7 +31289,7 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Cargo - Tier 3",
+    "name": "Spider Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
       "containerSlots": 18
     }
@@ -31552,14 +31314,14 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Cargo - Tier 4",
+    "name": "Spider Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 22
     }
   },
   {
     "category": "Upgrades",
-    "name": "Spider Walker Upgrade - Durability - Tier 1",
+    "name": "Spider Walker Upgrade Durability Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -31582,7 +31344,7 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Durability - Tier 2",
+    "name": "Spider Walker Upgrade Durability Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -31605,7 +31367,7 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Durability - Tier 3",
+    "name": "Spider Walker Upgrade Durability Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -31628,7 +31390,7 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Durability - Tier 4",
+    "name": "Spider Walker Upgrade Durability Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -31643,7 +31405,7 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Gear - Tier 1",
+    "name": "Spider Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 5
     }
@@ -31664,7 +31426,7 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Gear - Tier 2",
+    "name": "Spider Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
       "containerSlots": 10
     }
@@ -31689,7 +31451,7 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Gear - Tier 3",
+    "name": "Spider Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
       "containerSlots": 15
     }
@@ -31714,14 +31476,14 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Gear - Tier 4",
+    "name": "Spider Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
       "containerSlots": 20
     }
   },
   {
     "category": "Upgrades",
-    "name": "Spider Walker Upgrade - Mobility - Tier 1",
+    "name": "Spider Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -31744,7 +31506,7 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Mobility - Tier 2",
+    "name": "Spider Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -31767,7 +31529,7 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Mobility - Tier 3",
+    "name": "Spider Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -31790,12 +31552,12 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Mobility - Tier 4",
+    "name": "Spider Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {}
   },
   {
     "category": "Upgrades",
-    "name": "Spider Walker Upgrade - Water - Tier 1",
+    "name": "Spider Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 30
     }
@@ -31820,7 +31582,7 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Water - Tier 2",
+    "name": "Spider Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 40
     }
@@ -31845,7 +31607,7 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Water - Tier 3",
+    "name": "Spider Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 50
     }
@@ -31870,7 +31632,7 @@
         ]
       }
     ],
-    "name": "Spider Walker Upgrade - Water - Tier 4",
+    "name": "Spider Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 60
     }
@@ -32526,7 +32288,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Cargo - Tier 1",
+    "name": "Stiletto Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -32545,30 +32307,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Cargo - Tier 2",
-    "upgradeInfo": {}
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 40,
-            "name": "Wood"
-          },
-          {
-            "count": 6,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 24,
-            "name": "Bone Splinter"
-          }
-        ]
-      }
-    ],
-    "name": "Stiletto Walker Upgrade - Cargo - Tier 3",
+    "name": "Stiletto Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -32591,7 +32330,30 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Cargo - Tier 4",
+    "name": "Stiletto Walker Upgrade Cargo Tier 3",
+    "upgradeInfo": {}
+  },
+  {
+    "category": "Upgrades",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Wood"
+          },
+          {
+            "count": 6,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 24,
+            "name": "Bone Splinter"
+          }
+        ]
+      }
+    ],
+    "name": "Stiletto Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 32
     }
@@ -32616,7 +32378,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Durability - Tier 1",
+    "name": "Stiletto Walker Upgrade Durability Tier 1",
     "upgradeInfo": {
       "bonusHp": 1000
     }
@@ -32641,7 +32403,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Durability - Tier 2",
+    "name": "Stiletto Walker Upgrade Durability Tier 2",
     "upgradeInfo": {
       "bonusHp": 8000
     }
@@ -32666,7 +32428,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Durability - Tier 3",
+    "name": "Stiletto Walker Upgrade Durability Tier 3",
     "upgradeInfo": {
       "bonusHp": 14000
     }
@@ -32691,7 +32453,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Durability - Tier 4",
+    "name": "Stiletto Walker Upgrade Durability Tier 4",
     "upgradeInfo": {
       "bonusHp": 25000
     }
@@ -32716,7 +32478,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Gear - Tier 1",
+    "name": "Stiletto Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 10
     }
@@ -32737,7 +32499,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Gear - Tier 2",
+    "name": "Stiletto Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
       "containerSlots": 15
     }
@@ -32762,7 +32524,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Gear - Tier 3",
+    "name": "Stiletto Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -32787,7 +32549,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Gear - Tier 4",
+    "name": "Stiletto Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
       "containerSlots": 25
     }
@@ -32812,7 +32574,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Mobility - Tier 1",
+    "name": "Stiletto Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -32835,7 +32597,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Mobility - Tier 2",
+    "name": "Stiletto Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -32858,7 +32620,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Mobility - Tier 3",
+    "name": "Stiletto Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {
       "engineTorqueMultiplier": 1.3
     }
@@ -32883,7 +32645,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Mobility - Tier 4",
+    "name": "Stiletto Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {
       "engineTorqueMultiplier": 1.4
     }
@@ -32904,7 +32666,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Torque - Tier 1",
+    "name": "Stiletto Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 600
     }
@@ -32929,7 +32691,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Torque - Tier 2",
+    "name": "Stiletto Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 1200
     }
@@ -32954,7 +32716,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Torque - Tier 3",
+    "name": "Stiletto Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 2100
     }
@@ -32979,7 +32741,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Torque - Tier 4",
+    "name": "Stiletto Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 3200
     }
@@ -33004,7 +32766,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Water - Tier 1",
+    "name": "Stiletto Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 80
     }
@@ -33025,7 +32787,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Water - Tier 2",
+    "name": "Stiletto Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 110
     }
@@ -33050,7 +32812,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Water - Tier 3",
+    "name": "Stiletto Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 140
     }
@@ -33075,7 +32837,7 @@
         ]
       }
     ],
-    "name": "Stiletto Walker Upgrade - Water - Tier 4",
+    "name": "Stiletto Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 170
     }
@@ -33420,12 +33182,12 @@
     }
   },
   {
-    "name": "StompingStation_T2",
+    "name": "Stomping Station_T2",
     "parent": "Stomping Station",
     "type": "StompingStation_T2_C"
   },
   {
-    "name": "StompingStation_T3",
+    "name": "Stomping Station_T3",
     "parent": "StompingStation_T2",
     "type": "StompingStation_T3_C"
   },
@@ -33700,8 +33462,8 @@
   {
     "name": "Stone Walls",
     "parent": "Sand Structures",
-    "translation": "Stone Walls",
-    "type": "StoneWalls_C"
+    "type": "StoneWalls_C",
+    "translation": "Stone Walls"
   },
   {
     "category": "Schematics",
@@ -33715,11 +33477,6 @@
       "Stone Door",
       "Stone Wall"
     ]
-  },
-  {
-    "name": "StoneWalls",
-    "parent": "Sand Structures",
-    "type": "StoneWalls_C"
   },
   {
     "name": "Strut",
@@ -34232,6 +33989,11 @@
     "damageType": "'InsectDamage_C'"
   },
   {
+    "name": "Throwable Lava Bomb",
+    "parent": "Fire Bomb",
+    "type": "ThrowableLavaBomb_C"
+  },
+  {
     "category": "Weapons",
     "crafting": [
       {
@@ -34270,11 +34032,6 @@
     "name": "Throwable Smoke Bomb (Gas)",
     "parent": "Chalk Bomb",
     "type": "ThrowableSmokeBomb_C"
-  },
-  {
-    "name": "ThrowableLavaBomb",
-    "parent": "Fire Bomb",
-    "type": "ThrowableLavaBomb_C"
   },
   {
     "name": "Throwing Net",
@@ -34622,7 +34379,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Cargo - Tier 1",
+    "name": "Titan Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
       "containerSlots": 12
     }
@@ -34648,7 +34405,7 @@
         "time": 63
       }
     ],
-    "name": "Titan Walker Upgrade - Cargo - Tier 2",
+    "name": "Titan Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
       "containerSlots": 16
     }
@@ -34673,7 +34430,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Cargo - Tier 3",
+    "name": "Titan Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -34698,7 +34455,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Cargo - Tier 4",
+    "name": "Titan Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 25
     }
@@ -34723,7 +34480,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Durability - Tier 1",
+    "name": "Titan Walker Upgrade Durability Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -34746,7 +34503,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Durability - Tier 2",
+    "name": "Titan Walker Upgrade Durability Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -34769,7 +34526,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Durability - Tier 3",
+    "name": "Titan Walker Upgrade Durability Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -34792,7 +34549,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Durability - Tier 4",
+    "name": "Titan Walker Upgrade Durability Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -34815,7 +34572,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Gear - Tier 1",
+    "name": "Titan Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 10
     }
@@ -34840,7 +34597,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Gear - Tier 2",
+    "name": "Titan Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
       "containerSlots": 15
     }
@@ -34865,7 +34622,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Gear - Tier 3",
+    "name": "Titan Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -34890,7 +34647,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Gear - Tier 4",
+    "name": "Titan Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
       "containerSlots": 30
     }
@@ -34915,7 +34672,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Mobility - Tier 1",
+    "name": "Titan Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -34938,7 +34695,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Mobility - Tier 2",
+    "name": "Titan Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -34961,7 +34718,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Mobility - Tier 3",
+    "name": "Titan Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -34984,7 +34741,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Mobility - Tier 4",
+    "name": "Titan Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -35007,7 +34764,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Torque - Tier 1",
+    "name": "Titan Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 500
     }
@@ -35032,7 +34789,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Torque - Tier 2",
+    "name": "Titan Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 1000
     }
@@ -35057,7 +34814,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Torque - Tier 3",
+    "name": "Titan Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 2000
     }
@@ -35082,7 +34839,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Torque - Tier 4",
+    "name": "Titan Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 3000
     }
@@ -35107,7 +34864,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Water - Tier 1",
+    "name": "Titan Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 300
     }
@@ -35132,7 +34889,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Water - Tier 2",
+    "name": "Titan Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 400
     }
@@ -35157,7 +34914,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Water - Tier 3",
+    "name": "Titan Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 500
     }
@@ -35182,7 +34939,7 @@
         ]
       }
     ],
-    "name": "Titan Walker Upgrade - Water - Tier 4",
+    "name": "Titan Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 600
     }
@@ -35671,7 +35428,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Cargo - Tier 1",
+    "name": "Toboggan Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
       "containerSlots": 12
     }
@@ -35696,7 +35453,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Cargo - Tier 2",
+    "name": "Toboggan Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
       "containerSlots": 18
     }
@@ -35721,7 +35478,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Cargo - Tier 3",
+    "name": "Toboggan Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -35744,7 +35501,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Cargo - Tier 4",
+    "name": "Toboggan Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -35767,7 +35524,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Durability - Tier 1",
+    "name": "Toboggan Walker Upgrade Durability Tier 1",
     "upgradeInfo": {
       "bonusHp": 4000
     }
@@ -35792,7 +35549,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Durability - Tier 2",
+    "name": "Toboggan Walker Upgrade Durability Tier 2",
     "upgradeInfo": {
       "bonusHp": 8000
     }
@@ -35817,7 +35574,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Durability - Tier 3",
+    "name": "Toboggan Walker Upgrade Durability Tier 3",
     "upgradeInfo": {
       "bonusHp": 15000
     }
@@ -35842,7 +35599,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Durability - Tier 4",
+    "name": "Toboggan Walker Upgrade Durability Tier 4",
     "upgradeInfo": {
       "bonusHp": 30000
     }
@@ -35867,7 +35624,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Gear - Tier 1",
+    "name": "Toboggan Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 5
     }
@@ -35892,7 +35649,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Gear - Tier 2",
+    "name": "Toboggan Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
       "containerSlots": 10
     }
@@ -35917,7 +35674,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Gear - Tier 3",
+    "name": "Toboggan Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
       "containerSlots": 15
     }
@@ -35942,7 +35699,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Gear - Tier 4",
+    "name": "Toboggan Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -35967,7 +35724,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Mobility - Tier 1",
+    "name": "Toboggan Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -35986,7 +35743,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Mobility - Tier 2",
+    "name": "Toboggan Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -36009,7 +35766,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Mobility - Tier 3",
+    "name": "Toboggan Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -36032,7 +35789,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Mobility - Tier 4",
+    "name": "Toboggan Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -36055,7 +35812,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Torque - Tier 1",
+    "name": "Toboggan Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 750
     }
@@ -36080,7 +35837,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Torque - Tier 2",
+    "name": "Toboggan Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 1300
     }
@@ -36105,7 +35862,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Torque - Tier 3",
+    "name": "Toboggan Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 2000
     }
@@ -36130,7 +35887,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Torque - Tier 4",
+    "name": "Toboggan Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 4000
     }
@@ -36155,7 +35912,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Water - Tier 1",
+    "name": "Toboggan Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 100
     }
@@ -36180,7 +35937,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Water - Tier 2",
+    "name": "Toboggan Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 130
     }
@@ -36205,7 +35962,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Water - Tier 3",
+    "name": "Toboggan Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 160
     }
@@ -36230,7 +35987,7 @@
         ]
       }
     ],
-    "name": "Toboggan Walker Upgrade - Water - Tier 4",
+    "name": "Toboggan Walker Upgrade Water Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -36767,7 +36524,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Torque Capacity - Tier 1 Upgrade",
+    "name": "Torque Capacity Tier 1 Upgrade",
     "translation": "Torque Capacity - Tier 1 Upgrade",
     "type": "SparePartWoodTorque_C",
     "experiencieReward": 10,
@@ -36776,7 +36533,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Torque Capacity - Tier 2 Upgrade",
+    "name": "Torque Capacity Tier 2 Upgrade",
     "translation": "Torque Capacity - Tier 2 Upgrade",
     "type": "SparePartBoneTorque_C",
     "experiencieReward": 20,
@@ -36785,7 +36542,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Torque Capacity - Tier 3 Upgrade",
+    "name": "Torque Capacity Tier 3 Upgrade",
     "translation": "Torque Capacity - Tier 3 Upgrade",
     "type": "SparePartClayTorque_C",
     "experiencieReward": 30,
@@ -36794,7 +36551,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Torque Capacity - Tier 4 Upgrade",
+    "name": "Torque Capacity Tier 4 Upgrade",
     "translation": "Torque Capacity - Tier 4 Upgrade",
     "type": "SparePartIronTorque_C",
     "experiencieReward": 40,
@@ -36873,7 +36630,7 @@
     }
   },
   {
-    "name": "TrapSpikesSpring",
+    "name": "Trap Spikes Spring",
     "parent": "Bomb Chest Trap",
     "type": "TrapSpikesSpring_C"
   },
@@ -37009,6 +36766,9 @@
     }
   },
   {
+    "name": "Triple Stitch Boots",
+    "parent": "TripleStitchTorso",
+    "type": "T2_TripleStitchBoots_C",
     "category": "Armors",
     "crafting": [
       {
@@ -37040,10 +36800,8 @@
         "time": 2
       }
     ],
-    "name": "Triple Stitch Boots",
     "trade_price": 61.1,
     "translation": "Triple Stitch Boots",
-    "type": "T2_TripleStitchBoots_C",
     "experiencieReward": 45,
     "stackSize": 100,
     "weight": 1.5,
@@ -37140,17 +36898,12 @@
     "weight": 0.24
   },
   {
-    "name": "TripleStitchBoots",
-    "parent": "TripleStitchTorso",
-    "type": "TripleStitchBoots_C"
-  },
-  {
-    "name": "TripleStitchGloves",
+    "name": "Triple Stitch Gloves",
     "parent": "TripleStitchTorso",
     "type": "TripleStitchGloves_C"
   },
   {
-    "name": "TripleStitchTorso",
+    "name": "Triple Stitch Torso",
     "parent": "RupuFurTorso",
     "type": "TripleStitchTorso_C"
   },
@@ -37420,7 +37173,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Cargo - Tier 1",
+    "name": "Tusker Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
       "containerSlots": 20
     }
@@ -37441,7 +37194,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Cargo - Tier 2",
+    "name": "Tusker Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
       "containerSlots": 30
     }
@@ -37466,7 +37219,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Cargo - Tier 3",
+    "name": "Tusker Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
       "containerSlots": 40
     }
@@ -37491,7 +37244,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Cargo - Tier 4",
+    "name": "Tusker Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
       "containerSlots": 60
     }
@@ -37516,7 +37269,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Durability - Tier 1",
+    "name": "Tusker Walker Upgrade Durability Tier 1",
     "upgradeInfo": {
       "bonusHp": 2000
     }
@@ -37541,7 +37294,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Durability - Tier 2",
+    "name": "Tusker Walker Upgrade Durability Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -37564,7 +37317,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Durability - Tier 3",
+    "name": "Tusker Walker Upgrade Durability Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -37587,7 +37340,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Durability - Tier 4",
+    "name": "Tusker Walker Upgrade Durability Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -37610,7 +37363,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Gear - Tier 1",
+    "name": "Tusker Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
       "containerSlots": 5
     }
@@ -37635,7 +37388,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Gear - Tier 2",
+    "name": "Tusker Walker Upgrade Gear Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -37658,7 +37411,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Gear - Tier 3",
+    "name": "Tusker Walker Upgrade Gear Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -37681,7 +37434,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Gear - Tier 4",
+    "name": "Tusker Walker Upgrade Gear Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -37704,7 +37457,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Mobility - Tier 1",
+    "name": "Tusker Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {}
   },
   {
@@ -37727,7 +37480,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Mobility - Tier 2",
+    "name": "Tusker Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {}
   },
   {
@@ -37750,7 +37503,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Mobility - Tier 3",
+    "name": "Tusker Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {}
   },
   {
@@ -37773,7 +37526,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Mobility - Tier 4",
+    "name": "Tusker Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {}
   },
   {
@@ -37796,7 +37549,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Torque - Tier 1",
+    "name": "Tusker Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 1000
     }
@@ -37821,7 +37574,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Torque - Tier 2",
+    "name": "Tusker Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 2000
     }
@@ -37846,7 +37599,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Torque - Tier 3",
+    "name": "Tusker Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 3000
     }
@@ -37871,7 +37624,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Torque - Tier 4",
+    "name": "Tusker Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 4000
     }
@@ -37896,7 +37649,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Water - Tier 1",
+    "name": "Tusker Walker Upgrade Water Tier 1",
     "upgradeInfo": {
       "stackSizeOverride": 160
     }
@@ -37921,7 +37674,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Water - Tier 2",
+    "name": "Tusker Walker Upgrade Water Tier 2",
     "upgradeInfo": {
       "stackSizeOverride": 360
     }
@@ -37946,7 +37699,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Water - Tier 3",
+    "name": "Tusker Walker Upgrade Water Tier 3",
     "upgradeInfo": {
       "stackSizeOverride": 720
     }
@@ -37971,7 +37724,7 @@
         ]
       }
     ],
-    "name": "Tusker Walker Upgrade - Water - Tier 4",
+    "name": "Tusker Walker Upgrade Water Tier 4",
     "upgradeInfo": {
       "stackSizeOverride": 1520
     }
@@ -38225,22 +37978,22 @@
     "weight": 9.75
   },
   {
-    "name": "TwoHandedIronMace",
+    "name": "Two Handed Iron Mace",
     "parent": "Long Ceramic Hoofmace",
     "type": "TwoHandedIronMace_C"
   },
   {
-    "name": "TwoHandedNibirianAxe",
+    "name": "Two Handed Nibirian Axe",
     "parent": "Wyndan Battle Axe",
     "type": "TwoHandedNibirianAxe_C"
   },
   {
-    "name": "TwoHandedNibirianMace",
+    "name": "Two Handed Nibirian Mace",
     "parent": "TwoHandedIronMace",
     "type": "TwoHandedNibirianMace_C"
   },
   {
-    "name": "TwoHandedNibirianSword",
+    "name": "Two Handed Nibirian Sword",
     "parent": "Wyndan Flame Sword",
     "type": "TwoHandedNibirianSword_C"
   },
@@ -38404,6 +38157,56 @@
     "type": "WalkerParts_C"
   },
   {
+    "name": "Walker Parts Advanced_T2",
+    "parent": "WalkerPartsImproved_T2",
+    "type": "WalkerPartsAdvanced_T2_C"
+  },
+  {
+    "name": "Walker Parts Advanced_T3",
+    "parent": "Advanced Walker Parts",
+    "type": "WalkerPartsAdvanced_T3_C"
+  },
+  {
+    "name": "Walker Parts Advanced_T4",
+    "parent": "WalkerPartsImproved_T4",
+    "type": "WalkerPartsAdvanced_T4_C"
+  },
+  {
+    "name": "Walker Parts Base_T1",
+    "parent": "Basic Walkers",
+    "type": "WalkerPartsBase_T1_C"
+  },
+  {
+    "name": "Walker Parts Base_T2",
+    "parent": "Improved Walkers",
+    "type": "WalkerPartsBase_T2_C"
+  },
+  {
+    "name": "Walker Parts Base_T3",
+    "parent": "Advanced Walkers",
+    "type": "WalkerPartsBase_T3_C"
+  },
+  {
+    "name": "Walker Parts Base_T4",
+    "parent": "Flotillian Walkers",
+    "type": "WalkerPartsBase_T4_C"
+  },
+  {
+    "name": "Walker Parts Improved_T1",
+    "parent": "WalkerPartsBase_T1",
+    "type": "WalkerPartsImproved_T1_C"
+  },
+  {
+    "name": "Walker Parts Improved_T2",
+    "parent": "WalkerPartsBase_T2",
+    "type": "WalkerPartsImproved_T2_C"
+  },
+  {
+    "name": "Walker Parts Improved_T4",
+    "parent": "WalkerPartsBase_T4",
+    "type": "WalkerPartsImproved_T4_C"
+  },
+  {
     "name": "Walker Rigs",
     "translation": "Walker Rigs",
     "type": "WalkerRigs_C"
@@ -38437,56 +38240,6 @@
     },
     "translation": "Walker Totem",
     "weight": 10
-  },
-  {
-    "name": "WalkerPartsAdvanced_T2",
-    "parent": "WalkerPartsImproved_T2",
-    "type": "WalkerPartsAdvanced_T2_C"
-  },
-  {
-    "name": "WalkerPartsAdvanced_T3",
-    "parent": "Advanced Walker Parts",
-    "type": "WalkerPartsAdvanced_T3_C"
-  },
-  {
-    "name": "WalkerPartsAdvanced_T4",
-    "parent": "WalkerPartsImproved_T4",
-    "type": "WalkerPartsAdvanced_T4_C"
-  },
-  {
-    "name": "WalkerPartsBase_T1",
-    "parent": "Basic Walkers",
-    "type": "WalkerPartsBase_T1_C"
-  },
-  {
-    "name": "WalkerPartsBase_T2",
-    "parent": "Improved Walkers",
-    "type": "WalkerPartsBase_T2_C"
-  },
-  {
-    "name": "WalkerPartsBase_T3",
-    "parent": "Advanced Walkers",
-    "type": "WalkerPartsBase_T3_C"
-  },
-  {
-    "name": "WalkerPartsBase_T4",
-    "parent": "Flotillian Walkers",
-    "type": "WalkerPartsBase_T4_C"
-  },
-  {
-    "name": "WalkerPartsImproved_T1",
-    "parent": "WalkerPartsBase_T1",
-    "type": "WalkerPartsImproved_T1_C"
-  },
-  {
-    "name": "WalkerPartsImproved_T2",
-    "parent": "WalkerPartsBase_T2",
-    "type": "WalkerPartsImproved_T2_C"
-  },
-  {
-    "name": "WalkerPartsImproved_T4",
-    "parent": "WalkerPartsBase_T4",
-    "type": "WalkerPartsImproved_T4_C"
   },
   {
     "name": "Walkers",
@@ -38577,6 +38330,11 @@
       "type": "Reinforced",
       "hp": 40000
     }
+  },
+  {
+    "name": "Wall Giant",
+    "parent": "Advanced Constructions",
+    "type": "WallGiant_C"
   },
   {
     "category": "Concrete",
@@ -38779,11 +38537,6 @@
     }
   },
   {
-    "name": "WallGiant",
-    "parent": "Advanced Constructions",
-    "type": "WallGiant_C"
-  },
-  {
     "category": "Interactables",
     "name": "Wanderer's Potion",
     "translation": "Wanderer's Potion",
@@ -38906,7 +38659,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Water Storage - Tier 1 Upgrade",
+    "name": "Water Storage Tier 1 Upgrade",
     "translation": "Water Storage - Tier 1 Upgrade",
     "type": "SparePartWoodWater_C",
     "experiencieReward": 10,
@@ -38915,7 +38668,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Water Storage - Tier 2 Upgrade",
+    "name": "Water Storage Tier 2 Upgrade",
     "translation": "Water Storage - Tier 2 Upgrade",
     "type": "SparePartBoneWater_C",
     "experiencieReward": 20,
@@ -38924,7 +38677,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Water Storage - Tier 3 Upgrade",
+    "name": "Water Storage Tier 3 Upgrade",
     "translation": "Water Storage - Tier 3 Upgrade",
     "type": "SparePartClayWater_C",
     "experiencieReward": 30,
@@ -38933,7 +38686,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Water Storage - Tier 4 Upgrade",
+    "name": "Water Storage Tier 4 Upgrade",
     "translation": "Water Storage - Tier 4 Upgrade",
     "type": "SparePartIronWater_C",
     "experiencieReward": 40,
@@ -39399,6 +39152,9 @@
     "damageType": "'RupuMeleeBluntDamage_C'"
   },
   {
+    "name": "Wooden Dart",
+    "parent": "Repeater",
+    "type": "WoodenDart_C",
     "category": "Ammo",
     "crafting": [
       {
@@ -39459,11 +39215,8 @@
         "time": 4
       }
     ],
-    "name": "Wooden Dart",
-    "parent": "Repeater",
     "trade_price": 1.5,
     "translation": "Wooden Dart",
-    "type": "WoodenDart_C",
     "projectileDamage": {
       "damage": 10
     },
@@ -39644,8 +39397,8 @@
   {
     "name": "Wooden Walls",
     "parent": "Sand Structures",
-    "translation": "Wooden Walls",
-    "type": "WoodenWalls_C"
+    "type": "WoodenWalls_C",
+    "translation": "Wooden Walls"
   },
   {
     "category": "Schematics",
@@ -39666,16 +39419,6 @@
       "Slit Wall",
       "Double Slit Wall"
     ]
-  },
-  {
-    "name": "WoodenDart",
-    "parent": "Repeater",
-    "type": "WoodenDart_C"
-  },
-  {
-    "name": "WoodenWalls",
-    "parent": "Sand Structures",
-    "type": "WoodenWalls_C"
   },
   {
     "name": "Woodworking Station",
@@ -39722,6 +39465,9 @@
     "weight": 20
   },
   {
+    "name": "Worm Oil",
+    "parent": "StompingStation_T3",
+    "type": "WormOil_C",
     "category": "Liquids",
     "crafting": [
       {
@@ -39736,11 +39482,8 @@
         "time": 15
       }
     ],
-    "name": "Worm Oil",
-    "parent": "StompingStation_T3",
     "trade_price": 300,
     "translation": "Worm Oil",
-    "type": "WormOil_C",
     "experiencieReward": 30,
     "stackSize": 100,
     "weight": 0.1
@@ -39889,11 +39632,6 @@
     },
     "translation": "Worm Vivarium",
     "weight": 25
-  },
-  {
-    "name": "WormOil",
-    "parent": "StompingStation_T3",
-    "type": "WormOil_C"
   },
   {
     "category": "Furniture",

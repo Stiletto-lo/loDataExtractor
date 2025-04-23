@@ -45,10 +45,6 @@ function processCreatures(creatures) {
 		// Log some debug information about drops
 		const creaturesWithDrops = processedCreatures.filter(c => c.drops && c.drops.length > 0);
 		console.info(`Added drops to ${creaturesWithDrops.length} creatures out of ${processedCreatures.length}`);
-		if (creaturesWithDrops.length > 0) {
-			const sampleCreature = creaturesWithDrops[0];
-			console.info(`Sample creature with drops: ${sampleCreature.name} has ${sampleCreature.drops.length} drops`);
-		}
 	}
 
 	return processedCreatures;

@@ -64,7 +64,31 @@ const processItems = () => {
     }
   }
 
-  console.info("Items: Removing duplicates");
+  console.info("Items: Normalizing names and removing duplicates");
+
+  // Normalize item names to handle cases like "SinusDestroyer" vs "Sinus Destroyer" vs "Sinus-Destroyer"
+  const normalizeItemName = (name) => {
+    if (!name) return '';
+
+    return name
+      .replace(/([a-z])([A-Z])/g, '$1 $2') // Insert space between lowercase and uppercase letters
+      .replace(/-/g, ' ')                   // Replace hyphens with spaces
+      .replace(/\s+/g, ' ')                 // Replace multiple spaces with a single space
+      .trim();                              // Trim leading/trailing spaces
+  };
+
+  // First pass: normalize names
+  allItems = allItems.map(item => {
+    if (item.name) {
+      const normalizedName = normalizeItemName(item.name);
+      if (normalizedName !== item.name) {
+        item.name = normalizedName;
+      }
+    }
+    return item;
+  });
+
+  // Second pass: merge duplicates and filter
   allItems = allItems
     .map((item) => {
       const countItems = allItems.filter((item2) => item.name === item2.name);
@@ -83,6 +107,7 @@ const processItems = () => {
 
       return acc;
     }, []);
+
 
   // Sort items by name
   allItems.sort(orderByName);

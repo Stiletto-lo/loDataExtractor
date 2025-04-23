@@ -158,6 +158,9 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
 
   console.log(`Drop map created with ${itemToCreaturesMap.size} items`);
 
+  // Crear un mapa para rastrear nombres normalizados y evitar duplicados
+  const normalizedNameMap = new Map();
+
   for (const item of allItems) {
     if (item.name) {
       // Get the creatures that drop this item
@@ -189,11 +192,52 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
       }
 
       // Convert item name to snake_case and make it safe for filenames
-      const snakeCaseName = item.name
+      // Ensure we're using the normalized name format with consistent handling
+      // of different formats (camelCase, hyphenated, spaced)
+      const normalizedName = item.name
+        .replace(/([a-z])([A-Z])/g, '$1 $2') // Insert space between lowercase and uppercase letters
+        .replace(/-/g, ' ')                   // Replace hyphens with spaces
+        .replace(/\s+/g, ' ')                 // Replace multiple spaces with a single space
+        .trim();                              // Trim leading/trailing spaces
+
+      // Log if we're normalizing a name that might have duplicates
+      if (normalizedName !== item.name) {
+        console.log(`Normalized filename: ${item.name} -> ${normalizedName}`);
+      }
+
+      const snakeCaseName = normalizedName
         .toLowerCase()
         .replace(/\s+/g, "_") // Replace spaces with underscores
         .replace(/[^a-z0-9_]/g, "") // Remove any non-alphanumeric character except underscores
         .replace(/_+/g, "_"); // Replace multiple underscores with a single one
+
+      // Verificar si ya hemos procesado un archivo con este nombre normalizado
+      if (normalizedNameMap.has(snakeCaseName)) {
+        const existingItem = normalizedNameMap.get(snakeCaseName);
+        console.log(`Duplicate detected: "${item.name}" and "${existingItem}" normalize to same filename: ${snakeCaseName}`);
+
+        // Si el archivo ya existe, verificamos si debemos sobrescribirlo basado en la completitud de los datos
+        const existingFilePath = `${itemsFolder}/${snakeCaseName}.json`;
+        if (fs.existsSync(existingFilePath)) {
+          try {
+            const existingData = JSON.parse(fs.readFileSync(existingFilePath, 'utf8'));
+
+            // Si el archivo existente tiene más datos, no lo sobrescribimos
+            const existingKeys = Object.keys(existingData).filter(k => existingData[k] !== undefined && existingData[k] !== null);
+            const newKeys = Object.keys(dataToExport).filter(k => dataToExport[k] !== undefined && dataToExport[k] !== null);
+
+            if (existingKeys.length >= newKeys.length) {
+              console.log(`Keeping existing file for ${snakeCaseName} as it has more complete data`);
+              return; // Saltar la escritura del archivo
+            }
+          } catch (e) {
+            console.error(`Error reading existing file ${existingFilePath}:`, e);
+          }
+        }
+      }
+
+      // Registrar este nombre normalizado para futuras verificaciones
+      normalizedNameMap.set(snakeCaseName, item.name);
 
       await fs.writeFile(
         `${itemsFolder}/${snakeCaseName}.json`,
