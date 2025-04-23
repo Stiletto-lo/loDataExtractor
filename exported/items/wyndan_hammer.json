@@ -33,5 +33,14 @@
     "weaponLength": 61,
     "damage": 60,
     "penetration": 10
-  }
+  },
+  "droppedBy": [
+    {
+      "name": "Rupu Firebrand",
+      "chance": 14.285714,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "tier": "T4"
+    }
+  ]
 }

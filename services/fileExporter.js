@@ -111,8 +111,49 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
   const itemsFolder = `${folderPath}items`;
   fs.ensureDirSync(itemsFolder);
 
+  // Cargar las criaturas para obtener información de drops
+  console.log("Cargando información de criaturas para mapear drops...");
+  const creatures = dataProcessor.processCreatures();
+
+  // Crear un mapa de ítems a criaturas que los dropean
+  const itemToCreaturesMap = new Map();
+
+  // Recorrer todas las criaturas y sus drops
+  for (const creature of creatures) {
+    if (creature.drops && Array.isArray(creature.drops)) {
+      for (const drop of creature.drops) {
+        if (drop.name) {
+          // Si este ítem no está en el mapa, inicializar un array vacío
+          if (!itemToCreaturesMap.has(drop.name)) {
+            itemToCreaturesMap.set(drop.name, []);
+          }
+
+          // Añadir esta criatura a la lista de fuentes del ítem
+          const creatureInfo = {
+            name: creature.name,
+            chance: drop.chance,
+            minQuantity: drop.minQuantity,
+            maxQuantity: drop.maxQuantity,
+            tier: creature.tier
+          };
+
+          // Evitar duplicados
+          const existingCreatures = itemToCreaturesMap.get(drop.name);
+          if (!existingCreatures.some(c => c.name === creature.name)) {
+            existingCreatures.push(creatureInfo);
+          }
+        }
+      }
+    }
+  }
+
+  console.log(`Mapa de drops creado con ${itemToCreaturesMap.size} ítems`);
+
   for (const item of allItems) {
     if (item.name) {
+      // Obtener las criaturas que dropean este ítem
+      const droppedBy = itemToCreaturesMap.get(item.name) || [];
+
       const dataToExport = {
         name: item?.name,
         parent: item?.parent,
@@ -135,6 +176,7 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
         armorInfo: item?.armorInfo,
         walkerinfo: item?.walkerinfo,
         upgradeInfo: item?.upgradeInfo,
+        droppedBy: droppedBy.length > 0 ? droppedBy : undefined,
       }
 
       // Convert item name to snake_case and make it safe for filenames

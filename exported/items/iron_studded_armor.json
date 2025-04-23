@@ -29,5 +29,14 @@
   "armorInfo": {
     "absorbing": 22,
     "speedReduction": 15
-  }
+  },
+  "droppedBy": [
+    {
+      "name": "Rupu Firebrand",
+      "chance": 33.333332,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "tier": "T4"
+    }
+  ]
 }
