@@ -107,28 +107,32 @@ const exportItemsData = async (allItems, minItems, folderPath) => {
  * @param {string} folderPath - Export folder path
  * @returns {Promise} - Promise that resolves when export is completed
  */
-const exportIndividualItemFiles = async (allItems, folderPath) => {
+const exportIndividualItemFiles = async (itemToProcess, folderPath) => {
+  let allItems = itemToProcess;
   const itemsFolder = `${folderPath}items`;
   fs.ensureDirSync(itemsFolder);
 
-  // Cargar las criaturas para obtener información de drops
-  console.log("Cargando información de criaturas para mapear drops...");
+  const ingredientNameFixer = require("../utils/ingredientNameFixer");
+  allItems = ingredientNameFixer.fixIngredientNames(allItems);
+
+  // Load creatures to get drop information
+  console.log("Loading creature information for drop mapping...");
   const creatures = dataProcessor.processCreatures();
 
-  // Crear un mapa de ítems a criaturas que los dropean
+  // Create a map of items to creatures that drop them
   const itemToCreaturesMap = new Map();
 
-  // Recorrer todas las criaturas y sus drops
+  // Iterate through all creatures and their drops
   for (const creature of creatures) {
     if (creature.drops && Array.isArray(creature.drops)) {
       for (const drop of creature.drops) {
         if (drop.name) {
-          // Si este ítem no está en el mapa, inicializar un array vacío
+          // If this item is not in the map, initialize an empty array
           if (!itemToCreaturesMap.has(drop.name)) {
             itemToCreaturesMap.set(drop.name, []);
           }
 
-          // Añadir esta criatura a la lista de fuentes del ítem
+          // Add this creature to the item's source list
           const creatureInfo = {
             name: creature.name,
             chance: drop.chance,
@@ -137,7 +141,7 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
             tier: creature.tier
           };
 
-          // Evitar duplicados
+          // Avoid duplicates
           const existingCreatures = itemToCreaturesMap.get(drop.name);
           if (!existingCreatures.some(c => c.name === creature.name)) {
             existingCreatures.push(creatureInfo);
@@ -147,11 +151,11 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
     }
   }
 
-  console.log(`Mapa de drops creado con ${itemToCreaturesMap.size} ítems`);
+  console.log(`Drop map created with ${itemToCreaturesMap.size} items`);
 
   for (const item of allItems) {
     if (item.name) {
-      // Obtener las criaturas que dropean este ítem
+      // Get the creatures that drop this item
       const droppedBy = itemToCreaturesMap.get(item.name) || [];
 
       const dataToExport = {
@@ -250,26 +254,26 @@ const exportCreaturesData = async (creatures, minCreatures, folderPath) => {
  * @returns {Promise} - Promise that resolves when export is completed
  */
 const exportTranslationsData = async (translateData, folderPath) => {
-  for (const languaje in translateData) {
-    const fileData = translateData[languaje];
-    const languajeArray = languaje.split("-");
+  for (const language in translateData) {
+    const fileData = translateData[language];
+    const languageArray = language.split("-");
 
     // Validate translation data
     const validatedData = dataProcessor.validateTranslationData(fileData);
 
     // Ensure directory exists before writing
-    const outputDir = `${folderPath}locales/${languajeArray[0].toLowerCase()}`;
+    const outputDir = `${folderPath}locales/${languageArray[0].toLowerCase()}`;
     fs.ensureDirSync(outputDir);
 
     fs.outputFile(
-      `${folderPath}locales/${languajeArray[0].toLowerCase()}/items.json`,
+      `${folderPath}locales/${languageArray[0].toLowerCase()}/items.json`,
       JSON.stringify(validatedData, null, 2),
       (err) => {
         if (err) {
-          console.error(`Error creating the file: ${languaje}`, err);
+          console.error(`Error creating the file: ${language}`, err);
         } else {
           console.log(
-            `Translated files ${languaje} exported with ${Object.keys(validatedData).length} translations`,
+            `Translated files ${language} exported with ${Object.keys(validatedData).length} translations`,
           );
         }
       },
