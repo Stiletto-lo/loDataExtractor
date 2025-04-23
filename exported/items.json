@@ -820,25 +820,25 @@
     }
   },
   {
-    "name": "Ammo_T1",
+    "name": "Ammo T1",
     "parent": "Basic Crafting",
     "type": "Ammo_T1_C",
     "onlyDevs": true
   },
   {
-    "name": "Ammo_T2",
+    "name": "Ammo T2",
     "parent": "Improved Crafting",
     "type": "Ammo_T2_C",
     "onlyDevs": true
   },
   {
-    "name": "Ammo_T3",
+    "name": "Ammo T3",
     "parent": "Advanced Crafting",
     "type": "Ammo_T3_C",
     "onlyDevs": true
   },
   {
-    "name": "Ammo_T4",
+    "name": "Ammo T4",
     "parent": "Advanced Crafting",
     "type": "Ammo_T4_C",
     "onlyDevs": true
@@ -1096,19 +1096,19 @@
     "type": "Armors_C"
   },
   {
-    "name": "Armors_T1",
+    "name": "Armors T1",
     "parent": "Equipment",
     "type": "Armors_T1_C",
     "onlyDevs": true
   },
   {
-    "name": "Armors_T3",
+    "name": "Armors T3",
     "parent": "Improved Armors",
     "type": "Armors_T3_C",
     "onlyDevs": true
   },
   {
-    "name": "Armors_T4",
+    "name": "Armors T4",
     "parent": "Armors_T3",
     "type": "Armors_T4_C",
     "onlyDevs": true
@@ -6990,12 +6990,12 @@
     "damageType": "'HardenedRokDamage_C'"
   },
   {
-    "name": "Chest Base Maintenance_T2",
+    "name": "Chest Base Maintenance T2",
     "parent": "Maintenance Box",
     "type": "ChestBaseMaintenance_T2_C"
   },
   {
-    "name": "Chest Base Maintenance_T3",
+    "name": "Chest Base Maintenance T3",
     "parent": "ChestBaseMaintenance_T2",
     "type": "ChestBaseMaintenance_T3_C"
   },
@@ -10749,7 +10749,7 @@
     "weight": 1
   },
   {
-    "name": "Equipment_T2",
+    "name": "Equipment T2",
     "parent": "Basic Equipment",
     "type": "Equipment_T2_C",
     "onlyDevs": true
@@ -12645,7 +12645,7 @@
     }
   },
   {
-    "name": "Fiberworking Station_T3",
+    "name": "Fiberworking Station T3",
     "parent": "Advanced Fiberworking Station",
     "type": "FiberworkingStation_T3_C"
   },
@@ -15778,7 +15778,7 @@
     "experiencieReward": 34
   },
   {
-    "name": "Gun Pod Shell_T2",
+    "name": "Gun Pod Shell T2",
     "parent": "Gun Pod Shell",
     "type": "GunPodShell_T2_C"
   },
@@ -23627,7 +23627,7 @@
         ]
       }
     ],
-    "name": "Okkam Statue_1",
+    "name": "Okkam Statue 1",
     "type": "OkkamStatue_1_C",
     "experiencieReward": 6,
     "structureInfo": {
@@ -23648,7 +23648,7 @@
         ]
       }
     ],
-    "name": "Okkam Statue_2",
+    "name": "Okkam Statue 2",
     "type": "OkkamStatue_2_C",
     "experiencieReward": 6,
     "structureInfo": {
@@ -28580,7 +28580,7 @@
     "experiencieReward": 366
   },
   {
-    "name": "Sawblade_T2",
+    "name": "Sawblade T2",
     "parent": "Sawblade",
     "type": "Sawblade_T2_C"
   },
@@ -32003,25 +32003,25 @@
     "weight": 0.34
   },
   {
-    "name": "Stations_T1",
+    "name": "Stations T1",
     "parent": "Basic Crafting",
     "type": "Stations_T1_C",
     "onlyDevs": true
   },
   {
-    "name": "Stations_T2",
+    "name": "Stations T2",
     "parent": "Improved Crafting",
     "type": "Stations_T2_C",
     "onlyDevs": true
   },
   {
-    "name": "Stations_T3",
+    "name": "Stations T3",
     "parent": "Advanced Crafting",
     "type": "Stations_T3_C",
     "onlyDevs": true
   },
   {
-    "name": "Stations_T4",
+    "name": "Stations T4",
     "parent": "Advanced Crafting",
     "type": "Stations_T4_C",
     "onlyDevs": true
@@ -33139,7 +33139,7 @@
     }
   },
   {
-    "name": "Stinger_T2",
+    "name": "Stinger T2",
     "parent": "Improved Walker Weapons",
     "type": "Stinger_T2_C",
     "onlyDevs": true
@@ -33182,12 +33182,12 @@
     }
   },
   {
-    "name": "Stomping Station_T2",
+    "name": "Stomping Station T2",
     "parent": "Stomping Station",
     "type": "StompingStation_T2_C"
   },
   {
-    "name": "Stomping Station_T3",
+    "name": "Stomping Station T3",
     "parent": "StompingStation_T2",
     "type": "StompingStation_T3_C"
   },
@@ -36341,36 +36341,36 @@
     "weight": 1
   },
   {
+    "name": "Tools T1",
+    "parent": "Equipment",
+    "type": "Tools_T1_C",
+    "onlyDevs": true
+  },
+  {
+    "name": "Tools T2",
+    "parent": "Tools_T1",
+    "type": "Tools_T2_C",
+    "onlyDevs": true
+  },
+  {
+    "name": "Tools T3",
+    "parent": "Tools_T2",
+    "type": "Tools_T3_C",
+    "onlyDevs": true
+  },
+  {
+    "name": "Tools T4",
+    "parent": "Tools_T3",
+    "type": "Tools_T4_C",
+    "onlyDevs": true
+  },
+  {
     "category": "Interactables",
     "name": "Tools and Equipment Strongbox",
     "translation": "Tools and Equipment Strongbox",
     "type": "LootboxToolsandEquipmentPvP_C",
     "stackSize": 100,
     "weight": 1
-  },
-  {
-    "name": "Tools_T1",
-    "parent": "Equipment",
-    "type": "Tools_T1_C",
-    "onlyDevs": true
-  },
-  {
-    "name": "Tools_T2",
-    "parent": "Tools_T1",
-    "type": "Tools_T2_C",
-    "onlyDevs": true
-  },
-  {
-    "name": "Tools_T3",
-    "parent": "Tools_T2",
-    "type": "Tools_T3_C",
-    "onlyDevs": true
-  },
-  {
-    "name": "Tools_T4",
-    "parent": "Tools_T3",
-    "type": "Tools_T4_C",
-    "onlyDevs": true
   },
   {
     "name": "Torch",
@@ -38077,7 +38077,7 @@
     "translation": "Vitamins"
   },
   {
-    "name": "Vitamins_T2",
+    "name": "Vitamins T2",
     "parent": "Basic Potions",
     "type": "Vitamins_T2_C",
     "onlyDevs": true
@@ -38157,52 +38157,52 @@
     "type": "WalkerParts_C"
   },
   {
-    "name": "Walker Parts Advanced_T2",
+    "name": "Walker Parts Advanced T2",
     "parent": "WalkerPartsImproved_T2",
     "type": "WalkerPartsAdvanced_T2_C"
   },
   {
-    "name": "Walker Parts Advanced_T3",
+    "name": "Walker Parts Advanced T3",
     "parent": "Advanced Walker Parts",
     "type": "WalkerPartsAdvanced_T3_C"
   },
   {
-    "name": "Walker Parts Advanced_T4",
+    "name": "Walker Parts Advanced T4",
     "parent": "WalkerPartsImproved_T4",
     "type": "WalkerPartsAdvanced_T4_C"
   },
   {
-    "name": "Walker Parts Base_T1",
+    "name": "Walker Parts Base T1",
     "parent": "Basic Walkers",
     "type": "WalkerPartsBase_T1_C"
   },
   {
-    "name": "Walker Parts Base_T2",
+    "name": "Walker Parts Base T2",
     "parent": "Improved Walkers",
     "type": "WalkerPartsBase_T2_C"
   },
   {
-    "name": "Walker Parts Base_T3",
+    "name": "Walker Parts Base T3",
     "parent": "Advanced Walkers",
     "type": "WalkerPartsBase_T3_C"
   },
   {
-    "name": "Walker Parts Base_T4",
+    "name": "Walker Parts Base T4",
     "parent": "Flotillian Walkers",
     "type": "WalkerPartsBase_T4_C"
   },
   {
-    "name": "Walker Parts Improved_T1",
+    "name": "Walker Parts Improved T1",
     "parent": "WalkerPartsBase_T1",
     "type": "WalkerPartsImproved_T1_C"
   },
   {
-    "name": "Walker Parts Improved_T2",
+    "name": "Walker Parts Improved T2",
     "parent": "WalkerPartsBase_T2",
     "type": "WalkerPartsImproved_T2_C"
   },
   {
-    "name": "Walker Parts Improved_T4",
+    "name": "Walker Parts Improved T4",
     "parent": "WalkerPartsBase_T4",
     "type": "WalkerPartsImproved_T4_C"
   },
@@ -38831,25 +38831,25 @@
     "weight": 1
   },
   {
-    "name": "Weapons_T1",
+    "name": "Weapons T1",
     "parent": "Basic Equipment",
     "type": "Weapons_T1_C",
     "onlyDevs": true
   },
   {
-    "name": "Weapons_T2",
+    "name": "Weapons T2",
     "parent": "Equipment_T2",
     "type": "Weapons_T2_C",
     "onlyDevs": true
   },
   {
-    "name": "Weapons_T3",
+    "name": "Weapons T3",
     "parent": "Advanced Equipment",
     "type": "Weapons_T3_C",
     "onlyDevs": true
   },
   {
-    "name": "Weapons_T4",
+    "name": "Weapons T4",
     "parent": "Flotillian Equipment",
     "type": "Weapons_T4_C",
     "onlyDevs": true
@@ -38921,7 +38921,7 @@
     }
   },
   {
-    "name": "Windmill_T2",
+    "name": "Windmill T2",
     "parent": "Windmill",
     "type": "Windmill_T2_C"
   },
@@ -39116,6 +39116,11 @@
     "weight": 0.21
   },
   {
+    "name": "Wood T4",
+    "parent": "Lumbermill",
+    "type": "Wood_T4_C"
+  },
+  {
     "name": "Wood: heavy",
     "translation": "Wood: heavy",
     "type": "StructuralWoodHeavy_C"
@@ -39129,11 +39134,6 @@
     "name": "Wood: medium",
     "translation": "Wood: medium",
     "type": "StructuralWoodMedium_C"
-  },
-  {
-    "name": "Wood_T4",
-    "parent": "Lumbermill",
-    "type": "Wood_T4_C"
   },
   {
     "category": "Weapons",

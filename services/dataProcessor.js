@@ -73,6 +73,7 @@ const processItems = () => {
     return name
       .replace(/([a-z])([A-Z])/g, '$1 $2') // Insert space between lowercase and uppercase letters
       .replace(/-/g, ' ')                   // Replace hyphens with spaces
+      .replace(/_/g, ' ')                   // Replace underscores with spaces
       .replace(/\s+/g, ' ')                 // Replace multiple spaces with a single space
       .trim();                              // Trim leading/trailing spaces
   };
@@ -119,7 +120,50 @@ const processTechData = () => {
   console.info("Extracting tech data from fileParser");
   let techData = fileParser.getTechData();
 
-  console.info("Tech: Removing duplicates");
+  console.info("Tech: Normalizing names and removing duplicates");
+
+  // Reuse the same normalization function from processItems
+  const normalizeItemName = (name) => {
+    if (!name) return '';
+
+    return name
+      .replace(/([a-z])([A-Z])/g, '$1 $2') // Insert space between lowercase and uppercase letters
+      .replace(/-/g, ' ')                   // Replace hyphens with spaces
+      .replace(/_/g, ' ')                   // Replace underscores with spaces
+      .replace(/\s+/g, ' ')                 // Replace multiple spaces with a single space
+      .trim();                              // Trim leading/trailing spaces
+  };
+
+  // First pass: normalize tech names, parent names, and unlocks
+  techData = techData.map(tech => {
+    // Normalize tech name
+    if (tech.name) {
+      const normalizedName = normalizeItemName(tech.name);
+      if (normalizedName !== tech.name) {
+        tech.name = normalizedName;
+      }
+    }
+
+    // Normalize parent name
+    if (tech.parent) {
+      const normalizedParent = normalizeItemName(tech.parent);
+      if (normalizedParent !== tech.parent) {
+        tech.parent = normalizedParent;
+      }
+    }
+
+    // Normalize unlocks array
+    if (tech.unlocks && Array.isArray(tech.unlocks)) {
+      tech.unlocks = tech.unlocks.map(unlock => {
+        const normalizedUnlock = normalizeItemName(unlock);
+        return normalizedUnlock;
+      });
+    }
+
+    return tech;
+  });
+
+  // Second pass: merge duplicates and filter
   techData = techData
     .map((tech) => {
       const countTech = techData.filter((tech2) => tech.name === tech2.name);
