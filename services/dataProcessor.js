@@ -129,34 +129,11 @@ const processTechData = () => {
  * @returns {Array} - Array of items in minimal version
  */
 const createMinItems = (allItems) => {
-  let minItems = allItems.map((item) => {
+  const minItems = allItems.map((item) => {
     const essentialFields = [
       "category",
       "name",
-      "trade_price",
-      "experiencieReward",
-      "stackSize",
-      "weight",
-      "durability",
-      "parent",
-      "learn",
       "crafting",
-      "station",
-      "time",
-      "ingredients",
-      "projectileDamage",
-      "damage",
-      "effectivenessVsSoak",
-      "effectivenessVsReduce",
-      "structureInfo",
-      "hp",
-      "moduleInfo",
-      "max",
-      "increase",
-      "weaponInfo",
-      "weaponLength",
-      "penetration",
-      "description",
     ];
     const minItem = {};
 
@@ -166,20 +143,8 @@ const createMinItems = (allItems) => {
       }
     }
 
-    if (item?.drops?.length > 0) {
-      minItem.drops = item.drops.map((drop) => {
-        return {
-          location: drop.location,
-        };
-      });
-    }
-
     return minItem;
   });
-
-  minItems = minItems.filter(
-    (item) => item.name && Object.keys(item).length > 2,
-  );
 
   minItems.sort(orderByCategoryAndName);
 

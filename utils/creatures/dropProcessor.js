@@ -166,20 +166,16 @@ function addDropInformation(creatures, lootTemplates, lootTables) {
   // Process each creature
   return creatures.map(creature => {
     // Skip if creature has no lootTemplate
-    if (!creature.lootTemplate) return creature;
+    if (!creature.lootTemplate) { return creature; }
 
     // Normalize the creature's lootTemplate
     const normalizedTemplateName = creature.lootTemplate.replace(/_C$/i, '').toLowerCase();
 
     // Find the matching template
     const templateToUse = findTemplate(normalizedTemplateName, normalizedTemplates, creature.name);
-    if (!templateToUse) return creature;
+    if (!templateToUse) { return creature; }
 
-    // Inicializar el array de drops si no existe
     if (!creature.drops) {
-      creature.drops = [];
-    } else {
-      // Limpiar drops existentes para evitar duplicados
       creature.drops = [];
     }
 
@@ -188,13 +184,10 @@ function addDropInformation(creatures, lootTemplates, lootTables) {
       const tableName = tableRef.name ? tableRef.name.toLowerCase() : null;
       if (!tableName) continue;
 
-      // Verificar que la tabla pertenece al tier correcto de la criatura
       const creatureTier = creature.tier || extractTierFromTemplateName(creature.lootTemplate);
       const tableTier = extractTierFromTableName(tableName);
 
-      // Si la tabla tiene un tier definido y es diferente al de la criatura, omitirla
       if (tableTier && creatureTier && tableTier !== creatureTier) {
-        console.debug(`Omitiendo tabla ${tableName} (tier ${tableTier}) para criatura ${creature.name} (tier ${creatureTier})`);
         continue;
       }
 
