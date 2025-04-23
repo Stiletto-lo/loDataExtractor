@@ -53,14 +53,20 @@ const exportTechData = async (techData, folderPath) => {
 const exportItemsData = async (allItems, minItems, folderPath) => {
   console.info("Exporting items.json");
   if (allItems.length > 0) {
+    // Apply ingredient name fixing before exporting
+    const ingredientNameFixer = require("../utils/ingredientNameFixer");
+    console.log("Applying ingredient name fixing to items before export...");
+    const fixedItems = ingredientNameFixer.fixIngredientNames(allItems);
+    const fixedMinItems = ingredientNameFixer.fixIngredientNames(minItems);
+
     await fs.writeFile(
       `${folderPath}items.json`,
-      JSON.stringify(allItems, null, 2),
+      JSON.stringify(fixedItems, null, 2),
       (err) => {
         if (err) {
           console.error("Error creating the file");
         } else {
-          console.log("Items exported");
+          console.log("Items exported with fixed ingredient names");
 
           // Run the tech tree unifier to fix inconsistencies
           const {
@@ -86,18 +92,19 @@ const exportItemsData = async (allItems, minItems, folderPath) => {
     console.info("Exporting items_min.json");
     await fs.writeFile(
       `${folderPath}items_min.json`,
-      JSON.stringify(minItems),
+      JSON.stringify(fixedMinItems),
       (err) => {
         if (err) {
           console.error("Error creating the items_min.json file");
         } else {
-          console.log("Items_min.json exported");
+          console.log("Items_min.json exported with fixed ingredient names");
         }
       },
     );
 
     // Create individual JSON files for each item
-    await exportIndividualItemFiles(allItems, folderPath);
+    // Pass the fixed items to ensure consistency
+    await exportIndividualItemFiles(fixedItems, folderPath);
   }
 };
 
@@ -107,13 +114,11 @@ const exportItemsData = async (allItems, minItems, folderPath) => {
  * @param {string} folderPath - Export folder path
  * @returns {Promise} - Promise that resolves when export is completed
  */
-const exportIndividualItemFiles = async (itemToProcess, folderPath) => {
-  let allItems = itemToProcess;
+const exportIndividualItemFiles = async (allItems, folderPath) => {
   const itemsFolder = `${folderPath}items`;
   fs.ensureDirSync(itemsFolder);
 
-  const ingredientNameFixer = require("../utils/ingredientNameFixer");
-  allItems = ingredientNameFixer.fixIngredientNames(allItems);
+  // Note: Ingredient names are already fixed in the main export function
 
   // Load creatures to get drop information
   console.log("Loading creature information for drop mapping...");
