@@ -1527,7 +1527,7 @@
         ]
       }
     ],
-    "name": "Ballista Tier 2",
+    "name": "Ballista - Tier 2",
     "translation": "Ballista - Tier 2",
     "type": "Ballista_T2_C",
     "experiencieReward": 78,
@@ -1561,7 +1561,7 @@
         ]
       }
     ],
-    "name": "Ballista Tier 3",
+    "name": "Ballista - Tier 3",
     "translation": "Ballista - Tier 3",
     "type": "Ballista_T3_C",
     "experiencieReward": 78,
@@ -1591,7 +1591,7 @@
         ]
       }
     ],
-    "name": "Ballista Tier 4",
+    "name": "Ballista - Tier 4",
     "translation": "Ballista - Tier 4",
     "type": "Ballista_T4_C",
     "experiencieReward": 78,
@@ -1849,7 +1849,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Base Packing Tier 1 Upgrade",
+    "name": "Base Packing - Tier 1 Upgrade",
     "translation": "Base Packing - Tier 1 Upgrade",
     "type": "SparePartWoodPartPacking_C",
     "experiencieReward": 65,
@@ -1859,7 +1859,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Base Packing Tier 2 Upgrade",
+    "name": "Base Packing - Tier 2 Upgrade",
     "translation": "Base Packing - Tier 2 Upgrade",
     "type": "SparePartBonePartPacking_C",
     "experiencieReward": 65,
@@ -1869,7 +1869,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Base Packing Tier 3 Upgrade",
+    "name": "Base Packing - Tier 3 Upgrade",
     "translation": "Base Packing - Tier 3 Upgrade",
     "type": "SparePartClayPartPacking_C",
     "experiencieReward": 65,
@@ -1879,7 +1879,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Base Packing Tier 4 Upgrade",
+    "name": "Base Packing - Tier 4 Upgrade",
     "translation": "Base Packing - Tier 4 Upgrade",
     "type": "SparePartIronPartPacking_C",
     "experiencieReward": 65,
@@ -4513,7 +4513,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Cargo Hold Tier 1 Upgrade",
+    "name": "Cargo Hold - Tier 1 Upgrade",
     "translation": "Cargo Hold - Tier 1 Upgrade",
     "type": "SparePartWoodCargo_C",
     "experiencieReward": 10,
@@ -4522,7 +4522,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Cargo Hold Tier 2 Upgrade",
+    "name": "Cargo Hold - Tier 2 Upgrade",
     "translation": "Cargo Hold - Tier 2 Upgrade",
     "type": "SparePartBoneCargo_C",
     "experiencieReward": 20,
@@ -4531,7 +4531,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Cargo Hold Tier 3 Upgrade",
+    "name": "Cargo Hold - Tier 3 Upgrade",
     "translation": "Cargo Hold - Tier 3 Upgrade",
     "type": "SparePartClayCargo_C",
     "experiencieReward": 30,
@@ -4540,7 +4540,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Cargo Hold Tier 4 Upgrade",
+    "name": "Cargo Hold - Tier 4 Upgrade",
     "translation": "Cargo Hold - Tier 4 Upgrade",
     "type": "SparePartIronCargo_C",
     "experiencieReward": 40,
@@ -5142,7 +5142,7 @@
         "time": 3
       }
     ],
-    "name": "Ceramic Tipped Bolt",
+    "name": "Ceramic-Tipped Bolt",
     "parent": "Bone Bolt",
     "trade_price": 11,
     "translation": "Ceramic-Tipped Bolt",
@@ -5178,7 +5178,7 @@
         "time": 5
       }
     ],
-    "name": "Ceramic Tipped Harpoon",
+    "name": "Ceramic-Tipped Harpoon",
     "parent": "Ceramic Bolt",
     "trade_price": 14.1,
     "translation": "Ceramic-Tipped Harpoon",
@@ -5557,6 +5557,9 @@
     "wikiVisibility": false
   },
   {
+    "name": "Chitin PickAxe",
+    "parent": "CeramicPickaxe",
+    "type": "ChitinPickAxe_C",
     "crafting": [
       {
         "ingredients": [
@@ -5577,9 +5580,7 @@
         "time": 2
       }
     ],
-    "name": "Chitin Pick Axe",
     "translation": "Chitin PickAxe",
-    "type": "ChitinPickAxe_C",
     "durability": 504,
     "toolInfo": [
       {
@@ -5587,11 +5588,6 @@
         "tier": 17
       }
     ]
-  },
-  {
-    "name": "Chitin Pickaxe",
-    "parent": "CeramicPickaxe",
-    "type": "ChitinPickaxe_C"
   },
   {
     "category": "Resources",
@@ -7374,7 +7370,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Durability Tier 1 Upgrade",
+    "name": "Durability - Tier 1 Upgrade",
     "translation": "Durability - Tier 1 Upgrade",
     "type": "SparePartWoodArmor_C",
     "experiencieReward": 10,
@@ -7383,7 +7379,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Durability Tier 2 Upgrade",
+    "name": "Durability - Tier 2 Upgrade",
     "translation": "Durability - Tier 2 Upgrade",
     "type": "SparePartBoneArmor_C",
     "experiencieReward": 20,
@@ -7392,7 +7388,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Durability Tier 3 Upgrade",
+    "name": "Durability - Tier 3 Upgrade",
     "translation": "Durability - Tier 3 Upgrade",
     "type": "SparePartClayArmor_C",
     "experiencieReward": 30,
@@ -7401,7 +7397,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Durability Tier 4 Upgrade",
+    "name": "Durability - Tier 4 Upgrade",
     "translation": "Durability - Tier 4 Upgrade",
     "type": "SparePartIronArmor_C",
     "experiencieReward": 40,
@@ -9874,33 +9870,33 @@
     }
   },
   {
-    "name": "Flare blue",
+    "name": "Flare - blue",
     "translation": "Flare - blue",
     "type": "Flare_03_C"
   },
   {
-    "name": "Flare green",
+    "name": "Flare - green",
     "translation": "Flare - green",
     "type": "Flare_02_C"
   },
   {
-    "name": "Flare orange",
+    "name": "Flare - orange",
     "trade_price": 15.6,
     "translation": "Flare - orange",
     "type": "Flare_04_C"
   },
   {
-    "name": "Flare purple",
+    "name": "Flare - purple",
     "translation": "Flare - purple",
     "type": "Flare_05_C"
   },
   {
-    "name": "Flare red",
+    "name": "Flare - red",
     "translation": "Flare - red",
     "type": "Flare_01_C"
   },
   {
-    "name": "Flare teal",
+    "name": "Flare - teal",
     "translation": "Flare - teal",
     "type": "Flare_06_C"
   },
@@ -9920,7 +9916,7 @@
         ]
       }
     ],
-    "name": "Flare white",
+    "name": "Flare - white",
     "trade_price": 3,
     "translation": "Flare - white",
     "type": "Flare_00_C",
@@ -11152,7 +11148,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Gear Storage Tier 1 Upgrade",
+    "name": "Gear Storage - Tier 1 Upgrade",
     "translation": "Gear Storage - Tier 1 Upgrade",
     "type": "SparePartWoodHatch_C",
     "experiencieReward": 10,
@@ -11161,7 +11157,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Gear Storage Tier 2 Upgrade",
+    "name": "Gear Storage - Tier 2 Upgrade",
     "translation": "Gear Storage - Tier 2 Upgrade",
     "type": "SparePartBoneHatch_C",
     "experiencieReward": 20,
@@ -11170,7 +11166,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Gear Storage Tier 3 Upgrade",
+    "name": "Gear Storage - Tier 3 Upgrade",
     "translation": "Gear Storage - Tier 3 Upgrade",
     "type": "SparePartClayHatch_C",
     "experiencieReward": 30,
@@ -11179,7 +11175,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Gear Storage Tier 4 Upgrade",
+    "name": "Gear Storage - Tier 4 Upgrade",
     "translation": "Gear Storage - Tier 4 Upgrade",
     "type": "SparePartIronHatch_C",
     "experiencieReward": 40,
@@ -13956,6 +13952,11 @@
     }
   },
   {
+    "name": "Iron Torso",
+    "parent": "CarapaceTorso",
+    "type": "IronTorso_C"
+  },
+  {
     "crafting": [
       {
         "ingredients": [
@@ -13977,7 +13978,7 @@
         "time": 3
       }
     ],
-    "name": "Iron Tipped Bolt",
+    "name": "Iron-Tipped Bolt",
     "parent": "Ceramic Bolt",
     "trade_price": 25,
     "translation": "Iron-Tipped Bolt",
@@ -14014,7 +14015,7 @@
         "time": 5
       }
     ],
-    "name": "Iron Tipped Harpoon",
+    "name": "Iron-Tipped Harpoon",
     "parent": "IronBolt",
     "trade_price": 30.6,
     "translation": "Iron-Tipped Harpoon",
@@ -14030,11 +14031,6 @@
         "tier": 4
       }
     ]
-  },
-  {
-    "name": "Iron Torso",
-    "parent": "CarapaceTorso",
-    "type": "IronTorso_C"
   },
   {
     "category": "Weapons",
@@ -14624,11 +14620,6 @@
     "weight": 0.5
   },
   {
-    "name": "Lava Liquids",
-    "translation": "LavaLiquids",
-    "type": "LavaLiquids_C"
-  },
-  {
     "name": "Lava Mace",
     "parent": "Short Ceramic Hoofmace",
     "type": "LavaMace_C"
@@ -14641,6 +14632,11 @@
     "type": "Poppy_C",
     "stackSize": 100,
     "weight": 0.01
+  },
+  {
+    "name": "LavaLiquids",
+    "translation": "LavaLiquids",
+    "type": "LavaLiquids_C"
   },
   {
     "category": "Resources",
@@ -15481,7 +15477,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Mobility Tier 1 Upgrade",
+    "name": "Mobility - Tier 1 Upgrade",
     "translation": "Mobility - Tier 1 Upgrade",
     "type": "SparePartWoodGears_C",
     "experiencieReward": 10,
@@ -15490,7 +15486,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Mobility Tier 2 Upgrade",
+    "name": "Mobility - Tier 2 Upgrade",
     "translation": "Mobility - Tier 2 Upgrade",
     "type": "SparePartBoneGears_C",
     "experiencieReward": 20,
@@ -15499,7 +15495,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Mobility Tier 3 Upgrade",
+    "name": "Mobility - Tier 3 Upgrade",
     "translation": "Mobility - Tier 3 Upgrade",
     "type": "SparePartClayGears_C",
     "experiencieReward": 30,
@@ -15508,7 +15504,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Mobility Tier 4 Upgrade",
+    "name": "Mobility - Tier 4 Upgrade",
     "translation": "Mobility - Tier 4 Upgrade",
     "type": "SparePartIronGears_C",
     "experiencieReward": 40,
@@ -16460,7 +16456,7 @@
         "time": 10
       }
     ],
-    "name": "Nibiran tipped Bolt",
+    "name": "Nibiran-tipped Bolt",
     "parent": "IronBolt",
     "trade_price": 35,
     "translation": "Nibiran-tipped Bolt",
@@ -16958,27 +16954,6 @@
         ]
       }
     ],
-    "name": "Okkam Statue",
-    "translation": "OkkamStatue",
-    "type": "OkkamStatue_C",
-    "experiencieReward": 6,
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 250
-    }
-  },
-  {
-    "category": "OkkamStatue",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 300,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
     "name": "Okkam Statue 1",
     "type": "OkkamStatue_1_C",
     "experiencieReward": 6,
@@ -17004,6 +16979,27 @@
     "type": "OkkamStatue_2_C",
     "experiencieReward": 6,
     "weight": 3,
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 250
+    }
+  },
+  {
+    "category": "OkkamStatue",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 300,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "OkkamStatue",
+    "translation": "OkkamStatue",
+    "type": "OkkamStatue_C",
+    "experiencieReward": 6,
     "structureInfo": {
       "type": "Soft",
       "hp": 250
@@ -18362,11 +18358,9 @@
     "wikiVisibility": false
   },
   {
-    "name": "Range Finder",
+    "name": "Rangefinder",
     "parent": "Maintenance Box",
-    "type": "RangeFinder_C"
-  },
-  {
+    "type": "Rangefinder_C",
     "category": "Interactables",
     "crafting": [
       {
@@ -18386,9 +18380,7 @@
         ]
       }
     ],
-    "name": "Rangefinder",
     "translation": "Rangefinder",
-    "type": "Rangefinder_C",
     "description": "Measures distance to far-away targets.",
     "experiencieReward": 266,
     "weight": 20,
@@ -25134,7 +25126,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Torque Capacity Tier 1 Upgrade",
+    "name": "Torque Capacity - Tier 1 Upgrade",
     "translation": "Torque Capacity - Tier 1 Upgrade",
     "type": "SparePartWoodTorque_C",
     "experiencieReward": 10,
@@ -25143,7 +25135,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Torque Capacity Tier 2 Upgrade",
+    "name": "Torque Capacity - Tier 2 Upgrade",
     "translation": "Torque Capacity - Tier 2 Upgrade",
     "type": "SparePartBoneTorque_C",
     "experiencieReward": 20,
@@ -25152,7 +25144,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Torque Capacity Tier 3 Upgrade",
+    "name": "Torque Capacity - Tier 3 Upgrade",
     "translation": "Torque Capacity - Tier 3 Upgrade",
     "type": "SparePartClayTorque_C",
     "experiencieReward": 30,
@@ -25161,7 +25153,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Torque Capacity Tier 4 Upgrade",
+    "name": "Torque Capacity - Tier 4 Upgrade",
     "translation": "Torque Capacity - Tier 4 Upgrade",
     "type": "SparePartIronTorque_C",
     "experiencieReward": 40,
@@ -26557,7 +26549,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Water Storage Tier 1 Upgrade",
+    "name": "Water Storage - Tier 1 Upgrade",
     "translation": "Water Storage - Tier 1 Upgrade",
     "type": "SparePartWoodWater_C",
     "experiencieReward": 10,
@@ -26566,7 +26558,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Water Storage Tier 2 Upgrade",
+    "name": "Water Storage - Tier 2 Upgrade",
     "translation": "Water Storage - Tier 2 Upgrade",
     "type": "SparePartBoneWater_C",
     "experiencieReward": 20,
@@ -26575,7 +26567,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Water Storage Tier 3 Upgrade",
+    "name": "Water Storage - Tier 3 Upgrade",
     "translation": "Water Storage - Tier 3 Upgrade",
     "type": "SparePartClayWater_C",
     "experiencieReward": 30,
@@ -26584,7 +26576,7 @@
   },
   {
     "category": "Spare Parts",
-    "name": "Water Storage Tier 4 Upgrade",
+    "name": "Water Storage - Tier 4 Upgrade",
     "translation": "Water Storage - Tier 4 Upgrade",
     "type": "SparePartIronWater_C",
     "experiencieReward": 40,

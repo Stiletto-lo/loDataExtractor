@@ -124,22 +124,20 @@ const processItems = () => {
 
   // Second pass: merge duplicates and filter
 
-  // Unificar items con el mismo type
   const typeGroups = new Map();
   for (const item of allItems) {
     if (item.type) {
-      if (!typeGroups.has(item.type)) {
-        typeGroups.set(item.type, []);
+      const typeLowerCase = item.type.toLowerCase();
+      if (!typeGroups.has(typeLowerCase)) {
+        typeGroups.set(typeLowerCase, []);
       }
-      typeGroups.get(item.type).push(item);
+      typeGroups.get(typeLowerCase).push(item);
     }
   }
 
-  // Combinar propiedades de items con el mismo type
   const mergedItems = [];
   for (const [type, items] of typeGroups.entries()) {
     if (items.length > 1) {
-      // Combinar todos los items con el mismo type
       const mergedItem = items.reduce((merged, current) => {
         for (const [key, value] of Object.entries(current)) {
           if (value !== undefined && value !== null) {
@@ -154,15 +152,18 @@ const processItems = () => {
     }
   }
 
-  // Añadir items sin type
   for (const item of allItems) {
     if (!item.type) {
       mergedItems.push(item);
     }
   }
 
-  // Actualizar allItems con los items unificados
-  allItems = mergedItems;
+  allItems = mergedItems.map(item => {
+    if (item.translation && !item.name.includes("(1 of 2)")) {
+      item.name = item.translation;
+    }
+    return item;
+  });
 
   // Sort items by name
   allItems.sort(orderByName);
