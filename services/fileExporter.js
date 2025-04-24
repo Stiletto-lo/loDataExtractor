@@ -17,21 +17,55 @@ const dataProcessor = require("./dataProcessor");
  */
 const exportTechData = async (techData, folderPath) => {
   if (techData.length > 0) {
+    console.log(`Processing ${techData.length} tech entries for export...`);
+
+    const normalizedNameMap = new Map();
+    const typeMap = new Map();
+
+    for (const tech of techData) {
+      if (tech.name && tech.type) {
+        if (typeMap.has(tech.type)) {
+          const existingTech = typeMap.get(tech.type);
+
+          const existingTechProps = Object.entries(existingTech).filter(([_, v]) => v !== undefined && v !== null).length;
+          const currentTechProps = Object.entries(tech).filter(([_, v]) => v !== undefined && v !== null).length;
+
+          if (currentTechProps > existingTechProps) {
+            typeMap.set(tech.type, tech);
+          }
+        } else {
+          typeMap.set(tech.type, tech);
+        }
+      } else if (tech.name) {
+        normalizedNameMap.set(tech.name, tech);
+      }
+    }
+
+    const uniqueTechData = [
+      ...Array.from(typeMap.values()),
+      ...Array.from(normalizedNameMap.values()).filter(tech => !typeMap.has(tech.type))
+    ];
+
+    console.log(`Reduced to ${uniqueTechData.length} unique tech entries after deduplication`);
+
     await fs.writeFile(
       `${folderPath}tech.json`,
-      JSON.stringify(techData, null, 2),
+      JSON.stringify(uniqueTechData, null, 2),
       (err) => {
         if (err) {
           console.error("Error creating the tech.json file");
         } else {
           console.log("Tech data exported to tech.json");
+
+          const { unifyTechTree } = require("../utils/techTreeUnifier");
+          unifyTechTree(`${folderPath}tech.json`);
         }
       },
     );
 
     await fs.writeFile(
       `${folderPath}tech_min.json`,
-      JSON.stringify(techData),
+      JSON.stringify(uniqueTechData),
       (err) => {
         if (err) {
           console.error("Error creating the tech_min.json file");
@@ -158,45 +192,34 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
 
   console.log(`Drop map created with ${itemToCreaturesMap.size} items`);
 
-  // Crear mapas para rastrear nombres normalizados y tipos de items para evitar duplicados
   const normalizedNameMap = new Map();
   const typeMap = new Map(); // Mapa para rastrear items por tipo
 
-  // Primera pasada: agrupar items por tipo para detectar duplicados
   for (const item of allItems) {
     if (item.name && item.type) {
-      // Si ya existe un item con este tipo, comparamos cuál tiene más información
       if (typeMap.has(item.type)) {
         const existingItem = typeMap.get(item.type);
 
-        // Contar propiedades no vacías para determinar cuál item tiene más información
         const existingItemProps = Object.entries(existingItem).filter(([_, v]) => v !== undefined && v !== null).length;
         const currentItemProps = Object.entries(item).filter(([_, v]) => v !== undefined && v !== null).length;
 
-        // Si el item actual tiene más información, lo usamos en lugar del existente
         if (currentItemProps > existingItemProps) {
-          console.log(`Reemplazando "${existingItem.name}" con "${item.name}" para el tipo ${item.type} (más información disponible)`);
           typeMap.set(item.type, item);
-        } else {
-          console.log(`Manteniendo "${existingItem.name}" en lugar de "${item.name}" para el tipo ${item.type}`);
         }
       } else {
-        // Si no hay item con este tipo, lo agregamos al mapa
         typeMap.set(item.type, item);
       }
     }
   }
 
-  // Segunda pasada: exportar solo un archivo por cada tipo único
   for (const item of typeMap.values()) {
     if (item.name) {
-      // Get the creatures that drop this item
       const droppedBy = itemToCreaturesMap.get(item.name) || [];
 
       const dataToExport = {
         name: item?.name,
         parent: item?.parent,
-        type: item?.type, // Aseguramos que el tipo se incluya en la exportación
+        type: item?.type,
         category: item?.category,
         trade_price: item?.trade_price,
         stackSize: item?.stackSize,
@@ -239,15 +262,13 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
         .replace(/[^a-z0-9_]/g, "") // Remove any non-alphanumeric character except underscores
         .replace(/_+/g, "_"); // Replace multiple underscores with a single one
 
-      // Verificar si ya hemos procesado un archivo con este nombre normalizado
       if (normalizedNameMap.has(snakeCaseName)) {
         const existingItem = normalizedNameMap.get(snakeCaseName);
         console.log(`Duplicate filename detected: "${item.name}" and "${existingItem}" normalize to same filename: ${snakeCaseName}`);
 
-        // Generar un nombre alternativo basado en el tipo para evitar colisiones
         if (item.type) {
           const typeBasedName = item.type
-            .replace(/_C$/, '') // Eliminar el sufijo _C común en los tipos
+            .replace(/_C$/, '')
             .toLowerCase()
             .replace(/[^a-z0-9_]/g, "_")
             .replace(/_+/g, "_");
@@ -266,19 +287,17 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
           return;
         }
 
-        // Si no hay tipo, verificamos si debemos sobrescribir basado en la completitud de los datos
         const existingFilePath = `${itemsFolder}/${snakeCaseName}.json`;
         if (fs.existsSync(existingFilePath)) {
           try {
             const existingData = JSON.parse(fs.readFileSync(existingFilePath, 'utf8'));
 
-            // Si el archivo existente tiene más datos, no lo sobrescribimos
             const existingKeys = Object.keys(existingData).filter(k => existingData[k] !== undefined && existingData[k] !== null);
             const newKeys = Object.keys(dataToExport).filter(k => dataToExport[k] !== undefined && dataToExport[k] !== null);
 
             if (existingKeys.length >= newKeys.length) {
               console.log(`Keeping existing file for ${snakeCaseName} as it has more complete data`);
-              return; // Saltar la escritura del archivo
+              return;
             }
           } catch (e) {
             console.error(`Error reading existing file ${existingFilePath}:`, e);
@@ -286,7 +305,6 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
         }
       }
 
-      // Registrar este nombre normalizado para futuras verificaciones
       normalizedNameMap.set(snakeCaseName, item.name);
 
       await fs.writeFile(
