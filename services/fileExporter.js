@@ -246,7 +246,6 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
       // Ensure we're using the normalized name format with consistent handling
       // of different formats (camelCase, hyphenated, spaced)
       const normalizedName = item.name
-        .replace(/([a-z])([A-Z])/g, '$1 $2') // Insert space between lowercase and uppercase letters
         .replace(/-/g, ' ')                   // Replace hyphens with spaces
         .replace(/\s+/g, ' ')                 // Replace multiple spaces with a single space
         .trim();                              // Trim leading/trailing spaces
