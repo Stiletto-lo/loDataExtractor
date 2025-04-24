@@ -158,10 +158,37 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
 
   console.log(`Drop map created with ${itemToCreaturesMap.size} items`);
 
-  // Crear un mapa para rastrear nombres normalizados y evitar duplicados
+  // Crear mapas para rastrear nombres normalizados y tipos de items para evitar duplicados
   const normalizedNameMap = new Map();
+  const typeMap = new Map(); // Mapa para rastrear items por tipo
 
+  // Primera pasada: agrupar items por tipo para detectar duplicados
   for (const item of allItems) {
+    if (item.name && item.type) {
+      // Si ya existe un item con este tipo, comparamos cuál tiene más información
+      if (typeMap.has(item.type)) {
+        const existingItem = typeMap.get(item.type);
+
+        // Contar propiedades no vacías para determinar cuál item tiene más información
+        const existingItemProps = Object.entries(existingItem).filter(([_, v]) => v !== undefined && v !== null).length;
+        const currentItemProps = Object.entries(item).filter(([_, v]) => v !== undefined && v !== null).length;
+
+        // Si el item actual tiene más información, lo usamos en lugar del existente
+        if (currentItemProps > existingItemProps) {
+          console.log(`Reemplazando "${existingItem.name}" con "${item.name}" para el tipo ${item.type} (más información disponible)`);
+          typeMap.set(item.type, item);
+        } else {
+          console.log(`Manteniendo "${existingItem.name}" en lugar de "${item.name}" para el tipo ${item.type}`);
+        }
+      } else {
+        // Si no hay item con este tipo, lo agregamos al mapa
+        typeMap.set(item.type, item);
+      }
+    }
+  }
+
+  // Segunda pasada: exportar solo un archivo por cada tipo único
+  for (const item of typeMap.values()) {
     if (item.name) {
       // Get the creatures that drop this item
       const droppedBy = itemToCreaturesMap.get(item.name) || [];
@@ -169,6 +196,7 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
       const dataToExport = {
         name: item?.name,
         parent: item?.parent,
+        type: item?.type, // Aseguramos que el tipo se incluya en la exportación
         category: item?.category,
         trade_price: item?.trade_price,
         stackSize: item?.stackSize,
@@ -214,9 +242,31 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
       // Verificar si ya hemos procesado un archivo con este nombre normalizado
       if (normalizedNameMap.has(snakeCaseName)) {
         const existingItem = normalizedNameMap.get(snakeCaseName);
-        console.log(`Duplicate detected: "${item.name}" and "${existingItem}" normalize to same filename: ${snakeCaseName}`);
+        console.log(`Duplicate filename detected: "${item.name}" and "${existingItem}" normalize to same filename: ${snakeCaseName}`);
 
-        // Si el archivo ya existe, verificamos si debemos sobrescribirlo basado en la completitud de los datos
+        // Generar un nombre alternativo basado en el tipo para evitar colisiones
+        if (item.type) {
+          const typeBasedName = item.type
+            .replace(/_C$/, '') // Eliminar el sufijo _C común en los tipos
+            .toLowerCase()
+            .replace(/[^a-z0-9_]/g, "_")
+            .replace(/_+/g, "_");
+
+          console.log(`Using type-based filename instead: ${typeBasedName}`);
+          normalizedNameMap.set(typeBasedName, item.name);
+          await fs.writeFile(
+            `${itemsFolder}/${typeBasedName}.json`,
+            JSON.stringify(dataToExport, null, 2),
+            (err) => {
+              if (err) {
+                console.error(`Error creating individual file for ${item.name}`);
+              }
+            },
+          );
+          return;
+        }
+
+        // Si no hay tipo, verificamos si debemos sobrescribir basado en la completitud de los datos
         const existingFilePath = `${itemsFolder}/${snakeCaseName}.json`;
         if (fs.existsSync(existingFilePath)) {
           try {

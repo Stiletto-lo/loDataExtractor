@@ -89,15 +89,38 @@ const processItems = () => {
     return item;
   });
 
-  // Second pass: merge duplicates and filter
-  allItems = allItems
-    .map((item) => {
-      const countItems = allItems.filter((item2) => item.name === item2.name);
-      if (countItems.length > 1) {
-        return { ...countItems[0], ...countItems[1] };
+  // Crear un mapa para agrupar items por tipo y eliminar duplicados
+  console.info("Eliminando duplicados basados en tipo");
+  const typeMap = new Map();
+
+  // Agrupar items por tipo
+  for (const item of allItems) {
+    if (item.type) {
+      // Si ya existe un item con este tipo, comparamos cuál tiene más información
+      if (typeMap.has(item.type)) {
+        const existingItem = typeMap.get(item.type);
+
+        // Contar propiedades no vacías para determinar cuál item tiene más información
+        const existingItemProps = Object.entries(existingItem).filter(([_, v]) => v !== undefined && v !== null).length;
+        const currentItemProps = Object.entries(item).filter(([_, v]) => v !== undefined && v !== null).length;
+
+        // Si el item actual tiene más información, lo usamos en lugar del existente
+        if (currentItemProps > existingItemProps) {
+          console.log(`Reemplazando "${existingItem.name}" con "${item.name}" para el tipo ${item.type} (más información disponible)`);
+          typeMap.set(item.type, item);
+        }
+      } else {
+        // Si no hay item con este tipo, lo agregamos al mapa
+        typeMap.set(item.type, item);
       }
-      return item;
-    })
+    }
+  }
+
+  // Convertir el mapa de tipos de vuelta a un array
+  const uniqueByTypeItems = Array.from(typeMap.values());
+
+  // Segundo paso: filtrar y eliminar duplicados por nombre
+  allItems = uniqueByTypeItems
     .filter((item) => item.name && Object.keys(item).length > 2)
     .filter((item) => !item.name.includes("Packing"))
     .reduce((acc, current) => {

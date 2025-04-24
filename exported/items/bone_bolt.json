@@ -1,4 +1,74 @@
 {
   "name": "Bone Bolt",
-  "parent": "Bone Bolt"
+  "parent": "Ballista",
+  "type": "BoneBolt_C",
+  "trade_price": 5,
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 5,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 12,
+          "name": "Fiber"
+        }
+      ],
+      "output": 3,
+      "station": "Woodworking Station",
+      "time": 5
+    },
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 5,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 12,
+          "name": "Fiber"
+        }
+      ],
+      "output": 3,
+      "station": "Advanced Woodworking Station",
+      "time": 4
+    },
+    {
+      "ingredients": [
+        {
+          "count": 5,
+          "name": "Wood Shaft"
+        },
+        {
+          "count": 5,
+          "name": "Bone Splinter"
+        },
+        {
+          "count": 12,
+          "name": "Fiber"
+        }
+      ],
+      "output": 3,
+      "station": "Artificer Woodworking Station",
+      "time": 3
+    }
+  ],
+  "projectileDamage": {
+    "damage": 50
+  },
+  "toolInfo": [
+    {
+      "toolType": "BallistaHarpoon",
+      "tier": 2
+    }
+  ]
 }
