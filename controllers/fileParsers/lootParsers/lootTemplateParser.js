@@ -90,7 +90,6 @@ const parseLootTableRef = (tableRef) => {
     return null;
   }
 
-  // Crear una tabla simplificada con solo la información esencial
   const simplifiedTable = {};
 
   // Extract table reference information
@@ -123,6 +122,56 @@ const parseLootTableRef = (tableRef) => {
       : 1.0;
 
   return simplifiedTable;
+};
+
+/**
+ * @param {string} tableName
+ * @returns {string|null}
+ */
+const extractTableTier = (tableName) => {
+  if (!tableName) {
+    return null;
+  }
+
+  if (tableName.includes("_T1")) {
+    return "T1";
+  }
+  if (tableName.includes("_T2")) {
+    return "T2";
+  }
+  if (tableName.includes("_T3")) {
+    return "T3";
+  }
+  if (tableName.includes("_T4")) {
+    return "T4";
+  }
+
+  return null;
+};
+
+/**
+ * @param {Array} tables
+ * @param {string} templateTier
+ * @returns {Array}
+ */
+const filterTablesByTier = (tables, templateTier) => {
+  if (!tables || !Array.isArray(tables) || tables.length === 0) {
+    return [];
+  }
+
+  const specialTables = tables.filter(table =>
+    table.name && (
+      table.name.includes("Relic") ||
+      table.name.includes("ClamPearls") ||
+      !extractTableTier(table.name)
+    )
+  );
+
+  const tierSpecificTables = tables.filter(table =>
+    table.name && extractTableTier(table.name) === templateTier
+  );
+
+  return [...specialTables, ...tierSpecificTables];
 };
 
 /**
@@ -166,25 +215,30 @@ const parseLootTemplate = (filePath) => {
     lootTemplate.super = classInfo.Super.ObjectName;
   }
 
-  // Process loot tables
-  if (
-    templateData.Properties.Loot.Tables &&
-    Array.isArray(templateData.Properties.Loot.Tables)
-  ) {
-    templateData.Properties.Loot.Tables.forEach((tableRef) => {
-      const parsedTable = parseLootTableRef(tableRef);
-      if (parsedTable) {
-        lootTemplate.tables.push(parsedTable);
-      }
-    });
-  }
-
-  // Determine the tier for proper directory placement
+  // Determine the tier for proper directory placement and table filtering
   const tier =
     extractTier(filePath) ||
     extractTier(lootTemplate.name) ||
     extractTier(lootTemplate.type) ||
     "T1";
+
+  // Process loot tables
+  if (
+    templateData.Properties.Loot.Tables &&
+    Array.isArray(templateData.Properties.Loot.Tables)
+  ) {
+    const allParsedTables = [];
+    templateData.Properties.Loot.Tables.forEach((tableRef) => {
+      const parsedTable = parseLootTableRef(tableRef);
+      if (parsedTable) {
+        allParsedTables.push(parsedTable);
+      }
+    });
+
+    // Filter tables to only include those appropriate for this tier
+    const filteredTables = filterTablesByTier(allParsedTables, tier);
+    lootTemplate.tables = filteredTables;
+  }
 
   // Create the output directory if it doesn't exist
   const outputDir = LOOTTEMPLATES_TIER_DIRS[tier] || LOOTTEMPLATES_DIR;

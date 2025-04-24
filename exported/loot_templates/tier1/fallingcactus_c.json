@@ -2,33 +2,5 @@
   "name": "FallingCactus_C",
   "type": "FallingCactus_C",
   "class": "BlueprintGeneratedClass'Mist/Content/Mist/Data/LootTables/LootTemplates/Special/FallingCactus.FallingCactus_C'",
-  "tables": [
-    {
-      "name": "AC_Relic_1",
-      "runChance": 1,
-      "minIterations": 1,
-      "maxIterations": 1,
-      "perIterationRunChance": 1,
-      "minQuantityMultiplier": 1,
-      "maxQuantityMultiplier": 1
-    },
-    {
-      "name": "AC_Relic_2",
-      "runChance": 1,
-      "minIterations": 1,
-      "maxIterations": 1,
-      "perIterationRunChance": 1,
-      "minQuantityMultiplier": 1,
-      "maxQuantityMultiplier": 1
-    },
-    {
-      "name": "ClamPearls_T4",
-      "runChance": 1,
-      "minIterations": 1,
-      "maxIterations": 2,
-      "perIterationRunChance": 1,
-      "minQuantityMultiplier": 1,
-      "maxQuantityMultiplier": 1
-    }
-  ]
+  "tables": []
 }
