@@ -5,6 +5,33 @@
   "super": "BlueprintGeneratedClass'Koa_T4_C'",
   "tables": [
     {
+      "name": "Schematics_T1",
+      "runChance": 0.2,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
+    },
+    {
+      "name": "Schematics_T2",
+      "runChance": 0.2,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
+    },
+    {
+      "name": "Schematics_T3",
+      "runChance": 0.3,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
+    },
+    {
       "name": "Schematics_T4",
       "runChance": 0.3,
       "minIterations": 1,

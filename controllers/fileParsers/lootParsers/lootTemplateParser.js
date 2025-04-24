@@ -150,31 +150,6 @@ const extractTableTier = (tableName) => {
 };
 
 /**
- * @param {Array} tables
- * @param {string} templateTier
- * @returns {Array}
- */
-const filterTablesByTier = (tables, templateTier) => {
-  if (!tables || !Array.isArray(tables) || tables.length === 0) {
-    return [];
-  }
-
-  const specialTables = tables.filter(table =>
-    table.name && (
-      table.name.includes("Relic") ||
-      table.name.includes("ClamPearls") ||
-      !extractTableTier(table.name)
-    )
-  );
-
-  const tierSpecificTables = tables.filter(table =>
-    table.name && extractTableTier(table.name) === templateTier
-  );
-
-  return [...specialTables, ...tierSpecificTables];
-};
-
-/**
  * Parse loot template data from a file
  * @param {string} filePath - The file path to parse
  * @returns {boolean} - Whether parsing was successful
@@ -235,9 +210,7 @@ const parseLootTemplate = (filePath) => {
       }
     });
 
-    // Filter tables to only include those appropriate for this tier
-    const filteredTables = filterTablesByTier(allParsedTables, tier);
-    lootTemplate.tables = filteredTables;
+    lootTemplate.tables = allParsedTables;
   }
 
   // Create the output directory if it doesn't exist

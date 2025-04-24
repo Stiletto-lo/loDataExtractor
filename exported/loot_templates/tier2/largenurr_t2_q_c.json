@@ -5,6 +5,15 @@
   "super": "BlueprintGeneratedClass'LargeNurr_T2_C'",
   "tables": [
     {
+      "name": "Schematics_T1",
+      "runChance": 0.4,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 8
+    },
+    {
       "name": "Schematics_T2",
       "runChance": 0.4,
       "minIterations": 1,

@@ -5,6 +5,24 @@
   "super": "BlueprintGeneratedClass'Papak_T3_C'",
   "tables": [
     {
+      "name": "Schematics_T1",
+      "runChance": 0.3,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.2,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 20
+    },
+    {
+      "name": "Schematics_T2",
+      "runChance": 0.4,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.2,
+      "minQuantityMultiplier": 10,
+      "maxQuantityMultiplier": 10
+    },
+    {
       "name": "Schematics_T3",
       "runChance": 0.3,
       "minIterations": 1,

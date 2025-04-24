@@ -32,6 +32,15 @@
       "maxQuantityMultiplier": 16
     },
     {
+      "name": "Flots_T1",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 2,
+      "perIterationRunChance": 0.2,
+      "minQuantityMultiplier": 500,
+      "maxQuantityMultiplier": 1000
+    },
+    {
       "name": "ProcessedResources_T2",
       "runChance": 1,
       "minIterations": 1,
@@ -39,6 +48,15 @@
       "perIterationRunChance": 0.4,
       "minQuantityMultiplier": 3,
       "maxQuantityMultiplier": 5
+    },
+    {
+      "name": "Rigs_T1",
+      "runChance": 1,
+      "minIterations": 2,
+      "maxIterations": 4,
+      "perIterationRunChance": 0.4,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
     },
     {
       "name": "Rigs_T2",

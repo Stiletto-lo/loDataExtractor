@@ -14,15 +14,6 @@
       "maxQuantityMultiplier": 25
     },
     {
-      "name": "ClamPearls_T4",
-      "runChance": 0.5,
-      "minIterations": 1,
-      "maxIterations": 10,
-      "perIterationRunChance": 0.2,
-      "minQuantityMultiplier": 5,
-      "maxQuantityMultiplier": 25
-    },
-    {
       "name": "ExtraResources_T4",
       "runChance": 0.5,
       "minIterations": 1,
@@ -46,6 +37,15 @@
       "minIterations": 1,
       "maxIterations": 1,
       "perIterationRunChance": 1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
+    },
+    {
+      "name": "Rigs_T3",
+      "runChance": 0.25,
+      "minIterations": 1,
+      "maxIterations": 3,
+      "perIterationRunChance": 0.2,
       "minQuantityMultiplier": 1,
       "maxQuantityMultiplier": 1
     }

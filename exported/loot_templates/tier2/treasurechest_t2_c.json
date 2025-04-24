@@ -23,6 +23,15 @@
       "maxQuantityMultiplier": 10
     },
     {
+      "name": "Flots_T1",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 0,
+      "minQuantityMultiplier": 300,
+      "maxQuantityMultiplier": 600
+    },
+    {
       "name": "Rigs_T2",
       "runChance": 0.2,
       "minIterations": 1,

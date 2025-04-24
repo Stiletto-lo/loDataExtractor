@@ -32,6 +32,15 @@
       "maxQuantityMultiplier": 2
     },
     {
+      "name": "Flots_T1",
+      "runChance": 0.8,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 15,
+      "maxQuantityMultiplier": 45
+    },
+    {
       "name": "Armors_T2",
       "runChance": 0.1,
       "minIterations": 1,
@@ -48,6 +57,15 @@
       "perIterationRunChance": 1,
       "minQuantityMultiplier": 1,
       "maxQuantityMultiplier": 1
+    },
+    {
+      "name": "Components_T1",
+      "runChance": 0.2,
+      "minIterations": 1,
+      "maxIterations": 3,
+      "perIterationRunChance": 0.35,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 3
     },
     {
       "name": "StonePlank_T2",

@@ -14,6 +14,15 @@
       "maxQuantityMultiplier": 1.6
     },
     {
+      "name": "RupuFur_T1",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 4,
+      "maxQuantityMultiplier": 8
+    },
+    {
       "name": "ProcessedResources_T2",
       "runChance": 0.1,
       "minIterations": 1,
@@ -34,6 +43,15 @@
     {
       "name": "Weapons_T2",
       "runChance": 0.008,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
+    },
+    {
+      "name": "Schematics_T1",
+      "runChance": 0.5,
       "minIterations": 1,
       "maxIterations": 1,
       "perIterationRunChance": 1,

@@ -14,6 +14,15 @@
       "maxQuantityMultiplier": 1
     },
     {
+      "name": "RupuFur_T1",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 6,
+      "maxQuantityMultiplier": 12
+    },
+    {
       "name": "ProcessedResources_T4",
       "runChance": 0.1,
       "minIterations": 1,

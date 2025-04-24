@@ -11,6 +11,24 @@
       "perIterationRunChance": 0.3,
       "minQuantityMultiplier": 1,
       "maxQuantityMultiplier": 40
+    },
+    {
+      "name": "FruitPulp_T1",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 25
+    },
+    {
+      "name": "Bone_T2",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 3,
+      "perIterationRunChance": 0.2,
+      "minQuantityMultiplier": 10,
+      "maxQuantityMultiplier": 40
     }
   ]
 }
