@@ -517,11 +517,11 @@
     ]
   },
   {
-    "name": "Excavation Site",
+    "name": "Excavation Site (1)",
     "type": "AC_RupuCaveCamp_C"
   },
   {
-    "name": "Excavation Site",
+    "name": "Excavation Site (2)",
     "type": "AC_WorkersGrave_C"
   },
   {
@@ -533,35 +533,35 @@
     "type": "FireElementalMob_C"
   },
   {
-    "name": "Foragers Outpost",
+    "name": "Foragers Outpost (1)",
     "type": "CanyonForagersOutpost1_C"
   },
   {
-    "name": "Foragers Outpost",
+    "name": "Foragers Outpost (2)",
     "type": "CanyonForagersOutpost2_C"
   },
   {
-    "name": "Foragers Outpost",
+    "name": "Foragers Outpost (3)",
     "type": "CanyonForagersOutpost3_C"
   },
   {
-    "name": "Foragers Outpost",
+    "name": "Foragers Outpost (4)",
     "type": "SG_ClaySpotTinyCamp_C"
   },
   {
-    "name": "Foragers Outpost",
+    "name": "Foragers Outpost (5)",
     "type": "SG_RockyHillsTinyCamp_C"
   },
   {
-    "name": "Foragers Outpost",
+    "name": "Foragers Outpost (6)",
     "type": "SG_TinyRupuCamp_1_C"
   },
   {
-    "name": "Foragers Outpost",
+    "name": "Foragers Outpost (7)",
     "type": "SG_TinyRupuCamp_2_C"
   },
   {
-    "name": "Foragers Outpost",
+    "name": "Foragers Outpost (8)",
     "type": "SG_TinyRupuCamp_3_C"
   },
   {
@@ -569,11 +569,11 @@
     "type": "MediumLargeRupuCamp_01_C"
   },
   {
-    "name": "Fortified Rupu Village",
+    "name": "Fortified Rupu Village (1)",
     "type": "CanyonSavannahMediumRupuCamp_01_C"
   },
   {
-    "name": "Fortified Rupu Village",
+    "name": "Fortified Rupu Village (2)",
     "type": "SG_FlatlandsForagingCamp_C"
   },
   {
@@ -1708,11 +1708,11 @@
     "type": "MountableNurrMob_C"
   },
   {
-    "name": "Nurr",
+    "name": "Nurr (1)",
     "type": "KillinMob_C"
   },
   {
-    "name": "Nurr",
+    "name": "Nurr (2)",
     "type": "NurrMob_C"
   },
   {
@@ -1929,44 +1929,44 @@
     ]
   },
   {
-    "name": "Reinforced Rupu Outpost",
+    "name": "Reinforced Rupu Outpost (7)",
+    "type": "MediumMediumRupuCamp_01_C"
+  },
+  {
+    "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_HardRupuCamp_01_C",
     "category": "Hard",
     "tier": "T1"
   },
   {
-    "name": "Reinforced Rupu Outpost",
+    "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_HardRupuCamp_02_C",
     "category": "Hard",
     "tier": "T1"
   },
   {
-    "name": "Reinforced Rupu Outpost",
+    "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_HardRupuCamp_03_C",
     "category": "Hard",
     "tier": "T1"
   },
   {
-    "name": "Reinforced Rupu Outpost",
+    "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_HardRupuCamp_04_C",
     "category": "Hard",
     "tier": "T1"
   },
   {
-    "name": "Reinforced Rupu Outpost",
+    "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_SingleBallistaRupuCamp_01_C",
     "category": "Single",
     "tier": "T1"
   },
   {
-    "name": "Reinforced Rupu Outpost",
+    "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_SingleScattershotRupuCamp_01_C",
     "category": "Single",
     "tier": "T1"
-  },
-  {
-    "name": "Reinforced Rupu Outpost",
-    "type": "MediumMediumRupuCamp_01_C"
   },
   {
     "name": "Rock Thrower",
@@ -2492,13 +2492,13 @@
     ]
   },
   {
-    "name": "Rupu Campfire Site",
+    "name": "Rupu Campfire Site (T1)",
     "type": "T1_TinyRupuCamp_03_C",
     "category": "Tiny",
     "tier": "T1"
   },
   {
-    "name": "Rupu Campfire Site",
+    "name": "Rupu Campfire Site (T1)",
     "type": "T1_TinyRupuCamp_04_C",
     "category": "Tiny",
     "tier": "T1"
@@ -2512,7 +2512,12 @@
     "type": "CanyonDragableChest_C"
   },
   {
-    "name": "Rupu Drudge",
+    "name": "Rupu Drudge (Rupu)",
+    "type": "RupuDrudge_T0_C",
+    "category": "Rupu"
+  },
+  {
+    "name": "Rupu Drudge (T3)",
     "type": "T3_RupuDrudge_C",
     "health": 125,
     "experiencie": 1200,
@@ -2836,11 +2841,6 @@
         "source": "weapons_t3"
       }
     ]
-  },
-  {
-    "name": "Rupu Drudge",
-    "type": "RupuDrudge_T0_C",
-    "category": "Rupu"
   },
   {
     "name": "Rupu Dunestalker (Medium)",
@@ -4146,24 +4146,24 @@
     "type": "HardLargeRupuCampFortified1_03_C"
   },
   {
-    "name": "Rupu Gifting Altar",
+    "name": "Rupu Gifting Altar (3)",
+    "type": "RupuCaveCamp_01_C"
+  },
+  {
+    "name": "Rupu Gifting Altar (4)",
+    "type": "Canyon_C"
+  },
+  {
+    "name": "Rupu Gifting Altar (T1)",
     "type": "T1_TinyRupuCamp_01_C",
     "category": "Tiny",
     "tier": "T1"
   },
   {
-    "name": "Rupu Gifting Altar",
+    "name": "Rupu Gifting Altar (T1)",
     "type": "T1_TinyRupuCamp_05_C",
     "category": "Tiny",
     "tier": "T1"
-  },
-  {
-    "name": "Rupu Gifting Altar",
-    "type": "RupuCaveCamp_01_C"
-  },
-  {
-    "name": "Rupu Gifting Altar",
-    "type": "Canyon_C"
   },
   {
     "name": "Rupu Habitat",
@@ -5271,7 +5271,7 @@
     ]
   },
   {
-    "name": "Rupu Hero",
+    "name": "Rupu Hero (Rupu)",
     "type": "ImpossibleRupu_C",
     "health": 60,
     "experiencie": 983,
@@ -5456,7 +5456,7 @@
     ]
   },
   {
-    "name": "Rupu Hero",
+    "name": "Rupu Hero (Rupu)",
     "type": "PyramidGuardRupu_C",
     "health": 60,
     "experiencie": 983,
@@ -5975,7 +5975,192 @@
     "type": "KS_LargeRupuCamp_C"
   },
   {
-    "name": "Rupu Oracle",
+    "name": "Rupu Oracle (Rupu)",
+    "type": "RupuOracle_C",
+    "health": 175,
+    "experiencie": 55,
+    "lootTemplate": "EasyRupu_T1",
+    "category": "Rupu",
+    "drops": [
+      {
+        "name": "Fiber",
+        "chance": 26.31579,
+        "minQuantity": 12,
+        "maxQuantity": 12,
+        "source": "baseresources_t1"
+      },
+      {
+        "name": "Stone",
+        "chance": 26.31579,
+        "minQuantity": 8,
+        "maxQuantity": 8,
+        "source": "baseresources_t1"
+      },
+      {
+        "name": "Wood",
+        "chance": 26.31579,
+        "minQuantity": 10,
+        "maxQuantity": 10,
+        "source": "baseresources_t1"
+      },
+      {
+        "name": "Rupu Vine",
+        "chance": 10.526316,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "baseresources_t1"
+      },
+      {
+        "name": "Palm Leaves",
+        "chance": 10.526316,
+        "minQuantity": 2,
+        "maxQuantity": 2,
+        "source": "baseresources_t1"
+      },
+      {
+        "name": "Rupu Pelt",
+        "chance": 100,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "rupufur_t1"
+      },
+      {
+        "name": "Wood Shaft",
+        "chance": 50,
+        "minQuantity": 10,
+        "maxQuantity": 10,
+        "source": "processedresources_t1"
+      },
+      {
+        "name": "Fiber Weave",
+        "chance": 50,
+        "minQuantity": 10,
+        "maxQuantity": 10,
+        "source": "processedresources_t1"
+      },
+      {
+        "name": "Fiber Shirt and Trousers",
+        "chance": 19.801981,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Rupu Fur Armor",
+        "chance": 5.940594,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Cloaked Rupu Fur Armor",
+        "chance": 2.970297,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Fiber Sandals",
+        "chance": 19.801981,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Rupu Fur Sandals",
+        "chance": 5.940594,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Fiber Arm Wraps",
+        "chance": 19.801981,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Rupu Fur Sleeves",
+        "chance": 5.940594,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Fiber Headwrap",
+        "chance": 19.801981,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Beat Stick",
+        "chance": 16.129032,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t1"
+      },
+      {
+        "name": "Stone Axe",
+        "chance": 12.903226,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t1"
+      },
+      {
+        "name": "Jaggertooth Club",
+        "chance": 9.67742,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t1"
+      },
+      {
+        "name": "Crude Hatchet",
+        "chance": 11.290322,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t1"
+      },
+      {
+        "name": "Blunt Quarterstaff",
+        "chance": 16.129032,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t1"
+      },
+      {
+        "name": "Traveller's Quarterstaff",
+        "chance": 9.67742,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t1"
+      },
+      {
+        "name": "Light Javelin",
+        "chance": 8.064516,
+        "minQuantity": 3,
+        "maxQuantity": 3,
+        "source": "weapons_t1"
+      },
+      {
+        "name": "Throwing Net",
+        "chance": 8.064516,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t1"
+      },
+      {
+        "name": "Throwstone",
+        "chance": 8.064516,
+        "minQuantity": 3,
+        "maxQuantity": 3,
+        "source": "weapons_t1"
+      }
+    ]
+  },
+  {
+    "name": "Rupu Oracle (T3)",
     "type": "T3_RupuOracleFireBomb_C",
     "health": 350,
     "experiencie": 2600,
@@ -6371,10 +6556,10 @@
     ]
   },
   {
-    "name": "Rupu Oracle",
-    "type": "RupuOracle_C",
-    "health": 175,
-    "experiencie": 55,
+    "name": "Rupu Overseer (Rupu)",
+    "type": "RupuOverseer_C",
+    "health": 180,
+    "experiencie": 200,
     "lootTemplate": "EasyRupu_T1",
     "category": "Rupu",
     "drops": [
@@ -6556,7 +6741,7 @@
     ]
   },
   {
-    "name": "Rupu Overseer",
+    "name": "Rupu Overseer (T3)",
     "type": "T3_RupuOverseerFireBomb_C",
     "health": 300,
     "experiencie": 1600,
@@ -6948,191 +7133,6 @@
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "rigs_t3"
-      }
-    ]
-  },
-  {
-    "name": "Rupu Overseer",
-    "type": "RupuOverseer_C",
-    "health": 180,
-    "experiencie": 200,
-    "lootTemplate": "EasyRupu_T1",
-    "category": "Rupu",
-    "drops": [
-      {
-        "name": "Fiber",
-        "chance": 26.31579,
-        "minQuantity": 12,
-        "maxQuantity": 12,
-        "source": "baseresources_t1"
-      },
-      {
-        "name": "Stone",
-        "chance": 26.31579,
-        "minQuantity": 8,
-        "maxQuantity": 8,
-        "source": "baseresources_t1"
-      },
-      {
-        "name": "Wood",
-        "chance": 26.31579,
-        "minQuantity": 10,
-        "maxQuantity": 10,
-        "source": "baseresources_t1"
-      },
-      {
-        "name": "Rupu Vine",
-        "chance": 10.526316,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "baseresources_t1"
-      },
-      {
-        "name": "Palm Leaves",
-        "chance": 10.526316,
-        "minQuantity": 2,
-        "maxQuantity": 2,
-        "source": "baseresources_t1"
-      },
-      {
-        "name": "Rupu Pelt",
-        "chance": 100,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "rupufur_t1"
-      },
-      {
-        "name": "Wood Shaft",
-        "chance": 50,
-        "minQuantity": 10,
-        "maxQuantity": 10,
-        "source": "processedresources_t1"
-      },
-      {
-        "name": "Fiber Weave",
-        "chance": 50,
-        "minQuantity": 10,
-        "maxQuantity": 10,
-        "source": "processedresources_t1"
-      },
-      {
-        "name": "Fiber Shirt and Trousers",
-        "chance": 19.801981,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "armors_t1"
-      },
-      {
-        "name": "Rupu Fur Armor",
-        "chance": 5.940594,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "armors_t1"
-      },
-      {
-        "name": "Cloaked Rupu Fur Armor",
-        "chance": 2.970297,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "armors_t1"
-      },
-      {
-        "name": "Fiber Sandals",
-        "chance": 19.801981,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "armors_t1"
-      },
-      {
-        "name": "Rupu Fur Sandals",
-        "chance": 5.940594,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "armors_t1"
-      },
-      {
-        "name": "Fiber Arm Wraps",
-        "chance": 19.801981,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "armors_t1"
-      },
-      {
-        "name": "Rupu Fur Sleeves",
-        "chance": 5.940594,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "armors_t1"
-      },
-      {
-        "name": "Fiber Headwrap",
-        "chance": 19.801981,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "armors_t1"
-      },
-      {
-        "name": "Beat Stick",
-        "chance": 16.129032,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "weapons_t1"
-      },
-      {
-        "name": "Stone Axe",
-        "chance": 12.903226,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "weapons_t1"
-      },
-      {
-        "name": "Jaggertooth Club",
-        "chance": 9.67742,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "weapons_t1"
-      },
-      {
-        "name": "Crude Hatchet",
-        "chance": 11.290322,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "weapons_t1"
-      },
-      {
-        "name": "Blunt Quarterstaff",
-        "chance": 16.129032,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "weapons_t1"
-      },
-      {
-        "name": "Traveller's Quarterstaff",
-        "chance": 9.67742,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "weapons_t1"
-      },
-      {
-        "name": "Light Javelin",
-        "chance": 8.064516,
-        "minQuantity": 3,
-        "maxQuantity": 3,
-        "source": "weapons_t1"
-      },
-      {
-        "name": "Throwing Net",
-        "chance": 8.064516,
-        "minQuantity": 1,
-        "maxQuantity": 1,
-        "source": "weapons_t1"
-      },
-      {
-        "name": "Throwstone",
-        "chance": 8.064516,
-        "minQuantity": 3,
-        "maxQuantity": 3,
-        "source": "weapons_t1"
       }
     ]
   },
@@ -11232,27 +11232,27 @@
     ]
   },
   {
-    "name": "Rupu Watch Tower",
+    "name": "Rupu Watch Tower (1)",
     "type": "SG_RoadWatchtower_C"
   },
   {
-    "name": "Rupu Watch Tower",
+    "name": "Rupu Watch Tower (2)",
     "type": "KS_EasyRupuCamp_2_C"
   },
   {
-    "name": "Rupu Watch Tower",
+    "name": "Rupu Watch Tower (3)",
     "type": "KS_MediumRupuCamp_1_C"
   },
   {
-    "name": "Rupu Watch Tower",
+    "name": "Rupu Watch Tower (4)",
     "type": "AC_MatriarchCampUnedited_C"
   },
   {
-    "name": "Rupu Watch Tower",
+    "name": "Rupu Watch Tower (5)",
     "type": "EasySingleRupuCampFortified_01_C"
   },
   {
-    "name": "Rupu Watch Tower",
+    "name": "Rupu Watch Tower (6)",
     "type": "SG_AshWastesFortress2_C"
   },
   {
@@ -11600,79 +11600,79 @@
     "type": "AC_Sarcophagus_C"
   },
   {
-    "name": "Small Rupu Hut",
+    "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_01_C",
     "category": "Single",
     "tier": "T1"
   },
   {
-    "name": "Small Rupu Hut",
+    "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_02_C",
     "category": "Single",
     "tier": "T1"
   },
   {
-    "name": "Small Rupu Hut",
+    "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_03_C",
     "category": "Single",
     "tier": "T1"
   },
   {
-    "name": "Small Rupu Hut",
+    "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_04_C",
     "category": "Single",
     "tier": "T1"
   },
   {
-    "name": "Small Rupu Hut",
+    "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_05_C",
     "category": "Single",
     "tier": "T1"
   },
   {
-    "name": "Small Rupu Outpost",
+    "name": "Small Rupu Outpost (6)",
+    "type": "KS_EasyRupuCamp_3_C"
+  },
+  {
+    "name": "Small Rupu Outpost (7)",
+    "type": "EasyMediumRupuCamp_01_C"
+  },
+  {
+    "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_01_C",
     "category": "Medium",
     "tier": "T1"
   },
   {
-    "name": "Small Rupu Outpost",
+    "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_02_C",
     "category": "Medium",
     "tier": "T1"
   },
   {
-    "name": "Small Rupu Outpost",
+    "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_03_C",
     "category": "Medium",
     "tier": "T1"
   },
   {
-    "name": "Small Rupu Outpost",
+    "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_04_C",
     "category": "Medium",
     "tier": "T1"
   },
   {
-    "name": "Small Rupu Outpost",
+    "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_05_C",
     "category": "Medium",
     "tier": "T1"
   },
   {
-    "name": "Small Rupu Outpost",
-    "type": "KS_EasyRupuCamp_3_C"
-  },
-  {
-    "name": "Small Rupu Outpost",
-    "type": "EasyMediumRupuCamp_01_C"
-  },
-  {
-    "name": "Small Rupu Village",
+    "name": "Small Rupu Village (1)",
     "type": "MediumSmallRupuCamp_01_C"
   },
   {
-    "name": "Small Rupu Village",
+    "name": "Small Rupu Village (2)",
     "type": "MediumSmallRupuCamp_02_C"
   },
   {
@@ -11891,7 +11891,7 @@
     "type": "OkkamMob_Q_C"
   },
   {
-    "name": "White Death (Medium)",
+    "name": "White Death (Medium) (T2)",
     "type": "T2_WhiteDeath_C",
     "health": 105,
     "experiencie": 600,
@@ -12203,7 +12203,7 @@
     ]
   },
   {
-    "name": "White Death (Medium)",
+    "name": "White Death (Medium) (T3)",
     "type": "T3_WhiteDeath_C",
     "health": 120,
     "experiencie": 2200,

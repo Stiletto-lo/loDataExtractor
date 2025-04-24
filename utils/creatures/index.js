@@ -47,6 +47,9 @@ function processCreatures(creatures) {
 		console.info(`Added drops to ${creaturesWithDrops.length} creatures out of ${processedCreatures.length}`);
 	}
 
+	// Make creature names unique by adding tier information when needed
+	processedCreatures = makeCreatureNamesUnique(processedCreatures);
+
 	return processedCreatures;
 }
 
@@ -141,6 +144,53 @@ function extractCategoryAndTier(creature) {
 	}
 
 	return creature;
+}
+
+/**
+ * Makes creature names unique by adding tier or category information when duplicates exist
+ * @param {Array} creatures - The array of processed creature objects
+ * @returns {Array} - Array of creatures with unique names
+ */
+function makeCreatureNamesUnique(creatures) {
+	// First, identify duplicate names
+	const nameCount = {};
+	for (const creature of creatures) {
+		if (creature.name) {
+			nameCount[creature.name] = (nameCount[creature.name] || 0) + 1;
+		}
+	}
+
+	// Create a map to track which names have been processed
+	const processedNames = {};
+
+	// Then, make names unique by adding tier or other information
+	return creatures.map(creature => {
+		if (!creature.name || nameCount[creature.name] <= 1) {
+			// No need to modify unique names
+			return creature;
+		}
+
+		// Clone the creature to avoid modifying the original
+		const modifiedCreature = { ...creature };
+
+		// Track how many times we've seen this name
+		processedNames[creature.name] = (processedNames[creature.name] || 0) + 1;
+
+		// If the creature has a tier, add it to the name
+		if (creature.tier) {
+			modifiedCreature.name = `${creature.name} (${creature.tier})`;
+		}
+		// If no tier but has category, use that
+		else if (creature.category) {
+			modifiedCreature.name = `${creature.name} (${creature.category})`;
+		}
+		// If neither, add a number suffix
+		else {
+			modifiedCreature.name = `${creature.name} (${processedNames[creature.name]})`;
+		}
+
+		return modifiedCreature;
+	});
 }
 
 module.exports = {
