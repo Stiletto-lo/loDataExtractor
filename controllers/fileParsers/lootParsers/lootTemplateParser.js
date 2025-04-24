@@ -28,11 +28,11 @@ if (!fs.existsSync(LOOTTEMPLATES_DIR)) {
 }
 
 // Create tier directories
-Object.values(LOOTTEMPLATES_TIER_DIRS).forEach((dir) => {
+for (const dir of Object.values(LOOTTEMPLATES_TIER_DIRS)) {
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir, { recursive: true });
   }
-});
+}
 
 /**
  * Safely reads and parses a JSON file
@@ -203,12 +203,12 @@ const parseLootTemplate = (filePath) => {
     Array.isArray(templateData.Properties.Loot.Tables)
   ) {
     const allParsedTables = [];
-    templateData.Properties.Loot.Tables.forEach((tableRef) => {
+    for (const tableRef of templateData.Properties.Loot.Tables) {
       const parsedTable = parseLootTableRef(tableRef);
       if (parsedTable) {
         allParsedTables.push(parsedTable);
       }
-    });
+    }
 
     lootTemplate.tables = allParsedTables;
   }
