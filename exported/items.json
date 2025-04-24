@@ -139,6 +139,7 @@
       "Fiberworking Station",
       "Flotillian Stomping Station",
       "Lumbermill",
+      "Packing Station",
       "Pine Tree",
       "Quarry",
       "Soil Excavator",
@@ -1845,6 +1846,46 @@
       "type": "Medium",
       "hp": 5000
     }
+  },
+  {
+    "category": "Spare Parts",
+    "name": "Base Packing Tier 1 Upgrade",
+    "translation": "Base Packing - Tier 1 Upgrade",
+    "type": "SparePartWoodPartPacking_C",
+    "experiencieReward": 65,
+    "weight": 0.24,
+    "durability": 100,
+    "wikiVisibility": false
+  },
+  {
+    "category": "Spare Parts",
+    "name": "Base Packing Tier 2 Upgrade",
+    "translation": "Base Packing - Tier 2 Upgrade",
+    "type": "SparePartBonePartPacking_C",
+    "experiencieReward": 65,
+    "weight": 0.24,
+    "durability": 100,
+    "wikiVisibility": false
+  },
+  {
+    "category": "Spare Parts",
+    "name": "Base Packing Tier 3 Upgrade",
+    "translation": "Base Packing - Tier 3 Upgrade",
+    "type": "SparePartClayPartPacking_C",
+    "experiencieReward": 65,
+    "weight": 0.24,
+    "durability": 100,
+    "wikiVisibility": false
+  },
+  {
+    "category": "Spare Parts",
+    "name": "Base Packing Tier 4 Upgrade",
+    "translation": "Base Packing - Tier 4 Upgrade",
+    "type": "SparePartIronPartPacking_C",
+    "experiencieReward": 65,
+    "weight": 0.24,
+    "durability": 100,
+    "wikiVisibility": false
   },
   {
     "name": "Base Walker Parts",
@@ -17154,6 +17195,35 @@
     }
   },
   {
+    "category": "Crafting",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Rope"
+          },
+          {
+            "count": 12,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 60,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Packing Station",
+    "parent": "Camp Fire",
+    "type": "PackingStation_C",
+    "experiencieReward": 92,
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 900
+    }
+  },
+  {
     "category": "Weapons",
     "crafting": [
       {
@@ -26027,6 +26097,39 @@
     "translation": "Walker Hangar",
     "type": "Hangar_C",
     "onlyDevs": true
+  },
+  {
+    "category": "Walker Tools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 400,
+            "name": "Wood"
+          },
+          {
+            "count": 35,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 20,
+            "name": "Rope"
+          },
+          {
+            "count": 10,
+            "name": "Rupu Vine"
+          }
+        ]
+      }
+    ],
+    "name": "Walker Packing Compartment",
+    "parent": "ChestBaseMaintenance_T2",
+    "type": "SmallWalkerPacker_C",
+    "experiencieReward": 34,
+    "structureInfo": {
+      "type": "Medium",
+      "hp": 5000
+    }
   },
   {
     "name": "Walker Parts",

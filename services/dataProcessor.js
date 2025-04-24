@@ -112,7 +112,6 @@ const processItems = () => {
 
   allItems = uniqueByTypeItems
     .filter((item) => item.name && Object.keys(item).length > 2)
-    .filter((item) => !item.name.includes("Packing"))
     .reduce((acc, current) => {
       const x = acc.find((item) => item.name === current.name);
       if (!x) {
@@ -122,6 +121,48 @@ const processItems = () => {
       return acc;
     }, []);
 
+
+  // Second pass: merge duplicates and filter
+
+  // Unificar items con el mismo type
+  const typeGroups = new Map();
+  for (const item of allItems) {
+    if (item.type) {
+      if (!typeGroups.has(item.type)) {
+        typeGroups.set(item.type, []);
+      }
+      typeGroups.get(item.type).push(item);
+    }
+  }
+
+  // Combinar propiedades de items con el mismo type
+  const mergedItems = [];
+  for (const [type, items] of typeGroups.entries()) {
+    if (items.length > 1) {
+      // Combinar todos los items con el mismo type
+      const mergedItem = items.reduce((merged, current) => {
+        for (const [key, value] of Object.entries(current)) {
+          if (value !== undefined && value !== null) {
+            merged[key] = value;
+          }
+        }
+        return merged;
+      }, {});
+      mergedItems.push(mergedItem);
+    } else if (items.length === 1) {
+      mergedItems.push(items[0]);
+    }
+  }
+
+  // Añadir items sin type
+  for (const item of allItems) {
+    if (!item.type) {
+      mergedItems.push(item);
+    }
+  }
+
+  // Actualizar allItems con los items unificados
+  allItems = mergedItems;
 
   // Sort items by name
   allItems.sort(orderByName);
