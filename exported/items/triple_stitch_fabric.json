@@ -41,7 +41,7 @@
   ],
   "droppedBy": [
     {
-      "name": "Basket Loot_T2_AC",
+      "name": "BasketLoot_T2 (AC)",
       "chance": 11.111111,
       "minQuantity": 5,
       "maxQuantity": 5,
@@ -146,13 +146,6 @@
       "tier": "T2"
     },
     {
-      "name": "Hard Rupu_T2_AC",
-      "chance": 11.111111,
-      "minQuantity": 5,
-      "maxQuantity": 5,
-      "tier": "T2"
-    },
-    {
       "name": "HardRupu (T2)",
       "chance": 11.111111,
       "minQuantity": 5,
@@ -216,14 +209,7 @@
       "tier": "T4"
     },
     {
-      "name": "Hotspot Loot Windmill_T2_AC",
-      "chance": 11.111111,
-      "minQuantity": 5,
-      "maxQuantity": 5,
-      "tier": "T2"
-    },
-    {
-      "name": "Hotspot Loot_T2_AC",
+      "name": "HardRupu_T2 (AC)",
       "chance": 11.111111,
       "minQuantity": 5,
       "maxQuantity": 5,
@@ -249,6 +235,20 @@
       "minQuantity": 6,
       "maxQuantity": 6,
       "tier": "T4"
+    },
+    {
+      "name": "HotspotLootWindmill_T2 (AC)",
+      "chance": 11.111111,
+      "minQuantity": 5,
+      "maxQuantity": 5,
+      "tier": "T2"
+    },
+    {
+      "name": "HotspotLoot_T2 (AC)",
+      "chance": 11.111111,
+      "minQuantity": 5,
+      "maxQuantity": 5,
+      "tier": "T2"
     },
     {
       "name": "Marshland Stalker",

@@ -30,6 +30,24 @@ function formatTierName(name) {
 }
 
 /**
+ * Automatically formats a name with AC pattern (Name_AC) to readable format (Name (AC))
+ * @param {string} name - The original name with AC pattern
+ * @returns {string} - The formatted name
+ */
+function formatACName(name) {
+  if (!name) return name;
+
+  // Match pattern like Name_AC
+  const acMatch = name.match(/^(.+)_AC$/);
+  if (!acMatch) return name;
+
+  const baseName = acMatch[1];
+
+  // Format as "Name (AC)"
+  return `${baseName} (AC)`;
+}
+
+/**
  * Formats a camelCase name to a spaced name (e.g., DesertClam -> Desert Clam)
  * @param {string} name - The camelCase name to format
  * @returns {string} - The formatted name with spaces
@@ -90,6 +108,25 @@ function translateCreatureName(name) {
     return tierFormatted;
   }
 
+  // Step 3.5: Check if name follows AC pattern (Name_AC)
+  const acPattern = /^(.+)_AC$/;
+  const acMatch = name.match(acPattern);
+  if (acMatch) {
+    // Check if there's an explicit translation for the base name
+    const baseName = acMatch[1];
+    if (additionalTranslations[baseName]) {
+      const translatedBase = additionalTranslations[baseName];
+      const formattedName = `${translatedBase} (AC)`;
+      console.log(`Translating AC name ${name} to ${formattedName} (base name translation)`);
+      return formattedName;
+    }
+
+    // If no explicit translation for base name, use automatic formatting
+    const acFormatted = formatACName(name);
+    console.log(`Automatically formatted AC name ${name} to ${acFormatted}`);
+    return acFormatted;
+  }
+
   // Step 4: Handle camelCase names (e.g., DesertClam -> Desert Clam)
   if (/[a-z][A-Z]/.test(name)) {
     // Format the camelCase name
@@ -121,5 +158,6 @@ function translateCreatureName(name) {
 
 module.exports = {
   translateCreatureName,
-  formatTierName
+  formatTierName,
+  formatACName
 };
