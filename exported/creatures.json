@@ -42,7 +42,7 @@
     "type": "AC_RelicPOI2_C"
   },
   {
-    "name": "AmmoBox_T1",
+    "name": "Ammo Box_T1",
     "type": "AmmoBox_T1_C",
     "lootTemplate": "AmmoBox_T1_C",
     "category": "Container",
@@ -105,10 +105,11 @@
         "source": "baseresources_t1"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "AmmoBox_T1"
   },
   {
-    "name": "AmmoBox_T2",
+    "name": "Ammo Box_T2",
     "type": "AmmoBox_T2_C",
     "lootTemplate": "AmmoBox_T2_C",
     "category": "Container",
@@ -192,10 +193,11 @@
         "source": "baseresources_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "AmmoBox_T2"
   },
   {
-    "name": "AmmoBox_T3",
+    "name": "Ammo Box_T3",
     "type": "AmmoBox_T3_C",
     "lootTemplate": "AmmoBox_T3_C",
     "category": "Container",
@@ -307,10 +309,11 @@
         "source": "baseresources_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "AmmoBox_T3"
   },
   {
-    "name": "AmmoBox_T4",
+    "name": "Ammo Box_T4",
     "type": "AmmoBox_T4_C",
     "lootTemplate": "AmmoBox_T4_C",
     "category": "Container",
@@ -422,7 +425,8 @@
         "source": "baseresources_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "AmmoBox_T4"
   },
   {
     "name": "Ancient Pyramid",
@@ -473,7 +477,7 @@
     "notAssigned": true
   },
   {
-    "name": "BasketLoot_T2_AC",
+    "name": "Basket Loot_T2_AC",
     "type": "BasketLoot_T2_AC_C",
     "lootTemplate": "BasketLoot_T2_AC_C",
     "category": "Structure",
@@ -886,10 +890,11 @@
         "source": "ac_forebearcoins"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "BasketLoot_T2_AC"
   },
   {
-    "name": "BigHotspotLoot_T1",
+    "name": "Big Hotspot Loot_T1",
     "type": "BigHotspotLoot_T1_C",
     "lootTemplate": "BigHotspotLoot_T1_C",
     "category": "Resource",
@@ -1085,10 +1090,11 @@
         "source": "rigs_t1"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "BigHotspotLoot_T1"
   },
   {
-    "name": "BigHotspotLoot_T2",
+    "name": "Big Hotspot Loot_T2",
     "type": "BigHotspotLoot_T2_C",
     "lootTemplate": "BigHotspotLoot_T2_C",
     "category": "Resource",
@@ -1361,10 +1367,11 @@
         "source": "rigs_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "BigHotspotLoot_T2"
   },
   {
-    "name": "BigHotspotLoot_T3",
+    "name": "Big Hotspot Loot_T3",
     "type": "BigHotspotLoot_T3_C",
     "lootTemplate": "BigHotspotLoot_T3_C",
     "category": "Resource",
@@ -1721,10 +1728,11 @@
         "source": "rigs_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "BigHotspotLoot_T3"
   },
   {
-    "name": "BigHotspotLoot_T4",
+    "name": "Big Hotspot Loot_T4",
     "type": "BigHotspotLoot_T4_C",
     "lootTemplate": "BigHotspotLoot_T4_C",
     "category": "Resource",
@@ -1983,7 +1991,8 @@
         "source": "rigs_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "BigHotspotLoot_T4"
   },
   {
     "name": "Bounty Hunter",
@@ -2492,7 +2501,7 @@
     "notAssigned": true
   },
   {
-    "name": "DesertClam",
+    "name": "Desert Clam",
     "type": "DesertClam_C",
     "lootTemplate": "DesertClam_C",
     "category": "Structure",
@@ -2520,10 +2529,11 @@
         "source": "clampearls_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "DesertClam"
   },
   {
-    "name": "EasyRupuCamp_T1",
+    "name": "Easy Rupu Camp_T1",
     "type": "EasyRupuCamp_T1_C",
     "lootTemplate": "EasyRupuCamp_T1_C",
     "category": "Rupu",
@@ -2789,10 +2799,11 @@
         "source": "rigs_t1"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "EasyRupuCamp_T1"
   },
   {
-    "name": "EasyRupuCamp_T2",
+    "name": "Easy Rupu Camp_T2",
     "type": "EasyRupuCamp_T2_C",
     "lootTemplate": "EasyRupuCamp_T2_C",
     "category": "Rupu",
@@ -3177,10 +3188,11 @@
         "source": "rigs_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "EasyRupuCamp_T2"
   },
   {
-    "name": "EasyRupuCamp_T3",
+    "name": "Easy Rupu Camp_T3",
     "type": "EasyRupuCamp_T3_C",
     "lootTemplate": "EasyRupuCamp_T3_C",
     "category": "Rupu",
@@ -3656,10 +3668,11 @@
         "source": "rigs_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "EasyRupuCamp_T3"
   },
   {
-    "name": "EasyRupuCamp_T4",
+    "name": "Easy Rupu Camp_T4",
     "type": "EasyRupuCamp_T4_C",
     "lootTemplate": "EasyRupuCamp_T4_C",
     "category": "Rupu",
@@ -3981,10 +3994,11 @@
         "source": "rigs_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "EasyRupuCamp_T4"
   },
   {
-    "name": "EasyRupu_T1",
+    "name": "Easy Rupu_T1",
     "type": "EasyRupu_T1_C",
     "lootTemplate": "EasyRupu_T1_C",
     "category": "Rupu",
@@ -4166,10 +4180,11 @@
         "source": "weapons_t1"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "EasyRupu_T1"
   },
   {
-    "name": "EasyRupu_T1_Q",
+    "name": "Easy Rupu_T1_Q",
     "type": "EasyRupu_T1_Q_C",
     "lootTemplate": "EasyRupu_T1_Q_C",
     "category": "Rupu",
@@ -4463,10 +4478,11 @@
         "source": "schematics_t1"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "EasyRupu_T1_Q"
   },
   {
-    "name": "EasyRupu_T2",
+    "name": "Easy Rupu_T2",
     "type": "EasyRupu_T2_C",
     "lootTemplate": "EasyRupu_T2_C",
     "category": "Rupu",
@@ -4725,10 +4741,11 @@
         "source": "weapons_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "EasyRupu_T2"
   },
   {
-    "name": "EasyRupu_T2_Q",
+    "name": "Easy Rupu_T2_Q",
     "type": "EasyRupu_T2_Q_C",
     "lootTemplate": "EasyRupu_T2_Q_C",
     "category": "Rupu",
@@ -5113,10 +5130,11 @@
         "source": "schematics_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "EasyRupu_T2_Q"
   },
   {
-    "name": "EasyRupu_T3",
+    "name": "Easy Rupu_T3",
     "type": "EasyRupu_T3_C",
     "lootTemplate": "EasyRupu_T3_C",
     "category": "Rupu",
@@ -5438,10 +5456,11 @@
         "source": "weapons_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "EasyRupu_T3"
   },
   {
-    "name": "EasyRupu_T3_Q",
+    "name": "Easy Rupu_T3_Q",
     "type": "EasyRupu_T3_Q_C",
     "lootTemplate": "EasyRupu_T3_Q_C",
     "category": "Rupu",
@@ -5910,10 +5929,11 @@
         "source": "schematics_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "EasyRupu_T3_Q"
   },
   {
-    "name": "EasyRupu_T4",
+    "name": "Easy Rupu_T4",
     "type": "EasyRupu_T4_C",
     "lootTemplate": "EasyRupu_T4_C",
     "category": "Rupu",
@@ -6144,10 +6164,11 @@
         "source": "weapons_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "EasyRupu_T4"
   },
   {
-    "name": "EasyRupu_T4_Q",
+    "name": "Easy Rupu_T4_Q",
     "type": "EasyRupu_T4_Q_C",
     "lootTemplate": "EasyRupu_T4_Q_C",
     "category": "Rupu",
@@ -6497,7 +6518,8 @@
         "source": "schematics_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "EasyRupu_T4_Q"
   },
   {
     "name": "Excavation Site (1)",
@@ -6508,66 +6530,73 @@
     "type": "AC_WorkersGrave_C"
   },
   {
-    "name": "FallingCactus",
+    "name": "Falling Cactus",
     "type": "FallingCactus_C",
     "lootTemplate": "FallingCactus_C",
     "category": "Structure",
     "tier": null,
     "drops": [],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "FallingCactus"
   },
   {
-    "name": "FallingDriftwoodTree",
+    "name": "Falling Driftwood Tree",
     "type": "FallingDriftwoodTree_C",
     "lootTemplate": "FallingDriftwoodTree_C",
     "category": "Structure",
     "tier": null,
     "drops": [],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "FallingDriftwoodTree"
   },
   {
-    "name": "FallingOasisTree",
+    "name": "Falling Oasis Tree",
     "type": "FallingOasisTree_C",
     "lootTemplate": "FallingOasisTree_C",
     "category": "Structure",
     "tier": null,
     "drops": [],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "FallingOasisTree"
   },
   {
-    "name": "FallingRibCage",
+    "name": "Falling Rib Cage",
     "type": "FallingRibCage_C",
     "lootTemplate": "FallingRibCage_C",
     "category": "Structure",
     "tier": null,
     "drops": [],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "FallingRibCage"
   },
   {
-    "name": "FallingStone",
+    "name": "Falling Stone",
     "type": "FallingStone_C",
     "lootTemplate": "FallingStone_C",
     "category": "Structure",
     "tier": null,
     "drops": [],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "FallingStone"
   },
   {
-    "name": "FallingThornberry",
+    "name": "Falling Thornberry",
     "type": "FallingThornberry_C",
     "lootTemplate": "FallingThornberry_C",
     "category": "Structure",
     "tier": null,
     "drops": [],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "FallingThornberry"
+  },
+  {
+    "name": "Fire Elemental",
+    "type": "FireElementalMob_C",
+    "originalName": "FireElemental"
   },
   {
     "name": "Fire Fortress",
     "type": "KS_LargeRupuCamp_3_C"
-  },
-  {
-    "name": "FireElemental",
-    "type": "FireElementalMob_C"
   },
   {
     "name": "Foragers Outpost (1)",
@@ -6618,7 +6647,7 @@
     "type": "AC_StarTowerGas_C"
   },
   {
-    "name": "GoGo_T4",
+    "name": "Go Go_T4",
     "type": "GoGo_T4_C",
     "lootTemplate": "GoGo_T4_C",
     "category": "Structure",
@@ -6723,10 +6752,11 @@
         "source": "extraresources_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "GoGo_T4"
   },
   {
-    "name": "GoGo_T4_Q",
+    "name": "Go Go_T4_Q",
     "type": "GoGo_T4_Q_C",
     "lootTemplate": "GoGo_T4_Q_C",
     "category": "Structure",
@@ -7020,7 +7050,8 @@
         "source": "rigs_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "GoGo_T4_Q"
   },
   {
     "name": "Gogo",
@@ -7479,7 +7510,7 @@
     ]
   },
   {
-    "name": "HardRupuCamp_T1",
+    "name": "Hard Rupu Camp_T1",
     "type": "HardRupuCamp_T1_C",
     "lootTemplate": "HardRupuCamp_T1_C",
     "category": "Rupu",
@@ -7752,10 +7783,11 @@
         "source": "rigs_t1"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HardRupuCamp_T1"
   },
   {
-    "name": "HardRupuCamp_T2",
+    "name": "Hard Rupu Camp_T2",
     "type": "HardRupuCamp_T2_C",
     "lootTemplate": "HardRupuCamp_T2_C",
     "category": "Rupu",
@@ -8140,10 +8172,11 @@
         "source": "rigs_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HardRupuCamp_T2"
   },
   {
-    "name": "HardRupuCamp_T3",
+    "name": "Hard Rupu Camp_T3",
     "type": "HardRupuCamp_T3_C",
     "lootTemplate": "HardRupuCamp_T3_C",
     "category": "Rupu",
@@ -8619,10 +8652,11 @@
         "source": "rigs_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HardRupuCamp_T3"
   },
   {
-    "name": "HardRupuCamp_T4",
+    "name": "Hard Rupu Camp_T4",
     "type": "HardRupuCamp_T4_C",
     "lootTemplate": "HardRupuCamp_T4_C",
     "category": "Rupu",
@@ -9014,10 +9048,11 @@
         "source": "rigs_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HardRupuCamp_T4"
   },
   {
-    "name": "HardRupu_T1",
+    "name": "Hard Rupu_T1",
     "type": "HardRupu_T1_C",
     "lootTemplate": "HardRupu_T1_C",
     "category": "Rupu",
@@ -9227,10 +9262,11 @@
         "source": "rigs_t1"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HardRupu_T1"
   },
   {
-    "name": "HardRupu_T1_Q",
+    "name": "Hard Rupu_T1_Q",
     "type": "HardRupu_T1_Q_C",
     "lootTemplate": "HardRupu_T1_Q_C",
     "category": "Rupu",
@@ -9524,10 +9560,11 @@
         "source": "schematics_t1"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HardRupu_T1_Q"
   },
   {
-    "name": "HardRupu_T2",
+    "name": "Hard Rupu_T2",
     "type": "HardRupu_T2_C",
     "lootTemplate": "HardRupu_T2_C",
     "category": "Rupu",
@@ -9835,10 +9872,11 @@
         "source": "rigs_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HardRupu_T2"
   },
   {
-    "name": "HardRupu_T2_AC",
+    "name": "Hard Rupu_T2_AC",
     "type": "HardRupu_T2_AC_C",
     "lootTemplate": "HardRupu_T2_AC_C",
     "category": "Rupu",
@@ -10174,10 +10212,11 @@
         "source": "rigs_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HardRupu_T2_AC"
   },
   {
-    "name": "HardRupu_T2_Q",
+    "name": "Hard Rupu_T2_Q",
     "type": "HardRupu_T2_Q_C",
     "lootTemplate": "HardRupu_T2_Q_C",
     "category": "Rupu",
@@ -10562,10 +10601,11 @@
         "source": "schematics_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HardRupu_T2_Q"
   },
   {
-    "name": "HardRupu_T3",
+    "name": "Hard Rupu_T3",
     "type": "HardRupu_T3_C",
     "lootTemplate": "HardRupu_T3_C",
     "category": "Rupu",
@@ -10957,10 +10997,11 @@
         "source": "rigs_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HardRupu_T3"
   },
   {
-    "name": "HardRupu_T3_Q",
+    "name": "Hard Rupu_T3_Q",
     "type": "HardRupu_T3_Q_C",
     "lootTemplate": "HardRupu_T3_Q_C",
     "category": "Rupu",
@@ -11429,10 +11470,11 @@
         "source": "schematics_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HardRupu_T3_Q"
   },
   {
-    "name": "HardRupu_T4",
+    "name": "Hard Rupu_T4",
     "type": "HardRupu_T4_C",
     "lootTemplate": "HardRupu_T4_C",
     "category": "Rupu",
@@ -11733,10 +11775,11 @@
         "source": "rigs_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HardRupu_T4"
   },
   {
-    "name": "HardRupu_T4_Q",
+    "name": "Hard Rupu_T4_Q",
     "type": "HardRupu_T4_Q_C",
     "lootTemplate": "HardRupu_T4_Q_C",
     "category": "Rupu",
@@ -12086,10 +12129,11 @@
         "source": "schematics_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HardRupu_T4_Q"
   },
   {
-    "name": "HotspotLootWindmill_T2_AC",
+    "name": "Hotspot Loot Windmill_T2_AC",
     "type": "HotspotLootWindmill_T2_AC_C",
     "lootTemplate": "HotspotLootWindmill_T2_AC_C",
     "category": "Resource",
@@ -12481,10 +12525,11 @@
         "source": "rigs_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HotspotLootWindmill_T2_AC"
   },
   {
-    "name": "HotspotLoot_T1",
+    "name": "Hotspot Loot_T1",
     "type": "HotspotLoot_T1_C",
     "lootTemplate": "HotspotLoot_T1_C",
     "category": "Resource",
@@ -12799,10 +12844,11 @@
         "source": "rigs_t1"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HotspotLoot_T1"
   },
   {
-    "name": "HotspotLoot_T2",
+    "name": "Hotspot Loot_T2",
     "type": "HotspotLoot_T2_C",
     "lootTemplate": "HotspotLoot_T2_C",
     "category": "Resource",
@@ -13187,10 +13233,11 @@
         "source": "rigs_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HotspotLoot_T2"
   },
   {
-    "name": "HotspotLoot_T2_AC",
+    "name": "Hotspot Loot_T2_AC",
     "type": "HotspotLoot_T2_AC_C",
     "lootTemplate": "HotspotLoot_T2_AC_C",
     "category": "Resource",
@@ -13582,10 +13629,11 @@
         "source": "rigs_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HotspotLoot_T2_AC"
   },
   {
-    "name": "HotspotLoot_T3",
+    "name": "Hotspot Loot_T3",
     "type": "HotspotLoot_T3_C",
     "lootTemplate": "HotspotLoot_T3_C",
     "category": "Resource",
@@ -14061,10 +14109,11 @@
         "source": "rigs_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HotspotLoot_T3"
   },
   {
-    "name": "HotspotLoot_T4",
+    "name": "Hotspot Loot_T4",
     "type": "HotspotLoot_T4_C",
     "lootTemplate": "HotspotLoot_T4_C",
     "category": "Resource",
@@ -14386,7 +14435,8 @@
         "source": "rigs_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "HotspotLoot_T4"
   },
   {
     "name": "Koa",
@@ -14539,7 +14589,7 @@
     "notAssigned": true
   },
   {
-    "name": "LargeNurr_T2",
+    "name": "Large Nurr_T2",
     "type": "LargeNurr_T2_C",
     "lootTemplate": "LargeNurr_T2_C",
     "category": "Structure",
@@ -14553,10 +14603,11 @@
         "source": "nurrfang_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "LargeNurr_T2"
   },
   {
-    "name": "LargeNurr_T2_Q",
+    "name": "Large Nurr_T2_Q",
     "type": "LargeNurr_T2_Q_C",
     "lootTemplate": "LargeNurr_T2_Q_C",
     "category": "Structure",
@@ -14689,7 +14740,8 @@
         "source": "schematics_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "LargeNurr_T2_Q"
   },
   {
     "name": "Lava Papak",
@@ -15355,7 +15407,7 @@
     ]
   },
   {
-    "name": "MediumRupuCamp_T1",
+    "name": "Medium Rupu Camp_T1",
     "type": "MediumRupuCamp_T1_C",
     "lootTemplate": "MediumRupuCamp_T1_C",
     "category": "Rupu",
@@ -15621,10 +15673,11 @@
         "source": "rigs_t1"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "MediumRupuCamp_T1"
   },
   {
-    "name": "MediumRupuCamp_T2",
+    "name": "Medium Rupu Camp_T2",
     "type": "MediumRupuCamp_T2_C",
     "lootTemplate": "MediumRupuCamp_T2_C",
     "category": "Rupu",
@@ -15960,10 +16013,11 @@
         "source": "weapons_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "MediumRupuCamp_T2"
   },
   {
-    "name": "MediumRupuCamp_T3",
+    "name": "Medium Rupu Camp_T3",
     "type": "MediumRupuCamp_T3_C",
     "lootTemplate": "MediumRupuCamp_T3_C",
     "category": "Rupu",
@@ -16439,10 +16493,11 @@
         "source": "rigs_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "MediumRupuCamp_T3"
   },
   {
-    "name": "MediumRupuCamp_T4",
+    "name": "Medium Rupu Camp_T4",
     "type": "MediumRupuCamp_T4_C",
     "lootTemplate": "MediumRupuCamp_T4_C",
     "category": "Rupu",
@@ -16834,10 +16889,11 @@
         "source": "rigs_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "MediumRupuCamp_T4"
   },
   {
-    "name": "MediumRupu_T1",
+    "name": "Medium Rupu_T1",
     "type": "MediumRupu_T1_C",
     "lootTemplate": "MediumRupu_T1_C",
     "category": "Rupu",
@@ -17047,10 +17103,11 @@
         "source": "rigs_t1"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "MediumRupu_T1"
   },
   {
-    "name": "MediumRupu_T1_Q",
+    "name": "Medium Rupu_T1_Q",
     "type": "MediumRupu_T1_Q_C",
     "lootTemplate": "MediumRupu_T1_Q_C",
     "category": "Rupu",
@@ -17344,10 +17401,11 @@
         "source": "schematics_t1"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "MediumRupu_T1_Q"
   },
   {
-    "name": "MediumRupu_T2",
+    "name": "Medium Rupu_T2",
     "type": "MediumRupu_T2_C",
     "lootTemplate": "MediumRupu_T2_C",
     "category": "Rupu",
@@ -17655,10 +17713,11 @@
         "source": "rigs_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "MediumRupu_T2"
   },
   {
-    "name": "MediumRupu_T2_Q",
+    "name": "Medium Rupu_T2_Q",
     "type": "MediumRupu_T2_Q_C",
     "lootTemplate": "MediumRupu_T2_Q_C",
     "category": "Rupu",
@@ -18043,10 +18102,11 @@
         "source": "schematics_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "MediumRupu_T2_Q"
   },
   {
-    "name": "MediumRupu_T3",
+    "name": "Medium Rupu_T3",
     "type": "MediumRupu_T3_C",
     "lootTemplate": "MediumRupu_T3_C",
     "category": "Rupu",
@@ -18438,10 +18498,11 @@
         "source": "rigs_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "MediumRupu_T3"
   },
   {
-    "name": "MediumRupu_T3_Q",
+    "name": "Medium Rupu_T3_Q",
     "type": "MediumRupu_T3_Q_C",
     "lootTemplate": "MediumRupu_T3_Q_C",
     "category": "Rupu",
@@ -18910,10 +18971,11 @@
         "source": "schematics_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "MediumRupu_T3_Q"
   },
   {
-    "name": "MediumRupu_T4",
+    "name": "Medium Rupu_T4",
     "type": "MediumRupu_T4_C",
     "lootTemplate": "MediumRupu_T4_C",
     "category": "Rupu",
@@ -19214,10 +19276,11 @@
         "source": "rigs_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "MediumRupu_T4"
   },
   {
-    "name": "MediumRupu_T4_Q",
+    "name": "Medium Rupu_T4_Q",
     "type": "MediumRupu_T4_Q_C",
     "lootTemplate": "MediumRupu_T4_Q_C",
     "category": "Rupu",
@@ -19567,20 +19630,22 @@
         "source": "schematics_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "MediumRupu_T4_Q"
   },
   {
     "name": "Mountable Nurr",
     "type": "MountableNurrMob_C"
   },
   {
-    "name": "MushroomGas",
+    "name": "Mushroom Gas",
     "type": "MushroomGas_C",
     "lootTemplate": "MushroomGas_C",
     "category": "Structure",
     "tier": null,
     "drops": [],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "MushroomGas"
   },
   {
     "name": "Nurr (1)",
@@ -20333,11 +20398,7 @@
     "notAssigned": true
   },
   {
-    "name": "Phemke Nest",
-    "type": "EasyPhemkeNest_01_C"
-  },
-  {
-    "name": "Phemke_T1",
+    "name": "Phemke",
     "type": "Phemke_T1_C",
     "lootTemplate": "Phemke_T1_C",
     "category": "Structure",
@@ -20400,7 +20461,12 @@
         "source": "rigs_t1"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "Phemke_T1"
+  },
+  {
+    "name": "Phemke Nest",
+    "type": "EasyPhemkeNest_01_C"
   },
   {
     "name": "Prophet",
@@ -30546,7 +30612,7 @@
     "type": "SwampPapakMob_Q_C"
   },
   {
-    "name": "TreasureChest_T1",
+    "name": "Treasure Chest_T1",
     "type": "TreasureChest_T1_C",
     "lootTemplate": "TreasureChest_T1_C",
     "category": "Container",
@@ -30770,10 +30836,11 @@
         "source": "extraresources_t1"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "TreasureChest_T1"
   },
   {
-    "name": "TreasureChest_T2",
+    "name": "Treasure Chest_T2",
     "type": "TreasureChest_T2_C",
     "lootTemplate": "TreasureChest_T2_C",
     "category": "Container",
@@ -31039,10 +31106,11 @@
         "source": "extraresources_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "TreasureChest_T2"
   },
   {
-    "name": "TreasureChest_T3",
+    "name": "Treasure Chest_T3",
     "type": "TreasureChest_T3_C",
     "lootTemplate": "TreasureChest_T3_C",
     "category": "Container",
@@ -31371,10 +31439,11 @@
         "source": "extraresources_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "TreasureChest_T3"
   },
   {
-    "name": "TreasureChest_T4",
+    "name": "Treasure Chest_T4",
     "type": "TreasureChest_T4_C",
     "lootTemplate": "TreasureChest_T4_C",
     "category": "Container",
@@ -31542,56 +31611,62 @@
         "source": "extraresources_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "TreasureChest_T4"
   },
   {
-    "name": "TutorialBeatStickLoot",
+    "name": "Tutorial Beat Stick Loot",
     "type": "TutorialBeatStickLoot_C",
     "lootTemplate": "TutorialBeatStickLoot_C",
     "category": "Structure",
     "tier": null,
     "drops": [],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "TutorialBeatStickLoot"
   },
   {
-    "name": "TutorialCompletedLoot",
+    "name": "Tutorial Completed Loot",
     "type": "TutorialCompletedLoot_C",
     "lootTemplate": "TutorialCompletedLoot_C",
     "category": "Structure",
     "tier": null,
     "drops": [],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "TutorialCompletedLoot"
   },
   {
     "name": "War Okkam",
     "type": "OkkamMob_Q_C"
   },
   {
-    "name": "WaterCondenser",
+    "name": "Water Condenser",
     "type": "WaterCondenser_C",
     "lootTemplate": "WaterCondenser_C",
     "category": "Resource",
     "tier": null,
     "drops": [],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "WaterCondenser"
   },
   {
-    "name": "WaterCondenser_1",
+    "name": "Water Condenser_1",
     "type": "WaterCondenser_1_C",
     "lootTemplate": "WaterCondenser_1_C",
     "category": "Resource",
     "tier": null,
     "drops": [],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "WaterCondenser_1"
   },
   {
-    "name": "WaterCondenser_2",
+    "name": "Water Condenser_2",
     "type": "WaterCondenser_2_C",
     "lootTemplate": "WaterCondenser_2_C",
     "category": "Resource",
     "tier": null,
     "drops": [],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "WaterCondenser_2"
   },
   {
     "name": "White Death (Medium) (T2)",

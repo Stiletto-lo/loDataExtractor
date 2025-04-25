@@ -19,6 +19,7 @@ const path = require("node:path");
  */
 const dropProcessor = require('./dropProcessor');
 const templateCreatureGenerator = require('./templateCreatureGenerator');
+const nameTranslator = require('./nameTranslator');
 
 function processCreatures(creatures) {
 	if (!Array.isArray(creatures) || creatures.length === 0) {
@@ -60,6 +61,17 @@ function processCreatures(creatures) {
 	// Make creature names unique by adding tier information when needed
 	processedCreatures = makeCreatureNamesUnique(processedCreatures);
 
+	// Apply name translations if available
+	processedCreatures = processedCreatures.map(creature => {
+		if (creature.name) {
+			const translatedName = nameTranslator.translateCreatureName(creature.name);
+			if (translatedName !== creature.name) {
+				return { ...creature, name: translatedName, originalName: creature.name };
+			}
+		}
+		return creature;
+	});
+
 	return processedCreatures;
 }
 
@@ -83,16 +95,19 @@ async function exportIndividualCreatureFiles(creatures, exportFolder) {
 
 	for (const creature of creatures) {
 		if (creature.name) {
+			// Translate the name if it exists in additionalTranslations
+			const translatedName = nameTranslator.translateCreatureName(creature?.name);
 			const dataToExport = {
-				name: creature?.name,
+				name: translatedName,
 				category: creature?.category,
 				tier: creature?.tier,
 				health: creature?.health,
 				experiencie: creature?.experiencie,
 				drops: creature?.drops,
+				originalName: translatedName !== creature?.name ? creature?.name : creature?.originalName
 			}
 
-			const snakeCaseName = convertToSnakeCase(creature.name);
+			const snakeCaseName = convertToSnakeCase(translatedName);
 
 			try {
 				await fs.writeFile(

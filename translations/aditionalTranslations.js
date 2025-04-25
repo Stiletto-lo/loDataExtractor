@@ -183,4 +183,8 @@ allTranslations.WallGiants = "Giant Structures";
 allTranslations.HangarWalls = "Hangar Wall";
 allTranslations.ModuleCrafting = "Module Fabricator";
 
+// Add specific creature translations
+allTranslations.DesertClam = "Desert Clam";
+allTranslations.Phemke_T1 = "Phemke";
+
 module.exports = allTranslations;
