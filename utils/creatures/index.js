@@ -18,6 +18,7 @@ const path = require("node:path");
  * @returns {Array} - Enhanced creature data
  */
 const dropProcessor = require('./dropProcessor');
+const templateCreatureGenerator = require('./templateCreatureGenerator');
 
 function processCreatures(creatures) {
 	if (!Array.isArray(creatures) || creatures.length === 0) {
@@ -36,6 +37,15 @@ function processCreatures(creatures) {
 	const fileParser = require('../../controllers/fileParsers');
 	const lootTemplates = fileParser.getAllLootTemplates();
 	const lootTables = fileParser.getAllLootTables();
+
+	const orphanCreatures = templateCreatureGenerator.createCreaturesForOrphanedTemplates();
+	if (orphanCreatures.length > 0) {
+		const processedOrphanCreatures = orphanCreatures
+			.map((creature) => extractCategoryAndTier(creature))
+			.filter((creature) => creature.name && Object.keys(creature).length > 2);
+
+		processedCreatures = [...processedCreatures, ...processedOrphanCreatures];
+	}
 
 	// Then add drop information if loot data is available
 	if (lootTemplates && lootTables) {

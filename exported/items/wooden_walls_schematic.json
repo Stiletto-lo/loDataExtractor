@@ -16,5 +16,28 @@
     "Floor / Roof",
     "Slit Wall",
     "Double Slit Wall"
+  ],
+  "droppedBy": [
+    {
+      "name": "EasyRupu_T1_Q",
+      "chance": 6.25,
+      "minQuantity": 5,
+      "maxQuantity": 5,
+      "tier": "T1"
+    },
+    {
+      "name": "HardRupu_T1_Q",
+      "chance": 6.25,
+      "minQuantity": 5,
+      "maxQuantity": 5,
+      "tier": "T1"
+    },
+    {
+      "name": "MediumRupu_T1_Q",
+      "chance": 6.25,
+      "minQuantity": 5,
+      "maxQuantity": 5,
+      "tier": "T1"
+    }
   ]
 }

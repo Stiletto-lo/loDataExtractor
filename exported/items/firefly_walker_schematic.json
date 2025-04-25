@@ -5,5 +5,28 @@
   "stackSize": 100,
   "learn": [
     "Firefly Walker"
+  ],
+  "droppedBy": [
+    {
+      "name": "EasyRupu_T1_Q",
+      "chance": 6.25,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "tier": "T1"
+    },
+    {
+      "name": "HardRupu_T1_Q",
+      "chance": 6.25,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "tier": "T1"
+    },
+    {
+      "name": "MediumRupu_T1_Q",
+      "chance": 6.25,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "tier": "T1"
+    }
   ]
 }
