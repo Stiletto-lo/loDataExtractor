@@ -6647,7 +6647,11 @@
     "type": "AC_StarTowerGas_C"
   },
   {
-    "name": "Go Go_T4",
+    "name": "Gogo",
+    "type": "GogoMob_C"
+  },
+  {
+    "name": "Gogo (T4)",
     "type": "GoGo_T4_C",
     "lootTemplate": "GoGo_T4_C",
     "category": "Structure",
@@ -6756,7 +6760,7 @@
     "originalName": "GoGo_T4"
   },
   {
-    "name": "Go Go_T4_Q",
+    "name": "Gogo (T4) Quality",
     "type": "GoGo_T4_Q_C",
     "lootTemplate": "GoGo_T4_Q_C",
     "category": "Structure",
@@ -7052,10 +7056,6 @@
     ],
     "notAssigned": true,
     "originalName": "GoGo_T4_Q"
-  },
-  {
-    "name": "Gogo",
-    "type": "GogoMob_C"
   },
   {
     "name": "Grave Digger (Medium)",
@@ -14443,7 +14443,7 @@
     "type": "KoaMob_C"
   },
   {
-    "name": "Koa_T4",
+    "name": "Koa (T4)",
     "type": "Koa_T4_C",
     "lootTemplate": "Koa_T4_C",
     "category": "Structure",
@@ -14457,10 +14457,11 @@
         "source": "spearmint_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "Koa_T4"
   },
   {
-    "name": "Koa_T4_Q",
+    "name": "Koa (T4) Quality",
     "type": "Koa_T4_Q_C",
     "lootTemplate": "Koa_T4_Q_C",
     "category": "Structure",
@@ -14586,7 +14587,8 @@
         "source": "schematics_t4"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "Koa_T4_Q"
   },
   {
     "name": "Large Nurr_T2",
@@ -19656,23 +19658,7 @@
     "type": "NurrMob_C"
   },
   {
-    "name": "Nurr Lair",
-    "type": "NurrLair_T2_C"
-  },
-  {
-    "name": "Nurr Raider",
-    "type": "T2_NurrRaiderMob_C",
-    "category": "Nurr",
-    "tier": "T2"
-  },
-  {
-    "name": "Nurr Raiding Camp",
-    "type": "T2_RaiderOutpost_C",
-    "category": "Raider",
-    "tier": "T2"
-  },
-  {
-    "name": "Nurr_T2",
+    "name": "Nurr (T2)",
     "type": "Nurr_T2_C",
     "lootTemplate": "Nurr_T2_C",
     "category": "Structure",
@@ -19686,10 +19672,11 @@
         "source": "nurrfang_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "Nurr_T2"
   },
   {
-    "name": "Nurr_T2_Q",
+    "name": "Nurr (T2) Quality",
     "type": "Nurr_T2_Q_C",
     "lootTemplate": "Nurr_T2_Q_C",
     "category": "Structure",
@@ -19822,7 +19809,24 @@
         "source": "schematics_t2"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "Nurr_T2_Q"
+  },
+  {
+    "name": "Nurr Lair",
+    "type": "NurrLair_T2_C"
+  },
+  {
+    "name": "Nurr Raider",
+    "type": "T2_NurrRaiderMob_C",
+    "category": "Nurr",
+    "tier": "T2"
+  },
+  {
+    "name": "Nurr Raiding Camp",
+    "type": "T2_RaiderOutpost_C",
+    "category": "Raider",
+    "tier": "T2"
   },
   {
     "name": "Okkam",
@@ -20224,7 +20228,7 @@
     "type": "PapakMob_C"
   },
   {
-    "name": "Papak_T3",
+    "name": "Papak (T3)",
     "type": "Papak_T3_C",
     "lootTemplate": "Papak_T3_C",
     "category": "Structure",
@@ -20238,10 +20242,11 @@
         "source": "gelatinousgoo_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "Papak_T3"
   },
   {
-    "name": "Papak_T3_Q",
+    "name": "Papak (T3) Quality",
     "type": "Papak_T3_Q_C",
     "lootTemplate": "Papak_T3_Q_C",
     "category": "Structure",
@@ -20395,7 +20400,8 @@
         "source": "schematics_t3"
       }
     ],
-    "notAssigned": true
+    "notAssigned": true,
+    "originalName": "Papak_T3_Q"
   },
   {
     "name": "Phemke",

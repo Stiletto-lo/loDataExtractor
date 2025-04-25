@@ -186,5 +186,13 @@ allTranslations.ModuleCrafting = "Module Fabricator";
 // Add specific creature translations
 allTranslations.DesertClam = "Desert Clam";
 allTranslations.Phemke_T1 = "Phemke";
+allTranslations["Go Go_T4"] = "Gogo (T4)";
+allTranslations["Go Go_T4_Q"] = "Gogo (T4) Quality";
+allTranslations.Koa_T4 = "Koa (T4)";
+allTranslations.Koa_T4_Q = "Koa (T4) Quality";
+allTranslations.Nurr_T2 = "Nurr (T2)";
+allTranslations.Nurr_T2_Q = "Nurr (T2) Quality";
+allTranslations.Papak_T3 = "Papak (T3)";
+allTranslations.Papak_T3_Q = "Papak (T3) Quality";
 
 module.exports = allTranslations;
