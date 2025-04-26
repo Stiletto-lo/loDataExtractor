@@ -14,6 +14,7 @@ const lootTableTemplate = require("../../templates/lootTable");
 const dropDataTemplate = require("../../templates/dropData");
 const creatureTemplate = require("../../templates/creature");
 const utilityFunctions = require("./utilityFunctions");
+const lootParsersIndex = require("./lootParsers/index");
 const lootTemplateParser = require("./lootParsers/lootTemplateParser");
 
 // Output directories
@@ -27,6 +28,9 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 if (!fs.existsSync(LOOTTABLES_DIR)) {
 	fs.mkdirSync(LOOTTABLES_DIR, { recursive: true });
 }
+
+// Export the parseLootBox function from lootParsers/index.js
+const parseLootBox = lootParsersIndex.parseLootBox;
 
 /**
  * Safely reads and parses a JSON file
@@ -404,4 +408,5 @@ module.exports = {
 	getLootSiteNameFromObject,
 	parseLootSites,
 	parseLootTemplate: lootTemplateParser.parseLootTemplate,
+	parseLootBox,
 };

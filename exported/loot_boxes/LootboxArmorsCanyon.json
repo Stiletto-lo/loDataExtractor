@@ -1,0 +1,17 @@
+{
+  "name": "LootboxArmorsCanyon",
+  "type": "LootBox",
+  "class": "BlueprintGeneratedClass'Mist/Content/Mist/Data/LootTables/LootBoxes/LootboxArmorsCanyon.LootboxArmorsCanyon_C'",
+  "tables": [
+    {
+      "name": "Armors_T2",
+      "runChance": 1,
+      "minIterations": 5,
+      "maxIterations": 7,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 8,
+      "maxQuantityMultiplier": 10
+    }
+  ],
+  "displayName": "LootboxArmorsCanyon"
+}

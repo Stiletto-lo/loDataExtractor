@@ -1,0 +1,26 @@
+{
+  "name": "LootBoxModules",
+  "type": "LootBox",
+  "class": "BlueprintGeneratedClass'Mist/Content/Mist/Data/LootTables/LootBoxes/LootBoxModules.LootBoxModules_C'",
+  "tables": [
+    {
+      "name": "Modules_T1",
+      "runChance": 0.5,
+      "minIterations": 2,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 3
+    },
+    {
+      "name": "Components_T1",
+      "runChance": 1,
+      "minIterations": 5,
+      "maxIterations": 10,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 5
+    }
+  ],
+  "displayName": "Modules Strongbox"
+}

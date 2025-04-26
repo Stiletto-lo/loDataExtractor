@@ -1,0 +1,17 @@
+{
+  "name": "LootBoxArmors",
+  "type": "LootBox",
+  "class": "BlueprintGeneratedClass'Mist/Content/Mist/Data/LootTables/LootBoxes/LootBoxArmors.LootBoxArmors_C'",
+  "tables": [
+    {
+      "name": "Armors_T1",
+      "runChance": 1,
+      "minIterations": 5,
+      "maxIterations": 7,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 8,
+      "maxQuantityMultiplier": 10
+    }
+  ],
+  "displayName": "Armor Strongbox"
+}

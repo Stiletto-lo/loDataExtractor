@@ -1,0 +1,17 @@
+{
+  "name": "LootboxToolsandEquipmentCanyon",
+  "type": "LootBox",
+  "class": "BlueprintGeneratedClass'Mist/Content/Mist/Data/LootTables/LootBoxes/LootboxToolsandEquipmentCanyon.LootboxToolsandEquipmentCanyon_C'",
+  "tables": [
+    {
+      "name": "LootboxToolsandEquipmentCanyonTable",
+      "runChance": 0.1,
+      "minIterations": 4,
+      "maxIterations": 7,
+      "perIterationRunChance": 0.1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 2
+    }
+  ],
+  "displayName": "LootboxToolsandEquipmentCanyon"
+}

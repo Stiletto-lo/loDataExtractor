@@ -59,6 +59,9 @@ const loadDirData = (dir, type) => {
         case "loottemplates":
           fileParser.parseLootTemplate(filePath);
           break;
+        case "lootboxes":
+          fileParser.parseLootBox(filePath);
+          break;
         case "damagetypes":
           fileParser.parseDamage(filePath);
           break;
@@ -141,6 +144,11 @@ const loadAllFiles = (contentFolderPath) => {
   loadDirData(
     `${contentFolderPath}Content/Mist/Data/LootTables/LootTemplates`,
     "loottemplates",
+  );
+  console.info("Loading LootBoxes");
+  loadDirData(
+    `${contentFolderPath}Content/Mist/Data/LootTables/LootBoxes`,
+    "lootboxes",
   );
 };
 
