@@ -31,7 +31,7 @@
       "tier": "T4"
     },
     {
-      "name": "BasketLoot_T2 (AC)",
+      "name": "BasketLoot (T2) (AC)",
       "chance": 12.5,
       "minQuantity": 10,
       "maxQuantity": 10,
@@ -169,6 +169,13 @@
       "tier": "T2"
     },
     {
+      "name": "HardRupu (T2) (AC)",
+      "chance": 12.5,
+      "minQuantity": 10,
+      "maxQuantity": 10,
+      "tier": "T2"
+    },
+    {
       "name": "HardRupu (T2) Quality",
       "chance": 12.5,
       "minQuantity": 10,
@@ -232,13 +239,6 @@
       "tier": "T4"
     },
     {
-      "name": "HardRupu_T2 (AC)",
-      "chance": 12.5,
-      "minQuantity": 10,
-      "maxQuantity": 10,
-      "tier": "T2"
-    },
-    {
       "name": "HotspotLoot (T1)",
       "chance": 26.31579,
       "minQuantity": 8,
@@ -247,6 +247,13 @@
     },
     {
       "name": "HotspotLoot (T2)",
+      "chance": 12.5,
+      "minQuantity": 10,
+      "maxQuantity": 10,
+      "tier": "T2"
+    },
+    {
+      "name": "HotspotLoot (T2) (AC)",
       "chance": 12.5,
       "minQuantity": 10,
       "maxQuantity": 10,
@@ -267,14 +274,7 @@
       "tier": "T4"
     },
     {
-      "name": "HotspotLootWindmill_T2 (AC)",
-      "chance": 12.5,
-      "minQuantity": 10,
-      "maxQuantity": 10,
-      "tier": "T2"
-    },
-    {
-      "name": "HotspotLoot_T2 (AC)",
+      "name": "HotspotLootWindmill (T2) (AC)",
       "chance": 12.5,
       "minQuantity": 10,
       "maxQuantity": 10,

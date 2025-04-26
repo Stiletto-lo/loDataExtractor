@@ -64,7 +64,7 @@
   ],
   "droppedBy": [
     {
-      "name": "BasketLoot_T2 (AC)",
+      "name": "BasketLoot (T2) (AC)",
       "chance": 9.090909,
       "minQuantity": 12,
       "maxQuantity": 12,
@@ -155,6 +155,13 @@
       "tier": "T2"
     },
     {
+      "name": "HotspotLoot (T2) (AC)",
+      "chance": 9.090909,
+      "minQuantity": 12,
+      "maxQuantity": 12,
+      "tier": "T2"
+    },
+    {
       "name": "HotspotLoot (T3)",
       "chance": 8.333333,
       "minQuantity": 14,
@@ -169,14 +176,7 @@
       "tier": "T4"
     },
     {
-      "name": "HotspotLootWindmill_T2 (AC)",
-      "chance": 9.090909,
-      "minQuantity": 12,
-      "maxQuantity": 12,
-      "tier": "T2"
-    },
-    {
-      "name": "HotspotLoot_T2 (AC)",
+      "name": "HotspotLootWindmill (T2) (AC)",
       "chance": 9.090909,
       "minQuantity": 12,
       "maxQuantity": 12,

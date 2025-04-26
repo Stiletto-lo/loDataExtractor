@@ -42,7 +42,7 @@
   ],
   "droppedBy": [
     {
-      "name": "BasketLoot_T2 (AC)",
+      "name": "BasketLoot (T2) (AC)",
       "chance": 11.111111,
       "minQuantity": 5,
       "maxQuantity": 5,
@@ -154,6 +154,13 @@
       "tier": "T2"
     },
     {
+      "name": "HardRupu (T2) (AC)",
+      "chance": 11.111111,
+      "minQuantity": 5,
+      "maxQuantity": 5,
+      "tier": "T2"
+    },
+    {
       "name": "HardRupu (T2) Quality",
       "chance": 11.111111,
       "minQuantity": 5,
@@ -210,14 +217,14 @@
       "tier": "T4"
     },
     {
-      "name": "HardRupu_T2 (AC)",
+      "name": "HotspotLoot (T2)",
       "chance": 11.111111,
       "minQuantity": 5,
       "maxQuantity": 5,
       "tier": "T2"
     },
     {
-      "name": "HotspotLoot (T2)",
+      "name": "HotspotLoot (T2) (AC)",
       "chance": 11.111111,
       "minQuantity": 5,
       "maxQuantity": 5,
@@ -238,14 +245,7 @@
       "tier": "T4"
     },
     {
-      "name": "HotspotLootWindmill_T2 (AC)",
-      "chance": 11.111111,
-      "minQuantity": 5,
-      "maxQuantity": 5,
-      "tier": "T2"
-    },
-    {
-      "name": "HotspotLoot_T2 (AC)",
+      "name": "HotspotLootWindmill (T2) (AC)",
       "chance": 11.111111,
       "minQuantity": 5,
       "maxQuantity": 5,

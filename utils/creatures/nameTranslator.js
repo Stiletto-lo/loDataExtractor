@@ -15,9 +15,14 @@ const additionalTranslations = require('../../translations/aditionalTranslations
 function formatTierName(name) {
   if (!name) return name;
 
+  // Defer handling of combined patterns to formatCombinedPatterns
+  if (name.includes('_AC') || name.includes('(AC)')) {
+    return name; // Let formatCombinedPatterns handle this case
+  }
+
   // Match pattern like Name_T1, Name_T2, etc.
   const tierMatch = name.match(/^(.+)_T([1-4])(_Q)?$/);
-  if (!tierMatch) return name;
+  if (!tierMatch) { return name; }
 
   const baseName = tierMatch[1];
   const tier = tierMatch[2];
@@ -57,6 +62,38 @@ function formatCamelCaseName(name) {
 
   // Add spaces between lowercase and uppercase letters
   return name.replace(/([a-z])([A-Z])/g, '$1 $2');
+}
+
+/**
+ * Formats a name that contains both tier and AC patterns
+ * @param {string} name - The original name with combined patterns
+ * @returns {string} - The properly formatted name
+ */
+function formatCombinedPatterns(name) {
+  if (!name) return name;
+
+  // Case 1: Name_TX_AC -> Name (TX) (AC)
+  const pattern1 = /^(.+)_T([1-4])_AC$/;
+  const match1 = name.match(pattern1);
+  if (match1) {
+    return `${match1[1]} (T${match1[2]}) (AC)`;
+  }
+
+  // Case 2: Name_TX (AC) -> Name (TX) (AC)
+  const pattern2 = /^(.+)_T([1-4])\s*\(AC\)$/;
+  const match2 = name.match(pattern2);
+  if (match2) {
+    return `${match2[1]} (T${match2[2]}) (AC)`;
+  }
+
+  // Case 3: Name (TX)_AC -> Name (TX) (AC)
+  const pattern3 = /^(.+)\s*\(T([1-4])\)\s*_AC$/;
+  const match3 = name.match(pattern3);
+  if (match3) {
+    return `${match3[1]} (T${match3[2]}) (AC)`;
+  }
+
+  return name;
 }
 
 /**
@@ -108,7 +145,15 @@ function translateCreatureName(name) {
     return tierFormatted;
   }
 
-  // Step 3.5: Check if name follows AC pattern (Name_AC)
+  // Step 3.5: Check for combined patterns (tier + AC)
+  // Check for patterns like Name_TX_AC, Name_TX (AC), Name (TX)_AC
+  const combinedFormatted = formatCombinedPatterns(name);
+  if (combinedFormatted !== name) {
+    console.log(`Formatted combined pattern name ${name} to ${combinedFormatted}`);
+    return combinedFormatted;
+  }
+
+  // Step 3.6: Check if name follows AC pattern (Name_AC)
   const acPattern = /^(.+)_AC$/;
   const acMatch = name.match(acPattern);
   if (acMatch) {
@@ -159,5 +204,6 @@ function translateCreatureName(name) {
 module.exports = {
   translateCreatureName,
   formatTierName,
-  formatACName
+  formatACName,
+  formatCombinedPatterns
 };
