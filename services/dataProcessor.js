@@ -238,11 +238,11 @@ const processTechData = () => {
     .map((tech) => ({
       name: tech.name,
       parent: tech.parent,
-      type: tech.type,
       category: tech.category,
-      cost: tech.cost,
       onlyDevs: tech.onlyDevs,
       unlocks: tech.unlocks,
+      level: tech.level,
+      pointsCost: tech.pointsCost,
     }));
 
 

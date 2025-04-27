@@ -38,23 +38,13 @@ const parseTechData = (filePath) => {
 			item.parent = parentName;
 		}
 
-		if (jsonData[1]?.Properties?.Cost !== undefined) {
-			const itemCost = { ...require("../../../templates/cost") };
-			if (
-				jsonData[1].Properties.TechTreeTier &&
-				(jsonData[1].Properties.TechTreeTier.includes("Tier4") ||
-					jsonData[1].Properties.TechTreeTier.includes("Tier5") ||
-					jsonData[1].Properties.TechTreeTier.includes("Tier6"))
-			) {
-				itemCost.name = "Tablet";
-			} else {
-				itemCost.name = "Fragment";
-			}
-			itemCost.count = jsonData[1].Properties.Cost;
+		// Extract Level and PointsCost data
+		if (jsonData[1]?.Properties?.Level !== undefined) {
+			tech.level = jsonData[1].Properties.Level;
+		}
 
-			// Ensure cost data is properly set for both
-			tech.cost = { ...itemCost };
-			item.cost = itemCost;
+		if (jsonData[1]?.Properties?.PointsCost !== undefined) {
+			tech.pointsCost = jsonData[1].Properties.PointsCost;
 		}
 
 		if (jsonData[1]?.Properties?.bHidden) {
