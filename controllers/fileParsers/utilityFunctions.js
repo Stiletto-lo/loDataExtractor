@@ -23,7 +23,6 @@ class DataStore {
 		this.creatures = [];
 		this.lootTables = {};
 		this.lootTemplates = [];
-		this.lootBoxes = [];
 	}
 
 	// Item operations
@@ -140,18 +139,6 @@ class DataStore {
 			throw new TypeError("Loot templates must be an array");
 		}
 		this.lootTemplates = lootTemplates;
-	}
-
-	// Loot boxes operations
-	getAllLootBoxes() {
-		return this.lootBoxes;
-	}
-
-	setLootBoxes(lootBoxes) {
-		if (!Array.isArray(lootBoxes)) {
-			throw new TypeError("Loot boxes must be an array");
-		}
-		this.lootBoxes = lootBoxes;
 	}
 
 	setTechData(data) {

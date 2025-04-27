@@ -29,9 +29,6 @@ if (!fs.existsSync(LOOTTABLES_DIR)) {
 	fs.mkdirSync(LOOTTABLES_DIR, { recursive: true });
 }
 
-// Export the parseLootBox function from lootParsers/index.js
-const parseLootBox = lootParsersIndex.parseLootBox;
-
 /**
  * Safely reads and parses a JSON file
  * @param {string} filePath - The file path to read
@@ -408,5 +405,4 @@ module.exports = {
 	getLootSiteNameFromObject,
 	parseLootSites,
 	parseLootTemplate: lootTemplateParser.parseLootTemplate,
-	parseLootBox,
 };

@@ -28,13 +28,10 @@ module.exports = {
 	parseLootSites: lootParsers.parseLootSites,
 	getLootSiteNameFromObject: lootParsers.getLootSiteNameFromObject,
 	parseLootTemplate: lootParsers.parseLootTemplate,
-	parseLootBox: lootParsers.parseLootBox,
 	getAllLootTables: utilityFunctions.getAllLootTables,
 	setLootTables: utilityFunctions.setLootTables,
 	getAllLootTemplates: utilityFunctions.getAllLootTemplates,
 	setLootTemplates: utilityFunctions.setLootTemplates,
-	getAllLootBoxes: utilityFunctions.getAllLootBoxes,
-	setLootBoxes: utilityFunctions.setLootBoxes,
 
 	// Translation related functions
 	parseTranslations: translationParsers.parseTranslations,
