@@ -75,6 +75,27 @@ const getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (
+			itemData.Properties?.Description
+		) {
+			const description = itemData.Properties.Description?.SourceString && itemData.Properties.Description?.SourceString.length > 0
+				? itemData.Properties.Description?.SourceString?.trim()
+				: itemData.Properties.Description?.LocalizedString?.trim();
+
+			if (description && description.length > 0) {
+				translator.addDescription(
+					item.name,
+					description,
+				);
+				translator.addDescription(
+					itemData.Type,
+					description,
+				);
+
+				item.description = description;
+			}
+		}
+
+		if (
 			itemData.Properties?.TechtreeName?.SourceString ||
 			itemData.Properties?.TechtreeName?.LocalizedString
 		) {
