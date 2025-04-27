@@ -96,6 +96,18 @@ const getItemFromItemData = (itemData, oldItem) => {
 		}
 
 		if (
+			itemData.Properties?.AcquisitionHint
+		) {
+			const acquisitionHint = itemData.Properties.AcquisitionHint?.SourceString && itemData.Properties.AcquisitionHint?.SourceString.length > 0
+				? itemData.Properties.AcquisitionHint?.SourceString?.trim()
+				: itemData.Properties.AcquisitionHint?.LocalizedString?.trim();
+
+			if (acquisitionHint && acquisitionHint.length > 0) {
+				item.whereToFarm = acquisitionHint;
+			}
+		}
+
+		if (
 			itemData.Properties?.TechtreeName?.SourceString ||
 			itemData.Properties?.TechtreeName?.LocalizedString
 		) {
