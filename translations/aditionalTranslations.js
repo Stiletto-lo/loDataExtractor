@@ -173,6 +173,8 @@ allTranslations.StructuralWoodMedium = "Medium Wood Structures";
 allTranslations.StructuralWoodHeavy = "Heavy Wood Structures";
 allTranslations.StructuralSand = "Sand Structures";
 allTranslations.StructuralHangar = "Hangar Structures";
+allTranslations["Ceramic Hatchet"] = "Advanced Hatchet";
+allTranslations.CeramicPickaxe = "Advanced Pickaxe";
 
 allTranslations["Structural (concrete)"] = "Cement Structures";
 allTranslations["Structural (clay)"] = "Clay Structures";
