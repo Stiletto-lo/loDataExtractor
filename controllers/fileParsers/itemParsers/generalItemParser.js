@@ -64,6 +64,10 @@ const getItemFromItemData = (itemData, oldItem) => {
 					itemData.Properties?.Name.Key.replace(".Name", "").trim(),
 					name,
 				);
+				translator.addTranslationIfItDoesNotAlreadyExist(
+					itemData.Type,
+					name,
+				);
 
 				item.name = name;
 				item.translation = name;
