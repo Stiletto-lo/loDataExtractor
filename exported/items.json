@@ -5503,7 +5503,9 @@
     "translation": "Chalk Bomb",
     "type": "ChalkCloudBomb_C",
     "description": "Ammo for sling or catapult. Releases thick smoke cloud in area. Does not deal any damage.",
-    "projectileDamage": {},
+    "projectileDamage": {
+      "damage": 0
+    },
     "stackSize": 10,
     "weight": 2.4
   },
@@ -6572,7 +6574,9 @@
     "translation": "Crane Harpoon",
     "type": "CraneHarpoon_C",
     "description": "Ammo for Ballista. Tether to any target and reel in until the harpoon is destroyed or the tether snaps.",
-    "projectileDamage": {},
+    "projectileDamage": {
+      "damage": 0
+    },
     "experiencieReward": 15,
     "stackSize": 20,
     "weight": 0.68,

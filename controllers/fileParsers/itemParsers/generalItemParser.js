@@ -22,13 +22,31 @@ const moduleInfoTemplate = require("../../../templates/moduleInfo");
  * @returns {Object|undefined} - The item object or undefined
  */
 const getItemFromItemData = (itemData, oldItem) => {
-	if (!itemData) {
-		return oldItem ?? undefined;
-	}
+	if (!itemData) return oldItem ?? undefined;
 
 	const item = oldItem ?? utilityFunctions.extractItemByType(itemData.Type);
 
-	// Check if this is a walker part with a name pattern like "X Walker Legs Heavy (1 of 2)"
+	// Helper to get string from SourceString or LocalizedString
+	const getString = (obj, key) =>
+		obj?.[key]?.SourceString?.trim() || obj?.[key]?.LocalizedString?.trim() || "";
+
+	// Helper to add translation
+	const setTranslation = (key, name) => {
+		if (key && name) {
+			translator.addTranslation(key.replace(".Name", "").trim(), name);
+			translator.addTranslationIfItDoesNotAlreadyExist(itemData.Type, name);
+		}
+	};
+
+	// Helper to add description
+	const setDescription = (name, description) => {
+		if (name && description) {
+			translator.addDescription(name, description);
+			translator.addDescription(itemData.Type, description);
+		}
+	};
+
+	// Walker part category
 	if (
 		item.name &&
 		(item.name.includes("Walker Legs") || item.name.includes("Walker Wings")) &&
@@ -37,223 +55,135 @@ const getItemFromItemData = (itemData, oldItem) => {
 		item.category = "WalkerParts";
 	}
 
-	if (itemData.Properties) {
-		if (itemData.Properties?.Category?.ObjectPath) {
-			const category = dataParser.parseCategory(
-				itemData.Properties.Category.ObjectPath,
-			);
+	const props = itemData.Properties;
+	if (props) {
+		// Category/Schematic
+		if (props?.Category?.ObjectPath) {
+			const category = dataParser.parseCategory(props.Category.ObjectPath);
 			if (category.includes("Schematics")) {
 				item.schematicName = itemData.Type;
 			} else {
-				item.category = dataParser.parseCategory(
-					itemData.Properties.Category.ObjectPath,
-				);
+				item.category = category;
 			}
 		}
 
-		if (
-			itemData.Properties?.Name?.SourceString ||
-			itemData.Properties?.Name?.LocalizedString
-		) {
-			const name = itemData.Properties.Name.SourceString
-				? itemData.Properties.Name.SourceString.trim()
-				: itemData.Properties.Name.LocalizedString.trim();
+		// Name/Translation
+		const name = getString(props, "Name");
+		if (name.length > 0) {
+			setTranslation(props?.Name?.Key, name);
+			item.name = name;
+			item.translation = name;
+		}
 
-			if (name.length > 0) {
-				translator.addTranslation(
-					itemData.Properties?.Name.Key.replace(".Name", "").trim(),
-					name,
-				);
-				translator.addTranslationIfItDoesNotAlreadyExist(
-					itemData.Type,
-					name,
-				);
+		// Description
+		const description = getString(props, "Description");
+		if (description.length > 0) {
+			setDescription(item.name, description);
+			item.description = description;
+		}
 
-				item.name = name;
-				item.translation = name;
+		// Acquisition Hint
+		const acquisitionHint = getString(props, "AcquisitionHint");
+		if (acquisitionHint.length > 0) {
+			item.whereToFarm = acquisitionHint;
+		}
+
+		// Techtree Name
+		const techtreeName = getString(props, "TechtreeName");
+		if (techtreeName.length > 0) {
+			setTranslation(props?.TechtreeName?.Key, techtreeName);
+			item.name = techtreeName;
+			item.translation = techtreeName;
+		}
+
+		// Trade price
+		if (props?.ExpectedPrice > 0) {
+			item.trade_price = props.ExpectedPrice;
+		}
+
+		// Module Info
+		if (props?.MaximumQuantity || props?.PercentageIncreasePerItem) {
+			if (!item.moduleInfo) item.moduleInfo = { ...moduleInfoTemplate };
+			if (props?.MaximumQuantity) {
+				item.moduleInfo.max = props.MaximumQuantity;
+				item.moduleInfo.increase = props.AbsoluteIncreasePerItem ?? undefined;
+			}
+			if (props?.PercentageIncreasePerItem) {
+				item.moduleInfo.increase = props.PercentageIncreasePerItem;
+				item.moduleInfo.maxIncrease = props.MaximumPercentage ?? undefined;
 			}
 		}
 
-		if (
-			itemData.Properties?.Description
-		) {
-			const description = itemData.Properties.Description?.SourceString && itemData.Properties.Description?.SourceString.length > 0
-				? itemData.Properties.Description?.SourceString?.trim()
-				: itemData.Properties.Description?.LocalizedString?.trim();
-
-			if (description && description.length > 0) {
-				translator.addDescription(
-					item.name,
-					description,
-				);
-				translator.addDescription(
-					itemData.Type,
-					description,
-				);
-
-				item.description = description;
-			}
+		// Projectile Damage
+		if (props?.ProjectileDamage) {
+			item.projectileDamage = {
+				...projectileDamageTemplate,
+				damage: props.ProjectileDamage.Damage ?? undefined,
+				penetration: props.ProjectileDamage.Penetration ?? undefined,
+				effectivenessVsSoak: props.ProjectileDamage.EffectivenessVsSoak ?? undefined,
+				effectivenessVsReduce: props.ProjectileDamage.EffectivenessVsReduce ?? undefined,
+			};
 		}
 
-		if (
-			itemData.Properties?.AcquisitionHint
-		) {
-			const acquisitionHint = itemData.Properties.AcquisitionHint?.SourceString && itemData.Properties.AcquisitionHint?.SourceString.length > 0
-				? itemData.Properties.AcquisitionHint?.SourceString?.trim()
-				: itemData.Properties.AcquisitionHint?.LocalizedString?.trim();
-
-			if (acquisitionHint && acquisitionHint.length > 0) {
-				item.whereToFarm = acquisitionHint;
-			}
+		// Armor Info
+		if (props?.DefenseProperties) {
+			item.armorInfo = {
+				...armorInfoTemplate,
+				absorbing: props.DefenseProperties.Soak ?? undefined,
+				reduction: props.DefenseProperties.Reduce ?? undefined,
+				speedReduction: props.MovementSpeedReduction ?? undefined,
+			};
 		}
 
-		if (
-			itemData.Properties?.TechtreeName?.SourceString ||
-			itemData.Properties?.TechtreeName?.LocalizedString
-		) {
-			const name = itemData.Properties?.TechtreeName?.SourceString
-				? itemData.Properties?.TechtreeName?.SourceString.trim()
-				: itemData.Properties?.TechtreeName?.LocalizedString.trim();
-
-			if (name.length > 0) {
-				translator.addTranslation(
-					itemData.Properties?.TechtreeName.Key.replace(".Name", "").trim(),
-					name,
-				);
-
-				item.name = name;
-				item.translation = name;
-			}
+		// Experience reward
+		if (props?.ExperienceRewardCrafting) {
+			item.experiencieReward = props.ExperienceRewardCrafting;
 		}
 
-		if (
-			itemData.Properties?.ExpectedPrice &&
-			itemData.Properties.ExpectedPrice > 0
-		) {
-			item.trade_price = itemData.Properties.ExpectedPrice;
-		}
+		// Stack size, weight, durability
+		if (props?.MaxStackSize) item.stackSize = props.MaxStackSize;
+		if (props?.Weight) item.weight = props.Weight;
+		if (props?.MaxDurability) item.durability = props.MaxDurability;
 
-		if (itemData.Properties?.MaximumQuantity) {
-			if (!item.moduleInfo) {
-				const moduleInfoBase = { ...moduleInfoTemplate };
-				item.moduleInfo = moduleInfoBase;
-			}
-
-			item.moduleInfo.max = itemData.Properties.MaximumQuantity;
-			item.moduleInfo.increase = itemData.Properties.AbsoluteIncreasePerItem
-				? itemData.Properties.AbsoluteIncreasePerItem
-				: undefined;
-		}
-
-		if (itemData.Properties?.PercentageIncreasePerItem) {
-			if (!item.moduleInfo) {
-				const moduleInfoBase = { ...moduleInfoTemplate };
-				item.moduleInfo = moduleInfoBase;
-			}
-
-			item.moduleInfo.increase = itemData.Properties.PercentageIncreasePerItem;
-			item.moduleInfo.maxIncrease = itemData.Properties.MaximumPercentage
-				? itemData.Properties.MaximumPercentage
-				: undefined;
-		}
-
-		if (itemData.Properties?.ProjectileDamage) {
-			const projectileDamage = { ...projectileDamageTemplate };
-
-			projectileDamage.damage = itemData.Properties?.ProjectileDamage?.Damage
-				? itemData.Properties?.ProjectileDamage?.Damage
-				: undefined;
-			projectileDamage.penetration =
-				itemData.Properties?.ProjectileDamage?.Penetration
-					? itemData.Properties?.ProjectileDamage?.Penetration
-					: undefined;
-			projectileDamage.effectivenessVsSoak =
-
-				itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
-					? itemData.Properties?.ProjectileDamage?.EffectivenessVsSoak
-					: undefined;
-			projectileDamage.effectivenessVsReduce =
-
-				itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
-					? itemData.Properties?.ProjectileDamage?.EffectivenessVsReduce
-					: undefined;
-
-			item.projectileDamage = projectileDamage;
-		}
-
-		if (itemData.Properties?.DefenseProperties) {
-			const armorInfo = { ...armorInfoTemplate };
-
-			armorInfo.absorbing = itemData.Properties?.DefenseProperties?.Soak
-				? itemData.Properties?.DefenseProperties?.Soak
-				: undefined;
-			armorInfo.reduction = itemData.Properties?.DefenseProperties?.Reduce
-				? itemData.Properties?.DefenseProperties?.Reduce
-				: undefined;
-
-			if (itemData.Properties?.MovementSpeedReduction) {
-				armorInfo.speedReduction = itemData.Properties.MovementSpeedReduction;
-			}
-
-			item.armorInfo = armorInfo;
-		}
-
-		if (itemData.Properties?.ExperienceRewardCrafting) {
-			item.experiencieReward = itemData.Properties.ExperienceRewardCrafting;
-		}
-
-		if (itemData.Properties?.MaxStackSize) {
-			item.stackSize = itemData.Properties.MaxStackSize;
-		}
-
-		if (itemData.Properties?.Weight) {
-			item.weight = itemData.Properties.Weight;
-		}
-
-		if (itemData.Properties?.MaxDurability) {
-			item.durability = itemData.Properties.MaxDurability;
-		}
-
+		// Weapon Info
 		const weaponInfo = { ...weaponInfoTemplate };
-
-		if (itemData.Properties?.DurabilityDamage) {
-			weaponInfo.durabilityDamage = itemData.Properties.DurabilityDamage;
-			item.weaponInfo = weaponInfo;
+		let hasWeaponInfo = false;
+		if (props?.DurabilityDamage) {
+			weaponInfo.durabilityDamage = props.DurabilityDamage;
+			hasWeaponInfo = true;
 		}
-		if (itemData.Properties?.WeaponSpeed) {
-			weaponInfo.weaponSpeed = itemData.Properties.WeaponSpeed;
-			item.weaponInfo = weaponInfo;
+		if (props?.WeaponSpeed) {
+			weaponInfo.weaponSpeed = props.WeaponSpeed;
+			hasWeaponInfo = true;
 		}
-		if (itemData.Properties?.Impact) {
-			weaponInfo.impact = itemData.Properties.Impact;
-			item.weaponInfo = weaponInfo;
+		if (props?.Impact) {
+			weaponInfo.impact = props.Impact;
+			hasWeaponInfo = true;
 		}
-		if (itemData.Properties?.Stability) {
-			weaponInfo.stability = itemData.Properties.Stability;
-			item.weaponInfo = weaponInfo;
+		if (props?.Stability) {
+			weaponInfo.stability = props.Stability;
+			hasWeaponInfo = true;
 		}
-		if (itemData.Properties?.WeaponLength) {
-			weaponInfo.weaponLength = itemData.Properties.WeaponLength;
-			item.weaponInfo = weaponInfo;
+		if (props?.WeaponLength) {
+			weaponInfo.weaponLength = props.WeaponLength;
+			hasWeaponInfo = true;
 		}
-
-		if (itemData.Properties?.DamageProperties) {
-			if (itemData.Properties?.DamageProperties?.Damage) {
-				weaponInfo.damage = itemData.Properties.DamageProperties.Damage;
-				item.weaponInfo = weaponInfo;
+		if (props?.DamageProperties) {
+			if (props.DamageProperties.Damage) {
+				weaponInfo.damage = props.DamageProperties.Damage;
+				hasWeaponInfo = true;
 			}
-			if (itemData.Properties?.DamageProperties?.Penetration) {
-				weaponInfo.penetration =
-					itemData.Properties.DamageProperties.Penetration;
-				item.weaponInfo = weaponInfo;
+			if (props.DamageProperties.Penetration) {
+				weaponInfo.penetration = props.DamageProperties.Penetration;
+				hasWeaponInfo = true;
 			}
 		}
+		if (hasWeaponInfo) { item.weaponInfo = weaponInfo; }
 
-		if (itemData.Properties?.ToolInfo) {
-			const toolInfosData = itemData.Properties.ToolInfo;
+		// Tool Info
+		if (props?.ToolInfo) {
 			const toolInfos = item.toolInfo ? item.toolInfo : [];
-
-			for (const toolInfoData of toolInfosData) {
+			for (const toolInfoData of props.ToolInfo) {
 				const baseToolInfo = { ...toolInfoTemplate };
 				baseToolInfo.tier = toolInfoData.Tier;
 				if (toolInfoData.ToolType.includes("TreeCutting")) {
@@ -270,15 +200,13 @@ const getItemFromItemData = (itemData, oldItem) => {
 				}
 				toolInfos.push(baseToolInfo);
 			}
-			if (toolInfos.length > 0) {
-				item.toolInfo = toolInfos;
-			}
+			if (toolInfos.length > 0) { item.toolInfo = toolInfos; }
 		}
 
-		if (itemData.Properties?.Recipes) {
-			const recipesData = itemData.Properties.Recipes;
+		// Recipes/Crafting
+		if (props?.Recipes) {
 			const crafting = [];
-			for (const recipeData of recipesData) {
+			for (const recipeData of props.Recipes) {
 				const recipe = { ...recipeTemplate };
 				if (recipeData.Inputs) {
 					const ingredients = [];
@@ -287,9 +215,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 							utilityFunctions.getIngredientsFromItem(recipeData.Inputs, key),
 						);
 					}
-					if (ingredients.length > 0) {
-						recipe.ingredients = ingredients;
-					}
+					if (ingredients.length > 0) recipe.ingredients = ingredients;
 				}
 				if (recipeData.Quantity && recipeData.Quantity > 1) {
 					recipe.output = recipeData.Quantity;
@@ -307,43 +233,34 @@ const getItemFromItemData = (itemData, oldItem) => {
 				}
 				crafting.push(recipe);
 			}
-			if (crafting.length > 0) {
-				item.crafting = crafting;
-			}
+			if (crafting.length > 0) { item.crafting = crafting; }
 		}
-		if (itemData?.Properties?.Name?.Key) {
-			if (
-				itemData.Properties.Name.SourceString &&
-				itemData.Properties.Name.SourceString.trim().length > 0
-			) {
-				item.name = itemData.Properties.Name.SourceString.trim();
-				item.translation = itemData.Properties.Name.SourceString.trim();
+
+		// Fallback name/translation
+		if (props?.Name?.Key) {
+			if (props.Name.SourceString && props.Name.SourceString.trim().length > 0) {
+				item.name = props.Name.SourceString.trim();
+				item.translation = props.Name.SourceString.trim();
 			} else {
-				item.translation = itemData.Properties.Name.Key.replace(
-					".Name",
-					"",
-				).trim();
+				item.translation = props.Name.Key.replace(".Name", "").trim();
 				if (!item.name) {
 					item.name = dataParser.parseName(translator, item.translation);
 				}
 			}
 		}
 
-		if (itemData?.Properties?.DamageType?.ObjectName) {
-			item.damageType = dataParser.parseType(
-				itemData.Properties.DamageType.ObjectName,
-			);
+		// Damage type
+		if (props?.DamageType?.ObjectName) {
+			item.damageType = dataParser.parseType(props.DamageType.ObjectName);
 		}
 
-		item.wikiVisibility = itemData?.Properties?.bWikiVisibility;
+		item.wikiVisibility = props?.bWikiVisibility;
 	}
 
+	// Special resource category fallback
 	if (
 		!item.category &&
-		(item.name === "Worm Scale" ||
-			item.name === "Proxy License" ||
-			item.name === "Flots" ||
-			item.name === "Fiery Concoction")
+		["Worm Scale", "Proxy License", "Flots", "Fiery Concoction"].includes(item.name)
 	) {
 		item.category = "Resources";
 	}
