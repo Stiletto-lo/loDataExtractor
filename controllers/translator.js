@@ -383,7 +383,7 @@ controller.addTranslationIfItDoesNotAlreadyExist = (key, translation) => {
 		return;
 	}
 
-	if (!translationStore.translationsInUse[key]) {
+	if (!controller.isKeyTranslationInUse(key)) {
 		translationStore.translationsInUse[key] = translation;
 	}
 };
