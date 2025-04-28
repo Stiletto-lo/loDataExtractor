@@ -25,9 +25,9 @@
     "type": "Ammo_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Ceramic Bolt",
-      "Hellfire Bolt",
       "Ceramic-Tipped Bolt",
+      "Hellfire Bolt",
+      "Ceramic-Tipped Harpoon",
       "Explosive Bolt",
       "Ceramic Scattershot Ammo",
       "Obsidian Rok",
@@ -42,7 +42,7 @@
       "Green Death Bomb",
       "Catapult Boulder",
       "Throwable Insect Bomb",
-      "Throwable Smoke Bomb (Gas)"
+      "Throwable Smoke Bomb"
     ]
   },
   {
@@ -244,12 +244,12 @@
     "stackSize": 100,
     "learn": [
       "Bonebreaker",
-      "Jojo Mojo",
+      "Fury Fumes",
       "Sinus Destroyer",
       "Apple Kambaro",
       "Cooked Corn",
       "Desert Mule",
-      "Fury Fumes",
+      "Jojo Mojo",
       "Race Dust",
       "Rupu Repellent",
       "Vision Powder",
@@ -310,7 +310,7 @@
     "type": "Tools_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Ceramic Bottle",
+      "Ceramic Flask",
       "Ceramic Pickaxe",
       "Ceramic Repair Hammer",
       "Scythe",
@@ -324,7 +324,7 @@
       "Firestone Axe",
       "Ceramic Hatchet",
       "Split Ceramic Flask",
-      "Firestone Battle Axe",
+      "Firestone Battleaxe",
       "Ancient Repair Hammer",
       "Drill Spade",
       "Repaired Grappling Hook",
@@ -2316,7 +2316,7 @@
       "Light Javelin",
       "Stone Axe",
       "Jaggertooth Club",
-      "Traveller's Quarterstaff",
+      "Traveller’s Staff",
       "Jaggertooth Maul",
       "Rawbone Sawsword",
       "Jaggertooth Swordclub"
@@ -4159,7 +4159,7 @@
     "type": "BuffaloRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Buffalo Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -4168,7 +4168,7 @@
     "type": "BuffaloRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Buffalo Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -6186,14 +6186,14 @@
     "type": "ClayWallsSchematic_C",
     "stackSize": 100,
     "learn": [
-      "Clay Wall with Windows",
-      "Clay Wall with Window",
-      "Clay Floor / Roof",
-      "Clay Foundation",
-      "Clay Door",
-      "Clay Corner",
-      "Clay Battlement",
-      "Clay Wall"
+      "Wall with Windows",
+      "Wall with Window",
+      "Floor / Roof",
+      "Foundation",
+      "Door",
+      "Corner",
+      "Battlement",
+      "Wall"
     ]
   },
   {
@@ -6480,17 +6480,17 @@
     "type": "ConcreteWallsSchematic_C",
     "stackSize": 100,
     "learn": [
-      "Cement Wall With Windows 2",
-      "Cement Wall With Windows 1",
-      "Cement Wall With Window 2",
-      "Cement Wall With Window 1",
-      "Cement Floor / Roof",
-      "Cement Foundation",
-      "Cement Door",
-      "Cement Corner",
-      "Cement Battlements",
-      "Cement Wall 2",
-      "Cement Wall 1"
+      "Wall With Windows 2",
+      "Wall With Windows 1",
+      "Wall With Window 2",
+      "Wall With Window 1",
+      "Floor / Roof",
+      "Foundation",
+      "Door",
+      "Corner",
+      "Battlements",
+      "Wall 2",
+      "Wall 1"
     ]
   },
   {
@@ -7148,7 +7148,7 @@
     "type": "DinghyRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Dinghy Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -7157,7 +7157,7 @@
     "type": "DinghyRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Dinghy Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -7415,7 +7415,7 @@
     "type": "DomusRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Domus Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -7424,7 +7424,7 @@
     "type": "DomusRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Domus Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -8400,7 +8400,7 @@
     "type": "FalcoRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Falco Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -8409,7 +8409,7 @@
     "type": "FalcoRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Falco Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -9448,20 +9448,6 @@
     "unlockable": "Fiberworking Station"
   },
   {
-    "category": "Resources",
-    "name": "Fiery Concoction",
-    "parent": "Clay Pot",
-    "trade_price": 1,
-    "translation": "Fiery Concoction",
-    "type": "HellfireMixture_C",
-    "description": "A mixture of ingredients with dashes of wood splinters kept in secret by the nomadic outlaws. Used in production of Hellfire Bolts to make fire burn at extremely high temperatures, allowing to damage even the strongest materials.",
-    "experiencieReward": 35,
-    "stackSize": 5,
-    "weight": 0.2,
-    "onlyDevs": true,
-    "whereToFarm": "Sold by ammo merchants for Flots."
-  },
-  {
     "category": "Ammo",
     "crafting": [
       {
@@ -9764,7 +9750,7 @@
     "type": "FireflyRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Firefly Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -9773,7 +9759,7 @@
     "type": "FireflyRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Firefly Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -10659,7 +10645,6 @@
     "experiencieReward": 1,
     "stackSize": 100,
     "weight": 1.5,
-    "wikiVisibility": false,
     "onlyDevs": true,
     "damageType": "'OrbDamage_C'"
   },
@@ -12633,16 +12618,16 @@
     "type": "HeavyWallsSchematic_C",
     "stackSize": 100,
     "learn": [
-      "Heavy Wood Double Slit Wall",
-      "Heavy Wood Slit Wall",
+      "Double Slit Wall",
+      "Slit Wall",
       "Stairs",
-      "Heavy Wood Floor / Roof",
-      "Heavy Wood Foundation",
-      "Heavy Wood Door",
-      "Heavy Wood Corner",
-      "Heavy Wood Battlements",
-      "Heavy Wood Wall 2",
-      "Heavy Wood Wall 1"
+      "Floor / Roof",
+      "Foundation",
+      "Door",
+      "Corner",
+      "Battlements",
+      "Wall 2",
+      "Wall 1"
     ]
   },
   {
@@ -12651,6 +12636,20 @@
     "translation": "Heavy Wings",
     "type": "HeavyWings_C",
     "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type."
+  },
+  {
+    "category": "Resources",
+    "name": "Hellfire",
+    "parent": "Clay Pot",
+    "trade_price": 1,
+    "translation": "Hellfire",
+    "type": "HellfireMixture_C",
+    "description": "A mixture of ingredients with dashes of wood splinters kept in secret by the nomadic outlaws. Used in production of Hellfire Bolts to make fire burn at extremely high temperatures, allowing to damage even the strongest materials.",
+    "experiencieReward": 35,
+    "stackSize": 5,
+    "weight": 0.2,
+    "onlyDevs": true,
+    "whereToFarm": "Sold by ammo merchants for Flots."
   },
   {
     "crafting": [
@@ -12847,7 +12846,7 @@
     "type": "HerculRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Hercul Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -12856,7 +12855,7 @@
     "type": "HerculRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Hercul Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -13333,7 +13332,7 @@
     "type": "HornetRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Hornet Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -13342,7 +13341,7 @@
     "type": "HornetRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Hornet Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -13804,7 +13803,7 @@
     "learn": [
       "Bone Bolt",
       "Fire Bolt",
-      "Bone Bolt",
+      "Bone Harpoon",
       "Bone Scattershot Ammo",
       "Bone Dart",
       "Sulfur Bomb",
@@ -15538,13 +15537,13 @@
     "damageType": "'JavelinDamage_C'"
   },
   {
-    "category": "Light Wood Structures",
+    "category": "Wood: light",
     "name": "Light Wood Abstract Foundation",
     "type": "AbstractFoundation_C",
     "unlockable": "DevOnly"
   },
   {
-    "category": "Light Wood Structures",
+    "category": "Wood: light",
     "name": "Light Wood Abstract Wall",
     "type": "AbstractWall_C",
     "unlockable": "DevOnly"
@@ -16684,7 +16683,7 @@
     "type": "MolluskRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Mollusk Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -16693,7 +16692,7 @@
     "type": "MolluskRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Mollusk Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -18555,7 +18554,7 @@
     "type": "PandaRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Panda Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -18564,7 +18563,7 @@
     "type": "PandaRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Panda Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -19350,7 +19349,7 @@
     "type": "ProxyRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Proxy Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -19359,7 +19358,7 @@
     "type": "ProxyRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Proxy Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -19678,7 +19677,7 @@
     "type": "RaptorRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Raptor Sky Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -19687,7 +19686,7 @@
     "type": "RaptorRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Raptor Sky Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -20146,13 +20145,13 @@
     "type": "ReinforcedWallsSchematic_C",
     "stackSize": 100,
     "learn": [
-      "Medium Wood Double Slit Wall",
-      "Medium Wood Slit Wall",
-      "Medium Wood Floor / Roof",
-      "Medium Wood Foundation",
-      "Medium Wood Door",
-      "Medium Wood Battlements",
-      "Medium Wood Wall"
+      "Double Slit Wall",
+      "Slit Wall",
+      "Floor / Roof",
+      "Foundation",
+      "Door",
+      "Battlements",
+      "Wall"
     ]
   },
   {
@@ -22175,7 +22174,7 @@
     "type": "SchmetterlingRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Schmetterling Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -22184,7 +22183,7 @@
     "type": "SchmetterlingRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Schmetterling Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -24323,7 +24322,7 @@
     "type": "StilettoRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Stiletto Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -24332,7 +24331,7 @@
     "type": "StilettoRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Stiletto Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -24818,11 +24817,11 @@
     "type": "StoneWallsSchematic_C",
     "stackSize": 100,
     "learn": [
-      "Stone Wall with Window",
-      "Stone Floor / Roof",
-      "Stone Foundation",
-      "Stone Door",
-      "Stone Wall"
+      "Wall with Window",
+      "Floor / Roof",
+      "Foundation",
+      "Door",
+      "Wall"
     ]
   },
   {
@@ -25699,7 +25698,7 @@
     "type": "TitanRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Titan Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -25708,7 +25707,7 @@
     "type": "TitanRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Titan Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -26153,7 +26152,7 @@
     "type": "TobogganRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Toboggan Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -26162,7 +26161,7 @@
     "type": "TobogganRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Toboggan Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -27273,7 +27272,7 @@
     "type": "TuskerRig_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Tusker Walker Rig T2"
+      "Rig T2"
     ]
   },
   {
@@ -27282,7 +27281,7 @@
     "type": "TuskerRig_T3Schematic_C",
     "stackSize": 100,
     "learn": [
-      "Tusker Walker Rig T3"
+      "Rig T3"
     ]
   },
   {
@@ -28977,10 +28976,10 @@
     "type": "WoodenWallsSchematic_C",
     "stackSize": 100,
     "learn": [
-      "Light Wood Walker Gate",
-      "Light Wood Guard Rail",
+      "Walker Gate",
+      "Guard Rail",
       "Dinghy Gate",
-      "Light Wood Scaffolding",
+      "Scaffolding",
       "Wall",
       "Battlements",
       "Corner",

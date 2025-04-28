@@ -280,7 +280,7 @@ const parseUpgradesToItems = () => {
 	for (const upgradePure of utilityFunctions.getUpgradesData()) {
 		const item = getUpgradeItem(upgradePure);
 		if (item?.name) {
-			utilityFunctions.getAllItems().push(item);
+			utilityFunctions.addItem(item);
 		}
 	}
 };

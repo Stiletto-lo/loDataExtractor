@@ -28,7 +28,7 @@ const parseCachedItems = (filePath) => {
 				}
 				item.crafting = [recipe];
 
-				utilityFunctions.getAllItems().push(item);
+				utilityFunctions.addItem(item);
 			}
 		}
 	}

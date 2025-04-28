@@ -287,7 +287,7 @@ const parseItemData = (filePath) => {
 			item = getItemFromItemData(jsonData?.[2], item);
 		}
 
-		utilityFunctions.getAllItems().push(item);
+		utilityFunctions.addItem(item);
 	}
 };
 

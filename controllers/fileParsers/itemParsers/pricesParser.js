@@ -23,7 +23,7 @@ const parsePrices = (filePath) => {
 					item.category = "Resources";
 				}
 
-				utilityFunctions.getAllItems().push(item);
+				utilityFunctions.addItem(item);
 			}
 		}
 	}

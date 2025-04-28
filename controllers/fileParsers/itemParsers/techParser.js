@@ -71,7 +71,7 @@ const parseTechData = (filePath) => {
 
 		// Store both tech and item data
 		utilityFunctions.getTechData().push(tech);
-		utilityFunctions.getAllItems().push(item);
+		utilityFunctions.addItem(item);
 	}
 };
 
