@@ -31,6 +31,7 @@
       "Advanced Crafting",
       "Advanced Fiberworking Station",
       "Advanced Woodworking Station",
+      "Advanced Stomping Station",
       "Advanced Furnace",
       "Basic Equipment",
       "Equipment T2"
@@ -68,7 +69,8 @@
       "Advanced Crafting",
       "Advanced Fiberworking Station",
       "Advanced Woodworking Station",
-      "Furnace"
+      "Furnace",
+      "Advanced Stomping Station"
     ],
     "level": 45,
     "pointsCost": 80
@@ -83,11 +85,41 @@
       "Advanced Crafting",
       "Advanced Fiberworking Station",
       "Advanced Woodworking Station",
+      "Advanced Stomping Station",
       "Advanced Furnace",
       "Advanced Equipment",
       "Basic Potions"
     ],
     "level": 30
+  },
+  {
+    "name": "Advanced Stomping Station",
+    "parent": "Stomping Station",
+    "unlocks": [
+      "Advanced Constructions",
+      "Grappling Belt Charging Station",
+      "Hose Station",
+      "Advanced Walker Weapons",
+      "Advanced Crafting",
+      "Stations T1",
+      "Stations T2",
+      "Stations T3",
+      "Stations T4",
+      "Dyeing Station",
+      "Fiberworking Station",
+      "Woodworking Station",
+      "Cauterizing Station",
+      "Curing Station",
+      "Advanced Fiberworking Station",
+      "Packing Station",
+      "Repair Station",
+      "Stomping Station",
+      "Advanced Woodworking Station",
+      "Artisan Fiberworking Station",
+      "Purification Station"
+    ],
+    "level": 30,
+    "pointsCost": 15
   },
   {
     "name": "Advanced Walker Parts",
@@ -105,6 +137,7 @@
       "Advanced Crafting",
       "Advanced Fiberworking Station",
       "Advanced Woodworking Station",
+      "Advanced Stomping Station",
       "Advanced Furnace",
       "Advanced Equipment",
       "Small Walker Walker Legs (1 of 2)",
@@ -168,6 +201,7 @@
       "Advanced Crafting",
       "Advanced Fiberworking Station",
       "Advanced Woodworking Station",
+      "Advanced Stomping Station",
       "Advanced Furnace",
       "Advanced Equipment",
       "Advanced Potions",
@@ -287,6 +321,30 @@
     "level": 45
   },
   {
+    "name": "Artisan Fiberworking Station",
+    "parent": "Advanced Fiberworking Station",
+    "unlocks": [
+      "Grappling Belt Charging Station",
+      "Hose Station",
+      "Stations T1",
+      "Stations T2",
+      "Stations T3",
+      "Stations T4",
+      "Dyeing Station",
+      "Fiberworking Station",
+      "Woodworking Station",
+      "Cauterizing Station",
+      "Curing Station",
+      "Advanced Fiberworking Station",
+      "Packing Station",
+      "Repair Station",
+      "Stomping Station",
+      "Advanced Woodworking Station"
+    ],
+    "level": 30,
+    "pointsCost": 50
+  },
+  {
     "name": "Artisan Woodworking Station",
     "parent": "Advanced Woodworking Station",
     "unlocks": [
@@ -306,9 +364,9 @@
       "Repair Station",
       "Stomping Station",
       "Advanced Woodworking Station",
-      "Fiberworking Station T3",
+      "Artisan Fiberworking Station",
       "Purification Station",
-      "Stomping Station T2"
+      "Advanced Stomping Station"
     ],
     "level": 30,
     "pointsCost": 70
@@ -1411,7 +1469,7 @@
       "Fiber Weave",
       "Fiberworking Station",
       "Advanced Fiberworking Station",
-      "Fiberworking Station T3",
+      "Artisan Fiberworking Station",
       "Fiber Boots",
       "Fiber Gloves"
     ],
@@ -1440,12 +1498,6 @@
       "Dyeing Station"
     ],
     "pointsCost": 3
-  },
-  {
-    "name": "Fiberworking Station T3",
-    "parent": "Advanced Fiberworking Station",
-    "level": 30,
-    "pointsCost": 50
   },
   {
     "name": "Fiery Concoction",
@@ -2755,7 +2807,7 @@
       "Repair Station",
       "Stomping Station",
       "Advanced Woodworking Station",
-      "Fiberworking Station T3"
+      "Artisan Fiberworking Station"
     ],
     "level": 30,
     "pointsCost": 25
@@ -3522,14 +3574,8 @@
     "pointsCost": 5
   },
   {
-    "name": "Stomping Station T2",
-    "parent": "Stomping Station",
-    "level": 30,
-    "pointsCost": 15
-  },
-  {
     "name": "Stomping Station T3",
-    "parent": "Stomping Station T2",
+    "parent": "Advanced Stomping Station",
     "level": 45,
     "pointsCost": 40
   },
