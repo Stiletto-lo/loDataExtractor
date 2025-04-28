@@ -345,6 +345,35 @@
     "pointsCost": 50
   },
   {
+    "name": "Artisan Stomping Station",
+    "parent": "Advanced Stomping Station",
+    "unlocks": [
+      "Grappling Belt Charging Station",
+      "Hose Station",
+      "Stations T1",
+      "Stations T2",
+      "Stations T3",
+      "Stations T4",
+      "Dyeing Station",
+      "Fiberworking Station",
+      "Woodworking Station",
+      "Cauterizing Station",
+      "Curing Station",
+      "Advanced Fiberworking Station",
+      "Packing Station",
+      "Repair Station",
+      "Stomping Station",
+      "Advanced Woodworking Station",
+      "Artisan Fiberworking Station",
+      "Purification Station",
+      "Advanced Stomping Station",
+      "Artisan Woodworking Station",
+      "Smithing Station"
+    ],
+    "level": 45,
+    "pointsCost": 40
+  },
+  {
     "name": "Artisan Woodworking Station",
     "parent": "Advanced Woodworking Station",
     "unlocks": [
@@ -3574,12 +3603,6 @@
     "pointsCost": 5
   },
   {
-    "name": "Stomping Station T3",
-    "parent": "Advanced Stomping Station",
-    "level": 45,
-    "pointsCost": 40
-  },
-  {
     "name": "Stone Axe",
     "parent": "Crude Hatchet",
     "unlocks": [
@@ -4227,7 +4250,7 @@
   },
   {
     "name": "Worm Oil",
-    "parent": "Stomping Station T3",
+    "parent": "Artisan Stomping Station",
     "level": 45
   },
   {
