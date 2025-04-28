@@ -60,13 +60,24 @@ const parsePlaceableData = (filePath) => {
 				item.category = "Rigs";
 			}
 
-			if (item.category?.includes("Structural")) {
-				console.log("Structural", item.category, item.name);
-				item.name = dataParser.parseStructureName(item.category, item.name);
-			}
-
 			if (jsonData[1].Properties?.FullCost) {
 				const recipeData = jsonData[1].Properties.FullCost;
+				if (recipeData.Inputs) {
+					const recipe = { ...recipeTemplate };
+					const ingredients = [];
+					for (const key in recipeData.Inputs) {
+						ingredients.push(
+							utilityFunctions.getIngredientsFromItem(recipeData.Inputs, key),
+						);
+					}
+
+					if (ingredients.length > 0) {
+						recipe.ingredients = ingredients;
+					}
+					item.crafting = [recipe];
+				}
+			} else if (jsonData[1].Properties?.Requirements) {
+				const recipeData = jsonData[1].Properties.Requirements;
 				if (recipeData.Inputs) {
 					const recipe = { ...recipeTemplate };
 					const ingredients = [];
@@ -145,6 +156,10 @@ const parsePlaceableData = (filePath) => {
 					item.unlockable = translator.translateName(unlockableType);
 				}
 			}
+		}
+
+		if (item.category?.includes("Structural")) {
+			item.name = dataParser.parseStructureName(item.category, item.name);
 		}
 
 		utilityFunctions.addItem(item);
