@@ -64,9 +64,6 @@ const processTranslationEntry = (key, value, language = null) => {
 			cleanValue,
 			language,
 		);
-	} else {
-		// For other entries, add as a translation
-		translator.addTranslation(cleanKey, cleanValue, language);
 	}
 };
 

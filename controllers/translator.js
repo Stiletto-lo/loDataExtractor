@@ -312,6 +312,8 @@ controller.addTranslation = (key, translation, language = null) => {
 	if (language === null) {
 		if (!translationStore.allTranslations[key]) {
 			translationStore.allTranslations[key] = translation;
+
+			controller.addTranslationInUse(key, translation);
 		}
 	} else if (translationStore.translationsFromOtherLanguages[language]) {
 		translationStore.translationsFromOtherLanguages[language][key] =
