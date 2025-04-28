@@ -88,7 +88,6 @@ function findTemplate(strongboxType, normalizedTemplates) {
     }
   }
 
-  console.debug(`No template found for strongbox with type: ${strongboxType}`);
   return null;
 }
 
