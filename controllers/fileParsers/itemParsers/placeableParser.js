@@ -130,18 +130,6 @@ const parsePlaceableData = (filePath) => {
 				}
 			}
 
-			if (!item.category && item?.translation?.includes?.("WallsWoodLight")) {
-				item.category = "StructuralWoodLight";
-			}
-
-			if (item?.category?.includes?.("Structural")) {
-				item.name = dataParser.parseStructureName(
-					item.category,
-					translator.translateItem(item).name,
-				);
-				item.translation = undefined;
-			}
-
 			if (jsonData[1].Properties?.Requirements?.RequiredUnlockable?.ObjectPath) {
 				let objectPath = jsonData[1].Properties.Requirements.RequiredUnlockable.ObjectPath;
 				if (typeof objectPath !== "string") {

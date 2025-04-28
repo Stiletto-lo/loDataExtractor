@@ -1,5 +1,17 @@
 [
   {
+    "category": "Wood: light",
+    "name": "Abstract Foundation",
+    "type": "AbstractFoundation_C",
+    "unlockable": "DevOnly"
+  },
+  {
+    "category": "Wood: light",
+    "name": "Abstract Wall",
+    "type": "AbstractWall_C",
+    "unlockable": "DevOnly"
+  },
+  {
     "category": "Equipment",
     "name": "Admin Wingsuit (1 of 2)",
     "trade_price": 29,
@@ -1306,6 +1318,34 @@
     "armorInfo": {
       "absorbing": 6,
       "reduction": 1
+    }
+  },
+  {
+    "category": "Concrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Wood"
+          },
+          {
+            "count": 20,
+            "name": "Stone"
+          },
+          {
+            "count": 50,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Balang Core",
+    "type": "BalangCore_C",
+    "weight": 10,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 150000
     }
   },
   {
@@ -4871,62 +4911,6 @@
     "translation": "Celestial Tablet",
     "type": "KnowledgeTabletCelestial_C",
     "description": "Carved images of celestial bodies can be felt on this tablet."
-  },
-  {
-    "category": "Concrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 100,
-            "name": "Wood"
-          },
-          {
-            "count": 20,
-            "name": "Stone"
-          },
-          {
-            "count": 50,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Cement Balang Core",
-    "type": "BalangCore_C",
-    "weight": 10,
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 150000
-    }
-  },
-  {
-    "category": "Concrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 200,
-            "name": "Wood"
-          },
-          {
-            "count": 50,
-            "name": "Stone"
-          },
-          {
-            "count": 100,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Cement Silur Core",
-    "type": "SilurCore_C",
-    "weight": 10,
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 400000
-    }
   },
   {
     "crafting": [
@@ -15390,18 +15374,6 @@
     "damageType": "'JavelinDamage_C'"
   },
   {
-    "category": "Wood: light",
-    "name": "Light Wood Abstract Foundation",
-    "type": "AbstractFoundation_C",
-    "unlockable": "DevOnly"
-  },
-  {
-    "category": "Wood: light",
-    "name": "Light Wood Abstract Wall",
-    "type": "AbstractWall_C",
-    "unlockable": "DevOnly"
-  },
-  {
     "category": "Resources",
     "name": "Lightwood",
     "trade_price": 3.5,
@@ -22677,6 +22649,34 @@
       }
     ],
     "damageType": "'MeleeSwordDamage_C'"
+  },
+  {
+    "category": "Concrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 200,
+            "name": "Wood"
+          },
+          {
+            "count": 50,
+            "name": "Stone"
+          },
+          {
+            "count": 100,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Silur Core",
+    "type": "SilurCore_C",
+    "weight": 10,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 400000
+    }
   },
   {
     "category": "Walkers",
