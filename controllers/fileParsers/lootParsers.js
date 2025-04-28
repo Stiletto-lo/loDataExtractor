@@ -381,7 +381,7 @@ const parseLootSites = (filePath) => {
 	};
 
 	// Add to the creatures collection
-	utilityFunctions.getCreatures().push(creature);
+	utilityFunctions.addCreature(creature);
 
 	// Export creature data with loot information
 	if (creature.lootTemplate) {

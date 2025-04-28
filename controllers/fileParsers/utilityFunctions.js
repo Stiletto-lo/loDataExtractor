@@ -285,7 +285,27 @@ class DataStore {
 		this.creatures = data;
 	}
 
-	// Blueprints operations removed as requested
+	addCreature(creature) {
+		if (!creature) {
+			throw new TypeError("Creature must be defined");
+		}
+
+		const existingItem = this.creatures.find(
+			(existingItem) => existingItem.type === creature.type,
+		);
+
+		if (!existingItem) {
+			this.creatures.push(creature);
+			return;
+		}
+
+		const newItem = { ...existingItem, ...creature, };
+
+		const existingItemIndex = this.creatures.indexOf(existingItem);
+		if (existingItemIndex > -1) {
+			this.creatures[existingItemIndex] = newItem;
+		}
+	}
 }
 
 // Create and export a singleton instance
@@ -310,6 +330,8 @@ module.exports = {
 	getAllItems: () => dataStore.getAllItems(),
 	getUpgradesData: () => dataStore.getUpgradesData(),
 	getCreatures: () => dataStore.getCreatures(),
+
+	addCreature: (creature) => dataStore.addCreature(creature),
 
 	// Loot table operations
 	getAllLootTables: () => dataStore.getAllLootTables(),
