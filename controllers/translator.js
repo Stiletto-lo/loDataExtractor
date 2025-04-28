@@ -397,6 +397,14 @@ controller.getTranslateFiles = () => {
 
 	// First, collect all the English item names that are actually in use
 	const usedItemNames = new Set();
+
+	for (const key in translationStore.allTranslations) {
+		const englishName = translationStore.allTranslations[key];
+		if (englishName) {
+			usedItemNames.add(englishName);
+		}
+	}
+
 	for (const key in translationStore.translationsInUse) {
 		const englishName = translationStore.translationsInUse[key];
 		// Much less restrictive filtering to include more valid translations
