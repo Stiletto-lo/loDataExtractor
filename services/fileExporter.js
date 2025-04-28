@@ -87,10 +87,15 @@ const exportTechData = async (techData, folderPath) => {
 const exportItemsData = async (allItems, minItems, folderPath) => {
   console.info("Exporting items.json");
   if (allItems.length > 0) {
+    // Process strongbox drops
+    console.log("Processing strongbox drops before export...");
+    const dataProcessor = require("./dataProcessor");
+    const itemsWithStrongboxDrops = dataProcessor.processStrongboxes(allItems);
+
     // Apply ingredient name fixing before exporting
     const ingredientNameFixer = require("../utils/ingredientNameFixer");
     console.log("Applying ingredient name fixing to items before export...");
-    const fixedItems = ingredientNameFixer.fixIngredientNames(allItems);
+    const fixedItems = ingredientNameFixer.fixIngredientNames(itemsWithStrongboxDrops);
     const fixedMinItems = ingredientNameFixer.fixIngredientNames(minItems);
 
     await fs.writeFile(
@@ -241,6 +246,7 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
         upgradeInfo: item?.upgradeInfo,
         droppedBy: droppedBy.length > 0 ? droppedBy : undefined,
         whereToFarm: item?.whereToFarm,
+        drops: item?.drops,
       }
 
       // Convert item name to snake_case and make it safe for filenames

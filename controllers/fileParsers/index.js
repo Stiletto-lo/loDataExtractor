@@ -28,13 +28,10 @@ module.exports = {
 	parseLootSites: lootParsers.parseLootSites,
 	getLootSiteNameFromObject: lootParsers.getLootSiteNameFromObject,
 	parseLootTemplate: lootParsers.parseLootTemplate,
-	parseLootBox: lootParsers.parseLootBox,
 	getAllLootTables: utilityFunctions.getAllLootTables,
 	setLootTables: utilityFunctions.setLootTables,
 	getAllLootTemplates: utilityFunctions.getAllLootTemplates,
 	setLootTemplates: utilityFunctions.setLootTemplates,
-	getAllLootBoxes: utilityFunctions.getAllLootBoxes,
-	setLootBoxes: utilityFunctions.setLootBoxes,
 
 	// Translation related functions
 	parseTranslations: translationParsers.parseTranslations,
@@ -56,11 +53,9 @@ module.exports = {
 	extractTechByType: utilityFunctions.extractTechByType,
 	getUpgradesData: utilityFunctions.getUpgradesData,
 	getCreatures: utilityFunctions.getCreatures,
-	getAllBlueprints: utilityFunctions.getAllBlueprints,
 	setAllItems: utilityFunctions.setAllItems,
 	setUpgradesData: utilityFunctions.setUpgradesData,
 	setCreatures: utilityFunctions.setCreatures,
-	setAllBlueprints: utilityFunctions.setAllBlueprints,
 
 	// Translator
 	getTranslator: () => translator,

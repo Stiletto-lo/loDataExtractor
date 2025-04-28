@@ -34,7 +34,6 @@ module.exports = {
 	getAllTechData: () => dataAccess.getAllTechData(),
 	getAllLootTables: () => dataAccess.getAllLootTables(),
 	getAllLootTemplates: () => dataAccess.getAllLootTemplates(),
-	getAllLootBoxes: () => dataAccess.getAllLootBoxes(),
 	getAllCreatures: () => dataAccess.getAllCreatures(),
 	getTranslator: () => dataAccess.getTranslator(),
 	getAllUpgradesData: () => dataAccess.getAllUpgradesData(),
