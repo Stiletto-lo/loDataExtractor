@@ -246,6 +246,7 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
         upgradeInfo: item?.upgradeInfo,
         droppedBy: droppedBy.length > 0 ? droppedBy : undefined,
         whereToFarm: item?.whereToFarm,
+        drops: item?.drops,
       }
 
       // Convert item name to snake_case and make it safe for filenames

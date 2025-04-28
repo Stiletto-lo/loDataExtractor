@@ -177,7 +177,7 @@ function addDropInformation(items, lootTemplates, lootTables) {
     if (!templateToUse) { continue; }
 
     // Process each table in the template
-    if (templateToUse.tables && Array.isArray(templateToUse.tables) && tables.length > 0) {
+    if (templateToUse.tables && Array.isArray(templateToUse.tables) && templateToUse.tables.length > 0) {
       if (!strongbox.drops) {
         strongbox.drops = [];
       }

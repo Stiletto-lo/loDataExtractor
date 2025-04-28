@@ -4,5 +4,63 @@
   "category": "Interactables",
   "stackSize": 100,
   "weight": 1,
-  "description": "Armors seized from pirates by the Flotilla. May contain various types and quantities of armors."
+  "description": "Armors seized from pirates by the Flotilla. May contain various types and quantities of armors.",
+  "drops": [
+    {
+      "name": "Fiber Shirt and Trousers",
+      "chance": 19.801981,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "armors_t1"
+    },
+    {
+      "name": "Rupu Fur Armor",
+      "chance": 5.940594,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "armors_t1"
+    },
+    {
+      "name": "Cloaked Rupu Fur Armor",
+      "chance": 2.970297,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "armors_t1"
+    },
+    {
+      "name": "Fiber Sandals",
+      "chance": 19.801981,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "armors_t1"
+    },
+    {
+      "name": "Rupu Fur Sandals",
+      "chance": 5.940594,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "armors_t1"
+    },
+    {
+      "name": "Fiber Arm Wraps",
+      "chance": 19.801981,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "armors_t1"
+    },
+    {
+      "name": "Rupu Fur Sleeves",
+      "chance": 5.940594,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "armors_t1"
+    },
+    {
+      "name": "Fiber Headwrap",
+      "chance": 19.801981,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "armors_t1"
+    }
+  ]
 }

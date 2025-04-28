@@ -4,5 +4,189 @@
   "category": "Interactables",
   "stackSize": 100,
   "weight": 1,
-  "description": "Walker Modules seized from pirates by the Flotilla. May contain various types and quantities of modules."
+  "description": "Walker Modules seized from pirates by the Flotilla. May contain various types and quantities of modules.",
+  "drops": [
+    {
+      "name": "Weightless Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Merchant Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Craftsman Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Fireproof Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Armoury Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Hardening Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Forager Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Scavenger Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Lumberjack Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Pack Speed Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Hearth Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Lifeforce Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Bullrush Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Sandy Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Fortress Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Harpoon Protection Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Battery Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 5,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Torque Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 5,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Watery Module",
+      "chance": 0,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Pack Mule Module",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 2,
+      "source": "modules_t1"
+    },
+    {
+      "name": "Spring",
+      "chance": 16.666666,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "components_t1"
+    },
+    {
+      "name": "Shackle",
+      "chance": 16.666666,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "components_t1"
+    },
+    {
+      "name": "Strut",
+      "chance": 16.666666,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "components_t1"
+    },
+    {
+      "name": "Cog",
+      "chance": 16.666666,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "components_t1"
+    },
+    {
+      "name": "Lever",
+      "chance": 16.666666,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "components_t1"
+    },
+    {
+      "name": "Spline",
+      "chance": 16.666666,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "source": "components_t1"
+    }
+  ]
 }
