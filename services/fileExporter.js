@@ -56,9 +56,6 @@ const exportTechData = async (techData, folderPath) => {
           console.error("Error creating the tech.json file");
         } else {
           console.log("Tech data exported to tech.json");
-
-          const { unifyTechTree } = require("../utils/techTreeUnifier");
-          unifyTechTree(`${folderPath}tech.json`);
         }
       },
     );
