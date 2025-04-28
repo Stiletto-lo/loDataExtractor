@@ -22,7 +22,7 @@ const moduleInfoTemplate = require("../../../templates/moduleInfo");
  * @returns {Object|undefined} - The item object or undefined
  */
 const getItemFromItemData = (itemData, oldItem) => {
-	if (!itemData) return oldItem ?? undefined;
+	if (!itemData) { return oldItem ?? undefined; }
 
 	const item = oldItem ?? utilityFunctions.extractItemByType(itemData.Type);
 
