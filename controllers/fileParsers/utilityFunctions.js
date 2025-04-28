@@ -139,6 +139,28 @@ class DataStore {
 		return this.techData;
 	}
 
+	addTechItem(item) {
+		if (!item) {
+			throw new TypeError("Item must be defined");
+		}
+
+		const existingItem = this.techData.find(
+			(existingItem) => existingItem.type === item.type,
+		);
+
+		if (!existingItem) {
+			this.techData.push(item);
+			return;
+		}
+
+		const newItem = { ...existingItem, ...item, };
+
+		const existingItemIndex = this.techData.indexOf(existingItem);
+		if (existingItemIndex > -1) {
+			this.techData[existingItemIndex] = newItem;
+		}
+	}
+
 	// Loot tables operations
 	getAllLootTables() {
 		return this.lootTables;
@@ -232,13 +254,13 @@ module.exports = {
 	extractItemByType: (type) => dataStore.extractItemByType(type),
 	getIngredientsFromItem: (inputs, key) =>
 		dataStore.getIngredientsFromItem(inputs, key),
-
 	addItem: (item) => dataStore.addItem(item),
 
 	// Tech operations
 	getTechData: () => dataStore.getTechData(),
 	setTechData: (data) => dataStore.setTechData(data),
 	extractTechByType: (type) => dataStore.extractTechByType(type),
+	addTechItem: (item) => dataStore.addTechItem(item),
 
 	// Collection getters
 	getAllItems: () => dataStore.getAllItems(),
