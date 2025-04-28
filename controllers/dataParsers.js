@@ -298,6 +298,7 @@ dataParser.determineRigTier = (name) => {
  */
 dataParser.parseStructureName = (category, name) => {
 	const structureTypes = {
+		Sand: "Sand",
 		Concrete: "Cement",
 		WoodLight: "Light Wood",
 		Ceramic: "Clay",

@@ -60,6 +60,11 @@ const parsePlaceableData = (filePath) => {
 				item.category = "Rigs";
 			}
 
+			if (item.category?.includes("Structural")) {
+				console.log("Structural", item.category, item.name);
+				item.name = dataParser.parseStructureName(item.category, item.name);
+			}
+
 			if (jsonData[1].Properties?.FullCost) {
 				const recipeData = jsonData[1].Properties.FullCost;
 				if (recipeData.Inputs) {
