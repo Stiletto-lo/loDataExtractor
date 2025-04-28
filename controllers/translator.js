@@ -80,12 +80,14 @@ controller.translateName = (name) => {
 	// First check if this name exists in the item name glossary
 	const glossaryName = itemNameGlossary.getDisplayName(name);
 	if (glossaryName) {
+		controller.addTranslationInUse(name, glossaryName);
 		return glossaryName;
 	}
 
 	// Check if this is a tech tree name that needs normalization using the unified module
 	const normalizedName = unifiedTechTreeNames.normalize(name);
 	if (normalizedName !== name) {
+		controller.addTranslationInUse(name, normalizedName);
 		return normalizedName;
 	}
 
@@ -147,6 +149,10 @@ controller.searchName = (name) => {
 		const translation = trimIfExists(translationStore.allTranslations[name]);
 		controller.addTranslationInUse(name, translation);
 		return translation;
+	}
+
+	if (controller.translationsInUse?.[name]) {
+		return controller.translationsInUse[name];
 	}
 
 	return null;
