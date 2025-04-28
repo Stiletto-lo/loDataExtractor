@@ -189,21 +189,35 @@ const processTechData = () => {
       .trim();                              // Trim leading/trailing spaces
   };
 
+  const translator = fileParser.getTranslator();
+
   // First pass: normalize tech names, parent names, and unlocks
   techData = techData.map(tech => {
     // Normalize tech name
     if (tech.name) {
-      const normalizedName = normalizeItemName(tech.name);
-      if (normalizedName !== tech.name) {
-        tech.name = normalizedName;
+      const newName = translator.translateName(tech.name);
+
+      if (newName !== tech.name) {
+        tech.name = newName;
+      } else {
+        const normalizedName = normalizeItemName(tech.name);
+        if (normalizedName !== tech.name) {
+          tech.name = normalizedName;
+        }
       }
     }
 
     // Normalize parent name
     if (tech.parent) {
-      const normalizedParent = normalizeItemName(tech.parent);
-      if (normalizedParent !== tech.parent) {
-        tech.parent = normalizedParent;
+      const newParent = translator.translateName(tech.parent);
+
+      if (newParent !== tech.parent) {
+        tech.parent = newParent;
+      } else {
+        const normalizedParent = normalizeItemName(tech.parent);
+        if (normalizedParent !== tech.parent) {
+          tech.parent = normalizedParent;
+        }
       }
     }
 
@@ -221,15 +235,15 @@ const processTechData = () => {
   // Second pass: merge duplicates and filter
   techData = techData
     .map((tech) => {
-      const countTech = techData.filter((tech2) => tech.name === tech2.name);
+      const countTech = techData.filter((tech2) => tech.name === tech2.name || tech.type === tech2.type);
       if (countTech.length > 1) {
         return { ...countTech[0], ...countTech[1] };
       }
       return tech;
     })
-    .filter((tech) => tech.name && Object.keys(tech).length > 2)
+    .filter((tech) => tech.name && tech.parent)
     .reduce((acc, current) => {
-      const x = acc.find((tech) => tech.name === current.name);
+      const x = acc.find((tech) => tech.name === current.name || tech.type === current.type);
       if (!x) {
         return acc.concat([current]);
       }

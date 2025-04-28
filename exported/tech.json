@@ -710,7 +710,7 @@
     "pointsCost": 9
   },
   {
-    "name": "Bone Scattershot",
+    "name": "Bone Scattershot Ammo",
     "parent": "Scattershot Gun",
     "level": 15,
     "pointsCost": 2
@@ -1018,16 +1018,10 @@
     "pointsCost": 5
   },
   {
-    "name": "Ceramic Scattershot",
-    "parent": "Bone Scattershot",
+    "name": "Ceramic Scattershot Ammo",
+    "parent": "Bone Scattershot Ammo",
     "level": 30,
     "pointsCost": 12
-  },
-  {
-    "name": "Ceramic Scythe",
-    "parent": "Bone Sickle",
-    "level": 30,
-    "pointsCost": 19
   },
   {
     "name": "Ceramic Shard",
@@ -1129,7 +1123,7 @@
   },
   {
     "name": "Chitin Sickle",
-    "parent": "Ceramic Scythe",
+    "parent": "Scythe",
     "level": 30,
     "pointsCost": 23
   },
@@ -1217,24 +1211,6 @@
     "pointsCost": 25
   },
   {
-    "name": "Construction",
-    "unlocks": [
-      "Basic Constructions",
-      "Improved Constructions",
-      "Advanced Constructions",
-      "Flotillian Constructions"
-    ]
-  },
-  {
-    "name": "Crafting",
-    "unlocks": [
-      "Basic Crafting",
-      "Improved Crafting",
-      "Advanced Crafting",
-      "Crafting Bench"
-    ]
-  },
-  {
     "name": "Crafting Bench",
     "parent": "Woodworking Station",
     "unlocks": [
@@ -1285,11 +1261,6 @@
     "parent": "Vision Powder",
     "level": 15,
     "pointsCost": 28
-  },
-  {
-    "name": "Dev Only",
-    "onlyDevs": true,
-    "level": 999
   },
   {
     "name": "Dinghy Walker",
@@ -1379,15 +1350,6 @@
     "pointsCost": 1
   },
   {
-    "name": "Equipment",
-    "unlocks": [
-      "Basic Equipment",
-      "Equipment T2",
-      "Advanced Equipment",
-      "Flotillian Equipment"
-    ]
-  },
-  {
     "name": "Equipment T2",
     "parent": "Basic Equipment",
     "onlyDevs": true,
@@ -1467,7 +1429,7 @@
   },
   {
     "name": "Feather Boots",
-    "parent": "Rain Boots",
+    "parent": "Swampwood Galoshes",
     "unlocks": [
       "Fiber Boots",
       "Baskwood Boots",
@@ -1886,13 +1848,6 @@
     "pointsCost": 30
   },
   {
-    "name": "Hangar",
-    "parent": "Medium Wood Walls",
-    "onlyDevs": true,
-    "level": 15,
-    "pointsCost": 50
-  },
-  {
     "name": "Hardened Hellfire Bolt",
     "parent": "Hellfire Bolt",
     "level": 45,
@@ -2012,7 +1967,7 @@
   },
   {
     "name": "Hullbreaker Scattershot",
-    "parent": "Ceramic Scattershot",
+    "parent": "Ceramic Scattershot Ammo",
     "unlocks": [
       "Scattershot Gun",
       "Gun Pod Scattershot Gun",
@@ -2119,12 +2074,6 @@
     "pointsCost": 20
   },
   {
-    "name": "Iron Bolt",
-    "parent": "Ceramic Bolt",
-    "level": 45,
-    "pointsCost": 10
-  },
-  {
     "name": "Iron Boots",
     "parent": "Iron Torso",
     "level": 45,
@@ -2153,12 +2102,6 @@
     "parent": "Iron Torso",
     "level": 45,
     "pointsCost": 25
-  },
-  {
-    "name": "Iron Harpoon",
-    "parent": "Iron Bolt",
-    "level": 45,
-    "pointsCost": 10
   },
   {
     "name": "Iron Ingot",
@@ -2214,7 +2157,7 @@
   },
   {
     "name": "Iron Scythe",
-    "parent": "Ceramic Scythe",
+    "parent": "Scythe",
     "level": 45,
     "pointsCost": 35
   },
@@ -2223,6 +2166,18 @@
     "parent": "Carapace Torso",
     "level": 45,
     "pointsCost": 40
+  },
+  {
+    "name": "Iron-Tipped Bolt",
+    "parent": "Ceramic Bolt",
+    "level": 45,
+    "pointsCost": 10
+  },
+  {
+    "name": "Iron-Tipped Harpoon",
+    "parent": "Iron-Tipped Bolt",
+    "level": 45,
+    "pointsCost": 10
   },
   {
     "name": "Jaggertooth Club",
@@ -2529,7 +2484,7 @@
   },
   {
     "name": "Nibiran tipped Bolt",
-    "parent": "Iron Bolt",
+    "parent": "Iron-Tipped Bolt",
     "unlocks": [
       "Flint Bolt",
       "Bone Bolt",
@@ -2865,12 +2820,6 @@
     "pointsCost": 60
   },
   {
-    "name": "Rain Boots",
-    "parent": "Rupu Fur Sandals",
-    "level": 15,
-    "pointsCost": 10
-  },
-  {
     "name": "Range Finder",
     "parent": "Maintenance Box",
     "level": 15,
@@ -3182,6 +3131,12 @@
     "pointsCost": 5
   },
   {
+    "name": "Scythe",
+    "parent": "Bone Sickle",
+    "level": 30,
+    "pointsCost": 19
+  },
+  {
     "name": "Sharp Spikes",
     "parent": "Bomb Chest Trap",
     "level": 15,
@@ -3323,36 +3278,6 @@
     ],
     "level": 15,
     "pointsCost": 15
-  },
-  {
-    "name": "Small Walker Walker Legs (1 of 2)",
-    "onlyDevs": true,
-    "unlocks": [
-      "Small Base Walker Packer",
-      "Walker Climber",
-      "Large Base Walker Packer",
-      "Walker Packing Compartment",
-      "Basic Walker Weapons",
-      "Improved Walker Weapons",
-      "Advanced Walker Weapons",
-      "Flotillian Walker Weapons"
-    ]
-  },
-  {
-    "name": "Small Walker Walker Wings (1 of 2)",
-    "onlyDevs": true,
-    "unlocks": [
-      "Small Base Walker Packer",
-      "Walker Climber",
-      "Large Base Walker Packer",
-      "Walker Packing Compartment",
-      "Basic Walker Weapons",
-      "Improved Walker Weapons",
-      "Advanced Walker Weapons",
-      "Flotillian Walker Weapons",
-      "Wingsuit",
-      "Small Walker Walker Legs (1 of 2)"
-    ]
   },
   {
     "name": "Small Water Bag",
@@ -3645,6 +3570,12 @@
     ],
     "level": 15,
     "pointsCost": 25
+  },
+  {
+    "name": "Swampwood Galoshes",
+    "parent": "Rupu Fur Sandals",
+    "level": 15,
+    "pointsCost": 10
   },
   {
     "name": "Tall Stinger",
@@ -4012,12 +3943,6 @@
     "pointsCost": 1
   },
   {
-    "name": "Vitamins",
-    "unlocks": [
-      "Vitamins T2"
-    ]
-  },
-  {
     "name": "Vitamins T2",
     "parent": "Basic Potions",
     "onlyDevs": true,
@@ -4030,6 +3955,13 @@
       "Small Base Walker Packer"
     ],
     "pointsCost": 2
+  },
+  {
+    "name": "Walker Hangar",
+    "parent": "Medium Wood Walls",
+    "onlyDevs": true,
+    "level": 15,
+    "pointsCost": 50
   },
   {
     "name": "Walker Packing Compartment",
@@ -4099,15 +4031,6 @@
     "parent": "Walker Parts Base T4",
     "level": 45,
     "pointsCost": 80
-  },
-  {
-    "name": "Walkers",
-    "unlocks": [
-      "Basic Walkers",
-      "Improved Walkers",
-      "Advanced Walkers",
-      "Flotillian Walkers"
-    ]
   },
   {
     "name": "Wall Giant",
