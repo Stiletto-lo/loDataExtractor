@@ -255,9 +255,7 @@ const parseLootTemplate = (filePath) => {
 
   // Add the loot template to the DataStore
   const utilityFunctions = require("../utilityFunctions");
-  const lootTemplates = utilityFunctions.getAllLootTemplates();
-  lootTemplates.push(lootTemplate);
-  utilityFunctions.setLootTemplates(lootTemplates);
+  utilityFunctions.addLootTemplate(lootTemplate);
 
   return true;
 };

@@ -173,6 +173,28 @@ class DataStore {
 		this.lootTables = lootTables;
 	}
 
+	addLootTable(lootTable) {
+		if (!lootTable) {
+			throw new TypeError("LootTable must be defined");
+		}
+
+		const existingItem = this.lootTables.find(
+			(existingItem) => existingItem.name === item.name,
+		);
+
+		if (!existingItem) {
+			this.lootTables.push(item);
+			return;
+		}
+
+		const newItem = { ...existingItem, ...item, };
+
+		const existingItemIndex = this.lootTables.indexOf(existingItem);
+		if (existingItemIndex > -1) {
+			this.lootTables[existingItemIndex] = newItem;
+		}
+	}
+
 	// Loot templates operations
 	getAllLootTemplates() {
 		return this.lootTemplates;
@@ -183,6 +205,28 @@ class DataStore {
 			throw new TypeError("Loot templates must be an array");
 		}
 		this.lootTemplates = lootTemplates;
+	}
+
+	addLootTemplate(lootTemplate) {
+		if (!lootTemplate) {
+			throw new TypeError("LootTable must be defined");
+		}
+
+		const existingItem = this.lootTemplates.find(
+			(existingItem) => existingItem.type === lootTemplate.type,
+		);
+
+		if (!existingItem) {
+			this.lootTemplates.push(lootTemplate);
+			return;
+		}
+
+		const newItem = { ...existingItem, ...lootTemplate, };
+
+		const existingItemIndex = this.lootTemplates.indexOf(existingItem);
+		if (existingItemIndex > -1) {
+			this.lootTemplates[existingItemIndex] = newItem;
+		}
 	}
 
 	setTechData(data) {
@@ -266,8 +310,14 @@ module.exports = {
 	getAllItems: () => dataStore.getAllItems(),
 	getUpgradesData: () => dataStore.getUpgradesData(),
 	getCreatures: () => dataStore.getCreatures(),
+
+	// Loot table operations
 	getAllLootTables: () => dataStore.getAllLootTables(),
+	addLootTable: (lootTable) => dataStore.addLootTable(lootTable),
+
+	// Loot template operations
 	getAllLootTemplates: () => dataStore.getAllLootTemplates(),
+	addLootTemplate: (lootTemplate) => dataStore.addLootTemplate(lootTemplate),
 
 	// Collection setters
 	setAllItems: (items) => dataStore.setAllItems(items),
