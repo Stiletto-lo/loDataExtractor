@@ -34,7 +34,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 	const setTranslation = (key, name) => {
 		if (key && name) {
 			translator.addTranslation(key.replace(".Name", "").trim(), name);
-			translator.addTranslationIfItDoesNotAlreadyExist(itemData.Type, name);
+			translator.addTranslationInUse(itemData.Type, name);
 		}
 	};
 

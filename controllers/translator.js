@@ -346,23 +346,6 @@ controller.addDescription = (key, description, language = null) => {
 	}
 };
 
-/**
- * Adds a translation to the in-use list
- * @param {string} key - The key to add
- * @param {string} translation - The translation to add
- */
-controller.addTranslationInUse = (key, translation) => {
-	if (isNullOrEmpty(key) || isNullOrEmpty(translation)) {
-		return;
-	}
-
-	// Clean up the translation by replacing multiple newlines with a single space
-	const cleanTranslation = translation
-		.replace(/\r\n|\n\r|\n|\r/g, " ")
-		.replace(/\s+/g, " ")
-		.trim();
-	translationStore.translationsInUse[key] = cleanTranslation;
-};
 
 /**
  * Checks if a key translation is in use
@@ -378,7 +361,7 @@ controller.isKeyTranslationInUse = (key) => {
  * @param {string} key - The key to add
  * @param {string} translation - The translation to add
  */
-controller.addTranslationIfItDoesNotAlreadyExist = (key, translation) => {
+controller.addTranslationInUse = (key, translation) => {
 	if (isNullOrEmpty(key) || isNullOrEmpty(translation)) {
 		return;
 	}

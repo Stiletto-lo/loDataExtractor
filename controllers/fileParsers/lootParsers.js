@@ -362,7 +362,7 @@ const parseLootSites = (filePath) => {
 		return false;
 	}
 
-	translator.addTranslationIfItDoesNotAlreadyExist(name, translation);
+	translator.addTranslationInUse(name, translation);
 
 	// Find additional components that might contain useful information
 	const mobVariationComponent = jsonData.find(
