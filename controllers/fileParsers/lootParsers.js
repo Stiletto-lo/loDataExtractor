@@ -14,7 +14,6 @@ const lootTableTemplate = require("../../templates/lootTable");
 const dropDataTemplate = require("../../templates/dropData");
 const creatureTemplate = require("../../templates/creature");
 const utilityFunctions = require("./utilityFunctions");
-const lootParsersIndex = require("./lootParsers/index");
 const lootTemplateParser = require("./lootParsers/lootTemplateParser");
 
 // Output directories
