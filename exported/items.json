@@ -1446,7 +1446,7 @@
     "name": "Balang Walker Upgrade Torque Tier 1",
     "type": "Balang Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 600
+      "stackSize": 600
     }
   },
   {
@@ -1454,7 +1454,7 @@
     "name": "Balang Walker Upgrade Torque Tier 2",
     "type": "Balang Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 1200
+      "stackSize": 1200
     }
   },
   {
@@ -1484,7 +1484,7 @@
     "name": "Balang Walker Upgrade Torque Tier 3",
     "type": "Balang Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 1800
+      "stackSize": 1800
     }
   },
   {
@@ -1514,7 +1514,7 @@
     "name": "Balang Walker Upgrade Torque Tier 4",
     "type": "Balang Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 3000
+      "stackSize": 3000
     }
   },
   {
@@ -1540,7 +1540,7 @@
     "name": "Balang Walker Upgrade Water Tier 1",
     "type": "Balang Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 50
+      "stackSize": 50
     }
   },
   {
@@ -1562,7 +1562,7 @@
     "name": "Balang Walker Upgrade Water Tier 2",
     "type": "Balang Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 125
+      "stackSize": 125
     }
   },
   {
@@ -1588,7 +1588,7 @@
     "name": "Balang Walker Upgrade Water Tier 3",
     "type": "Balang Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 200
+      "stackSize": 200
     }
   },
   {
@@ -1614,7 +1614,7 @@
     "name": "Balang Walker Upgrade Water Tier 4",
     "type": "Balang Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 300
+      "stackSize": 300
     }
   },
   {
@@ -4261,7 +4261,7 @@
     "name": "Buffalo Walker Upgrade Cargo Tier 2",
     "type": "Buffalo Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
-      "containerSlots": 13
+      "slots": 13
     }
   },
   {
@@ -4287,7 +4287,7 @@
     "name": "Buffalo Walker Upgrade Cargo Tier 3",
     "type": "Buffalo Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
-      "containerSlots": 16
+      "slots": 16
     }
   },
   {
@@ -4313,7 +4313,7 @@
     "name": "Buffalo Walker Upgrade Cargo Tier 4",
     "type": "Buffalo Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 19
+      "slots": 19
     }
   },
   {
@@ -4441,7 +4441,7 @@
     "name": "Buffalo Walker Upgrade Gear Tier 1",
     "type": "Buffalo Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 10
+      "slots": 10
     }
   },
   {
@@ -4467,7 +4467,7 @@
     "name": "Buffalo Walker Upgrade Gear Tier 2",
     "type": "Buffalo Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
-      "containerSlots": 15
+      "slots": 15
     }
   },
   {
@@ -4493,7 +4493,7 @@
     "name": "Buffalo Walker Upgrade Gear Tier 3",
     "type": "Buffalo Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -4519,7 +4519,7 @@
     "name": "Buffalo Walker Upgrade Gear Tier 4",
     "type": "Buffalo Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
-      "containerSlots": 25
+      "slots": 25
     }
   },
   {
@@ -4661,7 +4661,7 @@
     "name": "Buffalo Walker Upgrade Torque Tier 1",
     "type": "Buffalo Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 1000
+      "stackSize": 1000
     }
   },
   {
@@ -4687,7 +4687,7 @@
     "name": "Buffalo Walker Upgrade Torque Tier 2",
     "type": "Buffalo Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 1800
+      "stackSize": 1800
     }
   },
   {
@@ -4713,7 +4713,7 @@
     "name": "Buffalo Walker Upgrade Torque Tier 3",
     "type": "Buffalo Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 3000
+      "stackSize": 3000
     }
   },
   {
@@ -4739,7 +4739,7 @@
     "name": "Buffalo Walker Upgrade Torque Tier 4",
     "type": "Buffalo Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 5000
+      "stackSize": 5000
     }
   },
   {
@@ -4765,7 +4765,7 @@
     "name": "Buffalo Walker Upgrade Water Tier 1",
     "type": "Buffalo Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 180
+      "stackSize": 180
     }
   },
   {
@@ -4791,7 +4791,7 @@
     "name": "Buffalo Walker Upgrade Water Tier 2",
     "type": "Buffalo Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 230
+      "stackSize": 230
     }
   },
   {
@@ -4817,7 +4817,7 @@
     "name": "Buffalo Walker Upgrade Water Tier 3",
     "type": "Buffalo Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 290
+      "stackSize": 290
     }
   },
   {
@@ -4843,7 +4843,7 @@
     "name": "Buffalo Walker Upgrade Water Tier 4",
     "type": "Buffalo Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 350
+      "stackSize": 350
     }
   },
   {
@@ -5349,7 +5349,7 @@
     "name": "Camelop Walker Upgrade Torque Tier 1",
     "type": "Camelop Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 1600
+      "stackSize": 1600
     }
   },
   {
@@ -5357,7 +5357,7 @@
     "name": "Camelop Walker Upgrade Torque Tier 2",
     "type": "Camelop Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 2400
+      "stackSize": 2400
     }
   },
   {
@@ -5365,7 +5365,7 @@
     "name": "Camelop Walker Upgrade Torque Tier 3",
     "type": "Camelop Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 4000
+      "stackSize": 4000
     }
   },
   {
@@ -5373,7 +5373,7 @@
     "name": "Camelop Walker Upgrade Torque Tier 4",
     "type": "Camelop Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 6000
+      "stackSize": 6000
     }
   },
   {
@@ -5395,7 +5395,7 @@
     "name": "Camelop Walker Upgrade Water Tier 1",
     "type": "Camelop Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 400
+      "stackSize": 400
     }
   },
   {
@@ -5417,7 +5417,7 @@
     "name": "Camelop Walker Upgrade Water Tier 2",
     "type": "Camelop Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 600
+      "stackSize": 600
     }
   },
   {
@@ -5439,7 +5439,7 @@
     "name": "Camelop Walker Upgrade Water Tier 3",
     "type": "Camelop Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 800
+      "stackSize": 800
     }
   },
   {
@@ -5461,7 +5461,7 @@
     "name": "Camelop Walker Upgrade Water Tier 4",
     "type": "Camelop Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 16000
+      "stackSize": 16000
     }
   },
   {
@@ -7779,7 +7779,7 @@
     "name": "Cobra Walker Upgrade Cargo Tier 1",
     "type": "Cobra Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
-      "containerSlots": 2
+      "slots": 2
     }
   },
   {
@@ -7787,7 +7787,7 @@
     "name": "Cobra Walker Upgrade Cargo Tier 2",
     "type": "Cobra Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
-      "containerSlots": 3
+      "slots": 3
     }
   },
   {
@@ -7795,7 +7795,7 @@
     "name": "Cobra Walker Upgrade Cargo Tier 3",
     "type": "Cobra Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
-      "containerSlots": 4
+      "slots": 4
     }
   },
   {
@@ -7803,7 +7803,7 @@
     "name": "Cobra Walker Upgrade Cargo Tier 4",
     "type": "Cobra Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 5
+      "slots": 5
     }
   },
   {
@@ -7821,7 +7821,7 @@
     "name": "Cobra Walker Upgrade Torque Tier 1",
     "type": "Cobra Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 800
+      "stackSize": 800
     }
   },
   {
@@ -7829,7 +7829,7 @@
     "name": "Cobra Walker Upgrade Torque Tier 2",
     "type": "Cobra Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 1200
+      "stackSize": 1200
     }
   },
   {
@@ -7837,7 +7837,7 @@
     "name": "Cobra Walker Upgrade Torque Tier 3",
     "type": "Cobra Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 2000
+      "stackSize": 2000
     }
   },
   {
@@ -7845,7 +7845,7 @@
     "name": "Cobra Walker Upgrade Torque Tier 4",
     "type": "Cobra Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 4000
+      "stackSize": 4000
     }
   },
   {
@@ -7867,7 +7867,7 @@
     "name": "Cobra Walker Upgrade Water Tier 1",
     "type": "Cobra Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 160
+      "stackSize": 160
     }
   },
   {
@@ -7889,7 +7889,7 @@
     "name": "Cobra Walker Upgrade Water Tier 2",
     "type": "Cobra Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 300
+      "stackSize": 300
     }
   },
   {
@@ -7911,7 +7911,7 @@
     "name": "Cobra Walker Upgrade Water Tier 3",
     "type": "Cobra Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 540
+      "stackSize": 540
     }
   },
   {
@@ -7933,7 +7933,7 @@
     "name": "Cobra Walker Upgrade Water Tier 4",
     "type": "Cobra Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 1000
+      "stackSize": 1000
     }
   },
   {
@@ -8702,7 +8702,7 @@
     "name": "Dinghy Walker Upgrade Cargo Tier 1",
     "type": "Dinghy Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
-      "containerSlots": 8
+      "slots": 8
     }
   },
   {
@@ -8724,7 +8724,7 @@
     "name": "Dinghy Walker Upgrade Cargo Tier 2",
     "type": "Dinghy Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
-      "containerSlots": 12
+      "slots": 12
     }
   },
   {
@@ -8750,7 +8750,7 @@
     "name": "Dinghy Walker Upgrade Cargo Tier 3",
     "type": "Dinghy Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -8776,7 +8776,7 @@
     "name": "Dinghy Walker Upgrade Cargo Tier 4",
     "type": "Dinghy Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 30
+      "slots": 30
     }
   },
   {
@@ -8908,7 +8908,7 @@
     "name": "Dinghy Walker Upgrade Gear Tier 1",
     "type": "Dinghy Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 8
+      "slots": 8
     }
   },
   {
@@ -8930,7 +8930,7 @@
     "name": "Dinghy Walker Upgrade Gear Tier 2",
     "type": "Dinghy Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
-      "containerSlots": 10
+      "slots": 10
     }
   },
   {
@@ -8956,7 +8956,7 @@
     "name": "Dinghy Walker Upgrade Gear Tier 3",
     "type": "Dinghy Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
-      "containerSlots": 13
+      "slots": 13
     }
   },
   {
@@ -8982,7 +8982,7 @@
     "name": "Dinghy Walker Upgrade Gear Tier 4",
     "type": "Dinghy Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
-      "containerSlots": 14
+      "slots": 14
     }
   },
   {
@@ -9102,7 +9102,7 @@
     "name": "Dinghy Walker Upgrade Torque Tier 1",
     "type": "Dinghy Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 600
+      "stackSize": 600
     }
   },
   {
@@ -9128,7 +9128,7 @@
     "name": "Dinghy Walker Upgrade Torque Tier 2",
     "type": "Dinghy Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 1000
+      "stackSize": 1000
     }
   },
   {
@@ -9154,7 +9154,7 @@
     "name": "Dinghy Walker Upgrade Torque Tier 3",
     "type": "Dinghy Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 1600
+      "stackSize": 1600
     }
   },
   {
@@ -9180,7 +9180,7 @@
     "name": "Dinghy Walker Upgrade Torque Tier 4",
     "type": "Dinghy Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 2000
+      "stackSize": 2000
     }
   },
   {
@@ -9202,7 +9202,7 @@
     "name": "Dinghy Walker Upgrade Water Tier 1",
     "type": "Dinghy Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 60
+      "stackSize": 60
     }
   },
   {
@@ -9229,7 +9229,7 @@
     "name": "Dinghy Walker Upgrade Water Tier 2",
     "type": "Dinghy Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 80
+      "stackSize": 80
     }
   },
   {
@@ -9279,7 +9279,7 @@
     "name": "Dinghy Walker Upgrade Water Tier 4",
     "type": "Dinghy Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 120
+      "stackSize": 120
     }
   },
   {
@@ -9572,7 +9572,7 @@
     "name": "Domus Walker Upgrade Cargo Tier 1",
     "type": "Domus Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
-      "containerSlots": 10
+      "slots": 10
     }
   },
   {
@@ -9599,7 +9599,7 @@
     "name": "Domus Walker Upgrade Cargo Tier 2",
     "type": "Domus Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
-      "containerSlots": 14
+      "slots": 14
     }
   },
   {
@@ -9625,7 +9625,7 @@
     "name": "Domus Walker Upgrade Cargo Tier 3",
     "type": "Domus Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
-      "containerSlots": 18
+      "slots": 18
     }
   },
   {
@@ -9651,7 +9651,7 @@
     "name": "Domus Walker Upgrade Cargo Tier 4",
     "type": "Domus Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 23
+      "slots": 23
     }
   },
   {
@@ -9793,7 +9793,7 @@
     "name": "Domus Walker Upgrade Gear Tier 1",
     "type": "Domus Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 10
+      "slots": 10
     }
   },
   {
@@ -9819,7 +9819,7 @@
     "name": "Domus Walker Upgrade Gear Tier 2",
     "type": "Domus Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
-      "containerSlots": 15
+      "slots": 15
     }
   },
   {
@@ -9845,7 +9845,7 @@
     "name": "Domus Walker Upgrade Gear Tier 3",
     "type": "Domus Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -9871,7 +9871,7 @@
     "name": "Domus Walker Upgrade Gear Tier 4",
     "type": "Domus Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
-      "containerSlots": 30
+      "slots": 30
     }
   },
   {
@@ -10017,7 +10017,7 @@
     "name": "Domus Walker Upgrade Torque Tier 1",
     "type": "Domus Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 500
+      "stackSize": 500
     }
   },
   {
@@ -10043,7 +10043,7 @@
     "name": "Domus Walker Upgrade Torque Tier 2",
     "type": "Domus Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 1000
+      "stackSize": 1000
     }
   },
   {
@@ -10069,7 +10069,7 @@
     "name": "Domus Walker Upgrade Torque Tier 3",
     "type": "Domus Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 2000
+      "stackSize": 2000
     }
   },
   {
@@ -10095,7 +10095,7 @@
     "name": "Domus Walker Upgrade Torque Tier 4",
     "type": "Domus Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 3000
+      "stackSize": 3000
     }
   },
   {
@@ -10125,7 +10125,7 @@
     "name": "Domus Walker Upgrade Water Tier 1",
     "type": "Domus Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 210
+      "stackSize": 210
     }
   },
   {
@@ -10155,7 +10155,7 @@
     "name": "Domus Walker Upgrade Water Tier 2",
     "type": "Domus Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 360
+      "stackSize": 360
     }
   },
   {
@@ -10186,7 +10186,7 @@
     "name": "Domus Walker Upgrade Water Tier 3",
     "type": "Domus Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 420
+      "stackSize": 420
     }
   },
   {
@@ -10216,7 +10216,7 @@
     "name": "Domus Walker Upgrade Water Tier 4",
     "type": "Domus Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 2100
+      "stackSize": 2100
     }
   },
   {
@@ -11241,7 +11241,7 @@
     "name": "Falco Walker Upgrade Cargo Tier 2",
     "type": "Falco Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
-      "containerSlots": 15
+      "slots": 15
     }
   },
   {
@@ -11267,7 +11267,7 @@
     "name": "Falco Walker Upgrade Cargo Tier 3",
     "type": "Falco Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -11293,7 +11293,7 @@
     "name": "Falco Walker Upgrade Cargo Tier 4",
     "type": "Falco Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 26
+      "slots": 26
     }
   },
   {
@@ -11421,7 +11421,7 @@
     "name": "Falco Walker Upgrade Gear Tier 1",
     "type": "Falco Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 5
+      "slots": 5
     }
   },
   {
@@ -11447,7 +11447,7 @@
     "name": "Falco Walker Upgrade Gear Tier 2",
     "type": "Falco Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
-      "containerSlots": 10
+      "slots": 10
     }
   },
   {
@@ -11473,7 +11473,7 @@
     "name": "Falco Walker Upgrade Gear Tier 3",
     "type": "Falco Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
-      "containerSlots": 15
+      "slots": 15
     }
   },
   {
@@ -11499,7 +11499,7 @@
     "name": "Falco Walker Upgrade Gear Tier 4",
     "type": "Falco Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -11641,7 +11641,7 @@
     "name": "Falco Walker Upgrade Torque Tier 1",
     "type": "Falco Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 1500
+      "stackSize": 1500
     }
   },
   {
@@ -11667,7 +11667,7 @@
     "name": "Falco Walker Upgrade Torque Tier 2",
     "type": "Falco Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 2200
+      "stackSize": 2200
     }
   },
   {
@@ -11693,7 +11693,7 @@
     "name": "Falco Walker Upgrade Torque Tier 3",
     "type": "Falco Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 3500
+      "stackSize": 3500
     }
   },
   {
@@ -11719,7 +11719,7 @@
     "name": "Falco Walker Upgrade Torque Tier 4",
     "type": "Falco Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 5000
+      "stackSize": 5000
     }
   },
   {
@@ -11745,7 +11745,7 @@
     "name": "Falco Walker Upgrade Water Tier 1",
     "type": "Falco Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 240
+      "stackSize": 240
     }
   },
   {
@@ -11771,7 +11771,7 @@
     "name": "Falco Walker Upgrade Water Tier 2",
     "type": "Falco Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 300
+      "stackSize": 300
     }
   },
   {
@@ -11797,7 +11797,7 @@
     "name": "Falco Walker Upgrade Water Tier 3",
     "type": "Falco Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 360
+      "stackSize": 360
     }
   },
   {
@@ -11823,7 +11823,7 @@
     "name": "Falco Walker Upgrade Water Tier 4",
     "type": "Falco Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 420
+      "stackSize": 420
     }
   },
   {
@@ -13195,7 +13195,7 @@
     "name": "Firefly Walker Upgrade Cargo Tier 1",
     "type": "Firefly Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
-      "containerSlots": 8
+      "slots": 8
     }
   },
   {
@@ -13241,7 +13241,7 @@
     "name": "Firefly Walker Upgrade Cargo Tier 3",
     "type": "Firefly Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
-      "containerSlots": 14
+      "slots": 14
     }
   },
   {
@@ -13267,7 +13267,7 @@
     "name": "Firefly Walker Upgrade Cargo Tier 4",
     "type": "Firefly Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -13409,7 +13409,7 @@
     "name": "Firefly Walker Upgrade Gear Tier 2",
     "type": "Firefly Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
-      "containerSlots": 6
+      "slots": 6
     }
   },
   {
@@ -13431,7 +13431,7 @@
     "name": "Firefly Walker Upgrade Gear Tier 3",
     "type": "Firefly Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
-      "containerSlots": 10
+      "slots": 10
     }
   },
   {
@@ -13453,7 +13453,7 @@
     "name": "Firefly Walker Upgrade Gear Tier 4",
     "type": "Firefly Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
-      "containerSlots": 18
+      "slots": 18
     }
   },
   {
@@ -13601,7 +13601,7 @@
     "name": "Firefly Walker Upgrade Water Tier 2",
     "type": "Firefly Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 50
+      "stackSize": 50
     }
   },
   {
@@ -13627,7 +13627,7 @@
     "name": "Firefly Walker Upgrade Water Tier 3",
     "type": "Firefly Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 60
+      "stackSize": 60
     }
   },
   {
@@ -13653,7 +13653,7 @@
     "name": "Firefly Walker Upgrade Water Tier 4",
     "type": "Firefly Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 80
+      "stackSize": 80
     }
   },
   {
@@ -17013,7 +17013,7 @@
     "name": "Hercul Walker Upgrade Torque Tier 1",
     "type": "Hercul Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 7000
+      "stackSize": 7000
     }
   },
   {
@@ -17021,7 +17021,7 @@
     "name": "Hercul Walker Upgrade Torque Tier 2",
     "type": "Hercul Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 12000
+      "stackSize": 12000
     }
   },
   {
@@ -17029,7 +17029,7 @@
     "name": "Hercul Walker Upgrade Torque Tier 3",
     "type": "Hercul Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 18000
+      "stackSize": 18000
     }
   },
   {
@@ -17037,7 +17037,7 @@
     "name": "Hercul Walker Upgrade Torque Tier 4",
     "type": "Hercul Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 25000
+      "stackSize": 25000
     }
   },
   {
@@ -17045,7 +17045,7 @@
     "name": "Hercul Walker Upgrade Water Tier 1",
     "type": "Hercul Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 200
+      "stackSize": 200
     }
   },
   {
@@ -17053,7 +17053,7 @@
     "name": "Hercul Walker Upgrade Water Tier 2",
     "type": "Hercul Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 350
+      "stackSize": 350
     }
   },
   {
@@ -17083,7 +17083,7 @@
     "name": "Hercul Walker Upgrade Water Tier 3",
     "type": "Hercul Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 650
+      "stackSize": 650
     }
   },
   {
@@ -17113,7 +17113,7 @@
     "name": "Hercul Walker Upgrade Water Tier 4",
     "type": "Hercul Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 1300
+      "stackSize": 1300
     }
   },
   {
@@ -17621,7 +17621,7 @@
     "name": "Hornet Walker Upgrade Cargo Tier 1",
     "type": "Hornet Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
-      "containerSlots": 14
+      "slots": 14
     }
   },
   {
@@ -17643,7 +17643,7 @@
     "name": "Hornet Walker Upgrade Cargo Tier 2",
     "type": "Hornet Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -17665,7 +17665,7 @@
     "name": "Hornet Walker Upgrade Cargo Tier 3",
     "type": "Hornet Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
-      "containerSlots": 27
+      "slots": 27
     }
   },
   {
@@ -17687,7 +17687,7 @@
     "name": "Hornet Walker Upgrade Cargo Tier 4",
     "type": "Hornet Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 35
+      "slots": 35
     }
   },
   {
@@ -17815,7 +17815,7 @@
     "name": "Hornet Walker Upgrade Gear Tier 1",
     "type": "Hornet Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 5
+      "slots": 5
     }
   },
   {
@@ -17841,7 +17841,7 @@
     "name": "Hornet Walker Upgrade Gear Tier 2",
     "type": "Hornet Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
-      "containerSlots": 10
+      "slots": 10
     }
   },
   {
@@ -17867,7 +17867,7 @@
     "name": "Hornet Walker Upgrade Gear Tier 3",
     "type": "Hornet Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
-      "containerSlots": 15
+      "slots": 15
     }
   },
   {
@@ -17893,7 +17893,7 @@
     "name": "Hornet Walker Upgrade Gear Tier 4",
     "type": "Hornet Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -18031,7 +18031,7 @@
     "name": "Hornet Walker Upgrade Torque Tier 1",
     "type": "Hornet Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 1000
+      "stackSize": 1000
     }
   },
   {
@@ -18057,7 +18057,7 @@
     "name": "Hornet Walker Upgrade Torque Tier 2",
     "type": "Hornet Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 1800
+      "stackSize": 1800
     }
   },
   {
@@ -18083,7 +18083,7 @@
     "name": "Hornet Walker Upgrade Torque Tier 3",
     "type": "Hornet Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 3000
+      "stackSize": 3000
     }
   },
   {
@@ -18109,7 +18109,7 @@
     "name": "Hornet Walker Upgrade Torque Tier 4",
     "type": "Hornet Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 5000
+      "stackSize": 5000
     }
   },
   {
@@ -18135,7 +18135,7 @@
     "name": "Hornet Walker Upgrade Water Tier 1",
     "type": "Hornet Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 200
+      "stackSize": 200
     }
   },
   {
@@ -18161,7 +18161,7 @@
     "name": "Hornet Walker Upgrade Water Tier 2",
     "type": "Hornet Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 260
+      "stackSize": 260
     }
   },
   {
@@ -18187,7 +18187,7 @@
     "name": "Hornet Walker Upgrade Water Tier 3",
     "type": "Hornet Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 320
+      "stackSize": 320
     }
   },
   {
@@ -18213,7 +18213,7 @@
     "name": "Hornet Walker Upgrade Water Tier 4",
     "type": "Hornet Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 400
+      "stackSize": 400
     }
   },
   {
@@ -21885,7 +21885,7 @@
     "name": "Mollusk Walker Upgrade Cargo Tier 1",
     "type": "Mollusk Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
-      "containerSlots": 12
+      "slots": 12
     }
   },
   {
@@ -21907,7 +21907,7 @@
     "name": "Mollusk Walker Upgrade Cargo Tier 2",
     "type": "Mollusk Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
-      "containerSlots": 18
+      "slots": 18
     }
   },
   {
@@ -21933,7 +21933,7 @@
     "name": "Mollusk Walker Upgrade Cargo Tier 3",
     "type": "Mollusk Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
-      "containerSlots": 28
+      "slots": 28
     }
   },
   {
@@ -21959,7 +21959,7 @@
     "name": "Mollusk Walker Upgrade Cargo Tier 4",
     "type": "Mollusk Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 36
+      "slots": 36
     }
   },
   {
@@ -22079,7 +22079,7 @@
     "name": "Mollusk Walker Upgrade Gear Tier 1",
     "type": "Mollusk Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 15
+      "slots": 15
     }
   },
   {
@@ -22101,7 +22101,7 @@
     "name": "Mollusk Walker Upgrade Gear Tier 2",
     "type": "Mollusk Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -22127,7 +22127,7 @@
     "name": "Mollusk Walker Upgrade Gear Tier 3",
     "type": "Mollusk Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
-      "containerSlots": 26
+      "slots": 26
     }
   },
   {
@@ -22153,7 +22153,7 @@
     "name": "Mollusk Walker Upgrade Gear Tier 4",
     "type": "Mollusk Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
-      "containerSlots": 33
+      "slots": 33
     }
   },
   {
@@ -22295,7 +22295,7 @@
     "name": "Mollusk Walker Upgrade Torque Tier 1",
     "type": "Mollusk Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 800
+      "stackSize": 800
     }
   },
   {
@@ -22321,7 +22321,7 @@
     "name": "Mollusk Walker Upgrade Torque Tier 2",
     "type": "Mollusk Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 1500
+      "stackSize": 1500
     }
   },
   {
@@ -22347,7 +22347,7 @@
     "name": "Mollusk Walker Upgrade Torque Tier 3",
     "type": "Mollusk Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 2500
+      "stackSize": 2500
     }
   },
   {
@@ -22373,7 +22373,7 @@
     "name": "Mollusk Walker Upgrade Torque Tier 4",
     "type": "Mollusk Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 4000
+      "stackSize": 4000
     }
   },
   {
@@ -22399,7 +22399,7 @@
     "name": "Mollusk Walker Upgrade Water Tier 1",
     "type": "Mollusk Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 70
+      "stackSize": 70
     }
   },
   {
@@ -22449,7 +22449,7 @@
     "name": "Mollusk Walker Upgrade Water Tier 3",
     "type": "Mollusk Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 130
+      "stackSize": 130
     }
   },
   {
@@ -22475,7 +22475,7 @@
     "name": "Mollusk Walker Upgrade Water Tier 4",
     "type": "Mollusk Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 160
+      "stackSize": 160
     }
   },
   {
@@ -23599,7 +23599,7 @@
     "name": "Nomad Walker Upgrade Cargo Tier 1",
     "type": "Nomad Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
-      "containerSlots": 9
+      "slots": 9
     }
   },
   {
@@ -23617,7 +23617,7 @@
     "name": "Nomad Walker Upgrade Cargo Tier 2",
     "type": "Nomad Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
-      "containerSlots": 14
+      "slots": 14
     }
   },
   {
@@ -23639,7 +23639,7 @@
     "name": "Nomad Walker Upgrade Cargo Tier 3",
     "type": "Nomad Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
-      "containerSlots": 18
+      "slots": 18
     }
   },
   {
@@ -23661,7 +23661,7 @@
     "name": "Nomad Walker Upgrade Cargo Tier 4",
     "type": "Nomad Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 22
+      "slots": 22
     }
   },
   {
@@ -23752,7 +23752,7 @@
     "name": "Nomad Walker Upgrade Gear Tier 1",
     "type": "Nomad Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 5
+      "slots": 5
     }
   },
   {
@@ -23770,7 +23770,7 @@
     "name": "Nomad Walker Upgrade Gear Tier 2",
     "type": "Nomad Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
-      "containerSlots": 10
+      "slots": 10
     }
   },
   {
@@ -23792,7 +23792,7 @@
     "name": "Nomad Walker Upgrade Gear Tier 3",
     "type": "Nomad Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
-      "containerSlots": 15
+      "slots": 15
     }
   },
   {
@@ -23814,7 +23814,7 @@
     "name": "Nomad Walker Upgrade Gear Tier 4",
     "type": "Nomad Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -23932,7 +23932,7 @@
     "name": "Nomad Walker Upgrade Water Tier 1",
     "type": "Nomad Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 30
+      "stackSize": 30
     }
   },
   {
@@ -23958,7 +23958,7 @@
     "name": "Nomad Walker Upgrade Water Tier 2",
     "type": "Nomad Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 40
+      "stackSize": 40
     }
   },
   {
@@ -23984,7 +23984,7 @@
     "name": "Nomad Walker Upgrade Water Tier 3",
     "type": "Nomad Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 50
+      "stackSize": 50
     }
   },
   {
@@ -24010,7 +24010,7 @@
     "name": "Nomad Walker Upgrade Water Tier 4",
     "type": "Nomad Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 60
+      "stackSize": 60
     }
   },
   {
@@ -24796,7 +24796,7 @@
     "name": "Panda Walker Upgrade Cargo Tier 1",
     "type": "Panda Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
-      "containerSlots": 8
+      "slots": 8
     }
   },
   {
@@ -24823,7 +24823,7 @@
     "name": "Panda Walker Upgrade Cargo Tier 2",
     "type": "Panda Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
-      "containerSlots": 14
+      "slots": 14
     }
   },
   {
@@ -24849,7 +24849,7 @@
     "name": "Panda Walker Upgrade Cargo Tier 3",
     "type": "Panda Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
-      "containerSlots": 18
+      "slots": 18
     }
   },
   {
@@ -24875,7 +24875,7 @@
     "name": "Panda Walker Upgrade Cargo Tier 4",
     "type": "Panda Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 24
+      "slots": 24
     }
   },
   {
@@ -25003,7 +25003,7 @@
     "name": "Panda Walker Upgrade Gear Tier 1",
     "type": "Panda Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 5
+      "slots": 5
     }
   },
   {
@@ -25221,7 +25221,7 @@
     "name": "Panda Walker Upgrade Torque Tier 1",
     "type": "Panda Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 500
+      "stackSize": 500
     }
   },
   {
@@ -25247,7 +25247,7 @@
     "name": "Panda Walker Upgrade Torque Tier 2",
     "type": "Panda Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 1000
+      "stackSize": 1000
     }
   },
   {
@@ -25273,7 +25273,7 @@
     "name": "Panda Walker Upgrade Torque Tier 3",
     "type": "Panda Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 2000
+      "stackSize": 2000
     }
   },
   {
@@ -25299,7 +25299,7 @@
     "name": "Panda Walker Upgrade Torque Tier 4",
     "type": "Panda Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 3000
+      "stackSize": 3000
     }
   },
   {
@@ -25325,7 +25325,7 @@
     "name": "Panda Walker Upgrade Water Tier 1",
     "type": "Panda Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 260
+      "stackSize": 260
     }
   },
   {
@@ -25351,7 +25351,7 @@
     "name": "Panda Walker Upgrade Water Tier 2",
     "type": "Panda Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 320
+      "stackSize": 320
     }
   },
   {
@@ -25377,7 +25377,7 @@
     "name": "Panda Walker Upgrade Water Tier 3",
     "type": "Panda Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 400
+      "stackSize": 400
     }
   },
   {
@@ -25403,7 +25403,7 @@
     "name": "Panda Walker Upgrade Water Tier 4",
     "type": "Panda Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 480
+      "stackSize": 480
     }
   },
   {
@@ -26582,7 +26582,7 @@
     "name": "Raptor Walker Upgrade Cargo Tier 1",
     "type": "Raptor Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
-      "containerSlots": 9
+      "slots": 9
     }
   },
   {
@@ -26608,7 +26608,7 @@
     "name": "Raptor Walker Upgrade Cargo Tier 2",
     "type": "Raptor Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
-      "containerSlots": 14
+      "slots": 14
     }
   },
   {
@@ -26634,7 +26634,7 @@
     "name": "Raptor Walker Upgrade Cargo Tier 3",
     "type": "Raptor Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
-      "containerSlots": 18
+      "slots": 18
     }
   },
   {
@@ -26660,7 +26660,7 @@
     "name": "Raptor Walker Upgrade Cargo Tier 4",
     "type": "Raptor Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 22
+      "slots": 22
     }
   },
   {
@@ -26790,7 +26790,7 @@
     "name": "Raptor Walker Upgrade Gear Tier 1",
     "type": "Raptor Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 5
+      "slots": 5
     }
   },
   {
@@ -26816,7 +26816,7 @@
     "name": "Raptor Walker Upgrade Gear Tier 2",
     "type": "Raptor Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
-      "containerSlots": 10
+      "slots": 10
     }
   },
   {
@@ -26842,7 +26842,7 @@
     "name": "Raptor Walker Upgrade Gear Tier 3",
     "type": "Raptor Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
-      "containerSlots": 15
+      "slots": 15
     }
   },
   {
@@ -26868,7 +26868,7 @@
     "name": "Raptor Walker Upgrade Gear Tier 4",
     "type": "Raptor Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -26918,7 +26918,7 @@
     "name": "Raptor Walker Upgrade Torque Tier 1",
     "type": "Raptor Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 5500
+      "stackSize": 5500
     }
   },
   {
@@ -26944,7 +26944,7 @@
     "name": "Raptor Walker Upgrade Torque Tier 2",
     "type": "Raptor Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 10500
+      "stackSize": 10500
     }
   },
   {
@@ -26970,7 +26970,7 @@
     "name": "Raptor Walker Upgrade Torque Tier 3",
     "type": "Raptor Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 25500
+      "stackSize": 25500
     }
   },
   {
@@ -26996,7 +26996,7 @@
     "name": "Raptor Walker Upgrade Torque Tier 4",
     "type": "Raptor Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 37500
+      "stackSize": 37500
     }
   },
   {
@@ -27022,7 +27022,7 @@
     "name": "Raptor Walker Upgrade Water Tier 1",
     "type": "Raptor Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 15
+      "stackSize": 15
     }
   },
   {
@@ -27048,7 +27048,7 @@
     "name": "Raptor Walker Upgrade Water Tier 2",
     "type": "Raptor Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 25
+      "stackSize": 25
     }
   },
   {
@@ -27074,7 +27074,7 @@
     "name": "Raptor Walker Upgrade Water Tier 3",
     "type": "Raptor Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 35
+      "stackSize": 35
     }
   },
   {
@@ -27100,7 +27100,7 @@
     "name": "Raptor Walker Upgrade Water Tier 4",
     "type": "Raptor Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 45
+      "stackSize": 45
     }
   },
   {
@@ -29775,7 +29775,7 @@
     "name": "Schmetterling Walker Upgrade Gear Tier 1",
     "type": "Schmetterling Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 5
+      "slots": 5
     }
   },
   {
@@ -29993,7 +29993,7 @@
     "name": "Schmetterling Walker Upgrade Torque Tier 1",
     "type": "Schmetterling Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 800
+      "stackSize": 800
     }
   },
   {
@@ -30019,7 +30019,7 @@
     "name": "Schmetterling Walker Upgrade Torque Tier 2",
     "type": "Schmetterling Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 1500
+      "stackSize": 1500
     }
   },
   {
@@ -30045,7 +30045,7 @@
     "name": "Schmetterling Walker Upgrade Torque Tier 3",
     "type": "Schmetterling Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 2500
+      "stackSize": 2500
     }
   },
   {
@@ -30071,7 +30071,7 @@
     "name": "Schmetterling Walker Upgrade Torque Tier 4",
     "type": "Schmetterling Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 4000
+      "stackSize": 4000
     }
   },
   {
@@ -30101,7 +30101,7 @@
     "name": "Schmetterling Walker Upgrade Water Tier 1",
     "type": "Schmetterling Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 320
+      "stackSize": 320
     }
   },
   {
@@ -30131,7 +30131,7 @@
     "name": "Schmetterling Walker Upgrade Water Tier 2",
     "type": "Schmetterling Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 450
+      "stackSize": 450
     }
   },
   {
@@ -30161,7 +30161,7 @@
     "name": "Schmetterling Walker Upgrade Water Tier 3",
     "type": "Schmetterling Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 600
+      "stackSize": 600
     }
   },
   {
@@ -30191,7 +30191,7 @@
     "name": "Schmetterling Walker Upgrade Water Tier 4",
     "type": "Schmetterling Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 800
+      "stackSize": 800
     }
   },
   {
@@ -31008,7 +31008,7 @@
     "name": "Silur Walker Upgrade Torque Tier 1",
     "type": "Silur Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 1600
+      "stackSize": 1600
     }
   },
   {
@@ -31034,7 +31034,7 @@
     "name": "Silur Walker Upgrade Torque Tier 2",
     "type": "Silur Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 2400
+      "stackSize": 2400
     }
   },
   {
@@ -31060,7 +31060,7 @@
     "name": "Silur Walker Upgrade Torque Tier 3",
     "type": "Silur Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 4000
+      "stackSize": 4000
     }
   },
   {
@@ -31086,7 +31086,7 @@
     "name": "Silur Walker Upgrade Torque Tier 4",
     "type": "Silur Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 6000
+      "stackSize": 6000
     }
   },
   {
@@ -31108,7 +31108,7 @@
     "name": "Silur Walker Upgrade Water Tier 1",
     "type": "Silur Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 200
+      "stackSize": 200
     }
   },
   {
@@ -31130,7 +31130,7 @@
     "name": "Silur Walker Upgrade Water Tier 2",
     "type": "Silur Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 240
+      "stackSize": 240
     }
   },
   {
@@ -31152,7 +31152,7 @@
     "name": "Silur Walker Upgrade Water Tier 3",
     "type": "Silur Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 280
+      "stackSize": 280
     }
   },
   {
@@ -31174,7 +31174,7 @@
     "name": "Silur Walker Upgrade Water Tier 4",
     "type": "Silur Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 320
+      "stackSize": 320
     }
   },
   {
@@ -31969,7 +31969,7 @@
     "name": "Spider Walker Upgrade Cargo Tier 1",
     "type": "Spider Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
-      "containerSlots": 9
+      "slots": 9
     }
   },
   {
@@ -31991,7 +31991,7 @@
     "name": "Spider Walker Upgrade Cargo Tier 2",
     "type": "Spider Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
-      "containerSlots": 14
+      "slots": 14
     }
   },
   {
@@ -32017,7 +32017,7 @@
     "name": "Spider Walker Upgrade Cargo Tier 3",
     "type": "Spider Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
-      "containerSlots": 18
+      "slots": 18
     }
   },
   {
@@ -32043,7 +32043,7 @@
     "name": "Spider Walker Upgrade Cargo Tier 4",
     "type": "Spider Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 22
+      "slots": 22
     }
   },
   {
@@ -32139,7 +32139,7 @@
     "name": "Spider Walker Upgrade Gear Tier 1",
     "type": "Spider Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 5
+      "slots": 5
     }
   },
   {
@@ -32161,7 +32161,7 @@
     "name": "Spider Walker Upgrade Gear Tier 2",
     "type": "Spider Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
-      "containerSlots": 10
+      "slots": 10
     }
   },
   {
@@ -32187,7 +32187,7 @@
     "name": "Spider Walker Upgrade Gear Tier 3",
     "type": "Spider Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
-      "containerSlots": 15
+      "slots": 15
     }
   },
   {
@@ -32213,7 +32213,7 @@
     "name": "Spider Walker Upgrade Gear Tier 4",
     "type": "Spider Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -32323,7 +32323,7 @@
     "name": "Spider Walker Upgrade Water Tier 1",
     "type": "Spider Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 30
+      "stackSize": 30
     }
   },
   {
@@ -32349,7 +32349,7 @@
     "name": "Spider Walker Upgrade Water Tier 2",
     "type": "Spider Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 40
+      "stackSize": 40
     }
   },
   {
@@ -32375,7 +32375,7 @@
     "name": "Spider Walker Upgrade Water Tier 3",
     "type": "Spider Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 50
+      "stackSize": 50
     }
   },
   {
@@ -32401,7 +32401,7 @@
     "name": "Spider Walker Upgrade Water Tier 4",
     "type": "Spider Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 60
+      "stackSize": 60
     }
   },
   {
@@ -33076,7 +33076,7 @@
     "name": "Stiletto Walker Upgrade Cargo Tier 4",
     "type": "Stiletto Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 32
+      "slots": 32
     }
   },
   {
@@ -33206,7 +33206,7 @@
     "name": "Stiletto Walker Upgrade Gear Tier 1",
     "type": "Stiletto Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 10
+      "slots": 10
     }
   },
   {
@@ -33228,7 +33228,7 @@
     "name": "Stiletto Walker Upgrade Gear Tier 2",
     "type": "Stiletto Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
-      "containerSlots": 15
+      "slots": 15
     }
   },
   {
@@ -33254,7 +33254,7 @@
     "name": "Stiletto Walker Upgrade Gear Tier 3",
     "type": "Stiletto Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -33280,7 +33280,7 @@
     "name": "Stiletto Walker Upgrade Gear Tier 4",
     "type": "Stiletto Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
-      "containerSlots": 25
+      "slots": 25
     }
   },
   {
@@ -33426,7 +33426,7 @@
     "name": "Stiletto Walker Upgrade Torque Tier 1",
     "type": "Stiletto Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 600
+      "stackSize": 600
     }
   },
   {
@@ -33452,7 +33452,7 @@
     "name": "Stiletto Walker Upgrade Torque Tier 2",
     "type": "Stiletto Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 1200
+      "stackSize": 1200
     }
   },
   {
@@ -33478,7 +33478,7 @@
     "name": "Stiletto Walker Upgrade Torque Tier 3",
     "type": "Stiletto Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 2100
+      "stackSize": 2100
     }
   },
   {
@@ -33504,7 +33504,7 @@
     "name": "Stiletto Walker Upgrade Torque Tier 4",
     "type": "Stiletto Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 3200
+      "stackSize": 3200
     }
   },
   {
@@ -33530,7 +33530,7 @@
     "name": "Stiletto Walker Upgrade Water Tier 1",
     "type": "Stiletto Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 80
+      "stackSize": 80
     }
   },
   {
@@ -33552,7 +33552,7 @@
     "name": "Stiletto Walker Upgrade Water Tier 2",
     "type": "Stiletto Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 110
+      "stackSize": 110
     }
   },
   {
@@ -33578,7 +33578,7 @@
     "name": "Stiletto Walker Upgrade Water Tier 3",
     "type": "Stiletto Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 140
+      "stackSize": 140
     }
   },
   {
@@ -33604,7 +33604,7 @@
     "name": "Stiletto Walker Upgrade Water Tier 4",
     "type": "Stiletto Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 170
+      "stackSize": 170
     }
   },
   {
@@ -35171,7 +35171,7 @@
     "name": "Titan Walker Upgrade Cargo Tier 1",
     "type": "Titan Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
-      "containerSlots": 12
+      "slots": 12
     }
   },
   {
@@ -35198,7 +35198,7 @@
     "name": "Titan Walker Upgrade Cargo Tier 2",
     "type": "Titan Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
-      "containerSlots": 16
+      "slots": 16
     }
   },
   {
@@ -35224,7 +35224,7 @@
     "name": "Titan Walker Upgrade Cargo Tier 3",
     "type": "Titan Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -35250,7 +35250,7 @@
     "name": "Titan Walker Upgrade Cargo Tier 4",
     "type": "Titan Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 25
+      "slots": 25
     }
   },
   {
@@ -35372,7 +35372,7 @@
     "name": "Titan Walker Upgrade Gear Tier 1",
     "type": "Titan Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 10
+      "slots": 10
     }
   },
   {
@@ -35398,7 +35398,7 @@
     "name": "Titan Walker Upgrade Gear Tier 2",
     "type": "Titan Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
-      "containerSlots": 15
+      "slots": 15
     }
   },
   {
@@ -35424,7 +35424,7 @@
     "name": "Titan Walker Upgrade Gear Tier 3",
     "type": "Titan Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -35450,7 +35450,7 @@
     "name": "Titan Walker Upgrade Gear Tier 4",
     "type": "Titan Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
-      "containerSlots": 30
+      "slots": 30
     }
   },
   {
@@ -35596,7 +35596,7 @@
     "name": "Titan Walker Upgrade Torque Tier 1",
     "type": "Titan Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 500
+      "stackSize": 500
     }
   },
   {
@@ -35622,7 +35622,7 @@
     "name": "Titan Walker Upgrade Torque Tier 2",
     "type": "Titan Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 1000
+      "stackSize": 1000
     }
   },
   {
@@ -35648,7 +35648,7 @@
     "name": "Titan Walker Upgrade Torque Tier 3",
     "type": "Titan Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 2000
+      "stackSize": 2000
     }
   },
   {
@@ -35674,7 +35674,7 @@
     "name": "Titan Walker Upgrade Torque Tier 4",
     "type": "Titan Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 3000
+      "stackSize": 3000
     }
   },
   {
@@ -35700,7 +35700,7 @@
     "name": "Titan Walker Upgrade Water Tier 1",
     "type": "Titan Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 300
+      "stackSize": 300
     }
   },
   {
@@ -35726,7 +35726,7 @@
     "name": "Titan Walker Upgrade Water Tier 2",
     "type": "Titan Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 400
+      "stackSize": 400
     }
   },
   {
@@ -35752,7 +35752,7 @@
     "name": "Titan Walker Upgrade Water Tier 3",
     "type": "Titan Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 500
+      "stackSize": 500
     }
   },
   {
@@ -35778,7 +35778,7 @@
     "name": "Titan Walker Upgrade Water Tier 4",
     "type": "Titan Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 600
+      "stackSize": 600
     }
   },
   {
@@ -36258,7 +36258,7 @@
     "name": "Toboggan Walker Upgrade Cargo Tier 1",
     "type": "Toboggan Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
-      "containerSlots": 12
+      "slots": 12
     }
   },
   {
@@ -36284,7 +36284,7 @@
     "name": "Toboggan Walker Upgrade Cargo Tier 2",
     "type": "Toboggan Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
-      "containerSlots": 18
+      "slots": 18
     }
   },
   {
@@ -36462,7 +36462,7 @@
     "name": "Toboggan Walker Upgrade Gear Tier 1",
     "type": "Toboggan Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 5
+      "slots": 5
     }
   },
   {
@@ -36488,7 +36488,7 @@
     "name": "Toboggan Walker Upgrade Gear Tier 2",
     "type": "Toboggan Walker Upgrade Gear Tier 2",
     "upgradeInfo": {
-      "containerSlots": 10
+      "slots": 10
     }
   },
   {
@@ -36514,7 +36514,7 @@
     "name": "Toboggan Walker Upgrade Gear Tier 3",
     "type": "Toboggan Walker Upgrade Gear Tier 3",
     "upgradeInfo": {
-      "containerSlots": 15
+      "slots": 15
     }
   },
   {
@@ -36540,7 +36540,7 @@
     "name": "Toboggan Walker Upgrade Gear Tier 4",
     "type": "Toboggan Walker Upgrade Gear Tier 4",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -36682,7 +36682,7 @@
     "name": "Toboggan Walker Upgrade Torque Tier 1",
     "type": "Toboggan Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 750
+      "stackSize": 750
     }
   },
   {
@@ -36708,7 +36708,7 @@
     "name": "Toboggan Walker Upgrade Torque Tier 2",
     "type": "Toboggan Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 1300
+      "stackSize": 1300
     }
   },
   {
@@ -36734,7 +36734,7 @@
     "name": "Toboggan Walker Upgrade Torque Tier 3",
     "type": "Toboggan Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 2000
+      "stackSize": 2000
     }
   },
   {
@@ -36760,7 +36760,7 @@
     "name": "Toboggan Walker Upgrade Torque Tier 4",
     "type": "Toboggan Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 4000
+      "stackSize": 4000
     }
   },
   {
@@ -36786,7 +36786,7 @@
     "name": "Toboggan Walker Upgrade Water Tier 1",
     "type": "Toboggan Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 100
+      "stackSize": 100
     }
   },
   {
@@ -36812,7 +36812,7 @@
     "name": "Toboggan Walker Upgrade Water Tier 2",
     "type": "Toboggan Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 130
+      "stackSize": 130
     }
   },
   {
@@ -36838,7 +36838,7 @@
     "name": "Toboggan Walker Upgrade Water Tier 3",
     "type": "Toboggan Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 160
+      "stackSize": 160
     }
   },
   {
@@ -38004,7 +38004,7 @@
     "name": "Tusker Walker Upgrade Cargo Tier 1",
     "type": "Tusker Walker Upgrade Cargo Tier 1",
     "upgradeInfo": {
-      "containerSlots": 20
+      "slots": 20
     }
   },
   {
@@ -38026,7 +38026,7 @@
     "name": "Tusker Walker Upgrade Cargo Tier 2",
     "type": "Tusker Walker Upgrade Cargo Tier 2",
     "upgradeInfo": {
-      "containerSlots": 30
+      "slots": 30
     }
   },
   {
@@ -38052,7 +38052,7 @@
     "name": "Tusker Walker Upgrade Cargo Tier 3",
     "type": "Tusker Walker Upgrade Cargo Tier 3",
     "upgradeInfo": {
-      "containerSlots": 40
+      "slots": 40
     }
   },
   {
@@ -38078,7 +38078,7 @@
     "name": "Tusker Walker Upgrade Cargo Tier 4",
     "type": "Tusker Walker Upgrade Cargo Tier 4",
     "upgradeInfo": {
-      "containerSlots": 60
+      "slots": 60
     }
   },
   {
@@ -38202,7 +38202,7 @@
     "name": "Tusker Walker Upgrade Gear Tier 1",
     "type": "Tusker Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "containerSlots": 5
+      "slots": 5
     }
   },
   {
@@ -38420,7 +38420,7 @@
     "name": "Tusker Walker Upgrade Torque Tier 1",
     "type": "Tusker Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "maxWater": 1000
+      "stackSize": 1000
     }
   },
   {
@@ -38446,7 +38446,7 @@
     "name": "Tusker Walker Upgrade Torque Tier 2",
     "type": "Tusker Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
-      "maxWater": 2000
+      "stackSize": 2000
     }
   },
   {
@@ -38472,7 +38472,7 @@
     "name": "Tusker Walker Upgrade Torque Tier 3",
     "type": "Tusker Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
-      "maxWater": 3000
+      "stackSize": 3000
     }
   },
   {
@@ -38498,7 +38498,7 @@
     "name": "Tusker Walker Upgrade Torque Tier 4",
     "type": "Tusker Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
-      "maxWater": 4000
+      "stackSize": 4000
     }
   },
   {
@@ -38524,7 +38524,7 @@
     "name": "Tusker Walker Upgrade Water Tier 1",
     "type": "Tusker Walker Upgrade Water Tier 1",
     "upgradeInfo": {
-      "maxWater": 160
+      "stackSize": 160
     }
   },
   {
@@ -38550,7 +38550,7 @@
     "name": "Tusker Walker Upgrade Water Tier 2",
     "type": "Tusker Walker Upgrade Water Tier 2",
     "upgradeInfo": {
-      "maxWater": 360
+      "stackSize": 360
     }
   },
   {
@@ -38576,7 +38576,7 @@
     "name": "Tusker Walker Upgrade Water Tier 3",
     "type": "Tusker Walker Upgrade Water Tier 3",
     "upgradeInfo": {
-      "maxWater": 720
+      "stackSize": 720
     }
   },
   {
@@ -38602,7 +38602,7 @@
     "name": "Tusker Walker Upgrade Water Tier 4",
     "type": "Tusker Walker Upgrade Water Tier 4",
     "upgradeInfo": {
-      "maxWater": 1520
+      "stackSize": 1520
     }
   },
   {

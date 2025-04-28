@@ -17,12 +17,12 @@ const itemTemplate = require("../../templates/item");
 
 // Property mapping from source data to our internal model
 const PROPERTY_MAPPING = {
-	ContainerSlots: "containerSlots",
+	ContainerSlots: "slots",
 	EngineTorqueMultiplier: "engineTorqueMultiplier",
 	SprintingTorqueDiscount: "sprintingTorqueDiscount",
 	AdditionalParts: "additionalParts",
 	AdditionalSlots: "additionalSlots",
-	StackSizeOverride: "maxWater",
+	StackSizeOverride: "stackSize",
 	BonusHp: "bonusHp",
 };
 
