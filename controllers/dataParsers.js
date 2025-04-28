@@ -53,11 +53,6 @@ dataParser.parseName = (translator, name) => {
 	// Parse rig name if applicable
 	nameStr = dataParser.parseRigName(translator, nameStr);
 
-	// Special case for Nomad Walker
-	if (nameStr === "Nomad Walker") {
-		nameStr = "Nomad Spider Walker";
-	}
-
 	return nameStr.trim();
 };
 
