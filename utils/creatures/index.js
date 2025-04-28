@@ -44,6 +44,10 @@ function processCreatures(creatures) {
 	if (orphanCreatures.length > 0) {
 		const processedOrphanCreatures = orphanCreatures
 			.map((creature) => extractCategoryAndTier(creature))
+			.map((creature) => ({
+				...creature,
+				name: creature?.name.replaceAll("_", " ")
+			}))
 			.filter((creature) => creature.name && Object.keys(creature).length > 2);
 
 		processedCreatures = [...processedCreatures, ...processedOrphanCreatures];
@@ -108,7 +112,7 @@ async function exportIndividualCreatureFiles(creatures, exportFolder) {
 				originalName: translatedName !== creature?.name ? creature?.name : creature?.originalName
 			}
 
-			const snakeCaseName = convertToSnakeCase(translatedName);
+			const snakeCaseName = convertToSnakeCase(creature?.name);
 
 			try {
 				await fs.writeFile(
