@@ -8,7 +8,7 @@
 const fs = require("fs-extra");
 const fileParser = require("../controllers/fileParsers");
 const dataProcessor = require("./dataProcessor");
-
+const { convertToSnakeCase } = require("../utils/convertToSnakeCase.js");
 /**
  * Exports technology data to JSON files
  * @param {Array} techData - Processed technology data
@@ -230,24 +230,7 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
         drops: item?.drops,
       }
 
-      // Convert item name to snake_case and make it safe for filenames
-      // Ensure we're using the normalized name format with consistent handling
-      // of different formats (camelCase, hyphenated, spaced)
-      const normalizedName = item.name
-        .replace(/-/g, ' ')                   // Replace hyphens with spaces
-        .replace(/\s+/g, ' ')                 // Replace multiple spaces with a single space
-        .trim();                              // Trim leading/trailing spaces
-
-      // Log if we're normalizing a name that might have duplicates
-      if (normalizedName !== item.name) {
-        console.log(`Normalized filename: ${item.name} -> ${normalizedName}`);
-      }
-
-      const snakeCaseName = normalizedName
-        .toLowerCase()
-        .replace(/\s+/g, "_") // Replace spaces with underscores
-        .replace(/[^a-z0-9_]/g, "") // Remove any non-alphanumeric character except underscores
-        .replace(/_+/g, "_"); // Replace multiple underscores with a single one
+      const snakeCaseName = convertToSnakeCase(item.name);
 
       if (normalizedNameMap.has(snakeCaseName)) {
         const existingItem = normalizedNameMap.get(snakeCaseName);
