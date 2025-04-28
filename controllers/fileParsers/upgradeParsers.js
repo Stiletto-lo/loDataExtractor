@@ -22,7 +22,7 @@ const PROPERTY_MAPPING = {
 	SprintingTorqueDiscount: "sprintingTorqueDiscount",
 	AdditionalParts: "additionalParts",
 	AdditionalSlots: "additionalSlots",
-	StackSizeOverride: "stackSizeOverride",
+	StackSizeOverride: "maxWater",
 	BonusHp: "bonusHp",
 };
 
