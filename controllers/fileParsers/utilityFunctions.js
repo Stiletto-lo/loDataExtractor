@@ -30,6 +30,28 @@ class DataStore {
 		return this.items;
 	}
 
+	addItem(item) {
+		if (!item) {
+			throw new TypeError("Item must be defined");
+		}
+
+		const existingItem = this.items.find(
+			(existingItem) => existingItem.type === item.type,
+		);
+
+		if (!existingItem) {
+			this.items.push(item);
+			return;
+		}
+
+		const newItem = { ...existingItem, ...item, };
+
+		const existingItemIndex = this.items.indexOf(existingItem);
+		if (existingItemIndex > -1) {
+			this.items[existingItemIndex] = newItem;
+		}
+	}
+
 	setAllItems(items) {
 		if (!Array.isArray(items)) {
 			throw new TypeError("Items must be an array");
@@ -210,6 +232,8 @@ module.exports = {
 	extractItemByType: (type) => dataStore.extractItemByType(type),
 	getIngredientsFromItem: (inputs, key) =>
 		dataStore.getIngredientsFromItem(inputs, key),
+
+	addItem: (item) => dataStore.addItem(item),
 
 	// Tech operations
 	getTechData: () => dataStore.getTechData(),

@@ -21,6 +21,7 @@ const parsePlaceableData = (filePath) => {
 
 	if (jsonData?.[1]?.Type) {
 		const item = utilityFunctions.extractItemByType(jsonData[1].Type);
+
 		if (jsonData[1].Type.includes("Rig")) {
 			let rigName = null;
 			let wakerName = null;
@@ -140,9 +141,20 @@ const parsePlaceableData = (filePath) => {
 				);
 				item.translation = undefined;
 			}
+
+			if (jsonData[1].Properties?.Requirements?.RequiredUnlockable?.ObjectPath) {
+				let objectPath = jsonData[1].Properties.Requirements.RequiredUnlockable.ObjectPath;
+				if (typeof objectPath !== "string") {
+					objectPath = String(objectPath);
+				}
+				if (typeof objectPath === "string" && objectPath.length > 0) {
+					const unlockableType = dataParser.parseObjectPath(objectPath);
+					item.unlockable = translator.translateName(unlockableType);
+				}
+			}
 		}
 
-		utilityFunctions.getAllItems().push(item);
+		utilityFunctions.addItem(item);
 	}
 };
 

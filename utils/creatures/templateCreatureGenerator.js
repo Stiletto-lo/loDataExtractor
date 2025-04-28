@@ -82,7 +82,6 @@ function createCreaturesForOrphanedTemplates() {
     newCreature.notAssigned = true;
 
     newCreatures.push(newCreature);
-    console.debug(`Created new creature for orphaned template: ${newCreature.name}`);
   }
 
   console.info(`Created ${newCreatures.length} new creatures for orphaned templates`);

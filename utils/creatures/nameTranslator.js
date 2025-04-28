@@ -141,7 +141,6 @@ function translateCreatureName(name) {
 
     // If no explicit translation for base name, use automatic formatting
     const tierFormatted = formatTierName(name);
-    console.log(`Automatically formatted tier name ${name} to ${tierFormatted}`);
     return tierFormatted;
   }
 
@@ -149,7 +148,6 @@ function translateCreatureName(name) {
   // Check for patterns like Name_TX_AC, Name_TX (AC), Name (TX)_AC
   const combinedFormatted = formatCombinedPatterns(name);
   if (combinedFormatted !== name) {
-    console.log(`Formatted combined pattern name ${name} to ${combinedFormatted}`);
     return combinedFormatted;
   }
 
@@ -162,13 +160,11 @@ function translateCreatureName(name) {
     if (additionalTranslations[baseName]) {
       const translatedBase = additionalTranslations[baseName];
       const formattedName = `${translatedBase} (AC)`;
-      console.log(`Translating AC name ${name} to ${formattedName} (base name translation)`);
       return formattedName;
     }
 
     // If no explicit translation for base name, use automatic formatting
     const acFormatted = formatACName(name);
-    console.log(`Automatically formatted AC name ${name} to ${acFormatted}`);
     return acFormatted;
   }
 
@@ -193,7 +189,6 @@ function translateCreatureName(name) {
 
   for (const altName of alternativeNames) {
     if (additionalTranslations[altName]) {
-      console.log(`Found translation using alternative format ${altName} for ${name}`);
       return additionalTranslations[altName];
     }
   }

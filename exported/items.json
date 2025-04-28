@@ -83,16 +83,16 @@
     "learn": [
       "Trip Wire Trap",
       "Large Chest",
-      "ObsidianContainerLarge",
+      "Obsidian Canister",
       "Obsidian Pot",
       "Large Water Bag",
       "Crane",
       "Exoskeleton",
-      "ChestBaseMaintenance_T3",
-      "WallGiant",
+      "Maintenance Vault",
+      "Giant Wall",
       "Giant Wall Gate",
       "Giant Wall Packer",
-      "MountableNurr",
+      "Mountable Nurr",
       "Bed",
       "Barrier Base",
       "Barrier Gate",
@@ -126,10 +126,9 @@
       "Obsidian Machine",
       "Purification Station",
       "Advanced Stomping Station",
-      "Artisan Woodworking Station",
+      "Artificer Woodworking Station",
       "Advanced Windmill",
       "Artisan Fiberworking Station",
-      "Artificer Woodworking Station",
       "Blacksmith Station",
       "Camp Fire",
       "Crafting Bench",
@@ -183,13 +182,16 @@
     ],
     "name": "Advanced Fiberworking Station",
     "parent": "Fiberworking Station",
+    "translation": "Advanced Fiberworking Station",
     "type": "FiberworkingStation_T2_C",
     "description": "Advanced crafting station manufactures fabrics more efficiently.",
     "experiencieReward": 235,
+    "weight": 8.5,
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "Advanced Fiberworking Station"
   },
   {
     "category": "Crafting",
@@ -217,13 +219,16 @@
     ],
     "name": "Advanced Furnace",
     "parent": "Furnace",
+    "translation": "Advanced Furnace",
     "type": "Furnace_T2_C",
     "description": "Advanced crafting station smelts raw ore into refined metal.",
     "experiencieReward": 36,
+    "weight": 15,
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
-    }
+    },
+    "unlockable": "Advanced Furnace"
   },
   {
     "name": "Advanced Potions",
@@ -281,13 +286,16 @@
     ],
     "name": "Advanced Stomping Station",
     "parent": "Stomping Station",
+    "translation": "Advanced Stomping Station",
     "type": "StompingStation_T2_C",
     "description": "Basic crafting station simulates the blunt force of a foot to crush vegetables and soft minerals. An important tool for nomads who must always keep their feet in top condition.",
     "experiencieReward": 125,
+    "weight": 4.83,
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "Advanced Stomping Station"
   },
   {
     "name": "Advanced Tools",
@@ -527,10 +535,10 @@
       "Hose Station",
       "Rokker",
       "Gun Pod Shell",
-      "GunpodStinger",
+      "Gunpod Stinger",
       "Sawblade",
       "Tall Stinger",
-      "GunPodScattershotGun"
+      "Small Scattershot Gun"
     ]
   },
   {
@@ -601,7 +609,8 @@
     "structureInfo": {
       "type": "Reinforced",
       "hp": 2500
-    }
+    },
+    "unlockable": "Windmill_T2"
   },
   {
     "category": "Crafting",
@@ -633,13 +642,16 @@
     ],
     "name": "Advanced Woodworking Station",
     "parent": "Woodworking Station",
+    "translation": "Advanced Woodworking Station",
     "type": "WoodworkingStation_T2_C",
     "description": "Advanced crafting station unlocks new available recipes and cuts wood more efficiently.",
     "experiencieReward": 149,
+    "weight": 12,
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "Advanced Woodworking Station"
   },
   {
     "category": "Resources",
@@ -784,13 +796,16 @@
     ],
     "name": "Ammo Chest",
     "parent": "Small Chest",
+    "translation": "Ammo Chest",
     "type": "ChestAmmo_C",
     "description": "When placed on a walker, weapons will use the ammo from the chest to reload. Placing in a base will only allow to store ammo.",
     "experiencieReward": 32,
+    "weight": 5.8,
     "structureInfo": {
       "type": "Soft",
       "hp": 3750
-    }
+    },
+    "unlockable": "Ammo Chest"
   },
   {
     "category": "Containers",
@@ -822,13 +837,16 @@
     ],
     "name": "Ammo Scroll Rack",
     "parent": "Ammo Chest",
+    "translation": "Ammo Scroll Rack",
     "type": "AmmoScrollRack_C",
     "description": "Store all of your ammunition schematics.",
     "experiencieReward": 50,
+    "weight": 23,
     "structureInfo": {
       "hp": 750
     },
-    "onlyDevs": true
+    "onlyDevs": true,
+    "unlockable": "Ammo Scroll Rack"
   },
   {
     "category": "Tools",
@@ -900,14 +918,17 @@
         ]
       }
     ],
-    "name": "Anti Personnel Turret",
+    "name": "Anti-Personnel Turret",
     "parent": "Improved Walker Weapons",
+    "translation": "Anti-Personnel Turret",
     "type": "AntiPersonnelTurret_C",
     "experiencieReward": 100,
+    "weight": 30,
     "structureInfo": {
       "type": "Medium",
       "hp": 500
-    }
+    },
+    "unlockable": "AntiPersonnelTurret"
   },
   {
     "category": "Resources",
@@ -966,7 +987,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -992,7 +1014,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "crafting": [
@@ -1208,13 +1231,16 @@
     ],
     "name": "Artificer Woodworking Station",
     "parent": "Advanced Woodworking Station",
+    "translation": "Artificer Woodworking Station",
     "type": "WoodworkingStation_T3_C",
     "description": "Artificer crafting station unlocks all available recipes and is the most efficient woodworking station.",
     "experiencieReward": 300,
+    "weight": 14,
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
-    }
+    },
+    "unlockable": "Artisan Woodworking Station"
   },
   {
     "category": "Crafting",
@@ -1242,13 +1268,16 @@
     ],
     "name": "Artisan Fiberworking Station",
     "parent": "Advanced Fiberworking Station",
+    "translation": "Artisan Fiberworking Station",
     "type": "FiberworkingStation_T3_C",
     "description": "Craft the highest quality textiles and wearables.",
     "experiencieReward": 235,
+    "weight": 8.5,
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "Artisan Fiberworking Station"
   },
   {
     "category": "Walker Tools",
@@ -1293,7 +1322,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 7000
-    }
+    },
+    "unlockable": "Soil Excavator"
   },
   {
     "category": "Resources",
@@ -1388,13 +1418,16 @@
     ],
     "name": "Automaton",
     "parent": "Improved Walker Weapons",
+    "translation": "Automaton",
     "type": "Automaton_C",
     "description": "A remote-controlled mechanical tool that can handle mounted weapons.",
     "experiencieReward": 78,
+    "weight": 1500,
     "structureInfo": {
       "type": "Soft",
       "hp": 100
-    }
+    },
+    "unlockable": "Automaton"
   },
   {
     "category": "Armors",
@@ -1460,15 +1493,18 @@
     ],
     "name": "Balang Walker",
     "parent": "Dinghy Walker",
+    "translation": "Balang Walker",
     "type": "Balang_C",
     "description": "Founder Walker type of the smallest size and least protection. Allows to pack and carry a base made of heavy solid materials.",
+    "weight": 29.44,
     "structureInfo": {
       "type": "Solid",
       "hp": 150000
     },
     "walkerinfo": {
       "category": "Small"
-    }
+    },
+    "unlockable": "Balang Walker"
   },
   {
     "category": "Walker Parts",
@@ -1494,7 +1530,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 5000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T1"
   },
   {
     "category": "Schematics",
@@ -1529,7 +1566,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
-    }
+    },
+    "unlockable": "WalkerPartsBase_T2"
   },
   {
     "category": "Walker Parts",
@@ -1559,7 +1597,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T2"
   },
   {
     "category": "Weapons",
@@ -1583,13 +1622,16 @@
     ],
     "name": "Ballista",
     "parent": "Basic Walker Weapons",
+    "translation": "Ballista",
     "type": "Ballista_C",
     "description": "Ballista shoots bolts or tethering harpoons that attach to walkers and the environment.",
     "experiencieReward": 78,
+    "weight": 50,
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
-    }
+    },
+    "unlockable": "Ballista"
   },
   {
     "category": "Weapons",
@@ -1624,7 +1666,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 2500
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Weapons",
@@ -1659,7 +1702,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3500
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Weapons",
@@ -1690,7 +1734,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Furniture",
@@ -1716,7 +1761,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -1742,7 +1788,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -1768,7 +1815,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Defenses",
@@ -1792,13 +1840,16 @@
     ],
     "name": "Barrier Base",
     "parent": "Advanced Constructions",
+    "translation": "Barrier Base",
     "type": "WalkerBarrierBase_C",
     "description": "Obstructs walkers from passing through.",
     "experiencieReward": 34,
+    "weight": 1,
     "structureInfo": {
       "type": "Soft",
       "hp": 10000
-    }
+    },
+    "unlockable": "Barrier Base"
   },
   {
     "category": "Defenses",
@@ -1822,13 +1873,16 @@
     ],
     "name": "Barrier Gate",
     "parent": "Barrier Base",
+    "translation": "Barrier Gate",
     "type": "WalkerBarrierGate_C",
     "description": "Obstructs walkers from passing through.",
     "experiencieReward": 34,
+    "weight": 1,
     "structureInfo": {
       "type": "Soft",
       "hp": 12000
-    }
+    },
+    "unlockable": "Barrier Gate"
   },
   {
     "category": "Defenses",
@@ -1852,13 +1906,15 @@
     ],
     "name": "Barrier Plank",
     "parent": "Barrier Base",
+    "translation": "Barrier Plank",
     "type": "WalkerBarrierTopPlace_C",
     "description": "Obstructs walkers from passing through.",
     "experiencieReward": 78,
     "structureInfo": {
       "type": "Soft",
       "hp": 12000
-    }
+    },
+    "unlockable": "Barrier Plank"
   },
   {
     "category": "Containers",
@@ -1903,7 +1959,8 @@
     "weight": 146.1,
     "structureInfo": {
       "hp": 1500
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Walker Parts",
@@ -1938,13 +1995,16 @@
     ],
     "name": "Base Maintenance Chest",
     "parent": "Maintenance Box",
+    "translation": "Base Maintenance Chest",
     "type": "ChestBaseMaintenance_T2_C",
     "description": "A requirement for every Nomad's base. Prevents a base decaying over time with sufficient resources inside. Requires each resource a base is made of to properly maintain it.",
     "experiencieReward": 32,
+    "weight": 5,
     "structureInfo": {
       "type": "Medium",
       "hp": 5000
-    }
+    },
+    "unlockable": "ChestBaseMaintenance_T2"
   },
   {
     "category": "Spare Parts",
@@ -2286,7 +2346,8 @@
     "weight": 1,
     "structureInfo": {
       "hp": 50
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -2312,7 +2373,8 @@
     "weight": 1,
     "structureInfo": {
       "hp": 50
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -2338,7 +2400,8 @@
     "weight": 1,
     "structureInfo": {
       "hp": 50
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Armors",
@@ -2507,13 +2570,16 @@
     ],
     "name": "Battle Fan",
     "parent": "Flotillian Walker Weapons",
+    "translation": "Battle Fan",
     "type": "BattleFan_C",
     "description": "Recent Flotillian invention allows nomads to manipulate the air by sucking and blowing. Although created to move and store gas clouds, it can also push nomads as well as a walker it's built on using a powerful Superblow.",
     "experiencieReward": 78,
+    "weight": 50,
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
-    }
+    },
+    "unlockable": "Battle Fan"
   },
   {
     "category": "Clay",
@@ -2544,7 +2610,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 20000
-    }
+    },
+    "unlockable": "ClayWalls"
   },
   {
     "category": "Concrete",
@@ -2579,7 +2646,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 40000
-    }
+    },
+    "unlockable": "ConcreteWalls"
   },
   {
     "category": "Walkers",
@@ -2603,12 +2671,15 @@
     ],
     "name": "Battleship Walker",
     "parent": "Flotillian Walkers",
+    "translation": "Battleship Walker",
     "type": "Battleship_C",
+    "weight": 101.84,
     "structureInfo": {
       "type": "Hard",
       "hp": 80000
     },
-    "onlyDevs": true
+    "onlyDevs": true,
+    "unlockable": "Battleship Walker"
   },
   {
     "category": "Walker Parts",
@@ -2637,7 +2708,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 18000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T4"
   },
   {
     "category": "Walker Parts",
@@ -2666,7 +2738,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 27000
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Walker Parts",
@@ -2695,7 +2768,8 @@
     "structureInfo": {
       "type": "Reinforced",
       "hp": 34200
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -2719,7 +2793,8 @@
     "weight": 9.75,
     "structureInfo": {
       "hp": 1350
-    }
+    },
+    "unlockable": "WalkerPartsBase_T4"
   },
   {
     "category": "Walker Parts",
@@ -2744,7 +2819,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3750
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -2769,7 +2845,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3375
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -2794,7 +2871,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 2250
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "name": "Bearing",
@@ -2861,13 +2939,16 @@
     ],
     "name": "Bed",
     "parent": "Hammock",
+    "translation": "Bed",
     "type": "Bed_C",
     "description": "Comfortable bed with a big water container to hold multiple respawns.",
     "experiencieReward": 155,
+    "weight": 33,
     "structureInfo": {
       "type": "Soft",
       "hp": 800
-    }
+    },
+    "unlockable": "Bed"
   },
   {
     "category": "Resources",
@@ -2932,7 +3013,8 @@
     "weight": 73,
     "structureInfo": {
       "hp": 600
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Crafting",
@@ -2960,12 +3042,15 @@
     ],
     "name": "Blacksmith Station",
     "parent": "Crafting Bench",
+    "translation": "Blacksmith Station",
     "type": "SmithingStation_C",
     "experiencieReward": 125,
+    "weight": 25,
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
-    }
+    },
+    "unlockable": "SmithingStation"
   },
   {
     "category": "Resources",
@@ -3042,7 +3127,8 @@
     "weight": 11.38,
     "structureInfo": {
       "hp": 500
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Defenses",
@@ -3062,13 +3148,16 @@
     ],
     "name": "Bomb Chest Trap",
     "parent": "Ammo Chest",
+    "translation": "Bomb Chest Trap",
     "type": "TrapBombChest_C",
     "description": "Looks like a normal chest, feels like an explosion. Booby trap this chest with any type of bomb.",
     "experiencieReward": 78,
+    "weight": 10,
     "structureInfo": {
       "type": "Soft",
       "hp": 200
-    }
+    },
+    "unlockable": "Bomb Chest Trap"
   },
   {
     "category": "Weapons",
@@ -3374,7 +3463,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 50
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Resources",
@@ -3725,7 +3815,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 50
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Weapons",
@@ -3799,7 +3890,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 300
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Liquids",
@@ -3947,15 +4039,18 @@
     ],
     "name": "Buffalo Walker",
     "parent": "Stiletto Walker",
+    "translation": "Buffalo Walker",
     "type": "Buffalo_C",
     "description": "Before the Flotilla grew too large and switched to manpower, hundreds of buffalo walkers were used to tow the Flotilla on days there was no breeze. Named after an ancient beast, the buffalo's wide frame, ample deck space, and good maneuverability make it suited for almost any task.",
+    "weight": 29.44,
     "structureInfo": {
       "type": "Hard",
       "hp": 40000
     },
     "walkerinfo": {
       "category": "Large"
-    }
+    },
+    "unlockable": "Buffalo Walker"
   },
   {
     "category": "Walker Parts",
@@ -3985,7 +4080,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 4800
-    }
+    },
+    "unlockable": "WalkerPartsBase_T3"
   },
   {
     "category": "Walker Parts",
@@ -4019,7 +4115,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 5760
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -4053,7 +4150,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 6912
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Schematics",
@@ -4114,7 +4212,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 8600
-    }
+    },
+    "unlockable": "WalkerPartsBase_T3"
   },
   {
     "category": "Walker Parts",
@@ -4147,7 +4246,8 @@
     "weight": 9.75,
     "structureInfo": {
       "hp": 11500
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -4177,7 +4277,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 12500
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -4207,7 +4308,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 9600
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -4237,7 +4339,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 10200
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -4267,7 +4370,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 14000
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -4301,7 +4405,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 9200
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -4331,7 +4436,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 8800
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Resources",
@@ -4403,7 +4509,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 200
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -4429,7 +4536,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 250
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -4455,7 +4563,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 250
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "name": "Cam",
@@ -4504,17 +4613,20 @@
         ]
       }
     ],
-    "name": "Camelop Walker",
+    "name": "Camelop  Walker",
     "parent": "Hercul Walker",
+    "translation": "Camelop  Walker",
     "type": "Camelop_C",
     "description": "Being able to pump water and lava out of lakes, while storing large amounts of liquid, makes this walker an essential tool in various mass productions. Uses torque to move and while pumping.",
+    "weight": 29.44,
     "structureInfo": {
       "type": "BlueprintGeneratedClassCamelopLegsDamageOverride_C'",
       "hp": 13000
     },
     "walkerinfo": {
       "category": "Large"
-    }
+    },
+    "unlockable": "Camelop Walker"
   },
   {
     "category": "Walker Parts",
@@ -4544,7 +4656,8 @@
     "structureInfo": {
       "type": "BlueprintGeneratedClassCamelopLegsDamageOverride_C'",
       "hp": 7000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T3"
   },
   {
     "category": "Schematics",
@@ -4552,7 +4665,7 @@
     "type": "CamelopSchematic_C",
     "stackSize": 100,
     "learn": [
-      "Camelop Walker"
+      "Camelop  Walker"
     ]
   },
   {
@@ -4577,13 +4690,16 @@
     ],
     "name": "Camp Fire",
     "parent": "Crafting",
+    "translation": "Camp Fire",
     "type": "CampFire_C",
     "description": "Basic crafting station can formulate new liquids and vitamins, in addition to other useful items.",
     "experiencieReward": 18,
+    "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
       "hp": 500
-    }
+    },
+    "unlockable": "Camp Fire"
   },
   {
     "category": "Armors",
@@ -4737,7 +4853,8 @@
     "weight": 0.2,
     "structureInfo": {
       "hp": 30
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -4763,7 +4880,8 @@
     "weight": 0.2,
     "structureInfo": {
       "hp": 30
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Weapons",
@@ -4799,13 +4917,16 @@
     ],
     "name": "Catapult",
     "parent": "Advanced Walker Weapons",
+    "translation": "Catapult",
     "type": "Catapult_C",
     "description": "Launches boulders and bombs extremely far distances. Effective against fortified structures.",
     "experiencieReward": 188,
+    "weight": 100,
     "structureInfo": {
       "type": "Hard",
       "hp": 7000
-    }
+    },
+    "unlockable": "Catapult"
   },
   {
     "category": "Ammo",
@@ -4881,13 +5002,16 @@
     ],
     "name": "Cauterizing Station",
     "parent": "Camp Fire",
+    "translation": "Cauterizing Station",
     "type": "CauterizingStation_C",
     "description": "Quickly heals by cauterizing fresh wounds. Requires a vitamin to be added in order to work.",
     "experiencieReward": 340,
+    "weight": 73,
     "structureInfo": {
       "type": "Soft",
       "hp": 500
-    }
+    },
+    "unlockable": "Cauterizing Station"
   },
   {
     "name": "Celestial Tablet",
@@ -5401,7 +5525,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -5428,7 +5553,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -5455,7 +5581,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 250
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Ammo",
@@ -5932,7 +6059,8 @@
     "weight": 1,
     "structureInfo": {
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -5958,7 +6086,8 @@
     "weight": 1,
     "structureInfo": {
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Resources",
@@ -6035,13 +6164,15 @@
     ],
     "name": "Clay Pot",
     "parent": "Clay",
+    "translation": "Clay Pot",
     "type": "ClayPot_C",
     "description": "Campfires are good enough for basic cooking, but when a Nomad wants to prepare something more sophisticated, they need a more suitable pot for it.",
     "experiencieReward": 40,
     "structureInfo": {
       "type": "Soft",
       "hp": 500
-    }
+    },
+    "unlockable": "Clay Pot"
   },
   {
     "name": "Clay Walls",
@@ -6142,7 +6273,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 500
-    }
+    },
+    "unlockable": "Sand Structures"
   },
   {
     "category": "Ammo",
@@ -6232,15 +6364,18 @@
     ],
     "name": "Cobra Walker",
     "parent": "Camelop Walker",
+    "translation": "Cobra Walker",
     "type": "Cobra_C",
     "description": "Mobile shooting tower operated automatically with wooden machinery that shoots enemy weapons nearby. Requires deployment to shoot, which blocks its steering.",
+    "weight": 29.44,
     "structureInfo": {
       "type": "Hard",
       "hp": 14950
     },
     "walkerinfo": {
       "category": "Medium"
-    }
+    },
+    "unlockable": "Cobra Walker"
   },
   {
     "category": "Walker Parts",
@@ -6270,7 +6405,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 1500
-    }
+    },
+    "unlockable": "WalkerPartsBase_T3"
   },
   {
     "category": "Schematics",
@@ -6446,7 +6582,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 20000
-    }
+    },
+    "unlockable": "ClayWalls"
   },
   {
     "category": "Resources",
@@ -6491,13 +6628,16 @@
     ],
     "name": "Crafting Bench",
     "parent": "Woodworking Station",
+    "translation": "Crafting Bench",
     "type": "CraftingBench_C",
     "description": "The crafting bench produces tools, weapons, armors and ammunition that require a fair amount of skills for their creation.",
     "experiencieReward": 85,
+    "weight": 7,
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
-    }
+    },
+    "unlockable": "Crafting Bench"
   },
   {
     "category": "Resources",
@@ -6559,13 +6699,16 @@
     ],
     "name": "Crane",
     "parent": "Advanced Constructions",
+    "translation": "Crane",
     "type": "Crane_C",
     "description": "Pick up and move heavy objects like firefly walkers and tree logs.",
     "experiencieReward": 78,
+    "weight": 100,
     "structureInfo": {
       "type": "Soft",
       "hp": 9000
-    }
+    },
+    "unlockable": "Crane"
   },
   {
     "category": "Ammo",
@@ -6607,7 +6750,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 200
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -6633,7 +6777,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 200
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Weapons",
@@ -6721,13 +6866,15 @@
     ],
     "name": "Curing Station",
     "parent": "Fiberworking Station",
+    "translation": "Curing Station",
     "type": "CuringStation_C",
     "description": "Combination of a simple alchemical station and a tanning rack that allows processing and curing of various resources.",
     "experiencieReward": 40,
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
-    }
+    },
+    "unlockable": "Curing Station"
   },
   {
     "category": "Armors",
@@ -6763,7 +6910,8 @@
     "type": "Decal_01_C",
     "structureInfo": {
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "name": "Decals",
@@ -6805,13 +6953,16 @@
     ],
     "name": "Defensive Tower",
     "parent": "WoodenWalls",
+    "translation": "Defensive Tower",
     "type": "DefensiveTower_C",
     "description": "Build weapons on the tower to protect your territory. Relatively cheap and easy to build.",
     "experiencieReward": 32,
+    "weight": 145,
     "structureInfo": {
       "type": "Soft",
       "hp": 7500
-    }
+    },
+    "unlockable": "Defensive Tower"
   },
   {
     "category": "Resources",
@@ -6918,7 +7069,8 @@
     "structureInfo": {
       "type": "Reinforced",
       "hp": 10000
-    }
+    },
+    "unlockable": "WoodenWalls"
   },
   {
     "category": "Walkers",
@@ -6950,15 +7102,18 @@
     ],
     "name": "Dinghy Walker",
     "parent": "Firefly Walker",
+    "translation": "Dinghy Walker",
     "type": "Dinghy_C",
     "description": "Before the nomadic Flotillans had become aware of the route they needed to take to circumnavigate the planet efficiently, many of them died in the process of locating safe passage. These crudely constructed wind-powered walkers were first devised as scouting vessels because of their cheap cost and the high likelihood that a Nomad would not return. This walker has ample deck space for two Nomads.",
+    "weight": 29.44,
     "structureInfo": {
       "type": "Hard",
       "hp": 6000
     },
     "walkerinfo": {
       "category": "Small"
-    }
+    },
+    "unlockable": "Dinghy Walker"
   },
   {
     "category": "Walker Parts",
@@ -6984,7 +7139,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 1200
-    }
+    },
+    "unlockable": "WalkerPartsBase_T1"
   },
   {
     "category": "Schematics",
@@ -7041,7 +7197,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T1"
   },
   {
     "category": "Walker Parts",
@@ -7079,7 +7236,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3300
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T1"
   },
   {
     "category": "Liquids",
@@ -7137,15 +7295,18 @@
     ],
     "name": "Domus Walker",
     "parent": "Mollusk Walker",
+    "translation": "Domus Walker",
     "type": "Domus_C",
     "description": "Heavily protected with strong walls all around, Domus Walkers are often used to safely transport large numbers of nomads. While slow and difficult to handle, they can withstand massive damages, ensuring structural integrity during battles and defending everything inside.",
+    "weight": 34.02,
     "structureInfo": {
       "type": "Hard",
       "hp": 65000
     },
     "walkerinfo": {
       "category": "Capital"
-    }
+    },
+    "unlockable": "Domus Walker"
   },
   {
     "category": "Walker Parts",
@@ -7175,7 +7336,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 8000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T4"
   },
   {
     "category": "Walker Parts",
@@ -7209,7 +7371,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 9600
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Walker Parts",
@@ -7243,7 +7406,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 11520
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Schematics",
@@ -7300,7 +7464,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T4"
   },
   {
     "category": "Walker Parts",
@@ -7334,7 +7499,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 6700
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Walker Parts",
@@ -7364,7 +7530,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3750
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -7394,7 +7561,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 4100
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -7428,7 +7596,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 6200
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -7462,7 +7631,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 8500
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -7496,7 +7666,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 5500
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Walker Parts",
@@ -7526,7 +7697,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3700
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Clay",
@@ -7557,7 +7729,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 20000
-    }
+    },
+    "unlockable": "ClayWalls"
   },
   {
     "category": "Wood: heavy",
@@ -7588,7 +7761,8 @@
     "structureInfo": {
       "type": "Reinforced",
       "hp": 40000
-    }
+    },
+    "unlockable": "HeavyWalls"
   },
   {
     "category": "Tools",
@@ -7728,12 +7902,15 @@
     ],
     "name": "Dyeing Station",
     "parent": "Crafting",
+    "translation": "Dyeing Station",
     "type": "DyeingStation_C",
     "description": "Bizarre construction that lets you dye your gear.",
+    "weight": 35,
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
-    }
+    },
+    "unlockable": "Dyeing Station"
   },
   {
     "category": "Resources",
@@ -7966,13 +8143,16 @@
     ],
     "name": "Exoskeleton",
     "parent": "Advanced Constructions",
+    "translation": "Exoskeleton",
     "type": "Exoskeleton_C",
     "description": "Using darts to shoot,  this feat of engineering was created on the Flotilla and can be packed into Walker Packing Compartments. Protects nomads wearing them and allows to carry and operate heavy weapons and tools.",
     "experiencieReward": 80,
+    "weight": 80,
     "structureInfo": {
       "type": "Soft",
       "hp": 3500
-    }
+    },
+    "unlockable": "Exoskeleton"
   },
   {
     "category": "Ammo",
@@ -8092,15 +8272,18 @@
     ],
     "name": "Falco Walker",
     "parent": "Stiletto Walker",
+    "translation": "Falco Walker",
     "type": "Falco_C",
     "description": "It's streamlined shape is built for speed, making it a favorite among pirates. It's elevated deck doesn't sport much space for large weapons, but it's height allows for easy boarding of other walkers. Dedicated rear-facing spots for Gun Pods make it easy to fire projectiles at pursuers.",
+    "weight": 34.02,
     "structureInfo": {
       "type": "Hard",
       "hp": 38000
     },
     "walkerinfo": {
       "category": "Large"
-    }
+    },
+    "unlockable": "Falco Walker"
   },
   {
     "category": "Walker Parts",
@@ -8134,7 +8317,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 5000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T3"
   },
   {
     "category": "Walker Parts",
@@ -8172,7 +8356,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 6000
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -8206,7 +8391,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 7200
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Schematics",
@@ -8267,7 +8453,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 8850
-    }
+    },
+    "unlockable": "WalkerPartsBase_T3"
   },
   {
     "category": "Walker Parts",
@@ -8301,7 +8488,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 11300
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -8331,7 +8519,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 15000
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -8361,7 +8550,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 9500
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -8395,7 +8585,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 10000
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -8425,7 +8616,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 13500
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -8459,7 +8651,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 9250
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -8493,7 +8686,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 8600
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Defenses",
@@ -8527,7 +8721,8 @@
     "weight": 10,
     "structureInfo": {
       "hp": 35
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Crafting",
@@ -8550,7 +8745,8 @@
     "type": "FarmableArea_C",
     "description": "Grow your own trees from seeds overnight with the help of some Nibiran fertilizer.",
     "experiencieReward": 100,
-    "weight": 1000
+    "weight": 1000,
+    "unlockable": "DevOnly"
   },
   {
     "category": "Grappling Hooks",
@@ -8676,7 +8872,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -8702,7 +8899,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -8728,7 +8926,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -8754,7 +8953,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -8780,7 +8980,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -8806,7 +9007,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Armors",
@@ -9234,13 +9436,16 @@
     ],
     "name": "Fiberworking Station",
     "parent": "Crafting",
+    "translation": "Fiberworking Station",
     "type": "FiberworkingStation_C",
     "description": "Basic crafting station manufactures fabrics for walker sails and armors.",
     "experiencieReward": 36,
+    "weight": 5,
     "structureInfo": {
       "type": "Soft",
       "hp": 900
-    }
+    },
+    "unlockable": "Fiberworking Station"
   },
   {
     "category": "Resources",
@@ -9463,7 +9668,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 300
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Weapons",
@@ -9512,15 +9718,18 @@
     ],
     "name": "Firefly Walker",
     "parent": "Spider Walker",
+    "translation": "Firefly Walker",
     "type": "Firefly_C",
     "description": "A pedal-powered walker that nomads build when they want to begin their journey. Has a small deck and can be upgraded by building wings.",
+    "weight": 6.42,
     "structureInfo": {
       "type": "Hard",
       "hp": 9750
     },
     "walkerinfo": {
       "category": "Small"
-    }
+    },
+    "unlockable": "Firefly Walker"
   },
   {
     "category": "Walker Parts",
@@ -9546,7 +9755,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 500
-    }
+    },
+    "unlockable": "WalkerPartsBase_T1"
   },
   {
     "category": "Schematics",
@@ -9604,7 +9814,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
-    }
+    },
+    "unlockable": "WalkerPartsBase_T1"
   },
   {
     "category": "Resources",
@@ -10046,7 +10257,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -10072,7 +10284,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -10098,7 +10311,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -10124,7 +10338,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -10150,7 +10365,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -10176,7 +10392,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -10202,7 +10419,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "name": "Flare - blue",
@@ -10506,7 +10724,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 20000
-    }
+    },
+    "unlockable": "ClayWalls"
   },
   {
     "category": "Grappling Hooks",
@@ -10598,7 +10817,7 @@
     "type": "Constructions_T4Schematic_C",
     "stackSize": 100,
     "learn": [
-      "ChestGigantic"
+      "Gigantic Chest"
     ]
   },
   {
@@ -10622,8 +10841,8 @@
     "stackSize": 100,
     "learn": [
       "Advanced Furnace",
-      "SmithingStation",
-      "Artisan Stomping Station",
+      "Blacksmith Station",
+      "Flotillian Stomping Station",
       "Quarry",
       "Lumbermill"
     ]
@@ -10681,13 +10900,16 @@
     ],
     "name": "Flotillian Stomping Station",
     "parent": "Advanced Stomping Station",
+    "translation": "Flotillian Stomping Station",
     "type": "StompingStation_T3_C",
     "description": "Basic crafting station simulates the blunt force of a foot to crush vegetables and soft minerals. An important tool for nomads who must always keep their feet in top condition.",
     "experiencieReward": 125,
+    "weight": 4.83,
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "Artisan Stomping Station"
   },
   {
     "name": "Flotillian Tools",
@@ -10731,8 +10953,8 @@
     "stackSize": 100,
     "learn": [
       "Battle Fan",
-      "GunPodShell_T2",
-      "Sawblade_T2"
+      "Gun Pod Plating",
+      "Long Sawblade"
     ]
   },
   {
@@ -11074,7 +11296,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 20000
-    }
+    },
+    "unlockable": "ClayWalls"
   },
   {
     "category": "Knowledge",
@@ -11332,13 +11555,16 @@
     ],
     "name": "Furnace",
     "parent": "Clay",
+    "translation": "Furnace",
     "type": "Furnace_C",
     "description": "Advanced crafting station smelts raw ore into refined metal.",
     "experiencieReward": 36,
+    "weight": 9.5,
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
-    }
+    },
+    "unlockable": "Furnace"
   },
   {
     "name": "Furniture",
@@ -11505,7 +11731,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 9000
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Spare Parts",
@@ -11580,13 +11807,16 @@
     ],
     "name": "Giant Wall",
     "parent": "Advanced Constructions",
+    "translation": "Giant Wall",
     "type": "WallGiant_C",
     "description": "(CAN BE BUILT ONLY BY CLAIM OWNERS) Sturdy walls of a massive size used by groups of nomads to defend their territory against walker attacks. Can be packed into a Giant Wall Packer.",
     "experiencieReward": 40,
+    "weight": 20,
     "structureInfo": {
       "type": "Reinforced",
       "hp": 100000
-    }
+    },
+    "unlockable": "WallGiant"
   },
   {
     "category": "Defenses",
@@ -11617,7 +11847,8 @@
     "structureInfo": {
       "type": "Reinforced",
       "hp": 80000
-    }
+    },
+    "unlockable": "WallGiant"
   },
   {
     "category": "Defenses",
@@ -11648,7 +11879,8 @@
     "structureInfo": {
       "type": "Reinforced",
       "hp": 25000
-    }
+    },
+    "unlockable": "WallGiant"
   },
   {
     "category": "Containers",
@@ -11672,13 +11904,16 @@
     ],
     "name": "Gigantic Chest",
     "parent": "Large Chest",
+    "translation": "Gigantic Chest",
     "type": "ChestGigantic_C",
     "description": "Stack size: 500. An extremely strong chest with a very large amount of inventory space. Items are protected unless the chest is severely damaged.",
     "experiencieReward": 32,
+    "weight": 12,
     "structureInfo": {
       "type": "Medium",
       "hp": 23437.5
-    }
+    },
+    "unlockable": "ChestGigantic"
   },
   {
     "name": "Glass",
@@ -11712,13 +11947,16 @@
     ],
     "name": "Grappling Belt Charging Station",
     "parent": "Construction",
+    "translation": "Grappling Belt Charging Station",
     "type": "GrapplingBeltChargingStation_C",
     "description": "Generate torque manually. Requires nomads to wear a torque belt while using.",
     "experiencieReward": 304,
+    "weight": 60,
     "structureInfo": {
       "type": "Soft",
       "hp": 200
-    }
+    },
+    "unlockable": "Grappling Belt Charging Station"
   },
   {
     "category": "Ammo",
@@ -11783,7 +12021,8 @@
     "weight": 1,
     "structureInfo": {
       "hp": 400
-    }
+    },
+    "unlockable": "WoodenWalls"
   },
   {
     "category": "Weapons",
@@ -11811,13 +12050,16 @@
     ],
     "name": "Gun Pod",
     "parent": "Advanced Walker Weapons",
+    "translation": "Gun Pod",
     "type": "GunPod_C",
     "description": "A rotating pod made to attach below walker decks. Houses a single weapon.",
     "experiencieReward": 34,
+    "weight": 22,
     "structureInfo": {
       "type": "Soft",
       "hp": 3500
-    }
+    },
+    "unlockable": "Gun Pod"
   },
   {
     "category": "Weapons",
@@ -11841,9 +12083,12 @@
     ],
     "name": "Gun Pod Plating",
     "parent": "Gun Pod Shell",
+    "translation": "Gun Pod Plating",
     "type": "GunPodShell_T2_C",
     "description": "Attach heavy armor plating to the gun pod to make it safer from attack.",
-    "experiencieReward": 34
+    "experiencieReward": 34,
+    "weight": 38,
+    "unlockable": "GunPodShell_T2"
   },
   {
     "category": "Weapons",
@@ -11867,9 +12112,12 @@
     ],
     "name": "Gun Pod Shell",
     "parent": "Gun Pod",
+    "translation": "Gun Pod Shell",
     "type": "GunPodShell_C",
     "description": "Attach a light shell of armor to the gun pod to make it safer from attack.",
-    "experiencieReward": 34
+    "experiencieReward": 34,
+    "weight": 26,
+    "unlockable": "Gun Pod Shell"
   },
   {
     "name": "Gun Pods",
@@ -11902,9 +12150,12 @@
     ],
     "name": "Gunpod Stinger",
     "parent": "Gun Pod",
+    "translation": "Gunpod Stinger",
     "type": "GunpodStinger_C",
     "description": "Miniature version of a ballista that fits inside a gun pod.",
-    "experiencieReward": 78
+    "experiencieReward": 78,
+    "weight": 11.41,
+    "unlockable": "GunpodStinger"
   },
   {
     "category": "Interactables",
@@ -11932,13 +12183,16 @@
     ],
     "name": "Hammock",
     "parent": "Sand Bed",
+    "translation": "Hammock",
     "type": "BedHammock_C",
     "description": "A simple bed with a small water container that, when filled, allows a couple respawns.",
     "experiencieReward": 21,
+    "weight": 2.6,
     "structureInfo": {
       "type": "Soft",
       "hp": 500
-    }
+    },
+    "unlockable": "Hammock"
   },
   {
     "category": "Walker Hangar",
@@ -11967,7 +12221,8 @@
     "structureInfo": {
       "type": "Reinforced",
       "hp": 40000
-    }
+    },
+    "unlockable": "Hangar"
   },
   {
     "category": "Walker Hangar",
@@ -11992,7 +12247,8 @@
     "structureInfo": {
       "type": "Reinforced",
       "hp": 40000
-    }
+    },
+    "unlockable": "Hangar"
   },
   {
     "category": "Walker Hangar",
@@ -12021,7 +12277,8 @@
     "structureInfo": {
       "type": "Reinforced",
       "hp": 40000
-    }
+    },
+    "unlockable": "Hangar"
   },
   {
     "category": "Walker Hangar",
@@ -12050,7 +12307,8 @@
     "structureInfo": {
       "type": "Reinforced",
       "hp": 40000
-    }
+    },
+    "unlockable": "Hangar"
   },
   {
     "crafting": [
@@ -12178,7 +12436,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -12204,7 +12463,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Resources",
@@ -12467,15 +12727,18 @@
     ],
     "name": "Hercul Walker",
     "parent": "Buffalo Walker",
+    "translation": "Hercul Walker",
     "type": "Hercul_C",
     "description": "Capable of producing mass quantities of torque by heating up water with lava, Hercul Walker is an essential tool for any Nomad requiring large amounts of power. Will generate torque over time while holding its water container above a lava lake.",
+    "weight": 29.44,
     "structureInfo": {
       "type": "Hard",
       "hp": 21000
     },
     "walkerinfo": {
       "category": "Large"
-    }
+    },
+    "unlockable": "Hercul Walker"
   },
   {
     "category": "Walker Parts",
@@ -12505,7 +12768,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 7000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T3"
   },
   {
     "category": "Walker Parts",
@@ -12539,7 +12803,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 10500
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -12573,7 +12838,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 13300
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Schematics",
@@ -12626,7 +12892,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T3"
   },
   {
     "category": "Walker Parts",
@@ -12656,7 +12923,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 4300
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -12686,7 +12954,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1920
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -12716,7 +12985,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 2400
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -12750,7 +13020,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 3900
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -12784,7 +13055,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 6100
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -12814,7 +13086,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3300
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -12844,7 +13117,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1800
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Resources",
@@ -12939,15 +13213,18 @@
     ],
     "name": "Hornet Walker",
     "parent": "Stiletto Walker",
+    "translation": "Hornet Walker",
     "type": "Hornet_C",
     "description": "Devised by worm hunters who needed a sturdy walker with a low center of mass so they would not be toppled over, and a high top speed to outrun the giant beasts.",
+    "weight": 29.44,
     "structureInfo": {
       "type": "Hard",
       "hp": 35000
     },
     "walkerinfo": {
       "category": "Large"
-    }
+    },
+    "unlockable": "Hornet Walker"
   },
   {
     "category": "Walker Parts",
@@ -12977,7 +13254,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 4500
-    }
+    },
+    "unlockable": "WalkerPartsBase_T3"
   },
   {
     "category": "Walker Parts",
@@ -13011,7 +13289,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 5400
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -13045,7 +13324,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 6480
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Schematics",
@@ -13098,7 +13378,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T3"
   },
   {
     "category": "Walker Parts",
@@ -13132,7 +13413,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 4400
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -13162,7 +13444,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3150
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -13192,7 +13475,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 2400
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -13226,7 +13510,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 3900
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -13260,7 +13545,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 6200
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -13294,7 +13580,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3300
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -13324,7 +13611,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1800
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Weapons",
@@ -13352,13 +13640,16 @@
     ],
     "name": "Hose Station",
     "parent": "Advanced Walker Weapons",
+    "translation": "Hose Station",
     "type": "HoseStation_C",
     "description": "Push hostiles off your walker with a powerful water jetstream or cool down molten lava. Can also use fuel to spread it around and set on fire against the enemy.",
     "experiencieReward": 203,
+    "weight": 150,
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
-    }
+    },
+    "unlockable": "Hose Station"
   },
   {
     "category": "Resources",
@@ -13440,7 +13731,8 @@
     "weight": 12,
     "structureInfo": {
       "hp": 100
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Resources",
@@ -13562,7 +13854,7 @@
     "type": "Constructions_T2Schematic_C",
     "stackSize": 100,
     "learn": [
-      "ChestBaseMaintenance_T2",
+      "Base Maintenance Chest",
       "Walker Packing Compartment",
       "Bomb Chest Trap",
       "Sharp Spikes",
@@ -13572,14 +13864,14 @@
       "Rangefinder",
       "Steering Levers",
       "Steering Levers Cage",
-      "RupuSling",
+      "Rupu Sling",
       "Defensive Tower",
       "Large Base Walker Packer",
       "Hammock",
       "Poaching Hut",
       "Small Repair Hoist",
       "Trap Door",
-      "TrapSpikesSpring"
+      "Spring Spikes Trap"
     ]
   },
   {
@@ -13754,7 +14046,7 @@
     "learn": [
       "Lobber",
       "Slingshot",
-      "AntiPersonnelTurret",
+      "Anti-Personnel Turret",
       "Automaton"
     ]
   },
@@ -14720,7 +15012,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 4500
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "name": "Knowledge",
@@ -14756,7 +15049,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -14787,7 +15081,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -14818,7 +15113,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -14849,7 +15145,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Containers",
@@ -14877,13 +15174,16 @@
     ],
     "name": "Large Base Walker Packer",
     "parent": "Small Base Walker Packer",
+    "translation": "Large Base Walker Packer",
     "type": "BaseWalkerPackerLarge_C",
     "description": "Allows to pack a single walker of any type. Requires a foundation of a base to support itself.",
     "experiencieReward": 32,
+    "weight": 35,
     "structureInfo": {
       "type": "Medium",
       "hp": 21000
-    }
+    },
+    "unlockable": "Large Base Walker Packer"
   },
   {
     "category": "Containers",
@@ -14907,13 +15207,16 @@
     ],
     "name": "Large Chest",
     "parent": "Medium Chest",
+    "translation": "Large Chest",
     "type": "ChestLarge_C",
     "description": "Stack size: 300. A very strong chest with a large amount of inventory space. Items are protected unless the chest is severely damaged.",
     "experiencieReward": 32,
+    "weight": 6.2,
     "structureInfo": {
       "type": "Medium",
       "hp": 4500
-    }
+    },
+    "unlockable": "Large Chest"
   },
   {
     "category": "Equipment",
@@ -14984,13 +15287,16 @@
     ],
     "name": "Large Water Bag",
     "parent": "Medium Water Bag",
+    "translation": "Large Water Bag",
     "type": "WaterBagLarge_C",
     "description": "Store large volumes of liquid. Liquid is protected unless the container is severely damaged.",
     "experiencieReward": 98,
+    "weight": 12.7,
     "structureInfo": {
       "type": "Soft",
       "hp": 2000
-    }
+    },
+    "unlockable": "Large Water Bag"
   },
   {
     "category": "Walker Parts",
@@ -15029,13 +15335,15 @@
     ],
     "name": "Lathe",
     "parent": "Advanced Woodworking Station",
+    "translation": "Lathe",
     "type": "Lathe_C",
     "description": "A more sophisticated contraption that processes solid materials into various objects.",
     "experiencieReward": 40,
     "structureInfo": {
       "type": "Soft",
       "hp": 500
-    }
+    },
+    "unlockable": "Lathe"
   },
   {
     "category": "Lava",
@@ -15232,12 +15540,14 @@
   {
     "category": "Light Wood Structures",
     "name": "Light Wood Abstract Foundation",
-    "type": "AbstractFoundation_C"
+    "type": "AbstractFoundation_C",
+    "unlockable": "DevOnly"
   },
   {
     "category": "Light Wood Structures",
     "name": "Light Wood Abstract Wall",
-    "type": "AbstractWall_C"
+    "type": "AbstractWall_C",
+    "unlockable": "DevOnly"
   },
   {
     "category": "Resources",
@@ -15282,13 +15592,16 @@
     ],
     "name": "Lobber",
     "parent": "Improved Walker Weapons",
+    "translation": "Lobber",
     "type": "Lobber_C",
     "description": "A small weapon for remote control while driving walkers. Launches bursts of solid projectiles.",
     "experiencieReward": 78,
+    "weight": 2,
     "structureInfo": {
       "type": "Medium",
       "hp": 850
-    }
+    },
+    "unlockable": "Lobber"
   },
   {
     "category": "Weapons",
@@ -15412,18 +15725,42 @@
   },
   {
     "category": "Walker Tools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 280,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 2000,
+            "name": "Wood"
+          },
+          {
+            "count": 400,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ore"
+          }
+        ]
+      }
+    ],
     "name": "Long Sawblade",
     "parent": "Sawblade",
     "translation": "Long Sawblade",
     "type": "Sawblade_T2_C",
     "description": "A mechanical arm with a spinning saw blade attached to it harvests lumber from a distance. Requires torque while sawing.",
+    "experiencieReward": 366,
     "weight": 70,
     "toolInfo": [
       {
         "toolType": "Sawblade",
         "tier": 18
       }
-    ]
+    ],
+    "unlockable": "Sawblade_T2"
   },
   {
     "category": "Resources",
@@ -15484,13 +15821,22 @@
     ],
     "name": "Lumbermill",
     "parent": "Artisan Woodworking Station",
+    "translation": "Lumbermill",
     "type": "LumberMill_C",
     "description": "A huge crafting station uses torque to turn logs into tons of wood. Extremely efficient.",
     "experiencieReward": 1500,
+    "weight": 1000,
+    "toolInfo": [
+      {
+        "toolType": "Lumbermill",
+        "tier": 1
+      }
+    ],
     "structureInfo": {
       "type": "Soft",
       "hp": 20000
-    }
+    },
+    "unlockable": "Lumbermill"
   },
   {
     "category": "Resources",
@@ -15526,12 +15872,15 @@
     ],
     "name": "Maintenance Box",
     "parent": "Basic Constructions",
+    "translation": "Maintenance Box",
     "type": "ChestBaseMaintenance_T1_C",
     "description": "A requirement for every Nomad's base. Prevents a base decaying over time with sufficient resources inside. Requires each resource a base is made of to properly maintain it.",
+    "weight": 5,
     "structureInfo": {
       "type": "Medium",
       "hp": 5000
-    }
+    },
+    "unlockable": "Maintenance Box"
   },
   {
     "category": "Containers",
@@ -15559,13 +15908,16 @@
     ],
     "name": "Maintenance Vault",
     "parent": "ChestBaseMaintenance_T2",
+    "translation": "Maintenance Vault",
     "type": "ChestBaseMaintenance_T3_C",
     "description": "An earthern work vault with the capacity to store large amounts of materials needed for general repairs and upkeep in nomad fortifications.",
     "experiencieReward": 32,
+    "weight": 5,
     "structureInfo": {
       "type": "Medium",
       "hp": 5000
-    }
+    },
+    "unlockable": "ChestBaseMaintenance_T3"
   },
   {
     "category": "Equipment",
@@ -15671,7 +16023,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -15697,7 +16050,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -15723,7 +16077,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -15749,7 +16104,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 50
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Equipment",
@@ -15832,13 +16188,16 @@
     ],
     "name": "Medium Chest",
     "parent": "Small Chest",
+    "translation": "Medium Chest",
     "type": "ChestMedium_C",
     "description": "Stack size: 200. A sturdy chest with a moderate amount of inventory space. Items are protected unless the chest is severely damaged.",
     "experiencieReward": 32,
+    "weight": 4.5,
     "structureInfo": {
       "type": "Soft",
       "hp": 3750
-    }
+    },
+    "unlockable": "Medium Chest"
   },
   {
     "category": "Weapons",
@@ -15866,14 +16225,17 @@
     ],
     "name": "Medium Stinger",
     "parent": "Improved Walker Weapons",
+    "translation": "Medium Stinger",
     "type": "Stinger_T2_C",
     "description": "A Small Ballista that can be remotely controlled by the driver, placed on a rotating platform.",
     "experiencieReward": 78,
+    "weight": 2,
     "structureInfo": {
       "type": "Medium",
       "hp": 800
     },
-    "onlyDevs": true
+    "onlyDevs": true,
+    "unlockable": "Stinger_T2"
   },
   {
     "category": "Containers",
@@ -15901,13 +16263,16 @@
     ],
     "name": "Medium Water Bag",
     "parent": "Small Water Bag",
+    "translation": "Medium Water Bag",
     "type": "WaterBagMedium_C",
     "description": "Store moderate volumes of liquid. Liquid is protected unless the container is severely damaged.",
     "experiencieReward": 65,
+    "weight": 6,
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
-    }
+    },
+    "unlockable": "Medium Water Bag"
   },
   {
     "category": "Walker Parts",
@@ -16234,15 +16599,18 @@
     ],
     "name": "Mollusk Walker",
     "parent": "Steering Levers",
+    "translation": "Mollusk Walker",
     "type": "Mollusk_C",
     "description": "Small cabin of the walker provides protection to possessions and the driver. While walls may let a nomad live longer, obstructed view from inside the cabin could be a serious drawback in a battle. Has a decent deck and good movement capabilities.",
+    "weight": 29.44,
     "structureInfo": {
       "type": "Hard",
       "hp": 26000
     },
     "walkerinfo": {
       "category": "Medium"
-    }
+    },
+    "unlockable": "Mollusk Walker"
   },
   {
     "category": "Walker Parts",
@@ -16272,7 +16640,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 3000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T2"
   },
   {
     "category": "Walker Parts",
@@ -16306,7 +16675,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 3600
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T2"
   },
   {
     "category": "Schematics",
@@ -16371,7 +16741,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 6750
-    }
+    },
+    "unlockable": "WalkerPartsBase_T2"
   },
   {
     "category": "Walker Parts",
@@ -16409,7 +16780,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 8000
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T2"
   },
   {
     "category": "Walker Parts",
@@ -16447,7 +16819,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 7400
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T2"
   },
   {
     "category": "Walker Parts",
@@ -16485,7 +16858,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 7800
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T2"
   },
   {
     "category": "Walker Parts",
@@ -16523,7 +16897,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 8600
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T2"
   },
   {
     "category": "Walker Parts",
@@ -16561,7 +16936,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 7400
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T2"
   },
   {
     "category": "Walker Parts",
@@ -16595,7 +16971,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 7000
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T2"
   },
   {
     "category": "Interactables",
@@ -16611,11 +16988,13 @@
     ],
     "name": "Mountable Nurr",
     "parent": "Advanced Constructions",
+    "translation": "Mountable Nurr",
     "type": "MountableNurr_C",
     "experiencieReward": 300,
     "structureInfo": {
       "hp": 100
-    }
+    },
+    "unlockable": "MountableNurr"
   },
   {
     "name": "Mtx Masks",
@@ -16785,13 +17164,16 @@
     ],
     "name": "Net Thrower",
     "parent": "Basic Walker Weapons",
+    "translation": "Net Thrower",
     "type": "NetThrower_C",
     "description": "Launch nets to temporarily entangle small structures, mannable weapons, and other objects.",
     "experiencieReward": 249,
+    "weight": 120,
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "Net Thrower"
   },
   {
     "category": "Weapons",
@@ -17526,13 +17908,16 @@
     ],
     "name": "Obsidian Canister",
     "parent": "Obsidian Pot",
+    "translation": "Obsidian Canister",
     "type": "ObsidianContainerLarge_C",
     "description": "Extremely durable, large container resistant to highest temperatures.",
     "experiencieReward": 300,
+    "weight": 90,
     "structureInfo": {
       "type": "Soft",
       "hp": 4400
-    }
+    },
+    "unlockable": "ObsidianContainerLarge"
   },
   {
     "category": "Equipment",
@@ -17589,13 +17974,16 @@
     ],
     "name": "Obsidian Machine",
     "parent": "Clay Pot",
+    "translation": "Obsidian Machine",
     "type": "ObsidianMachine_C",
     "description": "With parts carved out of solid obsidian, the machine can safely hold lava to use it in various productions.",
     "experiencieReward": 36,
+    "weight": 15,
     "structureInfo": {
       "type": "Soft",
       "hp": 4000
-    }
+    },
+    "unlockable": "Obsidian Machine"
   },
   {
     "category": "Containers",
@@ -17623,13 +18011,16 @@
     ],
     "name": "Obsidian Pot",
     "parent": "Advanced Constructions",
+    "translation": "Obsidian Pot",
     "type": "ObsidianContainerSmall_C",
     "description": "Extremly durable container resistant to highest temperatures.",
     "experiencieReward": 60,
+    "weight": 35,
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "Obsidian Pot"
   },
   {
     "crafting": [
@@ -17680,7 +18071,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 250
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "OkkamStatue",
@@ -17701,28 +18093,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 250
-    }
-  },
-  {
-    "category": "OkkamStatue",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 300,
-            "name": "Stone"
-          }
-        ]
-      }
-    ],
-    "name": "OkkamStatue",
-    "translation": "OkkamStatue",
-    "type": "OkkamStatue_C",
-    "experiencieReward": 6,
-    "structureInfo": {
-      "type": "Soft",
-      "hp": 250
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "name": "One Handed Bone Axe",
@@ -17768,7 +18140,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 250
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -17794,7 +18167,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 250
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -17820,7 +18194,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 250
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Armors",
@@ -17937,13 +18312,16 @@
     ],
     "name": "Packing Station",
     "parent": "Camp Fire",
+    "translation": "Packing Station",
     "type": "PackingStation_C",
     "description": "Used to prepare packages for delivery to the trade station.",
     "experiencieReward": 92,
+    "weight": 10,
     "structureInfo": {
       "type": "Soft",
       "hp": 900
-    }
+    },
+    "unlockable": "Packing Station"
   },
   {
     "category": "Weapons",
@@ -18045,15 +18423,18 @@
     ],
     "name": "Panda Walker",
     "parent": "Tusker Walker",
+    "translation": "Panda Walker",
     "type": "Panda_C",
     "description": "Large walker carrier capable of storing up to 5 walkers of any size and hauling them, providing they're not too heavy. Limited deck size allows to build some weapons for protection.",
+    "weight": 34.02,
     "structureInfo": {
       "type": "Hard",
       "hp": 65000
     },
     "walkerinfo": {
       "category": "Large"
-    }
+    },
+    "unlockable": "Panda Walker"
   },
   {
     "category": "Walker Parts",
@@ -18083,7 +18464,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 8200
-    }
+    },
+    "unlockable": "WalkerPartsBase_T4"
   },
   {
     "category": "Walker Parts",
@@ -18129,7 +18511,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 9840
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Walker Parts",
@@ -18163,7 +18546,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 11808
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Schematics",
@@ -18215,7 +18599,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T4"
   },
   {
     "category": "Walker Parts",
@@ -18249,7 +18634,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 6400
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Walker Parts",
@@ -18279,7 +18665,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3750
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -18309,7 +18696,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 4100
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -18343,7 +18731,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 6100
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -18377,7 +18766,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 8100
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -18411,7 +18801,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 5450
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Walker Parts",
@@ -18441,7 +18832,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3700
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Resources",
@@ -18483,7 +18875,8 @@
     "weight": 23,
     "structureInfo": {
       "hp": 5000
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Ammo",
@@ -18626,7 +19019,8 @@
     "name": "Pine Tree",
     "translation": "Pine Tree",
     "type": "TreePine_C",
-    "description": "Grow your own trees from seeds overnight with the help of some Nibiran fertilizer."
+    "description": "Grow your own trees from seeds overnight with the help of some Nibiran fertilizer.",
+    "unlockable": "DevOnly"
   },
   {
     "name": "Pinion",
@@ -18657,13 +19051,16 @@
     ],
     "name": "Poaching Hut",
     "parent": "Defensive Tower",
+    "translation": "Poaching Hut",
     "type": "PoachingHut_C",
     "description": "A placeable that creates a mini-claim area in moderate radius. Additional resouces will go into this placeable instead of Proxy Walker.",
     "experiencieReward": 1000,
+    "weight": 10,
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
-    }
+    },
+    "unlockable": "Poaching Hut"
   },
   {
     "category": "Furniture",
@@ -18689,7 +19086,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 500
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -18715,7 +19113,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Interactables",
@@ -18827,15 +19226,18 @@
     ],
     "name": "Proxy Walker",
     "parent": "Steering Levers",
+    "translation": "Proxy Walker",
     "type": "Proxy_C",
     "description": "The proxy walker is designed to establish a protectorate over an oasis by deploying into an unmovable claim, provided that its owner possesses an official proxy license from the Flotilla. Can only be deployed while an oasis is unclaimed or contested and only becomes the claimant after no other deployed proxy walkers are left standing.",
+    "weight": 34.02,
     "structureInfo": {
       "type": "Reinforced",
       "hp": 100000
     },
     "walkerinfo": {
       "category": "Large"
-    }
+    },
+    "unlockable": "Proxy Walker"
   },
   {
     "category": "Walker Parts",
@@ -18865,7 +19267,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 10000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T2"
   },
   {
     "category": "Walker Parts",
@@ -18899,7 +19302,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 15000
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T2"
   },
   {
     "category": "Walker Parts",
@@ -18937,7 +19341,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 19000
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T2"
   },
   {
     "category": "Schematics",
@@ -18988,13 +19393,16 @@
     ],
     "name": "Purification Station",
     "parent": "Clay Pot",
+    "translation": "Purification Station",
     "type": "PurificationStation_C",
     "description": "All toxic water that is transported to the Flotilla is first cleansed in an ancient water purifying machine. The Guardians are the sole keepers of this machine, a technological relic of the old world which has sustained the Flotillans to this day. However, nomads developed a similar, yet more primitive version of this technology.",
     "experiencieReward": 125,
+    "weight": 5,
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "Purification Station"
   },
   {
     "name": "Purified Water",
@@ -19004,6 +19412,24 @@
   },
   {
     "category": "Crafting",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 300,
+            "name": "Lightwood"
+          },
+          {
+            "count": 3,
+            "name": "Iron Gear"
+          },
+          {
+            "count": 15,
+            "name": "Shardrock"
+          }
+        ]
+      }
+    ],
     "name": "Quarry",
     "parent": "Soil Excavator",
     "translation": "Quarry",
@@ -19015,7 +19441,12 @@
         "toolType": "Quarrying",
         "tier": 1
       }
-    ]
+    ],
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 20000
+    },
+    "unlockable": "Quarry"
   },
   {
     "category": "Vitamins",
@@ -19098,7 +19529,8 @@
     "weight": 0.2,
     "structureInfo": {
       "hp": 30
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Walker Parts",
@@ -19148,7 +19580,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 800
-    }
+    },
+    "unlockable": "RangeFinder"
   },
   {
     "category": "Walkers",
@@ -19196,15 +19629,18 @@
     ],
     "name": "Raptor Sky Walker",
     "parent": "Dinghy Walker",
+    "translation": "Raptor Sky Walker",
     "type": "Raptor_C",
     "description": "Using a technology discovered during an expedition to a city in the sky, the Raptor Sky Walker is the first of its kind created by Nomads. Allows to soar in the sky like a leaf on the wind using torque for flapping its wings.",
+    "weight": 29.44,
     "structureInfo": {
       "type": "Hard",
       "hp": 14000
     },
     "walkerinfo": {
       "category": "Flying"
-    }
+    },
+    "unlockable": "Raptor Sky Walker"
   },
   {
     "category": "Walker Parts",
@@ -19233,7 +19669,8 @@
     "weight": 9.75,
     "structureInfo": {
       "hp": 5000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T4"
   },
   {
     "category": "Schematics",
@@ -19289,7 +19726,8 @@
     "weight": 9.75,
     "structureInfo": {
       "hp": 1500
-    }
+    },
+    "unlockable": "WalkerPartsBase_T4"
   },
   {
     "name": "Rare",
@@ -19778,12 +20216,15 @@
     ],
     "name": "Repair Station",
     "parent": "Rope",
+    "translation": "Repair Station",
     "type": "RepairStation_C",
     "description": "Basic crafting station repairs damaged equipment at a lower cost than crafting new ones.",
     "experiencieReward": 92,
+    "weight": 5,
     "structureInfo": {
       "hp": 1000
-    }
+    },
+    "unlockable": "Repair Station"
   },
   {
     "category": "Tools",
@@ -19815,13 +20256,16 @@
     ],
     "name": "Repeater",
     "parent": "Basic Walker Weapons",
+    "translation": "Repeater",
     "type": "Repeater_C",
     "description": "Unload a rapid volley of darts that are deadly against lightly armored targets. Weak against walkers and structures.",
     "experiencieReward": 304,
+    "weight": 70,
     "structureInfo": {
       "type": "Soft",
       "hp": 1150
-    }
+    },
+    "unlockable": "Repeater"
   },
   {
     "name": "Resources",
@@ -19905,13 +20349,16 @@
     ],
     "name": "Rokker",
     "parent": "Advanced Walker Weapons",
+    "translation": "Rokker",
     "type": "Rokker_C",
     "description": "A heavy weapon that launches deadly roks. Invented out of necessity when various Nomad factions started fielding large Walkers against each other.",
     "experiencieReward": 188,
+    "weight": 100,
     "structureInfo": {
       "type": "Medium",
       "hp": 1350
-    }
+    },
+    "unlockable": "Rokker"
   },
   {
     "category": "Furniture",
@@ -19937,7 +20384,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1800
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -19963,7 +20411,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1800
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Resources",
@@ -20156,7 +20605,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -20186,7 +20636,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Ammo",
@@ -20808,12 +21259,15 @@
     ],
     "name": "Rupu Sling",
     "parent": "Defensive Tower",
+    "translation": "Rupu Sling",
     "type": "RupuSling_C",
     "description": "Tied down rupu that throws specially made rupu rocks at intruders. Precise and deadly when the target is close, but very wasteful at longer distances, making it a perfect defense inside a base.",
     "experiencieReward": 44,
+    "weight": 12.71,
     "structureInfo": {
       "hp": 3520
-    }
+    },
+    "unlockable": "RupuSling"
   },
   {
     "category": "Ammo",
@@ -21062,9 +21516,12 @@
     ],
     "name": "Sand Bed",
     "parent": "Construction",
+    "translation": "Sand Bed",
     "type": "BedSand_C",
     "description": "Uncomfortable bed that's good for occasional respawn.",
-    "experiencieReward": 21
+    "experiencieReward": 21,
+    "weight": 0.84,
+    "unlockable": "Sand Bed"
   },
   {
     "category": "Basic Protection",
@@ -21091,7 +21548,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 500
-    }
+    },
+    "unlockable": "Sand Structures"
   },
   {
     "category": "Basic Protection",
@@ -21122,7 +21580,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 500
-    }
+    },
+    "unlockable": "Sand Structures"
   },
   {
     "name": "Sand Structures",
@@ -21174,7 +21633,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 500
-    }
+    },
+    "unlockable": "Sand Structures"
   },
   {
     "category": "Basic Protection",
@@ -21205,7 +21665,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 500
-    }
+    },
+    "unlockable": "Sand Structures"
   },
   {
     "category": "Basic Protection",
@@ -21236,7 +21697,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 500
-    }
+    },
+    "unlockable": "Sand Structures"
   },
   {
     "category": "Basic Protection",
@@ -21267,7 +21729,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 500
-    }
+    },
+    "unlockable": "Sand Structures"
   },
   {
     "category": "Resources",
@@ -21305,18 +21768,50 @@
   },
   {
     "category": "Walker Tools",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 26,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 20,
+            "name": "Rope"
+          },
+          {
+            "count": 2,
+            "name": "Wooden Gear"
+          },
+          {
+            "count": 4,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 40,
+            "name": "Redwood Wood"
+          }
+        ]
+      }
+    ],
     "name": "Sawblade",
     "parent": "Tool Pod",
     "translation": "Sawblade",
     "type": "Sawblade_C",
     "description": "A mechanical arm with a spinning saw blade attached to it harvests lumber from a distance. Requires torque while sawing.",
+    "experiencieReward": 366,
     "weight": 60,
     "toolInfo": [
       {
         "toolType": "Sawblade",
         "tier": 10
       }
-    ]
+    ],
+    "unlockable": "Sawblade"
   },
   {
     "category": "Wood: light",
@@ -21342,7 +21837,8 @@
     "weight": 3,
     "structureInfo": {
       "hp": 75
-    }
+    },
+    "unlockable": "WoodenWalls"
   },
   {
     "category": "Ammo",
@@ -21442,13 +21938,16 @@
     ],
     "name": "Scattershot Gun",
     "parent": "Basic Walker Weapons",
+    "translation": "Scattershot Gun",
     "type": "ScattershotGun_C",
     "description": "Fire a short-range barrage of sharp stones in a wide angle. Effective against personnel and weak structures. Uses Scattershot Ammo.",
     "experiencieReward": 366,
+    "weight": 70,
     "structureInfo": {
       "type": "Soft",
       "hp": 1050
-    }
+    },
+    "unlockable": "Scattershot Gun"
   },
   {
     "category": "Resources",
@@ -21556,15 +22055,18 @@
     ],
     "name": "Schmetterling Walker",
     "parent": "Falco Walker",
+    "translation": "Schmetterling Walker",
     "type": "Schmetterling_C",
     "description": "One of the oldest walker designs, the schmetterlings provided mobile homes that an entire family could live on while chasing after the temperate climate. A large cargo hold affords tons of cargo space, and a wide open deck provides enough room for nomads to stretch their legs and build freely. The heavy weight of the schmetterling makes it less maneuverable.",
+    "weight": 34.02,
     "structureInfo": {
       "type": "Hard",
       "hp": 62000
     },
     "walkerinfo": {
       "category": "Capital"
-    }
+    },
+    "unlockable": "Schmetterling Walker"
   },
   {
     "category": "Walker Parts",
@@ -21594,7 +22096,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 10000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T4"
   },
   {
     "category": "Walker Parts",
@@ -21628,7 +22131,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 12000
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Walker Parts",
@@ -21662,7 +22166,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 14400
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Schematics",
@@ -21719,7 +22224,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T4"
   },
   {
     "category": "Walker Parts",
@@ -21753,7 +22259,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 6800
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Walker Parts",
@@ -21783,7 +22290,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3750
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -21813,7 +22321,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 4100
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -21847,7 +22356,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 6200
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -21881,7 +22391,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 8500
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -21915,7 +22426,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 5450
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Walker Parts",
@@ -21945,7 +22457,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3700
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Containers",
@@ -21973,12 +22486,15 @@
     ],
     "name": "Scroll Rack",
     "parent": "Small Chest",
+    "translation": "Scroll Rack",
     "type": "ScrollRack_C",
     "description": "Designed by Flotillan inventors as a mean of storing and accessing their precious schematics while building new marvels around their workshop, this container is invaluable for any Nomad.",
     "experiencieReward": 50,
+    "weight": 23,
     "structureInfo": {
       "hp": 750
-    }
+    },
+    "unlockable": "Scroll Rack"
   },
   {
     "crafting": [
@@ -22049,7 +22565,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 2000
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -22075,7 +22592,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 2000
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -22101,7 +22619,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 2000
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -22127,7 +22646,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 2000
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -22153,7 +22673,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 2000
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "name": "Shackle",
@@ -22195,12 +22716,15 @@
     ],
     "name": "Sharp Spikes",
     "parent": "Bomb Chest Trap",
+    "translation": "Sharp Spikes",
     "type": "TrapSpikesSharp_C",
     "description": "Sharp spikes that stick out of the ground deal serious damage to nomads who fall or step on them.",
     "experiencieReward": 49,
+    "weight": 4,
     "structureInfo": {
       "hp": 200
-    }
+    },
+    "unlockable": "Sharp Spikes"
   },
   {
     "category": "Resources",
@@ -22344,15 +22868,18 @@
     ],
     "name": "Silur Walker",
     "parent": "Balang Walker",
+    "translation": "Silur Walker",
     "type": "Silur_C",
     "description": "Founder Walker type of moderate size and protection. Allows to pack and carry a base made of heavy solid materials.",
+    "weight": 50,
     "structureInfo": {
       "type": "Solid",
       "hp": 400000
     },
     "walkerinfo": {
       "category": "Large"
-    }
+    },
+    "unlockable": "Silur Walker"
   },
   {
     "category": "Walker Parts",
@@ -22382,7 +22909,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 16500
-    }
+    },
+    "unlockable": "WalkerPartsBase_T3"
   },
   {
     "category": "Walker Parts",
@@ -22416,7 +22944,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 25000
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -22446,7 +22975,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 31000
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Schematics",
@@ -22726,13 +23256,16 @@
     ],
     "name": "Slingshot",
     "parent": "Improved Walker Weapons",
+    "translation": "Slingshot",
     "type": "Slingshot_C",
     "description": "Launch small rocks and bombs moderate distances. Don't hit your own deck!",
     "experiencieReward": 242,
+    "weight": 74,
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "Slingshot"
   },
   {
     "category": "Wood: heavy",
@@ -22763,7 +23296,8 @@
     "structureInfo": {
       "type": "Reinforced",
       "hp": 40000
-    }
+    },
+    "unlockable": "HeavyWalls"
   },
   {
     "category": "Containers",
@@ -22791,13 +23325,16 @@
     ],
     "name": "Small Base Walker Packer",
     "parent": "Sand Structures",
+    "translation": "Small Base Walker Packer",
     "type": "BaseWalkerPackerSmall_C",
     "description": "Allows to pack a single small walkers up to a Dinghy type. Requires a foundation of a base to support itself.",
     "experiencieReward": 32,
+    "weight": 15,
     "structureInfo": {
       "type": "Medium",
       "hp": 8000
-    }
+    },
+    "unlockable": "Small Base Walker Packer"
   },
   {
     "category": "Ammo",
@@ -22889,13 +23426,16 @@
     ],
     "name": "Small Chest",
     "parent": "Construction",
+    "translation": "Small Chest",
     "type": "ChestSmall_C",
     "description": "A weak chest with a small amount of inventory space. Items are protected unless the chest is severely damaged.",
     "experiencieReward": 32,
+    "weight": 4,
     "structureInfo": {
       "type": "Soft",
       "hp": 500
-    }
+    },
+    "unlockable": "Small Chest"
   },
   {
     "category": "Walker Tools",
@@ -22927,12 +23467,14 @@
     ],
     "name": "Small Repair Hoist",
     "parent": "Medium Wood Walls",
+    "translation": "Small Repair Hoist",
     "type": "SmallRepairHoist_C",
     "description": "Intricate ceiling-mounted contraption that uses raw materials to repair the Walker parked under it.",
     "structureInfo": {
       "type": "Soft",
       "hp": 1250
-    }
+    },
+    "unlockable": "Small Repair Hoist"
   },
   {
     "category": "Interactables",
@@ -22961,7 +23503,8 @@
     "weight": 20,
     "structureInfo": {
       "hp": 350
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Weapons",
@@ -22989,9 +23532,12 @@
     ],
     "name": "Small Scattershot Gun",
     "parent": "Gun Pod",
+    "translation": "Small Scattershot Gun",
     "type": "GunPodScattershotGun_C",
     "description": "Miniature version of a scattershot gun that fits inside a gun pod.",
-    "experiencieReward": 366
+    "experiencieReward": 366,
+    "weight": 45,
+    "unlockable": "GunPodScattershotGun"
   },
   {
     "category": "Walker Parts",
@@ -23033,13 +23579,16 @@
     ],
     "name": "Small Water Bag",
     "parent": "Construction",
+    "translation": "Small Water Bag",
     "type": "WaterBagSmall_C",
     "description": "Store small volumes of liquid. Liquid is protected unless the container is severely damaged.",
     "experiencieReward": 38,
+    "weight": 3,
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
-    }
+    },
+    "unlockable": "Small Water Bag"
   },
   {
     "category": "Walker Parts",
@@ -23078,13 +23627,22 @@
     ],
     "name": "Soil Excavator",
     "parent": "Camp Fire",
+    "translation": "Soil Excavator",
     "type": "SoilExcavator_C",
     "description": "Basic crafting station extracts different types of soil from the ground, like sand from the desert, or with more advanced knowledge, clay from mud puddles.",
     "experiencieReward": 18,
+    "weight": 109,
+    "toolInfo": [
+      {
+        "toolType": "Digging",
+        "tier": 5
+      }
+    ],
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "Soil Excavator"
   },
   {
     "name": "Spare Parts",
@@ -23129,15 +23687,18 @@
     ],
     "name": "Spider Walker",
     "parent": "Walkers",
+    "translation": "Spider Walker",
     "type": "Spider_C",
     "description": "A pedal-powered walker most nomads build to begin their journey on. Has an additional seat in the back with a built-in ballista!",
+    "weight": 6.42,
     "structureInfo": {
       "type": "Hard",
       "hp": 1500
     },
     "walkerinfo": {
       "category": "Small"
-    }
+    },
+    "unlockable": "Spider Walker"
   },
   {
     "category": "Walker Parts",
@@ -23163,7 +23724,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 900
-    }
+    },
+    "unlockable": "WalkerPartsBase_T1"
   },
   {
     "category": "Walker Parts",
@@ -23188,7 +23750,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 1350
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T1"
   },
   {
     "category": "Schematics",
@@ -23222,13 +23785,16 @@
     ],
     "name": "Spinner",
     "parent": "Basic Walker Weapons",
+    "translation": "Spinner",
     "type": "Spinner_C",
     "description": "A small spinning weapon for remote control while driving walkers. Quickly launches darts in short succession.",
     "experiencieReward": 78,
+    "weight": 2,
     "structureInfo": {
       "type": "Medium",
       "hp": 750
-    }
+    },
+    "unlockable": "Spinner"
   },
   {
     "name": "Spline",
@@ -23356,13 +23922,16 @@
     ],
     "name": "Spring Spikes Trap",
     "parent": "Bomb Chest Trap",
+    "translation": "Spring Spikes Trap",
     "type": "TrapSpikesSpring_C",
     "description": "Automatically stabs nomads with hidden spikes when they step on the trigger plate.",
     "experiencieReward": 60,
+    "weight": 230,
     "structureInfo": {
       "type": "Soft",
       "hp": 200
-    }
+    },
+    "unlockable": "TrapSpikesSpring"
   },
   {
     "name": "Sprocket",
@@ -23421,7 +23990,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 100
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -23451,7 +24021,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -23481,7 +24052,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Furniture",
@@ -23511,7 +24083,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 1500
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Resources",
@@ -23565,9 +24138,12 @@
     ],
     "name": "Steering Levers",
     "parent": "Dinghy Walker",
+    "translation": "Steering Levers",
     "type": "SteeringLevers_C",
     "description": "The control mechanism required to drive more complex walkers.",
-    "experiencieReward": 208
+    "experiencieReward": 208,
+    "weight": 10.8,
+    "unlockable": "Steering Levers"
   },
   {
     "category": "Walker Tools",
@@ -23595,13 +24171,16 @@
     ],
     "name": "Steering Levers Cage",
     "parent": "Steering Levers",
+    "translation": "Steering Levers Cage",
     "type": "SteeringLeversCage_C",
     "description": "Sturdy contraption made of strong wood and tight ropes, allowing Nomads to place it around Walker Steering Levers to protect their driver.",
     "experiencieReward": 208,
+    "weight": 2000,
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
-    }
+    },
+    "unlockable": "Steering Levers Cage"
   },
   {
     "category": "Interactables",
@@ -23663,15 +24242,18 @@
     ],
     "name": "Stiletto Walker",
     "parent": "Steering Levers",
+    "translation": "Stiletto Walker",
     "type": "Stiletto_C",
     "description": "Developed as the successor to the dinghy walker, the sleek stiletto walker is fast, has a short turn radius, and flaunts more deck space and a stronger hull than its predecessor. Ideal for nomads who prefer to travel alone or in small groups.",
+    "weight": 29.44,
     "structureInfo": {
       "type": "Hard",
       "hp": 22000
     },
     "walkerinfo": {
       "category": "Medium"
-    }
+    },
+    "unlockable": "Stiletto Walker"
   },
   {
     "category": "Walker Parts",
@@ -23697,7 +24279,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 2800
-    }
+    },
+    "unlockable": "WalkerPartsBase_T2"
   },
   {
     "category": "Walker Parts",
@@ -23731,7 +24314,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 3360
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T2"
   },
   {
     "category": "Schematics",
@@ -23800,7 +24384,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 6000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T2"
   },
   {
     "category": "Walker Parts",
@@ -23838,7 +24423,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 7400
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T2"
   },
   {
     "category": "Walker Parts",
@@ -23876,7 +24462,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 6600
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T2"
   },
   {
     "category": "Walker Parts",
@@ -23914,7 +24501,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 7000
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T2"
   },
   {
     "category": "Walker Parts",
@@ -23952,7 +24540,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 7800
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T2"
   },
   {
     "category": "Walker Parts",
@@ -23990,7 +24579,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 6500
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T2"
   },
   {
     "category": "Walker Parts",
@@ -24028,7 +24618,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 6200
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T2"
   },
   {
     "category": "Weapons",
@@ -24056,13 +24647,16 @@
     ],
     "name": "Stinger",
     "parent": "Basic Walker Weapons",
+    "translation": "Stinger",
     "type": "Stinger_C",
     "description": "Small Ballista for remote control while steering. Needs to be reloaded manually.",
     "experiencieReward": 78,
+    "weight": 2,
     "structureInfo": {
       "type": "Medium",
       "hp": 500
-    }
+    },
+    "unlockable": "Stinger"
   },
   {
     "category": "Crafting",
@@ -24094,13 +24688,16 @@
     ],
     "name": "Stomping Station",
     "parent": "Camp Fire",
+    "translation": "Stomping Station",
     "type": "StompingStation_C",
     "description": "Basic crafting station simulates the blunt force of a foot to crush vegetables and soft minerals. An important tool for nomads who must always keep their feet in top condition.",
     "experiencieReward": 125,
+    "weight": 4.83,
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "Stomping Station"
   },
   {
     "name": "Stone",
@@ -24174,12 +24771,14 @@
     ],
     "name": "Stone Humidifier",
     "parent": "Maintenance Box",
+    "translation": "Stone Humidifier",
     "type": "Humidifier_C",
     "description": "When placed in a base and filled with water and charcoal, this ingenious contraption slowly releases a mist that  keeps you hydrated over time. Its efficiency depends on the number of Nomads gathered around it.",
     "structureInfo": {
       "type": "Soft",
       "hp": 500
-    }
+    },
+    "unlockable": "Stone Humidifier"
   },
   {
     "category": "Weapons",
@@ -24475,20 +25074,12 @@
     }
   },
   {
-    "category": "Furniture",
+    "category": "OkkamStatue",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 45,
-            "name": "Wood"
-          },
-          {
-            "count": 6,
-            "name": "Rupu Pelt"
-          },
-          {
-            "count": 10,
+            "count": 300,
             "name": "Stone"
           }
         ]
@@ -24496,14 +25087,15 @@
     ],
     "name": "Table",
     "translation": "Table",
-    "type": "Table_C",
+    "type": "OkkamStatue_C",
     "description": "Decorative furniture that also allows to place objects on it.",
     "experiencieReward": 6,
     "weight": 3,
     "structureInfo": {
       "type": "Soft",
       "hp": 250
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Knowledge",
@@ -24542,14 +25134,17 @@
     ],
     "name": "Tall Stinger",
     "parent": "Advanced Walker Weapons",
+    "translation": "Tall Stinger",
     "type": "Stinger_T3_C",
     "description": "A Small Ballista placed on a raised arm that lets the driver get better firing angles.",
     "experiencieReward": 78,
+    "weight": 2,
     "structureInfo": {
       "type": "Medium",
       "hp": 3000
     },
-    "onlyDevs": true
+    "onlyDevs": true,
+    "unlockable": "Tall Stinger"
   },
   {
     "category": "Liquids",
@@ -24701,7 +25296,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 250
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Weapons",
@@ -24908,13 +25504,16 @@
     ],
     "name": "Thumper",
     "parent": "Basic Walker Weapons",
+    "translation": "Thumper",
     "type": "Thumper_C",
     "description": "At some point in their sunny life, every Nomad finds out that in some situations blasting a bunch of projectiles at the problem solves it faster than one could say \"cactus\". Uses Throwstones as ammo..",
     "experiencieReward": 78,
+    "weight": 2,
     "structureInfo": {
       "type": "Medium",
       "hp": 600
-    }
+    },
+    "unlockable": "Thumper"
   },
   {
     "category": "Armors",
@@ -24980,15 +25579,18 @@
     ],
     "name": "Titan Walker",
     "parent": "Buffalo Walker",
+    "translation": "Titan Walker",
     "type": "Titan_C",
     "description": "An iconic walker distinguished by tiered design and open, flat deck spaces. Dozens of large weapons can be stationed on it, but without a crew it's not very defensible.",
+    "weight": 34.02,
     "structureInfo": {
       "type": "Hard",
       "hp": 80000
     },
     "walkerinfo": {
       "category": "Capital"
-    }
+    },
+    "unlockable": "Titan Walker"
   },
   {
     "category": "Walker Parts",
@@ -25018,7 +25620,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 8200
-    }
+    },
+    "unlockable": "WalkerPartsBase_T4"
   },
   {
     "category": "Walker Parts",
@@ -25052,7 +25655,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 9840
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Walker Parts",
@@ -25086,7 +25690,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 11808
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Schematics",
@@ -25142,7 +25747,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
-    }
+    },
+    "unlockable": "WalkerPartsBase_T4"
   },
   {
     "category": "Walker Parts",
@@ -25176,7 +25782,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 6400
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Walker Parts",
@@ -25206,7 +25813,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3750
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -25236,7 +25844,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 4100
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -25270,7 +25879,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 6100
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -25304,7 +25914,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 8100
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T4"
   },
   {
     "category": "Walker Parts",
@@ -25338,7 +25949,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 5450
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Walker Parts",
@@ -25368,7 +25980,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3700
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T4"
   },
   {
     "category": "Walkers",
@@ -25416,15 +26029,18 @@
     ],
     "name": "Toboggan Walker",
     "parent": "Steering Levers",
+    "translation": "Toboggan Walker",
     "type": "Toboggan_C",
     "description": "The standard merchant's vessel built for outrunning pirates and getting the goods where they need to go. There's not much room for weapons, so this walker is usually accompanied by at least one battle-capable walker on its transport runs.",
+    "weight": 34.02,
     "structureInfo": {
       "type": "Hard",
       "hp": 27000
     },
     "walkerinfo": {
       "category": "Medium"
-    }
+    },
+    "unlockable": "Toboggan Walker"
   },
   {
     "category": "Walker Parts",
@@ -25454,7 +26070,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 2750
-    }
+    },
+    "unlockable": "WalkerPartsBase_T2"
   },
   {
     "category": "Walker Parts",
@@ -25492,7 +26109,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 3300
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T2"
   },
   {
     "category": "Walker Parts",
@@ -25526,7 +26144,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 3960
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T2"
   },
   {
     "category": "Schematics",
@@ -25595,7 +26214,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 7500
-    }
+    },
+    "unlockable": "WalkerPartsBase_T2"
   },
   {
     "category": "Walker Parts",
@@ -25633,7 +26253,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 9300
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T2"
   },
   {
     "category": "Walker Parts",
@@ -25675,7 +26296,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 9500
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T2"
   },
   {
     "category": "Walker Parts",
@@ -25713,7 +26335,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 8400
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T2"
   },
   {
     "category": "Walker Parts",
@@ -25751,7 +26374,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 8850
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T2"
   },
   {
     "category": "Walker Parts",
@@ -25789,7 +26413,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 10500
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T2"
   },
   {
     "category": "Walker Parts",
@@ -25827,7 +26452,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 8200
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T2"
   },
   {
     "category": "Walker Parts",
@@ -25865,7 +26491,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 7800
-    }
+    },
+    "unlockable": "WalkerPartsImproved_T2"
   },
   {
     "category": "Walker Tools",
@@ -25893,13 +26520,16 @@
     ],
     "name": "Tool Pod",
     "parent": "Advanced Walker Weapons",
+    "translation": "Tool Pod",
     "type": "ToolPod_C",
     "description": "A rotating pod made to attach below walker decks. Houses a single tool, like a saw blade.",
     "experiencieReward": 34,
+    "weight": 25,
     "structureInfo": {
       "type": "Medium",
       "hp": 5000
-    }
+    },
+    "unlockable": "Tool Pod"
   },
   {
     "name": "Tools",
@@ -26189,13 +26819,16 @@
     ],
     "name": "Trap Door",
     "parent": "Bomb Chest Trap",
+    "translation": "Trap Door",
     "type": "TrapDoor_C",
     "description": "Opens automatically when a nomad steps on it. Deadly in combination with other traps, like spikes.",
     "experiencieReward": 48,
+    "weight": 7,
     "structureInfo": {
       "type": "Soft",
       "hp": 200
-    }
+    },
+    "unlockable": "Trap Door"
   },
   {
     "category": "Weapons",
@@ -26275,12 +26908,15 @@
     ],
     "name": "Trip Wire Trap",
     "parent": "Advanced Constructions",
+    "translation": "Trip Wire Trap",
     "type": "TrapTripWire_C",
     "description": "Triggers a small explosion when a nomad steps on the tripwire.",
     "experiencieReward": 97,
+    "weight": 0.23,
     "structureInfo": {
       "hp": 10
-    }
+    },
+    "unlockable": "Trip Wire Trap"
   },
   {
     "category": "Armors",
@@ -26517,15 +27153,18 @@
     ],
     "name": "Tusker Walker",
     "parent": "Toboggan Walker",
+    "translation": "Tusker Walker",
     "type": "Tusker_C",
     "description": "Enough deck space for both large weapons and the crew needed to operate them. The tusker walker is a juggernaut when it comes to hauling space, and is primarily used by rich traders that need to transport tons of valuable goods. Slow and hard to maneuver, it's often escorted by swift combat walkers. Owners of tusker walkers rarely fail to get a return on their investment.",
+    "weight": 34.02,
     "structureInfo": {
       "type": "Hard",
       "hp": 55000
     },
     "walkerinfo": {
       "category": "Capital"
-    }
+    },
+    "unlockable": "Tusker Walker"
   },
   {
     "category": "Walker Parts",
@@ -26555,7 +27194,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 5200
-    }
+    },
+    "unlockable": "WalkerPartsBase_T3"
   },
   {
     "category": "Walker Parts",
@@ -26589,7 +27229,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 6240
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -26623,7 +27264,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 7488
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Schematics",
@@ -26680,7 +27322,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3500
-    }
+    },
+    "unlockable": "WalkerPartsBase_T3"
   },
   {
     "category": "Walker Parts",
@@ -26714,7 +27357,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 5000
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -26744,7 +27388,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 2500
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -26774,7 +27419,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3100
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -26808,7 +27454,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 4500
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -26842,7 +27489,8 @@
     "structureInfo": {
       "type": "Medium",
       "hp": 5800
-    }
+    },
+    "unlockable": "WalkerPartsAdvanced_T3"
   },
   {
     "category": "Walker Parts",
@@ -26876,7 +27524,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 3900
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "category": "Walker Parts",
@@ -26906,7 +27555,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 2200
-    }
+    },
+    "unlockable": "Advanced Walker Parts"
   },
   {
     "name": "Two Handed Iron Mace",
@@ -26955,12 +27605,15 @@
     ],
     "name": "Vault",
     "parent": "Construction",
+    "translation": "Vault",
     "type": "Vault_C",
     "experiencieReward": 32,
+    "weight": 1000,
     "structureInfo": {
       "type": "Medium",
       "hp": 5000
-    }
+    },
+    "unlockable": "Vault"
   },
   {
     "category": "Vitamins",
@@ -27031,13 +27684,16 @@
     ],
     "name": "Walker Climber",
     "parent": "Construction",
+    "translation": "Walker Climber",
     "type": "WalkerClimber_C",
     "description": "A buildable attachement that helps yank nomads onto a walker's deck for quick and easy boarding.",
     "experiencieReward": 78,
+    "weight": 5,
     "structureInfo": {
       "type": "Soft",
       "hp": 1000
-    }
+    },
+    "unlockable": "Walker Climber"
   },
   {
     "category": "Wood: light",
@@ -27071,7 +27727,8 @@
     "weight": 18.5,
     "structureInfo": {
       "hp": 1000
-    }
+    },
+    "unlockable": "WoodenWalls"
   },
   {
     "name": "Walker Hangar",
@@ -27106,13 +27763,16 @@
     ],
     "name": "Walker Packing Compartment",
     "parent": "ChestBaseMaintenance_T2",
+    "translation": "Walker Packing Compartment",
     "type": "SmallWalkerPacker_C",
     "description": "Enables walker to pack other walkers into special compartments attached to the hull.",
     "experiencieReward": 34,
+    "weight": 25,
     "structureInfo": {
       "type": "Medium",
       "hp": 5000
-    }
+    },
+    "unlockable": "Walker Packing Compartment"
   },
   {
     "name": "Walker Parts",
@@ -27153,7 +27813,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "name": "Walkers",
@@ -27190,7 +27851,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 20000
-    }
+    },
+    "unlockable": "ClayWalls"
   },
   {
     "category": "Furniture",
@@ -27216,7 +27878,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 500
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Concrete",
@@ -27251,7 +27914,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 40000
-    }
+    },
+    "unlockable": "ConcreteWalls"
   },
   {
     "category": "Concrete",
@@ -27286,7 +27950,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 40000
-    }
+    },
+    "unlockable": "ConcreteWalls"
   },
   {
     "category": "Concrete",
@@ -27321,7 +27986,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 40000
-    }
+    },
+    "unlockable": "ConcreteWalls"
   },
   {
     "category": "Concrete",
@@ -27356,7 +28022,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 40000
-    }
+    },
+    "unlockable": "ConcreteWalls"
   },
   {
     "category": "Concrete",
@@ -27391,7 +28058,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 40000
-    }
+    },
+    "unlockable": "ConcreteWalls"
   },
   {
     "category": "Clay",
@@ -27422,7 +28090,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 20000
-    }
+    },
+    "unlockable": "ClayWalls"
   },
   {
     "category": "Clay",
@@ -27453,7 +28122,8 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 20000
-    }
+    },
+    "unlockable": "ClayWalls"
   },
   {
     "category": "Interactables",
@@ -27497,7 +28167,8 @@
     "weight": 77,
     "structureInfo": {
       "hp": 100
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "name": "Water Circulator",
@@ -27527,13 +28198,16 @@
     ],
     "name": "Water Condenser",
     "parent": "Stone Humidifier",
+    "translation": "Water Condenser",
     "type": "WaterCondenser_C",
     "description": "Collects moisture from the air and stores it as clean water. Efficiency depends on the area where the condenser is built.",
     "experiencieReward": 78,
+    "weight": 50,
     "structureInfo": {
       "type": "Soft",
       "hp": 3000
-    }
+    },
+    "unlockable": "Water Condenser"
   },
   {
     "category": "Ammo",
@@ -27794,13 +28468,16 @@
     ],
     "name": "Windmill",
     "parent": "Camp Fire",
+    "translation": "Windmill",
     "type": "Windmill_C",
     "description": "Harnesses wind to generate torque automatically. A torque battery is required to transfer the torque between devices.",
     "experiencieReward": 34,
+    "weight": 10,
     "structureInfo": {
       "type": "Soft",
       "hp": 2500
-    }
+    },
+    "unlockable": "Windmill"
   },
   {
     "name": "Windmill T2",
@@ -28332,13 +29009,16 @@
     ],
     "name": "Woodworking Station",
     "parent": "Crafting",
+    "translation": "Woodworking Station",
     "type": "WoodworkingStation_C",
     "description": "Basic crafting station cuts wood into basic parts.",
     "experiencieReward": 92,
+    "weight": 10,
     "structureInfo": {
       "type": "Soft",
       "hp": 900
-    }
+    },
+    "unlockable": "Woodworking Station"
   },
   {
     "category": "Resources",
@@ -28534,7 +29214,8 @@
     "weight": 25,
     "structureInfo": {
       "hp": 100
-    }
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Furniture",
@@ -28560,7 +29241,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "category": "Armors",
@@ -28612,7 +29294,8 @@
     "structureInfo": {
       "type": "Soft",
       "hp": 150
-    }
+    },
+    "unlockable": "Furnitures"
   },
   {
     "name": "Wyndan Battle Axe",
