@@ -427,7 +427,7 @@ controller.getTranslateFiles = () => {
 		]) {
 			if (controller.isKeyTranslationInUse(key)) {
 				// Get the English name which will be used as the key
-				let englishName = translationStore.translationsInUse[key];
+				const englishName = translationStore.translationsInUse[key];
 				// Get the translated text in the target language
 				const translatedText =
 					translationStore.translationsFromOtherLanguages[language][key];
@@ -442,24 +442,8 @@ controller.getTranslateFiles = () => {
 					continue;
 				}
 
-				// Clean up the English name to use as a key
-				englishName = englishName
-					.replace(/\r\n|\n\r|\n|\r/g, " ")
-					.replace(/\s+/g, " ")
-					.replace(/[\u0000-\u001F\u007F-\u009F]/g, "") // Remove control characters
-					.trim();
-
-				// Clean up the translated text to prevent JSON corruption
-				const cleanedTranslation = translatedText
-					.replace(/\r\n|\n\r|\n|\r/g, " ")
-					.replace(/\s+/g, " ")
-					.replace(/[\u0000-\u001F\u007F-\u009F]/g, "") // Remove control characters
-					.replace(/\\(?!["\\bfnrt\/])/g, "\\\\") // Escape backslashes that aren't part of escape sequences
-					.replace(/"/g, '\\"') // Escape double quotes
-					.trim();
-
 				// Skip if the cleaned translation is empty
-				if (!cleanedTranslation) {
+				if (!translatedText) {
 					continue;
 				}
 
@@ -467,11 +451,11 @@ controller.getTranslateFiles = () => {
 				if (processedKeys.has(englishName)) {
 					const existingTranslation = processedKeys.get(englishName);
 					// Only replace if the new translation is longer (potentially more complete)
-					if (cleanedTranslation.length > existingTranslation.length) {
-						processedKeys.set(englishName, cleanedTranslation);
+					if (translatedText.length > existingTranslation.length) {
+						processedKeys.set(englishName, translatedText);
 					}
 				} else {
-					processedKeys.set(englishName, cleanedTranslation);
+					processedKeys.set(englishName, translatedText);
 				}
 			}
 		}
