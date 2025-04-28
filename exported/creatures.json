@@ -14762,6 +14762,471 @@
     "type": "KS_LargeRupuCamp_2_C"
   },
   {
+    "name": "Loot Box Armors",
+    "type": "LootBoxArmors_C",
+    "lootTemplate": "LootBoxArmors_C",
+    "category": "Container",
+    "tier": null,
+    "drops": [
+      {
+        "name": "Fiber Shirt and Trousers",
+        "chance": 19.801981,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Rupu Fur Armor",
+        "chance": 5.940594,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Cloaked Rupu Fur Armor",
+        "chance": 2.970297,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Fiber Sandals",
+        "chance": 19.801981,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Rupu Fur Sandals",
+        "chance": 5.940594,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Fiber Arm Wraps",
+        "chance": 19.801981,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Rupu Fur Sleeves",
+        "chance": 5.940594,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      },
+      {
+        "name": "Fiber Headwrap",
+        "chance": 19.801981,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t1"
+      }
+    ],
+    "notAssigned": true,
+    "originalName": "LootBoxArmors"
+  },
+  {
+    "name": "Loot Box Equipment",
+    "type": "LootBoxEquipment_C",
+    "lootTemplate": "LootBoxEquipment_C",
+    "category": "Container",
+    "tier": null,
+    "drops": [],
+    "notAssigned": true,
+    "originalName": "LootBoxEquipment"
+  },
+  {
+    "name": "Loot Box Modules",
+    "type": "LootBoxModules_C",
+    "lootTemplate": "LootBoxModules_C",
+    "category": "Container",
+    "tier": null,
+    "drops": [
+      {
+        "name": "Weightless Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Merchant Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Craftsman Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Fireproof Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Armoury Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Hardening Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Forager Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Scavenger Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Lumberjack Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Pack Speed Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Hearth Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Lifeforce Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Bullrush Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Sandy Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Fortress Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Harpoon Protection Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Battery Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 5,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Torque Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 5,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Watery Module",
+        "chance": 0,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Pack Mule Module",
+        "chance": 5.263158,
+        "minQuantity": 1,
+        "maxQuantity": 2,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Spring",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "components_t1"
+      },
+      {
+        "name": "Shackle",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "components_t1"
+      },
+      {
+        "name": "Strut",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "components_t1"
+      },
+      {
+        "name": "Cog",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "components_t1"
+      },
+      {
+        "name": "Lever",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "components_t1"
+      },
+      {
+        "name": "Spline",
+        "chance": 16.666666,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "components_t1"
+      }
+    ],
+    "notAssigned": true,
+    "originalName": "LootBoxModules"
+  },
+  {
+    "name": "Loot Box Tablets",
+    "type": "LootBoxTablets_C",
+    "lootTemplate": "LootBoxTablets_C",
+    "category": "Container",
+    "tier": null,
+    "drops": [],
+    "notAssigned": true,
+    "originalName": "LootBoxTablets"
+  },
+  {
+    "name": "Loot Box Tools",
+    "type": "LootBoxTools_C",
+    "lootTemplate": "LootBoxTools_C",
+    "category": "Container",
+    "tier": null,
+    "drops": [],
+    "notAssigned": true,
+    "originalName": "LootBoxTools"
+  },
+  {
+    "name": "Loot Box Weapons",
+    "type": "LootBoxWeapons_C",
+    "lootTemplate": "LootBoxWeapons_C",
+    "category": "Container",
+    "tier": null,
+    "drops": [],
+    "notAssigned": true,
+    "originalName": "LootBoxWeapons"
+  },
+  {
+    "name": "Lootbox Armors Canyon",
+    "type": "LootboxArmorsCanyon_C",
+    "lootTemplate": "LootboxArmorsCanyon_C",
+    "category": "Structure",
+    "tier": null,
+    "drops": [
+      {
+        "name": "Baskwood Armor",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t2"
+      },
+      {
+        "name": "Forester's Armor",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t2"
+      },
+      {
+        "name": "Triple Stitch Armor",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t2"
+      },
+      {
+        "name": "Baskwood Boots",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t2"
+      },
+      {
+        "name": "Forester's Sandals",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t2"
+      },
+      {
+        "name": "Triple Stitch Boots",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t2"
+      },
+      {
+        "name": "Baskwood Bracers",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t2"
+      },
+      {
+        "name": "Forester's Sleeves",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t2"
+      },
+      {
+        "name": "Triple Stitch Bracers",
+        "chance": 11.111111,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "armors_t2"
+      }
+    ],
+    "notAssigned": true,
+    "originalName": "LootboxArmorsCanyon"
+  },
+  {
+    "name": "Lootbox Toolsand Equipment Canyon",
+    "type": "LootboxToolsandEquipmentCanyon_C",
+    "lootTemplate": "LootboxToolsandEquipmentCanyon_C",
+    "category": "Structure",
+    "tier": null,
+    "drops": [],
+    "notAssigned": true,
+    "originalName": "LootboxToolsandEquipmentCanyon"
+  },
+  {
+    "name": "Lootbox Weapons Canyon",
+    "type": "LootboxWeaponsCanyon_C",
+    "lootTemplate": "LootboxWeaponsCanyon_C",
+    "category": "Structure",
+    "tier": null,
+    "drops": [
+      {
+        "name": "Nurrfang Toothclub",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t2"
+      },
+      {
+        "name": "Rawbone Club",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t2"
+      },
+      {
+        "name": "Rawbone Hand Axe",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t2"
+      },
+      {
+        "name": "Heavy Rawbone Hand Axe",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t2"
+      },
+      {
+        "name": "Bonespike Sword",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t2"
+      },
+      {
+        "name": "Rawbone Quarterstaff",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t2"
+      },
+      {
+        "name": "Rawbone Battle Axe",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t2"
+      },
+      {
+        "name": "Rawbone Maul",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t2"
+      },
+      {
+        "name": "Long Bonespike Swordstaff",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t2"
+      },
+      {
+        "name": "Rawbone Sawsword",
+        "chance": 9.090909,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "weapons_t2"
+      }
+    ],
+    "notAssigned": true,
+    "originalName": "LootboxWeaponsCanyon"
+  },
+  {
     "name": "Marshland Stalker",
     "type": "RupuStalker_C",
     "health": 400,

@@ -10,4 +10,6 @@ const lootTemplateParser = require('./lootTemplateParser');
 module.exports = {
   parseLootTable: lootTableParser.parseLootTable,
   parseLootTemplate: lootTemplateParser.parseLootTemplate,
+  parseLootSites: lootTableParser.parseLootSites,
+  getLootSiteNameFromObject: lootTableParser.getLootSiteNameFromObject,
 };

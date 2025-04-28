@@ -94,10 +94,19 @@ const parseLootTableRef = (tableRef) => {
 
   // Extract table reference information
   if (tableRef.Table.ObjectName) {
-    // Extract the name from the ObjectName (e.g., "DataTable'BaseResources_T2'")
-    const match = tableRef.Table.ObjectName.match(/DataTable'([^']+)'/);
+    // Extract the name from the ObjectName (e.g., "DataTable'BaseResources_T2'" or "DataTable'Armors_T1'")
+    const match = tableRef.Table.ObjectName.match(/(?:DataTable|Object)'([^']+)'/);
     if (match?.[1]) {
       simplifiedTable.name = match[1];
+    }
+  } else if (tableRef.Table.ObjectPath) {
+    // For LootBox templates, the table reference might be in ObjectPath instead
+    const pathParts = tableRef.Table.ObjectPath.split('/');
+    if (pathParts.length > 0) {
+      const lastPart = pathParts[pathParts.length - 1];
+      // Extract the name from the last part of the path
+      const nameParts = lastPart.split('.');
+      simplifiedTable.name = nameParts[0];
     }
   }
 
@@ -198,15 +207,33 @@ const parseLootTemplate = (filePath) => {
     "T1";
 
   // Process loot tables
-  if (
-    templateData.Properties.Loot.Tables &&
-    Array.isArray(templateData.Properties.Loot.Tables)
-  ) {
+  // Handle both standard loot templates and LootBox templates which have bUseTables property
+  if (templateData.Properties.Loot) {
     const allParsedTables = [];
-    for (const tableRef of templateData.Properties.Loot.Tables) {
-      const parsedTable = parseLootTableRef(tableRef);
-      if (parsedTable) {
-        allParsedTables.push(parsedTable);
+
+    // Check if this is a LootBox template with bUseTables property
+    if (templateData.Properties.Loot.bUseTables &&
+      templateData.Properties.Loot.Tables &&
+      Array.isArray(templateData.Properties.Loot.Tables)) {
+
+      console.log(`Processing LootBox template: ${lootTemplate.name}`);
+
+      for (const tableRef of templateData.Properties.Loot.Tables) {
+        const parsedTable = parseLootTableRef(tableRef);
+        if (parsedTable) {
+          allParsedTables.push(parsedTable);
+        }
+      }
+    }
+    // Standard loot template format
+    else if (templateData.Properties.Loot.Tables &&
+      Array.isArray(templateData.Properties.Loot.Tables)) {
+
+      for (const tableRef of templateData.Properties.Loot.Tables) {
+        const parsedTable = parseLootTableRef(tableRef);
+        if (parsedTable) {
+          allParsedTables.push(parsedTable);
+        }
       }
     }
 

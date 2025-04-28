@@ -1,0 +1,16 @@
+{
+  "name": "LootboxWeaponsCanyon_C",
+  "type": "LootboxWeaponsCanyon_C",
+  "class": "BlueprintGeneratedClass'Mist/Content/Mist/Data/LootTables/LootBoxes/LootboxWeaponsCanyon.LootboxWeaponsCanyon_C'",
+  "tables": [
+    {
+      "name": "Weapons_T2",
+      "runChance": 1,
+      "minIterations": 5,
+      "maxIterations": 7,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 6,
+      "maxQuantityMultiplier": 8
+    }
+  ]
+}

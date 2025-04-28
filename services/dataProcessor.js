@@ -301,6 +301,24 @@ const processCreatures = () => {
 };
 
 /**
+ * Processes strongbox items to add drop information
+ * @param {Array} items - The items to process (optional)
+ * @returns {Array} - Array of items with strongbox drop information
+ */
+const processStrongboxes = (items) => {
+  console.info("Processing strongbox items with drop information");
+  const strongboxProcessor = require("../utils/strongboxProcessor");
+
+  // Process strongbox items and add drop information
+  // If items are provided, use them; otherwise, get all items from fileParser
+  const itemsToProcess = items || fileParser.getAllItems();
+  const itemsWithDrops = strongboxProcessor.processStrongboxDrops(itemsToProcess);
+
+  return itemsWithDrops;
+};
+
+
+/**
  * Creates a minimal version of the creatures
  * @param {Array} creatures - Array of complete creatures
  * @returns {Array} - Array of creatures in minimal version
@@ -416,6 +434,7 @@ module.exports = {
   createMinItems,
   processCreatures,
   createMinCreatures,
+  processStrongboxes,
   processTranslations,
   validateTranslationData,
 };

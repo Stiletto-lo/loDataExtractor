@@ -142,6 +142,11 @@ const loadAllFiles = (contentFolderPath) => {
     `${contentFolderPath}Content/Mist/Data/LootTables/LootTemplates`,
     "loottemplates",
   );
+  console.info("Loading LootBox Templates");
+  loadDirData(
+    `${contentFolderPath}Content/Mist/Data/LootTables/LootBoxes`,
+    "loottemplates",
+  );
 };
 
 module.exports = {
