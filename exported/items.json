@@ -2435,72 +2435,31 @@
     "unlockable": "Battle Fan"
   },
   {
-    "category": "Clay",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "Cattail"
-          },
-          {
-            "count": 3,
+            "count": 2,
             "name": "Wooden Slab"
           },
           {
-            "count": 10,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "Battlement",
-    "translation": "Battlement",
-    "type": "WallClayBattlement_C",
-    "description": "Extremely durable. Can only be packed on Founder Walker types (Silur Walker).",
-    "experiencieReward": 30,
-    "weight": 7,
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
-    },
-    "unlockable": "ClayWalls"
-  },
-  {
-    "category": "Concrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 25,
-            "name": "Lightwood"
-          },
-          {
-            "count": 6,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 4,
-            "name": "Iron Nails"
-          },
-          {
-            "count": 6,
-            "name": "Tar"
+            "count": 14,
+            "name": "Fiber"
           }
         ]
       }
     ],
     "name": "Battlements",
     "translation": "Battlements",
-    "type": "WallConcreteBattlement_C",
+    "type": "WallWoodLightBattlement_C",
     "description": "Above average strength, can be packed on walkers.",
-    "experiencieReward": 30,
-    "weight": 12,
+    "experiencieReward": 46,
+    "weight": 3,
     "structureInfo": {
-      "type": "Solid",
-      "hp": 40000
+      "type": "Reinforced",
+      "hp": 10000
     },
-    "unlockable": "ConcreteWalls"
+    "unlockable": "WoodenWalls"
   },
   {
     "category": "Walkers",
@@ -4894,11 +4853,175 @@
     ],
     "name": "Cement Balang Core",
     "type": "BalangCore_C",
-    "weight": 10,
     "structureInfo": {
       "type": "Solid",
       "hp": 150000
     }
+  },
+  {
+    "category": "Concrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 4,
+            "name": "Iron Nails"
+          },
+          {
+            "count": 6,
+            "name": "Tar"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Battlements",
+    "type": "WallConcreteBattlement_C",
+    "experiencieReward": 30,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 40000
+    },
+    "unlockable": "ConcreteWalls"
+  },
+  {
+    "category": "Concrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 4,
+            "name": "Iron Nails"
+          },
+          {
+            "count": 6,
+            "name": "Tar"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Corner",
+    "type": "WallConcreteCorner_C",
+    "experiencieReward": 32,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 40000
+    },
+    "unlockable": "ConcreteWalls"
+  },
+  {
+    "category": "Concrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 4,
+            "name": "Iron Nails"
+          },
+          {
+            "count": 6,
+            "name": "Tar"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Door",
+    "type": "WallConcreteDoor_C",
+    "experiencieReward": 22,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 40000
+    },
+    "unlockable": "ConcreteWalls"
+  },
+  {
+    "category": "Concrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 4,
+            "name": "Iron Nails"
+          },
+          {
+            "count": 6,
+            "name": "Tar"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Floor / Roof",
+    "type": "WallConcreteRoof_C",
+    "experiencieReward": 22,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 40000
+    },
+    "unlockable": "ConcreteWalls"
+  },
+  {
+    "category": "Concrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 4,
+            "name": "Iron Nails"
+          },
+          {
+            "count": 6,
+            "name": "Tar"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Foundation",
+    "type": "WallConcreteFoundation_C",
+    "experiencieReward": 22,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 40000
+    },
+    "unlockable": "ConcreteWalls"
   },
   {
     "category": "Concrete",
@@ -4922,11 +5045,208 @@
     ],
     "name": "Cement Silur Core",
     "type": "SilurCore_C",
-    "weight": 10,
     "structureInfo": {
       "type": "Solid",
       "hp": 400000
     }
+  },
+  {
+    "category": "Concrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 4,
+            "name": "Iron Nails"
+          },
+          {
+            "count": 6,
+            "name": "Tar"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Wall 1",
+    "type": "WallConcrete_C",
+    "experiencieReward": 30,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 40000
+    },
+    "unlockable": "ConcreteWalls"
+  },
+  {
+    "category": "Concrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 4,
+            "name": "Iron Nails"
+          },
+          {
+            "count": 6,
+            "name": "Tar"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Wall 2",
+    "type": "WallConcrete2_C",
+    "experiencieReward": 30,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 40000
+    },
+    "unlockable": "ConcreteWalls"
+  },
+  {
+    "category": "Concrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 4,
+            "name": "Iron Nails"
+          },
+          {
+            "count": 6,
+            "name": "Tar"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Wall With Window 1",
+    "type": "WallConcreteWindow_C",
+    "experiencieReward": 32,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 40000
+    },
+    "unlockable": "ConcreteWalls"
+  },
+  {
+    "category": "Concrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 4,
+            "name": "Iron Nails"
+          },
+          {
+            "count": 6,
+            "name": "Tar"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Wall With Window 2",
+    "type": "WallConcreteWindow2_C",
+    "experiencieReward": 32,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 40000
+    },
+    "unlockable": "ConcreteWalls"
+  },
+  {
+    "category": "Concrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 4,
+            "name": "Iron Nails"
+          },
+          {
+            "count": 6,
+            "name": "Tar"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Wall With Windows 1",
+    "type": "WallConcreteWindow3_C",
+    "experiencieReward": 32,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 40000
+    },
+    "unlockable": "ConcreteWalls"
+  },
+  {
+    "category": "Concrete",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 4,
+            "name": "Iron Nails"
+          },
+          {
+            "count": 6,
+            "name": "Tar"
+          }
+        ]
+      }
+    ],
+    "name": "Cement Wall With Windows 2",
+    "type": "WallConcreteWindow4_C",
+    "experiencieReward": 32,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 40000
+    },
+    "unlockable": "ConcreteWalls"
   },
   {
     "crafting": [
@@ -5988,6 +6308,151 @@
     "whereToFarm": "Extracted with Soil Excavator from mud puddles in hard oases."
   },
   {
+    "category": "Clay",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Cattail"
+          },
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 10,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Battlement",
+    "type": "WallClayBattlement_C",
+    "experiencieReward": 30,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    },
+    "unlockable": "ClayWalls"
+  },
+  {
+    "category": "Clay",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Cattail"
+          },
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 40,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Corner",
+    "type": "WallClayCorner_C",
+    "experiencieReward": 30,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    },
+    "unlockable": "ClayWalls"
+  },
+  {
+    "category": "Clay",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Cattail"
+          },
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 20,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Door",
+    "type": "WallClayDoor_C",
+    "experiencieReward": 22,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    },
+    "unlockable": "ClayWalls"
+  },
+  {
+    "category": "Clay",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Cattail"
+          },
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 20,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Floor / Roof",
+    "type": "WallClayRoof_C",
+    "experiencieReward": 22,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    },
+    "unlockable": "ClayWalls"
+  },
+  {
+    "category": "Clay",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Cattail"
+          },
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 25,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Foundation",
+    "type": "WallClayFoundation_C",
+    "experiencieReward": 22,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    },
+    "unlockable": "ClayWalls"
+  },
+  {
     "category": "Crafting",
     "crafting": [
       {
@@ -6028,6 +6493,93 @@
     "unlockable": "Clay Pot"
   },
   {
+    "category": "Clay",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Cattail"
+          },
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 20,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Wall",
+    "type": "WallClay_C",
+    "experiencieReward": 30,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    },
+    "unlockable": "ClayWalls"
+  },
+  {
+    "category": "Clay",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Cattail"
+          },
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 20,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Wall with Window",
+    "type": "WallClayWindow_C",
+    "experiencieReward": 32,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    },
+    "unlockable": "ClayWalls"
+  },
+  {
+    "category": "Clay",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Cattail"
+          },
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 15,
+            "name": "Clay"
+          }
+        ]
+      }
+    ],
+    "name": "Clay Wall with Windows",
+    "type": "WallClayWindow2_C",
+    "experiencieReward": 32,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 20000
+    },
+    "unlockable": "ClayWalls"
+  },
+  {
     "name": "Clay Walls",
     "parent": "StoneWalls",
     "translation": "Clay Walls",
@@ -6039,14 +6591,14 @@
     "type": "ClayWallsSchematic_C",
     "stackSize": 100,
     "learn": [
-      "Wall with Windows",
-      "Wall with Window",
-      "Floor / Roof",
-      "Foundation",
-      "Door",
-      "Corner",
-      "Battlement",
-      "Wall"
+      "Clay Wall with Windows",
+      "Clay Wall with Window",
+      "Clay Floor / Roof",
+      "Clay Foundation",
+      "Clay Door",
+      "Clay Corner",
+      "Clay Battlement",
+      "Clay Wall"
     ]
   },
   {
@@ -6096,38 +6648,6 @@
     "name": "Cloaked Rupu Fur Torso",
     "parent": "RupuFurTorso",
     "type": "CloakedRupuFurTorso_C"
-  },
-  {
-    "category": "Basic Protection",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 7,
-            "name": "Fiber"
-          },
-          {
-            "count": 15,
-            "name": "Sand"
-          },
-          {
-            "count": 4,
-            "name": "Palm Leaves"
-          }
-        ]
-      }
-    ],
-    "name": "Cloth Door",
-    "translation": "Cloth Door",
-    "type": "WallSandDoor_C",
-    "description": "Weak structure that still protects nomads from dangers. Only sand structures can be used with a sand base.",
-    "experiencieReward": 22,
-    "weight": 13,
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 500
-    },
-    "unlockable": "Sand Structures"
   },
   {
     "category": "Ammo",
@@ -6333,17 +6853,17 @@
     "type": "ConcreteWallsSchematic_C",
     "stackSize": 100,
     "learn": [
-      "Wall With Windows 2",
-      "Wall With Windows 1",
-      "Wall With Window 2",
-      "Wall With Window 1",
-      "Floor / Roof",
-      "Foundation",
-      "Door",
-      "Corner",
-      "Battlements",
-      "Wall 2",
-      "Wall 1"
+      "Cement Wall With Windows 2",
+      "Cement Wall With Windows 1",
+      "Cement Wall With Window 2",
+      "Cement Wall With Window 1",
+      "Cement Floor / Roof",
+      "Cement Foundation",
+      "Cement Door",
+      "Cement Corner",
+      "Cement Battlements",
+      "Cement Wall 2",
+      "Cement Wall 1"
     ]
   },
   {
@@ -6407,36 +6927,31 @@
     "whereToFarm": "Grows on green flatlands and hills."
   },
   {
-    "category": "Clay",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 3,
+            "count": 2,
             "name": "Wooden Slab"
           },
           {
-            "count": 40,
-            "name": "Clay"
+            "count": 14,
+            "name": "Fiber"
           }
         ]
       }
     ],
     "name": "Corner",
     "translation": "Corner",
-    "type": "WallClayCorner_C",
+    "type": "WallWoodLightCorner_C",
     "description": "Average strength",
-    "experiencieReward": 30,
-    "weight": 5,
+    "experiencieReward": 40,
+    "weight": 3,
     "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
+      "type": "Reinforced",
+      "hp": 10000
     },
-    "unlockable": "ClayWalls"
+    "unlockable": "WoodenWalls"
   },
   {
     "category": "Resources",
@@ -7554,68 +8069,58 @@
     "unlockable": "WalkerPartsImproved_T4"
   },
   {
-    "category": "Clay",
     "crafting": [
       {
         "ingredients": [
-          {
-            "count": 20,
-            "name": "Cattail"
-          },
           {
             "count": 3,
             "name": "Wooden Slab"
           },
           {
-            "count": 20,
-            "name": "Clay"
+            "count": 14,
+            "name": "Fiber"
           }
         ]
       }
     ],
     "name": "Door",
     "translation": "Door",
-    "type": "WallClayDoor_C",
+    "type": "WallWoodLightDoor_C",
     "description": "Above average strength, can be packed on walkers.",
-    "experiencieReward": 22,
-    "weight": 8.5,
+    "experiencieReward": 44,
+    "weight": 3,
     "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
+      "type": "Reinforced",
+      "hp": 10000
     },
-    "unlockable": "ClayWalls"
+    "unlockable": "WoodenWalls"
   },
   {
-    "category": "Wood: heavy",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 35,
-            "name": "Redwood Wood"
+            "count": 2,
+            "name": "Wooden Slab"
           },
           {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
+            "count": 14,
+            "name": "Fiber"
           }
         ]
       }
     ],
     "name": "Double Slit Wall",
     "translation": "Double Slit Wall",
-    "type": "WallWoodHeavyWindow2_C",
+    "type": "WallWoodLightWindow2_C",
     "description": "Above average strength, can be packed on walkers.",
     "experiencieReward": 46,
     "weight": 3,
     "structureInfo": {
       "type": "Reinforced",
-      "hp": 40000
+      "hp": 10000
     },
-    "unlockable": "HeavyWalls"
+    "unlockable": "WoodenWalls"
   },
   {
     "category": "Tools",
@@ -10534,36 +11039,31 @@
     "damageType": "'ExplosionDamage_C'"
   },
   {
-    "category": "Clay",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 3,
+            "count": 2,
             "name": "Wooden Slab"
           },
           {
-            "count": 20,
-            "name": "Clay"
+            "count": 14,
+            "name": "Fiber"
           }
         ]
       }
     ],
     "name": "Floor / Roof",
     "translation": "Floor / Roof",
-    "type": "WallClayRoof_C",
+    "type": "WallWoodLightRoof_C",
     "description": "Above average strength, can be packed on walkers.",
-    "experiencieReward": 22,
-    "weight": 4,
+    "experiencieReward": 40,
+    "weight": 3,
     "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
+      "type": "Reinforced",
+      "hp": 10000
     },
-    "unlockable": "ClayWalls"
+    "unlockable": "WoodenWalls"
   },
   {
     "category": "Grappling Hooks",
@@ -11106,36 +11606,30 @@
     }
   },
   {
-    "category": "Clay",
     "crafting": [
       {
         "ingredients": [
-          {
-            "count": 8,
-            "name": "Cattail"
-          },
           {
             "count": 3,
             "name": "Wooden Slab"
           },
           {
-            "count": 25,
-            "name": "Clay"
+            "count": 14,
+            "name": "Fiber"
           }
         ]
       }
     ],
     "name": "Foundation",
     "translation": "Foundation",
-    "type": "WallClayFoundation_C",
+    "type": "WallWoodLightFoundation_C",
     "description": "Above average strength, can be packed on walkers.",
-    "experiencieReward": 22,
-    "weight": 5,
+    "weight": 3,
     "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
+      "type": "Reinforced",
+      "hp": 10000
     },
-    "unlockable": "ClayWalls"
+    "unlockable": "WoodenWalls"
   },
   {
     "category": "Knowledge",
@@ -11836,33 +12330,6 @@
     "damageType": "'BluntDamage_C'"
   },
   {
-    "category": "Wood: light",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 1,
-            "name": "Wooden Slab"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Guard Rail",
-    "translation": "Guard Rail",
-    "type": "GuardRail_C",
-    "description": "Fence off your territory or build on walker decks to prevent Nomads from falling off.",
-    "experiencieReward": 28,
-    "weight": 1,
-    "structureInfo": {
-      "hp": 400
-    },
-    "unlockable": "WoodenWalls"
-  },
-  {
     "category": "Weapons",
     "crafting": [
       {
@@ -12471,16 +12938,16 @@
     "type": "HeavyWallsSchematic_C",
     "stackSize": 100,
     "learn": [
-      "Double Slit Wall",
-      "Slit Wall",
+      "Heavy Wood Double Slit Wall",
+      "Heavy Wood Slit Wall",
       "Stairs",
-      "Floor / Roof",
-      "Foundation",
-      "Door",
-      "Corner",
-      "Battlements",
-      "Wall 2",
-      "Wall 1"
+      "Heavy Wood Floor / Roof",
+      "Heavy Wood Foundation",
+      "Heavy Wood Door",
+      "Heavy Wood Corner",
+      "Heavy Wood Battlements",
+      "Heavy Wood Wall 2",
+      "Heavy Wood Wall 1"
     ]
   },
   {
@@ -12489,6 +12956,266 @@
     "translation": "Heavy Wings",
     "type": "HeavyWings_C",
     "description": "Large and heavy cloth of the heavy wings can withstand more intense battles than any other type."
+  },
+  {
+    "category": "Wood: heavy",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Battlements",
+    "type": "WallWoodHeavyBattlement_C",
+    "experiencieReward": 46,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 40000
+    },
+    "unlockable": "HeavyWalls"
+  },
+  {
+    "category": "Wood: heavy",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Corner",
+    "type": "WallWoodHeavyCorner_C",
+    "experiencieReward": 40,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 40000
+    },
+    "unlockable": "HeavyWalls"
+  },
+  {
+    "category": "Wood: heavy",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Door",
+    "type": "WallWoodHeavyDoor_C",
+    "experiencieReward": 44,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 40000
+    },
+    "unlockable": "HeavyWalls"
+  },
+  {
+    "category": "Wood: heavy",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Double Slit Wall",
+    "type": "WallWoodHeavyWindow2_C",
+    "experiencieReward": 46,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 40000
+    },
+    "unlockable": "HeavyWalls"
+  },
+  {
+    "category": "Wood: heavy",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Floor / Roof",
+    "type": "WallWoodHeavyRoof_C",
+    "experiencieReward": 40,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 40000
+    },
+    "unlockable": "HeavyWalls"
+  },
+  {
+    "category": "Wood: heavy",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Foundation",
+    "type": "WallWoodHeavyFoundation_C",
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 40000
+    },
+    "unlockable": "HeavyWalls"
+  },
+  {
+    "category": "Wood: heavy",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Slit Wall",
+    "type": "WallWoodHeavyWindow_C",
+    "experiencieReward": 46,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 40000
+    },
+    "unlockable": "HeavyWalls"
+  },
+  {
+    "category": "Wood: heavy",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Wall 1",
+    "type": "WallWoodHeavy_C",
+    "experiencieReward": 40,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 40000
+    },
+    "unlockable": "HeavyWalls"
+  },
+  {
+    "category": "Wood: heavy",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 1,
+            "name": "Bone Glue"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Wood Wall 2",
+    "type": "WallWoodHeavy2_C",
+    "experiencieReward": 40,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 40000
+    },
+    "unlockable": "HeavyWalls"
   },
   {
     "category": "Resources",
@@ -15402,6 +16129,86 @@
     "unlockable": "DevOnly"
   },
   {
+    "category": "Wood: light",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Guard Rail",
+    "type": "GuardRail_C",
+    "experiencieReward": 28,
+    "structureInfo": {
+      "hp": 400
+    },
+    "unlockable": "WoodenWalls"
+  },
+  {
+    "category": "Wood: light",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 45,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Scaffolding",
+    "type": "Scaffolding_C",
+    "experiencieReward": 56,
+    "structureInfo": {
+      "hp": 75
+    },
+    "unlockable": "WoodenWalls"
+  },
+  {
+    "category": "Wood: light",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 38,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 11,
+            "name": "Stone"
+          },
+          {
+            "count": 2,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Light Wood Walker Gate",
+    "type": "WalkerGate_C",
+    "experiencieReward": 98,
+    "structureInfo": {
+      "hp": 1000
+    },
+    "unlockable": "WoodenWalls"
+  },
+  {
     "category": "Resources",
     "name": "Lightwood",
     "trade_price": 3.5,
@@ -16132,6 +16939,209 @@
     "translation": "Medium Wing",
     "type": "MediumFastWing_C",
     "description": "Upscaled wings that are better at generating force for walker movement."
+  },
+  {
+    "category": "Wood: medium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Battlements",
+    "type": "WallWoodMediumBattlement_C",
+    "experiencieReward": 92,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 20000
+    },
+    "unlockable": "Medium Wood Walls"
+  },
+  {
+    "category": "Wood: medium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Door",
+    "type": "WallWoodMediumDoor_C",
+    "experiencieReward": 88,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 20000
+    },
+    "unlockable": "Medium Wood Walls"
+  },
+  {
+    "category": "Wood: medium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Double Slit Wall",
+    "type": "WallWoodMediumWindow2_C",
+    "experiencieReward": 92,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 20000
+    },
+    "unlockable": "Medium Wood Walls"
+  },
+  {
+    "category": "Wood: medium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Floor / Roof",
+    "type": "WallWoodMediumRoof_C",
+    "experiencieReward": 80,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 20000
+    },
+    "unlockable": "Medium Wood Walls"
+  },
+  {
+    "category": "Wood: medium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Foundation",
+    "type": "WallWoodMediumFoundation_C",
+    "experiencieReward": 10,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 20000
+    },
+    "unlockable": "Medium Wood Walls"
+  },
+  {
+    "category": "Wood: medium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Slit Wall",
+    "type": "WallWoodMediumWindow_C",
+    "experiencieReward": 92,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 20000
+    },
+    "unlockable": "Medium Wood Walls"
+  },
+  {
+    "category": "Wood: medium",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 4,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Wood Wall",
+    "type": "WallWoodMedium_C",
+    "experiencieReward": 80,
+    "structureInfo": {
+      "type": "Reinforced",
+      "hp": 20000
+    },
+    "unlockable": "Medium Wood Walls"
   },
   {
     "name": "Medium Wood Walls",
@@ -19998,13 +21008,13 @@
     "type": "ReinforcedWallsSchematic_C",
     "stackSize": 100,
     "learn": [
-      "Double Slit Wall",
-      "Slit Wall",
-      "Floor / Roof",
-      "Foundation",
-      "Door",
-      "Battlements",
-      "Wall"
+      "Medium Wood Double Slit Wall",
+      "Medium Wood Slit Wall",
+      "Medium Wood Floor / Roof",
+      "Medium Wood Foundation",
+      "Medium Wood Door",
+      "Medium Wood Battlements",
+      "Medium Wood Wall"
     ]
   },
   {
@@ -21381,6 +22391,35 @@
       {
         "ingredients": [
           {
+            "count": 7,
+            "name": "Fiber"
+          },
+          {
+            "count": 15,
+            "name": "Sand"
+          },
+          {
+            "count": 4,
+            "name": "Palm Leaves"
+          }
+        ]
+      }
+    ],
+    "name": "Sand Cloth Door",
+    "type": "WallSandDoor_C",
+    "experiencieReward": 22,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 500
+    },
+    "unlockable": "Sand Structures"
+  },
+  {
+    "category": "Basic Protection",
+    "crafting": [
+      {
+        "ingredients": [
+          {
             "count": 5,
             "name": "Fiber"
           },
@@ -21391,12 +22430,9 @@
         ]
       }
     ],
-    "name": "Sand Foundation",
-    "translation": "Sand Foundation",
+    "name": "Sand Sand Foundation",
     "type": "WallSandFoundation_C",
-    "description": "Weak structure that still protects nomads from dangers. Only sand structures can be used with a sand base.",
     "experiencieReward": 32,
-    "weight": 8,
     "structureInfo": {
       "type": "Solid",
       "hp": 500
@@ -21423,38 +22459,14 @@
         ]
       }
     ],
-    "name": "Sand Ramp",
-    "translation": "Sand Ramp",
+    "name": "Sand Sand Ramp",
     "type": "WallSandRamp_C",
-    "description": "Weak structure that still protects nomads from dangers. Only sand structures can be used with a sand base.",
     "experiencieReward": 32,
-    "weight": 8,
     "structureInfo": {
       "type": "Solid",
       "hp": 500
     },
     "unlockable": "Sand Structures"
-  },
-  {
-    "name": "Sand Structures",
-    "parent": "Maintenance Box",
-    "translation": "Sand Structures",
-    "type": "SandWalls_C"
-  },
-  {
-    "category": "Schematics",
-    "name": "Sand Structures Schematic",
-    "type": "SandWallsSchematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Sandbag Wall",
-      "Cloth Door",
-      "Sand Foundation",
-      "Sandbag Gate",
-      "Sand Ramp",
-      "Sandbag Roof",
-      "Sandbag Wall Window"
-    ]
   },
   {
     "category": "Basic Protection",
@@ -21476,12 +22488,9 @@
         ]
       }
     ],
-    "name": "Sandbag Gate",
-    "translation": "Sandbag Gate",
+    "name": "Sand Sandbag Gate",
     "type": "WallSandGate_C",
-    "description": "Weak gate for a small Firefly Walker garage. Only sand structures can be used with a sand base.",
     "experiencieReward": 22,
-    "weight": 13,
     "structureInfo": {
       "type": "Solid",
       "hp": 500
@@ -21508,12 +22517,9 @@
         ]
       }
     ],
-    "name": "Sandbag Roof",
-    "translation": "Sandbag Roof",
+    "name": "Sand Sandbag Roof",
     "type": "WallSandRoof_C",
-    "description": "Weak structure that still protects nomads from dangers. Only sand structures can be used with a sand base.",
     "experiencieReward": 22,
-    "weight": 2,
     "structureInfo": {
       "type": "Solid",
       "hp": 500
@@ -21540,12 +22546,9 @@
         ]
       }
     ],
-    "name": "Sandbag Wall",
-    "translation": "Sandbag Wall",
+    "name": "Sand Sandbag Wall",
     "type": "WallSand_C",
-    "description": "Weak structure that still protects nomads from dangers. Only sand structures can be used with a sand base.",
     "experiencieReward": 30,
-    "weight": 10,
     "structureInfo": {
       "type": "Solid",
       "hp": 500
@@ -21572,17 +22575,35 @@
         ]
       }
     ],
-    "name": "Sandbag Wall Window",
-    "translation": "Sandbag Wall Window",
+    "name": "Sand Sandbag Wall Window",
     "type": "WallSandWindow_C",
-    "description": "Weak structure that still protects nomads from dangers. Only sand structures can be used with a sand base.",
     "experiencieReward": 32,
-    "weight": 8,
     "structureInfo": {
       "type": "Solid",
       "hp": 500
     },
     "unlockable": "Sand Structures"
+  },
+  {
+    "name": "Sand Structures",
+    "parent": "Maintenance Box",
+    "translation": "Sand Structures",
+    "type": "SandWalls_C"
+  },
+  {
+    "category": "Schematics",
+    "name": "Sand Structures Schematic",
+    "type": "SandWallsSchematic_C",
+    "stackSize": 100,
+    "learn": [
+      "Sand Sandbag Wall",
+      "Sand Cloth Door",
+      "Sand Sand Foundation",
+      "Sand Sandbag Gate",
+      "Sand Sand Ramp",
+      "Sand Sandbag Roof",
+      "Sand Sandbag Wall Window"
+    ]
   },
   {
     "category": "Resources",
@@ -21664,33 +22685,6 @@
       }
     ],
     "unlockable": "Sawblade"
-  },
-  {
-    "category": "Wood: light",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 3,
-            "name": "Wooden Slab"
-          },
-          {
-            "count": 45,
-            "name": "Fiber"
-          }
-        ]
-      }
-    ],
-    "name": "Scaffolding",
-    "translation": "Scaffolding",
-    "type": "Scaffolding_C",
-    "description": "A stackable, elevated platform that allows for easier access to high places. Useful in walker construction.",
-    "experiencieReward": 56,
-    "weight": 3,
-    "structureInfo": {
-      "hp": 75
-    },
-    "unlockable": "WoodenWalls"
   },
   {
     "category": "Ammo",
@@ -23120,36 +24114,31 @@
     "unlockable": "Slingshot"
   },
   {
-    "category": "Wood: heavy",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 35,
-            "name": "Redwood Wood"
+            "count": 2,
+            "name": "Wooden Slab"
           },
           {
-            "count": 5,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 1,
-            "name": "Bone Glue"
+            "count": 14,
+            "name": "Fiber"
           }
         ]
       }
     ],
     "name": "Slit Wall",
     "translation": "Slit Wall",
-    "type": "WallWoodHeavyWindow_C",
+    "type": "WallWoodLightWindow_C",
     "description": "Above average strength, can be packed on walkers.",
     "experiencieReward": 46,
     "weight": 3,
     "structureInfo": {
       "type": "Reinforced",
-      "hp": 40000
+      "hp": 10000
     },
-    "unlockable": "HeavyWalls"
+    "unlockable": "WoodenWalls"
   },
   {
     "category": "Containers",
@@ -24602,6 +25591,105 @@
     "damageType": "'MeleeAxeDamage_C'"
   },
   {
+    "category": "Stone",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 3,
+            "name": "Tree Sap"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Door",
+    "type": "WallStoneDoor_C",
+    "experiencieReward": 4,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 10000
+    },
+    "unlockable": "StoneWalls"
+  },
+  {
+    "category": "Stone",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 3,
+            "name": "Tree Sap"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Floor / Roof",
+    "type": "WallStoneRoof_C",
+    "experiencieReward": 22,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 10000
+    },
+    "unlockable": "StoneWalls"
+  },
+  {
+    "category": "Stone",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 3,
+            "name": "Tree Sap"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Foundation",
+    "type": "WallStoneFoundation_C",
+    "experiencieReward": 22,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 10000
+    },
+    "unlockable": "StoneWalls"
+  },
+  {
     "category": "Interactables",
     "crafting": [
       {
@@ -24659,6 +25747,72 @@
     "weight": 1
   },
   {
+    "category": "Stone",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 3,
+            "name": "Tree Sap"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Wall",
+    "type": "WallStone_C",
+    "experiencieReward": 30,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 10000
+    },
+    "unlockable": "StoneWalls"
+  },
+  {
+    "category": "Stone",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Wooden Slab"
+          },
+          {
+            "count": 10,
+            "name": "Stone"
+          },
+          {
+            "count": 1,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 3,
+            "name": "Tree Sap"
+          }
+        ]
+      }
+    ],
+    "name": "Stone Wall with Window",
+    "type": "WallStoneWindow_C",
+    "experiencieReward": 32,
+    "structureInfo": {
+      "type": "Solid",
+      "hp": 10000
+    },
+    "unlockable": "StoneWalls"
+  },
+  {
     "name": "Stone Walls",
     "parent": "Sand Structures",
     "translation": "Stone Walls",
@@ -24670,11 +25824,11 @@
     "type": "StoneWallsSchematic_C",
     "stackSize": 100,
     "learn": [
-      "Wall with Window",
-      "Floor / Roof",
-      "Foundation",
-      "Door",
-      "Wall"
+      "Stone Wall with Window",
+      "Stone Floor / Roof",
+      "Stone Foundation",
+      "Stone Door",
+      "Stone Wall"
     ]
   },
   {
@@ -27548,41 +28702,6 @@
     "unlockable": "Walker Climber"
   },
   {
-    "category": "Wood: light",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 38,
-            "name": "Wood"
-          },
-          {
-            "count": 1,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 11,
-            "name": "Stone"
-          },
-          {
-            "count": 2,
-            "name": "Wood Shaft"
-          }
-        ]
-      }
-    ],
-    "name": "Walker Gate",
-    "translation": "Walker Gate",
-    "type": "WalkerGate_C",
-    "description": "Opens and closes to obstruct walkers or allow them passage.",
-    "experiencieReward": 98,
-    "weight": 18.5,
-    "structureInfo": {
-      "hp": 1000
-    },
-    "unlockable": "WoodenWalls"
-  },
-  {
     "name": "Walker Hangar",
     "parent": "Medium Wood Walls",
     "translation": "Walker Hangar",
@@ -27675,36 +28794,31 @@
     "description": "Walkers and Upgrades"
   },
   {
-    "category": "Clay",
     "crafting": [
       {
         "ingredients": [
           {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 3,
+            "count": 2,
             "name": "Wooden Slab"
           },
           {
-            "count": 20,
-            "name": "Clay"
+            "count": 14,
+            "name": "Fiber"
           }
         ]
       }
     ],
     "name": "Wall",
     "translation": "Wall",
-    "type": "WallClay_C",
+    "type": "WallWoodLight_C",
     "description": "Above average strength, can be packed on walkers.",
-    "experiencieReward": 30,
-    "weight": 7,
+    "experiencieReward": 40,
+    "weight": 3,
     "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
+      "type": "Reinforced",
+      "hp": 10000
     },
-    "unlockable": "ClayWalls"
+    "unlockable": "WoodenWalls"
   },
   {
     "category": "Furniture",
@@ -27732,250 +28846,6 @@
       "hp": 500
     },
     "unlockable": "Furnitures"
-  },
-  {
-    "category": "Concrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 25,
-            "name": "Lightwood"
-          },
-          {
-            "count": 6,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 4,
-            "name": "Iron Nails"
-          },
-          {
-            "count": 6,
-            "name": "Tar"
-          }
-        ]
-      }
-    ],
-    "name": "Wall 2",
-    "translation": "Wall 2",
-    "type": "WallConcrete2_C",
-    "description": "Average strength, can be packed on walkers.",
-    "experiencieReward": 30,
-    "weight": 15,
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 40000
-    },
-    "unlockable": "ConcreteWalls"
-  },
-  {
-    "category": "Concrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 25,
-            "name": "Lightwood"
-          },
-          {
-            "count": 6,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 4,
-            "name": "Iron Nails"
-          },
-          {
-            "count": 6,
-            "name": "Tar"
-          }
-        ]
-      }
-    ],
-    "name": "Wall With Window 1",
-    "translation": "Wall With Window 1",
-    "type": "WallConcreteWindow_C",
-    "description": "Almost impossible to break. Can only be packed on Founder Walker types (Silur Walker).",
-    "experiencieReward": 32,
-    "weight": 8,
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 40000
-    },
-    "unlockable": "ConcreteWalls"
-  },
-  {
-    "category": "Concrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 25,
-            "name": "Lightwood"
-          },
-          {
-            "count": 6,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 4,
-            "name": "Iron Nails"
-          },
-          {
-            "count": 6,
-            "name": "Tar"
-          }
-        ]
-      }
-    ],
-    "name": "Wall With Window 2",
-    "translation": "Wall With Window 2",
-    "type": "WallConcreteWindow2_C",
-    "description": "Almost impossible to break. Can only be packed on Founder Walker types (Silur Walker).",
-    "experiencieReward": 32,
-    "weight": 8,
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 40000
-    },
-    "unlockable": "ConcreteWalls"
-  },
-  {
-    "category": "Concrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 25,
-            "name": "Lightwood"
-          },
-          {
-            "count": 6,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 4,
-            "name": "Iron Nails"
-          },
-          {
-            "count": 6,
-            "name": "Tar"
-          }
-        ]
-      }
-    ],
-    "name": "Wall With Windows 1",
-    "translation": "Wall With Windows 1",
-    "type": "WallConcreteWindow3_C",
-    "description": "Almost impossible to break. Can only be packed on Founder Walker types (Silur Walker).",
-    "experiencieReward": 32,
-    "weight": 8,
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 40000
-    },
-    "unlockable": "ConcreteWalls"
-  },
-  {
-    "category": "Concrete",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 25,
-            "name": "Lightwood"
-          },
-          {
-            "count": 6,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 4,
-            "name": "Iron Nails"
-          },
-          {
-            "count": 6,
-            "name": "Tar"
-          }
-        ]
-      }
-    ],
-    "name": "Wall With Windows 2",
-    "translation": "Wall With Windows 2",
-    "type": "WallConcreteWindow4_C",
-    "description": "Almost impossible to break. Can only be packed on Founder Walker types (Silur Walker).",
-    "experiencieReward": 32,
-    "weight": 8,
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 40000
-    },
-    "unlockable": "ConcreteWalls"
-  },
-  {
-    "category": "Clay",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 3,
-            "name": "Wooden Slab"
-          },
-          {
-            "count": 20,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "Wall with Window",
-    "translation": "Wall with Window",
-    "type": "WallClayWindow_C",
-    "description": "Very strong and heavy, damageable only with high tier ammo. Can only be packed on Founder Walker types (Balang or Silur Walker).",
-    "experiencieReward": 32,
-    "weight": 7,
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
-    },
-    "unlockable": "ClayWalls"
-  },
-  {
-    "category": "Clay",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Cattail"
-          },
-          {
-            "count": 3,
-            "name": "Wooden Slab"
-          },
-          {
-            "count": 15,
-            "name": "Clay"
-          }
-        ]
-      }
-    ],
-    "name": "Wall with Windows",
-    "translation": "Wall with Windows",
-    "type": "WallClayWindow2_C",
-    "description": "Extremely durable. Can only be packed on Founder Walker types (Silur Walker).",
-    "experiencieReward": 32,
-    "weight": 7,
-    "structureInfo": {
-      "type": "Solid",
-      "hp": 20000
-    },
-    "unlockable": "ClayWalls"
   },
   {
     "category": "Interactables",
@@ -28829,10 +29699,10 @@
     "type": "WoodenWallsSchematic_C",
     "stackSize": 100,
     "learn": [
-      "Walker Gate",
-      "Guard Rail",
+      "Light Wood Walker Gate",
+      "Light Wood Guard Rail",
       "Dinghy Gate",
-      "Scaffolding",
+      "Light Wood Scaffolding",
       "Wall",
       "Battlements",
       "Corner",

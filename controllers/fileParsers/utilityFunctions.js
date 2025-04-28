@@ -44,7 +44,11 @@ class DataStore {
 			return;
 		}
 
-		const newItem = { ...existingItem, ...item, };
+		let newItem = { ...existingItem, ...item, };
+
+		if (item.category?.includes("Structural")) {
+			newItem = { ...item, ...existingItem };
+		}
 
 		const existingItemIndex = this.items.indexOf(existingItem);
 		if (existingItemIndex > -1) {
