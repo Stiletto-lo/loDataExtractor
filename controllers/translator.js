@@ -401,14 +401,8 @@ controller.getTranslateFiles = () => {
 		const englishName = translationStore.translationsInUse[key];
 		// Much less restrictive filtering to include more valid translations
 		// Only filter out completely empty strings or extremely long entries
-		if (englishName && englishName.trim() !== "" && englishName.length < 2000) {
-			// Clean up the text by replacing multiple newlines with a single space
-			const cleanedName = englishName
-				.replace(/\r\n|\n\r|\n|\r/g, " ")
-				.replace(/\s+/g, " ")
-				.replace(/[\u0000-\u001F\u007F-\u009F]/g, "") // Remove control characters
-				.trim();
-			usedItemNames.add(cleanedName);
+		if (englishName) {
+			usedItemNames.add(englishName);
 		}
 	}
 
@@ -448,13 +442,7 @@ controller.getTranslateFiles = () => {
 				}
 
 				// Handle duplicate keys - keep the longer translation as it's likely more complete
-				if (processedKeys.has(englishName)) {
-					const existingTranslation = processedKeys.get(englishName);
-					// Only replace if the new translation is longer (potentially more complete)
-					if (translatedText.length > existingTranslation.length) {
-						processedKeys.set(englishName, translatedText);
-					}
-				} else {
+				if (!processedKeys.has(englishName)) {
 					processedKeys.set(englishName, translatedText);
 				}
 			}
