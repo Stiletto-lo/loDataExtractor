@@ -356,7 +356,7 @@ dataParser.parseUpgradeName = (name, profile) => {
 		type = dataParser.determineUpgradeType(name);
 	}
 
-	return `${walkerName} Walker Upgrade - ${type} - Tier ${tier}`;
+	return `${walkerName} Walker Upgrade ${type} Tier ${tier}`;
 };
 
 /**

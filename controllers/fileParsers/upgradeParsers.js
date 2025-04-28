@@ -223,6 +223,7 @@ const getUpgradeItem = (upgradePure) => {
 				upgradePure?.name,
 				upgradePure?.profile,
 			);
+
 			item.upgradeInfo = {
 				...superUpgradeData.upgradeInfo,
 				...upgradePure.upgradeInfo,
@@ -261,6 +262,11 @@ const getUpgradeItem = (upgradePure) => {
 			} else if (superUpgradeData.crafting) {
 				item.crafting = superUpgradeData.crafting;
 			}
+
+			if (!item.type) {
+				item.type = item.name;
+			}
+
 			return item;
 		}
 	} else {
