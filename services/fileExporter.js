@@ -101,22 +101,6 @@ const exportItemsData = async (allItems, minItems, folderPath) => {
       (err) => {
         if (err) {
           console.error("Error creating the file");
-        } else {
-          console.log("Items exported with fixed ingredient names");
-
-          // Run the tech tree unifier to fix inconsistencies
-          const {
-            unifyTechTreeAndItems,
-          } = require("../utils/techTreeItemUnifier");
-          console.log("Running tech tree item unifier...");
-          const unifyResult = unifyTechTreeAndItems(`${folderPath}items.json`);
-          if (unifyResult.success) {
-            console.log(
-              `Tech tree unification complete. Fixed ${unifyResult.fixedCount} learn entries.`,
-            );
-          } else {
-            console.error(`Tech tree unification failed: ${unifyResult.error}`);
-          }
         }
       },
     );
