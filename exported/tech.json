@@ -919,7 +919,13 @@
     "pointsCost": 5
   },
   {
-    "name": "Ceramic Bottle",
+    "name": "Ceramic Dart",
+    "parent": "Bone Dart",
+    "level": 30,
+    "pointsCost": 3
+  },
+  {
+    "name": "Ceramic Flask",
     "parent": "Bone Bottle",
     "unlocks": [
       "Ceramic Bolt",
@@ -929,20 +935,10 @@
       "Ceramic Orb",
       "Ceramic Rok",
       "Ceramic Scattershot",
-      "Ceramic Shard",
-      "Improvised Bottle",
-      "Makeshift Bottle",
-      "Bone Bottle",
-      "Split Bone Bottle"
+      "Ceramic Shard"
     ],
     "level": 30,
     "pointsCost": 9
-  },
-  {
-    "name": "Ceramic Dart",
-    "parent": "Bone Dart",
-    "level": 30,
-    "pointsCost": 3
   },
   {
     "name": "Ceramic Hatchet",
@@ -957,7 +953,7 @@
       "Ceramic Scattershot",
       "Ceramic Shard",
       "Crude Hatchet",
-      "Ceramic Bottle",
+      "Ceramic Flask",
       "Ceramic Pickaxe",
       "Ceramic Repair Hammer",
       "Ceramic Scythe"
@@ -993,7 +989,7 @@
       "Ceramic Shard",
       "Simple Pickaxe",
       "Bone Pickaxe",
-      "Ceramic Bottle"
+      "Ceramic Flask"
     ],
     "level": 30,
     "pointsCost": 18
@@ -1568,11 +1564,9 @@
     "pointsCost": 36
   },
   {
-    "name": "Firestone Battle Axe",
+    "name": "Firestone Battleaxe",
     "parent": "Rawbone Battle Axe",
     "unlocks": [
-      "Battle Fan",
-      "Rawbone Battle Axe",
       "Firestone Hammerstaff",
       "Firestone Axe",
       "Firestone Bludgeon",
@@ -1599,7 +1593,7 @@
       "Firestone Axe",
       "Firestone Bludgeon",
       "Firestone Kopesh",
-      "Firestone Battle Axe"
+      "Firestone Battleaxe"
     ],
     "level": 30,
     "pointsCost": 21
@@ -1629,7 +1623,7 @@
       "Firestone Axe",
       "Firestone Bludgeon",
       "Firestone Kopesh",
-      "Firestone Battle Axe",
+      "Firestone Battleaxe",
       "Firestone Bozdogan"
     ],
     "level": 30,
@@ -2052,8 +2046,7 @@
       "Improvised Bottle",
       "Makeshift Bottle",
       "Bone Bottle",
-      "Split Bone Bottle",
-      "Ceramic Bottle"
+      "Split Bone Bottle"
     ],
     "level": 30,
     "pointsCost": 30
@@ -2326,7 +2319,7 @@
       "Ceramic Scattershot",
       "Ceramic Shard",
       "Long Bonespike Swordstaff",
-      "Ceramic Bottle",
+      "Ceramic Flask",
       "Ceramic Pickaxe",
       "Ceramic Repair Hammer",
       "Ceramic Scythe",
@@ -2589,12 +2582,13 @@
   },
   {
     "name": "Obsidian Flask",
-    "parent": "Ceramic Bottle",
+    "parent": "Ceramic Flask",
     "unlocks": [
       "Obsidian Container Large",
       "Obsidian Pot",
       "Obsidian Machine",
       "Obsidian Rok",
+      "Ceramic Flask",
       "Infused Obsidian Bottle"
     ],
     "level": 30,
@@ -2680,7 +2674,6 @@
     "parent": "Rawbone Quarterstaff",
     "unlocks": [
       "Blunt Quarterstaff",
-      "Traveller's Quarterstaff",
       "Rawbone Quarterstaff"
     ],
     "level": 30,
@@ -2902,7 +2895,6 @@
     "parent": "Blunt Quarterstaff",
     "unlocks": [
       "Blunt Quarterstaff",
-      "Traveller's Quarterstaff",
       "Rawbone Sawsword",
       "Rawbone Club"
     ],
@@ -3154,7 +3146,7 @@
       "Ceramic Rok",
       "Ceramic Scattershot",
       "Ceramic Shard",
-      "Ceramic Bottle",
+      "Ceramic Flask",
       "Ceramic Pickaxe",
       "Ceramic Repair Hammer",
       "Ceramic Scythe",
@@ -3365,7 +3357,7 @@
   },
   {
     "name": "Split Ceramic Flask",
-    "parent": "Ceramic Bottle",
+    "parent": "Ceramic Flask",
     "unlocks": [
       "Ceramic Bolt",
       "Ceramic Dart",
@@ -3376,7 +3368,7 @@
       "Ceramic Scattershot",
       "Ceramic Shard",
       "Split Bone Bottle",
-      "Ceramic Bottle",
+      "Ceramic Flask",
       "Ceramic Pickaxe",
       "Ceramic Repair Hammer",
       "Ceramic Scythe",
@@ -3822,7 +3814,7 @@
     "pointsCost": 2
   },
   {
-    "name": "Traveller's Quarterstaff",
+    "name": "Traveller’s Staff",
     "parent": "Blunt Quarterstaff",
     "unlocks": [
       "Blunt Quarterstaff"
@@ -4040,7 +4032,7 @@
   },
   {
     "name": "Water Circulator",
-    "parent": "Ceramic Bottle",
+    "parent": "Ceramic Flask",
     "unlocks": [
       "Small Water Bag",
       "Medium Water Bag",
@@ -4200,11 +4192,11 @@
   },
   {
     "name": "Wyndan Battle Axe",
-    "parent": "Firestone Battle Axe",
+    "parent": "Firestone Battleaxe",
     "unlocks": [
       "Battle Fan",
       "Rawbone Battle Axe",
-      "Firestone Battle Axe",
+      "Firestone Battleaxe",
       "Wyndanblade Quarterstaff",
       "Wyndan Hand Axe",
       "Wyndan Hammer",
@@ -4276,7 +4268,6 @@
     "parent": "Paddleblade Quarterstaff",
     "unlocks": [
       "Blunt Quarterstaff",
-      "Traveller's Quarterstaff",
       "Rawbone Quarterstaff",
       "Paddleblade Quarterstaff"
     ],

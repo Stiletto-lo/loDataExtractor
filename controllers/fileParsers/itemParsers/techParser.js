@@ -22,13 +22,13 @@ const parseTechData = (filePath) => {
 
 		// Set name for both
 		const name = dataParser.parseName(translator, jsonData[1].Type);
-		tech.name = name;
+		tech.name = translator.translateTechTreeName(name);
 		item.name = name;
 
 		// Extract parent data
 		if (jsonData?.[1]?.Properties?.Requirements?.[0]?.ObjectName) {
 			// Use specialized tech tree parent translation to ensure consistent parent-child relationships
-			const parentName = translator.translateTechTreeParent(
+			const parentName = translator.translateTechTreeName(
 				dataParser.parseName(
 					translator,
 					jsonData[1].Properties.Requirements[0].ObjectName,

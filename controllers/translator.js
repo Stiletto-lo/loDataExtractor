@@ -84,17 +84,17 @@ controller.translateName = (name) => {
 		return glossaryName;
 	}
 
+	const translatedName = controller.searchName(name);
+
+	if (translatedName) {
+		return translatedName;
+	}
+
 	// Check if this is a tech tree name that needs normalization using the unified module
 	const normalizedName = unifiedTechTreeNames.normalize(name);
 	if (normalizedName !== name) {
 		controller.addTranslationInUse(name, normalizedName);
 		return normalizedName;
-	}
-
-	const translatedName = controller.searchName(name);
-
-	if (translatedName) {
-		return translatedName;
 	}
 
 	return trimIfExists(name);
@@ -104,24 +104,24 @@ controller.translateName = (name) => {
  * Translates a tech tree parent reference
  * This specialized function ensures consistent parent-child relationships
  * in the tech tree by normalizing parent references
- * @param {string} parentName - The parent name to translate
+ * @param {string} name - The name to translate
  * @returns {string} - The normalized and translated parent name
  */
-controller.translateTechTreeParent = (parentName) => {
-	if (isNullOrEmpty(parentName)) {
+controller.translateTechTreeName = (name) => {
+	if (isNullOrEmpty(name)) {
 		return "";
 	}
 
 	// First try to normalize using the unified tech tree names module
-	const normalizedName = unifiedTechTreeNames.normalize(parentName);
-	if (normalizedName !== parentName) {
+	const normalizedName = unifiedTechTreeNames.normalize(name);
+	if (normalizedName !== name) {
 		// Add to translations in use to ensure it's included in exports
-		controller.addTranslationInUse(parentName, normalizedName);
+		controller.addTranslationInUse(name, normalizedName);
 		return normalizedName;
 	}
 
 	// If not found in normalizer, try regular translation
-	return controller.translateName(parentName);
+	return controller.translateName(name);
 };
 
 controller.searchName = (name) => {

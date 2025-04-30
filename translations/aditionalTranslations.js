@@ -1,4 +1,8 @@
-const allTranslations = [];
+const techTranslations = require("./unifiedTechTreeNames");
+
+const allTranslations = {
+	...techTranslations,
+};
 
 allTranslations.IronOre2 = "Iron Ore";
 allTranslations.IronIngot2 = "Iron Ingot";
