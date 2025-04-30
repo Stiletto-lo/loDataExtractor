@@ -223,7 +223,7 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
         moduleInfo: item?.moduleInfo,
         toolInfo: item?.toolInfo,
         armorInfo: item?.armorInfo,
-        walkerinfo: item?.walkerinfo,
+        walkerInfo: item?.walkerInfo,
         upgradeInfo: item?.upgradeInfo,
         droppedBy: droppedBy.length > 0 ? droppedBy : undefined,
         whereToFarm: item?.whereToFarm,

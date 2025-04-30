@@ -86,6 +86,7 @@ const processItems = () => {
         item.name = normalizedName;
       }
     }
+
     return item;
   });
 

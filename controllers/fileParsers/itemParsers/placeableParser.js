@@ -123,7 +123,7 @@ const parsePlaceableData = (filePath) => {
 			}
 
 			if (jsonData[1].Properties?.WalkerCategory) {
-				item.walkerinfo = {
+				item.walkerInfo = {
 					category: dataParser.parseCategory(
 						jsonData[1].Properties.WalkerCategory,
 					),

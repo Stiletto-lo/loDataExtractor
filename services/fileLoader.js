@@ -147,6 +147,12 @@ const loadAllFiles = (contentFolderPath) => {
     `${contentFolderPath}Content/Mist/Data/LootTables/LootBoxes`,
     "loottemplates",
   );
+
+  // Process vehicle files to extract carry capacity information
+  console.info("Loading Vehicle Data");
+  const vehicleParser = require("../controllers/fileParsers/vehicleParser");
+  vehicleParser.processVehicleFiles(`${contentFolderPath}Content/Mist/Props/Vehicles`);
+
 };
 
 module.exports = {

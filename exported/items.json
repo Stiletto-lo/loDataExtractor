@@ -1354,8 +1354,9 @@
       "type": "Solid",
       "hp": 150000
     },
-    "walkerinfo": {
-      "category": "Small"
+    "walkerInfo": {
+      "category": "Small",
+      "carryCapacity": 12500
     },
     "unlockable": "Balang Walker"
   },
@@ -1384,7 +1385,10 @@
       "type": "Medium",
       "hp": 5000
     },
-    "unlockable": "WalkerPartsBase_T1"
+    "unlockable": "WalkerPartsBase_T1",
+    "walkerInfo": {
+      "carryCapacity": 4500
+    }
   },
   {
     "category": "Schematics",
@@ -1393,7 +1397,10 @@
     "stackSize": 100,
     "learn": [
       "Balang Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 4500
+    }
   },
   {
     "category": "Upgrades",
@@ -1642,7 +1649,10 @@
       "type": "Soft",
       "hp": 1500
     },
-    "unlockable": "WalkerPartsBase_T2"
+    "unlockable": "WalkerPartsBase_T2",
+    "walkerInfo": {
+      "carryCapacity": 4500
+    }
   },
   {
     "category": "Walker Parts",
@@ -1673,7 +1683,10 @@
       "type": "Soft",
       "hp": 1000
     },
-    "unlockable": "WalkerPartsImproved_T2"
+    "unlockable": "WalkerPartsImproved_T2",
+    "walkerInfo": {
+      "carryCapacity": 4500
+    }
   },
   {
     "category": "Weapons",
@@ -2745,7 +2758,10 @@
       "hp": 80000
     },
     "onlyDevs": true,
-    "unlockable": "Battleship Walker"
+    "unlockable": "Battleship Walker",
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "category": "Walker Parts",
@@ -2775,7 +2791,10 @@
       "type": "Medium",
       "hp": 18000
     },
-    "unlockable": "WalkerPartsBase_T4"
+    "unlockable": "WalkerPartsBase_T4",
+    "walkerInfo": {
+      "carryCapacity": 20000
+    }
   },
   {
     "category": "Walker Parts",
@@ -2805,7 +2824,10 @@
       "type": "Medium",
       "hp": 27000
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 20000
+    }
   },
   {
     "category": "Walker Parts",
@@ -2835,7 +2857,10 @@
       "type": "Reinforced",
       "hp": 34200
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 20000
+    }
   },
   {
     "category": "Walker Parts",
@@ -2860,7 +2885,10 @@
     "structureInfo": {
       "hp": 1350
     },
-    "unlockable": "WalkerPartsBase_T4"
+    "unlockable": "WalkerPartsBase_T4",
+    "walkerInfo": {
+      "carryCapacity": 20000
+    }
   },
   {
     "category": "Walker Parts",
@@ -2886,7 +2914,10 @@
       "type": "Soft",
       "hp": 3750
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 20000
+    }
   },
   {
     "category": "Walker Parts",
@@ -2912,7 +2943,10 @@
       "type": "Soft",
       "hp": 3375
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 20000
+    }
   },
   {
     "category": "Walker Parts",
@@ -2938,7 +2972,10 @@
       "type": "Soft",
       "hp": 2250
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 20000
+    }
   },
   {
     "name": "Bearing",
@@ -4219,8 +4256,9 @@
       "type": "Hard",
       "hp": 40000
     },
-    "walkerinfo": {
-      "category": "Large"
+    "walkerInfo": {
+      "category": "Large",
+      "carryCapacity": 12500
     },
     "unlockable": "Buffalo Walker"
   },
@@ -4253,7 +4291,10 @@
       "type": "Medium",
       "hp": 4800
     },
-    "unlockable": "WalkerPartsBase_T3"
+    "unlockable": "WalkerPartsBase_T3",
+    "walkerInfo": {
+      "carryCapacity": 5200
+    }
   },
   {
     "category": "Walker Parts",
@@ -4288,7 +4329,10 @@
       "type": "Medium",
       "hp": 5760
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 5200
+    }
   },
   {
     "category": "Walker Parts",
@@ -4323,7 +4367,10 @@
       "type": "Medium",
       "hp": 6912
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 5200
+    }
   },
   {
     "category": "Schematics",
@@ -4332,7 +4379,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 5200
+    }
   },
   {
     "category": "Schematics",
@@ -4341,7 +4391,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 5200
+    }
   },
   {
     "category": "Schematics",
@@ -4350,7 +4403,10 @@
     "stackSize": 100,
     "learn": [
       "Buffalo Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 5200
+    }
   },
   {
     "category": "Upgrades",
@@ -5017,7 +5073,10 @@
       "type": "Soft",
       "hp": 8600
     },
-    "unlockable": "WalkerPartsBase_T3"
+    "unlockable": "WalkerPartsBase_T3",
+    "walkerInfo": {
+      "carryCapacity": 5200
+    }
   },
   {
     "category": "Walker Parts",
@@ -5051,7 +5110,10 @@
     "structureInfo": {
       "hp": 11500
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 5200
+    }
   },
   {
     "category": "Walker Parts",
@@ -5082,7 +5144,10 @@
       "type": "Soft",
       "hp": 12500
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 5200
+    }
   },
   {
     "category": "Walker Parts",
@@ -5113,7 +5178,10 @@
       "type": "Soft",
       "hp": 9600
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 5200
+    }
   },
   {
     "category": "Walker Parts",
@@ -5144,7 +5212,10 @@
       "type": "Soft",
       "hp": 10200
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 5200
+    }
   },
   {
     "category": "Walker Parts",
@@ -5175,7 +5246,10 @@
       "type": "Soft",
       "hp": 14000
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 5200
+    }
   },
   {
     "category": "Walker Parts",
@@ -5210,7 +5284,10 @@
       "type": "Soft",
       "hp": 9200
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 5200
+    }
   },
   {
     "category": "Walker Parts",
@@ -5241,7 +5318,10 @@
       "type": "Soft",
       "hp": 8800
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 5200
+    }
   },
   {
     "category": "Resources",
@@ -5427,8 +5507,9 @@
       "type": "BlueprintGeneratedClassCamelopLegsDamageOverride_C'",
       "hp": 13000
     },
-    "walkerinfo": {
-      "category": "Large"
+    "walkerInfo": {
+      "category": "Large",
+      "carryCapacity": 12500
     },
     "unlockable": "Camelop Walker"
   },
@@ -5461,7 +5542,10 @@
       "type": "BlueprintGeneratedClassCamelopLegsDamageOverride_C'",
       "hp": 7000
     },
-    "unlockable": "WalkerPartsBase_T3"
+    "unlockable": "WalkerPartsBase_T3",
+    "walkerInfo": {
+      "carryCapacity": 3350
+    }
   },
   {
     "category": "Schematics",
@@ -5470,7 +5554,10 @@
     "stackSize": 100,
     "learn": [
       "Camelop  Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 3350
+    }
   },
   {
     "category": "Upgrades",
@@ -6000,6 +6087,9 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 150000
+    },
+    "walkerInfo": {
+      "carryCapacity": 4500
     }
   },
   {
@@ -6192,6 +6282,9 @@
     "structureInfo": {
       "type": "Solid",
       "hp": 400000
+    },
+    "walkerInfo": {
+      "carryCapacity": 20000
     }
   },
   {
@@ -7913,8 +8006,9 @@
       "type": "Hard",
       "hp": 14950
     },
-    "walkerinfo": {
-      "category": "Medium"
+    "walkerInfo": {
+      "category": "Medium",
+      "carryCapacity": 12500
     },
     "unlockable": "Cobra Walker"
   },
@@ -7947,7 +8041,10 @@
       "type": "Medium",
       "hp": 1500
     },
-    "unlockable": "WalkerPartsBase_T3"
+    "unlockable": "WalkerPartsBase_T3",
+    "walkerInfo": {
+      "carryCapacity": 3100
+    }
   },
   {
     "category": "Schematics",
@@ -7956,7 +8053,10 @@
     "stackSize": 100,
     "learn": [
       "Cobra Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 3100
+    }
   },
   {
     "category": "Upgrades",
@@ -8763,7 +8863,10 @@
       "type": "Reinforced",
       "hp": 10000
     },
-    "unlockable": "WoodenWalls"
+    "unlockable": "WoodenWalls",
+    "walkerInfo": {
+      "carryCapacity": 1500
+    }
   },
   {
     "category": "Walkers",
@@ -8803,8 +8906,9 @@
       "type": "Hard",
       "hp": 6000
     },
-    "walkerinfo": {
-      "category": "Small"
+    "walkerInfo": {
+      "category": "Small",
+      "carryCapacity": 12500
     },
     "unlockable": "Dinghy Walker"
   },
@@ -8833,7 +8937,10 @@
       "type": "Medium",
       "hp": 1200
     },
-    "unlockable": "WalkerPartsBase_T1"
+    "unlockable": "WalkerPartsBase_T1",
+    "walkerInfo": {
+      "carryCapacity": 1500
+    }
   },
   {
     "category": "Schematics",
@@ -8842,7 +8949,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 1500
+    }
   },
   {
     "category": "Schematics",
@@ -8851,7 +8961,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 1500
+    }
   },
   {
     "category": "Schematics",
@@ -8860,7 +8973,10 @@
     "stackSize": 100,
     "learn": [
       "Dinghy Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 1500
+    }
   },
   {
     "category": "Upgrades",
@@ -9490,7 +9606,10 @@
       "type": "Soft",
       "hp": 3000
     },
-    "unlockable": "WalkerPartsBase_T1"
+    "unlockable": "WalkerPartsBase_T1",
+    "walkerInfo": {
+      "carryCapacity": 1500
+    }
   },
   {
     "category": "Walker Parts",
@@ -9529,7 +9648,10 @@
       "type": "Soft",
       "hp": 3300
     },
-    "unlockable": "WalkerPartsImproved_T1"
+    "unlockable": "WalkerPartsImproved_T1",
+    "walkerInfo": {
+      "carryCapacity": 1500
+    }
   },
   {
     "category": "Liquids",
@@ -9595,8 +9717,9 @@
       "type": "Hard",
       "hp": 65000
     },
-    "walkerinfo": {
-      "category": "Capital"
+    "walkerInfo": {
+      "category": "Capital",
+      "carryCapacity": 12500
     },
     "unlockable": "Domus Walker"
   },
@@ -9629,7 +9752,10 @@
       "type": "Medium",
       "hp": 8000
     },
-    "unlockable": "WalkerPartsBase_T4"
+    "unlockable": "WalkerPartsBase_T4",
+    "walkerInfo": {
+      "carryCapacity": 10500
+    }
   },
   {
     "category": "Walker Parts",
@@ -9664,7 +9790,10 @@
       "type": "Medium",
       "hp": 9600
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 10500
+    }
   },
   {
     "category": "Walker Parts",
@@ -9699,7 +9828,10 @@
       "type": "Medium",
       "hp": 11520
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 10500
+    }
   },
   {
     "category": "Schematics",
@@ -9708,7 +9840,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 10500
+    }
   },
   {
     "category": "Schematics",
@@ -9717,7 +9852,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 10500
+    }
   },
   {
     "category": "Schematics",
@@ -9726,7 +9864,10 @@
     "stackSize": 100,
     "learn": [
       "Domus Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 10500
+    }
   },
   {
     "category": "Upgrades",
@@ -10427,7 +10568,10 @@
       "type": "Soft",
       "hp": 5000
     },
-    "unlockable": "WalkerPartsBase_T4"
+    "unlockable": "WalkerPartsBase_T4",
+    "walkerInfo": {
+      "carryCapacity": 10500
+    }
   },
   {
     "category": "Walker Parts",
@@ -10462,7 +10606,10 @@
       "type": "Soft",
       "hp": 6700
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 10500
+    }
   },
   {
     "category": "Walker Parts",
@@ -10493,7 +10640,10 @@
       "type": "Soft",
       "hp": 3750
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 10500
+    }
   },
   {
     "category": "Walker Parts",
@@ -10524,7 +10674,10 @@
       "type": "Soft",
       "hp": 4100
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 10500
+    }
   },
   {
     "category": "Walker Parts",
@@ -10559,7 +10712,10 @@
       "type": "Medium",
       "hp": 6200
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 10500
+    }
   },
   {
     "category": "Walker Parts",
@@ -10594,7 +10750,10 @@
       "type": "Medium",
       "hp": 8500
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 10500
+    }
   },
   {
     "category": "Walker Parts",
@@ -10629,7 +10788,10 @@
       "type": "Soft",
       "hp": 5500
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 10500
+    }
   },
   {
     "category": "Walker Parts",
@@ -10660,7 +10822,10 @@
       "type": "Soft",
       "hp": 3700
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 10500
+    }
   },
   {
     "crafting": [
@@ -11232,8 +11397,9 @@
       "type": "Hard",
       "hp": 38000
     },
-    "walkerinfo": {
-      "category": "Large"
+    "walkerInfo": {
+      "category": "Large",
+      "carryCapacity": 12500
     },
     "unlockable": "Falco Walker"
   },
@@ -11270,7 +11436,10 @@
       "type": "Medium",
       "hp": 5000
     },
-    "unlockable": "WalkerPartsBase_T3"
+    "unlockable": "WalkerPartsBase_T3",
+    "walkerInfo": {
+      "carryCapacity": 5000
+    }
   },
   {
     "category": "Walker Parts",
@@ -11309,7 +11478,10 @@
       "type": "Medium",
       "hp": 6000
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 5000
+    }
   },
   {
     "category": "Walker Parts",
@@ -11344,7 +11516,10 @@
       "type": "Medium",
       "hp": 7200
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 5000
+    }
   },
   {
     "category": "Schematics",
@@ -11353,7 +11528,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 5000
+    }
   },
   {
     "category": "Schematics",
@@ -11362,7 +11540,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 5000
+    }
   },
   {
     "category": "Schematics",
@@ -11371,7 +11552,10 @@
     "stackSize": 100,
     "learn": [
       "Falco Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 5000
+    }
   },
   {
     "category": "Upgrades",
@@ -12038,7 +12222,10 @@
       "type": "Soft",
       "hp": 8850
     },
-    "unlockable": "WalkerPartsBase_T3"
+    "unlockable": "WalkerPartsBase_T3",
+    "walkerInfo": {
+      "carryCapacity": 5000
+    }
   },
   {
     "category": "Walker Parts",
@@ -12073,7 +12260,10 @@
       "type": "Soft",
       "hp": 11300
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 5000
+    }
   },
   {
     "category": "Walker Parts",
@@ -12104,7 +12294,10 @@
       "type": "Soft",
       "hp": 15000
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 5000
+    }
   },
   {
     "category": "Walker Parts",
@@ -12135,7 +12328,10 @@
       "type": "Soft",
       "hp": 9500
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 5000
+    }
   },
   {
     "category": "Walker Parts",
@@ -12170,7 +12366,10 @@
       "type": "Soft",
       "hp": 10000
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 5000
+    }
   },
   {
     "category": "Walker Parts",
@@ -12201,7 +12400,10 @@
       "type": "Soft",
       "hp": 13500
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 5000
+    }
   },
   {
     "category": "Walker Parts",
@@ -12236,7 +12438,10 @@
       "type": "Soft",
       "hp": 9250
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 5000
+    }
   },
   {
     "category": "Walker Parts",
@@ -12271,7 +12476,10 @@
       "type": "Soft",
       "hp": 8600
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 5000
+    }
   },
   {
     "category": "Defenses",
@@ -13301,8 +13509,9 @@
       "type": "Hard",
       "hp": 9750
     },
-    "walkerinfo": {
-      "category": "Small"
+    "walkerInfo": {
+      "category": "Small",
+      "carryCapacity": 12500
     },
     "unlockable": "Firefly Walker"
   },
@@ -13331,7 +13540,10 @@
       "type": "Soft",
       "hp": 500
     },
-    "unlockable": "WalkerPartsBase_T1"
+    "unlockable": "WalkerPartsBase_T1",
+    "walkerInfo": {
+      "carryCapacity": 450
+    }
   },
   {
     "category": "Schematics",
@@ -13340,7 +13552,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 450
+    }
   },
   {
     "category": "Schematics",
@@ -13349,7 +13564,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 450
+    }
   },
   {
     "category": "Schematics",
@@ -13358,7 +13576,10 @@
     "stackSize": 100,
     "learn": [
       "Firefly Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 450
+    }
   },
   {
     "category": "Upgrades",
@@ -13870,7 +14091,10 @@
       "type": "Soft",
       "hp": 1500
     },
-    "unlockable": "WalkerPartsBase_T1"
+    "unlockable": "WalkerPartsBase_T1",
+    "walkerInfo": {
+      "carryCapacity": 450
+    }
   },
   {
     "category": "Resources",
@@ -17064,8 +17288,9 @@
       "type": "Hard",
       "hp": 21000
     },
-    "walkerinfo": {
-      "category": "Large"
+    "walkerInfo": {
+      "category": "Large",
+      "carryCapacity": 12500
     },
     "unlockable": "Hercul Walker"
   },
@@ -17098,7 +17323,10 @@
       "type": "Medium",
       "hp": 7000
     },
-    "unlockable": "WalkerPartsBase_T3"
+    "unlockable": "WalkerPartsBase_T3",
+    "walkerInfo": {
+      "carryCapacity": 4050
+    }
   },
   {
     "category": "Walker Parts",
@@ -17133,7 +17361,10 @@
       "type": "Medium",
       "hp": 10500
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 4050
+    }
   },
   {
     "category": "Walker Parts",
@@ -17168,7 +17399,10 @@
       "type": "Medium",
       "hp": 13300
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 4050
+    }
   },
   {
     "category": "Schematics",
@@ -17177,7 +17411,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 4050
+    }
   },
   {
     "category": "Schematics",
@@ -17186,7 +17423,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 4050
+    }
   },
   {
     "category": "Schematics",
@@ -17195,7 +17435,10 @@
     "stackSize": 100,
     "learn": [
       "Hercul Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 4050
+    }
   },
   {
     "category": "Upgrades",
@@ -17364,7 +17607,10 @@
       "type": "Soft",
       "hp": 3000
     },
-    "unlockable": "WalkerPartsBase_T3"
+    "unlockable": "WalkerPartsBase_T3",
+    "walkerInfo": {
+      "carryCapacity": 4050
+    }
   },
   {
     "category": "Walker Parts",
@@ -17395,7 +17641,10 @@
       "type": "Soft",
       "hp": 4300
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 4050
+    }
   },
   {
     "category": "Walker Parts",
@@ -17426,7 +17675,10 @@
       "type": "Soft",
       "hp": 1920
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 4050
+    }
   },
   {
     "category": "Walker Parts",
@@ -17457,7 +17709,10 @@
       "type": "Soft",
       "hp": 2400
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 4050
+    }
   },
   {
     "category": "Walker Parts",
@@ -17492,7 +17747,10 @@
       "type": "Medium",
       "hp": 3900
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 4050
+    }
   },
   {
     "category": "Walker Parts",
@@ -17527,7 +17785,10 @@
       "type": "Medium",
       "hp": 6100
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 4050
+    }
   },
   {
     "category": "Walker Parts",
@@ -17558,7 +17819,10 @@
       "type": "Soft",
       "hp": 3300
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 4050
+    }
   },
   {
     "category": "Walker Parts",
@@ -17589,7 +17853,10 @@
       "type": "Soft",
       "hp": 1800
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 4050
+    }
   },
   {
     "category": "Resources",
@@ -17692,8 +17959,9 @@
       "type": "Hard",
       "hp": 35000
     },
-    "walkerinfo": {
-      "category": "Large"
+    "walkerInfo": {
+      "category": "Large",
+      "carryCapacity": 12500
     },
     "unlockable": "Hornet Walker"
   },
@@ -17726,7 +17994,10 @@
       "type": "Medium",
       "hp": 4500
     },
-    "unlockable": "WalkerPartsBase_T3"
+    "unlockable": "WalkerPartsBase_T3",
+    "walkerInfo": {
+      "carryCapacity": 4800
+    }
   },
   {
     "category": "Walker Parts",
@@ -17761,7 +18032,10 @@
       "type": "Medium",
       "hp": 5400
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 4800
+    }
   },
   {
     "category": "Walker Parts",
@@ -17796,7 +18070,10 @@
       "type": "Medium",
       "hp": 6480
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 4800
+    }
   },
   {
     "category": "Schematics",
@@ -17805,7 +18082,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 4800
+    }
   },
   {
     "category": "Schematics",
@@ -17814,7 +18094,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 4800
+    }
   },
   {
     "category": "Schematics",
@@ -17823,7 +18106,10 @@
     "stackSize": 100,
     "learn": [
       "Hornet Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 4800
+    }
   },
   {
     "category": "Upgrades",
@@ -18464,7 +18750,10 @@
       "type": "Soft",
       "hp": 3000
     },
-    "unlockable": "WalkerPartsBase_T3"
+    "unlockable": "WalkerPartsBase_T3",
+    "walkerInfo": {
+      "carryCapacity": 4800
+    }
   },
   {
     "category": "Walker Parts",
@@ -18499,7 +18788,10 @@
       "type": "Soft",
       "hp": 4400
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 4800
+    }
   },
   {
     "category": "Walker Parts",
@@ -18530,7 +18822,10 @@
       "type": "Soft",
       "hp": 3150
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 4800
+    }
   },
   {
     "category": "Walker Parts",
@@ -18561,7 +18856,10 @@
       "type": "Soft",
       "hp": 2400
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 4800
+    }
   },
   {
     "category": "Walker Parts",
@@ -18596,7 +18894,10 @@
       "type": "Medium",
       "hp": 3900
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 4800
+    }
   },
   {
     "category": "Walker Parts",
@@ -18631,7 +18932,10 @@
       "type": "Medium",
       "hp": 6200
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 4800
+    }
   },
   {
     "category": "Walker Parts",
@@ -18666,7 +18970,10 @@
       "type": "Soft",
       "hp": 3300
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 4800
+    }
   },
   {
     "category": "Walker Parts",
@@ -18697,7 +19004,10 @@
       "type": "Soft",
       "hp": 1800
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 4800
+    }
   },
   {
     "category": "Weapons",
@@ -21983,8 +22293,9 @@
       "type": "Hard",
       "hp": 26000
     },
-    "walkerinfo": {
-      "category": "Medium"
+    "walkerInfo": {
+      "category": "Medium",
+      "carryCapacity": 12500
     },
     "unlockable": "Mollusk Walker"
   },
@@ -22017,7 +22328,10 @@
       "type": "Medium",
       "hp": 3000
     },
-    "unlockable": "WalkerPartsBase_T2"
+    "unlockable": "WalkerPartsBase_T2",
+    "walkerInfo": {
+      "carryCapacity": 3200
+    }
   },
   {
     "category": "Walker Parts",
@@ -22052,7 +22366,10 @@
       "type": "Medium",
       "hp": 3600
     },
-    "unlockable": "WalkerPartsImproved_T2"
+    "unlockable": "WalkerPartsImproved_T2",
+    "walkerInfo": {
+      "carryCapacity": 3200
+    }
   },
   {
     "category": "Schematics",
@@ -22061,7 +22378,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 3200
+    }
   },
   {
     "category": "Schematics",
@@ -22070,7 +22390,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 3200
+    }
   },
   {
     "category": "Schematics",
@@ -22079,7 +22402,10 @@
     "stackSize": 100,
     "learn": [
       "Mollusk Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 3200
+    }
   },
   {
     "category": "Upgrades",
@@ -22734,7 +23060,10 @@
       "type": "Soft",
       "hp": 6750
     },
-    "unlockable": "WalkerPartsBase_T2"
+    "unlockable": "WalkerPartsBase_T2",
+    "walkerInfo": {
+      "carryCapacity": 3200
+    }
   },
   {
     "category": "Walker Parts",
@@ -22773,7 +23102,10 @@
       "type": "Soft",
       "hp": 8000
     },
-    "unlockable": "WalkerPartsImproved_T2"
+    "unlockable": "WalkerPartsImproved_T2",
+    "walkerInfo": {
+      "carryCapacity": 3200
+    }
   },
   {
     "category": "Walker Parts",
@@ -22812,7 +23144,10 @@
       "type": "Soft",
       "hp": 7400
     },
-    "unlockable": "WalkerPartsAdvanced_T2"
+    "unlockable": "WalkerPartsAdvanced_T2",
+    "walkerInfo": {
+      "carryCapacity": 3200
+    }
   },
   {
     "category": "Walker Parts",
@@ -22851,7 +23186,10 @@
       "type": "Soft",
       "hp": 7800
     },
-    "unlockable": "WalkerPartsAdvanced_T2"
+    "unlockable": "WalkerPartsAdvanced_T2",
+    "walkerInfo": {
+      "carryCapacity": 3200
+    }
   },
   {
     "category": "Walker Parts",
@@ -22890,7 +23228,10 @@
       "type": "Soft",
       "hp": 8600
     },
-    "unlockable": "WalkerPartsAdvanced_T2"
+    "unlockable": "WalkerPartsAdvanced_T2",
+    "walkerInfo": {
+      "carryCapacity": 3200
+    }
   },
   {
     "category": "Walker Parts",
@@ -22929,7 +23270,10 @@
       "type": "Soft",
       "hp": 7400
     },
-    "unlockable": "WalkerPartsImproved_T2"
+    "unlockable": "WalkerPartsImproved_T2",
+    "walkerInfo": {
+      "carryCapacity": 3200
+    }
   },
   {
     "category": "Walker Parts",
@@ -22964,7 +23308,10 @@
       "type": "Soft",
       "hp": 7000
     },
-    "unlockable": "WalkerPartsImproved_T2"
+    "unlockable": "WalkerPartsImproved_T2",
+    "walkerInfo": {
+      "carryCapacity": 3200
+    }
   },
   {
     "category": "Interactables",
@@ -24815,8 +25162,9 @@
       "type": "Hard",
       "hp": 65000
     },
-    "walkerinfo": {
-      "category": "Large"
+    "walkerInfo": {
+      "category": "Large",
+      "carryCapacity": 12500
     },
     "unlockable": "Panda Walker"
   },
@@ -24849,7 +25197,10 @@
       "type": "Medium",
       "hp": 8200
     },
-    "unlockable": "WalkerPartsBase_T4"
+    "unlockable": "WalkerPartsBase_T4",
+    "walkerInfo": {
+      "carryCapacity": 25000
+    }
   },
   {
     "category": "Walker Parts",
@@ -24896,7 +25247,10 @@
       "type": "Medium",
       "hp": 9840
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 25000
+    }
   },
   {
     "category": "Walker Parts",
@@ -24931,7 +25285,10 @@
       "type": "Medium",
       "hp": 11808
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 25000
+    }
   },
   {
     "category": "Schematics",
@@ -24940,7 +25297,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 25000
+    }
   },
   {
     "category": "Schematics",
@@ -24949,7 +25309,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 25000
+    }
   },
   {
     "category": "Schematics",
@@ -24958,7 +25321,10 @@
     "stackSize": 100,
     "learn": [
       "Panda Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 25000
+    }
   },
   {
     "category": "Upgrades",
@@ -25617,7 +25983,10 @@
       "type": "Soft",
       "hp": 5000
     },
-    "unlockable": "WalkerPartsBase_T4"
+    "unlockable": "WalkerPartsBase_T4",
+    "walkerInfo": {
+      "carryCapacity": 25000
+    }
   },
   {
     "category": "Walker Parts",
@@ -25652,7 +26021,10 @@
       "type": "Soft",
       "hp": 6400
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 25000
+    }
   },
   {
     "category": "Walker Parts",
@@ -25683,7 +26055,10 @@
       "type": "Soft",
       "hp": 3750
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 25000
+    }
   },
   {
     "category": "Walker Parts",
@@ -25714,7 +26089,10 @@
       "type": "Soft",
       "hp": 4100
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 25000
+    }
   },
   {
     "category": "Walker Parts",
@@ -25749,7 +26127,10 @@
       "type": "Medium",
       "hp": 6100
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 25000
+    }
   },
   {
     "category": "Walker Parts",
@@ -25784,7 +26165,10 @@
       "type": "Medium",
       "hp": 8100
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 25000
+    }
   },
   {
     "category": "Walker Parts",
@@ -25819,7 +26203,10 @@
       "type": "Soft",
       "hp": 5450
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 25000
+    }
   },
   {
     "category": "Walker Parts",
@@ -25850,7 +26237,10 @@
       "type": "Soft",
       "hp": 3700
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 25000
+    }
   },
   {
     "category": "Resources",
@@ -26203,7 +26593,10 @@
     "experiencieReward": 500,
     "stackSize": 5,
     "weight": 0.2,
-    "whereToFarm": "Bought from Trading Stations for Flots."
+    "whereToFarm": "Bought from Trading Stations for Flots.",
+    "walkerInfo": {
+      "carryCapacity": 8000
+    }
   },
   {
     "category": "Walkers",
@@ -26251,8 +26644,9 @@
       "type": "Reinforced",
       "hp": 100000
     },
-    "walkerinfo": {
-      "category": "Large"
+    "walkerInfo": {
+      "category": "Large",
+      "carryCapacity": 12500
     },
     "unlockable": "Proxy Walker"
   },
@@ -26285,7 +26679,10 @@
       "type": "Medium",
       "hp": 10000
     },
-    "unlockable": "WalkerPartsBase_T2"
+    "unlockable": "WalkerPartsBase_T2",
+    "walkerInfo": {
+      "carryCapacity": 8000
+    }
   },
   {
     "category": "Walker Parts",
@@ -26320,7 +26717,10 @@
       "type": "Medium",
       "hp": 15000
     },
-    "unlockable": "WalkerPartsImproved_T2"
+    "unlockable": "WalkerPartsImproved_T2",
+    "walkerInfo": {
+      "carryCapacity": 8000
+    }
   },
   {
     "category": "Walker Parts",
@@ -26359,7 +26759,10 @@
       "type": "Medium",
       "hp": 19000
     },
-    "unlockable": "WalkerPartsAdvanced_T2"
+    "unlockable": "WalkerPartsAdvanced_T2",
+    "walkerInfo": {
+      "carryCapacity": 8000
+    }
   },
   {
     "category": "Schematics",
@@ -26368,7 +26771,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 8000
+    }
   },
   {
     "category": "Schematics",
@@ -26377,7 +26783,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 8000
+    }
   },
   {
     "category": "Schematics",
@@ -26386,7 +26795,10 @@
     "stackSize": 100,
     "learn": [
       "Proxy Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 8000
+    }
   },
   {
     "category": "Crafting",
@@ -26813,8 +27225,9 @@
       "type": "Hard",
       "hp": 14000
     },
-    "walkerinfo": {
-      "category": "Flying"
+    "walkerInfo": {
+      "category": "Flying",
+      "carryCapacity": 12500
     },
     "unlockable": "Raptor Sky Walker"
   },
@@ -29816,8 +30229,9 @@
       "type": "Hard",
       "hp": 62000
     },
-    "walkerinfo": {
-      "category": "Capital"
+    "walkerInfo": {
+      "category": "Capital",
+      "carryCapacity": 12500
     },
     "unlockable": "Schmetterling Walker"
   },
@@ -29850,7 +30264,10 @@
       "type": "Medium",
       "hp": 10000
     },
-    "unlockable": "WalkerPartsBase_T4"
+    "unlockable": "WalkerPartsBase_T4",
+    "walkerInfo": {
+      "carryCapacity": 6500
+    }
   },
   {
     "category": "Walker Parts",
@@ -29885,7 +30302,10 @@
       "type": "Medium",
       "hp": 12000
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 6500
+    }
   },
   {
     "category": "Walker Parts",
@@ -29920,7 +30340,10 @@
       "type": "Medium",
       "hp": 14400
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 6500
+    }
   },
   {
     "category": "Schematics",
@@ -29929,7 +30352,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 6500
+    }
   },
   {
     "category": "Schematics",
@@ -29938,7 +30364,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 6500
+    }
   },
   {
     "category": "Schematics",
@@ -29947,7 +30376,10 @@
     "stackSize": 100,
     "learn": [
       "Schmetterling Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 6500
+    }
   },
   {
     "category": "Upgrades",
@@ -30618,7 +31050,10 @@
       "type": "Soft",
       "hp": 5000
     },
-    "unlockable": "WalkerPartsBase_T4"
+    "unlockable": "WalkerPartsBase_T4",
+    "walkerInfo": {
+      "carryCapacity": 6500
+    }
   },
   {
     "category": "Walker Parts",
@@ -30653,7 +31088,10 @@
       "type": "Soft",
       "hp": 6800
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 6500
+    }
   },
   {
     "category": "Walker Parts",
@@ -30684,7 +31122,10 @@
       "type": "Soft",
       "hp": 3750
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 6500
+    }
   },
   {
     "category": "Walker Parts",
@@ -30715,7 +31156,10 @@
       "type": "Soft",
       "hp": 4100
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 6500
+    }
   },
   {
     "category": "Walker Parts",
@@ -30750,7 +31194,10 @@
       "type": "Medium",
       "hp": 6200
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 6500
+    }
   },
   {
     "category": "Walker Parts",
@@ -30785,7 +31232,10 @@
       "type": "Medium",
       "hp": 8500
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 6500
+    }
   },
   {
     "category": "Walker Parts",
@@ -30820,7 +31270,10 @@
       "type": "Soft",
       "hp": 5450
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 6500
+    }
   },
   {
     "category": "Walker Parts",
@@ -30851,7 +31304,10 @@
       "type": "Soft",
       "hp": 3700
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 6500
+    }
   },
   {
     "category": "Containers",
@@ -31269,8 +31725,9 @@
       "type": "Solid",
       "hp": 400000
     },
-    "walkerinfo": {
-      "category": "Large"
+    "walkerInfo": {
+      "category": "Large",
+      "carryCapacity": 12500
     },
     "unlockable": "Silur Walker"
   },
@@ -31303,7 +31760,10 @@
       "type": "Medium",
       "hp": 16500
     },
-    "unlockable": "WalkerPartsBase_T3"
+    "unlockable": "WalkerPartsBase_T3",
+    "walkerInfo": {
+      "carryCapacity": 20000
+    }
   },
   {
     "category": "Walker Parts",
@@ -31338,7 +31798,10 @@
       "type": "Medium",
       "hp": 25000
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 20000
+    }
   },
   {
     "category": "Walker Parts",
@@ -31369,7 +31832,10 @@
       "type": "Medium",
       "hp": 31000
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 20000
+    }
   },
   {
     "category": "Schematics",
@@ -31378,7 +31844,10 @@
     "stackSize": 100,
     "learn": [
       "Silur Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 20000
+    }
   },
   {
     "category": "Upgrades",
@@ -32279,8 +32748,9 @@
       "type": "Hard",
       "hp": 1500
     },
-    "walkerinfo": {
-      "category": "Small"
+    "walkerInfo": {
+      "category": "Small",
+      "carryCapacity": 12500
     },
     "unlockable": "Spider Walker"
   },
@@ -33314,8 +33784,9 @@
       "type": "Hard",
       "hp": 22000
     },
-    "walkerinfo": {
-      "category": "Medium"
+    "walkerInfo": {
+      "category": "Medium",
+      "carryCapacity": 12500
     },
     "unlockable": "Stiletto Walker"
   },
@@ -33344,7 +33815,10 @@
       "type": "Medium",
       "hp": 2800
     },
-    "unlockable": "WalkerPartsBase_T2"
+    "unlockable": "WalkerPartsBase_T2",
+    "walkerInfo": {
+      "carryCapacity": 2500
+    }
   },
   {
     "category": "Walker Parts",
@@ -33379,7 +33853,10 @@
       "type": "Medium",
       "hp": 3360
     },
-    "unlockable": "WalkerPartsImproved_T2"
+    "unlockable": "WalkerPartsImproved_T2",
+    "walkerInfo": {
+      "carryCapacity": 2500
+    }
   },
   {
     "category": "Schematics",
@@ -33388,7 +33865,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 2500
+    }
   },
   {
     "category": "Schematics",
@@ -33397,7 +33877,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 2500
+    }
   },
   {
     "category": "Schematics",
@@ -33406,7 +33889,10 @@
     "stackSize": 100,
     "learn": [
       "Stiletto Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 2500
+    }
   },
   {
     "category": "Upgrades",
@@ -34071,7 +34557,10 @@
       "type": "Soft",
       "hp": 6000
     },
-    "unlockable": "WalkerPartsBase_T2"
+    "unlockable": "WalkerPartsBase_T2",
+    "walkerInfo": {
+      "carryCapacity": 2500
+    }
   },
   {
     "category": "Walker Parts",
@@ -34110,7 +34599,10 @@
       "type": "Soft",
       "hp": 7400
     },
-    "unlockable": "WalkerPartsImproved_T2"
+    "unlockable": "WalkerPartsImproved_T2",
+    "walkerInfo": {
+      "carryCapacity": 2500
+    }
   },
   {
     "category": "Walker Parts",
@@ -34149,7 +34641,10 @@
       "type": "Soft",
       "hp": 6600
     },
-    "unlockable": "WalkerPartsAdvanced_T2"
+    "unlockable": "WalkerPartsAdvanced_T2",
+    "walkerInfo": {
+      "carryCapacity": 2500
+    }
   },
   {
     "category": "Walker Parts",
@@ -34188,7 +34683,10 @@
       "type": "Soft",
       "hp": 7000
     },
-    "unlockable": "WalkerPartsAdvanced_T2"
+    "unlockable": "WalkerPartsAdvanced_T2",
+    "walkerInfo": {
+      "carryCapacity": 2500
+    }
   },
   {
     "category": "Walker Parts",
@@ -34227,7 +34725,10 @@
       "type": "Soft",
       "hp": 7800
     },
-    "unlockable": "WalkerPartsAdvanced_T2"
+    "unlockable": "WalkerPartsAdvanced_T2",
+    "walkerInfo": {
+      "carryCapacity": 2500
+    }
   },
   {
     "category": "Walker Parts",
@@ -34266,7 +34767,10 @@
       "type": "Soft",
       "hp": 6500
     },
-    "unlockable": "WalkerPartsImproved_T2"
+    "unlockable": "WalkerPartsImproved_T2",
+    "walkerInfo": {
+      "carryCapacity": 2500
+    }
   },
   {
     "category": "Walker Parts",
@@ -34305,7 +34809,10 @@
       "type": "Soft",
       "hp": 6200
     },
-    "unlockable": "WalkerPartsImproved_T2"
+    "unlockable": "WalkerPartsImproved_T2",
+    "walkerInfo": {
+      "carryCapacity": 2500
+    }
   },
   {
     "category": "Weapons",
@@ -35433,8 +35940,9 @@
       "type": "Hard",
       "hp": 80000
     },
-    "walkerinfo": {
-      "category": "Capital"
+    "walkerInfo": {
+      "category": "Capital",
+      "carryCapacity": 12500
     },
     "unlockable": "Titan Walker"
   },
@@ -35467,7 +35975,10 @@
       "type": "Medium",
       "hp": 8200
     },
-    "unlockable": "WalkerPartsBase_T4"
+    "unlockable": "WalkerPartsBase_T4",
+    "walkerInfo": {
+      "carryCapacity": 15000
+    }
   },
   {
     "category": "Walker Parts",
@@ -35502,7 +36013,10 @@
       "type": "Medium",
       "hp": 9840
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 15000
+    }
   },
   {
     "category": "Walker Parts",
@@ -35537,7 +36051,10 @@
       "type": "Medium",
       "hp": 11808
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 15000
+    }
   },
   {
     "category": "Schematics",
@@ -35546,7 +36063,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 15000
+    }
   },
   {
     "category": "Schematics",
@@ -35555,7 +36075,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 15000
+    }
   },
   {
     "category": "Schematics",
@@ -35564,7 +36087,10 @@
     "stackSize": 100,
     "learn": [
       "Titan Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 15000
+    }
   },
   {
     "category": "Upgrades",
@@ -36227,7 +36753,10 @@
       "type": "Soft",
       "hp": 5000
     },
-    "unlockable": "WalkerPartsBase_T4"
+    "unlockable": "WalkerPartsBase_T4",
+    "walkerInfo": {
+      "carryCapacity": 15000
+    }
   },
   {
     "category": "Walker Parts",
@@ -36262,7 +36791,10 @@
       "type": "Soft",
       "hp": 6400
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 15000
+    }
   },
   {
     "category": "Walker Parts",
@@ -36293,7 +36825,10 @@
       "type": "Soft",
       "hp": 3750
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 15000
+    }
   },
   {
     "category": "Walker Parts",
@@ -36324,7 +36859,10 @@
       "type": "Soft",
       "hp": 4100
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 15000
+    }
   },
   {
     "category": "Walker Parts",
@@ -36359,7 +36897,10 @@
       "type": "Medium",
       "hp": 6100
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 15000
+    }
   },
   {
     "category": "Walker Parts",
@@ -36394,7 +36935,10 @@
       "type": "Medium",
       "hp": 8100
     },
-    "unlockable": "WalkerPartsAdvanced_T4"
+    "unlockable": "WalkerPartsAdvanced_T4",
+    "walkerInfo": {
+      "carryCapacity": 15000
+    }
   },
   {
     "category": "Walker Parts",
@@ -36429,7 +36973,10 @@
       "type": "Soft",
       "hp": 5450
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 15000
+    }
   },
   {
     "category": "Walker Parts",
@@ -36460,7 +37007,10 @@
       "type": "Soft",
       "hp": 3700
     },
-    "unlockable": "WalkerPartsImproved_T4"
+    "unlockable": "WalkerPartsImproved_T4",
+    "walkerInfo": {
+      "carryCapacity": 15000
+    }
   },
   {
     "category": "Walkers",
@@ -36516,8 +37066,9 @@
       "type": "Hard",
       "hp": 27000
     },
-    "walkerinfo": {
-      "category": "Medium"
+    "walkerInfo": {
+      "category": "Medium",
+      "carryCapacity": 12500
     },
     "unlockable": "Toboggan Walker"
   },
@@ -36550,7 +37101,10 @@
       "type": "Medium",
       "hp": 2750
     },
-    "unlockable": "WalkerPartsBase_T2"
+    "unlockable": "WalkerPartsBase_T2",
+    "walkerInfo": {
+      "carryCapacity": 7500
+    }
   },
   {
     "category": "Walker Parts",
@@ -36589,7 +37143,10 @@
       "type": "Medium",
       "hp": 3300
     },
-    "unlockable": "WalkerPartsImproved_T2"
+    "unlockable": "WalkerPartsImproved_T2",
+    "walkerInfo": {
+      "carryCapacity": 7500
+    }
   },
   {
     "category": "Walker Parts",
@@ -36624,7 +37181,10 @@
       "type": "Medium",
       "hp": 3960
     },
-    "unlockable": "WalkerPartsAdvanced_T2"
+    "unlockable": "WalkerPartsAdvanced_T2",
+    "walkerInfo": {
+      "carryCapacity": 7500
+    }
   },
   {
     "category": "Schematics",
@@ -36633,7 +37193,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 7500
+    }
   },
   {
     "category": "Schematics",
@@ -36642,7 +37205,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 7500
+    }
   },
   {
     "category": "Schematics",
@@ -36651,7 +37217,10 @@
     "stackSize": 100,
     "learn": [
       "Toboggan Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 7500
+    }
   },
   {
     "category": "Upgrades",
@@ -37324,7 +37893,10 @@
       "type": "Soft",
       "hp": 7500
     },
-    "unlockable": "WalkerPartsBase_T2"
+    "unlockable": "WalkerPartsBase_T2",
+    "walkerInfo": {
+      "carryCapacity": 7500
+    }
   },
   {
     "category": "Walker Parts",
@@ -37363,7 +37935,10 @@
       "type": "Soft",
       "hp": 9300
     },
-    "unlockable": "WalkerPartsImproved_T2"
+    "unlockable": "WalkerPartsImproved_T2",
+    "walkerInfo": {
+      "carryCapacity": 7500
+    }
   },
   {
     "category": "Walker Parts",
@@ -37406,7 +37981,10 @@
       "type": "Soft",
       "hp": 9500
     },
-    "unlockable": "WalkerPartsAdvanced_T2"
+    "unlockable": "WalkerPartsAdvanced_T2",
+    "walkerInfo": {
+      "carryCapacity": 7500
+    }
   },
   {
     "category": "Walker Parts",
@@ -37445,7 +38023,10 @@
       "type": "Soft",
       "hp": 8400
     },
-    "unlockable": "WalkerPartsAdvanced_T2"
+    "unlockable": "WalkerPartsAdvanced_T2",
+    "walkerInfo": {
+      "carryCapacity": 7500
+    }
   },
   {
     "category": "Walker Parts",
@@ -37484,7 +38065,10 @@
       "type": "Soft",
       "hp": 8850
     },
-    "unlockable": "WalkerPartsAdvanced_T2"
+    "unlockable": "WalkerPartsAdvanced_T2",
+    "walkerInfo": {
+      "carryCapacity": 7500
+    }
   },
   {
     "category": "Walker Parts",
@@ -37523,7 +38107,10 @@
       "type": "Soft",
       "hp": 10500
     },
-    "unlockable": "WalkerPartsAdvanced_T2"
+    "unlockable": "WalkerPartsAdvanced_T2",
+    "walkerInfo": {
+      "carryCapacity": 7500
+    }
   },
   {
     "category": "Walker Parts",
@@ -37562,7 +38149,10 @@
       "type": "Soft",
       "hp": 8200
     },
-    "unlockable": "WalkerPartsImproved_T2"
+    "unlockable": "WalkerPartsImproved_T2",
+    "walkerInfo": {
+      "carryCapacity": 7500
+    }
   },
   {
     "category": "Walker Parts",
@@ -37601,7 +38191,10 @@
       "type": "Soft",
       "hp": 7800
     },
-    "unlockable": "WalkerPartsImproved_T2"
+    "unlockable": "WalkerPartsImproved_T2",
+    "walkerInfo": {
+      "carryCapacity": 7500
+    }
   },
   {
     "category": "Walker Tools",
@@ -38300,8 +38893,9 @@
       "type": "Hard",
       "hp": 55000
     },
-    "walkerinfo": {
-      "category": "Capital"
+    "walkerInfo": {
+      "category": "Capital",
+      "carryCapacity": 12500
     },
     "unlockable": "Tusker Walker"
   },
@@ -38334,7 +38928,10 @@
       "type": "Medium",
       "hp": 5200
     },
-    "unlockable": "WalkerPartsBase_T3"
+    "unlockable": "WalkerPartsBase_T3",
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "category": "Walker Parts",
@@ -38369,7 +38966,10 @@
       "type": "Medium",
       "hp": 6240
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "category": "Walker Parts",
@@ -38404,7 +39004,10 @@
       "type": "Medium",
       "hp": 7488
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "category": "Schematics",
@@ -38413,7 +39016,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T2"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "category": "Schematics",
@@ -38422,7 +39028,10 @@
     "stackSize": 100,
     "learn": [
       "Rig T3"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "category": "Schematics",
@@ -38431,7 +39040,10 @@
     "stackSize": 100,
     "learn": [
       "Tusker Walker"
-    ]
+    ],
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "category": "Upgrades",
@@ -39082,7 +39694,10 @@
       "type": "Soft",
       "hp": 3500
     },
-    "unlockable": "WalkerPartsBase_T3"
+    "unlockable": "WalkerPartsBase_T3",
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "category": "Walker Parts",
@@ -39117,7 +39732,10 @@
       "type": "Soft",
       "hp": 5000
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "category": "Walker Parts",
@@ -39148,7 +39766,10 @@
       "type": "Soft",
       "hp": 2500
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "category": "Walker Parts",
@@ -39179,7 +39800,10 @@
       "type": "Soft",
       "hp": 3100
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "category": "Walker Parts",
@@ -39214,7 +39838,10 @@
       "type": "Medium",
       "hp": 4500
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "category": "Walker Parts",
@@ -39249,7 +39876,10 @@
       "type": "Medium",
       "hp": 5800
     },
-    "unlockable": "WalkerPartsAdvanced_T3"
+    "unlockable": "WalkerPartsAdvanced_T3",
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "category": "Walker Parts",
@@ -39284,7 +39914,10 @@
       "type": "Soft",
       "hp": 3900
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "category": "Walker Parts",
@@ -39315,7 +39948,10 @@
       "type": "Soft",
       "hp": 2200
     },
-    "unlockable": "Advanced Walker Parts"
+    "unlockable": "Advanced Walker Parts",
+    "walkerInfo": {
+      "carryCapacity": 12500
+    }
   },
   {
     "name": "Uncommon",

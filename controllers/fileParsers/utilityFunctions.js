@@ -183,15 +183,15 @@ class DataStore {
 		}
 
 		const existingItem = this.lootTables.find(
-			(existingItem) => existingItem.name === item.name,
+			(existingItem) => existingItem.name === lootTable.name,
 		);
 
 		if (!existingItem) {
-			this.lootTables.push(item);
+			this.lootTables.push(lootTable);
 			return;
 		}
 
-		const newItem = { ...existingItem, ...item, };
+		const newItem = { ...existingItem, ...lootTable, };
 
 		const existingItemIndex = this.lootTables.indexOf(existingItem);
 		if (existingItemIndex > -1) {
@@ -334,6 +334,34 @@ module.exports = {
 	getAllItems: () => dataStore.getAllItems(),
 	getUpgradesData: () => dataStore.getUpgradesData(),
 	getCreatures: () => dataStore.getCreatures(),
+
+	/**
+	 * Updates an existing item in the items collection
+	 * @param {Object} updatedItem - The item with updated properties
+	 * @returns {boolean} - Whether the update was successful
+	 */
+	updateItem: (updatedItem) => {
+		if (!updatedItem?.name) {
+			return false;
+		}
+
+		const index = dataStore.getAllItems().findIndex(item =>
+			(item.name === updatedItem.name) ||
+			(item.type && updatedItem.type && item.type === updatedItem.type)
+		);
+
+		if (index !== -1) {
+			if (updatedItem.walkerInfo && dataStore.getAllItems()[index].walkerInfo) {
+				updatedItem.walkerInfo = { ...dataStore.getAllItems()[index].walkerInfo, ...updatedItem.walkerInfo };
+			}
+
+			// Merge the updated item with the existing one
+			dataStore.getAllItems()[index] = { ...dataStore.getAllItems()[index], ...updatedItem };
+			return true;
+		}
+
+		return false;
+	},
 
 	addCreature: (creature) => dataStore.addCreature(creature),
 

@@ -6,12 +6,16 @@ const itemParsers = require("./itemParsers");
 const lootParsers = require("./lootParsers");
 const translationParsers = require("./translationParsers");
 const upgradeParsers = require("./upgradeParsers");
+const vehicleParser = require("./vehicleParser");
 const utilityFunctions = require("./utilityFunctions");
 const translator = require("../translator");
 const itemNameGlossary = require("./itemNameGlossary");
 
 // Re-export all functionality from the individual modules
 module.exports = {
+	// Vehicle related functions
+	parseVehicleData: vehicleParser.parseVehicleData,
+	processVehicleFiles: vehicleParser.processVehicleFiles,
 
 	// Item related functions
 	getItemFromItemData: itemParsers.getItemFromItemData,
