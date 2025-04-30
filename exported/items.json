@@ -463,7 +463,7 @@
       "type": "Reinforced",
       "hp": 2500
     },
-    "unlockable": "Windmill_T2"
+    "unlockable": "Advanced Windmill"
   },
   {
     "category": "Crafting",
@@ -2525,9 +2525,51 @@
     }
   },
   {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Tree Sap"
+          },
+          {
+            "count": 2,
+            "name": "Leather"
+          }
+        ],
+        "station": "Advanced Fiberworking Station",
+        "time": 3
+      },
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Tree Sap"
+          },
+          {
+            "count": 2,
+            "name": "Leather"
+          }
+        ],
+        "station": "Artisan Fiberworking Station",
+        "time": 2
+      }
+    ],
     "name": "Baskwood Boots",
-    "parent": "BaskwoodTorso",
-    "type": "BaskwoodBoots_C"
+    "trade_price": 19.8,
+    "translation": "Baskwood Boots",
+    "type": "T2_BaskwoodBoots_C",
+    "description": "A heavy armor issued to Flotillan servicemen whose responsibilities range from reconnaissance, expiditionary planting, and trade station operation and disassemblement.",
+    "experiencieReward": 75,
+    "stackSize": 100,
+    "weight": 4.3,
+    "durability": 200,
+    "armorInfo": {
+      "absorbing": 10,
+      "reduction": 1,
+      "speedReduction": 4
+    }
   },
   {
     "category": "Armors",
@@ -2575,16 +2617,6 @@
       "reduction": 2,
       "speedReduction": 4
     }
-  },
-  {
-    "name": "Baskwood Gloves",
-    "parent": "BaskwoodTorso",
-    "type": "BaskwoodGloves_C"
-  },
-  {
-    "name": "Baskwood Torso",
-    "parent": "RupuFurTorso",
-    "type": "BaskwoodTorso_C"
   },
   {
     "category": "Resources",
@@ -3820,10 +3852,60 @@
     "whereToFarm": "Creature remains can be found in various oases, dead worms, and some rupus."
   },
   {
+    "category": "Vitamins",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Spearmint"
+          },
+          {
+            "count": 6,
+            "name": "Lava Poppy"
+          },
+          {
+            "count": 3,
+            "name": "Tar"
+          },
+          {
+            "count": 1,
+            "name": "Glass"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 135
+      },
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Spearmint"
+          },
+          {
+            "count": 6,
+            "name": "Lava Poppy"
+          },
+          {
+            "count": 3,
+            "name": "Tar"
+          },
+          {
+            "count": 1,
+            "name": "Glass"
+          }
+        ],
+        "station": "Clay Pot",
+        "time": 135
+      }
+    ],
     "name": "Bonebreaker",
-    "parent": "Desert Mule",
-    "type": "BoneBreaker_C",
-    "description": "A small injection that may cause balance loss and serious injury from falling off walkers. Grants Nomad double damage after a successful block."
+    "trade_price": 151.4,
+    "translation": "Bonebreaker",
+    "type": "Bonebreaker_C",
+    "description": "A small injection that may cause balance loss and serious injury from falling off walkers. Grants Nomad double damage after a successful block.",
+    "stackSize": 100,
+    "weight": 0.6
   },
   {
     "category": "Furniture",
@@ -3976,21 +4058,77 @@
     }
   },
   {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Cattail"
+          },
+          {
+            "count": 12,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 2,
+            "name": "Ceramic Shard"
+          }
+        ],
+        "station": "Artisan Fiberworking Station",
+        "time": 2
+      }
+    ],
     "name": "Brittle Bone Boots",
-    "parent": "BrittleBoneTorso",
-    "type": "BrittleBoneBoots_C",
-    "description": "Hardened armor for the feet on Nomads. Useful to protect your toes from falling limbs."
+    "translation": "Brittle Bone Boots",
+    "type": "T3_BrittleBoneBoots_C",
+    "description": "Hardened armor for the feet on Nomads. Useful to protect your toes from falling limbs.",
+    "experiencieReward": 40,
+    "stackSize": 100,
+    "weight": 1.3,
+    "durability": 240,
+    "armorInfo": {
+      "absorbing": 5,
+      "reduction": 3,
+      "speedReduction": 3
+    }
   },
   {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 7,
+            "name": "Rope"
+          },
+          {
+            "count": 2,
+            "name": "Ceramic Shard"
+          }
+        ],
+        "station": "Artisan Fiberworking Station",
+        "time": 2
+      }
+    ],
     "name": "Brittle Bone Handwraps",
-    "parent": "BrittleBoneTorso",
-    "type": "BrittleBoneGloves_C",
-    "description": "Heavy armored protection for soft handed Nomads"
-  },
-  {
-    "name": "Brittle Bone Torso",
-    "parent": "ForesterTorso",
-    "type": "BrittleBoneTorso_C"
+    "trade_price": 8.9,
+    "translation": "Brittle Bone Handwraps",
+    "type": "T3_BrittleBoneGloves_C",
+    "description": "Heavy armored protection for soft handed Nomads",
+    "experiencieReward": 70,
+    "stackSize": 100,
+    "weight": 1,
+    "durability": 240,
+    "armorInfo": {
+      "absorbing": 12,
+      "reduction": 3,
+      "speedReduction": 3
+    }
   },
   {
     "name": "Broken Grappling Hook",
@@ -5534,9 +5672,41 @@
     }
   },
   {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 3,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 15,
+            "name": "Earth Wax"
+          }
+        ],
+        "station": "Artisan Fiberworking Station",
+        "time": 2
+      }
+    ],
     "name": "Carapace Boots",
-    "parent": "CarapaceTorso",
-    "type": "CarapaceBoots_C"
+    "trade_price": 190.5,
+    "translation": "Carapace Boots",
+    "type": "T3_CarapaceBoots_C",
+    "description": "Layers of tough hides are sewn together into a heavy armor worn by the most seasoned nomadic fighters.",
+    "experiencieReward": 100,
+    "stackSize": 100,
+    "weight": 3.3,
+    "durability": 280,
+    "armorInfo": {
+      "absorbing": 15,
+      "reduction": 2,
+      "speedReduction": 5
+    }
   },
   {
     "category": "Armors",
@@ -5574,16 +5744,6 @@
       "reduction": 3,
       "speedReduction": 5
     }
-  },
-  {
-    "name": "Carapace Gloves",
-    "parent": "CarapaceTorso",
-    "type": "CarapaceGloves_C"
-  },
-  {
-    "name": "Carapace Torso",
-    "parent": "BaskwoodTorso",
-    "type": "CarapaceTorso_C"
   },
   {
     "category": "Spare Parts",
@@ -7033,9 +7193,6 @@
     "wikiVisibility": false
   },
   {
-    "name": "Chitin PickAxe",
-    "parent": "Ceramic Pickaxe",
-    "type": "ChitinPickAxe_C",
     "crafting": [
       {
         "ingredients": [
@@ -7056,7 +7213,9 @@
         "time": 2
       }
     ],
+    "name": "Chitin PickAxe",
     "translation": "Chitin PickAxe",
+    "type": "ChitinPickAxe_C",
     "description": "Mine stone and other minerals at higher efficiency with this chitin tool.",
     "durability": 504,
     "toolInfo": [
@@ -7586,10 +7745,40 @@
     ]
   },
   {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 5,
+            "name": "Lightwood"
+          },
+          {
+            "count": 4,
+            "name": "Rubber Block"
+          }
+        ],
+        "station": "Artisan Fiberworking Station",
+        "time": 2
+      }
+    ],
     "name": "Cloak",
-    "parent": "Fiber Headwrap",
-    "type": "Cloak_C",
-    "description": "Medium cloak designed to protect nomads from harsh wind gusts full of sand. A mixture of lightwood from the lands of Kali and worm silk left behind by roaming Long Ones."
+    "trade_price": 342.4,
+    "translation": "Cloak",
+    "type": "T4_Cloak_C",
+    "description": "Medium cloak designed to protect nomads from harsh wind gusts full of sand. A mixture of lightwood from the lands of Kali and worm silk left behind by roaming Long Ones.",
+    "experiencieReward": 100,
+    "stackSize": 100,
+    "weight": 1,
+    "durability": 420,
+    "armorInfo": {
+      "absorbing": 12,
+      "reduction": 5
+    }
   },
   {
     "category": "Armors",
@@ -7627,11 +7816,6 @@
       "absorbing": 6,
       "speedReduction": 2
     }
-  },
-  {
-    "name": "Cloaked Rupu Fur Torso",
-    "parent": "RupuFurTorso",
-    "type": "CloakedRupuFurTorso_C"
   },
   {
     "category": "Ammo",
@@ -8549,11 +8733,6 @@
     "description": "These refreshing eye drops deceive a Nomad into thinking his or her heatstroke is gone. Allows Nomad to carry more weight.",
     "stackSize": 100,
     "weight": 0.6
-  },
-  {
-    "name": "Dev Only",
-    "type": "DevOnly_C",
-    "onlyDevs": true
   },
   {
     "crafting": [
@@ -12660,20 +12839,30 @@
     }
   },
   {
-    "name": "Fiber Boots",
-    "parent": "FiberTorso",
-    "type": "FiberBoots_C"
-  },
-  {
-    "name": "Fiber Gloves",
-    "parent": "FiberTorso",
-    "type": "FiberGloves_C"
-  },
-  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
     "name": "Fiber Headwrap",
-    "parent": "FiberTorso",
-    "type": "FiberHeadwrap_C",
-    "description": "Worn by nomads who toil in the Flotilla's underbelly, these itchy fibers may only protect against a sunburn."
+    "trade_price": 2.4,
+    "translation": "Fiber Headwrap",
+    "type": "T1_FiberHeadwrap_C",
+    "description": "Worn by nomads who toil in the Flotilla's underbelly, these itchy fibers may only protect against a sunburn.",
+    "experiencieReward": 2,
+    "stackSize": 100,
+    "weight": 0.2,
+    "durability": 120,
+    "armorInfo": {
+      "absorbing": 1,
+      "reduction": 1
+    }
   },
   {
     "category": "Armors",
@@ -12731,11 +12920,6 @@
       "reduction": 3,
       "speedReduction": 2
     }
-  },
-  {
-    "name": "Fiber Torso",
-    "parent": "Equipment",
-    "type": "FiberTorso_C"
   },
   {
     "category": "Resources",
@@ -13943,10 +14127,42 @@
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 6,
+            "name": "Obsidian"
+          },
+          {
+            "count": 3,
+            "name": "Rope"
+          },
+          {
+            "count": 6,
+            "name": "Wood Shaft"
+          }
+        ],
+        "station": "Lathe",
+        "time": 2
+      }
+    ],
     "name": "Firestone Hammerstaff",
-    "parent": "Paddleblade Quarterstaff",
-    "type": "LavaQuarterstaff_C",
-    "description": "While not being sharp like a similarly built bladestaff, the weight and sturdyness of hammerstaff tips allows to crack enemy skulls with ease and grace."
+    "trade_price": 100.7,
+    "translation": "Firestone Hammerstaff",
+    "type": "LavaQuarterstaffBlunt_C",
+    "description": "While not being sharp like a similarly built bladestaff, the weight and sturdyness of hammerstaff tips allows to crack enemy skulls with ease and grace.",
+    "experiencieReward": 220,
+    "stackSize": 100,
+    "weight": 5.5,
+    "durability": 735,
+    "weaponInfo": {
+      "weaponLength": 99,
+      "damage": 42,
+      "penetration": 20
+    },
+    "damageType": "'MeleeBluntDamage_C'"
   },
   {
     "category": "Weapons",
@@ -14944,21 +15160,6 @@
     "whereToFarm": "Can be found in Ancient Cities or bought for Relics from black market vendors."
   },
   {
-    "name": "Forester Boots",
-    "parent": "ForesterTorso",
-    "type": "ForesterBoots_C"
-  },
-  {
-    "name": "Forester Gloves",
-    "parent": "ForesterTorso",
-    "type": "ForesterGloves_C"
-  },
-  {
-    "name": "Forester Torso",
-    "parent": "RupuFurTorso",
-    "type": "ForesterTorso_C"
-  },
-  {
     "category": "Armors",
     "crafting": [
       {
@@ -15431,11 +15632,6 @@
     "type": "Furniture_C"
   },
   {
-    "name": "Furnitures",
-    "parent": "Sand Structures",
-    "type": "Furnitures_C"
-  },
-  {
     "category": "Vitamins",
     "crafting": [
       {
@@ -15775,10 +15971,37 @@
     "unlockable": "ChestGigantic"
   },
   {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Sand"
+          }
+        ],
+        "station": "Furnace",
+        "time": 1200
+      },
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Sand"
+          }
+        ],
+        "station": "Advanced Furnace",
+        "time": 900
+      }
+    ],
     "name": "Glass",
-    "parent": "Furnace",
-    "type": "Glass_C",
-    "description": "A transparent material"
+    "trade_price": 1.4,
+    "translation": "Glass",
+    "type": "EmptyGlassVial_C",
+    "description": "A transparent material",
+    "stackSize": 100,
+    "weight": 0.05,
+    "whereToFarm": "Found in rupu camps."
   },
   {
     "category": "Interactables",
@@ -19157,11 +19380,6 @@
     "type": "Interactables_C"
   },
   {
-    "name": "Iron Boots",
-    "parent": "IronTorso",
-    "type": "IronBoots_C"
-  },
-  {
     "crafting": [
       {
         "ingredients": [
@@ -19234,15 +19452,26 @@
     "weight": 0.55
   },
   {
-    "name": "Iron Gloves",
-    "parent": "IronTorso",
-    "type": "IronGloves_C"
-  },
-  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Iron Ore"
+          }
+        ],
+        "station": "Advanced Furnace",
+        "time": 2100
+      }
+    ],
     "name": "Iron Ingot",
-    "parent": "Advanced Furnace",
-    "type": "IronIngot_C",
-    "description": "Extremely strong material used in high quality productions."
+    "trade_price": 12,
+    "translation": "Iron Ingot",
+    "type": "IronIngot2_C",
+    "description": "Extremely strong material used in high quality productions.",
+    "stackSize": 100,
+    "weight": 0.65
   },
   {
     "category": "Resources",
@@ -19546,11 +19775,6 @@
       "reduction": 4,
       "speedReduction": 5
     }
-  },
-  {
-    "name": "Iron Torso",
-    "parent": "CarapaceTorso",
-    "type": "IronTorso_C"
   },
   {
     "crafting": [
@@ -20255,11 +20479,6 @@
     "stackSize": 100,
     "weight": 0.5,
     "whereToFarm": "Can be rendered using a purification station."
-  },
-  {
-    "name": "Lava Mace",
-    "parent": "Short Ceramic Hoofmace",
-    "type": "LavaMace_C"
   },
   {
     "category": "Resources",
@@ -22770,11 +22989,6 @@
     "unlockable": "MountableNurr"
   },
   {
-    "name": "Mtx Masks",
-    "parent": "Fiber Headwrap",
-    "type": "MtxMasks_C"
-  },
-  {
     "category": "Resources",
     "name": "Mushroom Flesh",
     "trade_price": 0.4,
@@ -23366,9 +23580,37 @@
     }
   },
   {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Nibiran Ingot"
+          },
+          {
+            "count": 15,
+            "name": "Worm Silk"
+          }
+        ],
+        "station": "Artisan Fiberworking Station",
+        "time": 30
+      }
+    ],
     "name": "Nibirian Boots",
-    "parent": "NibirianTorso",
-    "type": "NibirianBoots_C"
+    "trade_price": 75.8,
+    "translation": "Nibirian Boots",
+    "type": "T4_NibirianBoots_C",
+    "description": "Most tribes eschew iron armor, despite its protective value. History has proven that it is not pirates whom a nomad must fear most, but the sun.",
+    "experiencieReward": 170,
+    "stackSize": 100,
+    "weight": 4,
+    "durability": 330,
+    "armorInfo": {
+      "absorbing": 23,
+      "reduction": 4,
+      "speedReduction": 5
+    }
   },
   {
     "crafting": [
@@ -23435,11 +23677,6 @@
     }
   },
   {
-    "name": "Nibirian Gloves",
-    "parent": "NibirianTorso",
-    "type": "NibirianGloves_C"
-  },
-  {
     "crafting": [
       {
         "ingredients": [
@@ -23460,36 +23697,6 @@
     "parent": "Nibiran-tipped Bolt",
     "translation": "Nibirian Harpoon",
     "type": "NibirianHarpoon_C"
-  },
-  {
-    "name": "Nibirian Pickaxe",
-    "parent": "IronPickaxe",
-    "type": "NibirianPickaxe_C"
-  },
-  {
-    "name": "Nibirian Quarterstaff Blade",
-    "parent": "Wyndanblade Quarterstaff",
-    "type": "NibirianQuarterstaffBlade_C"
-  },
-  {
-    "name": "Nibirian Quarterstaff Blunt",
-    "parent": "Wyndanblade Quarterstaff",
-    "type": "NibirianQuarterstaffBlunt_C"
-  },
-  {
-    "name": "Nibirian Repair Hammer",
-    "parent": "IronRepairHammer",
-    "type": "NibirianRepairHammer_C"
-  },
-  {
-    "name": "Nibirian Scythe",
-    "parent": "IronScythe",
-    "type": "NibirianScythe_C"
-  },
-  {
-    "name": "Nibirian Torso",
-    "parent": "IronTorso",
-    "type": "NibirianTorso_C"
   },
   {
     "category": "Resources",
@@ -24292,26 +24499,6 @@
       "hp": 250
     },
     "unlockable": "DevOnly"
-  },
-  {
-    "name": "One Handed Bone Axe",
-    "parent": "Stone Axe",
-    "type": "OneHandedBoneAxe_C"
-  },
-  {
-    "name": "One Handed Nibirian Axe",
-    "parent": "Wyndan Hand Axe",
-    "type": "OneHandedNibirianAxe_C"
-  },
-  {
-    "name": "One Handed Nibirian Mace",
-    "parent": "Wyndan Hammer",
-    "type": "OneHandedNibirianMace_C"
-  },
-  {
-    "name": "One Handed Nibirian Sword",
-    "parent": "Wyndan Sabre",
-    "type": "OneHandedNibirianSword_C"
   },
   {
     "category": "Furniture",
@@ -26235,10 +26422,170 @@
     "unlockable": "Purification Station"
   },
   {
+    "category": "Liquids",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Cactus Flesh"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 35
+      },
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Cactus Flesh"
+          }
+        ],
+        "station": "Clay Pot",
+        "time": 35
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Fruit Pulp"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 35
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Fruit Pulp"
+          }
+        ],
+        "station": "Clay Pot",
+        "time": 35
+      },
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Toxic Water"
+          },
+          {
+            "count": 6,
+            "name": "Charcoal"
+          },
+          {
+            "count": 25,
+            "name": "Sand"
+          }
+        ],
+        "output": 50,
+        "station": "Purification Station",
+        "time": 150
+      },
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Toxic Water"
+          },
+          {
+            "count": 1,
+            "name": "Charcoal"
+          }
+        ],
+        "output": 3,
+        "station": "Camp Fire",
+        "time": 35
+      },
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Toxic Water"
+          },
+          {
+            "count": 1,
+            "name": "Charcoal"
+          }
+        ],
+        "output": 5,
+        "station": "Clay Pot",
+        "time": 55
+      },
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Thornberry"
+          }
+        ],
+        "station": "Camp Fire",
+        "time": 35
+      },
+      {
+        "ingredients": [
+          {
+            "count": 3,
+            "name": "Thornberry"
+          }
+        ],
+        "station": "Clay Pot",
+        "time": 35
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Huge Cactus Fruit"
+          }
+        ],
+        "output": 3,
+        "station": "Camp Fire",
+        "time": 40
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Huge Cactus Fruit"
+          }
+        ],
+        "output": 3,
+        "station": "Clay Pot",
+        "time": 40
+      },
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Aloe Vera"
+          }
+        ],
+        "output": 3,
+        "station": "Camp Fire",
+        "time": 35
+      },
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Aloe Vera"
+          }
+        ],
+        "output": 3,
+        "station": "Clay Pot",
+        "time": 35
+      }
+    ],
     "name": "Purified Water",
-    "parent": "Camp Fire",
-    "type": "Water_T1_C",
-    "description": "Torque Consumption"
+    "trade_price": 3,
+    "translation": "Purified Water",
+    "type": "NormalWater_C",
+    "description": "Torque Consumption",
+    "experiencieReward": 3,
+    "stackSize": 100,
+    "weight": 0.2
   },
   {
     "category": "Crafting",
@@ -26381,9 +26728,6 @@
     "whereToFarm": "Crafted in Ancient Fabricators found in the most difficult Oases."
   },
   {
-    "name": "Rangefinder",
-    "parent": "Maintenance Box",
-    "type": "Rangefinder_C",
     "category": "Interactables",
     "crafting": [
       {
@@ -26403,7 +26747,9 @@
         ]
       }
     ],
+    "name": "Rangefinder",
     "translation": "Rangefinder",
+    "type": "Rangefinder_C",
     "description": "Measures distance to far-away targets.",
     "experiencieReward": 266,
     "weight": 20,
@@ -27462,21 +27808,6 @@
     "whereToFarm": "Grows in lush green forests."
   },
   {
-    "name": "Redwood Wood Boots",
-    "parent": "RedwoodWoodTorso",
-    "type": "RedwoodWoodBoots_C"
-  },
-  {
-    "name": "Redwood Wood Gloves",
-    "parent": "RedwoodWoodTorso",
-    "type": "RedwoodWoodGloves_C"
-  },
-  {
-    "name": "Redwood Wood Torso",
-    "parent": "TripleStitchTorso",
-    "type": "RedwoodWoodTorso_C"
-  },
-  {
     "category": "Resources",
     "crafting": [
       {
@@ -27509,10 +27840,61 @@
     "weight": 0.55
   },
   {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 50,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Iron Ingot"
+          }
+        ],
+        "output": 5,
+        "station": "Ancient Fabricator",
+        "time": 250
+      },
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Wood"
+          },
+          {
+            "count": 1,
+            "name": "Iron Ingot"
+          }
+        ],
+        "station": "Artificer Woodworking Station",
+        "time": 60
+      },
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Wood Log"
+          },
+          {
+            "count": 2,
+            "name": "Iron Ingot"
+          }
+        ],
+        "output": 10,
+        "station": "Lumbermill",
+        "time": 450
+      }
+    ],
     "name": "Reinforced Plank",
-    "parent": "Artisan Woodworking Station",
-    "type": "ReinforcedPlank_C",
-    "description": "Strong wooden plank reinforced using a forgotten technology at Ancient Crafting Sites."
+    "trade_price": 15.5,
+    "translation": "Reinforced Plank",
+    "type": "ReinforcedPlank2_C",
+    "description": "Strong wooden plank reinforced using a forgotten technology at Ancient Crafting Sites.",
+    "experiencieReward": 25,
+    "stackSize": 100,
+    "weight": 0.45
   },
   {
     "category": "Schematics",
@@ -28240,15 +28622,33 @@
     }
   },
   {
-    "name": "Rupu Fur Gloves",
-    "parent": "RupuFurTorso",
-    "type": "RupuFurGloves_C"
-  },
-  {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 2,
+            "name": "Rupu Pelt"
+          },
+          {
+            "count": 8,
+            "name": "Palm Leaves"
+          }
+        ]
+      }
+    ],
     "name": "Rupu Fur Sandals",
-    "parent": "RupuFurTorso",
-    "type": "RupuFurBoots_C",
-    "description": "Worn by nomads who don't mind the smell. Extremely light and maneuverable."
+    "trade_price": 2,
+    "translation": "Rupu Fur Sandals",
+    "type": "T1_RupuFurBoots_C",
+    "description": "Worn by nomads who don't mind the smell. Extremely light and maneuverable.",
+    "stackSize": 100,
+    "weight": 1,
+    "durability": 150,
+    "armorInfo": {
+      "absorbing": 4,
+      "reduction": 1
+    }
   },
   {
     "category": "Armors",
@@ -28278,11 +28678,6 @@
       "absorbing": 4,
       "reduction": 1
     }
-  },
-  {
-    "name": "Rupu Fur Torso",
-    "parent": "FiberTorso",
-    "type": "RupuFurTorso_C"
   },
   {
     "category": "Resources",
@@ -31731,14 +32126,12 @@
     "upgradeInfo": {}
   },
   {
-    "category": "Walker Parts",
     "name": "Small Walker Legs (1 of 2)",
     "translation": "Small Walker Legs",
     "type": "SmallWalkerLegs_UI_C",
     "onlyDevs": true
   },
   {
-    "category": "Walker Parts",
     "name": "Small Walker Wings (1 of 2)",
     "translation": "Small Walker Wings",
     "type": "SmallWalkerWings_UI_C",
@@ -32529,10 +32922,40 @@
     "durability": 160
   },
   {
+    "category": "Equipment",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 35,
+            "name": "Palm Leaves"
+          },
+          {
+            "count": 112,
+            "name": "Fiber"
+          },
+          {
+            "count": 15,
+            "name": "Beeswax"
+          }
+        ],
+        "station": "Smithing",
+        "time": 60
+      }
+    ],
     "name": "Split Durable Water Sack",
-    "parent": "Durable Water Sack",
-    "type": "SplitBarrel_C",
-    "description": "A huge water bag worn on the back with two separate compartments."
+    "trade_price": 143.4,
+    "translation": "Split Durable Water Sack",
+    "type": "SplitBarrel2_C",
+    "description": "A huge water bag worn on the back with two separate compartments.",
+    "experiencieReward": 300,
+    "stackSize": 100,
+    "weight": 3,
+    "durability": 380
   },
   {
     "name": "Spring",
@@ -34799,11 +35222,6 @@
       "penetration": 50
     },
     "damageType": "'InsectDamage_C'"
-  },
-  {
-    "name": "Throwable Lava Bomb",
-    "parent": "Fire Bomb",
-    "type": "ThrowableLavaBomb_C"
   },
   {
     "category": "Weapons",
@@ -37656,9 +38074,49 @@
     }
   },
   {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 6,
+            "name": "Triple Stitch Fabric"
+          }
+        ],
+        "station": "Advanced Fiberworking Station",
+        "time": 3
+      },
+      {
+        "ingredients": [
+          {
+            "count": 8,
+            "name": "Bone Splinter"
+          },
+          {
+            "count": 6,
+            "name": "Triple Stitch Fabric"
+          }
+        ],
+        "station": "Artisan Fiberworking Station",
+        "time": 2
+      }
+    ],
     "name": "Triple Stitch Boots",
-    "parent": "TripleStitchTorso",
-    "type": "TripleStitchBoots_C"
+    "trade_price": 61.1,
+    "translation": "Triple Stitch Boots",
+    "type": "T2_TripleStitchBoots_C",
+    "description": "A secret weaving technique creates surprisingly strong armor with no loss in meanueverability.",
+    "experiencieReward": 45,
+    "stackSize": 100,
+    "weight": 1.5,
+    "durability": 250,
+    "armorInfo": {
+      "reduction": 4
+    }
   },
   {
     "category": "Armors",
@@ -37748,16 +38206,6 @@
     "experiencieReward": 6,
     "stackSize": 100,
     "weight": 0.24
-  },
-  {
-    "name": "Triple Stitch Gloves",
-    "parent": "TripleStitchTorso",
-    "type": "TripleStitchGloves_C"
-  },
-  {
-    "name": "Triple Stitch Torso",
-    "parent": "RupuFurTorso",
-    "type": "TripleStitchTorso_C"
   },
   {
     "category": "Tools",
@@ -38870,26 +39318,6 @@
     "unlockable": "Advanced Walker Parts"
   },
   {
-    "name": "Two Handed Iron Mace",
-    "parent": "Long Ceramic Hoofmace",
-    "type": "TwoHandedIronMace_C"
-  },
-  {
-    "name": "Two Handed Nibirian Axe",
-    "parent": "Wyndan Battle Axe",
-    "type": "TwoHandedNibirianAxe_C"
-  },
-  {
-    "name": "Two Handed Nibirian Mace",
-    "parent": "TwoHandedIronMace",
-    "type": "TwoHandedNibirianMace_C"
-  },
-  {
-    "name": "Two Handed Nibirian Sword",
-    "parent": "Wyndan Flame Sword",
-    "type": "TwoHandedNibirianSword_C"
-  },
-  {
     "name": "Uncommon",
     "translation": "Uncommon",
     "type": "Q1_Uncommon_C"
@@ -39198,10 +39626,36 @@
     "unlockable": "DevOnly"
   },
   {
+    "category": "Equipment",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 38,
+            "name": "Worm Silk"
+          },
+          {
+            "count": 5,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 25,
+            "name": "Rope"
+          }
+        ],
+        "station": "Smithing",
+        "time": 25
+      }
+    ],
     "name": "Water Circulator",
-    "parent": "Ceramic Flask",
-    "type": "Stillsuit_C",
-    "description": "This insulating suit traps excreted fluids and recycles them with state-of-the-art worm technology."
+    "trade_price": 679.5,
+    "translation": "Water Circulator",
+    "type": "Stillsuit2_C",
+    "description": "This insulating suit traps excreted fluids and recycles them with state-of-the-art worm technology.",
+    "experiencieReward": 255,
+    "stackSize": 100,
+    "weight": 3,
+    "durability": 400
   },
   {
     "category": "Crafting",
@@ -39507,11 +39961,6 @@
     "unlockable": "Windmill"
   },
   {
-    "name": "Windmill T2",
-    "parent": "Windmill",
-    "type": "Windmill_T2_C"
-  },
-  {
     "category": "Armors",
     "crafting": [
       {
@@ -39706,11 +40155,6 @@
     "stackSize": 100,
     "weight": 0.21,
     "whereToFarm": "Often wielded by Rupu as a weapon."
-  },
-  {
-    "name": "Wood T4",
-    "parent": "Lumbermill",
-    "type": "Wood_T4_C"
   },
   {
     "name": "Wood: heavy",
@@ -40325,34 +40769,231 @@
     "unlockable": "Furnitures"
   },
   {
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Leather"
+          },
+          {
+            "count": 3,
+            "name": "Iron Ingot"
+          }
+        ],
+        "station": "Smithing",
+        "time": 15
+      }
+    ],
     "name": "Wyndan Battle Axe",
-    "parent": "Firestone Battleaxe",
-    "type": "TwoHandedIronAxe_C",
-    "description": "Flotillan scholars claim that the Wyndan tribe has roots as a prominent civilization that existed long before the apocalypse."
+    "trade_price": 320.4,
+    "translation": "Wyndan Battle Axe",
+    "type": "TwoHandedIronAxe2_C",
+    "description": "Flotillan scholars claim that the Wyndan tribe has roots as a prominent civilization that existed long before the apocalypse.",
+    "experiencieReward": 1622,
+    "stackSize": 100,
+    "weight": 5.8,
+    "durability": 780,
+    "weaponInfo": {
+      "weaponSpeed": 115,
+      "stability": 65,
+      "weaponLength": 62,
+      "damage": 60,
+      "penetration": 10
+    },
+    "toolInfo": [
+      {
+        "toolType": "TreeCutting",
+        "tier": 0
+      }
+    ],
+    "damageType": "'MeleeAxeDamage_C'"
   },
   {
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Triple Stitch Fabric"
+          },
+          {
+            "count": 3,
+            "name": "Iron Ingot"
+          }
+        ],
+        "station": "Smithing",
+        "time": 15
+      }
+    ],
     "name": "Wyndan Flame Sword",
-    "parent": "Singblade",
-    "type": "TwoHandedIronSword_C",
-    "description": "The Wyndan tribe is said to have pioneered the first walkers."
+    "trade_price": 336.6,
+    "translation": "Wyndan Flame Sword",
+    "type": "TwoHandedIronSword2_C",
+    "description": "The Wyndan tribe is said to have pioneered the first walkers.",
+    "experiencieReward": 1349,
+    "stackSize": 100,
+    "weight": 4.8,
+    "durability": 800,
+    "weaponInfo": {
+      "weaponSpeed": 130,
+      "impact": 45,
+      "stability": 55,
+      "weaponLength": 96,
+      "damage": 60,
+      "penetration": 10
+    },
+    "toolInfo": [
+      {
+        "toolType": "Scythe",
+        "tier": 1
+      }
+    ],
+    "damageType": "'MeleeSwordDamage_C'"
   },
   {
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Lightwood"
+          },
+          {
+            "count": 4,
+            "name": "Leather"
+          },
+          {
+            "count": 3,
+            "name": "Iron Ingot"
+          }
+        ],
+        "station": "Smithing",
+        "time": 15
+      }
+    ],
     "name": "Wyndan Hammer",
-    "parent": "Short Ceramic Hoofmace",
-    "type": "OneHandedIronMace_C",
-    "description": "Flotillan scholars claim that the Wyndan tribe has roots as a prominent civilization that existed long before the apocalypse."
+    "trade_price": 316.4,
+    "translation": "Wyndan Hammer",
+    "type": "OneHandedIronMace2_C",
+    "description": "Flotillan scholars claim that the Wyndan tribe has roots as a prominent civilization that existed long before the apocalypse.",
+    "experiencieReward": 1197,
+    "stackSize": 100,
+    "weight": 4.5,
+    "durability": 760,
+    "weaponInfo": {
+      "weaponSpeed": 90,
+      "impact": 70,
+      "weaponLength": 61,
+      "damage": 60,
+      "penetration": 10
+    },
+    "damageType": "'MeleeBluntDamage_C'"
   },
   {
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 6,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 3,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 5,
+            "name": "Rope"
+          }
+        ],
+        "station": "Smithing",
+        "time": 15
+      }
+    ],
     "name": "Wyndan Hand Axe",
-    "parent": "Ceramic Hatchet",
-    "type": "OneHandedIronAxe_C",
-    "description": "Flotillan scholars claim that the Wyndan tribe has roots as a prominent civilization that existed long before the apocalypse."
+    "trade_price": 234.4,
+    "translation": "Wyndan Hand Axe",
+    "type": "OneHandedIronAxe2_C",
+    "description": "Flotillan scholars claim that the Wyndan tribe has roots as a prominent civilization that existed long before the apocalypse.",
+    "experiencieReward": 1203,
+    "stackSize": 100,
+    "weight": 4,
+    "durability": 1000,
+    "weaponInfo": {
+      "weaponSpeed": 95,
+      "impact": 55,
+      "stability": 45,
+      "weaponLength": 72,
+      "damage": 60,
+      "penetration": 10
+    },
+    "toolInfo": [
+      {
+        "toolType": "TreeCutting",
+        "tier": 20
+      }
+    ],
+    "damageType": "'MeleeAxeDamage_C'"
   },
   {
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Leather"
+          },
+          {
+            "count": 3,
+            "name": "Iron Ingot"
+          }
+        ],
+        "station": "Smithing",
+        "time": 15
+      }
+    ],
     "name": "Wyndan Sabre",
-    "parent": "Short Malletblade",
-    "type": "OneHandedIronSword_C",
-    "description": "The Wyndan tribe is said to have pioneered the first walkers."
+    "trade_price": 259.7,
+    "translation": "Wyndan Sabre",
+    "type": "OneHandedIronSword2_C",
+    "description": "The Wyndan tribe is said to have pioneered the first walkers.",
+    "experiencieReward": 1242,
+    "stackSize": 100,
+    "weight": 2.5,
+    "durability": 770,
+    "weaponInfo": {
+      "weaponSpeed": 130,
+      "impact": 25,
+      "stability": 10,
+      "weaponLength": 55,
+      "damage": 60,
+      "penetration": 10
+    },
+    "toolInfo": [
+      {
+        "toolType": "Scythe",
+        "tier": 1
+      }
+    ],
+    "damageType": "'MeleeSwordDamage_C'"
   },
   {
     "category": "Weapons",
@@ -40396,10 +41037,42 @@
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Lightwood"
+          },
+          {
+            "count": 6,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 3,
+            "name": "Iron Ingot"
+          }
+        ],
+        "station": "Smithing",
+        "time": 15
+      }
+    ],
     "name": "Wyndanblade Quarterstaff",
-    "parent": "Paddleblade Quarterstaff",
-    "type": "IronQuarterstaff_C",
-    "description": "Long ago, the Wyndan tribe mediated a lasting peace between the plains people. Today, they serve the Guardians as peacekeepers and engineers."
+    "trade_price": 152,
+    "translation": "Wyndanblade Quarterstaff",
+    "type": "IronQuarterstaff2_C",
+    "description": "Long ago, the Wyndan tribe mediated a lasting peace between the plains people. Today, they serve the Guardians as peacekeepers and engineers.",
+    "experiencieReward": 1227,
+    "stackSize": 100,
+    "weight": 4.8,
+    "durability": 740,
+    "weaponInfo": {
+      "weaponLength": 107,
+      "damage": 48,
+      "penetration": 20
+    },
+    "damageType": "'MeleeBluntDamage_C'"
   },
   {
     "category": "Resources",

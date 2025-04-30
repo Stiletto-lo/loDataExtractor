@@ -18,12 +18,12 @@ const parseTechData = (filePath) => {
 	if (jsonData?.[1]?.Type) {
 		// Create both tech and item entries
 		const tech = utilityFunctions.extractTechByType(jsonData[1].Type);
-		const item = utilityFunctions.extractItemByType(jsonData[1].Type);
 
 		// Set name for both
 		const name = dataParser.parseName(translator, jsonData[1].Type);
 		tech.name = translator.translateTechTreeName(name);
-		item.name = name;
+
+		const item = utilityFunctions.getItem(tech.name) ?? utilityFunctions.extractItemByType(jsonData[1].Type);
 
 		// Extract parent data
 		if (jsonData?.[1]?.Properties?.Requirements?.[0]?.ObjectName) {

@@ -8,6 +8,8 @@
  * into a single, more maintainable solution that handles all name mapping needs.
  */
 
+const { Windmill_Tier2 } = require("./aditionalTranslations");
+
 const unifiedTechTreeNames = {};
 
 // Main mapping object for all tech tree name variants
@@ -307,6 +309,7 @@ unifiedTechTreeNames.nameMap = {
 	StompingStation_T2: "Advanced Stomping Station",
 	FiberworkingStation_T3: "Artisan Fiberworking Station",
 	StompingStation_T3: "Artisan Stomping Station",
+	Windmill_T2: "Advanced Windmill",
 };
 
 // Build reverse mapping for internal lookups
