@@ -32,6 +32,24 @@
       "maxQuantityMultiplier": 0.6
     },
     {
+      "name": "Armors_T4",
+      "runChance": 0.003,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
+    },
+    {
+      "name": "Weapons_T4",
+      "runChance": 0.003,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
+    },
+    {
       "name": "Rigs_T4",
       "runChance": 0.002,
       "minIterations": 1,

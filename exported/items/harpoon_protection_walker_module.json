@@ -1,0 +1,40 @@
+{
+  "name": "Harpoon Protection Walker Module",
+  "type": "WalkerTetherProtectionModule_C",
+  "category": "Resources",
+  "description": "Makes tethers attached to the walker easier to snap.",
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Spring"
+        },
+        {
+          "count": 1,
+          "name": "Shackle"
+        },
+        {
+          "count": 1,
+          "name": "Cog"
+        }
+      ],
+      "station": "Module Fabricator",
+      "time": 30
+    }
+  ],
+  "moduleInfo": {
+    "max": 20,
+    "increase": 4.5,
+    "maxIncrease": 90
+  },
+  "droppedBy": [
+    {
+      "name": "Loot Box Modules",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "tier": null
+    }
+  ]
+}

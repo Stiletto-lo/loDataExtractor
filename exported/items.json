@@ -186,7 +186,7 @@
           },
           {
             "count": 10,
-            "name": "Hollowbone"
+            "name": "Shardrock"
           },
           {
             "count": 12,
@@ -1032,11 +1032,11 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Strut"
+            "name": "Spline"
           },
           {
             "count": 1,
-            "name": "Gasket"
+            "name": "Strut"
           },
           {
             "count": 1,
@@ -1047,9 +1047,9 @@
         "time": 30
       }
     ],
-    "name": "Armoury Module",
-    "translation": "Armoury Module",
-    "type": "GearCapacityBoost_C",
+    "name": "Armoury Walker Module",
+    "translation": "Armoury Walker Module",
+    "type": "WalkerGearModule_C",
     "description": "Stacking this module increases the capacity of a walker's Armor and Weapons container.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -2638,24 +2638,24 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Gasket"
+            "name": "Strut"
           },
           {
             "count": 1,
-            "name": "Cog"
+            "name": "Lever"
           },
           {
             "count": 1,
-            "name": "Cam"
+            "name": "Shackle"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Battery Module",
-    "translation": "Battery Module",
-    "type": "TorqueBatteryBoost_C",
+    "name": "Battery Walker Module",
+    "translation": "Battery Walker Module",
+    "type": "WalkerTorqueCapacityBoost_C",
     "description": "Stacking this module increases the torque battery's maximum capacity.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -2976,13 +2976,6 @@
     "walkerInfo": {
       "carryCapacity": 20000
     }
-  },
-  {
-    "name": "Bearing",
-    "translation": "Bearing",
-    "type": "Bearing_C",
-    "description": "Ancient technology scavenged from the waste. No one is sure what they were used for in the past, but crafty Nomads can use them at ancient fabricators to construct modules which can be installed in Walkers to give them special abilties.",
-    "stackSize": 10
   },
   {
     "category": "Weapons",
@@ -3406,7 +3399,7 @@
     "type": "BoneBolt_C",
     "description": "Ammo for Ballista. Bone tips are notorious for splintering and ricocheting inside the body.",
     "projectileDamage": {
-      "damage": 50
+      "damage": 75
     },
     "toolInfo": [
       {
@@ -4327,7 +4320,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 5760
+      "hp": 7200
     },
     "unlockable": "Advanced Walker Parts",
     "walkerInfo": {
@@ -4365,7 +4358,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 6912
+      "hp": 10800
     },
     "unlockable": "WalkerPartsAdvanced_T3",
     "walkerInfo": {
@@ -5330,24 +5323,58 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Spline"
+            "name": "Spring"
           },
           {
             "count": 1,
-            "name": "Lever"
+            "name": "Strut"
           },
           {
             "count": 1,
-            "name": "Gasket"
+            "name": "Cog"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Bullrush Module",
-    "translation": "Bullrush Module",
-    "type": "RespawnTimeBoost_C",
+    "name": "Bullrush Base Module",
+    "translation": "Bullrush Base Module",
+    "type": "BaseRespawnTimeModule_C",
+    "description": "Stacking this module decreases the wait time before respawning on a base.",
+    "experiencieReward": 65,
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 20,
+      "increase": 4,
+      "maxIncrease": 80
+    }
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Spring"
+          },
+          {
+            "count": 1,
+            "name": "Strut"
+          },
+          {
+            "count": 1,
+            "name": "Cog"
+          }
+        ],
+        "station": "Module Fabricator",
+        "time": 30
+      }
+    ],
+    "name": "Bullrush Walker Module",
+    "translation": "Bullrush Walker Module",
+    "type": "WalkerRespawnTimeModule_C",
     "description": "Stacking this module decreases the wait time before respawning on a walker.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -5449,13 +5476,6 @@
       "hp": 250
     },
     "unlockable": "Furnitures"
-  },
-  {
-    "name": "Cam",
-    "translation": "Cam",
-    "type": "Cam_C",
-    "description": "Ancient technology scavenged from the waste. No one is sure what they were used for in the past, but crafty Nomads can use them at ancient fabricators to construct modules which can be installed in Walkers to give them special abilties.",
-    "stackSize": 10
   },
   {
     "category": "Walkers",
@@ -6862,7 +6882,7 @@
     "type": "CeramicBolt_C",
     "description": "Ammo for Ballista. Ceramic tips guarantee their sharpness and strength.",
     "projectileDamage": {
-      "damage": 64
+      "damage": 90
     },
     "toolInfo": [
       {
@@ -7396,7 +7416,7 @@
     "type": "ChitinBolt_C",
     "description": "Ammo for Ballista. Naturally serrated shards of chitin make fine, if terrifying, tips for bolts.",
     "projectileDamage": {
-      "damage": 70
+      "damage": 120
     },
     "wikiVisibility": false
   },
@@ -8223,7 +8243,7 @@
   {
     "name": "Cog",
     "translation": "Cog",
-    "type": "Cg_C",
+    "type": "Cog_C",
     "description": "Ancient technology scavenged from the waste. No one is sure what they were used for in the past, but crafty Nomads can use them at ancient fabricators to construct modules which can be installed in Walkers to give them special abilties.",
     "stackSize": 10
   },
@@ -8448,7 +8468,7 @@
           },
           {
             "count": 1,
-            "name": "Unusedam"
+            "name": "Spring"
           },
           {
             "count": 1,
@@ -8459,9 +8479,43 @@
         "time": 30
       }
     ],
-    "name": "Craftsman Module",
-    "translation": "Craftsman Module",
-    "type": "CraftingTimeBoost_C",
+    "name": "Craftsman Base Module",
+    "translation": "Craftsman Base Module",
+    "type": "BaseCraftingTimeModule_C",
+    "description": "Stacking this module decreases the crafting time of stations built inside the base.",
+    "experiencieReward": 65,
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 20,
+      "increase": 4.5,
+      "maxIncrease": 90
+    }
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Spline"
+          },
+          {
+            "count": 1,
+            "name": "Spring"
+          },
+          {
+            "count": 1,
+            "name": "Shackle"
+          }
+        ],
+        "station": "Module Fabricator",
+        "time": 30
+      }
+    ],
+    "name": "Craftsman Walker Module",
+    "translation": "Craftsman Walker Module",
+    "type": "WalkerCraftingTimeModule_C",
     "description": "Stacking this module decreases the crafting time of stations attached to a walker.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -9788,7 +9842,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 9600
+      "hp": 12000
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -9826,7 +9880,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 11520
+      "hp": 18000
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -10566,7 +10620,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 5000
+      "hp": 14000
     },
     "unlockable": "WalkerPartsBase_T4",
     "walkerInfo": {
@@ -10604,7 +10658,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 6700
+      "hp": 17500
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -10638,7 +10692,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 3750
+      "hp": 24500
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -10672,7 +10726,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 4100
+      "hp": 14350
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -10710,7 +10764,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 6200
+      "hp": 15750
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -10748,7 +10802,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 8500
+      "hp": 21875
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -10786,7 +10840,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 5500
+      "hp": 15400
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -10820,7 +10874,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 3700
+      "hp": 14500
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -11337,7 +11391,7 @@
     "type": "ExplosiveDart_C",
     "description": "Shot with Repeater and Exoskeleton. Explodes on impact, damaging everyone in the affected area.",
     "projectileDamage": {
-      "damage": 3
+      "damage": 10
     },
     "stackSize": 200,
     "weight": 0.6,
@@ -11476,7 +11530,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 6000
+      "hp": 7500
     },
     "unlockable": "Advanced Walker Parts",
     "walkerInfo": {
@@ -11514,7 +11568,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 7200
+      "hp": 11250
     },
     "unlockable": "WalkerPartsAdvanced_T3",
     "walkerInfo": {
@@ -14103,24 +14157,24 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Lever"
+            "name": "Spline"
           },
           {
             "count": 1,
-            "name": "Cam"
+            "name": "Spring"
           },
           {
             "count": 1,
-            "name": "Bearing"
+            "name": "Cog"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Fireproof Module",
-    "translation": "Fireproof Module",
-    "type": "FireproofBoost_C",
+    "name": "Fireproof Walker Module",
+    "translation": "Fireproof Walker Module",
+    "type": "WalkerFireproofModule_C",
     "description": "Lowers the damage from all fire sources for the walker and all structures.",
     "weight": 0.24,
     "moduleInfo": {
@@ -14862,7 +14916,7 @@
     "type": "FlintBolt_C",
     "description": "Ammo for Ballista. Effective against lightly armored nomads.",
     "projectileDamage": {
-      "damage": 40,
+      "damage": 60,
       "penetration": 10
     },
     "experiencieReward": 1,
@@ -15310,24 +15364,24 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Shackle"
+            "name": "Spline"
           },
           {
             "count": 1,
-            "name": "Pinion"
+            "name": "Strut"
           },
           {
             "count": 1,
-            "name": "Cam"
+            "name": "Cog"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Forager Module",
-    "translation": "Forager Module",
-    "type": "LegHarvestingBoost_C",
+    "name": "Forager Walker Module",
+    "translation": "Forager Walker Module",
+    "type": "WalkerLegHarvestingModule_C",
     "description": "Walker legs will automatically harvest foliage when travelling at slow speed. Stacking this module increases the amount of foliage harvested.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -15534,20 +15588,20 @@
           },
           {
             "count": 1,
-            "name": "Cam"
+            "name": "Lever"
           },
           {
             "count": 1,
-            "name": "Shackle"
+            "name": "Cog"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Fortress Module",
-    "translation": "Fortress Module",
-    "type": "StructuresArmorBoost_C",
+    "name": "Fortress Walker Module",
+    "translation": "Fortress Walker Module",
+    "type": "WalkerArmorModule_C",
     "description": "Stacking this module increases the armor value of all structures attached to a walker.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -15974,13 +16028,6 @@
       "absorbing": 5,
       "reduction": 1
     }
-  },
-  {
-    "name": "Gasket",
-    "translation": "Gasket",
-    "type": "Gasket_C",
-    "description": "Ancient technology scavenged from the waste. No one is sure what they were used for in the past, but crafty Nomads can use them at ancient fabricators to construct modules which can be installed in Walkers to give them special abilties.",
-    "stackSize": 10
   },
   {
     "category": "Furniture",
@@ -16598,7 +16645,7 @@
             "name": "Hellfire Bolt"
           },
           {
-            "count": 1,
+            "count": 2,
             "name": "Worm Oil"
           },
           {
@@ -16637,20 +16684,20 @@
           },
           {
             "count": 1,
-            "name": "Spring"
+            "name": "Strut"
           },
           {
             "count": 1,
-            "name": "Rotor"
+            "name": "Shackle"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Hardening Module",
-    "translation": "Hardening Module",
-    "type": "HullHardeningBoost_C",
+    "name": "Hardening Walker Module",
+    "translation": "Hardening Walker Module",
+    "type": "WalkerHullHardeningModule_C",
     "description": "Stacking this module reduces damage to a walker from all sources except those that can damage Reinforced armor.",
     "weight": 0.24,
     "moduleInfo": {
@@ -16666,24 +16713,24 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Rotor"
+            "name": "Spring"
           },
           {
             "count": 1,
-            "name": "Bearing"
+            "name": "Shackle"
           },
           {
             "count": 1,
-            "name": "Spline"
+            "name": "Cog"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Harpoon Protection Module",
-    "translation": "Harpoon Protection Module",
-    "type": "TetherProtectionBoost_C",
+    "name": "Harpoon Protection Walker Module",
+    "translation": "Harpoon Protection Walker Module",
+    "type": "WalkerTetherProtectionModule_C",
     "description": "Makes tethers attached to the walker easier to snap.",
     "moduleInfo": {
       "max": 20,
@@ -16756,20 +16803,20 @@
           },
           {
             "count": 1,
-            "name": "Shackle"
+            "name": "Spline"
           },
           {
             "count": 1,
-            "name": "Sprocket"
+            "name": "Strut"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Hearth Module",
-    "translation": "Hearth Module",
-    "type": "RespawnCostBoost_C",
+    "name": "Hearth Walker Module",
+    "translation": "Hearth Walker Module",
+    "type": "WalkerRespawnCostModule_C",
     "description": "Stacking this module decreases the water cost of respawning on walker.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -18030,7 +18077,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 5400
+      "hp": 6750
     },
     "unlockable": "Advanced Walker Parts",
     "walkerInfo": {
@@ -18068,7 +18115,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 6480
+      "hp": 10125
     },
     "unlockable": "WalkerPartsAdvanced_T3",
     "walkerInfo": {
@@ -18748,7 +18795,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 3000
+      "hp": 7200
     },
     "unlockable": "WalkerPartsBase_T3",
     "walkerInfo": {
@@ -18786,7 +18833,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 4400
+      "hp": 9000
     },
     "unlockable": "Advanced Walker Parts",
     "walkerInfo": {
@@ -18820,7 +18867,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 3150
+      "hp": 14000
     },
     "unlockable": "WalkerPartsAdvanced_T3",
     "walkerInfo": {
@@ -18854,7 +18901,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 2400
+      "hp": 8900
     },
     "unlockable": "WalkerPartsAdvanced_T3",
     "walkerInfo": {
@@ -18892,7 +18939,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 3900
+      "hp": 7600
     },
     "unlockable": "WalkerPartsAdvanced_T3",
     "walkerInfo": {
@@ -18930,7 +18977,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 6200
+      "hp": 11500
     },
     "unlockable": "WalkerPartsAdvanced_T3",
     "walkerInfo": {
@@ -18968,7 +19015,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 3300
+      "hp": 7500
     },
     "unlockable": "Advanced Walker Parts",
     "walkerInfo": {
@@ -19002,7 +19049,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 1800
+      "hp": 7350
     },
     "unlockable": "Advanced Walker Parts",
     "walkerInfo": {
@@ -19815,7 +19862,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Terrain: Salt Flats"
+            "name": "Terrain: Asteroid Crash Site"
           },
           {
             "count": 5,
@@ -20115,7 +20162,7 @@
     "type": "IronBolt_C",
     "description": "Ammo for Ballista. An iron tip easily penetrates armor and makes holes in bodies that can't be patched.",
     "projectileDamage": {
-      "damage": 80
+      "damage": 175
     },
     "experiencieReward": 50,
     "toolInfo": [
@@ -20852,24 +20899,24 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Cam"
+            "name": "Spring"
           },
           {
             "count": 1,
-            "name": "Cog"
+            "name": "Strut"
           },
           {
             "count": 1,
-            "name": "Bearing"
+            "name": "Shackle"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Lifeforce Module",
-    "translation": "Lifeforce Module",
-    "type": "RespawnEffectBoost_C",
+    "name": "Lifeforce Walker Module",
+    "translation": "Lifeforce Walker Module",
+    "type": "WalkerRespawnEffectModule_C",
     "description": "Nomads that respawn on a walker will recieve a beneficial status effect. Stacking this module increases the potency of this effect.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -21246,11 +21293,11 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Gasket"
+            "name": "Cog"
           },
           {
             "count": 1,
-            "name": "Spring"
+            "name": "Lever"
           },
           {
             "count": 1,
@@ -21261,9 +21308,9 @@
         "time": 30
       }
     ],
-    "name": "Lumberjack Module",
-    "translation": "Lumberjack Module",
-    "type": "LegLoggingBoost_C",
+    "name": "Lumberjack Walker Module",
+    "translation": "Lumberjack Walker Module",
+    "type": "WalkerLegLoggingModule_C",
     "description": "Walker legs will chop wood when they impact with trees. Stacking this module increases the amount of wood.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -21995,9 +22042,9 @@
         "time": 30
       }
     ],
-    "name": "Merchant Module",
-    "translation": "Merchant Module",
-    "type": "CargoCapacityBoost_C",
+    "name": "Merchant Walker Module",
+    "translation": "Merchant Walker Module",
+    "type": "WalkerCargoModule_C",
     "description": "Stacking this module increases the storage capacity of a walker's Cargo container.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -22068,140 +22115,140 @@
     "weight": 1,
     "drops": [
       {
-        "name": "Weightless Module",
+        "name": "Weightless Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Merchant Module",
+        "name": "Merchant Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Craftsman Module",
+        "name": "Craftsman Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Fireproof Module",
+        "name": "Fireproof Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Armoury Module",
+        "name": "Armoury Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Hardening Module",
+        "name": "Hardening Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Forager Module",
+        "name": "Forager Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Scavenger Module",
+        "name": "Scavenger Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Lumberjack Module",
+        "name": "Lumberjack Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Pack Speed Module",
+        "name": "Pack Speed Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Hearth Module",
+        "name": "Hearth Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Lifeforce Module",
+        "name": "Lifeforce Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Bullrush Module",
+        "name": "Bullrush Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Sandy Module",
+        "name": "Sandy Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Fortress Module",
+        "name": "Fortress Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Harpoon Protection Module",
+        "name": "Harpoon Protection Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Battery Module",
+        "name": "Battery Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 5,
         "source": "modules_t1"
       },
       {
-        "name": "Torque Module",
+        "name": "Torque Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 5,
         "source": "modules_t1"
       },
       {
-        "name": "Watery Module",
+        "name": "Watery Walker Module",
         "chance": 0,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
-        "name": "Pack Mule Module",
+        "name": "Pack Mule Walker Module",
         "chance": 5.263158,
         "minQuantity": 1,
         "maxQuantity": 2,
@@ -22364,7 +22411,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 3600
+      "hp": 4500
     },
     "unlockable": "WalkerPartsImproved_T2",
     "walkerInfo": {
@@ -23749,6 +23796,10 @@
           {
             "count": 8,
             "name": "Nibiran Mineral"
+          },
+          {
+            "count": 2,
+            "name": "Worm Oil"
           }
         ],
         "station": "Advanced Furnace",
@@ -23884,7 +23935,7 @@
     "type": "NibirianBolt_C",
     "description": "Ammo for ballista. During an eclipse, these bolts will light up the sky and make enemies glow from the inside out.",
     "projectileDamage": {
-      "damage": 100
+      "damage": 220
     },
     "experiencieReward": 100,
     "toolInfo": [
@@ -23996,7 +24047,7 @@
       {
         "ingredients": [
           {
-            "count": 3,
+            "count": 13,
             "name": "Worm Silk"
           },
           {
@@ -24961,24 +25012,24 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Spline"
+            "name": "Lever"
           },
           {
             "count": 1,
-            "name": "Gasket"
+            "name": "Shackle"
           },
           {
             "count": 1,
-            "name": "Bearing"
+            "name": "Cog"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Pack Mule Module",
-    "translation": "Pack Mule Module",
-    "type": "WeightBoost_C",
+    "name": "Pack Mule Walker Module",
+    "translation": "Pack Mule Walker Module",
+    "type": "WalkerWeightCapacityModule_C",
     "description": "Stacking this module increases the maximum weight limit of a walker.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -24995,24 +25046,57 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Rotor"
+            "name": "Spline"
           },
           {
             "count": 1,
-            "name": "Strut"
+            "name": "Shackle"
           },
           {
             "count": 1,
-            "name": "Pinion"
+            "name": "Cog"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Pack Speed Module",
-    "translation": "Pack Speed Module",
-    "type": "PackingTimeBoost_C",
+    "name": "Pack Speed Base Module",
+    "translation": "Pack Speed Base Module",
+    "type": "BasePackingTimeModule_C",
+    "description": "Decreases the time it takes to pack bases and structures.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 20,
+      "increase": 4.5,
+      "maxIncrease": 90
+    }
+  },
+  {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Spline"
+          },
+          {
+            "count": 1,
+            "name": "Shackle"
+          },
+          {
+            "count": 1,
+            "name": "Cog"
+          }
+        ],
+        "station": "Module Fabricator",
+        "time": 30
+      }
+    ],
+    "name": "Pack Speed Walker Module",
+    "translation": "Pack Speed Walker Module",
+    "type": "WalkerPackingTimeModule_C",
     "description": "Decreases the time it takes to pack bases and structures.",
     "weight": 0.24,
     "moduleInfo": {
@@ -25245,7 +25329,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 9840
+      "hp": 12300
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -25283,7 +25367,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 11808
+      "hp": 18450
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -25981,7 +26065,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 5000
+      "hp": 12000
     },
     "unlockable": "WalkerPartsBase_T4",
     "walkerInfo": {
@@ -26019,7 +26103,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 6400
+      "hp": 15000
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -26053,7 +26137,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 3750
+      "hp": 23500
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -26087,7 +26171,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 4100
+      "hp": 14800
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -26125,7 +26209,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 6100
+      "hp": 12600
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -26163,7 +26247,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 8100
+      "hp": 19200
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -26201,7 +26285,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 5450
+      "hp": 12500
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -26235,7 +26319,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 3700
+      "hp": 12250
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -26404,6 +26488,7 @@
       }
     ],
     "name": "Phosphorus",
+    "parent": "Stomping Station",
     "trade_price": 0.4,
     "translation": "Phosphorus",
     "type": "Phosphorus_C",
@@ -26428,13 +26513,6 @@
     "type": "TreePine_C",
     "description": "Grow your own trees from seeds overnight with the help of some Nibiran fertilizer.",
     "unlockable": "DevOnly"
-  },
-  {
-    "name": "Pinion",
-    "translation": "Pinion",
-    "type": "Pinion_C",
-    "description": "Ancient technology scavenged from the waste. No one is sure what they were used for in the past, but crafty Nomads can use them at ancient fabricators to construct modules which can be installed in Walkers to give them special abilties.",
-    "stackSize": 10
   },
   {
     "category": "Interactables",
@@ -26677,7 +26755,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 10000
+      "hp": 20000
     },
     "unlockable": "WalkerPartsBase_T2",
     "walkerInfo": {
@@ -26715,7 +26793,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 15000
+      "hp": 30000
     },
     "unlockable": "WalkerPartsImproved_T2",
     "walkerInfo": {
@@ -26757,7 +26835,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 19000
+      "hp": 36000
     },
     "unlockable": "WalkerPartsAdvanced_T2",
     "walkerInfo": {
@@ -28640,13 +28718,6 @@
     "weight": 0.25
   },
   {
-    "name": "Rotor",
-    "translation": "Rotor",
-    "type": "Rotor_C",
-    "description": "Ancient technology scavenged from the waste. No one is sure what they were used for in the past, but crafty Nomads can use them at ancient fabricators to construct modules which can be installed in Walkers to give them special abilties.",
-    "stackSize": 10
-  },
-  {
     "category": "Resources",
     "crafting": [
       {
@@ -29604,6 +29675,7 @@
       }
     ],
     "name": "Salt Rock",
+    "parent": "Soil Excavator",
     "trade_price": 0.1,
     "translation": "Salt Rock",
     "type": "Salt_C",
@@ -29932,24 +30004,24 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Pinion"
+            "name": "Spring"
           },
           {
             "count": 1,
-            "name": "Strut"
+            "name": "Lever"
           },
           {
             "count": 1,
-            "name": "Sprocket"
+            "name": "Shackle"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Sandy Module",
-    "translation": "Sandy Module",
-    "type": "SandinessReductionBoost_C",
+    "name": "Sandy Walker Module",
+    "translation": "Sandy Walker Module",
+    "type": "WalkerSandinessReductionModule_C",
     "description": "Stacking this module increases the rate at which sand is removed from a walker's gears after travelling.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -30122,24 +30194,24 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Cog"
+            "name": "Spline"
           },
           {
             "count": 1,
-            "name": "Sprocket"
+            "name": "Lever"
           },
           {
             "count": 1,
-            "name": "Bearing"
+            "name": "Shackle"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Scavenger Module",
-    "translation": "Scavenger Module",
-    "type": "LegItemLootingBoost_C",
+    "name": "Scavenger Walker Module",
+    "translation": "Scavenger Walker Module",
+    "type": "WalkerLegItemLootingModule_C",
     "description": "Walker legs will automatically pick up dropped items when travelling at slow speed. Stacking this module increases the maximum speed at which items are picked up.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -30300,7 +30372,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 12000
+      "hp": 15000
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -30338,7 +30410,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 14400
+      "hp": 22500
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -31048,7 +31120,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 5000
+      "hp": 11500
     },
     "unlockable": "WalkerPartsBase_T4",
     "walkerInfo": {
@@ -31086,7 +31158,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 6800
+      "hp": 15300
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -31120,7 +31192,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 3750
+      "hp": 16700
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -31154,7 +31226,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 4100
+      "hp": 13000
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -31192,7 +31264,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 6200
+      "hp": 13600
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -31230,7 +31302,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 8500
+      "hp": 18700
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -31268,7 +31340,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 5450
+      "hp": 12300
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -31302,7 +31374,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 3700
+      "hp": 11800
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -33468,13 +33540,6 @@
     "unlockable": "TrapSpikesSpring"
   },
   {
-    "name": "Sprocket",
-    "translation": "Sprocket",
-    "type": "Sprocket_C",
-    "description": "Ancient technology scavenged from the waste. No one is sure what they were used for in the past, but crafty Nomads can use them at ancient fabricators to construct modules which can be installed in Walkers to give them special abilties.",
-    "stackSize": 10
-  },
-  {
     "category": "Armors",
     "crafting": [
       {
@@ -33851,7 +33916,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 3360
+      "hp": 4200
     },
     "unlockable": "WalkerPartsImproved_T2",
     "walkerInfo": {
@@ -34522,20 +34587,12 @@
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "Wood"
-          },
-          {
             "count": 4,
             "name": "Fiber Weave"
           },
           {
             "count": 3,
             "name": "Wood Shaft"
-          },
-          {
-            "count": 6,
-            "name": "Hide"
           },
           {
             "count": 7,
@@ -34707,7 +34764,7 @@
           },
           {
             "count": 21,
-            "name": "Chitin Plate"
+            "name": "Leather"
           },
           {
             "count": 2,
@@ -35184,6 +35241,39 @@
     ]
   },
   {
+    "category": "Resources",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 1,
+            "name": "Spline"
+          },
+          {
+            "count": 1,
+            "name": "Strut"
+          },
+          {
+            "count": 1,
+            "name": "Shackle"
+          }
+        ],
+        "station": "Module Fabricator",
+        "time": 30
+      }
+    ],
+    "name": "Structure Hardening Base Module",
+    "translation": "Structure Hardening Base Module",
+    "type": "BaseArmorModule_C",
+    "description": "Stacking this module increases the health of the whole base.",
+    "weight": 0.24,
+    "moduleInfo": {
+      "max": 20,
+      "increase": 2.5,
+      "maxIncrease": 50
+    }
+  },
+  {
     "name": "Strut",
     "translation": "Strut",
     "type": "Strut_C",
@@ -35567,6 +35657,14 @@
     "experiencieReward": 100,
     "stackSize": 100,
     "weight": 0.15
+  },
+  {
+    "category": "Resources",
+    "name": "Terrain: Asteroid Crash Site",
+    "translation": "Terrain: Asteroid Crash Site",
+    "type": "IronOre_GroundSource_C",
+    "weight": 1,
+    "wikiVisibility": false
   },
   {
     "category": "Resources",
@@ -35973,7 +36071,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 8200
+      "hp": 9500
     },
     "unlockable": "WalkerPartsBase_T4",
     "walkerInfo": {
@@ -36011,7 +36109,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 9840
+      "hp": 14250
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -36049,7 +36147,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 11808
+      "hp": 21375
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -36751,7 +36849,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 5000
+      "hp": 18000
     },
     "unlockable": "WalkerPartsBase_T4",
     "walkerInfo": {
@@ -36789,7 +36887,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 6400
+      "hp": 23000
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -36823,7 +36921,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 3750
+      "hp": 30500
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -36857,7 +36955,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 4100
+      "hp": 19300
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -36895,7 +36993,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 6100
+      "hp": 20500
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -36933,7 +37031,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 8100
+      "hp": 27500
     },
     "unlockable": "WalkerPartsAdvanced_T4",
     "walkerInfo": {
@@ -36971,7 +37069,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 5450
+      "hp": 18800
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -37005,7 +37103,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 3700
+      "hp": 17500
     },
     "unlockable": "WalkerPartsImproved_T4",
     "walkerInfo": {
@@ -37141,7 +37239,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 3300
+      "hp": 4125
     },
     "unlockable": "WalkerPartsImproved_T2",
     "walkerInfo": {
@@ -37179,7 +37277,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 3960
+      "hp": 6180
     },
     "unlockable": "WalkerPartsAdvanced_T2",
     "walkerInfo": {
@@ -38466,20 +38564,20 @@
           },
           {
             "count": 1,
-            "name": "Rotor"
+            "name": "Lever"
           },
           {
             "count": 1,
-            "name": "Shackle"
+            "name": "Cog"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Torque Module",
-    "translation": "Torque Module",
-    "type": "TorqueGeneratorBoost_C",
+    "name": "Torque Walker Module",
+    "translation": "Torque Walker Module",
+    "type": "WalkerTorqueGenerationModule_C",
     "description": "Walker will generate torque. Stacking this module increases the amount of torque generated by a moving walker.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -38964,7 +39062,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 6240
+      "hp": 7800
     },
     "unlockable": "Advanced Walker Parts",
     "walkerInfo": {
@@ -39002,7 +39100,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 7488
+      "hp": 11700
     },
     "unlockable": "WalkerPartsAdvanced_T3",
     "walkerInfo": {
@@ -39692,7 +39790,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 3500
+      "hp": 8000
     },
     "unlockable": "WalkerPartsBase_T3",
     "walkerInfo": {
@@ -39730,7 +39828,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 5000
+      "hp": 10000
     },
     "unlockable": "Advanced Walker Parts",
     "walkerInfo": {
@@ -39764,7 +39862,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 2500
+      "hp": 14000
     },
     "unlockable": "WalkerPartsAdvanced_T3",
     "walkerInfo": {
@@ -39798,7 +39896,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 3100
+      "hp": 8200
     },
     "unlockable": "WalkerPartsAdvanced_T3",
     "walkerInfo": {
@@ -39836,7 +39934,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 4500
+      "hp": 9000
     },
     "unlockable": "WalkerPartsAdvanced_T3",
     "walkerInfo": {
@@ -39874,7 +39972,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 5800
+      "hp": 12500
     },
     "unlockable": "WalkerPartsAdvanced_T3",
     "walkerInfo": {
@@ -39912,7 +40010,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 3900
+      "hp": 8800
     },
     "unlockable": "Advanced Walker Parts",
     "walkerInfo": {
@@ -39946,7 +40044,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 2200
+      "hp": 8250
     },
     "unlockable": "Advanced Walker Parts",
     "walkerInfo": {
@@ -40391,24 +40489,24 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Lever"
+            "name": "Strut"
           },
           {
             "count": 1,
-            "name": "Spring"
+            "name": "Shackle"
           },
           {
             "count": 1,
-            "name": "Pinion"
+            "name": "Cog"
           }
         ],
         "station": "Module Fabricator",
         "time": 30
       }
     ],
-    "name": "Watery Module",
-    "translation": "Watery Module",
-    "type": "TravelCostBoost_C",
+    "name": "Watery Walker Module",
+    "translation": "Watery Walker Module",
+    "type": "WalkerTravelCostModule_C",
     "description": "Stacking this module decreases the water cost of travelling.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -40547,9 +40645,9 @@
         "time": 30
       }
     ],
-    "name": "Weightless Module",
-    "translation": "Weightless Module",
-    "type": "BaseWeightBoost_C",
+    "name": "Weightless Walker Module",
+    "translation": "Weightless Walker Module",
+    "type": "WalkerWeightlessModule_C",
     "description": "Stacking this module decreases the weight of a packed base.",
     "experiencieReward": 65,
     "weight": 0.24,
@@ -41242,8 +41340,8 @@
             "name": "Worm Sand"
           },
           {
-            "count": 100,
-            "name": "Corn"
+            "count": 50,
+            "name": "Purified Water"
           },
           {
             "count": 50,
@@ -41254,7 +41352,7 @@
             "name": "Worm Fang"
           },
           {
-            "count": 1,
+            "count": 5,
             "name": "Worm Oil"
           }
         ],
@@ -41422,7 +41520,7 @@
             "name": "Iron Ingot"
           }
         ],
-        "station": "Smithing",
+        "station": "Crafting Bench",
         "time": 15
       }
     ],
@@ -41468,7 +41566,7 @@
             "name": "Iron Ingot"
           }
         ],
-        "station": "Smithing",
+        "station": "Crafting Bench",
         "time": 15
       }
     ],
@@ -41515,7 +41613,7 @@
             "name": "Iron Ingot"
           }
         ],
-        "station": "Smithing",
+        "station": "Crafting Bench",
         "time": 15
       }
     ],
@@ -41555,7 +41653,7 @@
             "name": "Rope"
           }
         ],
-        "station": "Smithing",
+        "station": "Crafting Bench",
         "time": 15
       }
     ],
@@ -41602,7 +41700,7 @@
             "name": "Iron Ingot"
           }
         ],
-        "station": "Smithing",
+        "station": "Crafting Bench",
         "time": 15
       }
     ],
@@ -41649,7 +41747,7 @@
             "name": "Rupu Vine"
           }
         ],
-        "station": "Smithing",
+        "station": "Crafting Bench",
         "time": 21
       }
     ],
@@ -41690,7 +41788,7 @@
             "name": "Iron Ingot"
           }
         ],
-        "station": "Smithing",
+        "station": "Crafting Bench",
         "time": 15
       }
     ],

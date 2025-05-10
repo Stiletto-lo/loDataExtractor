@@ -1,0 +1,41 @@
+{
+  "name": "Battery Walker Module",
+  "type": "WalkerTorqueCapacityBoost_C",
+  "category": "Resources",
+  "weight": 0.24,
+  "description": "Stacking this module increases the torque battery's maximum capacity.",
+  "experiencieReward": 65,
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Strut"
+        },
+        {
+          "count": 1,
+          "name": "Lever"
+        },
+        {
+          "count": 1,
+          "name": "Shackle"
+        }
+      ],
+      "station": "Module Fabricator",
+      "time": 30
+    }
+  ],
+  "moduleInfo": {
+    "max": 20,
+    "increase": 100
+  },
+  "droppedBy": [
+    {
+      "name": "Loot Box Modules",
+      "chance": 5.263158,
+      "minQuantity": 1,
+      "maxQuantity": 5,
+      "tier": null
+    }
+  ]
+}

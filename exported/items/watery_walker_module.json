@@ -1,0 +1,42 @@
+{
+  "name": "Watery Walker Module",
+  "type": "WalkerTravelCostModule_C",
+  "category": "Resources",
+  "weight": 0.24,
+  "description": "Stacking this module decreases the water cost of travelling.",
+  "experiencieReward": 65,
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 1,
+          "name": "Strut"
+        },
+        {
+          "count": 1,
+          "name": "Shackle"
+        },
+        {
+          "count": 1,
+          "name": "Cog"
+        }
+      ],
+      "station": "Module Fabricator",
+      "time": 30
+    }
+  ],
+  "moduleInfo": {
+    "max": 20,
+    "increase": 4.5,
+    "maxIncrease": 90
+  },
+  "droppedBy": [
+    {
+      "name": "Loot Box Modules",
+      "chance": 0,
+      "minQuantity": 1,
+      "maxQuantity": 1,
+      "tier": null
+    }
+  ]
+}
