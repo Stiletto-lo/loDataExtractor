@@ -99,6 +99,10 @@ const loadAllFiles = (contentFolderPath) => {
     `${contentFolderPath}Content/Mist/Characters/Creatures`,
     "lootsites",
   );
+  loadDirData(
+    `${contentFolderPath}Content/Mist/Characters/Worm`,
+    "lootsites",
+  );
   console.info("Loading TechTree");
   loadDirData(`${contentFolderPath}Content/Mist/Data/TechTree`, "tech");
   console.info("Loading Items");

@@ -70,6 +70,32 @@
     ]
   },
   {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Lightwood"
+          },
+          {
+            "count": 27,
+            "name": "Hollowbone"
+          },
+          {
+            "count": 22,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "name": "Advanced Capital Walker Wing",
+    "translation": "Advanced Capital Walker Wing",
+    "type": "WalkerWingAdvanced_T4_C",
+    "stackSize": 4,
+    "weight": 30
+  },
+  {
     "name": "Advanced Constructions",
     "parent": "Improved Constructions",
     "translation": "Advanced Constructions",
@@ -211,6 +237,58 @@
       "hp": 5000
     },
     "unlockable": "Advanced Furnace"
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 30,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 28,
+            "name": "Chitin Plate"
+          }
+        ]
+      }
+    ],
+    "name": "Advanced Large Walker Wing",
+    "translation": "Advanced Large Walker Wing",
+    "type": "WalkerWingAdvanced_T3_C",
+    "stackSize": 4,
+    "weight": 20
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 12,
+            "name": "Triple Stitch Fabric"
+          },
+          {
+            "count": 12,
+            "name": "Ceramic Shard"
+          }
+        ]
+      }
+    ],
+    "name": "Advanced Medium Walker Wing",
+    "translation": "Advanced Medium Walker Wing",
+    "type": "WalkerWingAdvanced_T2_C",
+    "stackSize": 4,
+    "weight": 10
   },
   {
     "name": "Advanced Potions",
@@ -1015,10 +1093,91 @@
   },
   {
     "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 32,
+            "name": "Lightwood"
+          },
+          {
+            "count": 22,
+            "name": "Iron Ore"
+          },
+          {
+            "count": 15,
+            "name": "Shardrock"
+          }
+        ]
+      }
+    ],
+    "name": "Armored Capital Walker Leg",
+    "translation": "Armored Capital Walker Leg",
+    "type": "WalkerLegArmored_T4_C",
+    "experiencieReward": 800,
+    "stackSize": 2,
+    "weight": 40
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 25,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 8,
+            "name": "Obsidian"
+          }
+        ]
+      }
+    ],
+    "name": "Armored Large Walker Leg",
+    "translation": "Armored Large Walker Leg",
+    "type": "WalkerLegArmored_T3_C",
+    "experiencieReward": 550,
+    "stackSize": 2,
+    "weight": 30
+  },
+  {
+    "category": "Walker Parts",
     "name": "Armored Legs (1 of 2)",
     "translation": "Armored Legs",
     "type": "ArmoredLegs_C",
     "description": "Armored legs that easily deflect simple projectiles."
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 23,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 17,
+            "name": "Bone Splinter"
+          }
+        ]
+      }
+    ],
+    "name": "Armored Medium Walker Leg",
+    "translation": "Armored Medium Walker Leg",
+    "type": "WalkerLegArmored_T2_C",
+    "experiencieReward": 350,
+    "stackSize": 2,
+    "weight": 20
   },
   {
     "name": "Armors",
@@ -1366,12 +1525,8 @@
       {
         "ingredients": [
           {
-            "count": 90,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Wood Shaft"
+            "count": 1,
+            "name": "Small Walker Leg"
           }
         ]
       }
@@ -1630,12 +1785,8 @@
       {
         "ingredients": [
           {
-            "count": 30,
-            "name": "Wood"
-          },
-          {
-            "count": 16,
-            "name": "Fiber Weave"
+            "count": 1,
+            "name": "Small Walker Wing"
           }
         ]
       }
@@ -1660,16 +1811,8 @@
       {
         "ingredients": [
           {
-            "count": 16,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 42,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 15,
-            "name": "Rope"
+            "count": 1,
+            "name": "Improved Small Walker Wing"
           }
         ]
       }
@@ -2533,8 +2676,9 @@
     "weight": 7,
     "durability": 200,
     "armorInfo": {
-      "absorbing": 12,
-      "speedReduction": 13
+      "absorbing": 20,
+      "reduction": 3,
+      "speedReduction": 10
     }
   },
   {
@@ -2579,7 +2723,7 @@
     "weight": 4.3,
     "durability": 200,
     "armorInfo": {
-      "absorbing": 10,
+      "absorbing": 7,
       "reduction": 1,
       "speedReduction": 4
     }
@@ -2626,8 +2770,8 @@
     "weight": 3.8,
     "durability": 200,
     "armorInfo": {
-      "absorbing": 10,
-      "reduction": 2,
+      "absorbing": 7,
+      "reduction": 1,
       "speedReduction": 4
     }
   },
@@ -3009,7 +3153,7 @@
       "stability": 20,
       "weaponLength": 72,
       "damage": 25,
-      "penetration": 10
+      "penetration": 5
     },
     "damageType": "'MeleeBluntWeakDamage_C'"
   },
@@ -3191,8 +3335,8 @@
     "durability": 420,
     "weaponInfo": {
       "weaponLength": 124,
-      "damage": 27,
-      "penetration": 20
+      "damage": 35,
+      "penetration": 5
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -3333,6 +3477,7 @@
     "damageType": "'FirelessExplosionDamage_C'"
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -3399,14 +3544,19 @@
     "type": "BoneBolt_C",
     "description": "Ammo for Ballista. Bone tips are notorious for splintering and ricocheting inside the body.",
     "projectileDamage": {
-      "damage": 75
+      "damage": 95,
+      "penetration": 10
     },
+    "experiencieReward": 1,
+    "stackSize": 20,
+    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
         "tier": 2
       }
-    ]
+    ],
+    "damageType": "'BoltDamage_C'"
   },
   {
     "category": "Equipment",
@@ -3460,6 +3610,7 @@
     "durability": 100
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -3528,12 +3679,15 @@
     "projectileDamage": {
       "damage": 12.5
     },
+    "stackSize": 500,
+    "weight": 0.1,
     "toolInfo": [
       {
         "toolType": "RepeaterBolt",
         "tier": 2
       }
-    ]
+    ],
+    "damageType": "'DartDamage_C'"
   },
   {
     "category": "Furniture",
@@ -3633,6 +3787,7 @@
     "weight": 0.17
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -3699,13 +3854,15 @@
       "damage": 15
     },
     "experiencieReward": 10,
+    "stackSize": 20,
     "weight": 0.4,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
         "tier": 2
       }
-    ]
+    ],
+    "damageType": "'HarpoonDamage_C'"
   },
   {
     "crafting": [
@@ -3771,6 +3928,7 @@
     "durability": 500
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -3820,17 +3978,26 @@
     ],
     "name": "Bone Scattershot Ammo",
     "parent": "Scattershot Gun",
+    "trade_price": 5.2,
     "translation": "Bone Scattershot Ammo",
     "type": "BoneScattershot_C",
+    "description": "Ammo for Scattershot gun. A mixed bag of blunt and sharp debris that spread out when fired.",
     "projectileDamage": {
-      "damage": 250
+      "damage": 185,
+      "penetration": 30,
+      "effectivenessVsSoak": 50,
+      "effectivenessVsReduce": 50
     },
+    "experiencieReward": 1,
+    "stackSize": 24,
+    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "Scattershot",
         "tier": 2
       }
-    ]
+    ],
+    "damageType": "'ScattershotDamage_C'"
   },
   {
     "crafting": [
@@ -4082,9 +4249,9 @@
     "weight": 4.2,
     "durability": 240,
     "armorInfo": {
-      "absorbing": 12,
-      "reduction": 4,
-      "speedReduction": 10
+      "absorbing": 16,
+      "reduction": 8,
+      "speedReduction": 7
     }
   },
   {
@@ -4118,7 +4285,7 @@
     "weight": 1.3,
     "durability": 240,
     "armorInfo": {
-      "absorbing": 5,
+      "absorbing": 4,
       "reduction": 3,
       "speedReduction": 3
     }
@@ -4155,8 +4322,8 @@
     "weight": 1,
     "durability": 240,
     "armorInfo": {
-      "absorbing": 12,
-      "reduction": 3,
+      "absorbing": 5,
+      "reduction": 2,
       "speedReduction": 3
     }
   },
@@ -4261,16 +4428,8 @@
       {
         "ingredients": [
           {
-            "count": 70,
-            "name": "Wood"
-          },
-          {
-            "count": 36,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 42,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Large Walker Leg"
           }
         ]
       }
@@ -4295,20 +4454,8 @@
       {
         "ingredients": [
           {
-            "count": 169,
-            "name": "Wood"
-          },
-          {
-            "count": 134,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 24,
-            "name": "Wooden Slab"
-          },
-          {
-            "count": 28,
-            "name": "Ceramic Shard"
+            "count": 1,
+            "name": "Armored Large Walker Leg"
           }
         ]
       }
@@ -4333,20 +4480,8 @@
       {
         "ingredients": [
           {
-            "count": 60,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 10,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 5,
-            "name": "Tar"
-          },
-          {
-            "count": 30,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Heavy Large Walker Leg"
           }
         ]
       }
@@ -4407,12 +4542,12 @@
       {
         "ingredients": [
           {
-            "count": 14,
-            "name": "Redwood Wood"
-          },
-          {
             "count": 10,
             "name": "Chitin Plate"
+          },
+          {
+            "count": 14,
+            "name": "Redwood Wood"
           },
           {
             "count": 22,
@@ -4431,12 +4566,12 @@
       {
         "ingredients": [
           {
-            "count": 14,
-            "name": "Redwood Wood"
-          },
-          {
             "count": 10,
             "name": "Chitin Plate"
+          },
+          {
+            "count": 14,
+            "name": "Redwood Wood"
           },
           {
             "count": 22,
@@ -4457,12 +4592,12 @@
       {
         "ingredients": [
           {
-            "count": 14,
-            "name": "Redwood Wood"
-          },
-          {
             "count": 10,
             "name": "Chitin Plate"
+          },
+          {
+            "count": 14,
+            "name": "Redwood Wood"
           },
           {
             "count": 22,
@@ -4483,16 +4618,16 @@
       {
         "ingredients": [
           {
-            "count": 14,
-            "name": "Ceramic Shard"
+            "count": 22,
+            "name": "Stone"
           },
           {
             "count": 10,
             "name": "Chitin Plate"
           },
           {
-            "count": 22,
-            "name": "Stone"
+            "count": 14,
+            "name": "Ceramic Shard"
           }
         ]
       }
@@ -4509,16 +4644,16 @@
       {
         "ingredients": [
           {
-            "count": 40,
-            "name": "Chitin Plate"
+            "count": 24,
+            "name": "Tar"
           },
           {
             "count": 40,
             "name": "Obsidian"
           },
           {
-            "count": 24,
-            "name": "Tar"
+            "count": 40,
+            "name": "Chitin Plate"
           }
         ]
       }
@@ -4533,12 +4668,12 @@
       {
         "ingredients": [
           {
-            "count": 40,
-            "name": "Obsidian"
-          },
-          {
             "count": 24,
             "name": "Tar"
+          },
+          {
+            "count": 40,
+            "name": "Obsidian"
           },
           {
             "count": 40,
@@ -4559,12 +4694,12 @@
       {
         "ingredients": [
           {
-            "count": 40,
-            "name": "Obsidian"
-          },
-          {
             "count": 24,
             "name": "Tar"
+          },
+          {
+            "count": 40,
+            "name": "Obsidian"
           },
           {
             "count": 40,
@@ -4611,16 +4746,16 @@
       {
         "ingredients": [
           {
-            "count": 27,
-            "name": "Bone Splinter"
+            "count": 9,
+            "name": "Triple Stitch Fabric"
           },
           {
             "count": 15,
             "name": "Tar"
           },
           {
-            "count": 9,
-            "name": "Triple Stitch Fabric"
+            "count": 27,
+            "name": "Bone Splinter"
           }
         ]
       }
@@ -4641,12 +4776,12 @@
             "name": "Bone Splinter"
           },
           {
-            "count": 15,
-            "name": "Tar"
-          },
-          {
             "count": 9,
             "name": "Triple Stitch Fabric"
+          },
+          {
+            "count": 15,
+            "name": "Tar"
           }
         ]
       }
@@ -4663,16 +4798,16 @@
       {
         "ingredients": [
           {
-            "count": 27,
-            "name": "Bone Splinter"
+            "count": 9,
+            "name": "Triple Stitch Fabric"
           },
           {
             "count": 15,
             "name": "Tar"
           },
           {
-            "count": 9,
-            "name": "Triple Stitch Fabric"
+            "count": 27,
+            "name": "Bone Splinter"
           }
         ]
       }
@@ -4689,16 +4824,16 @@
       {
         "ingredients": [
           {
-            "count": 27,
-            "name": "Bone Splinter"
+            "count": 9,
+            "name": "Triple Stitch Fabric"
           },
           {
             "count": 15,
             "name": "Tar"
           },
           {
-            "count": 9,
-            "name": "Triple Stitch Fabric"
+            "count": 27,
+            "name": "Bone Splinter"
           }
         ]
       }
@@ -4715,23 +4850,25 @@
       {
         "ingredients": [
           {
-            "count": 56,
-            "name": "Chitin Plate"
+            "count": 5,
+            "name": "Reinforced Gear"
           },
           {
             "count": 24,
             "name": "Tallow"
           },
           {
-            "count": 5,
-            "name": "Reinforced Gear"
+            "count": 56,
+            "name": "Chitin Plate"
           }
         ]
       }
     ],
     "name": "Buffalo Walker Upgrade Mobility Tier 1",
     "type": "Buffalo Walker Upgrade Mobility Tier 1",
-    "upgradeInfo": {}
+    "upgradeInfo": {
+      "engineTorqueMultiplier": 1.4
+    }
   },
   {
     "category": "Upgrades",
@@ -4739,23 +4876,25 @@
       {
         "ingredients": [
           {
-            "count": 56,
-            "name": "Chitin Plate"
+            "count": 5,
+            "name": "Reinforced Gear"
           },
           {
             "count": 24,
             "name": "Tallow"
           },
           {
-            "count": 5,
-            "name": "Reinforced Gear"
+            "count": 56,
+            "name": "Chitin Plate"
           }
         ]
       }
     ],
     "name": "Buffalo Walker Upgrade Mobility Tier 2",
     "type": "Buffalo Walker Upgrade Mobility Tier 2",
-    "upgradeInfo": {}
+    "upgradeInfo": {
+      "engineTorqueMultiplier": 1.5
+    }
   },
   {
     "category": "Upgrades",
@@ -4763,23 +4902,25 @@
       {
         "ingredients": [
           {
-            "count": 56,
-            "name": "Chitin Plate"
+            "count": 5,
+            "name": "Reinforced Gear"
           },
           {
             "count": 24,
             "name": "Tallow"
           },
           {
-            "count": 5,
-            "name": "Reinforced Gear"
+            "count": 56,
+            "name": "Chitin Plate"
           }
         ]
       }
     ],
     "name": "Buffalo Walker Upgrade Mobility Tier 3",
     "type": "Buffalo Walker Upgrade Mobility Tier 3",
-    "upgradeInfo": {}
+    "upgradeInfo": {
+      "engineTorqueMultiplier": 1.7
+    }
   },
   {
     "category": "Upgrades",
@@ -4787,23 +4928,25 @@
       {
         "ingredients": [
           {
-            "count": 56,
-            "name": "Chitin Plate"
+            "count": 5,
+            "name": "Reinforced Gear"
           },
           {
             "count": 24,
             "name": "Tallow"
           },
           {
-            "count": 5,
-            "name": "Reinforced Gear"
+            "count": 56,
+            "name": "Chitin Plate"
           }
         ]
       }
     ],
     "name": "Buffalo Walker Upgrade Mobility Tier 4",
     "type": "Buffalo Walker Upgrade Mobility Tier 4",
-    "upgradeInfo": {}
+    "upgradeInfo": {
+      "engineTorqueMultiplier": 2
+    }
   },
   {
     "category": "Upgrades",
@@ -4835,12 +4978,12 @@
       {
         "ingredients": [
           {
-            "count": 17,
-            "name": "Earth Wax"
-          },
-          {
             "count": 36,
             "name": "Redwood Wood"
+          },
+          {
+            "count": 17,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -4857,16 +5000,16 @@
       {
         "ingredients": [
           {
-            "count": 17,
-            "name": "Earth Wax"
+            "count": 36,
+            "name": "Redwood Wood"
           },
           {
             "count": 13,
             "name": "Wood Shaft"
           },
           {
-            "count": 36,
-            "name": "Redwood Wood"
+            "count": 17,
+            "name": "Earth Wax"
           }
         ]
       }
@@ -4883,16 +5026,16 @@
       {
         "ingredients": [
           {
-            "count": 13,
-            "name": "Wood Shaft"
+            "count": 36,
+            "name": "Redwood Wood"
           },
           {
             "count": 17,
             "name": "Earth Wax"
           },
           {
-            "count": 36,
-            "name": "Redwood Wood"
+            "count": 13,
+            "name": "Wood Shaft"
           }
         ]
       }
@@ -4909,12 +5052,12 @@
       {
         "ingredients": [
           {
-            "count": 17,
-            "name": "Earth Wax"
-          },
-          {
             "count": 13,
             "name": "Wood Shaft"
+          },
+          {
+            "count": 17,
+            "name": "Earth Wax"
           },
           {
             "count": 36,
@@ -4935,16 +5078,16 @@
       {
         "ingredients": [
           {
-            "count": 17,
-            "name": "Leather"
+            "count": 25,
+            "name": "Charcoal"
           },
           {
             "count": 40,
             "name": "Spearmint"
           },
           {
-            "count": 25,
-            "name": "Charcoal"
+            "count": 17,
+            "name": "Leather"
           }
         ]
       }
@@ -4961,16 +5104,16 @@
       {
         "ingredients": [
           {
-            "count": 17,
-            "name": "Leather"
+            "count": 25,
+            "name": "Charcoal"
           },
           {
             "count": 40,
             "name": "Spearmint"
           },
           {
-            "count": 25,
-            "name": "Charcoal"
+            "count": 17,
+            "name": "Leather"
           }
         ]
       }
@@ -4987,16 +5130,16 @@
       {
         "ingredients": [
           {
-            "count": 17,
-            "name": "Leather"
+            "count": 25,
+            "name": "Charcoal"
           },
           {
             "count": 40,
             "name": "Spearmint"
           },
           {
-            "count": 25,
-            "name": "Charcoal"
+            "count": 17,
+            "name": "Leather"
           }
         ]
       }
@@ -5013,16 +5156,16 @@
       {
         "ingredients": [
           {
-            "count": 17,
-            "name": "Leather"
+            "count": 25,
+            "name": "Charcoal"
           },
           {
             "count": 40,
             "name": "Spearmint"
           },
           {
-            "count": 25,
-            "name": "Charcoal"
+            "count": 17,
+            "name": "Leather"
           }
         ]
       }
@@ -5039,20 +5182,8 @@
       {
         "ingredients": [
           {
-            "count": 14,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 22,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 27,
-            "name": "Earth Wax"
-          },
-          {
             "count": 1,
-            "name": "Wooden Gear"
+            "name": "Large Walker Wing"
           }
         ]
       }
@@ -5077,20 +5208,8 @@
       {
         "ingredients": [
           {
-            "count": 22,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 18,
-            "name": "Rope"
-          },
-          {
             "count": 1,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 45,
-            "name": "Leather"
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -5114,16 +5233,8 @@
       {
         "ingredients": [
           {
-            "count": 66,
-            "name": "Hollowbone"
-          },
-          {
-            "count": 56,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 100,
-            "name": "Leather"
+            "count": 1,
+            "name": "Flotillan Large Walker Wing"
           }
         ]
       }
@@ -5148,16 +5259,8 @@
       {
         "ingredients": [
           {
-            "count": 43,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 26,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 5,
-            "name": "Wooden Gear"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -5182,16 +5285,8 @@
       {
         "ingredients": [
           {
-            "count": 32,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 14,
-            "name": "Tallow"
-          },
-          {
-            "count": 25,
-            "name": "Chitin Plate"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -5216,16 +5311,8 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 22,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 11,
-            "name": "Leather"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -5250,20 +5337,8 @@
       {
         "ingredients": [
           {
-            "count": 27,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 18,
-            "name": "Rope"
-          },
-          {
-            "count": 35,
-            "name": "Wood Shaft"
-          },
-          {
             "count": 1,
-            "name": "Wooden Gear"
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -5288,16 +5363,8 @@
       {
         "ingredients": [
           {
-            "count": 46,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 42,
-            "name": "Triple Stitch Fabric"
-          },
-          {
-            "count": 4,
-            "name": "Wooden Gear"
+            "count": 1,
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -5539,16 +5606,8 @@
       {
         "ingredients": [
           {
-            "count": 200,
-            "name": "Wood"
-          },
-          {
-            "count": 28,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 10,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Large Walker Leg"
           }
         ]
       }
@@ -5599,6 +5658,24 @@
   },
   {
     "category": "Upgrades",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 13,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 52,
+            "name": "Wood"
+          },
+          {
+            "count": 5,
+            "name": "Rope"
+          }
+        ]
+      }
+    ],
     "name": "Camelop Walker Upgrade Torque Tier 2",
     "type": "Camelop Walker Upgrade Torque Tier 2",
     "upgradeInfo": {
@@ -5607,6 +5684,24 @@
   },
   {
     "category": "Upgrades",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 13,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 5,
+            "name": "Rope"
+          },
+          {
+            "count": 52,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
     "name": "Camelop Walker Upgrade Torque Tier 3",
     "type": "Camelop Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
@@ -5615,6 +5710,24 @@
   },
   {
     "category": "Upgrades",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 5,
+            "name": "Rope"
+          },
+          {
+            "count": 13,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 52,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
     "name": "Camelop Walker Upgrade Torque Tier 4",
     "type": "Camelop Walker Upgrade Torque Tier 4",
     "upgradeInfo": {
@@ -5627,11 +5740,11 @@
       {
         "ingredients": [
           {
-            "count": 45,
+            "count": 42,
             "name": "Wood Shaft"
           },
           {
-            "count": 22,
+            "count": 28,
             "name": "Rope"
           }
         ]
@@ -5649,11 +5762,11 @@
       {
         "ingredients": [
           {
-            "count": 32,
+            "count": 42,
             "name": "Wood Shaft"
           },
           {
-            "count": 24,
+            "count": 28,
             "name": "Rope"
           }
         ]
@@ -5671,11 +5784,11 @@
       {
         "ingredients": [
           {
-            "count": 35,
+            "count": 42,
             "name": "Wood Shaft"
           },
           {
-            "count": 25,
+            "count": 28,
             "name": "Rope"
           }
         ]
@@ -5743,6 +5856,55 @@
     "unlockable": "Camp Fire"
   },
   {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Lightwood"
+          },
+          {
+            "count": 22,
+            "name": "Earth Wax"
+          },
+          {
+            "count": 15,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Capital Walker Leg",
+    "translation": "Capital Walker Leg",
+    "type": "WalkerLeg_T4_C",
+    "experiencieReward": 300,
+    "stackSize": 2,
+    "weight": 40
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 22,
+            "name": "Lightwood"
+          },
+          {
+            "count": 20,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "name": "Capital Walker Wing",
+    "translation": "Capital Walker Wing",
+    "type": "WalkerWing_T4_C",
+    "stackSize": 4,
+    "weight": 30
+  },
+  {
     "category": "Armors",
     "crafting": [
       {
@@ -5774,8 +5936,9 @@
     "weight": 6.7,
     "durability": 280,
     "armorInfo": {
-      "absorbing": 18,
-      "speedReduction": 15
+      "absorbing": 22,
+      "reduction": 4,
+      "speedReduction": 12
     }
   },
   {
@@ -5810,9 +5973,9 @@
     "weight": 3.3,
     "durability": 280,
     "armorInfo": {
-      "absorbing": 15,
-      "reduction": 2,
-      "speedReduction": 5
+      "absorbing": 8,
+      "reduction": 3,
+      "speedReduction": 4
     }
   },
   {
@@ -5847,9 +6010,9 @@
     "weight": 3.1,
     "durability": 280,
     "armorInfo": {
-      "absorbing": 15,
+      "absorbing": 8,
       "reduction": 3,
-      "speedReduction": 5
+      "speedReduction": 4
     }
   },
   {
@@ -6506,6 +6669,7 @@
     "unlockable": "ConcreteWalls"
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -6536,12 +6700,15 @@
     "projectileDamage": {
       "damage": 15.5
     },
+    "stackSize": 500,
+    "weight": 0.1,
     "toolInfo": [
       {
         "toolType": "RepeaterBolt",
         "tier": 3
       }
-    ]
+    ],
+    "damageType": "'DartDamage_C'"
   },
   {
     "category": "Equipment",
@@ -6608,8 +6775,8 @@
       "impact": 35,
       "stability": 30,
       "weaponLength": 52,
-      "damage": 50,
-      "penetration": 10
+      "damage": 55,
+      "penetration": 25
     },
     "toolInfo": [
       {
@@ -6633,15 +6800,24 @@
     "onlyDevs": true
   },
   {
+    "category": "Ammo",
     "name": "Ceramic Orb",
     "parent": "Lobber",
+    "trade_price": 5.2,
     "translation": "Ceramic Orb",
     "type": "CeramicOrb_C",
     "description": "Ceramic orb with sharp edges that shatters on impact. Devastating damage to walkers and siege weapons.",
     "projectileDamage": {
-      "damage": 200
+      "damage": 200,
+      "penetration": 10,
+      "effectivenessVsSoak": 25,
+      "effectivenessVsReduce": 25
     },
-    "onlyDevs": true
+    "experiencieReward": 1,
+    "stackSize": 100,
+    "weight": 1.5,
+    "onlyDevs": true,
+    "damageType": "'OrbDamage_C'"
   },
   {
     "crafting": [
@@ -6771,6 +6947,7 @@
     "damageType": "'RokDamage_C'"
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -6790,17 +6967,26 @@
     ],
     "name": "Ceramic Scattershot Ammo",
     "parent": "BoneScattershot",
+    "trade_price": 5.2,
     "translation": "Ceramic Scattershot Ammo",
     "type": "CeramicScattershot_C",
+    "description": "Ammo for Scattershot gun. A mixed bag of blunt and sharp debris that spread out when fired.",
     "projectileDamage": {
-      "damage": 350
+      "damage": 235,
+      "penetration": 30,
+      "effectivenessVsSoak": 50,
+      "effectivenessVsReduce": 50
     },
+    "experiencieReward": 1,
+    "stackSize": 24,
+    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "Scattershot",
         "tier": 3
       }
-    ]
+    ],
+    "damageType": "'ScattershotDamage_C'"
   },
   {
     "category": "Resources",
@@ -6835,6 +7021,7 @@
     "weight": 0.22
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -6882,16 +7069,22 @@
     "type": "CeramicBolt_C",
     "description": "Ammo for Ballista. Ceramic tips guarantee their sharpness and strength.",
     "projectileDamage": {
-      "damage": 90
+      "damage": 115,
+      "penetration": 10
     },
+    "experiencieReward": 1,
+    "stackSize": 20,
+    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
         "tier": 3
       }
-    ]
+    ],
+    "damageType": "'BoltDamage_C'"
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -6922,13 +7115,15 @@
       "damage": 20
     },
     "experiencieReward": 12,
+    "stackSize": 20,
     "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
         "tier": 3
       }
-    ]
+    ],
+    "damageType": "'HarpoonDamage_C'"
   },
   {
     "category": "Furniture",
@@ -7287,14 +7482,25 @@
     "damageType": "'HardenedRokDamage_C'"
   },
   {
+    "category": "Ammo",
     "name": "Chitin Dart",
+    "trade_price": 1.5,
     "translation": "Chitin Dart",
     "type": "ChitinDart_C",
     "description": "Ammo for Stingers and Repeater.  Tipped with razor-sharp shards of chitin, this small bolt can cause some nasty wounds.",
     "projectileDamage": {
-      "damage": 17
+      "damage": 15.5
     },
-    "wikiVisibility": false
+    "stackSize": 500,
+    "weight": 0.1,
+    "toolInfo": [
+      {
+        "toolType": "RepeaterBolt",
+        "tier": 3
+      }
+    ],
+    "wikiVisibility": false,
+    "damageType": "'DartDamage_C'"
   },
   {
     "name": "Chitin Harpoon",
@@ -7410,15 +7616,27 @@
     "durability": 1500
   },
   {
+    "category": "Ammo",
     "name": "Chitin Shard Bolt",
     "trade_price": 5,
     "translation": "Chitin Shard Bolt",
     "type": "ChitinBolt_C",
     "description": "Ammo for Ballista. Naturally serrated shards of chitin make fine, if terrifying, tips for bolts.",
     "projectileDamage": {
-      "damage": 120
+      "damage": 115,
+      "penetration": 10
     },
-    "wikiVisibility": false
+    "experiencieReward": 1,
+    "stackSize": 20,
+    "weight": 0.3,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 3
+      }
+    ],
+    "wikiVisibility": false,
+    "damageType": "'BoltDamage_C'"
   },
   {
     "crafting": [
@@ -7890,7 +8108,7 @@
     "durability": 420,
     "armorInfo": {
       "absorbing": 12,
-      "reduction": 5
+      "reduction": 2
     }
   },
   {
@@ -8038,16 +8256,8 @@
       {
         "ingredients": [
           {
-            "count": 200,
-            "name": "Wood"
-          },
-          {
-            "count": 28,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 10,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Large Walker Leg"
           }
         ]
       }
@@ -8342,6 +8552,19 @@
     "stackSize": 100,
     "weight": 0.5,
     "whereToFarm": "Collected from toxic lakes and puddles."
+  },
+  {
+    "category": "Equipment",
+    "name": "Contrabass",
+    "translation": "Contrabass",
+    "type": "MusicalInstrumentContrabass_C",
+    "weight": 15,
+    "durability": 150,
+    "weaponInfo": {
+      "damage": 10,
+      "penetration": 10
+    },
+    "damageType": "'MeleeBluntWeakDamage_C'"
   },
   {
     "category": "Vitamins",
@@ -8889,6 +9112,19 @@
     "weight": 0.6
   },
   {
+    "category": "Equipment",
+    "name": "Didgeridoo",
+    "translation": "Didgeridoo",
+    "type": "MusicalInstrumentDidgeridoo_C",
+    "weight": 5,
+    "durability": 150,
+    "weaponInfo": {
+      "damage": 10,
+      "penetration": 10
+    },
+    "damageType": "'MeleeBluntWeakDamage_C'"
+  },
+  {
     "crafting": [
       {
         "ingredients": [
@@ -8972,12 +9208,8 @@
       {
         "ingredients": [
           {
-            "count": 22,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Wood Shaft"
+            "count": 1,
+            "name": "Small Walker Leg"
           }
         ]
       }
@@ -9637,16 +9869,8 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Wood"
-          },
-          {
-            "count": 5,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 5,
-            "name": "Wood Shaft"
+            "count": 1,
+            "name": "Small Walker Wing"
           }
         ]
       }
@@ -9671,24 +9895,8 @@
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 12,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 4,
-            "name": "Rope"
-          },
-          {
             "count": 1,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 1,
-            "name": "Nomad Cloth"
+            "name": "Improved Small Walker Wing"
           }
         ]
       }
@@ -9716,6 +9924,19 @@
     "description": "While sometimes found in small amounts around the scorched deserts of the Earth, Dirty Water needs to be cooked to be consumed. Nomads desperate enough to try ingest it directly report feeling ill for many hours.",
     "stackSize": 100,
     "weight": 0.5
+  },
+  {
+    "category": "Equipment",
+    "name": "Djembe",
+    "translation": "Djembe",
+    "type": "MusicalInstrumentDjembe_C",
+    "weight": 3,
+    "durability": 150,
+    "weaponInfo": {
+      "damage": 10,
+      "penetration": 10
+    },
+    "damageType": "'MeleeBluntWeakDamage_C'"
   },
   {
     "category": "Walkers",
@@ -9783,16 +10004,8 @@
       {
         "ingredients": [
           {
-            "count": 1000,
-            "name": "Wood"
-          },
-          {
-            "count": 124,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 146,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Capital Walker Leg"
           }
         ]
       }
@@ -9817,20 +10030,8 @@
       {
         "ingredients": [
           {
-            "count": 420,
-            "name": "Wood"
-          },
-          {
-            "count": 350,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 100,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 20,
-            "name": "Tar"
+            "count": 1,
+            "name": "Capital Walker Leg"
           }
         ]
       }
@@ -9855,20 +10056,8 @@
       {
         "ingredients": [
           {
-            "count": 100,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 80,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 34,
-            "name": "Tar"
-          },
-          {
-            "count": 32,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Heavy Capital Walker Leg"
           }
         ]
       }
@@ -10599,16 +10788,8 @@
       {
         "ingredients": [
           {
-            "count": 360,
-            "name": "Wood"
-          },
-          {
-            "count": 30,
-            "name": "Rope"
-          },
-          {
-            "count": 15,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Capital Walker Wing"
           }
         ]
       }
@@ -10633,20 +10814,8 @@
       {
         "ingredients": [
           {
-            "count": 250,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 30,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 24,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 34,
-            "name": "Redwood Wood"
+            "count": 1,
+            "name": "Improved Capital Walker Wing"
           }
         ]
       }
@@ -10671,16 +10840,8 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 112,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 22,
-            "name": "Iron Ingot"
+            "count": 1,
+            "name": "Flotillan Capital Walker Wing"
           }
         ]
       }
@@ -10705,16 +10866,8 @@
       {
         "ingredients": [
           {
-            "count": 310,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 36,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 34,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Advanced Capital Walker Wing"
           }
         ]
       }
@@ -10739,20 +10892,8 @@
       {
         "ingredients": [
           {
-            "count": 32,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 110,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 30,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 15,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Advanced Capital Walker Wing"
           }
         ]
       }
@@ -10763,7 +10904,7 @@
     "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance.",
     "weight": 9.75,
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 15750
     },
     "unlockable": "WalkerPartsAdvanced_T4",
@@ -10777,20 +10918,8 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 92,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 10,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 8,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Advanced Capital Walker Wing"
           }
         ]
       }
@@ -10801,7 +10930,7 @@
     "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement.",
     "weight": 9.75,
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 21875
     },
     "unlockable": "WalkerPartsAdvanced_T4",
@@ -10815,20 +10944,8 @@
       {
         "ingredients": [
           {
-            "count": 22,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 100,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 20,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 20,
-            "name": "Redwood Wood"
+            "count": 1,
+            "name": "Improved Capital Walker Wing"
           }
         ]
       }
@@ -10853,16 +10970,8 @@
       {
         "ingredients": [
           {
-            "count": 160,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 19,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 48,
-            "name": "Hide"
+            "count": 1,
+            "name": "Improved Capital Walker Wing"
           }
         ]
       }
@@ -11463,20 +11572,8 @@
       {
         "ingredients": [
           {
-            "count": 26,
-            "name": "Wooden Slab"
-          },
-          {
-            "count": 40,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 48,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 26,
-            "name": "Wood"
+            "count": 1,
+            "name": "Large Walker Leg"
           }
         ]
       }
@@ -11501,24 +11598,8 @@
       {
         "ingredients": [
           {
-            "count": 85,
-            "name": "Wood"
-          },
-          {
-            "count": 74,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 14,
-            "name": "Tallow"
-          },
-          {
-            "count": 11,
-            "name": "Rope"
-          },
-          {
-            "count": 74,
-            "name": "Wooden Slab"
+            "count": 1,
+            "name": "Armored Large Walker Leg"
           }
         ]
       }
@@ -11543,20 +11624,8 @@
       {
         "ingredients": [
           {
-            "count": 72,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 12,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 5,
-            "name": "Tar"
-          },
-          {
-            "count": 60,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Heavy Large Walker Leg"
           }
         ]
       }
@@ -11941,7 +12010,9 @@
     ],
     "name": "Falco Walker Upgrade Mobility Tier 1",
     "type": "Falco Walker Upgrade Mobility Tier 1",
-    "upgradeInfo": {}
+    "upgradeInfo": {
+      "engineTorqueMultiplier": 1.05
+    }
   },
   {
     "category": "Upgrades",
@@ -11965,7 +12036,9 @@
     ],
     "name": "Falco Walker Upgrade Mobility Tier 2",
     "type": "Falco Walker Upgrade Mobility Tier 2",
-    "upgradeInfo": {}
+    "upgradeInfo": {
+      "engineTorqueMultiplier": 1.15
+    }
   },
   {
     "category": "Upgrades",
@@ -11989,7 +12062,9 @@
     ],
     "name": "Falco Walker Upgrade Mobility Tier 3",
     "type": "Falco Walker Upgrade Mobility Tier 3",
-    "upgradeInfo": {}
+    "upgradeInfo": {
+      "engineTorqueMultiplier": 1.3
+    }
   },
   {
     "category": "Upgrades",
@@ -12249,20 +12324,8 @@
       {
         "ingredients": [
           {
-            "count": 58,
-            "name": "Wood"
-          },
-          {
-            "count": 47,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 26,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 31,
-            "name": "Hide"
+            "count": 1,
+            "name": "Large Walker Wing"
           }
         ]
       }
@@ -12287,20 +12350,8 @@
       {
         "ingredients": [
           {
-            "count": 48,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 4,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 18,
-            "name": "Leather"
-          },
-          {
-            "count": 27,
-            "name": "Redwood Wood"
+            "count": 1,
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -12325,16 +12376,8 @@
       {
         "ingredients": [
           {
-            "count": 78,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 68,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 120,
-            "name": "Hide"
+            "count": 1,
+            "name": "Flotillan Large Walker Wing"
           }
         ]
       }
@@ -12359,16 +12402,8 @@
       {
         "ingredients": [
           {
-            "count": 112,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 15,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 4,
-            "name": "Wooden Gear"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -12380,7 +12415,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Soft",
-      "hp": 9500
+      "hp": 9000
     },
     "unlockable": "WalkerPartsAdvanced_T3",
     "walkerInfo": {
@@ -12393,20 +12428,8 @@
       {
         "ingredients": [
           {
-            "count": 45,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 36,
-            "name": "Tallow"
-          },
-          {
-            "count": 38,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 4,
-            "name": "Wooden Gear"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -12431,16 +12454,8 @@
       {
         "ingredients": [
           {
-            "count": 65,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 35,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 21,
-            "name": "Leather"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -12465,20 +12480,8 @@
       {
         "ingredients": [
           {
-            "count": 46,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 18,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 41,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 4,
-            "name": "Wooden Gear"
+            "count": 1,
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -12503,20 +12506,8 @@
       {
         "ingredients": [
           {
-            "count": 56,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 22,
-            "name": "Rope"
-          },
-          {
-            "count": 12,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 4,
-            "name": "Wooden Gear"
+            "count": 1,
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -13097,7 +13088,7 @@
     "weight": 0.4,
     "durability": 120,
     "armorInfo": {
-      "reduction": 2.2
+      "reduction": 2
     }
   },
   {
@@ -13122,7 +13113,7 @@
     "weight": 0.2,
     "durability": 120,
     "armorInfo": {
-      "absorbing": 1,
+      "absorbing": 4,
       "reduction": 1
     }
   },
@@ -14224,7 +14215,7 @@
       "stability": 30,
       "weaponLength": 68,
       "damage": 55,
-      "penetration": 10
+      "penetration": 20
     },
     "toolInfo": [
       {
@@ -14271,8 +14262,8 @@
       "impact": 80,
       "stability": 60,
       "weaponLength": 83,
-      "damage": 55,
-      "penetration": 10
+      "damage": 61,
+      "penetration": 20
     },
     "toolInfo": [
       {
@@ -14315,8 +14306,8 @@
     "durability": 735,
     "weaponInfo": {
       "weaponLength": 123,
-      "damage": 42,
-      "penetration": 20
+      "damage": 65,
+      "penetration": 10
     },
     "damageType": "'MeleeSwordDamage_C'"
   },
@@ -14357,8 +14348,8 @@
       "impact": 45,
       "stability": 45,
       "weaponLength": 65,
-      "damage": 55,
-      "penetration": 10
+      "damage": 58,
+      "penetration": 25
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -14399,8 +14390,8 @@
       "impact": 80,
       "stability": 65,
       "weaponLength": 83,
-      "damage": 55,
-      "penetration": 10
+      "damage": 65,
+      "penetration": 25
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -14437,8 +14428,8 @@
     "durability": 735,
     "weaponInfo": {
       "weaponLength": 99,
-      "damage": 42,
-      "penetration": 20
+      "damage": 65,
+      "penetration": 10
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -14479,8 +14470,8 @@
       "impact": 45,
       "stability": 40,
       "weaponLength": 69,
-      "damage": 55,
-      "penetration": 10
+      "damage": 61,
+      "penetration": 20
     },
     "toolInfo": [
       {
@@ -14527,8 +14518,8 @@
       "impact": 40,
       "stability": 55,
       "weaponLength": 76,
-      "damage": 55,
-      "penetration": 10
+      "damage": 70,
+      "penetration": 20
     },
     "toolInfo": [
       {
@@ -14916,7 +14907,7 @@
     "type": "FlintBolt_C",
     "description": "Ammo for Ballista. Effective against lightly armored nomads.",
     "projectileDamage": {
-      "damage": 60,
+      "damage": 75,
       "penetration": 10
     },
     "experiencieReward": 1,
@@ -15087,6 +15078,32 @@
     "unlockable": "WoodenWalls"
   },
   {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Worm Silk"
+          },
+          {
+            "count": 30,
+            "name": "Lightwood"
+          },
+          {
+            "count": 12,
+            "name": "Nibiran Ingot"
+          }
+        ]
+      }
+    ],
+    "name": "Flotillan Capital Walker Wing",
+    "translation": "Flotillan Capital Walker Wing",
+    "type": "WalkerWingFlotillan_T4_C",
+    "stackSize": 4,
+    "weight": 30
+  },
+  {
     "category": "Grappling Hooks",
     "crafting": [
       {
@@ -15115,6 +15132,58 @@
     "type": "FlotillanGrapplingHook_C",
     "description": "Better in every way than the regular nomadic variety, but not specialized in any aspects like other grappling hook types.",
     "experiencieReward": 76
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 32,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 35,
+            "name": "Lightwood"
+          },
+          {
+            "count": 28,
+            "name": "Hollowbone"
+          }
+        ]
+      }
+    ],
+    "name": "Flotillan Large Walker Wing",
+    "translation": "Flotillan Large Walker Wing",
+    "type": "WalkerWingFlotillan_T3_C",
+    "stackSize": 4,
+    "weight": 20
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 30,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 28,
+            "name": "Iron Ore"
+          }
+        ]
+      }
+    ],
+    "name": "Flotillan Medium Walker Wing",
+    "translation": "Flotillan Medium Walker Wing",
+    "type": "WalkerWingFlotillan_T2_C",
+    "stackSize": 4,
+    "weight": 10
   },
   {
     "name": "Flotillian Ammo",
@@ -15479,9 +15548,9 @@
     "weight": 4.5,
     "durability": 200,
     "armorInfo": {
-      "absorbing": 8,
-      "reduction": 3,
-      "speedReduction": 9
+      "absorbing": 12,
+      "reduction": 5,
+      "speedReduction": 6
     }
   },
   {
@@ -15525,9 +15594,9 @@
     "weight": 1.3,
     "durability": 200,
     "armorInfo": {
-      "absorbing": 6,
+      "absorbing": 3,
       "reduction": 1,
-      "speedReduction": 3
+      "speedReduction": 2
     }
   },
   {
@@ -15572,9 +15641,9 @@
     "weight": 1,
     "durability": 200,
     "armorInfo": {
-      "absorbing": 8,
-      "reduction": 2,
-      "speedReduction": 3
+      "absorbing": 4,
+      "reduction": 1,
+      "speedReduction": 2
     }
   },
   {
@@ -16025,7 +16094,7 @@
     "weight": 0.4,
     "durability": 240,
     "armorInfo": {
-      "absorbing": 5,
+      "absorbing": 10,
       "reduction": 1
     }
   },
@@ -16637,6 +16706,7 @@
     "unlockable": "Hangar"
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -16659,6 +16729,7 @@
     ],
     "name": "Hardened Hellfire Bolt",
     "parent": "HellfireBolt",
+    "trade_price": 175.3,
     "translation": "Hardened Hellfire Bolt",
     "type": "HardenedHellfireBolt_C",
     "description": "Ammo for ballista. Burns quicker while dealing the same damage to the target as a Hellfire Bolt due to its structural properties. Much more difficult to destroy.",
@@ -16666,12 +16737,15 @@
       "damage": 5000
     },
     "experiencieReward": 115,
+    "stackSize": 20,
+    "weight": 1,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
         "tier": 3
       }
-    ]
+    ],
+    "damageType": "'FireBoltDamage_C'"
   },
   {
     "category": "Resources",
@@ -16855,6 +16929,33 @@
     "durability": 500
   },
   {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 16,
+            "name": "Worm Scale"
+          },
+          {
+            "count": 12,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 25,
+            "name": "Lightwood"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Capital Walker Leg",
+    "translation": "Heavy Capital Walker Leg",
+    "type": "WalkerLegHeavy_T4_C",
+    "experiencieReward": 1000,
+    "stackSize": 2,
+    "weight": 40
+  },
+  {
     "category": "Weapons",
     "crafting": [
       {
@@ -16894,10 +16995,64 @@
   },
   {
     "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 18,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 30,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 5,
+            "name": "Gelatinous Goo"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Large Walker Leg",
+    "translation": "Heavy Large Walker Leg",
+    "type": "WalkerLegHeavy_T3_C",
+    "experiencieReward": 500,
+    "stackSize": 2,
+    "weight": 30
+  },
+  {
+    "category": "Walker Parts",
     "name": "Heavy Legs (1 of 2)",
     "translation": "Heavy Legs",
     "type": "HeavyLegs_C",
     "description": "Made of strong, heavy logs that are expensive to produce but provide unbeatable protection."
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 25,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 22,
+            "name": "Animal Fat"
+          }
+        ]
+      }
+    ],
+    "name": "Heavy Medium Walker Leg",
+    "translation": "Heavy Medium Walker Leg",
+    "type": "WalkerLegHeavy_T2_C",
+    "experiencieReward": 400,
+    "stackSize": 2,
+    "weight": 20
   },
   {
     "category": "Weapons",
@@ -16936,7 +17091,6 @@
       "impact": 70,
       "stability": 60,
       "weaponLength": 87,
-      "damage": 45,
       "penetration": 10
     },
     "toolInfo": [
@@ -17253,6 +17407,7 @@
     "whereToFarm": "Sold by ammo merchants for Flots."
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -17282,12 +17437,16 @@
     "projectileDamage": {
       "damage": 3200
     },
+    "experiencieReward": 75,
+    "stackSize": 20,
+    "weight": 1,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
         "tier": 2
       }
-    ]
+    ],
+    "damageType": "'FireBoltDamage_C'"
   },
   {
     "category": "Walkers",
@@ -17347,16 +17506,8 @@
       {
         "ingredients": [
           {
-            "count": 280,
-            "name": "Wood"
-          },
-          {
-            "count": 36,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 42,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Large Walker Leg"
           }
         ]
       }
@@ -17381,20 +17532,8 @@
       {
         "ingredients": [
           {
-            "count": 1470,
-            "name": "Wood"
-          },
-          {
-            "count": 183,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 102,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 33,
-            "name": "Bone Glue"
+            "count": 1,
+            "name": "Armored Large Walker Leg"
           }
         ]
       }
@@ -17419,20 +17558,8 @@
       {
         "ingredients": [
           {
-            "count": 60,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 10,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 5,
-            "name": "Tar"
-          },
-          {
-            "count": 15,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Heavy Large Walker Leg"
           }
         ]
       }
@@ -17635,12 +17762,8 @@
       {
         "ingredients": [
           {
-            "count": 93,
-            "name": "Wood"
-          },
-          {
-            "count": 52,
-            "name": "Fiber Weave"
+            "count": 1,
+            "name": "Large Walker Leg"
           }
         ]
       }
@@ -17665,16 +17788,8 @@
       {
         "ingredients": [
           {
-            "count": 78,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 40,
-            "name": "Rope"
-          },
-          {
-            "count": 14,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -17699,16 +17814,8 @@
       {
         "ingredients": [
           {
-            "count": 66,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 56,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 100,
-            "name": "Hide"
+            "count": 1,
+            "name": "Flotillan Large Walker Wing"
           }
         ]
       }
@@ -17733,16 +17840,8 @@
       {
         "ingredients": [
           {
-            "count": 92,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 8,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 50,
-            "name": "Hide"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -17767,20 +17866,8 @@
       {
         "ingredients": [
           {
-            "count": 60,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 70,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 100,
-            "name": "Hide"
-          },
-          {
-            "count": 5,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -17791,7 +17878,7 @@
     "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance.",
     "weight": 9.75,
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 3900
     },
     "unlockable": "WalkerPartsAdvanced_T3",
@@ -17805,20 +17892,8 @@
       {
         "ingredients": [
           {
-            "count": 50,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 50,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 50,
-            "name": "Hide"
-          },
-          {
-            "count": 3,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -17829,7 +17904,7 @@
     "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement.",
     "weight": 9.75,
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 6100
     },
     "unlockable": "WalkerPartsAdvanced_T3",
@@ -17843,16 +17918,8 @@
       {
         "ingredients": [
           {
-            "count": 70,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 60,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 100,
-            "name": "Hide"
+            "count": 1,
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -17877,16 +17944,8 @@
       {
         "ingredients": [
           {
-            "count": 46,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 18,
-            "name": "Rope"
-          },
-          {
-            "count": 4,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -18018,16 +18077,8 @@
       {
         "ingredients": [
           {
-            "count": 260,
-            "name": "Wood"
-          },
-          {
-            "count": 32,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 40,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Large Walker Leg"
           }
         ]
       }
@@ -18052,20 +18103,8 @@
       {
         "ingredients": [
           {
-            "count": 1365,
-            "name": "Wood"
-          },
-          {
-            "count": 168,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 87,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 27,
-            "name": "Bone Glue"
+            "count": 1,
+            "name": "Armored Large Walker Leg"
           }
         ]
       }
@@ -18090,20 +18129,8 @@
       {
         "ingredients": [
           {
-            "count": 64,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 10,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 5,
-            "name": "Tar"
-          },
-          {
-            "count": 45,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Heavy Large Walker Leg"
           }
         ]
       }
@@ -18778,12 +18805,8 @@
       {
         "ingredients": [
           {
-            "count": 87,
-            "name": "Wood"
-          },
-          {
-            "count": 48,
-            "name": "Fiber Weave"
+            "count": 1,
+            "name": "Large Walker Wing"
           }
         ]
       }
@@ -18808,20 +18831,8 @@
       {
         "ingredients": [
           {
-            "count": 44,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 40,
-            "name": "Rope"
-          },
-          {
-            "count": 10,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 14,
-            "name": "Redwood Wood"
+            "count": 1,
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -18846,16 +18857,8 @@
       {
         "ingredients": [
           {
-            "count": 50,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 42,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 80,
-            "name": "Hide"
+            "count": 1,
+            "name": "Flotillan Large Walker Wing"
           }
         ]
       }
@@ -18880,16 +18883,8 @@
       {
         "ingredients": [
           {
-            "count": 80,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 8,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 42,
-            "name": "Hide"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -18914,20 +18909,8 @@
       {
         "ingredients": [
           {
-            "count": 60,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 60,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 90,
-            "name": "Hide"
-          },
-          {
-            "count": 6,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -18938,7 +18921,7 @@
     "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance.",
     "weight": 9.75,
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 7600
     },
     "unlockable": "WalkerPartsAdvanced_T3",
@@ -18952,20 +18935,8 @@
       {
         "ingredients": [
           {
-            "count": 50,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 40,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 80,
-            "name": "Hide"
-          },
-          {
-            "count": 3,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -18976,7 +18947,7 @@
     "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement.",
     "weight": 9.75,
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 11500
     },
     "unlockable": "WalkerPartsAdvanced_T3",
@@ -18990,20 +18961,8 @@
       {
         "ingredients": [
           {
-            "count": 52,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 50,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 84,
-            "name": "Hide"
-          },
-          {
-            "count": 16,
-            "name": "Iron Ore"
+            "count": 1,
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -19028,16 +18987,8 @@
       {
         "ingredients": [
           {
-            "count": 40,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 14,
-            "name": "Rope"
-          },
-          {
-            "count": 4,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -19105,6 +19056,7 @@
     "whereToFarm": "Grows on large mutated cactus trees."
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -19137,14 +19089,21 @@
     "type": "HullbreakerScattershot_C",
     "description": "Ammo for scattershot gun. Blows apart wooden constructions while also dealing some damage to sturdier materials.",
     "projectileDamage": {
-      "damage": 500
+      "damage": 290,
+      "penetration": 30,
+      "effectivenessVsSoak": 50,
+      "effectivenessVsReduce": 50
     },
+    "experiencieReward": 1,
+    "stackSize": 24,
+    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "Scattershot",
         "tier": 4
       }
-    ]
+    ],
+    "damageType": "'ScattershotDamage_C'"
   },
   {
     "category": "Interactables",
@@ -19285,6 +19244,32 @@
     ]
   },
   {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 35,
+            "name": "Lightwood"
+          },
+          {
+            "count": 25,
+            "name": "Iron Ore"
+          },
+          {
+            "count": 17,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "name": "Improved Capital Walker Wing",
+    "translation": "Improved Capital Walker Wing",
+    "type": "WalkerWingImproved_T4_C",
+    "stackSize": 4,
+    "weight": 30
+  },
+  {
     "name": "Improved Constructions",
     "parent": "Basic Constructions",
     "translation": "Improved Constructions",
@@ -19357,6 +19342,58 @@
     "onlyDevs": true
   },
   {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 22,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 28,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 18,
+            "name": "Ceramic Shard"
+          }
+        ]
+      }
+    ],
+    "name": "Improved Large Walker Wing",
+    "translation": "Improved Large Walker Wing",
+    "type": "WalkerWingImproved_T3_C",
+    "stackSize": 4,
+    "weight": 20
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 18,
+            "name": "Triple Stitch Fabric"
+          },
+          {
+            "count": 12,
+            "name": "Bone Splinter"
+          }
+        ]
+      }
+    ],
+    "name": "Improved Medium Walker Wing",
+    "translation": "Improved Medium Walker Wing",
+    "type": "WalkerWingImproved_T2_C",
+    "stackSize": 4,
+    "weight": 10
+  },
+  {
     "name": "Improved Potions",
     "parent": "Basic Potions",
     "translation": "Improved Potions",
@@ -19373,6 +19410,32 @@
       "Jojo Mojo",
       "Race Dust"
     ]
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 25,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 22,
+            "name": "Fiber Weave"
+          },
+          {
+            "count": 15,
+            "name": "Rope"
+          }
+        ]
+      }
+    ],
+    "name": "Improved Small Walker Wing",
+    "translation": "Improved Small Walker Wing",
+    "type": "WalkerWingImproved_T1_C",
+    "stackSize": 4,
+    "weight": 5
   },
   {
     "name": "Improved Tools",
@@ -19737,6 +19800,7 @@
     "type": "Interactables_C"
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -19764,17 +19828,22 @@
     ],
     "name": "Iron Dart",
     "parent": "CeramicDart",
+    "trade_price": 1.5,
     "translation": "Iron Dart",
     "type": "IronDart_C",
+    "description": "Ammo for Stingers, Spinners and Repeater.  Best suited for hunting Phemke, Nurrs and unarmored Nomads.",
     "projectileDamage": {
-      "damage": 20
+      "damage": 19.5
     },
+    "stackSize": 500,
+    "weight": 0.1,
     "toolInfo": [
       {
         "toolType": "RepeaterBolt",
         "tier": 4
       }
-    ]
+    ],
+    "damageType": "'DartDamage_C'"
   },
   {
     "category": "Resources",
@@ -19869,12 +19938,12 @@
             "name": "Animal Fat"
           }
         ],
-        "output": 10,
         "station": "Artisan Soil Auger",
         "time": 30
       }
     ],
     "name": "Iron Ore",
+    "parent": "Soil Excavator",
     "trade_price": 8,
     "translation": "Iron Ore",
     "type": "IronOre_C",
@@ -19952,6 +20021,7 @@
     "durability": 3000
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -19978,13 +20048,25 @@
     ],
     "name": "Iron Rok",
     "parent": "Obsidian Rok",
+    "trade_price": 5.2,
     "translation": "Iron Rok",
     "type": "IronRok_C",
     "description": "Ammo for the Rokker. The pinnacle of hull-piercing ammunition, short of the largest of boulders.",
     "projectileDamage": {
-      "damage": 700
+      "damage": 625,
+      "penetration": 10,
+      "effectivenessVsSoak": 70,
+      "effectivenessVsReduce": 70
     },
-    "experiencieReward": 5
+    "stackSize": 10,
+    "weight": 5,
+    "toolInfo": [
+      {
+        "toolType": "Scattershot",
+        "tier": 1
+      }
+    ],
+    "damageType": "'RokDamage_C'"
   },
   {
     "crafting": [
@@ -20055,7 +20137,8 @@
     "weight": 14.8,
     "durability": 330,
     "armorInfo": {
-      "absorbing": 22,
+      "absorbing": 25,
+      "reduction": 6,
       "speedReduction": 15
     }
   },
@@ -20091,9 +20174,9 @@
     "weight": 4,
     "durability": 330,
     "armorInfo": {
-      "absorbing": 20,
-      "reduction": 3,
-      "speedReduction": 5
+      "absorbing": 10,
+      "reduction": 4,
+      "speedReduction": 6
     }
   },
   {
@@ -20128,12 +20211,13 @@
     "weight": 5,
     "durability": 330,
     "armorInfo": {
-      "absorbing": 20,
+      "absorbing": 10,
       "reduction": 4,
-      "speedReduction": 5
+      "speedReduction": 6
     }
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -20162,17 +20246,22 @@
     "type": "IronBolt_C",
     "description": "Ammo for Ballista. An iron tip easily penetrates armor and makes holes in bodies that can't be patched.",
     "projectileDamage": {
-      "damage": 175
+      "damage": 145,
+      "penetration": 10
     },
     "experiencieReward": 50,
+    "stackSize": 20,
+    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
         "tier": 4
       }
-    ]
+    ],
+    "damageType": "'BoltDamage_C'"
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -20203,13 +20292,15 @@
       "damage": 25
     },
     "experiencieReward": 75,
+    "stackSize": 20,
     "weight": 0.8,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
         "tier": 4
       }
-    ]
+    ],
+    "damageType": "'HarpoonDamage_C'"
   },
   {
     "category": "Weapons",
@@ -20244,8 +20335,8 @@
     "durability": 740,
     "weaponInfo": {
       "weaponLength": 106,
-      "damage": 55,
-      "penetration": 20
+      "damage": 75,
+      "penetration": 25
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -20283,8 +20374,8 @@
       "impact": 65,
       "stability": 35,
       "weaponLength": 66,
-      "damage": 30,
-      "penetration": 10
+      "damage": 35,
+      "penetration": 5
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -20323,7 +20414,7 @@
       "stability": 60,
       "weaponLength": 77,
       "damage": 35,
-      "penetration": 10
+      "penetration": 15
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -20363,7 +20454,7 @@
       "stability": 55,
       "weaponLength": 122,
       "damage": 30,
-      "penetration": 10
+      "penetration": 5
     },
     "toolInfo": [
       {
@@ -20429,6 +20520,19 @@
     "description": "A swirling mixture that makes a Nomad burst into song and dance. Negates all falling damage taken by Nomad.",
     "stackSize": 100,
     "weight": 0.5
+  },
+  {
+    "category": "Equipment",
+    "name": "Kaval",
+    "translation": "Kaval",
+    "type": "MusicalInstrumentKaval_C",
+    "weight": 0.3,
+    "durability": 150,
+    "weaponInfo": {
+      "damage": 10,
+      "penetration": 10
+    },
+    "damageType": "'MeleeBluntWeakDamage_C'"
   },
   {
     "category": "Walker Tools",
@@ -20709,6 +20813,55 @@
     "name": "Large Spare Parts Profile",
     "type": "LargeSparePartsProfile",
     "upgradeInfo": {}
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 27,
+            "name": "Redwood Wood"
+          },
+          {
+            "count": 14,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 18,
+            "name": "Earth Wax"
+          }
+        ]
+      }
+    ],
+    "name": "Large Walker Leg",
+    "translation": "Large Walker Leg",
+    "type": "WalkerLeg_T3_C",
+    "experiencieReward": 150,
+    "stackSize": 2,
+    "weight": 30
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 25,
+            "name": "Redwood Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Large Walker Wing",
+    "translation": "Large Walker Wing",
+    "type": "WalkerWing_T3_C",
+    "stackSize": 4,
+    "weight": 20
   },
   {
     "category": "Containers",
@@ -21212,8 +21365,8 @@
       "impact": 80,
       "stability": 65,
       "weaponLength": 115,
-      "damage": 50,
-      "penetration": 10
+      "damage": 67,
+      "penetration": 25
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -21766,6 +21919,55 @@
     },
     "onlyDevs": true,
     "unlockable": "Stinger_T2"
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 26,
+            "name": "Wood"
+          },
+          {
+            "count": 8,
+            "name": "Earth Wax"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Walker Leg",
+    "translation": "Medium Walker Leg",
+    "type": "WalkerLeg_T2_C",
+    "experiencieReward": 50,
+    "stackSize": 2,
+    "weight": 20
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 15,
+            "name": "Triple Stitch Fabric"
+          }
+        ]
+      }
+    ],
+    "name": "Medium Walker Wing",
+    "translation": "Medium Walker Wing",
+    "type": "WalkerWing_T2_C",
+    "stackSize": 4,
+    "weight": 10
   },
   {
     "category": "Containers",
@@ -22352,16 +22554,8 @@
       {
         "ingredients": [
           {
-            "count": 55,
-            "name": "Wood"
-          },
-          {
-            "count": 12,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 4,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Medium Walker Leg"
           }
         ]
       }
@@ -22386,20 +22580,8 @@
       {
         "ingredients": [
           {
-            "count": 42,
-            "name": "Wood"
-          },
-          {
-            "count": 50,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 25,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 4,
-            "name": "Bone Glue"
+            "count": 1,
+            "name": "Armored Medium Walker Leg"
           }
         ]
       }
@@ -23076,24 +23258,8 @@
       {
         "ingredients": [
           {
-            "count": 35,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 4,
-            "name": "Rope"
-          },
-          {
-            "count": 4,
-            "name": "Hide"
-          },
-          {
             "count": 1,
-            "name": "Wooden Gear"
+            "name": "Medium Walker Wing"
           }
         ]
       }
@@ -23118,24 +23284,8 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 5,
-            "name": "Rope"
-          },
-          {
             "count": 1,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 2,
-            "name": "Hide"
-          },
-          {
-            "count": 4,
-            "name": "Earth Wax"
+            "name": "Medium Walker Wing"
           }
         ]
       }
@@ -23160,24 +23310,8 @@
       {
         "ingredients": [
           {
-            "count": 22,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 12,
-            "name": "Rope"
-          },
-          {
-            "count": 10,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 2,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 25,
-            "name": "Fiber Weave"
+            "count": 1,
+            "name": "Advanced Medium Walker Wing"
           }
         ]
       }
@@ -23202,24 +23336,8 @@
       {
         "ingredients": [
           {
-            "count": 17,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 33,
-            "name": "Hide"
-          },
-          {
-            "count": 7,
-            "name": "Rope"
-          },
-          {
-            "count": 26,
-            "name": "Bone Splinter"
+            "count": 1,
+            "name": "Advanced Medium Walker Wing"
           }
         ]
       }
@@ -23244,24 +23362,8 @@
       {
         "ingredients": [
           {
-            "count": 75,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 25,
-            "name": "Rope"
-          },
-          {
-            "count": 15,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 35,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 0,
-            "name": "Wooden Gear"
+            "count": 1,
+            "name": "Advanced Medium Walker Wing"
           }
         ]
       }
@@ -23286,24 +23388,8 @@
       {
         "ingredients": [
           {
-            "count": 14,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 7,
-            "name": "Rope"
-          },
-          {
             "count": 1,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 5,
-            "name": "Hide"
-          },
-          {
-            "count": 1,
-            "name": "Earth Wax"
+            "name": "Improved Medium Walker Wing"
           }
         ]
       }
@@ -23328,20 +23414,8 @@
       {
         "ingredients": [
           {
-            "count": 6,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 6,
-            "name": "Rope"
-          },
-          {
-            "count": 2,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 4,
-            "name": "Hide"
+            "count": 1,
+            "name": "Improved Medium Walker Wing"
           }
         ]
       }
@@ -23592,8 +23666,8 @@
       "impact": 70,
       "stability": 60,
       "weaponLength": 65,
-      "damage": 70,
-      "penetration": 10
+      "damage": 65,
+      "penetration": 40
     },
     "toolInfo": [
       {
@@ -23639,8 +23713,8 @@
       "impact": 15,
       "stability": 5,
       "weaponLength": 55,
-      "damage": 70,
-      "penetration": 10
+      "damage": 62,
+      "penetration": 40
     },
     "toolInfo": [
       {
@@ -23686,8 +23760,8 @@
       "impact": 40,
       "stability": 65,
       "weaponLength": 97,
-      "damage": 70,
-      "penetration": 10
+      "damage": 66,
+      "penetration": 40
     },
     "toolInfo": [
       {
@@ -23733,8 +23807,8 @@
       "impact": 66,
       "stability": 35,
       "weaponLength": 62,
-      "damage": 70,
-      "penetration": 10
+      "damage": 66,
+      "penetration": 45
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -23773,8 +23847,8 @@
       "impact": 50,
       "stability": 40,
       "weaponLength": 60,
-      "damage": 70,
-      "penetration": 10
+      "damage": 61,
+      "penetration": 40
     },
     "toolInfo": [
       {
@@ -23860,8 +23934,8 @@
     "durability": 740,
     "weaponInfo": {
       "weaponLength": 93,
-      "damage": 58,
-      "penetration": 20
+      "damage": 75,
+      "penetration": 25
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -23901,12 +23975,13 @@
       "impact": 90,
       "stability": 80,
       "weaponLength": 88,
-      "damage": 70,
-      "penetration": 10
+      "damage": 71,
+      "penetration": 45
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -23935,15 +24010,19 @@
     "type": "NibirianBolt_C",
     "description": "Ammo for ballista. During an eclipse, these bolts will light up the sky and make enemies glow from the inside out.",
     "projectileDamage": {
-      "damage": 220
+      "damage": 185,
+      "penetration": 10
     },
     "experiencieReward": 100,
+    "stackSize": 20,
+    "weight": 0.3,
     "toolInfo": [
       {
         "toolType": "BallistaHarpoon",
         "tier": 5
       }
-    ]
+    ],
+    "damageType": "'BoltDamage_C'"
   },
   {
     "category": "Armors",
@@ -23973,8 +24052,9 @@
     "weight": 14.8,
     "durability": 330,
     "armorInfo": {
-      "absorbing": 25,
-      "speedReduction": 15
+      "absorbing": 27,
+      "reduction": 9,
+      "speedReduction": 12
     }
   },
   {
@@ -24005,12 +24085,13 @@
     "weight": 4,
     "durability": 330,
     "armorInfo": {
-      "absorbing": 23,
+      "absorbing": 11,
       "reduction": 4,
-      "speedReduction": 5
+      "speedReduction": 3
     }
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -24034,12 +24115,22 @@
     ],
     "name": "Nibirian Dart",
     "parent": "IronDart",
+    "trade_price": 1.5,
     "translation": "Nibirian Dart",
     "type": "NibirianDart_C",
+    "description": "Ammo for Stingers, Spinners and Repeater.  Best suited for hunting Phemke, Nurrs and unarmored Nomads.",
     "projectileDamage": {
-      "damage": 25
+      "damage": 24.5
     },
-    "stackSize": 999
+    "stackSize": 999,
+    "weight": 0.1,
+    "toolInfo": [
+      {
+        "toolType": "RepeaterBolt",
+        "tier": 4
+      }
+    ],
+    "damageType": "'DartDamage_C'"
   },
   {
     "category": "Armors",
@@ -24069,12 +24160,13 @@
     "weight": 5,
     "durability": 330,
     "armorInfo": {
-      "absorbing": 23,
-      "reduction": 5,
-      "speedReduction": 5
+      "absorbing": 11,
+      "reduction": 4,
+      "speedReduction": 3
     }
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -24093,8 +24185,23 @@
     ],
     "name": "Nibirian Harpoon",
     "parent": "Nibiran-tipped Bolt",
+    "trade_price": 30.6,
     "translation": "Nibirian Harpoon",
-    "type": "NibirianHarpoon_C"
+    "type": "NibirianHarpoon_C",
+    "description": "Ammo for Ballista. The fishing titanium head refuses to come unhooked. A durable tether is hard to snap.",
+    "projectileDamage": {
+      "damage": 25
+    },
+    "experiencieReward": 75,
+    "stackSize": 20,
+    "weight": 0.8,
+    "toolInfo": [
+      {
+        "toolType": "BallistaHarpoon",
+        "tier": 4
+      }
+    ],
+    "damageType": "'HarpoonDamage_C'"
   },
   {
     "category": "Resources",
@@ -24667,8 +24774,8 @@
       "impact": 40,
       "stability": 35,
       "weaponLength": 73,
-      "damage": 40,
-      "penetration": 10
+      "damage": 45,
+      "penetration": 15
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -24825,6 +24932,7 @@
     "unlockable": "Obsidian Pot"
   },
   {
+    "category": "Ammo",
     "crafting": [
       {
         "ingredients": [
@@ -24847,12 +24955,26 @@
     ],
     "name": "Obsidian Rok",
     "parent": "Ceramic Rok",
+    "trade_price": 5.2,
     "translation": "Obsidian Rok",
     "type": "ObsidianRok_C",
     "description": "Ammo for the Rokker. A solid chunk of ceramic fashioned into a terrifying projectile.",
     "projectileDamage": {
-      "damage": 500
-    }
+      "damage": 500,
+      "penetration": 10,
+      "effectivenessVsSoak": 70,
+      "effectivenessVsReduce": 70
+    },
+    "experiencieReward": 1,
+    "stackSize": 10,
+    "weight": 5,
+    "toolInfo": [
+      {
+        "toolType": "Scattershot",
+        "tier": 1
+      }
+    ],
+    "damageType": "'RokDamage_C'"
   },
   {
     "category": "OkkamStatue",
@@ -25004,6 +25126,19 @@
       "absorbing": 6,
       "reduction": 1
     }
+  },
+  {
+    "category": "Equipment",
+    "name": "Oud",
+    "translation": "Oud",
+    "type": "MusicalInstrumentOud_C",
+    "weight": 3,
+    "durability": 150,
+    "weaponInfo": {
+      "damage": 10,
+      "penetration": 10
+    },
+    "damageType": "'MeleeBluntWeakDamage_C'"
   },
   {
     "category": "Resources",
@@ -25172,8 +25307,8 @@
     "durability": 510,
     "weaponInfo": {
       "weaponLength": 142,
-      "damage": 40,
-      "penetration": 20
+      "damage": 69,
+      "penetration": 15
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -25258,16 +25393,8 @@
       {
         "ingredients": [
           {
-            "count": 650,
-            "name": "Wood"
-          },
-          {
-            "count": 86,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 93,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Capital Walker Leg"
           }
         ]
       }
@@ -25292,32 +25419,8 @@
       {
         "ingredients": [
           {
-            "count": 620,
-            "name": "Wood"
-          },
-          {
-            "count": 276,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 49,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 16,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 185,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 65,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 8,
-            "name": "Tar"
+            "count": 1,
+            "name": "Armored Capital Walker Leg"
           }
         ]
       }
@@ -25342,20 +25445,8 @@
       {
         "ingredients": [
           {
-            "count": 70,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 18,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 12,
-            "name": "Tar"
-          },
-          {
-            "count": 40,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Heavy Capital Walker Leg"
           }
         ]
       }
@@ -26049,12 +26140,8 @@
       {
         "ingredients": [
           {
-            "count": 130,
-            "name": "Wood"
-          },
-          {
-            "count": 63,
-            "name": "Fiber Weave"
+            "count": 1,
+            "name": "Capital Walker Wing"
           }
         ]
       }
@@ -26078,20 +26165,8 @@
       {
         "ingredients": [
           {
-            "count": 91,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 32,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 16,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 25,
-            "name": "Redwood Wood"
+            "count": 1,
+            "name": "Improved Capital Walker Wing"
           }
         ]
       }
@@ -26116,16 +26191,8 @@
       {
         "ingredients": [
           {
-            "count": 88,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 75,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 142,
-            "name": "Hide"
+            "count": 1,
+            "name": "Flotillan Capital Walker Wing"
           }
         ]
       }
@@ -26150,16 +26217,8 @@
       {
         "ingredients": [
           {
-            "count": 121,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 14,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 83,
-            "name": "Hide"
+            "count": 1,
+            "name": "Advanced Capital Walker Wing"
           }
         ]
       }
@@ -26184,20 +26243,8 @@
       {
         "ingredients": [
           {
-            "count": 92,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 130,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 100,
-            "name": "Hide"
-          },
-          {
-            "count": 20,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Advanced Capital Walker Wing"
           }
         ]
       }
@@ -26208,7 +26255,7 @@
     "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance.",
     "weight": 9.75,
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 12600
     },
     "unlockable": "WalkerPartsAdvanced_T4",
@@ -26222,20 +26269,8 @@
       {
         "ingredients": [
           {
-            "count": 80,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 70,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 80,
-            "name": "Hide"
-          },
-          {
-            "count": 10,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Advanced Capital Walker Wing"
           }
         ]
       }
@@ -26246,7 +26281,7 @@
     "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement.",
     "weight": 9.75,
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 19200
     },
     "unlockable": "WalkerPartsAdvanced_T4",
@@ -26260,20 +26295,8 @@
       {
         "ingredients": [
           {
-            "count": 91,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 79,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 137,
-            "name": "Hide"
-          },
-          {
-            "count": 29,
-            "name": "Iron Ore"
+            "count": 1,
+            "name": "Improved Capital Walker Wing"
           }
         ]
       }
@@ -26298,16 +26321,8 @@
       {
         "ingredients": [
           {
-            "count": 65,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 31,
-            "name": "Rope"
-          },
-          {
-            "count": 8,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Improved Capital Walker Wing"
           }
         ]
       }
@@ -26734,16 +26749,8 @@
       {
         "ingredients": [
           {
-            "count": 750,
-            "name": "Wood"
-          },
-          {
-            "count": 93,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 114,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Medium Walker Leg"
           }
         ]
       }
@@ -26768,20 +26775,8 @@
       {
         "ingredients": [
           {
-            "count": 408,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 436,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 168,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 12,
-            "name": "Tar"
+            "count": 1,
+            "name": "Armored Large Walker Leg"
           }
         ]
       }
@@ -26806,24 +26801,8 @@
       {
         "ingredients": [
           {
-            "count": 207,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 80,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 14,
-            "name": "Tar"
-          },
-          {
-            "count": 7,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 15,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Heavy Capital Walker Leg"
           }
         ]
       }
@@ -28026,7 +28005,7 @@
       "stability": 40,
       "weaponLength": 75,
       "damage": 45,
-      "penetration": 10
+      "penetration": 15
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -28114,7 +28093,7 @@
       "stability": 65,
       "weaponLength": 80,
       "damage": 40,
-      "penetration": 10
+      "penetration": 15
     },
     "damageType": "'MeleeAxeDamage_C'"
   },
@@ -28152,8 +28131,8 @@
     "durability": 1000,
     "weaponInfo": {
       "weaponLength": 145,
-      "damage": 32,
-      "penetration": 20
+      "damage": 45,
+      "penetration": 5
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -28246,6 +28225,7 @@
     "weight": 3.7,
     "durability": 420,
     "armorInfo": {
+      "absorbing": 3,
       "reduction": 9,
       "speedReduction": 3
     }
@@ -28282,7 +28262,8 @@
     "weight": 2,
     "durability": 420,
     "armorInfo": {
-      "reduction": 6,
+      "absorbing": 1,
+      "reduction": 5,
       "speedReduction": 1
     }
   },
@@ -28705,6 +28686,34 @@
         "output": 100,
         "station": "Artisan Fiberworking Station",
         "time": 1700
+      },
+      {
+        "ingredients": [
+          {
+            "count": 30,
+            "name": "Fiber"
+          },
+          {
+            "count": 5,
+            "name": "Rupu Vine"
+          }
+        ],
+        "station": "Advanced Fiberworking Station",
+        "time": 20
+      },
+      {
+        "ingredients": [
+          {
+            "count": 30,
+            "name": "Fiber"
+          },
+          {
+            "count": 5,
+            "name": "Rupu Vine"
+          }
+        ],
+        "station": "Artisan Fiberworking Station",
+        "time": 20
       }
     ],
     "name": "Rope",
@@ -28716,6 +28725,19 @@
     "experiencieReward": 4,
     "stackSize": 100,
     "weight": 0.25
+  },
+  {
+    "category": "Equipment",
+    "name": "Rubab",
+    "translation": "Rubab",
+    "type": "MusicalInstrumentRubab_C",
+    "weight": 2,
+    "durability": 150,
+    "weaponInfo": {
+      "damage": 10,
+      "penetration": 10
+    },
+    "damageType": "'MeleeBluntWeakDamage_C'"
   },
   {
     "category": "Resources",
@@ -29241,7 +29263,7 @@
     "weaponInfo": {
       "weaponLength": 84,
       "damage": 52,
-      "penetration": 10
+      "penetration": 15
     },
     "wikiVisibility": false,
     "damageType": "'RupuMeleeBluntDamage_C'"
@@ -29492,19 +29514,15 @@
       {
         "ingredients": [
           {
-            "count": 3,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 15,
+            "count": 50,
             "name": "Rupu Pelt"
           },
           {
-            "count": 15,
+            "count": 3,
             "name": "Rope"
           },
           {
-            "count": 45,
+            "count": 10,
             "name": "Wood"
           }
         ]
@@ -29518,7 +29536,8 @@
     "experiencieReward": 44,
     "weight": 12.71,
     "structureInfo": {
-      "hp": 3520
+      "type": "Medium",
+      "hp": 600
     },
     "unlockable": "RupuSling"
   },
@@ -29555,7 +29574,7 @@
     "weaponInfo": {
       "weaponLength": 92,
       "damage": 38,
-      "penetration": 10
+      "penetration": 15
     },
     "wikiVisibility": false,
     "damageType": "'RupuMeleeBluntDamage_C'"
@@ -30313,16 +30332,8 @@
       {
         "ingredients": [
           {
-            "count": 900,
-            "name": "Wood"
-          },
-          {
-            "count": 112,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 136,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Capital Walker Leg"
           }
         ]
       }
@@ -30347,20 +30358,8 @@
       {
         "ingredients": [
           {
-            "count": 370,
-            "name": "Wood"
-          },
-          {
-            "count": 392,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 130,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 16,
-            "name": "Tar"
+            "count": 1,
+            "name": "Armored Capital Walker Leg"
           }
         ]
       }
@@ -30385,20 +30384,8 @@
       {
         "ingredients": [
           {
-            "count": 100,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 40,
-            "name": "Tar"
-          },
-          {
-            "count": 80,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 70,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Armored Capital Walker Leg"
           }
         ]
       }
@@ -30459,23 +30446,25 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Iron Ore"
+            "count": 75,
+            "name": "Lightwood"
           },
           {
             "count": 50,
             "name": "Hollowbone"
           },
           {
-            "count": 75,
-            "name": "Lightwood"
+            "count": 25,
+            "name": "Iron Ore"
           }
         ]
       }
     ],
     "name": "Schmetterling Walker Upgrade Cargo Tier 1",
     "type": "Schmetterling Walker Upgrade Cargo Tier 1",
-    "upgradeInfo": {}
+    "upgradeInfo": {
+      "slots": 20
+    }
   },
   {
     "category": "Upgrades",
@@ -30483,16 +30472,16 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Iron Ore"
+            "count": 75,
+            "name": "Lightwood"
           },
           {
             "count": 50,
             "name": "Hollowbone"
           },
           {
-            "count": 75,
-            "name": "Lightwood"
+            "count": 25,
+            "name": "Iron Ore"
           }
         ]
       }
@@ -30507,16 +30496,16 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Iron Ore"
+            "count": 75,
+            "name": "Lightwood"
           },
           {
             "count": 50,
             "name": "Hollowbone"
           },
           {
-            "count": 75,
-            "name": "Lightwood"
+            "count": 25,
+            "name": "Iron Ore"
           }
         ]
       }
@@ -30531,16 +30520,16 @@
       {
         "ingredients": [
           {
-            "count": 25,
-            "name": "Iron Ore"
+            "count": 75,
+            "name": "Lightwood"
           },
           {
             "count": 50,
             "name": "Hollowbone"
           },
           {
-            "count": 75,
-            "name": "Lightwood"
+            "count": 25,
+            "name": "Iron Ore"
           }
         ]
       }
@@ -30555,16 +30544,16 @@
       {
         "ingredients": [
           {
-            "count": 38,
-            "name": "Rubber Block"
+            "count": 63,
+            "name": "Iron Ingot"
           },
           {
             "count": 45,
             "name": "Shardrock"
           },
           {
-            "count": 63,
-            "name": "Iron Ingot"
+            "count": 38,
+            "name": "Rubber Block"
           }
         ]
       }
@@ -30581,16 +30570,16 @@
       {
         "ingredients": [
           {
-            "count": 38,
-            "name": "Rubber Block"
+            "count": 63,
+            "name": "Iron Ingot"
           },
           {
             "count": 45,
             "name": "Shardrock"
           },
           {
-            "count": 63,
-            "name": "Iron Ingot"
+            "count": 38,
+            "name": "Rubber Block"
           }
         ]
       }
@@ -30607,16 +30596,16 @@
       {
         "ingredients": [
           {
-            "count": 38,
-            "name": "Rubber Block"
+            "count": 63,
+            "name": "Iron Ingot"
           },
           {
             "count": 45,
             "name": "Shardrock"
           },
           {
-            "count": 63,
-            "name": "Iron Ingot"
+            "count": 38,
+            "name": "Rubber Block"
           }
         ]
       }
@@ -30637,12 +30626,12 @@
             "name": "Iron Ingot"
           },
           {
-            "count": 38,
-            "name": "Rubber Block"
-          },
-          {
             "count": 45,
             "name": "Shardrock"
+          },
+          {
+            "count": 38,
+            "name": "Rubber Block"
           }
         ]
       }
@@ -30657,16 +30646,16 @@
       {
         "ingredients": [
           {
-            "count": 20,
-            "name": "Nomad Cloth"
+            "count": 55,
+            "name": "Lightwood"
           },
           {
             "count": 45,
             "name": "Iron Nails"
           },
           {
-            "count": 55,
-            "name": "Lightwood"
+            "count": 20,
+            "name": "Nomad Cloth"
           }
         ]
       }
@@ -30674,7 +30663,33 @@
     "name": "Schmetterling Walker Upgrade Gear Tier 1",
     "type": "Schmetterling Walker Upgrade Gear Tier 1",
     "upgradeInfo": {
-      "slots": 5
+      "slots": 10
+    }
+  },
+  {
+    "category": "Upgrades",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 55,
+            "name": "Lightwood"
+          },
+          {
+            "count": 45,
+            "name": "Iron Nails"
+          },
+          {
+            "count": 20,
+            "name": "Nomad Cloth"
+          }
+        ]
+      }
+    ],
+    "name": "Schmetterling Walker Upgrade Gear Tier 2",
+    "type": "Schmetterling Walker Upgrade Gear Tier 2",
+    "upgradeInfo": {
+      "slots": 15
     }
   },
   {
@@ -30687,43 +30702,21 @@
             "name": "Nomad Cloth"
           },
           {
-            "count": 45,
-            "name": "Iron Nails"
-          },
-          {
             "count": 55,
             "name": "Lightwood"
-          }
-        ]
-      }
-    ],
-    "name": "Schmetterling Walker Upgrade Gear Tier 2",
-    "type": "Schmetterling Walker Upgrade Gear Tier 2",
-    "upgradeInfo": {}
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 20,
-            "name": "Nomad Cloth"
           },
           {
             "count": 45,
             "name": "Iron Nails"
-          },
-          {
-            "count": 55,
-            "name": "Lightwood"
           }
         ]
       }
     ],
     "name": "Schmetterling Walker Upgrade Gear Tier 3",
     "type": "Schmetterling Walker Upgrade Gear Tier 3",
-    "upgradeInfo": {}
+    "upgradeInfo": {
+      "slots": 20
+    }
   },
   {
     "category": "Upgrades",
@@ -30735,19 +30728,21 @@
             "name": "Nomad Cloth"
           },
           {
-            "count": 45,
-            "name": "Iron Nails"
-          },
-          {
             "count": 55,
             "name": "Lightwood"
+          },
+          {
+            "count": 45,
+            "name": "Iron Nails"
           }
         ]
       }
     ],
     "name": "Schmetterling Walker Upgrade Gear Tier 4",
     "type": "Schmetterling Walker Upgrade Gear Tier 4",
-    "upgradeInfo": {}
+    "upgradeInfo": {
+      "slots": 30
+    }
   },
   {
     "category": "Upgrades",
@@ -30755,16 +30750,16 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Reinforced Plank"
+            "count": 5,
+            "name": "Iron Gear"
           },
           {
             "count": 38,
             "name": "Rubber Block"
           },
           {
-            "count": 5,
-            "name": "Iron Gear"
+            "count": 24,
+            "name": "Reinforced Plank"
           }
         ]
       }
@@ -30779,16 +30774,16 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Reinforced Plank"
+            "count": 5,
+            "name": "Iron Gear"
           },
           {
             "count": 38,
             "name": "Rubber Block"
           },
           {
-            "count": 5,
-            "name": "Iron Gear"
+            "count": 24,
+            "name": "Reinforced Plank"
           }
         ]
       }
@@ -30807,12 +30802,12 @@
             "name": "Reinforced Plank"
           },
           {
-            "count": 38,
-            "name": "Rubber Block"
-          },
-          {
             "count": 5,
             "name": "Iron Gear"
+          },
+          {
+            "count": 38,
+            "name": "Rubber Block"
           }
         ]
       }
@@ -30831,12 +30826,12 @@
             "name": "Reinforced Plank"
           },
           {
-            "count": 38,
-            "name": "Rubber Block"
-          },
-          {
             "count": 5,
             "name": "Iron Gear"
+          },
+          {
+            "count": 38,
+            "name": "Rubber Block"
           }
         ]
       }
@@ -30875,16 +30870,16 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Shardrock"
+            "count": 25,
+            "name": "Tar"
           },
           {
             "count": 20,
             "name": "Reinforced Plank"
           },
           {
-            "count": 25,
-            "name": "Tar"
+            "count": 24,
+            "name": "Shardrock"
           }
         ]
       }
@@ -30892,7 +30887,7 @@
     "name": "Schmetterling Walker Upgrade Torque Tier 1",
     "type": "Schmetterling Walker Upgrade Torque Tier 1",
     "upgradeInfo": {
-      "stackSize": 800
+      "stackSize": 2000
     }
   },
   {
@@ -30901,48 +30896,22 @@
       {
         "ingredients": [
           {
-            "count": 24,
-            "name": "Shardrock"
+            "count": 25,
+            "name": "Tar"
           },
           {
             "count": 20,
             "name": "Reinforced Plank"
           },
           {
-            "count": 25,
-            "name": "Tar"
+            "count": 24,
+            "name": "Shardrock"
           }
         ]
       }
     ],
     "name": "Schmetterling Walker Upgrade Torque Tier 2",
     "type": "Schmetterling Walker Upgrade Torque Tier 2",
-    "upgradeInfo": {
-      "stackSize": 1500
-    }
-  },
-  {
-    "category": "Upgrades",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "count": 24,
-            "name": "Shardrock"
-          },
-          {
-            "count": 20,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 25,
-            "name": "Tar"
-          }
-        ]
-      }
-    ],
-    "name": "Schmetterling Walker Upgrade Torque Tier 3",
-    "type": "Schmetterling Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSize": 2500
     }
@@ -30953,22 +30922,22 @@
       {
         "ingredients": [
           {
+            "count": 25,
+            "name": "Tar"
+          },
+          {
             "count": 20,
             "name": "Reinforced Plank"
           },
           {
             "count": 24,
             "name": "Shardrock"
-          },
-          {
-            "count": 25,
-            "name": "Tar"
           }
         ]
       }
     ],
-    "name": "Schmetterling Walker Upgrade Torque Tier 4",
-    "type": "Schmetterling Walker Upgrade Torque Tier 4",
+    "name": "Schmetterling Walker Upgrade Torque Tier 3",
+    "type": "Schmetterling Walker Upgrade Torque Tier 3",
     "upgradeInfo": {
       "stackSize": 4000
     }
@@ -30979,16 +30948,42 @@
       {
         "ingredients": [
           {
+            "count": 20,
+            "name": "Reinforced Plank"
+          },
+          {
             "count": 25,
+            "name": "Tar"
+          },
+          {
+            "count": 24,
             "name": "Shardrock"
+          }
+        ]
+      }
+    ],
+    "name": "Schmetterling Walker Upgrade Torque Tier 4",
+    "type": "Schmetterling Walker Upgrade Torque Tier 4",
+    "upgradeInfo": {
+      "stackSize": 6500
+    }
+  },
+  {
+    "category": "Upgrades",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 15,
+            "name": "Rubber Block"
           },
           {
             "count": 12,
             "name": "Eucalyptus Leaf"
           },
           {
-            "count": 15,
-            "name": "Rubber Block"
+            "count": 25,
+            "name": "Shardrock"
           },
           {
             "count": 8,
@@ -31009,20 +31004,20 @@
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "Charcoal"
-          },
-          {
-            "count": 25,
-            "name": "Shardrock"
+            "count": 15,
+            "name": "Rubber Block"
           },
           {
             "count": 12,
             "name": "Eucalyptus Leaf"
           },
           {
-            "count": 15,
-            "name": "Rubber Block"
+            "count": 25,
+            "name": "Shardrock"
+          },
+          {
+            "count": 8,
+            "name": "Charcoal"
           }
         ]
       }
@@ -31039,20 +31034,20 @@
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "Charcoal"
-          },
-          {
-            "count": 25,
-            "name": "Shardrock"
+            "count": 15,
+            "name": "Rubber Block"
           },
           {
             "count": 12,
             "name": "Eucalyptus Leaf"
           },
           {
-            "count": 15,
-            "name": "Rubber Block"
+            "count": 25,
+            "name": "Shardrock"
+          },
+          {
+            "count": 8,
+            "name": "Charcoal"
           }
         ]
       }
@@ -31069,20 +31064,20 @@
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "Charcoal"
-          },
-          {
-            "count": 25,
-            "name": "Shardrock"
+            "count": 15,
+            "name": "Rubber Block"
           },
           {
             "count": 12,
             "name": "Eucalyptus Leaf"
           },
           {
-            "count": 15,
-            "name": "Rubber Block"
+            "count": 25,
+            "name": "Shardrock"
+          },
+          {
+            "count": 8,
+            "name": "Charcoal"
           }
         ]
       }
@@ -31099,16 +31094,8 @@
       {
         "ingredients": [
           {
-            "count": 300,
-            "name": "Wood"
-          },
-          {
-            "count": 26,
-            "name": "Rope"
-          },
-          {
-            "count": 13,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Capital Walker Wing"
           }
         ]
       }
@@ -31133,20 +31120,8 @@
       {
         "ingredients": [
           {
-            "count": 220,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 28,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 30,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 48,
-            "name": "Redwood Wood"
+            "count": 0,
+            "name": "Improved Capital Walker Wing"
           }
         ]
       }
@@ -31171,16 +31146,8 @@
       {
         "ingredients": [
           {
-            "count": 180,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 105,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 10,
-            "name": "Iron Ingot"
+            "count": 1,
+            "name": "Flotillan Capital Walker Wing"
           }
         ]
       }
@@ -31205,16 +31172,8 @@
       {
         "ingredients": [
           {
-            "count": 280,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 32,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 32,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Advanced Capital Walker Wing"
           }
         ]
       }
@@ -31239,20 +31198,8 @@
       {
         "ingredients": [
           {
-            "count": 200,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 180,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 40,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 22,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Advanced Capital Walker Wing"
           }
         ]
       }
@@ -31263,7 +31210,7 @@
     "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance.",
     "weight": 9.75,
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 13600
     },
     "unlockable": "WalkerPartsAdvanced_T4",
@@ -31277,20 +31224,8 @@
       {
         "ingredients": [
           {
-            "count": 182,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 130,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 10,
-            "name": "Iron Ore"
-          },
-          {
-            "count": 10,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Advanced Capital Walker Wing"
           }
         ]
       }
@@ -31301,7 +31236,7 @@
     "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement.",
     "weight": 9.75,
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 18700
     },
     "unlockable": "WalkerPartsAdvanced_T4",
@@ -31315,20 +31250,8 @@
       {
         "ingredients": [
           {
-            "count": 200,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 100,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 14,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 30,
-            "name": "Redwood Wood"
+            "count": 1,
+            "name": "Improved Capital Walker Wing"
           }
         ]
       }
@@ -31353,16 +31276,8 @@
       {
         "ingredients": [
           {
-            "count": 140,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 16,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 30,
-            "name": "Hide"
+            "count": 1,
+            "name": "Improved Capital Walker Wing"
           }
         ]
       }
@@ -31694,8 +31609,8 @@
       "impact": 45,
       "stability": 45,
       "weaponLength": 50,
-      "damage": 50,
-      "penetration": 10
+      "damage": 59,
+      "penetration": 30
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -31736,8 +31651,8 @@
       "impact": 45,
       "stability": 40,
       "weaponLength": 67,
-      "damage": 50,
-      "penetration": 10
+      "damage": 62,
+      "penetration": 25
     },
     "toolInfo": [
       {
@@ -31809,16 +31724,8 @@
       {
         "ingredients": [
           {
-            "count": 280,
-            "name": "Wood"
-          },
-          {
-            "count": 36,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 42,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Large Walker Leg"
           }
         ]
       }
@@ -31843,20 +31750,8 @@
       {
         "ingredients": [
           {
-            "count": 1470,
-            "name": "Wood"
-          },
-          {
-            "count": 183,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 102,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 33,
-            "name": "Bone Glue"
+            "count": 1,
+            "name": "Armored Large Walker Leg"
           }
         ]
       }
@@ -31881,16 +31776,8 @@
       {
         "ingredients": [
           {
-            "count": 60,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 10,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 5,
-            "name": "Tar"
+            "count": 1,
+            "name": "Heavy Large Walker Leg"
           }
         ]
       }
@@ -32281,8 +32168,8 @@
       "impact": 40,
       "stability": 55,
       "weaponLength": 99,
-      "damage": 50,
-      "penetration": 10
+      "damage": 65,
+      "penetration": 25
     },
     "toolInfo": [
       {
@@ -32667,10 +32554,55 @@
     "upgradeInfo": {}
   },
   {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 5,
+            "name": "Wood Shaft"
+          }
+        ]
+      }
+    ],
+    "name": "Small Walker Leg",
+    "translation": "Small Walker Leg",
+    "type": "WalkerLeg_T1_C",
+    "experiencieReward": 25,
+    "stackSize": 2,
+    "weight": 10
+  },
+  {
     "name": "Small Walker Legs (1 of 2)",
     "translation": "Small Walker Legs",
     "type": "SmallWalkerLegs_UI_C",
     "onlyDevs": true
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 15,
+            "name": "Fiber Weave"
+          }
+        ]
+      }
+    ],
+    "name": "Small Walker Wing",
+    "translation": "Small Walker Wing",
+    "type": "WalkerWing_T1_C",
+    "stackSize": 4,
+    "weight": 5
   },
   {
     "name": "Small Walker Wings (1 of 2)",
@@ -33787,14 +33719,15 @@
       {
         "ingredients": [
           {
-            "count": 1,
+            "count": 2,
             "name": "Fiber Weave"
           },
           {
             "count": 1,
             "name": "Aloe Gel"
           }
-        ]
+        ],
+        "output": 2
       }
     ],
     "name": "Sterile Bandage",
@@ -33861,12 +33794,8 @@
       {
         "ingredients": [
           {
-            "count": 43,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Wood Shaft"
+            "count": 1,
+            "name": "Medium Walker Leg"
           }
         ]
       }
@@ -33891,20 +33820,8 @@
       {
         "ingredients": [
           {
-            "count": 53,
-            "name": "Wood"
-          },
-          {
-            "count": 60,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 36,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 6,
-            "name": "Bone Glue"
+            "count": 1,
+            "name": "Armored Medium Walker Leg"
           }
         ]
       }
@@ -34587,20 +34504,8 @@
       {
         "ingredients": [
           {
-            "count": 4,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 3,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 7,
-            "name": "Rupu Vine"
-          },
-          {
             "count": 1,
-            "name": "Wooden Gear"
+            "name": "Medium Walker Wing"
           }
         ]
       }
@@ -34625,24 +34530,8 @@
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 12,
-            "name": "Rupu Vine"
-          },
-          {
-            "count": 11,
-            "name": "Bone Splinter"
-          },
-          {
             "count": 1,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 2,
-            "name": "Earth Wax"
+            "name": "Improved Medium Walker Wing"
           }
         ]
       }
@@ -34667,24 +34556,8 @@
       {
         "ingredients": [
           {
-            "count": 14,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 2,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 7,
-            "name": "Earth Wax"
-          },
-          {
-            "count": 12,
-            "name": "Rope"
-          },
-          {
-            "count": 24,
-            "name": "Fiber Weave"
+            "count": 1,
+            "name": "Advanced Medium Walker Wing"
           }
         ]
       }
@@ -34709,24 +34582,8 @@
       {
         "ingredients": [
           {
-            "count": 11,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 4,
-            "name": "Rope"
-          },
-          {
-            "count": 18,
-            "name": "Bone Splinter"
-          },
-          {
-            "count": 2,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 24,
-            "name": "Hide"
+            "count": 1,
+            "name": "Advanced Medium Walker Wing"
           }
         ]
       }
@@ -34751,24 +34608,8 @@
       {
         "ingredients": [
           {
-            "count": 19,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 3,
-            "name": "Rope"
-          },
-          {
-            "count": 26,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 21,
-            "name": "Leather"
-          },
-          {
-            "count": 2,
-            "name": "Wooden Gear"
+            "count": 1,
+            "name": "Advanced Medium Walker Wing"
           }
         ]
       }
@@ -34793,24 +34634,8 @@
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 8,
-            "name": "Rupu Vine"
-          },
-          {
             "count": 1,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 6,
-            "name": "Hide"
-          },
-          {
-            "count": 6,
-            "name": "Earth Wax"
+            "name": "Improved Medium Walker Wing"
           }
         ]
       }
@@ -34835,24 +34660,8 @@
       {
         "ingredients": [
           {
-            "count": 14,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 4,
-            "name": "Rope"
-          },
-          {
-            "count": 2,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 8,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 6,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Improved Medium Walker Wing"
           }
         ]
       }
@@ -35625,6 +35434,19 @@
     "whereToFarm": "Can be rendered using a purification station."
   },
   {
+    "category": "Equipment",
+    "name": "Tambourine",
+    "translation": "Tambourine",
+    "type": "MusicalInstrumentTambourine_C",
+    "weight": 0.4,
+    "durability": 150,
+    "weaponInfo": {
+      "damage": 10,
+      "penetration": 10
+    },
+    "damageType": "'MeleeBluntWeakDamage_C'"
+  },
+  {
     "category": "Liquids",
     "crafting": [
       {
@@ -36050,16 +35872,8 @@
       {
         "ingredients": [
           {
-            "count": 900,
-            "name": "Wood"
-          },
-          {
-            "count": 112,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 136,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Capital Walker Leg"
           }
         ]
       }
@@ -36084,20 +35898,8 @@
       {
         "ingredients": [
           {
-            "count": 370,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 392,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 130,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 16,
-            "name": "Tar"
+            "count": 1,
+            "name": "Armored Capital Walker Leg"
           }
         ]
       }
@@ -36122,20 +35924,8 @@
       {
         "ingredients": [
           {
-            "count": 120,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 80,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 40,
-            "name": "Tar"
-          },
-          {
-            "count": 70,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Heavy Capital Walker Leg"
           }
         ]
       }
@@ -36829,16 +36619,8 @@
       {
         "ingredients": [
           {
-            "count": 300,
-            "name": "Wood"
-          },
-          {
-            "count": 26,
-            "name": "Rope"
-          },
-          {
-            "count": 13,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Capital Walker Wing"
           }
         ]
       }
@@ -36862,20 +36644,8 @@
       {
         "ingredients": [
           {
-            "count": 212,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 26,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 28,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 44,
-            "name": "Redwood Wood"
+            "count": 1,
+            "name": "Improved Capital Walker Wing"
           }
         ]
       }
@@ -36900,16 +36670,8 @@
       {
         "ingredients": [
           {
-            "count": 220,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 136,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 16,
-            "name": "Iron Ingot"
+            "count": 1,
+            "name": "Flotillan Capital Walker Wing"
           }
         ]
       }
@@ -36934,16 +36696,8 @@
       {
         "ingredients": [
           {
-            "count": 280,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 32,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 32,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Advanced Capital Walker Wing"
           }
         ]
       }
@@ -36968,20 +36722,8 @@
       {
         "ingredients": [
           {
-            "count": 240,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 180,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 40,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 22,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Advanced Capital Walker Wing"
           }
         ]
       }
@@ -36992,7 +36734,7 @@
     "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance.",
     "weight": 9.75,
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 20500
     },
     "unlockable": "WalkerPartsAdvanced_T4",
@@ -37006,20 +36748,8 @@
       {
         "ingredients": [
           {
-            "count": 200,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 130,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 15,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 12,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Advanced Capital Walker Wing"
           }
         ]
       }
@@ -37030,7 +36760,7 @@
     "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement.",
     "weight": 9.75,
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 27500
     },
     "unlockable": "WalkerPartsAdvanced_T4",
@@ -37044,20 +36774,8 @@
       {
         "ingredients": [
           {
-            "count": 230,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 124,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 18,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 20,
-            "name": "Redwood Wood"
+            "count": 1,
+            "name": "Improved Capital Walker Wing"
           }
         ]
       }
@@ -37082,16 +36800,8 @@
       {
         "ingredients": [
           {
-            "count": 140,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 16,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 30,
-            "name": "Hide"
+            "count": 1,
+            "name": "Improved Capital Walker Wing"
           }
         ]
       }
@@ -37176,16 +36886,8 @@
       {
         "ingredients": [
           {
-            "count": 40,
-            "name": "Wood"
-          },
-          {
-            "count": 6,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 40,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Medium Walker Leg"
           }
         ]
       }
@@ -37210,24 +36912,8 @@
       {
         "ingredients": [
           {
-            "count": 92,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 20,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 48,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 20,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 32,
-            "name": "Animal Fat"
+            "count": 1,
+            "name": "Armored Medium Walker Leg"
           }
         ]
       }
@@ -37252,20 +36938,8 @@
       {
         "ingredients": [
           {
-            "count": 27,
-            "name": "Wooden Slab"
-          },
-          {
-            "count": 95,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 25,
-            "name": "Animal Fat"
-          },
-          {
-            "count": 112,
-            "name": "Redwood Wood"
+            "count": 1,
+            "name": "Heavy Medium Walker Leg"
           }
         ]
       }
@@ -37956,28 +37630,8 @@
       {
         "ingredients": [
           {
-            "count": 8,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 5,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 4,
-            "name": "Bone Glue"
-          },
-          {
-            "count": 4,
-            "name": "Hide"
-          },
-          {
-            "count": 2,
-            "name": "Nomad Cloth"
-          },
-          {
             "count": 1,
-            "name": "Wooden Gear"
+            "name": "Medium Walker Wing"
           }
         ]
       }
@@ -38002,24 +37656,8 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 9,
-            "name": "Rope"
-          },
-          {
-            "count": 22,
-            "name": "Hide"
-          },
-          {
-            "count": 18,
-            "name": "Triple Stitch Fabric"
-          },
-          {
             "count": 1,
-            "name": "Wooden Gear"
+            "name": "Improved Medium Walker Wing"
           }
         ]
       }
@@ -38044,28 +37682,8 @@
       {
         "ingredients": [
           {
-            "count": 4,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 34,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 33,
-            "name": "Leather"
-          },
-          {
-            "count": 45,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 17,
-            "name": "Rope"
-          },
-          {
-            "count": 49,
-            "name": "Chitin Plate"
+            "count": 1,
+            "name": "Flotillan Medium Walker Wing"
           }
         ]
       }
@@ -38090,24 +37708,8 @@
       {
         "ingredients": [
           {
-            "count": 42,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 25,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 27,
-            "name": "Rope"
-          },
-          {
-            "count": 2,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 47,
-            "name": "Cotton"
+            "count": 1,
+            "name": "Advanced Medium Walker Wing"
           }
         ]
       }
@@ -38132,24 +37734,8 @@
       {
         "ingredients": [
           {
-            "count": 2,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 24,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 24,
-            "name": "Hide"
-          },
-          {
-            "count": 46,
-            "name": "Chitin Plate"
-          },
-          {
-            "count": 33,
-            "name": "Rope"
+            "count": 1,
+            "name": "Advanced Medium Walker Wing"
           }
         ]
       }
@@ -38174,24 +37760,8 @@
       {
         "ingredients": [
           {
-            "count": 2,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 16,
-            "name": "Tar"
-          },
-          {
-            "count": 24,
-            "name": "Leather"
-          },
-          {
-            "count": 33,
-            "name": "Rope"
-          },
-          {
-            "count": 17,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Advanced Medium Walker Wing"
           }
         ]
       }
@@ -38216,24 +37786,8 @@
       {
         "ingredients": [
           {
-            "count": 18,
-            "name": "Fiber Weave"
-          },
-          {
             "count": 1,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 24,
-            "name": "Leather"
-          },
-          {
-            "count": 10,
-            "name": "Rope"
-          },
-          {
-            "count": 24,
-            "name": "Wood Shaft"
+            "name": "Improved Medium Walker Wing"
           }
         ]
       }
@@ -38258,24 +37812,8 @@
       {
         "ingredients": [
           {
-            "count": 35,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 11,
-            "name": "Rope"
-          },
-          {
-            "count": 28,
-            "name": "Fiber Weave"
-          },
-          {
             "count": 1,
-            "name": "Wooden Gear"
-          },
-          {
-            "count": 22,
-            "name": "Nomad Cloth"
+            "name": "Improved Medium Walker Wing"
           }
         ]
       }
@@ -38662,8 +38200,8 @@
     "durability": 320,
     "weaponInfo": {
       "weaponLength": 116,
-      "damage": 28,
-      "penetration": 20
+      "damage": 40,
+      "penetration": 5
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -38760,8 +38298,9 @@
     "weight": 3.8,
     "durability": 250,
     "armorInfo": {
-      "reduction": 6,
-      "speedReduction": 1
+      "absorbing": 1,
+      "reduction": 7,
+      "speedReduction": 2
     }
   },
   {
@@ -38806,7 +38345,9 @@
     "weight": 1.5,
     "durability": 250,
     "armorInfo": {
-      "reduction": 4
+      "absorbing": 1,
+      "reduction": 1,
+      "speedReduction": 1
     }
   },
   {
@@ -38851,7 +38392,9 @@
     "weight": 1.4,
     "durability": 250,
     "armorInfo": {
-      "reduction": 4.4
+      "absorbing": 1,
+      "reduction": 2,
+      "speedReduction": 1
     }
   },
   {
@@ -39003,16 +38546,8 @@
       {
         "ingredients": [
           {
-            "count": 760,
-            "name": "Wood"
-          },
-          {
-            "count": 96,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 114,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Large Walker Leg"
           }
         ]
       }
@@ -39037,20 +38572,8 @@
       {
         "ingredients": [
           {
-            "count": 1005,
-            "name": "Wood"
-          },
-          {
-            "count": 480,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 150,
-            "name": "Ceramic Shard"
-          },
-          {
-            "count": 30,
-            "name": "Tar"
+            "count": 1,
+            "name": "Armored Large Walker Leg"
           }
         ]
       }
@@ -39075,20 +38598,8 @@
       {
         "ingredients": [
           {
-            "count": 120,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 150,
-            "name": "Redwood Wood"
-          },
-          {
-            "count": 44,
-            "name": "Tar"
-          },
-          {
-            "count": 30,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "Heavy Large Walker Leg"
           }
         ]
       }
@@ -39769,16 +39280,8 @@
       {
         "ingredients": [
           {
-            "count": 253,
-            "name": "Wood"
-          },
-          {
-            "count": 22,
-            "name": "Rope"
-          },
-          {
-            "count": 11,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Large Walker Wing"
           }
         ]
       }
@@ -39803,20 +39306,8 @@
       {
         "ingredients": [
           {
-            "count": 186,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 14,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 18,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 20,
-            "name": "Redwood Wood"
+            "count": 1,
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -39841,16 +39332,8 @@
       {
         "ingredients": [
           {
-            "count": 150,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 10,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 100,
-            "name": "Worm Silk"
+            "count": 1,
+            "name": "Flotillan Large Walker Wing"
           }
         ]
       }
@@ -39875,16 +39358,8 @@
       {
         "ingredients": [
           {
-            "count": 220,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 24,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 26,
-            "name": "Worm Silk"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -39909,20 +39384,8 @@
       {
         "ingredients": [
           {
-            "count": 180,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 25,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 120,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 15,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -39933,7 +39396,7 @@
     "description": "Having both better efficiency and sturdyness than the Skirmish type, these well-rounded wings are often used by adventurers and raiders who can afford their cost and maintenance.",
     "weight": 9.75,
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 9000
     },
     "unlockable": "WalkerPartsAdvanced_T3",
@@ -39947,20 +39410,8 @@
       {
         "ingredients": [
           {
-            "count": 140,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 8,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 80,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 8,
-            "name": "Worm Scale"
+            "count": 1,
+            "name": "WalkerWingAdvanced_T3"
           }
         ]
       }
@@ -39971,7 +39422,7 @@
     "description": "Being made from a specially coated cloth, Rugged wings are known to go through entire wars without a need for replacement.",
     "weight": 9.75,
     "structureInfo": {
-      "type": "Medium",
+      "type": "Soft",
       "hp": 12500
     },
     "unlockable": "WalkerPartsAdvanced_T3",
@@ -39985,20 +39436,8 @@
       {
         "ingredients": [
           {
-            "count": 164,
-            "name": "Reinforced Plank"
-          },
-          {
-            "count": 10,
-            "name": "Iron Ingot"
-          },
-          {
-            "count": 114,
-            "name": "Worm Silk"
-          },
-          {
-            "count": 20,
-            "name": "Redwood Wood"
+            "count": 1,
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -40023,16 +39462,8 @@
       {
         "ingredients": [
           {
-            "count": 110,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 12,
-            "name": "Nomad Cloth"
-          },
-          {
-            "count": 22,
-            "name": "Hide"
+            "count": 1,
+            "name": "Improved Large Walker Wing"
           }
         ]
       }
@@ -40087,6 +39518,19 @@
       "hp": 5000
     },
     "unlockable": "Vault"
+  },
+  {
+    "category": "Equipment",
+    "name": "Violin",
+    "translation": "Violin",
+    "type": "MusicalInstrumentViolin_C",
+    "weight": 1,
+    "durability": 150,
+    "weaponInfo": {
+      "damage": 10,
+      "penetration": 10
+    },
+    "damageType": "'MeleeBluntWeakDamage_C'"
   },
   {
     "category": "Vitamins",
@@ -40704,8 +40148,8 @@
             "name": "Iron Ingot"
           },
           {
-            "count": 2,
-            "name": "Eucalyptus Leaf"
+            "count": 5,
+            "name": "Worm Silk"
           },
           {
             "count": 6,
@@ -40732,7 +40176,7 @@
     "durability": 120,
     "armorInfo": {
       "absorbing": 16,
-      "reduction": 8
+      "reduction": 3
     }
   },
   {
@@ -41537,8 +40981,8 @@
       "weaponSpeed": 115,
       "stability": 65,
       "weaponLength": 62,
-      "damage": 60,
-      "penetration": 10
+      "damage": 62,
+      "penetration": 30
     },
     "toolInfo": [
       {
@@ -41584,8 +41028,8 @@
       "impact": 45,
       "stability": 55,
       "weaponLength": 96,
-      "damage": 60,
-      "penetration": 10
+      "damage": 65,
+      "penetration": 30
     },
     "toolInfo": [
       {
@@ -41630,8 +41074,8 @@
       "weaponSpeed": 90,
       "impact": 70,
       "weaponLength": 61,
-      "damage": 60,
-      "penetration": 10
+      "damage": 64,
+      "penetration": 35
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -41671,8 +41115,8 @@
       "impact": 55,
       "stability": 45,
       "weaponLength": 72,
-      "damage": 60,
-      "penetration": 10
+      "damage": 58,
+      "penetration": 30
     },
     "toolInfo": [
       {
@@ -41718,8 +41162,8 @@
       "impact": 25,
       "stability": 10,
       "weaponLength": 55,
-      "damage": 60,
-      "penetration": 10
+      "damage": 63,
+      "penetration": 30
     },
     "toolInfo": [
       {
@@ -41765,8 +41209,8 @@
       "impact": 85,
       "stability": 75,
       "weaponLength": 73,
-      "damage": 60,
-      "penetration": 10
+      "damage": 69,
+      "penetration": 35
     },
     "damageType": "'MeleeBluntDamage_C'"
   },
@@ -41803,7 +41247,7 @@
     "durability": 740,
     "weaponInfo": {
       "weaponLength": 107,
-      "damage": 48,
+      "damage": 72,
       "penetration": 20
     },
     "damageType": "'MeleeBluntDamage_C'"
