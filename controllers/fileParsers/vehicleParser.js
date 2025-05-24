@@ -96,8 +96,6 @@ const parseVehicleData = (filePath) => {
         // Update the item in the global items collection
         utilityFunctions.updateItem(vehicleItem);
       }
-
-      console.log(`Updated carry capacity for ${fileName}: ${carryCapacity}`);
     }
   } catch (error) {
     console.error(`Error parsing vehicle data from ${filePath}:`, error);
