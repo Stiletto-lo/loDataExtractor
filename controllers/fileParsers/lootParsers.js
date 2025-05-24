@@ -407,7 +407,7 @@ const parseCreatureDetails = (creatureName, creatureType) => {
 	const creatureSpecificDir = path.join(CREATURE_DATA_DIR, creatureDataSubDir);
 	if (!fs.existsSync(creatureSpecificDir)) {
 		console.warn(`Creature data directory not found: ${creatureSpecificDir}`);
-		return { harvestableComponents: [] };
+		return { harvestableComponents: undefined };
 	}
 
 	const harvestableComponents = [];

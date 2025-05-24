@@ -35,13 +35,11 @@
   },
   {
     "name": "Altar of the Dawn",
-    "type": "AC_RelicPOI1_C",
-    "harvestableComponents": []
+    "type": "AC_RelicPOI1_C"
   },
   {
     "name": "Altar of the Dusk",
-    "type": "AC_RelicPOI2_C",
-    "harvestableComponents": []
+    "type": "AC_RelicPOI2_C"
   },
   {
     "name": "Ammo Box T1",
@@ -432,18 +430,15 @@
   },
   {
     "name": "Ancient Pyramid",
-    "type": "AC_Pyramid_C",
-    "harvestableComponents": []
+    "type": "AC_Pyramid_C"
   },
   {
     "name": "Ash Hills Watchtower",
-    "type": "SG_AshWastesRimWatchtower_C",
-    "harvestableComponents": []
+    "type": "SG_AshWastesRimWatchtower_C"
   },
   {
     "name": "Ash Oracle Fortress",
-    "type": "SG_AshWastesFortress_C",
-    "harvestableComponents": []
+    "type": "SG_AshWastesFortress_C"
   },
   {
     "name": "Asteroid T1",
@@ -2379,8 +2374,7 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Cowardly Rupu",
@@ -2565,8 +2559,7 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Crane",
@@ -6880,14 +6873,12 @@
   },
   {
     "name": "Excavation Site (2)",
-    "type": "AC_WorkersGrave_C",
-    "harvestableComponents": []
+    "type": "AC_WorkersGrave_C"
   },
   {
     "name": "Excavation Site (Rupu)",
     "type": "AC_RupuCaveCamp_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Falling Cactus",
@@ -6953,79 +6944,65 @@
     "name": "Fire Elemental",
     "type": "FireElementalMob_C",
     "health": 9000,
-    "harvestableComponents": [],
     "originalName": "FireElemental"
   },
   {
     "name": "Fire Fortress",
     "type": "KS_LargeRupuCamp_3_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Foragers Outpost (1)",
-    "type": "CanyonForagersOutpost1_C",
-    "harvestableComponents": []
+    "type": "CanyonForagersOutpost1_C"
   },
   {
     "name": "Foragers Outpost (2)",
-    "type": "CanyonForagersOutpost2_C",
-    "harvestableComponents": []
+    "type": "CanyonForagersOutpost2_C"
   },
   {
     "name": "Foragers Outpost (3)",
-    "type": "CanyonForagersOutpost3_C",
-    "harvestableComponents": []
+    "type": "CanyonForagersOutpost3_C"
   },
   {
     "name": "Foragers Outpost (4)",
-    "type": "SG_ClaySpotTinyCamp_C",
-    "harvestableComponents": []
+    "type": "SG_ClaySpotTinyCamp_C"
   },
   {
     "name": "Foragers Outpost (5)",
-    "type": "SG_RockyHillsTinyCamp_C",
-    "harvestableComponents": []
+    "type": "SG_RockyHillsTinyCamp_C"
   },
   {
     "name": "Foragers Outpost (Rupu)",
     "type": "SG_TinyRupuCamp_1_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Foragers Outpost (Rupu)",
     "type": "SG_TinyRupuCamp_2_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Foragers Outpost (Rupu)",
     "type": "SG_TinyRupuCamp_3_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Fortified Rupu Town",
     "type": "MediumLargeRupuCamp_01_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Fortified Rupu Village (2)",
-    "type": "SG_FlatlandsForagingCamp_C",
-    "harvestableComponents": []
+    "type": "SG_FlatlandsForagingCamp_C"
   },
   {
     "name": "Fortified Rupu Village (Rupu)",
     "type": "CanyonSavannahMediumRupuCamp_01_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Gas Thrower",
-    "type": "AC_StarTowerGas_C",
-    "harvestableComponents": []
+    "type": "AC_StarTowerGas_C"
   },
   {
     "name": "Go Go T4",
@@ -7437,8 +7414,7 @@
   {
     "name": "Gogo",
     "type": "GogoMob_C",
-    "health": 3000,
-    "harvestableComponents": []
+    "health": 3000
   },
   {
     "name": "Grave Digger (Medium)",
@@ -7701,14 +7677,12 @@
         "maxQuantity": 1,
         "source": "weapons_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Great Rupu Wall",
     "type": "AC_RupuGate_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Green Rupu",
@@ -7893,8 +7867,7 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Hard Rupu Camp T1",
@@ -15038,8 +15011,7 @@
   {
     "name": "Koa",
     "type": "KoaMob_C",
-    "health": 3000,
-    "harvestableComponents": []
+    "health": 3000
   },
   {
     "name": "Koa T4",
@@ -15345,21 +15317,18 @@
   {
     "name": "Lava Papak",
     "type": "LavaPapakMob_C",
-    "category": "Papak",
-    "harvestableComponents": []
+    "category": "Papak"
   },
   {
     "name": "Lazaward",
     "type": "NurrMobLarge_C",
     "health": 190,
-    "category": "Nurr",
-    "harvestableComponents": []
+    "category": "Nurr"
   },
   {
     "name": "Leaning Fortress",
     "type": "KS_LargeRupuCamp_2_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Loot Box Armors",
@@ -16135,8 +16104,7 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Matriarch",
@@ -16476,8 +16444,7 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Medium Rupu Camp T1",
@@ -20919,8 +20886,7 @@
   {
     "name": "Mountable Nurr",
     "type": "MountableNurrMob_C",
-    "category": "Nurr",
-    "harvestableComponents": []
+    "category": "Nurr"
   },
   {
     "name": "Mushroom Gas",
@@ -20936,36 +20902,31 @@
     "name": "Nurr (Killin)",
     "type": "KillinMob_C",
     "health": 300,
-    "category": "Killin",
-    "harvestableComponents": []
+    "category": "Killin"
   },
   {
     "name": "Nurr (Nurr)",
     "type": "NurrMob_C",
     "health": 190,
-    "category": "Nurr",
-    "harvestableComponents": []
+    "category": "Nurr"
   },
   {
     "name": "Nurr Lair",
     "type": "NurrLair_T2_C",
     "category": "Nurr",
-    "tier": "T2",
-    "harvestableComponents": []
+    "tier": "T2"
   },
   {
     "name": "Nurr Raider",
     "type": "T2_NurrRaiderMob_C",
     "category": "Nurr",
-    "tier": "T2",
-    "harvestableComponents": []
+    "tier": "T2"
   },
   {
     "name": "Nurr Raiding Camp",
     "type": "T2_RaiderOutpost_C",
     "category": "Raider",
-    "tier": "T2",
-    "harvestableComponents": []
+    "tier": "T2"
   },
   {
     "name": "Nurr T2",
@@ -21124,8 +21085,7 @@
     "name": "Okkam",
     "type": "OkkamMob_C",
     "health": 9000,
-    "category": "Okkam",
-    "harvestableComponents": []
+    "category": "Okkam"
   },
   {
     "name": "Okkam T3",
@@ -21522,8 +21482,7 @@
     "name": "Papak",
     "type": "PapakMob_C",
     "health": 750,
-    "category": "Papak",
-    "harvestableComponents": []
+    "category": "Papak"
   },
   {
     "name": "Papak T3",
@@ -21702,8 +21661,7 @@
   {
     "name": "Phemke Nest",
     "type": "EasyPhemkeNest_01_C",
-    "category": "Phemke",
-    "harvestableComponents": []
+    "category": "Phemke"
   },
   {
     "name": "Phemke T1",
@@ -21954,71 +21912,60 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Reinforced Rupu Outpost (Rupu)",
     "type": "MediumMediumRupuCamp_01_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_HardRupuCamp_01_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_HardRupuCamp_02_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_HardRupuCamp_03_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_HardRupuCamp_04_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_SingleBallistaRupuCamp_01_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_SingleScattershotRupuCamp_01_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Rock Thrower",
-    "type": "AC_StarTowerCommon_C",
-    "harvestableComponents": []
+    "type": "AC_StarTowerCommon_C"
   },
   {
     "name": "Ruined Fortress",
-    "type": "SG_FlatlandsRuinsFortress_C",
-    "harvestableComponents": []
+    "type": "SG_FlatlandsRuinsFortress_C"
   },
   {
     "name": "Rupu Artillery Camp",
-    "type": "SG_AshWastesArtilleryCamp_C",
-    "harvestableComponents": []
+    "type": "SG_AshWastesArtilleryCamp_C"
   },
   {
     "name": "Rupu Ashdweller",
@@ -22344,8 +22291,7 @@
         "maxQuantity": 1,
         "source": "weapons_t3"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Berserker",
@@ -22530,39 +22476,33 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Campfire Site (T1)",
     "type": "T1_TinyRupuCamp_03_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Rupu Campfire Site (T1)",
     "type": "T1_TinyRupuCamp_04_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Rupu Cave",
     "type": "TestRupuCave_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Rupu Defensive Storage",
-    "type": "CanyonDragableChest_C",
-    "harvestableComponents": []
+    "type": "CanyonDragableChest_C"
   },
   {
     "name": "Rupu Drudge (Rupu)",
     "type": "RupuDrudge_T0_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Rupu Drudge (T3)",
@@ -22888,8 +22828,7 @@
         "maxQuantity": 1,
         "source": "weapons_t3"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Dunestalker (Medium)",
@@ -23201,8 +23140,7 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Firebrand",
@@ -23576,8 +23514,7 @@
         "maxQuantity": 1,
         "source": "rigs_t4"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Forager (Medium)",
@@ -23889,8 +23826,7 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Forerunner",
@@ -24075,8 +24011,7 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Forerunner (Easy)",
@@ -24262,45 +24197,38 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Fortress",
     "type": "HardLargeRupuCampFortified1_03_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Rupu Gifting Altar (4)",
-    "type": "Canyon_C",
-    "harvestableComponents": []
+    "type": "Canyon_C"
   },
   {
     "name": "Rupu Gifting Altar (Rupu)",
     "type": "RupuCaveCamp_01_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Rupu Gifting Altar (T1)",
     "type": "T1_TinyRupuCamp_01_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Rupu Gifting Altar (T1)",
     "type": "T1_TinyRupuCamp_05_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Rupu Habitat",
     "type": "EasySmallRupuCamp_01_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Rupu Harasser (Easy)",
@@ -24514,8 +24442,7 @@
         "maxQuantity": 1,
         "source": "rigs_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Harasser (Medium)",
@@ -24827,8 +24754,7 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Hazraki (Medium)",
@@ -25140,8 +25066,7 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Hermit (Medium)",
@@ -25404,8 +25329,7 @@
         "maxQuantity": 1,
         "source": "weapons_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Hero (Rupu)",
@@ -25590,8 +25514,7 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Hero (Rupu)",
@@ -25776,8 +25699,7 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Hunter",
@@ -26103,20 +26025,17 @@
         "maxQuantity": 1,
         "source": "weapons_t3"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Moisture Collector",
     "type": "CanyonMountainTopSmallRupuCamp_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Rupu Observation Point",
     "type": "KS_LargeRupuCamp_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Rupu Oracle (Rupu)",
@@ -26301,8 +26220,7 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Oracle (T3)",
@@ -26698,8 +26616,7 @@
         "maxQuantity": 1,
         "source": "rigs_t3"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Overseer (Rupu)",
@@ -26884,8 +26801,7 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Overseer (T3)",
@@ -27281,8 +27197,7 @@
         "maxQuantity": 1,
         "source": "rigs_t3"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Plainstrider (Hard)",
@@ -27607,8 +27522,7 @@
         "maxQuantity": 1,
         "source": "weapons_t3"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Plainstrider (Medium)",
@@ -27920,15 +27834,13 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Prayer Site",
     "type": "T1_TinyRupuCamp_02_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Rupu Priestess",
@@ -28113,8 +28025,7 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Priestess (Medium)",
@@ -28454,8 +28365,7 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Rabble",
@@ -28781,8 +28691,7 @@
         "maxQuantity": 1,
         "source": "weapons_t3"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Raider",
@@ -29094,13 +29003,11 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Raiding Checkpoint",
-    "type": "CanyonBurnableChest_C",
-    "harvestableComponents": []
+    "type": "CanyonBurnableChest_C"
   },
   {
     "name": "Rupu Scavenger (Easy)",
@@ -29285,8 +29192,7 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Scuttler",
@@ -29612,8 +29518,7 @@
         "maxQuantity": 1,
         "source": "weapons_t3"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Seeker",
@@ -30009,8 +29914,7 @@
         "maxQuantity": 1,
         "source": "rigs_t3"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Sentinel (Easy)",
@@ -30224,8 +30128,7 @@
         "maxQuantity": 1,
         "source": "rigs_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Shaman (Medium)",
@@ -30537,13 +30440,11 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Shelter",
-    "type": "CanyonIslandShelter_C",
-    "harvestableComponents": []
+    "type": "CanyonIslandShelter_C"
   },
   {
     "name": "Rupu Skirmisher (Easy)",
@@ -30757,8 +30658,7 @@
         "maxQuantity": 1,
         "source": "rigs_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Skirmisher (Medium)",
@@ -31021,8 +30921,7 @@
         "maxQuantity": 1,
         "source": "weapons_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Thug (Easy)",
@@ -31208,8 +31107,7 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Warrior",
@@ -31394,41 +31292,34 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Rupu Watch Tower (1)",
-    "type": "SG_RoadWatchtower_C",
-    "harvestableComponents": []
+    "type": "SG_RoadWatchtower_C"
   },
   {
     "name": "Rupu Watch Tower (4)",
-    "type": "AC_MatriarchCampUnedited_C",
-    "harvestableComponents": []
+    "type": "AC_MatriarchCampUnedited_C"
   },
   {
     "name": "Rupu Watch Tower (6)",
-    "type": "SG_AshWastesFortress2_C",
-    "harvestableComponents": []
+    "type": "SG_AshWastesFortress2_C"
   },
   {
     "name": "Rupu Watch Tower (Rupu)",
     "type": "KS_EasyRupuCamp_2_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Rupu Watch Tower (Rupu)",
     "type": "KS_MediumRupuCamp_1_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Rupu Watch Tower (Rupu)",
     "type": "EasySingleRupuCampFortified_01_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Rupu Zealot (Medium)",
@@ -31768,120 +31659,102 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Sarcophagus of the Ancient",
-    "type": "AC_Sarcophagus_C",
-    "harvestableComponents": []
+    "type": "AC_Sarcophagus_C"
   },
   {
     "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_01_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_02_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_03_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_04_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_05_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Small Rupu Outpost (Rupu)",
     "type": "KS_EasyRupuCamp_3_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Small Rupu Outpost (Rupu)",
     "type": "EasyMediumRupuCamp_01_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_01_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_02_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_03_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_04_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_05_C",
     "category": "Rupu",
-    "tier": "T1",
-    "harvestableComponents": []
+    "tier": "T1"
   },
   {
     "name": "Small Rupu Village (Rupu)",
     "type": "MediumSmallRupuCamp_01_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Small Rupu Village (Rupu)",
     "type": "MediumSmallRupuCamp_02_C",
-    "category": "Rupu",
-    "harvestableComponents": []
+    "category": "Rupu"
   },
   {
     "name": "Small Worm",
     "type": "SmallWormMob_C",
     "health": 150,
     "experiencie": 144,
-    "category": "Worm",
-    "harvestableComponents": []
+    "category": "Worm"
   },
   {
     "name": "Sunken Temple",
-    "type": "SG_LakeCamp_C",
-    "harvestableComponents": []
+    "type": "SG_LakeCamp_C"
   },
   {
     "name": "Tar Dweller",
@@ -32066,37 +31939,31 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Temple of Stars",
-    "type": "AC_MatriarchCamp_C",
-    "harvestableComponents": []
+    "type": "AC_MatriarchCamp_C"
   },
   {
     "name": "The Long One",
     "type": "Worm6_C",
     "health": 45000,
-    "category": "Worm",
-    "harvestableComponents": []
+    "category": "Worm"
   },
   {
     "name": "Tower of The Holly Fire",
-    "type": "AC_StarTowerFire_C",
-    "harvestableComponents": []
+    "type": "AC_StarTowerFire_C"
   },
   {
     "name": "Toxic Papak",
     "type": "SwampPapakMob_C",
-    "category": "Papak",
-    "harvestableComponents": []
+    "category": "Papak"
   },
   {
     "name": "Toxic War Papak",
     "type": "SwampPapakMob_Q_C",
-    "category": "Papak",
-    "harvestableComponents": []
+    "category": "Papak"
   },
   {
     "name": "Treasure Chest T1",
@@ -33124,8 +32991,7 @@
   {
     "name": "War Okkam",
     "type": "OkkamMob_Q_C",
-    "category": "Okkam",
-    "harvestableComponents": []
+    "category": "Okkam"
   },
   {
     "name": "Water Condenser",
@@ -33467,8 +33333,7 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "White Death (Medium) (T3)",
@@ -33864,8 +33729,7 @@
         "maxQuantity": 1,
         "source": "rigs_t3"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Yellow Rupu",
@@ -34050,8 +33914,7 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   },
   {
     "name": "Zharvakko",
@@ -34236,7 +34099,6 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
-    ],
-    "harvestableComponents": []
+    ]
   }
 ]
