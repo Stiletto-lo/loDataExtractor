@@ -367,8 +367,12 @@ const parseLootSites = (filePath) => {
 		type: name, // This is the internal type, e.g., BP_Worm_C
 		name: translation, // This is the display name, e.g., The Long One
 		...creatureData,
-		...(detailedCreatureInfo || {}), // Merge detailed info (harvestableComponents)
 	};
+
+	// Explicitly merge harvestableComponents if available
+	if (detailedCreatureInfo?.harvestableComponents) {
+		creature.harvestableComponents = detailedCreatureInfo.harvestableComponents;
+	}
 
 	// Add to the creatures collection
 	utilityFunctions.addCreature(creature);
