@@ -1,10 +1,18 @@
 {
   "name": "lodataextractor",
   "version": "1.6.0",
-  "description": "",
+  "description": "Last Oasis Data Extractor with PAK file extraction capabilities",
   "main": "index.js",
+  "bin": {
+    "lo-extractor": "./cli/extraction-cli.js"
+  },
   "scripts": {
     "start": "node index.js",
+    "extract": "node cli/extraction-cli.js extract",
+    "extract:init": "node cli/extraction-cli.js init",
+    "extract:validate": "node cli/extraction-cli.js validate",
+    "extract:status": "node cli/extraction-cli.js status",
+    "extract:clean": "node cli/extraction-cli.js clean",
     "format": "biome format --write .",
     "lint": "biome lint --write ."
   },
@@ -12,10 +20,20 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^1.12.0",
+    "commander": "^12.0.0",
     "dotenv": "^16.0.1",
-    "fs-extra": "^10.1.0"
+    "express": "^4.18.2",
+    "fs-extra": "^10.1.0",
+    "winston": "^3.11.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4"
-  }
+  },
+  "keywords": [
+    "last-oasis",
+    "data-extraction",
+    "pak-files",
+    "unreal-engine",
+    "game-data"
+  ]
 }
