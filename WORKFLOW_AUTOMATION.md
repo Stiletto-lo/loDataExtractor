@@ -39,61 +39,61 @@ name: Last Oasis Data Automation
 on:
   schedule:
     # Ejecutar cada 15 minutos
-    - cron: '*/15 * * * *'
+    - cron: "*/15 * * * *"
   workflow_dispatch: # Permitir ejecución manual
     inputs:
       force_extraction:
-        description: 'Forzar extracción sin verificar actualizaciones'
+        description: "Forzar extracción sin verificar actualizaciones"
         required: false
-        default: 'false'
+        default: "false"
 
 jobs:
   check-and-extract:
     runs-on: ubuntu-latest
     timeout-minutes: 60
-    
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        cache: 'npm'
-        
-    - name: Install dependencies
-      run: npm ci
-      
-    - name: Setup SteamCMD
-      run: |
-        mkdir -p automation/steamcmd
-        cd automation/steamcmd
-        wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
-        tar -xvzf steamcmd_linux.tar.gz
-        chmod +x steamcmd.sh
-        
-    - name: Run automation process
-      env:
-        STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
-        NOTIFICATION_WEBHOOK: ${{ secrets.NOTIFICATION_WEBHOOK }}
-        FORCE_EXTRACTION: ${{ github.event.inputs.force_extraction }}
-      run: npm run automation
-      
-    - name: Upload logs on failure
-      if: failure()
-      uses: actions/upload-artifact@v4
-      with:
-        name: automation-logs
-        path: logs/
-        retention-days: 7
-        
-    - name: Notify on failure
-      if: failure()
-      run: |
-        curl -X POST ${{ secrets.NOTIFICATION_WEBHOOK }} \
-        -H 'Content-Type: application/json' \
-        -d '{"text":"❌ Last Oasis automation failed - Check logs"}'
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Setup SteamCMD
+        run: |
+          mkdir -p automation/steamcmd
+          cd automation/steamcmd
+          wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
+          tar -xvzf steamcmd_linux.tar.gz
+          chmod +x steamcmd.sh
+
+      - name: Run automation process
+        env:
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+          NOTIFICATION_WEBHOOK: ${{ secrets.NOTIFICATION_WEBHOOK }}
+          FORCE_EXTRACTION: ${{ github.event.inputs.force_extraction }}
+        run: npm run automation
+
+      - name: Upload logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: automation-logs
+          path: logs/
+          retention-days: 7
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          curl -X POST ${{ secrets.NOTIFICATION_WEBHOOK }} \
+          -H 'Content-Type: application/json' \
+          -d '{"text":"❌ Last Oasis automation failed - Check logs"}'
 ```
 
 ### 2. Workflow de Desarrollo - Testing y Validación
@@ -105,34 +105,34 @@ name: Test and Validate
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [main, develop]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+
     strategy:
       matrix:
         node-version: [16, 18, 20]
-        
+
     steps:
-    - uses: actions/checkout@v4
-    
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-        
-    - run: npm ci
-    - run: npm run lint
-    - run: npm run test
-    - run: npm run format:check
-    
-    - name: Test automation components
-      run: npm run test:automation
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run test
+      - run: npm run format:check
+
+      - name: Test automation components
+        run: npm run test:automation
 ```
 
 ### 3. Workflow de Despliegue
@@ -145,24 +145,24 @@ name: Deploy to Production
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v4
-    
-    - name: Build Docker image
-      run: |
-        docker build -t lodataextractor:${{ github.ref_name }} .
-        docker tag lodataextractor:${{ github.ref_name }} lodataextractor:latest
-        
-    - name: Deploy to server
-      run: |
-        # Script de despliegue específico del servidor
-        echo "Deploying to production server..."
+      - uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: |
+          docker build -t lodataextractor:${{ github.ref_name }} .
+          docker tag lodataextractor:${{ github.ref_name }} lodataextractor:latest
+
+      - name: Deploy to server
+        run: |
+          # Script de despliegue específico del servidor
+          echo "Deploying to production server..."
 ```
 
 ## Configuración Docker
@@ -212,7 +212,7 @@ CMD ["npm", "run", "automation"]
 ### docker-compose.yml
 
 ```yaml
-version: '3.8'
+version: "3.8"
 
 services:
   lodataextractor:
@@ -280,74 +280,73 @@ networks:
 **Archivo**: `automation/orchestrator.js`
 
 ```javascript
-const { SteamMonitor } = require('./services/steamMonitor');
-const { GameExtractor } = require('./services/gameExtractor');
-const { AutomatedProcessor } = require('./services/automatedProcessor');
-const { NotificationService } = require('./services/notificationService');
-const logger = require('./utils/logger');
+const { SteamMonitor } = require("./services/steamMonitor");
+const { GameExtractor } = require("./services/gameExtractor");
+const { AutomatedProcessor } = require("./services/automatedProcessor");
+const { NotificationService } = require("./services/notificationService");
+const logger = require("./utils/logger");
 
 class GameUpdateOrchestrator {
-    constructor() {
-        this.steamMonitor = new SteamMonitor();
-        this.gameExtractor = new GameExtractor();
-        this.processor = new AutomatedProcessor();
-        this.notifier = new NotificationService();
+  constructor() {
+    this.steamMonitor = new SteamMonitor();
+    this.gameExtractor = new GameExtractor();
+    this.processor = new AutomatedProcessor();
+    this.notifier = new NotificationService();
+  }
+
+  async run() {
+    try {
+      logger.info("🚀 Iniciando proceso de automatización");
+
+      // Verificar actualizaciones de Steam
+      const updateInfo = await this.steamMonitor.checkForUpdates();
+
+      if (!updateInfo.hasUpdate && !process.env.FORCE_EXTRACTION) {
+        logger.info("✅ No hay actualizaciones disponibles");
+        return;
+      }
+
+      if (updateInfo.hasUpdate) {
+        await this.notifier.notifyUpdateDetected(updateInfo);
+        logger.info(`🎮 Nueva actualización detectada: ${updateInfo.buildId}`);
+      }
+
+      // Extraer archivos del juego
+      logger.info("📦 Iniciando extracción de archivos del juego");
+      const extractionResult = await this.gameExtractor.extractGameFiles();
+
+      if (!extractionResult.success) {
+        throw new Error(`Error en extracción: ${extractionResult.error}`);
+      }
+
+      // Procesar datos extraídos
+      logger.info("⚙️ Procesando datos extraídos");
+      const processingResult = await this.processor.processExtractedData();
+
+      if (!processingResult.success) {
+        throw new Error(`Error en procesamiento: ${processingResult.error}`);
+      }
+
+      // Notificar éxito
+      await this.notifier.notifySuccess({
+        updateInfo,
+        extractionResult,
+        processingResult,
+      });
+
+      logger.info("✅ Proceso de automatización completado exitosamente");
+    } catch (error) {
+      logger.error("❌ Error en proceso de automatización:", error);
+      await this.notifier.notifyError(error);
+      process.exit(1);
     }
-
-    async run() {
-        try {
-            logger.info('🚀 Iniciando proceso de automatización');
-            
-            // Verificar actualizaciones de Steam
-            const updateInfo = await this.steamMonitor.checkForUpdates();
-            
-            if (!updateInfo.hasUpdate && !process.env.FORCE_EXTRACTION) {
-                logger.info('✅ No hay actualizaciones disponibles');
-                return;
-            }
-
-            if (updateInfo.hasUpdate) {
-                await this.notifier.notifyUpdateDetected(updateInfo);
-                logger.info(`🎮 Nueva actualización detectada: ${updateInfo.buildId}`);
-            }
-
-            // Extraer archivos del juego
-            logger.info('📦 Iniciando extracción de archivos del juego');
-            const extractionResult = await this.gameExtractor.extractGameFiles();
-            
-            if (!extractionResult.success) {
-                throw new Error(`Error en extracción: ${extractionResult.error}`);
-            }
-
-            // Procesar datos extraídos
-            logger.info('⚙️ Procesando datos extraídos');
-            const processingResult = await this.processor.processExtractedData();
-            
-            if (!processingResult.success) {
-                throw new Error(`Error en procesamiento: ${processingResult.error}`);
-            }
-
-            // Notificar éxito
-            await this.notifier.notifySuccess({
-                updateInfo,
-                extractionResult,
-                processingResult
-            });
-
-            logger.info('✅ Proceso de automatización completado exitosamente');
-
-        } catch (error) {
-            logger.error('❌ Error en proceso de automatización:', error);
-            await this.notifier.notifyError(error);
-            process.exit(1);
-        }
-    }
+  }
 }
 
 // Ejecutar si es llamado directamente
 if (require.main === module) {
-    const orchestrator = new GameUpdateOrchestrator();
-    orchestrator.run();
+  const orchestrator = new GameUpdateOrchestrator();
+  orchestrator.run();
 }
 
 module.exports = { GameUpdateOrchestrator };
@@ -364,11 +363,11 @@ global:
   scrape_interval: 15s
 
 scrape_configs:
-  - job_name: 'lodataextractor'
+  - job_name: "lodataextractor"
     static_configs:
-      - targets: ['lodataextractor:3000']
+      - targets: ["lodataextractor:3000"]
     scrape_interval: 30s
-    metrics_path: '/metrics'
+    metrics_path: "/metrics"
 ```
 
 ### Métricas de Aplicación
@@ -376,33 +375,33 @@ scrape_configs:
 **Archivo**: `automation/utils/metrics.js`
 
 ```javascript
-const client = require('prom-client');
+const client = require("prom-client");
 
 // Crear registro de métricas
 const register = new client.Registry();
 
 // Métricas personalizadas
 const extractionDuration = new client.Histogram({
-    name: 'extraction_duration_seconds',
-    help: 'Duración del proceso de extracción',
-    buckets: [1, 5, 15, 30, 60, 300, 600]
+  name: "extraction_duration_seconds",
+  help: "Duración del proceso de extracción",
+  buckets: [1, 5, 15, 30, 60, 300, 600],
 });
 
 const extractionSuccess = new client.Counter({
-    name: 'extraction_success_total',
-    help: 'Número total de extracciones exitosas'
+  name: "extraction_success_total",
+  help: "Número total de extracciones exitosas",
 });
 
 const extractionErrors = new client.Counter({
-    name: 'extraction_errors_total',
-    help: 'Número total de errores en extracción',
-    labelNames: ['error_type']
+  name: "extraction_errors_total",
+  help: "Número total de errores en extracción",
+  labelNames: ["error_type"],
 });
 
 const steamApiCalls = new client.Counter({
-    name: 'steam_api_calls_total',
-    help: 'Número total de llamadas a Steam API',
-    labelNames: ['endpoint', 'status']
+  name: "steam_api_calls_total",
+  help: "Número total de llamadas a Steam API",
+  labelNames: ["endpoint", "status"],
 });
 
 // Registrar métricas
@@ -415,11 +414,11 @@ register.registerMetric(steamApiCalls);
 client.collectDefaultMetrics({ register });
 
 module.exports = {
-    register,
-    extractionDuration,
-    extractionSuccess,
-    extractionErrors,
-    steamApiCalls
+  register,
+  extractionDuration,
+  extractionSuccess,
+  extractionErrors,
+  steamApiCalls,
 };
 ```
 
@@ -430,61 +429,64 @@ module.exports = {
 **Archivo**: `automation/services/notificationService.js`
 
 ```javascript
-const axios = require('axios');
-const logger = require('../utils/logger');
+const axios = require("axios");
+const logger = require("../utils/logger");
 
 class NotificationService {
-    constructor() {
-        this.webhookUrl = process.env.NOTIFICATION_WEBHOOK;
-        this.emailConfig = {
-            enabled: process.env.EMAIL_NOTIFICATIONS === 'true',
-            // Configuración de email
-        };
+  constructor() {
+    this.webhookUrl = process.env.NOTIFICATION_WEBHOOK;
+    this.emailConfig = {
+      enabled: process.env.EMAIL_NOTIFICATIONS === "true",
+      // Configuración de email
+    };
+  }
+
+  async notifyUpdateDetected(updateInfo) {
+    const message = {
+      text:
+        `🎮 Nueva actualización de Last Oasis detectada!\n` +
+        `Build ID: ${updateInfo.buildId}\n` +
+        `Fecha: ${updateInfo.lastUpdated}\n` +
+        `Iniciando proceso de extracción...`,
+    };
+
+    await this.sendNotification(message);
+  }
+
+  async notifySuccess(results) {
+    const message = {
+      text:
+        `✅ Extracción de datos completada exitosamente!\n` +
+        `Archivos procesados: ${results.processingResult.filesProcessed}\n` +
+        `Tiempo total: ${results.processingResult.duration}s\n` +
+        `Datos exportados actualizados.`,
+    };
+
+    await this.sendNotification(message);
+  }
+
+  async notifyError(error) {
+    const message = {
+      text:
+        `❌ Error en automatización de Last Oasis:\n` +
+        `Error: ${error.message}\n` +
+        `Timestamp: ${new Date().toISOString()}\n` +
+        `Revisar logs para más detalles.`,
+    };
+
+    await this.sendNotification(message);
+  }
+
+  async sendNotification(message) {
+    try {
+      if (this.webhookUrl) {
+        await axios.post(this.webhookUrl, message);
+        logger.info("Notificación enviada exitosamente");
+      }
+    } catch (error) {
+      logger.error("Error enviando notificación:", error.message);
     }
-
-    async notifyUpdateDetected(updateInfo) {
-        const message = {
-            text: `🎮 Nueva actualización de Last Oasis detectada!\n` +
-                  `Build ID: ${updateInfo.buildId}\n` +
-                  `Fecha: ${updateInfo.lastUpdated}\n` +
-                  `Iniciando proceso de extracción...`
-        };
-
-        await this.sendNotification(message);
-    }
-
-    async notifySuccess(results) {
-        const message = {
-            text: `✅ Extracción de datos completada exitosamente!\n` +
-                  `Archivos procesados: ${results.processingResult.filesProcessed}\n` +
-                  `Tiempo total: ${results.processingResult.duration}s\n` +
-                  `Datos exportados actualizados.`
-        };
-
-        await this.sendNotification(message);
-    }
-
-    async notifyError(error) {
-        const message = {
-            text: `❌ Error en automatización de Last Oasis:\n` +
-                  `Error: ${error.message}\n` +
-                  `Timestamp: ${new Date().toISOString()}\n` +
-                  `Revisar logs para más detalles.`
-        };
-
-        await this.sendNotification(message);
-    }
-
-    async sendNotification(message) {
-        try {
-            if (this.webhookUrl) {
-                await axios.post(this.webhookUrl, message);
-                logger.info('Notificación enviada exitosamente');
-            }
-        } catch (error) {
-            logger.error('Error enviando notificación:', error.message);
-        }
-    }
+  }
 }
 
 module.exports = { NotificationService };
@@ -508,7 +510,6 @@ NOTIFICATION_WEBHOOK="https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
 EMAIL_NOTIFICATIONS="false"
 
 # Configuración de extracción
-STEAMCMD_PATH="./automation/steamcmd/steamcmd.sh"
 GAME_INSTALL_PATH="./temp/last_oasis/"
 EXTRACTION_TIMEOUT="1800000"
 
@@ -532,39 +533,39 @@ FORCE_EXTRACTION="false"
 ```javascript
 #!/usr/bin/env node
 
-const { program } = require('commander');
-const { SteamMonitor } = require('../services/steamMonitor');
-const { GameExtractor } = require('../services/gameExtractor');
+const { program } = require("commander");
+const { SteamMonitor } = require("../services/steamMonitor");
+const { GameExtractor } = require("../services/gameExtractor");
 
 program
-  .name('lo-automation')
-  .description('Herramientas de gestión para automatización de Last Oasis')
-  .version('1.0.0');
+  .name("lo-automation")
+  .description("Herramientas de gestión para automatización de Last Oasis")
+  .version("1.0.0");
 
 program
-  .command('check-update')
-  .description('Verificar si hay actualizaciones disponibles')
+  .command("check-update")
+  .description("Verificar si hay actualizaciones disponibles")
   .action(async () => {
     const monitor = new SteamMonitor();
     const result = await monitor.checkForUpdates();
-    console.log('Resultado:', result);
+    console.log("Resultado:", result);
   });
 
 program
-  .command('force-extract')
-  .description('Forzar extracción sin verificar actualizaciones')
+  .command("force-extract")
+  .description("Forzar extracción sin verificar actualizaciones")
   .action(async () => {
     const extractor = new GameExtractor();
     const result = await extractor.extractGameFiles();
-    console.log('Resultado:', result);
+    console.log("Resultado:", result);
   });
 
 program
-  .command('status')
-  .description('Mostrar estado del sistema')
+  .command("status")
+  .description("Mostrar estado del sistema")
   .action(async () => {
     // Mostrar estado de servicios, última extracción, etc.
-    console.log('Estado del sistema...');
+    console.log("Estado del sistema...");
   });
 
 program.parse();
