@@ -1,5 +1,5 @@
 const PakExtractor = require('./pakExtractor');
-const { ExtractionConfig } = require('../config/extractionConfig');
+const config = require('../config/envConfig');
 const dataAccess = require('./dataAccess');
 const fileLoader = require('./fileLoader');
 const fs = require('fs-extra');
@@ -21,8 +21,8 @@ class ExtractionService {
      */
     async initialize(environment = 'development') {
         try {
-            this.config = new ExtractionConfig(environment);
-            this.pakExtractor = new PakExtractor(this.config.getConfig());
+            this.config = config;
+            this.pakExtractor = new PakExtractor(this.config);
             this.isInitialized = true;
 
             console.log('Extraction service initialized successfully');
@@ -330,10 +330,11 @@ class ExtractionService {
             throw new Error('Configuration not initialized');
         }
 
-        this.config.updateConfig(newConfig);
+        // Since we're using a simple config object, we merge the new config
+        Object.assign(this.config, newConfig);
 
         // Reinitialize PAK extractor with new config
-        this.pakExtractor = new PakExtractor(this.config.getConfig());
+        this.pakExtractor = new PakExtractor(this.config);
 
         console.log('Configuration updated successfully');
     }
@@ -346,14 +347,14 @@ class ExtractionService {
             return null;
         }
 
-        const config = { ...this.config.getConfig() };
+        const configCopy = { ...this.config };
 
         // Hide sensitive information
-        if (config.encryption?.aesKey) {
-            config.encryption.aesKey = '***HIDDEN***';
+        if (configCopy.encryption?.aesKey) {
+            configCopy.encryption.aesKey = '***HIDDEN***';
         }
 
-        return config;
+        return configCopy;
     }
 }
 

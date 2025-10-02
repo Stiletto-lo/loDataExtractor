@@ -1,5 +1,5 @@
 const PakExtractor = require('../services/pakExtractor');
-const { ExtractionConfig } = require('../config/extractionConfig');
+const config = require('../config/envConfig');
 const fs = require('fs-extra');
 const path = require('node:path');
 
@@ -10,22 +10,9 @@ const path = require('node:path');
 class ExtractionController {
     constructor() {
         this.extractor = null;
-        this.config = null;
+        this.config = config;
         this.isExtracting = false;
         this.lastExtractionResult = null;
-        this.initializeConfig();
-    }
-
-    /**
-     * Initialize configuration
-     */
-    initializeConfig() {
-        try {
-            this.config = new ExtractionConfig(process.env.NODE_ENV || 'development');
-        } catch (error) {
-            console.error('Failed to initialize extraction config:', error.message);
-            this.config = null;
-        }
     }
 
     /**
@@ -41,7 +28,7 @@ class ExtractionController {
             }
 
             // Return config without sensitive information
-            const safeConfig = { ...this.config.getConfig() };
+            const safeConfig = { ...this.config };
             if (safeConfig.encryption?.aesKey) {
                 safeConfig.encryption.aesKey = '***HIDDEN***';
             }
@@ -71,7 +58,7 @@ class ExtractionController {
             }
 
             const updates = req.body;
-            this.config.updateConfig(updates);
+            Object.assign(this.config, updates);
 
             // Reinitialize extractor with new config
             this.extractor = null;
@@ -109,7 +96,7 @@ class ExtractionController {
 
             // Initialize extractor if needed
             if (!this.extractor) {
-                this.extractor = new PakExtractor(this.config.getConfig());
+                this.extractor = new PakExtractor(this.config);
             }
 
             this.isExtracting = true;
@@ -148,20 +135,17 @@ class ExtractionController {
      * Perform the actual extraction
      */
     async performExtraction() {
-        try {
-            const result = await this.extractor.extractPakFiles();
+        const result = await this.extractor.extractPakFiles();
 
-            // Validate extracted files
-            const isValid = await this.extractor.validateExtractedFiles();
+        // Validate extracted files
+        const isValid = await this.extractor.validateExtractedFiles();
 
-            return {
-                ...result,
-                validated: isValid,
-                timestamp: new Date().toISOString()
-            };
-        } catch (error) {
-            throw error;
-        }
+        return {
+            ...result,
+            validated: isValid,
+            timestamp: new Date().toISOString()
+        };
+
     }
 
     /**
@@ -229,7 +213,7 @@ class ExtractionController {
      */
     async validateConfig(req, res) {
         try {
-            const configData = req.body || (this.config ? this.config.getConfig() : null);
+            const configData = req.body || this.config;
 
             if (!configData) {
                 return res.status(400).json({
@@ -238,11 +222,7 @@ class ExtractionController {
                 });
             }
 
-            // Create temporary config instance for validation
-            const tempConfig = new ExtractionConfig();
-            tempConfig.updateConfig(configData);
-
-            // Additional validation checks
+            // Perform validation checks directly
             const validationResults = await this.performConfigValidation(configData);
 
             res.json({
@@ -277,7 +257,7 @@ class ExtractionController {
                     exists: gamePathExists,
                     path: config.pakFiles.gamePath
                 };
-                if (!gamePathExists) results.overall = false;
+                if (!gamePathExists) { results.overall = false; }
             }
 
             // Validate PAK directory
@@ -321,7 +301,7 @@ class ExtractionController {
 
             // Check if at least one tool is available
             const hasValidTool = (results.tools.unrealPak?.exists || results.tools.fmodel?.exists);
-            if (!hasValidTool) results.overall = false;
+            if (!hasValidTool) { results.overall = false; }
 
             // Validate encryption
             if (config.encryption?.isEncrypted) {
@@ -346,7 +326,7 @@ class ExtractionController {
                     }
 
                     results.encryption.validKey = isValidKey;
-                    if (!isValidKey) results.overall = false;
+                    if (!isValidKey) { results.overall = false; }
                 } else {
                     results.overall = false;
                 }
@@ -359,6 +339,7 @@ class ExtractionController {
 
         return results;
     }
+
 
     /**
      * Get extracted files list
@@ -479,13 +460,13 @@ class ExtractionController {
      */
     async createExampleConfig(req, res) {
         try {
-            const configPath = path.join(process.cwd(), 'config', 'user-extraction.config.example.js');
-            ExtractionConfig.createExampleConfig(configPath);
+            const envExamplePath = path.join(process.cwd(), '.env.example');
 
             res.json({
                 success: true,
-                message: 'Example configuration file created',
-                path: configPath
+                message: 'Configuration template available at .env.example',
+                path: envExamplePath,
+                note: 'Copy .env.example to .env and modify the values as needed'
             });
         } catch (error) {
             res.status(500).json({

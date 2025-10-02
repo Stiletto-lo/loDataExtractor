@@ -2,7 +2,7 @@
 
 const { program } = require('commander');
 const extractionService = require('../services/extractionService');
-const { ExtractionConfig } = require('../config/extractionConfig');
+const config = require('../config/envConfig');
 const fs = require('fs-extra');
 const path = require('node:path');
 
@@ -25,16 +25,22 @@ program
     .option('-f, --force', 'Overwrite existing configuration')
     .action(async (options) => {
         try {
-            const configPath = path.join(process.cwd(), 'config', 'user-extraction.config.js');
+            const envPath = path.join(process.cwd(), '.env');
+            const envExamplePath = path.join(process.cwd(), '.env.example');
 
-            if (await fs.pathExists(configPath) && !options.force) {
-                console.log('Configuration file already exists. Use --force to overwrite.');
+            if (await fs.pathExists(envPath) && !options.force) {
+                console.log('.env file already exists. Use --force to overwrite.');
                 return;
             }
 
-            ExtractionConfig.createExampleConfig(configPath);
-            console.log(`Configuration file created at: ${configPath}`);
-            console.log('Please edit the configuration file with your settings before running extraction.');
+            // Copy .env.example to .env
+            if (await fs.pathExists(envExamplePath)) {
+                await fs.copy(envExamplePath, envPath);
+                console.log('.env file created from .env.example');
+                console.log('Please edit the .env file with your settings before running extraction.');
+            } else {
+                console.log('.env.example file not found. Please create your .env file manually.');
+            }
 
         } catch (error) {
             console.error('Failed to initialize configuration:', error.message);
@@ -48,28 +54,16 @@ program
 program
     .command('validate')
     .description('Validate extraction configuration')
-    .option('-c, --config <path>', 'Path to configuration file')
-    .action(async (options) => {
+    .action(async () => {
         try {
-            let config;
-
-            if (options.config) {
-                const configData = require(path.resolve(options.config));
-                config = new ExtractionConfig();
-                config.updateConfig(configData);
-            } else {
-                config = new ExtractionConfig();
-            }
-
             console.log('✓ Configuration is valid');
             console.log('Configuration summary:');
 
-            const configData = config.getConfig();
-            console.log(`  Game Path: ${configData.pakFiles.gamePath}`);
-            console.log(`  PAK Directory: ${configData.pakFiles.pakDirectory}`);
-            console.log(`  Output Directory: ${configData.pakFiles.outputDirectory}`);
-            console.log(`  Encryption: ${configData.encryption.isEncrypted ? 'Enabled' : 'Disabled'}`);
-            console.log(`  Tools: ${configData.tools.unrealPakPath ? 'UnrealPak' : ''} ${configData.tools.fmodelPath ? 'FModel' : ''}`);
+            console.log(`  Game Path: ${config.pakFiles.gamePath}`);
+            console.log(`  PAK Directory: ${config.pakFiles.pakDirectory}`);
+            console.log(`  Output Directory: ${config.pakFiles.outputDirectory}`);
+            console.log(`  Encryption: ${config.encryption.isEncrypted ? 'Enabled' : 'Disabled'}`);
+            console.log(`  Tools: ${config.tools.unrealPakPath ? 'UnrealPak' : ''} ${config.tools.fmodelPath ? 'FModel' : ''}`);
 
         } catch (error) {
             console.error('✗ Configuration validation failed:', error.message);
@@ -83,7 +77,6 @@ program
 program
     .command('extract')
     .description('Extract PAK files')
-    .option('-c, --config <path>', 'Path to configuration file')
     .option('--pak-only', 'Extract PAK files only, skip data processing')
     .option('--process-only', 'Process existing extracted data only')
     .option('-v, --verbose', 'Verbose output')
@@ -95,12 +88,6 @@ program
             const initialized = await extractionService.initialize();
             if (!initialized) {
                 throw new Error('Failed to initialize extraction service');
-            }
-
-            // Load custom config if provided
-            if (options.config) {
-                const configData = require(path.resolve(options.config));
-                extractionService.updateConfig(configData);
             }
 
             let result;
@@ -259,21 +246,19 @@ configCmd
     .option('--sensitive', 'Show sensitive information (encryption keys)')
     .action(async (options) => {
         try {
-            const initialized = await extractionService.initialize();
-            if (!initialized) {
-                throw new Error('Failed to initialize extraction service');
-            }
-
-            let config = extractionService.getConfig();
+            console.log('Current Configuration:');
 
             if (options.sensitive) {
-                // Load full config with sensitive data
-                const fullConfig = new ExtractionConfig();
-                config = fullConfig.getConfig();
+                // Show all configuration including sensitive data
+                console.log(JSON.stringify(config, null, 2));
+            } else {
+                // Hide sensitive information
+                const sanitizedConfig = { ...config };
+                if (sanitizedConfig.encryption?.key) {
+                    sanitizedConfig.encryption.key = '***HIDDEN***';
+                }
+                console.log(JSON.stringify(sanitizedConfig, null, 2));
             }
-
-            console.log('Current Configuration:');
-            console.log(JSON.stringify(config, null, 2));
 
         } catch (error) {
             console.error('Failed to show configuration:', error.message);
@@ -283,27 +268,27 @@ configCmd
 
 configCmd
     .command('set <key> <value>')
-    .description('Set configuration value')
+    .description('Set configuration value (Note: This only updates runtime config, not environment variables)')
     .action(async (key, value) => {
         try {
-            const initialized = await extractionService.initialize();
-            if (!initialized) {
-                throw new Error('Failed to initialize extraction service');
-            }
+            console.log('⚠️  Warning: This command only updates the runtime configuration.');
+            console.log('   To permanently change settings, update your .env file.');
+            console.log('');
 
             // Parse nested key (e.g., "pakFiles.gamePath")
             const keys = key.split('.');
-            const update = {};
-            let current = update;
+            let current = config;
 
             for (let i = 0; i < keys.length - 1; i++) {
-                current[keys[i]] = {};
+                if (!current[keys[i]]) {
+                    current[keys[i]] = {};
+                }
                 current = current[keys[i]];
             }
             current[keys[keys.length - 1]] = value;
 
-            extractionService.updateConfig(update);
-            console.log(`✓ Configuration updated: ${key} = ${value}`);
+            console.log(`✓ Runtime configuration updated: ${key} = ${value}`);
+            console.log('  (This change will be lost when the application restarts)');
 
         } catch (error) {
             console.error('Failed to update configuration:', error.message);
@@ -319,13 +304,6 @@ program
     .description('Check and manage extraction tools')
     .action(async () => {
         try {
-            const initialized = await extractionService.initialize();
-            if (!initialized) {
-                throw new Error('Failed to initialize extraction service');
-            }
-
-            const config = extractionService.getConfig();
-
             console.log('Extraction Tools Status:');
 
             // Check UnrealPak
@@ -344,16 +322,26 @@ program
                 console.log('  FModel: Not configured');
             }
 
-            // Show common tool locations
+            // Show common tool locations to check
             console.log('\nCommon tool locations to check:');
+
+            const commonToolPaths = {
+                unrealPak: [
+                    path.join(process.cwd(), 'tools', 'UnrealPakTool\\UnrealPak.exe')
+                ],
+                fmodel: [
+                    path.join(process.cwd(), 'tools', 'FModel.exe')
+                ]
+            };
+
             console.log('UnrealPak:');
-            for (const toolPath of config.tools.commonToolPaths.unrealPak) {
+            for (const toolPath of commonToolPaths.unrealPak) {
                 const exists = await fs.pathExists(toolPath);
                 console.log(`  ${exists ? '✓' : '✗'} ${toolPath}`);
             }
 
             console.log('FModel:');
-            for (const toolPath of config.tools.commonToolPaths.fmodel) {
+            for (const toolPath of commonToolPaths.fmodel) {
                 const exists = await fs.pathExists(toolPath);
                 console.log(`  ${exists ? '✓' : '✗'} ${toolPath}`);
             }
