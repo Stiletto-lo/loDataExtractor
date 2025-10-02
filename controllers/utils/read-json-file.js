@@ -15,7 +15,9 @@ const readJsonFile = (filePath, encoding = undefined) => {
 
   try {
     const rawData = fs.readFileSync(filePath);
-    return JSON.parse(rawData.toString(encoding));
+    const jsonString = rawData.toString(encoding);
+    const cleanJson = jsonString.replace(/^\uFEFF/, '');
+    return JSON.parse(cleanJson);
   } catch (error) {
     console.error(`Error reading or parsing file ${filePath}:`, error.message);
     return undefined;

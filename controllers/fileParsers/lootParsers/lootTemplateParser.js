@@ -152,7 +152,6 @@ const parseLootTemplate = (filePath) => {
 
   const jsonData = readJsonFile(filePath);
   if (!jsonData || !Array.isArray(jsonData) || jsonData.length < 2) {
-    console.error(`Invalid or incomplete data in ${filePath}`);
     return false;
   }
 
