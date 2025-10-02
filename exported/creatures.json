@@ -6872,12 +6872,13 @@
     "originalName": "EasyRupu T4 Q"
   },
   {
-    "name": "Excavation Site (1)",
-    "type": "AC_RupuCaveCamp_C"
-  },
-  {
     "name": "Excavation Site (2)",
     "type": "AC_WorkersGrave_C"
+  },
+  {
+    "name": "Excavation Site (Rupu)",
+    "type": "AC_RupuCaveCamp_C",
+    "category": "Rupu"
   },
   {
     "name": "Falling Cactus",
@@ -6942,11 +6943,13 @@
   {
     "name": "Fire Elemental",
     "type": "FireElementalMob_C",
+    "health": 9000,
     "originalName": "FireElemental"
   },
   {
     "name": "Fire Fortress",
-    "type": "KS_LargeRupuCamp_3_C"
+    "type": "KS_LargeRupuCamp_3_C",
+    "category": "Rupu"
   },
   {
     "name": "Foragers Outpost (1)",
@@ -6969,28 +6972,33 @@
     "type": "SG_RockyHillsTinyCamp_C"
   },
   {
-    "name": "Foragers Outpost (6)",
-    "type": "SG_TinyRupuCamp_1_C"
+    "name": "Foragers Outpost (Rupu)",
+    "type": "SG_TinyRupuCamp_1_C",
+    "category": "Rupu"
   },
   {
-    "name": "Foragers Outpost (7)",
-    "type": "SG_TinyRupuCamp_2_C"
+    "name": "Foragers Outpost (Rupu)",
+    "type": "SG_TinyRupuCamp_2_C",
+    "category": "Rupu"
   },
   {
-    "name": "Foragers Outpost (8)",
-    "type": "SG_TinyRupuCamp_3_C"
+    "name": "Foragers Outpost (Rupu)",
+    "type": "SG_TinyRupuCamp_3_C",
+    "category": "Rupu"
   },
   {
     "name": "Fortified Rupu Town",
-    "type": "MediumLargeRupuCamp_01_C"
-  },
-  {
-    "name": "Fortified Rupu Village (1)",
-    "type": "CanyonSavannahMediumRupuCamp_01_C"
+    "type": "MediumLargeRupuCamp_01_C",
+    "category": "Rupu"
   },
   {
     "name": "Fortified Rupu Village (2)",
     "type": "SG_FlatlandsForagingCamp_C"
+  },
+  {
+    "name": "Fortified Rupu Village (Rupu)",
+    "type": "CanyonSavannahMediumRupuCamp_01_C",
+    "category": "Rupu"
   },
   {
     "name": "Gas Thrower",
@@ -7405,7 +7413,8 @@
   },
   {
     "name": "Gogo",
-    "type": "GogoMob_C"
+    "type": "GogoMob_C",
+    "health": 3000
   },
   {
     "name": "Grave Digger (Medium)",
@@ -7672,7 +7681,8 @@
   },
   {
     "name": "Great Rupu Wall",
-    "type": "AC_RupuGate_C"
+    "type": "AC_RupuGate_C",
+    "category": "Rupu"
   },
   {
     "name": "Green Rupu",
@@ -15000,7 +15010,8 @@
   },
   {
     "name": "Koa",
-    "type": "KoaMob_C"
+    "type": "KoaMob_C",
+    "health": 3000
   },
   {
     "name": "Koa T4",
@@ -15305,15 +15316,19 @@
   },
   {
     "name": "Lava Papak",
-    "type": "LavaPapakMob_C"
+    "type": "LavaPapakMob_C",
+    "category": "Papak"
   },
   {
     "name": "Lazaward",
-    "type": "NurrMobLarge_C"
+    "type": "NurrMobLarge_C",
+    "health": 190,
+    "category": "Nurr"
   },
   {
     "name": "Leaning Fortress",
-    "type": "KS_LargeRupuCamp_2_C"
+    "type": "KS_LargeRupuCamp_2_C",
+    "category": "Rupu"
   },
   {
     "name": "Loot Box Armors",
@@ -20870,7 +20885,8 @@
   },
   {
     "name": "Mountable Nurr",
-    "type": "MountableNurrMob_C"
+    "type": "MountableNurrMob_C",
+    "category": "Nurr"
   },
   {
     "name": "Mushroom Gas",
@@ -20883,16 +20899,22 @@
     "originalName": "MushroomGas"
   },
   {
-    "name": "Nurr (1)",
-    "type": "KillinMob_C"
+    "name": "Nurr (Killin)",
+    "type": "KillinMob_C",
+    "health": 300,
+    "category": "Killin"
   },
   {
-    "name": "Nurr (2)",
-    "type": "NurrMob_C"
+    "name": "Nurr (Nurr)",
+    "type": "NurrMob_C",
+    "health": 190,
+    "category": "Nurr"
   },
   {
     "name": "Nurr Lair",
-    "type": "NurrLair_T2_C"
+    "type": "NurrLair_T2_C",
+    "category": "Nurr",
+    "tier": "T2"
   },
   {
     "name": "Nurr Raider",
@@ -21061,7 +21083,9 @@
   },
   {
     "name": "Okkam",
-    "type": "OkkamMob_C"
+    "type": "OkkamMob_C",
+    "health": 9000,
+    "category": "Okkam"
   },
   {
     "name": "Okkam T3",
@@ -21456,7 +21480,9 @@
   },
   {
     "name": "Papak",
-    "type": "PapakMob_C"
+    "type": "PapakMob_C",
+    "health": 750,
+    "category": "Papak"
   },
   {
     "name": "Papak T3",
@@ -21634,7 +21660,8 @@
   },
   {
     "name": "Phemke Nest",
-    "type": "EasyPhemkeNest_01_C"
+    "type": "EasyPhemkeNest_01_C",
+    "category": "Phemke"
   },
   {
     "name": "Phemke T1",
@@ -21888,43 +21915,44 @@
     ]
   },
   {
-    "name": "Reinforced Rupu Outpost (7)",
-    "type": "MediumMediumRupuCamp_01_C"
+    "name": "Reinforced Rupu Outpost (Rupu)",
+    "type": "MediumMediumRupuCamp_01_C",
+    "category": "Rupu"
   },
   {
     "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_HardRupuCamp_01_C",
-    "category": "Hard",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_HardRupuCamp_02_C",
-    "category": "Hard",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_HardRupuCamp_03_C",
-    "category": "Hard",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_HardRupuCamp_04_C",
-    "category": "Hard",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_SingleBallistaRupuCamp_01_C",
-    "category": "Single",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Reinforced Rupu Outpost (T1)",
     "type": "T1_SingleScattershotRupuCamp_01_C",
-    "category": "Single",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
@@ -22453,18 +22481,19 @@
   {
     "name": "Rupu Campfire Site (T1)",
     "type": "T1_TinyRupuCamp_03_C",
-    "category": "Tiny",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Rupu Campfire Site (T1)",
     "type": "T1_TinyRupuCamp_04_C",
-    "category": "Tiny",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Rupu Cave",
-    "type": "TestRupuCave_C"
+    "type": "TestRupuCave_C",
+    "category": "Rupu"
   },
   {
     "name": "Rupu Defensive Storage",
@@ -24172,31 +24201,34 @@
   },
   {
     "name": "Rupu Fortress",
-    "type": "HardLargeRupuCampFortified1_03_C"
-  },
-  {
-    "name": "Rupu Gifting Altar (3)",
-    "type": "RupuCaveCamp_01_C"
+    "type": "HardLargeRupuCampFortified1_03_C",
+    "category": "Rupu"
   },
   {
     "name": "Rupu Gifting Altar (4)",
     "type": "Canyon_C"
   },
   {
+    "name": "Rupu Gifting Altar (Rupu)",
+    "type": "RupuCaveCamp_01_C",
+    "category": "Rupu"
+  },
+  {
     "name": "Rupu Gifting Altar (T1)",
     "type": "T1_TinyRupuCamp_01_C",
-    "category": "Tiny",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Rupu Gifting Altar (T1)",
     "type": "T1_TinyRupuCamp_05_C",
-    "category": "Tiny",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Rupu Habitat",
-    "type": "EasySmallRupuCamp_01_C"
+    "type": "EasySmallRupuCamp_01_C",
+    "category": "Rupu"
   },
   {
     "name": "Rupu Harasser (Easy)",
@@ -25997,11 +26029,13 @@
   },
   {
     "name": "Rupu Moisture Collector",
-    "type": "CanyonMountainTopSmallRupuCamp_C"
+    "type": "CanyonMountainTopSmallRupuCamp_C",
+    "category": "Rupu"
   },
   {
     "name": "Rupu Observation Point",
-    "type": "KS_LargeRupuCamp_C"
+    "type": "KS_LargeRupuCamp_C",
+    "category": "Rupu"
   },
   {
     "name": "Rupu Oracle (Rupu)",
@@ -27805,7 +27839,7 @@
   {
     "name": "Rupu Prayer Site",
     "type": "T1_TinyRupuCamp_02_C",
-    "category": "Tiny",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
@@ -31265,24 +31299,27 @@
     "type": "SG_RoadWatchtower_C"
   },
   {
-    "name": "Rupu Watch Tower (2)",
-    "type": "KS_EasyRupuCamp_2_C"
-  },
-  {
-    "name": "Rupu Watch Tower (3)",
-    "type": "KS_MediumRupuCamp_1_C"
-  },
-  {
     "name": "Rupu Watch Tower (4)",
     "type": "AC_MatriarchCampUnedited_C"
   },
   {
-    "name": "Rupu Watch Tower (5)",
-    "type": "EasySingleRupuCampFortified_01_C"
-  },
-  {
     "name": "Rupu Watch Tower (6)",
     "type": "SG_AshWastesFortress2_C"
+  },
+  {
+    "name": "Rupu Watch Tower (Rupu)",
+    "type": "KS_EasyRupuCamp_2_C",
+    "category": "Rupu"
+  },
+  {
+    "name": "Rupu Watch Tower (Rupu)",
+    "type": "KS_MediumRupuCamp_1_C",
+    "category": "Rupu"
+  },
+  {
+    "name": "Rupu Watch Tower (Rupu)",
+    "type": "EasySingleRupuCampFortified_01_C",
+    "category": "Rupu"
   },
   {
     "name": "Rupu Zealot (Medium)",
@@ -31631,84 +31668,89 @@
   {
     "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_01_C",
-    "category": "Single",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_02_C",
-    "category": "Single",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_03_C",
-    "category": "Single",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_04_C",
-    "category": "Single",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Small Rupu Hut (T1)",
     "type": "T1_SingleRupuCamp_05_C",
-    "category": "Single",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
-    "name": "Small Rupu Outpost (6)",
-    "type": "KS_EasyRupuCamp_3_C"
+    "name": "Small Rupu Outpost (Rupu)",
+    "type": "KS_EasyRupuCamp_3_C",
+    "category": "Rupu"
   },
   {
-    "name": "Small Rupu Outpost (7)",
-    "type": "EasyMediumRupuCamp_01_C"
+    "name": "Small Rupu Outpost (Rupu)",
+    "type": "EasyMediumRupuCamp_01_C",
+    "category": "Rupu"
   },
   {
     "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_01_C",
-    "category": "Medium",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_02_C",
-    "category": "Medium",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_03_C",
-    "category": "Medium",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_04_C",
-    "category": "Medium",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
     "name": "Small Rupu Outpost (T1)",
     "type": "T1_MediumRupuCamp_05_C",
-    "category": "Medium",
+    "category": "Rupu",
     "tier": "T1"
   },
   {
-    "name": "Small Rupu Village (1)",
-    "type": "MediumSmallRupuCamp_01_C"
+    "name": "Small Rupu Village (Rupu)",
+    "type": "MediumSmallRupuCamp_01_C",
+    "category": "Rupu"
   },
   {
-    "name": "Small Rupu Village (2)",
-    "type": "MediumSmallRupuCamp_02_C"
+    "name": "Small Rupu Village (Rupu)",
+    "type": "MediumSmallRupuCamp_02_C",
+    "category": "Rupu"
   },
   {
     "name": "Small Worm",
     "type": "SmallWormMob_C",
     "health": 150,
-    "experiencie": 144
+    "experiencie": 144,
+    "category": "Worm"
   },
   {
     "name": "Sunken Temple",
@@ -31905,7 +31947,9 @@
   },
   {
     "name": "The Long One",
-    "type": "Worm6_C"
+    "type": "Worm6_C",
+    "health": 45000,
+    "category": "Worm"
   },
   {
     "name": "Tower of The Holly Fire",
@@ -31913,11 +31957,13 @@
   },
   {
     "name": "Toxic Papak",
-    "type": "SwampPapakMob_C"
+    "type": "SwampPapakMob_C",
+    "category": "Papak"
   },
   {
     "name": "Toxic War Papak",
-    "type": "SwampPapakMob_Q_C"
+    "type": "SwampPapakMob_Q_C",
+    "category": "Papak"
   },
   {
     "name": "Treasure Chest T1",
@@ -32944,7 +32990,8 @@
   },
   {
     "name": "War Okkam",
-    "type": "OkkamMob_Q_C"
+    "type": "OkkamMob_Q_C",
+    "category": "Okkam"
   },
   {
     "name": "Water Condenser",
