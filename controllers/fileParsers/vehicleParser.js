@@ -8,6 +8,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const utilityFunctions = require("./utilityFunctions");
+const { readJsonFile } = require("../utils/read-json-file");
 
 /**
  * Parse vehicle data from a file to extract capacity information
@@ -20,8 +21,7 @@ const parseVehicleData = (filePath) => {
       return;
     }
 
-    const rawdata = fs.readFileSync(filePath, "utf8");
-    const jsonData = JSON.parse(rawdata);
+    const jsonData = readJsonFile(filePath, "utf8");
 
     // Extract the vehicle name from the file path
     const fileName = path.basename(filePath, ".json");
