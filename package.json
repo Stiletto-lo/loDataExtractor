@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "gen": "cd libs && call export.bat && cd .. && set CONTENT_FOLDER_PATH=temp_export && node index.js",
     "format": "biome format --write .",
     "lint": "biome lint --write ."
   },
