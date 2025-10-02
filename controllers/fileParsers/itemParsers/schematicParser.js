@@ -2,18 +2,17 @@
  * Schematic parser functions for handling schematic-related data
  */
 
-const fs = require("node:fs");
 const dataParser = require("../../dataParsers");
 const translator = require("../../translator");
 const utilityFunctions = require("../utilityFunctions");
+const { readJsonFile } = require("../../utils/read-json-file");
 
 /**
  * Parse schematic item data from a file
  * @param {string} filePath - The file path to parse
  */
 const parseSchematicItemData = (filePath) => {
-	const rawdata = fs.readFileSync(filePath);
-	const jsonData = JSON.parse(rawdata);
+	const jsonData = readJsonFile(filePath);
 
 	if (jsonData?.[1]?.Type) {
 		const item = utilityFunctions.extractItemByType(jsonData[1].Type);

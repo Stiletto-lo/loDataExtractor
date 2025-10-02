@@ -6,7 +6,6 @@
  * between upgrades.
  */
 
-const fs = require("node:fs");
 const dataParser = require("../dataParsers");
 const translator = require("../translator");
 const upgradeTemplate = require("../../templates/upgrade");
@@ -14,6 +13,7 @@ const upgradeInfoTemplate = require("../../templates/upgradeInfo");
 const recipeTemplate = require("../../templates/recipe");
 const utilityFunctions = require("./utilityFunctions");
 const itemTemplate = require("../../templates/item");
+const { readJsonFile } = require("../utils/read-json-file");
 
 // Property mapping from source data to our internal model
 const PROPERTY_MAPPING = {
@@ -172,8 +172,7 @@ const parseUpgrades = (filePath) => {
 
 	try {
 		// Read and parse the file
-		const rawdata = fs.readFileSync(filePath, "utf8");
-		const jsonData = JSON.parse(rawdata);
+		const jsonData = readJsonFile(filePath, "utf8");
 
 		if (!jsonData[0]?.Name) {
 			console.warn(`No Name property found in ${filePath}`);

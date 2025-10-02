@@ -15,6 +15,7 @@ const dropDataTemplate = require("../../templates/dropData");
 const creatureTemplate = require("../../templates/creature");
 const utilityFunctions = require("./utilityFunctions");
 const lootTemplateParser = require("./lootParsers/lootTemplateParser");
+const { readJsonFile } = require("../utils/read-json-file");
 
 // Output directories
 const OUTPUT_DIR = path.join(__dirname, "../../exported");
@@ -27,26 +28,6 @@ if (!fs.existsSync(OUTPUT_DIR)) {
 if (!fs.existsSync(LOOTTABLES_DIR)) {
 	fs.mkdirSync(LOOTTABLES_DIR, { recursive: true });
 }
-
-/**
- * Safely reads and parses a JSON file
- * @param {string} filePath - The file path to read
- * @returns {Object|null} - Parsed JSON data or null if error occurs
- */
-const readJsonFile = (filePath) => {
-	if (!filePath || typeof filePath !== "string") {
-		console.error("Invalid file path provided to readJsonFile");
-		return null;
-	}
-
-	try {
-		const rawData = fs.readFileSync(filePath);
-		return JSON.parse(rawData);
-	} catch (error) {
-		console.error(`Error reading or parsing file ${filePath}:`, error.message);
-		return null;
-	}
-};
 
 /**
  * Creates a drop item with optional properties based on configuration
@@ -91,7 +72,7 @@ const resolveItemName = (baseName, lootItem) => {
 	}
 
 	const completeItem = utilityFunctions.getItemByType(
-		dataParser.parseType(lootItem.Item.AssetPathName),
+		dataParser.parseType(lootItem.Item.AssetPathName)
 	);
 
 	if (completeItem?.name) {
@@ -136,7 +117,9 @@ const parseLootTable = (filePath) => {
 	}
 
 	const jsonData = readJsonFile(filePath);
-	if (!jsonData) return false;
+	if (!jsonData) {
+		return false;
+	}
 
 	const firstEntry = jsonData[0];
 	if (
@@ -221,7 +204,7 @@ const parseLootTable = (filePath) => {
 		const lootTablePath = path.join(LOOTTABLES_DIR, `${fileName}.json`);
 		fs.writeFileSync(
 			lootTablePath,
-			JSON.stringify(lootTables[firstEntry.Name], null, 2),
+			JSON.stringify(lootTables[firstEntry.Name], null, 2)
 		);
 	}
 
@@ -260,7 +243,7 @@ const filterRelevantObjects = (objects) => {
 		(obj) =>
 			obj?.Type !== "Function" &&
 			obj?.Type !== "BlueprintGeneratedClass" &&
-			!obj?.Type?.includes("Component"),
+			!obj?.Type?.includes("Component")
 	);
 };
 
@@ -279,7 +262,7 @@ const extractCreatureData = (additionalInfo, objectData) => {
 		experiencie: additionalInfo?.Properties?.ExperienceAward,
 		health: additionalInfo?.Properties?.MaxHealth,
 		lootTemplate: dataParser.parseObjectPath(
-			additionalInfo?.Properties?.Loot?.ObjectPath,
+			additionalInfo?.Properties?.Loot?.ObjectPath
 		),
 	};
 
@@ -346,7 +329,9 @@ const parseLootSites = (filePath) => {
 	}
 
 	const jsonData = readJsonFile(filePath);
-	if (!jsonData) return false;
+	if (!jsonData) {
+		return false;
+	}
 
 	const objectsFiltered = filterRelevantObjects(jsonData);
 	const firstObject = objectsFiltered[0];
@@ -366,7 +351,7 @@ const parseLootSites = (filePath) => {
 
 	// Find additional components that might contain useful information
 	const mobVariationComponent = jsonData.find(
-		(o) => o.Type === "MistHumanoidMobVariationComponent",
+		(o) => o.Type === "MistHumanoidMobVariationComponent"
 	);
 
 	// Extract creature data with enhanced information

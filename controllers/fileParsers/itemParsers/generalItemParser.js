@@ -2,10 +2,10 @@
  * General item parser functions for handling item-related data
  */
 
-const fs = require("node:fs");
 const dataParser = require("../../dataParsers");
 const translator = require("../../translator");
 const utilityFunctions = require("../utilityFunctions");
+const { readJsonFile } = require("../../utils/read-json-file");
 
 // Import templates
 const weaponInfoTemplate = require("../../../templates/weaponInfo");
@@ -277,10 +277,9 @@ const parseItemData = (filePath) => {
 		return;
 	}
 
-	const rawdata = fs.readFileSync(filePath);
-	const jsonData = JSON.parse(rawdata);
+	const jsonData = readJsonFile(filePath);
 
-	if (jsonData[1]?.Type) {
+	if (jsonData?.[1]?.Type) {
 		let item = getItemFromItemData(jsonData[1]);
 
 		if (!item?.name) {
