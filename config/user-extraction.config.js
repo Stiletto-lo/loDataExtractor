@@ -25,19 +25,16 @@ module.exports = {
     "_comment": "Replace with your actual AES key - this is a sample 64-character hex key"
   },
   "tools": {
-    "unrealPakPath": "D:\\Github\\loDataExtractor\\tools\\mock-unrealpak.bat",
-    "fmodelPath": "D:\\Github\\loDataExtractor\\tools\\mock-fmodel.bat",
+    "unrealPakPath": "D:\\Github\\loDataExtractor\\tools\\UnrealPakTool\\UnrealPak.exe",
+    "fmodelPath": "D:\\Github\\loDataExtractor\\tools\\FModel.exe",
     "autoDetectTools": false,
     "commonToolPaths": {
       "unrealPak": [
-        "D:\\Github\\loDataExtractor\\tools\\mock-unrealpak.bat",
+        "D:\\Github\\loDataExtractor\\tools\\UnrealPakTool\\UnrealPak.exe",
         "C:\\Program Files\\Epic Games\\UE_4.27\\Engine\\Binaries\\Win64\\UnrealPak.exe",
         "C:\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealPak.exe",
-        "D:\\Github\\loDataExtractor\\tools\\UnrealPak.exe"
       ],
       "fmodel": [
-        "D:\\Github\\loDataExtractor\\tools\\mock-fmodel.bat",
-        "C:\\Program Files\\FModel\\FModel.exe",
         "D:\\Github\\loDataExtractor\\tools\\FModel.exe",
         "C:\\Users\\dm94\\AppData\\Local\\FModel\\FModel.exe"
       ]
