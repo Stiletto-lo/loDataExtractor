@@ -81,12 +81,12 @@ if "%output_dir%"=="" (
 
 REM Check if PAKs directory exists
 if not exist "%paks_dir%" (
-    echo Error: PAKs directory '%paks_dir%' not found
+    echo Error: PAKs directory "%paks_dir%" not found
     exit /b 1
 )
 
-echo Loading PAK files from: %paks_dir%
-echo Output directory: %output_dir%
+echo Loading PAK files from: "%paks_dir%"
+echo Output directory: "%output_dir%"
 if not "%aes_key%"=="" echo AES Key: %aes_key:~0,8%********
 if not "%game_name%"=="" echo Game: %game_name%
 echo.

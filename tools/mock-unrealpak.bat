@@ -17,7 +17,7 @@ if "%~1"=="" (
     exit /b 1
 )
 
-REM Parse arguments
+REM Parse arguments - properly handle paths with spaces
 set "pakfile=%~1"
 set "extract_path="
 set "aes_key="
@@ -25,7 +25,6 @@ set "list_mode=false"
 set "test_mode=false"
 
 REM Parse remaining arguments
-set "arg_index=2"
 :parse_args
 if "%~2"=="" goto end_parse
 if /i "%~2"=="-Extract" (
@@ -49,6 +48,7 @@ if "%~2:~0,8%"=="-AESKey=" (
     shift
     goto parse_args
 )
+REM Skip unknown arguments
 shift
 goto parse_args
 
@@ -56,13 +56,13 @@ goto parse_args
 
 REM Check if PAK file exists (simulate)
 if not exist "%pakfile%" (
-    echo Error: PAK file '%pakfile%' not found
+    echo Error: PAK file "%pakfile%" not found
     exit /b 1
 )
 
 REM Simulate different operations
 if "%list_mode%"=="true" (
-    echo Listing contents of '%pakfile%':
+    echo Listing contents of "%pakfile%":
     echo   Game/Content/Data/Items.uasset
     echo   Game/Content/Data/Creatures.uasset
     echo   Game/Content/Blueprints/Items/BP_Item_Base.uasset
@@ -80,7 +80,7 @@ if "%test_mode%"=="true" (
 )
 
 if not "%extract_path%"=="" (
-    echo Extracting '%pakfile%' to '%extract_path%'...
+    echo Extracting "%pakfile%" to "%extract_path%"...
     
     REM Create extraction directory structure matching target directories
     if not exist "%extract_path%" mkdir "%extract_path%"

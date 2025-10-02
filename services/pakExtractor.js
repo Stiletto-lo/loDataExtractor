@@ -10,6 +10,8 @@ const winston = require('winston');
 class PakExtractor {
     constructor(config) {
         this.config = config;
+        // Ensure logs directory exists before setting up logger
+        fs.ensureDirSync('./logs');
         this.logger = this.setupLogger();
         this.validateConfig();
     }
@@ -190,7 +192,10 @@ class PakExtractor {
      * Extract PAK using UnrealPak tool
      */
     async extractWithUnrealPak(pakFilePath, outputPath) {
+        await fs.ensureDir(outputPath);
+        
         return new Promise((resolve, reject) => {
+            
             const args = [pakFilePath, '-Extract', outputPath];
 
             // Add AES key if encryption is enabled
@@ -201,13 +206,33 @@ class PakExtractor {
             // Handle Windows batch files
             let command = this.config.tools.unrealPakPath;
             let spawnArgs = args;
+            let spawnOptions = {};
 
             if (process.platform === 'win32' && command.endsWith('.bat')) {
-                spawnArgs = ['/c', command, ...args];
-                command = 'cmd';
+                // For Windows batch files, use shell: true and construct the full command
+                const quotedArgs = args.map(arg => {
+                    // Quote arguments that contain spaces or special characters
+                    if (arg.includes(' ') || arg.includes('&') || arg.includes('(') || arg.includes(')')) {
+                        return `"${arg}"`;
+                    }
+                    return arg;
+                });
+                
+                // Build the full command string for shell execution
+                const fullCommand = `"${command}" ${quotedArgs.join(' ')}`;
+                command = fullCommand;
+                spawnArgs = [];
+                spawnOptions = { shell: true };
             }
 
-            const unrealPak = spawn(command, spawnArgs);
+            // Debug logging - log the exact command construction
+            this.logger.info(`Executing command: ${command}`);
+            this.logger.info(`With arguments: ${JSON.stringify(spawnArgs)}`);
+            this.logger.info(`Full command would be: ${command} ${spawnArgs.join(' ')}`);
+            this.logger.info(`PAK file path: "${pakFilePath}"`);
+            this.logger.info(`Output path: "${outputPath}"`);
+
+            const unrealPak = spawn(command, spawnArgs, spawnOptions);
             let stdout = '';
             let stderr = '';
 
@@ -249,11 +274,16 @@ class PakExtractor {
      */
     async extractWithFModel(pakFilePath, outputPath) {
         return new Promise((resolve, reject) => {
+            // Quote paths if they contain spaces for Windows batch files
+            const quotedPakPath = pakFilePath.includes(' ') ? `"${pakFilePath}"` : pakFilePath;
+            const quotedOutputPath = outputPath.includes(' ') ? `"${outputPath}"` : outputPath;
+            
             // FModel command line arguments
             const args = [
-                '--paksdir', path.dirname(pakFilePath),
-                '--output', outputPath,
-                '--export'
+                '--paksdir', path.dirname(quotedPakPath),
+                '--output', quotedOutputPath,
+                '--export',
+                '--bulk'
             ];
 
             // Add AES key if encryption is enabled
@@ -269,6 +299,10 @@ class PakExtractor {
                 spawnArgs = ['/c', command, ...args];
                 command = 'cmd';
             }
+
+            // Debug logging
+            this.logger.info(`Executing FModel command: ${command}`);
+            this.logger.info(`With FModel arguments: ${JSON.stringify(spawnArgs)}`);
 
             const fmodel = spawn(command, spawnArgs);
             let stdout = '';
