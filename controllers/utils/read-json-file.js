@@ -14,8 +14,10 @@ const readJsonFile = (filePath, encoding = undefined) => {
 
 
   try {
-    const rawData = fs.readFileSync(filePath);
-    const jsonString = rawData.toString(encoding);
+    const rawData = fs.readFileSync(filePath, {
+      encoding
+    });
+    const jsonString = rawData.toString();
     const cleanJson = jsonString.replace(/^\uFEFF/, '');
     return JSON.parse(cleanJson);
   } catch (error) {
