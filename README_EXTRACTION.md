@@ -22,16 +22,6 @@ The PAK extraction system allows you to automatically extract encrypted PAK file
 
 Copy `.env.example` to `.env` and configure the following variables:
 
-```bash
-# Game paths
-LO_GAME_PATH=C:\Program Files (x86)\Steam\steamapps\common\Last Oasis
-LO_PAK_PATH=C:\Program Files (x86)\Steam\steamapps\common\Last Oasis\Content\Paks
-
-# Output directories
-LO_OUTPUT_DIR=./extracted
-LO_EXPORT_DIR=./exported
-```
-
 ### Configuration File
 
 You can also use a JSON configuration file. Copy `config/extraction.example.json` to `config/extraction.json` and customize:
@@ -146,13 +136,13 @@ The extraction system requires external tools:
 
 - **Purpose**: Extract PAK files
 - **Auto-detection**: The system will try to find UnrealPak.exe automatically
-- **Manual setup**: Set `LO_UNREALPAK_PATH` environment variable
+- **Manual setup**: environment variable
 
 ### FModel (Optional)
 
 - **Purpose**: Advanced PAK file analysis and extraction
 - **Auto-detection**: The system will try to find FModel.exe automatically
-- **Manual setup**: Set `LO_FMODEL_PATH` environment variable
+- **Manual setup**: environment variable
 
 ## Directory Structure
 
@@ -224,7 +214,7 @@ When enabled, the system will:
 
 2. **UnrealPak not found**
 
-   - Install Unreal Engine or set `LO_UNREALPAK_PATH` manually
+   - Install Unreal Engine or set manually
    - Ensure the path points to the correct UnrealPak.exe
 
 3. **Permission errors**
@@ -233,16 +223,12 @@ When enabled, the system will:
    - Check file permissions on output directories
 
 4. **Extraction timeout**
-   - Increase `LO_EXTRACTION_TIMEOUT` for large files
+   - Increase timeout for large files
    - Check available disk space
 
 ### Debug Mode
 
 Enable debug logging for detailed information:
-
-```bash
-LO_LOG_LEVEL=debug npm run extract
-```
 
 ## API Reference
 

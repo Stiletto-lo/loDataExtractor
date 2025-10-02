@@ -1,5 +1,34 @@
 const path = require('node:path');
 const os = require('node:os');
+require('dotenv').config();
+
+/**
+ * Helper function to parse boolean environment variables
+ */
+const parseBoolean = (value, defaultValue = false) => {
+    if (typeof value === 'string') {
+        return value.toLowerCase() === 'true';
+    }
+    return defaultValue;
+};
+
+/**
+ * Helper function to parse array from comma-separated string
+ */
+const parseArray = (value, defaultValue = []) => {
+    if (typeof value === 'string' && value.trim()) {
+        return value.split(',').map(item => item.trim());
+    }
+    return defaultValue;
+};
+
+/**
+ * Helper function to parse integer with default
+ */
+const parseInteger = (value, defaultValue) => {
+    const parsed = Number.parseInt(value, 10);
+    return Number.isNaN(parsed) ? defaultValue : parsed;
+};
 
 /**
  * Configuration for PAK file extraction
@@ -14,33 +43,33 @@ const defaultConfig = {
     // Game installation paths
     pakFiles: {
         // Main game installation directory
-        gamePath: 'C:\\Program Files (x86)\\Steam\\steamapps\\common\\Last Oasis',
+        gamePath: process.env.GAME_PATH || 'C:\\Program Files (x86)\\Steam\\steamapps\\common\\Last Oasis',
 
         // Relative path to PAK files within game directory
-        pakDirectory: 'Content\\Paks',
+        pakDirectory: process.env.PAK_DIRECTORY || 'Content\\Paks',
 
         // Output directory for extracted files
-        outputDirectory: path.join(process.cwd(), 'extracted'),
+        outputDirectory: process.env.OUTPUT_DIRECTORY || path.join(process.cwd(), 'extracted'),
 
         // Target directories to extract (empty array = extract all)
         // These paths are relative to the PAK content root
-        targetDirectories: [
+        targetDirectories: parseArray(process.env.TARGET_DIRECTORIES, [
             'Game/Content/Data',
             'Game/Content/Blueprints/Items',
             'Game/Content/Blueprints/Creatures',
             'Game/Content/Blueprints/Technologies',
             'Game/Content/Localization'
-        ]
+        ])
     },
 
     // Encryption settings for PAK files
     encryption: {
         // Whether PAK files are encrypted
-        isEncrypted: true,
+        isEncrypted: parseBoolean(process.env.IS_ENCRYPTED, true),
 
         // AES encryption key (256-bit hex string)
         // This key is required for encrypted PAK files
-        aesKey: '',
+        aesKey: process.env.AES_KEY || '',
 
         // Alternative key formats support
         keyFormat: 'hex', // 'hex', 'base64', 'string'
@@ -52,10 +81,10 @@ const defaultConfig = {
     // External tools configuration
     tools: {
         // Path to UnrealPak.exe (preferred extraction tool)
-        unrealPakPath: '',
+        unrealPakPath: process.env.UNREAL_PAK_PATH || '',
 
         // Path to FModel.exe (alternative extraction tool)
-        fmodelPath: '',
+        fmodelPath: process.env.FMODEL_PATH || '',
 
         // Auto-detect tools in common locations
         autoDetectTools: true,
@@ -78,19 +107,19 @@ const defaultConfig = {
     // Extraction process settings
     extraction: {
         // Timeout for each PAK extraction (minutes)
-        timeoutMinutes: 30,
+        timeoutMinutes: parseInteger(process.env.TIMEOUT_MINUTES, 30),
 
         // Number of retry attempts on failure
-        retryAttempts: 3,
+        retryAttempts: parseInteger(process.env.RETRY_ATTEMPTS, 3),
 
         // Clean temporary files on start
-        cleanTempOnStart: true,
+        cleanTempOnStart: parseBoolean(process.env.CLEAN_TEMP_ON_START, true),
 
         // Clean temporary files on finish
-        cleanTempOnFinish: false,
+        cleanTempOnFinish: parseBoolean(process.env.CLEAN_TEMP_ON_FINISH, false),
 
         // Validate extracted files
-        validateExtractedFiles: true,
+        validateExtractedFiles: parseBoolean(process.env.VALIDATE_EXTRACTED_FILES, true),
 
         // Parallel extraction (experimental)
         parallelExtraction: false,
@@ -100,10 +129,10 @@ const defaultConfig = {
     // Logging configuration
     logging: {
         // Log level: 'error', 'warn', 'info', 'debug'
-        level: 'info',
+        level: process.env.LOG_LEVEL || 'info',
 
         // Log file path
-        logFile: path.join(process.cwd(), 'logs', 'extraction.log'),
+        logFile: process.env.LOG_FILE || path.join(process.cwd(), 'logs', 'extraction.log'),
 
         // Console logging
         console: true,
