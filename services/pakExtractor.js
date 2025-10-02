@@ -170,17 +170,17 @@ class PakExtractor {
         this.logger.info(`Extracting ${pakName}...`);
 
         try {
-            // Try UnrealPak first if available
-            if (this.config.tools?.unrealPakPath && fs.existsSync(this.config.tools.unrealPakPath)) {
-                return await this.extractWithUnrealPak(pakFilePath, outputPath);
-            }
-
-            // Fallback to FModel if available
+            // Try FModel first if available (prioritized over UnrealPak)
             if (this.config.tools?.fmodelPath && fs.existsSync(this.config.tools.fmodelPath)) {
                 return await this.extractWithFModel(pakFilePath, outputPath);
             }
 
-            throw new Error('No extraction tools available. Please configure UnrealPak or FModel paths.');
+            // Fallback to UnrealPak if FModel is not available
+            if (this.config.tools?.unrealPakPath && fs.existsSync(this.config.tools.unrealPakPath)) {
+                return await this.extractWithUnrealPak(pakFilePath, outputPath);
+            }
+
+            throw new Error('No extraction tools available. Please configure FModel or UnrealPak paths.');
 
         } catch (error) {
             this.logger.error(`Failed to extract ${pakName}:`, error);

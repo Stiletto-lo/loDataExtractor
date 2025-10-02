@@ -63,7 +63,7 @@ program
             console.log(`  PAK Directory: ${config.pakFiles.pakDirectory}`);
             console.log(`  Output Directory: ${config.pakFiles.outputDirectory}`);
             console.log(`  Encryption: ${config.encryption.isEncrypted ? 'Enabled' : 'Disabled'}`);
-            console.log(`  Tools: ${config.tools.unrealPakPath ? 'UnrealPak' : ''} ${config.tools.fmodelPath ? 'FModel' : ''}`);
+            console.log(`  Tools: ${config.tools.fmodelPath ? 'FModel' : ''} ${config.tools.unrealPakPath ? 'UnrealPak' : ''}`);
 
         } catch (error) {
             console.error('✗ Configuration validation failed:', error.message);
@@ -306,15 +306,7 @@ program
         try {
             console.log('Extraction Tools Status:');
 
-            // Check UnrealPak
-            if (config.tools.unrealPakPath) {
-                const exists = await fs.pathExists(config.tools.unrealPakPath);
-                console.log(`  UnrealPak: ${exists ? '✓' : '✗'} ${config.tools.unrealPakPath}`);
-            } else {
-                console.log('  UnrealPak: Not configured');
-            }
-
-            // Check FModel
+            // Check FModel (prioritized tool)
             if (config.tools.fmodelPath) {
                 const exists = await fs.pathExists(config.tools.fmodelPath);
                 console.log(`  FModel: ${exists ? '✓' : '✗'} ${config.tools.fmodelPath}`);
@@ -322,26 +314,34 @@ program
                 console.log('  FModel: Not configured');
             }
 
+            // Check UnrealPak (fallback tool)
+            if (config.tools.unrealPakPath) {
+                const exists = await fs.pathExists(config.tools.unrealPakPath);
+                console.log(`  UnrealPak: ${exists ? '✓' : '✗'} ${config.tools.unrealPakPath}`);
+            } else {
+                console.log('  UnrealPak: Not configured');
+            }
+
             // Show common tool locations to check
             console.log('\nCommon tool locations to check:');
 
             const commonToolPaths = {
-                unrealPak: [
-                    path.join(process.cwd(), 'tools', 'UnrealPakTool\\UnrealPak.exe')
-                ],
                 fmodel: [
                     path.join(process.cwd(), 'tools', 'FModel.exe')
+                ],
+                unrealPak: [
+                    path.join(process.cwd(), 'tools', 'UnrealPakTool\\UnrealPak.exe')
                 ]
             };
 
-            console.log('UnrealPak:');
-            for (const toolPath of commonToolPaths.unrealPak) {
+            console.log('FModel (Prioritized):');
+            for (const toolPath of commonToolPaths.fmodel) {
                 const exists = await fs.pathExists(toolPath);
                 console.log(`  ${exists ? '✓' : '✗'} ${toolPath}`);
             }
 
-            console.log('FModel:');
-            for (const toolPath of commonToolPaths.fmodel) {
+            console.log('UnrealPak (Fallback):');
+            for (const toolPath of commonToolPaths.unrealPak) {
                 const exists = await fs.pathExists(toolPath);
                 console.log(`  ${exists ? '✓' : '✗'} ${toolPath}`);
             }

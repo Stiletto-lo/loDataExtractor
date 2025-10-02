@@ -282,15 +282,7 @@ class ExtractionController {
                 }
             }
 
-            // Validate tools
-            if (config.tools?.unrealPakPath) {
-                const unrealPakExists = await fs.pathExists(config.tools.unrealPakPath);
-                results.tools.unrealPak = {
-                    exists: unrealPakExists,
-                    path: config.tools.unrealPakPath
-                };
-            }
-
+            // Validate tools (check FModel first as it's prioritized)
             if (config.tools?.fmodelPath) {
                 const fmodelExists = await fs.pathExists(config.tools.fmodelPath);
                 results.tools.fmodel = {
@@ -299,8 +291,16 @@ class ExtractionController {
                 };
             }
 
-            // Check if at least one tool is available
-            const hasValidTool = (results.tools.unrealPak?.exists || results.tools.fmodel?.exists);
+            if (config.tools?.unrealPakPath) {
+                const unrealPakExists = await fs.pathExists(config.tools.unrealPakPath);
+                results.tools.unrealPak = {
+                    exists: unrealPakExists,
+                    path: config.tools.unrealPakPath
+                };
+            }
+
+            // Check if at least one tool is available (FModel preferred)
+            const hasValidTool = (results.tools.fmodel?.exists || results.tools.unrealPak?.exists);
             if (!hasValidTool) { results.overall = false; }
 
             // Validate encryption
