@@ -13,39 +13,6 @@
     "wikiVisibility": false
   },
   {
-    "name": "Advanced Ammo",
-    "parent": "Advanced Crafting",
-    "translation": "Advanced Ammo",
-    "type": "Ammo_T3_C",
-    "onlyDevs": true
-  },
-  {
-    "category": "Schematics",
-    "name": "Advanced Ammo Schematic",
-    "type": "Ammo_T3Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Ceramic-Tipped Bolt",
-      "Hellfire Bolt",
-      "Ceramic-Tipped Harpoon",
-      "Explosive Bolt",
-      "Ceramic Scattershot Ammo",
-      "Obsidian Rok",
-      "Cluster Bomb",
-      "Fire Dart",
-      "Floating Mine",
-      "Ceramic Dart",
-      "Explosive Dart",
-      "Insect Bomb",
-      "Bombolt",
-      "Fire Bomb",
-      "Green Death Bomb",
-      "Catapult Boulder",
-      "Throwable Insect Bomb",
-      "Throwable Smoke Bomb"
-    ]
-  },
-  {
     "name": "Advanced Armors",
     "parent": "Improved Armors",
     "translation": "Advanced Armors",
@@ -125,20 +92,6 @@
       "Barrier Plank",
       "Water Condenser"
     ]
-  },
-  {
-    "name": "Advanced Crafting",
-    "parent": "Improved Crafting",
-    "translation": "Advanced Crafting",
-    "type": "Crafting_T3_C",
-    "onlyDevs": true
-  },
-  {
-    "name": "Advanced Crafting Stations",
-    "parent": "Advanced Crafting",
-    "translation": "Advanced Crafting Stations",
-    "type": "Stations_T3_C",
-    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -296,17 +249,6 @@
     "translation": "Advanced Potions",
     "type": "Vitamins_T3_C",
     "onlyDevs": true
-  },
-  {
-    "category": "Schematics",
-    "name": "Advanced Potions Schematic",
-    "type": "Vitamins_T3Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Bonebreaker",
-      "Fury Fumes",
-      "Sinus Destroyer"
-    ]
   },
   {
     "category": "Crafting",
@@ -553,16 +495,8 @@
             "name": "Nomad Cloth"
           },
           {
-            "count": 112,
-            "name": "Cattail"
-          },
-          {
             "count": 25,
             "name": "Earth Wax"
-          },
-          {
-            "count": 20,
-            "name": "Rope"
           },
           {
             "count": 120,
@@ -665,7 +599,7 @@
             "name": "Rope"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 50
       }
     ],
@@ -777,7 +711,7 @@
       "hp": 750
     },
     "onlyDevs": true,
-    "unlockable": "Ammo Scroll Rack"
+    "unlockable": "AmmoScrollRack"
   },
   {
     "category": "Tools",
@@ -883,7 +817,7 @@
             "name": "Apple"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 60
       }
     ],
@@ -1176,6 +1110,33 @@
     "translation": "Armored Medium Walker Leg",
     "type": "WalkerLegArmored_T2_C",
     "experiencieReward": 350,
+    "stackSize": 2,
+    "weight": 20
+  },
+  {
+    "category": "Walker Parts",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 20,
+            "name": "Rupu Vine"
+          },
+          {
+            "count": 12,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 5,
+            "name": "Stone"
+          }
+        ]
+      }
+    ],
+    "name": "Armored Small Walker Leg",
+    "translation": "Armored Small Walker Leg",
+    "type": "WalkerLegArmored_T1_C",
+    "experiencieReward": 25,
     "stackSize": 2,
     "weight": 20
   },
@@ -1538,7 +1499,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 5000
+      "hp": 2500
     },
     "unlockable": "WalkerPartsBase_T1",
     "walkerInfo": {
@@ -2113,7 +2074,7 @@
       "type": "Soft",
       "hp": 12000
     },
-    "unlockable": "Barrier Gate"
+    "unlockable": "WalkerBarrierGate"
   },
   {
     "category": "Defenses",
@@ -2145,7 +2106,7 @@
       "type": "Soft",
       "hp": 12000
     },
-    "unlockable": "Barrier Plank"
+    "unlockable": "WalkerBarrierTopPlace"
   },
   {
     "category": "Containers",
@@ -2336,27 +2297,6 @@
     "description": "The original wings Nomads designed for their walkers ages ago."
   },
   {
-    "name": "Basic Ammo",
-    "parent": "Basic Crafting",
-    "translation": "Basic Ammo",
-    "type": "Ammo_T1_C",
-    "onlyDevs": true
-  },
-  {
-    "category": "Schematics",
-    "name": "Basic Ammo Schematic",
-    "type": "Ammo_T1Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Throwstone",
-      "Flint Bolt",
-      "Flint Harpoon",
-      "Scattershot Ammo",
-      "Wooden Dart",
-      "Net"
-    ]
-  },
-  {
     "name": "Basic Armors",
     "parent": "Equipment",
     "translation": "Basic Armors",
@@ -2419,20 +2359,6 @@
     ]
   },
   {
-    "name": "Basic Crafting",
-    "parent": "Crafting",
-    "translation": "Basic Crafting",
-    "type": "Crafting_T1_C",
-    "onlyDevs": true
-  },
-  {
-    "name": "Basic Crafting Stations",
-    "parent": "Basic Crafting",
-    "translation": "Basic Crafting Stations",
-    "type": "Stations_T1_C",
-    "onlyDevs": true
-  },
-  {
     "category": "Schematics",
     "name": "Basic Crafting Stations Schematic",
     "type": "Stations_T1Schematic_C",
@@ -2457,15 +2383,6 @@
     "translation": "Basic Potions",
     "type": "Vitamins_T1_C",
     "onlyDevs": true
-  },
-  {
-    "category": "Schematics",
-    "name": "Basic Potions Schematic",
-    "type": "Vitamins_T1Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Vision Powder"
-    ]
   },
   {
     "name": "Basic Protection",
@@ -2843,7 +2760,7 @@
       "type": "Soft",
       "hp": 5000
     },
-    "unlockable": "Battle Fan"
+    "unlockable": "BattleFan"
   },
   {
     "crafting": [
@@ -2913,16 +2830,8 @@
       {
         "ingredients": [
           {
-            "count": 360,
-            "name": "Wood"
-          },
-          {
-            "count": 200,
-            "name": "Fiber"
-          },
-          {
-            "count": 6,
-            "name": "Reinforced Plank"
+            "count": 1,
+            "name": "Capital Walker Leg"
           }
         ]
       }
@@ -2946,16 +2855,8 @@
       {
         "ingredients": [
           {
-            "count": 900,
-            "name": "Wood"
-          },
-          {
-            "count": 500,
-            "name": "Fiber"
-          },
-          {
-            "count": 3,
-            "name": "Reinforced Plank"
+            "count": 1,
+            "name": "Armored Capital Walker Leg"
           }
         ]
       }
@@ -2979,16 +2880,8 @@
       {
         "ingredients": [
           {
-            "count": 1800,
-            "name": "Wood"
-          },
-          {
-            "count": 1000,
-            "name": "Fiber"
-          },
-          {
-            "count": 6,
-            "name": "Reinforced Plank"
+            "count": 1,
+            "name": "Heavy Capital Walker Leg"
           }
         ]
       }
@@ -3012,12 +2905,8 @@
       {
         "ingredients": [
           {
-            "count": 90,
-            "name": "Wood"
-          },
-          {
-            "count": 4,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Capital Walker Wing"
           }
         ]
       }
@@ -3040,12 +2929,8 @@
       {
         "ingredients": [
           {
-            "count": 900,
-            "name": "Wood"
-          },
-          {
-            "count": 14,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Flotillan Capital Walker Wing"
           }
         ]
       }
@@ -3058,7 +2943,7 @@
       "type": "Soft",
       "hp": 3750
     },
-    "unlockable": "WalkerPartsAdvanced_T4",
+    "unlockable": "WalkerPartsFlotillan_T4",
     "walkerInfo": {
       "carryCapacity": 20000
     }
@@ -3069,12 +2954,8 @@
       {
         "ingredients": [
           {
-            "count": 720,
-            "name": "Wood"
-          },
-          {
-            "count": 10,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Advanced Capital Walker Wing"
           }
         ]
       }
@@ -3098,12 +2979,8 @@
       {
         "ingredients": [
           {
-            "count": 450,
-            "name": "Wood"
-          },
-          {
-            "count": 8,
-            "name": "Nomad Cloth"
+            "count": 1,
+            "name": "Improved Capital Walker Wing"
           }
         ]
       }
@@ -3216,7 +3093,7 @@
       }
     ],
     "name": "Bent Wooden Planks",
-    "parent": "Lumbermill",
+    "parent": "LumberMill",
     "trade_price": 0.1,
     "translation": "Bent Wooden Planks",
     "type": "BentPlanks_C",
@@ -3336,9 +3213,9 @@
     "weaponInfo": {
       "weaponLength": 124,
       "damage": 35,
-      "penetration": 5
+      "penetration": 3
     },
-    "damageType": "'MeleeBluntDamage_C'"
+    "damageType": "'MeleeQuarterstuffDamage_C'"
   },
   {
     "category": "Interactables",
@@ -3544,7 +3421,7 @@
     "type": "BoneBolt_C",
     "description": "Ammo for Ballista. Bone tips are notorious for splintering and ricocheting inside the body.",
     "projectileDamage": {
-      "damage": 95,
+      "damage": 105,
       "penetration": 10
     },
     "experiencieReward": 1,
@@ -3758,7 +3635,7 @@
             "name": "Bone Splinter"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 45
       },
       {
@@ -3772,7 +3649,7 @@
             "name": "Purified Water"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 45
       }
     ],
@@ -3983,10 +3860,10 @@
     "type": "BoneScattershot_C",
     "description": "Ammo for Scattershot gun. A mixed bag of blunt and sharp debris that spread out when fired.",
     "projectileDamage": {
-      "damage": 185,
-      "penetration": 30,
-      "effectivenessVsSoak": 50,
-      "effectivenessVsReduce": 50
+      "damage": 150,
+      "penetration": 40,
+      "effectivenessVsSoak": 40,
+      "effectivenessVsReduce": 65
     },
     "experiencieReward": 1,
     "stackSize": 24,
@@ -4092,7 +3969,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 135
       }
     ],
@@ -4154,7 +4031,7 @@
       }
     ],
     "name": "Bonespike Sword",
-    "parent": "Rawbone Sawsword",
+    "parent": "Sawtooth Sword",
     "trade_price": 6.2,
     "translation": "Bonespike Sword",
     "type": "OneHandedBoneSword_C",
@@ -4855,7 +4732,7 @@
           },
           {
             "count": 24,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 56,
@@ -4881,7 +4758,7 @@
           },
           {
             "count": 24,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 56,
@@ -4907,7 +4784,7 @@
           },
           {
             "count": 24,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 56,
@@ -4933,7 +4810,7 @@
           },
           {
             "count": 24,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 56,
@@ -6237,7 +6114,7 @@
       "type": "Soft",
       "hp": 500
     },
-    "unlockable": "Cauterizing Station"
+    "unlockable": "CauterizingStation"
   },
   {
     "name": "Celestial Tablet",
@@ -6841,7 +6718,7 @@
       }
     ],
     "name": "Ceramic Pickaxe",
-    "parent": "Bone Pickaxe",
+    "parent": "BonePickaxe",
     "trade_price": 98.2,
     "translation": "Ceramic Pickaxe",
     "type": "CeramicPickaxe_C",
@@ -6886,7 +6763,7 @@
       }
     ],
     "name": "Ceramic Repair Hammer",
-    "parent": "Bone Repair Hammer",
+    "parent": "BoneRepairHammer",
     "translation": "Ceramic Repair Hammer",
     "type": "CeramicRepairHammer_C",
     "durability": 1000
@@ -6972,10 +6849,10 @@
     "type": "CeramicScattershot_C",
     "description": "Ammo for Scattershot gun. A mixed bag of blunt and sharp debris that spread out when fired.",
     "projectileDamage": {
-      "damage": 235,
-      "penetration": 30,
-      "effectivenessVsSoak": 50,
-      "effectivenessVsReduce": 50
+      "damage": 185,
+      "penetration": 50,
+      "effectivenessVsSoak": 40,
+      "effectivenessVsReduce": 65
     },
     "experiencieReward": 1,
     "stackSize": 24,
@@ -7069,7 +6946,7 @@
     "type": "CeramicBolt_C",
     "description": "Ammo for Ballista. Ceramic tips guarantee their sharpness and strength.",
     "projectileDamage": {
-      "damage": 115,
+      "damage": 130,
       "penetration": 10
     },
     "experiencieReward": 1,
@@ -7245,7 +7122,7 @@
             "name": "Rope"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 60
       }
     ],
@@ -7610,7 +7487,7 @@
       }
     ],
     "name": "Chitin Repair Hammer",
-    "parent": "Bone Repair Hammer",
+    "parent": "BoneRepairHammer",
     "translation": "Chitin Repair Hammer",
     "type": "ChitinRepairHammer_C",
     "durability": 1500
@@ -7964,7 +7841,7 @@
       "type": "Soft",
       "hp": 500
     },
-    "unlockable": "Clay Pot"
+    "unlockable": "ClayPot"
   },
   {
     "category": "Clay",
@@ -8174,7 +8051,7 @@
             "name": "Tar"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 75
       }
     ],
@@ -8576,7 +8453,7 @@
             "name": "Corn"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 30
       }
     ],
@@ -9037,7 +8914,7 @@
       "type": "Soft",
       "hp": 7500
     },
-    "unlockable": "Defensive Tower"
+    "unlockable": "DefensiveTower"
   },
   {
     "category": "Resources",
@@ -9098,7 +8975,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 135
       }
     ],
@@ -10031,7 +9908,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Capital Walker Leg"
+            "name": "Armored Capital Walker Leg"
           }
         ]
       }
@@ -10855,7 +10732,7 @@
       "type": "Soft",
       "hp": 24500
     },
-    "unlockable": "WalkerPartsAdvanced_T4",
+    "unlockable": "WalkerPartsFlotillan_T4",
     "walkerInfo": {
       "carryCapacity": 10500
     }
@@ -11071,7 +10948,7 @@
       }
     ],
     "name": "Drill Spade",
-    "parent": "Tube Spade",
+    "parent": "TubeSpade",
     "translation": "Drill Spade",
     "type": "DrillSpade_C",
     "description": "An improved version of a Tube Spade designed by the Flotillans to dig up resources from the ground more efficiently.",
@@ -11190,7 +11067,7 @@
       "type": "Soft",
       "hp": 1500
     },
-    "unlockable": "Dyeing Station"
+    "unlockable": "DyeingStation"
   },
   {
     "category": "Resources",
@@ -11494,7 +11371,7 @@
       }
     ],
     "name": "Explosive Dart",
-    "parent": "Fire Dart",
+    "parent": "FireDart",
     "trade_price": 49.8,
     "translation": "Explosive Dart",
     "type": "ExplosiveDart_C",
@@ -12247,7 +12124,7 @@
         "ingredients": [
           {
             "count": 20,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 25,
@@ -12273,7 +12150,7 @@
         "ingredients": [
           {
             "count": 20,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 25,
@@ -12299,7 +12176,7 @@
         "ingredients": [
           {
             "count": 20,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 25,
@@ -12391,7 +12268,7 @@
       "type": "Soft",
       "hp": 15000
     },
-    "unlockable": "WalkerPartsAdvanced_T3",
+    "unlockable": "WalkerPartsFlotillan_T3",
     "walkerInfo": {
       "carryCapacity": 5000
     }
@@ -12608,7 +12485,7 @@
       }
     ],
     "name": "Fast Grappling Hook",
-    "parent": "Nomad Grappling Hook",
+    "parent": "Repaired Grappling Hook",
     "trade_price": 19.4,
     "translation": "Fast Grappling Hook",
     "type": "FastGrapplingHook_C",
@@ -13379,7 +13256,7 @@
             "name": "Phosphorus"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 60
       }
     ],
@@ -13566,12 +13443,8 @@
       {
         "ingredients": [
           {
-            "count": 5,
-            "name": "Wood"
-          },
-          {
-            "count": 2,
-            "name": "Wood Shaft"
+            "count": 1,
+            "name": "Small Walker Leg"
           }
         ]
       }
@@ -14112,16 +13985,8 @@
       {
         "ingredients": [
           {
-            "count": 12,
-            "name": "Wood Shaft"
-          },
-          {
-            "count": 7,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 4,
-            "name": "Rupu Vine"
+            "count": 1,
+            "name": "Small Walker Wing"
           }
         ]
       }
@@ -14201,7 +14066,7 @@
       }
     ],
     "name": "Firestone Axe",
-    "parent": "Ceramic Hatchet",
+    "parent": "Advanced Hatchet",
     "trade_price": 80.8,
     "translation": "Firestone Axe",
     "type": "OneHandedLavaAxe_C",
@@ -14306,10 +14171,10 @@
     "durability": 735,
     "weaponInfo": {
       "weaponLength": 123,
-      "damage": 65,
-      "penetration": 10
+      "damage": 58,
+      "penetration": 8
     },
-    "damageType": "'MeleeSwordDamage_C'"
+    "damageType": "'MeleeQuarterstuffDamage_C'"
   },
   {
     "category": "Weapons",
@@ -14428,10 +14293,10 @@
     "durability": 735,
     "weaponInfo": {
       "weaponLength": 99,
-      "damage": 65,
-      "penetration": 10
+      "damage": 58,
+      "penetration": 8
     },
-    "damageType": "'MeleeBluntDamage_C'"
+    "damageType": "'MeleeQuarterstuffDamage_C'"
   },
   {
     "category": "Weapons",
@@ -14518,7 +14383,7 @@
       "impact": 40,
       "stability": 55,
       "weaponLength": 76,
-      "damage": 70,
+      "damage": 64,
       "penetration": 20
     },
     "toolInfo": [
@@ -14835,7 +14700,7 @@
   },
   {
     "name": "Flares",
-    "parent": "Dyeing Station",
+    "parent": "DyeingStation",
     "translation": "Flares",
     "type": "Flares_C"
   },
@@ -14907,7 +14772,7 @@
     "type": "FlintBolt_C",
     "description": "Ammo for Ballista. Effective against lightly armored nomads.",
     "projectileDamage": {
-      "damage": 75,
+      "damage": 85,
       "penetration": 10
     },
     "experiencieReward": 1,
@@ -15038,7 +14903,7 @@
       }
     ],
     "name": "Floating Mine",
-    "parent": "Fire Dart",
+    "parent": "FireDart",
     "trade_price": 96.4,
     "translation": "Floating Mine",
     "type": "FloatingMine_C",
@@ -15126,7 +14991,7 @@
       }
     ],
     "name": "Flotillan Grappling Hook",
-    "parent": "Nomad Grappling Hook",
+    "parent": "Repaired Grappling Hook",
     "trade_price": 16,
     "translation": "Flotillan Grappling Hook",
     "type": "FlotillanGrapplingHook_C",
@@ -15186,30 +15051,6 @@
     "weight": 10
   },
   {
-    "name": "Flotillian Ammo",
-    "parent": "Advanced Crafting",
-    "translation": "Flotillian Ammo",
-    "type": "Ammo_T4_C",
-    "onlyDevs": true
-  },
-  {
-    "category": "Schematics",
-    "name": "Flotillian Ammo Schematic",
-    "type": "Ammo_T4Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Iron-Tipped Bolt",
-      "Nibiran-tipped Bolt",
-      "Iron-Tipped Harpoon",
-      "Nibirian Harpoon",
-      "Hardened Hellfire Bolt",
-      "Hullbreaker Scattershot",
-      "Iron Rok",
-      "Iron Dart",
-      "Nibirian Dart"
-    ]
-  },
-  {
     "name": "Flotillian Armors",
     "parent": "Armors_T3",
     "translation": "Flotillian Armors",
@@ -15249,20 +15090,6 @@
     ]
   },
   {
-    "name": "Flotillian Crafting",
-    "parent": "Advanced Crafting",
-    "translation": "Flotillian Crafting",
-    "type": "Crafting_T4_C",
-    "onlyDevs": true
-  },
-  {
-    "name": "Flotillian Crafting Stations",
-    "parent": "Advanced Crafting",
-    "translation": "Flotillian Crafting Stations",
-    "type": "Stations_T4_C",
-    "onlyDevs": true
-  },
-  {
     "category": "Schematics",
     "name": "Flotillian Crafting Stations Schematic",
     "type": "Stations_T4Schematic_C",
@@ -15288,15 +15115,6 @@
     "translation": "Flotillian Potions",
     "type": "Vitamins_T4_C",
     "onlyDevs": true
-  },
-  {
-    "category": "Schematics",
-    "name": "Flotillian Potions Schematic",
-    "type": "Vitamins_T4Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Worm Tincture"
-    ]
   },
   {
     "category": "Crafting",
@@ -15387,9 +15205,9 @@
   },
   {
     "name": "Flotillian Walkers",
-    "parent": "Advanced Walkers",
+    "parent": "WalkerPartsAdvanced_T2",
     "translation": "Flotillian Walkers",
-    "type": "Walkers_T4_C"
+    "type": "WalkerPartsFlotillan_T2_C"
   },
   {
     "name": "Flotillian Weapons",
@@ -16022,7 +15840,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 60
       }
     ],
@@ -16378,7 +16196,7 @@
       "type": "Soft",
       "hp": 200
     },
-    "unlockable": "Grappling Belt Charging Station"
+    "unlockable": "GrapplingBeltChargingStation"
   },
   {
     "category": "Ammo",
@@ -16395,14 +16213,14 @@
           },
           {
             "count": 2,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 8,
             "name": "Mushroom Flesh"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 75
       }
     ],
@@ -16518,6 +16336,35 @@
     "name": "Gun Pods",
     "translation": "Gun Pods",
     "type": "SiegePods_C"
+  },
+  {
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 30,
+            "name": "Wood"
+          },
+          {
+            "count": 45,
+            "name": "Stone"
+          },
+          {
+            "count": 7,
+            "name": "Rope"
+          }
+        ]
+      }
+    ],
+    "name": "Gunpod Ballista",
+    "parent": "Gun Pod",
+    "translation": "Gunpod Ballista",
+    "type": "GunPodBallista_C",
+    "description": "Miniature version of a ballista that fits inside a gun pod.",
+    "experiencieReward": 366,
+    "weight": 45,
+    "unlockable": "GunPodBallista"
   },
   {
     "category": "Weapons",
@@ -17395,7 +17242,7 @@
   {
     "category": "Resources",
     "name": "Hellfire",
-    "parent": "Clay Pot",
+    "parent": "ClayPot",
     "trade_price": 1,
     "translation": "Hellfire",
     "type": "HellfireMixture_C",
@@ -17763,7 +17610,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Large Walker Leg"
+            "name": "Large Walker Wing"
           }
         ]
       }
@@ -17829,7 +17676,7 @@
       "type": "Soft",
       "hp": 1920
     },
-    "unlockable": "WalkerPartsAdvanced_T3",
+    "unlockable": "WalkerPartsFlotillan_T3",
     "walkerInfo": {
       "carryCapacity": 4050
     }
@@ -18494,7 +18341,7 @@
           },
           {
             "count": 24,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           }
         ]
       }
@@ -18514,7 +18361,7 @@
           },
           {
             "count": 24,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 32,
@@ -18538,7 +18385,7 @@
           },
           {
             "count": 24,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 32,
@@ -18562,7 +18409,7 @@
           },
           {
             "count": 23,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           }
         ]
       }
@@ -18872,7 +18719,7 @@
       "type": "Soft",
       "hp": 14000
     },
-    "unlockable": "WalkerPartsAdvanced_T3",
+    "unlockable": "WalkerPartsFlotillan_T3",
     "walkerInfo": {
       "carryCapacity": 4800
     }
@@ -19042,7 +18889,7 @@
       "type": "Soft",
       "hp": 5000
     },
-    "unlockable": "Hose Station"
+    "unlockable": "HoseStation"
   },
   {
     "category": "Resources",
@@ -19089,10 +18936,10 @@
     "type": "HullbreakerScattershot_C",
     "description": "Ammo for scattershot gun. Blows apart wooden constructions while also dealing some damage to sturdier materials.",
     "projectileDamage": {
-      "damage": 290,
-      "penetration": 30,
-      "effectivenessVsSoak": 50,
-      "effectivenessVsReduce": 50
+      "damage": 240,
+      "penetration": 65,
+      "effectivenessVsSoak": 40,
+      "effectivenessVsReduce": 65
     },
     "experiencieReward": 1,
     "stackSize": 24,
@@ -19191,33 +19038,6 @@
     "damageType": "'BoulderDamage_C'"
   },
   {
-    "name": "Improved Ammo",
-    "parent": "Improved Crafting",
-    "translation": "Improved Ammo",
-    "type": "Ammo_T2_C",
-    "onlyDevs": true
-  },
-  {
-    "category": "Schematics",
-    "name": "Improved Ammo Schematic",
-    "type": "Ammo_T2Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Bone Bolt",
-      "Fire Bolt",
-      "Bone Harpoon",
-      "Bone Scattershot Ammo",
-      "Bone Dart",
-      "Sulfur Bomb",
-      "Rupu Rock",
-      "Chalk Bomb",
-      "Aloe Goo Bomb",
-      "Charged Boulder",
-      "Small Boulder",
-      "Penetrating Dart"
-    ]
-  },
-  {
     "name": "Improved Armors",
     "parent": "Armors_T1",
     "translation": "Improved Armors",
@@ -19300,20 +19120,6 @@
       "Trap Door",
       "Spring Spikes Trap"
     ]
-  },
-  {
-    "name": "Improved Crafting",
-    "parent": "Basic Crafting",
-    "translation": "Improved Crafting",
-    "type": "Crafting_T2_C",
-    "onlyDevs": true
-  },
-  {
-    "name": "Improved Crafting Stations",
-    "parent": "Improved Crafting",
-    "translation": "Improved Crafting Stations",
-    "type": "Stations_T2_C",
-    "onlyDevs": true
   },
   {
     "category": "Schematics",
@@ -19399,17 +19205,6 @@
     "translation": "Improved Potions",
     "type": "Vitamins_T2_C",
     "onlyDevs": true
-  },
-  {
-    "category": "Schematics",
-    "name": "Improved Potions Schematic",
-    "type": "Vitamins_T2Schematic_C",
-    "stackSize": 100,
-    "learn": [
-      "Desert Mule",
-      "Jojo Mojo",
-      "Race Dust"
-    ]
   },
   {
     "category": "Walker Parts",
@@ -19635,7 +19430,7 @@
       }
     ],
     "name": "Infused Obsidian Bottle",
-    "parent": "Obsidian Flask",
+    "parent": "LavaBottleSmall",
     "trade_price": 26,
     "translation": "Infused Obsidian Bottle",
     "type": "LavaBottleLarge_C",
@@ -19765,7 +19560,7 @@
             "name": "Rope"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 75
       }
     ],
@@ -20047,7 +19842,7 @@
       }
     ],
     "name": "Iron Rok",
-    "parent": "Obsidian Rok",
+    "parent": "ObsidianRok",
     "trade_price": 5.2,
     "translation": "Iron Rok",
     "type": "IronRok_C",
@@ -20246,7 +20041,7 @@
     "type": "IronBolt_C",
     "description": "Ammo for Ballista. An iron tip easily penetrates armor and makes holes in bodies that can't be patched.",
     "projectileDamage": {
-      "damage": 145,
+      "damage": 165,
       "penetration": 10
     },
     "experiencieReward": 50,
@@ -20335,10 +20130,10 @@
     "durability": 740,
     "weaponInfo": {
       "weaponLength": 106,
-      "damage": 75,
-      "penetration": 25
+      "damage": 67,
+      "penetration": 18
     },
-    "damageType": "'MeleeBluntDamage_C'"
+    "damageType": "'MeleeQuarterstuffDamage_C'"
   },
   {
     "category": "Weapons",
@@ -20508,7 +20303,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 60
       }
     ],
@@ -20720,7 +20515,7 @@
       }
     ],
     "name": "Large Base Walker Packer",
-    "parent": "Small Base Walker Packer",
+    "parent": "BaseWalkerPackerSmall",
     "translation": "Large Base Walker Packer",
     "type": "BaseWalkerPackerLarge_C",
     "description": "Allows to pack a single walker of any type. Requires a foundation of a base to support itself.",
@@ -20730,7 +20525,7 @@
       "type": "Medium",
       "hp": 21000
     },
-    "unlockable": "Large Base Walker Packer"
+    "unlockable": "BaseWalkerPackerLarge"
   },
   {
     "category": "Containers",
@@ -20888,7 +20683,7 @@
       }
     ],
     "name": "Large Water Bag",
-    "parent": "Medium Water Bag",
+    "parent": "WaterBagMedium",
     "translation": "Large Water Bag",
     "type": "WaterBagLarge_C",
     "description": "Store large volumes of liquid. Liquid is protected unless the container is severely damaged.",
@@ -20898,7 +20693,7 @@
       "type": "Soft",
       "hp": 2000
     },
-    "unlockable": "Large Water Bag"
+    "unlockable": "WaterBagLarge"
   },
   {
     "category": "Walker Parts",
@@ -20976,12 +20771,12 @@
             "name": "Purified Water"
           }
         ],
-        "station": "Obsidian Machine",
+        "station": "ObsidianMachine",
         "time": 90
       }
     ],
     "name": "Lava Fuel",
-    "parent": "Obsidian Machine",
+    "parent": "ObsidianMachine",
     "translation": "Lava Fuel",
     "type": "LavaFuel_C",
     "description": "Being almost as hot as lava itself, it's often used in crafting and combat by spraying it and setting on fire.",
@@ -21393,7 +21188,7 @@
       }
     ],
     "name": "Long Grappling Hook",
-    "parent": "Nomad Grappling Hook",
+    "parent": "Repaired Grappling Hook",
     "trade_price": 23.5,
     "translation": "Long Grappling Hook",
     "type": "LongGrapplingHook_C",
@@ -21513,7 +21308,7 @@
       "type": "Soft",
       "hp": 20000
     },
-    "unlockable": "Lumbermill"
+    "unlockable": "LumberMill"
   },
   {
     "category": "Resources",
@@ -21994,7 +21789,7 @@
       }
     ],
     "name": "Medium Water Bag",
-    "parent": "Small Water Bag",
+    "parent": "WaterBagSmall",
     "translation": "Medium Water Bag",
     "type": "WaterBagMedium_C",
     "description": "Store moderate volumes of liquid. Liquid is protected unless the container is severely damaged.",
@@ -22004,7 +21799,7 @@
       "type": "Soft",
       "hp": 1500
     },
-    "unlockable": "Medium Water Bag"
+    "unlockable": "WaterBagMedium"
   },
   {
     "category": "Walker Parts",
@@ -22318,128 +22113,128 @@
     "drops": [
       {
         "name": "Weightless Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Merchant Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Craftsman Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Fireproof Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Armoury Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Hardening Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Forager Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Scavenger Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Lumberjack Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Pack Speed Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Hearth Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Lifeforce Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Bullrush Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Sandy Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Fortress Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Harpoon Protection Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
         "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Battery Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
-        "maxQuantity": 5,
+        "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
         "name": "Torque Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
-        "maxQuantity": 5,
+        "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
@@ -22451,9 +22246,37 @@
       },
       {
         "name": "Pack Mule Walker Module",
-        "chance": 5.263158,
+        "chance": 4.5252676,
         "minQuantity": 1,
-        "maxQuantity": 2,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Structure Hardening Base Module",
+        "chance": 0.45225528,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Craftsman Base Module",
+        "chance": 4.522553,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Pack Speed Base Module",
+        "chance": 4.522553,
+        "minQuantity": 1,
+        "maxQuantity": 1,
+        "source": "modules_t1"
+      },
+      {
+        "name": "Bullrush Base Module",
+        "chance": 4.522553,
+        "minQuantity": 1,
+        "maxQuantity": 1,
         "source": "modules_t1"
       },
       {
@@ -22533,7 +22356,7 @@
       }
     ],
     "name": "Mollusk Walker",
-    "parent": "Steering Levers",
+    "parent": "SteeringLevers",
     "translation": "Mollusk Walker",
     "type": "Mollusk_C",
     "description": "Small cabin of the walker provides protection to possessions and the driver. While walls may let a nomad live longer, obstructed view from inside the cabin could be a serious drawback in a battle. Has a decent deck and good movement capabilities.",
@@ -23285,7 +23108,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Medium Walker Wing"
+            "name": "Improved Medium Walker Wing"
           }
         ]
       }
@@ -23527,7 +23350,7 @@
       }
     ],
     "name": "Net",
-    "parent": "Net Thrower",
+    "parent": "NetThrower",
     "trade_price": 10.4,
     "translation": "Net",
     "type": "Net_C",
@@ -23587,7 +23410,7 @@
       }
     ],
     "name": "Net Pouch",
-    "parent": "Throwing Net",
+    "parent": "ThrowingNet",
     "trade_price": 5.6,
     "translation": "Net Pouch",
     "type": "NetPouch_C",
@@ -23628,7 +23451,7 @@
       "type": "Soft",
       "hp": 3000
     },
-    "unlockable": "Net Thrower"
+    "unlockable": "NetThrower"
   },
   {
     "category": "Weapons",
@@ -23934,10 +23757,10 @@
     "durability": 740,
     "weaponInfo": {
       "weaponLength": 93,
-      "damage": 75,
-      "penetration": 25
+      "damage": 67,
+      "penetration": 18
     },
-    "damageType": "'MeleeBluntDamage_C'"
+    "damageType": "'MeleeQuarterstuffDamage_C'"
   },
   {
     "category": "Weapons",
@@ -24010,7 +23833,7 @@
     "type": "NibirianBolt_C",
     "description": "Ammo for ballista. During an eclipse, these bolts will light up the sky and make enemies glow from the inside out.",
     "projectileDamage": {
-      "damage": 185,
+      "damage": 210,
       "penetration": 10
     },
     "experiencieReward": 100,
@@ -24882,7 +24705,7 @@
       }
     ],
     "name": "Obsidian Machine",
-    "parent": "Clay Pot",
+    "parent": "ClayPot",
     "translation": "Obsidian Machine",
     "type": "ObsidianMachine_C",
     "description": "With parts carved out of solid obsidian, the machine can safely hold lava to use it in various productions.",
@@ -24892,7 +24715,7 @@
       "type": "Soft",
       "hp": 4000
     },
-    "unlockable": "Obsidian Machine"
+    "unlockable": "ObsidianMachine"
   },
   {
     "category": "Containers",
@@ -24954,7 +24777,7 @@
       }
     ],
     "name": "Obsidian Rok",
-    "parent": "Ceramic Rok",
+    "parent": "CeramicRok",
     "trade_price": 5.2,
     "translation": "Obsidian Rok",
     "type": "ObsidianRok_C",
@@ -25271,7 +25094,7 @@
       "type": "Soft",
       "hp": 900
     },
-    "unlockable": "Packing Station"
+    "unlockable": "PackingStation"
   },
   {
     "category": "Weapons",
@@ -25307,10 +25130,10 @@
     "durability": 510,
     "weaponInfo": {
       "weaponLength": 142,
-      "damage": 69,
-      "penetration": 15
+      "damage": 61,
+      "penetration": 10
     },
-    "damageType": "'MeleeBluntDamage_C'"
+    "damageType": "'MeleeQuarterstuffDamage_C'"
   },
   {
     "category": "Resources",
@@ -26206,7 +26029,7 @@
       "type": "Soft",
       "hp": 23500
     },
-    "unlockable": "WalkerPartsAdvanced_T4",
+    "unlockable": "WalkerPartsFlotillan_T4",
     "walkerInfo": {
       "carryCapacity": 25000
     }
@@ -26550,17 +26373,17 @@
       }
     ],
     "name": "Poaching Hut",
-    "parent": "Defensive Tower",
+    "parent": "DefensiveTower",
     "translation": "Poaching Hut",
     "type": "PoachingHut_C",
     "description": "A placeable that creates a mini-claim area in moderate radius. Additional resouces will go into this placeable instead of Proxy Walker.",
     "experiencieReward": 1000,
     "weight": 10,
     "structureInfo": {
-      "type": "Soft",
+      "type": "BlueprintGeneratedClassInvincibleDamageOverride_C'",
       "hp": 5000
     },
-    "unlockable": "Poaching Hut"
+    "unlockable": "PoachingHut"
   },
   {
     "category": "Furniture",
@@ -26728,7 +26551,7 @@
       }
     ],
     "name": "Proxy Walker",
-    "parent": "Steering Levers",
+    "parent": "SteeringLevers",
     "translation": "Proxy Walker",
     "type": "Proxy_C",
     "description": "The proxy walker is designed to establish a protectorate over an oasis by deploying into an unmovable claim, provided that its owner possesses an official proxy license from the Flotilla. Can only be deployed while an oasis is unclaimed or contested and only becomes the claimant after no other deployed proxy walkers are left standing.",
@@ -26776,7 +26599,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Armored Large Walker Leg"
+            "name": "Armored Medium Walker Leg"
           }
         ]
       }
@@ -26802,7 +26625,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Heavy Capital Walker Leg"
+            "name": "Heavy Medium Walker Leg"
           }
         ]
       }
@@ -26878,7 +26701,7 @@
       }
     ],
     "name": "Purification Station",
-    "parent": "Clay Pot",
+    "parent": "ClayPot",
     "translation": "Purification Station",
     "type": "PurificationStation_C",
     "description": "All toxic water that is transported to the Flotilla is first cleansed in an ancient water purifying machine. The Guardians are the sole keepers of this machine, a technological relic of the old world which has sustained the Flotillans to this day. However, nomads developed a similar, yet more primitive version of this technology.",
@@ -26910,7 +26733,7 @@
             "name": "Cactus Flesh"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 35
       },
       {
@@ -26930,7 +26753,7 @@
             "name": "Fruit Pulp"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 35
       },
       {
@@ -26944,13 +26767,13 @@
             "name": "Charcoal"
           },
           {
-            "count": 25,
+            "count": 5,
             "name": "Sand"
           }
         ],
         "output": 50,
         "station": "Purification Station",
-        "time": 150
+        "time": 120
       },
       {
         "ingredients": [
@@ -26979,7 +26802,7 @@
           }
         ],
         "output": 5,
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 55
       },
       {
@@ -26999,7 +26822,7 @@
             "name": "Thornberry"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 35
       },
       {
@@ -27021,7 +26844,7 @@
           }
         ],
         "output": 3,
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 40
       },
       {
@@ -27043,7 +26866,7 @@
           }
         ],
         "output": 3,
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 35
       }
     ],
@@ -27138,7 +26961,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 60
       }
     ],
@@ -27294,16 +27117,8 @@
       {
         "ingredients": [
           {
-            "count": 35,
-            "name": "Lightwood"
-          },
-          {
-            "count": 70,
-            "name": "Fiber"
-          },
-          {
-            "count": 10,
-            "name": "Rope"
+            "count": 1,
+            "name": "Capital Walker Leg"
           }
         ]
       }
@@ -27351,16 +27166,8 @@
       {
         "ingredients": [
           {
-            "count": 30,
-            "name": "Lightwood"
-          },
-          {
-            "count": 40,
-            "name": "Fiber Weave"
-          },
-          {
-            "count": 25,
-            "name": "Earth Wax"
+            "count": 1,
+            "name": "Capital Walker Wing"
           }
         ]
       }
@@ -27947,7 +27754,7 @@
       }
     ],
     "name": "Rawbone Battle Axe",
-    "parent": "Stone Axe",
+    "parent": "Woodcutter’s Hatchet",
     "trade_price": 18.4,
     "translation": "Rawbone Battle Axe",
     "type": "TwoHandedBoneAxe_C",
@@ -27991,7 +27798,7 @@
       }
     ],
     "name": "Rawbone Club",
-    "parent": "Nurrfang Toothclub",
+    "parent": "Rawbone Club",
     "trade_price": 14,
     "translation": "Rawbone Club",
     "type": "BoneMace_C",
@@ -28095,7 +27902,7 @@
       "damage": 40,
       "penetration": 15
     },
-    "damageType": "'MeleeAxeDamage_C'"
+    "damageType": "'MeleeBluntDamage_C'"
   },
   {
     "category": "Weapons",
@@ -28134,7 +27941,7 @@
       "damage": 45,
       "penetration": 5
     },
-    "damageType": "'MeleeBluntDamage_C'"
+    "damageType": "'MeleeQuarterstuffDamage_C'"
   },
   {
     "category": "Weapons",
@@ -28157,7 +27964,7 @@
       }
     ],
     "name": "Rawbone Sawsword",
-    "parent": "Jaggertooth Swordclub",
+    "parent": "Sawtooth Sword",
     "trade_price": 15,
     "translation": "Rawbone Sawsword",
     "type": "TwoHandedBoneSwordShort_C",
@@ -28326,7 +28133,7 @@
           }
         ],
         "output": 5,
-        "station": "Ancient Fabricator",
+        "station": "AncientStation",
         "time": 250
       },
       {
@@ -29529,7 +29336,7 @@
       }
     ],
     "name": "Rupu Sling",
-    "parent": "Defensive Tower",
+    "parent": "DefensiveTower",
     "translation": "Rupu Sling",
     "type": "RupuSling_C",
     "description": "Tied down rupu that throws specially made rupu rocks at intruders. Precise and deadly when the target is close, but very wasteful at longer distances, making it a perfect defense inside a base.",
@@ -29537,7 +29344,7 @@
     "weight": 12.71,
     "structureInfo": {
       "type": "Medium",
-      "hp": 600
+      "hp": 1200
     },
     "unlockable": "RupuSling"
   },
@@ -29678,7 +29485,7 @@
           }
         ],
         "output": 3,
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 20
       },
       {
@@ -29691,6 +29498,17 @@
         "output": 10,
         "station": "Artisan Soil Auger",
         "time": 20
+      },
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Purified Water"
+          }
+        ],
+        "output": 5,
+        "station": "WaterBoiling",
+        "time": 30
       }
     ],
     "name": "Salt Rock",
@@ -29699,7 +29517,7 @@
     "translation": "Salt Rock",
     "type": "Salt_C",
     "description": "Mined from desert salt lakes.",
-    "experiencieReward": 3,
+    "experiencieReward": 100,
     "stackSize": 100,
     "weight": 0.23
   },
@@ -30083,7 +29901,7 @@
       }
     ],
     "name": "Sawblade",
-    "parent": "Tool Pod",
+    "parent": "ToolPod",
     "translation": "Sawblade",
     "type": "Sawblade_C",
     "description": "A mechanical arm with a spinning saw blade attached to it harvests lumber from a distance. Requires torque while sawing.",
@@ -30153,10 +29971,10 @@
     "type": "Scattershot_C",
     "description": "Ammo for Scattershot gun. A mixed bag of blunt and sharp debris that spread out when fired.",
     "projectileDamage": {
-      "damage": 150,
-      "penetration": 30,
-      "effectivenessVsSoak": 50,
-      "effectivenessVsReduce": 50
+      "damage": 120,
+      "penetration": 35,
+      "effectivenessVsSoak": 40,
+      "effectivenessVsReduce": 65
     },
     "experiencieReward": 1,
     "stackSize": 24,
@@ -30385,7 +30203,7 @@
         "ingredients": [
           {
             "count": 1,
-            "name": "Armored Capital Walker Leg"
+            "name": "Heavy Capital Walker Leg"
           }
         ]
       }
@@ -31120,7 +30938,7 @@
       {
         "ingredients": [
           {
-            "count": 0,
+            "count": 1,
             "name": "Improved Capital Walker Wing"
           }
         ]
@@ -31161,7 +30979,7 @@
       "type": "Soft",
       "hp": 16700
     },
-    "unlockable": "WalkerPartsAdvanced_T4",
+    "unlockable": "WalkerPartsFlotillan_T4",
     "walkerInfo": {
       "carryCapacity": 6500
     }
@@ -31330,7 +31148,7 @@
     "structureInfo": {
       "hp": 750
     },
-    "unlockable": "Scroll Rack"
+    "unlockable": "ScrollRack"
   },
   {
     "crafting": [
@@ -31595,7 +31413,7 @@
       }
     ],
     "name": "Short Ceramic Hoofmace",
-    "parent": "Rawbone Club",
+    "parent": "Spikebone Club",
     "trade_price": 75.8,
     "translation": "Short Ceramic Hoofmace",
     "type": "OneHandedZirconiumMace_C",
@@ -31737,7 +31555,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 16500
+      "hp": 4000
     },
     "unlockable": "WalkerPartsBase_T3",
     "walkerInfo": {
@@ -31763,7 +31581,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 25000
+      "hp": 6000
     },
     "unlockable": "Advanced Walker Parts",
     "walkerInfo": {
@@ -31789,7 +31607,7 @@
     "weight": 9.75,
     "structureInfo": {
       "type": "Medium",
-      "hp": 31000
+      "hp": 9000
     },
     "unlockable": "WalkerPartsAdvanced_T3",
     "walkerInfo": {
@@ -31819,7 +31637,7 @@
           },
           {
             "count": 13,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 6,
@@ -31845,7 +31663,7 @@
           },
           {
             "count": 13,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 6,
@@ -31875,7 +31693,7 @@
           },
           {
             "count": 13,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           }
         ]
       }
@@ -31897,7 +31715,7 @@
           },
           {
             "count": 13,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 6,
@@ -32223,7 +32041,7 @@
             "name": "Glass"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 60
       }
     ],
@@ -32342,7 +32160,7 @@
       "type": "Medium",
       "hp": 8000
     },
-    "unlockable": "Small Base Walker Packer"
+    "unlockable": "BaseWalkerPackerSmall"
   },
   {
     "category": "Ammo",
@@ -32482,7 +32300,7 @@
       "type": "Soft",
       "hp": 1250
     },
-    "unlockable": "Small Repair Hoist"
+    "unlockable": "SmallRepairHoist"
   },
   {
     "category": "Interactables",
@@ -32645,7 +32463,7 @@
       "type": "Soft",
       "hp": 1000
     },
-    "unlockable": "Small Water Bag"
+    "unlockable": "WaterBagSmall"
   },
   {
     "category": "Walker Parts",
@@ -32764,12 +32582,8 @@
       {
         "ingredients": [
           {
-            "count": 10,
-            "name": "Wood"
-          },
-          {
-            "count": 12,
-            "name": "Fiber"
+            "count": 1,
+            "name": "Small Walker Leg"
           }
         ]
       }
@@ -32791,12 +32605,8 @@
       {
         "ingredients": [
           {
-            "count": 15,
-            "name": "Wood"
-          },
-          {
-            "count": 18,
-            "name": "Fiber"
+            "count": 1,
+            "name": "Armored Small Walker Leg"
           }
         ]
       }
@@ -33674,7 +33484,7 @@
     "description": "The control mechanism required to drive more complex walkers.",
     "experiencieReward": 208,
     "weight": 10.8,
-    "unlockable": "Steering Levers"
+    "unlockable": "SteeringLevers"
   },
   {
     "category": "Walker Tools",
@@ -33701,7 +33511,7 @@
       }
     ],
     "name": "Steering Levers Cage",
-    "parent": "Steering Levers",
+    "parent": "SteeringLevers",
     "translation": "Steering Levers Cage",
     "type": "SteeringLeversCage_C",
     "description": "Sturdy contraption made of strong wood and tight ropes, allowing Nomads to place it around Walker Steering Levers to protect their driver.",
@@ -33711,7 +33521,7 @@
       "type": "Soft",
       "hp": 5000
     },
-    "unlockable": "Steering Levers Cage"
+    "unlockable": "SteeringLeversCage"
   },
   {
     "category": "Interactables",
@@ -33773,7 +33583,7 @@
       }
     ],
     "name": "Stiletto Walker",
-    "parent": "Steering Levers",
+    "parent": "SteeringLevers",
     "translation": "Stiletto Walker",
     "type": "Stiletto_C",
     "description": "Developed as the successor to the dinghy walker, the sleek stiletto walker is fast, has a short turn radius, and flaunts more deck space and a stronger hull than its predecessor. Ideal for nomads who prefer to travel alone or in small groups.",
@@ -34936,7 +34746,7 @@
       "type": "Soft",
       "hp": 500
     },
-    "unlockable": "Stone Humidifier"
+    "unlockable": "Humidifier"
   },
   {
     "category": "Weapons",
@@ -35134,7 +34944,7 @@
       }
     ],
     "name": "Sturdy Grappling Hook",
-    "parent": "Nomad Grappling Hook",
+    "parent": "Repaired Grappling Hook",
     "trade_price": 19.4,
     "translation": "Sturdy Grappling Hook",
     "type": "SturdyGrapplingHook_C",
@@ -35196,7 +35006,7 @@
             "name": "Fiber Weave"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 90
       }
     ],
@@ -35213,6 +35023,28 @@
     "stackSize": 10,
     "weight": 4,
     "damageType": "'BluntDamage_C'"
+  },
+  {
+    "category": "Weapons",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 40,
+            "name": "Iron Ingot"
+          }
+        ]
+      }
+    ],
+    "name": "Sun Ray Burner",
+    "translation": "Sun Ray Burner",
+    "type": "SunRayBurner_C",
+    "experiencieReward": 200,
+    "weight": 50,
+    "structureInfo": {
+      "type": "Medium",
+      "hp": 3000
+    }
   },
   {
     "category": "Armors",
@@ -35600,7 +35432,7 @@
       }
     ],
     "name": "Throwable Aloe Bomb",
-    "parent": "Aloe Goo Bomb",
+    "parent": "HealingBomb",
     "trade_price": 16.9,
     "translation": "Throwable Aloe Bomb",
     "type": "ThrowableAloeBomb_C",
@@ -35673,7 +35505,7 @@
       }
     ],
     "name": "Throwable Smoke Bomb",
-    "parent": "Chalk Bomb",
+    "parent": "Choking Cloud",
     "trade_price": 16.9,
     "translation": "Throwable Smoke Bomb",
     "type": "ThrowableSmokeBomb_C",
@@ -36685,7 +36517,7 @@
       "type": "Soft",
       "hp": 30500
     },
-    "unlockable": "WalkerPartsAdvanced_T4",
+    "unlockable": "WalkerPartsFlotillan_T4",
     "walkerInfo": {
       "carryCapacity": 15000
     }
@@ -36865,7 +36697,7 @@
       }
     ],
     "name": "Toboggan Walker",
-    "parent": "Steering Levers",
+    "parent": "SteeringLevers",
     "translation": "Toboggan Walker",
     "type": "Toboggan_C",
     "description": "The standard merchant's vessel built for outrunning pirates and getting the goods where they need to go. There's not much room for weapons, so this walker is usually accompanied by at least one battle-capable walker on its transport runs.",
@@ -37697,7 +37529,7 @@
       "type": "Soft",
       "hp": 9500
     },
-    "unlockable": "WalkerPartsAdvanced_T2",
+    "unlockable": "WalkerPartsFlotillan_T2",
     "walkerInfo": {
       "carryCapacity": 7500
     }
@@ -37867,7 +37699,7 @@
       "type": "Medium",
       "hp": 5000
     },
-    "unlockable": "Tool Pod"
+    "unlockable": "ToolPod"
   },
   {
     "name": "Tools",
@@ -38040,7 +37872,7 @@
       }
     ],
     "name": "Torque Battery",
-    "parent": "Nomad Grappling Hook",
+    "parent": "Repaired Grappling Hook",
     "trade_price": 8.4,
     "translation": "Torque Battery",
     "type": "TorqueContainer_C",
@@ -38090,6 +37922,37 @@
     "experiencieReward": 40,
     "durability": 100,
     "wikiVisibility": false
+  },
+  {
+    "category": "Containers",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 55,
+            "name": "Wood"
+          },
+          {
+            "count": 35,
+            "name": "Rope"
+          },
+          {
+            "count": 15,
+            "name": "Fiber"
+          }
+        ]
+      }
+    ],
+    "name": "Torque Chest",
+    "translation": "Torque Chest",
+    "type": "TorqueChest_C",
+    "experiencieReward": 32,
+    "weight": 20,
+    "structureInfo": {
+      "type": "Soft",
+      "hp": 1500
+    },
+    "unlockable": "Windmill"
   },
   {
     "category": "Resources",
@@ -38166,7 +38029,7 @@
       "type": "Soft",
       "hp": 200
     },
-    "unlockable": "Trap Door"
+    "unlockable": "TrapDoor"
   },
   {
     "category": "Weapons",
@@ -38203,7 +38066,7 @@
       "damage": 40,
       "penetration": 5
     },
-    "damageType": "'MeleeBluntDamage_C'"
+    "damageType": "'MeleeQuarterstuffDamage_C'"
   },
   {
     "category": "Interactables",
@@ -39073,7 +38936,7 @@
         "ingredients": [
           {
             "count": 25,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 22,
@@ -39099,7 +38962,7 @@
         "ingredients": [
           {
             "count": 25,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 45,
@@ -39125,7 +38988,7 @@
         "ingredients": [
           {
             "count": 25,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 45,
@@ -39151,7 +39014,7 @@
         "ingredients": [
           {
             "count": 25,
-            "name": "Tallow"
+            "name": "Liquid Fuel"
           },
           {
             "count": 45,
@@ -39347,7 +39210,7 @@
       "type": "Soft",
       "hp": 14000
     },
-    "unlockable": "WalkerPartsAdvanced_T3",
+    "unlockable": "WalkerPartsFlotillan_T3",
     "walkerInfo": {
       "carryCapacity": 12500
     }
@@ -39373,7 +39236,7 @@
       "type": "Soft",
       "hp": 8200
     },
-    "unlockable": "WalkerPartsAdvanced_T3",
+    "unlockable": "WalkerPartsFlotillan_T3",
     "walkerInfo": {
       "carryCapacity": 12500
     }
@@ -39560,7 +39423,7 @@
             "name": "Purified Water"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 30
       }
     ],
@@ -39610,7 +39473,7 @@
       "type": "Soft",
       "hp": 1000
     },
-    "unlockable": "Walker Climber"
+    "unlockable": "WalkerClimber"
   },
   {
     "name": "Walker Hangar",
@@ -39654,7 +39517,7 @@
       "type": "Medium",
       "hp": 5000
     },
-    "unlockable": "Walker Packing Compartment"
+    "unlockable": "SmallWalkerPacker"
   },
   {
     "name": "Walker Parts",
@@ -39841,12 +39704,12 @@
       {
         "ingredients": [
           {
-            "count": 6,
+            "count": 10,
             "name": "Ceramic Shard"
           },
           {
-            "count": 5,
-            "name": "Tar"
+            "count": 3,
+            "name": "Triple Stitch Fabric"
           },
           {
             "count": 12,
@@ -39856,7 +39719,7 @@
       }
     ],
     "name": "Water Condenser",
-    "parent": "Stone Humidifier",
+    "parent": "Humidifier",
     "translation": "Water Condenser",
     "type": "WaterCondenser_C",
     "description": "Collects moisture from the air and stores it as clean water. Efficiency depends on the area where the condenser is built.",
@@ -39866,7 +39729,7 @@
       "type": "Soft",
       "hp": 3000
     },
-    "unlockable": "Water Condenser"
+    "unlockable": "WaterCondenser"
   },
   {
     "category": "Ammo",
@@ -39978,15 +39841,15 @@
           },
           {
             "count": 10,
-            "name": "Rawbone Sawsword"
+            "name": "Sawtooth Sword"
           },
           {
             "count": 30,
-            "name": "Rawbone Club"
+            "name": "Spikebone Club"
           },
           {
             "count": 40,
-            "name": "Rawbone Maul"
+            "name": "Spikebone Maul"
           },
           {
             "count": 10,
@@ -40008,7 +39871,7 @@
           },
           {
             "count": 8,
-            "name": "Ceramic Hatchet"
+            "name": "Advanced Hatchet"
           },
           {
             "count": 15,
@@ -40173,7 +40036,7 @@
     "experiencieReward": 10,
     "stackSize": 100,
     "weight": 0.2,
-    "durability": 120,
+    "durability": 330,
     "armorInfo": {
       "absorbing": 16,
       "reduction": 3
@@ -40212,7 +40075,7 @@
       }
     ],
     "name": "Wingsuit",
-    "parent": "Nomad Grappling Hook",
+    "parent": "Repaired Grappling Hook",
     "trade_price": 29,
     "translation": "Wingsuit",
     "type": "WingSuit_C",
@@ -40670,6 +40533,45 @@
     "unlockable": "Woodworking Station"
   },
   {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 100,
+            "name": "Stone"
+          },
+          {
+            "count": 20,
+            "name": "Glass"
+          },
+          {
+            "count": 15,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 20,
+            "name": "Rope"
+          },
+          {
+            "count": 50,
+            "name": "Wood"
+          }
+        ]
+      }
+    ],
+    "name": "Worm Attractor",
+    "translation": "Worm Attractor",
+    "type": "WormAttractor_C",
+    "experiencieReward": 50,
+    "weight": 1,
+    "structureInfo": {
+      "type": "Medium",
+      "hp": 5000
+    },
+    "unlockable": "Worm Tincture"
+  },
+  {
     "category": "Resources",
     "name": "Worm Egg",
     "trade_price": 1000,
@@ -40826,7 +40728,7 @@
             "name": "Worm Oil"
           }
         ],
-        "station": "Clay Pot",
+        "station": "ClayPot",
         "time": 100
       }
     ],
@@ -41247,10 +41149,10 @@
     "durability": 740,
     "weaponInfo": {
       "weaponLength": 107,
-      "damage": 72,
-      "penetration": 20
+      "damage": 65,
+      "penetration": 15
     },
-    "damageType": "'MeleeBluntDamage_C'"
+    "damageType": "'MeleeQuarterstuffDamage_C'"
   },
   {
     "category": "Resources",

@@ -1,0 +1,52 @@
+{
+  "name": "BrokenTusker_2_C",
+  "type": "BrokenTusker_2_C",
+  "class": "BlueprintGeneratedClass'Mist/Content/Mist/Data/LootTables/LootTemplates/Special/BrokenTusker_2.BrokenTusker_2_C'",
+  "tables": [
+    {
+      "name": "Armors_T4",
+      "runChance": 0.5,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 3,
+      "maxQuantityMultiplier": 8
+    },
+    {
+      "name": "Weapons_T4",
+      "runChance": 0.5,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 3,
+      "maxQuantityMultiplier": 5
+    },
+    {
+      "name": "Flots_T1",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 3,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 25,
+      "maxQuantityMultiplier": 100
+    },
+    {
+      "name": "ProcessedResources_T4",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 3,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 5,
+      "maxQuantityMultiplier": 25
+    },
+    {
+      "name": "Components_T1",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 3,
+      "maxQuantityMultiplier": 9
+    }
+  ]
+}

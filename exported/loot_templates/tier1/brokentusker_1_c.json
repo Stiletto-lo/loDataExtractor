@@ -1,0 +1,61 @@
+{
+  "name": "BrokenTusker_1_C",
+  "type": "BrokenTusker_1_C",
+  "class": "BlueprintGeneratedClass'Mist/Content/Mist/Data/LootTables/LootTemplates/Special/BrokenTusker_1.BrokenTusker_1_C'",
+  "tables": [
+    {
+      "name": "AC_Relic_2",
+      "runChance": 0.2,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
+    },
+    {
+      "name": "AC_Relic_1",
+      "runChance": 0.2,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
+    },
+    {
+      "name": "Rigs_T4",
+      "runChance": 0.25,
+      "minIterations": 1,
+      "maxIterations": 2,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
+    },
+    {
+      "name": "Rigs_T3",
+      "runChance": 0.5,
+      "minIterations": 1,
+      "maxIterations": 3,
+      "perIterationRunChance": 0.25,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
+    },
+    {
+      "name": "StonePlank_T2",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 3,
+      "maxQuantityMultiplier": 8
+    },
+    {
+      "name": "Modules_T1",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.2,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 5
+    }
+  ]
+}
