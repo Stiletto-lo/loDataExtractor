@@ -1,0 +1,43 @@
+{
+  "name": "BrokenTusker_4_C",
+  "type": "BrokenTusker_4_C",
+  "class": "BlueprintGeneratedClass'Mist/Content/Mist/Data/LootTables/LootTemplates/Special/BrokenTusker_4.BrokenTusker_4_C'",
+  "tables": [
+    {
+      "name": "BaseResources_T3",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 3,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 50,
+      "maxQuantityMultiplier": 100
+    },
+    {
+      "name": "BaseResources_T2",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 3,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 50,
+      "maxQuantityMultiplier": 100
+    },
+    {
+      "name": "BaseResources_T1",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 50,
+      "maxQuantityMultiplier": 200
+    },
+    {
+      "name": "RedBanana_T4",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 5,
+      "maxQuantityMultiplier": 10
+    }
+  ]
+}
