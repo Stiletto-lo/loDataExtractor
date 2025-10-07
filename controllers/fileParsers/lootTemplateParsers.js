@@ -8,6 +8,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const lootTemplateTemplate = require("../../templates/lootTemplate");
+const { readJsonFile } = require("../utils/read-json-file");
 
 // Output directories
 const OUTPUT_DIR = path.join(__dirname, "../../exported");
@@ -34,25 +35,6 @@ Object.values(LOOTTEMPLATES_TIER_DIRS).forEach((dir) => {
 	}
 });
 
-/**
- * Safely reads and parses a JSON file
- * @param {string} filePath - The file path to read
- * @returns {Object|null} - Parsed JSON data or null if error occurs
- */
-const readJsonFile = (filePath) => {
-	if (!filePath || typeof filePath !== "string") {
-		console.error("Invalid file path provided to readJsonFile");
-		return null;
-	}
-
-	try {
-		const rawData = fs.readFileSync(filePath);
-		return JSON.parse(rawData);
-	} catch (error) {
-		console.error(`Error reading or parsing file ${filePath}:`, error.message);
-		return null;
-	}
-};
 
 /**
  * Extracts tier information from a file path or type name
@@ -138,7 +120,6 @@ const parseLootTemplate = (filePath) => {
 
 	const jsonData = readJsonFile(filePath);
 	if (!jsonData || !Array.isArray(jsonData) || jsonData.length < 2) {
-		console.error(`Invalid or incomplete data in ${filePath}`);
 		return false;
 	}
 

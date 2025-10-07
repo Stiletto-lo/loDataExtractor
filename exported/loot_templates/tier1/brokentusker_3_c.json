@@ -1,0 +1,52 @@
+{
+  "name": "BrokenTusker_3_C",
+  "type": "BrokenTusker_3_C",
+  "class": "BlueprintGeneratedClass'Mist/Content/Mist/Data/LootTables/LootTemplates/Special/BrokenTusker_3.BrokenTusker_3_C'",
+  "tables": [
+    {
+      "name": "Armors_T3",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.2,
+      "minQuantityMultiplier": 5,
+      "maxQuantityMultiplier": 15
+    },
+    {
+      "name": "Weapons_T3",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 3,
+      "maxQuantityMultiplier": 10
+    },
+    {
+      "name": "ProcessedResources_T3",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 20,
+      "maxQuantityMultiplier": 50
+    },
+    {
+      "name": "BaseResources_T4",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 20,
+      "maxQuantityMultiplier": 30
+    },
+    {
+      "name": "RedBanana_T4",
+      "runChance": 1,
+      "minIterations": 1,
+      "maxIterations": 1,
+      "perIterationRunChance": 1,
+      "minQuantityMultiplier": 10,
+      "maxQuantityMultiplier": 20
+    }
+  ]
+}

@@ -4,31 +4,11 @@
  * and extract key-value pairs for use in the application.
  */
 
-const fs = require("node:fs");
 const translator = require("../translator");
+const { readJsonFile } = require("../utils/read-json-file");
 
 // Constants
 const GAME_PATH_REGEX = /[\\\/]Game[\\\/](.+)[\\\/]Game\.json/; // Works with both forward and backslashes
-
-/**
- * Safely reads and parses a JSON file
- * @param {string} filePath - The file path to read
- * @returns {Object|null} - Parsed JSON data or null if error occurs
- */
-const readJsonFile = (filePath) => {
-	try {
-		if (!filePath || typeof filePath !== "string") {
-			console.error("Invalid file path provided");
-			return null;
-		}
-
-		const rawData = fs.readFileSync(filePath, "utf8");
-		return JSON.parse(rawData);
-	} catch (error) {
-		console.error(`Error reading or parsing file ${filePath}:`, error.message);
-		return null;
-	}
-};
 
 /**
  * Extracts and processes key-value pairs from translation data

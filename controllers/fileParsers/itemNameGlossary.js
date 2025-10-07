@@ -7,6 +7,7 @@
 
 const path = require("node:path");
 const fs = require("node:fs");
+const { readJsonFile } = require("../utils/read-json-file");
 
 // Store the mapping between internal names and display names
 const itemNameGlossary = {};
@@ -29,8 +30,7 @@ const extractInternalNameFromPath = (filePath) => {
  */
 const processItemFile = (filePath) => {
 	try {
-		const rawdata = fs.readFileSync(filePath);
-		const jsonData = JSON.parse(rawdata);
+		const jsonData = readJsonFile(filePath);
 
 		// Find the item data in the JSON
 		const itemData = jsonData.find(
@@ -97,8 +97,7 @@ const buildItemNameGlossary = (baseDir) => {
 					fullPath.includes("Crafting\\Categories")
 				) {
 					try {
-						const rawdata = fs.readFileSync(fullPath);
-						const jsonData = JSON.parse(rawdata);
+						const jsonData = readJsonFile(fullPath);
 
 						// Find items with TechtreeName
 						const categoryData = jsonData.find(

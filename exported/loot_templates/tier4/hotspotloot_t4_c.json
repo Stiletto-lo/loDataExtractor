@@ -7,8 +7,8 @@
     {
       "name": "BaseResources_T4",
       "runChance": 1,
-      "minIterations": 1,
-      "maxIterations": 1,
+      "minIterations": 2,
+      "maxIterations": 2,
       "perIterationRunChance": 1,
       "minQuantityMultiplier": 1,
       "maxQuantityMultiplier": 2
@@ -16,8 +16,8 @@
     {
       "name": "ExtraResources_T4",
       "runChance": 0.5,
-      "minIterations": 1,
-      "maxIterations": 1,
+      "minIterations": 2,
+      "maxIterations": 2,
       "perIterationRunChance": 1,
       "minQuantityMultiplier": 0.5,
       "maxQuantityMultiplier": 1
@@ -37,11 +37,11 @@
       "minIterations": 1,
       "maxIterations": 1,
       "perIterationRunChance": 1,
-      "minQuantityMultiplier": 15,
-      "maxQuantityMultiplier": 45
+      "minQuantityMultiplier": 10,
+      "maxQuantityMultiplier": 30
     },
     {
-      "name": "Armors_T3",
+      "name": "Armors_T4",
       "runChance": 0.1,
       "minIterations": 1,
       "maxIterations": 1,
@@ -50,7 +50,7 @@
       "maxQuantityMultiplier": 1
     },
     {
-      "name": "Weapons_T3",
+      "name": "Weapons_T4",
       "runChance": 0.1,
       "minIterations": 1,
       "maxIterations": 1,

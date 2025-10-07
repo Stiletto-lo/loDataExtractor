@@ -1,13 +1,12 @@
-const fs = require("node:fs");
 
 const projectileDamageTemplate = require("../../../templates/projectileDamage");
 const dataParser = require("../../dataParsers");
 const utilityFunctions = require("../utilityFunctions");
+const { readJsonFile } = require("../../utils/read-json-file");
 
 const parseDamage = (filePath) => {
-	const rawdata = fs.readFileSync(filePath);
-	const jsonData = JSON.parse(rawdata);
-	if (jsonData[1]?.Type) {
+	const jsonData = readJsonFile(filePath);
+	if (jsonData?.[1]?.Type) {
 		const damageTypeClass = jsonData[1].Type;
 		const allItemsWithThatDamage = utilityFunctions
 			.getAllItems()

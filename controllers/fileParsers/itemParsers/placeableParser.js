@@ -2,7 +2,6 @@
  * Placeable parser functions for handling placeable-related data
  */
 
-const fs = require("node:fs");
 const dataParser = require("../../dataParsers");
 const translator = require("../../translator");
 const utilityFunctions = require("../utilityFunctions");
@@ -10,14 +9,14 @@ const utilityFunctions = require("../utilityFunctions");
 // Import templates
 const recipeTemplate = require("../../../templates/recipe");
 const structureInfoTemplate = require("../../../templates/structureInfo");
+const { readJsonFile } = require("../../utils/read-json-file");
 
 /**
  * Parse placeable data from a file
  * @param {string} filePath - The file path to parse
  */
 const parsePlaceableData = (filePath) => {
-	const rawdata = fs.readFileSync(filePath);
-	const jsonData = JSON.parse(rawdata);
+	const jsonData = readJsonFile(filePath);
 
 	if (jsonData?.[1]?.Type) {
 		const item = utilityFunctions.extractItemByType(jsonData[1].Type);
