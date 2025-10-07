@@ -49,6 +49,10 @@ class DataAccess {
   getAllUpgradesData() {
     return fileParser.getUpgradesData();
   }
+
+  getAllPerks() {
+    return fileParser.getAllPerks();
+  }
 }
 
 const dataAccess = new DataAccess();

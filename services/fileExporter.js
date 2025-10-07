@@ -373,6 +373,50 @@ const exportTranslationsData = async (translateData, folderPath) => {
  * @param {string} folderPath - Export folder path
  * @returns {Promise} - Promise that resolves when export is completed
  */
+/**
+ * Exports perk data to JSON files
+ * @param {Array} perks - Processed perk data
+ * @param {string} folderPath - Export folder path
+ * @returns {Promise} - Promise that resolves when export is completed
+ */
+const exportPerksData = async (perks, folderPath) => {
+  if (perks && perks.length > 0) {
+    console.log(`Processing ${perks.length} perk entries for export...`);
+
+    // Remove duplicates based on name
+    const uniquePerks = perks.filter((perk, index, self) =>
+      index === self.findIndex(p => p.name === perk.name)
+    );
+
+    console.log(`Reduced to ${uniquePerks.length} unique perk entries after deduplication`);
+
+    // Export full perks data
+    await fs.writeFile(
+      `${folderPath}perks.json`,
+      JSON.stringify(uniquePerks, null, 2),
+      "utf8"
+    );
+
+    // Export minified perks data
+    const minPerks = uniquePerks.map(perk => ({
+      name: perk.name,
+      description: perk.description,
+      ability: perk.ability,
+      pointsCost: perk.pointsCost
+    }));
+
+    await fs.writeFile(
+      `${folderPath}perks_min.json`,
+      JSON.stringify(minPerks),
+      "utf8"
+    );
+
+    console.log(`Exported ${uniquePerks.length} perks to perks.json and perks_min.json`);
+  } else {
+    console.log("No perk data to export");
+  }
+};
+
 const saveAllFiles = async (folderPath) => {
   // Process and export item data
   const allItems = dataProcessor.processItems();
@@ -391,6 +435,10 @@ const saveAllFiles = async (folderPath) => {
   // Process and export translation data
   const translateData = dataProcessor.processTranslations();
   await exportTranslationsData(translateData, folderPath);
+
+  // Process and export perk data
+  const perks = fileParser.getAllPerks();
+  await exportPerksData(perks, folderPath);
 };
 
 module.exports = {
@@ -399,5 +447,6 @@ module.exports = {
   exportIndividualItemFiles,
   exportCreaturesData,
   exportTranslationsData,
+  exportPerksData,
   saveAllFiles,
 };

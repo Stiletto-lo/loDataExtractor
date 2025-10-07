@@ -23,6 +23,7 @@ class DataStore {
 		this.creatures = [];
 		this.lootTables = {};
 		this.lootTemplates = [];
+		this.perks = [];
 	}
 
 	// Item operations
@@ -310,6 +311,32 @@ class DataStore {
 			this.creatures[existingItemIndex] = newItem;
 		}
 	}
+
+	// Perk operations
+	getAllPerks() {
+		return this.perks;
+	}
+
+	addPerk(perk) {
+		if (!perk || !perk.name) {
+			return;
+		}
+
+		// Check if perk already exists
+		const existingPerk = this.perks.find(
+			(existingPerk) => existingPerk.name === perk.name
+		);
+
+		if (!existingPerk) {
+			this.perks.push(perk);
+		}
+	}
+
+	setPerks(perks) {
+		if (Array.isArray(perks)) {
+			this.perks = perks;
+		}
+	}
 }
 
 // Create and export a singleton instance
@@ -379,4 +406,9 @@ module.exports = {
 	setCreatures: (data) => dataStore.setCreatures(data),
 	setLootTables: (data) => dataStore.setLootTables(data),
 	setLootTemplates: (data) => dataStore.setLootTemplates(data),
+
+	// Perk operations
+	getAllPerks: () => dataStore.getAllPerks(),
+	addPerk: (perk) => dataStore.addPerk(perk),
+	setPerks: (perks) => dataStore.setPerks(perks),
 };
