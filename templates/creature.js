@@ -7,6 +7,7 @@ const creature = {
 	category: undefined,
 	tier: undefined,
 	drops: undefined,
+	harvestableComponents: undefined, // New field for harvestable components
 };
 
 Object.freeze(creature);
