@@ -7,6 +7,7 @@ const lootParsers = require("./lootParsers");
 const translationParsers = require("./translationParsers");
 const upgradeParsers = require("./upgradeParsers");
 const vehicleParser = require("./vehicleParser");
+const perkParser = require("./perkParser");
 const utilityFunctions = require("./utilityFunctions");
 const translator = require("../translator");
 const itemNameGlossary = require("./itemNameGlossary");
@@ -46,6 +47,10 @@ module.exports = {
 	parseUpgrades: upgradeParsers.parseUpgrades,
 	parseUpgradesToItems: upgradeParsers.parseUpgradesToItems,
 
+	// Perk related functions
+	parsePerkData: perkParser.parsePerkData,
+	extractPerkInfo: perkParser.extractPerkInfo,
+
 	// Utility functions
 	getItem: utilityFunctions.getItem,
 	getItemByType: utilityFunctions.getItemByType,
@@ -60,6 +65,10 @@ module.exports = {
 	setAllItems: utilityFunctions.setAllItems,
 	setUpgradesData: utilityFunctions.setUpgradesData,
 	setCreatures: utilityFunctions.setCreatures,
+
+	// Perk utility functions
+	getAllPerks: utilityFunctions.getAllPerks,
+	setPerks: utilityFunctions.setPerks,
 
 	// Translator
 	getTranslator: () => translator,

@@ -68,6 +68,9 @@ const loadDirData = (dir, type) => {
         case "schematics":
           fileParser.parseSchematicItemData(filePath);
           break;
+        case "perks":
+          fileParser.parsePerkData(filePath);
+          break;
         default:
           break;
       }
@@ -130,6 +133,9 @@ const loadAllFiles = (contentFolderPath) => {
     `${contentFolderPath}Content/Mist/Data/Items/Schematics`,
     "schematics",
   );
+
+  console.info("Loading Perks");
+  loadDirData(`${contentFolderPath}Content/Mist/Data/Perks`, "perks");
 
   console.info("Building Item Name Glossary");
   fileParser.buildItemNameGlossary(
