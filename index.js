@@ -37,5 +37,8 @@ module.exports = {
 	getAllCreatures: () => dataAccess.getAllCreatures(),
 	getTranslator: () => dataAccess.getTranslator(),
 	getAllUpgradesData: () => dataAccess.getAllUpgradesData(),
+	getAllPerks: () => dataAccess.getAllPerks(),
+	getPerkByName: (name) => dataAccess.getPerkByName(name),
+	getPerksByAbility: (ability) => dataAccess.getPerksByAbility(ability),
 };
 

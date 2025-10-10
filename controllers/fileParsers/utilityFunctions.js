@@ -23,6 +23,7 @@ class DataStore {
 		this.creatures = [];
 		this.lootTables = {};
 		this.lootTemplates = [];
+		this.perks = [];
 	}
 
 	// Item operations
@@ -310,6 +311,56 @@ class DataStore {
 			this.creatures[existingItemIndex] = newItem;
 		}
 	}
+
+	// Perk operations
+	getAllPerks() {
+		return this.perks;
+	}
+
+	setPerks(data) {
+		if (!Array.isArray(data)) {
+			throw new TypeError("Perks must be an array");
+		}
+		this.perks = data;
+	}
+
+	addPerk(perk) {
+		if (!perk) {
+			throw new TypeError("Perk must be defined");
+		}
+
+		const existingPerk = this.perks.find(
+			(existingPerk) => existingPerk.name === perk.name,
+		);
+
+		if (!existingPerk) {
+			this.perks.push(perk);
+			return;
+		}
+
+		const newPerk = { ...existingPerk, ...perk };
+
+		const existingPerkIndex = this.perks.indexOf(existingPerk);
+		if (existingPerkIndex > -1) {
+			this.perks[existingPerkIndex] = newPerk;
+		}
+	}
+
+	getPerkByName(name) {
+		if (!name) {
+			return undefined;
+		}
+
+		return this.perks.find((perk) => perk.name === name);
+	}
+
+	getPerksByAbility(ability) {
+		if (!ability) {
+			return [];
+		}
+
+		return this.perks.filter((perk) => perk.ability === ability);
+	}
 }
 
 // Create and export a singleton instance
@@ -334,6 +385,7 @@ module.exports = {
 	getAllItems: () => dataStore.getAllItems(),
 	getUpgradesData: () => dataStore.getUpgradesData(),
 	getCreatures: () => dataStore.getCreatures(),
+	getAllPerks: () => dataStore.getAllPerks(),
 
 	/**
 	 * Updates an existing item in the items collection
@@ -379,4 +431,10 @@ module.exports = {
 	setCreatures: (data) => dataStore.setCreatures(data),
 	setLootTables: (data) => dataStore.setLootTables(data),
 	setLootTemplates: (data) => dataStore.setLootTemplates(data),
+	setPerks: (data) => dataStore.setPerks(data),
+
+	// Perk operations
+	getPerkByName: (name) => dataStore.getPerkByName(name),
+	getPerksByAbility: (ability) => dataStore.getPerksByAbility(ability),
+	addPerk: (perk) => dataStore.addPerk(perk),
 };

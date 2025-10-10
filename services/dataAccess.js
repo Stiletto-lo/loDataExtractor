@@ -49,6 +49,18 @@ class DataAccess {
   getAllUpgradesData() {
     return fileParser.getUpgradesData();
   }
+
+  getAllPerks() {
+    return fileParser.getAllPerks();
+  }
+
+  getPerkByName(name) {
+    return fileParser.getPerkByName(name);
+  }
+
+  getPerksByAbility(ability) {
+    return fileParser.getPerksByAbility(ability);
+  }
 }
 
 const dataAccess = new DataAccess();
