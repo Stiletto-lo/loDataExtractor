@@ -23,12 +23,6 @@
     "pointsCost": 80
   },
   {
-    "name": "Advanced Hatchet",
-    "parent": "One Handed Bone Axe",
-    "level": 30,
-    "pointsCost": 22
-  },
-  {
     "name": "Advanced Potions",
     "parent": "Vitamins T2",
     "onlyDevs": true,
@@ -320,21 +314,9 @@
   },
   {
     "name": "Bonespike Sword",
-    "parent": "Sawtooth Sword",
+    "parent": "Rawbone Sawsword",
     "level": 15,
     "pointsCost": 15
-  },
-  {
-    "name": "Bouldercut Battle Axe",
-    "parent": "Firestone Battle Axe",
-    "level": 45,
-    "pointsCost": 45
-  },
-  {
-    "name": "Bouldercut Hand Axe",
-    "parent": "Advanced Hatchet",
-    "level": 45,
-    "pointsCost": 50
   },
   {
     "name": "Brittle Bone Boots",
@@ -426,6 +408,12 @@
     "pointsCost": 9
   },
   {
+    "name": "Ceramic Hatchet",
+    "parent": "One Handed Bone Axe",
+    "level": 30,
+    "pointsCost": 22
+  },
+  {
     "name": "Ceramic Nails",
     "parent": "Lathe",
     "onlyDevs": true,
@@ -474,6 +462,12 @@
     "parent": "Ceramic Bolt",
     "level": 30,
     "pointsCost": 2
+  },
+  {
+    "name": "Chalk Bomb",
+    "parent": "Slingshot",
+    "level": 15,
+    "pointsCost": 10
   },
   {
     "name": "Charcoal",
@@ -526,12 +520,6 @@
     "parent": "Scythe",
     "level": 30,
     "pointsCost": 23
-  },
-  {
-    "name": "Choking Cloud",
-    "parent": "Slingshot",
-    "level": 15,
-    "pointsCost": 10
   },
   {
     "name": "Clay",
@@ -687,7 +675,7 @@
   },
   {
     "name": "Fast Grappling Hook",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "category": "Grappling Hooks",
     "level": 10,
     "pointsCost": 20
@@ -759,12 +747,12 @@
   },
   {
     "name": "Firestone Axe",
-    "parent": "Advanced Hatchet",
+    "parent": "Ceramic Hatchet",
     "level": 30,
     "pointsCost": 36
   },
   {
-    "name": "Firestone Battle Axe",
+    "name": "Firestone Battleaxe",
     "parent": "Rawbone Battle Axe",
     "level": 30,
     "pointsCost": 22
@@ -826,7 +814,7 @@
   },
   {
     "name": "Flotillan Grappling Hook",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "category": "Grappling Hooks",
     "level": 45,
     "pointsCost": 50
@@ -1154,6 +1142,11 @@
     "pointsCost": 4
   },
   {
+    "name": "Jaggertooth Swordclub",
+    "parent": "Beat Stick",
+    "pointsCost": 6
+  },
+  {
     "name": "Jojo Mojo",
     "parent": "Desert Mule",
     "level": 30,
@@ -1218,12 +1211,6 @@
     "pointsCost": 5
   },
   {
-    "name": "Liquid Fuel",
-    "parent": "Purification Station",
-    "level": 30,
-    "pointsCost": 5
-  },
-  {
     "name": "Lobber",
     "parent": "Improved Walker Weapons",
     "level": 15,
@@ -1243,7 +1230,7 @@
   },
   {
     "name": "Long Grappling Hook",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "category": "Grappling Hooks",
     "level": 10,
     "pointsCost": 20
@@ -1398,6 +1385,18 @@
     "pointsCost": 3
   },
   {
+    "name": "Nomad Grappling Hook",
+    "parent": "Makeshift Grappling Hook",
+    "category": "Grappling Hooks",
+    "pointsCost": 3
+  },
+  {
+    "name": "Nurrfang Toothclub",
+    "parent": "Jaggertooth Club",
+    "level": 15,
+    "pointsCost": 5
+  },
+  {
     "name": "Obsidian Container Large",
     "parent": "Obsidian Pot",
     "level": 30,
@@ -1429,13 +1428,13 @@
   },
   {
     "name": "One Handed Bone Axe",
-    "parent": "Woodcutter’s Hatchet",
+    "parent": "Stone Axe",
     "level": 15,
     "pointsCost": 12
   },
   {
     "name": "One Handed Nibirian Axe",
-    "parent": "Bouldercut Hand Axe",
+    "parent": "Wyndan Hand Axe",
     "level": 60,
     "pointsCost": 65
   },
@@ -1540,27 +1539,32 @@
   },
   {
     "name": "Rawbone Battle Axe",
-    "parent": "Woodcutter’s Hatchet",
+    "parent": "Stone Axe",
     "level": 15,
     "pointsCost": 8
   },
   {
     "name": "Rawbone Club",
-    "parent": "Jaggertooth Club",
+    "parent": "Nurrfang Toothclub",
     "level": 15,
-    "pointsCost": 5
+    "pointsCost": 9
   },
   {
     "name": "Rawbone Maul",
-    "parent": "Jaggertooth Maul",
+    "parent": "Rawbone Maul",
     "level": 15,
-    "pointsCost": 7
+    "pointsCost": 9
   },
   {
     "name": "Rawbone Quarterstaff",
     "parent": "Blunt Quarterstaff",
     "level": 15,
     "pointsCost": 12
+  },
+  {
+    "name": "Rawbone Sawsword",
+    "parent": "Jaggertooth Swordclub",
+    "pointsCost": 8
   },
   {
     "name": "Redwood Wood Boots",
@@ -1597,12 +1601,6 @@
     "parent": "Rope",
     "level": 15,
     "pointsCost": 30
-  },
-  {
-    "name": "Repaired Grappling Hook",
-    "parent": "Makeshift Grappling Hook",
-    "category": "Grappling Hooks",
-    "pointsCost": 3
   },
   {
     "name": "Repeater",
@@ -1686,11 +1684,6 @@
     "pointsCost": 50
   },
   {
-    "name": "Sawtooth Sword",
-    "parent": "Beat Stick",
-    "pointsCost": 6
-  },
-  {
     "name": "Scattershot Ammo",
     "parent": "Scattershot Gun",
     "pointsCost": 3
@@ -1731,7 +1724,7 @@
   },
   {
     "name": "Short Ceramic Hoofmace",
-    "parent": "Spikebone Club",
+    "parent": "Rawbone Club",
     "level": 30,
     "pointsCost": 25
   },
@@ -1825,18 +1818,6 @@
     "pointsCost": 1
   },
   {
-    "name": "Spikebone Club",
-    "parent": "Rawbone Club",
-    "level": 15,
-    "pointsCost": 9
-  },
-  {
-    "name": "Spikebone Maul",
-    "parent": "Rawbone Maul",
-    "level": 15,
-    "pointsCost": 9
-  },
-  {
     "name": "Spinner",
     "parent": "Basic Walker Weapons",
     "pointsCost": 3
@@ -1909,6 +1890,11 @@
     "pointsCost": 5
   },
   {
+    "name": "Stone Axe",
+    "parent": "Crude Hatchet",
+    "pointsCost": 3
+  },
+  {
     "name": "Stone Humidifier",
     "parent": "Maintenance Box",
     "pointsCost": 5
@@ -1921,7 +1907,7 @@
   },
   {
     "name": "Sturdy Grappling Hook",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "category": "Grappling Hooks",
     "level": 10,
     "pointsCost": 20
@@ -1944,6 +1930,12 @@
     "onlyDevs": true,
     "level": 30,
     "pointsCost": 15
+  },
+  {
+    "name": "Tallow",
+    "parent": "Purification Station",
+    "level": 30,
+    "pointsCost": 5
   },
   {
     "name": "Tar",
@@ -1971,7 +1963,7 @@
   },
   {
     "name": "Throwable Smoke Bomb (Gas)",
-    "parent": "Choking Cloud",
+    "parent": "Chalk Bomb",
     "level": 30,
     "pointsCost": 5
   },
@@ -2045,7 +2037,7 @@
   },
   {
     "name": "Torque Battery",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "level": 15,
     "pointsCost": 15
   },
@@ -2115,7 +2107,7 @@
   },
   {
     "name": "Two Handed Nibirian Axe",
-    "parent": "Bouldercut Battle Axe",
+    "parent": "Wyndan Battle Axe",
     "level": 60,
     "pointsCost": 57
   },
@@ -2292,7 +2284,7 @@
   },
   {
     "name": "Wingsuit",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "level": 30,
     "pointsCost": 50
   },
@@ -2306,11 +2298,6 @@
     "parent": "Lumbermill",
     "level": 45,
     "pointsCost": 25
-  },
-  {
-    "name": "Woodcutter’s Hatchet",
-    "parent": "Crude Hatchet",
-    "pointsCost": 3
   },
   {
     "name": "Wooden Dart",
@@ -2356,6 +2343,12 @@
     "pointsCost": 100
   },
   {
+    "name": "Wyndan Battle Axe",
+    "parent": "Firestone Battleaxe",
+    "level": 45,
+    "pointsCost": 45
+  },
+  {
     "name": "Wyndan Flame Sword",
     "parent": "Singblade",
     "level": 45,
@@ -2366,6 +2359,12 @@
     "parent": "Short Ceramic Hoofmace",
     "level": 45,
     "pointsCost": 55
+  },
+  {
+    "name": "Wyndan Hand Axe",
+    "parent": "Ceramic Hatchet",
+    "level": 45,
+    "pointsCost": 50
   },
   {
     "name": "Wyndan Sabre",

@@ -599,7 +599,7 @@
             "name": "Rope"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 50
       }
     ],
@@ -711,7 +711,7 @@
       "hp": 750
     },
     "onlyDevs": true,
-    "unlockable": "AmmoScrollRack"
+    "unlockable": "Ammo Scroll Rack"
   },
   {
     "category": "Tools",
@@ -817,7 +817,7 @@
             "name": "Apple"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 60
       }
     ],
@@ -2074,7 +2074,7 @@
       "type": "Soft",
       "hp": 12000
     },
-    "unlockable": "WalkerBarrierGate"
+    "unlockable": "Barrier Gate"
   },
   {
     "category": "Defenses",
@@ -2106,7 +2106,7 @@
       "type": "Soft",
       "hp": 12000
     },
-    "unlockable": "WalkerBarrierTopPlace"
+    "unlockable": "Barrier Plank"
   },
   {
     "category": "Containers",
@@ -2760,7 +2760,7 @@
       "type": "Soft",
       "hp": 5000
     },
-    "unlockable": "BattleFan"
+    "unlockable": "Battle Fan"
   },
   {
     "crafting": [
@@ -3093,7 +3093,7 @@
       }
     ],
     "name": "Bent Wooden Planks",
-    "parent": "LumberMill",
+    "parent": "Lumbermill",
     "trade_price": 0.1,
     "translation": "Bent Wooden Planks",
     "type": "BentPlanks_C",
@@ -3635,7 +3635,7 @@
             "name": "Bone Splinter"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 45
       },
       {
@@ -3649,7 +3649,7 @@
             "name": "Purified Water"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 45
       }
     ],
@@ -3969,7 +3969,7 @@
             "name": "Glass"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 135
       }
     ],
@@ -4031,7 +4031,7 @@
       }
     ],
     "name": "Bonespike Sword",
-    "parent": "Sawtooth Sword",
+    "parent": "Rawbone Sawsword",
     "trade_price": 6.2,
     "translation": "Bonespike Sword",
     "type": "OneHandedBoneSword_C",
@@ -4732,7 +4732,7 @@
           },
           {
             "count": 24,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 56,
@@ -4758,7 +4758,7 @@
           },
           {
             "count": 24,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 56,
@@ -4784,7 +4784,7 @@
           },
           {
             "count": 24,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 56,
@@ -4810,7 +4810,7 @@
           },
           {
             "count": 24,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 56,
@@ -6114,7 +6114,7 @@
       "type": "Soft",
       "hp": 500
     },
-    "unlockable": "CauterizingStation"
+    "unlockable": "Cauterizing Station"
   },
   {
     "name": "Celestial Tablet",
@@ -6718,7 +6718,7 @@
       }
     ],
     "name": "Ceramic Pickaxe",
-    "parent": "BonePickaxe",
+    "parent": "Bone Pickaxe",
     "trade_price": 98.2,
     "translation": "Ceramic Pickaxe",
     "type": "CeramicPickaxe_C",
@@ -6763,7 +6763,7 @@
       }
     ],
     "name": "Ceramic Repair Hammer",
-    "parent": "BoneRepairHammer",
+    "parent": "Bone Repair Hammer",
     "translation": "Ceramic Repair Hammer",
     "type": "CeramicRepairHammer_C",
     "durability": 1000
@@ -7122,7 +7122,7 @@
             "name": "Rope"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 60
       }
     ],
@@ -7487,7 +7487,7 @@
       }
     ],
     "name": "Chitin Repair Hammer",
-    "parent": "BoneRepairHammer",
+    "parent": "Bone Repair Hammer",
     "translation": "Chitin Repair Hammer",
     "type": "ChitinRepairHammer_C",
     "durability": 1500
@@ -7841,7 +7841,7 @@
       "type": "Soft",
       "hp": 500
     },
-    "unlockable": "ClayPot"
+    "unlockable": "Clay Pot"
   },
   {
     "category": "Clay",
@@ -8051,7 +8051,7 @@
             "name": "Tar"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 75
       }
     ],
@@ -8453,7 +8453,7 @@
             "name": "Corn"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 30
       }
     ],
@@ -8914,7 +8914,7 @@
       "type": "Soft",
       "hp": 7500
     },
-    "unlockable": "DefensiveTower"
+    "unlockable": "Defensive Tower"
   },
   {
     "category": "Resources",
@@ -8975,7 +8975,7 @@
             "name": "Glass"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 135
       }
     ],
@@ -10948,7 +10948,7 @@
       }
     ],
     "name": "Drill Spade",
-    "parent": "TubeSpade",
+    "parent": "Tube Spade",
     "translation": "Drill Spade",
     "type": "DrillSpade_C",
     "description": "An improved version of a Tube Spade designed by the Flotillans to dig up resources from the ground more efficiently.",
@@ -11067,7 +11067,7 @@
       "type": "Soft",
       "hp": 1500
     },
-    "unlockable": "DyeingStation"
+    "unlockable": "Dyeing Station"
   },
   {
     "category": "Resources",
@@ -11371,7 +11371,7 @@
       }
     ],
     "name": "Explosive Dart",
-    "parent": "FireDart",
+    "parent": "Fire Dart",
     "trade_price": 49.8,
     "translation": "Explosive Dart",
     "type": "ExplosiveDart_C",
@@ -12124,7 +12124,7 @@
         "ingredients": [
           {
             "count": 20,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 25,
@@ -12150,7 +12150,7 @@
         "ingredients": [
           {
             "count": 20,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 25,
@@ -12176,7 +12176,7 @@
         "ingredients": [
           {
             "count": 20,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 25,
@@ -12485,7 +12485,7 @@
       }
     ],
     "name": "Fast Grappling Hook",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "trade_price": 19.4,
     "translation": "Fast Grappling Hook",
     "type": "FastGrapplingHook_C",
@@ -13256,7 +13256,7 @@
             "name": "Phosphorus"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 60
       }
     ],
@@ -14066,7 +14066,7 @@
       }
     ],
     "name": "Firestone Axe",
-    "parent": "Advanced Hatchet",
+    "parent": "Ceramic Hatchet",
     "trade_price": 80.8,
     "translation": "Firestone Axe",
     "type": "OneHandedLavaAxe_C",
@@ -14700,7 +14700,7 @@
   },
   {
     "name": "Flares",
-    "parent": "DyeingStation",
+    "parent": "Dyeing Station",
     "translation": "Flares",
     "type": "Flares_C"
   },
@@ -14903,7 +14903,7 @@
       }
     ],
     "name": "Floating Mine",
-    "parent": "FireDart",
+    "parent": "Fire Dart",
     "trade_price": 96.4,
     "translation": "Floating Mine",
     "type": "FloatingMine_C",
@@ -14991,7 +14991,7 @@
       }
     ],
     "name": "Flotillan Grappling Hook",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "trade_price": 16,
     "translation": "Flotillan Grappling Hook",
     "type": "FlotillanGrapplingHook_C",
@@ -15840,7 +15840,7 @@
             "name": "Glass"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 60
       }
     ],
@@ -16196,7 +16196,7 @@
       "type": "Soft",
       "hp": 200
     },
-    "unlockable": "GrapplingBeltChargingStation"
+    "unlockable": "Grappling Belt Charging Station"
   },
   {
     "category": "Ammo",
@@ -16213,14 +16213,14 @@
           },
           {
             "count": 2,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 8,
             "name": "Mushroom Flesh"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 75
       }
     ],
@@ -17242,7 +17242,7 @@
   {
     "category": "Resources",
     "name": "Hellfire",
-    "parent": "ClayPot",
+    "parent": "Clay Pot",
     "trade_price": 1,
     "translation": "Hellfire",
     "type": "HellfireMixture_C",
@@ -18341,7 +18341,7 @@
           },
           {
             "count": 24,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           }
         ]
       }
@@ -18361,7 +18361,7 @@
           },
           {
             "count": 24,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 32,
@@ -18385,7 +18385,7 @@
           },
           {
             "count": 24,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 32,
@@ -18409,7 +18409,7 @@
           },
           {
             "count": 23,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           }
         ]
       }
@@ -18889,7 +18889,7 @@
       "type": "Soft",
       "hp": 5000
     },
-    "unlockable": "HoseStation"
+    "unlockable": "Hose Station"
   },
   {
     "category": "Resources",
@@ -19430,7 +19430,7 @@
       }
     ],
     "name": "Infused Obsidian Bottle",
-    "parent": "LavaBottleSmall",
+    "parent": "Obsidian Flask",
     "trade_price": 26,
     "translation": "Infused Obsidian Bottle",
     "type": "LavaBottleLarge_C",
@@ -19560,7 +19560,7 @@
             "name": "Rope"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 75
       }
     ],
@@ -19842,7 +19842,7 @@
       }
     ],
     "name": "Iron Rok",
-    "parent": "ObsidianRok",
+    "parent": "Obsidian Rok",
     "trade_price": 5.2,
     "translation": "Iron Rok",
     "type": "IronRok_C",
@@ -20303,7 +20303,7 @@
             "name": "Glass"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 60
       }
     ],
@@ -20515,7 +20515,7 @@
       }
     ],
     "name": "Large Base Walker Packer",
-    "parent": "BaseWalkerPackerSmall",
+    "parent": "Small Base Walker Packer",
     "translation": "Large Base Walker Packer",
     "type": "BaseWalkerPackerLarge_C",
     "description": "Allows to pack a single walker of any type. Requires a foundation of a base to support itself.",
@@ -20525,7 +20525,7 @@
       "type": "Medium",
       "hp": 21000
     },
-    "unlockable": "BaseWalkerPackerLarge"
+    "unlockable": "Large Base Walker Packer"
   },
   {
     "category": "Containers",
@@ -20683,7 +20683,7 @@
       }
     ],
     "name": "Large Water Bag",
-    "parent": "WaterBagMedium",
+    "parent": "Medium Water Bag",
     "translation": "Large Water Bag",
     "type": "WaterBagLarge_C",
     "description": "Store large volumes of liquid. Liquid is protected unless the container is severely damaged.",
@@ -20693,7 +20693,7 @@
       "type": "Soft",
       "hp": 2000
     },
-    "unlockable": "WaterBagLarge"
+    "unlockable": "Large Water Bag"
   },
   {
     "category": "Walker Parts",
@@ -20771,12 +20771,12 @@
             "name": "Purified Water"
           }
         ],
-        "station": "ObsidianMachine",
+        "station": "Obsidian Machine",
         "time": 90
       }
     ],
     "name": "Lava Fuel",
-    "parent": "ObsidianMachine",
+    "parent": "Obsidian Machine",
     "translation": "Lava Fuel",
     "type": "LavaFuel_C",
     "description": "Being almost as hot as lava itself, it's often used in crafting and combat by spraying it and setting on fire.",
@@ -21188,7 +21188,7 @@
       }
     ],
     "name": "Long Grappling Hook",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "trade_price": 23.5,
     "translation": "Long Grappling Hook",
     "type": "LongGrapplingHook_C",
@@ -21308,7 +21308,7 @@
       "type": "Soft",
       "hp": 20000
     },
-    "unlockable": "LumberMill"
+    "unlockable": "Lumbermill"
   },
   {
     "category": "Resources",
@@ -21789,7 +21789,7 @@
       }
     ],
     "name": "Medium Water Bag",
-    "parent": "WaterBagSmall",
+    "parent": "Small Water Bag",
     "translation": "Medium Water Bag",
     "type": "WaterBagMedium_C",
     "description": "Store moderate volumes of liquid. Liquid is protected unless the container is severely damaged.",
@@ -21799,7 +21799,7 @@
       "type": "Soft",
       "hp": 1500
     },
-    "unlockable": "WaterBagMedium"
+    "unlockable": "Medium Water Bag"
   },
   {
     "category": "Walker Parts",
@@ -22356,7 +22356,7 @@
       }
     ],
     "name": "Mollusk Walker",
-    "parent": "SteeringLevers",
+    "parent": "Steering Levers",
     "translation": "Mollusk Walker",
     "type": "Mollusk_C",
     "description": "Small cabin of the walker provides protection to possessions and the driver. While walls may let a nomad live longer, obstructed view from inside the cabin could be a serious drawback in a battle. Has a decent deck and good movement capabilities.",
@@ -23350,7 +23350,7 @@
       }
     ],
     "name": "Net",
-    "parent": "NetThrower",
+    "parent": "Net Thrower",
     "trade_price": 10.4,
     "translation": "Net",
     "type": "Net_C",
@@ -23410,7 +23410,7 @@
       }
     ],
     "name": "Net Pouch",
-    "parent": "ThrowingNet",
+    "parent": "Throwing Net",
     "trade_price": 5.6,
     "translation": "Net Pouch",
     "type": "NetPouch_C",
@@ -23451,7 +23451,7 @@
       "type": "Soft",
       "hp": 3000
     },
-    "unlockable": "NetThrower"
+    "unlockable": "Net Thrower"
   },
   {
     "category": "Weapons",
@@ -24705,7 +24705,7 @@
       }
     ],
     "name": "Obsidian Machine",
-    "parent": "ClayPot",
+    "parent": "Clay Pot",
     "translation": "Obsidian Machine",
     "type": "ObsidianMachine_C",
     "description": "With parts carved out of solid obsidian, the machine can safely hold lava to use it in various productions.",
@@ -24715,7 +24715,7 @@
       "type": "Soft",
       "hp": 4000
     },
-    "unlockable": "ObsidianMachine"
+    "unlockable": "Obsidian Machine"
   },
   {
     "category": "Containers",
@@ -24777,7 +24777,7 @@
       }
     ],
     "name": "Obsidian Rok",
-    "parent": "CeramicRok",
+    "parent": "Ceramic Rok",
     "trade_price": 5.2,
     "translation": "Obsidian Rok",
     "type": "ObsidianRok_C",
@@ -25094,7 +25094,7 @@
       "type": "Soft",
       "hp": 900
     },
-    "unlockable": "PackingStation"
+    "unlockable": "Packing Station"
   },
   {
     "category": "Weapons",
@@ -26373,7 +26373,7 @@
       }
     ],
     "name": "Poaching Hut",
-    "parent": "DefensiveTower",
+    "parent": "Defensive Tower",
     "translation": "Poaching Hut",
     "type": "PoachingHut_C",
     "description": "A placeable that creates a mini-claim area in moderate radius. Additional resouces will go into this placeable instead of Proxy Walker.",
@@ -26383,7 +26383,7 @@
       "type": "BlueprintGeneratedClassInvincibleDamageOverride_C'",
       "hp": 5000
     },
-    "unlockable": "PoachingHut"
+    "unlockable": "Poaching Hut"
   },
   {
     "category": "Furniture",
@@ -26551,7 +26551,7 @@
       }
     ],
     "name": "Proxy Walker",
-    "parent": "SteeringLevers",
+    "parent": "Steering Levers",
     "translation": "Proxy Walker",
     "type": "Proxy_C",
     "description": "The proxy walker is designed to establish a protectorate over an oasis by deploying into an unmovable claim, provided that its owner possesses an official proxy license from the Flotilla. Can only be deployed while an oasis is unclaimed or contested and only becomes the claimant after no other deployed proxy walkers are left standing.",
@@ -26701,7 +26701,7 @@
       }
     ],
     "name": "Purification Station",
-    "parent": "ClayPot",
+    "parent": "Clay Pot",
     "translation": "Purification Station",
     "type": "PurificationStation_C",
     "description": "All toxic water that is transported to the Flotilla is first cleansed in an ancient water purifying machine. The Guardians are the sole keepers of this machine, a technological relic of the old world which has sustained the Flotillans to this day. However, nomads developed a similar, yet more primitive version of this technology.",
@@ -26733,7 +26733,7 @@
             "name": "Cactus Flesh"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 35
       },
       {
@@ -26753,7 +26753,7 @@
             "name": "Fruit Pulp"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 35
       },
       {
@@ -26802,7 +26802,7 @@
           }
         ],
         "output": 5,
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 55
       },
       {
@@ -26822,7 +26822,7 @@
             "name": "Thornberry"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 35
       },
       {
@@ -26844,7 +26844,7 @@
           }
         ],
         "output": 3,
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 40
       },
       {
@@ -26866,7 +26866,7 @@
           }
         ],
         "output": 3,
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 35
       }
     ],
@@ -26961,7 +26961,7 @@
             "name": "Glass"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 60
       }
     ],
@@ -27754,7 +27754,7 @@
       }
     ],
     "name": "Rawbone Battle Axe",
-    "parent": "Woodcutter’s Hatchet",
+    "parent": "Stone Axe",
     "trade_price": 18.4,
     "translation": "Rawbone Battle Axe",
     "type": "TwoHandedBoneAxe_C",
@@ -27798,7 +27798,7 @@
       }
     ],
     "name": "Rawbone Club",
-    "parent": "Rawbone Club",
+    "parent": "Nurrfang Toothclub",
     "trade_price": 14,
     "translation": "Rawbone Club",
     "type": "BoneMace_C",
@@ -27964,7 +27964,7 @@
       }
     ],
     "name": "Rawbone Sawsword",
-    "parent": "Sawtooth Sword",
+    "parent": "Jaggertooth Swordclub",
     "trade_price": 15,
     "translation": "Rawbone Sawsword",
     "type": "TwoHandedBoneSwordShort_C",
@@ -28133,7 +28133,7 @@
           }
         ],
         "output": 5,
-        "station": "AncientStation",
+        "station": "Ancient Fabricator",
         "time": 250
       },
       {
@@ -29336,7 +29336,7 @@
       }
     ],
     "name": "Rupu Sling",
-    "parent": "DefensiveTower",
+    "parent": "Defensive Tower",
     "translation": "Rupu Sling",
     "type": "RupuSling_C",
     "description": "Tied down rupu that throws specially made rupu rocks at intruders. Precise and deadly when the target is close, but very wasteful at longer distances, making it a perfect defense inside a base.",
@@ -29485,7 +29485,7 @@
           }
         ],
         "output": 3,
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 20
       },
       {
@@ -29901,7 +29901,7 @@
       }
     ],
     "name": "Sawblade",
-    "parent": "ToolPod",
+    "parent": "Tool Pod",
     "translation": "Sawblade",
     "type": "Sawblade_C",
     "description": "A mechanical arm with a spinning saw blade attached to it harvests lumber from a distance. Requires torque while sawing.",
@@ -31148,7 +31148,7 @@
     "structureInfo": {
       "hp": 750
     },
-    "unlockable": "ScrollRack"
+    "unlockable": "Scroll Rack"
   },
   {
     "crafting": [
@@ -31413,7 +31413,7 @@
       }
     ],
     "name": "Short Ceramic Hoofmace",
-    "parent": "Spikebone Club",
+    "parent": "Rawbone Club",
     "trade_price": 75.8,
     "translation": "Short Ceramic Hoofmace",
     "type": "OneHandedZirconiumMace_C",
@@ -31637,7 +31637,7 @@
           },
           {
             "count": 13,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 6,
@@ -31663,7 +31663,7 @@
           },
           {
             "count": 13,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 6,
@@ -31693,7 +31693,7 @@
           },
           {
             "count": 13,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           }
         ]
       }
@@ -31715,7 +31715,7 @@
           },
           {
             "count": 13,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 6,
@@ -32041,7 +32041,7 @@
             "name": "Glass"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 60
       }
     ],
@@ -32160,7 +32160,7 @@
       "type": "Medium",
       "hp": 8000
     },
-    "unlockable": "BaseWalkerPackerSmall"
+    "unlockable": "Small Base Walker Packer"
   },
   {
     "category": "Ammo",
@@ -32300,7 +32300,7 @@
       "type": "Soft",
       "hp": 1250
     },
-    "unlockable": "SmallRepairHoist"
+    "unlockable": "Small Repair Hoist"
   },
   {
     "category": "Interactables",
@@ -32463,7 +32463,7 @@
       "type": "Soft",
       "hp": 1000
     },
-    "unlockable": "WaterBagSmall"
+    "unlockable": "Small Water Bag"
   },
   {
     "category": "Walker Parts",
@@ -33484,7 +33484,7 @@
     "description": "The control mechanism required to drive more complex walkers.",
     "experiencieReward": 208,
     "weight": 10.8,
-    "unlockable": "SteeringLevers"
+    "unlockable": "Steering Levers"
   },
   {
     "category": "Walker Tools",
@@ -33511,7 +33511,7 @@
       }
     ],
     "name": "Steering Levers Cage",
-    "parent": "SteeringLevers",
+    "parent": "Steering Levers",
     "translation": "Steering Levers Cage",
     "type": "SteeringLeversCage_C",
     "description": "Sturdy contraption made of strong wood and tight ropes, allowing Nomads to place it around Walker Steering Levers to protect their driver.",
@@ -33521,7 +33521,7 @@
       "type": "Soft",
       "hp": 5000
     },
-    "unlockable": "SteeringLeversCage"
+    "unlockable": "Steering Levers Cage"
   },
   {
     "category": "Interactables",
@@ -33583,7 +33583,7 @@
       }
     ],
     "name": "Stiletto Walker",
-    "parent": "SteeringLevers",
+    "parent": "Steering Levers",
     "translation": "Stiletto Walker",
     "type": "Stiletto_C",
     "description": "Developed as the successor to the dinghy walker, the sleek stiletto walker is fast, has a short turn radius, and flaunts more deck space and a stronger hull than its predecessor. Ideal for nomads who prefer to travel alone or in small groups.",
@@ -34746,7 +34746,7 @@
       "type": "Soft",
       "hp": 500
     },
-    "unlockable": "Humidifier"
+    "unlockable": "Stone Humidifier"
   },
   {
     "category": "Weapons",
@@ -34944,7 +34944,7 @@
       }
     ],
     "name": "Sturdy Grappling Hook",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "trade_price": 19.4,
     "translation": "Sturdy Grappling Hook",
     "type": "SturdyGrapplingHook_C",
@@ -35006,7 +35006,7 @@
             "name": "Fiber Weave"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 90
       }
     ],
@@ -35432,7 +35432,7 @@
       }
     ],
     "name": "Throwable Aloe Bomb",
-    "parent": "HealingBomb",
+    "parent": "Aloe Goo Bomb",
     "trade_price": 16.9,
     "translation": "Throwable Aloe Bomb",
     "type": "ThrowableAloeBomb_C",
@@ -35505,7 +35505,7 @@
       }
     ],
     "name": "Throwable Smoke Bomb",
-    "parent": "Choking Cloud",
+    "parent": "Chalk Bomb",
     "trade_price": 16.9,
     "translation": "Throwable Smoke Bomb",
     "type": "ThrowableSmokeBomb_C",
@@ -36697,7 +36697,7 @@
       }
     ],
     "name": "Toboggan Walker",
-    "parent": "SteeringLevers",
+    "parent": "Steering Levers",
     "translation": "Toboggan Walker",
     "type": "Toboggan_C",
     "description": "The standard merchant's vessel built for outrunning pirates and getting the goods where they need to go. There's not much room for weapons, so this walker is usually accompanied by at least one battle-capable walker on its transport runs.",
@@ -37699,7 +37699,7 @@
       "type": "Medium",
       "hp": 5000
     },
-    "unlockable": "ToolPod"
+    "unlockable": "Tool Pod"
   },
   {
     "name": "Tools",
@@ -37872,7 +37872,7 @@
       }
     ],
     "name": "Torque Battery",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "trade_price": 8.4,
     "translation": "Torque Battery",
     "type": "TorqueContainer_C",
@@ -38029,7 +38029,7 @@
       "type": "Soft",
       "hp": 200
     },
-    "unlockable": "TrapDoor"
+    "unlockable": "Trap Door"
   },
   {
     "category": "Weapons",
@@ -38936,7 +38936,7 @@
         "ingredients": [
           {
             "count": 25,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 22,
@@ -38962,7 +38962,7 @@
         "ingredients": [
           {
             "count": 25,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 45,
@@ -38988,7 +38988,7 @@
         "ingredients": [
           {
             "count": 25,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 45,
@@ -39014,7 +39014,7 @@
         "ingredients": [
           {
             "count": 25,
-            "name": "Liquid Fuel"
+            "name": "Tallow"
           },
           {
             "count": 45,
@@ -39423,7 +39423,7 @@
             "name": "Purified Water"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 30
       }
     ],
@@ -39473,7 +39473,7 @@
       "type": "Soft",
       "hp": 1000
     },
-    "unlockable": "WalkerClimber"
+    "unlockable": "Walker Climber"
   },
   {
     "name": "Walker Hangar",
@@ -39517,7 +39517,7 @@
       "type": "Medium",
       "hp": 5000
     },
-    "unlockable": "SmallWalkerPacker"
+    "unlockable": "Walker Packing Compartment"
   },
   {
     "name": "Walker Parts",
@@ -39719,7 +39719,7 @@
       }
     ],
     "name": "Water Condenser",
-    "parent": "Humidifier",
+    "parent": "Stone Humidifier",
     "translation": "Water Condenser",
     "type": "WaterCondenser_C",
     "description": "Collects moisture from the air and stores it as clean water. Efficiency depends on the area where the condenser is built.",
@@ -39729,7 +39729,7 @@
       "type": "Soft",
       "hp": 3000
     },
-    "unlockable": "WaterCondenser"
+    "unlockable": "Water Condenser"
   },
   {
     "category": "Ammo",
@@ -39841,15 +39841,15 @@
           },
           {
             "count": 10,
-            "name": "Sawtooth Sword"
+            "name": "Rawbone Sawsword"
           },
           {
             "count": 30,
-            "name": "Spikebone Club"
+            "name": "Rawbone Club"
           },
           {
             "count": 40,
-            "name": "Spikebone Maul"
+            "name": "Rawbone Maul"
           },
           {
             "count": 10,
@@ -39871,7 +39871,7 @@
           },
           {
             "count": 8,
-            "name": "Advanced Hatchet"
+            "name": "Ceramic Hatchet"
           },
           {
             "count": 15,
@@ -40075,7 +40075,7 @@
       }
     ],
     "name": "Wingsuit",
-    "parent": "Repaired Grappling Hook",
+    "parent": "Nomad Grappling Hook",
     "trade_price": 29,
     "translation": "Wingsuit",
     "type": "WingSuit_C",
@@ -40728,7 +40728,7 @@
             "name": "Worm Oil"
           }
         ],
-        "station": "ClayPot",
+        "station": "Clay Pot",
         "time": 100
       }
     ],
