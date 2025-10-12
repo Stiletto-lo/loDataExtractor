@@ -1,4 +1,40 @@
 /**
+ * Exports perk data to JSON files
+ * @param {Array} perks - Processed perk data
+ * @param {string} folderPath - Export folder path
+ * @returns {Promise} - Promise that resolves when export is completed
+ */
+const exportPerksData = async (perks, folderPath) => {
+  if (perks.length > 0) {
+    console.log(`Processing ${perks.length} perk entries for export...`);
+
+    await fs.writeFile(
+      `${folderPath}perks.json`,
+      JSON.stringify(perks, null, 2),
+      (err) => {
+        if (err) {
+          console.error("Error creating the perks.json file");
+        } else {
+          console.log("Perk data exported to perks.json");
+        }
+      },
+    );
+
+    await fs.writeFile(
+      `${folderPath}perks_min.json`,
+      JSON.stringify(perks),
+      (err) => {
+        if (err) {
+          console.error("Error creating the perks_min.json file");
+        } else {
+          console.log("Perks_min.json exported");
+        }
+      },
+    );
+  }
+};
+
+/**
  * Service for exporting data to files
  * 
  * This module provides functions for exporting processed data
@@ -379,6 +415,10 @@ const saveAllFiles = async (folderPath) => {
   const minItems = dataProcessor.createMinItems(allItems);
   await exportItemsData(allItems, minItems, folderPath);
 
+  // Process and export perk data
+  const perks = fileParser.getAllPerks();
+  await exportPerksData(perks, folderPath);
+
   // Process and export technology data
   const techData = dataProcessor.processTechData();
   await exportTechData(techData, folderPath);
@@ -399,5 +439,6 @@ module.exports = {
   exportIndividualItemFiles,
   exportCreaturesData,
   exportTranslationsData,
+  exportPerksData,
   saveAllFiles,
 };

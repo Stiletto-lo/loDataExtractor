@@ -68,6 +68,9 @@ const loadDirData = (dir, type) => {
         case "schematics":
           fileParser.parseSchematicItemData(filePath);
           break;
+        case "perks":
+          fileParser.parsePerkData(filePath);
+          break;
         default:
           break;
       }
@@ -156,6 +159,9 @@ const loadAllFiles = (contentFolderPath) => {
   console.info("Loading Vehicle Data");
   const vehicleParser = require("../controllers/fileParsers/vehicleParser");
   vehicleParser.processVehicleFiles(`${contentFolderPath}Content/Mist/Props/Vehicles`);
+
+  console.info("Loading Perks");
+  loadDirData(`${contentFolderPath}Content/Mist/Data/Perks`, "perks");
 
 };
 
