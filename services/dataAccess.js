@@ -57,10 +57,6 @@ class DataAccess {
   getPerkByName(name) {
     return fileParser.getPerkByName(name);
   }
-
-  getPerksByAbility(ability) {
-    return fileParser.getPerksByAbility(ability);
-  }
 }
 
 const dataAccess = new DataAccess();

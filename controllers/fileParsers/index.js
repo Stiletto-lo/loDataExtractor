@@ -51,7 +51,6 @@ module.exports = {
 	parsePerkData: perkParsers.parsePerkData,
 	getAllPerks: utilityFunctions.getAllPerks,
 	getPerkByName: utilityFunctions.getPerkByName,
-	getPerksByAbility: utilityFunctions.getPerksByAbility,
 	setPerks: utilityFunctions.setPerks,
 	addPerk: utilityFunctions.addPerk,
 

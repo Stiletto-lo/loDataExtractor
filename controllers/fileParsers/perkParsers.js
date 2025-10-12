@@ -6,9 +6,8 @@
  */
 
 const { readJsonFile } = require("../utils/read-json-file");
-
-// Store all parsed perks
-let allPerks = [];
+const PERK_INFO_TEMPLATE = require("../../templates/perkInfo");
+const utilityFunctions = require("../fileParsers/utilityFunctions");
 
 /**
  * Extracts perk information from a single JSON file
@@ -19,71 +18,58 @@ const extractPerkInfo = (filePath) => {
 	const data = readJsonFile(filePath);
 
 	if (!data) {
-		return null;
+		return undefined;
 	}
 
-	let perkName = "N/A";
-	let perkDescription = "N/A";
-	let perkAbility = "N/A";
-	let perkPointsCost = "N/A";
+	const perkInfo = { ...PERK_INFO_TEMPLATE };
 
 	// Assuming the relevant information is in the second object of the JSON array
 	if (Array.isArray(data) && data.length > 1 && data[1]?.Properties) {
 		const properties = data[1].Properties;
-		
+
 		if (properties.Name?.LocalizedString) {
-			perkName = properties.Name.LocalizedString.trim();
-			if (!perkName) { // If LocalizedString is empty, try SourceString
-				perkName = properties.Name.SourceString?.trim() ?? "N/A";
+			perkInfo.name = properties.Name.LocalizedString.trim();
+			if (!perkInfo.name) {
+				perkInfo.name = properties.Name.SourceString?.trim() ?? undefined;
 			}
 		}
-		
+
 		if (properties.Description?.LocalizedString) {
-			perkDescription = properties.Description.LocalizedString.trim();
-			if (!perkDescription) { // If LocalizedString is empty, try SourceString
-				perkDescription = properties.Description.SourceString?.trim() ?? "N/A";
+			perkInfo.description = properties.Description.LocalizedString.trim();
+			if (!perkInfo.description) {
+				perkInfo.description = properties.Description.SourceString?.trim() ?? undefined;
 			}
 		}
-		
-		if (properties.Perk?.Ability) {
-			perkAbility = properties.Perk.Ability.replace("EMistPerkAbility::", "");
-		}
-		
+
 		if (properties.PointsCost !== undefined) {
-			perkPointsCost = String(properties.PointsCost);
+			perkInfo.cost = String(properties.PointsCost);
 		}
 	}
 
 	// Fallback for root perks where name and description might be in the first object
-	if (perkName === "N/A" && Array.isArray(data) && data.length > 0 && data[0]?.Properties) {
+	if (!perkInfo.name && Array.isArray(data) && data.length > 0 && data[0]?.Properties) {
 		const properties = data[0].Properties;
-		
+
 		if (properties.Name?.LocalizedString) {
-			perkName = properties.Name.LocalizedString.trim();
-			if (!perkName) {
-				perkName = properties.Name.SourceString?.trim() ?? "N/A";
+			perkInfo.name = properties.Name.LocalizedString.trim();
+			if (!perkInfo.name) {
+				perkInfo.name = properties.Name.SourceString?.trim() ?? undefined;
 			}
 		}
-		
+
 		if (properties.Description?.LocalizedString) {
-			perkDescription = properties.Description.LocalizedString.trim();
-			if (!perkDescription) {
-				perkDescription = properties.Description.SourceString?.trim() ?? "N/A";
+			perkInfo.description = properties.Description.LocalizedString.trim();
+			if (!perkInfo.description) {
+				perkInfo.description = properties.Description.SourceString?.trim() ?? undefined;
 			}
 		}
 	}
 
-	// Only return perk data if we found a meaningful name
-	if (perkName && perkName !== "N/A" && perkName.trim() !== "") {
-		return {
-			name: perkName,
-			description: perkDescription,
-			ability: perkAbility,
-			pointsCost: perkPointsCost
-		};
+	if (!perkInfo?.name) {
+		return undefined;
 	}
 
-	return null;
+	return perkInfo;
 };
 
 /**
@@ -92,63 +78,18 @@ const extractPerkInfo = (filePath) => {
  */
 const parsePerkData = (filePath) => {
 	const perkInfo = extractPerkInfo(filePath);
-	
+
 	if (perkInfo) {
 		// Check if perk already exists to avoid duplicates
-		const existingPerk = allPerks.find(perk => perk.name === perkInfo.name);
+		const existingPerk = utilityFunctions.getPerkByName(perkInfo.name);
 		if (!existingPerk) {
-			allPerks.push(perkInfo);
+			utilityFunctions.addPerk(perkInfo);
 		}
 	}
 };
 
-/**
- * Gets all parsed perks
- * @returns {Array} - Array of all parsed perk objects
- */
-const getAllPerks = () => {
-	return allPerks;
-};
-
-/**
- * Sets the perks data (used for initialization or testing)
- * @param {Array} perks - Array of perk objects to set
- */
-const setAllPerks = (perks) => {
-	allPerks = perks ?? [];
-};
-
-/**
- * Gets a specific perk by name
- * @param {string} name - Name of the perk to find
- * @returns {Object|null} - Perk object or null if not found
- */
-const getPerkByName = (name) => {
-	return allPerks.find(perk => perk.name === name) ?? null;
-};
-
-/**
- * Gets perks by ability type
- * @param {string} ability - Ability type to filter by
- * @returns {Array} - Array of perks with the specified ability
- */
-const getPerksByAbility = (ability) => {
-	return allPerks.filter(perk => perk.ability === ability);
-};
-
-/**
- * Clears all stored perk data
- */
-const clearPerks = () => {
-	allPerks = [];
-};
 
 module.exports = {
 	extractPerkInfo,
 	parsePerkData,
-	getAllPerks,
-	setAllPerks,
-	getPerkByName,
-	getPerksByAbility,
-	clearPerks
 };

@@ -353,14 +353,6 @@ class DataStore {
 
 		return this.perks.find((perk) => perk.name === name);
 	}
-
-	getPerksByAbility(ability) {
-		if (!ability) {
-			return [];
-		}
-
-		return this.perks.filter((perk) => perk.ability === ability);
-	}
 }
 
 // Create and export a singleton instance
@@ -435,6 +427,5 @@ module.exports = {
 
 	// Perk operations
 	getPerkByName: (name) => dataStore.getPerkByName(name),
-	getPerksByAbility: (ability) => dataStore.getPerksByAbility(ability),
 	addPerk: (perk) => dataStore.addPerk(perk),
 };

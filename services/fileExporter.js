@@ -415,6 +415,10 @@ const saveAllFiles = async (folderPath) => {
   const minItems = dataProcessor.createMinItems(allItems);
   await exportItemsData(allItems, minItems, folderPath);
 
+  // Process and export perk data
+  const perks = fileParser.getAllPerks();
+  await exportPerksData(perks, folderPath);
+
   // Process and export technology data
   const techData = dataProcessor.processTechData();
   await exportTechData(techData, folderPath);
@@ -427,10 +431,6 @@ const saveAllFiles = async (folderPath) => {
   // Process and export translation data
   const translateData = dataProcessor.processTranslations();
   await exportTranslationsData(translateData, folderPath);
-
-  // Process and export perk data
-  const perks = fileParser.getAllPerks();
-  await exportPerksData(perks, folderPath);
 };
 
 module.exports = {

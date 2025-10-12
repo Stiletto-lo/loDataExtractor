@@ -39,6 +39,5 @@ module.exports = {
 	getAllUpgradesData: () => dataAccess.getAllUpgradesData(),
 	getAllPerks: () => dataAccess.getAllPerks(),
 	getPerkByName: (name) => dataAccess.getPerkByName(name),
-	getPerksByAbility: (ability) => dataAccess.getPerksByAbility(ability),
 };
 
