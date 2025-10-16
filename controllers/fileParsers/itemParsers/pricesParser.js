@@ -2,10 +2,10 @@ const fs = require("node:fs");
 
 const dataParser = require("../../dataParsers");
 const utilityFunctions = require("../utilityFunctions");
+const { readJsonFile } = require("../../utils/read-json-file");
 
 const parsePrices = (filePath) => {
-	const rawdata = fs.readFileSync(filePath);
-	const jsonData = JSON.parse(rawdata);
+	const jsonData = readJsonFile(filePath);
 	if (jsonData[1]?.Properties?.OrdersArray) {
 		const allOrders = jsonData[1].Properties.OrdersArray;
 
