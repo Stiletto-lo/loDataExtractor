@@ -1,0 +1,99 @@
+name: Update Stiletto Web Items
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "exported/**"
+  workflow_dispatch:
+
+jobs:
+  update-stiletto-web:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check if items_min.json exists and has changes
+        id: check-changes
+        run: |
+          if [ -f "exported/items_min.json" ]; then
+            echo "items_min_exists=true" >> $GITHUB_OUTPUT
+            echo "Items_min.json file found"
+          else
+            echo "items_min_exists=false" >> $GITHUB_OUTPUT
+            echo "Items_min.json file not found"
+            exit 1
+          fi
+
+      - name: Checkout target repository
+        if: steps.check-changes.outputs.items_min_exists == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: dm94/stiletto-web
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: stiletto-web
+          ref: master
+
+      - name: Copy items_min.json to target repository
+        if: steps.check-changes.outputs.items_min_exists == 'true'
+        run: |
+          # Create the target directory if it doesn't exist
+          mkdir -p stiletto-web/public/json
+
+          # Copy the file
+          cp exported/items_min.json stiletto-web/public/json/items_min.json
+
+          echo "File copied successfully"
+
+      - name: Check for changes in target repository
+        if: steps.check-changes.outputs.items_min_exists == 'true'
+        id: check-target-changes
+        run: |
+          cd stiletto-web
+          if git diff --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected in target repository"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in target repository"
+          fi
+
+      - name: Create Pull Request
+        if: steps.check-changes.outputs.items_min_exists == 'true' && steps.check-target-changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: stiletto-web
+          commit-message: "Update items_min.json from loDataExtractor"
+          title: "Update items_min.json"
+          body: |
+            This PR updates the `items_min.json` file with the latest data from the loDataExtractor repository.
+
+            **Changes:**
+            - Updated items_min.json with latest game data
+
+            **Source:** 
+            - Repository: ${{ github.repository }}
+            - Commit: ${{ github.sha }}
+            - Triggered by: ${{ github.event_name }}
+
+            This PR was automatically created by GitHub Actions.
+          branch: update-items-min-json
+          delete-branch: true
+          base: master
+
+      - name: Output result
+        run: |
+          if [ "${{ steps.check-changes.outputs.items_min_exists }}" == "true" ]; then
+            if [ "${{ steps.check-target-changes.outputs.has_changes }}" == "true" ]; then
+              echo "✅ Pull request created successfully"
+            else
+              echo "ℹ️ No changes detected - no pull request needed"
+            fi
+          else
+            echo "❌ items_min.json file not found"
+          fi
