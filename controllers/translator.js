@@ -172,25 +172,6 @@ controller.translateItems = (allItems) => {
 };
 
 /**
- * Adds "(1 of 2)" suffix to item names that need it
- * @param {string} name - The name to process
- * @returns {string} - The processed name
- */
-const processSpecialItemName = (name) => {
-	if (!name) return "";
-
-	if (
-		(name.includes(" Legs") || name.includes(" Wings")) &&
-		!name.includes("(1 of 2)") &&
-		!name.includes("Schematic")
-	) {
-		return `${name} (1 of 2)`;
-	}
-
-	return name;
-};
-
-/**
  * Translates a single item
  * @param {Object} item - The item to translate
  * @returns {Object} - The translated item
@@ -228,7 +209,6 @@ controller.translateItem = (item) => {
 	}
 
 	if (name) {
-		name = processSpecialItemName(name);
 		item.name = trimIfExists(name);
 	}
 
@@ -266,8 +246,6 @@ controller.translateItemPart = (value) => {
 	if (translatedValue) {
 		newValue = translatedValue;
 	}
-
-	newValue = processSpecialItemName(newValue);
 
 	return trimIfExists(newValue);
 };

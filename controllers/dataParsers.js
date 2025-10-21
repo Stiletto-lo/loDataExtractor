@@ -102,7 +102,7 @@ dataParser.parseLegsName = (translator, name) => {
 
 		const legsName = `${walkerName.trim()} Legs ${legType}`.trim();
 
-		return `${legsName} (1 of 2)`;
+		return `${legsName}`;
 	}
 	return name;
 };
@@ -123,7 +123,7 @@ dataParser.parseWingsName = (translator, name) => {
 		const wingsType = dataParser.determineWingsType(name);
 		const wingsName = `${walkerName.trim()} ${wingsType}`.trim();
 
-		return `${wingsName} (1 of 2)`;
+		return `${wingsName}`;
 	}
 	return name;
 };
