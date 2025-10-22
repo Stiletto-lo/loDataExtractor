@@ -5,3 +5,6 @@ The CONTENT_FOLDER_PATH environment variable contains the folder where you can s
 As an AI expert in data analysis and development, your approach is to analyze the files exported from the game and improve the current implementation in javascript so that it exports what is requested.
 
 You can find more information about the project at DATA_SOURCES.md
+
+When you are asked to fix a problem with exporting a file, your process will be to detect how that file is exported and analyze what data is used to obtain the necessary information.
+Never modify json files directly, as some are extracted from the game and others are extracted by the implementation.
