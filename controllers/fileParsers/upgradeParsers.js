@@ -68,6 +68,7 @@ const extractRecipeData = (properties, key) => {
 	}
 
 	const propertyData = properties[key] || {};
+
 	if (!propertyData.Inputs || typeof propertyData.Inputs !== "object") {
 		return null;
 	}
@@ -181,9 +182,8 @@ const parseUpgrades = (filePath) => {
 
 		// Extract profile and super upgrade information
 		const profile = dataParser.parseName(translator, jsonData[0].Name);
-		const superUp = jsonData[0].Super
-			? dataParser.parseName(translator, jsonData[0].Super)
-			: undefined;
+		// FIX: Don't parse the Super field with parseName, keep the original object/string
+		const superUp = jsonData[0].Super ?? undefined;
 
 		// Process each upgrade entry
 		if (jsonData[1]?.Properties) {
@@ -208,14 +208,41 @@ const parseUpgrades = (filePath) => {
 
 const getUpgradeItem = (upgradePure) => {
 	if (upgradePure?.super) {
+		// Extract the actual profile name from the super object
+		let superProfileName = upgradePure.super;
+		if (typeof upgradePure.super === 'object' && upgradePure.super !== null) {
+			// If super is an object, try to extract the profile name
+			if (upgradePure.super.ObjectName) {
+				// Parse the ObjectName to get the clean profile name
+				superProfileName = dataParser.parseName(translator, upgradePure.super.ObjectName);
+			} else if (upgradePure.super.profile) {
+				superProfileName = upgradePure.super.profile;
+			} else if (upgradePure.super.name) {
+				superProfileName = upgradePure.super.name;
+			} else {
+				for (const [key, value] of Object.entries(upgradePure.super)) {
+					if (typeof value === 'string' && value.includes('Profile')) {
+						superProfileName = dataParser.parseName(translator, value);
+						break;
+					}
+				}
+			}
+		} else if (typeof upgradePure.super === 'string') {
+			// If it's already a string, parse it
+			superProfileName = dataParser.parseName(translator, upgradePure.super);
+		}
+
 		const superUpgrade = utilityFunctions
 			.getUpgradesData()
 			.find(
 				(up) =>
-					up.profile === upgradePure.super && up.name === upgradePure.name,
+					up.profile === superProfileName && up.name === upgradePure.name,
 			);
-		const superUpgradeData = getUpgradeItem(superUpgrade);
-		if (superUpgradeData) {
+
+		// Handle inheritance - if super upgrade exists, merge data
+		if (superUpgrade) {
+			const superUpgradeData = getUpgradeItem(superUpgrade);
+
 			const item = { ...itemTemplate };
 			item.category = "Upgrades";
 			item.name = dataParser.parseUpgradeName(
@@ -223,11 +250,15 @@ const getUpgradeItem = (upgradePure) => {
 				upgradePure?.profile,
 			);
 
+			// Merge upgrade info (super first, then child overrides)
 			item.upgradeInfo = {
-				...superUpgradeData.upgradeInfo,
+				...(superUpgradeData?.upgradeInfo || {}),
 				...upgradePure.upgradeInfo,
 			};
-			if (upgradePure.crafting && superUpgradeData.crafting) {
+
+			// Handle crafting data inheritance
+			if (upgradePure.crafting && superUpgradeData?.crafting) {
+				// Both child and super have crafting data - merge them
 				const recipe = { ...recipeTemplate };
 				if (upgradePure.crafting[0].time) {
 					recipe.time = upgradePure.crafting[0].time;
@@ -250,6 +281,7 @@ const getUpgradeItem = (upgradePure) => {
 						upgradePure.crafting[0].ingredients,
 						ingredientsFiltered,
 					);
+
 				} else if (upgradePure.crafting[0].ingredients) {
 					recipe.ingredients = upgradePure.crafting[0].ingredients;
 				} else if (superUpgradeData.crafting[0].ingredients) {
@@ -257,10 +289,13 @@ const getUpgradeItem = (upgradePure) => {
 				}
 				item.crafting = [recipe];
 			} else if (upgradePure.crafting) {
+				// Only child has crafting data
 				item.crafting = upgradePure.crafting;
-			} else if (superUpgradeData.crafting) {
+			} else if (superUpgradeData?.crafting) {
+				// Only super has crafting data
 				item.crafting = superUpgradeData.crafting;
 			}
+			// If neither has crafting data, item.crafting remains undefined
 
 			if (!item.type) {
 				item.type = item.name;
@@ -268,7 +303,7 @@ const getUpgradeItem = (upgradePure) => {
 
 			return item;
 		}
-	} else {
+
 		const item = { ...itemTemplate };
 		item.category = "Upgrades";
 		item.name = dataParser.parseUpgradeName(
@@ -277,8 +312,24 @@ const getUpgradeItem = (upgradePure) => {
 		);
 		item.upgradeInfo = upgradePure?.upgradeInfo;
 		item.crafting = upgradePure?.crafting;
+
+		if (!item.type) {
+			item.type = item.name;
+		}
+
 		return item;
 	}
+
+	const item = { ...itemTemplate };
+	item.category = "Upgrades";
+	item.name = dataParser.parseUpgradeName(
+		upgradePure?.name,
+		upgradePure?.profile,
+	);
+	item.upgradeInfo = upgradePure?.upgradeInfo;
+	item.crafting = upgradePure?.crafting;
+
+	return item;
 };
 
 const parseUpgradesToItems = () => {
