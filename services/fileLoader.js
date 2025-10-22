@@ -38,7 +38,7 @@ const loadDirData = (dir, type) => {
         case "tech":
           fileParser.parseTechData(filePath);
           break;
-        case "upgrages":
+        case "upgrades":
           fileParser.parseUpgrades(filePath);
           break;
         case "translation":
@@ -122,7 +122,7 @@ const loadAllFiles = (contentFolderPath) => {
   console.info("Loading Placeables Cached");
   loadDirData(`${contentFolderPath}Content/Mist/Data/Placeables`, "item");
   console.info("Loading Walkers Upgrades");
-  loadDirData(`${contentFolderPath}Content/Mist/Data/Walkers`, "upgrages");
+  loadDirData(`${contentFolderPath}Content/Mist/Data/Walkers`, "upgrades");
   console.info("Loading Damages");
   loadDirData(
     `${contentFolderPath}Content/Mist/Data/DamageTypes`,
