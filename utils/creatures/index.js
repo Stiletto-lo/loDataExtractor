@@ -101,16 +101,29 @@ async function exportIndividualCreatureFiles(creatures, exportFolder) {
 	for (const creature of creatures) {
 		if (creature.name) {
 			// Translate the name if it exists in additionalTranslations
-			const translatedName = nameTranslator.translateCreatureName(creature?.name);
-			const dataToExport = {
-				name: translatedName,
-				category: creature?.category,
-				tier: creature?.tier,
-				health: creature?.health,
-				experiencie: creature?.experiencie,
-				drops: creature?.drops,
-				originalName: translatedName !== creature?.name ? creature?.name : creature?.originalName
-			}
+		const translatedName = nameTranslator.translateCreatureName(creature?.name);
+		const dataToExport = {
+			name: translatedName,
+			type: creature?.type,
+			health: creature?.health,
+			experience: creature?.experience,
+			lootTemplate: creature?.lootTemplate,
+			category: creature?.category,
+			tier: creature?.tier,
+			drops: creature?.drops,
+			harvestableComponents: creature?.harvestableComponents,
+			description: creature?.description,
+			dropChance: creature?.dropChance,
+			dropQuantity: creature?.dropQuantity,
+			toolsEffectiveness: creature?.toolsEffectiveness,
+			resistances: creature?.resistances,
+			behavior: creature?.behavior,
+			spawnLocations: creature?.spawnLocations,
+			size: creature?.size,
+			speed: creature?.speed,
+			aggroRange: creature?.aggroRange,
+			originalName: translatedName !== creature?.name ? creature?.name : creature?.originalName
+		}
 
 			const snakeCaseName = convertToSnakeCase(creature?.name);
 

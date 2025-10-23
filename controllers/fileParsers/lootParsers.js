@@ -261,51 +261,67 @@ const filterRelevantObjects = (objects) => {
  * @param {Object} objectData - The primary object data for the creature.
  * @returns {Object} - Extracted creature properties
  */
-const extractCreatureData = (additionalInfo, objectData) => {
-	if (!additionalInfo && !objectData) {
+const extractCreatureData = (additionalInfo, objectData, fullCreatureData = null) => {
+	if (!additionalInfo && !objectData && !fullCreatureData) {
 		return {};
 	}
 
-	const props = additionalInfo?.Properties || objectData?.Properties || {};
+	// Initialize result object
+	const result = {};
 
-	const result = {
-		experiencie: props.ExperienceAward,
-		health: props.MaxHealth,
-		lootTemplate: dataParser.parseObjectPath(props.Loot?.ObjectPath),
-	};
+	// If we have fullCreatureData (array of components), search through all components
+	if (fullCreatureData && Array.isArray(fullCreatureData)) {
+		// Search for MistCreatureComponent or MistAnimalMobVariationComponent (contains MaxHealth and ExperienceAward)
+		const creatureComponent = fullCreatureData.find(obj => 
+			obj.Type === "MistCreatureComponent" || obj.Type === "MistAnimalMobVariationComponent"
+		);
+		if (creatureComponent?.Properties) {
+			result.health = creatureComponent.Properties.MaxHealth;
+			result.experience = creatureComponent.Properties.ExperienceAward;
+			result.lootTemplate = dataParser.parseObjectPath(creatureComponent.Properties.Loot?.ObjectPath);
+		}
 
+		// Search for MistPhysicalMobAttackArea (contains Damage)
+		const attackComponent = fullCreatureData.find(obj => obj.Type === "MistPhysicalMobAttackArea");
+		if (attackComponent?.Properties) {
+			result.damage = attackComponent.Properties.Damage;
+		}
+
+		// Search for MistPhysicalMobMovement (contains MaxSpeed)
+		const movementComponent = fullCreatureData.find(obj => obj.Type === "MistPhysicalMobMovement");
+		if (movementComponent?.Properties) {
+			// Extract speed from Sprint or Walk, preferring Sprint
+			if (movementComponent.Properties.Sprint?.MaxSpeed) {
+				result.speed = movementComponent.Properties.Sprint.MaxSpeed;
+			} else if (movementComponent.Properties.Walk?.MaxSpeed) {
+				result.speed = movementComponent.Properties.Walk.MaxSpeed;
+			}
+		}
+	} else {
+		// Fallback to original logic for backward compatibility
+		const props = additionalInfo?.Properties || objectData?.Properties || {};
+
+		result.experience = props.ExperienceAward;
+		result.health = props.MaxHealth;
+		result.lootTemplate = dataParser.parseObjectPath(props.Loot?.ObjectPath);
+		result.speed = props.MovementSpeed || props.WalkSpeed;
+	}
+
+	// Extract category information from objectData
 	if (objectData) {
 		const typeStr = objectData.Type || "";
-		if (typeStr.includes("T1_") || typeStr.includes("Tier1"))
-			result.tier = "T1";
-		else if (typeStr.includes("T2_") || typeStr.includes("Tier2"))
-			result.tier = "T2";
-		else if (typeStr.includes("T3_") || typeStr.includes("Tier3"))
-			result.tier = "T3";
-		else if (typeStr.includes("T4_") || typeStr.includes("Tier4"))
-			result.tier = "T4";
-
+		
 		if (typeStr.includes("Rupu")) result.category = "Rupu";
 		else if (typeStr.includes("Nurr")) result.category = "Nurr";
 		else if (typeStr.includes("Killin")) result.category = "Killin";
 		else if (typeStr.includes("Okkam")) result.category = "Okkam";
 		else if (typeStr.includes("Papak")) result.category = "Papak";
 		else if (typeStr.includes("Phemke")) result.category = "Phemke";
-		// Add more categories as needed, e.g., for Worm
 		else if (typeStr.toLowerCase().includes("worm")) result.category = "Worm";
-
-		if (props.Description?.LocalizedString) {
-			result.description = props.Description.LocalizedString;
-		}
-	}
-
-	if (props.Loot?.Tables && props.Loot.Tables.length > 0) {
-		const lootTable = props.Loot.Tables[0];
-		result.dropChance = lootTable.RunChance;
-		result.dropQuantity = {
-			min: lootTable.MinIterations,
-			max: lootTable.MaxIterations,
-		};
+		else if (typeStr.includes("Spider")) result.category = "Spider";
+		else if (typeStr.includes("Crab")) result.category = "Crab";
+		else if (typeStr.includes("Beetle")) result.category = "Beetle";
+		else if (typeStr.includes("Gogo")) result.category = "Rock Crawler";
 	}
 
 	return result;
@@ -351,7 +367,7 @@ const parseLootSites = (filePath) => {
 	const primaryDataSource = mobVariationComponent || firstObject;
 
 	// Extract creature data with enhanced information
-	const creatureData = extractCreatureData(primaryDataSource, firstObject);
+	const creatureData = extractCreatureData(primaryDataSource, firstObject, jsonData);
 
 	// Attempt to parse additional creature details using both name and type
 	const detailedCreatureInfo = parseCreatureDetails(translation, name); // name is the creatureType here
