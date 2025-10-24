@@ -11,17 +11,17 @@ const fileParser = require("../../controllers/fileParsers");
 /**
  * Extracts tier information from the template name
  * @param {string} templateName - Template name
- * @returns {string|null} - The extracted tier or null if not found
+ * @returns {string|undefined} - The extracted tier or undefined if not found
  */
 function extractTierFromTemplateName(templateName) {
-  if (!templateName) { return null; }
+  if (!templateName) { return undefined; }
 
   // Common patterns: EasyRupu_T2, MediumRupu_T3, etc.
   const tierMatch = templateName.match(/_T([1-4])(?:_|$)/i);
-  if (tierMatch) {
+  if (tierMatch?.[1]) {
     return `T${tierMatch[1]}`;
   }
-  return null;
+  return undefined;
 }
 
 /**

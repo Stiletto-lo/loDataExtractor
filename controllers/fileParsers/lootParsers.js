@@ -369,9 +369,6 @@ const parseLootSites = (filePath) => {
 	// Extract creature data with enhanced information
 	const creatureData = extractCreatureData(primaryDataSource, firstObject, jsonData);
 
-	// Attempt to parse additional creature details using both name and type
-	const detailedCreatureInfo = parseCreatureDetails(translation, name); // name is the creatureType here
-
 	// Create the creature object with all available information
 	const creature = {
 		...creatureTemplate,
@@ -379,11 +376,6 @@ const parseLootSites = (filePath) => {
 		name: translation, // This is the display name, e.g., The Long One
 		...creatureData,
 	};
-
-	// Explicitly merge harvestableComponents if available
-	if (detailedCreatureInfo?.harvestableComponents) {
-		creature.harvestableComponents = detailedCreatureInfo.harvestableComponents;
-	}
 
 	// Add to the creatures collection
 	utilityFunctions.addCreature(creature);
@@ -402,170 +394,6 @@ const parseLootSites = (filePath) => {
 	}
 
 	return true;
-};
-
-/**
- * Parses detailed creature data from its specific JSON files if they exist.
- * @param {string} creatureName - The name of the creature (e.g., "The Long One")
- * @param {string} creatureType - The type of the creature (e.g., "BP_Worm_C")
- * @returns {Object|null} - Parsed harvestable components data or null.
- */
-const parseCreatureDetails = (creatureName, creatureType) => {
-	// Determine the subdirectory for the creature's data files.
-	// This might need adjustment based on how creature data is organized.
-	// For "Worm", it's "Worm". For others, it might be derived from creatureName or creatureType.
-	let creatureDataSubDir = creatureName.split(" ").pop(); // A simple heuristic, e.g. "The Long One" -> "One", "Worm" -> "Worm"
-	if (creatureType?.toLowerCase().includes("worm")) {
-		// Prioritize type for known patterns
-		creatureDataSubDir = "Worm";
-	}
-
-	const creatureSpecificDir = path.join(CREATURE_DATA_DIR, creatureDataSubDir);
-	if (!fs.existsSync(creatureSpecificDir)) {
-		console.warn(`Creature data directory not found: ${creatureSpecificDir}`);
-		return { harvestableComponents: undefined };
-	}
-
-	const harvestableComponents = [];
-	const filesInDir = fs.readdirSync(creatureSpecificDir);
-
-	for (const fileName of filesInDir) {
-		if (fileName.endsWith(".json")) {
-			const filePath = path.join(creatureSpecificDir, fileName);
-			try {
-				const rawData = fs.readFileSync(filePath);
-				const jsonDataArray = JSON.parse(rawData);
-				// Ensure jsonDataArray is an array, if not, wrap it
-				const dataToParse = Array.isArray(jsonDataArray)
-					? jsonDataArray
-					: [jsonDataArray];
-
-				for (const jsonData of dataToParse) {
-					// Heuristic to determine component name from filename or internal data
-					let componentName = path.basename(fileName, ".json");
-					if (jsonData?.Properties?.Name) {
-						componentName = jsonData.Properties.Name;
-					} else if (jsonData?.Name) {
-						componentName = jsonData.Name;
-					}
-
-					const component = {
-						name: componentName,
-						drops: [],
-						toolsEffectiveness: {},
-					};
-
-					// Logic for HarvestableWormScale.json structure (and similar)
-					if (jsonData?.Properties?.HarvestingItemGood) {
-						for (const item of jsonData.Properties.HarvestingItemGood) {
-							const drop = {
-								name:
-									dataParser.parseItemName(item.Resource?.ObjectName) ||
-									item.Resource?.ObjectName,
-								chance: item.Chance,
-								minQuantity: item.MinQuantity,
-								maxQuantity: item.MaxQuantity,
-							};
-							component.drops.push(drop);
-
-							// Tool effectiveness for this specific drop
-							for (const key of Object.keys(item)) {
-								if (
-									key.startsWith("ToolEffectiveness_") &&
-									typeof item[key] === "number"
-								) {
-									const toolType = key.replace("ToolEffectiveness_", "");
-									if (!component.toolsEffectiveness[toolType]) {
-										component.toolsEffectiveness[toolType] = [];
-									}
-									component.toolsEffectiveness[toolType].push({
-										resource: drop.name,
-										effectiveness: item[key],
-									});
-								}
-							}
-						}
-					}
-
-					// Logic for WormHarvestableMandibleComponent.json structure
-					if (jsonData?.Properties?.MandibleHarvestingEntry) {
-						for (const entry of jsonData.Properties.MandibleHarvestingEntry) {
-							const toolType = entry.ToolType?.replace("EEquipmentTool::", "");
-							if (toolType && !component.toolsEffectiveness[toolType]) {
-								component.toolsEffectiveness[toolType] = [];
-							}
-
-							for (const resourceEntry of entry.ResourceEntries) {
-								const drop = {
-									name:
-										dataParser.parseItemName(
-											resourceEntry.Resource?.ObjectName
-										) || resourceEntry.Resource?.ObjectName,
-									chance: resourceEntry.Chance,
-									minQuantity: resourceEntry.MinQuantity,
-									maxQuantity: resourceEntry.MaxQuantity,
-								};
-								component.drops.push(drop);
-								if (toolType) {
-									component.toolsEffectiveness[toolType].push({
-										resource: drop.name,
-										effectiveness: 1,
-									}); // Assuming 100% effectiveness if listed here
-								}
-							}
-						}
-					}
-
-					// Logic for WormSilkDrop.json (and similar simple drops)
-					// This might be a simpler structure, potentially just a direct item drop
-					if (
-						jsonData?.Properties?.HarvestableRootComponent?.Properties
-							?.PrimaryResources
-					) {
-						for (const resource of jsonData.Properties.HarvestableRootComponent.Properties.PrimaryResources) {
-							component.drops.push({
-								name:
-									dataParser.parseItemName(resource.Resource?.RowName) ||
-									resource.Resource?.RowName,
-								chance: resource.DropChance,
-								minQuantity: resource.MinQuantity,
-								maxQuantity: resource.MaxQuantity,
-							});
-						}
-					}
-
-					// Deduplicate drops by name, summing quantities or taking max chance if necessary (simple approach here)
-					const uniqueDrops = [];
-					const dropMap = new Map();
-
-					for (const d of component.drops) {
-						if (!dropMap.has(d.name)) {
-							dropMap.set(d.name, { ...d });
-							uniqueDrops.push(dropMap.get(d.name));
-						} else {
-							const existing = dropMap.get(d.name);
-							existing.chance = Math.max(existing.chance, d.chance);
-							existing.minQuantity += d.minQuantity;
-							existing.maxQuantity += d.maxQuantity;
-						}
-					}
-					component.drops = uniqueDrops;
-
-					if (
-						component.drops.length > 0 ||
-						Object.keys(component.toolsEffectiveness).length > 0
-					) {
-						harvestableComponents.push(component);
-					}
-				}
-			} catch (error) {
-				console.warn(
-					`Could not read or parse creature detail file ${filePath}: ${error.message}`
-				);
-			}
-		}
-	}
-	return { harvestableComponents };
 };
 
 module.exports = {

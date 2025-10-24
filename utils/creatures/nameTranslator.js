@@ -24,8 +24,8 @@ function formatTierName(name) {
   const tierMatch = name.match(/^(.+)_T([1-4])(_Q)?$/);
   if (!tierMatch) { return name; }
 
-  const baseName = tierMatch[1];
-  const tier = tierMatch[2];
+  const baseName = tierMatch?.[1] ?? undefined;
+  const tier = tierMatch?.[2] ?? undefined;
   const isQuality = tierMatch[3] === '_Q';
 
   // Format as "Name (TX)" or "Name (TX) Quality"

@@ -101,29 +101,22 @@ async function exportIndividualCreatureFiles(creatures, exportFolder) {
 	for (const creature of creatures) {
 		if (creature.name) {
 			// Translate the name if it exists in additionalTranslations
-		const translatedName = nameTranslator.translateCreatureName(creature?.name);
-		const dataToExport = {
-			name: translatedName,
-			type: creature?.type,
-			health: creature?.health,
-			experience: creature?.experience,
-			lootTemplate: creature?.lootTemplate,
-			category: creature?.category,
-			tier: creature?.tier,
-			drops: creature?.drops,
-			harvestableComponents: creature?.harvestableComponents,
-			description: creature?.description,
-			dropChance: creature?.dropChance,
-			dropQuantity: creature?.dropQuantity,
-			toolsEffectiveness: creature?.toolsEffectiveness,
-			resistances: creature?.resistances,
-			behavior: creature?.behavior,
-			spawnLocations: creature?.spawnLocations,
-			size: creature?.size,
-			speed: creature?.speed,
-			aggroRange: creature?.aggroRange,
-			originalName: translatedName !== creature?.name ? creature?.name : creature?.originalName
-		}
+			const translatedName = nameTranslator.translateCreatureName(creature?.name);
+			const dataToExport = {
+				name: translatedName,
+				type: creature?.type,
+				health: creature?.health,
+				experience: creature?.experience,
+				lootTemplate: creature?.lootTemplate,
+				category: creature?.category,
+				tier: creature?.tier,
+				drops: creature?.drops,
+				description: creature?.description,
+				dropChance: creature?.dropChance,
+				dropQuantity: creature?.dropQuantity,
+				speed: creature?.speed,
+				originalName: translatedName !== creature?.name ? creature?.name : creature?.originalName
+			}
 
 			const snakeCaseName = convertToSnakeCase(creature?.name);
 
@@ -154,7 +147,7 @@ function extractCategoryAndTier(creature) {
 		const typeMatch = creature.type.match(/T(\d)_(\w+)_C/);
 		if (typeMatch) {
 			// If not already set, extract from type
-			if (!creature.tier) {
+			if (!creature.tier && typeMatch?.[1]) {
 				creature.tier = `T${typeMatch[1]}`;
 			}
 
