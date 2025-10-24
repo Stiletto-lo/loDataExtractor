@@ -112,8 +112,6 @@ async function exportIndividualCreatureFiles(creatures, exportFolder) {
 				tier: creature?.tier,
 				drops: creature?.drops,
 				description: creature?.description,
-				dropChance: creature?.dropChance,
-				dropQuantity: creature?.dropQuantity,
 				speed: creature?.speed,
 				originalName: translatedName !== creature?.name ? creature?.name : creature?.originalName
 			}
