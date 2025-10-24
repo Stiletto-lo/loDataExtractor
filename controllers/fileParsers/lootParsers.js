@@ -272,7 +272,7 @@ const extractCreatureData = (additionalInfo, objectData, fullCreatureData = null
 	// If we have fullCreatureData (array of components), search through all components
 	if (fullCreatureData && Array.isArray(fullCreatureData)) {
 		// Search for MistCreatureComponent or MistAnimalMobVariationComponent (contains MaxHealth and ExperienceAward)
-		const creatureComponent = fullCreatureData.find(obj => 
+		const creatureComponent = fullCreatureData.find(obj =>
 			obj.Type === "MistCreatureComponent" || obj.Type === "MistAnimalMobVariationComponent"
 		);
 		if (creatureComponent?.Properties) {
@@ -310,7 +310,7 @@ const extractCreatureData = (additionalInfo, objectData, fullCreatureData = null
 	// Extract category information from objectData
 	if (objectData) {
 		const typeStr = objectData.Type || "";
-		
+
 		if (typeStr.includes("Rupu")) result.category = "Rupu";
 		else if (typeStr.includes("Nurr")) result.category = "Nurr";
 		else if (typeStr.includes("Killin")) result.category = "Killin";
@@ -457,7 +457,7 @@ const parseCreatureDetails = (creatureName, creatureType) => {
 
 					// Logic for HarvestableWormScale.json structure (and similar)
 					if (jsonData?.Properties?.HarvestingItemGood) {
-						jsonData.Properties.HarvestingItemGood.forEach((item) => {
+						for (const item of jsonData.Properties.HarvestingItemGood) {
 							const drop = {
 								name:
 									dataParser.parseItemName(item.Resource?.ObjectName) ||
@@ -469,7 +469,7 @@ const parseCreatureDetails = (creatureName, creatureType) => {
 							component.drops.push(drop);
 
 							// Tool effectiveness for this specific drop
-							Object.keys(item).forEach((key) => {
+							for (const key of Object.keys(item)) {
 								if (
 									key.startsWith("ToolEffectiveness_") &&
 									typeof item[key] === "number"
@@ -483,18 +483,19 @@ const parseCreatureDetails = (creatureName, creatureType) => {
 										effectiveness: item[key],
 									});
 								}
-							});
-						});
+							}
+						}
 					}
 
 					// Logic for WormHarvestableMandibleComponent.json structure
 					if (jsonData?.Properties?.MandibleHarvestingEntry) {
-						jsonData.Properties.MandibleHarvestingEntry.forEach((entry) => {
+						for (const entry of jsonData.Properties.MandibleHarvestingEntry) {
 							const toolType = entry.ToolType?.replace("EEquipmentTool::", "");
 							if (toolType && !component.toolsEffectiveness[toolType]) {
 								component.toolsEffectiveness[toolType] = [];
 							}
-							entry.ResourceEntries?.forEach((resourceEntry) => {
+
+							for (const resourceEntry of entry.ResourceEntries) {
 								const drop = {
 									name:
 										dataParser.parseItemName(
@@ -511,8 +512,8 @@ const parseCreatureDetails = (creatureName, creatureType) => {
 										effectiveness: 1,
 									}); // Assuming 100% effectiveness if listed here
 								}
-							});
-						});
+							}
+						}
 					}
 
 					// Logic for WormSilkDrop.json (and similar simple drops)
@@ -521,24 +522,23 @@ const parseCreatureDetails = (creatureName, creatureType) => {
 						jsonData?.Properties?.HarvestableRootComponent?.Properties
 							?.PrimaryResources
 					) {
-						jsonData.Properties.HarvestableRootComponent.Properties.PrimaryResources.forEach(
-							(resource) => {
-								component.drops.push({
-									name:
-										dataParser.parseItemName(resource.Resource?.RowName) ||
-										resource.Resource?.RowName,
-									chance: resource.DropChance,
-									minQuantity: resource.MinQuantity,
-									maxQuantity: resource.MaxQuantity,
-								});
-							}
-						);
+						for (const resource of jsonData.Properties.HarvestableRootComponent.Properties.PrimaryResources) {
+							component.drops.push({
+								name:
+									dataParser.parseItemName(resource.Resource?.RowName) ||
+									resource.Resource?.RowName,
+								chance: resource.DropChance,
+								minQuantity: resource.MinQuantity,
+								maxQuantity: resource.MaxQuantity,
+							});
+						}
 					}
 
 					// Deduplicate drops by name, summing quantities or taking max chance if necessary (simple approach here)
 					const uniqueDrops = [];
 					const dropMap = new Map();
-					component.drops.forEach((d) => {
+
+					for (const d of component.drops) {
 						if (!dropMap.has(d.name)) {
 							dropMap.set(d.name, { ...d });
 							uniqueDrops.push(dropMap.get(d.name));
@@ -548,7 +548,7 @@ const parseCreatureDetails = (creatureName, creatureType) => {
 							existing.minQuantity += d.minQuantity;
 							existing.maxQuantity += d.maxQuantity;
 						}
-					});
+					}
 					component.drops = uniqueDrops;
 
 					if (
