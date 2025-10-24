@@ -104,11 +104,15 @@ async function exportIndividualCreatureFiles(creatures, exportFolder) {
 			const translatedName = nameTranslator.translateCreatureName(creature?.name);
 			const dataToExport = {
 				name: translatedName,
+				type: creature?.type,
+				health: creature?.health,
+				experience: creature?.experience,
+				lootTemplate: creature?.lootTemplate,
 				category: creature?.category,
 				tier: creature?.tier,
-				health: creature?.health,
-				experiencie: creature?.experiencie,
 				drops: creature?.drops,
+				description: creature?.description,
+				speed: creature?.speed,
 				originalName: translatedName !== creature?.name ? creature?.name : creature?.originalName
 			}
 
@@ -141,7 +145,7 @@ function extractCategoryAndTier(creature) {
 		const typeMatch = creature.type.match(/T(\d)_(\w+)_C/);
 		if (typeMatch) {
 			// If not already set, extract from type
-			if (!creature.tier) {
+			if (!creature.tier && typeMatch?.[1]) {
 				creature.tier = `T${typeMatch[1]}`;
 			}
 
