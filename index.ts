@@ -6,9 +6,8 @@ import { loadAllFiles } from "./services/fileLoader";
 import { saveAllFiles } from "./services/fileExporter";
 import dataAccess from "./services/dataAccess";
 
-const CONTENT_FOLDER_PATH: string = process.env.CONTENT_FOLDER_PATH
-	? process.env.CONTENT_FOLDER_PATH
-	: "./";
+const CONTENT_FOLDER_PATH: string = process.env.CONTENT_FOLDER_PATH || "./";
+
 const EXPORT_FOLDER_PATH: string = "./exported/";
 
 const extractData = async (): Promise<void> => {
