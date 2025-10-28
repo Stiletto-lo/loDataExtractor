@@ -10,11 +10,9 @@ import { readJsonFile } from "../../utils/read-json-file";
 // Import templates
 import type { WeaponInfo } from "../../../templates/weaponInfo";
 import type { ToolInfo } from "../../../templates/toolInfo";
-import { projectileDamageTemplate } from "../../../templates/projectileDamage";
 import type { Recipe } from "../../../templates/recipe";
 import { armorInfoTemplate } from "../../../templates/armorInfo";
 import { moduleInfoTemplate } from "../../../templates/moduleInfo";
-import { costTemplate } from "../../../templates/cost";
 
 /**
  * Get item from item data
@@ -122,7 +120,6 @@ export const getItemFromItemData = (itemData: any, oldItem: any) => {
 		// Projectile Damage
 		if (props?.ProjectileDamage) {
 			item.projectileDamage = {
-				...projectileDamageTemplate,
 				damage: props.ProjectileDamage.Damage ?? undefined,
 				penetration: props.ProjectileDamage.Penetration ?? undefined,
 				effectivenessVsSoak:
