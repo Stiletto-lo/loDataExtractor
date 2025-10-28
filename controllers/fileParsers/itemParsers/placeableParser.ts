@@ -1,4 +1,3 @@
-//@ts-nocheck
 /**
  * Placeable parser functions for handling placeable-related data
  */
@@ -9,7 +8,7 @@ import * as utilityFunctions from "../utilityFunctions";
 
 // Import templates
 import { recipeTemplate } from "../../../templates/recipe";
-import { structureInfoTemplate } from "../../../templates/structureInfo";
+import type { StructureInfo } from "../../../templates/structureInfo";
 import { readJsonFile } from "../../utils/read-json-file";
 
 /**
@@ -72,7 +71,6 @@ export const parsePlaceableData = (filePath: string) => {
 					}
 
 					if (ingredients.length > 0) {
-						//@ts-expect-error fix later
 						recipe.ingredients = ingredients;
 					}
 					item.crafting = [recipe];
@@ -89,7 +87,6 @@ export const parsePlaceableData = (filePath: string) => {
 					}
 
 					if (ingredients.length > 0) {
-						//@ts-expect-error fix later
 						recipe.ingredients = ingredients;
 					}
 					item.crafting = [recipe];
@@ -102,7 +99,7 @@ export const parsePlaceableData = (filePath: string) => {
 			}
 
 			if (jsonData[1].Properties?.CachedCraftingPartsInfo) {
-				const structureInfo = { ...structureInfoTemplate };
+				const structureInfo: StructureInfo = {};
 
 				if (jsonData[1].Properties?.CachedCraftingPartsInfo?.MaxHP) {
 					structureInfo.hp =

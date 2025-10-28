@@ -1,11 +1,4 @@
 export type StructureInfo = {
-	type?: string | undefined;
-	hp?: number | undefined;
+	type?: string;
+	hp?: number;
 };
-
-export const structureInfoTemplate: StructureInfo = {
-	type: undefined,
-	hp: undefined,
-};
-
-Object.freeze(structureInfoTemplate);
