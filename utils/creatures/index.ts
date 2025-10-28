@@ -1,3 +1,4 @@
+//@ts-nocheck
 /**
  * Creature Processing Module
  *
@@ -8,7 +9,7 @@
 
 const fs = require("fs-extra");
 const path = require("node:path");
-const { convertToSnakeCase } = require("../../utils/convertToSnakeCase.js");
+const { convertToSnakeCase } = require("../../utils/convertToSnakeCase");
 
 /**
  * Processes creature data to enhance it with additional information
@@ -18,9 +19,9 @@ const { convertToSnakeCase } = require("../../utils/convertToSnakeCase.js");
  * @param {Array} items - The array of item objects for drop information
  * @returns {Array} - Enhanced creature data
  */
-const dropProcessor = require('./dropProcessor');
-const templateCreatureGenerator = require('./templateCreatureGenerator');
-const nameTranslator = require('./nameTranslator');
+const dropProcessor = require("./dropProcessor");
+const templateCreatureGenerator = require("./templateCreatureGenerator");
+const nameTranslator = require("./nameTranslator");
 
 function processCreatures(creatures) {
 	if (!Array.isArray(creatures) || creatures.length === 0) {
@@ -36,17 +37,18 @@ function processCreatures(creatures) {
 		.filter((creature) => creature.name && Object.keys(creature).length > 2);
 
 	// Get loot data from fileParser
-	const fileParser = require('../../controllers/fileParsers');
+	const fileParser = require("../../controllers/fileParsers");
 	const lootTemplates = fileParser.getAllLootTemplates();
 	const lootTables = fileParser.getAllLootTables();
 
-	const orphanCreatures = templateCreatureGenerator.createCreaturesForOrphanedTemplates();
+	const orphanCreatures =
+		templateCreatureGenerator.createCreaturesForOrphanedTemplates();
 	if (orphanCreatures.length > 0) {
 		const processedOrphanCreatures = orphanCreatures
 			.map((creature) => extractCategoryAndTier(creature))
 			.map((creature) => ({
 				...creature,
-				name: creature?.name.replaceAll("_", " ")
+				name: creature?.name.replaceAll("_", " "),
 			}))
 			.filter((creature) => creature.name && Object.keys(creature).length > 2);
 
@@ -55,23 +57,39 @@ function processCreatures(creatures) {
 
 	// Then add drop information if loot data is available
 	if (lootTemplates && lootTables) {
-		console.info(`Found ${lootTemplates.length} loot templates and ${Object.keys(lootTables).length} loot tables`);
-		processedCreatures = dropProcessor.addDropInformation(processedCreatures, lootTemplates, lootTables);
+		console.info(
+			`Found ${lootTemplates.length} loot templates and ${Object.keys(lootTables).length} loot tables`,
+		);
+		processedCreatures = dropProcessor.addDropInformation(
+			processedCreatures,
+			lootTemplates,
+			lootTables,
+		);
 
 		// Log some debug information about drops
-		const creaturesWithDrops = processedCreatures.filter(c => c.drops && c.drops.length > 0);
-		console.info(`Added drops to ${creaturesWithDrops.length} creatures out of ${processedCreatures.length}`);
+		const creaturesWithDrops = processedCreatures.filter(
+			(c) => c.drops && c.drops.length > 0,
+		);
+		console.info(
+			`Added drops to ${creaturesWithDrops.length} creatures out of ${processedCreatures.length}`,
+		);
 	}
 
 	// Make creature names unique by adding tier information when needed
 	processedCreatures = makeCreatureNamesUnique(processedCreatures);
 
 	// Apply name translations if available
-	processedCreatures = processedCreatures.map(creature => {
+	processedCreatures = processedCreatures.map((creature) => {
 		if (creature.name) {
-			const translatedName = nameTranslator.translateCreatureName(creature.name);
+			const translatedName = nameTranslator.translateCreatureName(
+				creature.name,
+			);
 			if (translatedName !== creature.name) {
-				return { ...creature, name: translatedName, originalName: creature.name };
+				return {
+					...creature,
+					name: translatedName,
+					originalName: creature.name,
+				};
 			}
 		}
 		return creature;
@@ -101,7 +119,9 @@ async function exportIndividualCreatureFiles(creatures, exportFolder) {
 	for (const creature of creatures) {
 		if (creature.name) {
 			// Translate the name if it exists in additionalTranslations
-			const translatedName = nameTranslator.translateCreatureName(creature?.name);
+			const translatedName = nameTranslator.translateCreatureName(
+				creature?.name,
+			);
 			const dataToExport = {
 				name: translatedName,
 				type: creature?.type,
@@ -113,8 +133,11 @@ async function exportIndividualCreatureFiles(creatures, exportFolder) {
 				drops: creature?.drops,
 				description: creature?.description,
 				speed: creature?.speed,
-				originalName: translatedName !== creature?.name ? creature?.name : creature?.originalName
-			}
+				originalName:
+					translatedName !== creature?.name
+						? creature?.name
+						: creature?.originalName,
+			};
 
 			const snakeCaseName = convertToSnakeCase(creature?.name);
 
@@ -185,7 +208,7 @@ function makeCreatureNamesUnique(creatures) {
 	const processedNames = {};
 
 	// Then, make names unique by adding tier or other information
-	return creatures.map(creature => {
+	return creatures.map((creature) => {
 		if (!creature.name || nameCount[creature.name] <= 1) {
 			// No need to modify unique names
 			return creature;

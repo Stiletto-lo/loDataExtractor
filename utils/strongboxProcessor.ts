@@ -13,14 +13,18 @@ const fileParser = require("../controllers/fileParsers");
  * @param {Array} items - The items to process (optional)
  * @returns {Array} - All items with strongbox drop information added
  */
-const processStrongboxDrops = (items) => {
-  const itemsToProcess = items || fileParser.getAllItems();
-  const lootTemplates = fileParser.getAllLootTemplates();
-  const lootTables = fileParser.getAllLootTables();
+const processStrongboxDrops = (items: Array<any>) => {
+	const itemsToProcess = items || fileParser.getAllItems();
+	const lootTemplates = fileParser.getAllLootTemplates();
+	const lootTables = fileParser.getAllLootTables();
 
-  return dropProcessor.addDropInformation(itemsToProcess, lootTemplates, lootTables);
+	return dropProcessor.addDropInformation(
+		itemsToProcess,
+		lootTemplates,
+		lootTables,
+	);
 };
 
 module.exports = {
-  processStrongboxDrops,
+	processStrongboxDrops,
 };

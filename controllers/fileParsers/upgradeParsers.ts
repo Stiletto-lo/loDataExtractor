@@ -1,3 +1,4 @@
+//@ts-nocheck
 /**
  * Upgrade parsers for handling upgrade-related data
  *
@@ -8,11 +9,11 @@
 
 import * as dataParser from "../dataParsers";
 import * as translator from "../translator";
-import * as upgradeTemplate from "../../templates/upgrade";
-import * as upgradeInfoTemplate from "../../templates/upgradeInfo";
-import * as recipeTemplate from "../../templates/recipe";
+import { upgradeTemplate } from "../../templates/upgrade";
+import { upgradeInfoTemplate } from "../../templates/upgradeInfo";
+import { recipeTemplate } from "../../templates/recipe";
 import * as utilityFunctions from "./utilityFunctions";
-import * as itemTemplate from "../../templates/item";
+import { itemTemplate } from "../../templates/item";
 import { readJsonFile } from "../utils/read-json-file";
 
 // Property mapping from source data to our internal model
@@ -215,24 +216,27 @@ export const getUpgradeItem = (upgradePure: any) => {
 	if (upgradePure?.super) {
 		// Extract the actual profile name from the super object
 		let superProfileName = upgradePure.super;
-		if (typeof upgradePure.super === 'object' && upgradePure.super !== null) {
+		if (typeof upgradePure.super === "object" && upgradePure.super !== null) {
 			// If super is an object, try to extract the profile name
 			if (upgradePure.super.ObjectName) {
 				// Parse the ObjectName to get the clean profile name
-				superProfileName = dataParser.parseName(translator, upgradePure.super.ObjectName);
+				superProfileName = dataParser.parseName(
+					translator,
+					upgradePure.super.ObjectName,
+				);
 			} else if (upgradePure.super.profile) {
 				superProfileName = upgradePure.super.profile;
 			} else if (upgradePure.super.name) {
 				superProfileName = upgradePure.super.name;
 			} else {
 				for (const [key, value] of Object.entries(upgradePure.super)) {
-					if (typeof value === 'string' && value.includes('Profile')) {
+					if (typeof value === "string" && value.includes("Profile")) {
 						superProfileName = dataParser.parseName(translator, value);
 						break;
 					}
 				}
 			}
-		} else if (typeof upgradePure.super === 'string') {
+		} else if (typeof upgradePure.super === "string") {
 			// If it's already a string, parse it
 			superProfileName = dataParser.parseName(translator, upgradePure.super);
 		}
@@ -240,8 +244,7 @@ export const getUpgradeItem = (upgradePure: any) => {
 		const superUpgrade = utilityFunctions
 			.getUpgradesData()
 			.find(
-				(up) =>
-					up.profile === superProfileName && up.name === upgradePure.name,
+				(up) => up.profile === superProfileName && up.name === upgradePure.name,
 			);
 
 		// Handle inheritance - if super upgrade exists, merge data
@@ -286,7 +289,6 @@ export const getUpgradeItem = (upgradePure: any) => {
 						upgradePure.crafting[0].ingredients,
 						ingredientsFiltered,
 					);
-
 				} else if (upgradePure.crafting[0].ingredients) {
 					recipe.ingredients = upgradePure.crafting[0].ingredients;
 				} else if (superUpgradeData.crafting[0].ingredients) {

@@ -9,7 +9,6 @@ const fs = require("node:fs");
 const path = require("node:path");
 const dataParser = require("../../dataParsers");
 const translator = require("../../translator");
-const dataTableTemplate = require("../../../templates/datatable");
 const lootTableTemplate = require("../../../templates/lootTable");
 const dropDataTemplate = require("../../../templates/dropData");
 const utilityFunctions = require("../utilityFunctions");
@@ -21,10 +20,10 @@ const LOOTTABLES_DIR = path.join(OUTPUT_DIR, "loot_tables");
 
 // Ensure output directories exist
 if (!fs.existsSync(OUTPUT_DIR)) {
-  fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+	fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 }
 if (!fs.existsSync(LOOTTABLES_DIR)) {
-  fs.mkdirSync(LOOTTABLES_DIR, { recursive: true });
+	fs.mkdirSync(LOOTTABLES_DIR, { recursive: true });
 }
 
 /**
@@ -34,24 +33,24 @@ if (!fs.existsSync(LOOTTABLES_DIR)) {
  * @returns {Object} - A configured drop item
  */
 const createDropItem = (name, lootItemData) => {
-  if (!name || !lootItemData) {
-    return undefined;
-  }
+	if (!name || !lootItemData) {
+		return undefined;
+	}
 
-  const drop = { ...dropDataTemplate };
-  drop.name = name;
+	const drop = { ...dropDataTemplate };
+	drop.name = name;
 
-  if (lootItemData.Chance) {
-    drop.chance = lootItemData.Chance;
-  }
-  if (lootItemData.MinQuantity) {
-    drop.minQuantity = lootItemData.MinQuantity;
-  }
-  if (lootItemData.MaxQuantity) {
-    drop.maxQuantity = lootItemData.MaxQuantity;
-  }
+	if (lootItemData.Chance) {
+		drop.chance = lootItemData.Chance;
+	}
+	if (lootItemData.MinQuantity) {
+		drop.minQuantity = lootItemData.MinQuantity;
+	}
+	if (lootItemData.MaxQuantity) {
+		drop.maxQuantity = lootItemData.MaxQuantity;
+	}
 
-  return drop;
+	return drop;
 };
 
 /**
@@ -61,27 +60,27 @@ const createDropItem = (name, lootItemData) => {
  * @returns {string} - The resolved item name
  */
 const resolveItemName = (baseName, lootItem) => {
-  if (!baseName || !lootItem) {
-    return "Unknown Item";
-  }
+	if (!baseName || !lootItem) {
+		return "Unknown Item";
+	}
 
-  if (!lootItem?.Item?.AssetPathName) {
-    return baseName;
-  }
+	if (!lootItem?.Item?.AssetPathName) {
+		return baseName;
+	}
 
-  const completeItem = utilityFunctions.getItemByType(
-    dataParser.parseType(lootItem.Item.AssetPathName),
-  );
+	const completeItem = utilityFunctions.getItemByType(
+		dataParser.parseType(lootItem.Item.AssetPathName),
+	);
 
-  if (completeItem?.name) {
-    return completeItem.name;
-  }
+	if (completeItem?.name) {
+		return completeItem.name;
+	}
 
-  if (lootItem.Item.AssetPathName.includes("Schematics")) {
-    return `${baseName} Schematic`;
-  }
+	if (lootItem.Item.AssetPathName.includes("Schematics")) {
+		return `${baseName} Schematic`;
+	}
 
-  return baseName;
+	return baseName;
 };
 
 /**
@@ -91,16 +90,16 @@ const resolveItemName = (baseName, lootItem) => {
  * @returns {Object} - Object containing validation result and error message
  */
 const validateLootTableEntry = (currentItem, key) => {
-  if (!currentItem.Item) {
-    return { isValid: false, error: `Missing Item property for ${key}` };
-  }
+	if (!currentItem.Item) {
+		return { isValid: false, error: `Missing Item property for ${key}` };
+	}
 
-  const baseName = dataParser.parseName(translator, key);
-  if (!baseName) {
-    return { isValid: false, error: `Could not parse name for ${key}` };
-  }
+	const baseName = dataParser.parseName(translator, key);
+	if (!baseName) {
+		return { isValid: false, error: `Could not parse name for ${key}` };
+	}
 
-  return { isValid: true, baseName };
+	return { isValid: true, baseName };
 };
 
 /**
@@ -109,91 +108,91 @@ const validateLootTableEntry = (currentItem, key) => {
  * @returns {boolean} - Whether parsing was successful
  */
 const parseLootTable = (filePath) => {
-  if (!filePath || typeof filePath !== "string") {
-    console.error("Invalid file path provided to parseLootTable");
-    return false;
-  }
+	if (!filePath || typeof filePath !== "string") {
+		console.error("Invalid file path provided to parseLootTable");
+		return false;
+	}
 
-  const jsonData = readJsonFile(filePath);
-  if (!jsonData) return false;
+	const jsonData = readJsonFile(filePath);
+	if (!jsonData) return false;
 
-  const firstEntry = jsonData[0];
-  if (
-    !firstEntry?.Name ||
-    !firstEntry?.Rows ||
-    firstEntry?.Type !== "DataTable"
-  ) {
-    return false;
-  }
+	const firstEntry = jsonData[0];
+	if (
+		!firstEntry?.Name ||
+		!firstEntry?.Rows ||
+		firstEntry?.Type !== "DataTable"
+	) {
+		return false;
+	}
 
-  const dataTable = { ...dataTableTemplate };
-  dataTable.name = dataParser.parseName(translator, firstEntry.Name);
-  dataTable.objectName = firstEntry.Name;
-  dataTable.objectPath = firstEntry.ObjectPath || "";
-  const lootItems = firstEntry.Rows;
-  const tableItems = [];
+	const dataTable = {};
+	dataTable.name = dataParser.parseName(translator, firstEntry.Name);
+	dataTable.objectName = firstEntry.Name;
+	dataTable.objectPath = firstEntry.ObjectPath || "";
+	const lootItems = firstEntry.Rows;
+	const tableItems = [];
 
-  // Create a loot table for this data table
-  const lootTable = { ...lootTableTemplate };
-  lootTable.name = dataTable.name;
-  lootTable.objectName = firstEntry.Name;
-  lootTable.objectPath = firstEntry.ObjectPath || "";
+	// Create a loot table for this data table
+	const lootTable = { ...lootTableTemplate };
+	lootTable.name = dataTable.name;
+	lootTable.objectName = firstEntry.Name;
+	lootTable.objectPath = firstEntry.ObjectPath || "";
 
-  // Store loot table information for creature processing
-  const lootTables = utilityFunctions.getAllLootTables
-    ? utilityFunctions.getAllLootTables()
-    : {};
-  lootTables[firstEntry.Name] = {
-    name: dataTable.name,
-    drops: [],
-  };
+	// Store loot table information for creature processing
+	const lootTables = utilityFunctions.getAllLootTables
+		? utilityFunctions.getAllLootTables()
+		: {};
+	lootTables[firstEntry.Name] = {
+		name: dataTable.name,
+		drops: [],
+	};
 
-  for (const key of Object.keys(lootItems)) {
-    const currentItem = lootItems[key];
-    const validation = validateLootTableEntry(currentItem, key);
+	for (const key of Object.keys(lootItems)) {
+		const currentItem = lootItems[key];
+		const validation = validateLootTableEntry(currentItem, key);
 
-    if (!validation.isValid) {
-      console.warn(validation.error);
-      continue;
-    }
+		if (!validation.isValid) {
+			console.warn(validation.error);
+			continue;
+		}
 
-    const resolvedName = resolveItemName(validation.baseName, currentItem);
-    // Check if this item already exists in the tables array
-    const hasDrop = tableItems.some((d) => d.name === resolvedName);
+		const resolvedName = resolveItemName(validation.baseName, currentItem);
+		// Check if this item already exists in the tables array
+		const hasDrop = tableItems.some((d) => d.name === resolvedName);
 
-    if (!hasDrop && resolvedName !== dataTable.name) {
-      const drop = createDropItem(resolvedName, currentItem);
+		if (!hasDrop && resolvedName !== dataTable.name) {
+			const drop = createDropItem(resolvedName, currentItem);
 
-      const itemName = translator.translateName(resolvedName);
+			const itemName = translator.translateName(resolvedName);
 
-      if (!drop) {
-        continue;
-      }
+			if (!drop) {
+				continue;
+			}
 
-      tableItems.push(drop);
+			tableItems.push(drop);
 
-      // Add to the loot table drops array
-      lootTable.drops.push(drop);
+			// Add to the loot table drops array
+			lootTable.drops.push(drop);
 
-      // Add to the loot tables collection for creature processing
-      lootTables[firstEntry.Name].drops.push({
-        name: itemName,
-        chance: drop.chance,
-        minQuantity: drop.minQuantity,
-        maxQuantity: drop.maxQuantity,
-      });
-    }
-  }
+			// Add to the loot tables collection for creature processing
+			lootTables[firstEntry.Name].drops.push({
+				name: itemName,
+				chance: drop.chance,
+				minQuantity: drop.minQuantity,
+				maxQuantity: drop.maxQuantity,
+			});
+		}
+	}
 
-  // Save the loot table to file
-  const fileName = dataTable.name.replace(/\s+/g, "_").toLowerCase();
-  const outputFilePath = path.join(LOOTTABLES_DIR, `${fileName}.json`);
-  fs.writeFileSync(outputFilePath, JSON.stringify(lootTable, null, 2));
+	// Save the loot table to file
+	const fileName = dataTable.name.replace(/\s+/g, "_").toLowerCase();
+	const outputFilePath = path.join(LOOTTABLES_DIR, `${fileName}.json`);
+	fs.writeFileSync(outputFilePath, JSON.stringify(lootTable, null, 2));
 
-  // Update the loot tables collection
-  utilityFunctions.setLootTables(lootTables);
+	// Update the loot tables collection
+	utilityFunctions.setLootTables(lootTables);
 
-  return true;
+	return true;
 };
 
 /**
@@ -202,75 +201,75 @@ const parseLootTable = (filePath) => {
  * @returns {boolean} - Whether parsing was successful
  */
 const parseLootSites = (filePath) => {
-  if (!filePath || typeof filePath !== "string") {
-    console.error("Invalid file path provided to parseLootSites");
-    return false;
-  }
+	if (!filePath || typeof filePath !== "string") {
+		console.error("Invalid file path provided to parseLootSites");
+		return false;
+	}
 
-  const jsonData = readJsonFile(filePath);
-  if (!jsonData || !Array.isArray(jsonData) || jsonData.length < 2) {
-    return false;
-  }
+	const jsonData = readJsonFile(filePath);
+	if (!jsonData || !Array.isArray(jsonData) || jsonData.length < 2) {
+		return false;
+	}
 
-  const classInfo = jsonData[0];
-  const creatureData = jsonData[1];
+	const classInfo = jsonData[0];
+	const creatureData = jsonData[1];
 
-  if (!classInfo?.Name || !creatureData?.Properties?.LootTable) {
-    return false;
-  }
+	if (!classInfo?.Name || !creatureData?.Properties?.LootTable) {
+		return false;
+	}
 
-  const creatureName = getLootSiteNameFromObject(classInfo.Name);
-  if (!creatureName) {
-    return false;
-  }
+	const creatureName = getLootSiteNameFromObject(classInfo.Name);
+	if (!creatureName) {
+		return false;
+	}
 
-  // Get the loot table reference
-  const lootTableRef = creatureData.Properties.LootTable.ObjectName;
-  if (!lootTableRef) {
-    return false;
-  }
+	// Get the loot table reference
+	const lootTableRef = creatureData.Properties.LootTable.ObjectName;
+	if (!lootTableRef) {
+		return false;
+	}
 
-  // Extract the loot table name from the reference
-  const match = lootTableRef.match(/DataTable'([^']+)'/);
-  if (!match?.[1]) {
-    return false;
-  }
+	// Extract the loot table name from the reference
+	const match = lootTableRef.match(/DataTable'([^']+)'/);
+	if (!match?.[1]) {
+		return false;
+	}
 
-  const lootTableName = match[1];
-  const lootTables = utilityFunctions.getAllLootTables();
-  const lootTable = lootTables[lootTableName];
+	const lootTableName = match[1];
+	const lootTables = utilityFunctions.getAllLootTables();
+	const lootTable = lootTables[lootTableName];
 
-  if (!lootTable) {
-    return false;
-  }
+	if (!lootTable) {
+		return false;
+	}
 
-  // Create or update the creature entry
-  const creatures = utilityFunctions.getCreatures();
-  let creature = creatures[creatureName];
+	// Create or update the creature entry
+	const creatures = utilityFunctions.getCreatures();
+	let creature = creatures[creatureName];
 
-  if (!creature) {
-    creature = { ...creatureTemplate };
-    creature.name = creatureName;
-    creature.lootTemplates = [];
-    creatures[creatureName] = creature;
-  }
+	if (!creature) {
+		creature = {};
+		creature.name = creatureName;
+		creature.lootTemplates = [];
+		creatures[creatureName] = creature;
+	}
 
-  // Add the loot table to the creature if not already present
-  const hasLootTable = creature.lootTemplates.some(
-    (lt) => lt.name === lootTable.name
-  );
+	// Add the loot table to the creature if not already present
+	const hasLootTable = creature.lootTemplates.some(
+		(lt) => lt.name === lootTable.name,
+	);
 
-  if (!hasLootTable) {
-    creature.lootTemplates.push({
-      name: lootTable.name,
-      drops: lootTable.drops,
-    });
-  }
+	if (!hasLootTable) {
+		creature.lootTemplates.push({
+			name: lootTable.name,
+			drops: lootTable.drops,
+		});
+	}
 
-  // Update the creatures collection
-  utilityFunctions.setCreatures(creatures);
+	// Update the creatures collection
+	utilityFunctions.setCreatures(creatures);
 
-  return true;
+	return true;
 };
 
 /**
@@ -279,21 +278,21 @@ const parseLootSites = (filePath) => {
  * @returns {string|null} - The extracted creature name or null if not found
  */
 const getLootSiteNameFromObject = (objectName) => {
-  if (!objectName) {
-    return null;
-  }
+	if (!objectName) {
+		return null;
+	}
 
-  // Extract the creature name from the object name
-  const match = objectName.match(/BP_([^_]+)/);
-  if (!match?.[1]) {
-    return null;
-  }
+	// Extract the creature name from the object name
+	const match = objectName.match(/BP_([^_]+)/);
+	if (!match?.[1]) {
+		return null;
+	}
 
-  return match[1];
+	return match[1];
 };
 
 module.exports = {
-  parseLootTable,
-  parseLootSites,
-  getLootSiteNameFromObject,
+	parseLootTable,
+	parseLootSites,
+	getLootSiteNameFromObject,
 };

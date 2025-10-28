@@ -5,9 +5,9 @@
  * datatables, and blueprints in the data extraction process.
  */
 
-import * as itemTemplate from "../../templates/item";
-import * as techTemplate from "../../templates/tech";
-import * as costTemplate from "../../templates/cost";
+import { itemTemplate } from "../../templates/item";
+import { Tech } from "../../templates/tech";
+import { costTemplate } from "../../templates/cost";
 import * as dataParser from "../dataParsers";
 import * as translator from "../translator";
 
@@ -53,7 +53,7 @@ class DataStore {
 			return;
 		}
 
-		let newItem = { ...existingItem, ...item, };
+		let newItem = { ...existingItem, ...item };
 
 		if (item.category?.includes("Structural")) {
 			newItem = { ...item, ...existingItem };
@@ -136,10 +136,10 @@ class DataStore {
 	 * @throws {TypeError} - If inputs is not an object or key is not a string
 	 */
 	getIngredientsFromItem(data: any, key: string) {
-		const ingredient = { ...costTemplate.costTemplate };
+		const ingredient = { ...costTemplate };
 		ingredient.name = data[key]?.Key
 			? dataParser.parseName(translator, data[key]?.Key)
-			: dataParser.parseName(translator, Object.keys(data[key])[0]);
+			: dataParser.parseName(translator, Object.keys(data[key])?.[0] ?? "");
 		ingredient.count = data[key]?.Key
 			? data[key]?.Value
 			: Object.values(data[key])[0];
@@ -166,7 +166,7 @@ class DataStore {
 			return;
 		}
 
-		const newItem = { ...existingItem, ...item, };
+		const newItem = { ...existingItem, ...item };
 
 		const existingItemIndex = this.techData.indexOf(existingItem);
 		if (existingItemIndex > -1) {
@@ -200,7 +200,7 @@ class DataStore {
 			return;
 		}
 
-		const newItem = { ...existingItem, ...lootTable, };
+		const newItem = { ...existingItem, ...lootTable };
 
 		const existingItemIndex = this.lootTables.indexOf(existingItem);
 		if (existingItemIndex > -1) {
@@ -234,7 +234,7 @@ class DataStore {
 			return;
 		}
 
-		const newItem = { ...existingItem, ...lootTemplate, };
+		const newItem = { ...existingItem, ...lootTemplate };
 
 		const existingItemIndex = this.lootTemplates.indexOf(existingItem);
 		if (existingItemIndex > -1) {
@@ -254,9 +254,9 @@ class DataStore {
 	 * @param {string} type - The type of the tech to extract
 	 * @returns {Object} - A new tech object with the type set
 	 */
-	extractTechByType(type: string) {
+	extractTechByType(type: string): Tech {
 		if (!type) {
-			return { ...techTemplate };
+			return {} as Tech;
 		}
 
 		const tech = this.techData.find(
@@ -269,7 +269,8 @@ class DataStore {
 			return { ...tech };
 		}
 
-		const newTech = { ...techTemplate };
+		const newTech = {};
+		//@ts-expect-error fix later
 		newTech.type = type;
 		return newTech;
 	}
@@ -312,7 +313,7 @@ class DataStore {
 			return;
 		}
 
-		const newItem = { ...existingItem, ...creature, };
+		const newItem = { ...existingItem, ...creature };
 
 		const existingItemIndex = this.creatures.indexOf(existingItem);
 		if (existingItemIndex > -1) {
@@ -415,7 +416,8 @@ export const updateItem = (updatedItem: any) => {
 };
 export const addCreature = (creature: any) => dataStore.addCreature(creature);
 export const getAllLootTables = () => dataStore.getAllLootTables();
-export const addLootTable = (lootTable: any) => dataStore.addLootTable(lootTable);
+export const addLootTable = (lootTable: any) =>
+	dataStore.addLootTable(lootTable);
 export const getAllLootTemplates = () => dataStore.getAllLootTemplates();
 export const addLootTemplate = (lootTemplate: any) =>
 	dataStore.addLootTemplate(lootTemplate);
@@ -423,7 +425,8 @@ export const setAllItems = (items: any[]) => dataStore.setAllItems(items);
 export const setUpgradesData = (data: any[]) => dataStore.setUpgradesData(data);
 export const setCreatures = (data: any[]) => dataStore.setCreatures(data);
 export const setLootTables = (data: any) => dataStore.setLootTables(data);
-export const setLootTemplates = (data: any[]) => dataStore.setLootTemplates(data);
+export const setLootTemplates = (data: any[]) =>
+	dataStore.setLootTemplates(data);
 export const setPerks = (data: any[]) => dataStore.setPerks(data);
 export const getPerkByName = (name: string) => dataStore.getPerkByName(name);
 export const addPerk = (perk: any) => dataStore.addPerk(perk);

@@ -31,7 +31,7 @@ const translationStore: {
  * @param {string} text - The text to trim
  * @returns {string} - Trimmed text or empty string
  */
-const trimIfExists = (text: string) => {
+const trimIfExists = (text?: string) => {
 	return text ? text.trim() : "";
 };
 
@@ -151,9 +151,15 @@ export const searchName = (name: string) => {
 	}
 
 	// Check in all translations
-	if (translationStore.allTranslations[name as keyof typeof translationStore.allTranslations]) {
+	if (
+		translationStore.allTranslations?.[
+			name as keyof typeof translationStore.allTranslations
+		]
+	) {
 		const translation = trimIfExists(
-			translationStore.allTranslations[name as keyof typeof translationStore.allTranslations],
+			translationStore.allTranslations?.[
+				name as keyof typeof translationStore.allTranslations
+			],
 		);
 		if (translation) {
 			addTranslationInUse(name, translation);
@@ -161,8 +167,14 @@ export const searchName = (name: string) => {
 		return translation;
 	}
 
-	if (translationStore.translationsInUse[name as keyof typeof translationStore.translationsInUse]) {
-		return translationStore.translationsInUse[name as keyof typeof translationStore.translationsInUse];
+	if (
+		translationStore.translationsInUse[
+			name as keyof typeof translationStore.translationsInUse
+		]
+	) {
+		return translationStore.translationsInUse[
+			name as keyof typeof translationStore.translationsInUse
+		];
 	}
 
 	return null;
@@ -278,9 +290,15 @@ export const addDescriptions = (allItems: any[]) => {
 			name = item.translation;
 		}
 
-		if (translationStore.allDescriptions[name as keyof typeof translationStore.allDescriptions]) {
+		if (
+			translationStore.allDescriptions[
+				name as keyof typeof translationStore.allDescriptions
+			]
+		) {
 			item.description = trimIfExists(
-				translationStore.allDescriptions[name as keyof typeof translationStore.allDescriptions],
+				translationStore.allDescriptions[
+					name as keyof typeof translationStore.allDescriptions
+				],
 			);
 		}
 
@@ -304,18 +322,32 @@ export const addTranslation = (
 	}
 
 	if (language === null) {
-		if (!translationStore.allTranslations[key as keyof typeof translationStore.allTranslations]) {
-			translationStore.allTranslations[key as keyof typeof translationStore.allTranslations] =
-				translation;
+		if (
+			!translationStore.allTranslations[
+				key as keyof typeof translationStore.allTranslations
+			]
+		) {
+			translationStore.allTranslations[
+				key as keyof typeof translationStore.allTranslations
+			] = translation;
 
 			addTranslationInUse(key, translation);
 		}
 	} else {
-		if (!translationStore.translationsFromOtherLanguages[language as keyof typeof translationStore.translationsFromOtherLanguages]) {
-			translationStore.translationsFromOtherLanguages[language as keyof typeof translationStore.translationsFromOtherLanguages] = {} as any;
+		if (
+			!translationStore.translationsFromOtherLanguages[
+				language as keyof typeof translationStore.translationsFromOtherLanguages
+			]
+		) {
+			translationStore.translationsFromOtherLanguages[
+				language as keyof typeof translationStore.translationsFromOtherLanguages
+			] = {} as any;
 		}
-		translationStore.translationsFromOtherLanguages[language as keyof typeof translationStore.translationsFromOtherLanguages][key] =
-			translation;
+
+		//@ts-expect-error fix later
+		translationStore.translationsFromOtherLanguages[
+			language as keyof typeof translationStore.translationsFromOtherLanguages
+		][key] = translation;
 	}
 };
 
@@ -335,16 +367,26 @@ export const addDescription = (
 	}
 
 	if (language === null) {
-		translationStore.allDescriptions[key as keyof typeof translationStore.allDescriptions] = description;
+		translationStore.allDescriptions[
+			key as keyof typeof translationStore.allDescriptions
+		] = description;
 	} else {
-		if (!translationStore.descriptionsFromOtherLanguages[language as keyof typeof translationStore.descriptionsFromOtherLanguages]) {
-			translationStore.descriptionsFromOtherLanguages[language as keyof typeof translationStore.descriptionsFromOtherLanguages] = {} as any;
+		if (
+			!translationStore.descriptionsFromOtherLanguages[
+				language as keyof typeof translationStore.descriptionsFromOtherLanguages
+			]
+		) {
+			translationStore.descriptionsFromOtherLanguages[
+				language as keyof typeof translationStore.descriptionsFromOtherLanguages
+			] = {} as any;
 		}
-		translationStore.descriptionsFromOtherLanguages[language as keyof typeof translationStore.descriptionsFromOtherLanguages][key] =
-			description;
+
+		//@ts-expect-error fix later
+		translationStore.descriptionsFromOtherLanguages[
+			language as keyof typeof translationStore.descriptionsFromOtherLanguages
+		][key] = description;
 	}
 };
-
 
 /**
  * Checks if a key translation is in use
@@ -352,7 +394,11 @@ export const addDescription = (
  * @returns {boolean} - True if the key is in use
  */
 export const isKeyTranslationInUse = (key: string) => {
-	return !isNullOrEmpty(translationStore.translationsInUse[key as keyof typeof translationStore.translationsInUse]);
+	return !isNullOrEmpty(
+		translationStore.translationsInUse[
+			key as keyof typeof translationStore.translationsInUse
+		],
+	);
 };
 
 /**
@@ -366,7 +412,9 @@ export const addTranslationInUse = (key: string, translation: string) => {
 	}
 
 	if (!isKeyTranslationInUse(key)) {
-		translationStore.translationsInUse[key as keyof typeof translationStore.translationsInUse] = translation;
+		translationStore.translationsInUse[
+			key as keyof typeof translationStore.translationsInUse
+		] = translation;
 	}
 };
 
@@ -382,7 +430,9 @@ export const getTranslateFiles = () => {
 
 	for (const key in translationStore.allTranslations) {
 		const englishName =
-			translationStore.allTranslations[key as keyof typeof translationStore.allTranslations];
+			translationStore.allTranslations[
+				key as keyof typeof translationStore.allTranslations
+			];
 		if (englishName) {
 			usedItemNames.add(englishName);
 		}
@@ -390,7 +440,9 @@ export const getTranslateFiles = () => {
 
 	for (const key in translationStore.translationsInUse) {
 		const englishName =
-			translationStore.translationsInUse[key as keyof typeof translationStore.translationsInUse];
+			translationStore.translationsInUse[
+				key as keyof typeof translationStore.translationsInUse
+			];
 		// Much less restrictive filtering to include more valid translations
 		// Only filter out completely empty strings or extremely long entries
 		if (englishName) {
@@ -414,12 +466,14 @@ export const getTranslateFiles = () => {
 			if (isKeyTranslationInUse(key)) {
 				// Get the English name which will be used as the key
 				const englishName =
-					translationStore.translationsInUse[key as keyof typeof translationStore.translationsInUse];
+					translationStore.translationsInUse[
+						key as keyof typeof translationStore.translationsInUse
+					];
 				// Get the translated text in the target language
 				const translatedText =
-					translationStore.translationsFromOtherLanguages[
+					translationStore.translationsFromOtherLanguages?.[
 						language as keyof typeof translationStore.translationsFromOtherLanguages
-					][key];
+					]?.[key];
 
 				// Skip invalid entries
 				if (

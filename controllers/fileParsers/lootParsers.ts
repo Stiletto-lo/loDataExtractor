@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 /**
  * Loot parsers for handling loot-related data
  *
@@ -9,10 +11,9 @@ import fs from "node:fs";
 import path from "node:path";
 import * as dataParser from "../dataParsers";
 import * as translator from "../translator";
-import * as dataTableTemplate from "../../templates/datatable";
-import * as lootTableTemplate from "../../templates/lootTable";
-import * as dropDataTemplate from "../../templates/dropData";
-import * as creatureTemplate from "../../templates/creature";
+import { DataTable } from "../../templates/datatable";
+import { lootTableTemplate } from "../../templates/lootTable";
+import { dropDataTemplate } from "../../templates/dropData";
 import * as utilityFunctions from "./utilityFunctions";
 import * as lootTemplateParser from "./lootParsers/lootTemplateParser";
 import { readJsonFile } from "../utils/read-json-file";
@@ -26,7 +27,7 @@ const CREATURE_DATA_DIR = path.join(
 	"Mist",
 	"Content",
 	"Mist",
-	"Characters"
+	"Characters",
 ); // Assuming this path structure from the .md
 
 // Ensure output directories exist
@@ -80,7 +81,7 @@ const resolveItemName = (baseName: string, lootItem: any) => {
 	}
 
 	const completeItem = utilityFunctions.getItemByType(
-		dataParser.parseType(lootItem.Item.AssetPathName)
+		dataParser.parseType(lootItem.Item.AssetPathName),
 	);
 
 	if (completeItem?.name) {
@@ -138,7 +139,7 @@ export const parseLootTable = (filePath: string) => {
 		return false;
 	}
 
-	const dataTable = { ...dataTableTemplate };
+	const dataTable = {};
 	dataTable.name = dataParser.parseName(translator, firstEntry.Name);
 	dataTable.objectName = firstEntry.Name;
 	dataTable.objectPath = firstEntry.ObjectPath || "";
@@ -212,7 +213,7 @@ export const parseLootTable = (filePath: string) => {
 		const lootTablePath = path.join(LOOTTABLES_DIR, `${fileName}.json`);
 		fs.writeFileSync(
 			lootTablePath,
-			JSON.stringify(lootTables[firstEntry.Name], null, 2)
+			JSON.stringify(lootTables[firstEntry.Name], null, 2),
 		);
 	}
 
@@ -251,7 +252,7 @@ const filterRelevantObjects = (objects: any[]) => {
 		(obj) =>
 			obj?.Type !== "Function" &&
 			obj?.Type !== "BlueprintGeneratedClass" &&
-			!obj?.Type?.includes("Component")
+			!obj?.Type?.includes("Component"),
 	);
 };
 
@@ -276,23 +277,31 @@ const extractCreatureData = (
 	// If we have fullCreatureData (array of components), search through all components
 	if (fullCreatureData && Array.isArray(fullCreatureData)) {
 		// Search for MistCreatureComponent or MistAnimalMobVariationComponent (contains MaxHealth and ExperienceAward)
-		const creatureComponent = fullCreatureData.find(obj =>
-			obj.Type === "MistCreatureComponent" || obj.Type === "MistAnimalMobVariationComponent"
+		const creatureComponent = fullCreatureData.find(
+			(obj) =>
+				obj.Type === "MistCreatureComponent" ||
+				obj.Type === "MistAnimalMobVariationComponent",
 		);
 		if (creatureComponent?.Properties) {
 			result.health = creatureComponent.Properties.MaxHealth;
 			result.experience = creatureComponent.Properties.ExperienceAward;
-			result.lootTemplate = dataParser.parseObjectPath(creatureComponent.Properties.Loot?.ObjectPath);
+			result.lootTemplate = dataParser.parseObjectPath(
+				creatureComponent.Properties.Loot?.ObjectPath,
+			);
 		}
 
 		// Search for MistPhysicalMobAttackArea (contains Damage)
-		const attackComponent = fullCreatureData.find(obj => obj.Type === "MistPhysicalMobAttackArea");
+		const attackComponent = fullCreatureData.find(
+			(obj) => obj.Type === "MistPhysicalMobAttackArea",
+		);
 		if (attackComponent?.Properties) {
 			result.damage = attackComponent.Properties.Damage;
 		}
 
 		// Search for MistPhysicalMobMovement (contains MaxSpeed)
-		const movementComponent = fullCreatureData.find(obj => obj.Type === "MistPhysicalMobMovement");
+		const movementComponent = fullCreatureData.find(
+			(obj) => obj.Type === "MistPhysicalMobMovement",
+		);
 		if (movementComponent?.Properties) {
 			// Extract speed from Sprint or Walk, preferring Sprint
 			if (movementComponent.Properties.Sprint?.MaxSpeed) {
@@ -306,8 +315,11 @@ const extractCreatureData = (
 		const props = additionalInfo?.Properties || objectData?.Properties || {};
 
 		result.experience = props.ExperienceAward;
+
 		result.health = props.MaxHealth;
+
 		result.lootTemplate = dataParser.parseObjectPath(props.Loot?.ObjectPath);
+
 		result.speed = props.MovementSpeed || props.WalkSpeed;
 	}
 
@@ -366,16 +378,19 @@ export const parseLootSites = (filePath: string) => {
 	// Find additional components that might contain useful information
 	// This could be a specific component like MistHumanoidMobVariationComponent or the main object itself
 	const mobVariationComponent = jsonData.find(
-		(o: any) => o.Type === "MistHumanoidMobVariationComponent"
+		(o: any) => o.Type === "MistHumanoidMobVariationComponent",
 	);
 	const primaryDataSource = mobVariationComponent || firstObject;
 
 	// Extract creature data with enhanced information
-	const creatureData = extractCreatureData(primaryDataSource, firstObject, jsonData);
+	const creatureData = extractCreatureData(
+		primaryDataSource,
+		firstObject,
+		jsonData,
+	);
 
 	// Create the creature object with all available information
 	const creature = {
-		...creatureTemplate,
 		type: name, // This is the internal type, e.g., BP_Worm_C
 		name: translation, // This is the display name, e.g., The Long One
 		...creatureData,

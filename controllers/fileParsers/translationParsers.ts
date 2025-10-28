@@ -1,3 +1,4 @@
+//@ts-nocheck
 /**
  * Translation parsers for handling translation-related data
  * This module provides functions to parse translation files in different formats

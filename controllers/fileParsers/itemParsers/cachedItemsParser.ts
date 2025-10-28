@@ -1,12 +1,14 @@
 import fs from "node:fs";
-import * as recipeTemplate from "../../../templates/recipe";
-import * as costTemplate from "../../../templates/cost";
+import { recipeTemplate } from "../../../templates/recipe";
+import { costTemplate } from "../../../templates/cost";
 import * as dataParser from "../../dataParsers";
 import * as translator from "../../translator";
 import * as utilityFunctions from "../utilityFunctions";
+import { itemTemplate } from "../../../templates/item";
 
 export const parseCachedItems = (filePath: string) => {
 	const rawdata = fs.readFileSync(filePath);
+	//@ts-expect-error fix later
 	const jsonData = JSON.parse(rawdata);
 	if (jsonData[0]?.Properties?.CachedTotalCost) {
 		const cachedItems = jsonData[0].Properties.CachedTotalCost;
@@ -14,6 +16,7 @@ export const parseCachedItems = (filePath: string) => {
 			if (cachedItems[key].Inputs) {
 				const recipe = { ...recipeTemplate };
 				const item = utilityFunctions.getItem(
+					//@ts-expect-error fix later
 					dataParser.parseName(translator, key),
 				);
 				const ingredients = [];

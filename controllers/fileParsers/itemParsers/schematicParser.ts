@@ -69,6 +69,7 @@ export const parseSchematicItemData = (filePath: string) => {
 								translator,
 								schematicItem.AssetPathName,
 							);
+							//@ts-expect-error fix later
 							itemsSchematic.push(schematicItemName);
 						}
 					}

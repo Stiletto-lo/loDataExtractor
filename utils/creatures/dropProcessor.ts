@@ -1,3 +1,4 @@
+//@ts-nocheck
 /**
  * Drop Processor Module
  *
@@ -11,14 +12,16 @@
  * @returns {string|null} - El tier extraído o null si no se encuentra
  */
 function extractTierFromTemplateName(templateName) {
-  if (!templateName) { return null; }
+	if (!templateName) {
+		return null;
+	}
 
-  // Patrones comunes: EasyRupu_T2, MediumRupu_T3, etc.
-  const tierMatch = templateName.match(/_T([1-4])(?:_|$)/i);
-  if (tierMatch) {
-    return `T${tierMatch[1]}`;
-  }
-  return null;
+	// Patrones comunes: EasyRupu_T2, MediumRupu_T3, etc.
+	const tierMatch = templateName.match(/_T([1-4])(?:_|$)/i);
+	if (tierMatch) {
+		return `T${tierMatch[1]}`;
+	}
+	return null;
 }
 
 /**
@@ -27,14 +30,16 @@ function extractTierFromTemplateName(templateName) {
  * @returns {string|null} - El tier extraído o null si no se encuentra
  */
 function extractTierFromTableName(tableName) {
-  if (!tableName) { return null; }
+	if (!tableName) {
+		return null;
+	}
 
-  // Patrones comunes: ammo_t1, baseresources_t2, etc.
-  const tierMatch = tableName.match(/_t([1-4])(?:_|$)/i);
-  if (tierMatch) {
-    return `T${tierMatch[1]}`;
-  }
-  return null;
+	// Patrones comunes: ammo_t1, baseresources_t2, etc.
+	const tierMatch = tableName.match(/_t([1-4])(?:_|$)/i);
+	if (tierMatch) {
+		return `T${tierMatch[1]}`;
+	}
+	return null;
 }
 
 /**
@@ -43,17 +48,17 @@ function extractTierFromTableName(tableName) {
  * @returns {Object} - Map of normalized names to template objects
  */
 function normalizeTemplates(templates) {
-  const normalizedMap = {};
+	const normalizedMap = {};
 
-  for (const template of templates) {
-    if (template.name) {
-      // Normalize by removing _C suffix and converting to lowercase
-      const normalizedName = template.name.replace(/_C$/i, '').toLowerCase();
-      normalizedMap[normalizedName] = template;
-    }
-  }
+	for (const template of templates) {
+		if (template.name) {
+			// Normalize by removing _C suffix and converting to lowercase
+			const normalizedName = template.name.replace(/_C$/i, "").toLowerCase();
+			normalizedMap[normalizedName] = template;
+		}
+	}
 
-  return normalizedMap;
+	return normalizedMap;
 }
 
 /**
@@ -62,13 +67,13 @@ function normalizeTemplates(templates) {
  * @returns {Object} - Map with normalized keys
  */
 function normalizeLootTables(lootTables) {
-  const normalizedMap = {};
+	const normalizedMap = {};
 
-  for (const tableName in lootTables) {
-    normalizedMap[tableName.toLowerCase()] = lootTables[tableName];
-  }
+	for (const tableName in lootTables) {
+		normalizedMap[tableName.toLowerCase()] = lootTables[tableName];
+	}
 
-  return normalizedMap;
+	return normalizedMap;
 }
 
 /**
@@ -79,26 +84,32 @@ function normalizeLootTables(lootTables) {
  * @returns {Object|null} - The found template or null
  */
 function findTemplate(templateName, normalizedTemplates, creatureName) {
-  // First try direct match
-  const template = normalizedTemplates[templateName];
-  if (template) { return template; }
+	// First try direct match
+	const template = normalizedTemplates[templateName];
+	if (template) {
+		return template;
+	}
 
-  // Try alternative matching strategies if direct match fails
-  const alternativeNames = [
-    `${templateName}_c`,              // Try with _c suffix
-    templateName.replace('_t', 't'),  // Try different tier format
-    templateName.replace('t', '_t')    // Try different tier format
-  ];
+	// Try alternative matching strategies if direct match fails
+	const alternativeNames = [
+		`${templateName}_c`, // Try with _c suffix
+		templateName.replace("_t", "t"), // Try different tier format
+		templateName.replace("t", "_t"), // Try different tier format
+	];
 
-  for (const altName of alternativeNames) {
-    if (normalizedTemplates[altName]) {
-      console.debug(`Found template using alternative name ${altName} for ${creatureName}`);
-      return normalizedTemplates[altName];
-    }
-  }
+	for (const altName of alternativeNames) {
+		if (normalizedTemplates[altName]) {
+			console.debug(
+				`Found template using alternative name ${altName} for ${creatureName}`,
+			);
+			return normalizedTemplates[altName];
+		}
+	}
 
-  console.debug(`No template found for ${creatureName} with normalized template name: ${templateName}`);
-  return null;
+	console.debug(
+		`No template found for ${creatureName} with normalized template name: ${templateName}`,
+	);
+	return null;
 }
 
 /**
@@ -108,31 +119,35 @@ function findTemplate(templateName, normalizedTemplates, creatureName) {
  * @param {string} tableName - The name of the loot table (for source tracking)
  */
 function addDropsFromTable(creature, lootTable, tableName) {
-  // Verificar que la tabla de botín existe y tiene drops
-  if (!lootTable || !lootTable.drops || !Array.isArray(lootTable.drops)) {
-    console.debug(`Tabla de botín ${tableName} no encontrada o no tiene drops válidos para ${creature.name}`);
-    return;
-  }
+	// Verificar que la tabla de botín existe y tiene drops
+	if (!lootTable || !lootTable.drops || !Array.isArray(lootTable.drops)) {
+		console.debug(
+			`Tabla de botín ${tableName} no encontrada o no tiene drops válidos para ${creature.name}`,
+		);
+		return;
+	}
 
-  // Ensure drops array exists
-  if (!creature.drops) {
-    creature.drops = [];
-  }
+	// Ensure drops array exists
+	if (!creature.drops) {
+		creature.drops = [];
+	}
 
-  for (const drop of lootTable.drops) {
-    // Skip if this drop already exists
-    const existingDrop = creature.drops.find(d => d.name === drop.name);
-    if (existingDrop) { continue; }
+	for (const drop of lootTable.drops) {
+		// Skip if this drop already exists
+		const existingDrop = creature.drops.find((d) => d.name === drop.name);
+		if (existingDrop) {
+			continue;
+		}
 
-    // Add the drop to the creature
-    creature.drops.push({
-      name: drop.name,
-      chance: drop.chance,
-      minQuantity: drop.minQuantity,
-      maxQuantity: drop.maxQuantity,
-      source: tableName
-    });
-  }
+		// Add the drop to the creature
+		creature.drops.push({
+			name: drop.name,
+			chance: drop.chance,
+			minQuantity: drop.minQuantity,
+			maxQuantity: drop.maxQuantity,
+			source: tableName,
+		});
+	}
 }
 
 /**
@@ -143,66 +158,77 @@ function addDropsFromTable(creature, lootTable, tableName) {
  * @returns {Array} - Enhanced creature data with drop information
  */
 function addDropInformation(creatures, lootTemplates, lootTables) {
-  // Validate inputs
-  if (!Array.isArray(creatures) || creatures.length === 0) {
-    console.warn("No creatures to add drop information to");
-    return creatures;
-  }
+	// Validate inputs
+	if (!Array.isArray(creatures) || creatures.length === 0) {
+		console.warn("No creatures to add drop information to");
+		return creatures;
+	}
 
-  if (!lootTemplates || !lootTables) {
-    console.warn("Missing loot templates or loot tables data");
-    return creatures;
-  }
+	if (!lootTemplates || !lootTables) {
+		console.warn("Missing loot templates or loot tables data");
+		return creatures;
+	}
 
-  console.info(`Adding drop information to ${creatures.length} creatures`);
+	console.info(`Adding drop information to ${creatures.length} creatures`);
 
-  // Prepare normalized lookup maps
-  const normalizedTemplates = normalizeTemplates(lootTemplates);
-  const lootTablesMap = normalizeLootTables(lootTables);
+	// Prepare normalized lookup maps
+	const normalizedTemplates = normalizeTemplates(lootTemplates);
+	const lootTablesMap = normalizeLootTables(lootTables);
 
-  // Process each creature
-  return creatures.map(creature => {
-    // Skip if creature has no lootTemplate
-    if (!creature.lootTemplate) { return creature; }
+	// Process each creature
+	return creatures.map((creature) => {
+		// Skip if creature has no lootTemplate
+		if (!creature.lootTemplate) {
+			return creature;
+		}
 
-    // Normalize the creature's lootTemplate
-    const normalizedTemplateName = creature.lootTemplate.replace(/_C$/i, '').toLowerCase();
+		// Normalize the creature's lootTemplate
+		const normalizedTemplateName = creature.lootTemplate
+			.replace(/_C$/i, "")
+			.toLowerCase();
 
-    // Find the matching template
-    const templateToUse = findTemplate(normalizedTemplateName, normalizedTemplates, creature.name);
-    if (!templateToUse) { return creature; }
+		// Find the matching template
+		const templateToUse = findTemplate(
+			normalizedTemplateName,
+			normalizedTemplates,
+			creature.name,
+		);
+		if (!templateToUse) {
+			return creature;
+		}
 
-    if (!creature.drops) {
-      creature.drops = [];
-    }
+		if (!creature.drops) {
+			creature.drops = [];
+		}
 
-    // Process each table in the template
-    for (const tableRef of templateToUse.tables) {
-      const tableName = tableRef.name ? tableRef.name.toLowerCase() : null;
-      if (!tableName) continue;
+		// Process each table in the template
+		for (const tableRef of templateToUse.tables) {
+			const tableName = tableRef.name ? tableRef.name.toLowerCase() : null;
+			if (!tableName) continue;
 
-      const creatureTier = creature.tier || extractTierFromTemplateName(creature.lootTemplate);
-      const tableTier = extractTierFromTableName(tableName);
+			const creatureTier =
+				creature.tier || extractTierFromTemplateName(creature.lootTemplate);
+			const tableTier = extractTierFromTableName(tableName);
 
-      if (tableTier && creatureTier && tableTier !== creatureTier) {
-        continue;
-      }
+			if (tableTier && creatureTier && tableTier !== creatureTier) {
+				continue;
+			}
 
-      const lootTable = lootTablesMap[tableName];
-      addDropsFromTable(creature, lootTable, tableName);
-    }
+			const lootTable = lootTablesMap[tableName];
+			addDropsFromTable(creature, lootTable, tableName);
+		}
 
-    return creature;
-  });
+		return creature;
+	});
 }
 
 module.exports = {
-  addDropInformation,
-  // Exportar funciones auxiliares para facilitar pruebas unitarias
-  normalizeTemplates,
-  normalizeLootTables,
-  findTemplate,
-  addDropsFromTable,
-  extractTierFromTemplateName,
-  extractTierFromTableName
+	addDropInformation,
+	// Exportar funciones auxiliares para facilitar pruebas unitarias
+	normalizeTemplates,
+	normalizeLootTables,
+	findTemplate,
+	addDropsFromTable,
+	extractTierFromTemplateName,
+	extractTierFromTableName,
 };
