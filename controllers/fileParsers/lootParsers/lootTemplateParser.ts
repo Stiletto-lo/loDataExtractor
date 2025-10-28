@@ -1,5 +1,3 @@
-//@ts-nocheck
-
 /**
  * LootTemplate parser for handling loot template data
  *
@@ -7,10 +5,11 @@
  * from game data files. LootTemplates contain multiple LootTables.
  */
 
+import type { LootTemplate } from "../../../templates/lootTemplate";
+
 const fs = require("node:fs");
 const path = require("node:path");
 const { readJsonFile } = require("../../utils/read-json-file");
-const lootTemplateTemplate = require("../../../templates/lootTemplate");
 
 // Output directories
 const OUTPUT_DIR = path.join(__dirname, "../../../exported");
@@ -42,9 +41,9 @@ for (const dir of Object.values(LOOTTEMPLATES_TIER_DIRS)) {
  * @param {string} pathOrType - The file path or type name
  * @returns {string|null} - The tier (T1, T2, T3, T4) or null if not found
  */
-const extractTier = (pathOrType) => {
+const extractTier = (pathOrType?: string): string | undefined => {
 	if (!pathOrType) {
-		return null;
+		return undefined;
 	}
 
 	if (pathOrType.includes("T1_") || pathOrType.includes("Tier1")) {
@@ -60,7 +59,7 @@ const extractTier = (pathOrType) => {
 		return "T4";
 	}
 
-	return null;
+	return undefined;
 };
 
 /**
@@ -68,12 +67,12 @@ const extractTier = (pathOrType) => {
  * @param {Object} tableRef - The table reference object
  * @returns {Object} - Parsed loot table object with only essential information
  */
-const parseLootTableRef = (tableRef) => {
+const parseLootTableRef = (tableRef: any) => {
 	if (!tableRef?.Table) {
 		return null;
 	}
 
-	const simplifiedTable = {};
+	const simplifiedTable = {} as any;
 
 	// Extract table reference information
 	if (tableRef.Table.ObjectName) {
@@ -119,36 +118,11 @@ const parseLootTableRef = (tableRef) => {
 };
 
 /**
- * @param {string} tableName
- * @returns {string|null}
- */
-const extractTableTier = (tableName) => {
-	if (!tableName) {
-		return null;
-	}
-
-	if (tableName.includes("_T1")) {
-		return "T1";
-	}
-	if (tableName.includes("_T2")) {
-		return "T2";
-	}
-	if (tableName.includes("_T3")) {
-		return "T3";
-	}
-	if (tableName.includes("_T4")) {
-		return "T4";
-	}
-
-	return null;
-};
-
-/**
  * Parse loot template data from a file
  * @param {string} filePath - The file path to parse
  * @returns {boolean} - Whether parsing was successful
  */
-const parseLootTemplate = (filePath) => {
+const parseLootTemplate = (filePath?: string) => {
 	if (!filePath || typeof filePath !== "string") {
 		console.error("Invalid file path provided to parseLootTemplate");
 		return false;
@@ -170,7 +144,7 @@ const parseLootTemplate = (filePath) => {
 	}
 
 	// Create a new loot template
-	const lootTemplate = { ...lootTemplateTemplate };
+	const lootTemplate: LootTemplate = {};
 
 	lootTemplate.name = classInfo.Name || "Unknown";
 	lootTemplate.type = templateData.Type || "Unknown";
@@ -224,13 +198,14 @@ const parseLootTemplate = (filePath) => {
 	}
 
 	// Create the output directory if it doesn't exist
-	const outputDir = LOOTTEMPLATES_TIER_DIRS[tier] || LOOTTEMPLATES_DIR;
+	// @ts-expect-error fix later
+	const outputDir = LOOTTEMPLATES_TIER_DIRS?.[tier] || LOOTTEMPLATES_DIR;
 	if (!fs.existsSync(outputDir)) {
 		fs.mkdirSync(outputDir, { recursive: true });
 	}
 
 	// Generate filename from the template name
-	const fileName = lootTemplate.name.replace(/\s+/g, "_").toLowerCase();
+	const fileName = lootTemplate?.name?.replace(/\s+/g, "_").toLowerCase();
 	const outputFilePath = path.join(outputDir, `${fileName}.json`);
 
 	// Write the loot template to file
