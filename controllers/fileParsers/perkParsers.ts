@@ -1,4 +1,3 @@
-//@ts-nocheck
 /**
  * Perk parser for handling perk-related data
  *
@@ -7,7 +6,7 @@
  */
 
 import { readJsonFile } from "../utils/read-json-file";
-import { perkInfoTemplate } from "../../templates/perkInfo";
+import type { PerkInfo } from "../../templates/perkInfo";
 import * as utilityFunctions from "../fileParsers/utilityFunctions";
 
 /**
@@ -22,7 +21,7 @@ export const extractPerkInfo = (filePath: string) => {
 		return undefined;
 	}
 
-	const perkInfo = { ...perkInfoTemplate };
+	const perkInfo: PerkInfo = {};
 
 	// Assuming the relevant information is in the second object of the JSON array
 	if (Array.isArray(data) && data.length > 1 && data[1]?.Properties) {
@@ -44,7 +43,7 @@ export const extractPerkInfo = (filePath: string) => {
 		}
 
 		if (properties.PointsCost !== undefined) {
-			perkInfo.cost = String(properties.PointsCost);
+			perkInfo.cost = Number(properties.PointsCost);
 		}
 	}
 

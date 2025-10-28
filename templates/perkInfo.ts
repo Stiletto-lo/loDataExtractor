@@ -1,13 +1,5 @@
 export type PerkInfo = {
-	name?: string | undefined;
-	description?: string | undefined;
-	cost?: number | undefined;
+	name?: string;
+	description?: string;
+	cost?: number;
 };
-
-export const perkInfoTemplate: PerkInfo = {
-	name: undefined,
-	description: undefined,
-	cost: undefined,
-};
-
-Object.freeze(perkInfoTemplate);
