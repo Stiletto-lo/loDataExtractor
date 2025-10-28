@@ -1,10 +1,10 @@
 import fs from "node:fs";
-import { Recipe } from "../../../templates/recipe";
+import type { Recipe } from "../../../templates/recipe";
 import { costTemplate } from "../../../templates/cost";
 import * as dataParser from "../../dataParsers";
 import * as translator from "../../translator";
 import * as utilityFunctions from "../utilityFunctions";
-import { itemTemplate } from "../../../templates/item";
+import { Item } from "../../../templates/item";
 
 export const parseCachedItems = (filePath: string) => {
 	const rawdata = fs.readFileSync(filePath);
@@ -15,10 +15,12 @@ export const parseCachedItems = (filePath: string) => {
 		for (const key of Object.keys(cachedItems)) {
 			if (cachedItems[key].Inputs) {
 				const recipe: Recipe = {};
-				const item = utilityFunctions.getItem(
-					//@ts-expect-error fix later
+				let item = utilityFunctions.getItem(
 					dataParser.parseName(translator, key),
 				);
+				if (!item) {
+					item = {} as Item;
+				}
 				const ingredients = [];
 				for (const ingredientKey in cachedItems[key].Inputs) {
 					const ingredient = { ...costTemplate };

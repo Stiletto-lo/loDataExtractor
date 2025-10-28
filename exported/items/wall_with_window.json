@@ -1,8 +1,10 @@
 {
-  "name": "Clay Corner",
-  "type": "WallClayCorner_C",
+  "name": "Wall with Window",
+  "type": "WallClayWindow_C",
   "category": "Clay",
-  "experiencieReward": 30,
+  "weight": 7,
+  "description": "Very strong and heavy, damageable only with high tier ammo. Can only be packed on Founder Walker types (Balang or Silur Walker).",
+  "experiencieReward": 32,
   "crafting": [
     {
       "ingredients": [
@@ -15,7 +17,7 @@
           "name": "Wooden Slab"
         },
         {
-          "count": 40,
+          "count": 20,
           "name": "Clay"
         }
       ]

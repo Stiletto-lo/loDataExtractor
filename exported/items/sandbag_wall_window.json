@@ -1,17 +1,19 @@
 {
-  "name": "Sand Sand Ramp",
-  "type": "WallSandRamp_C",
+  "name": "Sandbag Wall Window",
+  "type": "WallSandWindow_C",
   "category": "Basic Protection",
+  "weight": 8,
+  "description": "Weak structure that still protects nomads from dangers. Only sand structures can be used with a sand base.",
   "experiencieReward": 32,
   "crafting": [
     {
       "ingredients": [
         {
-          "count": 10,
+          "count": 4,
           "name": "Fiber"
         },
         {
-          "count": 20,
+          "count": 12,
           "name": "Sand"
         },
         {

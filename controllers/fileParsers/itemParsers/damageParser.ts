@@ -53,7 +53,7 @@ export const parseDamage = (filePath: string) => {
 				}
 
 				proyectileDamage = dataParser.cleanEmptyObject(proyectileDamage);
-				if (proyectileDamage != null) {
+				if (proyectileDamage) {
 					item.projectileDamage = proyectileDamage;
 				}
 

@@ -15,7 +15,7 @@ import { readJsonFile } from "../../utils/read-json-file";
  * Parse placeable data from a file
  * @param {string} filePath - The file path to parse
  */
-export const parsePlaceableData = (filePath: string) => {
+export const parsePlaceableData = (filePath: string): void => {
 	const jsonData = readJsonFile(filePath);
 
 	if (jsonData?.[1]?.Type) {
@@ -47,14 +47,20 @@ export const parsePlaceableData = (filePath: string) => {
 				item.name = dataParser.parseRigName(translator, jsonData[1].Type);
 			}
 		} else {
-			item.name = dataParser.parseName(translator, jsonData[1].Type);
+			const name = dataParser.parseName(translator, jsonData[1].Type);
+			if (name) {
+				item.name = name;
+			}
 		}
 
 		if (jsonData[1].Properties) {
 			if (jsonData[1].Properties?.Category?.ObjectPath) {
-				item.category = dataParser.parseCategory(
+				const category = dataParser.parseCategory(
 					jsonData[1].Properties.Category.ObjectPath,
 				);
+				if (category) {
+					item.category = category;
+				}
 			} else if (jsonData[1].Type.includes("Rig")) {
 				item.category = "Rigs";
 			}
@@ -159,7 +165,7 @@ export const parsePlaceableData = (filePath: string) => {
 			}
 		}
 
-		if (item.category?.includes("Structural")) {
+		if (item.category?.includes("Structural") && item.name) {
 			item.name = dataParser.parseStructureName(item.category, item.name);
 		}
 

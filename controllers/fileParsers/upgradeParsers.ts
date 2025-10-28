@@ -12,8 +12,8 @@ import type { Upgrade } from "../../templates/upgrade";
 import type { UpgradeInfo } from "../../templates/upgradeInfo";
 import type { Recipe } from "../../templates/recipe";
 import * as utilityFunctions from "./utilityFunctions";
-import { itemTemplate } from "../../templates/item";
 import { readJsonFile } from "../utils/read-json-file";
+import type { Item } from "../../templates/item";
 
 // Property mapping from source data to our internal model
 const PROPERTY_MAPPING = {
@@ -258,17 +258,16 @@ export const getUpgradeItem = (upgradePure: any) => {
 		if (superUpgrade) {
 			const superUpgradeData = getUpgradeItem(superUpgrade);
 
-			const item = { ...itemTemplate };
-			item.category = "Upgrades";
-			item.name = dataParser.parseUpgradeName(
-				upgradePure?.name,
-				upgradePure?.profile,
-			);
+			const item: Item = {
+				category: "Upgrades",
+				name: dataParser.parseUpgradeName(
+					upgradePure?.name,
+					upgradePure?.profile,
+				),
+			};
 
 			// Merge upgrade info (super first, then child overrides)
-			//@ts-expect-error fix later
 			item.upgradeInfo = {
-				//@ts-expect-error fix later
 				...(superUpgradeData?.upgradeInfo || {}),
 				...upgradePure.upgradeInfo,
 			};
@@ -315,39 +314,37 @@ export const getUpgradeItem = (upgradePure: any) => {
 			}
 			// If neither has crafting data, item.crafting remains undefined
 
-			if (!item.type) {
+			if (!item.type && item.name) {
 				item.type = item.name;
 			}
 
 			return item;
 		}
 
-		const item = { ...itemTemplate };
-		item.category = "Upgrades";
-		item.name = dataParser.parseUpgradeName(
-			upgradePure?.name,
-			upgradePure?.profile,
-		);
-		//@ts-expect-error fix later
+		const item: Item = {
+			category: "Upgrades",
+			name: dataParser.parseUpgradeName(
+				upgradePure?.name,
+				upgradePure?.profile,
+			),
+		};
+
 		item.upgradeInfo = upgradePure?.upgradeInfo;
 		item.crafting = upgradePure?.crafting;
 
-		if (!item.type) {
+		if (!item.type && item.name) {
 			item.type = item.name;
 		}
 
 		return item;
 	}
 
-	const item = { ...itemTemplate };
-	item.category = "Upgrades";
-	item.name = dataParser.parseUpgradeName(
-		upgradePure?.name,
-		upgradePure?.profile,
-	);
-	//@ts-expect-error fix later
-	item.upgradeInfo = upgradePure?.upgradeInfo;
-	item.crafting = upgradePure?.crafting;
+	const item: Item = {
+		category: "Upgrades",
+		name: dataParser.parseUpgradeName(upgradePure?.name, upgradePure?.profile),
+		upgradeInfo: upgradePure?.upgradeInfo,
+		crafting: upgradePure?.crafting,
+	};
 
 	return item;
 };

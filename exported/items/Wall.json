@@ -1,25 +1,30 @@
 {
   "name": "Wall",
-  "type": "WallWoodLight_C",
-  "weight": 3,
+  "type": "WallClay_C",
+  "category": "Clay",
+  "weight": 7,
   "description": "Above average strength, can be packed on walkers.",
-  "experiencieReward": 40,
+  "experiencieReward": 30,
   "crafting": [
     {
       "ingredients": [
         {
-          "count": 2,
+          "count": 20,
+          "name": "Cattail"
+        },
+        {
+          "count": 3,
           "name": "Wooden Slab"
         },
         {
-          "count": 14,
-          "name": "Fiber"
+          "count": 20,
+          "name": "Clay"
         }
       ]
     }
   ],
   "structureInfo": {
-    "hp": 10000,
-    "type": "Reinforced"
+    "hp": 20000,
+    "type": "Solid"
   }
 }

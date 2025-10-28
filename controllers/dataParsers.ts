@@ -23,8 +23,11 @@ const PATTERNS = {
  * @param {string|null} name - The name to parse
  * @returns {string|undefined} - The parsed and formatted name or undefined if input is null
  */
-export const parseName = (translator: any, name: string | null) => {
-	if (name == null) {
+export const parseName = (
+	translator: any,
+	name?: string,
+): string | undefined => {
+	if (!name) {
 		return undefined;
 	}
 
@@ -209,9 +212,9 @@ export const parseType = (name: string) => {
  * @param {string|null} category - The category string to parse
  * @returns {string|null} - The parsed category or null if input is null
  */
-export const parseCategory = (category: string | null) => {
+export const parseCategory = (category?: string): string | undefined => {
 	if (!category) {
-		return category;
+		return undefined;
 	}
 
 	let categoryStr = category.replace(PATTERNS.CATEGORY_PREFIX, "").trim();
@@ -294,7 +297,7 @@ export const determineRigTier = (name: string) => {
  * @param {string} name - The structure name
  * @returns {string} - The parsed structure name
  */
-export const parseStructureName = (category: string, name: string) => {
+export const parseStructureName = (category: string, name: string): string => {
 	const structureTypes = {
 		Sand: "Sand",
 		Concrete: "Cement",
@@ -314,7 +317,7 @@ export const parseStructureName = (category: string, name: string) => {
 		}
 	}
 
-	return `${type} ${name}`.trim();
+	return `${type} ${name?.trim() ?? ""}`.trim();
 };
 
 /**
@@ -324,7 +327,10 @@ export const parseStructureName = (category: string, name: string) => {
  * @param {string|null} profile - The upgrade profile
  * @returns {string} - The parsed upgrade name
  */
-export const parseUpgradeName = (name: string | null, profile: string | null) => {
+export const parseUpgradeName = (
+	name: string | null,
+	profile: string | null,
+) => {
 	if (profile == null) {
 		return "";
 	}

@@ -5,11 +5,11 @@
  * datatables, and blueprints in the data extraction process.
  */
 
-import { itemTemplate } from "../../templates/item";
-import { Tech } from "../../templates/tech";
+import type { Tech } from "../../templates/tech";
 import { costTemplate } from "../../templates/cost";
 import * as dataParser from "../dataParsers";
 import * as translator from "../translator";
+import type { Item } from "../../templates/item";
 
 /**
  * DataStore - Encapsulates shared state to avoid global variables
@@ -39,7 +39,7 @@ class DataStore {
 		return this.items;
 	}
 
-	addItem(item: any) {
+	addItem(item: Item) {
 		if (!item) {
 			throw new TypeError("Item must be defined");
 		}
@@ -65,7 +65,7 @@ class DataStore {
 		}
 	}
 
-	setAllItems(items: any[]) {
+	setAllItems(items: Item[]) {
 		if (!Array.isArray(items)) {
 			throw new TypeError("Items must be an array");
 		}
@@ -78,7 +78,7 @@ class DataStore {
 	 * @returns {Object|undefined} - The found item or undefined
 	 * @throws {TypeError} - If name is not a string when provided
 	 */
-	getItem(name: string) {
+	getItem(name?: string): Item | undefined {
 		if (!name) {
 			return undefined;
 		}
@@ -94,7 +94,7 @@ class DataStore {
 	 * @returns {Object|undefined} - The found item or undefined
 	 * @throws {TypeError} - If type is not a string when provided
 	 */
-	getItemByType(type: string) {
+	getItemByType(type: string): Item | undefined {
 		if (!type) {
 			return undefined;
 		}
@@ -113,9 +113,9 @@ class DataStore {
 	 * @returns {Object} - A new item object with the type set
 	 * @throws {TypeError} - If type is not a string when provided
 	 */
-	extractItemByType(type: string) {
+	extractItemByType(type: string): Item {
 		if (!type) {
-			return { ...itemTemplate };
+			return {} as Item;
 		}
 
 		const item = this.getItemByType(type);
@@ -123,8 +123,10 @@ class DataStore {
 			return { ...item };
 		}
 
-		const newItem = { ...itemTemplate };
-		newItem.type = type;
+		const newItem: Item = {
+			type: type,
+		};
+
 		return newItem;
 	}
 
@@ -367,7 +369,7 @@ class DataStore {
 // Create and export a singleton instance
 const dataStore = new DataStore();
 
-export const getItem = (name: string) => dataStore.getItem(name);
+export const getItem = (name?: string) => dataStore.getItem(name);
 export const getItemByType = (type: string) => dataStore.getItemByType(type);
 export const extractItemByType = (type: string) =>
 	dataStore.extractItemByType(type);

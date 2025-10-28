@@ -1,13 +1,15 @@
 {
-  "name": "Clay Door",
-  "type": "WallClayDoor_C",
+  "name": "Battlement",
+  "type": "WallClayBattlement_C",
   "category": "Clay",
-  "experiencieReward": 22,
+  "weight": 7,
+  "description": "Extremely durable. Can only be packed on Founder Walker types (Silur Walker).",
+  "experiencieReward": 30,
   "crafting": [
     {
       "ingredients": [
         {
-          "count": 20,
+          "count": 8,
           "name": "Cattail"
         },
         {
@@ -15,7 +17,7 @@
           "name": "Wooden Slab"
         },
         {
-          "count": 20,
+          "count": 10,
           "name": "Clay"
         }
       ]

@@ -1,21 +1,23 @@
 {
-  "name": "Sand Cloth Door",
-  "type": "WallSandDoor_C",
+  "name": "Sandbag Wall",
+  "type": "WallSand_C",
   "category": "Basic Protection",
-  "experiencieReward": 22,
+  "weight": 10,
+  "description": "Weak structure that still protects nomads from dangers. Only sand structures can be used with a sand base.",
+  "experiencieReward": 30,
   "crafting": [
     {
       "ingredients": [
         {
-          "count": 7,
+          "count": 3,
           "name": "Fiber"
         },
         {
-          "count": 15,
+          "count": 12,
           "name": "Sand"
         },
         {
-          "count": 4,
+          "count": 2,
           "name": "Palm Leaves"
         }
       ]
