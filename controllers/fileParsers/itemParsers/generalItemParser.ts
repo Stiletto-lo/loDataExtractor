@@ -9,7 +9,7 @@ import { readJsonFile } from "../../utils/read-json-file";
 
 // Import templates
 import type { WeaponInfo } from "../../../templates/weaponInfo";
-import { toolInfoTemplate } from "../../../templates/toolInfo";
+import type { ToolInfo } from "../../../templates/toolInfo";
 import { projectileDamageTemplate } from "../../../templates/projectileDamage";
 import { recipeTemplate } from "../../../templates/recipe";
 import { armorInfoTemplate } from "../../../templates/armorInfo";
@@ -191,10 +191,11 @@ export const getItemFromItemData = (itemData: any, oldItem: any) => {
 
 		// Tool Info
 		if (props?.ToolInfo) {
-			const toolInfos = item.toolInfo ? item.toolInfo : [];
+			const toolInfos: ToolInfo[] = item.toolInfo ? item.toolInfo : [];
 			for (const toolInfoData of props.ToolInfo) {
-				const baseToolInfo = { ...toolInfoTemplate };
-				baseToolInfo.tier = toolInfoData.Tier;
+				const baseToolInfo: ToolInfo = {
+					tier: toolInfoData.Tier,
+				};
 				if (toolInfoData.ToolType.includes("TreeCutting")) {
 					baseToolInfo.toolType = "TreeCutting";
 				} else if (toolInfoData.ToolType.includes("Scythe")) {

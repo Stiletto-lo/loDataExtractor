@@ -1,6 +1,4 @@
-export const toolInfoTemplate = {
-	toolType: undefined as string | undefined,
-	tier: undefined as number | undefined,
+export type ToolInfo = {
+	toolType?: string;
+	tier?: number;
 };
-
-Object.freeze(toolInfoTemplate);
