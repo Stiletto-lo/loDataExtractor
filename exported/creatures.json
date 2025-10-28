@@ -12,8 +12,7 @@
         "maxQuantity": 1,
         "source": "ac_relic_1"
       }
-    ],
-    "notAssigned": true
+    ]
   },
   {
     "name": "AC Relic 2",
@@ -28,21 +27,13 @@
         "maxQuantity": 1,
         "source": "ac_relic_2"
       }
-    ],
-    "notAssigned": true
-  },
-  {
-    "name": "Altar of the Dawn",
-    "type": "AC_RelicPOI1_C"
-  },
-  {
-    "name": "Altar of the Dusk",
-    "type": "AC_RelicPOI2_C"
+    ]
   },
   {
     "name": "Ammo Box T1",
     "type": "AmmoBox_T1_C",
     "lootTemplate": "AmmoBox_T1_C",
+    "tier": "T1",
     "category": "Container",
     "drops": [
       {
@@ -102,14 +93,13 @@
         "source": "baseresources_t1"
       }
     ],
-    "tier": "T1",
-    "notAssigned": true,
     "originalName": "AmmoBox T1"
   },
   {
     "name": "Ammo Box T2",
     "type": "AmmoBox_T2_C",
     "lootTemplate": "AmmoBox_T2_C",
+    "tier": "T2",
     "category": "Container",
     "drops": [
       {
@@ -190,14 +180,13 @@
         "source": "baseresources_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "AmmoBox T2"
   },
   {
     "name": "Ammo Box T3",
     "type": "AmmoBox_T3_C",
     "lootTemplate": "AmmoBox_T3_C",
+    "tier": "T3",
     "category": "Container",
     "drops": [
       {
@@ -306,14 +295,13 @@
         "source": "baseresources_t3"
       }
     ],
-    "tier": "T3",
-    "notAssigned": true,
     "originalName": "AmmoBox T3"
   },
   {
     "name": "Ammo Box T4",
     "type": "AmmoBox_T4_C",
     "lootTemplate": "AmmoBox_T4_C",
+    "tier": "T4",
     "category": "Container",
     "drops": [
       {
@@ -408,62 +396,45 @@
         "source": "baseresources_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "AmmoBox T4"
-  },
-  {
-    "name": "Ancient Pyramid",
-    "type": "AC_Pyramid_C"
-  },
-  {
-    "name": "Ash Hills Watchtower",
-    "type": "SG_AshWastesRimWatchtower_C"
-  },
-  {
-    "name": "Ash Oracle Fortress",
-    "type": "SG_AshWastesFortress_C"
   },
   {
     "name": "Asteroid T1",
     "type": "Asteroid_T1_C",
     "lootTemplate": "Asteroid_T1_C",
-    "category": "Resource",
-    "drops": [],
     "tier": "T1",
-    "notAssigned": true
+    "category": "Resource",
+    "drops": []
   },
   {
     "name": "Asteroid T2",
     "type": "Asteroid_T2_C",
     "lootTemplate": "Asteroid_T2_C",
-    "category": "Resource",
-    "drops": [],
     "tier": "T2",
-    "notAssigned": true
+    "category": "Resource",
+    "drops": []
   },
   {
     "name": "Asteroid T3",
     "type": "Asteroid_T3_C",
     "lootTemplate": "Asteroid_T3_C",
-    "category": "Resource",
-    "drops": [],
     "tier": "T3",
-    "notAssigned": true
+    "category": "Resource",
+    "drops": []
   },
   {
     "name": "Asteroid T4",
     "type": "Asteroid_T4_C",
     "lootTemplate": "Asteroid_T4_C",
-    "category": "Resource",
-    "drops": [],
     "tier": "T4",
-    "notAssigned": true
+    "category": "Resource",
+    "drops": []
   },
   {
     "name": "Basket Loot T2 AC",
     "type": "BasketLoot_T2_AC_C",
     "lootTemplate": "BasketLoot_T2_AC_C",
+    "tier": "T2",
     "category": "Structure",
     "drops": [
       {
@@ -873,14 +844,13 @@
         "source": "ac_forebearcoins"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "BasketLoot T2 AC"
   },
   {
     "name": "Big Hotspot Loot T1",
     "type": "BigHotspotLoot_T1_C",
     "lootTemplate": "BigHotspotLoot_T1_C",
+    "tier": "T1",
     "category": "Resource",
     "drops": [
       {
@@ -1073,14 +1043,13 @@
         "source": "rigs_t1"
       }
     ],
-    "tier": "T1",
-    "notAssigned": true,
     "originalName": "BigHotspotLoot T1"
   },
   {
     "name": "Big Hotspot Loot T2",
     "type": "BigHotspotLoot_T2_C",
     "lootTemplate": "BigHotspotLoot_T2_C",
+    "tier": "T2",
     "category": "Resource",
     "drops": [
       {
@@ -1350,14 +1319,13 @@
         "source": "rigs_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "BigHotspotLoot T2"
   },
   {
     "name": "Big Hotspot Loot T3",
     "type": "BigHotspotLoot_T3_C",
     "lootTemplate": "BigHotspotLoot_T3_C",
+    "tier": "T3",
     "category": "Resource",
     "drops": [
       {
@@ -1711,14 +1679,13 @@
         "source": "rigs_t3"
       }
     ],
-    "tier": "T3",
-    "notAssigned": true,
     "originalName": "BigHotspotLoot T3"
   },
   {
     "name": "Big Hotspot Loot T4",
     "type": "BigHotspotLoot_T4_C",
     "lootTemplate": "BigHotspotLoot_T4_C",
+    "tier": "T4",
     "category": "Resource",
     "drops": [
       {
@@ -2023,13 +1990,11 @@
         "source": "rigs_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "BigHotspotLoot T4"
   },
   {
-    "name": "Bounty Hunter",
     "type": "T2_RupuBountyHunter_C",
+    "name": "Bounty Hunter",
     "category": "Rupu"
   },
   {
@@ -2368,7 +2333,6 @@
         "source": "modules_t1"
       }
     ],
-    "notAssigned": true,
     "originalName": "BrokenTusker 1"
   },
   {
@@ -2630,7 +2594,6 @@
         "source": "components_t1"
       }
     ],
-    "notAssigned": true,
     "originalName": "BrokenTusker 2"
   },
   {
@@ -2948,7 +2911,6 @@
         "source": "redbanana_t4"
       }
     ],
-    "notAssigned": true,
     "originalName": "BrokenTusker 3"
   },
   {
@@ -3035,7 +2997,6 @@
         "source": "redbanana_t4"
       }
     ],
-    "notAssigned": true,
     "originalName": "BrokenTusker 4"
   },
   {
@@ -3044,12 +3005,11 @@
     "lootTemplate": "BrokenTusker_5_C",
     "category": "Structure",
     "drops": [],
-    "notAssigned": true,
     "originalName": "BrokenTusker 5"
   },
   {
-    "name": "Cowardly Rupu",
     "type": "FearfulRupu_C",
+    "name": "Cowardly Rupu",
     "category": "Rupu"
   },
   {
@@ -3057,8 +3017,7 @@
     "type": "Crane_C",
     "lootTemplate": "Crane_C",
     "category": "Structure",
-    "drops": [],
-    "notAssigned": true
+    "drops": []
   },
   {
     "name": "Desert Clam",
@@ -3088,13 +3047,13 @@
         "source": "clampearls_t4"
       }
     ],
-    "notAssigned": true,
     "originalName": "DesertClam"
   },
   {
     "name": "Easy Rupu Camp T1",
     "type": "EasyRupuCamp_T1_C",
     "lootTemplate": "EasyRupuCamp_T1_C",
+    "tier": "T1",
     "category": "Rupu",
     "drops": [
       {
@@ -3357,14 +3316,13 @@
         "source": "rigs_t1"
       }
     ],
-    "tier": "T1",
-    "notAssigned": true,
     "originalName": "EasyRupuCamp T1"
   },
   {
     "name": "Easy Rupu Camp T2",
     "type": "EasyRupuCamp_T2_C",
     "lootTemplate": "EasyRupuCamp_T2_C",
+    "tier": "T2",
     "category": "Rupu",
     "drops": [
       {
@@ -3746,14 +3704,13 @@
         "source": "rigs_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "EasyRupuCamp T2"
   },
   {
     "name": "Easy Rupu Camp T3",
     "type": "EasyRupuCamp_T3_C",
     "lootTemplate": "EasyRupuCamp_T3_C",
+    "tier": "T3",
     "category": "Rupu",
     "drops": [
       {
@@ -4226,14 +4183,13 @@
         "source": "rigs_t3"
       }
     ],
-    "tier": "T3",
-    "notAssigned": true,
     "originalName": "EasyRupuCamp T3"
   },
   {
     "name": "Easy Rupu Camp T4",
     "type": "EasyRupuCamp_T4_C",
     "lootTemplate": "EasyRupuCamp_T4_C",
+    "tier": "T4",
     "category": "Rupu",
     "drops": [
       {
@@ -4664,14 +4620,13 @@
         "source": "rigs_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "EasyRupuCamp T4"
   },
   {
     "name": "Easy Rupu T1",
     "type": "EasyRupu_T1_C",
     "lootTemplate": "EasyRupu_T1_C",
+    "tier": "T1",
     "category": "Rupu",
     "drops": [
       {
@@ -4850,14 +4805,13 @@
         "source": "weapons_t1"
       }
     ],
-    "tier": "T1",
-    "notAssigned": true,
     "originalName": "EasyRupu T1"
   },
   {
     "name": "Easy Rupu T1 Q",
     "type": "EasyRupu_T1_Q_C",
     "lootTemplate": "EasyRupu_T1_Q_C",
+    "tier": "T1",
     "category": "Rupu",
     "drops": [
       {
@@ -5134,14 +5088,13 @@
         "source": "schematics_t1"
       }
     ],
-    "tier": "T1",
-    "notAssigned": true,
     "originalName": "EasyRupu T1 Q"
   },
   {
     "name": "Easy Rupu T2",
     "type": "EasyRupu_T2_C",
     "lootTemplate": "EasyRupu_T2_C",
+    "tier": "T2",
     "category": "Rupu",
     "drops": [
       {
@@ -5397,14 +5350,13 @@
         "source": "weapons_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "EasyRupu T2"
   },
   {
     "name": "Easy Rupu T2 Q",
     "type": "EasyRupu_T2_Q_C",
     "lootTemplate": "EasyRupu_T2_Q_C",
+    "tier": "T2",
     "category": "Rupu",
     "drops": [
       {
@@ -5772,14 +5724,13 @@
         "source": "schematics_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "EasyRupu T2 Q"
   },
   {
     "name": "Easy Rupu T3",
     "type": "EasyRupu_T3_C",
     "lootTemplate": "EasyRupu_T3_C",
+    "tier": "T3",
     "category": "Rupu",
     "drops": [
       {
@@ -6098,14 +6049,13 @@
         "source": "weapons_t3"
       }
     ],
-    "tier": "T3",
-    "notAssigned": true,
     "originalName": "EasyRupu T3"
   },
   {
     "name": "Easy Rupu T3 Q",
     "type": "EasyRupu_T3_Q_C",
     "lootTemplate": "EasyRupu_T3_Q_C",
+    "tier": "T3",
     "category": "Rupu",
     "drops": [
       {
@@ -6557,14 +6507,13 @@
         "source": "schematics_t3"
       }
     ],
-    "tier": "T3",
-    "notAssigned": true,
     "originalName": "EasyRupu T3 Q"
   },
   {
     "name": "Easy Rupu T4",
     "type": "EasyRupu_T4_C",
     "lootTemplate": "EasyRupu_T4_C",
+    "tier": "T4",
     "category": "Rupu",
     "drops": [
       {
@@ -6834,14 +6783,13 @@
         "source": "weapons_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "EasyRupu T4"
   },
   {
     "name": "Easy Rupu T4 Q",
     "type": "EasyRupu_T4_Q_C",
     "lootTemplate": "EasyRupu_T4_Q_C",
+    "tier": "T4",
     "category": "Rupu",
     "drops": [
       {
@@ -7216,17 +7164,11 @@
         "source": "schematics_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "EasyRupu T4 Q"
   },
   {
-    "name": "Excavation Site (2)",
-    "type": "AC_WorkersGrave_C"
-  },
-  {
-    "name": "Excavation Site (Rupu)",
     "type": "AC_RupuCaveCamp_C",
+    "name": "Excavation Site",
     "category": "Rupu"
   },
   {
@@ -7235,7 +7177,6 @@
     "lootTemplate": "FallingCactus_C",
     "category": "Structure",
     "drops": [],
-    "notAssigned": true,
     "originalName": "FallingCactus"
   },
   {
@@ -7244,7 +7185,6 @@
     "lootTemplate": "FallingDriftwoodTree_C",
     "category": "Structure",
     "drops": [],
-    "notAssigned": true,
     "originalName": "FallingDriftwoodTree"
   },
   {
@@ -7253,7 +7193,6 @@
     "lootTemplate": "FallingOasisTree_C",
     "category": "Structure",
     "drops": [],
-    "notAssigned": true,
     "originalName": "FallingOasisTree"
   },
   {
@@ -7262,7 +7201,6 @@
     "lootTemplate": "FallingRibCage_C",
     "category": "Structure",
     "drops": [],
-    "notAssigned": true,
     "originalName": "FallingRibCage"
   },
   {
@@ -7271,7 +7209,6 @@
     "lootTemplate": "FallingStone_C",
     "category": "Structure",
     "drops": [],
-    "notAssigned": true,
     "originalName": "FallingStone"
   },
   {
@@ -7280,12 +7217,11 @@
     "lootTemplate": "FallingThornberry_C",
     "category": "Structure",
     "drops": [],
-    "notAssigned": true,
     "originalName": "FallingThornberry"
   },
   {
-    "name": "Fire Elemental",
     "type": "FireElementalMob_C",
+    "name": "Fire Elemental",
     "health": 9000,
     "experience": 980,
     "damage": 450,
@@ -7293,67 +7229,40 @@
     "originalName": "FireElemental"
   },
   {
-    "name": "Fire Fortress",
     "type": "KS_LargeRupuCamp_3_C",
+    "name": "Fire Fortress",
     "category": "Rupu"
   },
   {
-    "name": "Foragers Outpost (1)",
-    "type": "CanyonForagersOutpost1_C"
-  },
-  {
-    "name": "Foragers Outpost (2)",
-    "type": "CanyonForagersOutpost2_C"
-  },
-  {
-    "name": "Foragers Outpost (3)",
-    "type": "CanyonForagersOutpost3_C"
-  },
-  {
-    "name": "Foragers Outpost (4)",
-    "type": "SG_ClaySpotTinyCamp_C"
-  },
-  {
-    "name": "Foragers Outpost (5)",
-    "type": "SG_RockyHillsTinyCamp_C"
-  },
-  {
-    "name": "Foragers Outpost (Rupu)",
     "type": "SG_TinyRupuCamp_1_C",
+    "name": "Foragers Outpost (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Foragers Outpost (Rupu)",
     "type": "SG_TinyRupuCamp_2_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Foragers Outpost (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "SG_TinyRupuCamp_3_C",
+    "name": "Foragers Outpost (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Fortified Rupu Town",
     "type": "MediumLargeRupuCamp_01_C",
+    "name": "Fortified Rupu Town",
     "category": "Rupu"
   },
   {
-    "name": "Fortified Rupu Village (2)",
-    "type": "SG_FlatlandsForagingCamp_C"
-  },
-  {
-    "name": "Fortified Rupu Village (Rupu)",
     "type": "CanyonSavannahMediumRupuCamp_01_C",
+    "name": "Fortified Rupu Village",
     "category": "Rupu"
-  },
-  {
-    "name": "Gas Thrower",
-    "type": "AC_StarTowerGas_C"
   },
   {
     "name": "Go Go T4",
     "type": "GoGo_T4_C",
     "lootTemplate": "GoGo_T4_C",
+    "tier": "T4",
     "category": "Structure",
     "drops": [
       {
@@ -7455,14 +7364,13 @@
         "source": "extraresources_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "GoGo T4"
   },
   {
     "name": "Go Go T4 Q",
     "type": "GoGo_T4_Q_C",
     "lootTemplate": "GoGo_T4_Q_C",
+    "tier": "T4",
     "category": "Structure",
     "drops": [
       {
@@ -7739,18 +7647,16 @@
         "source": "rigs_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "GoGo T4 Q"
   },
   {
-    "name": "Gogo",
     "type": "GogoMob_C",
+    "name": "Gogo",
     "health": 12000,
     "experience": 20000,
+    "lootTemplate": "GoGo_T4",
     "damage": 1200,
     "speed": 2000,
-    "lootTemplate": "GoGo_T4",
     "category": "Rock Crawler",
     "drops": [
       {
@@ -7854,24 +7760,25 @@
     ]
   },
   {
-    "name": "Grave Digger",
     "type": "T2_RupuGraveDigger_C",
+    "name": "Grave Digger",
     "category": "Rupu"
   },
   {
-    "name": "Great Rupu Wall",
     "type": "AC_RupuGate_C",
+    "name": "Great Rupu Wall",
     "category": "Rupu"
   },
   {
-    "name": "Green Rupu",
     "type": "FlyingRupu_C",
+    "name": "Green Rupu",
     "category": "Rupu"
   },
   {
     "name": "Hard Rupu Camp T1",
     "type": "HardRupuCamp_T1_C",
     "lootTemplate": "HardRupuCamp_T1_C",
+    "tier": "T1",
     "category": "Rupu",
     "drops": [
       {
@@ -8141,14 +8048,13 @@
         "source": "rigs_t1"
       }
     ],
-    "tier": "T1",
-    "notAssigned": true,
     "originalName": "HardRupuCamp T1"
   },
   {
     "name": "Hard Rupu Camp T2",
     "type": "HardRupuCamp_T2_C",
     "lootTemplate": "HardRupuCamp_T2_C",
+    "tier": "T2",
     "category": "Rupu",
     "drops": [
       {
@@ -8530,14 +8436,13 @@
         "source": "rigs_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "HardRupuCamp T2"
   },
   {
     "name": "Hard Rupu Camp T3",
     "type": "HardRupuCamp_T3_C",
     "lootTemplate": "HardRupuCamp_T3_C",
+    "tier": "T3",
     "category": "Rupu",
     "drops": [
       {
@@ -9010,14 +8915,13 @@
         "source": "rigs_t3"
       }
     ],
-    "tier": "T3",
-    "notAssigned": true,
     "originalName": "HardRupuCamp T3"
   },
   {
     "name": "Hard Rupu Camp T4",
     "type": "HardRupuCamp_T4_C",
     "lootTemplate": "HardRupuCamp_T4_C",
+    "tier": "T4",
     "category": "Rupu",
     "drops": [
       {
@@ -9448,14 +9352,13 @@
         "source": "rigs_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "HardRupuCamp T4"
   },
   {
     "name": "Hard Rupu T1",
     "type": "HardRupu_T1_C",
     "lootTemplate": "HardRupu_T1_C",
+    "tier": "T1",
     "category": "Rupu",
     "drops": [
       {
@@ -9662,14 +9565,13 @@
         "source": "rigs_t1"
       }
     ],
-    "tier": "T1",
-    "notAssigned": true,
     "originalName": "HardRupu T1"
   },
   {
     "name": "Hard Rupu T1 Q",
     "type": "HardRupu_T1_Q_C",
     "lootTemplate": "HardRupu_T1_Q_C",
+    "tier": "T1",
     "category": "Rupu",
     "drops": [
       {
@@ -9946,14 +9848,13 @@
         "source": "schematics_t1"
       }
     ],
-    "tier": "T1",
-    "notAssigned": true,
     "originalName": "HardRupu T1 Q"
   },
   {
     "name": "Hard Rupu T2",
     "type": "HardRupu_T2_C",
     "lootTemplate": "HardRupu_T2_C",
+    "tier": "T2",
     "category": "Rupu",
     "drops": [
       {
@@ -10258,14 +10159,13 @@
         "source": "rigs_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "HardRupu T2"
   },
   {
     "name": "Hard Rupu T2 AC",
     "type": "HardRupu_T2_AC_C",
     "lootTemplate": "HardRupu_T2_AC_C",
+    "tier": "T2",
     "category": "Rupu",
     "drops": [
       {
@@ -10598,14 +10498,13 @@
         "source": "rigs_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "HardRupu T2 AC"
   },
   {
     "name": "Hard Rupu T2 Q",
     "type": "HardRupu_T2_Q_C",
     "lootTemplate": "HardRupu_T2_Q_C",
+    "tier": "T2",
     "category": "Rupu",
     "drops": [
       {
@@ -10973,14 +10872,13 @@
         "source": "schematics_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "HardRupu T2 Q"
   },
   {
     "name": "Hard Rupu T3",
     "type": "HardRupu_T3_C",
     "lootTemplate": "HardRupu_T3_C",
+    "tier": "T3",
     "category": "Rupu",
     "drops": [
       {
@@ -11369,14 +11267,13 @@
         "source": "rigs_t3"
       }
     ],
-    "tier": "T3",
-    "notAssigned": true,
     "originalName": "HardRupu T3"
   },
   {
     "name": "Hard Rupu T3 Q",
     "type": "HardRupu_T3_Q_C",
     "lootTemplate": "HardRupu_T3_Q_C",
+    "tier": "T3",
     "category": "Rupu",
     "drops": [
       {
@@ -11828,14 +11725,13 @@
         "source": "schematics_t3"
       }
     ],
-    "tier": "T3",
-    "notAssigned": true,
     "originalName": "HardRupu T3 Q"
   },
   {
     "name": "Hard Rupu T4",
     "type": "HardRupu_T4_C",
     "lootTemplate": "HardRupu_T4_C",
+    "tier": "T4",
     "category": "Rupu",
     "drops": [
       {
@@ -12175,14 +12071,13 @@
         "source": "rigs_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "HardRupu T4"
   },
   {
     "name": "Hard Rupu T4 Q",
     "type": "HardRupu_T4_Q_C",
     "lootTemplate": "HardRupu_T4_Q_C",
+    "tier": "T4",
     "category": "Rupu",
     "drops": [
       {
@@ -12557,14 +12452,13 @@
         "source": "schematics_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "HardRupu T4 Q"
   },
   {
     "name": "Hotspot Loot T1",
     "type": "HotspotLoot_T1_C",
     "lootTemplate": "HotspotLoot_T1_C",
+    "tier": "T1",
     "category": "Resource",
     "drops": [
       {
@@ -12876,14 +12770,13 @@
         "source": "rigs_t1"
       }
     ],
-    "tier": "T1",
-    "notAssigned": true,
     "originalName": "HotspotLoot T1"
   },
   {
     "name": "Hotspot Loot T2",
     "type": "HotspotLoot_T2_C",
     "lootTemplate": "HotspotLoot_T2_C",
+    "tier": "T2",
     "category": "Resource",
     "drops": [
       {
@@ -13265,14 +13158,13 @@
         "source": "rigs_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "HotspotLoot T2"
   },
   {
     "name": "Hotspot Loot T2 AC",
     "type": "HotspotLoot_T2_AC_C",
     "lootTemplate": "HotspotLoot_T2_AC_C",
+    "tier": "T2",
     "category": "Resource",
     "drops": [
       {
@@ -13661,14 +13553,13 @@
         "source": "rigs_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "HotspotLoot T2 AC"
   },
   {
     "name": "Hotspot Loot T3",
     "type": "HotspotLoot_T3_C",
     "lootTemplate": "HotspotLoot_T3_C",
+    "tier": "T3",
     "category": "Resource",
     "drops": [
       {
@@ -14141,14 +14032,13 @@
         "source": "rigs_t3"
       }
     ],
-    "tier": "T3",
-    "notAssigned": true,
     "originalName": "HotspotLoot T3"
   },
   {
     "name": "Hotspot Loot T4",
     "type": "HotspotLoot_T4_C",
     "lootTemplate": "HotspotLoot_T4_C",
+    "tier": "T4",
     "category": "Resource",
     "drops": [
       {
@@ -14579,14 +14469,13 @@
         "source": "rigs_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "HotspotLoot T4"
   },
   {
     "name": "Hotspot Loot Windmill T2 AC",
     "type": "HotspotLootWindmill_T2_AC_C",
     "lootTemplate": "HotspotLootWindmill_T2_AC_C",
+    "tier": "T2",
     "category": "Resource",
     "drops": [
       {
@@ -14975,17 +14864,15 @@
         "source": "rigs_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "HotspotLootWindmill T2 AC"
   },
   {
-    "name": "Koa",
     "type": "KoaMob_C",
+    "name": "Koa",
     "health": 20000,
     "experience": 80000,
-    "speed": 6000,
     "lootTemplate": "Koa_T4",
+    "speed": 6000,
     "drops": [
       {
         "name": "Spearmint",
@@ -15000,6 +14887,7 @@
     "name": "Koa T4",
     "type": "Koa_T4_C",
     "lootTemplate": "Koa_T4_C",
+    "tier": "T4",
     "category": "Structure",
     "drops": [
       {
@@ -15009,14 +14897,13 @@
         "maxQuantity": 1,
         "source": "spearmint_t4"
       }
-    ],
-    "tier": "T4",
-    "notAssigned": true
+    ]
   },
   {
     "name": "Koa T4 Q",
     "type": "Koa_T4_Q_C",
     "lootTemplate": "Koa_T4_Q_C",
+    "tier": "T4",
     "category": "Structure",
     "drops": [
       {
@@ -15124,14 +15011,13 @@
         "maxQuantity": 5,
         "source": "schematics_t4"
       }
-    ],
-    "tier": "T4",
-    "notAssigned": true
+    ]
   },
   {
     "name": "Large Nurr T2",
     "type": "LargeNurr_T2_C",
     "lootTemplate": "LargeNurr_T2_C",
+    "tier": "T2",
     "category": "Structure",
     "drops": [
       {
@@ -15142,14 +15028,13 @@
         "source": "nurrfang_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "LargeNurr T2"
   },
   {
     "name": "Large Nurr T2 Q",
     "type": "LargeNurr_T2_Q_C",
     "lootTemplate": "LargeNurr_T2_Q_C",
+    "tier": "T2",
     "category": "Structure",
     "drops": [
       {
@@ -15265,25 +15150,23 @@
         "source": "schematics_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "LargeNurr T2 Q"
   },
   {
-    "name": "Lava Papak",
     "type": "LavaPapakMob_C",
+    "name": "Lava Papak",
     "damage": 100,
     "speed": 2400,
     "category": "Papak"
   },
   {
-    "name": "Lazaward",
     "type": "NurrMobLarge_C",
+    "name": "Lazaward",
     "health": 4000,
     "experience": 5000,
+    "lootTemplate": "LargeNurr_T2",
     "damage": 300,
     "speed": 3400,
-    "lootTemplate": "LargeNurr_T2",
     "category": "Nurr",
     "drops": [
       {
@@ -15296,8 +15179,8 @@
     ]
   },
   {
-    "name": "Leaning Fortress",
     "type": "KS_LargeRupuCamp_2_C",
+    "name": "Leaning Fortress",
     "category": "Rupu"
   },
   {
@@ -15363,7 +15246,6 @@
         "source": "armors_t1"
       }
     ],
-    "notAssigned": true,
     "originalName": "LootBoxArmors"
   },
   {
@@ -15372,7 +15254,6 @@
     "lootTemplate": "LootBoxEquipment_C",
     "category": "Container",
     "drops": [],
-    "notAssigned": true,
     "originalName": "LootBoxEquipment"
   },
   {
@@ -15592,7 +15473,6 @@
         "source": "components_t1"
       }
     ],
-    "notAssigned": true,
     "originalName": "LootBoxModules"
   },
   {
@@ -15601,7 +15481,6 @@
     "lootTemplate": "LootBoxTablets_C",
     "category": "Container",
     "drops": [],
-    "notAssigned": true,
     "originalName": "LootBoxTablets"
   },
   {
@@ -15610,7 +15489,6 @@
     "lootTemplate": "LootBoxTools_C",
     "category": "Container",
     "drops": [],
-    "notAssigned": true,
     "originalName": "LootBoxTools"
   },
   {
@@ -15619,7 +15497,6 @@
     "lootTemplate": "LootBoxWeapons_C",
     "category": "Container",
     "drops": [],
-    "notAssigned": true,
     "originalName": "LootBoxWeapons"
   },
   {
@@ -15692,7 +15569,6 @@
         "source": "armors_t2"
       }
     ],
-    "notAssigned": true,
     "originalName": "LootboxArmorsCanyon"
   },
   {
@@ -15701,7 +15577,6 @@
     "lootTemplate": "LootboxToolsandEquipmentCanyon_C",
     "category": "Structure",
     "drops": [],
-    "notAssigned": true,
     "originalName": "LootboxToolsandEquipmentCanyon"
   },
   {
@@ -15781,23 +15656,23 @@
         "source": "weapons_t2"
       }
     ],
-    "notAssigned": true,
     "originalName": "LootboxWeaponsCanyon"
   },
   {
-    "name": "Marshland Stalker",
     "type": "RupuStalker_C",
+    "name": "Marshland Stalker",
     "category": "Rupu"
   },
   {
-    "name": "Matriarch",
     "type": "T2_RupuMatriarch_C",
+    "name": "Matriarch",
     "category": "Rupu"
   },
   {
     "name": "Medium Rupu Camp T1",
     "type": "MediumRupuCamp_T1_C",
     "lootTemplate": "MediumRupuCamp_T1_C",
+    "tier": "T1",
     "category": "Rupu",
     "drops": [
       {
@@ -16060,14 +15935,13 @@
         "source": "rigs_t1"
       }
     ],
-    "tier": "T1",
-    "notAssigned": true,
     "originalName": "MediumRupuCamp T1"
   },
   {
     "name": "Medium Rupu Camp T2",
     "type": "MediumRupuCamp_T2_C",
     "lootTemplate": "MediumRupuCamp_T2_C",
+    "tier": "T2",
     "category": "Rupu",
     "drops": [
       {
@@ -16400,14 +16274,13 @@
         "source": "weapons_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "MediumRupuCamp T2"
   },
   {
     "name": "Medium Rupu Camp T3",
     "type": "MediumRupuCamp_T3_C",
     "lootTemplate": "MediumRupuCamp_T3_C",
+    "tier": "T3",
     "category": "Rupu",
     "drops": [
       {
@@ -16880,14 +16753,13 @@
         "source": "rigs_t3"
       }
     ],
-    "tier": "T3",
-    "notAssigned": true,
     "originalName": "MediumRupuCamp T3"
   },
   {
     "name": "Medium Rupu Camp T4",
     "type": "MediumRupuCamp_T4_C",
     "lootTemplate": "MediumRupuCamp_T4_C",
+    "tier": "T4",
     "category": "Rupu",
     "drops": [
       {
@@ -17318,14 +17190,13 @@
         "source": "rigs_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "MediumRupuCamp T4"
   },
   {
     "name": "Medium Rupu T1",
     "type": "MediumRupu_T1_C",
     "lootTemplate": "MediumRupu_T1_C",
+    "tier": "T1",
     "category": "Rupu",
     "drops": [
       {
@@ -17532,14 +17403,13 @@
         "source": "rigs_t1"
       }
     ],
-    "tier": "T1",
-    "notAssigned": true,
     "originalName": "MediumRupu T1"
   },
   {
     "name": "Medium Rupu T1 Q",
     "type": "MediumRupu_T1_Q_C",
     "lootTemplate": "MediumRupu_T1_Q_C",
+    "tier": "T1",
     "category": "Rupu",
     "drops": [
       {
@@ -17816,14 +17686,13 @@
         "source": "schematics_t1"
       }
     ],
-    "tier": "T1",
-    "notAssigned": true,
     "originalName": "MediumRupu T1 Q"
   },
   {
     "name": "Medium Rupu T2",
     "type": "MediumRupu_T2_C",
     "lootTemplate": "MediumRupu_T2_C",
+    "tier": "T2",
     "category": "Rupu",
     "drops": [
       {
@@ -18128,14 +17997,13 @@
         "source": "rigs_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "MediumRupu T2"
   },
   {
     "name": "Medium Rupu T2 Q",
     "type": "MediumRupu_T2_Q_C",
     "lootTemplate": "MediumRupu_T2_Q_C",
+    "tier": "T2",
     "category": "Rupu",
     "drops": [
       {
@@ -18503,14 +18371,13 @@
         "source": "schematics_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "MediumRupu T2 Q"
   },
   {
     "name": "Medium Rupu T3",
     "type": "MediumRupu_T3_C",
     "lootTemplate": "MediumRupu_T3_C",
+    "tier": "T3",
     "category": "Rupu",
     "drops": [
       {
@@ -18899,14 +18766,13 @@
         "source": "rigs_t3"
       }
     ],
-    "tier": "T3",
-    "notAssigned": true,
     "originalName": "MediumRupu T3"
   },
   {
     "name": "Medium Rupu T3 Q",
     "type": "MediumRupu_T3_Q_C",
     "lootTemplate": "MediumRupu_T3_Q_C",
+    "tier": "T3",
     "category": "Rupu",
     "drops": [
       {
@@ -19358,14 +19224,13 @@
         "source": "schematics_t3"
       }
     ],
-    "tier": "T3",
-    "notAssigned": true,
     "originalName": "MediumRupu T3 Q"
   },
   {
     "name": "Medium Rupu T4",
     "type": "MediumRupu_T4_C",
     "lootTemplate": "MediumRupu_T4_C",
+    "tier": "T4",
     "category": "Rupu",
     "drops": [
       {
@@ -19705,14 +19570,13 @@
         "source": "rigs_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "MediumRupu T4"
   },
   {
     "name": "Medium Rupu T4 Q",
     "type": "MediumRupu_T4_Q_C",
     "lootTemplate": "MediumRupu_T4_Q_C",
+    "tier": "T4",
     "category": "Rupu",
     "drops": [
       {
@@ -20087,13 +19951,11 @@
         "source": "schematics_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "MediumRupu T4 Q"
   },
   {
-    "name": "Mountable Nurr",
     "type": "MountableNurrMob_C",
+    "name": "Mountable Nurr",
     "health": 1000,
     "experience": 500,
     "category": "Nurr"
@@ -20104,25 +19966,24 @@
     "lootTemplate": "MushroomGas_C",
     "category": "Structure",
     "drops": [],
-    "notAssigned": true,
     "originalName": "MushroomGas"
   },
   {
-    "name": "Nurr (Killin)",
     "type": "KillinMob_C",
+    "name": "Nurr (Killin)",
     "health": 300,
     "experience": 500,
     "damage": 0,
     "category": "Killin"
   },
   {
-    "name": "Nurr (Nurr)",
     "type": "NurrMob_C",
+    "name": "Nurr (Nurr)",
     "health": 600,
     "experience": 800,
+    "lootTemplate": "Nurr_T2",
     "damage": 60,
     "speed": 3000,
-    "lootTemplate": "Nurr_T2",
     "category": "Nurr",
     "drops": [
       {
@@ -20135,13 +19996,13 @@
     ]
   },
   {
-    "name": "Nurr Lair",
     "type": "NurrLair_T2_C",
+    "name": "Nurr Lair",
     "category": "Nurr"
   },
   {
-    "name": "Nurr Raider",
     "type": "T2_NurrRaiderMob_C",
+    "name": "Nurr Raider",
     "experience": 2000,
     "lootTemplate": "EasyRupu_T1",
     "category": "Rupu",
@@ -20324,15 +20185,16 @@
     ]
   },
   {
-    "name": "Nurr Raiding Camp",
     "type": "T2_RaiderOutpost_C",
-    "category": "Raider",
-    "tier": "T2"
+    "name": "Nurr Raiding Camp",
+    "tier": "T2",
+    "category": "Raider"
   },
   {
     "name": "Nurr T2",
     "type": "Nurr_T2_C",
     "lootTemplate": "Nurr_T2_C",
+    "tier": "T2",
     "category": "Structure",
     "drops": [
       {
@@ -20342,14 +20204,13 @@
         "maxQuantity": 1,
         "source": "nurrfang_t2"
       }
-    ],
-    "tier": "T2",
-    "notAssigned": true
+    ]
   },
   {
     "name": "Nurr T2 Q",
     "type": "Nurr_T2_Q_C",
     "lootTemplate": "Nurr_T2_Q_C",
+    "tier": "T2",
     "category": "Structure",
     "drops": [
       {
@@ -20464,18 +20325,16 @@
         "maxQuantity": 1,
         "source": "schematics_t2"
       }
-    ],
-    "tier": "T2",
-    "notAssigned": true
+    ]
   },
   {
-    "name": "Okkam",
     "type": "OkkamMob_C",
+    "name": "Okkam",
     "health": 6000,
     "experience": 50000,
+    "lootTemplate": "Okkam_T3",
     "damage": 400,
     "speed": 2465,
-    "lootTemplate": "Okkam_T3",
     "category": "Okkam",
     "drops": [
       {
@@ -20694,6 +20553,7 @@
     "name": "Okkam T3",
     "type": "Okkam_T3_C",
     "lootTemplate": "Okkam_T3_C",
+    "tier": "T3",
     "category": "Structure",
     "drops": [
       {
@@ -20906,14 +20766,13 @@
         "maxQuantity": 5,
         "source": "schematics_t3"
       }
-    ],
-    "tier": "T3",
-    "notAssigned": true
+    ]
   },
   {
     "name": "Okkam T3 Q",
     "type": "Okkam_T3_Q_C",
     "lootTemplate": "Okkam_T3_Q_C",
+    "tier": "T3",
     "category": "Structure",
     "drops": [
       {
@@ -21049,18 +20908,16 @@
         "maxQuantity": 5,
         "source": "schematics_t3"
       }
-    ],
-    "tier": "T3",
-    "notAssigned": true
+    ]
   },
   {
-    "name": "Papak",
     "type": "PapakMob_C",
+    "name": "Papak",
     "health": 5000,
     "experience": 15000,
+    "lootTemplate": "Papak_T3",
     "damage": 50,
     "speed": 1200,
-    "lootTemplate": "Papak_T3",
     "category": "Papak",
     "drops": [
       {
@@ -21076,6 +20933,7 @@
     "name": "Papak T3",
     "type": "Papak_T3_C",
     "lootTemplate": "Papak_T3_C",
+    "tier": "T3",
     "category": "Structure",
     "drops": [
       {
@@ -21085,14 +20943,13 @@
         "maxQuantity": 1,
         "source": "gelatinousgoo_t3"
       }
-    ],
-    "tier": "T3",
-    "notAssigned": true
+    ]
   },
   {
     "name": "Papak T3 Q",
     "type": "Papak_T3_Q_C",
     "lootTemplate": "Papak_T3_Q_C",
+    "tier": "T3",
     "category": "Structure",
     "drops": [
       {
@@ -21228,19 +21085,18 @@
         "maxQuantity": 5,
         "source": "schematics_t3"
       }
-    ],
-    "tier": "T3",
-    "notAssigned": true
+    ]
   },
   {
-    "name": "Phemke Nest",
     "type": "EasyPhemkeNest_01_C",
+    "name": "Phemke Nest",
     "category": "Phemke"
   },
   {
     "name": "Phemke T1",
     "type": "Phemke_T1_C",
     "lootTemplate": "Phemke_T1_C",
+    "tier": "T1",
     "category": "Structure",
     "drops": [
       {
@@ -21299,451 +21155,393 @@
         "maxQuantity": 1,
         "source": "rigs_t1"
       }
-    ],
-    "tier": "T1",
-    "notAssigned": true
+    ]
   },
   {
-    "name": "Prophet",
     "type": "RupuProphet_C",
+    "name": "Prophet",
     "category": "Rupu"
   },
   {
-    "name": "Reinforced Rupu Outpost (Rupu)",
     "type": "T1_HardRupuCamp_01_C",
+    "name": "Reinforced Rupu Outpost (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Reinforced Rupu Outpost (Rupu)",
     "type": "T1_HardRupuCamp_02_C",
+    "name": "Reinforced Rupu Outpost (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Reinforced Rupu Outpost (Rupu)",
     "type": "T1_HardRupuCamp_03_C",
+    "name": "Reinforced Rupu Outpost (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Reinforced Rupu Outpost (Rupu)",
     "type": "T1_HardRupuCamp_04_C",
+    "name": "Reinforced Rupu Outpost (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Reinforced Rupu Outpost (Rupu)",
     "type": "T1_SingleBallistaRupuCamp_01_C",
+    "name": "Reinforced Rupu Outpost (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Reinforced Rupu Outpost (Rupu)",
     "type": "T1_SingleScattershotRupuCamp_01_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Reinforced Rupu Outpost (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "MediumMediumRupuCamp_01_C",
+    "name": "Reinforced Rupu Outpost (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Rock Thrower",
-    "type": "AC_StarTowerCommon_C"
-  },
-  {
-    "name": "Ruined Fortress",
-    "type": "SG_FlatlandsRuinsFortress_C"
-  },
-  {
-    "name": "Rupu Artillery Camp",
-    "type": "SG_AshWastesArtilleryCamp_C"
-  },
-  {
-    "name": "Rupu Ashdweller",
     "type": "T3_RupuAshdweller_C",
+    "name": "Rupu Ashdweller",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Berserker",
     "type": "RagingRupu_C",
+    "name": "Rupu Berserker",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Campfire Site (Rupu)",
     "type": "T1_TinyRupuCamp_03_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Rupu Campfire Site (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "T1_TinyRupuCamp_04_C",
+    "name": "Rupu Campfire Site (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Cave",
     "type": "TestRupuCave_C",
+    "name": "Rupu Cave",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Defensive Storage",
-    "type": "CanyonDragableChest_C"
-  },
-  {
-    "name": "Rupu Drudge (Rupu)",
     "type": "T3_RupuDrudge_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Rupu Drudge (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "RupuDrudge_T0_C",
+    "name": "Rupu Drudge (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Dunestalker",
     "type": "T2_RupuDunestalker_C",
+    "name": "Rupu Dunestalker",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Firebrand",
     "type": "T4_RupuFirebrand_C",
+    "name": "Rupu Firebrand",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Forager",
     "type": "T2_RupuForager_C",
+    "name": "Rupu Forager",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Forerunner (Rupu)",
     "type": "T1_RupuForerunner_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Rupu Forerunner (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "RupuForerunner_C",
+    "name": "Rupu Forerunner (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Fortress",
     "type": "HardLargeRupuCampFortified1_03_C",
+    "name": "Rupu Fortress",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Gifting Altar (4)",
-    "type": "Canyon_C"
-  },
-  {
-    "name": "Rupu Gifting Altar (Rupu)",
     "type": "T1_TinyRupuCamp_01_C",
+    "name": "Rupu Gifting Altar (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Gifting Altar (Rupu)",
     "type": "T1_TinyRupuCamp_05_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Rupu Gifting Altar (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "RupuCaveCamp_01_C",
+    "name": "Rupu Gifting Altar (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Gunner",
     "type": "RupuWalkerGunner_C",
+    "name": "Rupu Gunner",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Habitat",
     "type": "EasySmallRupuCamp_01_C",
+    "name": "Rupu Habitat",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Harasser (Rupu)",
     "type": "T1_RupuHarasser_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Rupu Harasser (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "T2_RupuHarasser_C",
+    "name": "Rupu Harasser (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Hazraki",
     "type": "T2_RupuHazraki_C",
+    "name": "Rupu Hazraki",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Hermit",
     "type": "T2_RupuHermit_C",
+    "name": "Rupu Hermit",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Hero (Rupu)",
     "type": "ImpossibleRupu_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Rupu Hero (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "PyramidGuardRupu_C",
+    "name": "Rupu Hero (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Hunter",
     "type": "T3_RupuHunter_C",
+    "name": "Rupu Hunter",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Moisture Collector",
     "type": "CanyonMountainTopSmallRupuCamp_C",
+    "name": "Rupu Moisture Collector",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Observation Point",
     "type": "KS_LargeRupuCamp_C",
+    "name": "Rupu Observation Point",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Oracle (Rupu)",
     "type": "T3_RupuOracleFireBomb_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Rupu Oracle (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "RupuOracle_C",
+    "name": "Rupu Oracle (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Overseer (Rupu)",
     "type": "T3_RupuOverseerFireBomb_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Rupu Overseer (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "RupuOverseer_C",
+    "name": "Rupu Overseer (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Plainstrider",
     "type": "T2_RupuPlainstrider_C",
+    "name": "Rupu Plainstrider",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Prayer Site",
     "type": "T1_TinyRupuCamp_02_C",
+    "name": "Rupu Prayer Site",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Priestess (Rupu)",
     "type": "T2_RupuPriestess_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Rupu Priestess (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "RupuPriestessFireBomb_C",
+    "name": "Rupu Priestess (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Rabble",
     "type": "T3_RupuRabble_C",
+    "name": "Rupu Rabble",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Raider",
     "type": "T2_RupuRaider_C",
+    "name": "Rupu Raider",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Raiding Checkpoint",
-    "type": "CanyonBurnableChest_C"
-  },
-  {
-    "name": "Rupu Scavenger",
     "type": "T1_RupuScavenger_C",
+    "name": "Rupu Scavenger",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Scuttler",
     "type": "T3_RupuScuttler_C",
+    "name": "Rupu Scuttler",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Seeker",
     "type": "T3_RupuSeeker_C",
+    "name": "Rupu Seeker",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Sentinel",
     "type": "T1_RupuSentinel_C",
+    "name": "Rupu Sentinel",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Shaman",
     "type": "T2_RupuShaman_C",
+    "name": "Rupu Shaman",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Shelter",
-    "type": "CanyonIslandShelter_C"
-  },
-  {
-    "name": "Rupu Skirmisher (Rupu)",
     "type": "T1_RupuSkirmisher_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Rupu Skirmisher (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "T2_RupuSkirmisher_C",
+    "name": "Rupu Skirmisher (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Thug",
     "type": "T1_RupuThug_C",
+    "name": "Rupu Thug",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Warrior",
     "type": "ProtectorRupu_C",
+    "name": "Rupu Warrior",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Watch Tower (1)",
-    "type": "SG_RoadWatchtower_C"
-  },
-  {
-    "name": "Rupu Watch Tower (4)",
-    "type": "AC_MatriarchCampUnedited_C"
-  },
-  {
-    "name": "Rupu Watch Tower (6)",
-    "type": "SG_AshWastesFortress2_C"
-  },
-  {
-    "name": "Rupu Watch Tower (Rupu)",
     "type": "KS_EasyRupuCamp_2_C",
+    "name": "Rupu Watch Tower (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Watch Tower (Rupu)",
     "type": "KS_MediumRupuCamp_1_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Rupu Watch Tower (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "EasySingleRupuCampFortified_01_C",
+    "name": "Rupu Watch Tower (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Rupu Zealot",
     "type": "T2_RupuZealot_C",
+    "name": "Rupu Zealot",
     "category": "Rupu"
   },
   {
-    "name": "Sarcophagus of the Ancient",
-    "type": "AC_Sarcophagus_C"
-  },
-  {
-    "name": "Small Rupu Hut (Rupu)",
     "type": "T1_SingleRupuCamp_01_C",
+    "name": "Small Rupu Hut (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Small Rupu Hut (Rupu)",
     "type": "T1_SingleRupuCamp_02_C",
+    "name": "Small Rupu Hut (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Small Rupu Hut (Rupu)",
     "type": "T1_SingleRupuCamp_03_C",
+    "name": "Small Rupu Hut (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Small Rupu Hut (Rupu)",
     "type": "T1_SingleRupuCamp_04_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Small Rupu Hut (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "T1_SingleRupuCamp_05_C",
+    "name": "Small Rupu Hut (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Small Rupu Outpost (Rupu)",
     "type": "T1_MediumRupuCamp_01_C",
+    "name": "Small Rupu Outpost (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Small Rupu Outpost (Rupu)",
     "type": "T1_MediumRupuCamp_02_C",
+    "name": "Small Rupu Outpost (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Small Rupu Outpost (Rupu)",
     "type": "T1_MediumRupuCamp_03_C",
+    "name": "Small Rupu Outpost (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Small Rupu Outpost (Rupu)",
     "type": "T1_MediumRupuCamp_04_C",
+    "name": "Small Rupu Outpost (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Small Rupu Outpost (Rupu)",
     "type": "T1_MediumRupuCamp_05_C",
+    "name": "Small Rupu Outpost (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Small Rupu Outpost (Rupu)",
     "type": "KS_EasyRupuCamp_3_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Small Rupu Outpost (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "EasyMediumRupuCamp_01_C",
+    "name": "Small Rupu Outpost (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Small Rupu Village (Rupu)",
     "type": "MediumSmallRupuCamp_01_C",
-    "category": "Rupu"
-  },
-  {
     "name": "Small Rupu Village (Rupu)",
+    "category": "Rupu"
+  },
+  {
     "type": "MediumSmallRupuCamp_02_C",
+    "name": "Small Rupu Village (Rupu)",
     "category": "Rupu"
   },
   {
-    "name": "Small Worm",
     "type": "SmallWormMob_C",
+    "name": "Small Worm",
     "category": "Worm"
   },
   {
-    "name": "Sunken Temple",
-    "type": "SG_LakeCamp_C"
-  },
-  {
-    "name": "Tar Dweller",
     "type": "TarDwellerRupu_C",
+    "name": "Tar Dweller",
     "category": "Rupu"
   },
   {
-    "name": "Temple of Stars",
-    "type": "AC_MatriarchCamp_C"
-  },
-  {
-    "name": "The Long One",
     "type": "Worm6_C",
+    "name": "The Long One",
     "category": "Worm"
   },
   {
-    "name": "Tower of The Holly Fire",
-    "type": "AC_StarTowerFire_C"
-  },
-  {
-    "name": "Toxic Papak",
     "type": "SwampPapakMob_C",
+    "name": "Toxic Papak",
     "damage": 500,
     "speed": 2400,
     "category": "Papak"
   },
   {
-    "name": "Toxic War Papak",
     "type": "SwampPapakMob_Q_C",
+    "name": "Toxic War Papak",
     "lootTemplate": "Papak_T3_Q",
     "category": "Papak",
     "drops": [
@@ -21886,6 +21684,7 @@
     "name": "Treasure Chest T1",
     "type": "TreasureChest_T1_C",
     "lootTemplate": "TreasureChest_T1_C",
+    "tier": "T1",
     "category": "Container",
     "drops": [
       {
@@ -22106,14 +21905,13 @@
         "source": "extraresources_t1"
       }
     ],
-    "tier": "T1",
-    "notAssigned": true,
     "originalName": "TreasureChest T1"
   },
   {
     "name": "Treasure Chest T2",
     "type": "TreasureChest_T2_C",
     "lootTemplate": "TreasureChest_T2_C",
+    "tier": "T2",
     "category": "Container",
     "drops": [
       {
@@ -22376,14 +22174,13 @@
         "source": "extraresources_t2"
       }
     ],
-    "tier": "T2",
-    "notAssigned": true,
     "originalName": "TreasureChest T2"
   },
   {
     "name": "Treasure Chest T3",
     "type": "TreasureChest_T3_C",
     "lootTemplate": "TreasureChest_T3_C",
+    "tier": "T3",
     "category": "Container",
     "drops": [
       {
@@ -22709,14 +22506,13 @@
         "source": "extraresources_t3"
       }
     ],
-    "tier": "T3",
-    "notAssigned": true,
     "originalName": "TreasureChest T3"
   },
   {
     "name": "Treasure Chest T4",
     "type": "TreasureChest_T4_C",
     "lootTemplate": "TreasureChest_T4_C",
+    "tier": "T4",
     "category": "Container",
     "drops": [
       {
@@ -22881,8 +22677,6 @@
         "source": "extraresources_t4"
       }
     ],
-    "tier": "T4",
-    "notAssigned": true,
     "originalName": "TreasureChest T4"
   },
   {
@@ -22891,7 +22685,6 @@
     "lootTemplate": "TutorialBeatStickLoot_C",
     "category": "Structure",
     "drops": [],
-    "notAssigned": true,
     "originalName": "TutorialBeatStickLoot"
   },
   {
@@ -22900,12 +22693,11 @@
     "lootTemplate": "TutorialCompletedLoot_C",
     "category": "Structure",
     "drops": [],
-    "notAssigned": true,
     "originalName": "TutorialCompletedLoot"
   },
   {
-    "name": "War Okkam",
     "type": "OkkamMob_Q_C",
+    "name": "War Okkam",
     "lootTemplate": "Okkam_T3_Q",
     "category": "Okkam",
     "drops": [
@@ -23050,7 +22842,6 @@
     "lootTemplate": "WaterCondenser_C",
     "category": "Resource",
     "drops": [],
-    "notAssigned": true,
     "originalName": "WaterCondenser"
   },
   {
@@ -23059,7 +22850,6 @@
     "lootTemplate": "WaterCondenser_1_C",
     "category": "Resource",
     "drops": [],
-    "notAssigned": true,
     "originalName": "WaterCondenser 1"
   },
   {
@@ -23068,28 +22858,23 @@
     "lootTemplate": "WaterCondenser_2_C",
     "category": "Resource",
     "drops": [],
-    "notAssigned": true,
     "originalName": "WaterCondenser 2"
   },
   {
-    "name": "White Death (T2)",
     "type": "T2_WhiteDeath_C",
-    "category": "White",
-    "tier": "T2"
+    "name": "White Death (T2)",
+    "tier": "T2",
+    "category": "White"
   },
   {
-    "name": "White Death (T3)",
     "type": "T3_WhiteDeath_C",
-    "category": "White",
-    "tier": "T3"
+    "name": "White Death (T3)",
+    "tier": "T3",
+    "category": "White"
   },
   {
-    "name": "Yellow Rupu",
     "type": "IllusiveGiantRupu_C",
+    "name": "Yellow Rupu",
     "category": "Rupu"
-  },
-  {
-    "name": "Zharvakko",
-    "type": "ZharvakkoShaman_C"
   }
 ]

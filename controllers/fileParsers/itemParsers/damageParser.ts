@@ -1,0 +1,56 @@
+import { projectileDamageTemplate } from "../../../templates/projectileDamage";
+import * as dataParser from "../../dataParsers";
+import * as utilityFunctions from "../utilityFunctions";
+import { readJsonFile } from "../../utils/read-json-file";
+
+export const parseDamage = (filePath: string) => {
+	const jsonData = readJsonFile(filePath);
+	if (jsonData?.[1]?.Type) {
+		const damageTypeClass = jsonData[1].Type;
+		const allItemsWithThatDamage = utilityFunctions
+			.getAllItems()
+			.filter((item) => item.damageType === damageTypeClass);
+		for (const itemSearch of allItemsWithThatDamage) {
+			const item = utilityFunctions.getItem(itemSearch.name);
+			if (item) {
+				let proyectileDamage = item.projectileDamage
+					? item.projectileDamage
+					: { ...projectileDamageTemplate };
+				proyectileDamage.vsSoft = jsonData[1]?.Properties?.DamageAgainstSoft
+					? //@ts-expect-error fix later
+						Number.parseInt(jsonData[1].Properties.DamageAgainstSoft * 100, 10)
+					: undefined;
+				proyectileDamage.vsMedium = jsonData[1]?.Properties?.DamageAgainstMedium
+					? Number.parseInt(
+							//@ts-expect-error fix later
+							jsonData[1].Properties.DamageAgainstMedium * 100,
+							10,
+						)
+					: undefined;
+				proyectileDamage.vsHard = jsonData[1]?.Properties?.DamageAgainstHard
+					? //@ts-expect-error fix later
+						Number.parseInt(jsonData[1].Properties.DamageAgainstHard * 100, 10)
+					: undefined;
+				proyectileDamage.vsReinforced = jsonData[1]?.Properties
+					?.DamageAgainstReinforced
+					? Number.parseInt(
+							//@ts-expect-error fix later
+							jsonData[1].Properties.DamageAgainstReinforced * 100,
+							10,
+						)
+					: undefined;
+				proyectileDamage.vsSolid = jsonData[1]?.Properties?.DamageAgainstSolid
+					? //@ts-expect-error fix later
+						Number.parseInt(jsonData[1].Properties.DamageAgainstSolid * 100, 10)
+					: undefined;
+
+				proyectileDamage = dataParser.cleanEmptyObject(proyectileDamage);
+				if (proyectileDamage != null) {
+					item.projectileDamage = proyectileDamage;
+				}
+
+				utilityFunctions.addItem(item);
+			}
+		}
+	}
+};

@@ -1,0 +1,28 @@
+import fs from "node:fs";
+
+/**
+ * Safely reads and parses a JSON file
+ * @param {string} filePath - The file path to read
+ * @returns {Object|null} - Parsed JSON data or null if error occurs
+ */
+
+export const readJsonFile = (filePath: string, encoding: any = undefined) => {
+  if (!filePath || typeof filePath !== "string") {
+    console.error("Invalid file path provided to readJsonFile");
+    return undefined;
+  }
+
+
+  try {
+    const rawData = fs.readFileSync(filePath, {
+      encoding
+    });
+    const jsonString = rawData.toString();
+    const cleanJson = jsonString.replace(/^\uFEFF/, '');
+    return JSON.parse(cleanJson);
+  } catch (error: any) {
+    console.error(`Error reading or parsing file ${filePath}:`, error.message);
+    return undefined;
+  }
+
+};
