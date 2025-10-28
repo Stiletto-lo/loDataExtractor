@@ -1,10 +1,9 @@
+import * as projectileDamageTemplate from "../../../templates/projectileDamage";
+import * as dataParser from "../../dataParsers";
+import * as utilityFunctions from "../utilityFunctions";
+import { readJsonFile } from "../../utils/read-json-file";
 
-const projectileDamageTemplate = require("../../../templates/projectileDamage");
-const dataParser = require("../../dataParsers");
-const utilityFunctions = require("../utilityFunctions");
-const { readJsonFile } = require("../../utils/read-json-file");
-
-const parseDamage = (filePath) => {
+export const parseDamage = (filePath: string) => {
 	const jsonData = readJsonFile(filePath);
 	if (jsonData?.[1]?.Type) {
 		const damageTypeClass = jsonData[1].Type;
@@ -49,8 +48,4 @@ const parseDamage = (filePath) => {
 			}
 		}
 	}
-};
-
-module.exports = {
-	parseDamage,
 };

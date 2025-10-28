@@ -5,16 +5,16 @@
  * from game data files, specifically focusing on perk abilities, costs, and descriptions.
  */
 
-const { readJsonFile } = require("../utils/read-json-file");
-const PERK_INFO_TEMPLATE = require("../../templates/perkInfo");
-const utilityFunctions = require("../fileParsers/utilityFunctions");
+import { readJsonFile } from "../utils/read-json-file";
+import * as PERK_INFO_TEMPLATE from "../../templates/perkInfo";
+import * as utilityFunctions from "../fileParsers/utilityFunctions";
 
 /**
  * Extracts perk information from a single JSON file
  * @param {string} filePath - Path to the JSON file containing perk data
  * @returns {Object|null} - Extracted perk information or null if no valid data found
  */
-const extractPerkInfo = (filePath) => {
+export const extractPerkInfo = (filePath: string) => {
 	const data = readJsonFile(filePath);
 
 	if (!data) {
@@ -76,7 +76,7 @@ const extractPerkInfo = (filePath) => {
  * Parses perk data from a JSON file and adds it to the collection
  * @param {string} filePath - Path to the JSON file to parse
  */
-const parsePerkData = (filePath) => {
+export const parsePerkData = (filePath: string) => {
 	const perkInfo = extractPerkInfo(filePath);
 
 	if (perkInfo) {
@@ -86,10 +86,4 @@ const parsePerkData = (filePath) => {
 			utilityFunctions.addPerk(perkInfo);
 		}
 	}
-};
-
-
-module.exports = {
-	extractPerkInfo,
-	parsePerkData,
 };

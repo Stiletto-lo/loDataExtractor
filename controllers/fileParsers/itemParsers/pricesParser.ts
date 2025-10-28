@@ -1,10 +1,8 @@
-const fs = require("node:fs");
+import * as dataParser from "../../dataParsers";
+import * as utilityFunctions from "../utilityFunctions";
+import { readJsonFile } from "../../utils/read-json-file";
 
-const dataParser = require("../../dataParsers");
-const utilityFunctions = require("../utilityFunctions");
-const { readJsonFile } = require("../../utils/read-json-file");
-
-const parsePrices = (filePath) => {
+export const parsePrices = (filePath: string) => {
 	const jsonData = readJsonFile(filePath);
 	if (jsonData[1]?.Properties?.OrdersArray) {
 		const allOrders = jsonData[1].Properties.OrdersArray;
@@ -27,8 +25,4 @@ const parsePrices = (filePath) => {
 			}
 		}
 	}
-};
-
-module.exports = {
-	parsePrices,
 };

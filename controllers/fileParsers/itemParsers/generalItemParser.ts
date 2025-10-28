@@ -2,18 +2,19 @@
  * General item parser functions for handling item-related data
  */
 
-const dataParser = require("../../dataParsers");
-const translator = require("../../translator");
-const utilityFunctions = require("../utilityFunctions");
-const { readJsonFile } = require("../../utils/read-json-file");
+import * as dataParser from "../../dataParsers";
+import * as translator from "../../translator";
+import * as utilityFunctions from "../utilityFunctions";
+import { readJsonFile } from "../../utils/read-json-file";
 
 // Import templates
-const weaponInfoTemplate = require("../../../templates/weaponInfo");
-const toolInfoTemplate = require("../../../templates/toolInfo");
-const projectileDamageTemplate = require("../../../templates/projectileDamage");
-const recipeTemplate = require("../../../templates/recipe");
-const armorInfoTemplate = require("../../../templates/armorInfo");
-const moduleInfoTemplate = require("../../../templates/moduleInfo");
+import { weaponInfoTemplate } from "../../../templates/weaponInfo";
+import { toolInfoTemplate } from "../../../templates/toolInfo";
+import { projectileDamageTemplate } from "../../../templates/projectileDamage";
+import { recipeTemplate } from "../../../templates/recipe";
+import { armorInfoTemplate } from "../../../templates/armorInfo";
+import { moduleInfoTemplate } from "../../../templates/moduleInfo";
+import { costTemplate } from "../../../templates/cost";
 
 /**
  * Get item from item data
@@ -21,17 +22,17 @@ const moduleInfoTemplate = require("../../../templates/moduleInfo");
  * @param {Object} oldItem - The old item object (optional)
  * @returns {Object|undefined} - The item object or undefined
  */
-const getItemFromItemData = (itemData, oldItem) => {
+export const getItemFromItemData = (itemData: any, oldItem: any) => {
 	if (!itemData) { return oldItem ?? undefined; }
 
 	const item = oldItem ?? utilityFunctions.extractItemByType(itemData.Type);
 
 	// Helper to get string from SourceString or LocalizedString
-	const getString = (obj, key) =>
+	const getString = (obj: any, key: string) =>
 		obj?.[key]?.SourceString?.trim() || obj?.[key]?.LocalizedString?.trim() || "";
 
 	// Helper to add translation
-	const setTranslation = (key, name) => {
+	const setTranslation = (key: string, name: string) => {
 		if (key && name) {
 			translator.addTranslation(key.replace(".Name", "").trim(), name);
 			translator.addTranslationInUse(itemData.Type, name);
@@ -39,7 +40,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 	};
 
 	// Helper to add description
-	const setDescription = (name, description) => {
+	const setDescription = (name: string, description: string) => {
 		if (name && description) {
 			translator.addDescription(name, description);
 			translator.addDescription(itemData.Type, description);
@@ -60,7 +61,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 		// Category/Schematic
 		if (props?.Category?.ObjectPath) {
 			const category = dataParser.parseCategory(props.Category.ObjectPath);
-			if (category.includes("Schematics")) {
+			if (category?.includes("Schematics")) {
 				item.schematicName = itemData.Type;
 			} else {
 				item.category = category;
@@ -209,11 +210,18 @@ const getItemFromItemData = (itemData, oldItem) => {
 			for (const recipeData of props.Recipes) {
 				const recipe = { ...recipeTemplate };
 				if (recipeData.Inputs) {
-					const ingredients = [];
+					const ingredients: { name: string; count: number }[] = [];
 					for (const key in recipeData.Inputs) {
-						ingredients.push(
-							utilityFunctions.getIngredientsFromItem(recipeData.Inputs, key),
+						const ingredient = utilityFunctions.getIngredientsFromItem(
+							recipeData.Inputs,
+							key,
 						);
+						if (ingredient?.name && ingredient?.count) {
+							ingredients.push({
+								name: ingredient.name,
+								count: ingredient.count,
+							});
+						}
 					}
 					if (ingredients.length > 0) recipe.ingredients = ingredients;
 				}
@@ -229,7 +237,7 @@ const getItemFromItemData = (itemData, oldItem) => {
 				) {
 					recipe.station = dataParser
 						.parseName(translator, recipeData.Category.ObjectName)
-						.trim();
+						?.trim();
 				}
 				crafting.push(recipe);
 			}
@@ -272,7 +280,7 @@ const getItemFromItemData = (itemData, oldItem) => {
  * Parse item data from a file
  * @param {string} filePath - The file path to parse
  */
-const parseItemData = (filePath) => {
+export const parseItemData = (filePath: string) => {
 	if (filePath.includes("Schematics")) {
 		return;
 	}
@@ -280,7 +288,7 @@ const parseItemData = (filePath) => {
 	const jsonData = readJsonFile(filePath);
 
 	if (jsonData?.[1]?.Type) {
-		let item = getItemFromItemData(jsonData[1]);
+		let item = getItemFromItemData(jsonData[1], undefined);
 
 		if (!item?.name) {
 			item = getItemFromItemData(jsonData?.[2], item);
@@ -288,9 +296,4 @@ const parseItemData = (filePath) => {
 
 		utilityFunctions.addItem(item);
 	}
-};
-
-module.exports = {
-	getItemFromItemData,
-	parseItemData,
 };

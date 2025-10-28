@@ -6,8 +6,6 @@
  * @module dataParsers
  */
 
-const dataParser = {};
-
 /**
  * Constants for common string patterns used in parsing
  */
@@ -25,7 +23,7 @@ const PATTERNS = {
  * @param {string|null} name - The name to parse
  * @returns {string|undefined} - The parsed and formatted name or undefined if input is null
  */
-dataParser.parseName = (translator, name) => {
+export const parseName = (translator: any, name: string | null) => {
 	if (name == null) {
 		return undefined;
 	}
@@ -34,7 +32,7 @@ dataParser.parseName = (translator, name) => {
 	let nameStr = String(name);
 	nameStr = nameStr.replaceAll("'", "").trim();
 	nameStr = nameStr.replaceAll(".Name", "").trim();
-	nameStr = dataParser.parseType(nameStr);
+	nameStr = parseType(nameStr);
 	nameStr = nameStr.replaceAll("_C", "").trim();
 	nameStr = nameStr.replaceAll("_Q", "").trim();
 	nameStr = nameStr.replaceAll("DataTable", "").trim();
@@ -47,11 +45,11 @@ dataParser.parseName = (translator, name) => {
 
 	// Special case handling for different item types
 	if (!nameStr.includes("Schematic")) {
-		nameStr = dataParser.parseSpecialItemName(translator, nameStr);
+		nameStr = parseSpecialItemName(translator, nameStr);
 	}
 
 	// Parse rig name if applicable
-	nameStr = dataParser.parseRigName(translator, nameStr);
+	nameStr = parseRigName(translator, nameStr);
 
 	return nameStr.trim();
 };
@@ -64,17 +62,17 @@ dataParser.parseName = (translator, name) => {
  * @returns {string} - The parsed special item name
  * @private
  */
-dataParser.parseSpecialItemName = (translator, name) => {
+export const parseSpecialItemName = (translator: any, name: string) => {
 	if (/(.+)Legs/.test(name)) {
-		return dataParser.parseLegsName(translator, name);
+		return parseLegsName(translator, name);
 	}
 
 	if (/(.+)Wings/.test(name)) {
-		return dataParser.parseWingsName(translator, name);
+		return parseWingsName(translator, name);
 	}
 
 	if (name.includes("Upgrades")) {
-		return dataParser.parseUpgradesName(translator, name);
+		return parseUpgradesName(translator, name);
 	}
 
 	return name;
@@ -88,7 +86,7 @@ dataParser.parseSpecialItemName = (translator, name) => {
  * @returns {string} - The parsed legs name
  * @private
  */
-dataParser.parseLegsName = (translator, name) => {
+export const parseLegsName = (translator: any, name: string) => {
 	const match = RegExp(/(.+)Legs/).exec(name);
 	if (match?.[1]) {
 		const walkerName = translator.translateName(`${match[1].trim()} Walker`);
@@ -115,12 +113,12 @@ dataParser.parseLegsName = (translator, name) => {
  * @returns {string} - The parsed wings name
  * @private
  */
-dataParser.parseWingsName = (translator, name) => {
+export const parseWingsName = (translator: any, name: string) => {
 	const match = RegExp(/(.+)Wings/).exec(name);
 	if (match?.[1]) {
 		const walkerName = translator.translateName(`${match[1].trim()} Walker`);
 
-		const wingsType = dataParser.determineWingsType(name);
+		const wingsType = determineWingsType(name);
 		const wingsName = `${walkerName.trim()} ${wingsType}`.trim();
 
 		return `${wingsName}`;
@@ -135,7 +133,7 @@ dataParser.parseWingsName = (translator, name) => {
  * @returns {string} - The determined wings type
  * @private
  */
-dataParser.determineWingsType = (name) => {
+export const determineWingsType = (name: string) => {
 	if (name.includes("_T2_Small")) {
 		return "Wings Small";
 	}
@@ -168,7 +166,7 @@ dataParser.determineWingsType = (name) => {
  * @returns {string} - The parsed upgrades name
  * @private
  */
-dataParser.parseUpgradesName = (translator, name) => {
+export const parseUpgradesName = (translator: any, name: string) => {
 	const upgradePatterns = [
 		{ pattern: /(.+)BoneUpgrades/, tier: "Tier 2" },
 		{ pattern: /(.+)CeramicUpgrades/, tier: "Tier 3" },
@@ -193,7 +191,7 @@ dataParser.parseUpgradesName = (translator, name) => {
  * @param {string} name - The type string to parse
  * @returns {string} - The parsed type
  */
-dataParser.parseType = (name) => {
+export const parseType = (name: string) => {
 	let nameStr = name.replace(PATTERNS.BLUEPRINT_CLASS, "").trim();
 	nameStr = nameStr.replace(".0", "").trim();
 
@@ -211,7 +209,7 @@ dataParser.parseType = (name) => {
  * @param {string|null} category - The category string to parse
  * @returns {string|null} - The parsed category or null if input is null
  */
-dataParser.parseCategory = (category) => {
+export const parseCategory = (category: string | null) => {
 	if (!category) {
 		return category;
 	}
@@ -229,14 +227,14 @@ dataParser.parseCategory = (category) => {
  * @param {string|null} objectName - The object path to parse
  * @returns {string|null} - The extracted object name or null if input is null
  */
-dataParser.parseObjectPath = (objectName) => {
+export const parseObjectPath = (objectName: string | null) => {
 	if (!objectName) {
 		return objectName;
 	}
 
 	const objectNameArray = objectName.split("/");
 	const last = objectNameArray[objectNameArray.length - 1];
-	return last.replace(".0", "").trim();
+	return last?.replace(".0", "").trim();
 };
 
 /**
@@ -246,11 +244,11 @@ dataParser.parseObjectPath = (objectName) => {
  * @param {string} name - The name to parse
  * @returns {string} - The parsed rig name
  */
-dataParser.parseRigName = (translator, name) => {
+export const parseRigName = (translator: any, name: string) => {
 	let nameStr = name;
 
 	if (nameStr.includes("Rig") && /(.+)Rig_/.test(nameStr)) {
-		const rig = dataParser.determineRigTier(nameStr);
+		const rig = determineRigTier(nameStr);
 
 		if (nameStr.includes("Default")) {
 			nameStr = nameStr.replaceAll("Default", "").trim();
@@ -273,7 +271,7 @@ dataParser.parseRigName = (translator, name) => {
  * @returns {string} - The determined rig tier
  * @private
  */
-dataParser.determineRigTier = (name) => {
+export const determineRigTier = (name: string) => {
 	if (name.includes("2")) {
 		return "T2";
 	}
@@ -296,7 +294,7 @@ dataParser.determineRigTier = (name) => {
  * @param {string} name - The structure name
  * @returns {string} - The parsed structure name
  */
-dataParser.parseStructureName = (category, name) => {
+export const parseStructureName = (category: string, name: string) => {
 	const structureTypes = {
 		Sand: "Sand",
 		Concrete: "Cement",
@@ -326,7 +324,7 @@ dataParser.parseStructureName = (category, name) => {
  * @param {string|null} profile - The upgrade profile
  * @returns {string} - The parsed upgrade name
  */
-dataParser.parseUpgradeName = (name, profile) => {
+export const parseUpgradeName = (name: string | null, profile: string | null) => {
 	if (profile == null) {
 		return "";
 	}
@@ -351,9 +349,9 @@ dataParser.parseUpgradeName = (name, profile) => {
 
 	if (name != null) {
 		// Determine tier based on material
-		tier = dataParser.determineUpgradeTier(name);
+		tier = determineUpgradeTier(name);
 		// Determine type based on functionality
-		type = dataParser.determineUpgradeType(name);
+		type = determineUpgradeType(name);
 	}
 
 	return `${walkerName} Walker Upgrade ${type} Tier ${tier}`;
@@ -366,7 +364,7 @@ dataParser.parseUpgradeName = (name, profile) => {
  * @returns {number} - The determined upgrade tier
  * @private
  */
-dataParser.determineUpgradeTier = (name) => {
+export const determineUpgradeTier = (name: string) => {
 	if (name.includes("Wood")) {
 		return 1;
 	}
@@ -389,7 +387,7 @@ dataParser.determineUpgradeTier = (name) => {
  * @returns {string} - The determined upgrade type
  * @private
  */
-dataParser.determineUpgradeType = (name) => {
+export const determineUpgradeType = (name: string) => {
 	const upgradeTypes = {
 		Cargo: "Cargo",
 		Hatch: "Gear",
@@ -417,7 +415,11 @@ dataParser.determineUpgradeType = (name) => {
  * @param {string} otherItemName - Name of the other item to merge
  * @returns {Array} - Array with merged items
  */
-dataParser.itemMerger = (allItems, mainItemName, otherItemName) => {
+export const itemMerger = (
+	allItems: any[],
+	mainItemName: string,
+	otherItemName: string,
+) => {
 	const mainItem = allItems.find(
 		(item) => item.name && item.name === mainItemName,
 	);
@@ -455,7 +457,7 @@ dataParser.itemMerger = (allItems, mainItemName, otherItemName) => {
  * @param {Object|null} obj - The object to clean
  * @returns {Object|null} - The cleaned object or null if empty
  */
-dataParser.cleanEmptyObject = (obj) => {
+export const cleanEmptyObject = (obj: any | null) => {
 	if (!obj) {
 		return null;
 	}
@@ -468,5 +470,3 @@ dataParser.cleanEmptyObject = (obj) => {
 
 	return Object.keys(obj).length > 0 ? obj : null;
 };
-
-module.exports = dataParser;

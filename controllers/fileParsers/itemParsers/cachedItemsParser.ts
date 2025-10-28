@@ -1,11 +1,11 @@
-const fs = require("node:fs");
-const recipeTemplate = require("../../../templates/recipe");
-const costTemplate = require("../../../templates/cost");
-const dataParser = require("../../dataParsers");
-const translator = require("../../translator");
-const utilityFunctions = require("../utilityFunctions");
+import fs from "node:fs";
+import * as recipeTemplate from "../../../templates/recipe";
+import * as costTemplate from "../../../templates/cost";
+import * as dataParser from "../../dataParsers";
+import * as translator from "../../translator";
+import * as utilityFunctions from "../utilityFunctions";
 
-const parseCachedItems = (filePath) => {
+export const parseCachedItems = (filePath: string) => {
 	const rawdata = fs.readFileSync(filePath);
 	const jsonData = JSON.parse(rawdata);
 	if (jsonData[0]?.Properties?.CachedTotalCost) {
@@ -32,8 +32,4 @@ const parseCachedItems = (filePath) => {
 			}
 		}
 	}
-};
-
-module.exports = {
-	parseCachedItems,
 };

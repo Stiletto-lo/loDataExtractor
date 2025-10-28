@@ -5,19 +5,20 @@
  * and processing them according to their type.
  */
 
-const fs = require("fs-extra");
-const fileParser = require("../controllers/fileParsers");
+import fs from "fs-extra";
+import * as fileParser from "../controllers/fileParsers";
+import * as vehicleParser from "../controllers/fileParsers/vehicleParser";
 
 /**
  * Loads files from a directory and processes them according to the specified type
  * @param {string} dir - Directory to load
  * @param {string} type - Type of file to process
  */
-const loadDirData = (dir, type) => {
-  if (!fs.existsSync(dir)) {
-    console.error(`Directory ${dir} does not exist`);
-    return;
-  }
+export const loadDirData = (dir: string, type: string) => {
+	if (!fs.existsSync(dir)) {
+		console.error(`Directory ${dir} does not exist`);
+		return;
+	}
 
   const files = fs.readdirSync(dir);
 
@@ -82,7 +83,7 @@ const loadDirData = (dir, type) => {
  * Loads all files needed for processing
  * @param {string} contentFolderPath - Base path of the content
  */
-const loadAllFiles = (contentFolderPath) => {
+export const loadAllFiles = (contentFolderPath: string) => {
   console.info("Loading StringTables");
   loadDirData(
     `${contentFolderPath}Content/Mist/Data/StringTables`,
@@ -157,15 +158,11 @@ const loadAllFiles = (contentFolderPath) => {
 
   // Process vehicle files to extract carry capacity information
   console.info("Loading Vehicle Data");
-  const vehicleParser = require("../controllers/fileParsers/vehicleParser");
-  vehicleParser.processVehicleFiles(`${contentFolderPath}Content/Mist/Props/Vehicles`);
+  vehicleParser.processVehicleFiles(
+		`${contentFolderPath}Content/Mist/Props/Vehicles`,
+	);
 
   console.info("Loading Perks");
   loadDirData(`${contentFolderPath}Content/Mist/Data/Perks`, "perks");
 
-};
-
-module.exports = {
-  loadDirData,
-  loadAllFiles,
 };

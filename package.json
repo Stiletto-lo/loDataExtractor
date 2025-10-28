@@ -2,10 +2,10 @@
 	"name": "lodataextractor",
 	"version": "1.8.1",
 	"description": "",
-	"main": "index.js",
+	"main": "index.ts",
 	"scripts": {
-		"start": "node index.js",
-		"gen": "cd libs && call export.bat && cd .. && node index.js",
+		"start": "ts-node index.ts",
+		"gen": "cd libs && call export.bat && cd .. && ts-node index.ts",
 		"format": "biome format --write .",
 		"lint": "biome lint --write ."
 	},
@@ -17,6 +17,11 @@
 		"fs-extra": "^10.1.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4"
+		"@biomejs/biome": "1.9.4",
+		"@types/axios": "^0.14.4",
+		"@types/fs-extra": "^11.0.4",
+		"@types/node": "^24.9.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.9.3"
 	}
 }

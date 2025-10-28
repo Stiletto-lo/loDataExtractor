@@ -5,17 +5,25 @@
  * datatables, and blueprints in the data extraction process.
  */
 
-const itemTemplate = require("../../templates/item");
-const techTemplate = require("../../templates/tech");
-const costTemplate = require("../../templates/cost");
-const dataParser = require("../dataParsers");
-const translator = require("../translator");
+import * as itemTemplate from "../../templates/item";
+import * as techTemplate from "../../templates/tech";
+import * as costTemplate from "../../templates/cost";
+import * as dataParser from "../dataParsers";
+import * as translator from "../translator";
 
 /**
  * DataStore - Encapsulates shared state to avoid global variables
  * and provides controlled access to data collections
  */
 class DataStore {
+	items: any[];
+	techData: any[];
+	upgradesData: any[];
+	creatures: any[];
+	lootTables: any;
+	lootTemplates: any[];
+	perks: any[];
+
 	constructor() {
 		this.items = [];
 		this.techData = [];
@@ -31,7 +39,7 @@ class DataStore {
 		return this.items;
 	}
 
-	addItem(item) {
+	addItem(item: any) {
 		if (!item) {
 			throw new TypeError("Item must be defined");
 		}
@@ -57,7 +65,7 @@ class DataStore {
 		}
 	}
 
-	setAllItems(items) {
+	setAllItems(items: any[]) {
 		if (!Array.isArray(items)) {
 			throw new TypeError("Items must be an array");
 		}
@@ -70,7 +78,7 @@ class DataStore {
 	 * @returns {Object|undefined} - The found item or undefined
 	 * @throws {TypeError} - If name is not a string when provided
 	 */
-	getItem(name) {
+	getItem(name: string) {
 		if (!name) {
 			return undefined;
 		}
@@ -86,7 +94,7 @@ class DataStore {
 	 * @returns {Object|undefined} - The found item or undefined
 	 * @throws {TypeError} - If type is not a string when provided
 	 */
-	getItemByType(type) {
+	getItemByType(type: string) {
 		if (!type) {
 			return undefined;
 		}
@@ -105,7 +113,7 @@ class DataStore {
 	 * @returns {Object} - A new item object with the type set
 	 * @throws {TypeError} - If type is not a string when provided
 	 */
-	extractItemByType(type) {
+	extractItemByType(type: string) {
 		if (!type) {
 			return { ...itemTemplate };
 		}
@@ -127,8 +135,8 @@ class DataStore {
 	 * @returns {Object} - The ingredient object
 	 * @throws {TypeError} - If inputs is not an object or key is not a string
 	 */
-	getIngredientsFromItem(data, key) {
-		const ingredient = { ...costTemplate };
+	getIngredientsFromItem(data: any, key: string) {
+		const ingredient = { ...costTemplate.costTemplate };
 		ingredient.name = data[key]?.Key
 			? dataParser.parseName(translator, data[key]?.Key)
 			: dataParser.parseName(translator, Object.keys(data[key])[0]);
@@ -144,7 +152,7 @@ class DataStore {
 		return this.techData;
 	}
 
-	addTechItem(item) {
+	addTechItem(item: any) {
 		if (!item) {
 			throw new TypeError("Item must be defined");
 		}
@@ -171,20 +179,20 @@ class DataStore {
 		return this.lootTables;
 	}
 
-	setLootTables(lootTables) {
+	setLootTables(lootTables: any) {
 		if (typeof lootTables !== "object") {
 			throw new TypeError("Loot tables must be an object");
 		}
 		this.lootTables = lootTables;
 	}
 
-	addLootTable(lootTable) {
+	addLootTable(lootTable: any) {
 		if (!lootTable) {
 			throw new TypeError("LootTable must be defined");
 		}
 
 		const existingItem = this.lootTables.find(
-			(existingItem) => existingItem.name === lootTable.name,
+			(existingItem: any) => existingItem.name === lootTable.name,
 		);
 
 		if (!existingItem) {
@@ -205,14 +213,14 @@ class DataStore {
 		return this.lootTemplates;
 	}
 
-	setLootTemplates(lootTemplates) {
+	setLootTemplates(lootTemplates: any[]) {
 		if (!Array.isArray(lootTemplates)) {
 			throw new TypeError("Loot templates must be an array");
 		}
 		this.lootTemplates = lootTemplates;
 	}
 
-	addLootTemplate(lootTemplate) {
+	addLootTemplate(lootTemplate: any) {
 		if (!lootTemplate) {
 			throw new TypeError("LootTable must be defined");
 		}
@@ -234,7 +242,7 @@ class DataStore {
 		}
 	}
 
-	setTechData(data) {
+	setTechData(data: any[]) {
 		if (!Array.isArray(data)) {
 			throw new TypeError("Tech data must be an array");
 		}
@@ -246,7 +254,7 @@ class DataStore {
 	 * @param {string} type - The type of the tech to extract
 	 * @returns {Object} - A new tech object with the type set
 	 */
-	extractTechByType(type) {
+	extractTechByType(type: string) {
 		if (!type) {
 			return { ...techTemplate };
 		}
@@ -271,7 +279,7 @@ class DataStore {
 		return this.upgradesData;
 	}
 
-	setUpgradesData(data) {
+	setUpgradesData(data: any[]) {
 		if (!Array.isArray(data)) {
 			throw new TypeError("Upgrades data must be an array");
 		}
@@ -283,14 +291,14 @@ class DataStore {
 		return this.creatures;
 	}
 
-	setCreatures(data) {
+	setCreatures(data: any[]) {
 		if (!Array.isArray(data)) {
 			throw new TypeError("Creatures data must be an array");
 		}
 		this.creatures = data;
 	}
 
-	addCreature(creature) {
+	addCreature(creature: any) {
 		if (!creature) {
 			throw new TypeError("Creature must be defined");
 		}
@@ -317,14 +325,14 @@ class DataStore {
 		return this.perks;
 	}
 
-	setPerks(data) {
+	setPerks(data: any[]) {
 		if (!Array.isArray(data)) {
 			throw new TypeError("Perks must be an array");
 		}
 		this.perks = data;
 	}
 
-	addPerk(perk) {
+	addPerk(perk: any) {
 		if (!perk) {
 			throw new TypeError("Perk must be defined");
 		}
@@ -346,7 +354,7 @@ class DataStore {
 		}
 	}
 
-	getPerkByName(name) {
+	getPerkByName(name: string) {
 		if (!name) {
 			return undefined;
 		}
@@ -358,74 +366,64 @@ class DataStore {
 // Create and export a singleton instance
 const dataStore = new DataStore();
 
-module.exports = {
-	// Item operations
-	getItem: (name) => dataStore.getItem(name),
-	getItemByType: (type) => dataStore.getItemByType(type),
-	extractItemByType: (type) => dataStore.extractItemByType(type),
-	getIngredientsFromItem: (inputs, key) =>
-		dataStore.getIngredientsFromItem(inputs, key),
-	addItem: (item) => dataStore.addItem(item),
+export const getItem = (name: string) => dataStore.getItem(name);
+export const getItemByType = (type: string) => dataStore.getItemByType(type);
+export const extractItemByType = (type: string) =>
+	dataStore.extractItemByType(type);
+export const getIngredientsFromItem = (inputs: any, key: string) =>
+	dataStore.getIngredientsFromItem(inputs, key);
+export const addItem = (item: any) => dataStore.addItem(item);
+export const getTechData = () => dataStore.getTechData();
+export const setTechData = (data: any[]) => dataStore.setTechData(data);
+export const extractTechByType = (type: string) =>
+	dataStore.extractTechByType(type);
+export const addTechItem = (item: any) => dataStore.addTechItem(item);
+export const getAllItems = () => dataStore.getAllItems();
+export const getUpgradesData = () => dataStore.getUpgradesData();
+export const getCreatures = () => dataStore.getCreatures();
+export const getAllPerks = () => dataStore.getAllPerks();
+export const updateItem = (updatedItem: any) => {
+	if (!updatedItem?.name) {
+		return false;
+	}
 
-	// Tech operations
-	getTechData: () => dataStore.getTechData(),
-	setTechData: (data) => dataStore.setTechData(data),
-	extractTechByType: (type) => dataStore.extractTechByType(type),
-	addTechItem: (item) => dataStore.addTechItem(item),
-
-	// Collection getters
-	getAllItems: () => dataStore.getAllItems(),
-	getUpgradesData: () => dataStore.getUpgradesData(),
-	getCreatures: () => dataStore.getCreatures(),
-	getAllPerks: () => dataStore.getAllPerks(),
-
-	/**
-	 * Updates an existing item in the items collection
-	 * @param {Object} updatedItem - The item with updated properties
-	 * @returns {boolean} - Whether the update was successful
-	 */
-	updateItem: (updatedItem) => {
-		if (!updatedItem?.name) {
-			return false;
-		}
-
-		const index = dataStore.getAllItems().findIndex(item =>
-			(item.name === updatedItem.name) ||
-			(item.type && updatedItem.type && item.type === updatedItem.type)
+	const index = dataStore
+		.getAllItems()
+		.findIndex(
+			(item) =>
+				item.name === updatedItem.name ||
+				(item.type && updatedItem.type && item.type === updatedItem.type),
 		);
 
-		if (index !== -1) {
-			if (updatedItem.walkerInfo && dataStore.getAllItems()[index].walkerInfo) {
-				updatedItem.walkerInfo = { ...dataStore.getAllItems()[index].walkerInfo, ...updatedItem.walkerInfo };
-			}
-
-			// Merge the updated item with the existing one
-			dataStore.getAllItems()[index] = { ...dataStore.getAllItems()[index], ...updatedItem };
-			return true;
+	if (index !== -1) {
+		if (updatedItem.walkerInfo && dataStore.getAllItems()[index].walkerInfo) {
+			updatedItem.walkerInfo = {
+				...dataStore.getAllItems()[index].walkerInfo,
+				...updatedItem.walkerInfo,
+			};
 		}
 
-		return false;
-	},
+		// Merge the updated item with the existing one
+		dataStore.getAllItems()[index] = {
+			...dataStore.getAllItems()[index],
+			...updatedItem,
+		};
+		return true;
+	}
 
-	addCreature: (creature) => dataStore.addCreature(creature),
-
-	// Loot table operations
-	getAllLootTables: () => dataStore.getAllLootTables(),
-	addLootTable: (lootTable) => dataStore.addLootTable(lootTable),
-
-	// Loot template operations
-	getAllLootTemplates: () => dataStore.getAllLootTemplates(),
-	addLootTemplate: (lootTemplate) => dataStore.addLootTemplate(lootTemplate),
-
-	// Collection setters
-	setAllItems: (items) => dataStore.setAllItems(items),
-	setUpgradesData: (data) => dataStore.setUpgradesData(data),
-	setCreatures: (data) => dataStore.setCreatures(data),
-	setLootTables: (data) => dataStore.setLootTables(data),
-	setLootTemplates: (data) => dataStore.setLootTemplates(data),
-	setPerks: (data) => dataStore.setPerks(data),
-
-	// Perk operations
-	getPerkByName: (name) => dataStore.getPerkByName(name),
-	addPerk: (perk) => dataStore.addPerk(perk),
+	return false;
 };
+export const addCreature = (creature: any) => dataStore.addCreature(creature);
+export const getAllLootTables = () => dataStore.getAllLootTables();
+export const addLootTable = (lootTable: any) => dataStore.addLootTable(lootTable);
+export const getAllLootTemplates = () => dataStore.getAllLootTemplates();
+export const addLootTemplate = (lootTemplate: any) =>
+	dataStore.addLootTemplate(lootTemplate);
+export const setAllItems = (items: any[]) => dataStore.setAllItems(items);
+export const setUpgradesData = (data: any[]) => dataStore.setUpgradesData(data);
+export const setCreatures = (data: any[]) => dataStore.setCreatures(data);
+export const setLootTables = (data: any) => dataStore.setLootTables(data);
+export const setLootTemplates = (data: any[]) => dataStore.setLootTemplates(data);
+export const setPerks = (data: any[]) => dataStore.setPerks(data);
+export const getPerkByName = (name: string) => dataStore.getPerkByName(name);
+export const addPerk = (perk: any) => dataStore.addPerk(perk);

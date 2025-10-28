@@ -5,16 +5,16 @@
  * from game data files, specifically focusing on walker capacity data.
  */
 
-const fs = require("node:fs");
-const path = require("node:path");
-const utilityFunctions = require("./utilityFunctions");
-const { readJsonFile } = require("../utils/read-json-file");
+import fs from "node:fs";
+import path from "node:path";
+import * as utilityFunctions from "./utilityFunctions";
+import { readJsonFile } from "../utils/read-json-file";
 
 /**
  * Parse vehicle data from a file to extract capacity information
  * @param {string} filePath - The file path to parse
  */
-const parseVehicleData = (filePath) => {
+export const parseVehicleData = (filePath: string) => {
   try {
     if (!fs.existsSync(filePath)) {
       console.error(`Vehicle file does not exist: ${filePath}`);
@@ -106,7 +106,7 @@ const parseVehicleData = (filePath) => {
  * Process all vehicle files in a directory to extract capacity information
  * @param {string} vehiclesDir - Directory containing vehicle JSON files
  */
-const processVehicleFiles = (vehiclesDir) => {
+export const processVehicleFiles = (vehiclesDir: string) => {
   if (!fs.existsSync(vehiclesDir)) {
     console.error(`Vehicles directory does not exist: ${vehiclesDir}`);
     return;
@@ -144,9 +144,4 @@ const processVehicleFiles = (vehiclesDir) => {
   }
 
   console.log(`Processed ${processedCount} vehicle files`);
-};
-
-module.exports = {
-  parseVehicleData,
-  processVehicleFiles
 };

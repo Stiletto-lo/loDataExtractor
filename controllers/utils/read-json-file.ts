@@ -1,4 +1,4 @@
-const fs = require("node:fs");
+import fs from "node:fs";
 
 /**
  * Safely reads and parses a JSON file
@@ -6,7 +6,7 @@ const fs = require("node:fs");
  * @returns {Object|null} - Parsed JSON data or null if error occurs
  */
 
-const readJsonFile = (filePath, encoding = undefined) => {
+export const readJsonFile = (filePath: string, encoding: any = undefined) => {
   if (!filePath || typeof filePath !== "string") {
     console.error("Invalid file path provided to readJsonFile");
     return undefined;
@@ -20,13 +20,9 @@ const readJsonFile = (filePath, encoding = undefined) => {
     const jsonString = rawData.toString();
     const cleanJson = jsonString.replace(/^\uFEFF/, '');
     return JSON.parse(cleanJson);
-  } catch (error) {
+  } catch (error: any) {
     console.error(`Error reading or parsing file ${filePath}:`, error.message);
     return undefined;
   }
 
-};
-
-module.exports = {
-  readJsonFile,
 };

@@ -2,16 +2,16 @@
  * Schematic parser functions for handling schematic-related data
  */
 
-const dataParser = require("../../dataParsers");
-const translator = require("../../translator");
-const utilityFunctions = require("../utilityFunctions");
-const { readJsonFile } = require("../../utils/read-json-file");
+import * as dataParser from "../../dataParsers";
+import * as translator from "../../translator";
+import * as utilityFunctions from "../utilityFunctions";
+import { readJsonFile } from "../../utils/read-json-file";
 
 /**
  * Parse schematic item data from a file
  * @param {string} filePath - The file path to parse
  */
-const parseSchematicItemData = (filePath) => {
+export const parseSchematicItemData = (filePath: string) => {
 	const jsonData = readJsonFile(filePath);
 
 	if (jsonData?.[1]?.Type) {
@@ -50,7 +50,7 @@ const parseSchematicItemData = (filePath) => {
 		if (jsonData[1].Properties) {
 			item.category = "Schematics";
 
-			const itemsSchematic = [];
+			const itemsSchematic: string[] = [];
 
 			if (jsonData[1].Properties?.MaxStackSize) {
 				item.stackSize = jsonData[1].Properties.MaxStackSize;
@@ -104,8 +104,4 @@ const parseSchematicItemData = (filePath) => {
 			utilityFunctions.addItem(item);
 		}
 	}
-};
-
-module.exports = {
-	parseSchematicItemData,
 };

@@ -5,17 +5,17 @@
  * from game data files.
  */
 
-const fs = require("node:fs");
-const path = require("node:path");
-const dataParser = require("../dataParsers");
-const translator = require("../translator");
-const dataTableTemplate = require("../../templates/datatable");
-const lootTableTemplate = require("../../templates/lootTable");
-const dropDataTemplate = require("../../templates/dropData");
-const creatureTemplate = require("../../templates/creature");
-const utilityFunctions = require("./utilityFunctions");
-const lootTemplateParser = require("./lootParsers/lootTemplateParser");
-const { readJsonFile } = require("../utils/read-json-file");
+import fs from "node:fs";
+import path from "node:path";
+import * as dataParser from "../dataParsers";
+import * as translator from "../translator";
+import * as dataTableTemplate from "../../templates/datatable";
+import * as lootTableTemplate from "../../templates/lootTable";
+import * as dropDataTemplate from "../../templates/dropData";
+import * as creatureTemplate from "../../templates/creature";
+import * as utilityFunctions from "./utilityFunctions";
+import * as lootTemplateParser from "./lootParsers/lootTemplateParser";
+import { readJsonFile } from "../utils/read-json-file";
 
 // Output directories
 const OUTPUT_DIR = path.join(__dirname, "../../exported");
@@ -43,7 +43,7 @@ if (!fs.existsSync(LOOTTABLES_DIR)) {
  * @param {Object} lootItemData - The loot item data containing properties
  * @returns {Object} - A configured drop item
  */
-const createDropItem = (name, lootItemData) => {
+const createDropItem = (name: string, lootItemData: any) => {
 	if (!name || !lootItemData) {
 		return undefined;
 	}
@@ -70,7 +70,7 @@ const createDropItem = (name, lootItemData) => {
  * @param {Object} lootItem - The loot item data
  * @returns {string} - The resolved item name
  */
-const resolveItemName = (baseName, lootItem) => {
+const resolveItemName = (baseName: string, lootItem: any) => {
 	if (!baseName || !lootItem) {
 		return "Unknown Item";
 	}
@@ -100,7 +100,7 @@ const resolveItemName = (baseName, lootItem) => {
  * @param {string} key - The key of the current item
  * @returns {Object} - Object containing validation result and error message
  */
-const validateLootTableEntry = (currentItem, key) => {
+const validateLootTableEntry = (currentItem: any, key: string) => {
 	if (!currentItem.Item) {
 		return { isValid: false, error: `Missing Item property for ${key}` };
 	}
@@ -118,7 +118,7 @@ const validateLootTableEntry = (currentItem, key) => {
  * @param {string} filePath - The file path to parse
  * @returns {boolean} - Whether parsing was successful
  */
-const parseLootTable = (filePath) => {
+export const parseLootTable = (filePath: string) => {
 	if (!filePath || typeof filePath !== "string") {
 		console.error("Invalid file path provided to parseLootTable");
 		return false;
@@ -224,7 +224,7 @@ const parseLootTable = (filePath) => {
  * @param {Object} objectData - The object data
  * @returns {string|undefined} - The loot site name or undefined
  */
-const getLootSiteNameFromObject = (objectData) => {
+export const getLootSiteNameFromObject = (objectData: any) => {
 	if (!objectData || typeof objectData !== "object") {
 		return undefined;
 	}
@@ -241,7 +241,7 @@ const getLootSiteNameFromObject = (objectData) => {
  * @param {Array} objects - Array of objects to filter
  * @returns {Array} - Filtered array of objects
  */
-const filterRelevantObjects = (objects) => {
+const filterRelevantObjects = (objects: any[]) => {
 	if (!Array.isArray(objects)) {
 		console.warn("Invalid objects array provided to filterRelevantObjects");
 		return [];
@@ -261,7 +261,11 @@ const filterRelevantObjects = (objects) => {
  * @param {Object} objectData - The primary object data for the creature.
  * @returns {Object} - Extracted creature properties
  */
-const extractCreatureData = (additionalInfo, objectData, fullCreatureData = null) => {
+const extractCreatureData = (
+	additionalInfo: any,
+	objectData: any,
+	fullCreatureData: any = null,
+) => {
 	if (!additionalInfo && !objectData && !fullCreatureData) {
 		return {};
 	}
@@ -332,7 +336,7 @@ const extractCreatureData = (additionalInfo, objectData, fullCreatureData = null
  * @param {string} filePath - The file path to parse
  * @returns {boolean} - Whether parsing was successful
  */
-const parseLootSites = (filePath) => {
+export const parseLootSites = (filePath: string) => {
 	if (!filePath || typeof filePath !== "string") {
 		console.error("Invalid file path provided to parseLootSites");
 		return false;
@@ -362,7 +366,7 @@ const parseLootSites = (filePath) => {
 	// Find additional components that might contain useful information
 	// This could be a specific component like MistHumanoidMobVariationComponent or the main object itself
 	const mobVariationComponent = jsonData.find(
-		(o) => o.Type === "MistHumanoidMobVariationComponent"
+		(o: any) => o.Type === "MistHumanoidMobVariationComponent"
 	);
 	const primaryDataSource = mobVariationComponent || firstObject;
 
@@ -396,9 +400,4 @@ const parseLootSites = (filePath) => {
 	return true;
 };
 
-module.exports = {
-	parseLootTable,
-	getLootSiteNameFromObject,
-	parseLootSites,
-	parseLootTemplate: lootTemplateParser.parseLootTemplate,
-};
+export const parseLootTemplate = lootTemplateParser.parseLootTemplate;

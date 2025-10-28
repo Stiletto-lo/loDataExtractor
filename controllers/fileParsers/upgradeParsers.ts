@@ -6,14 +6,14 @@
  * between upgrades.
  */
 
-const dataParser = require("../dataParsers");
-const translator = require("../translator");
-const upgradeTemplate = require("../../templates/upgrade");
-const upgradeInfoTemplate = require("../../templates/upgradeInfo");
-const recipeTemplate = require("../../templates/recipe");
-const utilityFunctions = require("./utilityFunctions");
-const itemTemplate = require("../../templates/item");
-const { readJsonFile } = require("../utils/read-json-file");
+import * as dataParser from "../dataParsers";
+import * as translator from "../translator";
+import * as upgradeTemplate from "../../templates/upgrade";
+import * as upgradeInfoTemplate from "../../templates/upgradeInfo";
+import * as recipeTemplate from "../../templates/recipe";
+import * as utilityFunctions from "./utilityFunctions";
+import * as itemTemplate from "../../templates/item";
+import { readJsonFile } from "../utils/read-json-file";
 
 // Property mapping from source data to our internal model
 const PROPERTY_MAPPING = {
@@ -32,7 +32,7 @@ const PROPERTY_MAPPING = {
  * @param {string} key - The current upgrade key
  * @returns {Object} The extracted upgrade info and its validity status
  */
-const extractUpgradeInfo = (properties, key) => {
+const extractUpgradeInfo = (properties: any, key: string) => {
 	if (!properties || typeof properties !== "object") {
 		return { upgradeInfo: { ...upgradeInfoTemplate }, isValid: false };
 	}
@@ -62,7 +62,7 @@ const extractUpgradeInfo = (properties, key) => {
  * @param {string} key - The current upgrade key
  * @returns {Object|null} The recipe object or null if no recipe data
  */
-const extractRecipeData = (properties, key) => {
+const extractRecipeData = (properties: any, key: string) => {
 	if (!properties || typeof properties !== "object") {
 		return null;
 	}
@@ -119,7 +119,12 @@ const extractRecipeData = (properties, key) => {
  * @param {string|undefined} superUp - The super upgrade name
  * @returns {boolean} Whether the upgrade was processed successfully
  */
-const processUpgradeEntry = (jsonData, key, profile, superUp) => {
+const processUpgradeEntry = (
+	jsonData: any,
+	key: string,
+	profile: string,
+	superUp: string | undefined,
+) => {
 	if (!jsonData || !key) {
 		return false;
 	}
@@ -165,7 +170,7 @@ const processUpgradeEntry = (jsonData, key, profile, superUp) => {
  * @param {string} filePath - The file path to parse
  * @returns {boolean} Whether the parsing was successful
  */
-const parseUpgrades = (filePath) => {
+export const parseUpgrades = (filePath: string) => {
 	if (!filePath || typeof filePath !== "string") {
 		console.error("Invalid file path provided to parseUpgrades");
 		return false;
@@ -206,7 +211,7 @@ const parseUpgrades = (filePath) => {
 	}
 };
 
-const getUpgradeItem = (upgradePure) => {
+export const getUpgradeItem = (upgradePure: any) => {
 	if (upgradePure?.super) {
 		// Extract the actual profile name from the super object
 		let superProfileName = upgradePure.super;
@@ -332,7 +337,7 @@ const getUpgradeItem = (upgradePure) => {
 	return item;
 };
 
-const parseUpgradesToItems = () => {
+export const parseUpgradesToItems = () => {
 	for (const upgradePure of utilityFunctions.getUpgradesData()) {
 		const item = getUpgradeItem(upgradePure);
 		if (item?.name) {
@@ -341,14 +346,8 @@ const parseUpgradesToItems = () => {
 	}
 };
 
-module.exports = {
-	parseUpgrades,
-	parseUpgradesToItems,
-	getUpgradeItem,
-	// Export for testing purposes
-	_internal: {
-		extractUpgradeInfo,
-		extractRecipeData,
-		processUpgradeEntry,
-	},
+export const _internal = {
+	extractUpgradeInfo,
+	extractRecipeData,
+	processUpgradeEntry,
 };

@@ -4,7 +4,7 @@
  * @param {string} folderPath - Export folder path
  * @returns {Promise} - Promise that resolves when export is completed
  */
-const exportPerksData = async (perks, folderPath) => {
+export const exportPerksData = async (perks: any[], folderPath: string) => {
   if (perks.length > 0) {
     console.log(`Processing ${perks.length} perk entries for export...`);
 
@@ -41,17 +41,20 @@ const exportPerksData = async (perks, folderPath) => {
  * to JSON files in different formats.
  */
 
-const fs = require("fs-extra");
-const fileParser = require("../controllers/fileParsers");
-const dataProcessor = require("./dataProcessor");
-const { convertToSnakeCase } = require("../utils/convertToSnakeCase.js");
+import fs from "fs-extra";
+import * as fileParser from "../controllers/fileParsers";
+import * as dataProcessor from "./dataProcessor";
+import { convertToSnakeCase } from "../utils/convertToSnakeCase.js";
+import * as ingredientNameFixer from "../utils/ingredientNameFixer";
+import * as creatureProcessor from "../utils/creatureProcessor";
+
 /**
  * Exports technology data to JSON files
  * @param {Array} techData - Processed technology data
  * @param {string} folderPath - Export folder path
  * @returns {Promise} - Promise that resolves when export is completed
  */
-const exportTechData = async (techData, folderPath) => {
+export const exportTechData = async (techData: any[], folderPath: string) => {
   if (techData.length > 0) {
     console.log(`Processing ${techData.length} tech entries for export...`);
 
@@ -117,16 +120,18 @@ const exportTechData = async (techData, folderPath) => {
  * @param {string} folderPath - Export folder path
  * @returns {Promise} - Promise that resolves when export is completed
  */
-const exportItemsData = async (allItems, minItems, folderPath) => {
+export const exportItemsData = async (
+	allItems: any[],
+	minItems: any[],
+	folderPath: string,
+) => {
   console.info("Exporting items.json");
   if (allItems.length > 0) {
     // Process strongbox drops
     console.log("Processing strongbox drops before export...");
-    const dataProcessor = require("./dataProcessor");
     const itemsWithStrongboxDrops = dataProcessor.processStrongboxes(allItems);
 
     // Apply ingredient name fixing before exporting
-    const ingredientNameFixer = require("../utils/ingredientNameFixer");
     console.log("Applying ingredient name fixing to items before export...");
     const fixedItems = ingredientNameFixer.fixIngredientNames(itemsWithStrongboxDrops);
     const fixedMinItems = ingredientNameFixer.fixIngredientNames(minItems);
@@ -170,7 +175,10 @@ const exportItemsData = async (allItems, minItems, folderPath) => {
  * @param {string} folderPath - Export folder path
  * @returns {Promise} - Promise that resolves when export is completed
  */
-const exportIndividualItemFiles = async (allItems, folderPath) => {
+export const exportIndividualItemFiles = async (
+	allItems: any[],
+	folderPath: string,
+) => {
   const itemsFolder = `${folderPath}items`;
   fs.ensureDirSync(itemsFolder);
 
@@ -334,7 +342,11 @@ const exportIndividualItemFiles = async (allItems, folderPath) => {
  * @param {string} folderPath - Export folder path
  * @returns {Promise} - Promise that resolves when export is completed
  */
-const exportCreaturesData = async (creatures, minCreatures, folderPath) => {
+export const exportCreaturesData = async (
+	creatures: any[],
+	minCreatures: any[],
+	folderPath: string,
+) => {
   if (creatures.length > 0) {
     // Export main creatures.json file
     await fs.writeFile(
@@ -376,7 +388,10 @@ const exportCreaturesData = async (creatures, minCreatures, folderPath) => {
  * @param {string} folderPath - Export folder path
  * @returns {Promise} - Promise that resolves when export is completed
  */
-const exportTranslationsData = async (translateData, folderPath) => {
+export const exportTranslationsData = async (
+	translateData: any,
+	folderPath: string,
+) => {
   for (const language in translateData) {
     const fileData = translateData[language];
     const languageArray = language.split("-");
@@ -409,7 +424,7 @@ const exportTranslationsData = async (translateData, folderPath) => {
  * @param {string} folderPath - Export folder path
  * @returns {Promise} - Promise that resolves when export is completed
  */
-const saveAllFiles = async (folderPath) => {
+export const saveAllFiles = async (folderPath: string) => {
   // Process and export item data
   const allItems = dataProcessor.processItems();
   const minItems = dataProcessor.createMinItems(allItems);
@@ -431,14 +446,4 @@ const saveAllFiles = async (folderPath) => {
   // Process and export translation data
   const translateData = dataProcessor.processTranslations();
   await exportTranslationsData(translateData, folderPath);
-};
-
-module.exports = {
-  exportTechData,
-  exportItemsData,
-  exportIndividualItemFiles,
-  exportCreaturesData,
-  exportTranslationsData,
-  exportPerksData,
-  saveAllFiles,
 };

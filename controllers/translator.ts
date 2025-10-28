@@ -4,21 +4,21 @@
  * This module provides translation functionality for the data extractor.
  * It handles translation of names, descriptions, and other text elements.
  */
-require("dotenv").config();
-
-/**
- * Translation controller object
- * @type {Object}
- */
-const controller = {};
+import "dotenv/config";
 
 // Import translation dictionaries
-const additionalTranslations = require("../translations/aditionalTranslations");
-const unifiedTechTreeNames = require("../translations/unifiedTechTreeNames");
-const itemNameGlossary = require("./fileParsers/itemNameGlossary");
+import * as additionalTranslations from "../translations/aditionalTranslations";
+import * as unifiedTechTreeNames from "../translations/unifiedTechTreeNames";
+import * as itemNameGlossary from "./fileParsers/itemNameGlossary";
 
 // Translation storage objects
-const translationStore = {
+const translationStore: {
+	allTranslations: { [key: string]: string };
+	allDescriptions: { [key: string]: string };
+	translationsFromOtherLanguages: { [key: string]: { [key: string]: string } };
+	descriptionsFromOtherLanguages: { [key: string]: { [key: string]: string } };
+	translationsInUse: { [key: string]: string };
+} = {
 	allTranslations: {},
 	allDescriptions: {},
 	translationsFromOtherLanguages: {},
@@ -31,7 +31,7 @@ const translationStore = {
  * @param {string} text - The text to trim
  * @returns {string} - Trimmed text or empty string
  */
-const trimIfExists = (text) => {
+const trimIfExists = (text: string) => {
 	return text ? text.trim() : "";
 };
 
@@ -40,7 +40,7 @@ const trimIfExists = (text) => {
  * @param {*} value - The value to check
  * @returns {boolean} - True if value is null or empty
  */
-const isNullOrEmpty = (value) => {
+const isNullOrEmpty = (value: any) => {
 	return value === null || value === undefined || value === "";
 };
 
@@ -49,7 +49,7 @@ const isNullOrEmpty = (value) => {
  * @param {string} name - The name to translate
  * @returns {string} - The translated name
  */
-controller.translateEachPart = (name) => {
+export const translateEachPart = (name: string) => {
 	if (isNullOrEmpty(name)) {
 		return "";
 	}
@@ -58,7 +58,7 @@ controller.translateEachPart = (name) => {
 
 	return words
 		.reduce((accumulator, word) => {
-			const translatedWord = controller.searchName(word);
+			const translatedWord = searchName(word);
 			if (translatedWord) {
 				return `${accumulator} ${translatedWord}`;
 			}
@@ -72,7 +72,7 @@ controller.translateEachPart = (name) => {
  * @param {string} name - The name to translate
  * @returns {string} - The translated name
  */
-controller.translateName = (name) => {
+export const translateName = (name: string) => {
 	if (isNullOrEmpty(name)) {
 		return "";
 	}
@@ -80,11 +80,11 @@ controller.translateName = (name) => {
 	// First check if this name exists in the item name glossary
 	const glossaryName = itemNameGlossary.getDisplayName(name);
 	if (glossaryName) {
-		controller.addTranslationInUse(name, glossaryName);
+		addTranslationInUse(name, glossaryName);
 		return glossaryName;
 	}
 
-	const translatedName = controller.searchName(name);
+	const translatedName = searchName(name);
 
 	if (translatedName) {
 		return translatedName;
@@ -93,7 +93,7 @@ controller.translateName = (name) => {
 	// Check if this is a tech tree name that needs normalization using the unified module
 	const normalizedName = unifiedTechTreeNames.normalize(name);
 	if (normalizedName !== name) {
-		controller.addTranslationInUse(name, normalizedName);
+		addTranslationInUse(name, normalizedName);
 		return normalizedName;
 	}
 
@@ -107,7 +107,7 @@ controller.translateName = (name) => {
  * @param {string} name - The name to translate
  * @returns {string} - The normalized and translated parent name
  */
-controller.translateTechTreeName = (name) => {
+export const translateTechTreeName = (name: string) => {
 	if (isNullOrEmpty(name)) {
 		return "";
 	}
@@ -116,15 +116,15 @@ controller.translateTechTreeName = (name) => {
 	const normalizedName = unifiedTechTreeNames.normalize(name);
 	if (normalizedName !== name) {
 		// Add to translations in use to ensure it's included in exports
-		controller.addTranslationInUse(name, normalizedName);
+		addTranslationInUse(name, normalizedName);
 		return normalizedName;
 	}
 
 	// If not found in normalizer, try regular translation
-	return controller.translateName(name);
+	return translateName(name);
 };
 
-controller.searchName = (name) => {
+export const searchName = (name: string) => {
 	if (isNullOrEmpty(name)) {
 		return null;
 	}
@@ -133,26 +133,36 @@ controller.searchName = (name) => {
 	const glossaryName = itemNameGlossary.getDisplayName(name);
 	if (glossaryName) {
 		const translation = trimIfExists(glossaryName);
-		controller.addTranslationInUse(name, translation);
+		if (translation) {
+			addTranslationInUse(name, translation);
+		}
 		return translation;
 	}
 
 	// Check in additional translations
-	if (additionalTranslations[name]) {
-		const translation = trimIfExists(additionalTranslations[name]);
-		controller.addTranslationInUse(name, translation);
+	if (additionalTranslations[name as keyof typeof additionalTranslations]) {
+		const translation = trimIfExists(
+			additionalTranslations[name as keyof typeof additionalTranslations],
+		);
+		if (translation) {
+			addTranslationInUse(name, translation);
+		}
 		return translation;
 	}
 
 	// Check in all translations
-	if (translationStore.allTranslations[name]) {
-		const translation = trimIfExists(translationStore.allTranslations[name]);
-		controller.addTranslationInUse(name, translation);
+	if (translationStore.allTranslations[name as keyof typeof translationStore.allTranslations]) {
+		const translation = trimIfExists(
+			translationStore.allTranslations[name as keyof typeof translationStore.allTranslations],
+		);
+		if (translation) {
+			addTranslationInUse(name, translation);
+		}
 		return translation;
 	}
 
-	if (controller.translationsInUse?.[name]) {
-		return controller.translationsInUse[name];
+	if (translationStore.translationsInUse[name as keyof typeof translationStore.translationsInUse]) {
+		return translationStore.translationsInUse[name as keyof typeof translationStore.translationsInUse];
 	}
 
 	return null;
@@ -163,12 +173,12 @@ controller.searchName = (name) => {
  * @param {Array} allItems - The items to translate
  * @returns {Array} - The translated items
  */
-controller.translateItems = (allItems) => {
+export const translateItems = (allItems: any[]) => {
 	if (!Array.isArray(allItems)) {
 		return [];
 	}
 
-	return allItems.map((item) => controller.translateItem(item));
+	return allItems.map((item) => translateItem(item));
 };
 
 /**
@@ -176,7 +186,7 @@ controller.translateItems = (allItems) => {
  * @param {Object} item - The item to translate
  * @returns {Object} - The translated item
  */
-controller.translateItem = (item) => {
+export const translateItem = (item: any) => {
 	if (!item) {
 		return {};
 	}
@@ -194,15 +204,15 @@ controller.translateItem = (item) => {
 		: null;
 	if (glossaryName) {
 		if (item.name) {
-			controller.addTranslation(item.name, glossaryName);
+			addTranslation(item.name, glossaryName);
 		}
 		name = glossaryName;
 	} else {
 		// Fall back to regular translation if not in glossary
-		const translatedName = controller.searchName(item.translation);
+		const translatedName = searchName(item.translation);
 		if (translatedName) {
 			if (item.name) {
-				controller.addTranslation(item.name, translatedName);
+				addTranslation(item.name, translatedName);
 			}
 			name = translatedName;
 		}
@@ -214,7 +224,7 @@ controller.translateItem = (item) => {
 
 	// Translate category if available
 	if (item.category) {
-		const translatedCategory = controller.searchName(item.category);
+		const translatedCategory = searchName(item.category);
 		if (translatedCategory) {
 			item.category = trimIfExists(translatedCategory);
 		}
@@ -224,7 +234,7 @@ controller.translateItem = (item) => {
 	if (item.learn && item.learn.length > 0) {
 		item.learn = item.learn
 			.filter(Boolean)
-			.map((value) => controller.translateItemPart(value));
+			.map((value: any) => translateItemPart(value));
 	}
 
 	return item;
@@ -235,14 +245,14 @@ controller.translateItem = (item) => {
  * @param {string} value - The value to translate
  * @returns {string} - The translated value
  */
-controller.translateItemPart = (value) => {
+export const translateItemPart = (value: string) => {
 	if (!value) {
 		return "";
 	}
 
 	let newValue = value;
 
-	const translatedValue = controller.searchName(newValue);
+	const translatedValue = searchName(newValue);
 	if (translatedValue) {
 		newValue = translatedValue;
 	}
@@ -255,7 +265,7 @@ controller.translateItemPart = (value) => {
  * @param {Array} allItems - The items to add descriptions to
  * @returns {Array} - The items with descriptions
  */
-controller.addDescriptions = (allItems) => {
+export const addDescriptions = (allItems: any[]) => {
 	if (!Array.isArray(allItems)) {
 		return [];
 	}
@@ -268,8 +278,10 @@ controller.addDescriptions = (allItems) => {
 			name = item.translation;
 		}
 
-		if (translationStore.allDescriptions[name]) {
-			item.description = trimIfExists(translationStore.allDescriptions[name]);
+		if (translationStore.allDescriptions[name as keyof typeof translationStore.allDescriptions]) {
+			item.description = trimIfExists(
+				translationStore.allDescriptions[name as keyof typeof translationStore.allDescriptions],
+			);
 		}
 
 		return item;
@@ -282,23 +294,27 @@ controller.addDescriptions = (allItems) => {
  * @param {string} translation - The translation to add
  * @param {string|null} language - The language of the translation
  */
-controller.addTranslation = (key, translation, language = null) => {
+export const addTranslation = (
+	key: string,
+	translation: string,
+	language: string | null = null,
+) => {
 	if (isNullOrEmpty(key) || isNullOrEmpty(translation)) {
 		return;
 	}
 
 	if (language === null) {
-		if (!translationStore.allTranslations[key]) {
-			translationStore.allTranslations[key] = translation;
+		if (!translationStore.allTranslations[key as keyof typeof translationStore.allTranslations]) {
+			translationStore.allTranslations[key as keyof typeof translationStore.allTranslations] =
+				translation;
 
-			controller.addTranslationInUse(key, translation);
+			addTranslationInUse(key, translation);
 		}
-	} else if (translationStore.translationsFromOtherLanguages[language]) {
-		translationStore.translationsFromOtherLanguages[language][key] =
-			translation;
 	} else {
-		translationStore.translationsFromOtherLanguages[language] = {};
-		translationStore.translationsFromOtherLanguages[language][key] =
+		if (!translationStore.translationsFromOtherLanguages[language as keyof typeof translationStore.translationsFromOtherLanguages]) {
+			translationStore.translationsFromOtherLanguages[language as keyof typeof translationStore.translationsFromOtherLanguages] = {} as any;
+		}
+		translationStore.translationsFromOtherLanguages[language as keyof typeof translationStore.translationsFromOtherLanguages][key] =
 			translation;
 	}
 };
@@ -309,19 +325,22 @@ controller.addTranslation = (key, translation, language = null) => {
  * @param {string} description - The description to add
  * @param {string|null} language - The language of the description
  */
-controller.addDescription = (key, description, language = null) => {
+export const addDescription = (
+	key: string,
+	description: string,
+	language: string | null = null,
+) => {
 	if (isNullOrEmpty(key) || isNullOrEmpty(description)) {
 		return;
 	}
 
 	if (language === null) {
-		translationStore.allDescriptions[key] = description;
-	} else if (translationStore.descriptionsFromOtherLanguages[language]) {
-		translationStore.descriptionsFromOtherLanguages[language][key] =
-			description;
+		translationStore.allDescriptions[key as keyof typeof translationStore.allDescriptions] = description;
 	} else {
-		translationStore.descriptionsFromOtherLanguages[language] = {};
-		translationStore.descriptionsFromOtherLanguages[language][key] =
+		if (!translationStore.descriptionsFromOtherLanguages[language as keyof typeof translationStore.descriptionsFromOtherLanguages]) {
+			translationStore.descriptionsFromOtherLanguages[language as keyof typeof translationStore.descriptionsFromOtherLanguages] = {} as any;
+		}
+		translationStore.descriptionsFromOtherLanguages[language as keyof typeof translationStore.descriptionsFromOtherLanguages][key] =
 			description;
 	}
 };
@@ -332,8 +351,8 @@ controller.addDescription = (key, description, language = null) => {
  * @param {string} key - The key to check
  * @returns {boolean} - True if the key is in use
  */
-controller.isKeyTranslationInUse = (key) => {
-	return !isNullOrEmpty(translationStore.translationsInUse[key]);
+export const isKeyTranslationInUse = (key: string) => {
+	return !isNullOrEmpty(translationStore.translationsInUse[key as keyof typeof translationStore.translationsInUse]);
 };
 
 /**
@@ -341,13 +360,13 @@ controller.isKeyTranslationInUse = (key) => {
  * @param {string} key - The key to add
  * @param {string} translation - The translation to add
  */
-controller.addTranslationInUse = (key, translation) => {
+export const addTranslationInUse = (key: string, translation: string) => {
 	if (isNullOrEmpty(key) || isNullOrEmpty(translation)) {
 		return;
 	}
 
-	if (!controller.isKeyTranslationInUse(key)) {
-		translationStore.translationsInUse[key] = translation;
+	if (!isKeyTranslationInUse(key)) {
+		translationStore.translationsInUse[key as keyof typeof translationStore.translationsInUse] = translation;
 	}
 };
 
@@ -355,21 +374,23 @@ controller.addTranslationInUse = (key, translation) => {
  * Gets the translation files
  * @returns {Object} - The translation files
  */
-controller.getTranslateFiles = () => {
-	const translationsFiltered = {};
+export const getTranslateFiles = () => {
+	const translationsFiltered: { [key: string]: any } = {};
 
 	// First, collect all the English item names that are actually in use
 	const usedItemNames = new Set();
 
 	for (const key in translationStore.allTranslations) {
-		const englishName = translationStore.allTranslations[key];
+		const englishName =
+			translationStore.allTranslations[key as keyof typeof translationStore.allTranslations];
 		if (englishName) {
 			usedItemNames.add(englishName);
 		}
 	}
 
 	for (const key in translationStore.translationsInUse) {
-		const englishName = translationStore.translationsInUse[key];
+		const englishName =
+			translationStore.translationsInUse[key as keyof typeof translationStore.translationsInUse];
 		// Much less restrictive filtering to include more valid translations
 		// Only filter out completely empty strings or extremely long entries
 		if (englishName) {
@@ -388,14 +409,17 @@ controller.getTranslateFiles = () => {
 
 		// Process translations
 		for (const key in translationStore.translationsFromOtherLanguages[
-			language
+			language as keyof typeof translationStore.translationsFromOtherLanguages
 		]) {
-			if (controller.isKeyTranslationInUse(key)) {
+			if (isKeyTranslationInUse(key)) {
 				// Get the English name which will be used as the key
-				const englishName = translationStore.translationsInUse[key];
+				const englishName =
+					translationStore.translationsInUse[key as keyof typeof translationStore.translationsInUse];
 				// Get the translated text in the target language
 				const translatedText =
-					translationStore.translationsFromOtherLanguages[language][key];
+					translationStore.translationsFromOtherLanguages[
+						language as keyof typeof translationStore.translationsFromOtherLanguages
+					][key];
 
 				// Skip invalid entries
 				if (
@@ -427,5 +451,3 @@ controller.getTranslateFiles = () => {
 
 	return translationsFiltered;
 };
-
-module.exports = controller;

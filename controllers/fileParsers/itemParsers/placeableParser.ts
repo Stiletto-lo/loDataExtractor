@@ -2,20 +2,20 @@
  * Placeable parser functions for handling placeable-related data
  */
 
-const dataParser = require("../../dataParsers");
-const translator = require("../../translator");
-const utilityFunctions = require("../utilityFunctions");
+import * as dataParser from "../../dataParsers";
+import * as translator from "../../translator";
+import * as utilityFunctions from "../utilityFunctions";
 
 // Import templates
-const recipeTemplate = require("../../../templates/recipe");
-const structureInfoTemplate = require("../../../templates/structureInfo");
-const { readJsonFile } = require("../../utils/read-json-file");
+import * as recipeTemplate from "../../../templates/recipe";
+import * as structureInfoTemplate from "../../../templates/structureInfo";
+import { readJsonFile } from "../../utils/read-json-file";
 
 /**
  * Parse placeable data from a file
  * @param {string} filePath - The file path to parse
  */
-const parsePlaceableData = (filePath) => {
+export const parsePlaceableData = (filePath: string) => {
 	const jsonData = readJsonFile(filePath);
 
 	if (jsonData?.[1]?.Type) {
@@ -163,8 +163,4 @@ const parsePlaceableData = (filePath) => {
 
 		utilityFunctions.addItem(item);
 	}
-};
-
-module.exports = {
-	parsePlaceableData,
 };

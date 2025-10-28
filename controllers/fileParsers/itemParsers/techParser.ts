@@ -2,17 +2,16 @@
  * Tech parser functions for handling tech-related data
  */
 
-const fs = require("node:fs");
-const dataParser = require("../../dataParsers");
-const translator = require("../../translator");
-const utilityFunctions = require("../utilityFunctions");
-const { readJsonFile } = require("../../utils/read-json-file");
+import * as dataParser from "../../dataParsers";
+import * as translator from "../../translator";
+import * as utilityFunctions from "../utilityFunctions";
+import { readJsonFile } from "../../utils/read-json-file";
 
 /**
  * Parse tech data from a file
  * @param {string} filePath - The file path to parse
  */
-const parseTechData = (filePath) => {
+export const parseTechData = (filePath: string) => {
 	const jsonData = readJsonFile(filePath);
 
 	if (jsonData?.[1]?.Type) {
@@ -81,7 +80,7 @@ const parseTechData = (filePath) => {
  * @param {string} techName - The name of the tech
  * @returns {Array} - Array of item names that are unlocked by this tech
  */
-const findUnlockedItems = (techType, techName) => {
+const findUnlockedItems = (techType: string, techName: string) => {
 	if (!techType || !techName) {
 		return [];
 	}
@@ -113,7 +112,7 @@ const findUnlockedItems = (techType, techName) => {
 	});
 
 	// Extract the items that these schematics unlock (from their 'learn' arrays)
-	let unlockedItems = [];
+	let unlockedItems: string[] = [];
 	for (const schematic of relatedSchematics) {
 		if (schematic.learn && Array.isArray(schematic.learn)) {
 			unlockedItems = [...unlockedItems, ...schematic.learn];
@@ -151,8 +150,4 @@ const findUnlockedItems = (techType, techName) => {
 
 	// Remove duplicates
 	return [...new Set(unlockedItems)];
-};
-
-module.exports = {
-	parseTechData,
 };

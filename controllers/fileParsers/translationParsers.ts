@@ -4,8 +4,8 @@
  * and extract key-value pairs for use in the application.
  */
 
-const translator = require("../translator");
-const { readJsonFile } = require("../utils/read-json-file");
+import * as translator from "../translator";
+import { readJsonFile } from "../utils/read-json-file";
 
 // Constants
 const GAME_PATH_REGEX = /[\\\/]Game[\\\/](.+)[\\\/]Game\.json/; // Works with both forward and backslashes
@@ -17,7 +17,11 @@ const GAME_PATH_REGEX = /[\\\/]Game[\\\/](.+)[\\\/]Game\.json/; // Works with bo
  * @param {string|null} language - Optional language code
  * @returns {void}
  */
-const processTranslationEntry = (key, value, language = null) => {
+export const processTranslationEntry = (
+	key: string,
+	value: string,
+	language: string | null = null,
+) => {
 	if (!key || typeof key !== "string" || !value || typeof value !== "string") {
 		return;
 	}
@@ -53,7 +57,10 @@ const processTranslationEntry = (key, value, language = null) => {
  * @param {string|null} language - Optional language code
  * @returns {boolean} - Whether processing was successful
  */
-const processTranslationData = (translationData, language = null) => {
+const processTranslationData = (
+	translationData: any,
+	language: string | null = null,
+) => {
 	if (!translationData || typeof translationData !== "object") {
 		return false;
 	}
@@ -72,7 +79,7 @@ const processTranslationData = (translationData, language = null) => {
  * @param {string} filePath - The file path to parse
  * @returns {boolean} - Whether parsing was successful
  */
-const parseTranslations = (filePath) => {
+export const parseTranslations = (filePath: string) => {
 	const jsonData = readJsonFile(filePath);
 
 	if (!jsonData) {
@@ -87,7 +94,7 @@ const parseTranslations = (filePath) => {
 	return false;
 };
 
-const parseStringTables = (filePath) => {
+export const parseStringTables = (filePath: string) => {
 	const jsonData = readJsonFile(filePath);
 
 	if (!jsonData) {
@@ -106,7 +113,7 @@ const parseStringTables = (filePath) => {
  * @param {string} filePath - The file path to extract language from
  * @returns {string|null} - The language code or null if not found
  */
-const extractLanguageFromPath = (filePath) => {
+const extractLanguageFromPath = (filePath: string) => {
 	if (!filePath || typeof filePath !== "string") {
 		return null;
 	}
@@ -123,7 +130,7 @@ const extractLanguageFromPath = (filePath) => {
  * @param {string} filePath - The file path to parse
  * @returns {boolean} - Whether parsing was successful
  */
-const parseOtherTranslations = (filePath) => {
+export const parseOtherTranslations = (filePath: string) => {
 	const language = extractLanguageFromPath(filePath);
 
 	if (!language) {
@@ -182,15 +189,8 @@ const parseOtherTranslations = (filePath) => {
 	return success;
 };
 
-module.exports = {
-	parseTranslations,
-	parseOtherTranslations,
-	processTranslationEntry,
-	parseStringTables,
-	// Export for testing purposes
-	_internal: {
-		readJsonFile,
-		processTranslationData,
-		extractLanguageFromPath,
-	},
+export const _internal = {
+	readJsonFile,
+	processTranslationData,
+	extractLanguageFromPath,
 };
