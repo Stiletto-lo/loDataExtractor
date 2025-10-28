@@ -12,7 +12,7 @@ import type { WeaponInfo } from "../../../templates/weaponInfo";
 import type { ToolInfo } from "../../../templates/toolInfo";
 import type { Recipe } from "../../../templates/recipe";
 import { armorInfoTemplate } from "../../../templates/armorInfo";
-import { moduleInfoTemplate } from "../../../templates/moduleInfo";
+import type { ModuleInfo } from "../../../templates/moduleInfo";
 
 /**
  * Get item from item data
@@ -106,7 +106,9 @@ export const getItemFromItemData = (itemData: any, oldItem: any) => {
 
 		// Module Info
 		if (props?.MaximumQuantity || props?.PercentageIncreasePerItem) {
-			if (!item.moduleInfo) item.moduleInfo = { ...moduleInfoTemplate };
+			if (!item.moduleInfo) {
+				item.moduleInfo = {} as ModuleInfo;
+			}
 			if (props?.MaximumQuantity) {
 				item.moduleInfo.max = props.MaximumQuantity;
 				item.moduleInfo.increase = props.AbsoluteIncreasePerItem ?? undefined;

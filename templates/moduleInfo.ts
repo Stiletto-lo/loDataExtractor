@@ -1,7 +1,5 @@
-export const moduleInfoTemplate = {
-	max: undefined as number | undefined,
-	increase: undefined as number | undefined,
-	maxIncrease: undefined as number | undefined,
+export type ModuleInfo = {
+	max?: number;
+	increase?: number;
+	maxIncrease?: number;
 };
-
-Object.freeze(moduleInfoTemplate);
