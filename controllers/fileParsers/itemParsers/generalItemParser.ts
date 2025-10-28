@@ -8,7 +8,7 @@ import * as utilityFunctions from "../utilityFunctions";
 import { readJsonFile } from "../../utils/read-json-file";
 
 // Import templates
-import { weaponInfoTemplate } from "../../../templates/weaponInfo";
+import type { WeaponInfo } from "../../../templates/weaponInfo";
 import { toolInfoTemplate } from "../../../templates/toolInfo";
 import { projectileDamageTemplate } from "../../../templates/projectileDamage";
 import { recipeTemplate } from "../../../templates/recipe";
@@ -23,13 +23,17 @@ import { costTemplate } from "../../../templates/cost";
  * @returns {Object|undefined} - The item object or undefined
  */
 export const getItemFromItemData = (itemData: any, oldItem: any) => {
-	if (!itemData) { return oldItem ?? undefined; }
+	if (!itemData) {
+		return oldItem ?? undefined;
+	}
 
 	const item = oldItem ?? utilityFunctions.extractItemByType(itemData.Type);
 
 	// Helper to get string from SourceString or LocalizedString
 	const getString = (obj: any, key: string) =>
-		obj?.[key]?.SourceString?.trim() || obj?.[key]?.LocalizedString?.trim() || "";
+		obj?.[key]?.SourceString?.trim() ||
+		obj?.[key]?.LocalizedString?.trim() ||
+		"";
 
 	// Helper to add translation
 	const setTranslation = (key: string, name: string) => {
@@ -121,8 +125,10 @@ export const getItemFromItemData = (itemData: any, oldItem: any) => {
 				...projectileDamageTemplate,
 				damage: props.ProjectileDamage.Damage ?? undefined,
 				penetration: props.ProjectileDamage.Penetration ?? undefined,
-				effectivenessVsSoak: props.ProjectileDamage.EffectivenessVsSoak ?? undefined,
-				effectivenessVsReduce: props.ProjectileDamage.EffectivenessVsReduce ?? undefined,
+				effectivenessVsSoak:
+					props.ProjectileDamage.EffectivenessVsSoak ?? undefined,
+				effectivenessVsReduce:
+					props.ProjectileDamage.EffectivenessVsReduce ?? undefined,
 			};
 		}
 
@@ -147,7 +153,7 @@ export const getItemFromItemData = (itemData: any, oldItem: any) => {
 		if (props?.MaxDurability) item.durability = props.MaxDurability;
 
 		// Weapon Info
-		const weaponInfo = { ...weaponInfoTemplate };
+		const weaponInfo = {} as WeaponInfo;
 		let hasWeaponInfo = false;
 		if (props?.DurabilityDamage) {
 			weaponInfo.durabilityDamage = props.DurabilityDamage;
@@ -179,7 +185,9 @@ export const getItemFromItemData = (itemData: any, oldItem: any) => {
 				hasWeaponInfo = true;
 			}
 		}
-		if (hasWeaponInfo) { item.weaponInfo = weaponInfo; }
+		if (hasWeaponInfo) {
+			item.weaponInfo = weaponInfo;
+		}
 
 		// Tool Info
 		if (props?.ToolInfo) {
@@ -201,7 +209,9 @@ export const getItemFromItemData = (itemData: any, oldItem: any) => {
 				}
 				toolInfos.push(baseToolInfo);
 			}
-			if (toolInfos.length > 0) { item.toolInfo = toolInfos; }
+			if (toolInfos.length > 0) {
+				item.toolInfo = toolInfos;
+			}
 		}
 
 		// Recipes/Crafting
@@ -241,12 +251,17 @@ export const getItemFromItemData = (itemData: any, oldItem: any) => {
 				}
 				crafting.push(recipe);
 			}
-			if (crafting.length > 0) { item.crafting = crafting; }
+			if (crafting.length > 0) {
+				item.crafting = crafting;
+			}
 		}
 
 		// Fallback name/translation
 		if (props?.Name?.Key) {
-			if (props.Name.SourceString && props.Name.SourceString.trim().length > 0) {
+			if (
+				props.Name.SourceString &&
+				props.Name.SourceString.trim().length > 0
+			) {
 				item.name = props.Name.SourceString.trim();
 				item.translation = props.Name.SourceString.trim();
 			} else {
@@ -268,7 +283,9 @@ export const getItemFromItemData = (itemData: any, oldItem: any) => {
 	// Special resource category fallback
 	if (
 		!item.category &&
-		["Worm Scale", "Proxy License", "Flots", "Fiery Concoction"].includes(item.name)
+		["Worm Scale", "Proxy License", "Flots", "Fiery Concoction"].includes(
+			item.name,
+		)
 	) {
 		item.category = "Resources";
 	}

@@ -5,13 +5,3 @@ export type Upgrade = {
 	crafting?: any | undefined;
 	upgradeInfo?: any | undefined;
 };
-
-export const upgradeTemplate: Upgrade = {
-	name: undefined,
-	profile: undefined,
-	super: undefined,
-	crafting: undefined,
-	upgradeInfo: undefined,
-};
-
-Object.freeze(upgradeTemplate);

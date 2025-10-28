@@ -5051,7 +5051,8 @@
     "name": "Buffalo Walker Upgrade Mobility Tier 1",
     "type": "Buffalo Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {
-      "engineTorqueMultiplier": 1.4
+      "engineTorqueMultiplier": 1.4,
+      "sprintingTorqueDiscount": 0.1
     }
   },
   {
@@ -5094,7 +5095,8 @@
     "name": "Buffalo Walker Upgrade Mobility Tier 2",
     "type": "Buffalo Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {
-      "engineTorqueMultiplier": 1.5
+      "engineTorqueMultiplier": 1.5,
+      "sprintingTorqueDiscount": 0.2
     }
   },
   {
@@ -5137,7 +5139,8 @@
     "name": "Buffalo Walker Upgrade Mobility Tier 3",
     "type": "Buffalo Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {
-      "engineTorqueMultiplier": 1.7
+      "engineTorqueMultiplier": 1.7,
+      "sprintingTorqueDiscount": 0.3
     }
   },
   {
@@ -5184,7 +5187,8 @@
     "name": "Buffalo Walker Upgrade Mobility Tier 4",
     "type": "Buffalo Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {
-      "engineTorqueMultiplier": 2
+      "engineTorqueMultiplier": 2,
+      "sprintingTorqueDiscount": 0.4
     }
   },
   {
@@ -13764,7 +13768,8 @@
     "name": "Falco Walker Upgrade Mobility Tier 1",
     "type": "Falco Walker Upgrade Mobility Tier 1",
     "upgradeInfo": {
-      "engineTorqueMultiplier": 1.05
+      "engineTorqueMultiplier": 1.05,
+      "sprintingTorqueDiscount": 0.1
     }
   },
   {
@@ -13807,7 +13812,8 @@
     "name": "Falco Walker Upgrade Mobility Tier 2",
     "type": "Falco Walker Upgrade Mobility Tier 2",
     "upgradeInfo": {
-      "engineTorqueMultiplier": 1.15
+      "engineTorqueMultiplier": 1.15,
+      "sprintingTorqueDiscount": 0.2
     }
   },
   {
@@ -13850,7 +13856,8 @@
     "name": "Falco Walker Upgrade Mobility Tier 3",
     "type": "Falco Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {
-      "engineTorqueMultiplier": 1.3
+      "engineTorqueMultiplier": 1.3,
+      "sprintingTorqueDiscount": 0.3
     }
   },
   {
@@ -39633,7 +39640,8 @@
     "name": "Stiletto Walker Upgrade Mobility Tier 3",
     "type": "Stiletto Walker Upgrade Mobility Tier 3",
     "upgradeInfo": {
-      "engineTorqueMultiplier": 1.3
+      "engineTorqueMultiplier": 1.3,
+      "sprintingTorqueDiscount": 0.3
     }
   },
   {
@@ -39680,7 +39688,8 @@
     "name": "Stiletto Walker Upgrade Mobility Tier 4",
     "type": "Stiletto Walker Upgrade Mobility Tier 4",
     "upgradeInfo": {
-      "engineTorqueMultiplier": 1.4
+      "engineTorqueMultiplier": 1.4,
+      "sprintingTorqueDiscount": 0.4
     }
   },
   {

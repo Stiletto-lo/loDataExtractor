@@ -9,8 +9,8 @@
 
 import * as dataParser from "../dataParsers";
 import * as translator from "../translator";
-import { upgradeTemplate } from "../../templates/upgrade";
-import { upgradeInfoTemplate } from "../../templates/upgradeInfo";
+import type { Upgrade } from "../../templates/upgrade";
+import type { UpgradeInfo } from "../../templates/upgradeInfo";
 import { recipeTemplate } from "../../templates/recipe";
 import * as utilityFunctions from "./utilityFunctions";
 import { itemTemplate } from "../../templates/item";
@@ -33,12 +33,18 @@ const PROPERTY_MAPPING = {
  * @param {string} key - The current upgrade key
  * @returns {Object} The extracted upgrade info and its validity status
  */
-const extractUpgradeInfo = (properties: any, key: string) => {
+const extractUpgradeInfo = (
+	properties: any,
+	key: string,
+): {
+	upgradeInfo: UpgradeInfo;
+	isValid: boolean;
+} => {
 	if (!properties || typeof properties !== "object") {
-		return { upgradeInfo: { ...upgradeInfoTemplate }, isValid: false };
+		return { upgradeInfo: {} as UpgradeInfo, isValid: false };
 	}
 
-	const upgradeInfo = { ...upgradeInfoTemplate };
+	const upgradeInfo = {} as UpgradeInfo;
 	const propertyData = properties[key] || {};
 	let isValid = false;
 
@@ -125,7 +131,7 @@ const processUpgradeEntry = (
 	key: string,
 	profile: string,
 	superUp: string | undefined,
-) => {
+): boolean => {
 	if (!jsonData || !key) {
 		return false;
 	}
@@ -140,10 +146,11 @@ const processUpgradeEntry = (
 		if (!isEnabled) return false;
 
 		// Create upgrade object
-		const upgrade = { ...upgradeTemplate };
-		upgrade.profile = profile;
-		upgrade.super = superUp;
-		upgrade.name = dataParser.parseName(translator, key);
+		const upgrade: Upgrade = {
+			profile: profile,
+			super: superUp,
+			name: dataParser.parseName(translator, key),
+		};
 
 		// Extract upgrade info
 		const { upgradeInfo, isValid } = extractUpgradeInfo(properties, key);

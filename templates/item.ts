@@ -1,3 +1,5 @@
+import type { WeaponInfo } from "./weaponInfo";
+
 export type Item = {
 	category?: string | undefined;
 	cost?: number | undefined;
@@ -13,7 +15,7 @@ export type Item = {
 	stackSize?: number | undefined;
 	weight?: number | undefined;
 	durability?: number | undefined;
-	weaponInfo?: any | undefined;
+	weaponInfo?: WeaponInfo | undefined;
 	toolInfo?: any | undefined;
 	moduleInfo?: any | undefined;
 	schematicName?: string | undefined;

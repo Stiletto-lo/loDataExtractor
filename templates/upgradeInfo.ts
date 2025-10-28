@@ -7,15 +7,3 @@ export type UpgradeInfo = {
 	stackSizeOverride?: number | undefined;
 	bonusHp?: number | undefined;
 };
-
-export const upgradeInfoTemplate: UpgradeInfo = {
-	engineTorqueMultiplier: undefined,
-	sprintingTorqueDiscount: undefined,
-	additionalParts: undefined,
-	sdditionalSlots: undefined,
-	containerSlots: undefined,
-	stackSizeOverride: undefined,
-	bonusHp: undefined,
-};
-
-Object.freeze(upgradeInfoTemplate);
