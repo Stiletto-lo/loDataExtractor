@@ -1,5 +1,5 @@
 import fs from "node:fs";
-import { recipeTemplate } from "../../../templates/recipe";
+import { Recipe } from "../../../templates/recipe";
 import { costTemplate } from "../../../templates/cost";
 import * as dataParser from "../../dataParsers";
 import * as translator from "../../translator";
@@ -14,7 +14,7 @@ export const parseCachedItems = (filePath: string) => {
 		const cachedItems = jsonData[0].Properties.CachedTotalCost;
 		for (const key of Object.keys(cachedItems)) {
 			if (cachedItems[key].Inputs) {
-				const recipe = { ...recipeTemplate };
+				const recipe: Recipe = {};
 				const item = utilityFunctions.getItem(
 					//@ts-expect-error fix later
 					dataParser.parseName(translator, key),

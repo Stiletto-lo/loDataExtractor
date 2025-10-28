@@ -1,4 +1,3 @@
-//@ts-nocheck
 /**
  * Upgrade parsers for handling upgrade-related data
  *
@@ -11,7 +10,7 @@ import * as dataParser from "../dataParsers";
 import * as translator from "../translator";
 import type { Upgrade } from "../../templates/upgrade";
 import type { UpgradeInfo } from "../../templates/upgradeInfo";
-import { recipeTemplate } from "../../templates/recipe";
+import type { Recipe } from "../../templates/recipe";
 import * as utilityFunctions from "./utilityFunctions";
 import { itemTemplate } from "../../templates/item";
 import { readJsonFile } from "../utils/read-json-file";
@@ -52,6 +51,7 @@ const extractUpgradeInfo = (
 	try {
 		for (const [sourceKey, targetKey] of Object.entries(PROPERTY_MAPPING)) {
 			if (propertyData[sourceKey] !== undefined) {
+				//@ts-expect-error fix later
 				upgradeInfo[targetKey] = propertyData[sourceKey];
 				isValid = true;
 			}
@@ -80,7 +80,7 @@ const extractRecipeData = (properties: any, key: string) => {
 		return null;
 	}
 
-	const recipe = { ...recipeTemplate };
+	const recipe: Recipe = {};
 	const ingredients = [];
 
 	try {
@@ -129,8 +129,8 @@ const extractRecipeData = (properties: any, key: string) => {
 const processUpgradeEntry = (
 	jsonData: any,
 	key: string,
-	profile: string,
-	superUp: string | undefined,
+	profile?: string,
+	superUp?: string,
 ): boolean => {
 	if (!jsonData || !key) {
 		return false;
@@ -266,7 +266,9 @@ export const getUpgradeItem = (upgradePure: any) => {
 			);
 
 			// Merge upgrade info (super first, then child overrides)
+			//@ts-expect-error fix later
 			item.upgradeInfo = {
+				//@ts-expect-error fix later
 				...(superUpgradeData?.upgradeInfo || {}),
 				...upgradePure.upgradeInfo,
 			};
@@ -274,7 +276,7 @@ export const getUpgradeItem = (upgradePure: any) => {
 			// Handle crafting data inheritance
 			if (upgradePure.crafting && superUpgradeData?.crafting) {
 				// Both child and super have crafting data - merge them
-				const recipe = { ...recipeTemplate };
+				const recipe: Recipe = {};
 				if (upgradePure.crafting[0].time) {
 					recipe.time = upgradePure.crafting[0].time;
 				} else if (superUpgradeData.crafting[0].time) {
@@ -287,8 +289,10 @@ export const getUpgradeItem = (upgradePure: any) => {
 				) {
 					const ingredientsFiltered =
 						superUpgradeData.crafting[0].ingredients.filter(
+							//@ts-expect-error fix later
 							(ingredient) =>
 								!upgradePure.crafting[0].ingredients.some(
+									//@ts-expect-error fix later
 									(i) => i.name === ingredient.name,
 								),
 						);
@@ -324,6 +328,7 @@ export const getUpgradeItem = (upgradePure: any) => {
 			upgradePure?.name,
 			upgradePure?.profile,
 		);
+		//@ts-expect-error fix later
 		item.upgradeInfo = upgradePure?.upgradeInfo;
 		item.crafting = upgradePure?.crafting;
 
@@ -340,6 +345,7 @@ export const getUpgradeItem = (upgradePure: any) => {
 		upgradePure?.name,
 		upgradePure?.profile,
 	);
+	//@ts-expect-error fix later
 	item.upgradeInfo = upgradePure?.upgradeInfo;
 	item.crafting = upgradePure?.crafting;
 

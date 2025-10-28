@@ -7,7 +7,7 @@ import * as translator from "../../translator";
 import * as utilityFunctions from "../utilityFunctions";
 
 // Import templates
-import { recipeTemplate } from "../../../templates/recipe";
+import type { Recipe } from "../../../templates/recipe";
 import type { StructureInfo } from "../../../templates/structureInfo";
 import { readJsonFile } from "../../utils/read-json-file";
 
@@ -62,7 +62,7 @@ export const parsePlaceableData = (filePath: string) => {
 			if (jsonData[1].Properties?.FullCost) {
 				const recipeData = jsonData[1].Properties.FullCost;
 				if (recipeData.Inputs) {
-					const recipe = { ...recipeTemplate };
+					const recipe: Recipe = {};
 					const ingredients = [];
 					for (const key in recipeData.Inputs) {
 						ingredients.push(
@@ -78,7 +78,7 @@ export const parsePlaceableData = (filePath: string) => {
 			} else if (jsonData[1].Properties?.Requirements) {
 				const recipeData = jsonData[1].Properties.Requirements;
 				if (recipeData.Inputs) {
-					const recipe = { ...recipeTemplate };
+					const recipe: Recipe = {};
 					const ingredients = [];
 					for (const key in recipeData.Inputs) {
 						ingredients.push(

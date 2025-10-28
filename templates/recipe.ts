@@ -1,8 +1,6 @@
-export const recipeTemplate = {
-	ingredients: [] as { name: string | undefined; count: number | undefined }[],
-	output: undefined as number | undefined,
-	station: undefined as string | undefined,
-	time: undefined as number | undefined,
+export type Recipe = {
+	ingredients?: { name: string | undefined; count: number | undefined }[];
+	output?: number;
+	station?: string;
+	time?: number;
 };
-
-Object.freeze(recipeTemplate);

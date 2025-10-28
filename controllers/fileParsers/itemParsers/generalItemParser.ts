@@ -11,7 +11,7 @@ import { readJsonFile } from "../../utils/read-json-file";
 import type { WeaponInfo } from "../../../templates/weaponInfo";
 import type { ToolInfo } from "../../../templates/toolInfo";
 import { projectileDamageTemplate } from "../../../templates/projectileDamage";
-import { recipeTemplate } from "../../../templates/recipe";
+import type { Recipe } from "../../../templates/recipe";
 import { armorInfoTemplate } from "../../../templates/armorInfo";
 import { moduleInfoTemplate } from "../../../templates/moduleInfo";
 import { costTemplate } from "../../../templates/cost";
@@ -217,9 +217,9 @@ export const getItemFromItemData = (itemData: any, oldItem: any) => {
 
 		// Recipes/Crafting
 		if (props?.Recipes) {
-			const crafting = [];
+			const crafting: Recipe[] = [];
 			for (const recipeData of props.Recipes) {
-				const recipe = { ...recipeTemplate };
+				const recipe: Recipe = {};
 				if (recipeData.Inputs) {
 					const ingredients: { name: string; count: number }[] = [];
 					for (const key in recipeData.Inputs) {
@@ -246,9 +246,13 @@ export const getItemFromItemData = (itemData: any, oldItem: any) => {
 					recipeData?.Category?.ObjectName &&
 					!recipeData.Category.ObjectName.includes("Base")
 				) {
-					recipe.station = dataParser
+					const station = dataParser
 						.parseName(translator, recipeData.Category.ObjectName)
 						?.trim();
+
+					if (station) {
+						recipe.station = station;
+					}
 				}
 				crafting.push(recipe);
 			}
