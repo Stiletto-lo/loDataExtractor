@@ -1,19 +1,8 @@
 export type Rig = {
-	medium?: any | undefined;
-	small?: any | undefined;
-	large?: any | undefined;
-	edgeLarge?: any | undefined;
-	edgeMedium?: any | undefined;
-	edgeSmall?: any | undefined;
+	medium?: any;
+	small?: any;
+	large?: any;
+	edgeLarge?: any;
+	edgeMedium?: any;
+	edgeSmall?: any;
 };
-
-export const rigTemplate: Rig = {
-	medium: undefined,
-	small: undefined,
-	large: undefined,
-	edgeLarge: undefined,
-	edgeMedium: undefined,
-	edgeSmall: undefined,
-};
-
-Object.freeze(rigTemplate);
