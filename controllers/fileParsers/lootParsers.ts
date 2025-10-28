@@ -1,5 +1,3 @@
-//@ts-nocheck
-
 /**
  * Loot parsers for handling loot-related data
  *
@@ -12,11 +10,11 @@ import path from "node:path";
 import * as dataParser from "../dataParsers";
 import * as translator from "../translator";
 import { DataTable } from "../../templates/datatable";
-import { lootTableTemplate } from "../../templates/lootTable";
 import { dropDataTemplate } from "../../templates/dropData";
 import * as utilityFunctions from "./utilityFunctions";
 import * as lootTemplateParser from "./lootParsers/lootTemplateParser";
 import { readJsonFile } from "../utils/read-json-file";
+import type { LootTable } from "../../templates/lootTable";
 
 // Output directories
 const OUTPUT_DIR = path.join(__dirname, "../../exported");
@@ -71,7 +69,7 @@ const createDropItem = (name: string, lootItemData: any) => {
  * @param {Object} lootItem - The loot item data
  * @returns {string} - The resolved item name
  */
-const resolveItemName = (baseName: string, lootItem: any) => {
+const resolveItemName = (baseName?: string, lootItem?: any) => {
 	if (!baseName || !lootItem) {
 		return "Unknown Item";
 	}
@@ -139,18 +137,21 @@ export const parseLootTable = (filePath: string) => {
 		return false;
 	}
 
-	const dataTable = {};
-	dataTable.name = dataParser.parseName(translator, firstEntry.Name);
-	dataTable.objectName = firstEntry.Name;
-	dataTable.objectPath = firstEntry.ObjectPath || "";
+	const dataTable: any = {
+		name: dataParser.parseName(translator, firstEntry.Name),
+		objectName: firstEntry.Name,
+		objectPath: firstEntry.ObjectPath || "",
+	};
+
 	const lootItems = firstEntry.Rows;
-	const tableItems = [];
+	const tableItems: any[] = [];
 
 	// Create a loot table for this data table
-	const lootTable = { ...lootTableTemplate };
-	lootTable.name = dataTable.name;
-	lootTable.objectName = firstEntry.Name;
-	lootTable.objectPath = firstEntry.ObjectPath || "";
+	const lootTable: LootTable = {
+		name: dataTable?.name ?? "",
+		objectName: firstEntry.Name,
+		objectPath: firstEntry.ObjectPath || "",
+	};
 
 	// Store loot table information for creature processing
 	const lootTables = utilityFunctions.getAllLootTables
@@ -170,7 +171,7 @@ export const parseLootTable = (filePath: string) => {
 			continue;
 		}
 
-		const resolvedName = resolveItemName(validation.baseName, currentItem);
+		const resolvedName = resolveItemName(validation?.baseName, currentItem);
 		// Check if this item already exists in the tables array
 		const hasDrop = tableItems.some((d) => d.name === resolvedName);
 
@@ -186,7 +187,7 @@ export const parseLootTable = (filePath: string) => {
 			tableItems.push(drop);
 
 			// Add to the loot table drops array
-			lootTable.drops.push(drop);
+			lootTable?.drops?.push(drop);
 
 			// Add to the loot tables collection for creature processing
 			lootTables[firstEntry.Name].drops.push({
@@ -207,7 +208,7 @@ export const parseLootTable = (filePath: string) => {
 	}
 
 	// Export to the datatables directory
-	const fileName = dataTable.name.replace(/\s+/g, "_").toLowerCase();
+	const fileName = dataTable?.name?.replace(/\s+/g, "_").toLowerCase() || "";
 	// Export loot table information to the loot_tables directory
 	if (lootTables[firstEntry.Name]) {
 		const lootTablePath = path.join(LOOTTABLES_DIR, `${fileName}.json`);
@@ -272,7 +273,7 @@ const extractCreatureData = (
 	}
 
 	// Initialize result object
-	const result = {};
+	const result = {} as any;
 
 	// If we have fullCreatureData (array of components), search through all components
 	if (fullCreatureData && Array.isArray(fullCreatureData)) {
@@ -394,7 +395,7 @@ export const parseLootSites = (filePath: string) => {
 		type: name, // This is the internal type, e.g., BP_Worm_C
 		name: translation, // This is the display name, e.g., The Long One
 		...creatureData,
-	};
+	} as any;
 
 	// Add to the creatures collection
 	utilityFunctions.addCreature(creature);

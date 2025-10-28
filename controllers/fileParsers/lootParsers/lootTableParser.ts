@@ -5,11 +5,12 @@
  * from game data files.
  */
 
+import type { LootTable } from "../../../templates/lootTable";
+
 const fs = require("node:fs");
 const path = require("node:path");
 const dataParser = require("../../dataParsers");
 const translator = require("../../translator");
-const lootTableTemplate = require("../../../templates/lootTable");
 const dropDataTemplate = require("../../../templates/dropData");
 const utilityFunctions = require("../utilityFunctions");
 const { readJsonFile } = require("../../utils/read-json-file");
@@ -125,18 +126,21 @@ const parseLootTable = (filePath) => {
 		return false;
 	}
 
-	const dataTable = {};
-	dataTable.name = dataParser.parseName(translator, firstEntry.Name);
-	dataTable.objectName = firstEntry.Name;
-	dataTable.objectPath = firstEntry.ObjectPath || "";
+	const dataTable = {
+		name: dataParser.parseName(translator, firstEntry.Name),
+		objectName: firstEntry.Name,
+		objectPath: firstEntry.ObjectPath || "",
+	};
+
 	const lootItems = firstEntry.Rows;
 	const tableItems = [];
 
 	// Create a loot table for this data table
-	const lootTable = { ...lootTableTemplate };
-	lootTable.name = dataTable.name;
-	lootTable.objectName = firstEntry.Name;
-	lootTable.objectPath = firstEntry.ObjectPath || "";
+	const lootTable: LootTable = {
+		name: dataTable?.name,
+		objectName: firstEntry.Name,
+		objectPath: firstEntry.ObjectPath || "",
+	};
 
 	// Store loot table information for creature processing
 	const lootTables = utilityFunctions.getAllLootTables

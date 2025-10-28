@@ -22,7 +22,7 @@ const extractData = async () => {
 
 fs.ensureDirSync(EXPORT_FOLDER_PATH);
 
-extractData().catch(error => {
+extractData().catch((error) => {
 	console.error("Error during data extraction:", error);
 	process.exit(1);
 });

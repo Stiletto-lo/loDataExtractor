@@ -122,7 +122,7 @@ const parseLootTableRef = (tableRef: any) => {
  * @param {string} filePath - The file path to parse
  * @returns {boolean} - Whether parsing was successful
  */
-const parseLootTemplate = (filePath?: string) => {
+export const parseLootTemplate = (filePath?: string) => {
 	if (!filePath || typeof filePath !== "string") {
 		console.error("Invalid file path provided to parseLootTemplate");
 		return false;
