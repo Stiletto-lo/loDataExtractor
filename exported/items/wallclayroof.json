@@ -1,0 +1,30 @@
+{
+  "name": "Floor / Roof",
+  "type": "WallClayRoof_C",
+  "category": "Clay",
+  "weight": 4,
+  "description": "Above average strength, can be packed on walkers.",
+  "experiencieReward": 22,
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 20,
+          "name": "Cattail"
+        },
+        {
+          "count": 3,
+          "name": "Wooden Slab"
+        },
+        {
+          "count": 20,
+          "name": "Clay"
+        }
+      ]
+    }
+  ],
+  "structureInfo": {
+    "hp": 20000,
+    "type": "Solid"
+  }
+}

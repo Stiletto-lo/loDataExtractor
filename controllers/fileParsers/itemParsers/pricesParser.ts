@@ -13,7 +13,7 @@ export const parsePrices = (filePath: string) => {
 					dataParser.parseType(order.ItemClass.ObjectName),
 				);
 
-				if (order.Price > item.trade_price) {
+				if (item?.trade_price && order.Price > item?.trade_price) {
 					item.trade_price = order.Price;
 				}
 

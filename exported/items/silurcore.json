@@ -1,0 +1,31 @@
+{
+  "name": "Cement Silur Core",
+  "type": "SilurCore_C",
+  "category": "Concrete",
+  "weight": 10,
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 200,
+          "name": "Wood"
+        },
+        {
+          "count": 50,
+          "name": "Stone"
+        },
+        {
+          "count": 100,
+          "name": "Fiber"
+        }
+      ]
+    }
+  ],
+  "structureInfo": {
+    "hp": 400000,
+    "type": "Solid"
+  },
+  "walkerInfo": {
+    "carryCapacity": 20000
+  }
+}

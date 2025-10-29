@@ -1,0 +1,31 @@
+{
+  "name": "Cement Balang Core",
+  "type": "BalangCore_C",
+  "category": "Concrete",
+  "weight": 10,
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 100,
+          "name": "Wood"
+        },
+        {
+          "count": 20,
+          "name": "Stone"
+        },
+        {
+          "count": 50,
+          "name": "Fiber"
+        }
+      ]
+    }
+  ],
+  "structureInfo": {
+    "hp": 150000,
+    "type": "Solid"
+  },
+  "walkerInfo": {
+    "carryCapacity": 4500
+  }
+}

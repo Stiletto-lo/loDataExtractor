@@ -63,7 +63,11 @@ export const parseSchematicItemData = (filePath: string) => {
 							dataParser.parseType(schematicItem.AssetPathName),
 						);
 						if (itemFound) {
-							itemsSchematic.push(itemFound.name ?? itemFound.translation);
+							if (itemFound.name) {
+								itemsSchematic.push(itemFound.name);
+							} else if (itemFound.translation) {
+								itemsSchematic.push(itemFound.translation);
+							}
 						} else {
 							const schematicItemName = dataParser.parseName(
 								translator,
@@ -84,8 +88,10 @@ export const parseSchematicItemData = (filePath: string) => {
 						);
 
 						if (itemFound) {
-							if (itemFound.name || itemFound.translation) {
-								itemsSchematic.push(itemFound.name ?? itemFound.translation);
+							if (itemFound.name) {
+								itemsSchematic.push(itemFound.name);
+							} else if (itemFound.translation) {
+								itemsSchematic.push(itemFound.translation);
 							}
 						} else {
 							const schematicPlaceableName = dataParser.parseName(

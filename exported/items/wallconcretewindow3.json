@@ -1,0 +1,34 @@
+{
+  "name": "Wall With Windows 1",
+  "type": "WallConcreteWindow3_C",
+  "category": "Concrete",
+  "weight": 8,
+  "description": "Almost impossible to break. Can only be packed on Founder Walker types (Silur Walker).",
+  "experiencieReward": 32,
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 25,
+          "name": "Lightwood"
+        },
+        {
+          "count": 6,
+          "name": "Iron Ingot"
+        },
+        {
+          "count": 4,
+          "name": "Iron Nails"
+        },
+        {
+          "count": 6,
+          "name": "Tar"
+        }
+      ]
+    }
+  ],
+  "structureInfo": {
+    "hp": 40000,
+    "type": "Solid"
+  }
+}

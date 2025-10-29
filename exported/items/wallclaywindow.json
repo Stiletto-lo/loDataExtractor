@@ -1,0 +1,30 @@
+{
+  "name": "Wall with Window",
+  "type": "WallClayWindow_C",
+  "category": "Clay",
+  "weight": 7,
+  "description": "Very strong and heavy, damageable only with high tier ammo. Can only be packed on Founder Walker types (Balang or Silur Walker).",
+  "experiencieReward": 32,
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 20,
+          "name": "Cattail"
+        },
+        {
+          "count": 3,
+          "name": "Wooden Slab"
+        },
+        {
+          "count": 20,
+          "name": "Clay"
+        }
+      ]
+    }
+  ],
+  "structureInfo": {
+    "hp": 20000,
+    "type": "Solid"
+  }
+}

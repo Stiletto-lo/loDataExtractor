@@ -290,38 +290,32 @@ export const exportIndividualItemFiles = async (
 				drops: item?.drops,
 			};
 
-			const snakeCaseName = convertToSnakeCase(item.name);
+			// Prioritize type-based naming for consistency
+			let fileName: string;
+			let displayName: string;
 
-			if (normalizedNameMap.has(snakeCaseName)) {
-				const existingItem = normalizedNameMap.get(snakeCaseName);
+			if (item.type) {
+				// Use type-based naming as primary strategy
+				fileName = item.type
+					.replace(/_C$/, "")
+					.toLowerCase()
+					.replace(/[^a-z0-9_]/g, "_")
+					.replace(/_+/g, "_");
+				displayName = `${item.name} (type: ${item.type})`;
+			} else {
+				// Fallback to snake_case name
+				fileName = convertToSnakeCase(item.name);
+				displayName = item.name;
+			}
+
+			// Check for filename conflicts
+			if (normalizedNameMap.has(fileName)) {
+				const existingItem = normalizedNameMap.get(fileName);
 				console.log(
-					`Duplicate filename detected: "${item.name}" and "${existingItem}" normalize to same filename: ${snakeCaseName}`,
+					`Duplicate filename detected: "${displayName}" and "${existingItem}" normalize to same filename: ${fileName}`,
 				);
 
-				if (item.type) {
-					const typeBasedName = item.type
-						.replace(/_C$/, "")
-						.toLowerCase()
-						.replace(/[^a-z0-9_]/g, "_")
-						.replace(/_+/g, "_");
-
-					console.log(`Using type-based filename instead: ${typeBasedName}`);
-					normalizedNameMap.set(typeBasedName, item.name);
-					await fs.writeFile(
-						`${itemsFolder}/${typeBasedName}.json`,
-						JSON.stringify(dataToExport, null, 2),
-						(err) => {
-							if (err) {
-								console.error(
-									`Error creating individual file for ${item.name}`,
-								);
-							}
-						},
-					);
-					return;
-				}
-
-				const existingFilePath = `${itemsFolder}/${snakeCaseName}.json`;
+				const existingFilePath = `${itemsFolder}/${fileName}.json`;
 				if (fs.existsSync(existingFilePath)) {
 					try {
 						const existingData = JSON.parse(
@@ -337,7 +331,7 @@ export const exportIndividualItemFiles = async (
 
 						if (existingKeys.length >= newKeys.length) {
 							console.log(
-								`Keeping existing file for ${snakeCaseName} as it has more complete data`,
+								`Keeping existing file for ${fileName} as it has more complete data`,
 							);
 							return;
 						}
@@ -350,10 +344,10 @@ export const exportIndividualItemFiles = async (
 				}
 			}
 
-			normalizedNameMap.set(snakeCaseName, item.name);
+			normalizedNameMap.set(fileName, displayName);
 
 			await fs.writeFile(
-				`${itemsFolder}/${snakeCaseName}.json`,
+				`${itemsFolder}/${fileName}.json`,
 				JSON.stringify(dataToExport, null, 2),
 				(err) => {
 					if (err) {

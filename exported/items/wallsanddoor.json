@@ -1,0 +1,30 @@
+{
+  "name": "Cloth Door",
+  "type": "WallSandDoor_C",
+  "category": "Basic Protection",
+  "weight": 13,
+  "description": "Weak structure that still protects nomads from dangers. Only sand structures can be used with a sand base.",
+  "experiencieReward": 22,
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 7,
+          "name": "Fiber"
+        },
+        {
+          "count": 15,
+          "name": "Sand"
+        },
+        {
+          "count": 4,
+          "name": "Palm Leaves"
+        }
+      ]
+    }
+  ],
+  "structureInfo": {
+    "hp": 500,
+    "type": "Solid"
+  }
+}

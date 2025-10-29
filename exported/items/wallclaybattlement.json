@@ -1,0 +1,30 @@
+{
+  "name": "Battlement",
+  "type": "WallClayBattlement_C",
+  "category": "Clay",
+  "weight": 7,
+  "description": "Extremely durable. Can only be packed on Founder Walker types (Silur Walker).",
+  "experiencieReward": 30,
+  "crafting": [
+    {
+      "ingredients": [
+        {
+          "count": 8,
+          "name": "Cattail"
+        },
+        {
+          "count": 3,
+          "name": "Wooden Slab"
+        },
+        {
+          "count": 10,
+          "name": "Clay"
+        }
+      ]
+    }
+  ],
+  "structureInfo": {
+    "hp": 20000,
+    "type": "Solid"
+  }
+}
