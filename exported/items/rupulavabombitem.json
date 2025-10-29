@@ -1,0 +1,107 @@
+{
+  "name": "Firebomb",
+  "type": "RupuLavaBombItem_C",
+  "category": "Weapons",
+  "trade_price": 16.9,
+  "stackSize": 5,
+  "weight": 0.3,
+  "description": "Lightweight obsidian ball containing highly flammable mixture. Throw it at enemies to deal fire damage.",
+  "experiencieReward": 20,
+  "wikiVisibility": false,
+  "weaponInfo": {
+    "damage": 20,
+    "penetration": 50
+  },
+  "droppedBy": [
+    {
+      "name": "Big Hotspot Loot T3",
+      "chance": 6.25,
+      "minQuantity": 3,
+      "maxQuantity": 3,
+      "tier": "T3"
+    },
+    {
+      "name": "Broken Tusker 3",
+      "chance": 6.25,
+      "minQuantity": 3,
+      "maxQuantity": 3
+    },
+    {
+      "name": "Easy Rupu Camp T3",
+      "chance": 6.25,
+      "minQuantity": 3,
+      "maxQuantity": 3,
+      "tier": "T3"
+    },
+    {
+      "name": "Easy Rupu T3",
+      "chance": 6.25,
+      "minQuantity": 3,
+      "maxQuantity": 3,
+      "tier": "T3"
+    },
+    {
+      "name": "Easy Rupu T3 Q",
+      "chance": 6.25,
+      "minQuantity": 3,
+      "maxQuantity": 3,
+      "tier": "T3"
+    },
+    {
+      "name": "Hard Rupu Camp T3",
+      "chance": 6.25,
+      "minQuantity": 3,
+      "maxQuantity": 3,
+      "tier": "T3"
+    },
+    {
+      "name": "Hard Rupu T3",
+      "chance": 6.25,
+      "minQuantity": 3,
+      "maxQuantity": 3,
+      "tier": "T3"
+    },
+    {
+      "name": "Hard Rupu T3 Q",
+      "chance": 6.25,
+      "minQuantity": 3,
+      "maxQuantity": 3,
+      "tier": "T3"
+    },
+    {
+      "name": "Hotspot Loot T3",
+      "chance": 6.25,
+      "minQuantity": 3,
+      "maxQuantity": 3,
+      "tier": "T3"
+    },
+    {
+      "name": "Medium Rupu Camp T3",
+      "chance": 6.25,
+      "minQuantity": 3,
+      "maxQuantity": 3,
+      "tier": "T3"
+    },
+    {
+      "name": "Medium Rupu T3",
+      "chance": 6.25,
+      "minQuantity": 3,
+      "maxQuantity": 3,
+      "tier": "T3"
+    },
+    {
+      "name": "Medium Rupu T3 Q",
+      "chance": 6.25,
+      "minQuantity": 3,
+      "maxQuantity": 3,
+      "tier": "T3"
+    },
+    {
+      "name": "Treasure Chest T3",
+      "chance": 6.25,
+      "minQuantity": 3,
+      "maxQuantity": 3,
+      "tier": "T3"
+    }
+  ]
+}
