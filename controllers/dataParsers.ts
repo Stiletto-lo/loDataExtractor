@@ -1,3 +1,4 @@
+import { Item, Translator } from "./types";
 /**
  * Data Parser Module
  * Provides utility functions for parsing and transforming various data formats
@@ -23,7 +24,7 @@ const PATTERNS = {
  * @param {string|null} name - The name to parse
  * @returns {string|undefined} - The parsed and formatted name or undefined if input is null
  */
-export const parseName = (translator: any, name: string | null) => {
+export const parseName = (translator: Translator, name: string | null) => {
 	if (name == null) {
 		return undefined;
 	}
@@ -62,7 +63,7 @@ export const parseName = (translator: any, name: string | null) => {
  * @returns {string} - The parsed special item name
  * @private
  */
-export const parseSpecialItemName = (translator: any, name: string) => {
+export const parseSpecialItemName = (translator: Translator, name: string) => {
 	if (/(.+)Legs/.test(name)) {
 		return parseLegsName(translator, name);
 	}
@@ -86,7 +87,7 @@ export const parseSpecialItemName = (translator: any, name: string) => {
  * @returns {string} - The parsed legs name
  * @private
  */
-export const parseLegsName = (translator: any, name: string) => {
+export const parseLegsName = (translator: Translator, name: string) => {
 	const match = RegExp(/(.+)Legs/).exec(name);
 	if (match?.[1]) {
 		const walkerName = translator.translateName(`${match[1].trim()} Walker`);
@@ -113,7 +114,7 @@ export const parseLegsName = (translator: any, name: string) => {
  * @returns {string} - The parsed wings name
  * @private
  */
-export const parseWingsName = (translator: any, name: string) => {
+export const parseWingsName = (translator: Translator, name: string) => {
 	const match = RegExp(/(.+)Wings/).exec(name);
 	if (match?.[1]) {
 		const walkerName = translator.translateName(`${match[1].trim()} Walker`);
@@ -166,7 +167,7 @@ export const determineWingsType = (name: string) => {
  * @returns {string} - The parsed upgrades name
  * @private
  */
-export const parseUpgradesName = (translator: any, name: string) => {
+export const parseUpgradesName = (translator: Translator, name: string) => {
 	const upgradePatterns = [
 		{ pattern: /(.+)BoneUpgrades/, tier: "Tier 2" },
 		{ pattern: /(.+)CeramicUpgrades/, tier: "Tier 3" },
@@ -244,7 +245,7 @@ export const parseObjectPath = (objectName: string | null) => {
  * @param {string} name - The name to parse
  * @returns {string} - The parsed rig name
  */
-export const parseRigName = (translator: any, name: string) => {
+export const parseRigName = (translator: Translator, name: string) => {
 	let nameStr = name;
 
 	if (nameStr.includes("Rig") && /(.+)Rig_/.test(nameStr)) {
@@ -416,7 +417,7 @@ export const determineUpgradeType = (name: string) => {
  * @returns {Array} - Array with merged items
  */
 export const itemMerger = (
-	allItems: any[],
+	allItems: Item[],
 	mainItemName: string,
 	otherItemName: string,
 ) => {
