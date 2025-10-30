@@ -10,6 +10,7 @@ import "dotenv/config";
 import * as additionalTranslations from "../translations/aditionalTranslations";
 import * as unifiedTechTreeNames from "../translations/unifiedTechTreeNames";
 import * as itemNameGlossary from "./fileParsers/itemNameGlossary";
+import { Item } from "./types";
 
 // Translation storage objects
 const translationStore: {
@@ -185,7 +186,7 @@ export const searchName = (name: string) => {
  * @param {Array} allItems - The items to translate
  * @returns {Array} - The translated items
  */
-export const translateItems = (allItems: any[]) => {
+export const translateItems = (allItems: Item[]) => {
 	if (!Array.isArray(allItems)) {
 		return [];
 	}
@@ -198,9 +199,9 @@ export const translateItems = (allItems: any[]) => {
  * @param {Object} item - The item to translate
  * @returns {Object} - The translated item
  */
-export const translateItem = (item: any) => {
+export const translateItem = (item: Item) => {
 	if (!item) {
-		return {};
+		return {} as Item;
 	}
 
 	let name = item.name || "";
@@ -277,7 +278,7 @@ export const translateItemPart = (value: string) => {
  * @param {Array} allItems - The items to add descriptions to
  * @returns {Array} - The items with descriptions
  */
-export const addDescriptions = (allItems: any[]) => {
+export const addDescriptions = (allItems: Item[]) => {
 	if (!Array.isArray(allItems)) {
 		return [];
 	}
