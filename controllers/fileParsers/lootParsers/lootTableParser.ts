@@ -6,6 +6,7 @@
  */
 
 import type { LootTable } from "../../../templates/lootTable";
+import type { DropData } from "../../../templates/dropData";
 
 const fs = require("node:fs");
 const path = require("node:path");
@@ -33,12 +34,22 @@ if (!fs.existsSync(LOOTTABLES_DIR)) {
  * @param {Object} lootItemData - The loot item data containing properties
  * @returns {Object} - A configured drop item
  */
-const createDropItem = (name, lootItemData) => {
+type LootItemProps = {
+	Chance?: number;
+	MinQuantity?: number;
+	MaxQuantity?: number;
+	Item?: { AssetPathName?: string };
+};
+
+const createDropItem = (
+	name: string,
+	lootItemData: LootItemProps,
+): DropData | undefined => {
 	if (!name || !lootItemData) {
 		return undefined;
 	}
 
-	const drop = { ...dropDataTemplate };
+	const drop: DropData = { ...dropDataTemplate };
 	drop.name = name;
 
 	if (lootItemData.Chance) {
@@ -60,7 +71,10 @@ const createDropItem = (name, lootItemData) => {
  * @param {Object} lootItem - The loot item data
  * @returns {string} - The resolved item name
  */
-const resolveItemName = (baseName, lootItem) => {
+const resolveItemName = (
+	baseName: string,
+	lootItem: { Item?: { AssetPathName?: string } } | undefined,
+): string => {
 	if (!baseName || !lootItem) {
 		return "Unknown Item";
 	}
@@ -90,8 +104,11 @@ const resolveItemName = (baseName, lootItem) => {
  * @param {string} key - The key of the current item
  * @returns {Object} - Object containing validation result and error message
  */
-const validateLootTableEntry = (currentItem, key) => {
-	if (!currentItem.Item) {
+const validateLootTableEntry = (
+	currentItem: { Item?: unknown } | undefined,
+	key: string,
+): { isValid: boolean; error?: string; baseName?: string } => {
+	if (!currentItem?.Item) {
 		return { isValid: false, error: `Missing Item property for ${key}` };
 	}
 
@@ -108,7 +125,7 @@ const validateLootTableEntry = (currentItem, key) => {
  * @param {string} filePath - The file path to parse
  * @returns {boolean} - Whether parsing was successful
  */
-const parseLootTable = (filePath) => {
+export const parseLootTable = (filePath: string): boolean => {
 	if (!filePath || typeof filePath !== "string") {
 		console.error("Invalid file path provided to parseLootTable");
 		return false;
@@ -133,13 +150,14 @@ const parseLootTable = (filePath) => {
 	};
 
 	const lootItems = firstEntry.Rows;
-	const tableItems = [];
+	const tableItems: DropData[] = [];
 
 	// Create a loot table for this data table
 	const lootTable: LootTable = {
 		name: dataTable?.name,
 		objectName: firstEntry.Name,
 		objectPath: firstEntry.ObjectPath || "",
+		drops: [],
 	};
 
 	// Store loot table information for creature processing
@@ -155,7 +173,7 @@ const parseLootTable = (filePath) => {
 		const currentItem = lootItems[key];
 		const validation = validateLootTableEntry(currentItem, key);
 
-		if (!validation.isValid) {
+		if (!validation.isValid || !validation.baseName) {
 			console.warn(validation.error);
 			continue;
 		}
@@ -176,7 +194,7 @@ const parseLootTable = (filePath) => {
 			tableItems.push(drop);
 
 			// Add to the loot table drops array
-			lootTable.drops.push(drop);
+			lootTable.drops!.push(drop);
 
 			// Add to the loot tables collection for creature processing
 			lootTables[firstEntry.Name].drops.push({
@@ -204,7 +222,7 @@ const parseLootTable = (filePath) => {
  * @param {string} filePath - The file path to parse
  * @returns {boolean} - Whether parsing was successful
  */
-const parseLootSites = (filePath) => {
+export const parseLootSites = (filePath: string): boolean => {
 	if (!filePath || typeof filePath !== "string") {
 		console.error("Invalid file path provided to parseLootSites");
 		return false;
@@ -260,7 +278,7 @@ const parseLootSites = (filePath) => {
 
 	// Add the loot table to the creature if not already present
 	const hasLootTable = creature.lootTemplates.some(
-		(lt) => lt.name === lootTable.name,
+		(lt: { name?: string }) => lt.name === lootTable.name,
 	);
 
 	if (!hasLootTable) {
@@ -281,7 +299,9 @@ const parseLootSites = (filePath) => {
  * @param {string} objectName - The object name to parse
  * @returns {string|null} - The extracted creature name or null if not found
  */
-const getLootSiteNameFromObject = (objectName) => {
+export const getLootSiteNameFromObject = (
+	objectName: string,
+): string | null => {
 	if (!objectName) {
 		return null;
 	}
@@ -295,8 +315,4 @@ const getLootSiteNameFromObject = (objectName) => {
 	return match[1];
 };
 
-module.exports = {
-	parseLootTable,
-	parseLootSites,
-	getLootSiteNameFromObject,
-};
+// Named exports declared above
