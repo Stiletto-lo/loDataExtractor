@@ -35,15 +35,14 @@ Object.values(LOOTTEMPLATES_TIER_DIRS).forEach((dir) => {
 	}
 });
 
-
 /**
  * Extracts tier information from a file path or type name
  * @param {string} pathOrType - The file path or type name
  * @returns {string|null} - The tier (T1, T2, T3, T4) or null if not found
  */
-const extractTier = (pathOrType) => {
+const extractTier = (pathOrType?: string): string | undefined => {
 	if (!pathOrType) {
-		return null;
+		return undefined;
 	}
 
 	if (pathOrType.includes("T1_") || pathOrType.includes("Tier1")) {
@@ -59,7 +58,7 @@ const extractTier = (pathOrType) => {
 		return "T4";
 	}
 
-	return null;
+	return undefined;
 };
 
 /**
@@ -67,13 +66,22 @@ const extractTier = (pathOrType) => {
  * @param {Object} tableRef - The table reference object
  * @returns {Object} - Parsed loot table object with only essential information
  */
-const parseLootTableRef = (tableRef) => {
+type SimplifiedLootTable = {
+	name?: string;
+	runChance?: number;
+	minIterations?: number;
+	maxIterations?: number;
+	perIterationRunChance?: number;
+	minQuantityMultiplier?: number;
+	maxQuantityMultiplier?: number;
+};
+
+const parseLootTableRef = (tableRef: any): SimplifiedLootTable | null => {
 	if (!tableRef?.Table) {
 		return null;
 	}
 
-	// Crear una tabla simplificada con solo la información esencial
-	const simplifiedTable = {};
+	const simplifiedTable: SimplifiedLootTable = {};
 
 	// Extract table reference information
 	if (tableRef.Table.ObjectName) {
@@ -112,7 +120,7 @@ const parseLootTableRef = (tableRef) => {
  * @param {string} filePath - The file path to parse
  * @returns {boolean} - Whether parsing was successful
  */
-const parseLootTemplate = (filePath) => {
+const parseLootTemplate = (filePath?: string): boolean => {
 	if (!filePath || typeof filePath !== "string") {
 		console.error("Invalid file path provided to parseLootTemplate");
 		return false;
@@ -128,10 +136,7 @@ const parseLootTemplate = (filePath) => {
 	// The second object contains the actual template data
 	const templateData = jsonData[1];
 
-	if (
-		!classInfo ||
-		!templateData?.Properties?.Loot
-	) {
+	if (!classInfo || !templateData?.Properties?.Loot) {
 		console.error(`Missing required properties in ${filePath}`);
 		return false;
 	}
@@ -152,12 +157,12 @@ const parseLootTemplate = (filePath) => {
 		templateData.Properties.Loot.Tables &&
 		Array.isArray(templateData.Properties.Loot.Tables)
 	) {
-		templateData.Properties.Loot.Tables.forEach((tableRef) => {
+		for (const tableRef of templateData.Properties.Loot.Tables) {
 			const parsedTable = parseLootTableRef(tableRef);
 			if (parsedTable) {
 				lootTemplate.tables.push(parsedTable);
 			}
-		});
+		}
 	}
 
 	// Determine the tier for proper directory placement
@@ -168,7 +173,10 @@ const parseLootTemplate = (filePath) => {
 		"T1";
 
 	// Create the output directory if it doesn't exist
-	const outputDir = LOOTTEMPLATES_TIER_DIRS[tier] || LOOTTEMPLATES_DIR;
+	const outputDir =
+		(tier &&
+			LOOTTEMPLATES_TIER_DIRS[tier as keyof typeof LOOTTEMPLATES_TIER_DIRS]) ||
+		LOOTTEMPLATES_DIR;
 	if (!fs.existsSync(outputDir)) {
 		fs.mkdirSync(outputDir, { recursive: true });
 	}
