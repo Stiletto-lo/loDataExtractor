@@ -5,12 +5,12 @@
   "tables": [
     {
       "name": "LootBoxTabletsTable",
-      "runChance": 1,
+      "runChance": 0.4,
       "minIterations": 1,
-      "maxIterations": 1,
-      "perIterationRunChance": 1,
+      "maxIterations": 8,
+      "perIterationRunChance": 0.2,
       "minQuantityMultiplier": 1,
-      "maxQuantityMultiplier": 1
+      "maxQuantityMultiplier": 3
     }
   ]
 }

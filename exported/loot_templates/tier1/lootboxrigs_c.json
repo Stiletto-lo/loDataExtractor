@@ -1,0 +1,16 @@
+{
+  "name": "LootBoxRigs_C",
+  "type": "LootBoxRigs_C",
+  "class": "BlueprintGeneratedClass'Mist/Content/Mist/Data/LootTables/LootBoxes/LootBoxRigs.LootBoxRigs_C'",
+  "tables": [
+    {
+      "name": "LootBoxRigsTable",
+      "runChance": 0.5,
+      "minIterations": 3,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.15,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
+    }
+  ]
+}

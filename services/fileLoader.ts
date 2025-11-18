@@ -6,6 +6,7 @@
  */
 
 import fs from "fs-extra";
+import path from "node:path";
 import * as fileParser from "../controllers/fileParsers";
 import * as vehicleParser from "../controllers/fileParsers/vehicleParser";
 
@@ -86,83 +87,83 @@ export const loadDirData = (dir: string, type: string) => {
 export const loadAllFiles = (contentFolderPath: string) => {
   console.info("Loading StringTables");
   loadDirData(
-    `${contentFolderPath}Content/Mist/Data/StringTables`,
+    path.join(contentFolderPath, "Content", "Mist", "Data", "StringTables"),
     "stringtables",
   );
   console.info("Loading Localization");
   loadDirData(
-    `${contentFolderPath}Content/Localization/Game/en`,
+    path.join(contentFolderPath, "Content", "Localization", "Game", "en"),
     "translation",
   );
   loadDirData(
-    `${contentFolderPath}Content/Localization/Game`,
+    path.join(contentFolderPath, "Content", "Localization", "Game"),
     "translationOthers",
   );
   console.info("Loading Loot sites");
   loadDirData(
-    `${contentFolderPath}Content/Mist/Characters/Creatures`,
+    path.join(contentFolderPath, "Content", "Mist", "Characters", "Creatures"),
     "lootsites",
   );
   loadDirData(
-    `${contentFolderPath}Content/Mist/Characters/Worm`,
+    path.join(contentFolderPath, "Content", "Mist", "Characters", "Worm"),
     "lootsites",
   );
   console.info("Loading TechTree");
-  loadDirData(`${contentFolderPath}Content/Mist/Data/TechTree`, "tech");
+  loadDirData(path.join(contentFolderPath, "Content", "Mist", "Data", "TechTree"), "tech");
   console.info("Loading Items");
-  loadDirData(`${contentFolderPath}Content/Mist/Data/Items`, "item");
+  loadDirData(path.join(contentFolderPath, "Content", "Mist", "Data", "Items"), "item");
   console.info("Loading Placeables");
   loadDirData(
-    `${contentFolderPath}Content/Mist/Data/Placeables`,
+    path.join(contentFolderPath, "Content", "Mist", "Data", "Placeables"),
     "placeables",
   );
   console.info("Loading Recipes");
-  loadDirData(`${contentFolderPath}Content/Mist/Data/TechTree`, "item");
+  loadDirData(path.join(contentFolderPath, "Content", "Mist", "Data", "TechTree"), "item");
   console.info("Loading Trade");
-  loadDirData(`${contentFolderPath}Content/Mist/Data/Trade`, "trade");
+  loadDirData(path.join(contentFolderPath, "Content", "Mist", "Data", "Trade"), "trade");
   console.info("Loading Placeables Cached");
-  loadDirData(`${contentFolderPath}Content/Mist/Data/Placeables`, "item");
+  loadDirData(path.join(contentFolderPath, "Content", "Mist", "Data", "Placeables"), "item");
   console.info("Loading Walkers Upgrades");
-  loadDirData(`${contentFolderPath}Content/Mist/Data/Walkers`, "upgrades");
+  loadDirData(path.join(contentFolderPath, "Content", "Mist", "Data", "Walkers"), "upgrades");
   console.info("Loading Damages");
   loadDirData(
-    `${contentFolderPath}Content/Mist/Data/DamageTypes`,
+    path.join(contentFolderPath, "Content", "Mist", "Data", "DamageTypes"),
     "damagetypes",
   );
   console.info("Loading Schematics");
   loadDirData(
-    `${contentFolderPath}Content/Mist/Data/Items/Schematics`,
+    path.join(contentFolderPath, "Content", "Mist", "Data", "Items", "Schematics"),
     "schematics",
   );
 
   console.info("Building Item Name Glossary");
   fileParser.buildItemNameGlossary(
-    `${contentFolderPath}Content/Mist/Data/Items`,
+    path.join(contentFolderPath, "Content", "Mist", "Data", "Items"),
   );
 
   console.info("Loading LootTables");
   loadDirData(
-    `${contentFolderPath}Content/Mist/Data/LootTables/LootTables`,
+    path.join(contentFolderPath, "Content", "Mist", "Data", "LootTables", "LootTables"),
     "loottables",
   );
   console.info("Loading LootTemplates");
   loadDirData(
-    `${contentFolderPath}Content/Mist/Data/LootTables/LootTemplates`,
+    path.join(contentFolderPath, "Content", "Mist", "Data", "LootTables", "LootTemplates"),
     "loottemplates",
   );
   console.info("Loading LootBox Templates");
   loadDirData(
-    `${contentFolderPath}Content/Mist/Data/LootTables/LootBoxes`,
+    path.join(contentFolderPath, "Content", "Mist", "Data", "LootTables", "LootBoxes"),
     "loottemplates",
   );
 
   // Process vehicle files to extract carry capacity information
   console.info("Loading Vehicle Data");
   vehicleParser.processVehicleFiles(
-		`${contentFolderPath}Content/Mist/Props/Vehicles`,
+		path.join(contentFolderPath, "Content", "Mist", "Props", "Vehicles"),
 	);
 
   console.info("Loading Perks");
-  loadDirData(`${contentFolderPath}Content/Mist/Data/Perks`, "perks");
+  loadDirData(path.join(contentFolderPath, "Content", "Mist", "Data", "Perks"), "perks");
 
 };

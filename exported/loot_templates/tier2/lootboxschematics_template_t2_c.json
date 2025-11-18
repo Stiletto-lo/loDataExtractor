@@ -1,0 +1,43 @@
+{
+  "name": "LootBoxSchematics_Template_T2_C",
+  "type": "LootBoxSchematics_Template_T2_C",
+  "class": "BlueprintGeneratedClass'Mist/Content/Mist/Data/LootTables/LootBoxes/LootBoxSchematics_Template_T2.LootBoxSchematics_Template_T2_C'",
+  "tables": [
+    {
+      "name": "Schematics_T2",
+      "runChance": 0.5,
+      "minIterations": 10,
+      "maxIterations": 15,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 5
+    },
+    {
+      "name": "Schematics_T1",
+      "runChance": 0.8,
+      "minIterations": 3,
+      "maxIterations": 5,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 3
+    },
+    {
+      "name": "Schematics_T3",
+      "runChance": 0.1,
+      "minIterations": 1,
+      "maxIterations": 2,
+      "perIterationRunChance": 0.25,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
+    },
+    {
+      "name": "Schematics_T4",
+      "runChance": 0.05,
+      "minIterations": 1,
+      "maxIterations": 2,
+      "perIterationRunChance": 0.15,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 1
+    }
+  ]
+}

@@ -25,28 +25,28 @@
       "name": "ProcessedResources_T3",
       "runChance": 1,
       "minIterations": 1,
-      "maxIterations": 5,
+      "maxIterations": 3,
       "perIterationRunChance": 0.5,
-      "minQuantityMultiplier": 20,
-      "maxQuantityMultiplier": 50
+      "minQuantityMultiplier": 15,
+      "maxQuantityMultiplier": 30
     },
     {
       "name": "BaseResources_T4",
       "runChance": 1,
-      "minIterations": 1,
+      "minIterations": 3,
       "maxIterations": 5,
       "perIterationRunChance": 0.5,
-      "minQuantityMultiplier": 20,
-      "maxQuantityMultiplier": 30
+      "minQuantityMultiplier": 5,
+      "maxQuantityMultiplier": 10
     },
     {
       "name": "RedBanana_T4",
       "runChance": 1,
-      "minIterations": 1,
-      "maxIterations": 1,
-      "perIterationRunChance": 1,
-      "minQuantityMultiplier": 10,
-      "maxQuantityMultiplier": 20
+      "minIterations": 5,
+      "maxIterations": 8,
+      "perIterationRunChance": 0.8,
+      "minQuantityMultiplier": 4,
+      "maxQuantityMultiplier": 4
     }
   ]
 }

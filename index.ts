@@ -5,9 +5,19 @@ import * as fileLoader from "./services/fileLoader";
 import * as fileExporter from "./services/fileExporter";
 import dataAccess from "./services/dataAccess";
 
-const CONTENT_FOLDER_PATH = process.env.CONTENT_FOLDER_PATH
-	? process.env.CONTENT_FOLDER_PATH
-	: "./";
+const normalizeContentFolder = (raw: string) => {
+	let p = (raw || "./").replace(/\\/g, "/").trim();
+	if (!p.endsWith("/")) p += "/";
+	const contentSuffix = /\/Content\/?$/i;
+	if (contentSuffix.test(p)) {
+		p = p.replace(contentSuffix, "/");
+	}
+	return p;
+};
+
+const CONTENT_FOLDER_PATH = normalizeContentFolder(
+	process.env.CONTENT_FOLDER_PATH ? process.env.CONTENT_FOLDER_PATH : "./",
+);
 const EXPORT_FOLDER_PATH = "./exported/";
 
 const extractData = async () => {

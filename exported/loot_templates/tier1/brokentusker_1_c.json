@@ -5,7 +5,7 @@
   "tables": [
     {
       "name": "AC_Relic_2",
-      "runChance": 0.2,
+      "runChance": 0.3,
       "minIterations": 1,
       "maxIterations": 1,
       "perIterationRunChance": 1,
@@ -14,7 +14,7 @@
     },
     {
       "name": "AC_Relic_1",
-      "runChance": 0.2,
+      "runChance": 0.3,
       "minIterations": 1,
       "maxIterations": 1,
       "perIterationRunChance": 1,
@@ -23,7 +23,7 @@
     },
     {
       "name": "Rigs_T4",
-      "runChance": 0.25,
+      "runChance": 1,
       "minIterations": 1,
       "maxIterations": 2,
       "perIterationRunChance": 0.5,
@@ -32,10 +32,10 @@
     },
     {
       "name": "Rigs_T3",
-      "runChance": 0.5,
-      "minIterations": 1,
+      "runChance": 1,
+      "minIterations": 2,
       "maxIterations": 3,
-      "perIterationRunChance": 0.25,
+      "perIterationRunChance": 0.5,
       "minQuantityMultiplier": 1,
       "maxQuantityMultiplier": 1
     },
@@ -51,11 +51,11 @@
     {
       "name": "Modules_T1",
       "runChance": 1,
-      "minIterations": 1,
+      "minIterations": 3,
       "maxIterations": 5,
-      "perIterationRunChance": 0.2,
-      "minQuantityMultiplier": 1,
-      "maxQuantityMultiplier": 5
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 3,
+      "maxQuantityMultiplier": 6
     }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "name": "LootboxPotionsTemplate_T1_C",
+  "type": "LootboxPotionsTemplate_T1_C",
+  "class": "BlueprintGeneratedClass'Mist/Content/Mist/Data/LootTables/LootBoxes/LootboxPotionsTemplate_T1.LootboxPotionsTemplate_T1_C'",
+  "tables": [
+    {
+      "name": "LootboxPotions_T1",
+      "runChance": 1,
+      "minIterations": 5,
+      "maxIterations": 12,
+      "perIterationRunChance": 0.5,
+      "minQuantityMultiplier": 1,
+      "maxQuantityMultiplier": 5
+    }
+  ]
+}

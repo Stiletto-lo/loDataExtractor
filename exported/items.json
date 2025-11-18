@@ -30,7 +30,7 @@
       "Redwood Boots",
       "Brittle Bone Handwraps",
       "Carapace Gauntlets",
-      "Redwood Boots",
+      "Redwood Sleeves",
       "Brittle Bone Armor",
       "Carapace Armor",
       "Redwood Armor"
@@ -791,7 +791,7 @@
     "weight": 30,
     "structureInfo": {
       "hp": 500,
-      "type": "Medium"
+      "type": "Hard"
     },
     "unlockable": "AntiPersonnelTurret"
   },
@@ -9307,7 +9307,17 @@
     "whereToFarm": "Collected from toxic lakes and puddles."
   },
   {
-    "category": "Equipment",
+    "category": "Musical Instruments",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "name": "Wood",
+            "count": 25
+          }
+        ]
+      }
+    ],
     "name": "Contrabass",
     "translation": "Contrabass",
     "type": "MusicalInstrumentContrabass_C",
@@ -9865,7 +9875,17 @@
     "weight": 0.6
   },
   {
-    "category": "Equipment",
+    "category": "Musical Instruments",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "name": "Wood",
+            "count": 25
+          }
+        ]
+      }
+    ],
     "name": "Didgeridoo",
     "translation": "Didgeridoo",
     "type": "MusicalInstrumentDidgeridoo_C",
@@ -11076,7 +11096,17 @@
     "weight": 0.5
   },
   {
-    "category": "Equipment",
+    "category": "Musical Instruments",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "name": "Wood",
+            "count": 25
+          }
+        ]
+      }
+    ],
     "name": "Djembe",
     "translation": "Djembe",
     "type": "MusicalInstrumentDjembe_C",
@@ -15104,7 +15134,7 @@
     "weight": 1,
     "durability": 120,
     "armorInfo": {
-      "reduction": 2
+      "reduction": 1
     }
   },
   {
@@ -17938,7 +17968,7 @@
     "name": "Fragment Strongbox",
     "translation": "Fragment Strongbox",
     "type": "LootBoxTablets_C",
-    "description": "Knowledge Tablets seized from pirates by the Flotilla. May contain various types and quantities of tablets.",
+    "description": "Knowledge fragments seized from pirates by the Flotilla. May contain various types and quantities of fragments..",
     "stackSize": 100,
     "weight": 1,
     "drops": []
@@ -23274,7 +23304,17 @@
     "weight": 0.5
   },
   {
-    "category": "Equipment",
+    "category": "Musical Instruments",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "name": "Wood",
+            "count": 25
+          }
+        ]
+      }
+    ],
     "name": "Kaval",
     "translation": "Kaval",
     "type": "MusicalInstrumentKaval_C",
@@ -23796,7 +23836,7 @@
   {
     "name": "Lever",
     "translation": "Lever",
-    "type": "Level_C",
+    "type": "Lever_C",
     "description": "Ancient technology scavenged from the waste. No one is sure what they were used for in the past, but crafty Nomads can use them at ancient fabricators to construct modules which can be installed in Walkers to give them special abilties.",
     "stackSize": 10
   },
@@ -26651,6 +26691,11 @@
     "whereToFarm": "Grows near water sources and forests."
   },
   {
+    "name": "Musical Instruments",
+    "translation": "Musical Instruments",
+    "type": "MusicalInstruments_C"
+  },
+  {
     "category": "Ammo",
     "crafting": [
       {
@@ -28650,7 +28695,17 @@
     }
   },
   {
-    "category": "Equipment",
+    "category": "Musical Instruments",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "name": "Wood",
+            "count": 25
+          }
+        ]
+      }
+    ],
     "name": "Oud",
     "translation": "Oud",
     "type": "MusicalInstrumentOud_C",
@@ -30393,7 +30448,7 @@
     "type": "PenetratingDart_C",
     "description": "Ammo for Anti-Personnel turret.",
     "projectileDamage": {
-      "damage": 3,
+      "damage": 15,
       "penetration": 100
     },
     "stackSize": 500,
@@ -32537,6 +32592,43 @@
     }
   },
   {
+    "category": "Armors",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "name": "Nomad Cloth",
+            "count": 2
+          },
+          {
+            "name": "Redwood Wood",
+            "count": 22
+          },
+          {
+            "name": "Clay",
+            "count": 8
+          }
+        ],
+        "time": 2,
+        "station": "Artisan Fiberworking Station"
+      }
+    ],
+    "name": "Redwood Sleeves",
+    "trade_price": 388.2,
+    "translation": "Redwood Sleeves",
+    "type": "T3_RedwoodWoodGloves_C",
+    "description": "The Swampwood tribe rarely make contact with the Flotillans or venture beyond their fleet, making the specialty armor they construct from redwood, a sought after commodity.",
+    "experiencieReward": 150,
+    "stackSize": 100,
+    "weight": 1.8,
+    "durability": 420,
+    "armorInfo": {
+      "absorbing": 1,
+      "reduction": 5,
+      "speedReduction": 1
+    }
+  },
+  {
     "category": "Resources",
     "name": "Redwood Wood",
     "trade_price": 2.6,
@@ -32996,7 +33088,17 @@
     "weight": 0.25
   },
   {
-    "category": "Equipment",
+    "category": "Musical Instruments",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "name": "Wood",
+            "count": 25
+          }
+        ]
+      }
+    ],
     "name": "Rubab",
     "translation": "Rubab",
     "type": "MusicalInstrumentRubab_C",
@@ -33421,8 +33523,7 @@
     "weight": 1,
     "durability": 150,
     "armorInfo": {
-      "absorbing": 4,
-      "reduction": 1
+      "absorbing": 1
     }
   },
   {
@@ -41002,7 +41103,17 @@
     "whereToFarm": "Can be rendered using a purification station."
   },
   {
-    "category": "Equipment",
+    "category": "Musical Instruments",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "name": "Wood",
+            "count": 25
+          }
+        ]
+      }
+    ],
     "name": "Tambourine",
     "translation": "Tambourine",
     "type": "MusicalInstrumentTambourine_C",
@@ -46355,7 +46466,17 @@
     "unlockable": "Vault"
   },
   {
-    "category": "Equipment",
+    "category": "Musical Instruments",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "name": "Wood",
+            "count": 25
+          }
+        ]
+      }
+    ],
     "name": "Violin",
     "translation": "Violin",
     "type": "MusicalInstrumentViolin_C",
@@ -48053,7 +48174,7 @@
       {
         "ingredients": [
           {
-            "name": "Iron Ore",
+            "name": "Iron Ingot",
             "count": 7
           },
           {

@@ -459,22 +459,27 @@ export const saveAllFiles = async (folderPath: string) => {
 	// Process and export item data
 	const allItems = dataProcessor.processItems();
 	const minItems = dataProcessor.createMinItems(allItems);
+	console.info(`Items processed: ${allItems.length}`);
 	await exportItemsData(allItems, minItems, folderPath);
 
 	// Process and export perk data
 	const perks = fileParser.getAllPerks();
+	console.info(`Perks processed: ${perks.length}`);
 	await exportPerksData(perks, folderPath);
 
 	// Process and export technology data
 	const techData = dataProcessor.processTechData();
+	console.info(`Tech entries processed: ${techData.length}`);
 	await exportTechData(techData, folderPath);
 
 	// Process and export creature data
 	const creatures = dataProcessor.processCreatures();
 	const minCreatures = dataProcessor.createMinCreatures(creatures);
+	console.info(`Creatures processed: ${creatures.length}`);
 	await exportCreaturesData(creatures, minCreatures, folderPath);
 
 	// Process and export translation data
 	const translateData = dataProcessor.processTranslations();
+	console.info(`Languages processed: ${Object.keys(translateData).length}`);
 	await exportTranslationsData(translateData, folderPath);
 };

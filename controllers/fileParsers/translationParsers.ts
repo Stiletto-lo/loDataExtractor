@@ -87,12 +87,11 @@ export const parseTranslations = (filePath: string) => {
 		return false;
 	}
 
-	// Check for expected structure in the JSON data
 	if (jsonData?.Items) {
 		return processTranslationData(jsonData.Items);
 	}
 
-	return false;
+	return parseOtherTranslations(filePath);
 };
 
 export const parseStringTables = (filePath: string) => {
