@@ -1,4 +1,3 @@
-//@ts-nocheck
 /**
  * Translation parsers for handling translation-related data
  * This module provides functions to parse translation files in different formats
@@ -59,7 +58,7 @@ export const processTranslationEntry = (
  * @returns {boolean} - Whether processing was successful
  */
 const processTranslationData = (
-	translationData: any,
+	translationData: Record<string, string>,
 	language: string | null = null,
 ) => {
 	if (!translationData || typeof translationData !== "object") {
@@ -67,8 +66,11 @@ const processTranslationData = (
 	}
 
 	for (const key in translationData) {
-		if (Object.hasOwn(translationData, key)) {
-			processTranslationEntry(key, translationData[key], language);
+		if (Object.prototype.hasOwnProperty.call(translationData, key)) {
+			const value = translationData[key];
+			if (typeof value === "string") {
+				processTranslationEntry(key, value, language);
+			}
 		}
 	}
 
@@ -148,14 +150,14 @@ export const parseOtherTranslations = (filePath: string) => {
 	// Special handling for Game.json which has a different structure
 	// Game.json has an empty string as the first key and contains item descriptions
 	for (const translationGroup in jsonData) {
-		if (Object.hasOwn(jsonData, translationGroup)) {
+		if (Object.prototype.hasOwnProperty.call(jsonData, translationGroup)) {
 			const groupData = jsonData[translationGroup];
 
 			// Handle the special case of empty string key in Game.json
 			if (translationGroup === "" && typeof groupData === "object") {
 				// Process each entry in the empty string group
 				for (const key in groupData) {
-					if (Object.hasOwn(groupData, key)) {
+					if (Object.prototype.hasOwnProperty.call(groupData, key)) {
 						const value = groupData[key];
 						// Check if the value contains a description pattern
 						if (value && typeof value === "string") {
@@ -179,7 +181,11 @@ export const parseOtherTranslations = (filePath: string) => {
 				}
 			} else {
 				// Process regular translation groups
-				if (processTranslationData(groupData, language)) {
+				if (
+					groupData &&
+					typeof groupData === "object" &&
+					processTranslationData(groupData as Record<string, string>, language)
+				) {
 					success = true;
 				}
 			}

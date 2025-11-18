@@ -1,3 +1,5 @@
+import type { DropData } from "./dropData";
+
 export type Creature = {
 	name?: string;
 	type?: string;
@@ -7,6 +9,6 @@ export type Creature = {
 	speed?: number; // From MistPhysicalMobMovement (Sprint.MaxSpeed or Walk.MaxSpeed)
 	lootTemplate?: string; // From MistAnimalMobVariationComponent.Loot
 	category?: string; // Derived from folder structure
-	drops?: any; // Processed loot table data
+	drops?: DropData[];
 	tier?: string | undefined; // Derived from folder structure
 };

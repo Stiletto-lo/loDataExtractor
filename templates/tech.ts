@@ -10,5 +10,5 @@ export type Tech = {
 	onlyDevs?: boolean;
 	level?: number;
 	pointsCost?: number;
-	unlocks?: any;
+	unlocks?: string[];
 };
