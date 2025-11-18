@@ -10,14 +10,15 @@ import "dotenv/config";
 import * as additionalTranslations from "../translations/aditionalTranslations";
 import * as unifiedTechTreeNames from "../translations/unifiedTechTreeNames";
 import * as itemNameGlossary from "./fileParsers/itemNameGlossary";
+import type { Item } from "../templates/item";
 
 // Translation storage objects
 const translationStore: {
-	allTranslations: { [key: string]: string };
-	allDescriptions: { [key: string]: string };
-	translationsFromOtherLanguages: { [key: string]: { [key: string]: string } };
-	descriptionsFromOtherLanguages: { [key: string]: { [key: string]: string } };
-	translationsInUse: { [key: string]: string };
+	allTranslations: Record<string, string>;
+	allDescriptions: Record<string, string>;
+	translationsFromOtherLanguages: Record<string, Record<string, string>>;
+	descriptionsFromOtherLanguages: Record<string, Record<string, string>>;
+	translationsInUse: Record<string, string>;
 } = {
 	allTranslations: {},
 	allDescriptions: {},
@@ -185,7 +186,7 @@ export const searchName = (name: string) => {
  * @param {Array} allItems - The items to translate
  * @returns {Array} - The translated items
  */
-export const translateItems = (allItems: any[]) => {
+export const translateItems = (allItems: Item[]) => {
 	if (!Array.isArray(allItems)) {
 		return [];
 	}
@@ -198,7 +199,7 @@ export const translateItems = (allItems: any[]) => {
  * @param {Object} item - The item to translate
  * @returns {Object} - The translated item
  */
-export const translateItem = (item: any) => {
+export const translateItem = (item: Item) => {
 	if (!item) {
 		return {};
 	}
@@ -221,7 +222,9 @@ export const translateItem = (item: any) => {
 		name = glossaryName;
 	} else {
 		// Fall back to regular translation if not in glossary
-		const translatedName = searchName(item.translation);
+		const translatedName = item.translation
+			? searchName(item.translation)
+			: null;
 		if (translatedName) {
 			if (item.name) {
 				addTranslation(item.name, translatedName);
@@ -243,10 +246,10 @@ export const translateItem = (item: any) => {
 	}
 
 	// Translate learn array if available
-	if (item.learn && item.learn.length > 0) {
+	if (item.learn && Array.isArray(item.learn) && item.learn.length > 0) {
 		item.learn = item.learn
 			.filter(Boolean)
-			.map((value: any) => translateItemPart(value));
+			.map((value: string) => translateItemPart(value));
 	}
 
 	return item;
@@ -277,7 +280,7 @@ export const translateItemPart = (value: string) => {
  * @param {Array} allItems - The items to add descriptions to
  * @returns {Array} - The items with descriptions
  */
-export const addDescriptions = (allItems: any[]) => {
+export const addDescriptions = (allItems: Item[]) => {
 	if (!Array.isArray(allItems)) {
 		return [];
 	}
@@ -290,16 +293,9 @@ export const addDescriptions = (allItems: any[]) => {
 			name = item.translation;
 		}
 
-		if (
-			translationStore.allDescriptions[
-				name as keyof typeof translationStore.allDescriptions
-			]
-		) {
-			item.description = trimIfExists(
-				translationStore.allDescriptions[
-					name as keyof typeof translationStore.allDescriptions
-				],
-			);
+		const desc = translationStore.allDescriptions[name];
+		if (desc) {
+			item.description = trimIfExists(desc);
 		}
 
 		return item;
@@ -334,20 +330,11 @@ export const addTranslation = (
 			addTranslationInUse(key, translation);
 		}
 	} else {
-		if (
-			!translationStore.translationsFromOtherLanguages[
-				language as keyof typeof translationStore.translationsFromOtherLanguages
-			]
-		) {
-			translationStore.translationsFromOtherLanguages[
-				language as keyof typeof translationStore.translationsFromOtherLanguages
-			] = {} as any;
+		if (!translationStore.translationsFromOtherLanguages[language]) {
+			translationStore.translationsFromOtherLanguages[language] = {};
 		}
-
-		//@ts-expect-error fix later
-		translationStore.translationsFromOtherLanguages[
-			language as keyof typeof translationStore.translationsFromOtherLanguages
-		][key] = translation;
+		translationStore.translationsFromOtherLanguages[language][key] =
+			translation;
 	}
 };
 
@@ -371,20 +358,11 @@ export const addDescription = (
 			key as keyof typeof translationStore.allDescriptions
 		] = description;
 	} else {
-		if (
-			!translationStore.descriptionsFromOtherLanguages[
-				language as keyof typeof translationStore.descriptionsFromOtherLanguages
-			]
-		) {
-			translationStore.descriptionsFromOtherLanguages[
-				language as keyof typeof translationStore.descriptionsFromOtherLanguages
-			] = {} as any;
+		if (!translationStore.descriptionsFromOtherLanguages[language]) {
+			translationStore.descriptionsFromOtherLanguages[language] = {};
 		}
-
-		//@ts-expect-error fix later
-		translationStore.descriptionsFromOtherLanguages[
-			language as keyof typeof translationStore.descriptionsFromOtherLanguages
-		][key] = description;
+		translationStore.descriptionsFromOtherLanguages[language][key] =
+			description;
 	}
 };
 
@@ -422,8 +400,8 @@ export const addTranslationInUse = (key: string, translation: string) => {
  * Gets the translation files
  * @returns {Object} - The translation files
  */
-export const getTranslateFiles = () => {
-	const translationsFiltered: { [key: string]: any } = {};
+export const getTranslateFiles = (): Record<string, Record<string, string>> => {
+	const translationsFiltered: Record<string, Record<string, string>> = {};
 
 	// First, collect all the English item names that are actually in use
 	const usedItemNames = new Set();
@@ -457,7 +435,7 @@ export const getTranslateFiles = () => {
 		}
 
 		// Create a map to track duplicate keys and their values
-		const processedKeys = new Map();
+		const processedKeys = new Map<string, string>();
 
 		// Process translations
 		for (const key in translationStore.translationsFromOtherLanguages[
@@ -499,7 +477,9 @@ export const getTranslateFiles = () => {
 
 		// Add all processed translations to the filtered result
 		processedKeys.forEach((value, key) => {
-			translationsFiltered[language][key] = value;
+			const bucket =
+				translationsFiltered[language] || (translationsFiltered[language] = {});
+			bucket[key] = value;
 		});
 	}
 

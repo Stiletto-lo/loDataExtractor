@@ -7,7 +7,10 @@
 
 const fs = require("node:fs");
 const path = require("node:path");
-const lootTemplateTemplate = require("../../templates/lootTemplate");
+import type {
+	LootTemplate,
+	SimplifiedLootTable,
+} from "../../templates/lootTemplate";
 const { readJsonFile } = require("../utils/read-json-file");
 
 // Output directories
@@ -66,16 +69,6 @@ const extractTier = (pathOrType?: string): string | undefined => {
  * @param {Object} tableRef - The table reference object
  * @returns {Object} - Parsed loot table object with only essential information
  */
-type SimplifiedLootTable = {
-	name?: string;
-	runChance?: number;
-	minIterations?: number;
-	maxIterations?: number;
-	perIterationRunChance?: number;
-	minQuantityMultiplier?: number;
-	maxQuantityMultiplier?: number;
-};
-
 const parseLootTableRef = (tableRef: any): SimplifiedLootTable | null => {
 	if (!tableRef?.Table) {
 		return null;
@@ -142,7 +135,7 @@ const parseLootTemplate = (filePath?: string): boolean => {
 	}
 
 	// Create a new loot template
-	const lootTemplate = { ...lootTemplateTemplate };
+	const lootTemplate: LootTemplate = { tables: [] };
 
 	lootTemplate.name = classInfo.Name || "Unknown";
 	lootTemplate.type = templateData.Type || "Unknown";
@@ -160,7 +153,7 @@ const parseLootTemplate = (filePath?: string): boolean => {
 		for (const tableRef of templateData.Properties.Loot.Tables) {
 			const parsedTable = parseLootTableRef(tableRef);
 			if (parsedTable) {
-				lootTemplate.tables.push(parsedTable);
+				lootTemplate.tables!.push(parsedTable);
 			}
 		}
 	}
@@ -182,7 +175,9 @@ const parseLootTemplate = (filePath?: string): boolean => {
 	}
 
 	// Generate filename from the template name
-	const fileName = lootTemplate.name.replace(/\s+/g, "_").toLowerCase();
+	const fileName = (lootTemplate.name || "unknown")
+		.replace(/\s+/g, "_")
+		.toLowerCase();
 	const outputFilePath = path.join(outputDir, `${fileName}.json`);
 
 	// Write the loot template to file
