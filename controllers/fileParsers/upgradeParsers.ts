@@ -265,10 +265,7 @@ export const getUpgradeItem = (upgradePure: any) => {
 				upgradePure?.profile,
 			);
 
-			// Merge upgrade info (super first, then child overrides)
-			//@ts-expect-error fix later
 			item.upgradeInfo = {
-				//@ts-expect-error fix later
 				...(superUpgradeData?.upgradeInfo || {}),
 				...upgradePure.upgradeInfo,
 			};
@@ -289,11 +286,9 @@ export const getUpgradeItem = (upgradePure: any) => {
 				) {
 					const ingredientsFiltered =
 						superUpgradeData.crafting[0].ingredients.filter(
-							//@ts-expect-error fix later
-							(ingredient) =>
+							(ingredient: { name?: string }) =>
 								!upgradePure.crafting[0].ingredients.some(
-									//@ts-expect-error fix later
-									(i) => i.name === ingredient.name,
+									(i: { name?: string }) => i.name === ingredient.name,
 								),
 						);
 					recipe.ingredients = [].concat(
@@ -328,7 +323,6 @@ export const getUpgradeItem = (upgradePure: any) => {
 			upgradePure?.name,
 			upgradePure?.profile,
 		);
-		//@ts-expect-error fix later
 		item.upgradeInfo = upgradePure?.upgradeInfo;
 		item.crafting = upgradePure?.crafting;
 
@@ -345,7 +339,6 @@ export const getUpgradeItem = (upgradePure: any) => {
 		upgradePure?.name,
 		upgradePure?.profile,
 	);
-	//@ts-expect-error fix later
 	item.upgradeInfo = upgradePure?.upgradeInfo;
 	item.crafting = upgradePure?.crafting;
 

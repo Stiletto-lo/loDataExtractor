@@ -1,12 +1,10 @@
-//@ts-nocheck
-
 /**
  * Exports perk data to JSON files
  * @param {Array} perks - Processed perk data
  * @param {string} folderPath - Export folder path
  * @returns {Promise} - Promise that resolves when export is completed
  */
-export const exportPerksData = async (perks: any[], folderPath: string) => {
+export const exportPerksData = async (perks: unknown[], folderPath: string) => {
 	if (perks.length > 0) {
 		console.log(`Processing ${perks.length} perk entries for export...`);
 
@@ -45,10 +43,16 @@ export const exportPerksData = async (perks: any[], folderPath: string) => {
 
 import fs from "fs-extra";
 import * as fileParser from "../controllers/fileParsers";
-import * as dataProcessor from "./dataProcessor";
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const dataProcessor = require("./dataProcessor") as any;
 import { convertToSnakeCase } from "../utils/convertToSnakeCase";
-import * as ingredientNameFixer from "../utils/ingredientNameFixer";
-import * as creatureProcessor from "../utils/creatureProcessor";
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const ingredientNameFixer = require("../utils/ingredientNameFixer") as any;
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const creatureProcessor = require("../utils/creatureProcessor") as any;
+import type { Item } from "../templates/item";
+import type { Tech } from "../templates/tech";
+import type { Creature } from "../templates/creature";
 
 /**
  * Exports technology data to JSON files
@@ -56,17 +60,17 @@ import * as creatureProcessor from "../utils/creatureProcessor";
  * @param {string} folderPath - Export folder path
  * @returns {Promise} - Promise that resolves when export is completed
  */
-export const exportTechData = async (techData: any[], folderPath: string) => {
+export const exportTechData = async (techData: Tech[], folderPath: string) => {
 	if (techData.length > 0) {
 		console.log(`Processing ${techData.length} tech entries for export...`);
 
-		const normalizedNameMap = new Map();
-		const typeMap = new Map();
+		const normalizedNameMap = new Map<string, Tech>();
+		const typeMap = new Map<string, Tech>();
 
 		for (const tech of techData) {
 			if (tech.name && tech.type) {
 				if (typeMap.has(tech.type)) {
-					const existingTech = typeMap.get(tech.type);
+					const existingTech = typeMap.get(tech.type)!;
 
 					const existingTechProps = Object.entries(existingTech).filter(
 						([_, v]) => v !== undefined && v !== null,
@@ -86,10 +90,10 @@ export const exportTechData = async (techData: any[], folderPath: string) => {
 			}
 		}
 
-		const uniqueTechData = [
+		const uniqueTechData: Tech[] = [
 			...Array.from(typeMap.values()),
 			...Array.from(normalizedNameMap.values()).filter(
-				(tech) => !typeMap.has(tech.type),
+				(t) => !typeMap.has(t.type!),
 			),
 		];
 
@@ -131,8 +135,8 @@ export const exportTechData = async (techData: any[], folderPath: string) => {
  * @returns {Promise} - Promise that resolves when export is completed
  */
 export const exportItemsData = async (
-	allItems: any[],
-	minItems: any[],
+	allItems: Item[],
+	minItems: Item[],
 	folderPath: string,
 ) => {
 	console.info("Exporting items.json");
@@ -187,8 +191,16 @@ export const exportItemsData = async (
  * @param {string} folderPath - Export folder path
  * @returns {Promise} - Promise that resolves when export is completed
  */
+type DroppedByInfo = {
+	name: string | undefined;
+	chance: number | undefined;
+	minQuantity: number | undefined;
+	maxQuantity: number | undefined;
+	tier: string | undefined;
+};
+
 export const exportIndividualItemFiles = async (
-	allItems: any[],
+	allItems: Item[],
 	folderPath: string,
 ) => {
 	const itemsFolder = `${folderPath}items`;
@@ -198,15 +210,20 @@ export const exportIndividualItemFiles = async (
 
 	// Load creatures to get drop information
 	console.log("Loading creature information for drop mapping...");
-	const creatures = dataProcessor.processCreatures();
+	const creatures: Creature[] = dataProcessor.processCreatures();
 
 	// Create a map of items to creatures that drop them
-	const itemToCreaturesMap = new Map();
+	const itemToCreaturesMap = new Map<string, DroppedByInfo[]>();
 
 	// Iterate through all creatures and their drops
 	for (const creature of creatures) {
 		if (creature.drops && Array.isArray(creature.drops)) {
-			for (const drop of creature.drops) {
+			for (const drop of creature.drops as Array<{
+				name?: string;
+				chance?: number;
+				minQuantity?: number;
+				maxQuantity?: number;
+			}>) {
 				if (drop.name) {
 					// If this item is not in the map, initialize an empty array
 					if (!itemToCreaturesMap.has(drop.name)) {
@@ -214,7 +231,7 @@ export const exportIndividualItemFiles = async (
 					}
 
 					// Add this creature to the item's source list
-					const creatureInfo = {
+					const creatureInfo: DroppedByInfo = {
 						name: creature.name,
 						chance: drop.chance,
 						minQuantity: drop.minQuantity,
@@ -223,7 +240,7 @@ export const exportIndividualItemFiles = async (
 					};
 
 					// Avoid duplicates
-					const existingCreatures = itemToCreaturesMap.get(drop.name);
+					const existingCreatures = itemToCreaturesMap.get(drop.name)!;
 					if (!existingCreatures.some((c) => c.name === creature.name)) {
 						existingCreatures.push(creatureInfo);
 					}
@@ -234,13 +251,13 @@ export const exportIndividualItemFiles = async (
 
 	console.log(`Drop map created with ${itemToCreaturesMap.size} items`);
 
-	const normalizedNameMap = new Map();
-	const typeMap = new Map(); // Mapa para rastrear items por tipo
+	const normalizedNameMap = new Map<string, string>();
+	const typeMap = new Map<string, Item>();
 
 	for (const item of allItems) {
 		if (item.name && item.type) {
 			if (typeMap.has(item.type)) {
-				const existingItem = typeMap.get(item.type);
+				const existingItem = typeMap.get(item.type)!;
 
 				const existingItemProps = Object.entries(existingItem).filter(
 					([_, v]) => v !== undefined && v !== null,
@@ -262,7 +279,7 @@ export const exportIndividualItemFiles = async (
 		if (item.name) {
 			const droppedBy = itemToCreaturesMap.get(item.name) || [];
 
-			const dataToExport = {
+			const dataToExport: Record<string, unknown> = {
 				name: item?.name,
 				parent: item?.parent,
 				type: item?.type,
@@ -374,8 +391,8 @@ export const exportIndividualItemFiles = async (
  * @returns {Promise} - Promise that resolves when export is completed
  */
 export const exportCreaturesData = async (
-	creatures: any[],
-	minCreatures: any[],
+	creatures: Creature[],
+	minCreatures: unknown[],
 	folderPath: string,
 ) => {
 	if (creatures.length > 0) {
@@ -420,22 +437,23 @@ export const exportCreaturesData = async (
  * @returns {Promise} - Promise that resolves when export is completed
  */
 export const exportTranslationsData = async (
-	translateData: any,
+	translateData: Record<string, Record<string, unknown>>,
 	folderPath: string,
 ) => {
 	for (const language in translateData) {
 		const fileData = translateData[language];
 		const languageArray = language.split("-");
+		const langKey = (languageArray[0] || "").toLowerCase();
 
 		// Validate translation data
 		const validatedData = dataProcessor.validateTranslationData(fileData);
 
 		// Ensure directory exists before writing
-		const outputDir = `${folderPath}locales/${languageArray[0].toLowerCase()}`;
+		const outputDir = `${folderPath}locales/${langKey}`;
 		fs.ensureDirSync(outputDir);
 
 		fs.outputFile(
-			`${folderPath}locales/${languageArray[0].toLowerCase()}/items.json`,
+			`${folderPath}locales/${langKey}/items.json`,
 			JSON.stringify(validatedData, null, 2),
 			(err) => {
 				if (err) {

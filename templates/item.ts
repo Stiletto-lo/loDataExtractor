@@ -1,4 +1,6 @@
 import type { WeaponInfo } from "./weaponInfo";
+import type { Walker } from "./walker";
+import type { UpgradeInfo } from "./upgradeInfo";
 
 export type Item = {
 	category?: string | undefined;
@@ -24,6 +26,11 @@ export type Item = {
 	drops?: any | undefined;
 	structureInfo?: any | undefined;
 	wikiVisibility?: boolean | undefined;
+	onlyDevs?: boolean | undefined;
+	learn?: unknown;
+	walkerInfo?: Walker | undefined;
+	upgradeInfo?: UpgradeInfo | undefined;
+	whereToFarm?: unknown;
 };
 
 export const itemTemplate: Item = {
