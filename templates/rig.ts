@@ -1,8 +1,8 @@
 export type Rig = {
-	medium?: any;
-	small?: any;
-	large?: any;
-	edgeLarge?: any;
-	edgeMedium?: any;
-	edgeSmall?: any;
+	medium?: unknown;
+	small?: unknown;
+	large?: unknown;
+	edgeLarge?: unknown;
+	edgeMedium?: unknown;
+	edgeSmall?: unknown;
 };
