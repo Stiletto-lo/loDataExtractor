@@ -791,7 +791,7 @@
     "weight": 30,
     "structureInfo": {
       "hp": 500,
-      "type": "Hard"
+      "type": "Medium"
     },
     "unlockable": "AntiPersonnelTurret"
   },
@@ -1314,6 +1314,26 @@
       {
         "ingredients": [
           {
+            "name": "Redwood Wood",
+            "count": 1
+          }
+        ],
+        "time": 20,
+        "station": "FuelBurning"
+      },
+      {
+        "ingredients": [
+          {
+            "name": "Lightwood",
+            "count": 1
+          }
+        ],
+        "time": 30,
+        "station": "FuelBurning"
+      },
+      {
+        "ingredients": [
+          {
             "name": "Wood",
             "count": 1
           }
@@ -1324,11 +1344,31 @@
       {
         "ingredients": [
           {
+            "name": "Redwood Wood",
+            "count": 1
+          }
+        ],
+        "time": 30,
+        "station": "FuelLightSource"
+      },
+      {
+        "ingredients": [
+          {
+            "name": "Lightwood",
+            "count": 1
+          }
+        ],
+        "time": 40,
+        "station": "FuelLightSource"
+      },
+      {
+        "ingredients": [
+          {
             "name": "Wooden Slab",
             "count": 1
           }
         ],
-        "time": 600,
+        "time": 60,
         "station": "FuelBurning"
       },
       {
@@ -4095,7 +4135,7 @@
     "trade_price": 151.4,
     "translation": "Bonebreaker",
     "type": "Bonebreaker_C",
-    "description": "A small injection that may cause balance loss and serious injury from falling off walkers. Grants Nomad double damage after a successful block.",
+    "description": "A small injection that may cause balance loss and serious injury from falling off walkers. Grants Nomad +50% damage after a successful block.",
     "stackSize": 100,
     "weight": 0.6
   },
@@ -7265,7 +7305,7 @@
           }
         ],
         "time": 2,
-        "station": "Lathe"
+        "station": "Crafting Bench"
       }
     ],
     "name": "Ceramic Hatchet",
@@ -7784,12 +7824,32 @@
       {
         "ingredients": [
           {
-            "name": "Wood",
+            "name": "Redwood Wood",
             "count": 1
           }
         ],
-        "time": 300,
-        "station": "Furnace"
+        "time": 30,
+        "station": "FuelBurning"
+      },
+      {
+        "ingredients": [
+          {
+            "name": "Lightwood",
+            "count": 1
+          }
+        ],
+        "time": 40,
+        "station": "FuelBurning"
+      },
+      {
+        "ingredients": [
+          {
+            "name": "Wooden Slab",
+            "count": 1
+          }
+        ],
+        "time": 60,
+        "station": "FuelBurning"
       },
       {
         "ingredients": [
@@ -7804,12 +7864,32 @@
       {
         "ingredients": [
           {
-            "name": "Wooden Slab",
+            "name": "Redwood Wood",
             "count": 1
           }
         ],
-        "time": 600,
-        "station": "FuelBurning"
+        "time": 90,
+        "station": "FuelLightSource"
+      },
+      {
+        "ingredients": [
+          {
+            "name": "Lightwood",
+            "count": 1
+          }
+        ],
+        "time": 120,
+        "station": "FuelLightSource"
+      },
+      {
+        "ingredients": [
+          {
+            "name": "Wood",
+            "count": 1
+          }
+        ],
+        "time": 60,
+        "station": "Furnace"
       },
       {
         "ingredients": [
@@ -7824,13 +7904,45 @@
       {
         "ingredients": [
           {
+            "name": "Lightwood",
+            "count": 1
+          }
+        ],
+        "time": 8,
+        "station": "Furnace"
+      },
+      {
+        "ingredients": [
+          {
+            "name": "Wood",
+            "count": 1
+          }
+        ],
+        "output": 2,
+        "time": 60,
+        "station": "Advanced Furnace"
+      },
+      {
+        "ingredients": [
+          {
             "name": "Redwood Wood",
             "count": 1
           }
         ],
         "output": 2,
+        "time": 12,
+        "station": "Advanced Furnace"
+      },
+      {
+        "ingredients": [
+          {
+            "name": "Lightwood",
+            "count": 1
+          }
+        ],
+        "output": 2,
         "time": 8,
-        "station": "Furnace"
+        "station": "Advanced Furnace"
       }
     ],
     "name": "Charcoal",
@@ -17614,6 +17726,12 @@
     ]
   },
   {
+    "name": "Flotillian Walker Parts",
+    "parent": "WalkerPartsAdvanced_T2",
+    "translation": "Flotillian Walker Parts",
+    "type": "WalkerPartsFlotillan_T2_C"
+  },
+  {
     "name": "Flotillian Walker Weapons",
     "parent": "Flotillian Constructions",
     "translation": "Flotillian Walker Weapons",
@@ -17632,9 +17750,9 @@
   },
   {
     "name": "Flotillian Walkers",
-    "parent": "WalkerPartsAdvanced_T2",
+    "parent": "Advanced Walkers",
     "translation": "Flotillian Walkers",
-    "type": "WalkerPartsFlotillan_T2_C"
+    "type": "Walkers_T4_C"
   },
   {
     "name": "Flotillian Weapons",
@@ -21965,9 +22083,10 @@
     "experiencieReward": 174,
     "weight": 12,
     "structureInfo": {
-      "hp": 100
+      "hp": 800,
+      "type": "Soft"
     },
-    "unlockable": "DevOnly"
+    "unlockable": "RupuSling"
   },
   {
     "category": "Resources",
@@ -47960,7 +48079,7 @@
           }
         ],
         "time": 15,
-        "station": "Crafting Bench"
+        "station": "Lathe"
       }
     ],
     "name": "Wyndan Battle Axe",
@@ -48006,7 +48125,7 @@
           }
         ],
         "time": 15,
-        "station": "Crafting Bench"
+        "station": "Lathe"
       }
     ],
     "name": "Wyndan Flame Sword",
@@ -48053,7 +48172,7 @@
           }
         ],
         "time": 15,
-        "station": "Crafting Bench"
+        "station": "Lathe"
       }
     ],
     "name": "Wyndan Hammer",
@@ -48093,7 +48212,7 @@
           }
         ],
         "time": 15,
-        "station": "Crafting Bench"
+        "station": "Lathe"
       }
     ],
     "name": "Wyndan Hand Axe",
@@ -48140,7 +48259,7 @@
           }
         ],
         "time": 15,
-        "station": "Crafting Bench"
+        "station": "Lathe"
       }
     ],
     "name": "Wyndan Sabre",
@@ -48187,7 +48306,7 @@
           }
         ],
         "time": 21,
-        "station": "Crafting Bench"
+        "station": "Lathe"
       }
     ],
     "name": "Wyndan Warhammer",
@@ -48228,7 +48347,7 @@
           }
         ],
         "time": 15,
-        "station": "Crafting Bench"
+        "station": "Lathe"
       }
     ],
     "name": "Wyndanblade Quarterstaff",
