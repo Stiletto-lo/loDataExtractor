@@ -1,5 +1,5 @@
 import fs from "node:fs";
-import { Recipe } from "../../../templates/recipe";
+import type { Recipe } from "../../../templates/recipe";
 import { costTemplate } from "../../../templates/cost";
 import * as dataParser from "../../dataParsers";
 import * as translator from "../../translator";

@@ -146,11 +146,18 @@ const processUpgradeEntry = (
 		if (!isEnabled) return false;
 
 		// Create upgrade object
-		const upgrade: Upgrade = {
-			profile: profile,
-			super: superUp,
-			name: dataParser.parseName(translator, key),
-		};
+		const upgrade: Upgrade = {};
+
+		const parsedName = dataParser.parseName(translator, key);
+		if (profile !== undefined) {
+			upgrade.profile = profile;
+		}
+		if (superUp !== undefined) {
+			upgrade.super = superUp;
+		}
+		if (parsedName !== undefined) {
+			upgrade.name = parsedName;
+		}
 
 		// Extract upgrade info
 		const { upgradeInfo, isValid } = extractUpgradeInfo(properties, key);

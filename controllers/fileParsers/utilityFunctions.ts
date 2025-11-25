@@ -6,7 +6,7 @@
  */
 
 import { itemTemplate } from "../../templates/item";
-import { Tech } from "../../templates/tech";
+import type { Tech } from "../../templates/tech";
 import { costTemplate } from "../../templates/cost";
 import * as dataParser from "../dataParsers";
 import * as translator from "../translator";
