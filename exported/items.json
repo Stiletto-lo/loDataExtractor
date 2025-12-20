@@ -1406,7 +1406,7 @@
     "whereToFarm": "Leftover from burning materials."
   },
   {
-    "category": "Walker Tools",
+    "category": "Interactables",
     "crafting": [
       {
         "ingredients": [
@@ -1441,6 +1441,41 @@
       "type": "Soft"
     },
     "unlockable": "Automaton"
+  },
+  {
+    "category": "Interactables",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 10,
+            "name": "Wood Shaft"
+          },
+          {
+            "count": 5,
+            "name": "Rope"
+          },
+          {
+            "count": 50,
+            "name": "Wood"
+          },
+          {
+            "count": 2,
+            "name": "Wooden Gear"
+          }
+        ]
+      }
+    ],
+    "name": "Automaton Controller",
+    "translation": "Automaton Controller",
+    "type": "AutomatonController_C",
+    "experiencieReward": 208,
+    "weight": 10.8,
+    "structureInfo": {
+      "hp": 500,
+      "type": "Soft"
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Armors",
@@ -46693,6 +46728,41 @@
     "translation": "Walker Hangar",
     "type": "Hangar_C",
     "onlyDevs": true
+  },
+  {
+    "category": "Defenses",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 12,
+            "name": "Sulfur"
+          },
+          {
+            "count": 4,
+            "name": "Charcoal"
+          },
+          {
+            "count": 6,
+            "name": "Phosphorus"
+          },
+          {
+            "count": 10,
+            "name": "Ceramic Shard"
+          }
+        ]
+      }
+    ],
+    "name": "Walker Landmine",
+    "translation": "Walker Landmine",
+    "type": "TrapWalkerLandmine_C",
+    "experiencieReward": 97,
+    "weight": 10,
+    "structureInfo": {
+      "hp": 300,
+      "type": "Soft"
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Walker Tools",
