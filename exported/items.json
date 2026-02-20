@@ -1596,44 +1596,27 @@
   {
     "category": "Upgrades",
     "name": "Balang Walker Upgrade Packing Tier 1",
-    "type": "Balang Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Balang Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Balang Walker Upgrade Packing Tier 2",
-    "type": "Balang Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Balang Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Balang Walker Upgrade Packing Tier 3",
-    "type": "Balang Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Balang Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Balang Walker Upgrade Packing Tier 4",
-    "type": "Balang Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Balang Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 60,
@@ -1685,8 +1668,7 @@
             "count": 12,
             "name": "Rope"
           }
-        ],
-        "time": 25
+        ]
       }
     ],
     "name": "Balang Walker Upgrade Torque Tier 2",
@@ -1699,7 +1681,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 65,
@@ -1738,7 +1719,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 12,
@@ -1789,7 +1769,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 10,
@@ -1820,7 +1799,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 45,
@@ -1855,7 +1833,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 15,
@@ -1894,7 +1871,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 45,
@@ -4054,7 +4030,7 @@
     "description": "Ammo for Scattershot gun. A mixed bag of blunt and sharp debris that spread out when fired.",
     "projectileDamage": {
       "damage": 150,
-      "penetration": 40,
+      "penetration": 10,
       "effectivenessVsSoak": 40,
       "effectivenessVsReduce": 65
     },
@@ -4610,7 +4586,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 10,
@@ -4645,7 +4620,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 10,
@@ -4684,7 +4658,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 10,
@@ -4723,7 +4696,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 22,
@@ -4770,7 +4742,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 24,
@@ -4809,7 +4780,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 24,
@@ -4848,7 +4818,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 24,
@@ -4887,7 +4856,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 40,
@@ -4926,7 +4894,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 9,
@@ -4965,7 +4932,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 27,
@@ -5004,7 +4970,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 9,
@@ -5047,7 +5012,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 9,
@@ -5094,7 +5058,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 5,
@@ -5134,7 +5097,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 5,
@@ -5178,7 +5140,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 5,
@@ -5222,7 +5183,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 5,
@@ -5269,44 +5229,27 @@
   {
     "category": "Upgrades",
     "name": "Buffalo Walker Upgrade Packing Tier 1",
-    "type": "Buffalo Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Buffalo Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Buffalo Walker Upgrade Packing Tier 2",
-    "type": "Buffalo Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Buffalo Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Buffalo Walker Upgrade Packing Tier 3",
-    "type": "Buffalo Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Buffalo Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Buffalo Walker Upgrade Packing Tier 4",
-    "type": "Buffalo Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Buffalo Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 36,
@@ -5341,7 +5284,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 36,
@@ -5384,7 +5326,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 36,
@@ -5427,7 +5368,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 13,
@@ -5470,7 +5410,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 25,
@@ -5509,7 +5448,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 25,
@@ -5552,7 +5490,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 25,
@@ -5595,7 +5532,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 25,
@@ -6104,7 +6040,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 5,
@@ -6135,7 +6070,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 13,
@@ -6170,7 +6104,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 13,
@@ -6205,7 +6138,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 5,
@@ -6252,7 +6184,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 42,
@@ -6287,7 +6218,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 42,
@@ -6326,7 +6256,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 42,
@@ -6365,7 +6294,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 42,
@@ -6867,7 +6795,7 @@
             "name": "Lightwood"
           },
           {
-            "count": 6,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -6900,7 +6828,7 @@
             "name": "Lightwood"
           },
           {
-            "count": 6,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -6933,7 +6861,7 @@
             "name": "Lightwood"
           },
           {
-            "count": 6,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -6966,7 +6894,7 @@
             "name": "Lightwood"
           },
           {
-            "count": 6,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -6999,7 +6927,7 @@
             "name": "Lightwood"
           },
           {
-            "count": 6,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -7062,7 +6990,7 @@
             "name": "Lightwood"
           },
           {
-            "count": 6,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -7095,7 +7023,7 @@
             "name": "Lightwood"
           },
           {
-            "count": 6,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -7128,7 +7056,7 @@
             "name": "Lightwood"
           },
           {
-            "count": 6,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -7161,7 +7089,7 @@
             "name": "Lightwood"
           },
           {
-            "count": 6,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -7194,7 +7122,7 @@
             "name": "Lightwood"
           },
           {
-            "count": 6,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -7227,7 +7155,7 @@
             "name": "Lightwood"
           },
           {
-            "count": 6,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -7555,7 +7483,7 @@
     "description": "Ammo for Scattershot gun. A mixed bag of blunt and sharp debris that spread out when fired.",
     "projectileDamage": {
       "damage": 185,
-      "penetration": 50,
+      "penetration": 10,
       "effectivenessVsSoak": 40,
       "effectivenessVsReduce": 65
     },
@@ -8337,6 +8265,17 @@
     ]
   },
   {
+    "category": "Interactables",
+    "name": "Cinema",
+    "translation": "Cinema",
+    "type": "Cinema_C",
+    "structureInfo": {
+      "hp": 1000000,
+      "type": "BlueprintGeneratedClassInvincibleDamageOverride_C'"
+    },
+    "unlockable": "DevOnly"
+  },
+  {
     "category": "Furniture",
     "crafting": [
       {
@@ -8959,8 +8898,7 @@
             "count": 16,
             "name": "Stone"
           }
-        ],
-        "time": 16
+        ]
       }
     ],
     "name": "Cobra Walker Upgrade Cargo Tier 1",
@@ -8990,8 +8928,7 @@
             "count": 16,
             "name": "Stone"
           }
-        ],
-        "time": 40
+        ]
       }
     ],
     "name": "Cobra Walker Upgrade Cargo Tier 2",
@@ -9021,8 +8958,7 @@
             "count": 80,
             "name": "Stone"
           }
-        ],
-        "time": 96
+        ]
       }
     ],
     "name": "Cobra Walker Upgrade Cargo Tier 3",
@@ -9056,8 +8992,7 @@
             "count": 25,
             "name": "Worm Silk"
           }
-        ],
-        "time": 288
+        ]
       }
     ],
     "name": "Cobra Walker Upgrade Cargo Tier 4",
@@ -9070,7 +9005,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 5,
@@ -9118,8 +9052,7 @@
             "count": 20,
             "name": "Rope"
           }
-        ],
-        "time": 40
+        ]
       }
     ],
     "name": "Cobra Walker Upgrade Torque Tier 2",
@@ -9149,8 +9082,7 @@
             "count": 128,
             "name": "Wood"
           }
-        ],
-        "time": 96
+        ]
       }
     ],
     "name": "Cobra Walker Upgrade Torque Tier 3",
@@ -9184,8 +9116,7 @@
             "count": 192,
             "name": "Redwood Wood"
           }
-        ],
-        "time": 288
+        ]
       }
     ],
     "name": "Cobra Walker Upgrade Torque Tier 4",
@@ -9198,7 +9129,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 45,
@@ -9233,7 +9163,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 32,
@@ -9272,7 +9201,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 35,
@@ -9311,7 +9239,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 42,
@@ -10188,7 +10115,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 30,
@@ -10223,7 +10149,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 30,
@@ -10262,7 +10187,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 20,
@@ -10297,7 +10221,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 30,
@@ -10344,7 +10267,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 12,
@@ -10375,7 +10297,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 5,
@@ -10418,7 +10339,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 5,
@@ -10465,7 +10385,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 5,
@@ -10516,7 +10435,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 18,
@@ -10551,7 +10469,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 18,
@@ -10590,7 +10507,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 10,
@@ -10633,7 +10549,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 10,
@@ -10693,8 +10608,7 @@
             "count": 20,
             "name": "Palm Leaves"
           }
-        ],
-        "time": 10
+        ]
       }
     ],
     "name": "Dinghy Walker Upgrade Mobility Tier 1",
@@ -10708,7 +10622,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 20,
@@ -10748,7 +10661,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 20,
@@ -10792,7 +10704,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 20,
@@ -10839,44 +10750,27 @@
   {
     "category": "Upgrades",
     "name": "Dinghy Walker Upgrade Packing Tier 1",
-    "type": "Dinghy Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Dinghy Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Dinghy Walker Upgrade Packing Tier 2",
-    "type": "Dinghy Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Dinghy Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Dinghy Walker Upgrade Packing Tier 3",
-    "type": "Dinghy Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Dinghy Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Dinghy Walker Upgrade Packing Tier 4",
-    "type": "Dinghy Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Dinghy Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 12,
@@ -10907,7 +10801,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 8,
@@ -10946,7 +10839,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 12,
@@ -10981,7 +10873,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 32,
@@ -11028,7 +10919,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 30,
@@ -11063,7 +10953,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 30,
@@ -11102,7 +10991,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 5,
@@ -11137,7 +11025,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 30,
@@ -11443,7 +11330,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 75,
@@ -11482,7 +11368,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 75,
@@ -11525,7 +11410,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 75,
@@ -11568,7 +11452,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 75,
@@ -11615,7 +11498,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 55,
@@ -11658,7 +11540,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 55,
@@ -11705,7 +11586,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 55,
@@ -11752,7 +11632,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 55,
@@ -11803,7 +11682,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 14,
@@ -11842,7 +11720,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 14,
@@ -11885,7 +11762,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 45,
@@ -11924,7 +11800,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 45,
@@ -11963,7 +11838,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 6,
@@ -12003,7 +11877,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 6,
@@ -12047,7 +11920,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 6,
@@ -12091,7 +11963,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 6,
@@ -12138,44 +12009,27 @@
   {
     "category": "Upgrades",
     "name": "Domus Walker Upgrade Packing Tier 1",
-    "type": "Domus Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Domus Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Domus Walker Upgrade Packing Tier 2",
-    "type": "Domus Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Domus Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Domus Walker Upgrade Packing Tier 3",
-    "type": "Domus Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Domus Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Domus Walker Upgrade Packing Tier 4",
-    "type": "Domus Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Domus Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 12,
@@ -12214,7 +12068,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 12,
@@ -12253,7 +12106,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 12,
@@ -12292,7 +12144,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 12,
@@ -12339,7 +12190,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 15,
@@ -12382,7 +12232,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 15,
@@ -12429,7 +12278,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 500,
         "ingredients": [
           {
             "count": 15,
@@ -12476,7 +12324,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 15,
@@ -13425,7 +13272,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 31,
@@ -13464,7 +13310,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 31,
@@ -13507,7 +13352,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 20,
@@ -13546,7 +13390,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 20,
@@ -13593,7 +13436,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 40,
@@ -13632,7 +13474,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 40,
@@ -13675,7 +13516,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 25,
@@ -13710,7 +13550,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 25,
@@ -13749,7 +13588,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 15,
@@ -13788,7 +13626,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 15,
@@ -13827,7 +13664,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 22,
@@ -13870,7 +13706,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 22,
@@ -13913,7 +13748,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 5,
@@ -13953,7 +13787,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 5,
@@ -13997,7 +13830,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 32,
@@ -14041,7 +13873,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 32,
@@ -14088,44 +13919,27 @@
   {
     "category": "Upgrades",
     "name": "Falco Walker Upgrade Packing Tier 1",
-    "type": "Falco Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Falco Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Falco Walker Upgrade Packing Tier 2",
-    "type": "Falco Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Falco Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Falco Walker Upgrade Packing Tier 3",
-    "type": "Falco Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Falco Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Falco Walker Upgrade Packing Tier 4",
-    "type": "Falco Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Falco Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 17,
@@ -14160,7 +13974,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 17,
@@ -14203,7 +14016,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 17,
@@ -14246,7 +14058,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 17,
@@ -14289,7 +14100,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 20,
@@ -14328,7 +14138,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 20,
@@ -14371,7 +14180,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 20,
@@ -14414,7 +14222,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 20,
@@ -15765,7 +15572,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 20,
@@ -15792,7 +15598,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 15,
@@ -15823,7 +15628,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 20,
@@ -15862,7 +15666,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 20,
@@ -15909,7 +15712,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 3,
@@ -15940,7 +15742,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 3,
@@ -15979,7 +15780,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 3,
@@ -16022,7 +15822,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 3,
@@ -16069,7 +15868,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 2,
@@ -16104,7 +15902,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 2,
@@ -16143,7 +15940,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 4,
@@ -16178,7 +15974,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 2,
@@ -16234,8 +16029,7 @@
             "count": 20,
             "name": "Palm Leaves"
           }
-        ],
-        "time": 10
+        ]
       }
     ],
     "name": "Firefly Walker Upgrade Mobility Tier 1",
@@ -16249,7 +16043,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 20,
@@ -16289,7 +16082,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 20,
@@ -16333,7 +16125,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 20,
@@ -16380,44 +16171,27 @@
   {
     "category": "Upgrades",
     "name": "Firefly Walker Upgrade Packing Tier 1",
-    "type": "Firefly Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Firefly Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Firefly Walker Upgrade Packing Tier 2",
-    "type": "Firefly Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Firefly Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Firefly Walker Upgrade Packing Tier 3",
-    "type": "Firefly Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Firefly Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Firefly Walker Upgrade Packing Tier 4",
-    "type": "Firefly Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Firefly Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 20,
@@ -16444,7 +16218,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 25,
@@ -16475,7 +16248,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 3,
@@ -16510,7 +16282,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 3,
@@ -18125,6 +17896,16 @@
     "stackSize": 100,
     "weight": 1,
     "drops": []
+  },
+  {
+    "category": "Interactables",
+    "name": "Friend Nomad",
+    "translation": "Friend Nomad",
+    "type": "FriendNomadBot_C",
+    "structureInfo": {
+      "hp": 100
+    },
+    "unlockable": "DevOnly"
   },
   {
     "category": "Resources",
@@ -20044,44 +19825,27 @@
   {
     "category": "Upgrades",
     "name": "Hercul Walker Upgrade Packing Tier 1",
-    "type": "Hercul Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Hercul Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Hercul Walker Upgrade Packing Tier 2",
-    "type": "Hercul Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Hercul Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Hercul Walker Upgrade Packing Tier 3",
-    "type": "Hercul Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Hercul Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Hercul Walker Upgrade Packing Tier 4",
-    "type": "Hercul Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Hercul Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 6,
@@ -20129,8 +19893,7 @@
             "count": 20,
             "name": "Rope"
           }
-        ],
-        "time": 40
+        ]
       }
     ],
     "name": "Hercul Walker Upgrade Torque Tier 2",
@@ -20160,8 +19923,7 @@
             "count": 128,
             "name": "Wood"
           }
-        ],
-        "time": 96
+        ]
       }
     ],
     "name": "Hercul Walker Upgrade Torque Tier 3",
@@ -20195,8 +19957,7 @@
             "count": 192,
             "name": "Redwood Wood"
           }
-        ],
-        "time": 288
+        ]
       }
     ],
     "name": "Hercul Walker Upgrade Torque Tier 4",
@@ -20222,8 +19983,7 @@
             "count": 8,
             "name": "Hide"
           }
-        ],
-        "time": 16
+        ]
       }
     ],
     "name": "Hercul Walker Upgrade Water Tier 1",
@@ -20253,8 +20013,7 @@
             "count": 24,
             "name": "Wood"
           }
-        ],
-        "time": 40
+        ]
       }
     ],
     "name": "Hercul Walker Upgrade Water Tier 2",
@@ -20267,7 +20026,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 24,
@@ -20298,7 +20056,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 44,
@@ -20778,7 +20535,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 32,
@@ -20813,7 +20569,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 32,
@@ -20852,7 +20607,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 32,
@@ -20891,7 +20645,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 48,
@@ -20930,7 +20683,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 22,
@@ -20965,7 +20717,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 22,
@@ -21004,7 +20755,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 22,
@@ -21043,7 +20793,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 22,
@@ -21086,7 +20835,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 17,
@@ -21125,7 +20873,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 17,
@@ -21168,7 +20915,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 17,
@@ -21211,7 +20957,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 17,
@@ -21258,7 +21003,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 12,
@@ -21294,7 +21038,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 12,
@@ -21338,7 +21081,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 12,
@@ -21382,7 +21124,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 24,
@@ -21425,44 +21166,27 @@
   {
     "category": "Upgrades",
     "name": "Hornet Walker Upgrade Packing Tier 1",
-    "type": "Hornet Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Hornet Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Hornet Walker Upgrade Packing Tier 2",
-    "type": "Hornet Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Hornet Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Hornet Walker Upgrade Packing Tier 3",
-    "type": "Hornet Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Hornet Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Hornet Walker Upgrade Packing Tier 4",
-    "type": "Hornet Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Hornet Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 5,
@@ -21497,7 +21221,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 13,
@@ -21536,7 +21259,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 13,
@@ -21575,7 +21297,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 5,
@@ -21622,7 +21343,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 8,
@@ -21661,7 +21381,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 8,
@@ -21704,7 +21423,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 40,
@@ -21743,7 +21461,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 8,
@@ -22077,7 +21794,7 @@
     "description": "Ammo for scattershot gun. Blows apart wooden constructions while also dealing some damage to sturdier materials.",
     "projectileDamage": {
       "damage": 240,
-      "penetration": 65,
+      "penetration": 10,
       "effectivenessVsSoak": 40,
       "effectivenessVsReduce": 65
     },
@@ -23756,11 +23473,36 @@
   },
   {
     "category": "Upgrades",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 70,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 300,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 88,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 150,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 13,
+            "name": "Obsidian"
+          }
+        ]
+      }
+    ],
     "name": "Large Spare Parts Profile",
     "type": "LargeSparePartsProfile",
     "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
+      "bonusHp": 40000
     }
   },
   {
@@ -24827,11 +24569,36 @@
   },
   {
     "category": "Upgrades",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 45,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 192,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 56,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 80,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 8,
+            "name": "Obsidian"
+          }
+        ]
+      }
+    ],
     "name": "Medium Spare Parts Profile",
     "type": "MediumSparePartsProfile",
     "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
+      "bonusHp": 15000
     }
   },
   {
@@ -25620,7 +25387,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 24,
@@ -25659,7 +25425,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 22,
@@ -25698,7 +25463,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 24,
@@ -25737,7 +25501,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 24,
@@ -25784,7 +25547,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 28,
@@ -25819,7 +25581,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 28,
@@ -25850,7 +25611,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 28,
@@ -25893,7 +25653,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 28,
@@ -25940,7 +25699,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 16,
@@ -25979,7 +25737,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 16,
@@ -26018,7 +25775,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 16,
@@ -26061,7 +25817,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 16,
@@ -26108,7 +25863,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 14,
@@ -26144,7 +25898,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 28,
@@ -26180,7 +25933,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 14,
@@ -26220,7 +25972,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 14,
@@ -26267,44 +26018,27 @@
   {
     "category": "Upgrades",
     "name": "Mollusk Walker Upgrade Packing Tier 1",
-    "type": "Mollusk Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Mollusk Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Mollusk Walker Upgrade Packing Tier 2",
-    "type": "Mollusk Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Mollusk Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Mollusk Walker Upgrade Packing Tier 3",
-    "type": "Mollusk Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Mollusk Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Mollusk Walker Upgrade Packing Tier 4",
-    "type": "Mollusk Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Mollusk Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 25,
@@ -26339,7 +26073,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 13,
@@ -26378,7 +26111,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 13,
@@ -26417,7 +26149,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 25,
@@ -26464,7 +26195,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 8,
@@ -26503,7 +26233,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 8,
@@ -26546,7 +26275,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 8,
@@ -26589,7 +26317,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 15,
@@ -26830,6 +26557,7 @@
     "structureInfo": {
       "hp": 100
     },
+    "onlyDevs": true,
     "unlockable": "MountableNurr"
   },
   {
@@ -27686,7 +27414,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 30,
@@ -27713,7 +27440,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 30,
@@ -27744,7 +27470,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 30,
@@ -27779,7 +27504,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 30,
@@ -27835,8 +27559,7 @@
             "count": 8,
             "name": "Hide"
           }
-        ],
-        "time": 10
+        ]
       }
     ],
     "name": "Nomad Walker Upgrade Durability Tier 1",
@@ -27849,7 +27572,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 40,
@@ -27888,7 +27610,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 8,
@@ -27931,7 +27652,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 8,
@@ -27978,7 +27698,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 22,
@@ -28005,7 +27724,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 22,
@@ -28036,7 +27754,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 10,
@@ -28071,7 +27788,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 22,
@@ -28114,7 +27830,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 20,
@@ -28146,7 +27861,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 20,
@@ -28182,7 +27896,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 20,
@@ -28222,7 +27935,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 20,
@@ -28265,44 +27977,27 @@
   {
     "category": "Upgrades",
     "name": "Nomad Walker Upgrade Packing Tier 1",
-    "type": "Nomad Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Nomad Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Nomad Walker Upgrade Packing Tier 2",
-    "type": "Nomad Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Nomad Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Nomad Walker Upgrade Packing Tier 3",
-    "type": "Nomad Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Nomad Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Nomad Walker Upgrade Packing Tier 4",
-    "type": "Nomad Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Nomad Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 25,
@@ -28333,7 +28028,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 25,
@@ -28368,7 +28062,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 5,
@@ -28403,7 +28096,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 30,
@@ -29236,7 +28928,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 75,
@@ -29275,7 +28966,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 75,
@@ -29318,7 +29008,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 50,
@@ -29357,7 +29046,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 50,
@@ -29400,7 +29088,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 43,
@@ -29439,7 +29126,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 43,
@@ -29482,7 +29168,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 43,
@@ -29525,7 +29210,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 29,
@@ -29568,7 +29252,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 37,
@@ -29607,7 +29290,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 37,
@@ -29650,7 +29332,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 37,
@@ -29693,7 +29374,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 24,
@@ -29736,7 +29416,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 38,
@@ -29772,7 +29451,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 38,
@@ -29816,7 +29494,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 38,
@@ -29860,7 +29537,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 38,
@@ -29907,44 +29583,27 @@
   {
     "category": "Upgrades",
     "name": "Panda Walker Upgrade Packing Tier 1",
-    "type": "Panda Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Panda Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Panda Walker Upgrade Packing Tier 2",
-    "type": "Panda Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Panda Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Panda Walker Upgrade Packing Tier 3",
-    "type": "Panda Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Panda Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Panda Walker Upgrade Packing Tier 4",
-    "type": "Panda Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Panda Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 22,
@@ -29983,7 +29642,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 22,
@@ -30026,7 +29684,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 22,
@@ -30069,7 +29726,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 22,
@@ -30116,7 +29772,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 25,
@@ -30155,7 +29810,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 25,
@@ -30198,7 +29852,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 25,
@@ -30241,7 +29894,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 25,
@@ -31513,7 +31165,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 15,
@@ -31552,7 +31203,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 15,
@@ -31595,7 +31245,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 15,
@@ -31638,7 +31287,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 15,
@@ -31685,7 +31333,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 32,
@@ -31724,7 +31371,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 32,
@@ -31767,7 +31413,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 32,
@@ -31810,7 +31455,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 32,
@@ -31857,7 +31501,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 15,
@@ -31896,7 +31539,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 15,
@@ -31939,7 +31581,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 15,
@@ -31982,7 +31623,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 15,
@@ -32028,44 +31668,27 @@
   {
     "category": "Upgrades",
     "name": "Raptor Walker Upgrade Packing Tier 1",
-    "type": "Raptor Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Raptor Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Raptor Walker Upgrade Packing Tier 2",
-    "type": "Raptor Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Raptor Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Raptor Walker Upgrade Packing Tier 3",
-    "type": "Raptor Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Raptor Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Raptor Walker Upgrade Packing Tier 4",
-    "type": "Raptor Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Raptor Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 7,
@@ -32104,7 +31727,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 12,
@@ -32143,7 +31765,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 12,
@@ -32182,7 +31803,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 7,
@@ -32229,7 +31849,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 15,
@@ -32268,7 +31887,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 15,
@@ -32311,7 +31929,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 15,
@@ -32354,7 +31971,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 15,
@@ -34689,7 +34305,7 @@
     "description": "Ammo for Scattershot gun. A mixed bag of blunt and sharp debris that spread out when fired.",
     "projectileDamage": {
       "damage": 120,
-      "penetration": 35,
+      "penetration": 10,
       "effectivenessVsSoak": 40,
       "effectivenessVsReduce": 65
     },
@@ -34979,7 +34595,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 75,
@@ -35060,7 +34675,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 75,
@@ -35103,7 +34717,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 75,
@@ -35150,7 +34763,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 63,
@@ -35189,7 +34801,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 63,
@@ -35232,7 +34843,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 63,
@@ -35275,7 +34885,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 63,
@@ -35318,7 +34927,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 55,
@@ -35357,7 +34965,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 55,
@@ -35400,7 +35007,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 20,
@@ -35439,7 +35045,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 20,
@@ -35482,7 +35087,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 5,
@@ -35522,7 +35126,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 5,
@@ -35566,7 +35169,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 24,
@@ -35606,7 +35208,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 24,
@@ -35649,44 +35250,27 @@
   {
     "category": "Upgrades",
     "name": "Schmetterling Walker Upgrade Packing Tier 1",
-    "type": "Schmetterling Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Schmetterling Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Schmetterling Walker Upgrade Packing Tier 2",
-    "type": "Schmetterling Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Schmetterling Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Schmetterling Walker Upgrade Packing Tier 3",
-    "type": "Schmetterling Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Schmetterling Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Schmetterling Walker Upgrade Packing Tier 4",
-    "type": "Schmetterling Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Schmetterling Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 25,
@@ -35725,7 +35309,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 25,
@@ -35768,7 +35351,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 25,
@@ -35811,7 +35393,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 20,
@@ -35854,7 +35435,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 15,
@@ -35897,7 +35477,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 15,
@@ -35944,7 +35523,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 15,
@@ -35991,7 +35569,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 15,
@@ -36762,7 +36339,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 1,
@@ -36801,7 +36377,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 1,
@@ -36840,7 +36415,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 1,
@@ -36879,7 +36453,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 1,
@@ -36926,7 +36499,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 48,
@@ -36961,7 +36533,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 48,
@@ -37000,7 +36571,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 48,
@@ -37039,7 +36609,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 48,
@@ -37627,11 +37196,36 @@
   },
   {
     "category": "Upgrades",
+    "crafting": [
+      {
+        "ingredients": [
+          {
+            "count": 28,
+            "name": "Iron Ingot"
+          },
+          {
+            "count": 120,
+            "name": "Ceramic Shard"
+          },
+          {
+            "count": 35,
+            "name": "Chitin Plate"
+          },
+          {
+            "count": 50,
+            "name": "Nomad Cloth"
+          },
+          {
+            "count": 5,
+            "name": "Obsidian"
+          }
+        ]
+      }
+    ],
     "name": "Small Spare Parts Profile",
     "type": "SmallSparePartsProfile",
     "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
+      "bonusHp": 4000
     }
   },
   {
@@ -37898,7 +37492,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 20,
@@ -37929,7 +37522,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 20,
@@ -37964,7 +37556,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 20,
@@ -38003,7 +37594,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 10,
@@ -38063,8 +37653,7 @@
             "count": 8,
             "name": "Hide"
           }
-        ],
-        "time": 10
+        ]
       }
     ],
     "name": "Spider Walker Upgrade Durability Tier 1",
@@ -38077,7 +37666,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 40,
@@ -38116,7 +37704,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 40,
@@ -38159,7 +37746,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 40,
@@ -38206,7 +37792,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 10,
         "ingredients": [
           {
             "count": 18,
@@ -38237,7 +37822,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 18,
@@ -38272,7 +37856,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 10,
@@ -38311,7 +37894,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 10,
@@ -38371,8 +37953,7 @@
             "count": 20,
             "name": "Palm Leaves"
           }
-        ],
-        "time": 10
+        ]
       }
     ],
     "name": "Spider Walker Upgrade Mobility Tier 1",
@@ -38386,7 +37967,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 15,
@@ -38426,7 +38006,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 35,
@@ -38470,7 +38049,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 35,
@@ -38517,38 +38095,22 @@
   {
     "category": "Upgrades",
     "name": "Spider Walker Upgrade Packing Tier 1",
-    "type": "Spider Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Spider Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Spider Walker Upgrade Packing Tier 2",
-    "type": "Spider Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Spider Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Spider Walker Upgrade Packing Tier 3",
-    "type": "Spider Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Spider Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Spider Walker Upgrade Packing Tier 4",
-    "type": "Spider Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Spider Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
@@ -38567,8 +38129,7 @@
             "count": 5,
             "name": "Rupu Pelt"
           }
-        ],
-        "time": 10
+        ]
       }
     ],
     "name": "Spider Walker Upgrade Water Tier 1",
@@ -38581,7 +38142,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 25,
@@ -38612,7 +38172,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 60,
         "ingredients": [
           {
             "count": 5,
@@ -38647,7 +38206,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 180,
         "ingredients": [
           {
             "count": 5,
@@ -39299,7 +38857,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 40,
@@ -39330,7 +38887,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 40,
@@ -39365,7 +38921,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 40,
@@ -39408,7 +38963,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 40,
@@ -39455,7 +39009,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 56,
@@ -39490,7 +39043,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 56,
@@ -39533,7 +39085,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 56,
@@ -39572,7 +39123,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 56,
@@ -39619,7 +39169,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 10,
@@ -39658,7 +39207,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 10,
@@ -39697,7 +39245,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 13,
@@ -39740,7 +39287,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 13,
@@ -39787,7 +39333,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 14,
@@ -39819,7 +39364,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 14,
@@ -39859,7 +39403,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 14,
@@ -39903,7 +39446,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 14,
@@ -39950,44 +39492,27 @@
   {
     "category": "Upgrades",
     "name": "Stiletto Walker Upgrade Packing Tier 1",
-    "type": "Stiletto Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Stiletto Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Stiletto Walker Upgrade Packing Tier 2",
-    "type": "Stiletto Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Stiletto Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Stiletto Walker Upgrade Packing Tier 3",
-    "type": "Stiletto Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Stiletto Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Stiletto Walker Upgrade Packing Tier 4",
-    "type": "Stiletto Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Stiletto Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 7,
@@ -40022,7 +39547,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 7,
@@ -40061,7 +39585,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 7,
@@ -40100,7 +39623,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 7,
@@ -40147,7 +39669,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 28,
@@ -40182,7 +39703,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 28,
@@ -40221,7 +39741,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 24,
@@ -40256,7 +39775,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 28,
@@ -41817,7 +41335,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 55,
@@ -41856,7 +41373,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 55,
@@ -41899,7 +41415,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 55,
@@ -41942,7 +41457,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 55,
@@ -41989,7 +41503,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 50,
@@ -42028,7 +41541,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 50,
@@ -42071,7 +41583,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 50,
@@ -42114,7 +41625,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 50,
@@ -42157,7 +41667,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 17,
@@ -42196,7 +41705,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 17,
@@ -42239,7 +41747,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 17,
@@ -42282,7 +41789,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 17,
@@ -42329,7 +41835,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 23,
@@ -42369,7 +41874,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 23,
@@ -42413,7 +41917,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 23,
@@ -42457,7 +41960,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 23,
@@ -42504,44 +42006,27 @@
   {
     "category": "Upgrades",
     "name": "Titan Walker Upgrade Packing Tier 1",
-    "type": "Titan Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Titan Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Titan Walker Upgrade Packing Tier 2",
-    "type": "Titan Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Titan Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Titan Walker Upgrade Packing Tier 3",
-    "type": "Titan Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Titan Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Titan Walker Upgrade Packing Tier 4",
-    "type": "Titan Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Titan Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 25,
@@ -42580,7 +42065,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 25,
@@ -42623,7 +42107,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 25,
@@ -42666,7 +42149,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 20,
@@ -42709,7 +42191,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 44,
@@ -42748,7 +42229,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 44,
@@ -42791,7 +42271,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 44,
@@ -42834,7 +42313,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 44,
@@ -43262,7 +42740,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 8,
@@ -43297,7 +42774,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 30,
@@ -43332,7 +42808,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 30,
@@ -43375,7 +42850,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 30,
@@ -43422,7 +42896,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 47,
@@ -43461,7 +42934,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 28,
@@ -43500,7 +42972,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 28,
@@ -43543,7 +43014,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 28,
@@ -43590,7 +43060,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 45,
@@ -43625,7 +43094,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 18,
@@ -43660,7 +43128,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 18,
@@ -43699,7 +43166,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 18,
@@ -43746,7 +43212,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 40,
@@ -43786,7 +43251,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 40,
@@ -43822,7 +43286,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 40,
@@ -43866,7 +43329,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 40,
@@ -43913,44 +43375,27 @@
   {
     "category": "Upgrades",
     "name": "Toboggan Walker Upgrade Packing Tier 1",
-    "type": "Toboggan Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Toboggan Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Toboggan Walker Upgrade Packing Tier 2",
-    "type": "Toboggan Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Toboggan Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Toboggan Walker Upgrade Packing Tier 3",
-    "type": "Toboggan Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Toboggan Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Toboggan Walker Upgrade Packing Tier 4",
-    "type": "Toboggan Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Toboggan Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 1,
@@ -43989,7 +43434,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 1,
@@ -44028,7 +43472,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 1,
@@ -44067,7 +43510,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 1,
@@ -44114,7 +43556,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 16,
         "ingredients": [
           {
             "count": 16,
@@ -44153,7 +43594,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 40,
         "ingredients": [
           {
             "count": 16,
@@ -44196,7 +43636,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 96,
         "ingredients": [
           {
             "count": 30,
@@ -44239,7 +43678,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 288,
         "ingredients": [
           {
             "count": 16,
@@ -45347,7 +44785,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 50,
@@ -45420,7 +44857,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 50,
@@ -45459,7 +44895,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 25,
@@ -45502,7 +44937,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 65,
@@ -45541,7 +44975,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 65,
@@ -45580,7 +45013,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 65,
@@ -45619,7 +45051,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 70,
@@ -45658,7 +45089,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 20,
@@ -45697,7 +45127,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 20,
@@ -45740,7 +45169,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 20,
@@ -45783,7 +45211,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 20,
@@ -45830,7 +45257,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 50,
@@ -45870,7 +45296,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 50,
@@ -45914,7 +45339,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 50,
@@ -45958,7 +45382,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 38,
@@ -46001,44 +45424,27 @@
   {
     "category": "Upgrades",
     "name": "Tusker Walker Upgrade Packing Tier 1",
-    "type": "Tusker Walker Upgrade Packing Tier 1",
-    "upgradeInfo": {
-      "additionalParts": 20,
-      "additionalSlots": 1
-    }
+    "type": "Tusker Walker Upgrade Packing Tier 1"
   },
   {
     "category": "Upgrades",
     "name": "Tusker Walker Upgrade Packing Tier 2",
-    "type": "Tusker Walker Upgrade Packing Tier 2",
-    "upgradeInfo": {
-      "additionalParts": 40,
-      "additionalSlots": 2
-    }
+    "type": "Tusker Walker Upgrade Packing Tier 2"
   },
   {
     "category": "Upgrades",
     "name": "Tusker Walker Upgrade Packing Tier 3",
-    "type": "Tusker Walker Upgrade Packing Tier 3",
-    "upgradeInfo": {
-      "additionalParts": 60,
-      "additionalSlots": 3
-    }
+    "type": "Tusker Walker Upgrade Packing Tier 3"
   },
   {
     "category": "Upgrades",
     "name": "Tusker Walker Upgrade Packing Tier 4",
-    "type": "Tusker Walker Upgrade Packing Tier 4",
-    "upgradeInfo": {
-      "additionalParts": 80,
-      "additionalSlots": 4
-    }
+    "type": "Tusker Walker Upgrade Packing Tier 4"
   },
   {
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 25,
@@ -46073,7 +45479,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 25,
@@ -46116,7 +45521,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 25,
@@ -46159,7 +45563,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 25,
@@ -46206,7 +45609,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 25,
         "ingredients": [
           {
             "count": 13,
@@ -46245,7 +45647,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 63,
         "ingredients": [
           {
             "count": 13,
@@ -46288,7 +45689,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 150,
         "ingredients": [
           {
             "count": 13,
@@ -46331,7 +45731,6 @@
     "category": "Upgrades",
     "crafting": [
       {
-        "time": 450,
         "ingredients": [
           {
             "count": 13,
