@@ -4030,9 +4030,9 @@
     "description": "Ammo for Scattershot gun. A mixed bag of blunt and sharp debris that spread out when fired.",
     "projectileDamage": {
       "damage": 150,
-      "penetration": 10,
-      "effectivenessVsSoak": 40,
-      "effectivenessVsReduce": 65
+      "penetration": 15,
+      "effectivenessVsSoak": 90,
+      "effectivenessVsReduce": 150
     },
     "experiencieReward": 1,
     "stackSize": 24,
@@ -7483,9 +7483,9 @@
     "description": "Ammo for Scattershot gun. A mixed bag of blunt and sharp debris that spread out when fired.",
     "projectileDamage": {
       "damage": 185,
-      "penetration": 10,
-      "effectivenessVsSoak": 40,
-      "effectivenessVsReduce": 65
+      "penetration": 15,
+      "effectivenessVsSoak": 90,
+      "effectivenessVsReduce": 150
     },
     "experiencieReward": 1,
     "stackSize": 24,
@@ -8738,6 +8738,7 @@
     "durability": 170,
     "armorInfo": {
       "absorbing": 6,
+      "reduction": 3,
       "speedReduction": 2
     }
   },
@@ -21794,9 +21795,9 @@
     "description": "Ammo for scattershot gun. Blows apart wooden constructions while also dealing some damage to sturdier materials.",
     "projectileDamage": {
       "damage": 240,
-      "penetration": 10,
-      "effectivenessVsSoak": 40,
-      "effectivenessVsReduce": 65
+      "penetration": 15,
+      "effectivenessVsSoak": 90,
+      "effectivenessVsReduce": 150
     },
     "experiencieReward": 1,
     "stackSize": 24,
@@ -33264,7 +33265,7 @@
     "durability": 150,
     "armorInfo": {
       "absorbing": 4,
-      "reduction": 2,
+      "reduction": 3,
       "speedReduction": 1
     }
   },
@@ -33293,7 +33294,8 @@
     "weight": 1,
     "durability": 150,
     "armorInfo": {
-      "absorbing": 1
+      "absorbing": 1,
+      "reduction": 1
     }
   },
   {
@@ -33322,7 +33324,7 @@
     "durability": 150,
     "armorInfo": {
       "absorbing": 4,
-      "reduction": 1
+      "reduction": 2
     }
   },
   {
@@ -34305,9 +34307,9 @@
     "description": "Ammo for Scattershot gun. A mixed bag of blunt and sharp debris that spread out when fired.",
     "projectileDamage": {
       "damage": 120,
-      "penetration": 10,
-      "effectivenessVsSoak": 40,
-      "effectivenessVsReduce": 65
+      "penetration": 15,
+      "effectivenessVsSoak": 90,
+      "effectivenessVsReduce": 150
     },
     "experiencieReward": 1,
     "stackSize": 24,
