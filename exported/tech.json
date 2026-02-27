@@ -130,7 +130,8 @@
   },
   {
     "name": "Ash",
-    "parent": "Camp Fire"
+    "parent": "Camp Fire",
+    "pointsCost": 1
   },
   {
     "name": "Automaton",
@@ -471,7 +472,8 @@
   },
   {
     "name": "Charcoal",
-    "parent": "Camp Fire"
+    "parent": "Camp Fire",
+    "pointsCost": 3
   },
   {
     "name": "Charged Boulder",
@@ -794,11 +796,13 @@
   },
   {
     "name": "Flint Bolt",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "pointsCost": 3
   },
   {
     "name": "Flint Harpoon",
-    "parent": "Ballista"
+    "parent": "Ballista",
+    "pointsCost": 2
   },
   {
     "name": "Flint Orb",
@@ -979,7 +983,8 @@
   {
     "name": "Heavy Walls",
     "parent": "Medium Wood Walls",
-    "level": 30
+    "level": 30,
+    "pointsCost": 25
   },
   {
     "name": "Hellfire Bolt",
@@ -1008,7 +1013,8 @@
   {
     "name": "Hullbreaker Scattershot",
     "parent": "Ceramic Scattershot Ammo",
-    "level": 45
+    "level": 45,
+    "pointsCost": 25
   },
   {
     "name": "Improved Armors",
@@ -1087,7 +1093,8 @@
   {
     "name": "Iron Ore",
     "parent": "Soil Excavator",
-    "level": 45
+    "level": 45,
+    "pointsCost": 10
   },
   {
     "name": "Iron Pickaxe",
@@ -1295,7 +1302,8 @@
   },
   {
     "name": "Mtx Masks",
-    "parent": "Fiber Headwrap"
+    "parent": "Fiber Headwrap",
+    "pointsCost": 10
   },
   {
     "name": "Net",
@@ -1478,7 +1486,8 @@
   {
     "name": "Phosphorus",
     "parent": "Stomping Station",
-    "level": 15
+    "level": 15,
+    "pointsCost": 5
   },
   {
     "name": "Poaching Hut",
@@ -1656,11 +1665,13 @@
   {
     "name": "Salt Rock",
     "parent": "Soil Excavator",
-    "level": 15
+    "level": 15,
+    "pointsCost": 3
   },
   {
     "name": "Sand",
-    "parent": "Crafting"
+    "parent": "Crafting",
+    "pointsCost": 2
   },
   {
     "name": "Sand Bed",
@@ -1976,7 +1987,8 @@
   },
   {
     "name": "Throwstone",
-    "parent": "Equipment"
+    "parent": "Equipment",
+    "pointsCost": 3
   },
   {
     "name": "Thumper",
@@ -2202,17 +2214,20 @@
   {
     "name": "Walker Parts Flotillan T2",
     "parent": "Walker Parts Advanced T2",
-    "level": 45
+    "level": 45,
+    "pointsCost": 80
   },
   {
     "name": "Walker Parts Flotillan T3",
     "parent": "Walker Parts Advanced T3",
-    "level": 45
+    "level": 45,
+    "pointsCost": 100
   },
   {
     "name": "Walker Parts Flotillan T4",
     "parent": "Walker Parts Advanced T4",
-    "level": 45
+    "level": 45,
+    "pointsCost": 120
   },
   {
     "name": "Walker Parts Improved T1",
@@ -2281,7 +2296,8 @@
   {
     "name": "Winged Helmet",
     "parent": "Cloak",
-    "level": 45
+    "level": 45,
+    "pointsCost": 10
   },
   {
     "name": "Wingsuit",
@@ -2329,7 +2345,8 @@
   {
     "name": "Worm Oil",
     "parent": "Artisan Stomping Station",
-    "level": 45
+    "level": 45,
+    "pointsCost": 10
   },
   {
     "name": "Worm Sand",

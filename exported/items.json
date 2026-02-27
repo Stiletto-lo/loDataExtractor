@@ -1370,28 +1370,6 @@
         ],
         "time": 60,
         "station": "FuelBurning"
-      },
-      {
-        "ingredients": [
-          {
-            "name": "Lightwood",
-            "count": 1
-          }
-        ],
-        "output": 15,
-        "time": 15,
-        "station": "Furnace"
-      },
-      {
-        "ingredients": [
-          {
-            "name": "Lightwood",
-            "count": 1
-          }
-        ],
-        "output": 15,
-        "time": 12,
-        "station": "Advanced Furnace"
       }
     ],
     "name": "Ash",
@@ -7861,7 +7839,7 @@
             "count": 1
           }
         ],
-        "time": 12,
+        "time": 40,
         "station": "Furnace"
       },
       {
@@ -7871,7 +7849,7 @@
             "count": 1
           }
         ],
-        "time": 8,
+        "time": 30,
         "station": "Furnace"
       },
       {
@@ -7893,7 +7871,7 @@
           }
         ],
         "output": 2,
-        "time": 12,
+        "time": 40,
         "station": "Advanced Furnace"
       },
       {
@@ -7904,7 +7882,7 @@
           }
         ],
         "output": 2,
-        "time": 8,
+        "time": 30,
         "station": "Advanced Furnace"
       }
     ],
@@ -13058,6 +13036,31 @@
     "stackSize": 20,
     "weight": 0.3,
     "damageType": "'ExplosionDamage_C'"
+  },
+  {
+    "category": "Ammo",
+    "name": "Explosive Boulder",
+    "trade_price": 150,
+    "translation": "Explosive Boulder",
+    "type": "ExplosiveBoulder_C",
+    "description": "Ammo for catapult. Big boulder filled with iron splinters, charged with meteor core's energy. Designed to shred wood to pieces and severely damage even the sturdiest materials.",
+    "projectileDamage": {
+      "damage": 2000,
+      "penetration": 10,
+      "effectivenessVsSoak": 70,
+      "effectivenessVsReduce": 70
+    },
+    "experiencieReward": 300,
+    "stackSize": 5,
+    "weight": 10,
+    "toolInfo": [
+      {
+        "tier": 3,
+        "toolType": "CatapultRock"
+      }
+    ],
+    "wikiVisibility": false,
+    "damageType": "'BoulderDamage_C'"
   },
   {
     "category": "Ammo",
