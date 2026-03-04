@@ -1413,7 +1413,7 @@
     "type": "Automaton_C",
     "description": "A remote-controlled mechanical tool that can handle mounted weapons.",
     "experiencieReward": 78,
-    "weight": 1500,
+    "weight": 50,
     "structureInfo": {
       "hp": 100,
       "type": "Soft"
@@ -7483,7 +7483,7 @@
         "ingredients": [
           {
             "name": "Clay",
-            "count": 1
+            "count": 2
           }
         ],
         "time": 720,
@@ -7826,63 +7826,60 @@
         "ingredients": [
           {
             "name": "Wood",
-            "count": 1
+            "count": 4
           }
         ],
-        "time": 60,
+        "time": 600,
         "station": "Furnace"
       },
       {
         "ingredients": [
           {
             "name": "Redwood Wood",
-            "count": 1
+            "count": 4
           }
         ],
-        "time": 40,
+        "time": 450,
         "station": "Furnace"
       },
       {
         "ingredients": [
           {
             "name": "Lightwood",
-            "count": 1
+            "count": 4
           }
         ],
-        "time": 30,
+        "time": 300,
         "station": "Furnace"
       },
       {
         "ingredients": [
           {
             "name": "Wood",
-            "count": 1
+            "count": 2
           }
         ],
-        "output": 2,
-        "time": 60,
+        "time": 600,
         "station": "Advanced Furnace"
       },
       {
         "ingredients": [
           {
             "name": "Redwood Wood",
-            "count": 1
+            "count": 2
           }
         ],
-        "output": 2,
-        "time": 40,
+        "time": 450,
         "station": "Advanced Furnace"
       },
       {
         "ingredients": [
           {
             "name": "Lightwood",
-            "count": 1
+            "count": 2
           }
         ],
-        "output": 2,
-        "time": 30,
+        "time": 300,
         "station": "Advanced Furnace"
       }
     ],
@@ -19354,7 +19351,7 @@
             "name": "Redwood Wood"
           },
           {
-            "count": 5,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -19383,7 +19380,7 @@
             "name": "Redwood Wood"
           },
           {
-            "count": 5,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -19412,7 +19409,7 @@
             "name": "Redwood Wood"
           },
           {
-            "count": 5,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -19441,7 +19438,7 @@
             "name": "Redwood Wood"
           },
           {
-            "count": 5,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -19470,7 +19467,7 @@
             "name": "Redwood Wood"
           },
           {
-            "count": 5,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -19499,7 +19496,7 @@
             "name": "Redwood Wood"
           },
           {
-            "count": 5,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -19527,7 +19524,7 @@
             "name": "Redwood Wood"
           },
           {
-            "count": 5,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -19556,7 +19553,7 @@
             "name": "Redwood Wood"
           },
           {
-            "count": 5,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -19585,7 +19582,7 @@
             "name": "Redwood Wood"
           },
           {
-            "count": 5,
+            "count": 2,
             "name": "Iron Ingot"
           },
           {
@@ -26989,7 +26986,7 @@
             "count": 2
           }
         ],
-        "time": 340,
+        "time": 1800,
         "station": "Advanced Furnace"
       }
     ],
@@ -30282,30 +30279,50 @@
           }
         ],
         "output": 5,
-        "time": 12,
+        "time": 30,
         "station": "Stomping Station"
       },
       {
         "ingredients": [
           {
             "name": "Bone Splinter",
-            "count": 10
+            "count": 9
           }
         ],
         "output": 5,
-        "time": 10,
+        "time": 25,
         "station": "Advanced Stomping Station"
       },
       {
         "ingredients": [
           {
             "name": "Bone Splinter",
-            "count": 10
+            "count": 8
           }
         ],
         "output": 5,
-        "time": 8,
+        "time": 20,
         "station": "Flotillian Stomping Station"
+      },
+      {
+        "ingredients": [
+          {
+            "name": "Chitin Plate",
+            "count": 2
+          }
+        ],
+        "time": 600,
+        "station": "Furnace"
+      },
+      {
+        "ingredients": [
+          {
+            "name": "Chitin Plate",
+            "count": 2
+          }
+        ],
+        "time": 450,
+        "station": "Advanced Furnace"
       }
     ],
     "name": "Phosphorus",
@@ -33819,11 +33836,11 @@
         "ingredients": [
           {
             "name": "Brine",
-            "count": 1
+            "count": 10
           }
         ],
-        "output": 3,
-        "time": 20,
+        "output": 5,
+        "time": 120,
         "station": "Clay Pot"
       },
       {
@@ -33834,7 +33851,7 @@
           }
         ],
         "output": 10,
-        "time": 20,
+        "time": 30,
         "station": "Artisan Soil Auger"
       },
       {
@@ -33845,7 +33862,7 @@
           }
         ],
         "output": 5,
-        "time": 30,
+        "time": 120,
         "station": "WaterBoiling"
       }
     ],
@@ -40809,10 +40826,10 @@
         "ingredients": [
           {
             "name": "Tree Sap",
-            "count": 1
+            "count": 2
           }
         ],
-        "time": 360,
+        "time": 600,
         "station": "Furnace"
       },
       {
@@ -40822,7 +40839,7 @@
             "count": 1
           }
         ],
-        "time": 180,
+        "time": 450,
         "station": "Advanced Furnace"
       }
     ],
@@ -40832,7 +40849,7 @@
     "translation": "Tar",
     "type": "Tar_C",
     "description": "Thick liquid used in heavy and complex constructions. Ignitable in combination with other materials.",
-    "experiencieReward": 100,
+    "experiencieReward": 20,
     "stackSize": 100,
     "weight": 0.15
   },
