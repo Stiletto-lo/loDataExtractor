@@ -822,6 +822,7 @@
       }
     ],
     "name": "Apple Kambaro",
+    "trade_price": 2,
     "translation": "Apple Kambaro",
     "type": "AppleKambaro_C",
     "description": "Mouth-watering dish made out of cooked apples and some seasoning. Juicy and spicy at the same time, it quenches thirst and energizes the Nomads that eat it.",
@@ -961,6 +962,7 @@
   {
     "category": "Interactables",
     "name": "Armor Strongbox",
+    "trade_price": 10000,
     "translation": "Armor Strongbox",
     "type": "LootBoxArmors_C",
     "description": "Armors seized from pirates by the Flotilla. May contain various types and quantities of armors.",
@@ -1168,6 +1170,7 @@
       }
     ],
     "name": "Armoury Walker Module",
+    "trade_price": 100,
     "translation": "Armoury Walker Module",
     "type": "WalkerGearModule_C",
     "description": "Stacking this module increases the capacity of a walker's Armor and Weapons container.",
@@ -2862,6 +2865,7 @@
       }
     ],
     "name": "Battery Walker Module",
+    "trade_price": 100,
     "translation": "Battery Walker Module",
     "type": "WalkerTorqueCapacityBoost_C",
     "description": "Stacking this module increases the torque battery's maximum capacity.",
@@ -5782,6 +5786,7 @@
       }
     ],
     "name": "Bullrush Base Module",
+    "trade_price": 100,
     "translation": "Bullrush Base Module",
     "type": "BaseRespawnTimeModule_C",
     "description": "Stacking this module decreases the wait time before respawning on a base.",
@@ -5816,6 +5821,7 @@
       }
     ],
     "name": "Bullrush Walker Module",
+    "trade_price": 100,
     "translation": "Bullrush Walker Module",
     "type": "WalkerRespawnTimeModule_C",
     "description": "Stacking this module decreases the wait time before respawning on a walker.",
@@ -7278,7 +7284,7 @@
     "category": "Resources",
     "name": "Ceramic Nails",
     "parent": "Lathe",
-    "trade_price": 0.4,
+    "trade_price": 3,
     "translation": "Ceramic Nails",
     "type": "CeramicNails_C",
     "description": "Hardened ceramic nails used for construction of more advanced structures and walkers.",
@@ -9255,6 +9261,7 @@
   },
   {
     "name": "Cog",
+    "trade_price": 20,
     "translation": "Cog",
     "type": "Cog_C",
     "description": "Ancient technology scavenged from the waste. No one is sure what they were used for in the past, but crafty Nomads can use them at ancient fabricators to construct modules which can be installed in Walkers to give them special abilties.",
@@ -9358,16 +9365,6 @@
   },
   {
     "category": "Musical Instruments",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "name": "Wood",
-            "count": 25
-          }
-        ]
-      }
-    ],
     "name": "Contrabass",
     "translation": "Contrabass",
     "type": "MusicalInstrumentContrabass_C",
@@ -9394,6 +9391,7 @@
       }
     ],
     "name": "Cooked Corn",
+    "trade_price": 1,
     "translation": "Cooked Corn",
     "type": "CookedCorn_C",
     "description": "Seasoned with salt and boiled in water, this way of eating corn is much more enjoyable than eating it raw, giving Nomads strength to overcome their enemies easier.",
@@ -9516,6 +9514,7 @@
       }
     ],
     "name": "Craftsman Base Module",
+    "trade_price": 100,
     "translation": "Craftsman Base Module",
     "type": "BaseCraftingTimeModule_C",
     "description": "Stacking this module decreases the crafting time of stations built inside the base.",
@@ -9550,6 +9549,7 @@
       }
     ],
     "name": "Craftsman Walker Module",
+    "trade_price": 100,
     "translation": "Craftsman Walker Module",
     "type": "WalkerCraftingTimeModule_C",
     "description": "Stacking this module decreases the crafting time of stations attached to a walker.",
@@ -9926,16 +9926,6 @@
   },
   {
     "category": "Musical Instruments",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "name": "Wood",
-            "count": 25
-          }
-        ]
-      }
-    ],
     "name": "Didgeridoo",
     "translation": "Didgeridoo",
     "type": "MusicalInstrumentDidgeridoo_C",
@@ -11107,16 +11097,6 @@
   },
   {
     "category": "Musical Instruments",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "name": "Wood",
-            "count": 25
-          }
-        ]
-      }
-    ],
     "name": "Djembe",
     "translation": "Djembe",
     "type": "MusicalInstrumentDjembe_C",
@@ -12944,6 +12924,7 @@
   {
     "category": "Interactables",
     "name": "Equipment Strongbox",
+    "trade_price": 10000,
     "translation": "Equipment Strongbox",
     "type": "LootBoxEquipment_C",
     "description": "Equipment seized from pirates by the Flotilla. May contain various types and quantities of equipment items.",
@@ -16375,6 +16356,7 @@
       }
     ],
     "name": "Fireproof Walker Module",
+    "trade_price": 100,
     "translation": "Fireproof Walker Module",
     "type": "WalkerFireproofModule_C",
     "description": "Lowers the damage from all fire sources for the walker and all structures.",
@@ -17590,7 +17572,7 @@
   {
     "category": "Resources",
     "name": "Flots",
-    "trade_price": 0.5,
+    "trade_price": 1,
     "translation": "Flots",
     "type": "Currency_C",
     "description": "Currency of the Flotilla. Can be withdrawn and deposited at any Trading Station.",
@@ -17619,6 +17601,7 @@
       }
     ],
     "name": "Forager Walker Module",
+    "trade_price": 100,
     "translation": "Forager Walker Module",
     "type": "WalkerLegHarvestingModule_C",
     "description": "Walker legs will automatically harvest foliage when travelling at slow speed. Stacking this module increases the amount of foliage harvested.",
@@ -17839,6 +17822,7 @@
       }
     ],
     "name": "Fortress Walker Module",
+    "trade_price": 100,
     "translation": "Fortress Walker Module",
     "type": "WalkerArmorModule_C",
     "description": "Stacking this module increases the armor value of all structures attached to a walker.",
@@ -17891,6 +17875,7 @@
   {
     "category": "Interactables",
     "name": "Fragment Strongbox",
+    "trade_price": 10000,
     "translation": "Fragment Strongbox",
     "type": "LootBoxTablets_C",
     "description": "Knowledge fragments seized from pirates by the Flotilla. May contain various types and quantities of fragments..",
@@ -18979,6 +18964,7 @@
       }
     ],
     "name": "Hardening Walker Module",
+    "trade_price": 100,
     "translation": "Hardening Walker Module",
     "type": "WalkerHullHardeningModule_C",
     "description": "Stacking this module reduces damage to a walker from all sources except those that can damage Reinforced armor.",
@@ -19012,6 +18998,7 @@
       }
     ],
     "name": "Harpoon Protection Walker Module",
+    "trade_price": 100,
     "translation": "Harpoon Protection Walker Module",
     "type": "WalkerTetherProtectionModule_C",
     "description": "Makes tethers attached to the walker easier to snap.",
@@ -19098,6 +19085,7 @@
       }
     ],
     "name": "Hearth Walker Module",
+    "trade_price": 100,
     "translation": "Hearth Walker Module",
     "type": "WalkerRespawnCostModule_C",
     "description": "Stacking this module decreases the water cost of respawning on walker.",
@@ -22546,7 +22534,7 @@
       }
     ],
     "name": "Iron Ingot",
-    "trade_price": 12,
+    "trade_price": 50,
     "translation": "Iron Ingot",
     "type": "IronIngot2_C",
     "description": "Extremely strong material used in high quality productions.",
@@ -22570,7 +22558,7 @@
     ],
     "name": "Iron Nails",
     "parent": "Lathe",
-    "trade_price": 0.4,
+    "trade_price": 5,
     "translation": "Iron Nails",
     "type": "IronNails_C",
     "description": "Hardened ceramic nails used for construction of more advanced structures and walkers.",
@@ -23177,16 +23165,6 @@
   },
   {
     "category": "Musical Instruments",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "name": "Wood",
-            "count": 25
-          }
-        ]
-      }
-    ],
     "name": "Kaval",
     "translation": "Kaval",
     "type": "MusicalInstrumentKaval_C",
@@ -23674,6 +23652,7 @@
     ],
     "name": "Lava Fuel",
     "parent": "Obsidian Machine",
+    "trade_price": 5,
     "translation": "Lava Fuel",
     "type": "LavaFuel_C",
     "description": "Being almost as hot as lava itself, it's often used in crafting and combat by spraying it and setting on fire.",
@@ -23732,6 +23711,7 @@
   },
   {
     "name": "Lever",
+    "trade_price": 20,
     "translation": "Lever",
     "type": "Lever_C",
     "description": "Ancient technology scavenged from the waste. No one is sure what they were used for in the past, but crafty Nomads can use them at ancient fabricators to construct modules which can be installed in Walkers to give them special abilties.",
@@ -23760,6 +23740,7 @@
       }
     ],
     "name": "Lifeforce Walker Module",
+    "trade_price": 100,
     "translation": "Lifeforce Walker Module",
     "type": "WalkerRespawnEffectModule_C",
     "description": "Nomads that respawn on a walker will recieve a beneficial status effect. Stacking this module increases the potency of this effect.",
@@ -24154,6 +24135,7 @@
       }
     ],
     "name": "Lumberjack Walker Module",
+    "trade_price": 100,
     "translation": "Lumberjack Walker Module",
     "type": "WalkerLegLoggingModule_C",
     "description": "Walker legs will chop wood when they impact with trees. Stacking this module increases the amount of wood.",
@@ -24965,6 +24947,7 @@
       }
     ],
     "name": "Merchant Walker Module",
+    "trade_price": 100,
     "translation": "Merchant Walker Module",
     "type": "WalkerCargoModule_C",
     "description": "Stacking this module increases the storage capacity of a walker's Cargo container.",
@@ -25030,6 +25013,7 @@
   {
     "category": "Interactables",
     "name": "Modules Strongbox",
+    "trade_price": 10000,
     "translation": "Modules Strongbox",
     "type": "LootBoxModules_C",
     "description": "Walker Modules seized from pirates by the Flotilla. May contain various types and quantities of modules.",
@@ -28543,16 +28527,6 @@
   },
   {
     "category": "Musical Instruments",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "name": "Wood",
-            "count": 25
-          }
-        ]
-      }
-    ],
     "name": "Oud",
     "translation": "Oud",
     "type": "MusicalInstrumentOud_C",
@@ -28587,6 +28561,7 @@
       }
     ],
     "name": "Pack Mule Walker Module",
+    "trade_price": 100,
     "translation": "Pack Mule Walker Module",
     "type": "WalkerWeightCapacityModule_C",
     "description": "Stacking this module increases the maximum weight limit of a walker.",
@@ -28621,6 +28596,7 @@
       }
     ],
     "name": "Pack Speed Base Module",
+    "trade_price": 100,
     "translation": "Pack Speed Base Module",
     "type": "BasePackingTimeModule_C",
     "description": "Decreases the time it takes to pack bases and structures.",
@@ -28654,6 +28630,7 @@
       }
     ],
     "name": "Pack Speed Walker Module",
+    "trade_price": 100,
     "translation": "Pack Speed Walker Module",
     "type": "WalkerPackingTimeModule_C",
     "description": "Decreases the time it takes to pack bases and structures.",
@@ -30502,7 +30479,7 @@
     ],
     "name": "Proxy License",
     "parent": "Woodworking Station",
-    "trade_price": 1,
+    "trade_price": 10000,
     "translation": "Proxy License",
     "type": "ProxyLicense_C",
     "description": "A permit to build one proxy walker to claim an oasis.",
@@ -32455,7 +32432,7 @@
     ],
     "name": "Reinforced Gear",
     "parent": "Wooden Gear",
-    "trade_price": 700,
+    "trade_price": 400,
     "translation": "Reinforced Gear",
     "type": "ReinforcedGear_C",
     "description": "Masterfully crafted contraption that automatically releases energy and bolsters transmission of walker gear mechanisms. Essential in construction of heavier walkers.",
@@ -32870,7 +32847,7 @@
     ],
     "name": "Rope",
     "parent": "Advanced Fiberworking Station",
-    "trade_price": 0.5,
+    "trade_price": 5,
     "translation": "Rope",
     "type": "Rope_C",
     "description": "A strong cord used for crafting and construction",
@@ -32880,16 +32857,6 @@
   },
   {
     "category": "Musical Instruments",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "name": "Wood",
-            "count": 25
-          }
-        ]
-      }
-    ],
     "name": "Rubab",
     "translation": "Rubab",
     "type": "MusicalInstrumentRubab_C",
@@ -34212,6 +34179,7 @@
       }
     ],
     "name": "Sandy Walker Module",
+    "trade_price": 100,
     "translation": "Sandy Walker Module",
     "type": "WalkerSandinessReductionModule_C",
     "description": "Stacking this module increases the rate at which sand is removed from a walker's gears after travelling.",
@@ -34402,6 +34370,7 @@
       }
     ],
     "name": "Scavenger Walker Module",
+    "trade_price": 100,
     "translation": "Scavenger Walker Module",
     "type": "WalkerLegItemLootingModule_C",
     "description": "Walker legs will automatically pick up dropped items when travelling at slow speed. Stacking this module increases the maximum speed at which items are picked up.",
@@ -36063,6 +36032,7 @@
   },
   {
     "name": "Shackle",
+    "trade_price": 20,
     "translation": "Shackle",
     "type": "Shackle_C",
     "description": "Ancient technology scavenged from the waste. No one is sure what they were used for in the past, but crafty Nomads can use them at ancient fabricators to construct modules which can be installed in Walkers to give them special abilties.",
@@ -38305,6 +38275,7 @@
   },
   {
     "name": "Spline",
+    "trade_price": 20,
     "translation": "Spline",
     "type": "Spline_C",
     "description": "Ancient technology scavenged from the waste. No one is sure what they were used for in the past, but crafty Nomads can use them at ancient fabricators to construct modules which can be installed in Walkers to give them special abilties.",
@@ -38432,6 +38403,7 @@
   },
   {
     "name": "Spring",
+    "trade_price": 20,
     "translation": "Spring",
     "type": "Spring_C",
     "description": "Ancient technology scavenged from the waste. No one is sure what they were used for in the past, but crafty Nomads can use them at ancient fabricators to construct modules which can be installed in Walkers to give them special abilties.",
@@ -40298,7 +40270,7 @@
   {
     "category": "Resources",
     "name": "Stone Plank",
-    "trade_price": 0.4,
+    "trade_price": 100,
     "translation": "Stone Plank",
     "type": "StonePlank_C",
     "experiencieReward": 25,
@@ -40413,6 +40385,7 @@
       }
     ],
     "name": "Structure Hardening Base Module",
+    "trade_price": 100,
     "translation": "Structure Hardening Base Module",
     "type": "BaseArmorModule_C",
     "description": "Stacking this module increases the health of the whole base.",
@@ -40425,6 +40398,7 @@
   },
   {
     "name": "Strut",
+    "trade_price": 20,
     "translation": "Strut",
     "type": "Strut_C",
     "description": "Ancient technology scavenged from the waste. No one is sure what they were used for in the past, but crafty Nomads can use them at ancient fabricators to construct modules which can be installed in Walkers to give them special abilties.",
@@ -40798,16 +40772,6 @@
   },
   {
     "category": "Musical Instruments",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "name": "Wood",
-            "count": 25
-          }
-        ]
-      }
-    ],
     "name": "Tambourine",
     "translation": "Tambourine",
     "type": "MusicalInstrumentTambourine_C",
@@ -43995,6 +43959,7 @@
   {
     "category": "Interactables",
     "name": "Tools Strongbox",
+    "trade_price": 10000,
     "translation": "Tools Strongbox",
     "type": "LootBoxTools_C",
     "description": "Tools seized from pirates by the Flotilla. May contain various types and quantities of tools.",
@@ -44005,6 +43970,7 @@
   {
     "category": "Interactables",
     "name": "Tools and Equipment Strongbox",
+    "trade_price": 10000,
     "translation": "Tools and Equipment Strongbox",
     "type": "LootboxToolsandEquipmentPvP_C",
     "description": "Weapons seized from pirates by the Flotilla. May contain various types and quantities of weapons.",
@@ -44263,6 +44229,7 @@
       }
     ],
     "name": "Torque Walker Module",
+    "trade_price": 100,
     "translation": "Torque Walker Module",
     "type": "WalkerTorqueGenerationModule_C",
     "description": "Walker will generate torque. Stacking this module increases the amount of torque generated by a moving walker.",
@@ -44276,7 +44243,6 @@
   {
     "category": "Resources",
     "name": "Toxic Remains",
-    "trade_price": 0.5,
     "translation": "Toxic Remains",
     "type": "ToxicRemains_C",
     "description": "The leftovers of a shamanic ritual.",
@@ -46042,16 +46008,6 @@
   },
   {
     "category": "Musical Instruments",
-    "crafting": [
-      {
-        "ingredients": [
-          {
-            "name": "Wood",
-            "count": 25
-          }
-        ]
-      }
-    ],
     "name": "Violin",
     "translation": "Violin",
     "type": "MusicalInstrumentViolin_C",
@@ -46515,6 +46471,7 @@
       }
     ],
     "name": "Watery Walker Module",
+    "trade_price": 100,
     "translation": "Watery Walker Module",
     "type": "WalkerTravelCostModule_C",
     "description": "Stacking this module decreases the water cost of travelling.",
@@ -46612,6 +46569,7 @@
   {
     "category": "Interactables",
     "name": "Weapon Strongbox",
+    "trade_price": 10000,
     "translation": "Weapon Strongbox",
     "type": "LootboxWeaponsCanyonPvP_C",
     "description": "Armors seized from pirates by the Flotilla. May contain various types and quantities of armors.",
@@ -46626,6 +46584,7 @@
   {
     "category": "Interactables",
     "name": "Weapons Strongbox",
+    "trade_price": 10000,
     "translation": "Weapons Strongbox",
     "type": "LootBoxWeapons_C",
     "description": "Weapons seized from pirates by the Flotilla. May contain various types and quantities of weapons.",
@@ -46656,6 +46615,7 @@
       }
     ],
     "name": "Weightless Walker Module",
+    "trade_price": 100,
     "translation": "Weightless Walker Module",
     "type": "WalkerWeightlessModule_C",
     "description": "Stacking this module decreases the weight of a packed base.",
@@ -47046,7 +47006,7 @@
     ],
     "name": "Wooden Gear",
     "parent": "Advanced Woodworking Station",
-    "trade_price": 700,
+    "trade_price": 200,
     "translation": "Wooden Gear",
     "type": "WoodenGear_C",
     "description": "A large wooden gear made out of primitive materials. Used as the base rotational axis for mid-sized walkers.",
