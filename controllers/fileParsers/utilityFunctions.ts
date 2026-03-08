@@ -23,6 +23,7 @@ class DataStore {
 	lootTables: any;
 	lootTemplates: any[];
 	perks: any[];
+	poiMap: Map<string, string[]>;
 
 	constructor() {
 		this.items = [];
@@ -32,6 +33,7 @@ class DataStore {
 		this.lootTables = {};
 		this.lootTemplates = [];
 		this.perks = [];
+		this.poiMap = new Map();
 	}
 
 	// Item operations
@@ -362,6 +364,15 @@ class DataStore {
 
 		return this.perks.find((perk) => perk.name === name);
 	}
+
+	addPoiMapping(actorClass: string, maps: string[]) {
+		const existing = this.poiMap.get(actorClass) || [];
+		this.poiMap.set(actorClass, [...new Set([...existing, ...maps])]);
+	}
+
+	getPoiMapping(actorClass: string) {
+		return this.poiMap.get(actorClass) || [];
+	}
 }
 
 // Create and export a singleton instance
@@ -430,3 +441,5 @@ export const setLootTemplates = (data: any[]) =>
 export const setPerks = (data: any[]) => dataStore.setPerks(data);
 export const getPerkByName = (name: string) => dataStore.getPerkByName(name);
 export const addPerk = (perk: any) => dataStore.addPerk(perk);
+export const addPoiMapping = (actorClass: string, maps: string[]) => dataStore.addPoiMapping(actorClass, maps);
+export const getPoiMapping = (actorClass: string) => dataStore.getPoiMapping(actorClass);

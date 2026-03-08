@@ -73,6 +73,9 @@ export const loadDirData = (dir: string, type: string) => {
         case "perks":
           fileParser.parsePerkData(filePath);
           break;
+        case "poi":
+          fileParser.parsePoiData(filePath);
+          break;
         default:
           break;
       }
@@ -98,6 +101,11 @@ export const loadAllFiles = (contentFolderPath: string) => {
   loadDirData(
     path.join(contentFolderPath, "Content", "Localization", "Game"),
     "translationOthers",
+  );
+  console.info("Loading POI Data");
+  loadDirData(
+    path.join(contentFolderPath, "Content", "Mist", "Data", "Poi"),
+    "poi",
   );
   console.info("Loading Loot sites");
   loadDirData(

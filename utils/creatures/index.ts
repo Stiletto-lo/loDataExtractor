@@ -75,6 +75,33 @@ function processCreatures(creatures) {
 		);
 	}
 
+	// Connect Structures to Related structures/rupus and propagate Maps
+	const relatedMap = new Map();
+	for (const c of processedCreatures) {
+		if (c.structures && Array.isArray(c.structures)) {
+			for (const structType of c.structures) {
+				if (!relatedMap.has(structType)) relatedMap.set(structType, []);
+				relatedMap.get(structType).push({ relatedName: c.name, maps: c.maps || [] });
+			}
+		}
+	}
+
+	for (const c of processedCreatures) {
+		const relatedData = relatedMap.get(c.type);
+		if (relatedData) {
+			const relatedSet = new Set<string>();
+			const mapsSet = new Set<string>(c.maps || []);
+			for (const dat of relatedData) {
+				if (dat.relatedName) relatedSet.add(dat.relatedName);
+				if (Array.isArray(dat.maps)) {
+					for (const m of dat.maps) mapsSet.add(m);
+				}
+			}
+			if (relatedSet.size > 0) c.related = Array.from(relatedSet);
+			if (mapsSet.size > 0) c.maps = Array.from(mapsSet);
+		}
+	}
+
 	// Make creature names unique by adding tier information when needed
 	processedCreatures = makeCreatureNamesUnique(processedCreatures);
 
@@ -133,6 +160,8 @@ async function exportIndividualCreatureFiles(creatures, exportFolder) {
 				drops: creature?.drops,
 				description: creature?.description,
 				speed: creature?.speed,
+				related: creature?.related,
+				maps: creature?.maps,
 				originalName:
 					translatedName !== creature?.name
 						? creature?.name

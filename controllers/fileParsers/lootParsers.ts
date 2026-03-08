@@ -391,11 +391,29 @@ export const parseLootSites = (filePath: string) => {
 	);
 
 	// Create the creature object with all available information
-	const creature = {
+	const creature: any = {
 		type: name, // This is the internal type, e.g., BP_Worm_C
 		name: translation, // This is the display name, e.g., The Long One
 		...creatureData,
-	} as any;
+	};
+
+	const maps = utilityFunctions.getPoiMapping(name);
+	if (maps && maps.length > 0) {
+		creature.maps = maps;
+	}
+
+	const structures = new Set<string>();
+	for (const obj of jsonData) {
+		if (obj?.Properties?.Loot?.ObjectName) {
+			const match = obj.Properties.Loot.ObjectName.match(/BlueprintGeneratedClass'([^']+)'/);
+			if (match && match[1]) {
+				structures.add(match[1]);
+			}
+		}
+	}
+	if (structures.size > 0) {
+		creature.structures = Array.from(structures);
+	}
 
 	// Add to the creatures collection
 	utilityFunctions.addCreature(creature);
