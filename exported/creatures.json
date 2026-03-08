@@ -12,6 +12,9 @@
         "maxQuantity": 1,
         "source": "ac_relic_1"
       }
+    ],
+    "related": [
+      "Altar of the Dawn"
     ]
   },
   {
@@ -27,6 +30,23 @@
         "maxQuantity": 1,
         "source": "ac_relic_2"
       }
+    ],
+    "related": [
+      "Altar of the Dusk"
+    ]
+  },
+  {
+    "type": "AC_RelicPOI1_C",
+    "name": "Altar of the Dawn",
+    "structures": [
+      "AC_Relic_1_C"
+    ]
+  },
+  {
+    "type": "AC_RelicPOI2_C",
+    "name": "Altar of the Dusk",
+    "structures": [
+      "AC_Relic_2_C"
     ]
   },
   {
@@ -180,6 +200,22 @@
         "source": "baseresources_t2"
       }
     ],
+    "related": [
+      "Temple of Stars",
+      "Great Rupu Wall",
+      "Rock Thrower",
+      "Tower of The Holly Fire",
+      "Gas Thrower",
+      "Foragers Outpost",
+      "Rupu Shelter",
+      "Rupu Moisture Collector",
+      "Fortified Rupu Village",
+      "Rupu Fortress",
+      "Fortified Rupu Town",
+      "Reinforced Rupu Outpost",
+      "Small Rupu Village",
+      "Nurr Raiding Camp"
+    ],
     "originalName": "AmmoBox T2"
   },
   {
@@ -295,6 +331,15 @@
         "source": "baseresources_t3"
       }
     ],
+    "related": [
+      "Rupu Artillery Camp",
+      "Ash Oracle Fortress",
+      "Ash Hills Watchtower",
+      "Foragers Outpost",
+      "Fortified Rupu Village",
+      "Rupu Watch Tower",
+      "Rupu Observation Point"
+    ],
     "originalName": "AmmoBox T3"
   },
   {
@@ -375,7 +420,37 @@
         "source": "baseresources_t4"
       }
     ],
+    "related": [
+      "Rupu Observation Point",
+      "Leaning Fortress",
+      "Fire Fortress",
+      "Rupu Watch Tower"
+    ],
     "originalName": "AmmoBox T4"
+  },
+  {
+    "type": "AC_Pyramid_C",
+    "name": "Ancient Pyramid",
+    "structures": [
+      "BigHotspotLoot_T2_C",
+      "HotspotLoot_T2_C"
+    ]
+  },
+  {
+    "type": "SG_AshWastesRimWatchtower_C",
+    "name": "Ash Hills Watchtower",
+    "structures": [
+      "MediumRupuCamp_T3_C",
+      "AmmoBox_T3_C"
+    ]
+  },
+  {
+    "type": "SG_AshWastesFortress_C",
+    "name": "Ash Oracle Fortress",
+    "structures": [
+      "HardRupuCamp_T3_C",
+      "AmmoBox_T3_C"
+    ]
   },
   {
     "name": "Asteroid T1",
@@ -822,6 +897,9 @@
         "maxQuantity": 1,
         "source": "ac_forebearcoins"
       }
+    ],
+    "related": [
+      "Great Rupu Wall"
     ],
     "originalName": "BasketLoot T2 AC"
   },
@@ -1297,6 +1375,9 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
+    ],
+    "related": [
+      "Ancient Pyramid"
     ],
     "originalName": "BigHotspotLoot T2"
   },
@@ -1981,7 +2062,10 @@
   {
     "type": "T2_RupuBountyHunter_C",
     "name": "Bounty Hunter",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupu_T2_C"
+    ]
   },
   {
     "name": "Broken Tusker 1",
@@ -2954,7 +3038,10 @@
   {
     "type": "FearfulRupu_C",
     "name": "Cowardly Rupu",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   },
   {
     "name": "Crane",
@@ -3259,6 +3346,10 @@
         "maxQuantity": 1,
         "source": "rigs_t1"
       }
+    ],
+    "related": [
+      "Small Rupu Hut",
+      "Phemke Nest"
     ],
     "originalName": "EasyRupuCamp T1"
   },
@@ -3647,6 +3738,12 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
+    ],
+    "related": [
+      "Temple of Stars",
+      "Sarcophagus of the Ancient",
+      "Excavation Site",
+      "Foragers Outpost"
     ],
     "originalName": "EasyRupuCamp T2"
   },
@@ -4134,6 +4231,11 @@
         "source": "rigs_t3"
       }
     ],
+    "related": [
+      "Rupu Artillery Camp",
+      "Foragers Outpost",
+      "Rupu Watch Tower"
+    ],
     "originalName": "EasyRupuCamp T3"
   },
   {
@@ -4550,6 +4652,10 @@
         "source": "rigs_t4"
       }
     ],
+    "related": [
+      "Rupu Watch Tower",
+      "Small Rupu Outpost"
+    ],
     "originalName": "EasyRupuCamp T4"
   },
   {
@@ -4734,6 +4840,25 @@
         "maxQuantity": 3,
         "source": "weapons_t1"
       }
+    ],
+    "related": [
+      "Rupu Forerunner",
+      "Rupu Scavenger",
+      "Rupu Thug",
+      "Cowardly Rupu",
+      "Green Rupu",
+      "Yellow Rupu",
+      "Rupu Hero",
+      "Rupu Warrior",
+      "Rupu Berserker",
+      "Rupu Oracle",
+      "Rupu Overseer",
+      "Rupu Priestess",
+      "Prophet",
+      "Tar Dweller",
+      "Zharvakko",
+      "Rupu Gunner",
+      "Nurr Raider"
     ],
     "originalName": "EasyRupu T1"
   },
@@ -5279,6 +5404,11 @@
         "maxQuantity": 1,
         "source": "weapons_t2"
       }
+    ],
+    "related": [
+      "Grave Digger",
+      "Rupu Hermit",
+      "Rupu Skirmisher"
     ],
     "originalName": "EasyRupu T2"
   },
@@ -5985,6 +6115,13 @@
         "maxQuantity": 1,
         "source": "weapons_t3"
       }
+    ],
+    "related": [
+      "Rupu Ashdweller",
+      "Rupu Drudge",
+      "Rupu Hunter",
+      "Rupu Rabble",
+      "Rupu Scuttler"
     ],
     "originalName": "EasyRupu T3"
   },
@@ -7069,9 +7206,21 @@
     "originalName": "EasyRupu T4 Q"
   },
   {
+    "type": "AC_WorkersGrave_C",
+    "name": "Excavation Site (2)",
+    "structures": [
+      "EasyRupuCamp_T2_C"
+    ]
+  },
+  {
     "type": "AC_RupuCaveCamp_C",
-    "name": "Excavation Site",
-    "category": "Rupu"
+    "name": "Excavation Site (Rupu)",
+    "category": "Rupu",
+    "structures": [
+      "HardRupu_T2_AC_C",
+      "HotspotLoot_T2_AC_C",
+      "HotspotLoot_T2_C"
+    ]
   },
   {
     "name": "Falling Cactus",
@@ -7133,32 +7282,108 @@
   {
     "type": "KS_LargeRupuCamp_3_C",
     "name": "Fire Fortress",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupuCamp_T4_C",
+      "AmmoBox_T4_C"
+    ]
+  },
+  {
+    "type": "CanyonForagersOutpost1_C",
+    "name": "Foragers Outpost (1)",
+    "structures": [
+      "EasyRupuCamp_T2_C",
+      "AmmoBox_T2_C"
+    ]
+  },
+  {
+    "type": "CanyonForagersOutpost2_C",
+    "name": "Foragers Outpost (2)",
+    "structures": [
+      "EasyRupuCamp_T2_C",
+      "AmmoBox_T2_C"
+    ]
+  },
+  {
+    "type": "CanyonForagersOutpost3_C",
+    "name": "Foragers Outpost (3)",
+    "structures": [
+      "EasyRupuCamp_T2_C",
+      "AmmoBox_T2_C"
+    ]
+  },
+  {
+    "type": "SG_ClaySpotTinyCamp_C",
+    "name": "Foragers Outpost (4)",
+    "structures": [
+      "EasyRupuCamp_T3_C",
+      "AmmoBox_T3_C"
+    ]
+  },
+  {
+    "type": "SG_RockyHillsTinyCamp_C",
+    "name": "Foragers Outpost (5)",
+    "structures": [
+      "EasyRupuCamp_T3_C",
+      "AmmoBox_T3_C"
+    ]
   },
   {
     "type": "SG_TinyRupuCamp_1_C",
     "name": "Foragers Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupuCamp_T3_C"
+    ]
   },
   {
     "type": "SG_TinyRupuCamp_2_C",
     "name": "Foragers Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupuCamp_T3_C"
+    ]
   },
   {
     "type": "SG_TinyRupuCamp_3_C",
     "name": "Foragers Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupuCamp_T3_C"
+    ]
   },
   {
     "type": "MediumLargeRupuCamp_01_C",
     "name": "Fortified Rupu Town",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupuCamp_T2_C",
+      "AmmoBox_T2_C"
+    ]
+  },
+  {
+    "type": "SG_FlatlandsForagingCamp_C",
+    "name": "Fortified Rupu Village (2)",
+    "structures": [
+      "MediumRupuCamp_T3_C",
+      "AmmoBox_T3_C"
+    ]
   },
   {
     "type": "CanyonSavannahMediumRupuCamp_01_C",
-    "name": "Fortified Rupu Village",
-    "category": "Rupu"
+    "name": "Fortified Rupu Village (Rupu)",
+    "category": "Rupu",
+    "structures": [
+      "MediumRupuCamp_T2_C",
+      "AmmoBox_T2_C"
+    ]
+  },
+  {
+    "type": "AC_StarTowerGas_C",
+    "name": "Gas Thrower",
+    "structures": [
+      "AmmoBox_T2_C"
+    ]
   },
   {
     "name": "Go Go T4",
@@ -7265,6 +7490,9 @@
         "maxQuantity": 3,
         "source": "extraresources_t4"
       }
+    ],
+    "related": [
+      "Gogo"
     ],
     "originalName": "GoGo T4"
   },
@@ -7560,6 +7788,9 @@
     "damage": 1200,
     "speed": 2000,
     "category": "Rock Crawler",
+    "structures": [
+      "GoGo_T4_C"
+    ],
     "drops": [
       {
         "name": "Pearl",
@@ -7664,17 +7895,27 @@
   {
     "type": "T2_RupuGraveDigger_C",
     "name": "Grave Digger",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T2_C"
+    ]
   },
   {
     "type": "AC_RupuGate_C",
     "name": "Great Rupu Wall",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "AmmoBox_T2_C",
+      "BasketLoot_T2_AC_C"
+    ]
   },
   {
     "type": "FlyingRupu_C",
     "name": "Green Rupu",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   },
   {
     "name": "Hard Rupu Camp T1",
@@ -7949,6 +8190,10 @@
         "maxQuantity": 1,
         "source": "rigs_t1"
       }
+    ],
+    "related": [
+      "Reinforced Rupu Outpost",
+      "Rupu Watch Tower"
     ],
     "originalName": "HardRupuCamp T1"
   },
@@ -8337,6 +8582,12 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
+    ],
+    "related": [
+      "Temple of Stars",
+      "Rupu Fortress",
+      "Nurr Lair",
+      "Nurr Raiding Camp"
     ],
     "originalName": "HardRupuCamp T2"
   },
@@ -8824,6 +9075,10 @@
         "source": "rigs_t3"
       }
     ],
+    "related": [
+      "Ash Oracle Fortress",
+      "Ruined Fortress"
+    ],
     "originalName": "HardRupuCamp T3"
   },
   {
@@ -9240,6 +9495,11 @@
         "source": "rigs_t4"
       }
     ],
+    "related": [
+      "Rupu Observation Point",
+      "Leaning Fortress",
+      "Fire Fortress"
+    ],
     "originalName": "HardRupuCamp T4"
   },
   {
@@ -9452,6 +9712,9 @@
         "maxQuantity": 1,
         "source": "rigs_t1"
       }
+    ],
+    "related": [
+      "Rupu Sentinel"
     ],
     "originalName": "HardRupu T1"
   },
@@ -10047,6 +10310,11 @@
         "source": "rigs_t2"
       }
     ],
+    "related": [
+      "Rupu Shaman",
+      "Marshland Stalker",
+      "Rupu Raider"
+    ],
     "originalName": "HardRupu T2"
   },
   {
@@ -10385,6 +10653,12 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
+    ],
+    "related": [
+      "Excavation Site",
+      "Matriarch",
+      "Rupu Priestess",
+      "Rupu Zealot"
     ],
     "originalName": "HardRupu T2 AC"
   },
@@ -11161,6 +11435,10 @@
         "maxQuantity": 1,
         "source": "rigs_t3"
       }
+    ],
+    "related": [
+      "Rupu Oracle",
+      "Rupu Overseer"
     ],
     "originalName": "HardRupu T3"
   },
@@ -11952,6 +12230,9 @@
         "source": "rigs_t4"
       }
     ],
+    "related": [
+      "Rupu Firebrand"
+    ],
     "originalName": "HardRupu T4"
   },
   {
@@ -12630,6 +12911,9 @@
         "source": "rigs_t1"
       }
     ],
+    "related": [
+      "Rupu Raiding Checkpoint"
+    ],
     "originalName": "HotspotLoot T1"
   },
   {
@@ -13017,6 +13301,12 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
+    ],
+    "related": [
+      "Excavation Site",
+      "Rupu Raiding Checkpoint",
+      "Rupu Defensive Storage",
+      "Ancient Pyramid"
     ],
     "originalName": "HotspotLoot T2"
   },
@@ -13412,6 +13702,10 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
+    ],
+    "related": [
+      "Excavation Site",
+      "Rupu Gifting Altar"
     ],
     "originalName": "HotspotLoot T2 AC"
   },
@@ -14719,6 +15013,9 @@
     "experience": 80000,
     "lootTemplate": "Koa_T4",
     "speed": 5000,
+    "structures": [
+      "Koa_T4_C"
+    ],
     "drops": [
       {
         "name": "Spearmint",
@@ -14743,6 +15040,9 @@
         "maxQuantity": 1,
         "source": "spearmint_t4"
       }
+    ],
+    "related": [
+      "Koa"
     ]
   },
   {
@@ -14873,6 +15173,9 @@
         "maxQuantity": 1,
         "source": "nurrfang_t2"
       }
+    ],
+    "related": [
+      "Lazaward"
     ],
     "originalName": "LargeNurr T2"
   },
@@ -15014,6 +15317,9 @@
     "damage": 300,
     "speed": 3400,
     "category": "Nurr",
+    "structures": [
+      "LargeNurr_T2_C"
+    ],
     "drops": [
       {
         "name": "Nurr Fang",
@@ -15027,7 +15333,11 @@
   {
     "type": "KS_LargeRupuCamp_2_C",
     "name": "Leaning Fortress",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupuCamp_T4_C",
+      "AmmoBox_T4_C"
+    ]
   },
   {
     "name": "Loot Box Armors",
@@ -16434,12 +16744,18 @@
   {
     "type": "RupuStalker_C",
     "name": "Marshland Stalker",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupu_T2_C"
+    ]
   },
   {
     "type": "T2_RupuMatriarch_C",
     "name": "Matriarch",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupu_T2_AC_C"
+    ]
   },
   {
     "name": "Medium Rupu Camp T1",
@@ -16707,6 +17023,10 @@
         "maxQuantity": 1,
         "source": "rigs_t1"
       }
+    ],
+    "related": [
+      "Small Rupu Outpost",
+      "Rupu Watch Tower"
     ],
     "originalName": "MediumRupuCamp T1"
   },
@@ -17046,6 +17366,15 @@
         "maxQuantity": 1,
         "source": "weapons_t2"
       }
+    ],
+    "related": [
+      "Rupu Shelter",
+      "Rupu Moisture Collector",
+      "Fortified Rupu Village",
+      "Fortified Rupu Town",
+      "Reinforced Rupu Outpost",
+      "Small Rupu Village",
+      "Rupu Gifting Altar"
     ],
     "originalName": "MediumRupuCamp T2"
   },
@@ -17533,6 +17862,11 @@
         "source": "rigs_t3"
       }
     ],
+    "related": [
+      "Ash Hills Watchtower",
+      "Fortified Rupu Village",
+      "Sunken Temple"
+    ],
     "originalName": "MediumRupuCamp T3"
   },
   {
@@ -17949,6 +18283,9 @@
         "source": "rigs_t4"
       }
     ],
+    "related": [
+      "Rupu Watch Tower"
+    ],
     "originalName": "MediumRupuCamp T4"
   },
   {
@@ -18161,6 +18498,10 @@
         "maxQuantity": 1,
         "source": "rigs_t1"
       }
+    ],
+    "related": [
+      "Rupu Harasser",
+      "Rupu Skirmisher"
     ],
     "originalName": "MediumRupu T1"
   },
@@ -18755,6 +19096,16 @@
         "maxQuantity": 1,
         "source": "rigs_t2"
       }
+    ],
+    "related": [
+      "Rupu Habitat",
+      "Bounty Hunter",
+      "Rupu Dunestalker",
+      "Rupu Forager",
+      "Rupu Harasser",
+      "Rupu Hazraki",
+      "Rupu Plainstrider",
+      "White Death"
     ],
     "originalName": "MediumRupu T2"
   },
@@ -19531,6 +19882,10 @@
         "maxQuantity": 1,
         "source": "rigs_t3"
       }
+    ],
+    "related": [
+      "Rupu Seeker",
+      "White Death"
     ],
     "originalName": "MediumRupu T3"
   },
@@ -20716,6 +21071,9 @@
     "damage": 60,
     "speed": 3000,
     "category": "Nurr",
+    "structures": [
+      "Nurr_T2_C"
+    ],
     "drops": [
       {
         "name": "Nurr Fang",
@@ -20729,7 +21087,10 @@
   {
     "type": "NurrLair_T2_C",
     "name": "Nurr Lair",
-    "category": "Nurr"
+    "category": "Nurr",
+    "structures": [
+      "HardRupuCamp_T2_C"
+    ]
   },
   {
     "type": "T2_NurrRaiderMob_C",
@@ -20737,6 +21098,9 @@
     "experience": 2000,
     "lootTemplate": "EasyRupu_T1",
     "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ],
     "drops": [
       {
         "name": "Fiber",
@@ -20918,6 +21282,10 @@
   {
     "type": "T2_RaiderOutpost_C",
     "name": "Nurr Raiding Camp",
+    "structures": [
+      "AmmoBox_T2_C",
+      "HardRupuCamp_T2_C"
+    ],
     "tier": "T2",
     "category": "Raider"
   },
@@ -20935,6 +21303,9 @@
         "maxQuantity": 1,
         "source": "nurrfang_t2"
       }
+    ],
+    "related": [
+      "Nurr"
     ]
   },
   {
@@ -21067,6 +21438,9 @@
     "damage": 400,
     "speed": 2465,
     "category": "Okkam",
+    "structures": [
+      "Okkam_T3_C"
+    ],
     "drops": [
       {
         "name": "Chitin Plate",
@@ -21497,6 +21871,9 @@
         "maxQuantity": 5,
         "source": "schematics_t3"
       }
+    ],
+    "related": [
+      "Okkam"
     ]
   },
   {
@@ -21639,6 +22016,9 @@
         "maxQuantity": 5,
         "source": "schematics_t3"
       }
+    ],
+    "related": [
+      "War Okkam"
     ]
   },
   {
@@ -21650,6 +22030,9 @@
     "damage": 50,
     "speed": 1200,
     "category": "Papak",
+    "structures": [
+      "Papak_T3_C"
+    ],
     "drops": [
       {
         "name": "Gelatinous Goo",
@@ -21674,6 +22057,9 @@
         "maxQuantity": 1,
         "source": "gelatinousgoo_t3"
       }
+    ],
+    "related": [
+      "Papak"
     ]
   },
   {
@@ -21816,12 +22202,18 @@
         "maxQuantity": 5,
         "source": "schematics_t3"
       }
+    ],
+    "related": [
+      "Toxic War Papak"
     ]
   },
   {
     "type": "EasyPhemkeNest_01_C",
     "name": "Phemke Nest",
-    "category": "Phemke"
+    "category": "Phemke",
+    "structures": [
+      "EasyRupuCamp_T1_C"
+    ]
   },
   {
     "name": "Phemke T1",
@@ -21891,52 +22283,105 @@
   {
     "type": "RupuProphet_C",
     "name": "Prophet",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   },
   {
     "type": "T1_HardRupuCamp_01_C",
     "name": "Reinforced Rupu Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupuCamp_T1_C"
+    ]
   },
   {
     "type": "T1_HardRupuCamp_02_C",
     "name": "Reinforced Rupu Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupuCamp_T1_C"
+    ]
   },
   {
     "type": "T1_HardRupuCamp_03_C",
     "name": "Reinforced Rupu Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupuCamp_T1_C"
+    ]
   },
   {
     "type": "T1_HardRupuCamp_04_C",
     "name": "Reinforced Rupu Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupuCamp_T1_C"
+    ]
   },
   {
     "type": "T1_SingleBallistaRupuCamp_01_C",
     "name": "Reinforced Rupu Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupuCamp_T1_C"
+    ]
   },
   {
     "type": "T1_SingleScattershotRupuCamp_01_C",
     "name": "Reinforced Rupu Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupuCamp_T1_C"
+    ]
   },
   {
     "type": "MediumMediumRupuCamp_01_C",
     "name": "Reinforced Rupu Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupuCamp_T2_C",
+      "AmmoBox_T2_C"
+    ]
+  },
+  {
+    "type": "AC_StarTowerCommon_C",
+    "name": "Rock Thrower",
+    "structures": [
+      "AmmoBox_T2_C"
+    ]
+  },
+  {
+    "type": "SG_FlatlandsRuinsFortress_C",
+    "name": "Ruined Fortress",
+    "structures": [
+      "HardRupuCamp_T3_C"
+    ]
+  },
+  {
+    "type": "SG_AshWastesArtilleryCamp_C",
+    "name": "Rupu Artillery Camp",
+    "structures": [
+      "EasyRupuCamp_T3_C",
+      "AmmoBox_T3_C"
+    ]
   },
   {
     "type": "T3_RupuAshdweller_C",
     "name": "Rupu Ashdweller",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T3_C"
+    ]
   },
   {
     "type": "RagingRupu_C",
     "name": "Rupu Berserker",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   },
   {
     "type": "T1_TinyRupuCamp_03_C",
@@ -21954,9 +22399,19 @@
     "category": "Rupu"
   },
   {
+    "type": "CanyonDragableChest_C",
+    "name": "Rupu Defensive Storage",
+    "structures": [
+      "HotspotLoot_T2_C"
+    ]
+  },
+  {
     "type": "T3_RupuDrudge_C",
     "name": "Rupu Drudge (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T3_C"
+    ]
   },
   {
     "type": "RupuDrudge_T0_C",
@@ -21966,32 +22421,51 @@
   {
     "type": "T2_RupuDunestalker_C",
     "name": "Rupu Dunestalker",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupu_T2_C"
+    ]
   },
   {
     "type": "T4_RupuFirebrand_C",
     "name": "Rupu Firebrand",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupu_T4_C"
+    ]
   },
   {
     "type": "T2_RupuForager_C",
     "name": "Rupu Forager",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupu_T2_C"
+    ]
   },
   {
     "type": "T1_RupuForerunner_C",
     "name": "Rupu Forerunner (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   },
   {
     "type": "RupuForerunner_C",
     "name": "Rupu Forerunner (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   },
   {
     "type": "HardLargeRupuCampFortified1_03_C",
     "name": "Rupu Fortress",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupuCamp_T2_C",
+      "AmmoBox_T2_C"
+    ]
   },
   {
     "type": "T1_TinyRupuCamp_01_C",
@@ -22006,87 +22480,142 @@
   {
     "type": "RupuCaveCamp_01_C",
     "name": "Rupu Gifting Altar (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HotspotLoot_T2_AC_C",
+      "MediumRupuCamp_T2_C"
+    ]
   },
   {
     "type": "RupuWalkerGunner_C",
     "name": "Rupu Gunner",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   },
   {
     "type": "EasySmallRupuCamp_01_C",
     "name": "Rupu Habitat",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupu_T2_C"
+    ]
   },
   {
     "type": "T1_RupuHarasser_C",
     "name": "Rupu Harasser (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupu_T1_C"
+    ]
   },
   {
     "type": "T2_RupuHarasser_C",
     "name": "Rupu Harasser (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupu_T2_C"
+    ]
   },
   {
     "type": "T2_RupuHazraki_C",
     "name": "Rupu Hazraki",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupu_T2_C"
+    ]
   },
   {
     "type": "T2_RupuHermit_C",
     "name": "Rupu Hermit",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T2_C"
+    ]
   },
   {
     "type": "ImpossibleRupu_C",
     "name": "Rupu Hero (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   },
   {
     "type": "PyramidGuardRupu_C",
     "name": "Rupu Hero (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   },
   {
     "type": "T3_RupuHunter_C",
     "name": "Rupu Hunter",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T3_C"
+    ]
   },
   {
     "type": "CanyonMountainTopSmallRupuCamp_C",
     "name": "Rupu Moisture Collector",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupuCamp_T2_C",
+      "AmmoBox_T2_C"
+    ]
   },
   {
     "type": "KS_LargeRupuCamp_C",
     "name": "Rupu Observation Point",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupuCamp_T4_C",
+      "AmmoBox_T3_C",
+      "AmmoBox_T4_C"
+    ]
   },
   {
     "type": "T3_RupuOracleFireBomb_C",
     "name": "Rupu Oracle (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupu_T3_C"
+    ]
   },
   {
     "type": "RupuOracle_C",
     "name": "Rupu Oracle (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   },
   {
     "type": "T3_RupuOverseerFireBomb_C",
     "name": "Rupu Overseer (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupu_T3_C"
+    ]
   },
   {
     "type": "RupuOverseer_C",
     "name": "Rupu Overseer (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   },
   {
     "type": "T2_RupuPlainstrider_C",
     "name": "Rupu Plainstrider",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupu_T2_C"
+    ]
   },
   {
     "type": "T1_TinyRupuCamp_02_C",
@@ -22096,87 +22625,177 @@
   {
     "type": "T2_RupuPriestess_C",
     "name": "Rupu Priestess (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupu_T2_AC_C"
+    ]
   },
   {
     "type": "RupuPriestessFireBomb_C",
     "name": "Rupu Priestess (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   },
   {
     "type": "T3_RupuRabble_C",
     "name": "Rupu Rabble",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T3_C"
+    ]
   },
   {
     "type": "T2_RupuRaider_C",
     "name": "Rupu Raider",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupu_T2_C"
+    ]
+  },
+  {
+    "type": "CanyonBurnableChest_C",
+    "name": "Rupu Raiding Checkpoint",
+    "structures": [
+      "HotspotLoot_T2_C",
+      "HotspotLoot_T1_C"
+    ]
   },
   {
     "type": "T1_RupuScavenger_C",
     "name": "Rupu Scavenger",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   },
   {
     "type": "T3_RupuScuttler_C",
     "name": "Rupu Scuttler",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T3_C"
+    ]
   },
   {
     "type": "T3_RupuSeeker_C",
     "name": "Rupu Seeker",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupu_T3_C"
+    ]
   },
   {
     "type": "T1_RupuSentinel_C",
     "name": "Rupu Sentinel",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupu_T1_C"
+    ]
   },
   {
     "type": "T2_RupuShaman_C",
     "name": "Rupu Shaman",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupu_T2_C"
+    ]
+  },
+  {
+    "type": "CanyonIslandShelter_C",
+    "name": "Rupu Shelter",
+    "structures": [
+      "MediumRupuCamp_T2_C",
+      "AmmoBox_T2_C"
+    ]
   },
   {
     "type": "T1_RupuSkirmisher_C",
     "name": "Rupu Skirmisher (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupu_T1_C"
+    ]
   },
   {
     "type": "T2_RupuSkirmisher_C",
     "name": "Rupu Skirmisher (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T2_C"
+    ]
   },
   {
     "type": "T1_RupuThug_C",
     "name": "Rupu Thug",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   },
   {
     "type": "ProtectorRupu_C",
     "name": "Rupu Warrior",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
+  },
+  {
+    "type": "SG_RoadWatchtower_C",
+    "name": "Rupu Watch Tower (1)",
+    "structures": [
+      "EasyRupuCamp_T3_C",
+      "AmmoBox_T3_C"
+    ]
+  },
+  {
+    "type": "SG_AshWastesFortress2_C",
+    "name": "Rupu Watch Tower (5)",
+    "structures": [
+      "HardRupuCamp_T1_C"
+    ]
   },
   {
     "type": "KS_EasyRupuCamp_2_C",
     "name": "Rupu Watch Tower (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupuCamp_T4_C"
+    ]
   },
   {
     "type": "KS_MediumRupuCamp_1_C",
     "name": "Rupu Watch Tower (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupuCamp_T4_C",
+      "AmmoBox_T4_C"
+    ]
   },
   {
     "type": "EasySingleRupuCampFortified_01_C",
     "name": "Rupu Watch Tower (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupuCamp_T1_C"
+    ]
   },
   {
     "type": "T2_RupuZealot_C",
     "name": "Rupu Zealot",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "HardRupu_T2_AC_C"
+    ]
+  },
+  {
+    "type": "AC_Sarcophagus_C",
+    "name": "Sarcophagus of the Ancient",
+    "structures": [
+      "EasyRupuCamp_T2_C"
+    ]
   },
   {
     "type": "T1_SingleRupuCamp_01_C",
@@ -22191,12 +22810,18 @@
   {
     "type": "T1_SingleRupuCamp_03_C",
     "name": "Small Rupu Hut (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupuCamp_T1_C"
+    ]
   },
   {
     "type": "T1_SingleRupuCamp_04_C",
     "name": "Small Rupu Hut (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupuCamp_T1_C"
+    ]
   },
   {
     "type": "T1_SingleRupuCamp_05_C",
@@ -22206,32 +22831,50 @@
   {
     "type": "T1_MediumRupuCamp_01_C",
     "name": "Small Rupu Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupuCamp_T1_C"
+    ]
   },
   {
     "type": "T1_MediumRupuCamp_02_C",
     "name": "Small Rupu Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupuCamp_T1_C"
+    ]
   },
   {
     "type": "T1_MediumRupuCamp_03_C",
     "name": "Small Rupu Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupuCamp_T1_C"
+    ]
   },
   {
     "type": "T1_MediumRupuCamp_04_C",
     "name": "Small Rupu Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupuCamp_T1_C"
+    ]
   },
   {
     "type": "T1_MediumRupuCamp_05_C",
     "name": "Small Rupu Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupuCamp_T1_C"
+    ]
   },
   {
     "type": "KS_EasyRupuCamp_3_C",
     "name": "Small Rupu Outpost (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupuCamp_T4_C"
+    ]
   },
   {
     "type": "EasyMediumRupuCamp_01_C",
@@ -22241,12 +22884,20 @@
   {
     "type": "MediumSmallRupuCamp_01_C",
     "name": "Small Rupu Village (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupuCamp_T2_C",
+      "AmmoBox_T2_C"
+    ]
   },
   {
     "type": "MediumSmallRupuCamp_02_C",
     "name": "Small Rupu Village (Rupu)",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "MediumRupuCamp_T2_C",
+      "AmmoBox_T2_C"
+    ]
   },
   {
     "type": "SmallWormMob_C",
@@ -22254,14 +22905,40 @@
     "category": "Worm"
   },
   {
+    "type": "SG_LakeCamp_C",
+    "name": "Sunken Temple",
+    "structures": [
+      "MediumRupuCamp_T3_C"
+    ]
+  },
+  {
     "type": "TarDwellerRupu_C",
     "name": "Tar Dweller",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
+  },
+  {
+    "type": "AC_MatriarchCamp_C",
+    "name": "Temple of Stars",
+    "structures": [
+      "EasyRupuCamp_T2_C",
+      "HardRupuCamp_T2_C",
+      "AmmoBox_T2_C"
+    ]
   },
   {
     "type": "Worm6_C",
     "name": "The Long One",
     "category": "Worm"
+  },
+  {
+    "type": "AC_StarTowerFire_C",
+    "name": "Tower of The Holly Fire",
+    "structures": [
+      "AmmoBox_T2_C"
+    ]
   },
   {
     "type": "SwampPapakMob_C",
@@ -22275,6 +22952,9 @@
     "name": "Toxic War Papak",
     "lootTemplate": "Papak_T3_Q",
     "category": "Papak",
+    "structures": [
+      "Papak_T3_Q_C"
+    ],
     "drops": [
       {
         "name": "Advanced Armors Schematic",
@@ -23438,6 +24118,9 @@
     "name": "War Okkam",
     "lootTemplate": "Okkam_T3_Q",
     "category": "Okkam",
+    "structures": [
+      "Okkam_T3_Q_C"
+    ],
     "drops": [
       {
         "name": "Advanced Armors Schematic",
@@ -23601,18 +24284,34 @@
   {
     "type": "T2_WhiteDeath_C",
     "name": "White Death (T2)",
+    "structures": [
+      "MediumRupu_T2_C"
+    ],
     "tier": "T2",
     "category": "White"
   },
   {
     "type": "T3_WhiteDeath_C",
     "name": "White Death (T3)",
+    "structures": [
+      "MediumRupu_T3_C"
+    ],
     "tier": "T3",
     "category": "White"
   },
   {
     "type": "IllusiveGiantRupu_C",
     "name": "Yellow Rupu",
-    "category": "Rupu"
+    "category": "Rupu",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
+  },
+  {
+    "type": "ZharvakkoShaman_C",
+    "name": "Zharvakko",
+    "structures": [
+      "EasyRupu_T1_C"
+    ]
   }
 ]
