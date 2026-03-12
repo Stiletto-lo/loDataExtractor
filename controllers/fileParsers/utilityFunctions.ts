@@ -371,10 +371,7 @@ class DataStore {
 	}
 
 	getPoiMapping(actorClass: string) {
-		const explicitMaps = this.poiMap.get(actorClass);
-		if (explicitMaps && explicitMaps.length > 0) {
-			return explicitMaps;
-		}
+		const explicitMaps = this.poiMap.get(actorClass) || [];
 		
 		// Implicit mapping based on naming conventions
 		const implicitMaps: string[] = [];
@@ -389,7 +386,8 @@ class DataStore {
 			implicitMaps.push("Volcanic");
 		}
 		
-		return implicitMaps;
+		const allMaps = new Set([...explicitMaps, ...implicitMaps]);
+		return Array.from(allMaps);
 	}
 }
 
