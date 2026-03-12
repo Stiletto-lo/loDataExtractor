@@ -229,7 +229,8 @@
       "Nurr Raiding Camp"
     ],
     "maps": [
-      "Ancient City"
+      "Ancient City",
+      "Canyon"
     ],
     "originalName": "AmmoBox T2"
   },
@@ -3770,7 +3771,8 @@
       "Foragers Outpost"
     ],
     "maps": [
-      "Ancient City"
+      "Ancient City",
+      "Canyon"
     ],
     "originalName": "EasyRupuCamp T2"
   },
@@ -7324,6 +7326,9 @@
   {
     "type": "CanyonForagersOutpost1_C",
     "name": "Foragers Outpost (1)",
+    "maps": [
+      "Canyon"
+    ],
     "structures": [
       "EasyRupuCamp_T2_C",
       "AmmoBox_T2_C"
@@ -7332,6 +7337,9 @@
   {
     "type": "CanyonForagersOutpost2_C",
     "name": "Foragers Outpost (2)",
+    "maps": [
+      "Canyon"
+    ],
     "structures": [
       "EasyRupuCamp_T2_C",
       "AmmoBox_T2_C"
@@ -7340,6 +7348,9 @@
   {
     "type": "CanyonForagersOutpost3_C",
     "name": "Foragers Outpost (3)",
+    "maps": [
+      "Canyon"
+    ],
     "structures": [
       "EasyRupuCamp_T2_C",
       "AmmoBox_T2_C"
@@ -7406,6 +7417,9 @@
     "type": "CanyonSavannahMediumRupuCamp_01_C",
     "name": "Fortified Rupu Village (Rupu)",
     "category": "Rupu",
+    "maps": [
+      "Canyon"
+    ],
     "structures": [
       "MediumRupuCamp_T2_C",
       "AmmoBox_T2_C"
@@ -12959,6 +12973,9 @@
     "related": [
       "Rupu Raiding Checkpoint"
     ],
+    "maps": [
+      "Canyon"
+    ],
     "originalName": "HotspotLoot T1"
   },
   {
@@ -13354,7 +13371,8 @@
       "Ancient Pyramid"
     ],
     "maps": [
-      "Ancient City"
+      "Ancient City",
+      "Canyon"
     ],
     "originalName": "HotspotLoot T2"
   },
@@ -17426,6 +17444,9 @@
       "Reinforced Rupu Outpost",
       "Small Rupu Village",
       "Rupu Gifting Altar"
+    ],
+    "maps": [
+      "Canyon"
     ],
     "originalName": "MediumRupuCamp T2"
   },
@@ -22455,6 +22476,9 @@
   {
     "type": "CanyonDragableChest_C",
     "name": "Rupu Defensive Storage",
+    "maps": [
+      "Canyon"
+    ],
     "structures": [
       "HotspotLoot_T2_C"
     ]
@@ -22623,6 +22647,9 @@
     "type": "CanyonMountainTopSmallRupuCamp_C",
     "name": "Rupu Moisture Collector",
     "category": "Rupu",
+    "maps": [
+      "Canyon"
+    ],
     "structures": [
       "MediumRupuCamp_T2_C",
       "AmmoBox_T2_C"
@@ -22718,6 +22745,9 @@
   {
     "type": "CanyonBurnableChest_C",
     "name": "Rupu Raiding Checkpoint",
+    "maps": [
+      "Canyon"
+    ],
     "structures": [
       "HotspotLoot_T2_C",
       "HotspotLoot_T1_C"
@@ -22766,6 +22796,9 @@
   {
     "type": "CanyonIslandShelter_C",
     "name": "Rupu Shelter",
+    "maps": [
+      "Canyon"
+    ],
     "structures": [
       "MediumRupuCamp_T2_C",
       "AmmoBox_T2_C"

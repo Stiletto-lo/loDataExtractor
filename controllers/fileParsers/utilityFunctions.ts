@@ -378,12 +378,21 @@ class DataStore {
 		const nameUpper = actorClass.toUpperCase();
 		if (nameUpper.includes("_AC_") || nameUpper.endsWith("_AC") || nameUpper.startsWith("AC_")) {
 			implicitMaps.push("Ancient City");
-		} else if (nameUpper.includes("_CRADLE_") || nameUpper.endsWith("_CRADLE") || nameUpper.startsWith("CRADLE_")) {
+		}
+		if (nameUpper.includes("CRADLE")) {
 			implicitMaps.push("Cradle");
-		} else if (nameUpper.includes("_CANYON_") || nameUpper.endsWith("_CANYON") || nameUpper.startsWith("CANYON_")) {
+		}
+		if (nameUpper.includes("CANYON")) {
 			implicitMaps.push("Canyon");
-		} else if (nameUpper.includes("_VOLCANO_") || nameUpper.includes("_VOLCANIC_") || nameUpper.endsWith("_VOLCANO")) {
+		}
+		if (nameUpper.includes("VOLCAN")) {
 			implicitMaps.push("Volcanic");
+		}
+		if (nameUpper.includes("KALIN")) {
+			implicitMaps.push("Kalin");
+		}
+		if (nameUpper.includes("SLEEPING") && nameUpper.includes("GIANT")) {
+			implicitMaps.push("Sleeping Giants");
 		}
 		
 		const allMaps = new Set([...explicitMaps, ...implicitMaps]);
