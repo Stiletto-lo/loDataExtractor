@@ -279,34 +279,27 @@ export const getUpgradeItem = (upgradePure: any) => {
 
 			// Handle crafting data inheritance
 			if (upgradePure.crafting && superUpgradeData?.crafting) {
-				// Both child and super have crafting data - merge them
+				// Both child and super have crafting data
 				const recipe: Recipe = {};
+
+				// Priority for crafting time: child > super
 				if (upgradePure.crafting[0].time) {
 					recipe.time = upgradePure.crafting[0].time;
 				} else if (superUpgradeData.crafting[0].time) {
 					recipe.time = superUpgradeData.crafting[0].time;
 				}
 
+				// Priority for ingredients: child > super
+				// If child has ingredients, use ONLY those (don't merge)
 				if (
 					upgradePure.crafting[0].ingredients &&
-					superUpgradeData.crafting[0].ingredients
+					upgradePure.crafting[0].ingredients.length > 0
 				) {
-					const ingredientsFiltered =
-						superUpgradeData.crafting[0].ingredients.filter(
-							(ingredient: { name?: string }) =>
-								!upgradePure.crafting[0].ingredients.some(
-									(i: { name?: string }) => i.name === ingredient.name,
-								),
-						);
-					recipe.ingredients = [].concat(
-						upgradePure.crafting[0].ingredients,
-						ingredientsFiltered,
-					);
-				} else if (upgradePure.crafting[0].ingredients) {
 					recipe.ingredients = upgradePure.crafting[0].ingredients;
 				} else if (superUpgradeData.crafting[0].ingredients) {
 					recipe.ingredients = superUpgradeData.crafting[0].ingredients;
 				}
+
 				item.crafting = [recipe];
 			} else if (upgradePure.crafting) {
 				// Only child has crafting data
