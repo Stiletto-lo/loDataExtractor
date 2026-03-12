@@ -371,7 +371,25 @@ class DataStore {
 	}
 
 	getPoiMapping(actorClass: string) {
-		return this.poiMap.get(actorClass) || [];
+		const explicitMaps = this.poiMap.get(actorClass);
+		if (explicitMaps && explicitMaps.length > 0) {
+			return explicitMaps;
+		}
+		
+		// Implicit mapping based on naming conventions
+		const implicitMaps: string[] = [];
+		const nameUpper = actorClass.toUpperCase();
+		if (nameUpper.includes("_AC_") || nameUpper.endsWith("_AC") || nameUpper.startsWith("AC_")) {
+			implicitMaps.push("Ancient City");
+		} else if (nameUpper.includes("_CRADLE_") || nameUpper.endsWith("_CRADLE") || nameUpper.startsWith("CRADLE_")) {
+			implicitMaps.push("Cradle");
+		} else if (nameUpper.includes("_CANYON_") || nameUpper.endsWith("_CANYON") || nameUpper.startsWith("CANYON_")) {
+			implicitMaps.push("Canyon");
+		} else if (nameUpper.includes("_VOLCANO_") || nameUpper.includes("_VOLCANIC_") || nameUpper.endsWith("_VOLCANO")) {
+			implicitMaps.push("Volcanic");
+		}
+		
+		return implicitMaps;
 	}
 }
 

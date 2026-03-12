@@ -15,6 +15,9 @@
     ],
     "related": [
       "Altar of the Dawn"
+    ],
+    "maps": [
+      "Ancient City"
     ]
   },
   {
@@ -33,11 +36,17 @@
     ],
     "related": [
       "Altar of the Dusk"
+    ],
+    "maps": [
+      "Ancient City"
     ]
   },
   {
     "type": "AC_RelicPOI1_C",
     "name": "Altar of the Dawn",
+    "maps": [
+      "Ancient City"
+    ],
     "structures": [
       "AC_Relic_1_C"
     ]
@@ -45,6 +54,9 @@
   {
     "type": "AC_RelicPOI2_C",
     "name": "Altar of the Dusk",
+    "maps": [
+      "Ancient City"
+    ],
     "structures": [
       "AC_Relic_2_C"
     ]
@@ -215,6 +227,9 @@
       "Reinforced Rupu Outpost",
       "Small Rupu Village",
       "Nurr Raiding Camp"
+    ],
+    "maps": [
+      "Ancient City"
     ],
     "originalName": "AmmoBox T2"
   },
@@ -431,6 +446,9 @@
   {
     "type": "AC_Pyramid_C",
     "name": "Ancient Pyramid",
+    "maps": [
+      "Ancient City"
+    ],
     "structures": [
       "BigHotspotLoot_T2_C",
       "HotspotLoot_T2_C"
@@ -900,6 +918,9 @@
     ],
     "related": [
       "Great Rupu Wall"
+    ],
+    "maps": [
+      "Ancient City"
     ],
     "originalName": "BasketLoot T2 AC"
   },
@@ -1378,6 +1399,9 @@
     ],
     "related": [
       "Ancient Pyramid"
+    ],
+    "maps": [
+      "Ancient City"
     ],
     "originalName": "BigHotspotLoot T2"
   },
@@ -3744,6 +3768,9 @@
       "Sarcophagus of the Ancient",
       "Excavation Site",
       "Foragers Outpost"
+    ],
+    "maps": [
+      "Ancient City"
     ],
     "originalName": "EasyRupuCamp T2"
   },
@@ -7208,6 +7235,9 @@
   {
     "type": "AC_WorkersGrave_C",
     "name": "Excavation Site (2)",
+    "maps": [
+      "Ancient City"
+    ],
     "structures": [
       "EasyRupuCamp_T2_C"
     ]
@@ -7216,6 +7246,9 @@
     "type": "AC_RupuCaveCamp_C",
     "name": "Excavation Site (Rupu)",
     "category": "Rupu",
+    "maps": [
+      "Ancient City"
+    ],
     "structures": [
       "HardRupu_T2_AC_C",
       "HotspotLoot_T2_AC_C",
@@ -7381,6 +7414,9 @@
   {
     "type": "AC_StarTowerGas_C",
     "name": "Gas Thrower",
+    "maps": [
+      "Ancient City"
+    ],
     "structures": [
       "AmmoBox_T2_C"
     ]
@@ -7904,6 +7940,9 @@
     "type": "AC_RupuGate_C",
     "name": "Great Rupu Wall",
     "category": "Rupu",
+    "maps": [
+      "Ancient City"
+    ],
     "structures": [
       "AmmoBox_T2_C",
       "BasketLoot_T2_AC_C"
@@ -8588,6 +8627,9 @@
       "Rupu Fortress",
       "Nurr Lair",
       "Nurr Raiding Camp"
+    ],
+    "maps": [
+      "Ancient City"
     ],
     "originalName": "HardRupuCamp T2"
   },
@@ -10659,6 +10701,9 @@
       "Matriarch",
       "Rupu Priestess",
       "Rupu Zealot"
+    ],
+    "maps": [
+      "Ancient City"
     ],
     "originalName": "HardRupu T2 AC"
   },
@@ -13308,6 +13353,9 @@
       "Rupu Defensive Storage",
       "Ancient Pyramid"
     ],
+    "maps": [
+      "Ancient City"
+    ],
     "originalName": "HotspotLoot T2"
   },
   {
@@ -13706,6 +13754,9 @@
     "related": [
       "Excavation Site",
       "Rupu Gifting Altar"
+    ],
+    "maps": [
+      "Ancient City"
     ],
     "originalName": "HotspotLoot T2 AC"
   },
@@ -22348,6 +22399,9 @@
   {
     "type": "AC_StarTowerCommon_C",
     "name": "Rock Thrower",
+    "maps": [
+      "Ancient City"
+    ],
     "structures": [
       "AmmoBox_T2_C"
     ]
@@ -22465,6 +22519,13 @@
     "structures": [
       "HardRupuCamp_T2_C",
       "AmmoBox_T2_C"
+    ]
+  },
+  {
+    "type": "Canyon_C",
+    "name": "Rupu Gifting Altar (4)",
+    "maps": [
+      "Canyon"
     ]
   },
   {
@@ -22751,8 +22812,15 @@
     ]
   },
   {
+    "type": "AC_MatriarchCampUnedited_C",
+    "name": "Rupu Watch Tower (4)",
+    "maps": [
+      "Ancient City"
+    ]
+  },
+  {
     "type": "SG_AshWastesFortress2_C",
-    "name": "Rupu Watch Tower (5)",
+    "name": "Rupu Watch Tower (6)",
     "structures": [
       "HardRupuCamp_T1_C"
     ]
@@ -22793,6 +22861,9 @@
   {
     "type": "AC_Sarcophagus_C",
     "name": "Sarcophagus of the Ancient",
+    "maps": [
+      "Ancient City"
+    ],
     "structures": [
       "EasyRupuCamp_T2_C"
     ]
@@ -22922,6 +22993,9 @@
   {
     "type": "AC_MatriarchCamp_C",
     "name": "Temple of Stars",
+    "maps": [
+      "Ancient City"
+    ],
     "structures": [
       "EasyRupuCamp_T2_C",
       "HardRupuCamp_T2_C",
@@ -22936,6 +23010,9 @@
   {
     "type": "AC_StarTowerFire_C",
     "name": "Tower of The Holly Fire",
+    "maps": [
+      "Ancient City"
+    ],
     "structures": [
       "AmmoBox_T2_C"
     ]
