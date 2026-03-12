@@ -1,6 +1,5 @@
-export const costTemplate = {
-	count: undefined as number | undefined,
-	name: undefined as string | undefined,
-};
+import { Ingredient, Quality } from "./ingredient";
+
+export const costTemplate: Ingredient = {};
 
 Object.freeze(costTemplate);

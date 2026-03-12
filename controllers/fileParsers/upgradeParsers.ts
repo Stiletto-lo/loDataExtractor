@@ -12,6 +12,7 @@ import type { Upgrade } from "../../templates/upgrade";
 import type { UpgradeInfo } from "../../templates/upgradeInfo";
 import type { Recipe } from "../../templates/recipe";
 import * as utilityFunctions from "./utilityFunctions";
+import { Quality } from "../../templates/ingredient";
 import { itemTemplate } from "../../templates/item";
 import { readJsonFile } from "../utils/read-json-file";
 
@@ -64,6 +65,26 @@ const extractUpgradeInfo = (
 };
 
 /**
+ * Gets the quality from the upgrade tier
+ * @param {number} tier - The upgrade tier
+ * @returns {Quality} - The corresponding Quality enum
+ */
+const getQualityFromTier = (tier: number): Quality => {
+	switch (tier) {
+		case 1:
+			return Quality.UNCOMMON;
+		case 2:
+			return Quality.RARE;
+		case 3:
+			return Quality.EPIC;
+		case 4:
+			return Quality.LEGENDARY;
+		default:
+			return Quality.COMMON;
+	}
+};
+
+/**
  * Extract recipe data from upgrade properties
  * @param {Object} properties - The upgrade properties
  * @param {string} key - The current upgrade key
@@ -84,12 +105,17 @@ const extractRecipeData = (properties: any, key: string) => {
 	const ingredients = [];
 
 	try {
+		// Determine quality based on tier
+		const tier = dataParser.determineUpgradeTier(key);
+		const quality = getQualityFromTier(tier);
+
 		// Extract ingredients
 		for (const inputKey of Object.keys(propertyData.Inputs)) {
 			try {
 				const ingredient = utilityFunctions.getIngredientsFromItem(
 					propertyData.Inputs,
 					inputKey,
+					quality,
 				);
 				if (ingredient) {
 					ingredients.push(ingredient);

@@ -10,6 +10,7 @@ import type { Tech } from "../../templates/tech";
 import { costTemplate } from "../../templates/cost";
 import * as dataParser from "../dataParsers";
 import * as translator from "../translator";
+import { Ingredient, Quality } from "../../templates/ingredient";
 
 /**
  * DataStore - Encapsulates shared state to avoid global variables
@@ -134,17 +135,22 @@ class DataStore {
 	 * Get ingredients from an item
 	 * @param {Object} data - The inputs object containing ingredient data
 	 * @param {string} key - The key of the ingredient
+	 * @param {Quality} quality - The quality of the ingredient (optional)
 	 * @returns {Object} - The ingredient object
 	 * @throws {TypeError} - If inputs is not an object or key is not a string
 	 */
-	getIngredientsFromItem(data: any, key: string) {
-		const ingredient = { ...costTemplate };
+	getIngredientsFromItem(data: any, key: string, quality?: Quality) {
+		const ingredient: Ingredient = {};
 		ingredient.name = data[key]?.Key
 			? dataParser.parseName(translator, data[key]?.Key)
 			: dataParser.parseName(translator, Object.keys(data[key])?.[0] ?? "");
 		ingredient.count = data[key]?.Key
 			? data[key]?.Value
 			: Object.values(data[key])[0];
+
+		if (quality) {
+			ingredient.quality = quality;
+		}
 
 		return ingredient;
 	}
@@ -407,8 +413,8 @@ export const getItem = (name: string) => dataStore.getItem(name);
 export const getItemByType = (type: string) => dataStore.getItemByType(type);
 export const extractItemByType = (type: string) =>
 	dataStore.extractItemByType(type);
-export const getIngredientsFromItem = (inputs: any, key: string) =>
-	dataStore.getIngredientsFromItem(inputs, key);
+export const getIngredientsFromItem = (inputs: any, key: string, quality?: Quality) =>
+	dataStore.getIngredientsFromItem(inputs, key, quality);
 export const addItem = (item: any) => dataStore.addItem(item);
 export const getTechData = () => dataStore.getTechData();
 export const setTechData = (data: any[]) => dataStore.setTechData(data);

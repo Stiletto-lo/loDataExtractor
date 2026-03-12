@@ -1,13 +1,13 @@
 export type Ingredient = {
-	name?: string;
-	count?: number;
-	quality?: Quality;
+	name?: string | undefined;
+	count?: number | undefined;
+	quality?: Quality | undefined;
 };
 
 export enum Quality {
-	COMMON = "COMMON",
-	UNCOMMON = "UNCOMMON",
-	RARE = "RARE",
-	EPIC = "EPIC",
-	LEGENDARY = "LEGENDARY",
+	COMMON = 0,
+	UNCOMMON = 1,
+	RARE = 2,
+	EPIC = 3,
+	LEGENDARY = 4,
 }
