@@ -1,5 +1,7 @@
+import { Ingredient } from "./ingredient";
+
 export type Recipe = {
-	ingredients?: { name: string | undefined; count: number | undefined }[];
+	ingredients?: Ingredient[];
 	output?: number;
 	station?: string;
 	time?: number;
