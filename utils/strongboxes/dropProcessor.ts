@@ -123,12 +123,12 @@ function addDropsFromTable(strongbox, lootTable, tableName, tableRef) {
 	}
 
 	// Calculate multipliers from the table reference
-	const runChance = tableRef.RunChance || 1.0;
-	const perIterationRunChance = tableRef.PerIterationRunChance || 1.0;
-	const minIterations = tableRef.MinIterations || 1;
-	const maxIterations = tableRef.MaxIterations || 1;
-	const minQuantityMultiplier = tableRef.MinQuantityMultiplier || 1.0;
-	const maxQuantityMultiplier = tableRef.MaxQuantityMultiplier || 1.0;
+	const runChance = tableRef.runChance || 1.0;
+	const perIterationRunChance = tableRef.perIterationRunChance || 1.0;
+	const minIterations = tableRef.minIterations || 1;
+	const maxIterations = tableRef.maxIterations || 1;
+	const minQuantityMultiplier = tableRef.minQuantityMultiplier || 1.0;
+	const maxQuantityMultiplier = tableRef.maxQuantityMultiplier || 1.0;
 
 	// Average iterations considering run chances
 	const avgIterations = (minIterations + maxIterations) / 2;

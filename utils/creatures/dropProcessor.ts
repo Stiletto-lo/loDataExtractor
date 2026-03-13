@@ -118,7 +118,7 @@ function findTemplate(templateName, normalizedTemplates, creatureName) {
  * @param {Object} lootTable - The loot table containing drops
  * @param {string} tableName - The name of the loot table (for source tracking)
  */
-function addDropsFromTable(creature, lootTable, tableName) {
+function addDropsFromTable(creature, lootTable, tableName, tableRef) {
 	// Verificar que la tabla de botín existe y tiene drops
 	if (!lootTable || !lootTable.drops || !Array.isArray(lootTable.drops)) {
 		console.debug(
@@ -132,7 +132,31 @@ function addDropsFromTable(creature, lootTable, tableName) {
 		creature.drops = [];
 	}
 
+	// Calculate multipliers from the table reference
+	const runChance = tableRef?.runChance ?? 1.0;
+	const perIterationRunChance = tableRef?.perIterationRunChance ?? 1.0;
+	const minIterations = tableRef?.minIterations ?? 1;
+	const maxIterations = tableRef?.maxIterations ?? 1;
+	const minQuantityMultiplier = tableRef?.minQuantityMultiplier ?? 1.0;
+	const maxQuantityMultiplier = tableRef?.maxQuantityMultiplier ?? 1.0;
+
+	// Average iterations considering run chances
+	const avgIterations = (minIterations + maxIterations) / 2;
+	const effectiveIterations = avgIterations * perIterationRunChance;
+
+	// Overall chance multiplier
+	const chanceMultiplier = runChance * effectiveIterations;
+
 	for (const drop of lootTable.drops) {
+		// Calculate adjusted values based on the table reference parameters
+		const adjustedChance = drop.chance * chanceMultiplier;
+		const adjustedMinQuantity = Math.round(
+			drop.minQuantity * minQuantityMultiplier,
+		);
+		const adjustedMaxQuantity = Math.round(
+			drop.maxQuantity * maxQuantityMultiplier,
+		);
+
 		// Skip if this drop already exists
 		const existingDrop = creature.drops.find((d) => d.name === drop.name);
 		if (existingDrop) {
@@ -142,9 +166,9 @@ function addDropsFromTable(creature, lootTable, tableName) {
 		// Add the drop to the creature
 		creature.drops.push({
 			name: drop.name,
-			chance: drop.chance,
-			minQuantity: drop.minQuantity,
-			maxQuantity: drop.maxQuantity,
+			chance: adjustedChance,
+			minQuantity: adjustedMinQuantity,
+			maxQuantity: adjustedMaxQuantity,
 			source: tableName,
 		});
 	}
@@ -215,7 +239,7 @@ function addDropInformation(creatures, lootTemplates, lootTables) {
 			}
 
 			const lootTable = lootTablesMap[tableName];
-			addDropsFromTable(creature, lootTable, tableName);
+			addDropsFromTable(creature, lootTable, tableName, tableRef);
 		}
 
 		return creature;
