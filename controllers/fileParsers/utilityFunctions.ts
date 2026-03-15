@@ -7,10 +7,9 @@
 
 import { itemTemplate } from "../../templates/item";
 import type { Tech } from "../../templates/tech";
-import { costTemplate } from "../../templates/cost";
 import * as dataParser from "../dataParsers";
 import * as translator from "../translator";
-import { Ingredient, Quality } from "../../templates/ingredient";
+import type { Ingredient, Quality } from "../../templates/ingredient";
 
 /**
  * DataStore - Encapsulates shared state to avoid global variables
