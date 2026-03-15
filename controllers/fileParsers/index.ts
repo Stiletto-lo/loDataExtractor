@@ -48,6 +48,7 @@ export const parseUpgradesToItems = upgradeParsers.parseUpgradesToItems;
 
 // Perk related functions
 export const parsePerkData = perkParsers.parsePerkData;
+export const resolvePerkParents = perkParsers.resolvePerkParents;
 export const getAllPerks = utilityFunctions.getAllPerks;
 export const getPerkByName = utilityFunctions.getPerkByName;
 export const setPerks = utilityFunctions.setPerks;

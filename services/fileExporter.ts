@@ -1,10 +1,20 @@
+import fs from "fs-extra";
+import * as fileParser from "../controllers/fileParsers";
+const dataProcessor = require("./dataProcessor") as any;
+import { convertToSnakeCase } from "../utils/convertToSnakeCase";
+const ingredientNameFixer = require("../utils/ingredientNameFixer") as any;
+import type { Item } from "../templates/item";
+import type { Tech } from "../templates/tech";
+import type { Creature } from "../templates/creature";
+import { PerkInfo } from "../templates/perkInfo";
+
 /**
  * Exports perk data to JSON files
  * @param {Array} perks - Processed perk data
  * @param {string} folderPath - Export folder path
  * @returns {Promise} - Promise that resolves when export is completed
  */
-export const exportPerksData = async (perks: unknown[], folderPath: string) => {
+export const exportPerksData = async (perks: PerkInfo[], folderPath: string) => {
 	if (perks.length > 0) {
 		console.log(`Processing ${perks.length} perk entries for export...`);
 
@@ -20,9 +30,14 @@ export const exportPerksData = async (perks: unknown[], folderPath: string) => {
 			},
 		);
 
+		const minPerks = perks.map((perk) => {
+			const { name, description, cost, parent } = perk;
+			return { name, description, cost, parent } ;
+		});
+
 		await fs.writeFile(
 			`${folderPath}perks_min.json`,
-			JSON.stringify(perks),
+			JSON.stringify(minPerks),
 			(err) => {
 				if (err) {
 					console.error("Error creating the perks_min.json file");
@@ -33,26 +48,6 @@ export const exportPerksData = async (perks: unknown[], folderPath: string) => {
 		);
 	}
 };
-
-/**
- * Service for exporting data to files
- *
- * This module provides functions for exporting processed data
- * to JSON files in different formats.
- */
-
-import fs from "fs-extra";
-import * as fileParser from "../controllers/fileParsers";
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const dataProcessor = require("./dataProcessor") as any;
-import { convertToSnakeCase } from "../utils/convertToSnakeCase";
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const ingredientNameFixer = require("../utils/ingredientNameFixer") as any;
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const creatureProcessor = require("../utils/creatureProcessor") as any;
-import type { Item } from "../templates/item";
-import type { Tech } from "../templates/tech";
-import type { Creature } from "../templates/creature";
 
 /**
  * Exports technology data to JSON files

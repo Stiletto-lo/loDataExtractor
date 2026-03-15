@@ -24,6 +24,10 @@ const extractData = async () => {
 	dataAccess.initialize();
 
 	fileLoader.loadAllFiles(CONTENT_FOLDER_PATH);
+	
+	// Resolve parent perks
+	const fileParsers = await import("./controllers/fileParsers");
+	fileParsers.resolvePerkParents();
 
 	await fileExporter.saveAllFiles(EXPORT_FOLDER_PATH);
 
